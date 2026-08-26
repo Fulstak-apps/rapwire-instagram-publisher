@@ -24,11 +24,15 @@ async function save(itemPath, item) {
 }
 
 async function instagramPost(endpoint, fields) {
-  const body = new URLSearchParams({ ...fields, access_token: instagramToken });
-  const response = await fetch(`${instagramBase}/${instagramUserId}/${endpoint}`, { method: "POST", body });
-  const payload = await response.json();
-  if (!response.ok || payload.error) throw new Error(`${endpoint} failed: ${JSON.stringify(payload)}`);
-  return payload;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const body = new URLSearchParams({ ...fields, access_token: instagramToken });
+    const response = await fetch(`${instagramBase}/${instagramUserId}/${endpoint}`, { method: "POST", body });
+    const payload = await response.json();
+    if (response.ok && !payload.error) return payload;
+    const retryable = payload.error?.code === 1 && attempt < 2;
+    if (!retryable) throw new Error(`${endpoint} failed: ${JSON.stringify(payload)}`);
+    await sleep((attempt + 1) * 15_000);
+  }
 }
 
 async function waitForInstagramContainer(containerId) {

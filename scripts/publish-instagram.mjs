@@ -125,21 +125,33 @@ for (const file of files) {
     console.log(`Published Instagram feed ${file}: ${published.id}`);
   }
 
-  if (item.story && item.instagram_story_status !== "published") {
-    const published = await publishInstagramStory(item);
-    item.instagram_story_status = "published";
-    item.instagram_story_media_id = published.id;
-    item.instagram_story_published_at = new Date().toISOString();
+  if (item.story && !item.instagram_story_status) {
+    try {
+      const published = await publishInstagramStory(item);
+      item.instagram_story_status = "published";
+      item.instagram_story_media_id = published.id;
+      item.instagram_story_published_at = new Date().toISOString();
+      console.log(`Published Instagram Story ${file}: ${published.id}`);
+    } catch (error) {
+      item.instagram_story_status = "failed";
+      item.instagram_story_error = error.message;
+      console.error(`Instagram Story failed for ${file}: ${error.message}`);
+    }
     await save(itemPath, item);
-    console.log(`Published Instagram Story ${file}: ${published.id}`);
   }
 
-  if (threadsToken && threadsUserId && item.threads_status !== "published") {
-    const published = await publishThreadsCarousel(item);
-    item.threads_status = "published";
-    item.threads_media_id = published.id;
-    item.threads_published_at = new Date().toISOString();
+  if (threadsToken && threadsUserId && !item.threads_status) {
+    try {
+      const published = await publishThreadsCarousel(item);
+      item.threads_status = "published";
+      item.threads_media_id = published.id;
+      item.threads_published_at = new Date().toISOString();
+      console.log(`Published Threads carousel ${file}: ${published.id}`);
+    } catch (error) {
+      item.threads_status = "failed";
+      item.threads_error = error.message;
+      console.error(`Threads failed for ${file}: ${error.message}`);
+    }
     await save(itemPath, item);
-    console.log(`Published Threads carousel ${file}: ${published.id}`);
   }
 }

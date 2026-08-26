@@ -1,0 +1,11 @@
+{
+  "name": "rapwire-instagram-publisher",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "publish": "node scripts/publish-instagram.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

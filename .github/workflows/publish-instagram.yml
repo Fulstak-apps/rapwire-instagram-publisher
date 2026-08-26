@@ -2,6 +2,15 @@ name: Publish RapWire Instagram queue
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "queue/**"
+      - "media/**"
+      - "scripts/**"
+      - "package.json"
+      - ".github/workflows/publish-instagram.yml"
   schedule:
     - cron: "17 * * * *"
 

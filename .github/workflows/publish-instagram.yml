@@ -31,6 +31,7 @@ jobs:
           node-version: "24"
       - name: Publish every ready carousel
         env:
+          RAPWIRE_BRAND: "24/7"
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}

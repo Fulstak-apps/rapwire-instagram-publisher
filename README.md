@@ -1,6 +1,6 @@
 # RapWire 24/7 automatic Instagram publisher
 
-This is a free GitHub Actions publisher for two-slide Instagram carousels. It uses Meta's official Instagram API and checks the queue once an hour.
+This is a free GitHub Actions publisher for two-slide Instagram carousels. It uses Meta's official Instagram API and drains one ready item every 20 minutes.
 
 Required repository secrets:
 
@@ -20,3 +20,8 @@ photo that is relevant to the specific story.
 
 All category pills must use measured horizontal and vertical centering. The brand lockup
 is always `RAPWIRE 24/7`.
+
+The 20-minute cadence supports up to 72 baseline feed posts per day, leaving capacity
+for retries and selected breaking coverage below Instagram's rolling publishing limit.
+Use `publish_after` for precise queue timing. `MAX_FEED_POSTS_PER_RUN` defaults to 1
+to prevent a newly loaded batch from flooding the account.

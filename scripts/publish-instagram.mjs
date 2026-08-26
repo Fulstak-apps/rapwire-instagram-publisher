@@ -16,6 +16,8 @@ const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
 const queueDir = "queue";
 const files = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
+const maxFeedPostsPerRun = Number(process.env.MAX_FEED_POSTS_PER_RUN || 1);
+let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
 
@@ -120,13 +122,16 @@ for (const file of files) {
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
   if (!Array.isArray(item.slides) || item.slides.length < 2) continue;
   if (item.status === "paused") continue;
+  if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
+    if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) continue;
     const published = await publishInstagramFeed(item);
     item.status = "published";
     item.instagram_media_id = published.id;
     item.published_at = new Date().toISOString();
     await save(itemPath, item);
+    feedPostsPublishedThisRun += 1;
     console.log(`Published Instagram feed ${file}: ${published.id}`);
   }
 

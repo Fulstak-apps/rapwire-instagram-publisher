@@ -5,6 +5,7 @@ const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
 const threadsToken = process.env.THREADS_ACCESS_TOKEN;
 const threadsUserId = process.env.THREADS_USER_ID;
+const publishInstagramStories = process.env.PUBLISH_INSTAGRAM_STORIES === "true";
 const repository = process.env.GITHUB_REPOSITORY;
 const refName = process.env.GITHUB_REF_NAME || "main";
 
@@ -135,7 +136,7 @@ for (const file of files) {
     console.log(`Published Instagram feed ${file}: ${published.id}`);
   }
 
-  if (item.story && !item.instagram_story_status) {
+  if (publishInstagramStories && item.story && !item.instagram_story_status) {
     try {
       const published = await publishInstagramStory(item);
       item.instagram_story_status = "published";

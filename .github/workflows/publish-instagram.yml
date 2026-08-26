@@ -2,17 +2,8 @@ name: Publish RapWire Instagram queue
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "queue/**"
-      - "media/**"
-      - "scripts/**"
-      - "package.json"
-      - ".github/workflows/publish-instagram.yml"
   schedule:
-    - cron: "*/20 * * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
@@ -36,6 +27,7 @@ jobs:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          PUBLISH_INSTAGRAM_STORIES: "false"
         run: npm run publish
       - name: Save publication log
         run: |

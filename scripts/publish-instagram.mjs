@@ -115,6 +115,7 @@ for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
   if (!Array.isArray(item.slides) || item.slides.length < 2) continue;
+  if (item.status === "paused") continue;
 
   if (item.status === "ready") {
     const published = await publishInstagramFeed(item);

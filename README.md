@@ -1,4 +1,4 @@
-# RapWire 24 automatic Instagram publisher
+# RapWire 24/7 automatic Instagram publisher
 
 This is a free GitHub Actions publisher for two-slide Instagram carousels. It uses Meta's official Instagram API and checks the queue once an hour.
 
@@ -12,3 +12,11 @@ The repository must be public so Meta can download images from `raw.githubuserco
 Add each carousel's PNG files under `media/`, then add a matching JSON file under `queue/` with `status` set to `ready`. The workflow publishes every ready item and changes its status to `published`.
 
 Instagram's API cannot attach a song from Instagram's licensed music library to a feed carousel. That music selection remains a manual Instagram-app step.
+
+Editorial metadata should include verified Instagram handles for the featured artist and
+the account that surfaced or reported the story. Use those handles in the caption when
+available; never guess a handle. Prefer the newest rights-cleared, recognizable subject
+photo that is relevant to the specific story.
+
+All category pills must use measured horizontal and vertical centering. The brand lockup
+is always `RAPWIRE 24/7`.

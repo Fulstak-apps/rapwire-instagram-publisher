@@ -25,16 +25,20 @@ def fit_crop(image, size):
 def wordmark(draw):
     font = ImageFont.truetype(FONT_BOLD, 48)
     rw = draw.textlength("RAPWIRE", font=font)
-    nw = draw.textlength("24", font=font)
+    nw = draw.textlength("24/7", font=font)
     x = 1026 - rw - 12 - nw
     draw.text((x, 38), "RAPWIRE", font=font, fill=WHITE)
-    draw.text((x + rw + 12, 38), "24", font=font, fill=CYAN)
+    draw.text((x + rw + 12, 38), "24/7", font=font, fill=CYAN)
 
 def pill(draw, label, right):
-    draw.rounded_rectangle((54, 42, right, 102), radius=13, fill="#07090A", outline=CYAN, width=3)
+    box = (54, 42, right, 102)
+    draw.rounded_rectangle(box, radius=13, fill="#07090A", outline=CYAN, width=3)
     font = ImageFont.truetype(FONT_BOLD, 26)
-    width = draw.textlength(label, font=font)
-    draw.text(((54 + right - width) / 2, 57), label, font=font, fill=CYAN)
+    left, top, text_right, bottom = draw.textbbox((0, 0), label, font=font)
+    width, height = text_right - left, bottom - top
+    x = box[0] + (box[2] - box[0] - width) / 2 - left
+    y = box[1] + (box[3] - box[1] - height) / 2 - top
+    draw.text((x, y), label, font=font, fill=CYAN)
 
 def wrap(draw, text, font, width):
     lines, current = [], ""

@@ -12,7 +12,7 @@ on:
       - "package.json"
       - ".github/workflows/publish-instagram.yml"
   schedule:
-    - cron: "17 * * * *"
+    - cron: "*/20 * * * *"
 
 permissions:
   contents: write

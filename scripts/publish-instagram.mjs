@@ -18,6 +18,7 @@ const threadsBase = "https://graph.threads.net/v1.0";
 const queueDir = "queue";
 const files = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
 const maxFeedPostsPerRun = Number(process.env.MAX_FEED_POSTS_PER_RUN || 1);
+const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
@@ -118,6 +119,20 @@ async function publishThreadsCarousel(item) {
   return threadsPost("threads_publish", { creation_id: carousel.id });
 }
 
+const rollingDayStart = Date.now() - 24 * 60 * 60 * 1000;
+let feedPostsPublishedInRollingDay = 0;
+for (const file of files) {
+  const item = JSON.parse(await fs.readFile(path.join(queueDir, file), "utf8"));
+  if (
+    item.status === "published" &&
+    item.instagram_media_id &&
+    item.published_at &&
+    Date.parse(item.published_at) >= rollingDayStart
+  ) {
+    feedPostsPublishedInRollingDay += 1;
+  }
+}
+
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
@@ -127,12 +142,14 @@ for (const file of files) {
 
   if (item.status === "ready") {
     if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) continue;
+    if (feedPostsPublishedInRollingDay >= maxFeedPostsPerRollingDay) continue;
     const published = await publishInstagramFeed(item);
     item.status = "published";
     item.instagram_media_id = published.id;
     item.published_at = new Date().toISOString();
     await save(itemPath, item);
     feedPostsPublishedThisRun += 1;
+    feedPostsPublishedInRollingDay += 1;
     console.log(`Published Instagram feed ${file}: ${published.id}`);
   }
 
@@ -151,7 +168,13 @@ for (const file of files) {
     await save(itemPath, item);
   }
 
-  if (threadsToken && threadsUserId && !item.threads_status) {
+  if (
+    item.status === "published" &&
+    item.instagram_media_id &&
+    threadsToken &&
+    threadsUserId &&
+    !item.threads_status
+  ) {
     try {
       const published = await publishThreadsCarousel(item);
       item.threads_status = "published";

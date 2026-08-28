@@ -22,6 +22,17 @@ const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
+const approvedPhotoContexts = new Set(["event_specific", "same_campaign", "current_subject_portrait"]);
+
+function hasCurrentRelevantPhoto(item) {
+  if (item.photo_recency_checked !== true) return false;
+  if (!approvedPhotoContexts.has(item.photo_event_relevance)) return false;
+  if (!item.photo_context_summary || typeof item.photo_context_summary !== "string") return false;
+  const capturedAt = Date.parse(`${item.photo_capture_date}T00:00:00Z`);
+  if (!Number.isFinite(capturedAt)) return false;
+  const age = Date.now() - capturedAt;
+  return age >= -7 * 24 * 60 * 60 * 1000 && age <= 366 * 24 * 60 * 60 * 1000;
+}
 
 async function save(itemPath, item) {
   await fs.writeFile(itemPath, `${JSON.stringify(item, null, 2)}\n`);
@@ -141,6 +152,10 @@ for (const file of files) {
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
+    if (!hasCurrentRelevantPhoto(item)) {
+      console.error(`Skipped ${file}: current, topic-relevant photo verification is missing`);
+      continue;
+    }
     if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) continue;
     if (feedPostsPublishedInRollingDay >= maxFeedPostsPerRollingDay) continue;
     const published = await publishInstagramFeed(item);

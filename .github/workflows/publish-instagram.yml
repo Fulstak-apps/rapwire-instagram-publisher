@@ -8,7 +8,7 @@ on:
       - "media/**"
   workflow_dispatch:
   schedule:
-    - cron: "7,22,37,52 * * * *"
+    - cron: "7,27,47 * * * *"
 
 permissions:
   contents: write
@@ -54,6 +54,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add queue media
           git commit -m "Refresh RapWire current-news queue"
+          git pull --rebase origin main
           git push
 
       - name: Prepare publishable JPEG media
@@ -69,6 +70,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add queue media
           git commit -m "Prepare RapWire publishable JPEG media"
+          git pull --rebase origin main
           git push
 
       - name: Wait for public media propagation
@@ -97,4 +99,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add -- queue
           git commit -m "Log RapWire publication" || true
+          git pull --rebase origin main || true
           git push || true

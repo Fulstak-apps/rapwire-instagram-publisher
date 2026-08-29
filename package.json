@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "publish": "node scripts/publish-instagram.mjs"
+    "publish": "python scripts/convert-media-to-jpeg.py && node scripts/publish-instagram.mjs"
   },
   "engines": {
     "node": ">=20"

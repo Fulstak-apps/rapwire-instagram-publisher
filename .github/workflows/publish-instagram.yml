@@ -39,6 +39,7 @@ jobs:
         run: python -m pip install --disable-pip-version-check pillow openai
 
       - name: Pull all fresh Narro stories and let AI choose one
+        continue-on-error: true
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/ai-rapwire.py

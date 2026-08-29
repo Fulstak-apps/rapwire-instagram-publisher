@@ -23,15 +23,25 @@ let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
 
+function slideUrl(item, index) {
+  const remote = Array.isArray(item.media_urls) ? item.media_urls[index] : "";
+  return remote || mediaUrl(item.slides[index]);
+}
+
+function storyUrl(item) {
+  return item.story_media_url || mediaUrl(item.story);
+}
+
 function hasPublishableVisual(item) {
   if (item.visual_asset_type === "original_graphic" && item.visual_asset_rights === "owned") return true;
+  if (item.visual_asset_type === "source_photo" && item.visual_asset_rights === "source_post_repost") {
+    return Boolean(item.story_media_url || item.media_urls?.[0]);
+  }
   if (item.photo_recency_checked !== true) return false;
   if (!["event_specific", "same_campaign", "current_subject_portrait"].includes(item.photo_event_relevance)) return false;
   if (!item.photo_context_summary || typeof item.photo_context_summary !== "string") return false;
   const capturedAt = Date.parse(`${item.photo_capture_date}T00:00:00Z`);
-  if (!Number.isFinite(capturedAt)) return false;
-  const age = Date.now() - capturedAt;
-  return age >= -7 * 24 * 60 * 60 * 1000 && age <= 366 * 24 * 60 * 60 * 1000;
+  return Number.isFinite(capturedAt) && capturedAt <= Date.now();
 }
 
 async function save(itemPath, item) {
@@ -66,6 +76,7 @@ async function waitForInstagramContainer(containerId) {
 }
 
 async function threadsPost(endpoint, fields) {
+  if (!threadsToken || !threadsUserId) throw new Error("Missing THREADS_ACCESS_TOKEN or THREADS_USER_ID");
   const body = new URLSearchParams({ ...fields, access_token: threadsToken });
   const response = await fetch(`${threadsBase}/${threadsUserId}/${endpoint}`, { method: "POST", body });
   const payload = await response.json();
@@ -90,8 +101,8 @@ async function waitForThreadsContainer(containerId) {
 
 async function publishInstagramFeed(item) {
   const childIds = [];
-  for (const slide of item.slides) {
-    const child = await instagramPost("media", { image_url: mediaUrl(slide), is_carousel_item: "true" });
+  for (let index = 0; index < item.slides.length; index += 1) {
+    const child = await instagramPost("media", { image_url: slideUrl(item, index), is_carousel_item: "true" });
     await waitForInstagramContainer(child.id);
     childIds.push(child.id);
   }
@@ -105,17 +116,17 @@ async function publishInstagramFeed(item) {
 }
 
 async function publishInstagramStory(item) {
-  const story = await instagramPost("media", { media_type: "STORIES", image_url: mediaUrl(item.story) });
+  const story = await instagramPost("media", { media_type: "STORIES", image_url: storyUrl(item) });
   await waitForInstagramContainer(story.id);
   return instagramPost("media_publish", { creation_id: story.id });
 }
 
 async function publishThreadsCarousel(item) {
   const children = [];
-  for (const slide of item.slides) {
+  for (let index = 0; index < item.slides.length; index += 1) {
     const child = await threadsPost("threads", {
       media_type: "IMAGE",
-      image_url: mediaUrl(slide),
+      image_url: slideUrl(item, index),
       is_carousel_item: "true"
     });
     await waitForThreadsContainer(child.id);
@@ -153,7 +164,7 @@ for (const file of files) {
 
   if (item.status === "ready") {
     if (!hasPublishableVisual(item)) {
-      console.error(`Skipped ${file}: publishable visual verification is missing`);
+      console.error(`Skipped ${file}: current/relevant visual verification is missing`);
       continue;
     }
     if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) continue;

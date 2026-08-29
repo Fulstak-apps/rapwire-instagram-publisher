@@ -46,16 +46,19 @@ jobs:
       - name: Remove stale queue items
         run: python scripts/expire-stale-queue.py
 
-      - name: Commit AI-generated RapWire assets
+      - name: Block every legacy/non-AI graphic
+        run: node scripts/block-non-ai.mjs
+
+      - name: Commit AI assets and queue state
         run: |
           if [ -z "$(git status --porcelain -- queue media)" ]; then
-            echo "No new AI post."
+            echo "No queue/media changes."
             exit 0
           fi
           git config user.name "RapWire 24/7"
           git config user.email "actions@users.noreply.github.com"
           git add queue media
-          git commit -m "Generate AI-curated RapWire comic post"
+          git commit -m "Enforce AI-only RapWire visual pipeline"
           git pull --rebase origin main
           git push
 

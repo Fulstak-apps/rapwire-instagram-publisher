@@ -22,11 +22,11 @@ const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
-const approvedPhotoContexts = new Set(["event_specific", "same_campaign", "current_subject_portrait"]);
 
-function hasCurrentRelevantPhoto(item) {
+function hasPublishableVisual(item) {
+  if (item.visual_asset_type === "original_graphic" && item.visual_asset_rights === "owned") return true;
   if (item.photo_recency_checked !== true) return false;
-  if (!approvedPhotoContexts.has(item.photo_event_relevance)) return false;
+  if (!["event_specific", "same_campaign", "current_subject_portrait"].includes(item.photo_event_relevance)) return false;
   if (!item.photo_context_summary || typeof item.photo_context_summary !== "string") return false;
   const capturedAt = Date.parse(`${item.photo_capture_date}T00:00:00Z`);
   if (!Number.isFinite(capturedAt)) return false;
@@ -152,8 +152,8 @@ for (const file of files) {
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
-    if (!hasCurrentRelevantPhoto(item)) {
-      console.error(`Skipped ${file}: current, topic-relevant photo verification is missing`);
+    if (!hasPublishableVisual(item)) {
+      console.error(`Skipped ${file}: publishable visual verification is missing`);
       continue;
     }
     if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) continue;

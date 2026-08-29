@@ -25,17 +25,18 @@ const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${reposito
 
 function slideUrl(item, index) {
   const remote = Array.isArray(item.media_urls) ? item.media_urls[index] : "";
-  return remote || mediaUrl(item.slides[index]);
+  return remote && /^https?:\/\//i.test(remote) ? remote : mediaUrl(item.slides[index]);
 }
 
 function storyUrl(item) {
-  return item.story_media_url || mediaUrl(item.story);
+  const remote = item.story_media_url || "";
+  return remote && /^https?:\/\//i.test(remote) ? remote : mediaUrl(item.story);
 }
 
 function hasPublishableVisual(item) {
   if (item.visual_asset_type === "original_graphic" && item.visual_asset_rights === "owned") return true;
   if (item.visual_asset_type === "source_photo" && item.visual_asset_rights === "source_post_repost") {
-    return Boolean(item.story_media_url || item.media_urls?.[0]);
+    return Boolean(item.story || item.slides?.length);
   }
   if (item.photo_recency_checked !== true) return false;
   if (!["event_specific", "same_campaign", "current_subject_portrait"].includes(item.photo_event_relevance)) return false;
@@ -116,6 +117,8 @@ async function publishInstagramFeed(item) {
 }
 
 async function publishInstagramStory(item) {
+  // Stories use the dedicated 1080x1920 asset. Never publish a 4:5 feed slide as a Story.
+  if (!item.story) throw new Error("Story asset missing");
   const story = await instagramPost("media", { media_type: "STORIES", image_url: storyUrl(item) });
   await waitForInstagramContainer(story.id);
   return instagramPost("media_publish", { creation_id: story.id });
@@ -145,12 +148,7 @@ const rollingDayStart = Date.now() - 24 * 60 * 60 * 1000;
 let feedPostsPublishedInRollingDay = 0;
 for (const file of files) {
   const item = JSON.parse(await fs.readFile(path.join(queueDir, file), "utf8"));
-  if (
-    item.status === "published" &&
-    item.instagram_media_id &&
-    item.published_at &&
-    Date.parse(item.published_at) >= rollingDayStart
-  ) {
+  if (item.status === "published" && item.instagram_media_id && item.published_at && Date.parse(item.published_at) >= rollingDayStart) {
     feedPostsPublishedInRollingDay += 1;
   }
 }
@@ -179,7 +177,6 @@ for (const file of files) {
     console.log(`Published Instagram feed ${file}: ${published.id}`);
   }
 
-  // Stories and Threads are downstream of a successful current feed publication.
   if (item.status !== "published") continue;
 
   if (publishInstagramStories && item.story && !item.instagram_story_status) {
@@ -197,11 +194,7 @@ for (const file of files) {
     await save(itemPath, item);
   }
 
-  if (
-    threadsToken &&
-    threadsUserId &&
-    !item.threads_status
-  ) {
+  if (threadsToken && threadsUserId && !item.threads_status) {
     try {
       const published = await publishThreadsCarousel(item);
       item.threads_status = "published";

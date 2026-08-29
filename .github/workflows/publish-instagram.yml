@@ -20,7 +20,7 @@ concurrency:
 env:
   NARRO_RSS_URL: "https://rss.narro.info/e4f36406-0664-4e77-b672-7e0682966a9f"
   MAX_NEW_ITEMS: "6"
-  MAX_SOURCE_AGE_HOURS: "36"
+  MAX_SOURCE_AGE_HOURS: "24"
 
 jobs:
   monitor-and-publish:
@@ -41,6 +41,15 @@ jobs:
       - name: Pull current stories from the approved Narro sources
         run: python scripts/ingest-narro.py
 
+      - name: Supplement with fresh relevant hip-hop news
+        run: python scripts/ingest-google-news.py
+
+      - name: Rank and remove stale or irrelevant stories
+        run: python scripts/rank-current-news.py
+
+      - name: Replace all source-blog photos with owned RapWire visuals
+        run: python scripts/regenerate-original-visuals.py
+
       - name: Remove stale ready stories
         run: python scripts/expire-stale-queue.py
 
@@ -53,7 +62,7 @@ jobs:
           git config user.name "RapWire 24/7"
           git config user.email "actions@users.noreply.github.com"
           git add queue media
-          git commit -m "Refresh RapWire current-news queue"
+          git commit -m "Refresh RapWire current-news queue and original visuals"
           git pull --rebase origin main
           git push
 

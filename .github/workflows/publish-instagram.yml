@@ -35,25 +35,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install graphic renderer
-        run: python -m pip install --disable-pip-version-check pillow
+      - name: Install AI publisher dependencies
+        run: python -m pip install --disable-pip-version-check pillow openai
 
-      - name: Pull current stories from the approved Narro sources
-        run: python scripts/ingest-narro.py
-
-      - name: Supplement with fresh relevant hip-hop news
-        run: python scripts/ingest-google-news.py
-
-      - name: Rank and remove stale or irrelevant stories
-        run: python scripts/rank-current-news.py
-
-      - name: Replace all source-blog photos with owned RapWire visuals
-        run: python scripts/regenerate-original-visuals.py
+      - name: Pull every fresh Narro story and let AI curate RapWire-worthy news
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/ai-curate-narro.py
 
       - name: Remove stale ready stories
         run: python scripts/expire-stale-queue.py
 
-      - name: Commit queue and original graphics
+      - name: Commit AI-curated queue and original comic graphics
         run: |
           if [ -z "$(git status --porcelain -- queue media)" ]; then
             echo "No queue/media changes."
@@ -62,7 +55,7 @@ jobs:
           git config user.name "RapWire 24/7"
           git config user.email "actions@users.noreply.github.com"
           git add queue media
-          git commit -m "Refresh RapWire current-news queue and original visuals"
+          git commit -m "AI-curate Narro stories and generate RapWire comic art"
           git pull --rebase origin main
           git push
 

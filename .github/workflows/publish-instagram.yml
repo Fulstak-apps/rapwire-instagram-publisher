@@ -1,6 +1,11 @@
 name: RapWire 24/7 monitor and publisher
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "queue/**"
+      - "media/**"
   workflow_dispatch:
   schedule:
     # Every 15 minutes, offset from the top of the hour to reduce scheduler congestion.

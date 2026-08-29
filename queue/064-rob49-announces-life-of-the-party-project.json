@@ -1,5 +1,5 @@
 {
-  "status": "ready",
+  "status": "paused",
   "story_type": "breaking",
   "source": "Hip Hop Vibe",
   "source_urls": [
@@ -30,5 +30,6 @@
     "media/064-rob49-announces-life-of-the-party-project-slide-2.jpg"
   ],
   "story": "media/064-rob49-announces-life-of-the-party-project-story.jpg",
-  "relevance_score": 2
+  "relevance_score": 2,
+  "pause_reason": "Non-AI visual asset blocked by RapWire visual policy"
 }

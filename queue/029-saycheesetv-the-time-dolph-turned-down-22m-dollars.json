@@ -1,5 +1,5 @@
 {
-  "status": "ready",
+  "status": "paused",
   "story_type": "general_news",
   "date": "2026-08-29",
   "timezone": "America/Detroit",
@@ -41,5 +41,6 @@
   "visual_asset_type": "original_graphic",
   "publish_after": "2026-08-29T22:36:41.007916+00:00",
   "relevance_score": 2,
-  "source_image_url": ""
+  "source_image_url": "",
+  "pause_reason": "Non-AI visual asset blocked by RapWire visual policy"
 }

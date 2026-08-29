@@ -1,5 +1,5 @@
 {
-  "status": "ready",
+  "status": "paused",
   "story_type": "general_news",
   "date": "2026-08-29",
   "timezone": "America/Detroit",
@@ -36,5 +36,7 @@
   ],
   "visual_asset_rights": "source_post_repost",
   "visual_asset_type": "original_graphic",
-  "publish_after": "2026-08-29T22:36:41.007916+00:00"
+  "publish_after": "2026-08-29T22:36:41.007916+00:00",
+  "relevance_score": 0,
+  "stale_reason": "Low RapWire hip-hop/culture relevance score."
 }

@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rapwire-newsroom-monitor",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-08-29",
+  "workers_dev": true,
+  "triggers": {
+    "crons": ["*/15 * * * *"]
+  }
+}

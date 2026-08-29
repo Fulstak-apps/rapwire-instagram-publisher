@@ -1,37 +1,75 @@
-name: Publish RapWire Instagram queue
+name: RapWire 24/7 monitor and publisher
 
 on:
   workflow_dispatch:
+  schedule:
+    # Every 15 minutes, offset from the top of the hour to reduce scheduler congestion.
+    - cron: "7,22,37,52 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
   group: rapwire-instagram-publisher
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  publish:
+  monitor-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install graphic renderer
+        run: python -m pip install --disable-pip-version-check pillow
+
+      - name: Pull new Narro source items
+        env:
+          NARRO_RSS_URL: "https://rss.narro.info/e4f36406-0664-4e77-b672-7e0682966a9f"
+          MAX_NEW_ITEMS: "6"
+        run: python scripts/ingest-narro.py
+
+      - name: Commit new queue items and original graphics
+        run: |
+          if git diff --quiet -- queue media; then
+            echo "No new source items."
+            exit 0
+          fi
+          git config user.name "RapWire 24/7"
+          git config user.email "actions@users.noreply.github.com"
+          git add queue media
+          git commit -m "Ingest new Narro source stories"
+          git push
+
+      - name: Wait for raw.githubusercontent.com propagation
+        run: sleep 8
+
       - uses: actions/setup-node@v6
         with:
           node-version: "24"
-      - name: Publish every ready carousel
+
+      - name: Publish next ready RapWire story
         env:
           RAPWIRE_BRAND: "24/7"
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-          PUBLISH_INSTAGRAM_STORIES: "false"
+          PUBLISH_INSTAGRAM_STORIES: "true"
+          MAX_FEED_POSTS_PER_RUN: "1"
         run: npm run publish
+
       - name: Save publication log
         run: |
           if git diff --quiet -- queue; then exit 0; fi
-          git config user.name "RapWire Publisher"
+          git config user.name "RapWire 24/7"
           git config user.email "actions@users.noreply.github.com"
           git add -- queue
-          git commit -m "Log published Instagram posts"
+          git commit -m "Log RapWire publication"
           git push

@@ -1,9 +1,10 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "rapwire-newsroom-monitor",
+  "name": "rapwire-instagram-publisher",
   "main": "worker/index.js",
   "compatibility_date": "2026-08-29",
   "workers_dev": true,
+  "preview_urls": false,
   "triggers": {
     "crons": ["*/15 * * * *"]
   }

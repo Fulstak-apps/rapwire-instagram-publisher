@@ -2,11 +2,6 @@ name: RapWire 24/7 monitor and publisher
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths-ignore:
-      - "queue/**"
-      - "media/**"
   schedule:
     # Every 15 minutes, offset from the top of the hour to reduce scheduler congestion.
     - cron: "7,22,37,52 * * * *"
@@ -47,8 +42,8 @@ jobs:
 
       - name: Commit queue and original graphics
         run: |
-          if git diff --quiet -- queue media; then
-            echo "No queue changes."
+          if [ -z "$(git status --porcelain -- queue media)" ]; then
+            echo "No queue/media changes."
             exit 0
           fi
           git config user.name "RapWire 24/7"
@@ -77,7 +72,7 @@ jobs:
 
       - name: Save publication log
         run: |
-          if git diff --quiet -- queue; then exit 0; fi
+          if [ -z "$(git status --porcelain -- queue)" ]; then exit 0; fi
           git config user.name "RapWire 24/7"
           git config user.email "actions@users.noreply.github.com"
           git add -- queue

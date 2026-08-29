@@ -159,7 +159,7 @@ for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
   if (!Array.isArray(item.slides) || item.slides.length < 2) continue;
-  if (item.status === "paused") continue;
+  if (item.status === "paused" || item.status === "media_refresh_required") continue;
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
@@ -179,6 +179,9 @@ for (const file of files) {
     console.log(`Published Instagram feed ${file}: ${published.id}`);
   }
 
+  // Stories and Threads are downstream of a successful current feed publication.
+  if (item.status !== "published") continue;
+
   if (publishInstagramStories && item.story && !item.instagram_story_status) {
     try {
       const published = await publishInstagramStory(item);
@@ -195,8 +198,6 @@ for (const file of files) {
   }
 
   if (
-    item.status === "published" &&
-    item.instagram_media_id &&
     threadsToken &&
     threadsUserId &&
     !item.threads_status

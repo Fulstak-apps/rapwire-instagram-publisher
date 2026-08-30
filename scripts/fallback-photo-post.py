@@ -20,6 +20,7 @@ QUEUE, MEDIA = ROOT / "queue", ROOT / "media"
 FEED_URL = os.environ["NARRO_RSS_URL"]
 MAX_AGE_HOURS = max(48, int(os.environ.get("MAX_SOURCE_AGE_HOURS", "48")))
 FONT_BOLD = next(path for path in (
+    str(ROOT / "assets" / "fonts" / "Anton-Regular.ttf"),
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
 ) if Path(path).exists())
@@ -251,19 +252,27 @@ def render(story_id, story, name, handle, source_label, image):
     slide1_path = MEDIA / f"{story_id}-slide-1.jpg"
     slide1.save(slide1_path, quality=94, subsampling=0)
 
-    slide2 = Image.new("RGB", (1080, 1350), PAPER)
+    slide2 = Image.new("RGB", (1080, 1350), INK)
     draw = ImageDraw.Draw(slide2)
     draw.rectangle((0, 0, 1080, 16), fill=CYAN)
-    draw.text((56, 55), "RAPWIRE 24/7", font=font(45), fill=INK)
-    draw.text((56, 134), "WHAT WE KNOW", font=font(37), fill=(135, 25, 48))
-    draw.rectangle((56, 193, 1024, 199), fill=INK)
-    selected = font(37, False)
-    y = 246
-    for line in wrap(draw, body, selected, 950)[:17]:
-        draw.text((64, y), line, font=selected, fill=INK)
+    draw.text((56, 48), "RAPWIRE", font=font(48), fill=PAPER)
+    draw.text((270, 48), "24/7", font=font(48), fill=CYAN)
+    draw.text((56, 132), "WHAT WE KNOW", font=font(48), fill=YELLOW)
+    draw.rectangle((56, 202, 1024, 209), fill=CYAN)
+    draw.rounded_rectangle((48, 236, 1032, 768), radius=18, fill=(24, 28, 34), outline=(49, 59, 68), width=3)
+    selected = font(35, False)
+    y = 278
+    for line in wrap(draw, body, selected, 900)[:10]:
+        draw.text((84, y), line, font=selected, fill=PAPER)
         y += 51
-    draw.rectangle((56, 1205, 1024, 1210), fill=CYAN)
-    draw.text((56, 1245), f"SOURCE: {source_label.upper()}  •  DEVELOPING", font=font(25), fill=INK)
+    photo = ImageOps.fit(image, (968, 390), method=Image.Resampling.LANCZOS, centering=(0.5, 0.38))
+    photo = ImageEnhance.Contrast(photo).enhance(1.05)
+    slide2.paste(photo, (56, 808))
+    draw = ImageDraw.Draw(slide2)
+    draw.rectangle((56, 808, 1024, 1198), outline=CYAN, width=4)
+    artist_tag(draw, name, handle, 1118)
+    draw.rectangle((56, 1240, 1024, 1245), fill=CYAN)
+    draw.text((56, 1270), f"SOURCE PHOTO: {source_label.upper()}", font=font(24), fill=CYAN)
     slide2_path = MEDIA / f"{story_id}-slide-2.jpg"
     slide2.save(slide2_path, quality=94, subsampling=0)
 

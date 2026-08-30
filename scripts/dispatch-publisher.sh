@@ -5,10 +5,14 @@ REPO="Fulstak-apps/rapwire-instagram-publisher"
 WORKFLOW="publish-instagram.yml"
 GH="/opt/homebrew/bin/gh"
 
+print -r -- "$(date -u +%Y-%m-%dT%H:%M:%SZ) scheduler check"
+
 # Avoid stacking duplicate runs if a prior publish is still processing.
 ACTIVE=$("$GH" run list --repo "$REPO" --workflow "$WORKFLOW" --status in_progress --limit 1 --json databaseId --jq 'length')
 if [[ "$ACTIVE" != "0" ]]; then
+  print -r -- "$(date -u +%Y-%m-%dT%H:%M:%SZ) skipped: workflow already running"
   exit 0
 fi
 
-"$GH" workflow run "$WORKFLOW" --repo "$REPO" --ref main
+RUN_URL=$("$GH" workflow run "$WORKFLOW" --repo "$REPO" --ref main)
+print -r -- "$(date -u +%Y-%m-%dT%H:%M:%SZ) dispatched: $RUN_URL"

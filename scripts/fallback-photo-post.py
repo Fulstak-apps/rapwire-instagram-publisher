@@ -133,7 +133,16 @@ def independent_source(title, primary_link):
 
 
 def known_handles():
-    registry = []
+    # Small, explicitly verified registry used when a fresh artist has not yet
+    # appeared in RapWire's historical queue. These entries are reviewed
+    # against the artists' official Instagram profiles before being added.
+    registry = [
+        ("Doechii", "@doechii", "https://www.instagram.com/doechii/"),
+        ("Olivia Rodrigo", "@oliviarodrigo", "https://www.instagram.com/oliviarodrigo/"),
+        ("Drake", "@champagnepapi", "https://www.instagram.com/champagnepapi/"),
+        ("50 Cent", "@50cent", "https://www.instagram.com/50cent/"),
+        ("Rick Ross", "@richforever", "https://www.instagram.com/richforever/"),
+    ]
     for path in QUEUE.glob("*.json"):
         try:
             item = json.loads(path.read_text())

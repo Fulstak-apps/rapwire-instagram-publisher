@@ -7,7 +7,11 @@ for (const file of await fs.readdir(dir)) {
   const filePath = path.join(dir, file);
   const item = JSON.parse(await fs.readFile(filePath, "utf8"));
   const validSlideCount = Array.isArray(item.slides) && item.slides.length >= 2 && item.slides.length <= 3;
-  const sourceGrounded = item.source_photo_used === true && typeof item.source_image_url === "string" && /^https?:\/\//i.test(item.source_image_url);
+  const sourceGrounded = item.source_photo_used === true
+    && typeof item.source_image_url === "string"
+    && /^https?:\/\//i.test(item.source_image_url)
+    && Array.isArray(item.visual_asset_source_urls)
+    && item.visual_asset_source_urls.length > 0;
   const approvedFallback = item.fallback_real_photo === true
     && item.visual_asset_type === "source_photo"
     && item.visual_asset_rights === "source_post_repost"

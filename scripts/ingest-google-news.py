@@ -91,7 +91,13 @@ for query in QUERIES:
         if fp in seen or any(module.similar_story(fp, old) for old in seen if " " in old and len(old) > 30):
             continue
         source = source_name(item)
-        items.append({"title": title, "link": link, "guid": guid, "description": description, "pub_dt": dt, "source": source, "fingerprint": fp})
+        image_url = module.image_from_description(description)
+        # Never manufacture a generic stand-in visual when the reporting feed has
+        # no event-specific image. Those items must wait for the credited-photo
+        # fallback or a human-supplied reference image.
+        if not image_url:
+            continue
+        items.append({"title": title, "link": link, "guid": guid, "description": description, "pub_dt": dt, "source": source, "fingerprint": fp, "image_url": image_url})
 
 items.sort(key=lambda x: x["pub_dt"], reverse=True)
 seq = module.next_id()
@@ -106,7 +112,7 @@ for item in items:
     if len(body) > 700:
         body = body[:697].rsplit(" ", 1)[0] + "..."
     story_id = f"{seq:03d}-{module.slugify(headline)}"
-    feed1, feed2, story, _ = module.render_graphics(story_id, item["source"], headline, body, None)
+    feed1, feed2, story, _ = module.render_graphics(story_id, item["source"], headline, body, item["image_url"])
     source_url = item["link"]
     caption = f"{body}\n\nSource: {item['source']}\n{source_url}\n\n#RapWire247 #HipHop #RapNews"
     queue_item = {
@@ -116,7 +122,9 @@ for item in items:
         "source_urls": [source_url],
         "source_guid": item["guid"],
         "source_title": headline,
-        "source_image_url": "",
+        "source_image_url": item["image_url"],
+        "source_image_role": "reporting_source_photo",
+        "visual_asset_source_urls": [item["image_url"]],
         "source_published_at": item["pub_dt"].isoformat(),
         "story_fingerprint": item["fingerprint"],
         "headline": headline,
@@ -127,7 +135,9 @@ for item in items:
         "visual_asset_rights": "owned",
         "photo_recency_checked": True,
         "photo_event_relevance": "same_campaign",
-        "photo_context_summary": "Original RapWire comic illustration generated from the current story topic; no source-blog photo reused.",
+        "photo_context_summary": "Original RapWire comic illustration materially redrawn from the specific reporting image supplied with this story.",
+        "source_photo_used": True,
+        "ai_generated_art": True,
         "photo_capture_date": item["pub_dt"].date().isoformat(),
         "media_urls": [str(feed1.relative_to(ROOT)), str(feed2.relative_to(ROOT))],
         "story_media_url": str(story.relative_to(ROOT)),

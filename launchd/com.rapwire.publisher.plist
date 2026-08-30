@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.rapwire.publisher</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/dw/Documents/Codex/2026-08-29/https-chatgpt-com-share-6a936f43-54ec/work/rapwire-instagram-publisher/scripts/dispatch-publisher.sh</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>600</integer>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/tmp/rapwire-publisher.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/rapwire-publisher.err</string>
+</dict>
+</plist>

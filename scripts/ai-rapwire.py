@@ -201,9 +201,13 @@ def main():
     item={'id':sid,'status':'ready','ai_generated_art':True,'visual_asset_type':'ai_original_comic_from_source_reference','visual_asset_rights':'owned','created_at':datetime.now(timezone.utc).isoformat(),'source':label,'source_urls':[url],'source_url':url,'source_guid':src['id'],'source_title':src['title'],'source_published_at':src['published'],'story_fingerprint':re.sub(r'[^a-z0-9]+',' ',headline.lower()).strip(),'headline':headline,'body':story,'caption':f'{caption}{identity_line}\n\nSource: {label}\n{url}\n\nFollow @rapwire247 for hip-hop, culture and real-time news.','threads_text':f'{headline}{identity_line}\n\n{story}\n\nSource: {label}','featured_person':person,'artist_instagram_handle':handle,'artist_handle_verified':bool(handle),'artist_handle_verified_url':profile,'displayed_artist_label':person_label,'visual_prompt':choice['visual_scene'],'slides':[str(p.relative_to(ROOT)) for p in slides],'carousel_page_count':len(slides),'story':str(ps.relative_to(ROOT)),'media_urls':[],'source_image_url':reference_url,'source_photo_used':True,'source_image_role':'factual visual reference only; final art is a materially redrawn original editorial illustration'}
     (QUEUE/f'{sid}.json').write_text(json.dumps(item,indent=2)+'\n'); print('Created:',sid)
 if __name__=='__main__':
-    try:
-        main()
-    except Exception:
-        traceback.print_exc()
-        print('AI pipeline failed; starting credited real-photo fallback.')
+    if os.environ.get('USE_OPENAI_AUTOMATION','false').lower() == 'true':
+        try:
+            main()
+        except Exception:
+            traceback.print_exc()
+            print('AI pipeline failed; starting credited real-photo fallback.')
+            subprocess.run([sys.executable,str(ROOT/'scripts'/'fallback-photo-post.py')],check=True)
+    else:
+        print('Zero-credit mode: using the credited real-photo publisher without calling OpenAI.')
         subprocess.run([sys.executable,str(ROOT/'scripts'/'fallback-photo-post.py')],check=True)

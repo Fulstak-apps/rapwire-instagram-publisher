@@ -229,7 +229,8 @@ def render(story_id, story, name, handle, source_label, image):
     body = clean(story["description"])
     if len(body) < 80:
         body = f"{headline}. RapWire is tracking this developing story from {source_label}."
-    body = body[:720].rsplit(" ", 1)[0] + ("…" if len(body) > 720 else "")
+    if len(body) > 720:
+        body = body[:720].rsplit(" ", 1)[0] + "…"
 
     slide1 = Image.new("RGB", (1080, 1350), INK)
     hero = ImageOps.fit(image, (1080, 850), method=Image.Resampling.LANCZOS, centering=(0.5, 0.38))

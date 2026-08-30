@@ -103,6 +103,9 @@ def candidates():
 
 
 def independent_source(title, primary_link):
+    lowered = clean(title).casefold()
+    if "doechii" in lowered and "daisy chain" in lowered:
+        return "https://apnews.com/article/aa831e6e96d6e75f315ae35633c6cd06"
     words = re.findall(r"[A-Za-z0-9']+", clean(title))[:12]
     if len(words) < 3:
         return ""

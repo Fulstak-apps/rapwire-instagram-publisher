@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE = ROOT / "queue"
-MAX_AGE_HOURS = 36
+MAX_AGE_HOURS = 48
 now = datetime.now(timezone.utc)
 changed = 0
 

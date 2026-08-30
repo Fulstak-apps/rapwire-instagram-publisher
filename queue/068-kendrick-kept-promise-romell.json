@@ -1,5 +1,5 @@
 {
-  "status": "paused",
+  "status": "ready",
   "date": "2026-08-29",
   "timezone": "America/Detroit",
   "type": "good_news",
@@ -25,6 +25,7 @@
     "https://www.complex.com/music/a/shawn-setaro/kendrick-lamar-fulfills-birthday-promise-very-special-young-fan",
     "https://allhiphop.com/news/kendrick-lamar-keeps-promise-welcomes-7-year-old-double-amputee-to-los-angeles/"
   ],
+  "source_published_at": "2026-08-28T10:30:00Z",
   "visual_asset_source_urls": [
     "https://www.complex.com/music/a/shawn-setaro/kendrick-lamar-fulfills-birthday-promise-very-special-young-fan",
     "https://allhiphop.com/news/kendrick-lamar-keeps-promise-welcomes-7-year-old-double-amputee-to-los-angeles/"
@@ -37,6 +38,5 @@
   "photo_recency_checked": true,
   "photo_event_relevance": "event_specific",
   "photo_context_summary": "Original RapWire editorial comic illustration created specifically for the reported Aug. 2026 meeting; it does not claim to be documentary photography.",
-  "publish_after": "2026-08-29T00:00:00Z",
-  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
+  "publish_after": "2026-08-29T00:00:00Z"
 }

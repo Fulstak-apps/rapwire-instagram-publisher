@@ -156,7 +156,10 @@ for (const file of files) {
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
-  if (!Array.isArray(item.slides) || item.slides.length < 2) continue;
+  if (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 3) {
+    console.error(`Skipped ${file}: RapWire carousels require two slides by default and never more than three`);
+    continue;
+  }
   if (item.status === "paused" || item.status === "media_refresh_required") continue;
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 

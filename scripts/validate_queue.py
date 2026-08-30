@@ -30,7 +30,7 @@ def main():
         "threads_text", "photo_subject", "audio_status", "identity_checked",
         "source_urls", "visual_asset_source_urls", "visual_asset_rights",
         "photo_capture_date", "photo_recency_checked", "photo_event_relevance",
-        "photo_context_summary", "publish_after",
+        "photo_context_summary", "publish_after", "source_image_url", "source_image_role",
     ]
     for field in required:
         if field not in item or item[field] in ("", [], None):
@@ -46,6 +46,8 @@ def main():
         errors += fail("identity_checked must be true")
     if item.get("photo_recency_checked") is not True:
         errors += fail("photo_recency_checked must be true")
+    if item.get("source_photo_used") is not True:
+        errors += fail("source_photo_used must be true; generic or invented visual scenes are not permitted")
 
     text_blob = json.dumps(item).casefold()
     if "automated" in text_blob:
@@ -87,8 +89,8 @@ def main():
                 errors += fail(f"invalid HTTPS URL in {url_field}: {url}")
 
     slides = item.get("slides", [])
-    if len(slides) != 2:
-        errors += fail("exactly two carousel slides are required")
+    if len(slides) not in {2, 3}:
+        errors += fail("carousel must contain two slides by default or three when additional context is necessary")
     for relative in slides:
         path = root / relative
         if not path.exists():

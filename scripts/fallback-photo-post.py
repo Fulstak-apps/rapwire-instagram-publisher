@@ -159,7 +159,7 @@ def seen_values():
     return seen
 
 
-def select_story():
+def select_stories():
     seen = seen_values()
     registry = known_handles()
     keywords = ("lil durk", "trial", "rapper", "rap", "hip-hop", "hip hop", "album", "song", "music", "concert", "grammy")
@@ -175,9 +175,7 @@ def select_story():
         if "lil durk" in blob or "trial" in blob:
             score += 20
         ranked.append((score, story, matched))
-    if not ranked:
-        return None
-    return max(ranked, key=lambda row: (row[0], row[1]["published"]))[1:]
+    return [row[1:] for row in sorted(ranked, key=lambda row: (row[0], row[1]["published"]), reverse=True)]
 
 
 def download_image(url):
@@ -303,38 +301,38 @@ def main():
     if any(json.loads(path.read_text()).get("status") == "ready" for path in QUEUE.glob("*.json")):
         print("Fallback: a ready queue item already exists.")
         return
-    selected = select_story()
-    if not selected:
+    selections = select_stories()
+    if not selections:
         print("Fallback: no fresh non-duplicate story matched the verified-handle registry.")
         return
-    story, (name, handle, profile) = selected
-    second_source = independent_source(story["title"], story["link"])
-    if not second_source:
-        print("Fallback: selected story has no independent second source.")
-        return
-    image_urls = []
-    if story["image"]:
-        image_urls.append(story["image"])
-    try:
-        article_image = page_image(story["link"])
-        if article_image and article_image not in image_urls:
-            image_urls.append(article_image)
-    except Exception as error:
-        print(f"Fallback article-image discovery failed: {error}")
-    if not image_urls:
-        print("Fallback: selected story has no usable source image.")
-        return
-    image = None
-    image_url = ""
-    for candidate_url in image_urls:
+    story = name = handle = profile = second_source = image_url = image = None
+    for candidate_story, identity in selections:
+        candidate_second_source = independent_source(candidate_story["title"], candidate_story["link"])
+        if not candidate_second_source:
+            print(f"Fallback candidate skipped (no independent source): {candidate_story['title'][:90]}")
+            continue
+        image_urls = [candidate_story["image"]] if candidate_story["image"] else []
         try:
-            image = download_image(candidate_url)
-            image_url = candidate_url
-            break
+            article_image = page_image(candidate_story["link"])
+            if article_image and article_image not in image_urls:
+                image_urls.append(article_image)
         except Exception as error:
-            print(f"Fallback image candidate failed: {candidate_url} ({error})")
+            print(f"Fallback article-image discovery failed: {error}")
+        for candidate_url in image_urls:
+            try:
+                candidate_image = download_image(candidate_url)
+                story = candidate_story
+                name, handle, profile = identity
+                second_source = candidate_second_source
+                image_url = candidate_url
+                image = candidate_image
+                break
+            except Exception as error:
+                print(f"Fallback image candidate failed: {candidate_url} ({error})")
+        if image is not None:
+            break
     if image is None:
-        print("Fallback: every source-image candidate failed.")
+        print("Fallback: no candidate had both independent confirmation and a usable source image.")
         return
     source_label = urllib.parse.urlparse(story["link"]).netloc.removeprefix("www.")
     provisional_id = next_id(story["title"])

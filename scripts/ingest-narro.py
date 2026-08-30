@@ -25,8 +25,8 @@ SOURCES = {
     "worldstarhiphop", "gta6latest",
 }
 
-FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+FONT_BOLD = str(ROOT / "assets/fonts/Anton-Regular.ttf")
+FONT_REG = str(ROOT / "assets/fonts/Anton-Regular.ttf")
 
 # RapWire's visual system: 1980s newsstand/comic-book energy, but clean enough for Instagram.
 INK = (20, 18, 29)

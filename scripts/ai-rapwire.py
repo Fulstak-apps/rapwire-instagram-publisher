@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import base64, html, importlib.util, io, json, os, re, subprocess, sys, traceback, urllib.parse, urllib.request
+import base64, html, importlib.util, io, json, os, re, secrets, subprocess, sys, traceback, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -177,6 +177,24 @@ def next_id(headline):
         if m:nums.append(int(m.group(1)))
     n=max(nums,default=0)+1; slug=re.sub(r'[^a-z0-9]+','-',headline.lower()).strip('-')[:55] or 'story'; return f'{n:03d}-{slug}'
 
+def ai_cover_is_eligible():
+    """Use AI occasionally, never back-to-back, and only when credentials exist."""
+    if not os.environ.get('OPENAI_API_KEY'):
+        return False
+    published=[]
+    for path in QUEUE.glob('*.json'):
+        try:
+            item=json.loads(path.read_text())
+        except Exception:
+            continue
+        if item.get('status')=='published' and item.get('published_at'):
+            published.append(item)
+    published.sort(key=lambda item:item.get('published_at',''),reverse=True)
+    if any(item.get('ai_generated_art') is True for item in published[:2]):
+        return False
+    percent=max(0,min(100,int(os.environ.get('AI_COVER_PERCENT','33'))))
+    return secrets.randbelow(100)<percent
+
 def main():
     if not os.environ.get('OPENAI_API_KEY'): raise RuntimeError('OPENAI_API_KEY is required. RapWire refuses to publish without AI-owned artwork.')
     cands=[c for c in parse_narro() if c['id'] not in existing() and c['link'] not in existing()]
@@ -194,13 +212,16 @@ def main():
     item['content_detail_count']=len(re.findall(r'\b\d+\.\s',story))
     (QUEUE/f'{sid}.json').write_text(json.dumps(item,indent=2)+'\n'); print('Created:',sid)
 if __name__=='__main__':
-    if os.environ.get('USE_OPENAI_AUTOMATION','false').lower() == 'true':
+    mode=os.environ.get('USE_OPENAI_AUTOMATION','auto').lower()
+    use_ai=(mode=='true') or (mode=='auto' and ai_cover_is_eligible())
+    if use_ai:
         try:
+            print('Mixed visual rotation: attempting an old-school comic cover.')
             main()
         except Exception:
             traceback.print_exc()
-            print('AI pipeline failed; starting credited real-photo fallback.')
+            print('AI credits or generation unavailable; using the credited real-photo fallback for this run.')
             subprocess.run([sys.executable,str(ROOT/'scripts'/'fallback-photo-post.py')],check=True)
     else:
-        print('Zero-credit mode: using the credited real-photo publisher without calling OpenAI.')
+        print('Mixed visual rotation: using the credited real-photo publisher for this run.')
         subprocess.run([sys.executable,str(ROOT/'scripts'/'fallback-photo-post.py')],check=True)

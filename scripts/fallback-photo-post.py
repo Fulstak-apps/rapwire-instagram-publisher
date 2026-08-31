@@ -22,6 +22,10 @@ FEED_URLS = [
     FEED_URL,
     "https://www.xxlmag.com/feed/",
     "https://www.billboard.com/c/music/rb-hip-hop/feed/",
+    "https://variety.com/v/music/news/feed/",
+    "https://uproxx.com/music/feed/",
+    "https://hypebeast.com/music/feed",
+    "https://www.rollingstone.com/music/music-news/feed/",
 ]
 MAX_AGE_HOURS = max(48, int(os.environ.get("MAX_SOURCE_AGE_HOURS", "48")))
 FONT_BOLD = next(path for path in (
@@ -150,6 +154,11 @@ def enrich_editorial(story):
         return enriched
     words = re.findall(r"\b\w+\b", body)
     sentences = [part for part in re.split(r"(?<=[.!?])\s+", body) if part.strip()]
+    if len(words) < 30 or len(sentences) < 2:
+        body = f"{headline.rstrip('.!?')}. {body}".strip()
+        enriched["description"] = body
+        words = re.findall(r"\b\w+\b", body)
+        sentences = [part for part in re.split(r"(?<=[.!?])\s+", body) if part.strip()]
     if len(words) < 30 or len(sentences) < 2:
         print(f"Fallback candidate skipped (insufficient editorial substance): {headline[:90]}")
         return None

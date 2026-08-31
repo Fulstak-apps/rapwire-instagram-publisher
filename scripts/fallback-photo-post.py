@@ -90,7 +90,10 @@ def rap_relevant(title, description, handle):
     if any(term in blob for term in NON_NEWS_FLUFF):
         return False
     if handle in APPROVED_CATEGORY_EXCEPTIONS:
-        return True
+        # GTA6Latest also posts general gaming material. RapWire's only
+        # non-rap exception is specifically GTA/Rockstar news, not every item
+        # from that account.
+        return any(term in blob for term in (" gta ", "gta 6", "grand theft auto", "rockstar games"))
     return handle in RAP_CENTRIC_SOURCES or any(term in blob for term in RAP_TOPIC_TERMS)
 
 
@@ -224,6 +227,18 @@ def enrich_editorial(story):
         return enriched
     initial_words = re.findall(r"\b\w+\b", body)
     initial_sentences = [part for part in re.split(r"(?<=[.!?])\s+", body) if part.strip()]
+    lower_blob = f" {headline.casefold()} {body.casefold()} "
+    if "lil durk" in lower_blob and "legal fee" in lower_blob and any(name in lower_blob for name in ("drake", "21savage", "lilbaby", "ye")):
+        headline = "AKADEMIKS CLAIMS RAP STARS ARE HELPING WITH DURK'S LEGAL FEES"
+        body = (
+            "No Jumper reports that DJ Akademiks said Ye, Drake, 21 Savage and Lil Baby are helping with Lil Durk's legal expenses. "
+            "Akademiks attributed specific payment details to unnamed information during a livestream; RapWire has not independently confirmed any payment or fee arrangement. "
+            "Lil Durk has pleaded not guilty, and the charges against him remain allegations unless proven in court."
+        )
+        enriched["title"] = headline
+        enriched["description"] = body
+        initial_words = re.findall(r"\b\w+\b", body)
+        initial_sentences = [part for part in re.split(r"(?<=[.!?])\s+", body) if part.strip()]
     if len(initial_words) < 45 or len(initial_sentences) < 2:
         # Supporting context can legitimately predate the breaking social post
         # (album background, tour announcement, prior credits).
@@ -338,8 +353,6 @@ def researched_context(story, max_age_hours):
         query_words = ["Skilla", "Baby", "Price", "of", "Fame"]
     elif "sauce walka" in blob:
         query_words = ["Sauce", "Walka", "streaming", "earnings"]
-    elif "lil durk" in blob:
-        query_words = ["Lil", "Durk", "trial", "court"]
     if len(query_words) < 3:
         return "", []
     query_terms = {word.casefold() for word in query_words if len(word) >= 3}
@@ -371,7 +384,7 @@ def researched_context(story, max_age_hours):
         if publisher.casefold() in {"instagram.com", "youtube", "reddit"}:
             continue
         result_terms = {word.casefold() for word in re.findall(r"[A-Za-z0-9']+", result_title)}
-        if len(query_terms & result_terms) < 2:
+        if len(query_terms & result_terms) < 3:
             continue
         if publisher.casefold() in used_publishers:
             continue

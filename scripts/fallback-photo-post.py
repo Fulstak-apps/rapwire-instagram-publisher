@@ -760,7 +760,7 @@ def editorial_focus(image):
     return image
 
 
-def render(story_id, story, name, handle, source_label, image, credit_prefix="SOURCE PHOTO"):
+def render(story_id, story, name, handle, source_label, image, credit_prefix="SOURCE PHOTO", hero_center_y=0.50):
     MEDIA.mkdir(exist_ok=True)
     headline = clean(story["title"])
     body = clean(story["description"])
@@ -769,7 +769,7 @@ def render(story_id, story, name, handle, source_label, image, credit_prefix="SO
 
     display_image = editorial_focus(image)
     slide1 = Image.new("RGB", (1080, 1350), INK)
-    hero = ImageOps.fit(display_image, (1080, 850), method=Image.Resampling.LANCZOS, centering=(0.5, 0.50))
+    hero = ImageOps.fit(display_image, (1080, 850), method=Image.Resampling.LANCZOS, centering=(0.5, hero_center_y))
     hero = ImageEnhance.Contrast(hero).enhance(1.04)
     slide1.paste(hero, (0, 0))
     draw = ImageDraw.Draw(slide1)
@@ -805,7 +805,7 @@ def render(story_id, story, name, handle, source_label, image, credit_prefix="SO
         for line in page_lines:
             draw.text((84, y), line, font=body_font, fill=PAPER)
             y += 51
-        photo = ImageOps.fit(display_image, (968, 390), method=Image.Resampling.LANCZOS, centering=(0.5, 0.50))
+        photo = ImageOps.fit(display_image, (968, 390), method=Image.Resampling.LANCZOS, centering=(0.5, hero_center_y))
         photo = ImageEnhance.Contrast(photo).enhance(1.05)
         content.paste(photo, (56, 808))
         draw = ImageDraw.Draw(content)
@@ -818,7 +818,7 @@ def render(story_id, story, name, handle, source_label, image, credit_prefix="SO
         content_paths.append(content_path)
 
     story_canvas = Image.new("RGB", (1080, 1920), INK)
-    story_hero = ImageOps.fit(display_image, (1080, 1240), method=Image.Resampling.LANCZOS, centering=(0.5, 0.50))
+    story_hero = ImageOps.fit(display_image, (1080, 1240), method=Image.Resampling.LANCZOS, centering=(0.5, min(0.50, hero_center_y + 0.10)))
     story_canvas.paste(story_hero, (0, 0))
     draw = ImageDraw.Draw(story_canvas)
     draw.rectangle((0, 0, 1080, 14), fill=CYAN)

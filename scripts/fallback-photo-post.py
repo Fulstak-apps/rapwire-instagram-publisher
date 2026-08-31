@@ -259,6 +259,9 @@ def enrich_editorial(story):
             elif "sauce walka" in expanded_blob and "stream" in expanded_blob:
                 headline = "SAUCE WALKA'S STREAMING RUN BY THE NUMBERS"
                 enriched["title"] = headline
+            elif "durk" in expanded_blob and "flacka" in expanded_blob and "payment" in expanded_blob:
+                headline = "FLACKA TESTIFIES ABOUT ALLEGED PAYMENT TALKS IN DURK TRIAL"
+                enriched["title"] = headline
     if any(term in f" {headline.casefold()} {body.casefold()} " for term in (
         " charged", " indictment", " trial", " prosecutors allege", " arrested", " accused",
     )) and "presumed innocent" not in body.casefold():
@@ -335,6 +338,17 @@ def researched_context(story, max_age_hours):
             [
                 "https://streamscharts.com/channels/saucewalka102?platform=kick",
                 "https://music.apple.com/us/artist/sauce-walka/911597254",
+            ],
+        )
+    if "durk" in blob and "shooter testified" in blob and "million dollars" in blob:
+        return (
+            "Trap Lore Ross reports that cooperating witness Keith 'Flacka' Jones testified about alleged payment discussions connected to the 2022 shooting at the center of Lil Durk's federal trial. "
+            "Ross says Jones described being told that $1 million was available, later seeking payment, and ultimately receiving nothing; those statements are testimony and remain subject to cross-examination. "
+            "The federal indictment separately alleges that money or music opportunities were promised in the charged murder-for-hire conspiracy, while earlier reporting identified Jones as a cooperating witness who pleaded guilty. "
+            "Lil Durk has pleaded not guilty. The government's claims remain allegations, and he is presumed innocent unless proven guilty beyond a reasonable doubt.",
+            [
+                "https://thesource.com/2026/08/25/otf-vonni-otf-jam-and-flacka-to-testify-against-lil-durk-in-murder-for-hire-trial/",
+                "https://www.courthousenews.com/wp-content/uploads/2025/11/united-states-vs-banks-second-superseding-indictment.pdf",
             ],
         )
     stop = {

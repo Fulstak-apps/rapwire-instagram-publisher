@@ -144,6 +144,19 @@ async function publishThreadsCarousel(item) {
   return threadsPost("threads_publish", { creation_id: carousel.id });
 }
 
+function contentPromiseIsKept(item) {
+  const headline = String(item.headline || "");
+  const body = String(item.body || "");
+  const words = body.trim().split(/\s+/).filter(Boolean);
+  const numberedDetails = body.match(/\b\d+\.\s/g) || [];
+  const numericPromise = headline.match(/\b(?:all|top)\s+(\d+)\b/i);
+  if (/\b(?:ranked|ranking|top\s+\d+|best\s+\d+)\b/i.test(headline)) {
+    const required = numericPromise ? Number(numericPromise[1]) : 5;
+    return numberedDetails.length >= required;
+  }
+  return words.length >= 30 && /[.!?]/.test(body);
+}
+
 const rollingDayStart = Date.now() - 24 * 60 * 60 * 1000;
 let feedPostsPublishedInRollingDay = 0;
 for (const file of files) {
@@ -170,6 +183,10 @@ for (const file of files) {
     }
     if (item.text_overflow_checked !== true || item.rendered_body_text !== item.body) {
       console.error(`Skipped ${file}: copy completeness/overflow verification failed`);
+      continue;
+    }
+    if (item.content_claim_checked !== true || item.editorial_substance_checked !== true || !contentPromiseIsKept(item)) {
+      console.error(`Skipped ${file}: headline promise or editorial substance check failed`);
       continue;
     }
     if (!hasPublishableVisual(item)) {

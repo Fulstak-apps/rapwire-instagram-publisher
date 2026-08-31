@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import re
 import sys
 from datetime import date, datetime
 from pathlib import Path
@@ -50,6 +51,20 @@ def main():
             errors += fail("text_overflow_checked must be true; unreviewed layouts cannot publish")
         if item.get("rendered_body_text") != item.get("body"):
             errors += fail("rendered_body_text must exactly match body; clipped or omitted copy cannot publish")
+        if item.get("content_claim_checked") is not True:
+            errors += fail("content_claim_checked must be true")
+        if item.get("editorial_substance_checked") is not True:
+            errors += fail("editorial_substance_checked must be true")
+        headline = item.get("headline", "")
+        body = item.get("body", "")
+        numbered_details = re.findall(r"\b\d+\.\s", body)
+        numeric_promise = re.search(r"\b(?:all|top)\s+(\d+)\b", headline, re.I)
+        if re.search(r"\b(?:ranked|ranking|top\s+\d+|best\s+\d+)\b", headline, re.I):
+            required_details = int(numeric_promise.group(1)) if numeric_promise else 5
+            if len(numbered_details) < required_details:
+                errors += fail("ranking/list headline does not include the promised details")
+        elif len(re.findall(r"\b\w+\b", body)) < 30:
+            errors += fail("body is too thin to be informative")
     if not item.get("identity_checked"):
         errors += fail("identity_checked must be true")
     if item.get("photo_recency_checked") is not True:

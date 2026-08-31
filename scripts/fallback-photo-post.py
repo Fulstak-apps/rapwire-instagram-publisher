@@ -88,6 +88,68 @@ def page_image(link):
     return ""
 
 
+def page_html(link):
+    request = urllib.request.Request(link, headers={"User-Agent": "Mozilla/5.0 RapWire24/6.0"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return response.read(2_500_000).decode("utf-8", "ignore")
+
+
+def extract_pmc_ranking(link):
+    """Extract factual rank/title pairs from PMC list pages such as Billboard."""
+    try:
+        page = page_html(link)
+    except Exception as error:
+        print(f"Ranking extraction failed: {error}")
+        return []
+    match = re.search(r"var\s+pmcGalleryExports\s*=\s*(\{.*?\});\s*(?:\n|$)", page, re.S)
+    if not match:
+        return []
+    try:
+        gallery = json.loads(match.group(1)).get("gallery", [])
+    except Exception as error:
+        print(f"Ranking JSON failed: {error}")
+        return []
+    rows = []
+    for entry in gallery:
+        try:
+            rank = int(entry.get("positionDisplay"))
+        except (TypeError, ValueError):
+            continue
+        title = clean(entry.get("title"))
+        if title:
+            rows.append((rank, title.strip("“”\"")))
+    return sorted(set(rows), key=lambda row: row[0])
+
+
+def enrich_editorial(story):
+    """Make the carousel deliver the promise made by its headline."""
+    enriched = dict(story)
+    headline = clean(story["title"])
+    enriched["original_title"] = headline
+    body = clean(story["description"])
+    if re.search(r"\b(?:ranked|ranking|best\s+\d+|top\s+\d+)\b", headline, re.I):
+        ranking = extract_pmc_ranking(story["link"])
+        if not ranking:
+            print(f"Fallback candidate skipped (ranking details unavailable): {headline[:90]}")
+            return None
+        top = ranking[:10]
+        base = re.sub(r"\s*:\s*All\s+\d+\s+Tracks\s+Ranked.*$", "", headline, flags=re.I).strip()
+        enriched["title"] = f"{base}: BILLBOARD'S TOP 10" if base else "BILLBOARD'S TOP 10 TRACKS"
+        entries = " ".join(f"{rank}. {title}." for rank, title in top)
+        enriched["description"] = f"Billboard ranked all {len(ranking)} tracks from the project. Its top 10 are: {entries}"
+        enriched["content_detail_count"] = len(top)
+        enriched["content_format"] = "ranking"
+        return enriched
+    words = re.findall(r"\b\w+\b", body)
+    sentences = [part for part in re.split(r"(?<=[.!?])\s+", body) if part.strip()]
+    if len(words) < 30 or len(sentences) < 2:
+        print(f"Fallback candidate skipped (insufficient editorial substance): {headline[:90]}")
+        return None
+    enriched["content_detail_count"] = len(sentences)
+    enriched["content_format"] = "news_summary"
+    return enriched
+
+
 def candidates():
     now = datetime.now(timezone.utc)
     cutoff = now.timestamp() - MAX_AGE_HOURS * 3600
@@ -355,7 +417,10 @@ def main():
         return
     story = name = handle = profile = second_source = image_url = image = None
     for candidate_story, identity in selections:
-        candidate_second_source = independent_source(candidate_story["title"], candidate_story["link"])
+        candidate_story = enrich_editorial(candidate_story)
+        if not candidate_story:
+            continue
+        candidate_second_source = independent_source(candidate_story.get("original_title", candidate_story["title"]), candidate_story["link"])
         if not candidate_second_source:
             print(f"Fallback candidate skipped (no independent source): {candidate_story['title'][:90]}")
             continue
@@ -397,6 +462,10 @@ def main():
         "body": body,
         "rendered_body_text": body,
         "text_overflow_checked": True,
+        "content_claim_checked": True,
+        "editorial_substance_checked": True,
+        "content_detail_count": story.get("content_detail_count", 0),
+        "content_format": story.get("content_format", "news_summary"),
         "slides": [str(path.relative_to(ROOT)) for path in slides],
         "story": str(story_path.relative_to(ROOT)),
         "caption": f"{body}\n\n{name} ({handle})\n\nSource and photo credit: {source_label}\n{story['link']}\n\n#RapWire247 #HipHopNews",
@@ -409,7 +478,7 @@ def main():
         "identity_checked": True,
         "source_urls": [story["link"], second_source],
         "source_url": story["link"],
-        "source_title": story["title"],
+        "source_title": story.get("original_title", story["title"]),
         "source_published_at": story["published"].isoformat(),
         "source_image_url": image_url,
         "source_image_role": "credited authentic source photo used in the fallback editorial layout",

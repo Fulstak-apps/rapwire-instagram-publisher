@@ -166,12 +166,10 @@ def enrich_editorial(story):
         return enriched
     words = re.findall(r"\b\w+\b", body)
     sentences = [part for part in re.split(r"(?<=[.!?])\s+", body) if part.strip()]
-    if len(words) < 30 or len(sentences) < 2:
-        body = f"{headline.rstrip('.!?')}. {body}".strip()
-        enriched["description"] = body
-        words = re.findall(r"\b\w+\b", body)
-        sentences = [part for part in re.split(r"(?<=[.!?])\s+", body) if part.strip()]
-    if len(words) < 30 or len(sentences) < 2:
+    # Never inflate a thin excerpt by repeating the headline. The source copy
+    # must independently contain enough complete reporting to teach the reader
+    # something beyond the cover.
+    if len(words) < 45 or len(sentences) < 2:
         print(f"Fallback candidate skipped (insufficient editorial substance): {headline[:90]}")
         return None
     enriched["content_detail_count"] = len(sentences)
@@ -311,9 +309,10 @@ def repeats_recent_event(title, artist, prior_topics):
     for prior_title, prior_artist in prior_topics:
         if artist.casefold() != prior_artist.casefold():
             continue
-        # Three shared non-generic words is a strong signal that two headlines
-        # cover the same event even when their exact source URLs differ.
-        if len(current & topic_terms(prior_title, prior_artist)) >= 3:
+        # Two shared non-generic words is enough when the featured artist is
+        # identical (for example, "Daisy Chain"). This prevents several posts
+        # about different angles of the same event from flooding the grid.
+        if len(current & topic_terms(prior_title, prior_artist)) >= 2:
             return True
     return False
 

@@ -157,7 +157,8 @@ function contentPromiseIsKept(item) {
     const required = numericPromise ? Number(numericPromise[1] || numericPromise[2]) : 5;
     return numberedDetails.length >= required;
   }
-  return words.length >= 30 && /[.!?]/.test(body);
+  const completeSentences = body.match(/[^.!?]+[.!?]+/g) || [];
+  return words.length >= 45 && completeSentences.length >= 2;
 }
 
 const rollingDayStart = Date.now() - 24 * 60 * 60 * 1000;

@@ -65,8 +65,8 @@ def main():
             required_details = int(next(group for group in numeric_promise.groups() if group)) if numeric_promise else 5
             if len(numbered_details) < required_details:
                 errors += fail("ranking/list headline does not include the promised details")
-        elif len(re.findall(r"\b\w+\b", body)) < 30:
-            errors += fail("body is too thin to be informative")
+        elif len(re.findall(r"\b\w+\b", body)) < 45 or len(re.findall(r"[^.!?]+[.!?]+", body)) < 2:
+            errors += fail("body must contain at least 45 words and two complete sentences")
     if not item.get("identity_checked"):
         errors += fail("identity_checked must be true")
     if item.get("photo_recency_checked") is not True:

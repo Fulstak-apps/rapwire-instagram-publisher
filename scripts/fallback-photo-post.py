@@ -24,8 +24,10 @@ FEED_URLS = [
 APPROVED_SOURCE_HANDLES = {
     "akademiks", "nojumper", "poetikflakkonews", "traploreross", "saycheesetv",
     "theshaderoom", "worldstarhiphop", "detroitrapnews", "detroitrapdaily",
+    "gta6latest",
 }
-RAP_CENTRIC_SOURCES = APPROVED_SOURCE_HANDLES - {"theshaderoom"}
+RAP_CENTRIC_SOURCES = APPROVED_SOURCE_HANDLES - {"theshaderoom", "gta6latest"}
+APPROVED_CATEGORY_EXCEPTIONS = {"gta6latest"}
 RAP_TOPIC_TERMS = (
     " rap ", " rapper", "hip-hop", "hip hop", "album", "mixtape", "single", "track",
     "song", "producer", "bars", "verse", "freestyle", "diss", "beef", "record label",
@@ -71,6 +73,8 @@ def rap_relevant(title, description, handle):
     blob = f" {clean(title).casefold()} {clean(description).casefold()} "
     if any(term in blob for term in NON_NEWS_FLUFF):
         return False
+    if handle in APPROVED_CATEGORY_EXCEPTIONS:
+        return bool(re.search(r"\bgta\s*6\b|\bgrand theft auto\b|\brockstar games\b", blob))
     return handle in RAP_CENTRIC_SOURCES or any(term in blob for term in RAP_TOPIC_TERMS)
 
 
@@ -362,7 +366,11 @@ def select_stories():
             continue
         if story["link"] in seen or story["title"].casefold() in seen:
             continue
-        matched = next(((name, handle, profile) for name, handle, profile in registry if name.casefold() in blob), None)
+        matched = (
+            ("GTA 6", "@gta6latest", "https://www.instagram.com/gta6latest/")
+            if handle == "gta6latest"
+            else next(((name, artist_handle, profile) for name, artist_handle, profile in registry if name.casefold() in blob), None)
+        )
         if not matched:
             continue
         story["source_handle"] = handle

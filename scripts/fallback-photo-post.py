@@ -46,6 +46,15 @@ def clean(value):
     return re.sub(r"\s+", " ", value).strip()
 
 
+def is_truncated_copy(value):
+    """Reject feed excerpts that visibly stop before the reported fact is complete."""
+    text = clean(value)
+    return bool(
+        re.search(r"(?:\[\s*(?:…|\.{3})\s*\]|(?:…|\.{3}))\s*$", text)
+        or re.search(r"\[\s*(?:…|\.{3})\s*\]", text)
+    )
+
+
 def local_name(element):
     return element.tag.rsplit("}", 1)[-1].lower()
 
@@ -131,6 +140,9 @@ def enrich_editorial(story):
     headline = clean(story["title"])
     enriched["original_title"] = headline
     body = clean(story["description"])
+    if is_truncated_copy(body):
+        print(f"Fallback candidate skipped (truncated feed excerpt): {headline[:90]}")
+        return None
     if re.search(r"\b(?:ranked|ranking|best\s+\d+|\d+\s+best|top\s+\d+)\b", headline, re.I):
         ranking = extract_pmc_ranking(story["link"])
         if not ranking:
@@ -264,8 +276,51 @@ def seen_values():
     return seen
 
 
+def recent_topic_titles():
+    titles = []
+    for path in QUEUE.glob("*.json"):
+        try:
+            item = json.loads(path.read_text())
+        except Exception:
+            continue
+        if item.get("status") not in {"ready", "published"}:
+            continue
+        title = clean(item.get("source_title") or item.get("headline"))
+        artist = clean(item.get("featured_artist") or item.get("featured_person"))
+        if title:
+            titles.append((title, artist))
+    return titles
+
+
+def topic_terms(title, artist=""):
+    stop = {
+        "about", "after", "again", "against", "album", "and", "are", "at", "best", "but",
+        "for", "from", "has", "have", "her", "his", "how", "into", "music", "new", "news",
+        "of", "on", "says", "she", "that", "the", "their", "they", "this", "to", "with",
+    }
+    artist_words = {word.casefold() for word in re.findall(r"[A-Za-z0-9']+", artist)}
+    return {
+        word.casefold()
+        for word in re.findall(r"[A-Za-z0-9']+", title)
+        if len(word) >= 4 and word.casefold() not in stop and word.casefold() not in artist_words
+    }
+
+
+def repeats_recent_event(title, artist, prior_topics):
+    current = topic_terms(title, artist)
+    for prior_title, prior_artist in prior_topics:
+        if artist.casefold() != prior_artist.casefold():
+            continue
+        # Three shared non-generic words is a strong signal that two headlines
+        # cover the same event even when their exact source URLs differ.
+        if len(current & topic_terms(prior_title, prior_artist)) >= 3:
+            return True
+    return False
+
+
 def select_stories():
     seen = seen_values()
+    prior_topics = recent_topic_titles()
     registry = known_handles()
     keywords = ("lil durk", "trial", "rapper", "rap", "hip-hop", "hip hop", "album", "song", "music", "concert", "grammy")
     ranked = []
@@ -275,6 +330,9 @@ def select_stories():
             continue
         matched = next(((name, handle, profile) for name, handle, profile in registry if name.casefold() in blob), None)
         if not matched:
+            continue
+        if repeats_recent_event(story["title"], matched[0], prior_topics):
+            print(f"Fallback candidate skipped (recent event already covered): {story['title'][:90]}")
             continue
         score = sum(3 for keyword in keywords if keyword in blob)
         if "lil durk" in blob or "trial" in blob:

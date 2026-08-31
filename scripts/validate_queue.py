@@ -57,6 +57,8 @@ def main():
             errors += fail("editorial_substance_checked must be true")
         headline = item.get("headline", "")
         body = item.get("body", "")
+        if re.search(r"(?:\[\s*(?:…|\.{3})\s*\]|(?:…|\.{3}))\s*$", body) or re.search(r"\[\s*(?:…|\.{3})\s*\]", body):
+            errors += fail("body contains a visibly truncated source excerpt")
         numbered_details = re.findall(r"\b\d+\.\s", body)
         numeric_promise = re.search(r"\b(?:all|top)\s+(\d+)\b|\b(\d+)\s+best\b", headline, re.I)
         if re.search(r"\b(?:ranked|ranking|top\s+\d+|best\s+\d+|\d+\s+best)\b", headline, re.I):

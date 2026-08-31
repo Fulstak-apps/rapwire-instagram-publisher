@@ -31,6 +31,7 @@ def main():
         "source_urls", "visual_asset_source_urls", "visual_asset_rights",
         "photo_capture_date", "photo_recency_checked", "photo_event_relevance",
         "photo_context_summary", "publish_after", "source_image_url", "source_image_role",
+        "layout_template",
     ]
     for field in required:
         if field not in item or item[field] in ("", [], None):
@@ -43,6 +44,8 @@ def main():
     if item.get("body") and not item.get("caption", "").startswith(item["body"]):
         errors += fail("caption must begin with the exact slide-2 body")
     if item.get("status") == "ready":
+        if item.get("layout_template") != "rapwire-unified-v3":
+            errors += fail("layout_template must be rapwire-unified-v3")
         if item.get("text_overflow_checked") is not True:
             errors += fail("text_overflow_checked must be true; unreviewed layouts cannot publish")
         if item.get("rendered_body_text") != item.get("body"):

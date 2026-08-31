@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import base64, html, io, json, os, re, subprocess, sys, traceback, urllib.parse, urllib.request
+import base64, html, importlib.util, io, json, os, re, subprocess, sys, traceback, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -163,26 +163,12 @@ def person_tag(draw,x,y,label):
 
 def assets(story_id,headline,story,art_bytes,source_label,person_label='',carousel_pages=2,extra_context=''):
     MEDIA.mkdir(parents=True,exist_ok=True); art_path=MEDIA/f'{story_id}-art.jpg'; art_path.write_bytes(art_bytes); art=Image.open(art_path).convert('RGB')
-    W,H=1080,1350; s1=Image.new('RGB',(W,H),INK); d=ImageDraw.Draw(s1); hero=ImageOps.fit(art,(1000,800),method=Image.Resampling.LANCZOS,centering=(.5,.42)); s1.paste(hero,(40,40))
-    d.rectangle((40,40,300,100),fill=YELLOW); d.text((58,52),'RAPWIRE',font=fnt(32),fill=INK); person_tag(d,58,800,person_label); d.rectangle((40,875,1040,1310),fill=PURPLE)
-    hf,ls=fit_head(d,headline,900,4); y=915
-    for line in ls:d.text((72,y),line,font=hf,fill=PAPER); y+=hf.size+9
-    d.text((72,1260),f'{source_label.upper()}  •  RAPWIRE',font=fnt(25),fill=YELLOW); p1=MEDIA/f'{story_id}-slide-1.jpg'; s1.save(p1,quality=94,optimize=True)
     full_copy=' '.join(part for part in (story.replace('\n',' '),extra_context.replace('\n',' ')) if part).strip()
-    measure=ImageDraw.Draw(Image.new('RGB',(W,H),PAPER)); body_font=fnt(38,False); all_lines=wrap(measure,full_copy,body_font,900)
-    if not all_lines: raise ValueError('Body copy is empty; publication blocked')
-    pages=[all_lines[i:i+17] for i in range(0,len(all_lines),17)]
-    if len(pages)>9: raise ValueError('Copy requires more than Instagram carousel limit; publication blocked')
-    slides=[p1]
-    for page_index,page_lines in enumerate(pages,start=2):
-        page=Image.new('RGB',(W,H),PAPER); d=ImageDraw.Draw(page); d.rectangle((0,0,W,18),fill=YELLOW); d.text((58,55),'RAPWIRE',font=fnt(46),fill=INK); d.text((58,135),'WHAT HAPPENED' if page_index==2 else 'CONTINUED',font=fnt(38),fill=RED); d.rectangle((58,195,1022,201),fill=INK)
-        y=245
-        for line in page_lines:d.text((70,y),line,font=body_font,fill=INK); y+=51
-        d.rectangle((58,1195,1022,1201),fill=YELLOW); d.text((58,1235),f'SOURCE: {source_label}',font=fnt(27),fill=INK); d.text((58,1285),f'SLIDE {page_index}  •  RAPWIRE',font=fnt(25),fill=RED)
-        page_path=MEDIA/f'{story_id}-slide-{page_index}.jpg'; page.save(page_path,quality=94,optimize=True); slides.append(page_path)
-    SW,SH=1080,1920; st=Image.new('RGB',(SW,SH),INK); sd=ImageDraw.Draw(st); sa=ImageOps.fit(art,(980,1040),method=Image.Resampling.LANCZOS,centering=(.5,.4)); st.paste(sa,(50,50)); sd.rectangle((50,50,290,102),fill=YELLOW); sd.text((68,60),'RAPWIRE',font=fnt(30),fill=INK); person_tag(sd,62,1050,person_label); sd.rectangle((50,1135,1030,1860),fill=PURPLE); sf,sl=fit_head(sd,headline,880,5); y=1185
-    for line in sl:sd.text((78,y),line,font=sf,fill=PAPER); y+=sf.size+8
-    sd.text((78,1800),'RAPWIRE  •  HIP-HOP / CULTURE / NEWS',font=fnt(25),fill=YELLOW); ps=MEDIA/f'{story_id}-story.jpg'; st.save(ps,quality=94,optimize=True); return slides,ps
+    parts=person_label.rsplit('  ',1); name=parts[0].title() if parts else ''; handle=parts[1] if len(parts)==2 else ''
+    spec=importlib.util.spec_from_file_location('rapwire_shared_layout',ROOT/'scripts'/'fallback-photo-post.py')
+    layout=importlib.util.module_from_spec(spec); spec.loader.exec_module(layout); layout.MEDIA=MEDIA
+    _,_,slides,story_path=layout.render(story_id,{'title':headline,'description':full_copy},name,handle,source_label,art,credit_prefix='SOURCE ART')
+    return slides,story_path
 
 def next_id(headline):
     nums=[]
@@ -202,6 +188,7 @@ def main():
     person_label=f'{person.upper()}  {handle}' if person and handle else ''; extra_context=clean(choice.get('extra_context')); pages=2
     print('AI selected:',headline); print('Using source visual reference:',reference_url); print('Generating source-grounded comic art...'); art=generate_art(choice['visual_scene'],headline,reference_data); sid=next_id(headline); slides,ps=assets(sid,headline,story,art,label,person_label,pages,extra_context); url=src['link']; identity_line=f'\n\n{person} ({handle})' if person_label else ''
     item={'id':sid,'status':'ready','ai_generated_art':True,'visual_asset_type':'ai_original_comic_from_source_reference','visual_asset_rights':'owned','created_at':datetime.now(timezone.utc).isoformat(),'source':label,'source_urls':[url],'source_url':url,'source_guid':src['id'],'source_title':src['title'],'source_published_at':src['published'],'story_fingerprint':re.sub(r'[^a-z0-9]+',' ',headline.lower()).strip(),'headline':headline,'body':story,'rendered_body_text':story,'text_overflow_checked':True,'caption':f'{caption}{identity_line}\n\nSource: {label}\n{url}\n\nFollow @rapwire247 for hip-hop, culture and real-time news.','threads_text':f'{headline}{identity_line}\n\n{story}\n\nSource: {label}','featured_person':person,'artist_instagram_handle':handle,'artist_handle_verified':bool(handle),'artist_handle_verified_url':profile,'displayed_artist_label':person_label,'visual_prompt':choice['visual_scene'],'slides':[str(p.relative_to(ROOT)) for p in slides],'carousel_page_count':len(slides),'story':str(ps.relative_to(ROOT)),'media_urls':[],'source_image_url':reference_url,'source_photo_used':True,'source_image_role':'factual visual reference only; final art is a materially redrawn original editorial illustration'}
+    item['layout_template']='rapwire-unified-v3'
     (QUEUE/f'{sid}.json').write_text(json.dumps(item,indent=2)+'\n'); print('Created:',sid)
 if __name__=='__main__':
     if os.environ.get('USE_OPENAI_AUTOMATION','false').lower() == 'true':

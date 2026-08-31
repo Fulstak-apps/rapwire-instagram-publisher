@@ -164,6 +164,14 @@ for (const file of files) {
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
+    if (item.layout_template !== "rapwire-unified-v3") {
+      console.error(`Skipped ${file}: asset does not use the locked RapWire template`);
+      continue;
+    }
+    if (item.text_overflow_checked !== true || item.rendered_body_text !== item.body) {
+      console.error(`Skipped ${file}: copy completeness/overflow verification failed`);
+      continue;
+    }
     if (!hasPublishableVisual(item)) {
       console.error(`Skipped ${file}: current/relevant visual verification is missing`);
       continue;

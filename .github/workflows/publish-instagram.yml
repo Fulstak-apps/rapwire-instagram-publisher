@@ -38,7 +38,7 @@ jobs:
       - name: Install AI publisher dependencies
         run: python -m pip install --disable-pip-version-check pillow openai
 
-      - name: Pull all fresh Narro stories and let AI choose one
+      - name: Search RapWire, XXL and Billboard feeds for a verified story
         continue-on-error: true
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -47,7 +47,7 @@ jobs:
       - name: Remove stale queue items
         run: python scripts/expire-stale-queue.py
 
-      - name: Block every legacy/non-AI graphic
+      - name: Block legacy, incomplete or ungrounded graphics
         run: node scripts/block-non-ai.mjs
 
       - name: Commit AI assets and queue state

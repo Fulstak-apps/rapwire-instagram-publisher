@@ -17,7 +17,12 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE, MEDIA = ROOT / "queue", ROOT / "media"
-FEED_URL = os.environ["NARRO_RSS_URL"]
+FEED_URL = os.environ.get("NARRO_RSS_URL", "https://rss.narro.info/e4f36406-0664-4e77-b672-7e0682966a9f")
+FEED_URLS = [
+    FEED_URL,
+    "https://www.xxlmag.com/feed/",
+    "https://www.billboard.com/c/music/rb-hip-hop/feed/",
+]
 MAX_AGE_HOURS = max(48, int(os.environ.get("MAX_SOURCE_AGE_HOURS", "48")))
 FONT_BOLD = next(path for path in (
     str(ROOT / "assets" / "fonts" / "Anton-Regular.ttf"),
@@ -84,21 +89,26 @@ def page_image(link):
 
 
 def candidates():
-    request = urllib.request.Request(FEED_URL, headers={"User-Agent": "RapWire24-Fallback/5.0"})
-    with urllib.request.urlopen(request, timeout=30) as response:
-        root = ET.fromstring(response.read())
     now = datetime.now(timezone.utc)
     cutoff = now.timestamp() - MAX_AGE_HOURS * 3600
     result = []
-    for item in root.iter():
-        if local_name(item) != "item":
+    for feed_url in FEED_URLS:
+        request = urllib.request.Request(feed_url, headers={"User-Agent": "Mozilla/5.0 RapWire24/6.0"})
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                root = ET.fromstring(response.read())
+        except Exception as error:
+            print(f"Fallback feed unavailable: {feed_url} ({error})")
             continue
-        title = child_text(item, "title")
-        description = child_text(item, "description") or child_text(item, "encoded")
-        link = child_text(item, "link") or FEED_URL
-        dt = published_at(child_text(item, "pubDate") or child_text(item, "published") or child_text(item, "date"))
-        if title and dt and cutoff <= dt.timestamp() <= now.timestamp():
-            result.append({"title": title, "description": description, "link": link, "published": dt, "image": feed_image(item, link)})
+        for item in root.iter():
+            if local_name(item) != "item":
+                continue
+            title = child_text(item, "title")
+            description = child_text(item, "description") or child_text(item, "encoded")
+            link = child_text(item, "link") or feed_url
+            dt = published_at(child_text(item, "pubDate") or child_text(item, "published") or child_text(item, "date"))
+            if title and dt and cutoff <= dt.timestamp() <= now.timestamp():
+                result.append({"title": title, "description": description, "link": link, "published": dt, "image": feed_image(item, link)})
     return sorted(result, key=lambda row: row["published"], reverse=True)
 
 
@@ -145,6 +155,9 @@ def known_handles():
         ("Drake", "@champagnepapi", "https://www.instagram.com/champagnepapi/"),
         ("50 Cent", "@50cent", "https://www.instagram.com/50cent/"),
         ("Rick Ross", "@richforever", "https://www.instagram.com/richforever/"),
+        ("Tyler, The Creator", "@feliciathegoat", "https://www.instagram.com/feliciathegoat/"),
+        ("Young Thug", "@thuggerthugger1", "https://www.instagram.com/thuggerthugger1/"),
+        ("Cardi B", "@iamcardib", "https://www.instagram.com/iamcardib/"),
     ]
     for path in QUEUE.glob("*.json"):
         try:
@@ -244,7 +257,7 @@ def artist_tag(draw, name, handle, y):
     draw.text((77, y + 10), label, font=selected, fill=PAPER)
 
 
-def render(story_id, story, name, handle, source_label, image):
+def render(story_id, story, name, handle, source_label, image, credit_prefix="SOURCE PHOTO"):
     MEDIA.mkdir(exist_ok=True)
     headline = clean(story["title"])
     body = clean(story["description"])
@@ -266,7 +279,7 @@ def render(story_id, story, name, handle, source_label, image):
     for line in lines:
         draw.text((54, y), line, font=selected, fill=PAPER)
         y += selected.size + 8
-    draw.text((56, 1284), f"SOURCE PHOTO: {source_label.upper()}", font=font(24), fill=CYAN)
+    draw.text((56, 1284), f"{credit_prefix}: {source_label.upper()}", font=font(24), fill=CYAN)
     slide1_path = MEDIA / f"{story_id}-slide-1.jpg"
     slide1.save(slide1_path, quality=94, subsampling=0)
 
@@ -296,7 +309,7 @@ def render(story_id, story, name, handle, source_label, image):
         draw.rectangle((56, 808, 1024, 1198), outline=CYAN, width=4)
         artist_tag(draw, name, handle, 1118)
         draw.rectangle((56, 1240, 1024, 1245), fill=CYAN)
-        draw.text((56, 1270), f"SOURCE PHOTO: {source_label.upper()}", font=font(24), fill=CYAN)
+        draw.text((56, 1270), f"{credit_prefix}: {source_label.upper()}", font=font(24), fill=CYAN)
         content_path = MEDIA / f"{story_id}-slide-{page_number}.jpg"
         content.save(content_path, quality=94, subsampling=0)
         content_paths.append(content_path)
@@ -315,7 +328,7 @@ def render(story_id, story, name, handle, source_label, image):
     for line in lines:
         draw.text((54, y), line, font=selected, fill=PAPER)
         y += selected.size + 8
-    draw.text((56, 1810), f"SOURCE PHOTO: {source_label.upper()}", font=font(24), fill=CYAN)
+    draw.text((56, 1810), f"{credit_prefix}: {source_label.upper()}", font=font(24), fill=CYAN)
     story_path = MEDIA / f"{story_id}-story.jpg"
     story_canvas.save(story_path, quality=94, subsampling=0)
     return headline, body, [slide1_path, *content_paths], story_path
@@ -378,6 +391,7 @@ def main():
         "date": datetime.now(timezone.utc).date().isoformat(),
         "timezone": "America/Detroit",
         "type": "fallback_photo_news",
+        "layout_template": "rapwire-unified-v3",
         "story_type": "current_news",
         "headline": headline,
         "body": body,

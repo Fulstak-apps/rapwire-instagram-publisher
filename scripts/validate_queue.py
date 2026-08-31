@@ -42,6 +42,11 @@ def main():
         errors += fail("timezone must be America/Detroit")
     if item.get("body") and not item.get("caption", "").startswith(item["body"]):
         errors += fail("caption must begin with the exact slide-2 body")
+    if item.get("status") == "ready":
+        if item.get("text_overflow_checked") is not True:
+            errors += fail("text_overflow_checked must be true; unreviewed layouts cannot publish")
+        if item.get("rendered_body_text") != item.get("body"):
+            errors += fail("rendered_body_text must exactly match body; clipped or omitted copy cannot publish")
     if not item.get("identity_checked"):
         errors += fail("identity_checked must be true")
     if item.get("photo_recency_checked") is not True:
@@ -89,8 +94,8 @@ def main():
                 errors += fail(f"invalid HTTPS URL in {url_field}: {url}")
 
     slides = item.get("slides", [])
-    if len(slides) not in {2, 3}:
-        errors += fail("carousel must contain two slides by default or three when additional context is necessary")
+    if not 2 <= len(slides) <= 10:
+        errors += fail("carousel must contain 2-10 slides; use enough slides to show all copy without clipping")
     for relative in slides:
         path = root / relative
         if not path.exists():

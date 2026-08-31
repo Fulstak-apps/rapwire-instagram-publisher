@@ -113,8 +113,8 @@ def existing():
 def choose(cands):
     text='\n\n'.join(f"[{i}] TITLE: {c['title']}\nPUBLISHED: {c['published']}\nSOURCE: {c['link']}\nDETAILS: {c['description']}" for i,c in enumerate(cands))
     prompt=f'''You are the senior editor for RapWire 24/7. Pick ONE fresh story from this Narro feed for the next Instagram post. Prioritize major hip-hop/rap artist news, music, beefs, legal/crime stories involving hip-hop, viral culture, Detroit/Atlanta/LA/NY hip-hop, major entertainment, and visually strong events. Reject generic fluff, unrelated politics, weather, stale/recycled items, and stories with no meaningful connection to hip-hop/culture. Do not invent facts. Use web search to verify the selected story if needed.
-Return ONLY JSON: {{"index":number,"headline":string,"story":string,"caption":string,"visual_scene":string,"source_label":string,"featured_person":string,"instagram_handle":string,"instagram_profile_url":string,"carousel_pages":2_or_3,"extra_context":string}}.
-Headline max 95 chars and factual. Story must clearly explain what happened. visual_scene must describe the specific moment shown by the selected source/event photo, not an invented or abstract scene. Verify the featured person's current official Instagram account with web search; never infer the handle from the stage name. carousel_pages must be 2 by default. Choose 3 only when the story contains multiple distinct verified developments that cannot be explained clearly on two slides; put those additional facts in extra_context. Never choose more than 3.
+Return ONLY JSON: {{"index":number,"headline":string,"story":string,"caption":string,"visual_scene":string,"source_label":string,"featured_person":string,"instagram_handle":string,"instagram_profile_url":string,"extra_context":string}}.
+Headline must be factual. Story must clearly explain what happened in complete sentences. visual_scene must describe the specific moment shown by the selected source/event photo, not an invented or abstract scene. Verify the featured person's current official Instagram account with web search; never infer the handle from the stage name. Include all necessary verified context in story or extra_context; the renderer will add as many carousel pages as readability requires.
 CANDIDATES:\n{text}'''
     r=client.responses.create(model='gpt-5.6-luna',tools=[{'type':'web_search'}],input=prompt)
     m=re.search(r'\{.*\}',r.output_text.strip(),re.S)
@@ -150,10 +150,10 @@ def wrap(d,text,font,width):
     return lines
 
 def fit_head(d,text,width,max_lines):
-    for n in range(74,39,-3):
+    for n in range(74,27,-3):
         ff=fnt(n); ls=wrap(d,text.upper(),ff,width)
         if len(ls)<=max_lines:return ff,ls
-    ff=fnt(40); return ff,wrap(d,text.upper(),ff,width)[:max_lines]
+    raise ValueError('Headline cannot fit without clipping; publication blocked')
 
 def person_tag(draw,x,y,label):
     if not label:return
@@ -168,15 +168,18 @@ def assets(story_id,headline,story,art_bytes,source_label,person_label='',carous
     hf,ls=fit_head(d,headline,900,4); y=915
     for line in ls:d.text((72,y),line,font=hf,fill=PAPER); y+=hf.size+9
     d.text((72,1260),f'{source_label.upper()}  •  RAPWIRE',font=fnt(25),fill=YELLOW); p1=MEDIA/f'{story_id}-slide-1.jpg'; s1.save(p1,quality=94,optimize=True)
-    s2=Image.new('RGB',(W,H),PAPER); d=ImageDraw.Draw(s2); d.rectangle((0,0,W,18),fill=YELLOW); d.text((58,55),'RAPWIRE',font=fnt(46),fill=INK); d.text((58,135),'WHAT HAPPENED',font=fnt(38),fill=RED); d.rectangle((58,195,1022,201),fill=INK)
-    ls=wrap(d,story.replace('\n',' '),fnt(38,False),900); y=245
-    for line in ls[:17]:d.text((70,y),line,font=fnt(38,False),fill=INK); y+=51
-    d.rectangle((58,1195,1022,1201),fill=YELLOW); d.text((58,1235),f'SOURCE: {source_label}',font=fnt(27),fill=INK); d.text((58,1285),'HIP-HOP  •  CULTURE  •  REAL-TIME',font=fnt(25),fill=RED); p2=MEDIA/f'{story_id}-slide-2.jpg'; s2.save(p2,quality=94,optimize=True); slides=[p1,p2]
-    if carousel_pages==3 and extra_context:
-        s3=Image.new('RGB',(W,H),PAPER); d=ImageDraw.Draw(s3); d.rectangle((0,0,W,18),fill=YELLOW); d.text((58,55),'RAPWIRE',font=fnt(46),fill=INK); d.text((58,135),'MORE CONTEXT',font=fnt(38),fill=RED); d.rectangle((58,195,1022,201),fill=INK)
-        ls=wrap(d,extra_context.replace('\n',' '),fnt(38,False),900); y=245
-        for line in ls[:17]:d.text((70,y),line,font=fnt(38,False),fill=INK); y+=51
-        d.rectangle((58,1195,1022,1201),fill=YELLOW); d.text((58,1235),f'SOURCE: {source_label}',font=fnt(27),fill=INK); d.text((58,1285),'SLIDE 3 OF 3  •  RAPWIRE',font=fnt(25),fill=RED); p3=MEDIA/f'{story_id}-slide-3.jpg'; s3.save(p3,quality=94,optimize=True); slides.append(p3)
+    full_copy=' '.join(part for part in (story.replace('\n',' '),extra_context.replace('\n',' ')) if part).strip()
+    measure=ImageDraw.Draw(Image.new('RGB',(W,H),PAPER)); body_font=fnt(38,False); all_lines=wrap(measure,full_copy,body_font,900)
+    if not all_lines: raise ValueError('Body copy is empty; publication blocked')
+    pages=[all_lines[i:i+17] for i in range(0,len(all_lines),17)]
+    if len(pages)>9: raise ValueError('Copy requires more than Instagram carousel limit; publication blocked')
+    slides=[p1]
+    for page_index,page_lines in enumerate(pages,start=2):
+        page=Image.new('RGB',(W,H),PAPER); d=ImageDraw.Draw(page); d.rectangle((0,0,W,18),fill=YELLOW); d.text((58,55),'RAPWIRE',font=fnt(46),fill=INK); d.text((58,135),'WHAT HAPPENED' if page_index==2 else 'CONTINUED',font=fnt(38),fill=RED); d.rectangle((58,195,1022,201),fill=INK)
+        y=245
+        for line in page_lines:d.text((70,y),line,font=body_font,fill=INK); y+=51
+        d.rectangle((58,1195,1022,1201),fill=YELLOW); d.text((58,1235),f'SOURCE: {source_label}',font=fnt(27),fill=INK); d.text((58,1285),f'SLIDE {page_index}  •  RAPWIRE',font=fnt(25),fill=RED)
+        page_path=MEDIA/f'{story_id}-slide-{page_index}.jpg'; page.save(page_path,quality=94,optimize=True); slides.append(page_path)
     SW,SH=1080,1920; st=Image.new('RGB',(SW,SH),INK); sd=ImageDraw.Draw(st); sa=ImageOps.fit(art,(980,1040),method=Image.Resampling.LANCZOS,centering=(.5,.4)); st.paste(sa,(50,50)); sd.rectangle((50,50,290,102),fill=YELLOW); sd.text((68,60),'RAPWIRE',font=fnt(30),fill=INK); person_tag(sd,62,1050,person_label); sd.rectangle((50,1135,1030,1860),fill=PURPLE); sf,sl=fit_head(sd,headline,880,5); y=1185
     for line in sl:sd.text((78,y),line,font=sf,fill=PAPER); y+=sf.size+8
     sd.text((78,1800),'RAPWIRE  •  HIP-HOP / CULTURE / NEWS',font=fnt(25),fill=YELLOW); ps=MEDIA/f'{story_id}-story.jpg'; st.save(ps,quality=94,optimize=True); return slides,ps
@@ -196,9 +199,9 @@ def main():
     if not headline or not story:raise RuntimeError('AI returned empty editorial copy')
     reference_url,reference_data=discover_source_image(src); person=clean(choice.get('featured_person')); handle=clean(choice.get('instagram_handle')); profile=clean(choice.get('instagram_profile_url')); handle=handle if handle.startswith('@') else ''
     if person and (not handle or 'instagram.com/' not in profile):raise RuntimeError('Featured-person Instagram handle was not verified')
-    person_label=f'{person.upper()}  {handle}' if person and handle else ''; extra_context=clean(choice.get('extra_context')); pages=3 if str(choice.get('carousel_pages') or 2).strip()=='3' and extra_context else 2
+    person_label=f'{person.upper()}  {handle}' if person and handle else ''; extra_context=clean(choice.get('extra_context')); pages=2
     print('AI selected:',headline); print('Using source visual reference:',reference_url); print('Generating source-grounded comic art...'); art=generate_art(choice['visual_scene'],headline,reference_data); sid=next_id(headline); slides,ps=assets(sid,headline,story,art,label,person_label,pages,extra_context); url=src['link']; identity_line=f'\n\n{person} ({handle})' if person_label else ''
-    item={'id':sid,'status':'ready','ai_generated_art':True,'visual_asset_type':'ai_original_comic_from_source_reference','visual_asset_rights':'owned','created_at':datetime.now(timezone.utc).isoformat(),'source':label,'source_urls':[url],'source_url':url,'source_guid':src['id'],'source_title':src['title'],'source_published_at':src['published'],'story_fingerprint':re.sub(r'[^a-z0-9]+',' ',headline.lower()).strip(),'headline':headline,'body':story,'caption':f'{caption}{identity_line}\n\nSource: {label}\n{url}\n\nFollow @rapwire247 for hip-hop, culture and real-time news.','threads_text':f'{headline}{identity_line}\n\n{story}\n\nSource: {label}','featured_person':person,'artist_instagram_handle':handle,'artist_handle_verified':bool(handle),'artist_handle_verified_url':profile,'displayed_artist_label':person_label,'visual_prompt':choice['visual_scene'],'slides':[str(p.relative_to(ROOT)) for p in slides],'carousel_page_count':len(slides),'story':str(ps.relative_to(ROOT)),'media_urls':[],'source_image_url':reference_url,'source_photo_used':True,'source_image_role':'factual visual reference only; final art is a materially redrawn original editorial illustration'}
+    item={'id':sid,'status':'ready','ai_generated_art':True,'visual_asset_type':'ai_original_comic_from_source_reference','visual_asset_rights':'owned','created_at':datetime.now(timezone.utc).isoformat(),'source':label,'source_urls':[url],'source_url':url,'source_guid':src['id'],'source_title':src['title'],'source_published_at':src['published'],'story_fingerprint':re.sub(r'[^a-z0-9]+',' ',headline.lower()).strip(),'headline':headline,'body':story,'rendered_body_text':story,'text_overflow_checked':True,'caption':f'{caption}{identity_line}\n\nSource: {label}\n{url}\n\nFollow @rapwire247 for hip-hop, culture and real-time news.','threads_text':f'{headline}{identity_line}\n\n{story}\n\nSource: {label}','featured_person':person,'artist_instagram_handle':handle,'artist_handle_verified':bool(handle),'artist_handle_verified_url':profile,'displayed_artist_label':person_label,'visual_prompt':choice['visual_scene'],'slides':[str(p.relative_to(ROOT)) for p in slides],'carousel_page_count':len(slides),'story':str(ps.relative_to(ROOT)),'media_urls':[],'source_image_url':reference_url,'source_photo_used':True,'source_image_role':'factual visual reference only; final art is a materially redrawn original editorial illustration'}
     (QUEUE/f'{sid}.json').write_text(json.dumps(item,indent=2)+'\n'); print('Created:',sid)
 if __name__=='__main__':
     if os.environ.get('USE_OPENAI_AUTOMATION','false').lower() == 'true':

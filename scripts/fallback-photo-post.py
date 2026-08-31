@@ -220,12 +220,20 @@ def wrap(draw, text, selected_font, width):
 
 
 def fitted_headline(draw, text, width, max_lines):
-    for size in range(78, 39, -2):
+    for size in range(78, 27, -2):
         selected = font(size)
         lines = wrap(draw, text.upper(), selected, width)
         if len(lines) <= max_lines:
             return selected, lines
-    return font(40), wrap(draw, text.upper(), font(40), width)[:max_lines]
+    raise ValueError("Headline cannot fit without clipping; publication blocked")
+
+
+def paginate_text(draw, text, selected_font, width, lines_per_page):
+    """Return every line of copy, split into pages without discarding text."""
+    lines = wrap(draw, text, selected_font, width)
+    if not lines:
+        raise ValueError("Body copy is empty; publication blocked")
+    return [lines[index:index + lines_per_page] for index in range(0, len(lines), lines_per_page)]
 
 
 def artist_tag(draw, name, handle, y):
@@ -238,12 +246,10 @@ def artist_tag(draw, name, handle, y):
 
 def render(story_id, story, name, handle, source_label, image):
     MEDIA.mkdir(exist_ok=True)
-    headline = clean(story["title"])[:105]
+    headline = clean(story["title"])
     body = clean(story["description"])
     if len(body) < 80:
         body = f"{headline}. RapWire is tracking this developing story from {source_label}."
-    if len(body) > 720:
-        body = body[:720].rsplit(" ", 1)[0] + "…"
 
     slide1 = Image.new("RGB", (1080, 1350), INK)
     hero = ImageOps.fit(image, (1080, 850), method=Image.Resampling.LANCZOS, centering=(0.5, 0.38))
@@ -264,29 +270,36 @@ def render(story_id, story, name, handle, source_label, image):
     slide1_path = MEDIA / f"{story_id}-slide-1.jpg"
     slide1.save(slide1_path, quality=94, subsampling=0)
 
-    slide2 = Image.new("RGB", (1080, 1350), INK)
-    draw = ImageDraw.Draw(slide2)
-    draw.rectangle((0, 0, 1080, 16), fill=CYAN)
-    draw.text((56, 48), "RAPWIRE", font=font(48), fill=PAPER)
-    draw.text((270, 48), "24/7", font=font(48), fill=CYAN)
-    draw.text((56, 132), "WHAT WE KNOW", font=font(48), fill=YELLOW)
-    draw.rectangle((56, 202, 1024, 209), fill=CYAN)
-    draw.rounded_rectangle((48, 236, 1032, 768), radius=18, fill=(24, 28, 34), outline=(49, 59, 68), width=3)
-    selected = font(35, False)
-    y = 278
-    for line in wrap(draw, body, selected, 900)[:10]:
-        draw.text((84, y), line, font=selected, fill=PAPER)
-        y += 51
-    photo = ImageOps.fit(image, (968, 390), method=Image.Resampling.LANCZOS, centering=(0.5, 0.38))
-    photo = ImageEnhance.Contrast(photo).enhance(1.05)
-    slide2.paste(photo, (56, 808))
-    draw = ImageDraw.Draw(slide2)
-    draw.rectangle((56, 808, 1024, 1198), outline=CYAN, width=4)
-    artist_tag(draw, name, handle, 1118)
-    draw.rectangle((56, 1240, 1024, 1245), fill=CYAN)
-    draw.text((56, 1270), f"SOURCE PHOTO: {source_label.upper()}", font=font(24), fill=CYAN)
-    slide2_path = MEDIA / f"{story_id}-slide-2.jpg"
-    slide2.save(slide2_path, quality=94, subsampling=0)
+    measurement = ImageDraw.Draw(Image.new("RGB", (1080, 1350), INK))
+    body_font = font(35, False)
+    body_pages = paginate_text(measurement, body, body_font, 900, 10)
+    content_paths = []
+    for page_number, page_lines in enumerate(body_pages, start=2):
+        content = Image.new("RGB", (1080, 1350), INK)
+        draw = ImageDraw.Draw(content)
+        draw.rectangle((0, 0, 1080, 16), fill=CYAN)
+        draw.text((56, 48), "RAPWIRE", font=font(48), fill=PAPER)
+        draw.text((270, 48), "24/7", font=font(48), fill=CYAN)
+        section = "WHAT WE KNOW" if page_number == 2 else "CONTINUED"
+        draw.text((56, 132), section, font=font(48), fill=YELLOW)
+        draw.text((940, 144), f"{page_number}", font=font(30), fill=CYAN)
+        draw.rectangle((56, 202, 1024, 209), fill=CYAN)
+        draw.rounded_rectangle((48, 236, 1032, 768), radius=18, fill=(24, 28, 34), outline=(49, 59, 68), width=3)
+        y = 278
+        for line in page_lines:
+            draw.text((84, y), line, font=body_font, fill=PAPER)
+            y += 51
+        photo = ImageOps.fit(image, (968, 390), method=Image.Resampling.LANCZOS, centering=(0.5, 0.38))
+        photo = ImageEnhance.Contrast(photo).enhance(1.05)
+        content.paste(photo, (56, 808))
+        draw = ImageDraw.Draw(content)
+        draw.rectangle((56, 808, 1024, 1198), outline=CYAN, width=4)
+        artist_tag(draw, name, handle, 1118)
+        draw.rectangle((56, 1240, 1024, 1245), fill=CYAN)
+        draw.text((56, 1270), f"SOURCE PHOTO: {source_label.upper()}", font=font(24), fill=CYAN)
+        content_path = MEDIA / f"{story_id}-slide-{page_number}.jpg"
+        content.save(content_path, quality=94, subsampling=0)
+        content_paths.append(content_path)
 
     story_canvas = Image.new("RGB", (1080, 1920), INK)
     story_hero = ImageOps.fit(image, (1080, 1240), method=Image.Resampling.LANCZOS, centering=(0.5, 0.38))
@@ -305,7 +318,7 @@ def render(story_id, story, name, handle, source_label, image):
     draw.text((56, 1810), f"SOURCE PHOTO: {source_label.upper()}", font=font(24), fill=CYAN)
     story_path = MEDIA / f"{story_id}-story.jpg"
     story_canvas.save(story_path, quality=94, subsampling=0)
-    return headline, body, [slide1_path, slide2_path], story_path
+    return headline, body, [slide1_path, *content_paths], story_path
 
 
 def next_id(headline):
@@ -368,6 +381,8 @@ def main():
         "story_type": "current_news",
         "headline": headline,
         "body": body,
+        "rendered_body_text": body,
+        "text_overflow_checked": True,
         "slides": [str(path.relative_to(ROOT)) for path in slides],
         "story": str(story_path.relative_to(ROOT)),
         "caption": f"{body}\n\n{name} ({handle})\n\nSource and photo credit: {source_label}\n{story['link']}\n\n#RapWire247 #HipHopNews",

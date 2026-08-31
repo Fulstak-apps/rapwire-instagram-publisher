@@ -250,6 +250,8 @@ def independent_source(title, primary_link, max_age_hours=MAX_AGE_HOURS):
         return "https://apnews.com/article/aa831e6e96d6e75f315ae35633c6cd06"
     if "cardi" in lowered and "diamond" in lowered:
         return "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cardi+b"
+    if "gta 6 online" in lowered and "launch" in lowered:
+        return "https://www.forbes.com/sites/paultassi/2026/08/29/why-rockstar-has-said-nothing-about-gta-6-online-so-far/"
     # Instagram titles often begin with a source handle and contain hashtags,
     # ellipses, or conversational filler. Search the factual core instead of
     # treating that social wrapper as part of the story.
@@ -568,9 +570,20 @@ def main():
         print("Fallback: a ready queue item already exists.")
         return
     selections = select_stories()
+    fresh_links = {story["link"] for story, _identity in selections}
+    # Load the verified backlog behind the fresh candidates on every run. A
+    # fresh selection can still fail later because its second source or image
+    # is unavailable; the backlog must remain reachable in that case.
+    backup_selections = [
+        selection
+        for selection in select_stories(max_age_hours=BACKUP_AGE_HOURS, backup_mode=True)
+        if selection[0]["link"] not in fresh_links
+    ]
     if not selections:
         print(f"Fallback: no fresh candidate passed; opening verified backup window to {BACKUP_AGE_HOURS} hours.")
-        selections = select_stories(max_age_hours=BACKUP_AGE_HOURS, backup_mode=True)
+    elif backup_selections:
+        print(f"Fallback: loaded {len(backup_selections)} verified backup candidate(s) behind the fresh queue.")
+    selections.extend(backup_selections)
     if not selections:
         print("Fallback: no non-duplicate approved-source story matched the verified-handle registry.")
         return

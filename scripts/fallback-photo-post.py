@@ -558,6 +558,25 @@ def artist_tag(draw, name, handle, y):
     draw.text((77, y + 10), label, font=selected, fill=PAPER)
 
 
+def brand_badge(draw, x, y, size):
+    """Draw a text-measured brand badge with equal padding on every side."""
+    label = "RAPWIRE 24/7"
+    selected = font(size)
+    box = draw.textbbox((0, 0), label, font=selected)
+    text_width = box[2] - box[0]
+    text_height = box[3] - box[1]
+    horizontal_padding, vertical_padding = 18, 10
+    right = x + text_width + horizontal_padding * 2
+    bottom = y + text_height + vertical_padding * 2
+    draw.rounded_rectangle((x, y, right, bottom), radius=10, fill=INK, outline=CYAN, width=3)
+    draw.text(
+        (x + horizontal_padding - box[0], y + vertical_padding - box[1]),
+        label,
+        font=selected,
+        fill=CYAN,
+    )
+
+
 def render(story_id, story, name, handle, source_label, image, credit_prefix="SOURCE PHOTO"):
     MEDIA.mkdir(exist_ok=True)
     headline = clean(story["title"])
@@ -571,8 +590,7 @@ def render(story_id, story, name, handle, source_label, image, credit_prefix="SO
     slide1.paste(hero, (0, 0))
     draw = ImageDraw.Draw(slide1)
     draw.rectangle((0, 0, 1080, 12), fill=CYAN)
-    draw.rounded_rectangle((54, 48, 290, 106), radius=10, fill=INK, outline=CYAN, width=3)
-    draw.text((74, 60), "RAPWIRE 24/7", font=font(27), fill=CYAN)
+    brand_badge(draw, 54, 48, 27)
     artist_tag(draw, name, handle, 760)
     draw.rectangle((0, 836, 1080, 1350), fill=INK)
     selected, lines = fitted_headline(draw, headline, 970, 4)
@@ -620,8 +638,7 @@ def render(story_id, story, name, handle, source_label, image, credit_prefix="SO
     story_canvas.paste(story_hero, (0, 0))
     draw = ImageDraw.Draw(story_canvas)
     draw.rectangle((0, 0, 1080, 14), fill=CYAN)
-    draw.rounded_rectangle((54, 190, 300, 250), radius=10, fill=INK, outline=CYAN, width=3)
-    draw.text((74, 202), "RAPWIRE 24/7", font=font(28), fill=CYAN)
+    brand_badge(draw, 54, 190, 28)
     artist_tag(draw, name, handle, 1115)
     draw.rectangle((0, 1200, 1080, 1920), fill=INK)
     selected, lines = fitted_headline(draw, headline, 970, 5)

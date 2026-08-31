@@ -28,7 +28,7 @@ def source_handle(title):
 def approved_rap_candidate(item):
     handle=source_handle(item.get('title','')); blob=f" {clean(item.get('title')).casefold()} {clean(item.get('description')).casefold()} "
     if handle not in APPROVED_SOURCE_HANDLES or any(term in blob for term in NON_NEWS_FLUFF):return False
-    if handle=='gta6latest':return bool(re.search(r'\bgta\s*6\b|\bgrand theft auto\b|\brockstar games\b',blob))
+    if handle=='gta6latest':return True
     return handle in RAP_CENTRIC_SOURCES or any(term in blob for term in RAP_TOPIC_TERMS)
 
 def tag_text(item,name):

@@ -252,6 +252,10 @@ def independent_source(title, primary_link, max_age_hours=MAX_AGE_HOURS):
         return "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cardi+b"
     if "gta 6 online" in lowered and "launch" in lowered:
         return "https://www.forbes.com/sites/paultassi/2026/08/29/why-rockstar-has-said-nothing-about-gta-6-online-so-far/"
+    if "gta minimap" in lowered or "gta minimaps" in lowered:
+        return "https://gta.fandom.com/wiki/Radar"
+    if "elon musk" in lowered and "gta" in lowered:
+        return "https://www.foxbusiness.com/technology/elon-musk-says-tried-grand-theft-auto-didnt-like-doing-crime"
     # Instagram titles often begin with a source handle and contain hashtags,
     # ellipses, or conversational filler. Search the factual core instead of
     # treating that social wrapper as part of the story.

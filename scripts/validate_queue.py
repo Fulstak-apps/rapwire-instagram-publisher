@@ -58,9 +58,9 @@ def main():
         headline = item.get("headline", "")
         body = item.get("body", "")
         numbered_details = re.findall(r"\b\d+\.\s", body)
-        numeric_promise = re.search(r"\b(?:all|top)\s+(\d+)\b", headline, re.I)
-        if re.search(r"\b(?:ranked|ranking|top\s+\d+|best\s+\d+)\b", headline, re.I):
-            required_details = int(numeric_promise.group(1)) if numeric_promise else 5
+        numeric_promise = re.search(r"\b(?:all|top)\s+(\d+)\b|\b(\d+)\s+best\b", headline, re.I)
+        if re.search(r"\b(?:ranked|ranking|top\s+\d+|best\s+\d+|\d+\s+best)\b", headline, re.I):
+            required_details = int(next(group for group in numeric_promise.groups() if group)) if numeric_promise else 5
             if len(numbered_details) < required_details:
                 errors += fail("ranking/list headline does not include the promised details")
         elif len(re.findall(r"\b\w+\b", body)) < 30:

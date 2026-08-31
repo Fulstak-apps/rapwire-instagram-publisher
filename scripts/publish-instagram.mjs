@@ -149,9 +149,9 @@ function contentPromiseIsKept(item) {
   const body = String(item.body || "");
   const words = body.trim().split(/\s+/).filter(Boolean);
   const numberedDetails = body.match(/\b\d+\.\s/g) || [];
-  const numericPromise = headline.match(/\b(?:all|top)\s+(\d+)\b/i);
-  if (/\b(?:ranked|ranking|top\s+\d+|best\s+\d+)\b/i.test(headline)) {
-    const required = numericPromise ? Number(numericPromise[1]) : 5;
+  const numericPromise = headline.match(/\b(?:all|top)\s+(\d+)\b|\b(\d+)\s+best\b/i);
+  if (/\b(?:ranked|ranking|top\s+\d+|best\s+\d+|\d+\s+best)\b/i.test(headline)) {
+    const required = numericPromise ? Number(numericPromise[1] || numericPromise[2]) : 5;
     return numberedDetails.length >= required;
   }
   return words.length >= 30 && /[.!?]/.test(body);

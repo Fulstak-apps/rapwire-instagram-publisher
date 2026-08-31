@@ -127,17 +127,25 @@ def enrich_editorial(story):
     headline = clean(story["title"])
     enriched["original_title"] = headline
     body = clean(story["description"])
-    if re.search(r"\b(?:ranked|ranking|best\s+\d+|top\s+\d+)\b", headline, re.I):
+    if re.search(r"\b(?:ranked|ranking|best\s+\d+|\d+\s+best|top\s+\d+)\b", headline, re.I):
         ranking = extract_pmc_ranking(story["link"])
         if not ranking:
             print(f"Fallback candidate skipped (ranking details unavailable): {headline[:90]}")
             return None
-        top = ranking[:10]
-        base = re.sub(r"\s*:\s*All\s+\d+\s+Tracks\s+Ranked.*$", "", headline, flags=re.I).strip()
-        enriched["title"] = f"{base}: BILLBOARD'S TOP 10" if base else "BILLBOARD'S TOP 10 TRACKS"
-        entries = " ".join(f"{rank}. {title}." for rank, title in top)
-        enriched["description"] = f"Billboard ranked all {len(ranking)} tracks from the project. Its top 10 are: {entries}"
-        enriched["content_detail_count"] = len(top)
+        claimed = re.search(r"\b(\d+)\s+best\b|\b(?:all|top)\s+(\d+)\b", headline, re.I)
+        promised = int(next(group for group in claimed.groups() if group)) if claimed else len(ranking)
+        if promised > 10:
+            shown = ranking[:10]
+            base = re.sub(r"\s*:\s*All\s+\d+\s+Tracks\s+Ranked.*$", "", headline, flags=re.I).strip()
+            enriched["title"] = f"{base}: BILLBOARD'S TOP 10" if base else "BILLBOARD'S TOP 10 TRACKS"
+            intro = f"Billboard ranked all {len(ranking)} entries. Its top 10 are:"
+        else:
+            shown = ranking[:promised]
+            enriched["title"] = headline
+            intro = f"The source identified {promised} standout entries. Here they are in ranked order:"
+        entries = " ".join(f"{rank}. {title}." for rank, title in shown)
+        enriched["description"] = f"{intro} {entries}"
+        enriched["content_detail_count"] = len(shown)
         enriched["content_format"] = "ranking"
         return enriched
     words = re.findall(r"\b\w+\b", body)

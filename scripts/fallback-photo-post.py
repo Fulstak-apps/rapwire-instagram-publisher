@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps, ImageStat
 
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE, MEDIA = ROOT / "queue", ROOT / "media"
@@ -241,6 +241,9 @@ def enrich_editorial(story):
             elif "skilla baby" in expanded_blob and "price of fame" in expanded_blob:
                 headline = "SKILLA BABY'S 'PRICE OF FAME' ROLLOUT EXPANDS"
                 enriched["title"] = headline
+            elif "sauce walka" in expanded_blob and "stream" in expanded_blob:
+                headline = "SAUCE WALKA'S STREAMING RUN BY THE NUMBERS"
+                enriched["title"] = headline
     if any(term in f" {headline.casefold()} {body.casefold()} " for term in (
         " charged", " indictment", " trial", " prosecutors allege", " arrested", " accused",
     )) and "presumed innocent" not in body.casefold():
@@ -307,6 +310,16 @@ def researched_context(story, max_age_hours):
             [
                 "https://news.pollstar.com/2026/08/28/skilla-baby-sets-the-price-of-fame-tour-in-support-of-latest-album/",
                 "https://www.aol.com/articles/skilla-baby-close-price-fame-155317000.html",
+            ],
+        )
+    if "sauce walka" in blob and "stream" in blob:
+        return (
+            "Akademiks says Sauce Walka made money from streaming this week. Third-party tracker Streams Charts reports that his Kick channel logged more than 364 hours of airtime "
+            "during its latest 30-day window and averaged 189 viewers, while Apple Music lists 'Thuggin'' as his latest music release dated August 28. "
+            "No platform or contract source independently published an exact earnings figure, so RapWire is reporting the activity and leaving the dollar amount unconfirmed.",
+            [
+                "https://streamscharts.com/channels/saucewalka102?platform=kick",
+                "https://music.apple.com/us/artist/sauce-walka/911597254",
             ],
         )
     stop = {
@@ -700,6 +713,26 @@ def brand_badge(draw, x, y, size):
     )
 
 
+def editorial_focus(image):
+    """Remove bright social-post chrome before cropping the actual subject."""
+    width, height = image.size
+    top_band = image.crop((0, 0, width, max(1, int(height * 0.18)))).convert("L")
+    bottom_band = image.crop((0, int(height * 0.82), width, height)).convert("L")
+    top_mean = ImageStat.Stat(top_band).mean[0]
+    bottom_mean = ImageStat.Stat(bottom_band).mean[0]
+    has_bright_social_header = top_mean > 220
+    top = int(height * 0.18) if has_bright_social_header else 0
+    # Social screenshots with a bright header generally carry account chrome
+    # below the subject as well. Remove that whole footer instead of leaving
+    # clipped usernames or post text in Story crops.
+    bottom = int(height * 0.78) if has_bright_social_header else (
+        int(height * 0.82) if bottom_mean > 220 else height
+    )
+    if bottom - top >= int(height * 0.50):
+        return image.crop((0, top, width, bottom))
+    return image
+
+
 def render(story_id, story, name, handle, source_label, image, credit_prefix="SOURCE PHOTO"):
     MEDIA.mkdir(exist_ok=True)
     headline = clean(story["title"])
@@ -707,8 +740,9 @@ def render(story_id, story, name, handle, source_label, image, credit_prefix="SO
     if len(body) < 80:
         body = f"{headline}. RapWire is tracking this developing story from {source_label}."
 
+    display_image = editorial_focus(image)
     slide1 = Image.new("RGB", (1080, 1350), INK)
-    hero = ImageOps.fit(image, (1080, 850), method=Image.Resampling.LANCZOS, centering=(0.5, 0.38))
+    hero = ImageOps.fit(display_image, (1080, 850), method=Image.Resampling.LANCZOS, centering=(0.5, 0.50))
     hero = ImageEnhance.Contrast(hero).enhance(1.04)
     slide1.paste(hero, (0, 0))
     draw = ImageDraw.Draw(slide1)
@@ -744,7 +778,7 @@ def render(story_id, story, name, handle, source_label, image, credit_prefix="SO
         for line in page_lines:
             draw.text((84, y), line, font=body_font, fill=PAPER)
             y += 51
-        photo = ImageOps.fit(image, (968, 390), method=Image.Resampling.LANCZOS, centering=(0.5, 0.38))
+        photo = ImageOps.fit(display_image, (968, 390), method=Image.Resampling.LANCZOS, centering=(0.5, 0.50))
         photo = ImageEnhance.Contrast(photo).enhance(1.05)
         content.paste(photo, (56, 808))
         draw = ImageDraw.Draw(content)
@@ -757,7 +791,7 @@ def render(story_id, story, name, handle, source_label, image, credit_prefix="SO
         content_paths.append(content_path)
 
     story_canvas = Image.new("RGB", (1080, 1920), INK)
-    story_hero = ImageOps.fit(image, (1080, 1240), method=Image.Resampling.LANCZOS, centering=(0.5, 0.38))
+    story_hero = ImageOps.fit(display_image, (1080, 1240), method=Image.Resampling.LANCZOS, centering=(0.5, 0.50))
     story_canvas.paste(story_hero, (0, 0))
     draw = ImageDraw.Draw(story_canvas)
     draw.rectangle((0, 0, 1080, 14), fill=CYAN)

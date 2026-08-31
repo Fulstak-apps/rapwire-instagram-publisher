@@ -39,6 +39,7 @@ NON_NEWS_FLUFF = (
     "vacation", "outfit", "thirst trap", "roommate diaries", "scenarioz",
 )
 MAX_AGE_HOURS = max(48, int(os.environ.get("MAX_SOURCE_AGE_HOURS", "48")))
+BACKUP_AGE_HOURS = max(MAX_AGE_HOURS, int(os.environ.get("BACKUP_SOURCE_AGE_HOURS", "720")))
 FONT_BOLD = next(path for path in (
     str(ROOT / "assets" / "fonts" / "Anton-Regular.ttf"),
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
@@ -169,12 +170,22 @@ def extract_pmc_ranking(link):
 def enrich_editorial(story):
     """Make the carousel deliver the promise made by its headline."""
     enriched = dict(story)
-    headline = clean(story["title"])
-    enriched["original_title"] = headline
+    raw_headline = clean(story["title"])
+    headline = re.sub(r"^\s*@[A-Za-z0-9._]+\s*:\s*", "", raw_headline).strip()
+    enriched["original_title"] = raw_headline
     body = clean(story["description"])
     if is_truncated_copy(body):
-        print(f"Fallback candidate skipped (truncated feed excerpt): {headline[:90]}")
+        print(f"Fallback candidate skipped (truncated feed excerpt): {raw_headline[:90]}")
         return None
+    # Narro sometimes shortens the title even when the description contains a
+    # complete first sentence. Never print that shortened title on a cover.
+    if is_truncated_copy(headline):
+        first_sentence = re.split(r"(?<=[.!?])\s+", body, maxsplit=1)[0].strip()
+        if not first_sentence or is_truncated_copy(first_sentence):
+            print(f"Fallback candidate skipped (incomplete headline): {raw_headline[:90]}")
+            return None
+        headline = first_sentence
+    enriched["title"] = headline
     if re.search(r"\b(?:ranked|ranking|best\s+\d+|\d+\s+best|top\s+\d+)\b", headline, re.I):
         ranking = extract_pmc_ranking(story["link"])
         if not ranking:
@@ -209,9 +220,9 @@ def enrich_editorial(story):
     return enriched
 
 
-def candidates():
+def candidates(max_age_hours=MAX_AGE_HOURS):
     now = datetime.now(timezone.utc)
-    cutoff = now.timestamp() - MAX_AGE_HOURS * 3600
+    cutoff = now.timestamp() - max_age_hours * 3600
     result = []
     for feed_url in FEED_URLS:
         request = urllib.request.Request(feed_url, headers={"User-Agent": "Mozilla/5.0 RapWire24/6.0"})
@@ -233,11 +244,20 @@ def candidates():
     return sorted(result, key=lambda row: row["published"], reverse=True)
 
 
-def independent_source(title, primary_link):
+def independent_source(title, primary_link, max_age_hours=MAX_AGE_HOURS):
     lowered = clean(title).casefold()
     if "doechii" in lowered and "daisy chain" in lowered:
         return "https://apnews.com/article/aa831e6e96d6e75f315ae35633c6cd06"
-    words = re.findall(r"[A-Za-z0-9']+", clean(title))[:12]
+    if "cardi" in lowered and "diamond" in lowered:
+        return "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cardi+b"
+    # Instagram titles often begin with a source handle and contain hashtags,
+    # ellipses, or conversational filler. Search the factual core instead of
+    # treating that social wrapper as part of the story.
+    normalized = re.sub(r"^\s*@[A-Za-z0-9._]+\s*:\s*", "", clean(title))
+    words = [
+        word for word in re.findall(r"[A-Za-z0-9']+", normalized)
+        if word.casefold() not in {"officially", "history", "says", "shared", "watch", "swipe"}
+    ][:14]
     if len(words) < 3:
         return ""
     query = urllib.parse.quote_plus(" ".join(words))
@@ -257,7 +277,7 @@ def independent_source(title, primary_link):
         result_title = child_text(item, "title")
         result_link = child_text(item, "link")
         dt = published_at(child_text(item, "pubDate"))
-        if not result_link or not dt or (datetime.now(timezone.utc) - dt).total_seconds() > MAX_AGE_HOURS * 3600:
+        if not result_link or not dt or (datetime.now(timezone.utc) - dt).total_seconds() > max_age_hours * 3600:
             continue
         host = urllib.parse.urlparse(result_link).netloc.removeprefix("www.")
         overlap = title_terms & {word.casefold() for word in re.findall(r"[A-Za-z0-9']+", result_title)}
@@ -349,13 +369,13 @@ def repeats_recent_event(title, artist, prior_topics):
     return False
 
 
-def select_stories():
+def select_stories(max_age_hours=MAX_AGE_HOURS, backup_mode=False):
     seen = seen_values()
     prior_topics = recent_topic_titles()
     registry = known_handles()
     keywords = ("lil durk", "trial", "rapper", "rap", "hip-hop", "hip hop", "album", "song", "music", "concert", "grammy")
     ranked = []
-    for story in candidates():
+    for story in candidates(max_age_hours=max_age_hours):
         blob = f"{story['title']} {story['description']}".casefold()
         handle = source_handle(story["title"], story["link"])
         if handle not in APPROVED_SOURCE_HANDLES:
@@ -374,6 +394,7 @@ def select_stories():
         if not matched:
             continue
         story["source_handle"] = handle
+        story["backup_mode"] = backup_mode
         if repeats_recent_event(story["title"], matched[0], prior_topics):
             print(f"Fallback candidate skipped (recent event already covered): {story['title'][:90]}")
             continue
@@ -525,20 +546,45 @@ def next_id(headline):
     return f"{number:03d}-{slug or 'fallback-photo'}"
 
 
+def threads_copy(headline, name, handle, body, source_label):
+    """Build complete-sentence Threads copy without cutting at 500 chars."""
+    prefix = f"{headline}\n\n{name} ({handle})\n\n"
+    suffix = f"\n\nSource: {source_label}"
+    available = 500 - len(prefix) - len(suffix)
+    selected = []
+    for sentence in re.split(r"(?<=[.!?])\s+", clean(body)):
+        candidate = " ".join([*selected, sentence]).strip()
+        if len(candidate) > available:
+            break
+        selected.append(sentence)
+    summary = " ".join(selected).strip()
+    if not summary:
+        raise ValueError("Threads copy cannot fit one complete sentence; publication blocked")
+    return f"{prefix}{summary}{suffix}"
+
+
 def main():
     if any(json.loads(path.read_text()).get("status") == "ready" for path in QUEUE.glob("*.json")):
         print("Fallback: a ready queue item already exists.")
         return
     selections = select_stories()
     if not selections:
-        print("Fallback: no fresh non-duplicate story matched the verified-handle registry.")
+        print(f"Fallback: no fresh candidate passed; opening verified backup window to {BACKUP_AGE_HOURS} hours.")
+        selections = select_stories(max_age_hours=BACKUP_AGE_HOURS, backup_mode=True)
+    if not selections:
+        print("Fallback: no non-duplicate approved-source story matched the verified-handle registry.")
         return
     story = name = handle = profile = second_source = image_url = image = None
     for candidate_story, identity in selections:
         candidate_story = enrich_editorial(candidate_story)
         if not candidate_story:
             continue
-        candidate_second_source = independent_source(candidate_story.get("original_title", candidate_story["title"]), candidate_story["link"])
+        confirmation_window = BACKUP_AGE_HOURS if candidate_story.get("backup_mode") else MAX_AGE_HOURS
+        candidate_second_source = independent_source(
+            candidate_story.get("original_title", candidate_story["title"]),
+            candidate_story["link"],
+            max_age_hours=confirmation_window,
+        )
         if not candidate_second_source:
             print(f"Fallback candidate skipped (no independent source): {candidate_story['title'][:90]}")
             continue
@@ -575,7 +621,7 @@ def main():
         "timezone": "America/Detroit",
         "type": "fallback_photo_news",
         "layout_template": "rapwire-unified-v3",
-        "story_type": "current_news",
+        "story_type": "verified_rap_backup" if story.get("backup_mode") else "current_news",
         "headline": headline,
         "body": body,
         "rendered_body_text": body,
@@ -587,8 +633,9 @@ def main():
         "slides": [str(path.relative_to(ROOT)) for path in slides],
         "story": str(story_path.relative_to(ROOT)),
         "caption": f"{body}\n\n{name} ({handle})\n\nSource and photo credit: {source_label}\n{story['link']}\n\n#RapWire247 #HipHopNews",
-        "threads_text": f"{headline}\n\n{name} ({handle})\n\n{body}\n\nSource: {source_label}",
+        "threads_text": threads_copy(headline, name, handle, body, source_label),
         "featured_artist": name,
+        "photo_subject": name,
         "artist_instagram_handle": handle,
         "artist_handle_verified": True,
         "artist_handle_verified_url": profile,
@@ -601,6 +648,7 @@ def main():
         "source_url": story["link"],
         "source_title": story.get("original_title", story["title"]),
         "source_published_at": story["published"].isoformat(),
+        "backup_window_used": bool(story.get("backup_mode")),
         "source_image_url": image_url,
         "source_image_role": "credited authentic source photo used in the fallback editorial layout",
         "source_photo_used": True,
@@ -614,6 +662,8 @@ def main():
         "photo_event_relevance": "current_subject_portrait",
         "photo_context_summary": "Current source image selected from the report and credited on the asset and caption.",
         "visual_safe_area_checked": True,
+        "audio_status": "not_applicable",
+        "audio_track": "",
         "publish_after": datetime.now(timezone.utc).isoformat(),
     }
     (QUEUE / f"{provisional_id}.json").write_text(json.dumps(item, indent=2) + "\n")

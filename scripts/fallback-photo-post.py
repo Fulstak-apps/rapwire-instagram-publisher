@@ -20,13 +20,22 @@ QUEUE, MEDIA = ROOT / "queue", ROOT / "media"
 FEED_URL = os.environ.get("NARRO_RSS_URL", "https://rss.narro.info/e4f36406-0664-4e77-b672-7e0682966a9f")
 FEED_URLS = [
     FEED_URL,
-    "https://www.xxlmag.com/feed/",
-    "https://www.billboard.com/c/music/rb-hip-hop/feed/",
-    "https://variety.com/v/music/news/feed/",
-    "https://uproxx.com/music/feed/",
-    "https://hypebeast.com/music/feed",
-    "https://www.rollingstone.com/music/music-news/feed/",
 ]
+APPROVED_SOURCE_HANDLES = {
+    "akademiks", "nojumper", "poetikflakkonews", "traploreross", "saycheesetv",
+    "theshaderoom", "worldstarhiphop", "detroitrapnews", "detroitrapdaily",
+}
+RAP_CENTRIC_SOURCES = APPROVED_SOURCE_HANDLES - {"theshaderoom"}
+RAP_TOPIC_TERMS = (
+    " rap ", " rapper", "hip-hop", "hip hop", "album", "mixtape", "single", "track",
+    "song", "producer", "bars", "verse", "freestyle", "diss", "beef", "record label",
+    "tour", "concert", "festival", "stage", "trial", "court", "charged", "arrested",
+    "sentenced", "plea", "shooting",
+)
+NON_NEWS_FLUFF = (
+    "birthday", "adorable", "daddy duties", "relationship goals", "on vacay",
+    "vacation", "outfit", "thirst trap", "roommate diaries", "scenarioz",
+)
 MAX_AGE_HOURS = max(48, int(os.environ.get("MAX_SOURCE_AGE_HOURS", "48")))
 FONT_BOLD = next(path for path in (
     str(ROOT / "assets" / "fonts" / "Anton-Regular.ttf"),
@@ -44,6 +53,25 @@ def clean(value):
     value = html.unescape(value or "")
     value = re.sub(r"<[^>]+>", " ", value)
     return re.sub(r"\s+", " ", value).strip()
+
+
+def source_handle(title, link=""):
+    match = re.match(r"\s*@([A-Za-z0-9._]+)\s*:", clean(title))
+    if match:
+        return match.group(1).casefold()
+    parsed = urllib.parse.urlparse(link)
+    if parsed.netloc.casefold().removeprefix("www.") == "instagram.com":
+        first = parsed.path.strip("/").split("/", 1)[0]
+        if first and first not in {"p", "reel", "stories"}:
+            return first.casefold()
+    return ""
+
+
+def rap_relevant(title, description, handle):
+    blob = f" {clean(title).casefold()} {clean(description).casefold()} "
+    if any(term in blob for term in NON_NEWS_FLUFF):
+        return False
+    return handle in RAP_CENTRIC_SOURCES or any(term in blob for term in RAP_TOPIC_TERMS)
 
 
 def is_truncated_copy(value):
@@ -240,7 +268,6 @@ def known_handles():
     # against the artists' official Instagram profiles before being added.
     registry = [
         ("Doechii", "@doechii", "https://www.instagram.com/doechii/"),
-        ("Olivia Rodrigo", "@oliviarodrigo", "https://www.instagram.com/oliviarodrigo/"),
         ("Drake", "@champagnepapi", "https://www.instagram.com/champagnepapi/"),
         ("50 Cent", "@50cent", "https://www.instagram.com/50cent/"),
         ("Rick Ross", "@richforever", "https://www.instagram.com/richforever/"),
@@ -256,7 +283,8 @@ def known_handles():
         name = clean(item.get("featured_artist") or item.get("featured_person"))
         handle = clean(item.get("artist_instagram_handle"))
         profile = clean(item.get("artist_handle_verified_url"))
-        if name and handle.startswith("@") and profile.startswith("https://www.instagram.com/"):
+        source = clean(item.get("source_handle") or item.get("source") or item.get("lead_source_instagram_handle")).casefold().lstrip("@")
+        if name and handle.startswith("@") and profile.startswith("https://www.instagram.com/") and source in APPROVED_SOURCE_HANDLES:
             registry.append((name, handle, profile))
     return registry
 
@@ -325,11 +353,19 @@ def select_stories():
     ranked = []
     for story in candidates():
         blob = f"{story['title']} {story['description']}".casefold()
+        handle = source_handle(story["title"], story["link"])
+        if handle not in APPROVED_SOURCE_HANDLES:
+            print(f"Fallback candidate skipped (source not approved): {story['title'][:90]}")
+            continue
+        if not rap_relevant(story["title"], story["description"], handle):
+            print(f"Fallback candidate skipped (not rap news): {story['title'][:90]}")
+            continue
         if story["link"] in seen or story["title"].casefold() in seen:
             continue
         matched = next(((name, handle, profile) for name, handle, profile in registry if name.casefold() in blob), None)
         if not matched:
             continue
+        story["source_handle"] = handle
         if repeats_recent_event(story["title"], matched[0], prior_topics):
             print(f"Fallback candidate skipped (recent event already covered): {story['title'][:90]}")
             continue
@@ -551,6 +587,9 @@ def main():
         "displayed_artist_label": f"{name.upper()}  {handle}",
         "identity_checked": True,
         "source_urls": [story["link"], second_source],
+        "source_handle": story["source_handle"],
+        "source_policy_checked": True,
+        "rap_relevance_checked": True,
         "source_url": story["link"],
         "source_title": story.get("original_title", story["title"]),
         "source_published_at": story["published"].isoformat(),

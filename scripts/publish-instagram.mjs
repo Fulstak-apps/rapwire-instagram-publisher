@@ -193,6 +193,10 @@ for (const file of files) {
       console.error(`Skipped ${file}: headline promise or editorial substance check failed`);
       continue;
     }
+    if (item.source_policy_checked !== true || item.rap_relevance_checked !== true) {
+      console.error(`Skipped ${file}: approved-source or rap-only verification is missing`);
+      continue;
+    }
     if (!hasPublishableVisual(item)) {
       console.error(`Skipped ${file}: current/relevant visual verification is missing`);
       continue;

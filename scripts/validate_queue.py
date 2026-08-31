@@ -55,6 +55,10 @@ def main():
             errors += fail("content_claim_checked must be true")
         if item.get("editorial_substance_checked") is not True:
             errors += fail("editorial_substance_checked must be true")
+        if item.get("source_policy_checked") is not True:
+            errors += fail("source_policy_checked must be true")
+        if item.get("rap_relevance_checked") is not True:
+            errors += fail("rap_relevance_checked must be true")
         headline = item.get("headline", "")
         body = item.get("body", "")
         if re.search(r"(?:\[\s*(?:…|\.{3})\s*\]|(?:…|\.{3}))\s*$", body) or re.search(r"\[\s*(?:…|\.{3})\s*\]", body):

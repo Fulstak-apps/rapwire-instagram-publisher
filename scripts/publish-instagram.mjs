@@ -17,7 +17,10 @@ const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
 const queueDir = "queue";
 const files = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
-const maxFeedPostsPerRun = Number(process.env.MAX_FEED_POSTS_PER_RUN || 1);
+// One editorial cycle intentionally publishes a complete three-story batch.
+// The workflow still exports the legacy value "1", so enforce the new floor
+// here until the GitHub token can update workflow files.
+const maxFeedPostsPerRun = Math.max(3, Number(process.env.MAX_FEED_POSTS_PER_RUN || 3));
 const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));

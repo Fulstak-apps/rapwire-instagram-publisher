@@ -6,6 +6,7 @@ import io
 import json
 import os
 import re
+import unicodedata
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -40,6 +41,8 @@ NON_NEWS_FLUFF = (
 )
 MAX_AGE_HOURS = max(48, int(os.environ.get("MAX_SOURCE_AGE_HOURS", "48")))
 BACKUP_AGE_HOURS = max(MAX_AGE_HOURS, int(os.environ.get("BACKUP_SOURCE_AGE_HOURS", "720")))
+EDITORIAL_BATCH_SIZE = max(1, min(3, int(os.environ.get("EDITORIAL_BATCH_SIZE", "3"))))
+GTA_COOLDOWN_POSTS = max(3, int(os.environ.get("GTA_COOLDOWN_POSTS", "6")))
 FONT_BOLD = next(path for path in (
     str(ROOT / "assets" / "fonts" / "Anton-Regular.ttf"),
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
@@ -56,6 +59,18 @@ def clean(value):
     value = html.unescape(value or "")
     value = re.sub(r"<[^>]+>", " ", value)
     return re.sub(r"\s+", " ", value).strip()
+
+
+def print_safe(value):
+    """Remove emoji/symbol glyphs that the locked headline fonts cannot render."""
+    return re.sub(
+        r"\s+",
+        " ",
+        "".join(
+            char for char in clean(value)
+            if unicodedata.category(char) not in {"So", "Cs"} and char not in {"\ufe0f", "\u200d"}
+        ),
+    ).strip()
 
 
 def source_handle(title, link=""):
@@ -171,9 +186,9 @@ def enrich_editorial(story):
     """Make the carousel deliver the promise made by its headline."""
     enriched = dict(story)
     raw_headline = clean(story["title"])
-    headline = re.sub(r"^\s*@[A-Za-z0-9._]+\s*:\s*", "", raw_headline).strip()
+    headline = print_safe(re.sub(r"^\s*@[A-Za-z0-9._]+\s*:\s*", "", raw_headline).strip())
     enriched["original_title"] = raw_headline
-    body = clean(story["description"])
+    body = print_safe(story["description"])
     if is_truncated_copy(body):
         print(f"Fallback candidate skipped (truncated feed excerpt): {raw_headline[:90]}")
         return None
@@ -207,6 +222,11 @@ def enrich_editorial(story):
         enriched["content_detail_count"] = len(shown)
         enriched["content_format"] = "ranking"
         return enriched
+    if any(term in f" {headline.casefold()} {body.casefold()} " for term in (
+        " charged", " indictment", " trial", " prosecutors allege", " arrested", " accused",
+    )) and "presumed innocent" not in body.casefold():
+        body = f"{body} The charges and accusations are allegations; every defendant is presumed innocent unless proven guilty in court."
+        enriched["description"] = body
     words = re.findall(r"\b\w+\b", body)
     sentences = [part for part in re.split(r"(?<=[.!?])\s+", body) if part.strip()]
     # Never inflate a thin excerpt by repeating the headline. The source copy
@@ -246,6 +266,8 @@ def candidates(max_age_hours=MAX_AGE_HOURS):
 
 def independent_source(title, primary_link, max_age_hours=MAX_AGE_HOURS):
     lowered = clean(title).casefold()
+    if "coldheartedac" in lowered:
+        return "https://www.latimes.com/california/story/2026-08-29/la-rapper-coldheartedac-arrested-check-fraud"
     if "doechii" in lowered and "daisy chain" in lowered:
         return "https://apnews.com/article/aa831e6e96d6e75f315ae35633c6cd06"
     if "cardi" in lowered and "diamond" in lowered:
@@ -304,6 +326,13 @@ def known_handles():
         ("Tyler, The Creator", "@feliciathegoat", "https://www.instagram.com/feliciathegoat/"),
         ("Young Thug", "@thuggerthugger1", "https://www.instagram.com/thuggerthugger1/"),
         ("Cardi B", "@iamcardib", "https://www.instagram.com/iamcardib/"),
+        ("Lil Durk", "@lildurk", "https://www.instagram.com/lildurk/"),
+        ("Skilla Baby", "@skillababy", "https://www.instagram.com/skillababy/"),
+        ("Rod Wave", "@rodwave", "https://www.instagram.com/rodwave/"),
+        ("Lil Wayne", "@liltunechi", "https://www.instagram.com/liltunechi/"),
+        ("ColdheartedAC", "@coldheartedac", "https://www.instagram.com/coldheartedac/"),
+        ("Sauce Walka", "@sauce_walka102", "https://www.instagram.com/sauce_walka102/"),
+        ("Trippie Redd", "@trippieredd", "https://www.instagram.com/trippieredd/"),
     ]
     for path in QUEUE.glob("*.json"):
         try:
@@ -375,7 +404,57 @@ def repeats_recent_event(title, artist, prior_topics):
     return False
 
 
-def select_stories(max_age_hours=MAX_AGE_HOURS, backup_mode=False):
+def editorial_lane(story, handle):
+    blob = f" {clean(story['title']).casefold()} {clean(story['description']).casefold()} "
+    if "lil durk" in blob and any(term in blob for term in (
+        " trial", "court", "prosecution", "defense", "witness", "testimony", "jury", "judge",
+    )):
+        return "lil_durk_trial"
+    if handle == "gta6latest":
+        return "gta"
+    if any(term in blob for term in (
+        "album", "mixtape", "single", "track", "song", "producer", "label", "tour", "concert",
+        "trial", "court", "charged", "arrested", "sentenced", "plea", "billboard", "certified",
+    )):
+        return "rap_substantive"
+    return "rap_culture"
+
+
+def recent_published_items(limit=GTA_COOLDOWN_POSTS):
+    rows = []
+    for path in QUEUE.glob("*.json"):
+        try:
+            item = json.loads(path.read_text())
+        except Exception:
+            continue
+        if item.get("status") not in {"ready", "published"}:
+            continue
+        stamp = item.get("published_at") or item.get("publish_after") or item.get("created_at") or ""
+        rows.append((stamp, item))
+    return [item for _stamp, item in sorted(rows, key=lambda row: row[0], reverse=True)[:limit]]
+
+
+def gta_is_on_cooldown():
+    return any(
+        item.get("editorial_lane") == "gta"
+        or clean(item.get("source_handle")).casefold().lstrip("@") == "gta6latest"
+        for item in recent_published_items()
+    )
+
+
+def ready_rap_count():
+    count = 0
+    for path in QUEUE.glob("*.json"):
+        try:
+            item = json.loads(path.read_text())
+        except Exception:
+            continue
+        if item.get("status") == "ready" and item.get("editorial_lane") != "gta" and clean(item.get("source_handle")).casefold().lstrip("@") != "gta6latest":
+            count += 1
+    return count
+
+
+def select_stories(max_age_hours=MAX_AGE_HOURS, backup_mode=False, allow_gta=False):
     seen = seen_values()
     prior_topics = recent_topic_titles()
     registry = known_handles()
@@ -390,6 +469,9 @@ def select_stories(max_age_hours=MAX_AGE_HOURS, backup_mode=False):
         if not rap_relevant(story["title"], story["description"], handle):
             print(f"Fallback candidate skipped (not rap news): {story['title'][:90]}")
             continue
+        lane = editorial_lane(story, handle)
+        if lane == "gta" and not allow_gta:
+            continue
         if story["link"] in seen or story["title"].casefold() in seen:
             continue
         matched = (
@@ -401,12 +483,19 @@ def select_stories(max_age_hours=MAX_AGE_HOURS, backup_mode=False):
             continue
         story["source_handle"] = handle
         story["backup_mode"] = backup_mode
+        story["editorial_lane"] = lane
         if repeats_recent_event(story["title"], matched[0], prior_topics):
             print(f"Fallback candidate skipped (recent event already covered): {story['title'][:90]}")
             continue
         score = sum(3 for keyword in keywords if keyword in blob)
-        if "lil durk" in blob or "trial" in blob:
-            score += 20
+        score += {
+            "lil_durk_trial": 1000,
+            "rap_substantive": 500,
+            "rap_culture": 250,
+            "gta": 10,
+        }[lane]
+        if handle in {"traploreross", "akademiks", "poetikflakkonews"}:
+            score += 30
         ranked.append((score, story, matched))
     return [row[1:] for row in sorted(ranked, key=lambda row: (row[0], row[1]["published"]), reverse=True)]
 
@@ -417,7 +506,10 @@ def download_image(url):
         raw = response.read(15_000_001)
     if len(raw) > 15_000_000:
         raise RuntimeError("Fallback source image exceeds 15 MB")
-    return Image.open(io.BytesIO(raw)).convert("RGB")
+    image = Image.open(io.BytesIO(raw)).convert("RGB")
+    if image.width < 600 or image.height < 400:
+        raise RuntimeError(f"Fallback source image is too small for publication ({image.width}x{image.height})")
+    return image
 
 
 def font(size, bold=True):
@@ -453,7 +545,9 @@ def paginate_text(draw, text, selected_font, width, lines_per_page):
     lines = wrap(draw, text, selected_font, width)
     if not lines:
         raise ValueError("Body copy is empty; publication blocked")
-    return [lines[index:index + lines_per_page] for index in range(0, len(lines), lines_per_page)]
+    page_count = max(1, (len(lines) + lines_per_page - 1) // lines_per_page)
+    balanced_size = (len(lines) + page_count - 1) // page_count
+    return [lines[index:index + balanced_size] for index in range(0, len(lines), balanced_size)]
 
 
 def artist_tag(draw, name, handle, y):
@@ -569,18 +663,16 @@ def threads_copy(headline, name, handle, body, source_label):
     return f"{prefix}{summary}{suffix}"
 
 
-def main():
-    if any(json.loads(path.read_text()).get("status") == "ready" for path in QUEUE.glob("*.json")):
-        print("Fallback: a ready queue item already exists.")
-        return
-    selections = select_stories()
+def create_one():
+    allow_gta = ready_rap_count() >= 2 and not gta_is_on_cooldown()
+    selections = select_stories(allow_gta=allow_gta)
     fresh_links = {story["link"] for story, _identity in selections}
     # Load the verified backlog behind the fresh candidates on every run. A
     # fresh selection can still fail later because its second source or image
     # is unavailable; the backlog must remain reachable in that case.
     backup_selections = [
         selection
-        for selection in select_stories(max_age_hours=BACKUP_AGE_HOURS, backup_mode=True)
+        for selection in select_stories(max_age_hours=BACKUP_AGE_HOURS, backup_mode=True, allow_gta=allow_gta)
         if selection[0]["link"] not in fresh_links
     ]
     if not selections:
@@ -590,8 +682,8 @@ def main():
     selections.extend(backup_selections)
     if not selections:
         print("Fallback: no non-duplicate approved-source story matched the verified-handle registry.")
-        return
-    story = name = handle = profile = second_source = image_url = image = None
+        return False
+    story = name = handle = profile = second_source = image_url = image = photo_credit_label = None
     for candidate_story, identity in selections:
         candidate_story = enrich_editorial(candidate_story)
         if not candidate_story:
@@ -605,14 +697,24 @@ def main():
         if not candidate_second_source:
             print(f"Fallback candidate skipped (no independent source): {candidate_story['title'][:90]}")
             continue
-        image_urls = [candidate_story["image"]] if candidate_story["image"] else []
+        source_host = urllib.parse.urlparse(candidate_story["link"]).netloc.removeprefix("www.")
+        second_host = urllib.parse.urlparse(candidate_second_source).netloc.removeprefix("www.")
+        image_urls = []
+        try:
+            confirmation_image = page_image(candidate_second_source)
+            if confirmation_image:
+                image_urls.append((confirmation_image, second_host))
+        except Exception as error:
+            print(f"Fallback confirmation-image discovery failed: {error}")
         try:
             article_image = page_image(candidate_story["link"])
-            if article_image and article_image not in image_urls:
-                image_urls.append(article_image)
+            if article_image and article_image not in {url for url, _label in image_urls}:
+                image_urls.append((article_image, source_host))
         except Exception as error:
             print(f"Fallback article-image discovery failed: {error}")
-        for candidate_url in image_urls:
+        if candidate_story["image"] and candidate_story["image"] not in {url for url, _label in image_urls}:
+            image_urls.append((candidate_story["image"], source_host))
+        for candidate_url, candidate_credit in image_urls:
             try:
                 candidate_image = download_image(candidate_url)
                 story = candidate_story
@@ -620,6 +722,7 @@ def main():
                 second_source = candidate_second_source
                 image_url = candidate_url
                 image = candidate_image
+                photo_credit_label = candidate_credit
                 break
             except Exception as error:
                 print(f"Fallback image candidate failed: {candidate_url} ({error})")
@@ -627,10 +730,10 @@ def main():
             break
     if image is None:
         print("Fallback: no candidate had both independent confirmation and a usable source image.")
-        return
+        return False
     source_label = urllib.parse.urlparse(story["link"]).netloc.removeprefix("www.")
     provisional_id = next_id(story["title"])
-    headline, body, slides, story_path = render(provisional_id, story, name, handle, source_label, image)
+    headline, body, slides, story_path = render(provisional_id, story, name, handle, photo_credit_label, image)
     item = {
         "id": provisional_id,
         "status": "ready",
@@ -639,6 +742,7 @@ def main():
         "type": "fallback_photo_news",
         "layout_template": "rapwire-unified-v3",
         "story_type": "verified_rap_backup" if story.get("backup_mode") else "current_news",
+        "editorial_lane": story.get("editorial_lane", "rap_substantive"),
         "headline": headline,
         "body": body,
         "rendered_body_text": body,
@@ -649,7 +753,7 @@ def main():
         "content_format": story.get("content_format", "news_summary"),
         "slides": [str(path.relative_to(ROOT)) for path in slides],
         "story": str(story_path.relative_to(ROOT)),
-        "caption": f"{body}\n\n{name} ({handle})\n\nSource and photo credit: {source_label}\n{story['link']}\n\n#RapWire247 #HipHopNews",
+        "caption": f"{body}\n\n{name} ({handle})\n\nSource: {source_label}\nPhoto credit: {photo_credit_label}\n{story['link']}\n\n#RapWire247 #HipHopNews",
         "threads_text": threads_copy(headline, name, handle, body, source_label),
         "featured_artist": name,
         "photo_subject": name,
@@ -685,6 +789,22 @@ def main():
     }
     (QUEUE / f"{provisional_id}.json").write_text(json.dumps(item, indent=2) + "\n")
     print(f"Fallback created: {provisional_id}")
+    return True
+
+
+def main():
+    ready = 0
+    for path in QUEUE.glob("*.json"):
+        try:
+            ready += json.loads(path.read_text()).get("status") == "ready"
+        except Exception:
+            continue
+    print(f"Editorial batch: {ready}/{EDITORIAL_BATCH_SIZE} ready item(s).")
+    while ready < EDITORIAL_BATCH_SIZE:
+        if not create_one():
+            break
+        ready += 1
+    print(f"Editorial batch complete: {ready}/{EDITORIAL_BATCH_SIZE} item(s) ready.")
 
 
 if __name__ == "__main__":

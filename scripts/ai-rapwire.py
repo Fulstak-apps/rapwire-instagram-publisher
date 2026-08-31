@@ -222,6 +222,8 @@ def main():
     print('AI selected:',headline); print('Using source visual reference:',reference_url); print('Generating source-grounded comic art...'); art=generate_art(choice['visual_scene'],headline,reference_data); sid=next_id(headline); slides,ps=assets(sid,headline,story,art,label,person_label,pages,extra_context); url=src['link']; identity_line=f'\n\n{person} ({handle})' if person_label else ''
     item={'id':sid,'status':'ready','ai_generated_art':True,'visual_asset_type':'ai_original_comic_from_source_reference','visual_asset_rights':'owned','created_at':datetime.now(timezone.utc).isoformat(),'source':label,'source_handle':source_handle(src['title']),'source_policy_checked':True,'rap_relevance_checked':True,'source_urls':[url],'source_url':url,'source_guid':src['id'],'source_title':src['title'],'source_published_at':src['published'],'story_fingerprint':re.sub(r'[^a-z0-9]+',' ',headline.lower()).strip(),'headline':headline,'body':story,'rendered_body_text':story,'text_overflow_checked':True,'caption':f'{caption}{identity_line}\n\nSource: {label}\n{url}\n\nFollow @rapwire247 for hip-hop, culture and real-time news.','threads_text':f'{headline}{identity_line}\n\n{story}\n\nSource: {label}','featured_person':person,'artist_instagram_handle':handle,'artist_handle_verified':bool(handle),'artist_handle_verified_url':profile,'displayed_artist_label':person_label,'visual_prompt':choice['visual_scene'],'slides':[str(p.relative_to(ROOT)) for p in slides],'carousel_page_count':len(slides),'story':str(ps.relative_to(ROOT)),'media_urls':[],'source_image_url':reference_url,'source_photo_used':True,'source_image_role':'factual visual reference only; final art is a materially redrawn original editorial illustration'}
     item['layout_template']='rapwire-unified-v3'
+    blob=f" {headline.casefold()} {story.casefold()} "
+    item['editorial_lane']='lil_durk_trial' if 'lil durk' in blob and any(term in blob for term in ('trial','court','prosecution','defense','witness','testimony')) else ('gta' if source_handle(src['title'])=='gta6latest' else 'rap_substantive')
     item['content_claim_checked']=True
     item['editorial_substance_checked']=True
     item['content_detail_count']=len(re.findall(r'\b\d+\.\s',story))
@@ -236,6 +238,9 @@ if __name__=='__main__':
         except Exception:
             traceback.print_exc()
             print('AI credits or generation unavailable; using the credited real-photo fallback for this run.')
+            subprocess.run([sys.executable,str(ROOT/'scripts'/'fallback-photo-post.py')],check=True)
+        else:
+            print('Filling the remaining editorial batch slots with credited real-photo posts.')
             subprocess.run([sys.executable,str(ROOT/'scripts'/'fallback-photo-post.py')],check=True)
     else:
         print('Mixed visual rotation: using the credited real-photo publisher for this run.')

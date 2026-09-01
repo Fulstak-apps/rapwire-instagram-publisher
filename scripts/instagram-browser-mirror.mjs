@@ -46,6 +46,7 @@ async function capture(reelUrl) {
   }
   await fs.mkdir(outputDir, { recursive: true });
   const shortcode = reelUrl.match(/\/reel\/([A-Za-z0-9_-]+)/)[1];
+  const isRapListed = /instagram\.com\/raplisted_\//i.test(reelUrl);
   const destination = path.join(outputDir, `${shortcode}.mp4`);
   const context = await launch(false);
   try {
@@ -103,9 +104,14 @@ async function capture(reelUrl) {
       if (!videoInput) throw new Error("Captured Instagram fragments did not contain a complete video stream.");
       const ffmpegArgs = ["-y", "-i", videoInput];
       if (audioInput) ffmpegArgs.push("-i", audioInput);
+      const logoInputIndex = audioInput ? 2 : 1;
+      if (isRapListed) ffmpegArgs.push("-loop", "1", "-i", path.resolve("assets", "rapwire247-video-bug.png"));
+      const videoFilter = isRapListed
+        ? `[0:v]drawbox=x=0:y=ih*0.12:w=iw*0.80:h=ih*0.11:color=black:t=fill[clean];[clean]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=900:1125:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=360:79[bug];[framed][bug]overlay=x=250:y=270:shortest=1[v]`
+        : "[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=900:1125:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[v]";
       ffmpegArgs.push(
         "-filter_complex",
-        "[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=900:1125:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[v]",
+        videoFilter,
         "-map", "[v]"
       );
       if (audioInput) ffmpegArgs.push("-map", "1:a:0");
@@ -118,7 +124,7 @@ async function capture(reelUrl) {
       await fs.rm(tempDir, { recursive: true, force: true });
     }
     const resultStat = await fs.stat(destination);
-    console.log(JSON.stringify({ shortcode, destination, bytes: resultStat.size, audioCaptured: Boolean(audioInput), source: reelUrl }));
+    console.log(JSON.stringify({ shortcode, destination, bytes: resultStat.size, audioCaptured: Boolean(audioInput), raplistedTopCropApplied: isRapListed, source: reelUrl }));
   } finally {
     await context.close();
   }

@@ -17,10 +17,9 @@ const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
 const queueDir = "queue";
 const files = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
-// One editorial cycle intentionally publishes a complete three-story batch.
-// The workflow still exports the legacy value "1", so enforce the new floor
-// here until the GitHub token can update workflow files.
-const maxFeedPostsPerRun = Math.max(3, Number(process.env.MAX_FEED_POSTS_PER_RUN || 3));
+// Respect the workflow's pacing limit. The newsroom may prepare a batch, but
+// only the configured number of feed posts should go live in one cycle.
+const maxFeedPostsPerRun = Math.max(1, Number(process.env.MAX_FEED_POSTS_PER_RUN || 1));
 const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
@@ -58,7 +57,10 @@ async function instagramPost(endpoint, fields) {
     const response = await fetch(`${instagramBase}/${instagramUserId}/${endpoint}`, { method: "POST", body });
     const payload = await response.json();
     if (response.ok && !payload.error) return payload;
-    const retryable = payload.error?.code === 1 && attempt < 2;
+    const mediaNotReady = endpoint === "media_publish"
+      && payload.error?.code === 9007
+      && payload.error?.error_subcode === 2207027;
+    const retryable = (payload.error?.code === 1 || mediaNotReady) && attempt < 2;
     if (!retryable) throw new Error(`${endpoint} failed: ${JSON.stringify(payload)}`);
     await sleep((attempt + 1) * 15_000);
   }
@@ -218,7 +220,9 @@ for (const file of files) {
 
   if (item.status !== "published") continue;
 
-  if (publishInstagramStories && item.story && !item.instagram_story_status) {
+  const retryTransientStoryFailure = item.instagram_story_status === "failed"
+    && /(?:Media ID is not available|2207027)/i.test(String(item.instagram_story_error || ""));
+  if (publishInstagramStories && item.story && (!item.instagram_story_status || retryTransientStoryFailure)) {
     try {
       const published = await publishInstagramStory(item);
       item.instagram_story_status = "published";

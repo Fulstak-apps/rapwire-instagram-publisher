@@ -200,6 +200,12 @@ def enrich_editorial(story):
     enriched = dict(story)
     raw_headline = clean(story["title"])
     headline = print_safe(re.sub(r"^\s*@[A-Za-z0-9._]+\s*:\s*", "", raw_headline).strip())
+    # Social captions frequently include hashtags, alert labels, and spelling
+    # obfuscations that look sloppy when promoted to a news headline.
+    headline = re.sub(r"^(?:#?BREAKING|#?TSR[A-Za-z0-9]+)\s*:\s*", "", headline, flags=re.I)
+    headline = re.sub(r"#(?=[A-Za-z0-9])", "", headline)
+    headline = re.sub(r"\bki[iIl]{3}ng\b", "killing", headline, flags=re.I)
+    headline = re.sub(r"\bKeffe\s*D\b", "Keefe D", headline, flags=re.I)
     enriched["original_title"] = raw_headline
     body = print_safe(story["description"])
     if is_truncated_copy(body):
@@ -564,12 +570,17 @@ def topic_terms(title, artist=""):
 def repeats_recent_event(title, artist, prior_topics):
     current = topic_terms(title, artist)
     for prior_title, prior_artist in prior_topics:
-        if artist.casefold() != prior_artist.casefold():
-            continue
+        prior = topic_terms(prior_title, prior_artist)
+        same_artist = artist.casefold().replace("2pac", "tupac") == prior_artist.casefold().replace("2pac", "tupac")
         # Two shared non-generic words is enough when the featured artist is
         # identical (for example, "Daisy Chain"). This prevents several posts
         # about different angles of the same event from flooding the grid.
-        if len(current & topic_terms(prior_title, prior_artist)) >= 2:
+        if same_artist and len(current & prior) >= 2:
+            return True
+        # Different approved accounts often describe the same breaking event
+        # with different featured-person labels. Four shared factual terms is
+        # a strong cross-source duplicate signal even when those labels differ.
+        if len(current & prior) >= 4:
             return True
     return False
 

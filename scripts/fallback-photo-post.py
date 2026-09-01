@@ -24,7 +24,7 @@ FEED_URLS = [
 ]
 APPROVED_SOURCE_HANDLES = {
     "akademiks", "nojumper", "poetikflakkonews", "traploreross", "saycheesetv",
-    "theshaderoom", "worldstarhiphop", "detroitrapnews", "detroitrapdaily",
+    "theshaderoom", "worldstarhiphop", "detroitrapnews", "detroitrapdaily", "complexmusic",
     "gta6latest",
 }
 RAP_CENTRIC_SOURCES = APPROVED_SOURCE_HANDLES - {"theshaderoom", "gta6latest"}

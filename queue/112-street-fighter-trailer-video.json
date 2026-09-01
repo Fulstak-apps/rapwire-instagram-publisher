@@ -1,6 +1,6 @@
 {
   "id": "112-street-fighter-trailer-video",
-  "status": "paused",
+  "status": "ready",
   "date": "2026-09-01",
   "timezone": "America/Detroit",
   "content_type": "video",
@@ -30,6 +30,7 @@
   "artist_handle_verified_url": "https://www.instagram.com/50cent/",
   "source_handle": "saycheesetv",
   "source_url": "https://www.instagram.com/p/DcwMTlkyO3Q/",
+  "source_published_at": "2026-09-01T17:26:38+00:00",
   "source_urls": [
     "https://www.instagram.com/p/DcwMTlkyO3Q/",
     "https://www.paramountpictures.com/movies/street-fighter",
@@ -39,6 +40,5 @@
   "visual_asset_type": "source_video",
   "visual_asset_rights": "source_post_repost",
   "source_video_used": true,
-  "threads_status": "pending",
-  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
+  "threads_status": "pending"
 }

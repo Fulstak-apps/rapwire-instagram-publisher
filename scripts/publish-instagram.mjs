@@ -9,8 +9,8 @@ const publishInstagramStories = process.env.PUBLISH_INSTAGRAM_STORIES === "true"
 const repository = process.env.GITHUB_REPOSITORY;
 const refName = process.env.GITHUB_REF_NAME || "main";
 
-if (!instagramToken || !instagramUserId || !repository) {
-  throw new Error("Missing INSTAGRAM_ACCESS_TOKEN, INSTAGRAM_USER_ID, or GITHUB_REPOSITORY");
+if (!instagramToken || !instagramUserId || !threadsToken || !threadsUserId || !repository) {
+  throw new Error("Missing Instagram/Threads credentials or GITHUB_REPOSITORY; RapWire requires both platforms");
 }
 
 const instagramBase = "https://graph.instagram.com";
@@ -240,7 +240,7 @@ for (const file of files) {
 
   // Threads is required for every published RapWire carousel. Honor old queue items that
   // were previously marked Instagram-only so they can be backfilled automatically.
-  if (item.publish_to_threads !== false && threadsToken && threadsUserId && (!item.threads_status || item.threads_status === "skipped_for_instagram_only_post")) {
+  if (!item.threads_status || item.threads_status === "failed" || item.threads_status === "skipped_for_instagram_only_post") {
     try {
       const published = await publishThreadsCarousel(item);
       item.threads_status = "published";
@@ -251,6 +251,7 @@ for (const file of files) {
       item.threads_status = "failed";
       item.threads_error = error.message;
       console.error(`Threads failed for ${file}: ${error.message}`);
+      process.exitCode = 1;
     }
     await save(itemPath, item);
   }

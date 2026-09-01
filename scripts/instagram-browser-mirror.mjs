@@ -41,11 +41,11 @@ async function login() {
 }
 
 async function capture(reelUrl) {
-  if (!/^https:\/\/www\.instagram\.com\/(?:[^/]+\/)?reel\/[A-Za-z0-9_-]+\/?/.test(reelUrl)) {
-    throw new Error("capture requires a full Instagram reel URL");
+  if (!/^https:\/\/www\.instagram\.com\/(?:[^/]+\/)?(?:reel|p)\/[A-Za-z0-9_-]+\/?/.test(reelUrl)) {
+    throw new Error("capture requires a full Instagram reel or video-post URL");
   }
   await fs.mkdir(outputDir, { recursive: true });
-  const shortcode = reelUrl.match(/\/reel\/([A-Za-z0-9_-]+)/)[1];
+  const shortcode = reelUrl.match(/\/(?:reel|p)\/([A-Za-z0-9_-]+)/)[1];
   const isRapListed = /instagram\.com\/raplisted_\//i.test(reelUrl);
   const destination = path.join(outputDir, `${shortcode}.mp4`);
   const context = await launch(false);
@@ -105,10 +105,10 @@ async function capture(reelUrl) {
       const ffmpegArgs = ["-y", "-i", videoInput];
       if (audioInput) ffmpegArgs.push("-i", audioInput);
       const logoInputIndex = audioInput ? 2 : 1;
-      if (isRapListed) ffmpegArgs.push("-loop", "1", "-i", path.resolve("assets", "rapwire247-video-bug.png"));
+      ffmpegArgs.push("-loop", "1", "-i", path.resolve("assets", "rapwire247-video-bug.png"));
       const videoFilter = isRapListed
         ? `[0:v]drawbox=x=0:y=ih*0.12:w=iw*0.80:h=ih*0.11:color=black:t=fill[clean];[clean]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=860:1020:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=360:79[bug];[framed][bug]overlay=x=250:y=270:shortest=1[v]`
-        : "[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=860:1020:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[v]";
+        : `[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=860:1020:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=300:66[bug];[framed][bug]overlay=x=120:y=1100:shortest=1[v]`;
       ffmpegArgs.push(
         "-filter_complex",
         videoFilter,
@@ -116,8 +116,9 @@ async function capture(reelUrl) {
       );
       if (audioInput) ffmpegArgs.push("-map", "1:a:0");
       ffmpegArgs.push("-c:v", "libx264", "-pix_fmt", "yuv420p");
-      if (audioInput) ffmpegArgs.push("-c:a", "aac", "-shortest");
+      if (audioInput) ffmpegArgs.push("-c:a", "aac");
       else ffmpegArgs.push("-an");
+      ffmpegArgs.push("-shortest");
       ffmpegArgs.push("-movflags", "+faststart", destination);
       await execFileAsync("ffmpeg", ffmpegArgs);
 

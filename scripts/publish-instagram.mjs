@@ -35,6 +35,11 @@ function storyUrl(item) {
   return remote && /^https?:\/\//i.test(remote) ? remote : mediaUrl(item.story);
 }
 
+function videoUrl(item) {
+  const remote = item.video_url || "";
+  return remote && /^https?:\/\//i.test(remote) ? remote : mediaUrl(item.video);
+}
+
 function hasPublishableVisual(item) {
   if (item.visual_asset_type === "original_graphic" && item.visual_asset_rights === "owned") return true;
   if (item.visual_asset_type === "source_photo" && item.visual_asset_rights === "source_post_repost") {
@@ -121,6 +126,17 @@ async function publishInstagramFeed(item) {
   return instagramPost("media_publish", { creation_id: carousel.id });
 }
 
+async function publishInstagramReel(item) {
+  const reel = await instagramPost("media", {
+    media_type: "REELS",
+    video_url: videoUrl(item),
+    caption: item.caption,
+    share_to_feed: "true"
+  });
+  await waitForInstagramContainer(reel.id);
+  return instagramPost("media_publish", { creation_id: reel.id });
+}
+
 async function publishInstagramStory(item) {
   // Stories use the dedicated 1080x1920 asset. Never publish a 4:5 feed slide as a Story.
   if (!item.story) throw new Error("Story asset missing");
@@ -147,6 +163,16 @@ async function publishThreadsCarousel(item) {
   });
   await waitForThreadsContainer(carousel.id);
   return threadsPost("threads_publish", { creation_id: carousel.id });
+}
+
+async function publishThreadsVideo(item) {
+  const video = await threadsPost("threads", {
+    media_type: "VIDEO",
+    video_url: videoUrl(item),
+    text: item.threads_text || item.caption
+  });
+  await waitForThreadsContainer(video.id);
+  return threadsPost("threads_publish", { creation_id: video.id });
 }
 
 function contentPromiseIsKept(item) {
@@ -178,15 +204,21 @@ for (const file of files) {
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
-  if (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 10) {
+  const isVideoItem = item.content_type === "video";
+  if (!isVideoItem && (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 10)) {
     console.error(`Skipped ${file}: RapWire carousels require 2-10 complete, readable slides`);
+    continue;
+  }
+  if (isVideoItem && (!item.video || !String(item.video).endsWith(".mp4"))) {
+    console.error(`Skipped ${file}: RapWire video item is missing its MP4 asset`);
     continue;
   }
   if (item.status === "paused" || item.status === "media_refresh_required") continue;
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
-    if (item.layout_template !== "rapwire-unified-v3") {
+    if ((!isVideoItem && item.layout_template !== "rapwire-unified-v3")
+      || (isVideoItem && item.layout_template !== "rapwire-video-grid-safe-v1")) {
       console.error(`Skipped ${file}: asset does not use the locked RapWire template`);
       continue;
     }
@@ -202,13 +234,13 @@ for (const file of files) {
       console.error(`Skipped ${file}: approved-source or rap-only verification is missing`);
       continue;
     }
-    if (!hasPublishableVisual(item)) {
+    if (!isVideoItem && !hasPublishableVisual(item)) {
       console.error(`Skipped ${file}: current/relevant visual verification is missing`);
       continue;
     }
     if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) continue;
     if (feedPostsPublishedInRollingDay >= maxFeedPostsPerRollingDay) continue;
-    const published = await publishInstagramFeed(item);
+    const published = isVideoItem ? await publishInstagramReel(item) : await publishInstagramFeed(item);
     item.status = "published";
     item.instagram_media_id = published.id;
     item.published_at = new Date().toISOString();
@@ -242,7 +274,7 @@ for (const file of files) {
   // were previously marked Instagram-only so they can be backfilled automatically.
   if (!item.threads_status || item.threads_status === "failed" || item.threads_status === "skipped_for_instagram_only_post") {
     try {
-      const published = await publishThreadsCarousel(item);
+      const published = isVideoItem ? await publishThreadsVideo(item) : await publishThreadsCarousel(item);
       item.threads_status = "published";
       item.threads_media_id = published.id;
       item.threads_published_at = new Date().toISOString();

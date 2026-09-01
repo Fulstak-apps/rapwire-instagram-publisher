@@ -6,6 +6,14 @@ for (const file of await fs.readdir(dir)) {
   if (!file.endsWith(".json")) continue;
   const filePath = path.join(dir, file);
   const item = JSON.parse(await fs.readFile(filePath, "utf8"));
+  const approvedVideo = item.content_type === "video"
+    && item.layout_template === "rapwire-video-grid-safe-v1"
+    && item.visual_asset_type === "source_video"
+    && item.visual_asset_rights === "source_post_repost"
+    && item.grid_safe_checked === true
+    && typeof item.video === "string"
+    && item.video.endsWith(".mp4");
+  if (item.status === "ready" && approvedVideo) continue;
   const validSlideCount = Array.isArray(item.slides) && item.slides.length >= 2 && item.slides.length <= 10;
   const sourceGrounded = item.source_photo_used === true
     && typeof item.source_image_url === "string"

@@ -107,8 +107,8 @@ async function capture(reelUrl) {
       const logoInputIndex = audioInput ? 2 : 1;
       ffmpegArgs.push("-loop", "1", "-i", path.resolve("assets", "rapwire247-video-bug.png"));
       const videoFilter = isRapListed
-        ? `[0:v]drawbox=x=0:y=ih*0.12:w=iw*0.80:h=ih*0.11:color=black:t=fill[clean];[clean]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=860:1020:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=360:79[bug];[framed][bug]overlay=x=250:y=270:shortest=1[v]`
-        : `[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=860:1020:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=300:66[bug];[framed][bug]overlay=x=120:y=1100:shortest=1[v]`;
+        ? `[0:v]drawbox=x=0:y=ih*0.12:w=iw*0.80:h=ih*0.11:color=black:t=fill[clean];[clean]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=1080:1020:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=360:79[bug];[framed][bug]overlay=x=250:y=270:shortest=1[v]`
+        : `[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=1080:1020:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=300:66[bug];[framed][bug]overlay=x=120:y=1100:shortest=1[v]`;
       ffmpegArgs.push(
         "-filter_complex",
         videoFilter,

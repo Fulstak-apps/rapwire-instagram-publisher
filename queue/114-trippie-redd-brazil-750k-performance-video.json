@@ -1,6 +1,6 @@
 {
   "id": "114-trippie-redd-brazil-750k-performance-video",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 100,
   "date": "2026-09-01",
   "timezone": "America/Detroit",
@@ -44,5 +44,6 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending"
+  "threads_status": "pending",
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

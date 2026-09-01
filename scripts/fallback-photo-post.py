@@ -772,15 +772,21 @@ def editorial_focus(image):
     bottom_band = image.crop((0, int(height * 0.82), width, height)).convert("L")
     top_mean = ImageStat.Stat(top_band).mean[0]
     bottom_mean = ImageStat.Stat(bottom_band).mean[0]
-    has_bright_social_header = top_mean > 220
-    top = int(height * 0.18) if has_bright_social_header else 0
+    # Source-blog screenshots often put a white headline/card above the actual
+    # photo. Treat a very bright upper band as social chrome and remove it
+    # before fitting; otherwise that baked-in copy is visibly clipped in the
+    # RapWire hero frame. Keep a conservative floor so real bright skies are
+    # not discarded.
+    bright_ratio = sum(1 for px in top_band.getdata() if px >= 238) / max(1, top_band.width * top_band.height)
+    has_bright_social_header = top_mean > 220 or bright_ratio > 0.48
+    top = int(height * 0.35) if has_bright_social_header else 0
     # Social screenshots with a bright header generally carry account chrome
     # below the subject as well. Remove that whole footer instead of leaving
     # clipped usernames or post text in Story crops.
     bottom = int(height * 0.78) if has_bright_social_header else (
         int(height * 0.82) if bottom_mean > 220 else height
     )
-    if bottom - top >= int(height * 0.50):
+    if bottom - top >= int(height * 0.35):
         return image.crop((0, top, width, bottom))
     return image
 

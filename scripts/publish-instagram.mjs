@@ -228,6 +228,7 @@ for (const file of files) {
       item.instagram_story_status = "published";
       item.instagram_story_media_id = published.id;
       item.instagram_story_published_at = new Date().toISOString();
+      delete item.instagram_story_error;
       console.log(`Published Instagram Story ${file}: ${published.id}`);
     } catch (error) {
       item.instagram_story_status = "failed";

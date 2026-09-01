@@ -273,7 +273,7 @@ for (const file of files) {
   // Threads is required for every published RapWire carousel. Honor old queue items that
   // were previously marked Instagram-only so they can be backfilled automatically.
   if (item.rap_relevance_checked === true
-    && (!item.threads_status || item.threads_status === "failed" || item.threads_status === "skipped_for_instagram_only_post")) {
+    && (!item.threads_status || item.threads_status === "pending" || item.threads_status === "failed" || item.threads_status === "skipped_for_instagram_only_post")) {
     try {
       const published = isVideoItem ? await publishThreadsVideo(item) : await publishThreadsCarousel(item);
       item.threads_status = "published";

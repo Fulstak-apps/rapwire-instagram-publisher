@@ -16,7 +16,17 @@ if (!instagramToken || !instagramUserId || !threadsToken || !threadsUserId || !r
 const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
 const queueDir = "queue";
-const files = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
+const queueNames = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
+const queueRecords = await Promise.all(queueNames.map(async (name) => ({
+  name,
+  item: JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8"))
+})));
+const files = queueRecords
+  .sort((left, right) => {
+    const priorityDelta = Number(right.item.publish_priority || 0) - Number(left.item.publish_priority || 0);
+    return priorityDelta || left.name.localeCompare(right.name);
+  })
+  .map((record) => record.name);
 // Respect the workflow's pacing limit. The newsroom may prepare a batch, but
 // only the configured number of feed posts should go live in one cycle.
 const maxFeedPostsPerRun = Math.max(1, Number(process.env.MAX_FEED_POSTS_PER_RUN || 1));

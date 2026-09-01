@@ -805,7 +805,9 @@ def render(story_id, story, name, handle, source_label, image, credit_prefix="SO
     slide1.paste(hero, (0, 0))
     draw = ImageDraw.Draw(slide1)
     draw.rectangle((0, 0, 1080, 12), fill=CYAN)
-    brand_badge(draw, 54, 48, 27)
+    # Instagram profile tiles center-crop 4:5 posts to a square. Keep the
+    # masthead below y=135 so it remains visible on both the full post and grid.
+    brand_badge(draw, 54, 160, 27)
     artist_tag(draw, name, handle, 760)
     draw.rectangle((0, 836, 1080, 1350), fill=INK)
     selected, lines = fitted_headline(draw, headline, 970, 4)

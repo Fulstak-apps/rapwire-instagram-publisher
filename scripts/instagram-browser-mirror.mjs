@@ -107,8 +107,8 @@ async function capture(reelUrl) {
       const logoInputIndex = audioInput ? 2 : 1;
       if (isRapListed) ffmpegArgs.push("-loop", "1", "-i", path.resolve("assets", "rapwire247-video-bug.png"));
       const videoFilter = isRapListed
-        ? `[0:v]drawbox=x=0:y=ih*0.12:w=iw*0.80:h=ih*0.11:color=black:t=fill[clean];[clean]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=900:1125:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=360:79[bug];[framed][bug]overlay=x=250:y=270:shortest=1[v]`
-        : "[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=900:1125:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[v]";
+        ? `[0:v]drawbox=x=0:y=ih*0.12:w=iw*0.80:h=ih*0.11:color=black:t=fill[clean];[clean]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=860:1020:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=360:79[bug];[framed][bug]overlay=x=250:y=270:shortest=1[v]`
+        : "[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=860:1020:force_original_aspect_ratio=decrease[safe];[blurred][safe]overlay=(W-w)/2:(H-h)/2[v]";
       ffmpegArgs.push(
         "-filter_complex",
         videoFilter,
@@ -120,6 +120,24 @@ async function capture(reelUrl) {
       else ffmpegArgs.push("-an");
       ffmpegArgs.push("-movflags", "+faststart", destination);
       await execFileAsync("ffmpeg", ffmpegArgs);
+
+      const { stdout: probeOutput } = await execFileAsync("ffprobe", [
+        "-v", "error", "-show_entries", "stream=codec_name,codec_type,width,height:format=duration",
+        "-of", "json", destination
+      ]);
+      const probe = JSON.parse(probeOutput);
+      const encodedVideo = probe.streams?.find((stream) => stream.codec_type === "video");
+      const encodedAudio = probe.streams?.find((stream) => stream.codec_type === "audio");
+      const duration = Number(probe.format?.duration || 0);
+      if (!encodedVideo || encodedVideo.codec_name !== "h264" || encodedVideo.width !== 1080 || encodedVideo.height !== 1350) {
+        throw new Error("Rendered mirror failed the required 1080x1350 H.264 validation.");
+      }
+      if (audioInput && (!encodedAudio || encodedAudio.codec_name !== "aac")) {
+        throw new Error("Rendered mirror failed the required AAC audio validation.");
+      }
+      if (!Number.isFinite(duration) || duration <= 0) {
+        throw new Error("Rendered mirror has no valid playable duration.");
+      }
     } finally {
       await fs.rm(tempDir, { recursive: true, force: true });
     }

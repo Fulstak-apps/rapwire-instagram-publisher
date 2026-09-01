@@ -17,12 +17,12 @@ QUEUE = ROOT / "queue"
 MEDIA = ROOT / "media"
 FEED_URL = os.environ.get("NARRO_RSS_URL", "https://rss.narro.info/e4f36406-0664-4e77-b672-7e0682966a9f")
 MAX_NEW = int(os.environ.get("MAX_NEW_ITEMS", "6"))
-MAX_SOURCE_AGE_HOURS = int(os.environ.get("MAX_SOURCE_AGE_HOURS", "36"))
+MAX_SOURCE_AGE_HOURS = int(os.environ.get("MAX_SOURCE_AGE_HOURS", "48"))
 
 SOURCES = {
-    "akademiks", "nojumper", "theshaderoom", "tmz", "traploreross", "saycheesetv",
-    "detroitrapnews", "detroitrapdaily", "usacrime", "poetikflakkonews",
-    "worldstarhiphop", "gta6latest",
+    "akademiks", "nojumper", "theshaderoom", "traploreross", "saycheesetv",
+    "detroitrapnews", "detroitrapdaily", "poetikflakkonews", "worldstarhiphop",
+    "complexmusic", "gta6latest",
 }
 
 FONT_BOLD = str(ROOT / "assets/fonts/Anton-Regular.ttf")

@@ -30,7 +30,7 @@ APPROVED_SOURCE_HANDLES = {
 RAP_CENTRIC_SOURCES = APPROVED_SOURCE_HANDLES - {"theshaderoom", "gta6latest"}
 APPROVED_CATEGORY_EXCEPTIONS = {"gta6latest"}
 RAP_TOPIC_TERMS = (
-    " rap ", " rapper", "hip-hop", "hip hop", "album", "mixtape", "single", "track",
+    " rap ", " rapper", "hip-hop", "hip hop", "hiphop", "album", "mixtape", "single", "track",
     "song", "producer", "bars", "verse", "freestyle", "diss", "beef", "record label",
     "tour", "concert", "festival", "stage", "trial", "court", "charged", "arrested",
     "sentenced", "plea", "shooting",
@@ -94,7 +94,17 @@ def rap_relevant(title, description, handle):
         # non-rap exception is specifically GTA/Rockstar news, not every item
         # from that account.
         return any(term in blob for term in (" gta ", "gta 6", "grand theft auto", "rockstar games"))
-    return handle in RAP_CENTRIC_SOURCES or any(term in blob for term in RAP_TOPIC_TERMS)
+    if handle in RAP_CENTRIC_SOURCES or any(term in blob for term in RAP_TOPIC_TERMS):
+        return True
+    # The Shade Room is approved only for directly rap-related items. Its
+    # captions often omit words such as "rapper" and instead identify the
+    # artist by name or hashtag, so match against RapWire's verified artist
+    # registry before rejecting the item.
+    normalized = " " + re.sub(r"[^a-z0-9]+", " ", blob).strip() + " "
+    return handle == "theshaderoom" and any(
+        f" {re.sub(r'[^a-z0-9]+', ' ', name.casefold()).strip()} " in normalized
+        for name, _artist_handle, _profile in known_handles()
+    )
 
 
 def is_truncated_copy(value):
@@ -489,6 +499,10 @@ def known_handles():
         ("ColdheartedAC", "@coldheartedac", "https://www.instagram.com/coldheartedac/"),
         ("Sauce Walka", "@sauce_walka102", "https://www.instagram.com/sauce_walka102/"),
         ("Trippie Redd", "@trippieredd", "https://www.instagram.com/trippieredd/"),
+        ("GloRilla", "@glorillapimp", "https://www.instagram.com/glorillapimp/"),
+        ("Sexyy Red", "@sexyyred", "https://www.instagram.com/sexyyred/"),
+        ("Tupac", "@2pac", "https://www.instagram.com/2pac/"),
+        ("2Pac", "@2pac", "https://www.instagram.com/2pac/"),
     ]
     for path in QUEUE.glob("*.json"):
         try:

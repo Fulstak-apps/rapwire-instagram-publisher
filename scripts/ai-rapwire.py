@@ -11,7 +11,8 @@ ROOT=Path(__file__).resolve().parents[1]; QUEUE=ROOT/'queue'; MEDIA=ROOT/'media'
 FEED_URL=os.environ.get('NARRO_RSS_URL','https://rss.narro.info/e4f36406-0664-4e77-b672-7e0682966a9f')
 APPROVED_SOURCE_HANDLES={'akademiks','nojumper','poetikflakkonews','traploreross','saycheesetv','theshaderoom','worldstarhiphop','detroitrapnews','detroitrapdaily','complexmusic','gta6latest'}
 RAP_CENTRIC_SOURCES=APPROVED_SOURCE_HANDLES-{'theshaderoom','gta6latest'}
-RAP_TOPIC_TERMS=(' rap ',' rapper','hip-hop','hip hop','album','mixtape','single','track','song','producer','bars','verse','freestyle','diss','beef','record label','tour','concert','festival','stage','trial','court','charged','arrested','sentenced','plea','shooting')
+RAP_TOPIC_TERMS=(' rap ',' rapper','hip-hop','hip hop','hiphop','album','mixtape','single','track','song','producer','bars','verse','freestyle','diss','beef','record label','tour','concert','festival','stage','trial','court','charged','arrested','sentenced','plea','shooting')
+VERIFIED_RAP_ARTISTS=('glorilla','sexyy red','tupac','2pac','lil durk','drake','lil wayne','young thug','cardi b','doechii','skilla baby','rod wave','sauce walka','trippie redd','50 cent','rick ross','tyler the creator')
 NON_NEWS_FLUFF=('birthday','adorable','daddy duties','relationship goals','on vacay','vacation','outfit','thirst trap','roommate diaries','scenarioz')
 MAX_CANDIDATES=int(os.environ.get('MAX_NEW_ITEMS','12')); MAX_AGE_HOURS=max(48,int(os.environ.get('MAX_SOURCE_AGE_HOURS','48')))
 FONT_BOLD='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'; FONT_REG='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
@@ -29,7 +30,9 @@ def approved_rap_candidate(item):
     handle=source_handle(item.get('title','')); blob=f" {clean(item.get('title')).casefold()} {clean(item.get('description')).casefold()} "
     if handle not in APPROVED_SOURCE_HANDLES or any(term in blob for term in NON_NEWS_FLUFF):return False
     if handle=='gta6latest':return True
-    return handle in RAP_CENTRIC_SOURCES or any(term in blob for term in RAP_TOPIC_TERMS)
+    if handle in RAP_CENTRIC_SOURCES or any(term in blob for term in RAP_TOPIC_TERMS):return True
+    normalized=' '+re.sub(r'[^a-z0-9]+',' ',blob).strip()+' '
+    return handle=='theshaderoom' and any(f' {artist} ' in normalized for artist in VERIFIED_RAP_ARTISTS)
 
 def tag_text(item,name):
     for child in item:

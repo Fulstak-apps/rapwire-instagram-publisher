@@ -8,7 +8,7 @@ on:
       - "media/**"
   workflow_dispatch:
   schedule:
-    - cron: "7,27,47 * * * *"
+    - cron: "*/10 * * * *"
 
 permissions:
   contents: write
@@ -20,7 +20,7 @@ concurrency:
 env:
   NARRO_RSS_URL: "https://rss.narro.info/e4f36406-0664-4e77-b672-7e0682966a9f"
   MAX_NEW_ITEMS: "12"
-  MAX_SOURCE_AGE_HOURS: "24"
+  MAX_SOURCE_AGE_HOURS: "48"
 
 jobs:
   monitor-and-publish:

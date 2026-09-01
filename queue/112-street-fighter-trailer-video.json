@@ -1,6 +1,6 @@
 {
   "id": "112-street-fighter-trailer-video",
-  "status": "ready",
+  "status": "paused",
   "date": "2026-09-01",
   "timezone": "America/Detroit",
   "content_type": "video",
@@ -39,5 +39,6 @@
   "visual_asset_type": "source_video",
   "visual_asset_rights": "source_post_repost",
   "source_video_used": true,
-  "threads_status": "pending"
+  "threads_status": "pending",
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

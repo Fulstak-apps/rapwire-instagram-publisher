@@ -739,6 +739,15 @@ def paginate_text(draw, text, selected_font, width, lines_per_page):
 
 
 def artist_tag(draw, name, handle, y):
+    # Source/blog handles never belong in the finished art. This tag is only
+    # for a verified artist or named public figure central to the story.
+    if not name or not handle or handle.casefold().lstrip("@") in {
+        "akademiks", "traploreross", "poetikflako", "nojumper",
+        "saycheesetv", "worldstar", "worldstarhiphop", "theshaderoom",
+        "complexmusic", "detroitrapnews", "detroitrapdaily", "raplisted_",
+        "trapmatictv"
+    }:
+        return
     label = f"{name.upper()}  {handle}"
     selected = font(25)
     width = int(draw.textlength(label, font=selected)) + 38

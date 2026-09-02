@@ -115,7 +115,7 @@ async function capture(reelUrl, options = {}) {
       if (audioInput) ffmpegArgs.push("-i", audioInput);
       const logoInputIndex = audioInput ? 2 : 1;
       ffmpegArgs.push("-loop", "1", "-i", path.resolve("assets", "rapwire247-logo.png"));
-      const videoFilter = `[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=170:170[bug];[framed][bug]overlay=x=W-w-34:y=H-h-34:shortest=1[v]`;
+      const videoFilter = `[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=170:170[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v]`;
       ffmpegArgs.push(
         "-filter_complex",
         videoFilter,
@@ -150,7 +150,7 @@ async function capture(reelUrl, options = {}) {
       await fs.rm(tempDir, { recursive: true, force: true });
     }
     const resultStat = await fs.stat(destination);
-    console.log(JSON.stringify({ shortcode, destination, bytes: resultStat.size, audioCaptured: Boolean(audioInput), logoOverlay: "rapwire247-logo-bottom-right", source: reelUrl }));
+    console.log(JSON.stringify({ shortcode, destination, bytes: resultStat.size, audioCaptured: Boolean(audioInput), logoOverlay: "rapwire247-logo-bottom-left", source: reelUrl }));
   } finally {
     await context.close();
   }

@@ -39,8 +39,28 @@ function shortcodeFromUrl(url) {
 function cleanText(text) {
   return String(text || "")
     .replace(/\s+/g, " ")
-    .replace(/@\w+/g, "")
+    .replace(/\b(?:View all \d+ comments?|Add a comment…|Original audio)\b/gi, "")
+    .replace(/["“”]*[^"“”:.]{1,80} on Instagram:\s*["“”]*/gi, "")
     .trim();
+}
+
+function accountFromUrl(url) {
+  return new URL(url).pathname.split("/").filter(Boolean)[0] || "";
+}
+
+function isSourcePageHandle(handle) {
+  return sources.some((source) => source.handle.toLowerCase() === String(handle || "").toLowerCase());
+}
+
+function artistHandleLine(candidate) {
+  const account = accountFromUrl(candidate.url);
+  if (!account || isSourcePageHandle(account)) return "";
+  const displayName = account
+    .split(/[._]/)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+  return `${displayName} (@${account})`;
 }
 
 function slugify(text) {
@@ -124,9 +144,8 @@ async function releaseLock() {
 function buildBody(source, visibleCaption) {
   const base = visibleCaption
     ? visibleCaption.split(/[.!?]\s/).slice(0, 2).join(". ").slice(0, 220)
-    : "A new hip-hop video is making the rounds and RapWire is reposting it for the feed.";
-  const credit = source.credit ? ` Source: @${source.handle}.` : "";
-  return `${base}${base.endsWith(".") ? "" : "."}${credit} RapWire 24/7 is keeping the video feed moving with quick repost coverage while bigger reported stories stay on the AI newsroom schedule.`;
+    : "A new hip-hop video is moving through the feed and RapWire is posting it for the timeline.";
+  return `${base}${base.endsWith(".") ? "" : "."} RapWire 24/7 is keeping the hip-hop video feed moving with quick clean repost coverage.`;
 }
 
 async function queueCapture(ledger, candidate, queueNumber) {
@@ -141,6 +160,8 @@ async function queueCapture(ledger, candidate, queueNumber) {
   await fs.copyFile(sourceVideo, mediaPath);
 
   const body = buildBody(candidate.source, visibleCaption);
+  const handleLine = artistHandleLine(candidate);
+  const caption = `${body}${handleLine ? `\n\n${handleLine}` : ""}\n\nRapWire 24/7.`;
   const queueItem = {
     id,
     status: "ready",
@@ -155,8 +176,8 @@ async function queueCapture(ledger, candidate, queueNumber) {
     headline: cleanText(headlineSeed).slice(0, 90) || "RapWire Video Repost",
     body,
     rendered_body_text: body,
-    caption: `${body}\n\nRapWire 24/7.`,
-    threads_text: `${body}\n\nRapWire 24/7.`,
+    caption,
+    threads_text: caption,
     video: path.relative(root, mediaPath),
     source_handle: candidate.source.handle,
     source_url: candidate.url,

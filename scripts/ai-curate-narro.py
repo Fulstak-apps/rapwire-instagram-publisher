@@ -94,10 +94,15 @@ def existing():
 
 def curate(item):
     prompt = f"""You are the senior editor for RapWire 24/7, a premium rap-first newsroom.\n\nEvaluate this Narro feed item. Only keep stories from these monitored sources: DJ Akademiks, Trap Lore Ross, Poetik Flako, No Jumper, Say Cheese TV, WorldStarHipHop, Detroit Rap News, Detroit Rap Daily, Complex Music (@complexmusic), or The Shade Room when directly rap-related. GTA6Latest is the sole non-rap exception and must be occasional. Prioritize substantive Lil Durk federal-trial developments when current, then other rap/hip-hop news, then rap culture or WorldStar-style viral items. Gaming is allowed only for GTA/Rockstar coverage after rap items. Reject pop-only, lifestyle, unrelated entertainment, politics, weather, sports, ads, rumors without substance, placeholders, stale posts, and incomplete excerpts. For criminal cases, state allegations and presumption of innocence or known plea posture.\n\nReturn ONLY valid JSON with: keep (boolean), importance (0-100), headline (max 90 chars), story (110-180 words, factual and clear), image_scene (one detailed sentence describing an original editorial illustration), caption (a concise Instagram caption with source attribution). Do not invent facts. If the feed item does not contain enough information to responsibly summarize, keep=false. Never use a ranking/list headline unless every promised item is actually provided.\n\nTITLE: {item['title']}\nDESCRIPTION: {item['description'][:5000]}\nSOURCE/AUTHOR: {item['author']}\nLINK: {item['link']}"""
+    prompt += "\n\nPublic caption rule: never use the word AI in caption text."
     r = client.responses.create(model="gpt-5.6-luna", input=prompt)
     text = r.output_text.strip()
     text = re.sub(r"^```json\s*|\s*```$", "", text, flags=re.I)
     return json.loads(text)
+
+
+def public_caption(text):
+    return re.sub(r"\bAI\b", "editorial", text or "", flags=re.I)
 
 
 def generate_art(scene):
@@ -246,8 +251,8 @@ for raw in items:
         "source_published_at": raw["pub"],
         "headline": decision["headline"],
         "body": decision["story"],
-        "caption": decision["caption"],
-        "threads_text": decision["caption"],
+        "caption": public_caption(decision["caption"]),
+        "threads_text": public_caption(decision["caption"]),
         "visual_asset_type": "original_graphic",
         "visual_asset_rights": "owned",
         "photo_event_relevance": "same_campaign",

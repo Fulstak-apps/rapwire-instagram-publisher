@@ -18,6 +18,32 @@ const threadsBase = "https://graph.threads.net/v1.0";
 const queueDir = "queue";
 const logsDir = "logs";
 const attemptsLog = path.join(logsDir, "publish-attempts.jsonl");
+const cooldownPath = path.join(logsDir, "instagram-cooldown.json");
+let cooldown = JSON.parse(await fs.readFile(cooldownPath, "utf8").catch(error => {
+  if (error.code === "ENOENT") return "{}";
+  throw error;
+}));
+if (Date.parse(cooldown.until || "") > Date.now()) {
+  console.log(`Instagram rate-limit cooldown until ${cooldown.until}; saved uploads retained.`);
+  process.exit(0);
+}
+
+async function checkInstagramRateLimit(response, payload) {
+  if (response.status !== 429 && ![4, 17, 32, 613].includes(payload.error?.code)) return;
+  const previousRecent = Date.now() - Date.parse(cooldown.detected_at || "") < 24 * 60 * 60_000;
+  const strikes = previousRecent ? Number(cooldown.strikes || 0) + 1 : 1;
+  const retryAfter = response.headers.get("retry-after");
+  const serverDelay = Number.isFinite(Number(retryAfter)) ? Number(retryAfter) * 1000 : Math.max(0, Date.parse(retryAfter) - Date.now()) || 0;
+  const delay = Math.max(serverDelay, Math.min(240, 30 * 2 ** (strikes - 1)) * 60_000);
+  cooldown = { detected_at: new Date().toISOString(), until: new Date(Date.now() + delay).toISOString(), strikes, reason: "Instagram application request limit" };
+  await fs.mkdir(logsDir, { recursive: true });
+  await fs.writeFile(cooldownPath, JSON.stringify(cooldown, null, 2) + "\n");
+  throw new Error(`Instagram rate limited; all requests deferred until ${cooldown.until}`);
+}
+
+function assertInstagramAvailable() {
+  if (Date.parse(cooldown.until || "") > Date.now()) throw new Error(`Instagram cooling down until ${cooldown.until}`);
+}
 const queueNames = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
 const queueRecords = await Promise.all(queueNames.map(async (name) => ({
   name,
@@ -91,6 +117,7 @@ async function save(itemPath, item) {
 
 async function instagramPost(endpoint, fields) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
+    assertInstagramAvailable();
     const body = new URLSearchParams({ ...fields, access_token: instagramToken });
     const response = await fetch(`${instagramBase}/${instagramUserId}/${endpoint}`, {
       method: "POST",
@@ -98,6 +125,7 @@ async function instagramPost(endpoint, fields) {
       signal: AbortSignal.timeout(requestTimeoutMs)
     });
     const payload = await response.json();
+    await checkInstagramRateLimit(response, payload);
     if (response.ok && !payload.error) return payload;
     const mediaNotReady = endpoint === "media_publish"
       && payload.error?.code === 9007
@@ -109,16 +137,20 @@ async function instagramPost(endpoint, fields) {
 }
 
 async function waitForInstagramContainer(containerId) {
-  for (let attempt = 0; attempt < 30; attempt += 1) {
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    assertInstagramAvailable();
     const url = new URL(`${instagramBase}/${containerId}`);
     url.searchParams.set("fields", "status_code,status");
     url.searchParams.set("access_token", instagramToken);
-    const payload = await (await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) })).json();
+    const response = await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) });
+    const payload = await response.json();
+    await checkInstagramRateLimit(response, payload);
+    if (!response.ok || payload.error) throw new Error(`Instagram status check failed: ${JSON.stringify(payload)}`);
     if (payload.status_code === "FINISHED") return;
     if (["ERROR", "EXPIRED"].includes(payload.status_code)) {
       throw new Error(`Instagram container ${containerId} failed: ${JSON.stringify(payload)}`);
     }
-    await sleep(10_000);
+    await sleep(60_000);
   }
   throw new Error(`Instagram container ${containerId} did not finish in time`);
 }
@@ -182,6 +214,7 @@ async function prepareInstagramReel(item, itemPath) {
 }
 
 async function publishInstagramReel(item, itemPath) {
+  assertInstagramAvailable();
   if (!item.instagram_container_id) return null;
   if (Date.now() - Date.parse(item.instagram_container_checked_at || 0) < 60_000) return null;
   const url = new URL(`${instagramBase}/${item.instagram_container_id}`);
@@ -189,6 +222,7 @@ async function publishInstagramReel(item, itemPath) {
   url.searchParams.set("access_token", instagramToken);
   const response = await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) });
   const payload = await response.json();
+  await checkInstagramRateLimit(response, payload);
   if (!response.ok || payload.error) throw new Error(`Instagram processing check failed: ${JSON.stringify(payload)}`);
   item.instagram_container_checked_at = new Date().toISOString();
   item.instagram_container_status = payload.status_code;

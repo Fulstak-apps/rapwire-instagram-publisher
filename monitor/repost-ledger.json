@@ -786,6 +786,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DczBcGNgRD0/",
       "queue_id": "162-reposted-from-akademiks-lil-durk-allegedly-sent-a-message-to-som"
+    },
+    "DcyUMrwuY-C": {
+      "queued_at": "2026-09-02T20:32:57.821Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DcyUMrwuY-C/",
+      "queue_id": "163-reposted-from-akademiks-young-thug-speaks-on-lil-durk-trial"
     }
   },
   "runs": [
@@ -7578,21 +7584,20 @@
       "mode": "discovery",
       "vip_pending": 4,
       "finished_at": "2026-09-02T20:29:52.964Z"
+    },
+    {
+      "started_at": "2026-09-02T20:31:56.047Z",
+      "candidates": 48,
+      "queued": [
+        "163-reposted-from-akademiks-young-thug-speaks-on-lil-durk-trial"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 3,
+      "finished_at": "2026-09-02T20:32:57.821Z"
     }
   ],
   "vip_pending": {
-    "DcyUMrwuY-C": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/DcyUMrwuY-C/",
-      "shortcode": "DcyUMrwuY-C",
-      "first_seen_at": "2026-09-02T19:52:34.711Z",
-      "profile_position": 3,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video:visible').first() to be visible\n",
-      "last_attempt_at": "2026-09-02T20:19:32.709Z",
-      "retry_at": "2026-09-02T20:21:32.709Z"
-    },
     "DcxkMkMFS_H": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",

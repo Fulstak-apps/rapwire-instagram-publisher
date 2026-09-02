@@ -3,6 +3,7 @@ import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { capture, launch } from "./instagram-browser-mirror.mjs";
+import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-caption.mjs";
 
 const execFileAsync = promisify(execFile);
 
@@ -45,25 +46,6 @@ function cleanText(text) {
     .replace(/\b(?:View all \d+ comments?|Add a comment…|Original audio)\b/gi, "")
     .replace(/["“”]*[^"“”:.]{1,80} on Instagram:\s*["“”]*/gi, "")
     .trim();
-}
-
-function accountFromUrl(url) {
-  return new URL(url).pathname.split("/").filter(Boolean)[0] || "";
-}
-
-function isSourcePageHandle(handle) {
-  return sources.some((source) => source.handle.toLowerCase() === String(handle || "").toLowerCase());
-}
-
-function artistHandleLine(candidate) {
-  const account = accountFromUrl(candidate.url);
-  if (!account || isSourcePageHandle(account)) return "";
-  const displayName = account
-    .split(/[._]/)
-    .filter(Boolean)
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-    .join(" ");
-  return `${displayName} (@${account})`;
 }
 
 function slugify(text) {
@@ -114,15 +96,12 @@ async function readPostMetadata(context, url) {
   try {
     await page.goto(url, { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(2500);
-    const candidates = [
-      await page.locator('meta[property="og:title"]').getAttribute("content").catch(() => ""),
-      await page.locator('meta[property="og:description"]').getAttribute("content").catch(() => ""),
-      await page.locator("article").innerText({ timeout: 2500 }).catch(() => "")
-    ];
-    const fullText = candidates.join("\n");
+    const get = property => page.locator(`meta[property="${property}"]`).getAttribute("content", { timeout: 5000 }).catch(() => "");
+    const [canonicalUrl, title, description] = await Promise.all([get("og:url"),get("og:title"),get("og:description")]);
     return {
-      caption: cleanText(candidates.find((candidate) => cleanText(candidate).length > 20) || ""),
-      viewCount: viewCountFromText(fullText)
+      caption: sourceCaption({ requestedUrl:url, canonicalUrl, title, description }),
+      isVideo: await page.locator("video:visible").count() === 1,
+      viewCount: viewCountFromText(description)
     };
   } finally {
     await page.close();
@@ -165,27 +144,24 @@ async function releaseLock() {
   if (current.pid === process.pid) await fs.rm(lockPath, { force: true });
 }
 
-function buildBody(source, visibleCaption) {
-  const base = visibleCaption
-    ? visibleCaption.split(/[.!?]\s/).slice(0, 2).join(". ").slice(0, 220)
-    : "A new hip-hop video is moving through the feed and RapWire is posting it for the timeline.";
-  return `${base}${base.endsWith(".") ? "" : "."} Clean repost coverage for the hip-hop feed.`;
+async function captionFields(evidence, source) {
+  const registry = await readJson(path.join(root, "monitor", "artist-handles.json"), []);
+  const text = buildVideoCaption(evidence.source_caption_text, source, registry);
+  return { ...text, rendered_body_text:text.body, threads_text:text.caption, caption_policy:"exact-source-v1", caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text, caption_checked_at:evidence.captured_at, media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration };
 }
 
 async function queueCapture(ledger, candidate, queueNumber) {
   const shortcode = candidate.shortcode;
-  await capture(candidate.url, { headless: true });
+  const evidence = await capture(candidate.url, { headless: true });
   const sourceVideo = path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`);
   await fs.access(sourceVideo);
-  const visibleCaption = candidate.visibleCaption || "";
-  const headlineSeed = visibleCaption || `${candidate.source.handle} repost video`;
+  const fields = await captionFields(evidence, candidate.source.handle);
+  const headlineSeed = fields.body;
   const id = `${String(queueNumber).padStart(3, "0")}-${slugify(headlineSeed)}`;
   const mediaPath = path.join(mediaDir, `${id}.mp4`);
   await fs.copyFile(sourceVideo, mediaPath);
 
-  const body = buildBody(candidate.source, visibleCaption);
-  const handleLine = artistHandleLine(candidate);
-  const caption = `${body}${handleLine ? `\n\n${handleLine}` : ""}\n\nRap Wire 24/7\n@Rapwire247\n@${candidate.source.handle}`;
+  const { body, caption } = fields;
   const queueItem = {
     id,
     status: "ready",
@@ -219,6 +195,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
     rap_relevance_checked: true,
     threads_status: "pending"
   };
+  Object.assign(queueItem, fields);
   await writeJson(path.join(queueDir, `${id}.json`), queueItem);
   ledger.queued_shortcodes[shortcode] = {
     queued_at: new Date().toISOString(),
@@ -231,7 +208,6 @@ async function queueCapture(ledger, candidate, queueNumber) {
 }
 
 async function commitAndPush(createdIds) {
-  if (!createdIds.length) return;
   const paths = ["monitor/repost-ledger.json"];
   for (const id of createdIds) {
     const name = path.join("queue", `${id}.json`);
@@ -239,10 +215,13 @@ async function commitAndPush(createdIds) {
     paths.push(name);
     if (item.video) paths.push(item.video);
   }
+  const { stdout: changed } = await execFileAsync("git", ["status", "--porcelain", "--", ...paths]);
+  if (changed.trim()) {
   await execFileAsync("git", ["add", "--", ...paths]);
-  await execFileAsync("git", ["commit", "--only", "-m", `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}`, "--", ...paths]).catch((error) => {
+  await execFileAsync("git", ["commit", "--only", "-m", createdIds.length ? `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}` : "Save RapWire collector health", "--", ...paths]).catch((error) => {
     if (!/nothing to commit/i.test(error.stdout || error.stderr || "")) throw error;
   });
+  }
   await execFileAsync("git", ["pull", "--rebase", "origin", "main"]);
   await execFileAsync("git", ["push", "origin", "HEAD:main"]);
 }
@@ -292,28 +271,42 @@ try {
     }
   }
 
-  // Replace old burned-in right-side branding from the original capture.
-  // Use a new media path so public media caches cannot serve the old render.
+  // Repair the pending backlog, never captions/media on already-live posts.
+  let repairAttempts = 0;
   for (const name of (await fs.readdir(queueDir)).sort()) {
-    if (!/^(124|125|126|127|128|129)-.*\.json$/.test(name)) continue;
+    if (!name.endsWith(".json")) continue;
     const itemPath = path.join(queueDir, name);
     const item = await readJson(itemPath, {});
-    if (item.status !== "ready" || item.logo_position === "bottom-left" || item.instagram_container_id) continue;
+    if (item.status !== "ready" || item.content_type !== "video" || captionIsBound(item)
+      || item.instagram_media_id || item.instagram_publish_requested_at || item.instagram_reconcile_required
+      || Date.parse(item.caption_retry_at || "") > Date.now()) continue;
+    if (repairAttempts++ >= 3) break;
     try {
-      await capture(item.source_url, { headless: true });
+      const evidence = await capture(item.source_url, { headless: true });
+      const fields = await captionFields(evidence, item.source_handle);
       const shortcode = shortcodeFromUrl(item.source_url);
-      const destination = path.join(mediaDir, `${item.id}-logo-left.mp4`);
+      const destination = path.join(mediaDir, `${item.id}-caption-matched.mp4`);
       await fs.copyFile(path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`), destination);
       item.video = path.relative(root, destination);
       delete item.video_url;
       item.logo_position = "bottom-left";
+      if (item.instagram_container_id) {
+        item.superseded_unpublished_container_ids = [...(item.superseded_unpublished_container_ids || []), item.instagram_container_id];
+        for (const field of ["instagram_container_id", "instagram_container_created_at", "instagram_container_checked_at", "instagram_container_status", "instagram_retry_at"]) delete item[field];
+      }
+      Object.assign(item, fields);
+      delete item.caption_review_error; delete item.caption_retry_at;
       await writeJson(itemPath, item);
       run.queued.push(item.id);
       await commitAndPush([item.id]);
+      break;
     } catch (error) {
-      run.errors.push({ source_url: item.source_url, stage: "logo_rebuild", error: error.message });
+      item.caption_review_error = error.message;
+      item.caption_retry_at = new Date(Date.now() + 3600000).toISOString();
+      await writeJson(itemPath, item);
+      await commitAndPush([item.id]);
+      run.errors.push({ source_url: item.source_url, stage: "caption_repair", error: error.message });
     }
-    break;
   }
 
   const discovered = [];
@@ -337,6 +330,7 @@ try {
       try {
         const metadata = await readPostMetadata(context, candidate.url);
         candidate.visibleCaption = metadata.caption;
+        candidate.isVideo = metadata.isVideo;
         candidate.viewCount = metadata.viewCount;
       } catch (error) {
         run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "score", error: error.message });
@@ -360,6 +354,7 @@ try {
   for (const candidate of rankedCandidates) {
     if (run.queued.length >= maxQueuePerRun) break;
     if (ledger.queued_shortcodes[candidate.shortcode]) continue;
+    if (!candidate.isVideo || !candidate.visibleCaption) continue;
     try {
       const id = await queueCapture(ledger, candidate, queueNumber);
       run.queued.push(id);

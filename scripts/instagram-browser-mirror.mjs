@@ -4,6 +4,7 @@ import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { chromium } from "playwright-core";
+import { readExactPost } from "./post-metadata.mjs";
 
 const execFileAsync = promisify(execFile);
 
@@ -75,10 +76,11 @@ async function capture(reelUrl, options = {}) {
     });
     await page.goto(reelUrl, { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(2500);
-    const video = page.locator("video").first();
+    const video = page.locator("video:visible").first();
     await video.waitFor({ state: "visible", timeout: 15_000 });
     await video.click().catch(() => {});
     await page.waitForTimeout(12_000);
+    const sourceEvidence = await readExactPost(page, reelUrl);
     if (!candidates.length) throw new Error("No authenticated video response was captured from Instagram.");
     const groups = new Map();
     for (const item of candidates) {
@@ -98,18 +100,36 @@ async function capture(reelUrl, options = {}) {
     let videoInput = "";
     let audioInput = "";
     try {
+      const matchedVideos = [];
+      const matchedAudio = [];
       for (let index = 0; index < assembled.length; index += 1) {
+        // Never concatenate disjoint byte ranges or accept a partial download.
+        let expectedOffset = 0;
+        let complete = true;
+        for (const part of assembled[index].parts) {
+          if (part.rangeStart !== expectedOffset) { complete = false; break; }
+          expectedOffset += part.body.length;
+        }
+        const total = Number(assembled[index].parts[0].headers["content-range"]?.match(/\/(\d+)$/)?.[1]);
+        if (!complete || (total > 0 && expectedOffset !== total)) continue;
         const candidatePath = path.join(tempDir, `stream-${index}.bin`);
         await fs.writeFile(candidatePath, Buffer.concat(assembled[index].parts.map((part) => part.body)));
         try {
-          const { stdout } = await execFileAsync("ffprobe", ["-v", "error", "-show_entries", "stream=codec_type", "-of", "json", candidatePath]);
-          const types = JSON.parse(stdout).streams?.map((stream) => stream.codec_type) || [];
-          if (!videoInput && types.includes("video")) videoInput = candidatePath;
-          if (!audioInput && types.includes("audio")) audioInput = candidatePath;
+          const { stdout } = await execFileAsync("ffprobe", ["-v", "error", "-show_entries", "stream=codec_type,width,height:format=duration", "-of", "json", candidatePath]);
+          const probe = JSON.parse(stdout);
+          if (Math.abs(Number(probe.format?.duration) - sourceEvidence.duration) > 1 || !Number(probe.format?.duration)) continue;
+          const videoStream = probe.streams?.find(stream => stream.codec_type === "video");
+          const hasAudio = probe.streams?.some(stream => stream.codec_type === "audio");
+          if (videoStream && videoStream.width === sourceEvidence.width && videoStream.height === sourceEvidence.height) matchedVideos.push({ path: candidatePath, hasAudio });
+          else if (!videoStream && hasAudio) matchedAudio.push(candidatePath);
         } catch {
           // Ignore incomplete or duplicate streaming groups.
         }
       }
+      if (matchedVideos.length !== 1) throw new Error(`Captured media cannot be uniquely matched to the visible source video (${matchedVideos.length} matches); refusing unrelated media`);
+      videoInput = matchedVideos[0].path;
+      audioInput = matchedVideos[0].hasAudio ? videoInput : matchedAudio.length === 1 ? matchedAudio[0] : "";
+      if (!audioInput) throw new Error("No unambiguous matching audio stream; refusing silent or unrelated audio");
       if (!videoInput) throw new Error("Captured Instagram fragments did not contain a complete video stream.");
       const ffmpegArgs = ["-y", "-i", videoInput];
       if (audioInput) ffmpegArgs.push("-i", audioInput);
@@ -146,11 +166,15 @@ async function capture(reelUrl, options = {}) {
       if (!Number.isFinite(duration) || duration <= 0) {
         throw new Error("Rendered mirror has no valid playable duration.");
       }
+      if (Math.abs(duration - sourceEvidence.duration) > 1) throw new Error("Output duration does not match the caption's source video");
     } finally {
       await fs.rm(tempDir, { recursive: true, force: true });
     }
     const resultStat = await fs.stat(destination);
+    const evidence = { ...sourceEvidence, shortcode, destination, bytes: resultStat.size, captured_at: new Date().toISOString(), media_match_method: "unique-complete-stream-duration-dimensions-v1" };
+    await fs.writeFile(path.join(outputDir, `${shortcode}.json`), JSON.stringify(evidence, null, 2) + "\n");
     console.log(JSON.stringify({ shortcode, destination, bytes: resultStat.size, audioCaptured: Boolean(audioInput), logoOverlay: "rapwire247-logo-bottom-left", source: reelUrl }));
+    return evidence;
   } finally {
     await context.close();
   }

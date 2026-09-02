@@ -17,7 +17,7 @@ export function sourceCaption({ requestedUrl, canonicalUrl, title = '', descript
 
 export function buildVideoCaption(raw, source, registry = []) {
   if (!raw || genericCaption(raw)) throw new Error('No video-specific caption available');
-  let text = raw.replace(/https?:\/\/\S+/g, '').replace(/#[\w]+/g, '').replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu, '').replace(/\s+/g, ' ').trim();
+  let text = raw.replace(/https?:\/\/\S+/g, '').replace(/#(\w+)/g, (_, name) => /^(explore|explorepage|viral|viralvideo|fyp|trending)$/i.test(name) ? '' : name).replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu, '').replace(/\s+/g, ' ').trim();
   if (/\bAI\b/i.test(text)) throw new Error('Caption needs editorial review under the no-AI-caption rule');
   const verified = registry.filter(person => Date.now() - Date.parse(person.verified_at || '') < 30 * 86400000 && /^https:\/\/www\.instagram\.com\//.test(person.verified_url || ''));
   const used = [];

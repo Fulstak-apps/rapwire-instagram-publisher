@@ -8,7 +8,7 @@ on:
       - "media/**"
   workflow_dispatch:
   schedule:
-    - cron: "* * * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -64,7 +64,7 @@ jobs:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           PUBLISH_INSTAGRAM_STORIES: "true"
-          MAX_FEED_POSTS_PER_RUN: "3"
+          MAX_FEED_POSTS_PER_RUN: "1"
         run: node scripts/publish-instagram.mjs
 
       - name: Save publication log

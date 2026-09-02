@@ -17,7 +17,7 @@ const sources = [
   { handle: "akademiks", credit: true, includePosts: true, includeReels: true },
   { handle: "traploreross", credit: true, includePosts: true, includeReels: true }
 ];
-const maxQueuePerRun = Math.max(1, Number(process.env.RAPWIRE_REPOSTS_PER_RUN || 3));
+const maxQueuePerRun = 1;
 const candidatesPerSourceToScore = 4;
 
 async function readJson(file, fallback) {

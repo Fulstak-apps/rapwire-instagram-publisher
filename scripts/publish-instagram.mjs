@@ -59,7 +59,19 @@ const files = queueRecords
   .map((record) => record.name);
 // Respect the workflow's pacing limit. The newsroom may prepare a batch, but
 // only the configured number of feed posts should go live in one cycle.
-const maxFeedPostsPerRun = Math.max(1, Number(process.env.MAX_FEED_POSTS_PER_RUN || 3));
+const maxFeedPostsPerRun = 1;
+let videoAttemptsThisRun = 0;
+const pacingPath = path.join(logsDir, "publisher-pacing.json");
+const pacing = JSON.parse(await fs.readFile(pacingPath, "utf8").catch(error => {
+  if (error.code === "ENOENT") return "{}";
+  throw error;
+}));
+if (Date.now() - Date.parse(pacing.last_run_at || "") < 120_000) {
+  console.log("Two-minute publishing interval has not elapsed.");
+  process.exit(0);
+}
+await fs.mkdir(logsDir, { recursive: true });
+await fs.writeFile(pacingPath, JSON.stringify({ last_run_at: new Date().toISOString() }) + "\n");
 const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 let olderStoryAttemptsThisRun = 0;
@@ -216,7 +228,7 @@ async function prepareInstagramReel(item, itemPath) {
 async function publishInstagramReel(item, itemPath) {
   assertInstagramAvailable();
   if (!item.instagram_container_id) return null;
-  if (Date.now() - Date.parse(item.instagram_container_checked_at || 0) < 60_000) return null;
+  if (Date.now() - Date.parse(item.instagram_container_checked_at || 0) < 120_000) return null;
   const url = new URL(`${instagramBase}/${item.instagram_container_id}`);
   url.searchParams.set("fields", "status_code,status");
   url.searchParams.set("access_token", instagramToken);
@@ -323,7 +335,7 @@ for (const file of files) {
 // their slots across runs so slow processing cannot create an upload pileup.
 const processingCount = queueRecords.filter(({ item }) => item.status === "ready"
   && item.content_type === "video" && item.instagram_container_id).length;
-const uploadSlots = Math.max(0, Math.min(3 - processingCount, maxFeedPostsPerRollingDay - feedPostsPublishedInRollingDay));
+const uploadSlots = Math.max(0, Math.min(1 - processingCount, maxFeedPostsPerRollingDay - feedPostsPublishedInRollingDay));
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
   .filter(({ item }) => item.status === "ready" && item.content_type === "video"
     && !item.instagram_container_id && String(item.video || "").endsWith(".mp4")
@@ -411,6 +423,10 @@ for (const file of files) {
       continue;
     }
     let published;
+    if (isVideoItem) {
+      if (!item.instagram_container_id || videoAttemptsThisRun >= 1) continue;
+      videoAttemptsThisRun += 1;
+    }
     try {
       published = isVideoItem ? await publishInstagramReel(item, itemPath) : await publishInstagramFeed(item);
     } catch (error) {

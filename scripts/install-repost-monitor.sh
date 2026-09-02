@@ -22,7 +22,7 @@ cat > "$plist_path" <<PLIST
     <string>export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"; cd "$repo_dir" &amp;&amp; npm run repost:monitor</string>
   </array>
   <key>StartInterval</key>
-  <integer>60</integer>
+  <integer>120</integer>
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>

@@ -1,4 +1,4 @@
-import { isVip, vipCaption } from './vip-policy.mjs';
+import { isVip, vipCaption, legacyVipBody } from './vip-policy.mjs';
 export const shortcode = value => String(value || '').match(/\/(?:reel|p)\/([\w-]+)/)?.[1] || '';
 export const genericCaption = value => /a new hip.hop video is|keeping the (?:hip.hop )?video feed moving|clean repost coverage|on Instagram:|newsroom schedule/i.test(String(value || ''));
 
@@ -34,11 +34,11 @@ export function buildVideoCaption(raw, source, registry = []) {
   }
   // Retain only handles actually verified as people, never infer one from URL paths.
   text = text.replace(/@[A-Za-z0-9_.]+/g, handle => verified.some(p => `@${p.handle}`.toLowerCase() === handle.toLowerCase()) ? handle : '').replace(/\s+/g, ' ').trim();
-  const footer = `\n\nRap Wire 24/7\n@Rapwire247\n@${source}`;
+  const footer = `\n\n@rapwire247`;
   const legal = /\b(trial|court|murder|attacking|arrest|testif|testimony|fbi|wire|cross.examination|judge|lies|lied|lying|snitch|suspect|charged|plead|lawsuit|witness|prosecutor)\w*\b/i.test(text);
   const prefix = legal ? 'Source commentary: ' : '';
   const caveat = legal ? ' These are source claims, not findings of guilt.' : '';
-  const limit = 490 - footer.length - prefix.length - caveat.length;
+  const limit = 490 - footer.length - source.length - 3 - prefix.length - caveat.length;
   if (text.length > limit) {
     const sentences = text.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [];
     let fitted = '';
@@ -48,7 +48,7 @@ export function buildVideoCaption(raw, source, registry = []) {
   }
   if (text.split(/\s+/).length < 4) throw new Error('Source caption lacks usable video context');
   const body = prefix + text + (/[.!?]$/.test(text) ? '' : '.') + caveat;
-  return { body, caption: body + footer, artist_handles: used };
+  return { body, caption: `@${source}\n\n` + body + footer, artist_handles: used };
 }
 
 export function captionIsBound(item) {
@@ -56,7 +56,7 @@ export function captionIsBound(item) {
     if (!isVip(item.source_handle) || item.caption_source_shortcode !== shortcode(item.source_url)
       || !item.caption_source_shortcode || item.vip_source_checked !== true) return false;
     const expected = vipCaption(item.source_caption_text, item.source_handle, item.source_url);
-    return item.body === expected.body && item.rendered_body_text === expected.body;
+    return [expected.body,legacyVipBody(item.source_caption_text,item.source_handle,item.source_url)].some(body=>item.body===body && item.rendered_body_text===body);
   }
   return item.caption_policy === 'exact-source-v1' && item.caption_source_shortcode === shortcode(item.source_url)
     && Boolean(item.caption_source_shortcode) && typeof item.source_caption_text === 'string'

@@ -41,10 +41,16 @@ export function vipCaption(raw, source, url) {
   if (!isVip(source)) throw new Error('VIP caption policy requires a configured VIP page');
   // Attribute the source, do not interpret, summarize or fact-certify its claims.
   const text = String(raw || '').trim();
-  const lead = `Reposted from @${source}.`;
-  const full = `${lead}\n\n${text}\n\nOriginal post: ${url}`;
+  const lead = `@${source}`;
+  const full = `${lead}\n\n${text}`;
   const body = text && full.length <= 2050 ? `${lead}\n\n${text}` : lead;
-  const caption = `${body}\n\nOriginal post: ${url}`;
-  const threads = caption.length <= 400 ? caption : `${lead}\n\nFull caption and original post: ${url}`;
+  const caption = body;
+  const threads = caption.length <= 400 ? caption : `${lead}\n\n${url}`;
   return {body, caption, threads_text:threads, artist_handles:[]};
+}
+
+// Accept only the exact prior format while older queued items migrate.
+export function legacyVipBody(raw,source,url) {
+  const text=String(raw||'').trim(),lead=`Reposted from @${source}.`;
+  return text && `${lead}\n\n${text}\n\nOriginal post: ${url}`.length<=2050?`${lead}\n\n${text}`:lead;
 }

@@ -7,7 +7,9 @@
     "mirror:login": "node scripts/instagram-browser-mirror.mjs login",
     "mirror:capture": "node scripts/instagram-browser-mirror.mjs capture",
     "mirror:draft": "node scripts/instagram-browser-mirror.mjs draft",
-    "mirror:publish": "node scripts/instagram-browser-mirror.mjs publish"
+    "mirror:publish": "node scripts/instagram-browser-mirror.mjs publish",
+    "repost:monitor": "node scripts/instagram-repost-monitor.mjs",
+    "repost:install": "bash scripts/install-repost-monitor.sh"
   },
   "dependencies": {
     "playwright-core": "^1.55.0"

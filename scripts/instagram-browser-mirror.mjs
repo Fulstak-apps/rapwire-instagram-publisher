@@ -40,14 +40,14 @@ async function login() {
   await new Promise((resolve) => context.once("close", resolve));
 }
 
-async function capture(reelUrl) {
+async function capture(reelUrl, options = {}) {
   if (!/^https:\/\/www\.instagram\.com\/(?:[^/]+\/)?(?:reel|p)\/[A-Za-z0-9_-]+\/?/.test(reelUrl)) {
     throw new Error("capture requires a full Instagram reel or video-post URL");
   }
   await fs.mkdir(outputDir, { recursive: true });
   const shortcode = reelUrl.match(/\/(?:reel|p)\/([A-Za-z0-9_-]+)/)[1];
   const destination = path.join(outputDir, `${shortcode}.mp4`);
-  const context = await launch(false);
+  const context = await launch(options.headless === true);
   try {
     const page = context.pages()[0] || await context.newPage();
     await assertRapWireLogin(page);
@@ -220,9 +220,13 @@ async function saveDraft(mediaPath, captionPath, publish = false) {
   }
 }
 
-const [command, argument] = process.argv.slice(2);
-if (command === "login") await login();
-else if (command === "capture") await capture(argument || "");
-else if (command === "draft") await saveDraft(argument || "", process.argv[4] || "");
-else if (command === "publish") await saveDraft(argument || "", process.argv[4] || "", true);
-else throw new Error("Usage: node scripts/instagram-browser-mirror.mjs <login|capture|draft|publish> [argument]");
+export { capture, launch };
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const [command, argument] = process.argv.slice(2);
+  if (command === "login") await login();
+  else if (command === "capture") await capture(argument || "");
+  else if (command === "draft") await saveDraft(argument || "", process.argv[4] || "");
+  else if (command === "publish") await saveDraft(argument || "", process.argv[4] || "", true);
+  else throw new Error("Usage: node scripts/instagram-browser-mirror.mjs <login|capture|draft|publish> [argument]");
+}

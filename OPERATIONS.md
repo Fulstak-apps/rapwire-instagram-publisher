@@ -43,8 +43,26 @@ The collector reads the canonical shortcode and caption from the same post used 
 - Launcher stdout/stderr: `/tmp/rapwire-publisher.log` / `/tmp/rapwire-publisher.err`.
 - Failed jobs retain a `publication-state-RUN_ID` artifact. If saving publication state fails, the next run creates a durable `logs/publication-state-hold.json` and refuses to publish. Reconcile that artifact and verify the missing media IDs before removing the hold; otherwise a successful remote post might be absent from the queue ledger.
 
-## Verification
+## Local Ollama editor
+
+The separate `com.rapwire.local-editor` Mac service runs hourly. It uses
+`qwen3:4b` locally through Ollama and `scripts/run-local-editor.py`, with a
+ten-minute execution limit and an exclusive lock. It writes only to ignored
+`review/local-editor/` in the runtime checkout; it never pushes or publishes.
+`review/local-editor/health.json` records the last cycle, errors, and timestamps.
+The queue is also consulted to avoid re-drafting already collected stories.
+
+These are text drafts, not completed media posts. Structure QA is not fact
+verification. Source corroboration, rights, subject matching, rendering and
+visual review still must be completed before any draft can become ready.
+Existing video collection and publishing continue independently with their
+current safety budget and pacing. Stop the local editor with
+`launchctl bootout gui/$(id -u)/com.rapwire.local-editor`.
+
+## Verification commands
 
 `node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs scripts/media-ranges.test.mjs scripts/publication-policy.test.mjs`
+
+`python3 -m unittest discover -s scripts -p 'test_local_rapwire.py'`
 
 The tests use fake platform responses, never live credentials. Live feed/Threads verification reads the returned media ID and records its permalink. Stories record a readback of the returned Story ID; there is no separate Threads Story publishing endpoint.

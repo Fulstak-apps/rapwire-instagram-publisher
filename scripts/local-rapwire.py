@@ -27,7 +27,7 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-QUEUE = ROOT / "queue"
+QUEUE = Path(os.environ.get("RAPWIRE_DRAFT_DIR", str(ROOT / "queue")))
 FEED_URL = os.environ.get(
     "NARRO_RSS_URL",
     "https://rss.narro.info/e4f36406-0664-4e77-b672-7e0682966a9f",
@@ -199,9 +199,8 @@ def fetch_feed() -> list[Candidate]:
 
 def existing_keys() -> set[str]:
     keys: set[str] = set()
-    if not QUEUE.exists():
-        return keys
-    for path in QUEUE.glob("*.json"):
+    paths = set(QUEUE.glob("*.json")) | set((ROOT / "queue").glob("*.json"))
+    for path in paths:
         try:
             item = json.loads(path.read_text())
         except Exception:
@@ -246,6 +245,7 @@ def ollama_chat(prompt: str) -> str:
         {
             "model": OLLAMA_MODEL,
             "stream": False,
+            "think": False,
             "format": "json",
             "messages": [
                 {
@@ -258,7 +258,7 @@ def ollama_chat(prompt: str) -> str:
                 },
                 {"role": "user", "content": prompt},
             ],
-            "options": {"temperature": 0.15},
+            "options": {"temperature": 0.15, "num_predict": 1600},
         }
     ).encode("utf-8")
     request = urllib.request.Request(
@@ -268,7 +268,7 @@ def ollama_chat(prompt: str) -> str:
         method="POST",
     )
     try:
-        with urllib.request.urlopen(request, timeout=120) as response:
+        with urllib.request.urlopen(request, timeout=300) as response:
             data = json.loads(response.read().decode("utf-8"))
     except urllib.error.URLError as error:
         raise RuntimeError(
@@ -301,7 +301,7 @@ def choose_story(candidates: list[Candidate]) -> tuple[Candidate, dict[str, Any]
         "Choose exactly ONE strong, fresh RapWire story from the candidate evidence below. "
         "Prefer substantive rap/hip-hop developments over lifestyle fluff. GTA 6 is an occasional "
         "exception. Do not create facts that are absent from the evidence. Return JSON with keys: "
-        "index (integer), headline (string, <=100 chars), body (90-180 words), caption (1-3 short "
+        "index (integer), headline (string, <=100 chars), body (20-180 words; never pad sparse evidence), caption (1-3 short "
         "paragraphs), category (breaking|music|beef|business|legal|culture|gta), featured_person "
         "(string or empty), content_format (photo_news|tweet_statement|video_repost). If evidence is "
         "too weak, set index to -1.\n\nCANDIDATES:\n"
@@ -312,9 +312,12 @@ def choose_story(candidates: list[Candidate]) -> tuple[Candidate, dict[str, Any]
         result = json.loads(raw)
     except json.JSONDecodeError as error:
         raise RuntimeError(f"Ollama did not return valid JSON: {raw[:500]}") from error
-    idx = int(result.get("index", -1))
+    if not isinstance(result, dict) or type(result.get("index")) is not int:
+        raise RuntimeError("Local editor returned an invalid story index")
+    idx = result["index"]
     if idx < 0 or idx >= len(candidates):
         raise RuntimeError("Local editor found no candidate strong enough to publish")
+    result["source_evidence"] = evidence[idx]
     return candidates[idx], result
 
 
@@ -350,14 +353,17 @@ def qa_score(editorial: dict[str, str], candidate: Candidate, evidence: dict[str
 
     checks["headline_present"] = bool(headline)
     checks["headline_length_ok"] = 12 <= len(headline) <= 100
-    checks["body_length_ok"] = 70 <= len(body_words) <= 220
+    checks["body_length_ok"] = 20 <= len(body_words) <= 220
     checks["caption_present"] = bool(caption)
     checks["source_approved"] = candidate.source_handle in APPROVED_SOURCE_HANDLES
-    checks["source_recent"] = bool(parse_date(candidate.published_at))
+    published = parse_date(candidate.published_at)
+    age = (datetime.now(timezone.utc) - published).total_seconds() if published else -1
+    checks["source_recent"] = 0 <= age <= MAX_SOURCE_AGE_HOURS * 3600
     checks["source_url_present"] = candidate.link.startswith(("http://", "https://"))
     checks["image_reference_present"] = bool(evidence.get("image_url"))
     checks["no_placeholder_text"] = not bool(re.search(r"\b(?:tbd|todo|placeholder|lorem ipsum)\b", f"{headline} {body} {caption}", re.I))
-    checks["no_unverified_handle"] = "@" not in editorial["featured_person"]
+    handles = re.findall(r"@([A-Za-z0-9._]+)", f"{headline} {body} {caption} {editorial['featured_person']}")
+    checks["no_unverified_handle"] = all(h.casefold() == candidate.source_handle for h in handles)
 
     weights = {
         "headline_present": 10,
@@ -374,7 +380,10 @@ def qa_score(editorial: dict[str, str], candidate: Candidate, evidence: dict[str
     score = sum(weight for key, weight in weights.items() if checks[key])
     checks["score"] = score
     checks["threshold"] = QA_THRESHOLD
-    checks["passed"] = score >= QA_THRESHOLD
+    critical = ("headline_present", "headline_length_ok", "body_length_ok", "caption_present",
+                "source_approved", "source_recent", "source_url_present", "no_placeholder_text", "no_unverified_handle")
+    checks["passed"] = score >= QA_THRESHOLD and all(checks[key] for key in critical)
+    checks["scope"] = "Text structure and source metadata only; not fact or visual verification"
     return score, checks
 
 
@@ -421,6 +430,8 @@ def queue_item(candidate: Candidate, editorial: dict[str, str], evidence: dict[s
         "content_format": editorial["content_format"],
         "category": editorial["category"],
         "source_image_url": evidence.get("image_url", ""),
+        "source_evidence": evidence,
+        "facts_verified": False,
         "source_photo_used": False,
         "visual_asset_type": "pending_review",
         "visual_asset_rights": "pending_review",
@@ -458,7 +469,7 @@ def main() -> int:
 
     candidate, raw_result = choose_story(candidates)
     editorial = normalize_editorial(raw_result)
-    evidence = build_evidence(candidate)
+    evidence = raw_result["source_evidence"]
     score, qa = qa_score(editorial, candidate, evidence)
     item = queue_item(candidate, editorial, evidence, qa)
 
@@ -474,7 +485,7 @@ def main() -> int:
     QUEUE.mkdir(parents=True, exist_ok=True)
     path = QUEUE / f"{item['id']}.json"
     path.write_text(json.dumps(item, indent=2, ensure_ascii=False) + "\n")
-    print(f"Wrote review draft: {path.relative_to(ROOT)}")
+    print(f"Wrote review draft: {path}")
     return 0
 
 

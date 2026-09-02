@@ -13,12 +13,22 @@ const outputDir = path.resolve("work", "instagram-mirror");
 
 async function launch(headless = false) {
   await fs.mkdir(profileDir, { recursive: true });
-  return chromium.launchPersistentContext(profileDir, {
-    executablePath: chromePath,
-    headless,
-    viewport: { width: 1280, height: 900 },
-    acceptDownloads: true
-  });
+  let lastError;
+  for (let attempt = 0; attempt < 6; attempt += 1) {
+    try {
+      return await chromium.launchPersistentContext(profileDir, {
+        executablePath: chromePath,
+        headless,
+        viewport: { width: 1280, height: 900 },
+        acceptDownloads: true
+      });
+    } catch (error) {
+      lastError = error;
+      if (!/ProcessSingleton|SingletonLock|profile directory/i.test(error.message || "")) throw error;
+      await new Promise((resolve) => setTimeout(resolve, 2500 + attempt * 1000));
+    }
+  }
+  throw lastError;
 }
 
 async function assertRapWireLogin(page) {

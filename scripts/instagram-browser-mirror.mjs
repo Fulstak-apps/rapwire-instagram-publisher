@@ -84,9 +84,10 @@ async function capture(reelUrl, options = {}) {
     await page.waitForTimeout(3000);
     const sourceEvidence = await readExactPost(page, reelUrl);
     const bufferDeadline = Date.now() + Math.min(240000, (sourceEvidence.duration + 15) * 1000);
+    let fullyBuffered = false;
     while (Date.now() < bufferDeadline) {
       const buffered = await video.evaluate(element => ({ end: element.buffered.length ? element.buffered.end(element.buffered.length - 1) : 0, duration:element.duration }));
-      if (buffered.end >= buffered.duration - 0.25) break;
+      if (buffered.end >= buffered.duration - 0.25) { fullyBuffered = true; break; }
       await page.waitForTimeout(2500);
     }
     // Let response.body() handlers finish after the last buffered segment.
@@ -96,11 +97,13 @@ async function capture(reelUrl, options = {}) {
     for (const item of candidates) {
       const parsed = new URL(item.url);
       const rangeStart = Number(item.headers["content-range"]?.match(/bytes (\d+)-/)?.[1] ?? parsed.searchParams.get("bytestart") ?? 0);
+      const rangeEndValue = item.headers["content-range"]?.match(/bytes \d+-(\d+)/)?.[1] ?? parsed.searchParams.get("byteend");
+      const rangeEnd = rangeEndValue == null ? undefined : Number(rangeEndValue);
       parsed.searchParams.delete("bytestart");
       parsed.searchParams.delete("byteend");
       const key = parsed.toString();
       const group = groups.get(key) || [];
-      group.push({ ...item, rangeStart });
+      group.push({ ...item, rangeStart, rangeEnd });
       groups.set(key, group);
     }
     const assembled = [...groups.values()]
@@ -114,7 +117,7 @@ async function capture(reelUrl, options = {}) {
       const matchedAudio = [];
       const diagnostics = [];
       for (let index = 0; index < assembled.length; index += 1) {
-        const bytes = assembleRanges(assembled[index].parts);
+        const bytes = assembleRanges(assembled[index].parts, { allowBufferedRanges:fullyBuffered });
         if (!bytes) { diagnostics.push({ index, result:'incomplete', ranges:assembled[index].parts.map(part => [part.rangeStart,part.body.length,part.headers['content-range'] || part.status]) }); continue; }
         const candidatePath = path.join(tempDir, `stream-${index}.bin`);
         await fs.writeFile(candidatePath, bytes);
@@ -159,7 +162,7 @@ async function capture(reelUrl, options = {}) {
       await execFileAsync("ffmpeg", ffmpegArgs);
 
       const { stdout: probeOutput } = await execFileAsync("ffprobe", [
-        "-v", "error", "-show_entries", "stream=codec_name,codec_type,width,height:format=duration",
+        "-v", "error", "-show_entries", "stream=codec_name,codec_type,width,height,duration:format=duration",
         "-of", "json", destination
       ]);
       const probe = JSON.parse(probeOutput);
@@ -176,6 +179,9 @@ async function capture(reelUrl, options = {}) {
         throw new Error("Rendered mirror has no valid playable duration.");
       }
       if (Math.abs(duration - sourceEvidence.duration) > 1) throw new Error("Output duration does not match the caption's source video");
+      for (const stream of [encodedVideo,encodedAudio]) {
+        if (!Number.isFinite(Number(stream?.duration)) || Math.abs(Number(stream.duration) - sourceEvidence.duration) > 1) throw new Error('Decoded video/audio duration is incomplete; refusing a partial capture');
+      }
     } finally {
       await fs.rm(tempDir, { recursive: true, force: true });
     }

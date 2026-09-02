@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T21:57:42.978Z",
+  "checked_at": "2026-09-02T22:01:46.495Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T21:47:29.548Z",
@@ -21,18 +21,26 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-02T21:57:44.645Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T21:57:35.894Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-02T22:11:45.731Z",
+  "publications": [
+    {
+      "file": "163-reposted-from-akademiks-young-thug-speaks-on-lil-durk-trial.json",
+      "id": "163-reposted-from-akademiks-young-thug-speaks-on-lil-durk-trial",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18128048557665169"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -6630,6 +6630,23 @@
       "errors": [],
       "mode": "caption_repair",
       "finished_at": "2026-09-02T15:49:51.123Z"
+    },
+    {
+      "started_at": "2026-09-02T15:51:54.154Z",
+      "candidates": 0,
+      "queued": [
+        "133-akademiks-repost-video",
+        "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/akademiks/reel/DcwRIHjgWsV/",
+          "stage": "caption_repair",
+          "error": "Command failed: git push origin HEAD:main\nTo https://github.com/Fulstak-apps/rapwire-instagram-publisher.git\n ! [remote rejected] HEAD -> main (cannot lock ref 'refs/heads/main': is at b704ba4de0d7a8fa41cc65ab9c60c87bc03302cc but expected ada59e87773bfe6d011b624eca013079673cbe19)\nerror: failed to push some refs to 'https://github.com/Fulstak-apps/rapwire-instagram-publisher.git'\n"
+        }
+      ],
+      "mode": "caption_repair",
+      "finished_at": "2026-09-02T15:58:33.532Z"
     }
   ]
 }

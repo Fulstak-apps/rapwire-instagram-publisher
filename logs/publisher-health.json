@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-02T20:44:08.238Z",
+  "checked_at": "2026-09-02T20:48:24.547Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T20:35:54.481Z",
-    "usage": 45,
+    "usage": 46,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-02T20:50:54.481Z",
@@ -20,12 +20,12 @@
     "instagram_remaining": 3,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-02T15:54:12.922Z",
+    "next_feed_eligible_at": "2026-09-02T20:58:24.406Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
@@ -34,11 +34,12 @@
   "threads_next_eligible_at": "2026-09-02T20:54:07.612Z",
   "publications": [
     {
-      "file": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie.json",
-      "id": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie",
-      "platform": "threads",
+      "file": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got.json",
+      "id": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17909043627531590"
+      "media_id": "18096477350077629",
+      "content_type": "video"
     }
   ],
   "failures": [],

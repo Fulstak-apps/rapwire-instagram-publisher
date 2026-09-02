@@ -22,7 +22,7 @@ Research-only news sources, used by the AI newsroom only when making factual exp
 Important: this repository does not contain Instagram login credentials. Browser-based capture must use the dedicated signed-in Chrome profile on the user's Mac and must not export cookies. API credentials stay only in GitHub Actions secrets.
 
 Cheap repost contract:
-1. Every 5 minutes, scripts may attempt up to three repost-video publications without waking Codex and without running the AI newsroom.
+1. Every minute, scripts may attempt up to three repost-video publications without waking Codex and without running the AI newsroom.
 2. Source videos from @trapmatictv, @raplisted_, @akademiks, and @traploreross only.
 3. Mirror every eligible @trapmatictv video/repost and every eligible @raplisted_ video. For @akademiks and @traploreross, use their own Posts/Reels only unless the user changes the rule.
 4. Download the playable video with audio and publish it as video, not as a screenshot carousel.

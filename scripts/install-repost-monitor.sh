@@ -19,10 +19,10 @@ cat > "$plist_path" <<PLIST
   <array>
     <string>/bin/zsh</string>
     <string>-lc</string>
-    <string>export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"; cd "$repo_dir" && npm run repost:monitor</string>
+    <string>export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"; cd "$repo_dir" &amp;&amp; npm run repost:monitor</string>
   </array>
   <key>StartInterval</key>
-  <integer>300</integer>
+  <integer>60</integer>
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>

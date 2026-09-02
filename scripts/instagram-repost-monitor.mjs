@@ -238,7 +238,7 @@ async function commitAndPush(createdIds) {
     if (item.video) paths.push(item.video);
   }
   await execFileAsync("git", ["add", "--", ...paths]);
-  await execFileAsync("git", ["commit", "-m", `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}`]).catch((error) => {
+  await execFileAsync("git", ["commit", "--only", "-m", `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}`, "--", ...paths]).catch((error) => {
     if (!/nothing to commit/i.test(error.stdout || error.stderr || "")) throw error;
   });
   await execFileAsync("git", ["pull", "--rebase", "origin", "main"]);

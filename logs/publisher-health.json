@@ -1,16 +1,25 @@
 {
-  "checked_at": "2026-09-02T14:28:05.521Z",
-  "instagram_cooldown_until": null,
+  "checked_at": "2026-09-02T14:31:56.428Z",
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_publishing_quota": {
+    "checked_at": "2026-09-02T14:31:56.152Z",
+    "usage": 50,
+    "total": 100,
+    "blocked": true,
+    "next_check_at": "2026-09-02T15:31:56.408Z",
+    "reason": "Instagram publishing quota exhausted (9/2207042)",
+    "detected_at": "2026-09-02T14:31:56.408Z"
+  },
   "instagram_steps": 1,
   "threads_steps": 0,
   "publications": [],
   "failures": [
     {
-      "file": "123-on-instagram-blueface-demoted-his-bm-nevaeh-from-being-his-main-.json",
-      "id": "123-on-instagram-blueface-demoted-his-bm-nevaeh-from-being-his-main-",
+      "file": "125-raplisted-repost-video.json",
+      "id": "125-raplisted-repost-video",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "media_publish failed: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207042,\"error_user_title\":\"Media Publish Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be published by Content Publishing API.\",\"fbtrace_id\":\"AqqfVN0wtH8BJPg9qLj7Wuy\"}}"
+      "error": "Instagram publishing quota exhausted; next capacity check 2026-09-02T15:31:56.408Z"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

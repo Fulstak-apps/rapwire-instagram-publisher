@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T20:40:56.426Z",
+  "checked_at": "2026-09-02T20:44:08.238Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T20:35:54.481Z",
@@ -15,23 +15,32 @@
   },
   "delivery_policy": {
     "feed_interval_minutes": 10,
-    "instagram_daily_cap": 32,
+    "instagram_daily_cap": 48,
     "instagram_usage": 45,
-    "instagram_remaining": 0,
-    "reserved_story_slots": 6,
+    "instagram_remaining": 3,
+    "reserved_story_slots": 0,
+    "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-02T15:54:12.922Z",
-    "feed_allowed": false,
-    "story_allowed": false
+    "feed_allowed": true,
+    "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T20:39:59.023Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-02T20:54:07.612Z",
+  "publications": [
+    {
+      "file": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie.json",
+      "id": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17909043627531590"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

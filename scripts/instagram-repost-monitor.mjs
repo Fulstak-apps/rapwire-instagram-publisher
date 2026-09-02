@@ -18,6 +18,7 @@ const sources = [
   { handle: "traploreross", credit: true, includePosts: true, includeReels: true }
 ];
 const maxQueuePerRun = Math.max(1, Number(process.env.RAPWIRE_REPOSTS_PER_RUN || 3));
+const candidatesPerSourceToScore = 4;
 
 async function readJson(file, fallback) {
   try {
@@ -89,7 +90,7 @@ async function discoverFromProfile(context, source) {
     );
     const unique = [...new Set(hrefs)]
       .filter((url) => source.includeReels && /\/reel\//.test(url) || source.includePosts && /\/p\//.test(url))
-      .map((url) => ({ source, url, shortcode: shortcodeFromUrl(url) }))
+      .map((url, profilePosition) => ({ source, url, shortcode: shortcodeFromUrl(url), profilePosition }))
       .filter((item) => item.shortcode);
     return unique;
   } finally {
@@ -97,7 +98,16 @@ async function discoverFromProfile(context, source) {
   }
 }
 
-async function readPostCaption(context, url) {
+function viewCountFromText(value) {
+  const match = String(value || "").match(/([\d,.]+)\s*([KMB])?\s+views?\b/i);
+  if (!match) return 0;
+  const number = Number(match[1].replace(/,/g, ""));
+  if (!Number.isFinite(number)) return 0;
+  const multiplier = { k: 1_000, m: 1_000_000, b: 1_000_000_000 }[String(match[2] || "").toLowerCase()] || 1;
+  return Math.round(number * multiplier);
+}
+
+async function readPostMetadata(context, url) {
   const page = await context.newPage();
   try {
     await page.goto(url, { waitUntil: "domcontentloaded" });
@@ -107,7 +117,11 @@ async function readPostCaption(context, url) {
       await page.locator('meta[property="og:description"]').getAttribute("content").catch(() => ""),
       await page.locator("article").innerText({ timeout: 2500 }).catch(() => "")
     ];
-    return cleanText(candidates.find((candidate) => cleanText(candidate).length > 20) || "");
+    const fullText = candidates.join("\n");
+    return {
+      caption: cleanText(candidates.find((candidate) => cleanText(candidate).length > 20) || ""),
+      viewCount: viewCountFromText(fullText)
+    };
   } finally {
     await page.close();
   }
@@ -182,6 +196,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
     source_handle: candidate.source.handle,
     source_url: candidate.url,
     source_urls: [candidate.url],
+    source_view_count_at_selection: Number(candidate.viewCount || 0),
     visual_asset_type: "source_video",
     visual_asset_rights: "source_post_repost",
     source_video_used: true,
@@ -232,6 +247,7 @@ try {
   };
 
   const discovered = [];
+  let rankedPool = [];
   await withFreshBrowser(async (context) => {
     for (const source of sources) {
       try {
@@ -240,14 +256,20 @@ try {
         run.errors.push({ source_handle: source.handle, stage: "discover", error: error.message });
       }
     }
-    const selectedForQueue = discovered
-      .filter((candidate) => !ledger.queued_shortcodes[candidate.shortcode])
-      .slice(0, maxQueuePerRun);
-    for (const candidate of selectedForQueue) {
+    // Score only the current visible window from each approved page. This keeps
+    // reposts timely while choosing the videos already pulling the strongest
+    // audience, rather than blindly reposting every new upload.
+    const selectedForScoring = sources.flatMap((source) => discovered
+      .filter((candidate) => candidate.source.handle === source.handle && !ledger.queued_shortcodes[candidate.shortcode])
+      .slice(0, candidatesPerSourceToScore));
+    rankedPool = selectedForScoring;
+    for (const candidate of selectedForScoring) {
       try {
-        candidate.visibleCaption = await readPostCaption(context, candidate.url);
+        const metadata = await readPostMetadata(context, candidate.url);
+        candidate.visibleCaption = metadata.caption;
+        candidate.viewCount = metadata.viewCount;
       } catch (error) {
-        run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "caption", error: error.message });
+        run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "score", error: error.message });
       }
     }
   });
@@ -256,11 +278,16 @@ try {
     ledger.seen_shortcodes[item.shortcode] = {
       seen_at: ledger.seen_shortcodes[item.shortcode]?.seen_at || new Date().toISOString(),
       source_handle: item.source.handle,
-      source_url: item.url
+      source_url: item.url,
+      view_count: item.viewCount || ledger.seen_shortcodes[item.shortcode]?.view_count || 0
     };
   }
+  const rankedCandidates = rankedPool
+    .sort((left, right) => Number(right.viewCount || 0) - Number(left.viewCount || 0)
+      || left.profilePosition - right.profilePosition
+      || left.source.handle.localeCompare(right.source.handle));
   let queueNumber = await nextQueueNumber();
-  for (const candidate of discovered) {
+  for (const candidate of rankedCandidates) {
     if (run.queued.length >= maxQueuePerRun) break;
     if (ledger.queued_shortcodes[candidate.shortcode]) continue;
     try {

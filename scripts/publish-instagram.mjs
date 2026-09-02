@@ -164,15 +164,44 @@ async function publishInstagramFeed(item) {
   return instagramPost("media_publish", { creation_id: carousel.id });
 }
 
-async function publishInstagramReel(item) {
-  const reel = await instagramPost("media", {
+async function publishInstagramReel(item, itemPath) {
+  if (!item.instagram_container_id) {
+    const reel = await instagramPost("media", {
     media_type: "REELS",
     video_url: videoUrl(item),
     caption: signedCaption(item.caption),
     share_to_feed: "true"
-  });
-  await waitForInstagramContainer(reel.id);
-  return instagramPost("media_publish", { creation_id: reel.id });
+    });
+    item.instagram_container_id = reel.id;
+    item.instagram_container_created_at = new Date().toISOString();
+    await save(itemPath, item);
+  }
+  if (Date.now() - Date.parse(item.instagram_container_checked_at || 0) < 60_000) return null;
+  const url = new URL(`${instagramBase}/${item.instagram_container_id}`);
+  url.searchParams.set("fields", "status_code,status");
+  url.searchParams.set("access_token", instagramToken);
+  const response = await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) });
+  const payload = await response.json();
+  if (!response.ok || payload.error) throw new Error(`Instagram processing check failed: ${JSON.stringify(payload)}`);
+  item.instagram_container_checked_at = new Date().toISOString();
+  item.instagram_container_status = payload.status_code;
+  await save(itemPath, item);
+  if (payload.status_code === "FINISHED") {
+    if (item.instagram_publish_requested_at) {
+      item.status = "media_refresh_required";
+      throw new Error("Previous publish result is uncertain; reconcile before retrying to prevent duplicates");
+    }
+    item.instagram_publish_requested_at = new Date().toISOString();
+    await save(itemPath, item);
+    return instagramPost("media_publish", { creation_id: item.instagram_container_id });
+  }
+  if (["ERROR", "EXPIRED", "PUBLISHED"].includes(payload.status_code)
+    || Date.now() - Date.parse(item.instagram_container_created_at) >= 15 * 60_000) {
+    item.status = "media_refresh_required";
+    throw new Error(`Upload needs review after processing status ${payload.status_code}: ${payload.status || "15-minute grace window reached"}`);
+  }
+  console.log(`Waiting for Instagram processing: ${item.id} (${item.instagram_container_id}); continuing queue`);
+  return null;
 }
 
 async function publishInstagramStory(item) {
@@ -316,7 +345,17 @@ for (const file of files) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "rolling_day_feed_limit_reached" });
       continue;
     }
-    const published = isVideoItem ? await publishInstagramReel(item) : await publishInstagramFeed(item);
+    let published;
+    try {
+      published = isVideoItem ? await publishInstagramReel(item, itemPath) : await publishInstagramFeed(item);
+    } catch (error) {
+      item.instagram_error = error.message;
+      await save(itemPath, item);
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "failed", error: error.message });
+      console.error(`Instagram failed for ${file}: ${error.message}`);
+      continue;
+    }
+    if (!published) continue;
     item.status = "published";
     item.instagram_media_id = published.id;
     item.published_at = new Date().toISOString();

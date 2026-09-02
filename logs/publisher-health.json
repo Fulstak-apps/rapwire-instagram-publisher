@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-02T21:31:27.575Z",
+  "checked_at": "2026-09-02T21:47:44.820Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-02T21:27:17.785Z",
-    "usage": 43,
+    "checked_at": "2026-09-02T21:47:29.548Z",
+    "usage": 44,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-02T21:42:17.785Z",
+    "next_check_at": "2026-09-02T22:02:29.548Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-02T21:29:09.474Z",
+    "next_feed_eligible_at": "2026-09-02T21:57:44.645Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T21:29:14.237Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-02T21:57:35.894Z",
+  "publications": [
+    {
+      "file": "162-reposted-from-akademiks-lil-durk-allegedly-sent-a-message-to-som.json",
+      "id": "162-reposted-from-akademiks-lil-durk-allegedly-sent-a-message-to-som",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18005539859967933"
+    },
+    {
+      "file": "126-raplisted-repost-video.json",
+      "id": "126-raplisted-repost-video",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18146593615554662",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

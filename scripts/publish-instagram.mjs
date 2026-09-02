@@ -33,7 +33,7 @@ const files = queueRecords
   .map((record) => record.name);
 // Respect the workflow's pacing limit. The newsroom may prepare a batch, but
 // only the configured number of feed posts should go live in one cycle.
-const maxFeedPostsPerRun = Math.max(1, Number(process.env.MAX_FEED_POSTS_PER_RUN || 1));
+const maxFeedPostsPerRun = Math.max(1, Number(process.env.MAX_FEED_POSTS_PER_RUN || 3));
 const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 let olderStoryAttemptsThisRun = 0;
@@ -164,7 +164,7 @@ async function publishInstagramFeed(item) {
   return instagramPost("media_publish", { creation_id: carousel.id });
 }
 
-async function publishInstagramReel(item, itemPath) {
+async function prepareInstagramReel(item, itemPath) {
   if (!item.instagram_container_id) {
     const reel = await instagramPost("media", {
     media_type: "REELS",
@@ -176,6 +176,10 @@ async function publishInstagramReel(item, itemPath) {
     item.instagram_container_created_at = new Date().toISOString();
     await save(itemPath, item);
   }
+}
+
+async function publishInstagramReel(item, itemPath) {
+  if (!item.instagram_container_id) return null;
   if (Date.now() - Date.parse(item.instagram_container_checked_at || 0) < 60_000) return null;
   const url = new URL(`${instagramBase}/${item.instagram_container_id}`);
   url.searchParams.set("fields", "status_code,status");
@@ -277,6 +281,30 @@ for (const file of files) {
     feedPostsPublishedInRollingDay += 1;
   }
 }
+
+// Fill at most three processing slots concurrently. Existing uploads retain
+// their slots across runs so slow processing cannot create an upload pileup.
+const processingCount = queueRecords.filter(({ item }) => item.status === "ready"
+  && item.content_type === "video" && item.instagram_container_id).length;
+const uploadSlots = Math.max(0, Math.min(3 - processingCount, maxFeedPostsPerRollingDay - feedPostsPublishedInRollingDay));
+const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
+  .filter(({ item }) => item.status === "ready" && item.content_type === "video"
+    && !item.instagram_container_id && String(item.video || "").endsWith(".mp4")
+    && (!item.publish_after || Date.parse(item.publish_after) <= Date.now())
+    && item.layout_template === "rapwire-video-grid-safe-v1"
+    && item.text_overflow_checked === true && item.rendered_body_text === item.body
+    && item.content_claim_checked === true && item.editorial_substance_checked === true
+    && contentPromiseIsKept(item) && item.source_policy_checked === true && item.rap_relevance_checked === true
+    && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"))
+  .slice(0, uploadSlots);
+await Promise.all(uploadCandidates.map(async ({ name, item }) => {
+  try {
+    await prepareInstagramReel(item, path.join(queueDir, name));
+    console.log(`Prepared upload ${item.id}: ${item.instagram_container_id}`);
+  } catch (error) {
+    await logAttempt({ file: name, id: item.id, platform: "instagram", status: "failed", error: error.message });
+  }
+}));
 
 for (const file of files) {
   const itemPath = path.join(queueDir, file);

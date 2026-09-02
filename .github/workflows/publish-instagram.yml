@@ -64,7 +64,7 @@ jobs:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           PUBLISH_INSTAGRAM_STORIES: "true"
-          MAX_FEED_POSTS_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && '3' || '1' }}
+          MAX_FEED_POSTS_PER_RUN: "3"
         run: node scripts/publish-instagram.mjs
 
       - name: Save publication log

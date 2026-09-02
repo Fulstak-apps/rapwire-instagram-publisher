@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-02T20:48:24.547Z",
+  "checked_at": "2026-09-02T20:52:35.306Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-02T20:35:54.481Z",
-    "usage": 46,
+    "checked_at": "2026-09-02T20:52:35.222Z",
+    "usage": 44,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-02T20:50:54.481Z",
+    "next_check_at": "2026-09-02T21:07:35.222Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -16,15 +16,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 45,
-    "instagram_remaining": 3,
+    "instagram_usage": 44,
+    "instagram_remaining": 4,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-02T20:58:24.406Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -32,16 +32,7 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-02T20:54:07.612Z",
-  "publications": [
-    {
-      "file": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got.json",
-      "id": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18096477350077629",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

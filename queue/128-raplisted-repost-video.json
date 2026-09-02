@@ -10,11 +10,11 @@
   "layout_template": "rapwire-video-grid-safe-v1",
   "editorial_lane": "rap_culture",
   "headline": "raplisted_ repost video",
-  "body": "A new hip-hop video is making the rounds and RapWire is reposting it for the feed. RapWire 24/7 is keeping the video feed moving with quick repost coverage while reported stories stay on the newsroom schedule.",
-  "rendered_body_text": "A new hip-hop video is making the rounds and RapWire is reposting it for the feed. RapWire 24/7 is keeping the video feed moving with quick repost coverage while reported stories stay on the newsroom schedule.",
-  "caption": "A new hip-hop video is making the rounds and RapWire is reposting it for the feed. RapWire 24/7 is keeping the video feed moving with quick repost coverage while reported stories stay on the newsroom schedule.\n\nRap Wire 24/7\n@Rapwire247\n@raplisted_",
-  "threads_text": "A new hip-hop video is making the rounds and RapWire is reposting it for the feed. RapWire 24/7 is keeping the video feed moving with quick repost coverage while reported stories stay on the newsroom schedule.\n\nRap Wire 24/7\n@Rapwire247\n@raplisted_",
-  "video": "media/128-raplisted-repost-video-logo-left.mp4",
+  "body": "Source commentary: LilDurk’s Music Video For “Ahhh Ha” Was Brought Up By The Prosecutors In Court Today! Lil Durk (@lildurk). These are source claims, not findings of guilt.",
+  "rendered_body_text": "Source commentary: LilDurk’s Music Video For “Ahhh Ha” Was Brought Up By The Prosecutors In Court Today! Lil Durk (@lildurk). These are source claims, not findings of guilt.",
+  "caption": "Source commentary: LilDurk’s Music Video For “Ahhh Ha” Was Brought Up By The Prosecutors In Court Today! Lil Durk (@lildurk). These are source claims, not findings of guilt.\n\nRap Wire 24/7\n@Rapwire247\n@raplisted_",
+  "threads_text": "Source commentary: LilDurk’s Music Video For “Ahhh Ha” Was Brought Up By The Prosecutors In Court Today! Lil Durk (@lildurk). These are source claims, not findings of guilt.\n\nRap Wire 24/7\n@Rapwire247\n@raplisted_",
+  "video": "media/128-raplisted-repost-video-caption-matched.mp4",
   "source_handle": "raplisted_",
   "source_url": "https://www.instagram.com/raplisted_/reel/Dct5T6VoMnu/",
   "source_urls": [
@@ -34,6 +34,13 @@
   "instagram_story_status": "pending",
   "threads_story_status": "not_supported_pending_note",
   "logo_position": "bottom-left",
-  "caption_review_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dct5T6VoMnu-capture-diagnostic.json",
-  "caption_retry_at": "2026-09-02T18:53:27.645Z"
+  "artist_handles": [
+    "lildurk"
+  ],
+  "caption_policy": "exact-source-v1",
+  "caption_source_shortcode": "Dct5T6VoMnu",
+  "source_caption_text": "#LilDurk’s Music Video For “Ahhh Ha” Was Brought Up By The Prosecutors In Court Today😳👀! #Explorepage #Explore #Viral #Durk",
+  "caption_checked_at": "2026-09-02T18:56:45.912Z",
+  "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
+  "source_video_duration": 27.676733
 }

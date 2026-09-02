@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T20:13:21.078Z",
+  "checked_at": "2026-09-02T20:15:36.054Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T20:00:43.386Z",
@@ -30,8 +30,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T20:10:51.473Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-02T20:25:35.707Z",
+  "publications": [
+    {
+      "file": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got.json",
+      "id": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17899552029579951"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

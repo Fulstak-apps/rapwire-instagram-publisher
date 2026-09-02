@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T14:31:56.428Z",
+  "checked_at": "2026-09-02T14:34:02.957Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T14:31:56.152Z",
@@ -10,17 +10,9 @@
     "reason": "Instagram publishing quota exhausted (9/2207042)",
     "detected_at": "2026-09-02T14:31:56.408Z"
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "publications": [],
-  "failures": [
-    {
-      "file": "125-raplisted-repost-video.json",
-      "id": "125-raplisted-repost-video",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "Instagram publishing quota exhausted; next capacity check 2026-09-02T15:31:56.408Z"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

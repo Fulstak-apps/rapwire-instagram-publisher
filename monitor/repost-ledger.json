@@ -255,6 +255,27 @@
       "source_url": "https://www.instagram.com/trapmatictv/reel/Dch6WJANU85/",
       "queue_id": "117-matic-tv-on-instagram-mississippi-s-own-superstarpride-is-back-a",
       "video": "media/117-matic-tv-on-instagram-mississippi-s-own-superstarpride-is-back-a.mp4"
+    },
+    "DcxLtXnDQMc": {
+      "queued_at": "2026-09-02T02:59:57.567Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DcxLtXnDQMc/",
+      "queue_id": "118-matic-tv-on-instagram-end-of-trial-day-9-during-the-proceedings-",
+      "video": "media/118-matic-tv-on-instagram-end-of-trial-day-9-during-the-proceedings-.mp4"
+    },
+    "DcxIaGiDRML": {
+      "queued_at": "2026-09-02T03:01:08.568Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DcxIaGiDRML/",
+      "queue_id": "119-matic-tv-on-instagram-rapper-hurricanewisdom-goodbye-to-his-nota",
+      "video": "media/119-matic-tv-on-instagram-rapper-hurricanewisdom-goodbye-to-his-nota.mp4"
+    },
+    "DcwM2Cjprfx": {
+      "queued_at": "2026-09-02T03:03:51.079Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/jbookoutmusic/reel/DcwM2Cjprfx/",
+      "queue_id": "120-j-bookout-on-instagram-is-this-rnb-foemob-hardest-verse-over-4-5",
+      "video": "media/120-j-bookout-on-instagram-is-this-rnb-foemob-hardest-verse-over-4-5.mp4"
     }
   },
   "runs": [
@@ -562,6 +583,54 @@
       ],
       "errors": [],
       "finished_at": "2026-09-02T02:58:03.680Z"
+    },
+    {
+      "started_at": "2026-09-02T02:58:21.719Z",
+      "candidates": 48,
+      "queued": [
+        "118-matic-tv-on-instagram-end-of-trial-day-9-during-the-proceedings-",
+        "119-matic-tv-on-instagram-rapper-hurricanewisdom-goodbye-to-his-nota",
+        "120-j-bookout-on-instagram-is-this-rnb-foemob-hardest-verse-over-4-5"
+      ],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/reel/DO4e6HqDQKR/",
+          "stage": "queue",
+          "error": "page.waitForTimeout: Target page, context or browser has been closed"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/reel/DG6itehRzAo/",
+          "stage": "queue",
+          "error": "page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/reel/DG6itehRzAo/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwdVfNFJBL/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwPizElCPC/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        }
+      ],
+      "finished_at": "2026-09-02T03:03:51.079Z"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-02T22:01:46.495Z",
+  "checked_at": "2026-09-02T22:06:08.330Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-02T21:47:29.548Z",
-    "usage": 44,
+    "checked_at": "2026-09-02T22:06:00.446Z",
+    "usage": 43,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-02T22:02:29.548Z",
+    "next_check_at": "2026-09-02T22:21:00.446Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -16,16 +16,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 44,
-    "instagram_remaining": 4,
+    "instagram_usage": 42,
+    "instagram_remaining": 6,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-02T21:57:44.645Z",
+    "next_feed_eligible_at": "2026-09-02T22:16:08.174Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
@@ -34,11 +34,12 @@
   "threads_next_eligible_at": "2026-09-02T22:11:45.731Z",
   "publications": [
     {
-      "file": "163-reposted-from-akademiks-young-thug-speaks-on-lil-durk-trial.json",
-      "id": "163-reposted-from-akademiks-young-thug-speaks-on-lil-durk-trial",
-      "platform": "threads",
+      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
+      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18128048557665169"
+      "media_id": "18115197313763224",
+      "content_type": "video"
     }
   ],
   "failures": [],

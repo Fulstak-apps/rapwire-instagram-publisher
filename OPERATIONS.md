@@ -28,7 +28,7 @@ Instagram rate-limit code 4 and related limits start a 30-minute cooldown, doubl
 - `queue/*.json`: authoritative per-item containers, IDs, verification and permalinks.
 - Collector stdout/stderr: runtime `logs/repost-monitor.out.log` / `logs/repost-monitor.err.log`.
 - Launcher stdout/stderr: `/tmp/rapwire-publisher.log` / `/tmp/rapwire-publisher.err`.
-- Failed jobs retain a `publication-state-RUN_ID` artifact. If saving publication state fails, reconcile that artifact before manually rerunning anything; otherwise a successful remote post might be absent from the queue ledger.
+- Failed jobs retain a `publication-state-RUN_ID` artifact. If saving publication state fails, the next run creates a durable `logs/publication-state-hold.json` and refuses to publish. Reconcile that artifact and verify the missing media IDs before removing the hold; otherwise a successful remote post might be absent from the queue ledger.
 
 ## Verification
 

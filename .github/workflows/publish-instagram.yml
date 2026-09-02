@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   group: rapwire-instagram-publisher
@@ -34,6 +35,11 @@ jobs:
 
       - name: Test resumable publisher
         run: node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs
+
+      - name: Check prior publication state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/check-publication-state.sh
 
       - name: Set up Python
         uses: actions/setup-python@v6

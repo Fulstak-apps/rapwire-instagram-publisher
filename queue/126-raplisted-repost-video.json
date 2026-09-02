@@ -10,11 +10,11 @@
   "layout_template": "rapwire-video-grid-safe-v1",
   "editorial_lane": "rap_culture",
   "headline": "raplisted_ repost video",
-  "body": "A new hip-hop video is making the rounds and RapWire is reposting it for the feed. RapWire 24/7 is keeping the video feed moving with quick repost coverage while reported stories stay on the newsroom schedule.",
-  "rendered_body_text": "A new hip-hop video is making the rounds and RapWire is reposting it for the feed. RapWire 24/7 is keeping the video feed moving with quick repost coverage while reported stories stay on the newsroom schedule.",
-  "caption": "A new hip-hop video is making the rounds and RapWire is reposting it for the feed. RapWire 24/7 is keeping the video feed moving with quick repost coverage while reported stories stay on the newsroom schedule.\n\nRap Wire 24/7\n@Rapwire247\n@raplisted_",
-  "threads_text": "A new hip-hop video is making the rounds and RapWire is reposting it for the feed. RapWire 24/7 is keeping the video feed moving with quick repost coverage while reported stories stay on the newsroom schedule.\n\nRap Wire 24/7\n@Rapwire247\n@raplisted_",
-  "video": "media/126-raplisted-repost-video-logo-left.mp4",
+  "body": "Source commentary: A new 2018 video showing YoungBoy Never Broke Again attacking his ex-girlfriend Jania Meshell is circulating on social media. A shorter clip was already shared years ago, this is the first time a longer video surfaced. Not a good look for Nba Youngboy nbayoungboy exgirlfriend attack video 2018. These are source claims, not findings of guilt.",
+  "rendered_body_text": "Source commentary: A new 2018 video showing YoungBoy Never Broke Again attacking his ex-girlfriend Jania Meshell is circulating on social media. A shorter clip was already shared years ago, this is the first time a longer video surfaced. Not a good look for Nba Youngboy nbayoungboy exgirlfriend attack video 2018. These are source claims, not findings of guilt.",
+  "caption": "Source commentary: A new 2018 video showing YoungBoy Never Broke Again attacking his ex-girlfriend Jania Meshell is circulating on social media. A shorter clip was already shared years ago, this is the first time a longer video surfaced. Not a good look for Nba Youngboy nbayoungboy exgirlfriend attack video 2018. These are source claims, not findings of guilt.\n\nRap Wire 24/7\n@Rapwire247\n@raplisted_",
+  "threads_text": "Source commentary: A new 2018 video showing YoungBoy Never Broke Again attacking his ex-girlfriend Jania Meshell is circulating on social media. A shorter clip was already shared years ago, this is the first time a longer video surfaced. Not a good look for Nba Youngboy nbayoungboy exgirlfriend attack video 2018. These are source claims, not findings of guilt.\n\nRap Wire 24/7\n@Rapwire247\n@raplisted_",
+  "video": "media/126-raplisted-repost-video-caption-matched.mp4",
   "source_handle": "raplisted_",
   "source_url": "https://www.instagram.com/raplisted_/reel/DcwQbJ0hLhn/",
   "source_urls": [
@@ -34,12 +34,15 @@
   "instagram_story_status": "pending",
   "threads_story_status": "not_supported_pending_note",
   "logo_position": "bottom-left",
-  "instagram_container_id": "18112107299078478",
-  "instagram_container_created_at": "2026-09-02T07:55:18.550Z",
-  "instagram_container_checked_at": "2026-09-02T14:25:54.535Z",
-  "instagram_container_status": "FINISHED",
   "instagram_error": "media_publish failed: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207042,\"error_user_title\":\"Media Publish Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be published by Content Publishing API.\",\"fbtrace_id\":\"Az_hc9Xhnz9cmYpRXDsQd2c\"}}",
-  "instagram_retry_at": "2026-09-02T14:35:55.083Z",
-  "caption_review_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media",
-  "caption_retry_at": "2026-09-02T15:38:02.745Z"
+  "superseded_unpublished_container_ids": [
+    "18112107299078478"
+  ],
+  "artist_handles": [],
+  "caption_policy": "exact-source-v1",
+  "caption_source_shortcode": "DcwQbJ0hLhn",
+  "source_caption_text": "A new 2018 video showing YoungBoy Never Broke Again attacking his ex-girlfriend Jania Meshell is circulating on social media. 🎥😳\n\nA shorter clip was already shared years ago, this is the first time a longer video surfaced.\n\nNot a good look for Nba Youngboy 😬\n\n#nbayoungboy #exgirlfriend #attack #video #2018",
+  "caption_checked_at": "2026-09-02T15:42:34.721Z",
+  "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
+  "source_video_duration": 44.7
 }

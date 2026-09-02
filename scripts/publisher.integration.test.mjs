@@ -7,7 +7,7 @@ import { spawnSync } from 'node:child_process';
 const script = path.resolve('scripts/publish-instagram.mjs');
 const body = 'This is a verified video with a complete descriptive caption.';
 const item = { id: 'test', status: 'published', content_type: 'video', video: 'media/test.mp4', source_handle: 'akademiks', source_url:'https://www.instagram.com/akademiks/reel/ExactPost/', caption_policy:'exact-source-v1', caption_source_shortcode:'ExactPost', source_caption_text:body, body, rendered_body_text: body, caption: body, threads_text: body, layout_template: 'rapwire-video-grid-safe-v1', source_policy_checked: true, rap_relevance_checked: true, content_claim_checked: true, editorial_substance_checked: true, text_overflow_checked: true, instagram_media_id: 'existing', threads_status: 'pending' };
-function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, usage = 1, total = 50, otherRecords = []) {
+function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, usage = 1, total = 50, otherRecords = [], recovery = null) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'rapwire-test-'));
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
   fs.mkdirSync(path.join(dir, 'queue')); fs.mkdirSync(path.join(dir, 'logs'));
@@ -15,6 +15,7 @@ function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, u
   for(const extra of otherRecords) fs.writeFileSync(path.join(dir, `queue/${extra.id}.json`), JSON.stringify(extra));
   if(cooldown) fs.writeFileSync(path.join(dir,'logs/instagram-cooldown.json'), JSON.stringify(cooldown));
   if(quotaState) fs.writeFileSync(path.join(dir,'logs/instagram-publishing-quota.json'), JSON.stringify(quotaState));
+  if(recovery) fs.writeFileSync(path.join(dir,'logs/instagram-recovery.json'),JSON.stringify(recovery));
   const preload = `globalThis.fetch = async (url, options = {}) => { if(String(url).includes('/content_publishing_limit?')) return new Response(JSON.stringify({data:[{quota_usage:${usage},config:{quota_total:${total}}}]})); ${mock} };`;
   const result = spawnSync(process.execPath, ['--import', 'data:text/javascript,' + encodeURIComponent(preload), script], { cwd: dir, encoding: 'utf8', env: { ...process.env, INSTAGRAM_ACCESS_TOKEN:'fake', INSTAGRAM_USER_ID:'fake', THREADS_ACCESS_TOKEN:'fake', THREADS_USER_ID:'fake', GITHUB_REPOSITORY:'test/test', PUBLISH_INSTAGRAM_STORIES:'true', GITHUB_STEP_SUMMARY:'' } });
   assert.equal(result.status, expectedStatus, result.stdout + result.stderr);
@@ -111,4 +112,12 @@ test('bad caption in-flight Threads item cannot block validated ready video', t 
     [{...item,id:'old',status:'ready',instagram_media_id:undefined,threads_container_id:'bad-caption-container',caption_policy:undefined}]);
   assert.equal(r.item.threads_container_id,'new-threads-container');
   assert.equal(r.report.threads_steps,1);
+});
+test('authorized recovery really publishes one feed above internal cap but below platform ceiling', t => {
+  const r=run(t,{...item,status:'ready',instagram_media_id:undefined,instagram_container_id:'recovery-container',threads_media_id:'thread',threads_status:'published'},null,
+    `if(options.method==='POST') return new Response(JSON.stringify({id:'recovery-live'})); if(String(url).includes('/recovery-container?')) return new Response(JSON.stringify({status_code:'FINISHED'})); return new Response(JSON.stringify({id:'recovery-live',permalink:'https://www.instagram.com/p/recovered/'}));`,0,
+    {usage:43,total:100,effective_total:50,blocked:false,checked_at:new Date().toISOString(),next_check_at:new Date(Date.now()+900000).toISOString()},43,100,[],
+    {mode:'one-feed-and-story',item_id:'test',authorized_at:new Date(Date.now()-60000).toISOString(),expires_at:new Date(Date.now()+1800000).toISOString()});
+  assert.equal(r.item.instagram_media_id,'recovery-live');
+  assert.equal(r.report.publications.length,1);
 });

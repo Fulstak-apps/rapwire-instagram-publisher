@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
-import { publicationPolicy, FEED_INTERVAL_MS } from "./publication-policy.mjs";
+import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS } from "./publication-policy.mjs";
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -78,6 +78,10 @@ const files = queueRecords
 const maxFeedPostsPerRun = 1;
 let videoAttemptsThisRun = 0;
 const pacingPath = path.join(logsDir, "publisher-pacing.json");
+const recoveryAuthorization = JSON.parse(await fs.readFile(path.join(logsDir, 'instagram-recovery.json'), 'utf8').catch(error => {
+  if (error.code === 'ENOENT') return '{}';
+  throw error;
+}));
 const pacing = JSON.parse(await fs.readFile(pacingPath, "utf8").catch(error => {
   if (error.code === "ENOENT") return "{}";
   throw error;
@@ -96,7 +100,12 @@ const signature = "@Rapwire247";
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
 
 async function refreshQuota() {
-  if (Date.parse(cooldown.until || "") > Date.now() || Date.parse(quota.next_check_at || "") > Date.now()) return;
+  const recoveryItem = queueRecords.find(({item}) => item.id === recoveryAuthorization.item_id)?.item;
+  const recoveryNeedsCheck = recoveryAuthorization.mode === 'one-feed-and-story'
+    && Date.parse(recoveryAuthorization.expires_at || '') > Date.now()
+    && recoveryItem && !recoveryItem.instagram_story_media_id && quota.blocked === false
+    && Date.now() - Date.parse(quota.checked_at || '') >= 5 * 60000;
+  if (Date.parse(cooldown.until || "") > Date.now() || (Date.parse(quota.next_check_at || "") > Date.now() && !recoveryNeedsCheck)) return;
   try {
     const url = new URL(`${instagramBase}/${instagramUserId}/content_publishing_limit`);
     url.searchParams.set("fields", "quota_usage,config"); url.searchParams.set("access_token", instagramToken);
@@ -169,10 +178,15 @@ async function save(itemPath, item) {
   await fs.rename(temporary, itemPath);
 }
 
-async function instagramPost(endpoint, fields) {
+async function instagramPost(endpoint, fields, recoveryItem = null, recoveryLane = null) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
     assertInstagramAvailable();
-    if (endpoint === "media_publish" && Math.max(instagramPublicationsInRollingDay, Number(quota.usage) || 0) >= deliveryPolicy.instagram_daily_cap) {
+    const liveRecovery = recoveryItem ? recoveryPolicy([recoveryItem], {
+      quota, authorization: recoveryAuthorization, lastFeedPublishedAt: pacing.last_feed_published_at
+    }) : {};
+    const recoveryAllowed = recoveryItem?.id === liveRecovery.item_id
+      && ((recoveryLane === 'feed' && liveRecovery.feed_allowed) || (recoveryLane === 'story' && liveRecovery.story_allowed));
+    if (endpoint === "media_publish" && !recoveryAllowed && Math.max(instagramPublicationsInRollingDay, Number(quota.usage) || 0) >= deliveryPolicy.instagram_daily_cap) {
       throw Object.assign(new Error("Rolling-day safety cap reached (feed plus Stories); queued for later"), { definitiveRejection: true });
     }
     const body = new URLSearchParams({ ...fields, access_token: instagramToken });
@@ -319,7 +333,7 @@ async function publishInstagramReel(item, itemPath) {
   return advanceContainer({ item, prefix: "instagram",
     create: () => instagramPost("media", { media_type: "REELS", video_url: videoUrl(item), caption: signedCaption(item.caption, item), share_to_feed: "true" }),
     inspect: id => inspectContainer("instagram", id),
-    publish: id => instagramPost("media_publish", { creation_id: id }),
+    publish: id => instagramPost("media_publish", { creation_id: id }, item, 'feed'),
     save: () => save(itemPath, item)
   });
 }
@@ -340,7 +354,7 @@ async function publishInstagramStory(item, itemPath) {
       ? { media_type: "STORIES", video_url: videoUrl(item) }
       : { media_type: "STORIES", image_url: storyUrl(item) }),
     inspect: id => inspectContainer("instagram", id),
-    publish: id => instagramPost("media_publish", { creation_id: id }),
+    publish: id => instagramPost("media_publish", { creation_id: id }, item, 'story'),
     save: () => save(itemPath, item)
   });
 }
@@ -407,6 +421,9 @@ for (const file of files) {
 const deliveryPolicy = publicationPolicy(queueRecords.map(record => record.item), {
   quota, lastFeedPublishedAt: pacing.last_feed_published_at, includeStories: publishInstagramStories
 });
+const recovery = recoveryPolicy(queueRecords.map(record => record.item), {
+  quota, authorization: recoveryAuthorization, lastFeedPublishedAt: pacing.last_feed_published_at
+});
 
 // One processing slot. Existing uploads retain
 // their slots across runs so slow processing cannot create an upload pileup.
@@ -417,11 +434,12 @@ const pendingStory = queueRecords.some(({ item }) => item.status === "published"
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
   && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"));
-const preferStory = pendingStory && pacing.last_instagram_lane === "feed";
-const uploadSlots = instagramAvailable() && !preferStory && deliveryPolicy.feed_allowed
+const preferStory = !recovery.feed_allowed && pendingStory && pacing.last_instagram_lane === "feed";
+const uploadSlots = instagramAvailable() && !preferStory && (deliveryPolicy.feed_allowed || recovery.feed_allowed)
   ? Math.max(0, 1 - processingCount) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
   .filter(({ item }) => item.status === "ready" && item.content_type === "video"
+    && (deliveryPolicy.feed_allowed || (recovery.feed_allowed && item.id === recovery.item_id))
     && !item.instagram_container_id && String(item.video || "").endsWith(".mp4")
     && !item.instagram_reconcile_required && !(Date.parse(item.instagram_retry_at || "") > Date.now())
     && (!item.publish_after || Date.parse(item.publish_after) <= Date.now())
@@ -558,7 +576,7 @@ for (const file of files) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "run_feed_limit_reached" });
       continue;
     }
-    if (!deliveryPolicy.feed_allowed) {
+    if (!deliveryPolicy.feed_allowed && !(recovery.feed_allowed && item.id === recovery.item_id)) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "feed_cadence_or_reserved_daily_budget", next_feed_eligible_at: deliveryPolicy.next_feed_eligible_at });
       continue;
     }
@@ -597,7 +615,7 @@ for (const file of files) {
   if (item.status !== "published") continue;
 
   const storyPending = !item.instagram_story_media_id && item.instagram_story_status !== "published";
-  if (publishInstagramStories && instagramAvailable() && deliveryPolicy.story_allowed && instagramSteps < 1 && (item.story || isVideoItem) && storyPending
+  if (publishInstagramStories && instagramAvailable() && (deliveryPolicy.story_allowed || (recovery.story_allowed && item.id === recovery.item_id)) && instagramSteps < 1 && (item.story || isVideoItem) && storyPending
     && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
     && (wasReady || olderStoryAttemptsThisRun < 1)) {
     if (!wasReady) olderStoryAttemptsThisRun += 1;
@@ -642,6 +660,7 @@ const report = {
   instagram_publishing_quota: quota,
   delivery_policy: { ...deliveryPolicy, next_feed_eligible_at: pacing.last_feed_published_at ? new Date(Date.parse(pacing.last_feed_published_at) + FEED_INTERVAL_MS).toISOString() : deliveryPolicy.next_feed_eligible_at },
   instagram_steps: instagramSteps, threads_steps: threadsSteps,
+  instagram_recovery: recovery,
   threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + FEED_INTERVAL_MS).toISOString() : null,
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),

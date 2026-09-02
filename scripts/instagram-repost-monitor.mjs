@@ -4,6 +4,7 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { capture, launch } from "./instagram-browser-mirror.mjs";
 import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-caption.mjs";
+import { mediaFiles, isMediaRepost } from "./repost-media-policy.mjs";
 import { isVip, rememberVip, vipCandidates, deferVip, vipCaption } from './vip-policy.mjs';
 
 const execFileAsync = promisify(execFile);
@@ -164,12 +165,12 @@ async function queueCapture(ledger, candidate, queueNumber) {
   // Keep the exact canonical URL used for caption binding on both platforms.
   candidate.url = evidence.source_url;
   const sourceVideo = path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`);
-  await fs.access(sourceVideo);
+  const multiMedia = evidence.items && evidence.content_type !== "video";
   const fields = await captionFields(evidence, candidate.source.handle);
   const headlineSeed = fields.body;
   const id = `${String(queueNumber).padStart(3, "0")}-${slugify(headlineSeed)}`;
   const mediaPath = path.join(mediaDir, `${id}.mp4`);
-  await fs.copyFile(sourceVideo, mediaPath);
+  if (!multiMedia) await fs.copyFile(sourceVideo, mediaPath);
 
   const { body, caption } = fields;
   const queueItem = {
@@ -207,6 +208,22 @@ async function queueCapture(ledger, candidate, queueNumber) {
     threads_status: "pending"
   };
   Object.assign(queueItem, fields);
+  if (multiMedia) {
+    const mediaItems=[];
+    for (const [index,media] of evidence.items.entries()) {
+      const destination=path.join(mediaDir,`${id}-${index+1}.${media.type==='video'?'mp4':'jpg'}`);
+      await fs.copyFile(media.path,destination);
+      mediaItems.push({type:media.type,path:path.relative(root,destination),source_index:index});
+    }
+    const story=path.join(mediaDir,`${id}-story.jpg`);
+    await fs.copyFile(evidence.story,story);
+    delete queueItem.video;
+    delete queueItem.source_video_used;
+    Object.assign(queueItem, {type:'source_media_repost',content_type:evidence.content_type,
+      layout_template:'rapwire-source-media-v1',visual_asset_type:'source_media',
+      media_items:mediaItems,media_capture_complete:evidence.complete,source_item_count:evidence.item_count,
+      story:path.relative(root,story),story_is_preview:true});
+  }
   await writeJson(path.join(queueDir, `${id}.json`), queueItem);
   ledger.queued_shortcodes[shortcode] = {
     queued_at: new Date().toISOString(),
@@ -224,12 +241,12 @@ async function commitAndPush(createdIds) {
     const name = path.join("queue", `${id}.json`);
     const item = await readJson(name, {});
     paths.push(name);
-    if (item.video) paths.push(item.video);
+    paths.push(...mediaFiles(item));
   }
   const { stdout: changed } = await execFileAsync("git", ["status", "--porcelain", "--", ...paths]);
   if (changed.trim()) {
   await execFileAsync("git", ["add", "--", ...paths]);
-  await execFileAsync("git", ["commit", "--only", "-m", createdIds.length ? `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}` : "Save RapWire collector health", "--", ...paths]).catch((error) => {
+  await execFileAsync("git", ["commit", "--only", "-m", createdIds.length ? `Queue ${createdIds.length} RapWire repost${createdIds.length === 1 ? "" : "s"}` : "Save RapWire collector health", "--", ...paths]).catch((error) => {
     if (!/nothing to commit/i.test(error.stdout || error.stderr || "")) throw error;
   });
   }
@@ -259,15 +276,15 @@ try {
   for (const name of (await fs.readdir(queueDir)).filter(name => name.endsWith(".json"))) {
     const item = await readJson(path.join(queueDir, name), {});
     const code = shortcodeFromUrl(item.source_url || "");
-    if (code && item.content_type === "video") ledger.queued_shortcodes[code] ||= { queue_id: item.id, source_url: item.source_url, source_handle: item.source_handle, video: item.video };
+    if (code && (item.content_type === "video" || isMediaRepost(item))) ledger.queued_shortcodes[code] ||= { queue_id: item.id, source_url: item.source_url, source_handle: item.source_handle, video: item.video };
   }
 
   // Resume interrupted queue delivery even if this cycle finds no new video.
   const unsent = [];
   for (const name of (await fs.readdir(queueDir)).filter(name => name.endsWith(".json"))) {
     const item = await readJson(path.join(queueDir, name), {});
-    if (item.status !== "ready" || item.content_type !== "video" || name !== `${item.id}.json` || !sources.some(source => source.handle === item.source_handle)) continue;
-    const { stdout } = await execFileAsync("git", ["status", "--porcelain", "--", path.join("queue", name), item.video]);
+    if (item.status !== "ready" || (item.content_type !== "video" && !isMediaRepost(item)) || name !== `${item.id}.json` || !sources.some(source => source.handle === item.source_handle)) continue;
+    const { stdout } = await execFileAsync("git", ["status", "--porcelain", "--", path.join("queue", name), ...mediaFiles(item)]);
     if (stdout.trim()) unsent.push(item.id);
   }
   if (unsent.length) {

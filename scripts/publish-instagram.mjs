@@ -1,5 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import {advanceMediaPost} from "./carousel-state.mjs";
+import {isMediaRepost, validMediaRepost} from "./repost-media-policy.mjs";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
 import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS } from "./publication-policy.mjs";
@@ -161,6 +163,7 @@ function videoUrl(item) {
 }
 
 function hasPublishableVisual(item) {
+  if (isMediaRepost(item)) return validMediaRepost(item);
   if (item.visual_asset_type === "original_graphic" && item.visual_asset_rights === "owned") return true;
   if (item.visual_asset_type === "source_photo" && item.visual_asset_rights === "source_post_repost") {
     return Boolean(item.story || item.slides?.length);
@@ -297,20 +300,21 @@ async function waitForThreadsContainer(containerId) {
   throw new Error(`Threads container ${containerId} did not finish in time`);
 }
 
-async function publishInstagramFeed(item) {
-  const childIds = [];
-  for (let index = 0; index < item.slides.length; index += 1) {
-    const child = await instagramPost("media", { image_url: slideUrl(item, index), is_carousel_item: "true" });
-    await waitForInstagramContainer(child.id);
-    childIds.push(child.id);
-  }
-  const carousel = await instagramPost("media", {
-    media_type: "CAROUSEL",
-    children: childIds.join(","),
-    caption: signedCaption(item.caption, item)
-  });
-  await waitForInstagramContainer(carousel.id);
-  return instagramPost("media_publish", { creation_id: carousel.id });
+async function publishMediaFeed(item,itemPath,platform) {
+  const media = isMediaRepost(item) ? item.media_items.map(m=>({...m,url:mediaUrl(m.path)}))
+    : item.slides.map((p,index)=>({type:'image',url:slideUrl(item,index)}));
+  const ig=platform==='instagram';
+  const create=fields=>ig?instagramPost('media',fields):threadsPost('threads',fields);
+  const fields=m=>m.type==='video'?{media_type:'VIDEO',video_url:m.url}
+    : ig?{image_url:m.url}:{media_type:'IMAGE',image_url:m.url};
+  const copy=ig?{caption:signedCaption(item.caption,item)}:{text:signedCaption(item.threads_text||item.caption,item)};
+  return advanceMediaPost({item,prefix:platform,media,
+    createChild:m=>create({...fields(m),is_carousel_item:'true'}),
+    createSingle:m=>create({...fields(m),...copy}),
+    createParent:ids=>create({media_type:'CAROUSEL',children:ids.join(','),...copy}),
+    inspect:id=>inspectContainer(platform,id),
+    publish:id=>ig?instagramPost('media_publish',{creation_id:id},item,'feed'):threadsPost('threads_publish',{creation_id:id}),
+    save:()=>save(itemPath,item)});
 }
 
 async function prepareInstagramReel(item, itemPath) {
@@ -358,26 +362,6 @@ async function publishInstagramStory(item, itemPath) {
   });
 }
 
-async function publishThreadsCarousel(item) {
-  const children = [];
-  for (let index = 0; index < item.slides.length; index += 1) {
-    const child = await threadsPost("threads", {
-      media_type: "IMAGE",
-      image_url: slideUrl(item, index),
-      is_carousel_item: "true"
-    });
-    await waitForThreadsContainer(child.id);
-    children.push(child.id);
-  }
-  const carousel = await threadsPost("threads", {
-    media_type: "CAROUSEL",
-    children: children.join(","),
-    text: signedCaption(item.threads_text || item.caption, item)
-  });
-  await waitForThreadsContainer(carousel.id);
-  return threadsPost("threads_publish", { creation_id: carousel.id });
-}
-
 async function publishThreadsVideo(item, itemPath) {
   return advanceContainer({ item, prefix: "threads",
     create: () => threadsPost("threads", { media_type: "VIDEO", video_url: videoUrl(item), text: signedCaption(item.threads_text || item.caption, item) }),
@@ -388,6 +372,7 @@ async function publishThreadsVideo(item, itemPath) {
 }
 
 function contentPromiseIsKept(item) {
+  if (isMediaRepost(item)) return validMediaRepost(item);
   const headline = String(item.headline || "");
   const body = String(item.body || "");
   const words = body.trim().split(/\s+/).filter(Boolean);
@@ -427,9 +412,10 @@ const recovery = recoveryPolicy(queueRecords.map(record => record.item), {
 
 // One processing slot. Existing uploads retain
 // their slots across runs so slow processing cannot create an upload pileup.
-const processingCount = queueRecords.filter(({ item }) => item.status === "ready"
-  && item.content_type === "video" && item.instagram_container_id && !item.instagram_reconcile_required
-  && contentPromiseIsKept(item)).length;
+const instagramInFlightId = queueRecords.find(({item}) => item.status === 'ready'
+  && (item.instagram_container_id || item.instagram_children?.some(Boolean))
+  && !item.instagram_reconcile_required && contentPromiseIsKept(item))?.item.id;
+const processingCount = instagramInFlightId ? 1 : 0;
 const pendingStory = queueRecords.some(({ item }) => item.status === "published"
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
@@ -463,14 +449,14 @@ await Promise.all(uploadCandidates.map(async ({ name, item }) => {
 let lastThreadsTime = Math.max(Date.parse(pacing.last_threads_published_at || '') || 0,
   ...queueRecords.map(({item}) => item.threads_media_id ? Date.parse(item.threads_published_at || '') || 0 : 0));
 const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].includes(item.status)
-  && item.threads_container_id && !item.threads_media_id && !item.threads_reconcile_required
+  && (item.threads_container_id || item.threads_children?.some(Boolean)) && !item.threads_media_id && !item.threads_reconcile_required
   && item.rap_relevance_checked === true && contentPromiseIsKept(item)
   && (!item.publish_after || Date.parse(item.publish_after) <= Date.now())
   && (item.status !== 'ready' || (item.source_policy_checked === true
     && item.text_overflow_checked === true && item.rendered_body_text === item.body
     && item.content_claim_checked === true && item.editorial_substance_checked === true
     && (item.content_type === 'video' ? item.layout_template === 'rapwire-video-grid-safe-v1'
-      : item.layout_template === 'rapwire-unified-v3' && hasPublishableVisual(item))))
+      : (validMediaRepost(item) || item.layout_template === 'rapwire-unified-v3' && hasPublishableVisual(item)))))
   && !(Date.parse(item.threads_retry_at || '') > Date.now()))?.item.id;
 
 async function deliverThreads(item, itemPath, file) {
@@ -479,11 +465,12 @@ async function deliverThreads(item, itemPath, file) {
     || Date.now() - lastThreadsTime < FEED_INTERVAL_MS
     || (threadsInFlightId && item.id !== threadsInFlightId)
     || item.rap_relevance_checked !== true || (isVideoItem && !captionIsBound(item))
+    || (isMediaRepost(item) && !validMediaRepost(item))
     || Date.parse(item.threads_retry_at || '') > Date.now()
     || ![undefined,'pending','failed','skipped_for_instagram_only_post'].includes(item.threads_status)) return;
   try {
     threadsSteps += 1;
-    const published = isVideoItem ? await publishThreadsVideo(item, itemPath) : await publishThreadsCarousel(item);
+    const published = isVideoItem ? await publishThreadsVideo(item, itemPath) : await publishMediaFeed(item,itemPath,'threads');
     if (!published) {
       item.threads_status = 'pending';
     } else {
@@ -520,7 +507,7 @@ for (const file of files) {
     continue;
   }
   const isVideoItem = item.content_type === "video";
-  if (!isVideoItem && (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 10)) {
+  if (!isVideoItem && !validMediaRepost(item) && (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 10)) {
     console.error(`Skipped ${file}: RapWire carousels require 2-10 complete, readable slides`);
     await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "invalid_carousel_slide_count" });
     continue;
@@ -543,7 +530,7 @@ for (const file of files) {
       item.threads_text = normalizedThreadsText;
       await save(itemPath, item);
     }
-    if ((!isVideoItem && item.layout_template !== "rapwire-unified-v3")
+    if ((!isVideoItem && !validMediaRepost(item) && item.layout_template !== "rapwire-unified-v3")
       || (isVideoItem && item.layout_template !== "rapwire-video-grid-safe-v1")) {
       console.error(`Skipped ${file}: asset does not use the locked RapWire template`);
       await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "invalid_layout_template" });
@@ -581,7 +568,7 @@ for (const file of files) {
       continue;
     }
     let published;
-    if (!instagramAvailable() || instagramSteps >= 1 || preferStory || item.instagram_reconcile_required || Date.parse(item.instagram_retry_at || "") > Date.now()) continue;
+    if ((instagramInFlightId && instagramInFlightId !== item.id) || !instagramAvailable() || instagramSteps >= 1 || preferStory || item.instagram_reconcile_required || Date.parse(item.instagram_retry_at || "") > Date.now()) continue;
     if (isVideoItem) {
       if (!item.instagram_container_id || videoAttemptsThisRun >= 1) continue;
       videoAttemptsThisRun += 1;
@@ -589,7 +576,7 @@ for (const file of files) {
     try {
       instagramSteps += 1;
       instagramLane = "feed";
-      published = isVideoItem ? await publishInstagramReel(item, itemPath) : await publishInstagramFeed(item);
+      published = isVideoItem ? await publishInstagramReel(item, itemPath) : await publishMediaFeed(item,itemPath,'instagram');
     } catch (error) {
       item.instagram_error = error.message;
       if (!(Date.parse(item.instagram_retry_at || "") > Date.now())) item.instagram_retry_at = new Date(Date.now() + 10 * 60_000).toISOString();

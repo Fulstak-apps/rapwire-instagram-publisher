@@ -9,7 +9,7 @@ records.sort((a, b) => Number(Boolean(b.item.instagram_media_id)) - Number(Boole
   || Number(Boolean(b.item.instagram_container_id)) - Number(Boolean(a.item.instagram_container_id))
   || a.name.localeCompare(b.name, 'en', { numeric: true }));
 for (const { name, item } of records) {
-  const shortcode = item.content_type === 'video' ? String(item.source_url || '').match(/\/(?:p|reel)\/([\w-]+)/)?.[1] : null;
+  const shortcode = (item.content_type === 'video' || item.type === 'source_media_repost') ? String(item.source_url || '').match(/\/(?:p|reel)\/([\w-]+)/)?.[1] : null;
   const prior = seenIds.get(item.id) || (shortcode && seenVideos.get(shortcode));
   if (prior && item.status === 'ready' && !item.instagram_media_id && !item.instagram_container_id) {
     item.status = 'paused'; item.pause_reason = `Duplicate of ${prior}; preserved but not republished`;

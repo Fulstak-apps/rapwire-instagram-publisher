@@ -5,6 +5,7 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { chromium } from "playwright-core";
 import { readExactPost } from "./post-metadata.mjs";
+import { capturePostMedia } from "./post-media.mjs";
 import { assembleRanges } from "./media-ranges.mjs";
 
 const execFileAsync = promisify(execFile);
@@ -52,41 +53,12 @@ async function login() {
   await new Promise((resolve) => context.once("close", resolve));
 }
 
-async function capture(reelUrl, options = {}) {
-  if (!/^https:\/\/www\.instagram\.com\/(?:[^/]+\/)?(?:reel|p)\/[A-Za-z0-9_-]+\/?/.test(reelUrl)) {
-    throw new Error("capture requires a full Instagram reel or video-post URL");
-  }
-  await fs.mkdir(outputDir, { recursive: true });
-  const shortcode = reelUrl.match(/\/(?:reel|p)\/([A-Za-z0-9_-]+)/)[1];
-  const destination = path.join(outputDir, `${shortcode}.mp4`);
-  const context = await launch(options.headless === true);
-  try {
-    const page = context.pages()[0] || await context.newPage();
-    await assertRapWireLogin(page);
-    const candidates = [];
-    page.on("response", async (response) => {
-      try {
-        const headers = await response.allHeaders();
-        const type = headers["content-type"] || "";
-        if (!type.startsWith("video/") && !type.startsWith("audio/") && !/\.(?:mp4|webm)(?:\?|$)/i.test(response.url())) return;
-        const body = await response.body();
-        if (body.length) candidates.push({ body, type, url: response.url(), headers, status: response.status() });
-      } catch {
-        // Streaming responses may be unavailable until playback completes.
-      }
-    });
-    await page.goto(reelUrl, { waitUntil: "domcontentloaded" });
-    await page.waitForTimeout(2500);
-    // Never count the first video in a carousel as a complete VIP repost.
-    if (options.vip && await page.getByRole('button', {name:'Next', exact:true}).isVisible().catch(() => false)) {
-      throw new Error('Multi-item VIP post remains pending: complete carousel capture is not yet supported');
-    }
-    const video = page.locator("video:visible").first();
+async function captureVideo(page, video, candidates, reelUrl, options, destination, shortcode) {
     await video.waitFor({ state: "visible", timeout: 15_000 });
     // Clicking blindly may pause autoplay, leaving only the first media range.
     await video.evaluate(element => { element.muted = false; return element.play().catch(() => { element.muted = true; return element.play(); }); });
     await page.waitForTimeout(3000);
-    const sourceEvidence = await readExactPost(page, reelUrl, options);
+    const sourceEvidence = await readExactPost(page, reelUrl, {...options, video});
     const bufferDeadline = Date.now() + Math.min(240000, (sourceEvidence.duration + 15) * 1000);
     let fullyBuffered = false;
     while (Date.now() < bufferDeadline) {
@@ -189,10 +161,44 @@ async function capture(reelUrl, options = {}) {
     } finally {
       await fs.rm(tempDir, { recursive: true, force: true });
     }
+    return sourceEvidence;
+}
+
+async function capture(reelUrl, options = {}) {
+  if (!/^https:\/\/www\.instagram\.com\/(?:[^/]+\/)?(?:reel|p)\/[A-Za-z0-9_-]+\/?/.test(reelUrl)) {
+    throw new Error("capture requires a full Instagram reel or video-post URL");
+  }
+  await fs.mkdir(outputDir, { recursive: true });
+  const shortcode = reelUrl.match(/\/(?:reel|p)\/([A-Za-z0-9_-]+)/)[1];
+  const destination = path.join(outputDir, `${shortcode}.mp4`);
+  const context = await launch(options.headless === true);
+  try {
+    const page = context.pages()[0] || await context.newPage();
+    await assertRapWireLogin(page);
+    const candidates = [];
+    page.on("response", async (response) => {
+      try {
+        const headers = await response.allHeaders();
+        const type = headers["content-type"] || "";
+        if (!type.startsWith("video/") && !type.startsWith("audio/") && !/\.(?:mp4|webm)(?:\?|$)/i.test(response.url())) return;
+        const body = await response.body();
+        if (body.length) candidates.push({ body, type, url: response.url(), headers, status: response.status() });
+      } catch {
+        // Streaming responses may be unavailable until playback completes.
+      }
+    });
+    await page.goto(reelUrl, { waitUntil: "domcontentloaded" });
+    await page.waitForTimeout(2500);
+    if (options.vip) {
+      return await capturePostMedia({page, requestedUrl:reelUrl, outputDir,
+        captureVideo: (video, destination, suffix) => captureVideo(page, video, candidates, reelUrl, options, destination, suffix)});
+    }
+    const video = page.locator("video:visible").first();
+    const sourceEvidence = await captureVideo(page, video, candidates, reelUrl, options, destination, shortcode);
     const resultStat = await fs.stat(destination);
     const evidence = { ...sourceEvidence, shortcode, destination, bytes: resultStat.size, captured_at: new Date().toISOString(), media_match_method: "unique-complete-stream-duration-dimensions-v1" };
     await fs.writeFile(path.join(outputDir, `${shortcode}.json`), JSON.stringify(evidence, null, 2) + "\n");
-    console.log(JSON.stringify({ shortcode, destination, bytes: resultStat.size, audioCaptured: Boolean(audioInput), logoOverlay: "rapwire247-logo-bottom-left", source: reelUrl }));
+    console.log(JSON.stringify({ shortcode, destination, bytes: resultStat.size, audioCaptured: true, logoOverlay: "rapwire247-logo-bottom-left", source: reelUrl }));
     return evidence;
   } finally {
     await context.close();

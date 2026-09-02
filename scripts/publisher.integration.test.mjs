@@ -146,3 +146,35 @@ test('dedicated Story preview is uploaded without replacing the full Reel', t =>
   assert.equal(r.item.instagram_story_container_id,'story-container');
   assert.equal(r.item.video,'media/test.mp4');
 });
+
+function photoRecord(count=1) {
+ const copy=vipCaption('',item.source_handle,item.source_url);
+ return {...item,...copy,rendered_body_text:copy.body,status:'ready',instagram_media_id:undefined,
+   content_type:count===1?'image':'carousel',type:'source_media_repost',vip_repost:true,
+   caption_policy:'vip-source-v1',source_caption_text:'',vip_source_checked:true,
+   layout_template:'rapwire-source-media-v1',visual_asset_rights:'source_post_repost',
+   media_capture_complete:true,source_item_count:count,
+   media_items:Array.from({length:count},(_,i)=>({type:i===1?'video':'image',path:`media/test-${i}.${i===1?'mp4':'jpg'}`,source_index:i})),
+   story:'media/test-story.jpg'};
+}
+test('VIP photo creates a single Threads image even while Instagram is held',t=>{
+ const r=run(t,photoRecord(),null,
+   `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('IG held'); if(options.body.get('media_type')!=='IMAGE'||!options.body.get('image_url')||options.body.has('is_carousel_item')) throw new Error('Expected single image'); return new Response(JSON.stringify({id:'photo-container'}));`,0,
+   {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
+ assert.equal(r.item.threads_container_id,'photo-container');assert.equal(r.item.status,'ready');
+});
+test('mixed VIP carousel uploads each child with the right type and retains IDs',t=>{
+ const r=run(t,photoRecord(2),null,
+  `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('IG held'); if(options.body.get('is_carousel_item')!=='true') throw new Error('Must create children first'); const type=options.body.get('media_type'); if(type==='VIDEO'&&!options.body.get('video_url')) throw new Error('Missing video'); return new Response(JSON.stringify({id:type}));`,0,
+  {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
+ assert.deepEqual(r.item.threads_children.map(c=>c.id),['IMAGE','VIDEO']);assert.equal(r.item.threads_container_id,undefined);
+});
+test('incomplete VIP carousel cannot reach either platform',t=>{
+ const r=run(t,{...photoRecord(2),source_item_count:3},null,`throw new Error('Incomplete media cannot publish');`);
+ assert.equal(r.report.instagram_steps,0);assert.equal(r.report.threads_steps,0);
+});
+test('Instagram photo parent resumes and records a confirmed publication',t=>{
+ const r=run(t,{...photoRecord(),instagram_container_id:'photo-container',threads_status:'published',threads_media_id:'thread'},null,
+ `if(options.method==='POST') return new Response(JSON.stringify({id:'photo-live'})); if(String(url).includes('/photo-container?')) return new Response(JSON.stringify({status_code:'FINISHED'})); return new Response(JSON.stringify({id:'photo-live',permalink:'https://www.instagram.com/p/photo-live/'}));`);
+ assert.equal(r.item.instagram_media_id,'photo-live');assert.equal(r.item.status,'published');assert.equal(r.item.instagram_permalink,'https://www.instagram.com/p/photo-live/');
+});

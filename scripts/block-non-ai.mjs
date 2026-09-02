@@ -1,3 +1,4 @@
+import {validMediaRepost} from "./repost-media-policy.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -6,6 +7,7 @@ for (const file of await fs.readdir(dir)) {
   if (!file.endsWith(".json")) continue;
   const filePath = path.join(dir, file);
   const item = JSON.parse(await fs.readFile(filePath, "utf8"));
+  if (item.status === "ready" && validMediaRepost(item)) continue;
   const approvedVideo = item.content_type === "video"
     && item.layout_template === "rapwire-video-grid-safe-v1"
     && item.visual_asset_type === "source_video"

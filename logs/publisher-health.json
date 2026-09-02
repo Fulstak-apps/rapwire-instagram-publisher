@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T22:57:03.225Z",
+  "checked_at": "2026-09-02T23:01:17.812Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T22:56:55.708Z",
@@ -25,22 +25,14 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-02T23:07:02.550Z",
-  "publications": [
-    {
-      "file": "166-akademiks-drew-findling-vonni-going-back-and-forth.json",
-      "id": "166-akademiks-drew-findling-vonni-going-back-and-forth",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18278752321289188"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

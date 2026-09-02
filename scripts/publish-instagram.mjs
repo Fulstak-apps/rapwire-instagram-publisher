@@ -47,12 +47,15 @@ async function logAttempt(event) {
   await fs.appendFile(attemptsLog, `${JSON.stringify({ timestamp: new Date().toISOString(), ...event })}\n`);
 }
 
-function signedCaption(value) {
+function signedCaption(value, item = {}) {
+  const source = String(item.source_handle || "").replace(/^@/, "");
+  const sourceLine = /^[A-Za-z0-9_.]+$/.test(source) ? `\n@${source}` : "";
   return String(value || "")
     .trim()
+    .replace(/(?:\n\n)?Rap\s*Wire 24\/7\.?\s*\n@Rapwire247(?:\s*\n@[A-Za-z0-9_.]+)?\s*$/i, "")
     .replace(/(?:\n\n)?RapWire 24\/7\.?\s*$/i, "")
     .replace(/(?:\n\n)?@Rapwire247\s*$/i, "")
-    .trim() + `\n\n${signature}`;
+    .trim() + `\n\nRap Wire 24/7\n${signature}${sourceLine}`;
 }
 
 function slideUrl(item, index) {
@@ -158,7 +161,7 @@ async function publishInstagramFeed(item) {
   const carousel = await instagramPost("media", {
     media_type: "CAROUSEL",
     children: childIds.join(","),
-    caption: signedCaption(item.caption)
+    caption: signedCaption(item.caption, item)
   });
   await waitForInstagramContainer(carousel.id);
   return instagramPost("media_publish", { creation_id: carousel.id });
@@ -169,7 +172,7 @@ async function prepareInstagramReel(item, itemPath) {
     const reel = await instagramPost("media", {
     media_type: "REELS",
     video_url: videoUrl(item),
-    caption: signedCaption(item.caption),
+    caption: signedCaption(item.caption, item),
     share_to_feed: "true"
     });
     item.instagram_container_id = reel.id;
@@ -234,7 +237,7 @@ async function publishThreadsCarousel(item) {
   const carousel = await threadsPost("threads", {
     media_type: "CAROUSEL",
     children: children.join(","),
-    text: signedCaption(item.threads_text || item.caption)
+    text: signedCaption(item.threads_text || item.caption, item)
   });
   await waitForThreadsContainer(carousel.id);
   return threadsPost("threads_publish", { creation_id: carousel.id });
@@ -244,7 +247,7 @@ async function publishThreadsVideo(item) {
   const video = await threadsPost("threads", {
     media_type: "VIDEO",
     video_url: videoUrl(item),
-    text: signedCaption(item.threads_text || item.caption)
+    text: signedCaption(item.threads_text || item.caption, item)
   });
   await waitForThreadsContainer(video.id);
   return threadsPost("threads_publish", { creation_id: video.id });
@@ -332,8 +335,8 @@ for (const file of files) {
   if (item.status === "ready") {
     // Keep captions consistent even if an item was queued before the current
     // identity rule was introduced.
-    const normalizedCaption = signedCaption(item.caption);
-    const normalizedThreadsText = signedCaption(item.threads_text || item.caption);
+    const normalizedCaption = signedCaption(item.caption, item);
+    const normalizedThreadsText = signedCaption(item.threads_text || item.caption, item);
     if (item.caption !== normalizedCaption || item.threads_text !== normalizedThreadsText) {
       item.caption = normalizedCaption;
       item.threads_text = normalizedThreadsText;

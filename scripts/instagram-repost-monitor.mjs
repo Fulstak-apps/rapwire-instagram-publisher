@@ -175,7 +175,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
 
   const body = buildBody(candidate.source, visibleCaption);
   const handleLine = artistHandleLine(candidate);
-  const caption = `${body}${handleLine ? `\n\n${handleLine}` : ""}\n\n@Rapwire247`;
+  const caption = `${body}${handleLine ? `\n\n${handleLine}` : ""}\n\nRap Wire 24/7\n@Rapwire247\n@${candidate.source.handle}`;
   const queueItem = {
     id,
     status: "ready",

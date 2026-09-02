@@ -145,7 +145,7 @@ function buildBody(source, visibleCaption) {
   const base = visibleCaption
     ? visibleCaption.split(/[.!?]\s/).slice(0, 2).join(". ").slice(0, 220)
     : "A new hip-hop video is moving through the feed and RapWire is posting it for the timeline.";
-  return `${base}${base.endsWith(".") ? "" : "."} RapWire 24/7 is keeping the hip-hop video feed moving with quick clean repost coverage.`;
+  return `${base}${base.endsWith(".") ? "" : "."} Clean repost coverage for the hip-hop feed.`;
 }
 
 async function queueCapture(ledger, candidate, queueNumber) {
@@ -161,7 +161,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
 
   const body = buildBody(candidate.source, visibleCaption);
   const handleLine = artistHandleLine(candidate);
-  const caption = `${body}${handleLine ? `\n\n${handleLine}` : ""}\n\nRapWire 24/7.`;
+  const caption = `${body}${handleLine ? `\n\n${handleLine}` : ""}\n\n@Rapwire247`;
   const queueItem = {
     id,
     status: "ready",

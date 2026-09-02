@@ -36,11 +36,20 @@ const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const requestTimeoutMs = 90_000;
+const signature = "@Rapwire247";
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
 
 async function logAttempt(event) {
   await fs.mkdir(logsDir, { recursive: true });
   await fs.appendFile(attemptsLog, `${JSON.stringify({ timestamp: new Date().toISOString(), ...event })}\n`);
+}
+
+function signedCaption(value) {
+  return String(value || "")
+    .trim()
+    .replace(/(?:\n\n)?RapWire 24\/7\.?\s*$/i, "")
+    .replace(/(?:\n\n)?@Rapwire247\s*$/i, "")
+    .trim() + `\n\n${signature}`;
 }
 
 function slideUrl(item, index) {
@@ -146,7 +155,7 @@ async function publishInstagramFeed(item) {
   const carousel = await instagramPost("media", {
     media_type: "CAROUSEL",
     children: childIds.join(","),
-    caption: item.caption
+    caption: signedCaption(item.caption)
   });
   await waitForInstagramContainer(carousel.id);
   return instagramPost("media_publish", { creation_id: carousel.id });
@@ -156,7 +165,7 @@ async function publishInstagramReel(item) {
   const reel = await instagramPost("media", {
     media_type: "REELS",
     video_url: videoUrl(item),
-    caption: item.caption,
+    caption: signedCaption(item.caption),
     share_to_feed: "true"
   });
   await waitForInstagramContainer(reel.id);
@@ -189,7 +198,7 @@ async function publishThreadsCarousel(item) {
   const carousel = await threadsPost("threads", {
     media_type: "CAROUSEL",
     children: children.join(","),
-    text: item.threads_text || item.caption
+    text: signedCaption(item.threads_text || item.caption)
   });
   await waitForThreadsContainer(carousel.id);
   return threadsPost("threads_publish", { creation_id: carousel.id });
@@ -199,7 +208,7 @@ async function publishThreadsVideo(item) {
   const video = await threadsPost("threads", {
     media_type: "VIDEO",
     video_url: videoUrl(item),
-    text: item.threads_text || item.caption
+    text: signedCaption(item.threads_text || item.caption)
   });
   await waitForThreadsContainer(video.id);
   return threadsPost("threads_publish", { creation_id: video.id });
@@ -255,6 +264,15 @@ for (const file of files) {
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
+    // Keep captions consistent even if an item was queued before the current
+    // identity rule was introduced.
+    const normalizedCaption = signedCaption(item.caption);
+    const normalizedThreadsText = signedCaption(item.threads_text || item.caption);
+    if (item.caption !== normalizedCaption || item.threads_text !== normalizedThreadsText) {
+      item.caption = normalizedCaption;
+      item.threads_text = normalizedThreadsText;
+      await save(itemPath, item);
+    }
     if ((!isVideoItem && item.layout_template !== "rapwire-unified-v3")
       || (isVideoItem && item.layout_template !== "rapwire-video-grid-safe-v1")) {
       console.error(`Skipped ${file}: asset does not use the locked RapWire template`);

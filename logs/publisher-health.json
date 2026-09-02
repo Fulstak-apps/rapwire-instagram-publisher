@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-02T22:53:18.598Z",
+  "checked_at": "2026-09-02T22:57:03.225Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-02T22:38:40.988Z",
+    "checked_at": "2026-09-02T22:56:55.708Z",
     "usage": 46,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-02T22:53:40.988Z",
+    "next_check_at": "2026-09-02T23:11:55.708Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -16,30 +16,29 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 45,
-    "instagram_remaining": 3,
+    "instagram_usage": 46,
+    "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-02T23:03:18.253Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T22:48:46.213Z",
+  "threads_next_eligible_at": "2026-09-02T23:07:02.550Z",
   "publications": [
     {
-      "file": "129-raplisted-repost-video.json",
-      "id": "129-raplisted-repost-video",
-      "platform": "instagram",
+      "file": "166-akademiks-drew-findling-vonni-going-back-and-forth.json",
+      "id": "166-akademiks-drew-findling-vonni-going-back-and-forth",
+      "platform": "threads",
       "status": "published",
-      "media_id": "17956199268210251",
-      "content_type": "video"
+      "media_id": "18278752321289188"
     }
   ],
   "failures": [],

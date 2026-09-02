@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T15:34:46.202Z",
+  "checked_at": "2026-09-02T15:37:56.611Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T15:34:45.324Z",
@@ -25,8 +25,16 @@
   },
   "instagram_steps": 0,
   "threads_steps": 1,
-  "threads_next_eligible_at": "2026-09-02T08:21:15.356Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-02T16:07:56.303Z",
+  "publications": [
+    {
+      "file": "134-traploreross-repost-video.json",
+      "id": "134-traploreross-repost-video",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18102635705260853"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -299,6 +299,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/DcxO9A2t8HI/",
       "view_count": 0
+    },
+    "DcxV4B2Bl9P": {
+      "seen_at": "2026-09-02T05:55:11.995Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/DcxV4B2Bl9P/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -512,6 +518,13 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DcwfLEQyjWK/",
       "queue_id": "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu",
       "video": "media/143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu.mp4"
+    },
+    "DcxV4B2Bl9P": {
+      "queued_at": "2026-09-02T05:58:39.023Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/DcxV4B2Bl9P/",
+      "queue_id": "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-",
+      "video": "media/144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-.mp4"
     }
   },
   "runs": [
@@ -1472,6 +1485,28 @@
         }
       ],
       "finished_at": "2026-09-02T05:50:55.711Z"
+    },
+    {
+      "started_at": "2026-09-02T05:53:08.578Z",
+      "candidates": 48,
+      "queued": [
+        "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-"
+      ],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        }
+      ],
+      "finished_at": "2026-09-02T05:58:39.023Z"
     }
   ]
 }

@@ -6756,6 +6756,21 @@
       ],
       "mode": "discovery",
       "finished_at": "2026-09-02T16:39:31.660Z"
+    },
+    {
+      "started_at": "2026-09-02T16:41:34.831Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "finished_at": "2026-09-02T16:43:56.016Z"
     }
   ]
 }

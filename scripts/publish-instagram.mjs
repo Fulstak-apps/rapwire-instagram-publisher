@@ -412,7 +412,8 @@ for (const file of files) {
 // One processing slot. Existing uploads retain
 // their slots across runs so slow processing cannot create an upload pileup.
 const processingCount = queueRecords.filter(({ item }) => item.status === "ready"
-  && item.content_type === "video" && item.instagram_container_id && !item.instagram_reconcile_required).length;
+  && item.content_type === "video" && item.instagram_container_id && !item.instagram_reconcile_required
+  && contentPromiseIsKept(item)).length;
 const pendingStory = queueRecords.some(({ item }) => item.status === "published"
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())

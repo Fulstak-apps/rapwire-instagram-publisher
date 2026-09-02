@@ -7,11 +7,12 @@ import { spawnSync } from 'node:child_process';
 const script = path.resolve('scripts/publish-instagram.mjs');
 const body = 'This is a verified video with a complete descriptive caption.';
 const item = { id: 'test', status: 'published', content_type: 'video', video: 'media/test.mp4', source_handle: 'akademiks', source_url:'https://www.instagram.com/akademiks/reel/ExactPost/', caption_policy:'exact-source-v1', caption_source_shortcode:'ExactPost', source_caption_text:body, body, rendered_body_text: body, caption: body, threads_text: body, layout_template: 'rapwire-video-grid-safe-v1', source_policy_checked: true, rap_relevance_checked: true, content_claim_checked: true, editorial_substance_checked: true, text_overflow_checked: true, instagram_media_id: 'existing', threads_status: 'pending' };
-function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, usage = 1, total = 50) {
+function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, usage = 1, total = 50, otherRecords = []) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'rapwire-test-'));
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
   fs.mkdirSync(path.join(dir, 'queue')); fs.mkdirSync(path.join(dir, 'logs'));
   fs.writeFileSync(path.join(dir, 'queue/test.json'), JSON.stringify(record));
+  for(const extra of otherRecords) fs.writeFileSync(path.join(dir, `queue/${extra.id}.json`), JSON.stringify(extra));
   if(cooldown) fs.writeFileSync(path.join(dir,'logs/instagram-cooldown.json'), JSON.stringify(cooldown));
   if(quotaState) fs.writeFileSync(path.join(dir,'logs/instagram-publishing-quota.json'), JSON.stringify(quotaState));
   const preload = `globalThis.fetch = async (url, options = {}) => { if(String(url).includes('/content_publishing_limit?')) return new Response(JSON.stringify({data:[{quota_usage:${usage},config:{quota_total:${total}}}]})); ${mock} };`;
@@ -61,4 +62,11 @@ test('quota hold releases when usage falls below the observed rejection ceiling'
     {usage:50,total:100,blocked:true,observed_rejection_at_usage:50,detected_at:new Date().toISOString()}, 49, 100);
   assert.equal(r.report.instagram_publishing_quota.blocked,false);
   assert.equal(r.report.instagram_publishing_quota.usage,49);
+});
+test('old mismatched caption cannot occupy the only active upload slot', t => {
+  const r = run(t, { ...item, status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread' }, null,
+    `if(options.method === 'POST') return new Response(JSON.stringify({id:'new-container'})); throw new Error('No polling expected');`, 0,null,1,50,
+    [{...item,id:'old',status:'ready',instagram_media_id:undefined,instagram_container_id:'held-container',caption_policy:undefined}]);
+  assert.equal(r.item.instagram_container_id,'new-container');
+  assert.equal(r.report.instagram_steps,1);
 });

@@ -1,9 +1,18 @@
 {
-  "checked_at": "2026-09-02T05:12:44.240Z",
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
-  "instagram_steps": 0,
-  "threads_steps": 0,
-  "publications": [],
+  "checked_at": "2026-09-02T05:18:36.700Z",
+  "instagram_cooldown_until": null,
+  "instagram_steps": 1,
+  "threads_steps": 1,
+  "publications": [
+    {
+      "file": "124-raplisted-repost-video.json",
+      "id": "124-raplisted-repost-video",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18109875932324133",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

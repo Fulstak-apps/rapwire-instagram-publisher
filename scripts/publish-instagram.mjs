@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { advanceContainer } from "./container-state.mjs";
+import { captionIsBound } from "./video-caption.mjs";
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -20,6 +21,8 @@ const queueDir = "queue";
 const logsDir = "logs";
 const attemptsLog = path.join(logsDir, "publish-attempts.jsonl");
 const cooldownPath = path.join(logsDir, "instagram-cooldown.json");
+const quotaPath = path.join(logsDir, "instagram-publishing-quota.json");
+let quota = JSON.parse(await fs.readFile(quotaPath, "utf8").catch(error => { if (error.code === "ENOENT") return "{}"; throw error; }));
 let cooldown = JSON.parse(await fs.readFile(cooldownPath, "utf8").catch(error => {
   if (error.code === "ENOENT") return "{}";
   throw error;
@@ -31,9 +34,15 @@ const runEvents = [];
 let instagramSteps = 0;
 let threadsSteps = 0;
 let instagramLane = "";
-const instagramAvailable = () => Date.parse(cooldown.until || "") > Date.now() ? false : true;
+const instagramAvailable = () => !(Date.parse(cooldown.until || "") > Date.now()) && quota.blocked !== true;
 
 async function checkInstagramRateLimit(response, payload) {
+  if (payload.error?.code === 9 && payload.error?.error_subcode === 2207042) {
+    quota = { ...quota, blocked: true, detected_at: new Date().toISOString(), next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: "Instagram publishing quota exhausted (9/2207042)" };
+    await fs.mkdir(logsDir, { recursive: true });
+    await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
+    throw Object.assign(new Error(`Instagram publishing quota exhausted; next capacity check ${quota.next_check_at}`), { definitiveRejection: true });
+  }
   if (response.status !== 429 && ![4, 17, 32, 613].includes(payload.error?.code)) return;
   const previousRecent = Date.now() - Date.parse(cooldown.detected_at || "") < 24 * 60 * 60_000;
   const strikes = previousRecent ? Number(cooldown.strikes || 0) + 1 : 1;
@@ -48,6 +57,7 @@ async function checkInstagramRateLimit(response, payload) {
 
 function assertInstagramAvailable() {
   if (Date.parse(cooldown.until || "") > Date.now()) throw new Error(`Instagram cooling down until ${cooldown.until}`);
+  if (quota.blocked) throw new Error(`Instagram publishing quota is blocked; capacity check ${quota.next_check_at}`);
 }
 const queueNames = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
 const queueRecords = await Promise.all(queueNames.map(async (name) => ({
@@ -84,6 +94,26 @@ const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, mil
 const requestTimeoutMs = 90_000;
 const signature = "@Rapwire247";
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
+
+async function refreshQuota() {
+  if (Date.parse(cooldown.until || "") > Date.now() || Date.parse(quota.next_check_at || "") > Date.now()) return;
+  try {
+    const url = new URL(`${instagramBase}/${instagramUserId}/content_publishing_limit`);
+    url.searchParams.set("fields", "quota_usage,config"); url.searchParams.set("access_token", instagramToken);
+    const response = await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) });
+    const payload = await response.json();
+    await checkInstagramRateLimit(response, payload);
+    const data = payload.data?.[0];
+    const usage = Number(data?.quota_usage), total = Number(data?.config?.quota_total);
+    if (!response.ok || payload.error || !Number.isFinite(usage) || !Number.isFinite(total) || total <= 0) throw new Error(`Quota check unavailable: ${JSON.stringify(payload)}`);
+    quota = { checked_at: new Date().toISOString(), usage, total, blocked: usage >= total, next_check_at: new Date(Date.now() + (usage >= total ? 3600000 : 15 * 60000)).toISOString(), reason: usage >= total ? "Publishing capacity exhausted" : "Capacity available" };
+  } catch (error) {
+    quota = { ...quota, blocked: true, next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: error.message };
+    console.error(error.message);
+  }
+  await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
+}
+await refreshQuota();
 
 async function logAttempt(event) {
   runEvents.push(event);
@@ -150,7 +180,13 @@ async function instagramPost(endpoint, fields) {
     const payload = await response.json();
     await checkInstagramRateLimit(response, payload);
     if (response.ok && !payload.error) {
-      if (endpoint === "media_publish") instagramPublicationsInRollingDay += 1;
+      if (endpoint === "media_publish") {
+        instagramPublicationsInRollingDay += 1;
+        if (Number.isFinite(quota.usage)) {
+          quota.usage += 1; quota.blocked = quota.usage >= quota.total;
+          await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
+        }
+      }
       return payload;
     }
     const mediaNotReady = endpoint === "media_publish"
@@ -342,7 +378,7 @@ function contentPromiseIsKept(item) {
   // use short captions, so applying the 45-word explainer requirement here
   // silently prevents every otherwise-valid video from publishing.
   if (item.content_type === "video") {
-    return words.length >= 8 && /[.!?]/.test(body);
+    return captionIsBound(item) && words.length >= 4 && /[.!?]/.test(body);
   }
   const numberedDetails = body.match(/\b\d+\.\s/g) || [];
   if (/(?:\[\s*(?:…|\.{3})\s*\]|(?:…|\.{3}))\s*$/.test(body) || /\[\s*(?:…|\.{3})\s*\]/.test(body)) {
@@ -543,6 +579,7 @@ for (const file of files) {
   // were previously marked Instagram-only so they can be backfilled automatically.
   if (item.rap_relevance_checked === true
     && threadsSteps < 1 && !item.threads_media_id && !item.threads_reconcile_required
+    && (!isVideoItem || captionIsBound(item))
     && !(Date.parse(item.threads_retry_at || "") > Date.now())
     && (!item.threads_status || item.threads_status === "pending" || item.threads_status === "failed" || item.threads_status === "skipped_for_instagram_only_post")) {
     try {
@@ -573,6 +610,7 @@ for (const file of files) {
 const report = {
   checked_at: new Date().toISOString(),
   instagram_cooldown_until: instagramAvailable() ? null : cooldown.until,
+  instagram_publishing_quota: quota,
   instagram_steps: instagramSteps, threads_steps: threadsSteps,
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),
@@ -580,7 +618,7 @@ const report = {
 };
 await fs.writeFile(path.join(logsDir, "publisher-health.json"), JSON.stringify(report, null, 2) + "\n");
 await fs.writeFile(pacingPath, JSON.stringify({ last_run_at: new Date().toISOString(), last_instagram_lane: instagramLane || pacing.last_instagram_lane }) + "\n");
-const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${report.instagram_cooldown_until ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
+const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
 console.log(summary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, summary);
 if (report.failures.length) process.exitCode = 1;

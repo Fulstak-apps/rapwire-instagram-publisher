@@ -339,8 +339,7 @@ async function publishInstagramReel(item, itemPath) {
 }
 
 async function publishInstagramStory(item, itemPath) {
-  // Image/carousel stories use the dedicated 1080x1920 asset. Video reposts use
-  // the same playable MP4 so every post also appears in Instagram Stories.
+  // Use a dedicated playable Story preview when prepared; never shorten the Reel.
   const isVideoItem = item.content_type === "video";
   if (!isVideoItem && !item.story) throw new Error("Story asset missing");
   // Recover the container ID left only inside legacy timeout errors.
@@ -351,7 +350,7 @@ async function publishInstagramStory(item, itemPath) {
   }
   return advanceContainer({ item, prefix: "instagram_story",
     create: () => instagramPost("media", isVideoItem
-      ? { media_type: "STORIES", video_url: videoUrl(item) }
+      ? { media_type: "STORIES", video_url: item.story_video ? mediaUrl(item.story_video) : videoUrl(item) }
       : { media_type: "STORIES", image_url: storyUrl(item) }),
     inspect: id => inspectContainer("instagram", id),
     publish: id => instagramPost("media_publish", { creation_id: id }, item, 'story'),

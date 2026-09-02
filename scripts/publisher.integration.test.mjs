@@ -121,3 +121,9 @@ test('authorized recovery really publishes one feed above internal cap but below
   assert.equal(r.item.instagram_media_id,'recovery-live');
   assert.equal(r.report.publications.length,1);
 });
+test('dedicated Story preview is uploaded without replacing the full Reel', t => {
+  const r=run(t,{...item,story_video:'media/story-preview.mp4',threads_status:'published',threads_media_id:'thread'},null,
+    `if(options.method==='POST') { if(!String(options.body.get('video_url')).endsWith('/media/story-preview.mp4')) throw new Error('Expected dedicated Story preview'); return new Response(JSON.stringify({id:'story-container'})); } throw new Error('No immediate polling expected');`);
+  assert.equal(r.item.instagram_story_container_id,'story-container');
+  assert.equal(r.item.video,'media/test.mp4');
+});

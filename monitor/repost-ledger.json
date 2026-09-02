@@ -305,6 +305,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/DcxV4B2Bl9P/",
       "view_count": 0
+    },
+    "DcxkMkMFS_H": {
+      "seen_at": "2026-09-02T06:21:04.020Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -539,6 +545,13 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dcwfbm7y2ta/",
       "queue_id": "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-",
       "video": "media/146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-.mp4"
+    },
+    "DcwfPF6SD0m": {
+      "queued_at": "2026-09-02T06:27:01.089Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DcwfPF6SD0m/",
+      "queue_id": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o",
+      "video": "media/147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o.mp4"
     }
   },
   "runs": [
@@ -1667,6 +1680,88 @@
         }
       ],
       "finished_at": "2026-09-02T06:17:17.073Z"
+    },
+    {
+      "started_at": "2026-09-02T06:19:29.146Z",
+      "candidates": 48,
+      "queued": [
+        "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DcwGCkqDiTk/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DcwhYQSGSlL/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/Dcv2Mf2O82Y/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DcuAOMeDpDj/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwdVfNFJBL/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwPizElCPC/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        }
+      ],
+      "finished_at": "2026-09-02T06:27:01.089Z"
     }
   ]
 }

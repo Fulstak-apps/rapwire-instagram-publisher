@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-09-02T06:27:43.718Z",
+  "checked_at": "2026-09-02T06:31:06.029Z",
   "instagram_cooldown_until": null,
   "instagram_steps": 1,
   "threads_steps": 0,
   "publications": [],
   "failures": [
     {
-      "file": "124-raplisted-repost-video.json",
-      "id": "124-raplisted-repost-video",
-      "platform": "instagram_story",
+      "file": "125-raplisted-repost-video.json",
+      "id": "125-raplisted-repost-video",
+      "platform": "instagram",
       "status": "failed",
-      "error": "media_publish failed: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207042,\"error_user_title\":\"Media Publish Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be published by Content Publishing API.\",\"fbtrace_id\":\"AkGxPAwn9LF32iYBbKKnmKY\"}}"
+      "error": "media_publish failed: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207042,\"error_user_title\":\"Media Publish Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be published by Content Publishing API.\",\"fbtrace_id\":\"AaB1DbETWkrmrfTRuPBhx4U\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

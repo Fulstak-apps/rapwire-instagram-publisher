@@ -431,6 +431,12 @@
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/DczBG63SMue/",
       "view_count": 0
+    },
+    "DczEfWGTf1y": {
+      "seen_at": "2026-09-02T20:19:08.720Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DczEfWGTf1y/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -749,6 +755,13 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DczBG63SMue/",
       "queue_id": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie",
       "video": "media/158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie.mp4"
+    },
+    "DczEfWGTf1y": {
+      "queued_at": "2026-09-02T20:20:41.776Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DczEfWGTf1y/",
+      "queue_id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
+      "video": "media/159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.mp4"
     }
   },
   "runs": [
@@ -7472,6 +7485,42 @@
       "mode": "discovery",
       "vip_pending": 7,
       "finished_at": "2026-09-02T20:15:53.423Z"
+    },
+    {
+      "started_at": "2026-09-02T20:18:18.761Z",
+      "candidates": 48,
+      "queued": [
+        "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DcyUMrwuY-C/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video:visible').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
+          "stage": "queue",
+          "error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
+          "stage": "queue",
+          "error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
+          "stage": "queue",
+          "error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 7,
+      "finished_at": "2026-09-02T20:20:41.776Z"
     }
   ],
   "vip_pending": {
@@ -7493,8 +7542,11 @@
       "shortcode": "DcyUMrwuY-C",
       "first_seen_at": "2026-09-02T19:52:34.711Z",
       "profile_position": 3,
-      "state": "pending",
-      "attempts": 0
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video:visible').first() to be visible\n",
+      "last_attempt_at": "2026-09-02T20:19:32.709Z",
+      "retry_at": "2026-09-02T20:21:32.709Z"
     },
     "DcxkMkMFS_H": {
       "source_handle": "akademiks",
@@ -7502,8 +7554,11 @@
       "shortcode": "DcxkMkMFS_H",
       "first_seen_at": "2026-09-02T19:52:34.711Z",
       "profile_position": 4,
-      "state": "pending",
-      "attempts": 0
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported",
+      "last_attempt_at": "2026-09-02T20:19:42.074Z",
+      "retry_at": "2026-09-02T20:21:42.074Z"
     },
     "Dcw2I-UjRkc": {
       "source_handle": "akademiks",
@@ -7511,8 +7566,11 @@
       "shortcode": "Dcw2I-UjRkc",
       "first_seen_at": "2026-09-02T19:52:34.711Z",
       "profile_position": 7,
-      "state": "pending",
-      "attempts": 0
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported",
+      "last_attempt_at": "2026-09-02T20:19:50.377Z",
+      "retry_at": "2026-09-02T20:21:50.377Z"
     },
     "Dcwsq2JGVYH": {
       "source_handle": "akademiks",
@@ -7520,8 +7578,11 @@
       "shortcode": "Dcwsq2JGVYH",
       "first_seen_at": "2026-09-02T19:52:34.711Z",
       "profile_position": 9,
-      "state": "pending",
-      "attempts": 0
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported",
+      "last_attempt_at": "2026-09-02T20:19:59.026Z",
+      "retry_at": "2026-09-02T20:21:59.026Z"
     },
     "DcwhYQSGSlL": {
       "source_handle": "akademiks",

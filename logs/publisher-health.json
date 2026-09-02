@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T16:12:55.162Z",
+  "checked_at": "2026-09-02T16:17:09.618Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T16:02:33.018Z",
@@ -24,22 +24,14 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-02T16:42:54.912Z",
-  "publications": [
-    {
-      "file": "126-raplisted-repost-video.json",
-      "id": "126-raplisted-repost-video",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18131816080738137"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

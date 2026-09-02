@@ -341,6 +341,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
       "view_count": 0
+    },
+    "Dcyve6NFArU": {
+      "seen_at": "2026-09-02T17:13:14.442Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dcyve6NFArU/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -6865,6 +6871,21 @@
       ],
       "mode": "discovery",
       "finished_at": "2026-09-02T17:10:10.935Z"
+    },
+    {
+      "started_at": "2026-09-02T17:12:13.939Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "finished_at": "2026-09-02T17:14:35.236Z"
     }
   ]
 }

@@ -6599,6 +6599,27 @@
       "errors": [],
       "mode": "caption_repair",
       "finished_at": "2026-09-02T15:42:37.787Z"
+    },
+    {
+      "started_at": "2026-09-02T15:44:40.738Z",
+      "candidates": 0,
+      "queued": [
+        "129-raplisted-repost-video"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dcv7u-DhIR6/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcv7u-DhIR6-capture-diagnostic.json"
+        },
+        {
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dct5T6VoMnu/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dct5T6VoMnu-capture-diagnostic.json"
+        }
+      ],
+      "mode": "caption_repair",
+      "finished_at": "2026-09-02T15:47:14.152Z"
     }
   ]
 }

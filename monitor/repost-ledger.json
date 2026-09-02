@@ -780,6 +780,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dcwc9BUAgne/",
       "queue_id": "161-reposted-from-akademiks-drew-findling-is-now-on-cross-of-otf-von"
+    },
+    "DczBcGNgRD0": {
+      "queued_at": "2026-09-02T20:29:52.964Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DczBcGNgRD0/",
+      "queue_id": "162-reposted-from-akademiks-lil-durk-allegedly-sent-a-message-to-som"
     }
   },
   "runs": [
@@ -7561,21 +7567,20 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-02T20:26:49.940Z"
+    },
+    {
+      "started_at": "2026-09-02T20:28:53.645Z",
+      "candidates": 48,
+      "queued": [
+        "162-reposted-from-akademiks-lil-durk-allegedly-sent-a-message-to-som"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 4,
+      "finished_at": "2026-09-02T20:29:52.964Z"
     }
   ],
   "vip_pending": {
-    "DczBcGNgRD0": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/DczBcGNgRD0/",
-      "shortcode": "DczBcGNgRD0",
-      "first_seen_at": "2026-09-02T19:52:34.711Z",
-      "profile_position": 0,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video:visible').first() to be visible\n",
-      "last_attempt_at": "2026-09-02T19:52:58.476Z",
-      "retry_at": "2026-09-02T19:54:58.476Z"
-    },
     "DcyUMrwuY-C": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DcyUMrwuY-C/",

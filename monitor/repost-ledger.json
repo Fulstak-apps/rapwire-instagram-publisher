@@ -1249,32 +1249,13 @@
       "finished_at": "2026-09-02T05:07:02.025Z"
     },
     {
-      "started_at": "2026-09-02T05:09:02.992Z",
+      "started_at": "2026-09-02T05:12:12.877Z",
       "candidates": 48,
       "queued": [
-        "127-raplisted-repost-video"
+        "128-raplisted-repost-video"
       ],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/Dcw6QAxzAKp/",
-          "stage": "score",
-          "error": "browserContext.newPage: Protocol error (Target.createTarget): Failed to open a new tab"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DcwfLEQyjWK/",
-          "stage": "score",
-          "error": "browserContext.newPage: Protocol error (Target.createTarget): Failed to open a new tab"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DcwfevSSAYR/",
-          "stage": "score",
-          "error": "browserContext.newPage: Protocol error (Target.createTarget): Failed to open a new tab"
-        }
-      ],
-      "finished_at": "2026-09-02T05:12:06.378Z"
+      "errors": [],
+      "finished_at": "2026-09-02T05:15:25.101Z"
     }
   ]
 }

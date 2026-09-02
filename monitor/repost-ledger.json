@@ -792,6 +792,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DcyUMrwuY-C/",
       "queue_id": "163-reposted-from-akademiks-young-thug-speaks-on-lil-durk-trial"
+    },
+    "DcxkMkMFS_H": {
+      "queued_at": "2026-09-02T20:35:58.009Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
+      "queue_id": "164-reposted-from-akademiks-young-thug-says-he-ll-never-say-f-the-st"
     }
   },
   "runs": [
@@ -7595,21 +7601,20 @@
       "mode": "discovery",
       "vip_pending": 3,
       "finished_at": "2026-09-02T20:32:57.821Z"
+    },
+    {
+      "started_at": "2026-09-02T20:35:01.218Z",
+      "candidates": 48,
+      "queued": [
+        "164-reposted-from-akademiks-young-thug-says-he-ll-never-say-f-the-st"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-02T20:35:58.009Z"
     }
   ],
   "vip_pending": {
-    "DcxkMkMFS_H": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
-      "shortcode": "DcxkMkMFS_H",
-      "first_seen_at": "2026-09-02T19:52:34.711Z",
-      "profile_position": 4,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported",
-      "last_attempt_at": "2026-09-02T20:19:42.074Z",
-      "retry_at": "2026-09-02T20:21:42.074Z"
-    },
     "Dcw2I-UjRkc": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",

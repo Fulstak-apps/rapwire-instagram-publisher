@@ -59,5 +59,7 @@
   "instagram_story_media_id": "17961498684189009",
   "instagram_story_published_at": "2026-08-31T04:14:34.241Z",
   "threads_status": "failed",
-  "threads_error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"AsHtXdelqDs-0TUaryGyu-s\"}}"
+  "threads_error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"AsHtXdelqDs-0TUaryGyu-s\"}}",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
 }

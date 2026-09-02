@@ -71,5 +71,7 @@
   "threads_status": "published",
   "threads_error": "Threads threads failed: {\"error\":{\"message\":\"Invalid parameter\",\"type\":\"OAuthException\",\"code\":100,\"error_subcode\":4279004,\"is_transient\":false,\"error_user_title\":\"Invalid Carousel Children\",\"error_user_msg\":\"The children with IDs 18094507685179906 are invalid, nonexistent, or expired.\",\"fbtrace_id\":\"A1a8WZ6ic3s1M5_L7Nyls89\"}}",
   "threads_media_id": "17980047624120101",
-  "threads_published_at": "2026-09-01T20:15:06.007Z"
+  "threads_published_at": "2026-09-01T20:15:06.007Z",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
 }

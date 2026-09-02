@@ -10,19 +10,19 @@ test('10-minute boundary uses the feed time, not the more recent Story time', ()
 test('persisted feed timestamp survives missing queue history', () => {
   assert.equal(publicationPolicy([],{now,lastFeedPublishedAt:new Date(now-5*60000).toISOString()}).feed_allowed,false);
 });
-test('reserve both the new Story and unfinished older Stories before starting another feed', () => {
+test('reserve the new Story without letting the older backlog block every feed', () => {
   const pending={...feed,instagram_story_media_id:undefined,instagram_story_status:'pending'};
-  assert.equal(publicationPolicy([pending],{now,quota:{usage:30,total:100}}).feed_allowed,false);
-  assert.equal(publicationPolicy([pending],{now,quota:{usage:29,total:100}}).feed_allowed,true);
+  assert.equal(publicationPolicy([pending],{now,quota:{usage:47,total:100,effective_total:50}}).feed_allowed,false);
+  assert.equal(publicationPolicy([pending],{now,quota:{usage:45,total:100,effective_total:50}}).feed_allowed,true);
 });
 test('one remaining slot can finish a Story but cannot start another video/Story pair', () => {
-  const p=publicationPolicy([],{now,quota:{usage:31,total:100}});
+  const p=publicationPolicy([],{now,quota:{usage:97,total:100}});
   assert.equal(p.story_allowed,true); assert.equal(p.feed_allowed,false);
-  assert.equal(publicationPolicy([],{now,quota:{usage:32,total:100}}).story_allowed,false);
+  assert.equal(publicationPolicy([],{now,quota:{usage:98,total:100}}).story_allowed,false);
 });
 test('lower platform limits reduce our budget; duplicate IDs are counted once', () => {
   const p=publicationPolicy([feed,feed],{now,quota:{usage:1,total:100,effective_total:20}});
-  assert.equal(p.instagram_usage,2); assert.equal(p.instagram_daily_cap,16);
+  assert.equal(p.instagram_usage,2); assert.equal(p.instagram_daily_cap,18);
 });
 test('published records age out of the rolling budget', () => {
   const old={...feed,published_at:new Date(now-25*3600000).toISOString(),instagram_story_published_at:new Date(now-25*3600000).toISOString()};
@@ -30,10 +30,10 @@ test('published records age out of the rolling budget', () => {
 });
 const authorization={mode:'one-feed-and-story',item_id:'recovery',authorized_at:new Date(now-60000).toISOString(),expires_at:new Date(now+1800000).toISOString()};
 const quota={usage:43,total:100,effective_total:50,blocked:false,checked_at:new Date(now).toISOString()};
-test('one recovery pair may use confirmed headroom without resetting normal cap', () => {
+test('normal and recovery paths both honor confirmed capacity and feed cadence', () => {
   const ready={id:'recovery',status:'ready'};
   assert.equal(recoveryPolicy([ready],{authorization,quota,now}).feed_allowed,true);
-  assert.equal(publicationPolicy([ready],{quota,now}).feed_allowed,false);
+  assert.equal(publicationPolicy([ready],{quota,now}).feed_allowed,true);
   assert.equal(recoveryPolicy([ready],{authorization,quota,now,lastFeedPublishedAt:new Date(now-60000).toISOString()}).feed_allowed,false);
 });
 test('recovery never overrides blocked, stale, expired, or insufficient quota', () => {
@@ -49,4 +49,14 @@ test('recovery finishes only the named Story and cannot publish a second pair', 
   assert.equal(p.feed_allowed,false); assert.equal(p.story_allowed,true);
   assert.equal(recoveryPolicy([{...published,instagram_story_media_id:'done'}],{authorization,quota,now}).story_allowed,false);
   assert.equal(recoveryPolicy([{...published,id:'another'}],{authorization,quota,now}).story_allowed,false);
+});
+
+test('older Stories cannot spend capacity reserved by an in-flight feed',()=>{
+ const active={status:'ready',instagram_container_id:'upload'};
+ const p=publicationPolicy([active],{now,quota:{usage:46,total:100,effective_total:50,blocked:false}});
+ assert.equal(p.feed_allowed,true);assert.equal(p.story_allowed,false);
+});
+test('actual platform block is authoritative even below our computed cap',()=>{
+ const p=publicationPolicy([],{now,quota:{usage:20,total:100,effective_total:50,blocked:true}});
+ assert.equal(p.feed_allowed,false);assert.equal(p.story_allowed,false);
 });

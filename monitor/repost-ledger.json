@@ -798,6 +798,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
       "queue_id": "164-reposted-from-akademiks-young-thug-says-he-ll-never-say-f-the-st"
+    },
+    "Dcw2I-UjRkc": {
+      "queued_at": "2026-09-02T20:39:03.870Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
+      "queue_id": "165-reposted-from-akademiks-breh-daejon-love-mugshot-is-released"
     }
   },
   "runs": [
@@ -7612,21 +7618,20 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-02T20:35:58.009Z"
+    },
+    {
+      "started_at": "2026-09-02T20:38:01.523Z",
+      "candidates": 48,
+      "queued": [
+        "165-reposted-from-akademiks-breh-daejon-love-mugshot-is-released"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 1,
+      "finished_at": "2026-09-02T20:39:03.870Z"
     }
   ],
   "vip_pending": {
-    "Dcw2I-UjRkc": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
-      "shortcode": "Dcw2I-UjRkc",
-      "first_seen_at": "2026-09-02T19:52:34.711Z",
-      "profile_position": 7,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported",
-      "last_attempt_at": "2026-09-02T20:19:50.377Z",
-      "retry_at": "2026-09-02T20:21:50.377Z"
-    },
     "Dcwsq2JGVYH": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",

@@ -505,6 +505,13 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dcw6QAxzAKp/",
       "queue_id": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni",
       "video": "media/142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni.mp4"
+    },
+    "DcwfLEQyjWK": {
+      "queued_at": "2026-09-02T05:50:55.711Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DcwfLEQyjWK/",
+      "queue_id": "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu",
+      "video": "media/143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu.mp4"
     }
   },
   "runs": [
@@ -1395,6 +1402,76 @@
         }
       ],
       "finished_at": "2026-09-02T05:39:06.120Z"
+    },
+    {
+      "started_at": "2026-09-02T05:41:17.648Z",
+      "candidates": 48,
+      "queued": [
+        "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu"
+      ],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DcwGCkqDiTk/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DcwhYQSGSlL/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dcwc9BUAgne/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/Dcv2Mf2O82Y/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DcuAOMeDpDj/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        }
+      ],
+      "finished_at": "2026-09-02T05:50:55.711Z"
     }
   ]
 }

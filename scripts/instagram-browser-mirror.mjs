@@ -58,7 +58,7 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
     // Clicking blindly may pause autoplay, leaving only the first media range.
     await video.evaluate(element => { element.muted = false; return element.play().catch(() => { element.muted = true; return element.play(); }); });
     await page.waitForTimeout(3000);
-    const sourceEvidence = await readExactPost(page, reelUrl, {...options, video});
+    const sourceEvidence = await readExactPost(page, reelUrl, options.vip ? {...options, video} : options);
     const bufferDeadline = Date.now() + Math.min(240000, (sourceEvidence.duration + 15) * 1000);
     let fullyBuffered = false;
     while (Date.now() < bufferDeadline) {

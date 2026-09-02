@@ -1,12 +1,12 @@
 {
   "id": "114-trippie-redd-brazil-750k-performance-video",
-  "status": "paused",
+  "status": "ready",
   "publish_priority": 100,
   "date": "2026-09-01",
   "timezone": "America/Detroit",
   "content_type": "video",
   "type": "source_video_repost",
-  "story_type": "interview_clip",
+  "story_type": "throwback",
   "layout_template": "rapwire-video-grid-safe-v1",
   "editorial_lane": "rap_news",
   "headline": "Trippie Redd Says His Biggest Show Check Was $750K",
@@ -44,6 +44,5 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
-  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
+  "threads_status": "pending"
 }

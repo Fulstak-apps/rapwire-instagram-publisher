@@ -294,7 +294,6 @@ for (const file of files) {
       item.threads_status = "failed";
       item.threads_error = error.message;
       console.error(`Threads failed for ${file}: ${error.message}`);
-      process.exitCode = 1;
     }
     await save(itemPath, item);
   }

@@ -1,24 +1,39 @@
 # RapWire 24/7 source monitor
 
-This directory defines the cloud-monitoring contract for the RapWire newsroom. The monitor must poll only the configured lead accounts, normalize and deduplicate events, verify before enqueueing, and hand eligible stories to the existing publisher queue.
+This directory defines the monitoring contract for the RapWire newsroom. Keep routine reposting cheap and automatic: local/GitHub scripts should poll, capture, transcode, caption, queue, publish, and log repost videos without spending Codex or AI newsroom cycles. Reserve AI generation/research for real reported news, court cases, allegations, or explainers that need synthesis.
 
 Lead accounts:
 - @akademiks
-- @nojumper
-- @theshaderoom
-- @tmz
 - @traploreross
+- @trapmatictv
+- @raplisted_
+
+Research-only news sources, used by the AI newsroom only when making factual explainer posts:
+- @complexmusic
+- @nojumper
+- @poetikflakkonews
 - @saycheesetv
+- @worldstarhiphop
+- @theshaderoom when directly rap-related
 - @detroitrapnews
 - @detroitrapdaily
-- @usacrime
-- @poetikflakkonews
-- @worldstarhiphop
-- @gta6latest
+- @gta6latest as the only occasional gaming exception
 
-Important: this repository does not contain Instagram login credentials. The always-on monitor must use an authorized data source/API or permitted public-feed provider and store secrets only in the hosting provider's secret manager. It must not scrape around access controls or use private account credentials.
+Important: this repository does not contain Instagram login credentials. Browser-based capture must use the dedicated signed-in Chrome profile on the user's Mac and must not export cookies. API credentials stay only in GitHub Actions secrets.
 
-Runtime contract:
+Cheap repost contract:
+1. Every 10 minutes, attempt up to three repost-video publications before running any AI newsroom work.
+2. Source videos from @trapmatictv, @raplisted_, @akademiks, and @traploreross only.
+3. Mirror every eligible @trapmatictv video/repost and every eligible @raplisted_ video. For @akademiks and @traploreross, use their own Posts/Reels only unless the user changes the rule.
+4. Download the playable video with audio and publish it as video, not as a screenshot carousel.
+5. Preserve the regular source size, use full 1080px width whenever practical, and never shrink footage into a narrow card.
+6. Put a compact RapWire 24/7 logo at the bottom or on already-empty video space without covering faces, subtitles, captions, trailer titles, or meaningful source text.
+7. Remove blog/source @handles from the graphic. Omit written credit only for user-owned @trapmatictv and @raplisted_; otherwise keep source credit in the written caption.
+8. Use simple template captions for reposts. Do not call AI just to write a routine repost caption.
+9. Validate H.264/AAC, 1080x1350, duration, and center-grid preview before publishing.
+10. Publish to Instagram and Threads, log both media IDs/permalinks, and retry only the failed platform on later runs.
+
+News/explainer contract:
 1. Poll on a short interval.
 2. Persist a cursor per source.
 3. Normalize links, entities, timestamps, and claim fingerprints.

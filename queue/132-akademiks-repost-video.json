@@ -10,11 +10,11 @@
   "layout_template": "rapwire-video-grid-safe-v1",
   "editorial_lane": "rap_culture",
   "headline": "akademiks repost video",
-  "body": "A new hip-hop video is moving through the feed and RapWire is posting it for the timeline. RapWire 24/7 is keeping the hip-hop video feed moving with quick clean repost coverage.",
-  "rendered_body_text": "A new hip-hop video is moving through the feed and RapWire is posting it for the timeline. RapWire 24/7 is keeping the hip-hop video feed moving with quick clean repost coverage.",
-  "caption": "A new hip-hop video is moving through the feed and RapWire is posting it for the timeline. RapWire 24/7 is keeping the hip-hop video feed moving with quick clean repost coverage.\n\nRap Wire 24/7\n@Rapwire247\n@akademiks",
-  "threads_text": "A new hip-hop video is moving through the feed and RapWire is posting it for the timeline. RapWire 24/7 is keeping the hip-hop video feed moving with quick clean repost coverage.\n\nRap Wire 24/7\n@Rapwire247\n@akademiks",
-  "video": "media/132-akademiks-repost-video.mp4",
+  "body": "Source commentary: YB fan shows up to Lil Durk (@lildurk)’s trial wearing 4KT merch and gets pressed by a Lil Durk fan. These are source claims, not findings of guilt.",
+  "rendered_body_text": "Source commentary: YB fan shows up to Lil Durk (@lildurk)’s trial wearing 4KT merch and gets pressed by a Lil Durk fan. These are source claims, not findings of guilt.",
+  "caption": "Source commentary: YB fan shows up to Lil Durk (@lildurk)’s trial wearing 4KT merch and gets pressed by a Lil Durk fan. These are source claims, not findings of guilt.\n\nRap Wire 24/7\n@Rapwire247\n@akademiks",
+  "threads_text": "Source commentary: YB fan shows up to Lil Durk (@lildurk)’s trial wearing 4KT merch and gets pressed by a Lil Durk fan. These are source claims, not findings of guilt.\n\nRap Wire 24/7\n@Rapwire247\n@akademiks",
+  "video": "media/132-akademiks-repost-video-caption-matched.mp4",
   "source_handle": "akademiks",
   "source_url": "https://www.instagram.com/akademiks/reel/DcwyeKlgL5p/",
   "source_urls": [
@@ -30,6 +30,14 @@
   "source_policy_checked": true,
   "rap_relevance_checked": true,
   "threads_status": "pending",
-  "caption_review_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcwyeKlgL5p-capture-diagnostic.json",
-  "caption_retry_at": "2026-09-02T15:41:54.027Z"
+  "logo_position": "bottom-left",
+  "artist_handles": [
+    "lildurk"
+  ],
+  "caption_policy": "exact-source-v1",
+  "caption_source_shortcode": "DcwyeKlgL5p",
+  "source_caption_text": "YB fan shows up to Lil Durk’s trial wearing 4KT merch and gets pressed by a Lil Durk fan",
+  "caption_checked_at": "2026-09-02T15:49:48.736Z",
+  "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
+  "source_video_duration": 21.918185
 }

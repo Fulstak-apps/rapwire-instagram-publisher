@@ -39,5 +39,7 @@
   "instagram_container_checked_at": "2026-09-02T14:25:54.535Z",
   "instagram_container_status": "FINISHED",
   "instagram_error": "media_publish failed: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207042,\"error_user_title\":\"Media Publish Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be published by Content Publishing API.\",\"fbtrace_id\":\"Az_hc9Xhnz9cmYpRXDsQd2c\"}}",
-  "instagram_retry_at": "2026-09-02T14:35:55.083Z"
+  "instagram_retry_at": "2026-09-02T14:35:55.083Z",
+  "caption_review_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media",
+  "caption_retry_at": "2026-09-02T15:38:02.745Z"
 }

@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-09-02T15:32:08.275Z",
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "checked_at": "2026-09-02T15:34:46.202Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-02T15:10:28.564Z",
-    "usage": 50,
+    "checked_at": "2026-09-02T15:34:45.324Z",
+    "usage": 43,
     "total": 100,
-    "blocked": true,
-    "next_check_at": "2026-09-02T16:10:28.564Z",
-    "manual_capacity_check_requested_at": "2026-09-02T15:08:49.000Z",
-    "reason": "Publishing capacity exhausted; honoring actual publish rejection",
+    "blocked": false,
+    "next_check_at": "2026-09-02T15:49:45.324Z",
+    "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
+    "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
     "effective_total": 50,
     "observed_rejection_at_usage": 50
@@ -16,7 +16,7 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 32,
-    "instagram_usage": 50,
+    "instagram_usage": 43,
     "instagram_remaining": 0,
     "reserved_story_slots": 6,
     "next_feed_eligible_at": "2026-09-02T08:17:13.817Z",
@@ -24,7 +24,8 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
+  "threads_next_eligible_at": "2026-09-02T08:21:15.356Z",
   "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

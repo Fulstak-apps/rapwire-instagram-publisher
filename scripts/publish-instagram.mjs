@@ -35,6 +35,7 @@ const maxFeedPostsPerRun = Math.max(1, Number(process.env.MAX_FEED_POSTS_PER_RUN
 const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+const requestTimeoutMs = 90_000;
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
 
 async function logAttempt(event) {
@@ -76,7 +77,11 @@ async function save(itemPath, item) {
 async function instagramPost(endpoint, fields) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
     const body = new URLSearchParams({ ...fields, access_token: instagramToken });
-    const response = await fetch(`${instagramBase}/${instagramUserId}/${endpoint}`, { method: "POST", body });
+    const response = await fetch(`${instagramBase}/${instagramUserId}/${endpoint}`, {
+      method: "POST",
+      body,
+      signal: AbortSignal.timeout(requestTimeoutMs)
+    });
     const payload = await response.json();
     if (response.ok && !payload.error) return payload;
     const mediaNotReady = endpoint === "media_publish"
@@ -93,7 +98,7 @@ async function waitForInstagramContainer(containerId) {
     const url = new URL(`${instagramBase}/${containerId}`);
     url.searchParams.set("fields", "status_code,status");
     url.searchParams.set("access_token", instagramToken);
-    const payload = await (await fetch(url)).json();
+    const payload = await (await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) })).json();
     if (payload.status_code === "FINISHED") return;
     if (["ERROR", "EXPIRED"].includes(payload.status_code)) {
       throw new Error(`Instagram container ${containerId} failed: ${JSON.stringify(payload)}`);
@@ -106,7 +111,11 @@ async function waitForInstagramContainer(containerId) {
 async function threadsPost(endpoint, fields) {
   if (!threadsToken || !threadsUserId) throw new Error("Missing THREADS_ACCESS_TOKEN or THREADS_USER_ID");
   const body = new URLSearchParams({ ...fields, access_token: threadsToken });
-  const response = await fetch(`${threadsBase}/${threadsUserId}/${endpoint}`, { method: "POST", body });
+  const response = await fetch(`${threadsBase}/${threadsUserId}/${endpoint}`, {
+    method: "POST",
+    body,
+    signal: AbortSignal.timeout(requestTimeoutMs)
+  });
   const payload = await response.json();
   if (!response.ok || payload.error) throw new Error(`Threads ${endpoint} failed: ${JSON.stringify(payload)}`);
   return payload;
@@ -117,7 +126,7 @@ async function waitForThreadsContainer(containerId) {
     const url = new URL(`${threadsBase}/${containerId}`);
     url.searchParams.set("fields", "status,error_message");
     url.searchParams.set("access_token", threadsToken);
-    const payload = await (await fetch(url)).json();
+    const payload = await (await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) })).json();
     if (payload.status === "FINISHED") return;
     if (["ERROR", "EXPIRED"].includes(payload.status)) {
       throw new Error(`Threads container ${containerId} failed: ${JSON.stringify(payload)}`);

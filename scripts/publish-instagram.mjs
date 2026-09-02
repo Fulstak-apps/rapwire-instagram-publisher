@@ -179,6 +179,11 @@ async function publishInstagramStory(item) {
   // Image/carousel stories use the dedicated 1080x1920 asset. Video reposts use
   // the same playable MP4 so every post also appears in Instagram Stories.
   const isVideoItem = item.content_type === "video";
+  const legacyRightLogo = /^(124|125|126|127|128|129)-/.test(item.id || "") && item.logo_position !== "bottom-left";
+  if (isVideoItem && legacyRightLogo) {
+    await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "bottom_left_logo_rebuild_required" });
+    continue;
+  }
   if (!isVideoItem && !item.story) throw new Error("Story asset missing");
   const story = await instagramPost("media", isVideoItem
     ? { media_type: "STORIES", video_url: videoUrl(item) }

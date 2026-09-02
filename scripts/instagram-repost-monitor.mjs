@@ -200,6 +200,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
     visual_asset_type: "source_video",
     visual_asset_rights: "source_post_repost",
     source_video_used: true,
+    logo_position: "bottom-left",
     grid_safe_checked: true,
     text_overflow_checked: true,
     content_claim_checked: true,
@@ -245,6 +246,30 @@ try {
     queued: [],
     errors: []
   };
+
+  // Replace old burned-in right-side branding from the original capture.
+  // Use a new media path so public media caches cannot serve the old render.
+  for (const name of (await fs.readdir(queueDir)).sort()) {
+    if (!/^(124|125|126|127|128|129)-.*\.json$/.test(name)) continue;
+    const itemPath = path.join(queueDir, name);
+    const item = await readJson(itemPath, {});
+    if (item.status !== "ready" || item.logo_position === "bottom-left") continue;
+    try {
+      await capture(item.source_url, { headless: true });
+      const shortcode = shortcodeFromUrl(item.source_url);
+      const destination = path.join(mediaDir, `${item.id}-logo-left.mp4`);
+      await fs.copyFile(path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`), destination);
+      item.video = path.relative(root, destination);
+      delete item.video_url;
+      item.logo_position = "bottom-left";
+      await writeJson(itemPath, item);
+      run.queued.push(item.id);
+      await commitAndPush([item.id]);
+    } catch (error) {
+      run.errors.push({ source_url: item.source_url, stage: "logo_rebuild", error: error.message });
+    }
+    break;
+  }
 
   const discovered = [];
   let rankedPool = [];

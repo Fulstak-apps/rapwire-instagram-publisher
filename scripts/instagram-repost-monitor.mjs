@@ -278,6 +278,7 @@ try {
     const itemPath = path.join(queueDir, name);
     const item = await readJson(itemPath, {});
     if (item.status !== "ready" || item.content_type !== "video" || captionIsBound(item)
+      || !sources.some(source => source.handle === item.source_handle)
       || item.instagram_media_id || item.instagram_publish_requested_at || item.instagram_reconcile_required
       || Date.parse(item.caption_retry_at || "") > Date.now()) continue;
     if (repairAttempts++ >= 3) break;
@@ -309,6 +310,10 @@ try {
     }
   }
 
+  // A repair is this cycle's work. Avoid re-scanning all four accounts after
+  // already capturing/reviewing the pending backlog.
+  run.mode = repairAttempts ? "caption_repair" : "discovery";
+  if (!repairAttempts) {
   const discovered = [];
   let rankedPool = [];
   await withFreshBrowser(async (context) => {
@@ -364,6 +369,7 @@ try {
     }
   }
 
+  }
   run.finished_at = new Date().toISOString();
   ledger.runs = [...(ledger.runs || []), run].slice(-250);
   await writeJson(ledgerPath, ledger);

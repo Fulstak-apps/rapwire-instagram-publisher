@@ -7824,6 +7824,51 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-02T21:28:16.717Z"
+    },
+    {
+      "started_at": "2026-09-02T21:30:20.090Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "stage": "discover",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DczMqbylKP2/",
+          "stage": "score",
+          "error": "page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.instagram.com/trapmatictv/p/DczMqbylKP2/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/p/DczMqbylKP2/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DczBCXRTpwU/",
+          "stage": "score",
+          "error": "page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.instagram.com/trapmatictv/p/DczBCXRTpwU/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/p/DczBCXRTpwU/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Dcy8206lHsC/",
+          "stage": "score",
+          "error": "page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.instagram.com/trapmatictv/p/Dcy8206lHsC/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/p/Dcy8206lHsC/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Dcy6cgvlKBV/",
+          "stage": "score",
+          "error": "page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.instagram.com/trapmatictv/p/Dcy6cgvlKBV/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/p/Dcy6cgvlKBV/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
+          "stage": "score",
+          "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-02T21:45:33.582Z"
     }
   ],
   "vip_pending": {}

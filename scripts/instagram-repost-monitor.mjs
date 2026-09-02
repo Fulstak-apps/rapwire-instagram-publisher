@@ -134,7 +134,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
   await capture(candidate.url, { headless: true });
   const sourceVideo = path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`);
   await fs.access(sourceVideo);
-  const visibleCaption = await withFreshBrowser((freshContext) => readPostCaption(freshContext, candidate.url));
+  const visibleCaption = candidate.visibleCaption || "";
   const headlineSeed = visibleCaption || `${candidate.source.handle} repost video`;
   const id = `${String(queueNumber).padStart(3, "0")}-${slugify(headlineSeed)}`;
   const mediaPath = path.join(mediaDir, `${id}.mp4`);
@@ -217,6 +217,16 @@ try {
         discovered.push(...await discoverFromProfile(context, source));
       } catch (error) {
         run.errors.push({ source_handle: source.handle, stage: "discover", error: error.message });
+      }
+    }
+    const selectedForQueue = discovered
+      .filter((candidate) => !ledger.queued_shortcodes[candidate.shortcode])
+      .slice(0, maxQueuePerRun);
+    for (const candidate of selectedForQueue) {
+      try {
+        candidate.visibleCaption = await readPostCaption(context, candidate.url);
+      } catch (error) {
+        run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "caption", error: error.message });
       }
     }
   });

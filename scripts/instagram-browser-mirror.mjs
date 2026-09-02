@@ -5,6 +5,7 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { chromium } from "playwright-core";
 import { readExactPost } from "./post-metadata.mjs";
+import { assembleRanges } from "./media-ranges.mjs";
 
 const execFileAsync = promisify(execFile);
 
@@ -69,7 +70,7 @@ async function capture(reelUrl, options = {}) {
         const type = headers["content-type"] || "";
         if (!type.startsWith("video/") && !type.startsWith("audio/") && !/\.(?:mp4|webm)(?:\?|$)/i.test(response.url())) return;
         const body = await response.body();
-        if (body.length) candidates.push({ body, type, url: response.url(), headers });
+        if (body.length) candidates.push({ body, type, url: response.url(), headers, status: response.status() });
       } catch {
         // Streaming responses may be unavailable until playback completes.
       }
@@ -78,19 +79,28 @@ async function capture(reelUrl, options = {}) {
     await page.waitForTimeout(2500);
     const video = page.locator("video:visible").first();
     await video.waitFor({ state: "visible", timeout: 15_000 });
-    await video.click().catch(() => {});
-    await page.waitForTimeout(12_000);
+    // Clicking blindly may pause autoplay, leaving only the first media range.
+    await video.evaluate(element => { element.muted = false; return element.play().catch(() => { element.muted = true; return element.play(); }); });
+    await page.waitForTimeout(3000);
     const sourceEvidence = await readExactPost(page, reelUrl);
+    const bufferDeadline = Date.now() + Math.min(240000, (sourceEvidence.duration + 15) * 1000);
+    while (Date.now() < bufferDeadline) {
+      const buffered = await video.evaluate(element => ({ end: element.buffered.length ? element.buffered.end(element.buffered.length - 1) : 0, duration:element.duration }));
+      if (buffered.end >= buffered.duration - 0.25) break;
+      await page.waitForTimeout(2500);
+    }
+    // Let response.body() handlers finish after the last buffered segment.
+    await page.waitForTimeout(1500);
     if (!candidates.length) throw new Error("No authenticated video response was captured from Instagram.");
     const groups = new Map();
     for (const item of candidates) {
       const parsed = new URL(item.url);
-      const rangeStart = Number(parsed.searchParams.get("bytestart") || item.headers["content-range"]?.match(/bytes (\d+)-/)?.[1] || 0);
+      const rangeStart = Number(item.headers["content-range"]?.match(/bytes (\d+)-/)?.[1] ?? parsed.searchParams.get("bytestart") ?? 0);
       parsed.searchParams.delete("bytestart");
       parsed.searchParams.delete("byteend");
       const key = parsed.toString();
       const group = groups.get(key) || [];
-      if (!group.some((part) => part.rangeStart === rangeStart)) group.push({ ...item, rangeStart });
+      group.push({ ...item, rangeStart });
       groups.set(key, group);
     }
     const assembled = [...groups.values()]
@@ -102,31 +112,30 @@ async function capture(reelUrl, options = {}) {
     try {
       const matchedVideos = [];
       const matchedAudio = [];
+      const diagnostics = [];
       for (let index = 0; index < assembled.length; index += 1) {
-        // Never concatenate disjoint byte ranges or accept a partial download.
-        let expectedOffset = 0;
-        let complete = true;
-        for (const part of assembled[index].parts) {
-          if (part.rangeStart !== expectedOffset) { complete = false; break; }
-          expectedOffset += part.body.length;
-        }
-        const total = Number(assembled[index].parts[0].headers["content-range"]?.match(/\/(\d+)$/)?.[1]);
-        if (!complete || (total > 0 && expectedOffset !== total)) continue;
+        const bytes = assembleRanges(assembled[index].parts);
+        if (!bytes) { diagnostics.push({ index, result:'incomplete', ranges:assembled[index].parts.map(part => [part.rangeStart,part.body.length,part.headers['content-range'] || part.status]) }); continue; }
         const candidatePath = path.join(tempDir, `stream-${index}.bin`);
-        await fs.writeFile(candidatePath, Buffer.concat(assembled[index].parts.map((part) => part.body)));
+        await fs.writeFile(candidatePath, bytes);
         try {
           const { stdout } = await execFileAsync("ffprobe", ["-v", "error", "-show_entries", "stream=codec_type,width,height:format=duration", "-of", "json", candidatePath]);
           const probe = JSON.parse(stdout);
+          diagnostics.push({index,result:'probed',...probe});
           if (Math.abs(Number(probe.format?.duration) - sourceEvidence.duration) > 1 || !Number(probe.format?.duration)) continue;
           const videoStream = probe.streams?.find(stream => stream.codec_type === "video");
           const hasAudio = probe.streams?.some(stream => stream.codec_type === "audio");
           if (videoStream && videoStream.width === sourceEvidence.width && videoStream.height === sourceEvidence.height) matchedVideos.push({ path: candidatePath, hasAudio });
           else if (!videoStream && hasAudio) matchedAudio.push(candidatePath);
         } catch {
+          diagnostics.push({index,result:'unreadable'});
           // Ignore incomplete or duplicate streaming groups.
         }
       }
-      if (matchedVideos.length !== 1) throw new Error(`Captured media cannot be uniquely matched to the visible source video (${matchedVideos.length} matches); refusing unrelated media`);
+      if (matchedVideos.length !== 1) {
+        await fs.writeFile(path.join(outputDir, `${shortcode}-capture-diagnostic.json`), JSON.stringify({source:sourceEvidence,streams:diagnostics},null,2));
+        throw new Error(`Captured media cannot be uniquely matched to the visible source video (${matchedVideos.length} matches); refusing unrelated media; inspect ${shortcode}-capture-diagnostic.json`);
+      }
       videoInput = matchedVideos[0].path;
       audioInput = matchedVideos[0].hasAudio ? videoInput : matchedAudio.length === 1 ? matchedAudio[0] : "";
       if (!audioInput) throw new Error("No unambiguous matching audio stream; refusing silent or unrelated audio");

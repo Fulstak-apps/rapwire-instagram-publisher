@@ -22,7 +22,7 @@ Research-only news sources, used by the AI newsroom only when making factual exp
 Important: this repository does not contain Instagram login credentials. Browser-based capture must use the dedicated signed-in Chrome profile on the user's Mac and must not export cookies. API credentials stay only in GitHub Actions secrets.
 
 Cheap repost contract:
-1. Every 10 minutes, scripts may attempt up to three repost-video publications without waking Codex and without running the AI newsroom.
+1. Every 5 minutes, scripts may attempt up to three repost-video publications without waking Codex and without running the AI newsroom.
 2. Source videos from @trapmatictv, @raplisted_, @akademiks, and @traploreross only.
 3. Mirror every eligible @trapmatictv video/repost and every eligible @raplisted_ video. For @akademiks and @traploreross, use their own Posts/Reels only unless the user changes the rule.
 4. Download the playable video with audio and publish it as video, not as a screenshot carousel.
@@ -31,7 +31,7 @@ Cheap repost contract:
 7. Remove blog/source @handles from the graphic. Omit written credit only for user-owned @trapmatictv and @raplisted_; otherwise keep source credit in the written caption.
 8. Use simple template captions for reposts. Do not call AI just to write a routine repost caption.
 9. Validate H.264/AAC, 1080x1350, duration, and center-grid preview before publishing.
-10. Publish to Instagram and Threads, log both media IDs/permalinks, and retry only the failed platform on later runs.
+10. Publish to Instagram and Threads, log both media IDs/permalinks, keep a JSONL attempt ledger, and retry only the failed platform on later runs.
 
 News/explainer contract:
 1. Wake Codex only three times daily for AI newsroom work: about 9am, 12pm, and 5pm Los Angeles time.

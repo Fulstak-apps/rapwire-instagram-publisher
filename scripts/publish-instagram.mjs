@@ -16,6 +16,8 @@ if (!instagramToken || !instagramUserId || !threadsToken || !threadsUserId || !r
 const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
 const queueDir = "queue";
+const logsDir = "logs";
+const attemptsLog = path.join(logsDir, "publish-attempts.jsonl");
 const queueNames = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
 const queueRecords = await Promise.all(queueNames.map(async (name) => ({
   name,
@@ -34,6 +36,11 @@ const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
+
+async function logAttempt(event) {
+  await fs.mkdir(logsDir, { recursive: true });
+  await fs.appendFile(attemptsLog, `${JSON.stringify({ timestamp: new Date().toISOString(), ...event })}\n`);
+}
 
 function slideUrl(item, index) {
   const remote = Array.isArray(item.media_urls) ? item.media_urls[index] : "";
@@ -217,10 +224,12 @@ for (const file of files) {
   const isVideoItem = item.content_type === "video";
   if (!isVideoItem && (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 10)) {
     console.error(`Skipped ${file}: RapWire carousels require 2-10 complete, readable slides`);
+    await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "invalid_carousel_slide_count" });
     continue;
   }
   if (isVideoItem && (!item.video || !String(item.video).endsWith(".mp4"))) {
     console.error(`Skipped ${file}: RapWire video item is missing its MP4 asset`);
+    await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "missing_video_asset" });
     continue;
   }
   if (item.status === "paused" || item.status === "media_refresh_required") continue;
@@ -230,30 +239,42 @@ for (const file of files) {
     if ((!isVideoItem && item.layout_template !== "rapwire-unified-v3")
       || (isVideoItem && item.layout_template !== "rapwire-video-grid-safe-v1")) {
       console.error(`Skipped ${file}: asset does not use the locked RapWire template`);
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "invalid_layout_template" });
       continue;
     }
     if (item.text_overflow_checked !== true || item.rendered_body_text !== item.body) {
       console.error(`Skipped ${file}: copy completeness/overflow verification failed`);
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "copy_or_overflow_check_failed" });
       continue;
     }
     if (item.content_claim_checked !== true || item.editorial_substance_checked !== true || !contentPromiseIsKept(item)) {
       console.error(`Skipped ${file}: headline promise or editorial substance check failed`);
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "editorial_substance_check_failed" });
       continue;
     }
     if (item.source_policy_checked !== true || item.rap_relevance_checked !== true) {
       console.error(`Skipped ${file}: approved-source or rap-only verification is missing`);
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "source_or_rap_relevance_check_failed" });
       continue;
     }
     if (!isVideoItem && !hasPublishableVisual(item)) {
       console.error(`Skipped ${file}: current/relevant visual verification is missing`);
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "visual_verification_missing" });
       continue;
     }
-    if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) continue;
-    if (feedPostsPublishedInRollingDay >= maxFeedPostsPerRollingDay) continue;
+    if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) {
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "run_feed_limit_reached" });
+      continue;
+    }
+    if (feedPostsPublishedInRollingDay >= maxFeedPostsPerRollingDay) {
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "rolling_day_feed_limit_reached" });
+      continue;
+    }
     const published = isVideoItem ? await publishInstagramReel(item) : await publishInstagramFeed(item);
     item.status = "published";
     item.instagram_media_id = published.id;
     item.published_at = new Date().toISOString();
+    await logAttempt({ file, id: item.id, platform: "instagram", status: "published", media_id: published.id, content_type: item.content_type || "carousel" });
     await save(itemPath, item);
     feedPostsPublishedThisRun += 1;
     feedPostsPublishedInRollingDay += 1;
@@ -271,10 +292,12 @@ for (const file of files) {
       item.instagram_story_media_id = published.id;
       item.instagram_story_published_at = new Date().toISOString();
       delete item.instagram_story_error;
+      await logAttempt({ file, id: item.id, platform: "instagram_story", status: "published", media_id: published.id });
       console.log(`Published Instagram Story ${file}: ${published.id}`);
     } catch (error) {
       item.instagram_story_status = "failed";
       item.instagram_story_error = error.message;
+      await logAttempt({ file, id: item.id, platform: "instagram_story", status: "failed", error: error.message });
       console.error(`Instagram Story failed for ${file}: ${error.message}`);
     }
     await save(itemPath, item);
@@ -290,10 +313,12 @@ for (const file of files) {
       item.threads_media_id = published.id;
       item.threads_published_at = new Date().toISOString();
       delete item.threads_error;
+      await logAttempt({ file, id: item.id, platform: "threads", status: "published", media_id: published.id });
       console.log(`Published Threads carousel ${file}: ${published.id}`);
     } catch (error) {
       item.threads_status = "failed";
       item.threads_error = error.message;
+      await logAttempt({ file, id: item.id, platform: "threads", status: "failed", error: error.message });
       console.error(`Threads failed for ${file}: ${error.message}`);
     }
     await save(itemPath, item);

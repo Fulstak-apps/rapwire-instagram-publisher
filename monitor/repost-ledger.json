@@ -443,6 +443,18 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/DczEs6BS7KJ/",
       "view_count": 0
+    },
+    "DczJQo7o6_i": {
+      "seen_at": "2026-09-02T20:55:57.105Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DczJQo7o6_i/",
+      "view_count": 0
+    },
+    "DczI-F3Anem": {
+      "seen_at": "2026-09-02T20:55:57.105Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DczI-F3Anem/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -817,6 +829,12 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/DczEs6BS7KJ/",
       "queue_id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
       "video": "media/167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.mp4"
+    },
+    "DczI-F3Anem": {
+      "queued_at": "2026-09-02T20:56:05.713Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DczI-F3Anem/",
+      "queue_id": "168-akademiks-woody-says-durk-is-beating-this-case"
     }
   },
   "runs": [
@@ -7675,6 +7693,17 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-02T20:53:04.920Z"
+    },
+    {
+      "started_at": "2026-09-02T20:55:11.743Z",
+      "candidates": 48,
+      "queued": [
+        "168-akademiks-woody-says-durk-is-beating-this-case"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-02T20:56:05.713Z"
     }
   ],
   "vip_pending": {}

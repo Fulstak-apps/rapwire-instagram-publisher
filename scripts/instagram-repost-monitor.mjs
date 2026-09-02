@@ -30,7 +30,9 @@ async function readJson(file, fallback) {
 
 async function writeJson(file, value) {
   await fs.mkdir(path.dirname(file), { recursive: true });
-  await fs.writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
+  const temporary = `${file}.${process.pid}.tmp`;
+  await fs.writeFile(temporary, `${JSON.stringify(value, null, 2)}\n`);
+  await fs.rename(temporary, file);
 }
 
 function shortcodeFromUrl(url) {

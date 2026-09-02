@@ -130,7 +130,9 @@ function hasPublishableVisual(item) {
 }
 
 async function save(itemPath, item) {
-  await fs.writeFile(itemPath, `${JSON.stringify(item, null, 2)}\n`);
+  const temporary = `${itemPath}.${process.pid}.tmp`;
+  await fs.writeFile(temporary, `${JSON.stringify(item, null, 2)}\n`);
+  await fs.rename(temporary, itemPath);
 }
 
 async function instagramPost(endpoint, fields) {

@@ -12,7 +12,9 @@
 
 ## Delivery and safety
 
-One Instagram container step per run, with feed/Story work alternating when both are waiting. One Threads step per run, independent of Instagram cooldown. These are checks, not a promise of one completed post every two minutes. No posts are deleted or edited.
+New feed videos are spaced at least **30 minutes apart**, measured from the last confirmed feed publication and preserved across restarts. One Instagram container step per processing run, with feed/Story work alternating when both are waiting. One Threads step per run, independent of Instagram cooldown and feed cadence. The two-minute script checks advance uploads and cross-posts; they do not publish a fresh video every two minutes and do not wake Codex. Processing and capacity can delay a post beyond 30 minutes. There are no catch-up bursts. No posts are deleted or edited.
+
+The conservative budget is **32 combined Instagram feed/Story publications per rolling 24 hours**, or 80% of a lower effective platform limit, whichever is lower. Use the higher of the local confirmed count and Meta's quota usage. Reserve capacity for every unfinished Story and the new video's matching Story before starting another feed item. This allows about 16 complete video/Story pairs per rolling day, fewer while clearing a Story backlog. It is not a promise of 48 videos plus 48 Stories daily. Threads has independent retry handling.
 
 Upload containers, publish-request markers and resulting media IDs are saved. Pending processing survives the next run. Explicit ERROR/EXPIRED responses get exponential retry delays; uncertain publish responses are held for reconciliation, never blindly duplicated. Old queue IDs are retained. A source shortcode/queue-ID duplicate is held without deleting the file.
 
@@ -39,6 +41,6 @@ The collector reads the canonical shortcode and caption from the same post used 
 
 ## Verification
 
-`node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs`
+`node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs scripts/media-ranges.test.mjs scripts/publication-policy.test.mjs`
 
 The tests use fake platform responses, never live credentials. Live feed/Threads verification reads the returned media ID and records its permalink. Stories record a readback of the returned Story ID; there is no separate Threads Story publishing endpoint.

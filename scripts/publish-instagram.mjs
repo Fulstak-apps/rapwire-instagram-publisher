@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
+import { publicationPolicy, FEED_INTERVAL_MS } from "./publication-policy.mjs";
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -82,12 +83,11 @@ const pacing = JSON.parse(await fs.readFile(pacingPath, "utf8").catch(error => {
   throw error;
 }));
 if (Date.now() - Date.parse(pacing.last_run_at || "") < 120_000) {
-  console.log("Two-minute publishing interval has not elapsed.");
+  console.log("Two-minute processing-check interval has not elapsed (feed cadence is 30 minutes).");
   process.exit(0);
 }
 await fs.mkdir(logsDir, { recursive: true });
-await fs.writeFile(pacingPath, JSON.stringify({ last_run_at: new Date().toISOString() }) + "\n");
-const maxFeedPostsPerRollingDay = 96;
+await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString() }) + "\n");
 let feedPostsPublishedThisRun = 0;
 let olderStoryAttemptsThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
@@ -172,7 +172,7 @@ async function save(itemPath, item) {
 async function instagramPost(endpoint, fields) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
     assertInstagramAvailable();
-    if (endpoint === "media_publish" && instagramPublicationsInRollingDay >= 96) {
+    if (endpoint === "media_publish" && Math.max(instagramPublicationsInRollingDay, Number(quota.usage) || 0) >= deliveryPolicy.instagram_daily_cap) {
       throw Object.assign(new Error("Rolling-day safety cap reached (feed plus Stories); queued for later"), { definitiveRejection: true });
     }
     const body = new URLSearchParams({ ...fields, access_token: instagramToken });
@@ -398,16 +398,15 @@ function contentPromiseIsKept(item) {
 }
 
 const rollingDayStart = Date.now() - 24 * 60 * 60 * 1000;
-let feedPostsPublishedInRollingDay = 0;
 let instagramPublicationsInRollingDay = 0;
 for (const file of files) {
   const item = JSON.parse(await fs.readFile(path.join(queueDir, file), "utf8"));
-  if (item.status === "published" && item.instagram_media_id && item.published_at && Date.parse(item.published_at) >= rollingDayStart) {
-    feedPostsPublishedInRollingDay += 1;
-  }
   if (item.instagram_media_id && Date.parse(item.published_at || item.instagram_published_at || "") >= rollingDayStart) instagramPublicationsInRollingDay += 1;
   if (item.instagram_story_media_id && Date.parse(item.instagram_story_published_at || "") >= rollingDayStart) instagramPublicationsInRollingDay += 1;
 }
+const deliveryPolicy = publicationPolicy(queueRecords.map(record => record.item), {
+  quota, lastFeedPublishedAt: pacing.last_feed_published_at, includeStories: publishInstagramStories
+});
 
 // One processing slot. Existing uploads retain
 // their slots across runs so slow processing cannot create an upload pileup.
@@ -419,8 +418,8 @@ const pendingStory = queueRecords.some(({ item }) => item.status === "published"
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
   && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"));
 const preferStory = pendingStory && pacing.last_instagram_lane === "feed";
-const uploadSlots = instagramAvailable() && !preferStory && instagramPublicationsInRollingDay < 95
-  ? Math.max(0, Math.min(1 - processingCount, maxFeedPostsPerRollingDay - feedPostsPublishedInRollingDay)) : 0;
+const uploadSlots = instagramAvailable() && !preferStory && deliveryPolicy.feed_allowed
+  ? Math.max(0, 1 - processingCount) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
   .filter(({ item }) => item.status === "ready" && item.content_type === "video"
     && !item.instagram_container_id && String(item.video || "").endsWith(".mp4")
@@ -506,8 +505,8 @@ for (const file of files) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "run_feed_limit_reached" });
       continue;
     }
-    if (feedPostsPublishedInRollingDay >= maxFeedPostsPerRollingDay) {
-      await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "rolling_day_feed_limit_reached" });
+    if (!deliveryPolicy.feed_allowed) {
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "feed_cadence_or_reserved_daily_budget", next_feed_eligible_at: deliveryPolicy.next_feed_eligible_at });
       continue;
     }
     let published;
@@ -535,16 +534,17 @@ for (const file of files) {
     item.published_at = new Date().toISOString();
     await logAttempt({ file, id: item.id, platform: "instagram", status: "published", media_id: published.id, content_type: item.content_type || "carousel" });
     await save(itemPath, item);
+    pacing.last_feed_published_at = item.published_at;
+    await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString() }) + "\n");
     await verifyPublication(item, itemPath, "instagram");
     feedPostsPublishedThisRun += 1;
-    feedPostsPublishedInRollingDay += 1;
     console.log(`Published Instagram feed ${file}: ${published.id}`);
   }
 
   if (item.status !== "published") continue;
 
   const storyPending = !item.instagram_story_media_id && item.instagram_story_status !== "published";
-  if (publishInstagramStories && instagramAvailable() && instagramSteps < 1 && (item.story || isVideoItem) && storyPending
+  if (publishInstagramStories && instagramAvailable() && deliveryPolicy.story_allowed && instagramSteps < 1 && (item.story || isVideoItem) && storyPending
     && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
     && (wasReady || olderStoryAttemptsThisRun < 1)) {
     if (!wasReady) olderStoryAttemptsThisRun += 1;
@@ -616,14 +616,18 @@ const report = {
   checked_at: new Date().toISOString(),
   instagram_cooldown_until: instagramAvailable() ? null : cooldown.until,
   instagram_publishing_quota: quota,
+  delivery_policy: { ...deliveryPolicy, next_feed_eligible_at: pacing.last_feed_published_at ? new Date(Date.parse(pacing.last_feed_published_at) + FEED_INTERVAL_MS).toISOString() : deliveryPolicy.next_feed_eligible_at },
   instagram_steps: instagramSteps, threads_steps: threadsSteps,
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),
   note: "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 };
 await fs.writeFile(path.join(logsDir, "publisher-health.json"), JSON.stringify(report, null, 2) + "\n");
-await fs.writeFile(pacingPath, JSON.stringify({ last_run_at: new Date().toISOString(), last_instagram_lane: instagramLane || pacing.last_instagram_lane }) + "\n");
+await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString(), last_instagram_lane: instagramLane || pacing.last_instagram_lane }) + "\n");
 const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
 console.log(summary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, summary);
+const policySummary = `\nFeed cadence: at least 30 minutes between confirmed posts. Instagram budget: ${deliveryPolicy.instagram_daily_cap} feed/Story publications per rolling 24 hours; ${deliveryPolicy.instagram_remaining} available at start of run, ${deliveryPolicy.reserved_story_slots} reserved for outstanding Stories. Next feed no earlier than: ${report.delivery_policy.next_feed_eligible_at || "when capacity permits"}. Quota and processing may delay publication further.\n`;
+console.log(policySummary);
+if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, policySummary);
 if (report.failures.length) process.exitCode = 1;

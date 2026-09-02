@@ -70,3 +70,16 @@ test('old mismatched caption cannot occupy the only active upload slot', t => {
   assert.equal(r.item.instagram_container_id,'new-container');
   assert.equal(r.report.instagram_steps,1);
 });
+test('recent feed publication blocks the next feed but not Threads delivery', t => {
+  const r = run(t,{...item,status:'ready',instagram_media_id:undefined,instagram_container_id:'waiting-feed'},null,
+    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Feed must wait 30 minutes'); return new Response(JSON.stringify({id:'threads-container'}));`,0,null,1,50,
+    [{...item,id:'recent',published_at:new Date(Date.now()-10*60000).toISOString(),instagram_story_media_id:'story',instagram_story_status:'published'}]);
+  assert.equal(r.item.status,'ready'); assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_steps,1);
+  assert.equal(r.report.delivery_policy.feed_interval_minutes,30);
+});
+test('daily safety budget prevents uploads even when Meta reports spare capacity', t => {
+  const r = run(t,{...item,status:'ready',instagram_media_id:undefined},null,
+    `throw new Error('No platform work expected at the daily safety cap');`,0,null,32,100);
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,32);
+  assert.equal(r.item.instagram_container_id,undefined);
+});

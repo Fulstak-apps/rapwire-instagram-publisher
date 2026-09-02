@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T23:13:28.671Z",
+  "checked_at": "2026-09-02T23:15:31.432Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T23:13:22.602Z",
@@ -25,22 +25,14 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-02T23:23:28.329Z",
-  "publications": [
-    {
-      "file": "168-akademiks-woody-says-durk-is-beating-this-case.json",
-      "id": "168-akademiks-woody-says-durk-is-beating-this-case",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18351008785169479"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

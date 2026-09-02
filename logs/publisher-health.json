@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-02T21:00:34.462Z",
+  "checked_at": "2026-09-02T21:03:13.262Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T20:52:35.222Z",
-    "usage": 44,
+    "usage": 45,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-02T21:07:35.222Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 4,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-02T20:58:24.406Z",
+    "next_feed_eligible_at": "2026-09-02T21:13:07.926Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T20:54:07.612Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-02T21:13:12.665Z",
+  "publications": [
+    {
+      "file": "157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d.json",
+      "id": "157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18108400187583908",
+      "content_type": "video"
+    },
+    {
+      "file": "160-reposted-from-akademiks-6ix9ine-speaks.json",
+      "id": "160-reposted-from-akademiks-6ix9ine-speaks",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18093504077432799"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

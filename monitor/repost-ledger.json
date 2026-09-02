@@ -742,6 +742,13 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DczBmQNygjY/",
       "queue_id": "157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d",
       "video": "media/157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d.mp4"
+    },
+    "DczBG63SMue": {
+      "queued_at": "2026-09-02T20:15:53.423Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczBG63SMue/",
+      "queue_id": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie",
+      "video": "media/158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie.mp4"
     }
   },
   "runs": [
@@ -7454,6 +7461,17 @@
       "mode": "discovery",
       "vip_pending": 8,
       "finished_at": "2026-09-02T20:05:39.915Z"
+    },
+    {
+      "started_at": "2026-09-02T20:08:02.842Z",
+      "candidates": 48,
+      "queued": [
+        "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 7,
+      "finished_at": "2026-09-02T20:15:53.423Z"
     }
   ],
   "vip_pending": {
@@ -7520,15 +7538,6 @@
       "shortcode": "Dcwc9BUAgne",
       "first_seen_at": "2026-09-02T19:52:34.711Z",
       "profile_position": 11,
-      "state": "pending",
-      "attempts": 0
-    },
-    "DczBG63SMue": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DczBG63SMue/",
-      "shortcode": "DczBG63SMue",
-      "first_seen_at": "2026-09-02T19:52:34.711Z",
-      "profile_position": 2,
       "state": "pending",
       "attempts": 0
     }

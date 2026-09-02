@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T17:20:40.259Z",
+  "checked_at": "2026-09-02T17:24:46.745Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T17:12:25.696Z",
@@ -30,8 +30,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T17:17:45.415Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-02T17:54:46.564Z",
+  "publications": [
+    {
+      "file": "132-akademiks-repost-video.json",
+      "id": "132-akademiks-repost-video",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18138617779606667"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

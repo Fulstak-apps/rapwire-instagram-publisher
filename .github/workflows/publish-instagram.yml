@@ -35,7 +35,7 @@ jobs:
           node-version: "24"
 
       - name: Test resumable publisher
-        run: node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs scripts/media-ranges.test.mjs scripts/publication-policy.test.mjs
+        run: node --test scripts/*.test.mjs
 
       - name: Check prior publication state
         env:

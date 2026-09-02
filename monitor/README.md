@@ -22,9 +22,9 @@ Research-only news sources, used by the AI newsroom only when making factual exp
 Important: this repository does not contain Instagram login credentials. Browser-based capture must use the dedicated signed-in Chrome profile on the user's Mac and must not export cookies. API credentials stay only in GitHub Actions secrets.
 
 Cheap repost contract:
-1. Every minute, scripts may attempt up to three repost-video publications without waking Codex and without running the AI newsroom.
+1. Check every two minutes; publish no more than one new post per platform per ten minutes, subject to quota and processing. Never run the AI newsroom for routine reposts.
 2. Source videos from @trapmatictv, @raplisted_, @akademiks, and @traploreross only.
-3. Mirror every eligible @trapmatictv video/repost and every eligible @raplisted_ video. For @akademiks and @traploreross, use their own Posts/Reels only unless the user changes the rule.
+3. @akademiks and @traploreross are VIP: retain every unreposted post from their current grids and future posts, without editorial selection or view-count scoring. No historical backfill. Unsupported media and download failures stay in the durable pending backlog, not silently skipped. @trapmatictv and @raplisted_ keep their existing rules. See OPERATIONS.md for current media support.
 4. Download the playable video with audio and publish it as video, not as a screenshot carousel.
 5. Preserve the regular source size, use full 1080px width whenever practical, and never shrink footage into a narrow card.
 6. Put the round RapWire 24/7 logo at the bottom or on already-empty video space without covering faces, subtitles, captions, trailer titles, or meaningful source text. Do not use the old rectangular border badge.

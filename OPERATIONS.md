@@ -12,11 +12,11 @@
 
 ## Delivery and safety
 
-New feed videos are spaced at least **30 minutes apart**, measured from the last confirmed feed publication and preserved across restarts. One Instagram container step per processing run, with feed/Story work alternating when both are waiting. One Threads step per run, independent of Instagram cooldown and feed cadence. The two-minute script checks advance uploads and cross-posts; they do not publish a fresh video every two minutes and do not wake Codex. Processing and capacity can delay a post beyond 30 minutes. There are no catch-up bursts. No posts are deleted or edited.
+New feed videos are spaced at least **10 minutes apart**, measured from the last confirmed feed publication and preserved across restarts. One Instagram container step per processing run, with feed/Story work alternating when both are waiting. One Threads step per run, independent of Instagram cooldown and feed cadence. The two-minute script checks advance uploads and cross-posts; they do not publish a fresh video every two minutes and do not wake Codex. Processing and capacity can delay a post beyond 10 minutes. There are no catch-up bursts. No posts are deleted or edited.
 
 The conservative budget is **32 combined Instagram feed/Story publications per rolling 24 hours**, or 80% of a lower effective platform limit, whichever is lower. Use the higher of the local confirmed count and Meta's quota usage. Reserve capacity for every unfinished Story and the new video's matching Story before starting another feed item. This allows about 16 complete video/Story pairs per rolling day, fewer while clearing a Story backlog. It is not a promise of 48 videos plus 48 Stories daily. Threads has independent retry handling.
 
-Threads accepts quality-validated ready videos before their Instagram delivery, so an Instagram quota hold does not stop coverage on both platforms. Each platform keeps its own confirmed-publication timer (minimum 30 minutes), media IDs, retries and reconciliation guards. A Threads-only success leaves the queue item's Instagram status ready. Resume the existing Threads container before opening another; never repost a confirmed Threads media ID when Instagram later succeeds.
+Threads accepts quality-validated ready videos before their Instagram delivery, so an Instagram quota hold does not stop coverage on both platforms. Each platform keeps its own confirmed-publication timer (minimum 10 minutes), media IDs, retries and reconciliation guards. A Threads-only success leaves the queue item's Instagram status ready. Resume the existing Threads container before opening another; never repost a confirmed Threads media ID when Instagram later succeeds.
 
 A user-requested immediate recovery may name exactly one queue ID in `logs/instagram-recovery.json`, expiring within one hour. This allows only that feed/Story pair above the internal safety budget, never above a freshly verified platform limit. It requires a quota read less than five minutes old, no quota/cooldown block, normal feed pacing, and two platform slots remaining after the requested delivery. All quality and duplicate guards remain in place. It does not authorize a general backlog burst or reset quota usage.
 
@@ -27,6 +27,26 @@ Instagram rate-limit code 4 and related limits start a 30-minute cooldown, doubl
 Media Publish Limit Exceeded (9/2207042) is a separate account-wide publishing hold. Check capacity hourly while blocked; do not keep retrying publication every two minutes. If the published quota configuration disagrees with an actual rejection, honor the observed rejection ceiling until usage drops below it. The next check is not a promised reset time. Threads remains independent of the Instagram hold.
 
 ## Matching captions to videos
+
+### VIP override (user instruction, September 2, 2026)
+
+`@akademiks` and `@traploreross` are VIP until the user changes this rule.
+Every unreposted item discovered in their current profile grids is retained in
+`monitor/repost-ledger.json` under `vip_pending`. Future discoveries are added;
+no historical backfill beyond the current grids is authorized. VIPs do not use
+engagement ranking, the four-candidate limit, or newsroom/topic/AI-caption filters.
+An attributed source caption is used without editorial rewriting. Short, absent,
+or overlong captions get a source-link attribution instead of blocking delivery.
+The complete captured caption is retained in the queue evidence. Both feeds use
+a 10-minute minimum cadence, and each Instagram feed post has a matching Story.
+Threads has no separate Story delivery endpoint.
+
+Capture failures remain pending with bounded backoff, never marked as reposted.
+The current capture runtime supports videos; photos and mixed/image carousels
+remain pending until complete-media capture is implemented and verified. Do not
+publish only a carousel thumbnail or pretend those items were delivered.
+
+For non-VIP sources, the following caption rules still apply:
 
 The collector reads the canonical shortcode and caption from the same post used for capture, never the surrounding article/comments. Captured complete media must uniquely match the visible video's duration and dimensions, with matching audio. Pending legacy items are repaired before new collection; already-live posts are not modified. Generic, missing, truncated or ambiguous captions are held for review, never replaced with filler. Verified artist handles come only from `monitor/artist-handles.json` and expire after 30 days. Source credit stays in the caption footer.
 

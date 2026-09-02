@@ -1,4 +1,4 @@
-export const FEED_INTERVAL_MS = 30 * 60_000;
+export const FEED_INTERVAL_MS = 10 * 60_000;
 export const DAILY_INSTAGRAM_CAP = 32;
 
 // A time-limited, explicitly requested recovery pair is not a general cap reset.

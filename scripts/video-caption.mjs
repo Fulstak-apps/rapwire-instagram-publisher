@@ -1,7 +1,8 @@
+import { isVip, vipCaption } from './vip-policy.mjs';
 export const shortcode = value => String(value || '').match(/\/(?:reel|p)\/([\w-]+)/)?.[1] || '';
 export const genericCaption = value => /a new hip.hop video is|keeping the (?:hip.hop )?video feed moving|clean repost coverage|on Instagram:|newsroom schedule/i.test(String(value || ''));
 
-export function sourceCaption({ requestedUrl, canonicalUrl, title = '', description = '', heading = '' }) {
+export function sourceCaption({ requestedUrl, canonicalUrl, title = '', description = '', heading = '', allowSparse = false }) {
   if (!shortcode(requestedUrl) || shortcode(requestedUrl) !== shortcode(canonicalUrl)) throw new Error('Caption source does not match requested video shortcode');
   // Never use article.innerText: it also contains comments and recommendations.
   let raw = heading.trim();
@@ -11,6 +12,7 @@ export function sourceCaption({ requestedUrl, canonicalUrl, title = '', descript
     raw = titleMatch?.[1] || descriptionMatch?.[1] || '';
   }
   raw = raw.replace(/\r/g, '').trim();
+  if (allowSparse) return /(?:…|\.{3})\s*$/.test(raw) ? '' : raw;
   if (raw.length < 15 || genericCaption(raw) || /(?:…|\.{3})\s*$/.test(raw)) throw new Error('Exact source caption missing, generic or truncated; needs review');
   return raw;
 }
@@ -50,6 +52,12 @@ export function buildVideoCaption(raw, source, registry = []) {
 }
 
 export function captionIsBound(item) {
+  if (item.caption_policy === 'vip-source-v1') {
+    if (!isVip(item.source_handle) || item.caption_source_shortcode !== shortcode(item.source_url)
+      || !item.caption_source_shortcode || item.vip_source_checked !== true) return false;
+    const expected = vipCaption(item.source_caption_text, item.source_handle, item.source_url);
+    return item.body === expected.body && item.rendered_body_text === expected.body;
+  }
   return item.caption_policy === 'exact-source-v1' && item.caption_source_shortcode === shortcode(item.source_url)
     && Boolean(item.caption_source_shortcode) && typeof item.source_caption_text === 'string'
     && item.source_caption_text.length >= 15 && !genericCaption(item.body);

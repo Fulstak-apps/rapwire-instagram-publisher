@@ -6916,6 +6916,25 @@
       ],
       "mode": "discovery",
       "finished_at": "2026-09-02T17:23:29.544Z"
+    },
+    {
+      "started_at": "2026-09-02T17:25:32.762Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/akademiks/reel/DcyT3mKO4aY/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcyT3mKO4aY-capture-diagnostic.json"
+        },
+        {
+          "source_url": "https://www.instagram.com/akademiks/reel/DcyXC7YODr8/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcyXC7YODr8-capture-diagnostic.json"
+        }
+      ],
+      "mode": "caption_repair",
+      "finished_at": "2026-09-02T17:30:16.873Z"
     }
   ]
 }

@@ -6548,6 +6548,27 @@
       "errors": [],
       "mode": "caption_repair",
       "finished_at": "2026-09-02T15:12:46.576Z"
+    },
+    {
+      "started_at": "2026-09-02T15:14:50.171Z",
+      "candidates": 0,
+      "queued": [
+        "141-vonni-offered-to-wear-a-wire-on-durk-and-brought-up-american-gan"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/traploreross/reel/Dcw87TmPq3e/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcw87TmPq3e-capture-diagnostic.json"
+        },
+        {
+          "source_url": "https://www.instagram.com/traploreross/reel/Dcw709iP2FT/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcw709iP2FT-capture-diagnostic.json"
+        }
+      ],
+      "mode": "caption_repair",
+      "finished_at": "2026-09-02T15:26:52.084Z"
     }
   ]
 }

@@ -87,7 +87,7 @@ const pacing = JSON.parse(await fs.readFile(pacingPath, "utf8").catch(error => {
   throw error;
 }));
 if (Date.now() - Date.parse(pacing.last_run_at || "") < 120_000) {
-  console.log("Two-minute processing-check interval has not elapsed (feed cadence is 30 minutes).");
+  console.log("Two-minute processing-check interval has not elapsed (feed cadence is 10 minutes).");
   process.exit(0);
 }
 await fs.mkdir(logsDir, { recursive: true });
@@ -395,6 +395,7 @@ function contentPromiseIsKept(item) {
   // use short captions, so applying the 45-word explainer requirement here
   // silently prevents every otherwise-valid video from publishing.
   if (item.content_type === "video") {
+    if (item.caption_policy === 'vip-source-v1') return captionIsBound(item);
     return captionIsBound(item) && words.length >= 4 && /[.!?]/.test(body);
   }
   const numberedDetails = body.match(/\b\d+\.\s/g) || [];
@@ -670,7 +671,7 @@ await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date
 const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
 console.log(summary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, summary);
-const policySummary = `\nFeed cadence: at least 30 minutes between confirmed posts. Instagram budget: ${deliveryPolicy.instagram_daily_cap} feed/Story publications per rolling 24 hours; ${deliveryPolicy.instagram_remaining} available at start of run, ${deliveryPolicy.reserved_story_slots} reserved for outstanding Stories. Next feed no earlier than: ${report.delivery_policy.next_feed_eligible_at || "when capacity permits"}. Quota and processing may delay publication further.\n`;
+const policySummary = `\nFeed cadence: at least ${deliveryPolicy.feed_interval_minutes} minutes between confirmed posts. Instagram budget: ${deliveryPolicy.instagram_daily_cap} feed/Story publications per rolling 24 hours; ${deliveryPolicy.instagram_remaining} available at start of run, ${deliveryPolicy.reserved_story_slots} reserved for outstanding Stories. Next feed no earlier than: ${report.delivery_policy.next_feed_eligible_at || "when capacity permits"}. Quota and processing may delay publication further.\n`;
 console.log(policySummary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, policySummary);
 if (report.failures.length) process.exitCode = 1;

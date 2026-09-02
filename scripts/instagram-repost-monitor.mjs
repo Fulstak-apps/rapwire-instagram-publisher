@@ -4,6 +4,7 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { capture, launch } from "./instagram-browser-mirror.mjs";
 import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-caption.mjs";
+import { isVip, rememberVip, vipCandidates, deferVip, vipCaption } from './vip-policy.mjs';
 
 const execFileAsync = promisify(execFile);
 
@@ -145,6 +146,13 @@ async function releaseLock() {
 }
 
 async function captionFields(evidence, source) {
+  if (isVip(source)) {
+    const text = vipCaption(evidence.source_caption_text, source, evidence.source_url);
+    return {...text, rendered_body_text:text.body, caption_policy:'vip-source-v1',
+      caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text,
+      caption_checked_at:evidence.captured_at, vip_source_checked:true,
+      media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration};
+  }
   const registry = await readJson(path.join(root, "monitor", "artist-handles.json"), []);
   const text = buildVideoCaption(evidence.source_caption_text, source, registry);
   return { ...text, rendered_body_text:text.body, threads_text:text.caption, caption_policy:"exact-source-v1", caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text, caption_checked_at:evidence.captured_at, media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration };
@@ -152,7 +160,9 @@ async function captionFields(evidence, source) {
 
 async function queueCapture(ledger, candidate, queueNumber) {
   const shortcode = candidate.shortcode;
-  const evidence = await capture(candidate.url, { headless: true });
+  const evidence = await capture(candidate.url, { headless: true, vip: isVip(candidate.source.handle) });
+  // Keep the exact canonical URL used for caption binding on both platforms.
+  candidate.url = evidence.source_url;
   const sourceVideo = path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`);
   await fs.access(sourceVideo);
   const fields = await captionFields(evidence, candidate.source.handle);
@@ -165,7 +175,8 @@ async function queueCapture(ledger, candidate, queueNumber) {
   const queueItem = {
     id,
     status: "ready",
-    publish_priority: 50,
+    publish_priority: isVip(candidate.source.handle) ? 100 : 50,
+    vip_repost: isVip(candidate.source.handle),
     date: new Date().toISOString().slice(0, 10),
     timezone: "America/Detroit",
     content_type: "video",
@@ -283,7 +294,8 @@ try {
       || Date.parse(item.caption_retry_at || "") > Date.now()) continue;
     if (repairAttempts++ >= 3) break;
     try {
-      const evidence = await capture(item.source_url, { headless: true });
+      const evidence = await capture(item.source_url, { headless: true, vip: isVip(item.source_handle) });
+      item.source_url = evidence.source_url;
       const fields = await captionFields(evidence, item.source_handle);
       const shortcode = shortcodeFromUrl(item.source_url);
       const destination = path.join(mediaDir, `${item.id}-caption-matched.mp4`);
@@ -310,14 +322,15 @@ try {
     }
   }
 
-  // A repair is this cycle's work. Avoid re-scanning all four accounts after
-  // already capturing/reviewing the pending backlog.
-  run.mode = repairAttempts ? "caption_repair" : "discovery";
-  if (!repairAttempts) {
+  // Repairs must not stop VIP discovery: save new links even when this run's
+  // capture slot has already been consumed by a repair.
+  run.mode = repairAttempts ? "caption_repair_and_vip_discovery" : "discovery";
+  {
   const discovered = [];
   let rankedPool = [];
   await withFreshBrowser(async (context) => {
     for (const source of sources) {
+      if (repairAttempts && !isVip(source.handle)) continue;
       try {
         discovered.push(...await discoverFromProfile(context, source));
       } catch (error) {
@@ -327,7 +340,7 @@ try {
     // Score only the current visible window from each approved page. This keeps
     // reposts timely while choosing the videos already pulling the strongest
     // audience, rather than blindly reposting every new upload.
-    const selectedForScoring = sources.flatMap((source) => discovered
+    const selectedForScoring = sources.filter(source => !isVip(source.handle)).flatMap((source) => discovered
       .filter((candidate) => candidate.source.handle === source.handle && !ledger.queued_shortcodes[candidate.shortcode])
       .slice(0, candidatesPerSourceToScore));
     rankedPool = selectedForScoring;
@@ -351,25 +364,33 @@ try {
       view_count: item.viewCount || ledger.seen_shortcodes[item.shortcode]?.view_count || 0
     };
   }
-  const rankedCandidates = rankedPool
+  // Every discovered VIP post is durable, including photos/carousels and failed
+  // captures. It cannot disappear just because it falls out of the profile grid.
+  rememberVip(ledger, discovered);
+  await writeJson(ledgerPath, ledger);
+  const normalCandidates = rankedPool
     .sort((left, right) => Number(right.viewCount || 0) - Number(left.viewCount || 0)
       || left.profilePosition - right.profilePosition
       || left.source.handle.localeCompare(right.source.handle));
+  const rankedCandidates = [...vipCandidates(ledger, sources).slice(0, 4), ...normalCandidates];
   let queueNumber = await nextQueueNumber();
   for (const candidate of rankedCandidates) {
     if (run.queued.length >= maxQueuePerRun) break;
     if (ledger.queued_shortcodes[candidate.shortcode]) continue;
-    if (!candidate.isVideo || !candidate.visibleCaption) continue;
+    if (!isVip(candidate.source.handle) && (!candidate.isVideo || !candidate.visibleCaption)) continue;
     try {
       const id = await queueCapture(ledger, candidate, queueNumber);
       run.queued.push(id);
       queueNumber += 1;
     } catch (error) {
+      deferVip(ledger, candidate, error);
       run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "queue", error: error.message });
     }
   }
 
   }
+  rememberVip(ledger, []);
+  run.vip_pending = Object.keys(ledger.vip_pending || {}).length;
   run.finished_at = new Date().toISOString();
   ledger.runs = [...(ledger.runs || []), run].slice(-250);
   await writeJson(ledgerPath, ledger);

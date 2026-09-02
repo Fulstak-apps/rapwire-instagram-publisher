@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {vipCaption} from './vip-policy.mjs';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -26,6 +27,24 @@ test('Instagram cooldown does not block pending Threads work', t => {
   assert.equal(r.item.threads_container_id, 'threads-container');
   assert.equal(r.report.instagram_steps, 0); assert.equal(r.report.threads_steps, 1);
   assert.equal(r.report.publications.length, 0);
+});
+test('VIP short AI caption publishes without newsroom scoring while IG remains held', t => {
+  const copy=vipCaption('AI',item.source_handle,item.source_url);
+  const record={...item,...copy,status:'ready',instagram_media_id:undefined,rendered_body_text:copy.body,
+    caption_policy:'vip-source-v1',source_caption_text:'AI',vip_source_checked:true};
+  const r=run(t,record,null,
+    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('IG stays held'); return new Response(JSON.stringify({id:'vip-container'}));`,0,
+    {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
+  assert.equal(r.item.threads_container_id,'vip-container');
+  assert.equal(r.report.threads_steps,1);
+});
+test('VIP bypass cannot authorize a non-VIP page', t => {
+  const copy=vipCaption('AI',item.source_handle,item.source_url);
+  const record={...item,...copy,source_handle:'unapproved',status:'ready',instagram_media_id:undefined,rendered_body_text:copy.body,
+    caption_policy:'vip-source-v1',source_caption_text:'AI',vip_source_checked:true};
+  const r=run(t,record,null,`throw new Error('No unapproved media allowed');`,0,
+    {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
+  assert.equal(r.report.threads_steps,0);
 });
 test('timed-out Story resumes its saved container without recreating', t => {
   const r = run(t, { ...item, threads_status:'published', threads_media_id:'thread', instagram_story_status:'failed', instagram_story_error:'Instagram container 123 did not finish in time' }, null,
@@ -73,10 +92,10 @@ test('old mismatched caption cannot occupy the only active upload slot', t => {
 });
 test('recent feed publication blocks the next feed but not Threads delivery', t => {
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,instagram_container_id:'waiting-feed'},null,
-    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Feed must wait 30 minutes'); return new Response(JSON.stringify({id:'threads-container'}));`,0,null,1,50,
-    [{...item,id:'recent',published_at:new Date(Date.now()-10*60000).toISOString(),instagram_story_media_id:'story',instagram_story_status:'published'}]);
+    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Feed must wait 10 minutes'); return new Response(JSON.stringify({id:'threads-container'}));`,0,null,1,50,
+    [{...item,id:'recent',published_at:new Date(Date.now()-5*60000).toISOString(),instagram_story_media_id:'story',instagram_story_status:'published'}]);
   assert.equal(r.item.status,'ready'); assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_steps,1);
-  assert.equal(r.report.delivery_policy.feed_interval_minutes,30);
+  assert.equal(r.report.delivery_policy.feed_interval_minutes,10);
 });
 test('daily safety budget prevents uploads even when Meta reports spare capacity', t => {
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread'},null,
@@ -92,7 +111,7 @@ test('ready video publishes on Threads while Instagram quota is exhausted', t =>
   assert.equal(r.item.threads_media_id,'thread-live'); assert.match(r.item.threads_permalink,/verified/);
   assert.equal(r.report.instagram_steps,0); assert.equal(r.report.publications.length,1);
 });
-test('new independent Threads publications still respect the 30-minute cadence', t => {
+test('new independent Threads publications still respect the 10-minute cadence', t => {
   const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
     `throw new Error('No additional publish requests allowed during cadence hold');`,0,
     {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()},1,50,

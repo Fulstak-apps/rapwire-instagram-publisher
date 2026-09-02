@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-02T21:16:58.664Z",
+  "checked_at": "2026-09-02T21:19:14.564Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T21:08:41.607Z",
-    "usage": 45,
+    "usage": 46,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-02T21:23:41.607Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 3,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-02T21:13:07.926Z",
+    "next_feed_eligible_at": "2026-09-02T21:29:09.474Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T21:13:12.665Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-02T21:29:14.237Z",
+  "publications": [
+    {
+      "file": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie.json",
+      "id": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18039475796827113",
+      "content_type": "video"
+    },
+    {
+      "file": "161-reposted-from-akademiks-drew-findling-is-now-on-cross-of-otf-von.json",
+      "id": "161-reposted-from-akademiks-drew-findling-is-now-on-cross-of-otf-von",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17954752062239689"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

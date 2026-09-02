@@ -29,3 +29,33 @@ The 20-minute cadence supports up to 72 baseline feed posts per day, leaving cap
 for retries and selected breaking coverage below Instagram's rolling publishing limit.
 Use `publish_after` for precise queue timing. `MAX_FEED_POSTS_PER_RUN` defaults to 1
 to prevent a newly loaded batch from flooding the account.
+
+## Free local Ollama editor (experimental)
+
+`scripts/local-rapwire.py` is a local-first editorial path that does not require an OpenAI API key. It reads fresh approved RapWire candidates, gathers deterministic source/page metadata, sends only that evidence to a local Ollama model, validates the returned JSON, scores the draft through QA gates, and writes the result as `status: review`.
+
+It intentionally cannot publish. A draft remains blocked until visual/photo recency, rights, event relevance, and final layout checks are completed by the existing rendering/review path.
+
+Recommended Apple Silicon starting point:
+
+```bash
+ollama pull qwen3:4b
+ollama serve
+python3 scripts/local-rapwire.py --dry-run
+```
+
+Useful environment variables:
+
+```bash
+export OLLAMA_MODEL=qwen3:4b
+export OLLAMA_URL=http://127.0.0.1:11434
+export RAPWIRE_QA_THRESHOLD=85
+```
+
+To create a review-only queue draft after inspecting a dry run:
+
+```bash
+python3 scripts/local-rapwire.py
+```
+
+Do not change a generated local draft from `review` to `ready` until its media has been rendered and all required publication-policy fields are satisfied.

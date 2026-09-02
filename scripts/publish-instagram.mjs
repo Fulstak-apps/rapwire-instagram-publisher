@@ -442,6 +442,56 @@ await Promise.all(uploadCandidates.map(async ({ name, item }) => {
   }
 }));
 
+let lastThreadsTime = Math.max(Date.parse(pacing.last_threads_published_at || '') || 0,
+  ...queueRecords.map(({item}) => item.threads_media_id ? Date.parse(item.threads_published_at || '') || 0 : 0));
+const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].includes(item.status)
+  && item.threads_container_id && !item.threads_media_id && !item.threads_reconcile_required
+  && item.rap_relevance_checked === true && contentPromiseIsKept(item)
+  && (!item.publish_after || Date.parse(item.publish_after) <= Date.now())
+  && (item.status !== 'ready' || (item.source_policy_checked === true
+    && item.text_overflow_checked === true && item.rendered_body_text === item.body
+    && item.content_claim_checked === true && item.editorial_substance_checked === true
+    && (item.content_type === 'video' ? item.layout_template === 'rapwire-video-grid-safe-v1'
+      : item.layout_template === 'rapwire-unified-v3' && hasPublishableVisual(item))))
+  && !(Date.parse(item.threads_retry_at || '') > Date.now()))?.item.id;
+
+async function deliverThreads(item, itemPath, file) {
+  const isVideoItem = item.content_type === 'video';
+  if (threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required
+    || Date.now() - lastThreadsTime < FEED_INTERVAL_MS
+    || (threadsInFlightId && item.id !== threadsInFlightId)
+    || item.rap_relevance_checked !== true || (isVideoItem && !captionIsBound(item))
+    || Date.parse(item.threads_retry_at || '') > Date.now()
+    || ![undefined,'pending','failed','skipped_for_instagram_only_post'].includes(item.threads_status)) return;
+  try {
+    threadsSteps += 1;
+    const published = isVideoItem ? await publishThreadsVideo(item, itemPath) : await publishThreadsCarousel(item);
+    if (!published) {
+      item.threads_status = 'pending';
+    } else {
+      item.threads_status = 'published';
+      item.threads_media_id = published.id;
+      item.threads_published_at = new Date().toISOString();
+      delete item.threads_error;
+      lastThreadsTime = Date.parse(item.threads_published_at);
+      pacing.last_threads_published_at = item.threads_published_at;
+      // Preserve the Instagram-ready state; its delivery can happen later.
+      await save(itemPath, item);
+      await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString() }) + '\n');
+      await logAttempt({ file, id: item.id, platform: 'threads', status: 'published', media_id: published.id });
+      console.log(`Published Threads ${file}: ${published.id}`);
+      await verifyPublication(item, itemPath, 'threads');
+    }
+  } catch (error) {
+    item.threads_status = 'failed';
+    item.threads_error = error.message;
+    item.threads_retry_at = new Date(Date.now() + 30 * 60000).toISOString();
+    await logAttempt({ file, id: item.id, platform: 'threads', status: 'failed', error: error.message });
+    console.error(`Threads failed for ${file}: ${error.message}`);
+  }
+  await save(itemPath, item);
+}
+
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
@@ -501,6 +551,9 @@ for (const file of files) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "visual_verification_missing" });
       continue;
     }
+    // All content checks passed. Threads must not wait on Instagram's quota,
+    // feed cadence, processing, or a failed Instagram upload.
+    await deliverThreads(item, itemPath, file);
     if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "run_feed_limit_reached" });
       continue;
@@ -580,36 +633,7 @@ for (const file of files) {
     await save(itemPath, item);
   }
 
-  // Threads is required for every published RapWire carousel. Honor old queue items that
-  // were previously marked Instagram-only so they can be backfilled automatically.
-  if (item.rap_relevance_checked === true
-    && threadsSteps < 1 && !item.threads_media_id && !item.threads_reconcile_required
-    && (!isVideoItem || captionIsBound(item))
-    && !(Date.parse(item.threads_retry_at || "") > Date.now())
-    && (!item.threads_status || item.threads_status === "pending" || item.threads_status === "failed" || item.threads_status === "skipped_for_instagram_only_post")) {
-    try {
-      threadsSteps += 1;
-      const published = isVideoItem ? await publishThreadsVideo(item, itemPath) : await publishThreadsCarousel(item);
-      if (!published) {
-        item.threads_status = "pending";
-      } else {
-      item.threads_status = "published";
-      item.threads_media_id = published.id;
-      item.threads_published_at = new Date().toISOString();
-      delete item.threads_error;
-      await logAttempt({ file, id: item.id, platform: "threads", status: "published", media_id: published.id });
-      console.log(`Published Threads carousel ${file}: ${published.id}`);
-      await verifyPublication(item, itemPath, "threads");
-      }
-    } catch (error) {
-      item.threads_status = "failed";
-      item.threads_error = error.message;
-      item.threads_retry_at = new Date(Date.now() + 30 * 60_000).toISOString();
-      await logAttempt({ file, id: item.id, platform: "threads", status: "failed", error: error.message });
-      console.error(`Threads failed for ${file}: ${error.message}`);
-    }
-    await save(itemPath, item);
-  }
+  await deliverThreads(item, itemPath, file);
 }
 
 const report = {
@@ -618,6 +642,7 @@ const report = {
   instagram_publishing_quota: quota,
   delivery_policy: { ...deliveryPolicy, next_feed_eligible_at: pacing.last_feed_published_at ? new Date(Date.parse(pacing.last_feed_published_at) + FEED_INTERVAL_MS).toISOString() : deliveryPolicy.next_feed_eligible_at },
   instagram_steps: instagramSteps, threads_steps: threadsSteps,
+  threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + FEED_INTERVAL_MS).toISOString() : null,
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),
   note: "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

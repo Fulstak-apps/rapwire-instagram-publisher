@@ -78,8 +78,37 @@ test('recent feed publication blocks the next feed but not Threads delivery', t 
   assert.equal(r.report.delivery_policy.feed_interval_minutes,30);
 });
 test('daily safety budget prevents uploads even when Meta reports spare capacity', t => {
-  const r = run(t,{...item,status:'ready',instagram_media_id:undefined},null,
+  const r = run(t,{...item,status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread'},null,
     `throw new Error('No platform work expected at the daily safety cap');`,0,null,32,100);
   assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,32);
   assert.equal(r.item.instagram_container_id,undefined);
+});
+test('ready video publishes on Threads while Instagram quota is exhausted', t => {
+  const r=run(t,{...item,status:'ready',instagram_media_id:undefined,threads_container_id:'threads-container'},null,
+    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Instagram must remain held'); if(options.method==='POST') return new Response(JSON.stringify({id:'thread-live'})); if(String(url).includes('/threads-container?')) return new Response(JSON.stringify({status:'FINISHED'})); return new Response(JSON.stringify({id:'thread-live',permalink:'https://www.threads.net/@rapwire247/post/verified'}));`,0,
+    {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
+  assert.equal(r.item.status,'ready'); assert.equal(r.item.instagram_media_id,undefined);
+  assert.equal(r.item.threads_media_id,'thread-live'); assert.match(r.item.threads_permalink,/verified/);
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.publications.length,1);
+});
+test('new independent Threads publications still respect the 30-minute cadence', t => {
+  const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
+    `throw new Error('No additional publish requests allowed during cadence hold');`,0,
+    {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()},1,50,
+    [{...item,id:'recent-thread',threads_media_id:'previous-thread',threads_status:'published',threads_published_at:new Date(Date.now()-60000).toISOString()}]);
+  assert.equal(r.report.threads_steps,0); assert.equal(r.item.threads_container_id,undefined);
+});
+test('bad caption cannot bypass validation via independent Threads delivery', t => {
+  const r=run(t,{...item,status:'ready',instagram_media_id:undefined,caption_policy:undefined},null,
+    `throw new Error('Unverified caption must not reach either platform');`,0,
+    {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
+  assert.equal(r.report.threads_steps,0); assert.equal(r.item.threads_container_id,undefined);
+});
+test('bad caption in-flight Threads item cannot block validated ready video', t => {
+  const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
+    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Instagram must remain held'); return new Response(JSON.stringify({id:'new-threads-container'}));`,0,
+    {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()},50,100,
+    [{...item,id:'old',status:'ready',instagram_media_id:undefined,threads_container_id:'bad-caption-container',caption_policy:undefined}]);
+  assert.equal(r.item.threads_container_id,'new-threads-container');
+  assert.equal(r.report.threads_steps,1);
 });

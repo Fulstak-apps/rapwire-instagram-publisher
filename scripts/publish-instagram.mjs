@@ -408,11 +408,13 @@ const instagramInFlightId = queueRecords.find(({item}) => item.status === 'ready
   && (item.instagram_container_id || item.instagram_children?.some(Boolean))
   && !item.instagram_reconcile_required && contentPromiseIsKept(item))?.item.id;
 const processingCount = instagramInFlightId ? 1 : 0;
-const pendingStory = queueRecords.some(({ item }) => item.status === "published"
+const pendingStoryId = queueRecords.filter(({ item }) => item.status === "published"
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
-  && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"));
-const preferStory = !recovery.feed_allowed && pendingStory && pacing.last_instagram_lane === "feed";
+  && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"))
+  .sort((a,b)=>(Date.parse(b.item.published_at||b.item.instagram_published_at||'')||0)-(Date.parse(a.item.published_at||a.item.instagram_published_at||'')||0))[0]?.item.id;
+const pendingStory = publishInstagramStories && Boolean(pendingStoryId);
+const preferStory = deliveryPolicy.story_allowed && !recovery.feed_allowed && pendingStory && pacing.last_instagram_lane === "feed";
 const uploadSlots = instagramAvailable() && !preferStory && (deliveryPolicy.feed_allowed || recovery.feed_allowed)
   ? Math.max(0, 1 - processingCount) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
@@ -594,7 +596,7 @@ for (const file of files) {
   if (item.status !== "published") continue;
 
   const storyPending = !item.instagram_story_media_id && item.instagram_story_status !== "published";
-  if (publishInstagramStories && instagramAvailable() && (deliveryPolicy.story_allowed || (recovery.story_allowed && item.id === recovery.item_id)) && instagramSteps < 1 && (item.story || isVideoItem) && storyPending
+  if (publishInstagramStories && instagramAvailable() && (deliveryPolicy.story_allowed || (recovery.story_allowed && item.id === recovery.item_id)) && instagramSteps < 1 && (wasReady || item.id === pendingStoryId || item.id === recovery.item_id) && (item.story || isVideoItem) && storyPending
     && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
     && (wasReady || olderStoryAttemptsThisRun < 1)) {
     if (!wasReady) olderStoryAttemptsThisRun += 1;

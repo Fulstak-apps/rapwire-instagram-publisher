@@ -1,5 +1,6 @@
 export const FEED_INTERVAL_MS = 10 * 60_000;
-export const DAILY_INSTAGRAM_CAP = 32;
+const UNKNOWN_QUOTA_CAP = 32;
+const PLATFORM_HEADROOM = 2;
 
 // A time-limited, explicitly requested recovery pair is not a general cap reset.
 // Keep two unused platform slots and require a fresh successful quota read.
@@ -26,7 +27,8 @@ export function recoveryPolicy(records, { authorization = {}, quota = {}, lastFe
 }
 
 // Cadence is measured from confirmed publication, not scheduler wakeups.
-// Count feed and Stories together and reserve room for outstanding Stories.
+// Count feed and Stories together. Reserve a matching Story for the active feed;
+// an older Story backlog must not permanently consume every future feed slot.
 export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, includeStories = true, now = Date.now() } = {}) {
   const cutoff = now - 86400000;
   const published = new Set();
@@ -43,19 +45,24 @@ export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, in
     if (item.instagram_story_media_id && Date.parse(item.instagram_story_published_at || '') > cutoff) published.add(item.instagram_story_media_id);
   }
   const platformLimit = Number(quota.effective_total || quota.total);
-  const cap = Number.isFinite(platformLimit) && platformLimit > 0 ? Math.min(DAILY_INSTAGRAM_CAP, Math.floor(platformLimit * 0.8)) : DAILY_INSTAGRAM_CAP;
+  const cap = Number.isFinite(platformLimit) && platformLimit > 0 ? Math.max(0, Math.floor(platformLimit) - PLATFORM_HEADROOM) : UNKNOWN_QUOTA_CAP;
   const usage = Math.max(published.size, Number(quota.usage) || 0);
   const remaining = Math.max(0, cap - usage);
   const nextFeed = lastFeed ? lastFeed + FEED_INTERVAL_MS : 0;
-  const neededForFeed = 1 + (includeStories ? 1 : 0) + pendingStories.size;
+  const neededForFeed = 1 + (includeStories ? 1 : 0);
+  const activeFeed = records.some(item=>item.status==='ready' && !item.instagram_media_id
+    && !item.instagram_reconcile_required
+    && (item.instagram_container_id || item.instagram_children?.some(Boolean)));
+  const reservedForActiveFeed = activeFeed ? neededForFeed : 0;
   return {
     feed_interval_minutes: FEED_INTERVAL_MS / 60000,
     instagram_daily_cap: cap,
     instagram_usage: usage,
     instagram_remaining: remaining,
-    reserved_story_slots: pendingStories.size,
+    reserved_story_slots: includeStories ? 1 : 0,
+    pending_story_count: pendingStories.size,
     next_feed_eligible_at: nextFeed ? new Date(nextFeed).toISOString() : null,
-    feed_allowed: now >= nextFeed && remaining >= neededForFeed,
-    story_allowed: remaining > 0
+    feed_allowed: quota.blocked !== true && now >= nextFeed && remaining >= neededForFeed,
+    story_allowed: quota.blocked !== true && remaining > reservedForActiveFeed
   };
 }

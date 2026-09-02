@@ -8,7 +8,7 @@ import { spawnSync } from 'node:child_process';
 const script = path.resolve('scripts/publish-instagram.mjs');
 const body = 'This is a verified video with a complete descriptive caption.';
 const item = { caption_style:'source-tag-v1', id: 'test', status: 'published', content_type: 'video', video: 'media/test.mp4', source_handle: 'akademiks', source_url:'https://www.instagram.com/akademiks/reel/ExactPost/', caption_policy:'exact-source-v1', caption_source_shortcode:'ExactPost', source_caption_text:body, body, rendered_body_text: body, caption: body, threads_text: body, layout_template: 'rapwire-video-grid-safe-v1', source_policy_checked: true, rap_relevance_checked: true, content_claim_checked: true, editorial_substance_checked: true, text_overflow_checked: true, instagram_media_id: 'existing', threads_status: 'pending' };
-function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, usage = 1, total = 50, otherRecords = [], recovery = null) {
+function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, usage = 1, total = 50, otherRecords = [], recovery = null, publishStories = true) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'rapwire-test-'));
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
   fs.mkdirSync(path.join(dir, 'queue')); fs.mkdirSync(path.join(dir, 'logs'));
@@ -18,7 +18,7 @@ function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, u
   if(quotaState) fs.writeFileSync(path.join(dir,'logs/instagram-publishing-quota.json'), JSON.stringify(quotaState));
   if(recovery) fs.writeFileSync(path.join(dir,'logs/instagram-recovery.json'),JSON.stringify(recovery));
   const preload = `globalThis.fetch = async (url, options = {}) => { if(String(url).includes('/content_publishing_limit?')) return new Response(JSON.stringify({data:[{quota_usage:${usage},config:{quota_total:${total}}}]})); ${mock} };`;
-  const result = spawnSync(process.execPath, ['--import', 'data:text/javascript,' + encodeURIComponent(preload), script], { cwd: dir, encoding: 'utf8', env: { ...process.env, INSTAGRAM_ACCESS_TOKEN:'fake', INSTAGRAM_USER_ID:'fake', THREADS_ACCESS_TOKEN:'fake', THREADS_USER_ID:'fake', GITHUB_REPOSITORY:'test/test', PUBLISH_INSTAGRAM_STORIES:'true', GITHUB_STEP_SUMMARY:'' } });
+  const result = spawnSync(process.execPath, ['--import', 'data:text/javascript,' + encodeURIComponent(preload), script], { cwd: dir, encoding: 'utf8', env: { ...process.env, INSTAGRAM_ACCESS_TOKEN:'fake', INSTAGRAM_USER_ID:'fake', THREADS_ACCESS_TOKEN:'fake', THREADS_USER_ID:'fake', GITHUB_REPOSITORY:'test/test', PUBLISH_INSTAGRAM_STORIES:String(publishStories), GITHUB_STEP_SUMMARY:'' } });
   assert.equal(result.status, expectedStatus, result.stdout + result.stderr);
   return { item: JSON.parse(fs.readFileSync(path.join(dir,'queue/test.json'))), report: JSON.parse(fs.readFileSync(path.join(dir,'logs/publisher-health.json'))) };
 }
@@ -97,10 +97,10 @@ test('recent feed publication blocks the next feed but not Threads delivery', t 
   assert.equal(r.item.status,'ready'); assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_steps,1);
   assert.equal(r.report.delivery_policy.feed_interval_minutes,10);
 });
-test('daily safety budget prevents uploads even when Meta reports spare capacity', t => {
+test('two-slot platform headroom prevents uploads near the account limit', t => {
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread'},null,
-    `throw new Error('No platform work expected at the daily safety cap');`,0,null,32,100);
-  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,32);
+    `throw new Error('No platform work expected at the daily safety cap');`,0,null,98,100);
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,98);
   assert.equal(r.item.instagram_container_id,undefined);
 });
 test('ready video publishes on Threads while Instagram quota is exhausted', t => {
@@ -177,4 +177,17 @@ test('Instagram photo parent resumes and records a confirmed publication',t=>{
  const r=run(t,{...photoRecord(),instagram_container_id:'photo-container',threads_status:'published',threads_media_id:'thread'},null,
  `if(options.method==='POST') return new Response(JSON.stringify({id:'photo-live'})); if(String(url).includes('/photo-container?')) return new Response(JSON.stringify({status_code:'FINISHED'})); return new Response(JSON.stringify({id:'photo-live',permalink:'https://www.instagram.com/p/photo-live/'}));`);
  assert.equal(r.item.instagram_media_id,'photo-live');assert.equal(r.item.status,'published');assert.equal(r.item.instagram_permalink,'https://www.instagram.com/p/photo-live/');
+});
+
+test('disabled Stories leave the last budgeted slot available to the feed',t=>{
+ const r=run(t,{...item,status:'ready',instagram_media_id:undefined,instagram_container_id:'feed-container',threads_status:'published',threads_media_id:'thread'},null,
+ `if(options.method==='POST'){if(String(url).endsWith('/media'))throw new Error('No Story creation allowed');return new Response(JSON.stringify({id:'feed-live'}));}if(String(url).includes('/feed-container?'))return new Response(JSON.stringify({status_code:'FINISHED'}));return new Response(JSON.stringify({id:'feed-live',permalink:'https://www.instagram.com/p/feed-live/'}));`,0,null,47,50,[],null,false);
+ assert.equal(r.item.instagram_media_id,'feed-live');
+ assert.equal(r.item.instagram_story_container_id,undefined);
+ assert.equal(r.report.delivery_policy.reserved_story_slots,0);
+});
+test('disabled Stories never resume an outstanding Story upload',t=>{
+ const r=run(t,{...item,instagram_story_container_id:'old-story',threads_status:'published',threads_media_id:'thread'},null,`throw new Error('No publishing calls allowed');`,0,null,40,50,[],null,false);
+ assert.equal(r.report.instagram_steps,0);
+ assert.equal(r.item.instagram_story_media_id,undefined);
 });

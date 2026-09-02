@@ -80,14 +80,14 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Publish queued post to Instagram, Story, and Threads
+      - name: Publish queued post to Instagram feed and Threads
         env:
           RAPWIRE_BRAND: "24/7"
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-          PUBLISH_INSTAGRAM_STORIES: "true"
+          PUBLISH_INSTAGRAM_STORIES: "false"
           MAX_FEED_POSTS_PER_RUN: "1"
         run: node scripts/publish-instagram.mjs
 

@@ -38,7 +38,7 @@ const instagramAvailable = () => !(Date.parse(cooldown.until || "") > Date.now()
 
 async function checkInstagramRateLimit(response, payload) {
   if (payload.error?.code === 9 && payload.error?.error_subcode === 2207042) {
-    quota = { ...quota, blocked: true, detected_at: new Date().toISOString(), next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: "Instagram publishing quota exhausted (9/2207042)" };
+    quota = { ...quota, blocked: true, observed_rejection_at_usage: quota.usage, detected_at: new Date().toISOString(), next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: "Instagram publishing quota exhausted (9/2207042)" };
     await fs.mkdir(logsDir, { recursive: true });
     await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
     throw Object.assign(new Error(`Instagram publishing quota exhausted; next capacity check ${quota.next_check_at}`), { definitiveRejection: true });
@@ -106,7 +106,11 @@ async function refreshQuota() {
     const data = payload.data?.[0];
     const usage = Number(data?.quota_usage), total = Number(data?.config?.quota_total);
     if (!response.ok || payload.error || !Number.isFinite(usage) || !Number.isFinite(total) || total <= 0) throw new Error(`Quota check unavailable: ${JSON.stringify(payload)}`);
-    quota = { checked_at: new Date().toISOString(), usage, total, blocked: usage >= total, next_check_at: new Date(Date.now() + (usage >= total ? 3600000 : 15 * 60000)).toISOString(), reason: usage >= total ? "Publishing capacity exhausted" : "Capacity available" };
+    // Meta can reject at a lower usage than config.quota_total advertises.
+    // Keep its actual rejection authoritative until usage falls below it.
+    const rejectedAtUsage = quota.observed_rejection_at_usage ?? (/9\/2207042/.test(quota.reason || "") ? quota.usage : undefined);
+    const effectiveTotal = rejectedAtUsage > 0 && Date.now() - Date.parse(quota.detected_at || "") < 86400000 ? Math.min(total, rejectedAtUsage) : total;
+    quota = { ...quota, checked_at: new Date().toISOString(), usage, total, effective_total: effectiveTotal, observed_rejection_at_usage: rejectedAtUsage, blocked: usage >= effectiveTotal, next_check_at: new Date(Date.now() + (usage >= effectiveTotal ? 3600000 : 15 * 60000)).toISOString(), reason: usage >= effectiveTotal ? "Publishing capacity exhausted; honoring actual publish rejection" : "Capacity available" };
   } catch (error) {
     quota = { ...quota, blocked: true, next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: error.message };
     console.error(error.message);
@@ -183,7 +187,7 @@ async function instagramPost(endpoint, fields) {
       if (endpoint === "media_publish") {
         instagramPublicationsInRollingDay += 1;
         if (Number.isFinite(quota.usage)) {
-          quota.usage += 1; quota.blocked = quota.usage >= quota.total;
+          quota.usage += 1; quota.blocked = quota.usage >= (quota.effective_total || quota.total);
           await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
         }
       }
@@ -192,8 +196,8 @@ async function instagramPost(endpoint, fields) {
     const mediaNotReady = endpoint === "media_publish"
       && payload.error?.code === 9007
       && payload.error?.error_subcode === 2207027;
-    const retryable = (payload.error?.code === 1 || mediaNotReady) && attempt < 2;
-    if (!retryable) throw Object.assign(new Error(`${endpoint} failed: ${JSON.stringify(payload)}`), { definitiveRejection: Boolean(payload.error) && response.status < 500 });
+    const retryable = mediaNotReady && attempt < 2;
+    if (!retryable) throw Object.assign(new Error(`${endpoint} failed: ${JSON.stringify(payload)}`), { definitiveRejection: Boolean(payload.error) && payload.error.code !== 1 && response.status < 500 });
     await sleep((attempt + 1) * 15_000);
   }
 }

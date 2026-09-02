@@ -33,9 +33,9 @@ export function buildVideoCaption(raw, source, registry = []) {
   // Retain only handles actually verified as people, never infer one from URL paths.
   text = text.replace(/@[A-Za-z0-9_.]+/g, handle => verified.some(p => `@${p.handle}`.toLowerCase() === handle.toLowerCase()) ? handle : '').replace(/\s+/g, ' ').trim();
   const footer = `\n\nRap Wire 24/7\n@Rapwire247\n@${source}`;
-  const legal = /\b(trial|court|murder|attacking|arrest|testif|testimony|fbi|wire|cross.examination|judge)\w*\b/i.test(text);
-  const prefix = legal ? 'The source clip discusses: ' : '';
-  const caveat = legal ? ' Allegations are not findings of guilt.' : '';
+  const legal = /\b(trial|court|murder|attacking|arrest|testif|testimony|fbi|wire|cross.examination|judge|lies|lied|lying|snitch|suspect|charged|plead|lawsuit|witness|prosecutor)\w*\b/i.test(text);
+  const prefix = legal ? 'Source commentary: ' : '';
+  const caveat = legal ? ' These are source claims, not findings of guilt.' : '';
   const limit = 490 - footer.length - prefix.length - caveat.length;
   if (text.length > limit) {
     const sentences = text.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [];

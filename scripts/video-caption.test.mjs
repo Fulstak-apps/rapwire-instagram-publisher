@@ -20,3 +20,8 @@ test('caption evidence must use same shortcode', () => {
   const record = {caption_policy:'exact-source-v1',caption_source_shortcode:'other',source_url:url,source_caption_text:'A complete description of a studio recording.',body:'A complete description of a studio recording.'};
   assert.equal(captionIsBound(record),false);
 });
+test('accusatory source commentary is attributed instead of presented as a verdict', () => {
+  const result = buildVideoCaption('OTF Vonni caught in MULTIPLE LIES. Their stories did not add up.', 'traploreross');
+  assert.match(result.body,/^Source commentary:/);
+  assert.match(result.body,/source claims, not findings of guilt/);
+});

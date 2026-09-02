@@ -18,12 +18,19 @@ Upload containers, publish-request markers and resulting media IDs are saved. Pe
 
 Instagram rate-limit code 4 and related limits start a 30-minute cooldown, doubling for repeated limits up to four hours, honoring longer server Retry-After values. This is our retry window, not a guarantee that Meta resets its limit then. The local safety cap counts feed AND Story publications. A failed Story is retried; a failed Threads operation has its own retry timestamp.
 
+Media Publish Limit Exceeded (9/2207042) is a separate account-wide publishing hold. Check capacity hourly while blocked; do not keep retrying publication every two minutes. If the published quota configuration disagrees with an actual rejection, honor the observed rejection ceiling until usage drops below it. The next check is not a promised reset time. Threads remains independent of the Instagram hold.
+
+## Matching captions to videos
+
+The collector reads the canonical shortcode and caption from the same post used for capture, never the surrounding article/comments. Captured complete media must uniquely match the visible video's duration and dimensions, with matching audio. Pending legacy items are repaired before new collection; already-live posts are not modified. Generic, missing, truncated or ambiguous captions are held for review, never replaced with filler. Verified artist handles come only from `monitor/artist-handles.json` and expire after 30 days. Source credit stays in the caption footer.
+
 ## See what happened
 
 [GitHub Actions](https://github.com/Fulstak-apps/rapwire-instagram-publisher/actions/workflows/publish-instagram.yml): open a run's Summary. The delivery summary distinguishes confirmed media IDs, waiting/cooldown, and failure. A green workflow alone is not proof a post exists.
 
 - `logs/publisher-health.json`: latest full publishing-cycle result.
 - `logs/instagram-cooldown.json`: next eligible Instagram retry time (UTC).
+- `logs/instagram-publishing-quota.json`: observed quota, enforced hold and next capacity check (UTC).
 - `logs/publish-attempts.jsonl`: per-platform events.
 - `queue/*.json`: authoritative per-item containers, IDs, verification and permalinks.
 - Collector stdout/stderr: runtime `logs/repost-monitor.out.log` / `logs/repost-monitor.err.log`.
@@ -32,6 +39,6 @@ Instagram rate-limit code 4 and related limits start a 30-minute cooldown, doubl
 
 ## Verification
 
-`node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs`
+`node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs`
 
 The tests use fake platform responses, never live credentials. Live feed/Threads verification reads the returned media ID and records its permalink. Stories record a readback of the returned Story ID; there is no separate Threads Story publishing endpoint.

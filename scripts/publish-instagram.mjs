@@ -289,6 +289,7 @@ for (const file of files) {
       item.threads_status = "published";
       item.threads_media_id = published.id;
       item.threads_published_at = new Date().toISOString();
+      delete item.threads_error;
       console.log(`Published Threads carousel ${file}: ${published.id}`);
     } catch (error) {
       item.threads_status = "failed";

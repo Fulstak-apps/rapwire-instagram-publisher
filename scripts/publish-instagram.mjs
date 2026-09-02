@@ -136,6 +136,9 @@ async function save(itemPath, item) {
 async function instagramPost(endpoint, fields) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
     assertInstagramAvailable();
+    if (endpoint === "media_publish" && instagramPublicationsInRollingDay >= 96) {
+      throw Object.assign(new Error("Rolling-day safety cap reached (feed plus Stories); queued for later"), { definitiveRejection: true });
+    }
     const body = new URLSearchParams({ ...fields, access_token: instagramToken });
     const response = await fetch(`${instagramBase}/${instagramUserId}/${endpoint}`, {
       method: "POST",
@@ -144,7 +147,10 @@ async function instagramPost(endpoint, fields) {
     });
     const payload = await response.json();
     await checkInstagramRateLimit(response, payload);
-    if (response.ok && !payload.error) return payload;
+    if (response.ok && !payload.error) {
+      if (endpoint === "media_publish") instagramPublicationsInRollingDay += 1;
+      return payload;
+    }
     const mediaNotReady = endpoint === "media_publish"
       && payload.error?.code === 9007
       && payload.error?.error_subcode === 2207027;
@@ -351,23 +357,26 @@ function contentPromiseIsKept(item) {
 
 const rollingDayStart = Date.now() - 24 * 60 * 60 * 1000;
 let feedPostsPublishedInRollingDay = 0;
+let instagramPublicationsInRollingDay = 0;
 for (const file of files) {
   const item = JSON.parse(await fs.readFile(path.join(queueDir, file), "utf8"));
   if (item.status === "published" && item.instagram_media_id && item.published_at && Date.parse(item.published_at) >= rollingDayStart) {
     feedPostsPublishedInRollingDay += 1;
   }
+  if (item.instagram_media_id && Date.parse(item.published_at || item.instagram_published_at || "") >= rollingDayStart) instagramPublicationsInRollingDay += 1;
+  if (item.instagram_story_media_id && Date.parse(item.instagram_story_published_at || "") >= rollingDayStart) instagramPublicationsInRollingDay += 1;
 }
 
 // One processing slot. Existing uploads retain
 // their slots across runs so slow processing cannot create an upload pileup.
 const processingCount = queueRecords.filter(({ item }) => item.status === "ready"
-  && item.content_type === "video" && item.instagram_container_id).length;
+  && item.content_type === "video" && item.instagram_container_id && !item.instagram_reconcile_required).length;
 const pendingStory = queueRecords.some(({ item }) => item.status === "published"
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
   && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"));
 const preferStory = pendingStory && pacing.last_instagram_lane === "feed";
-const uploadSlots = instagramAvailable() && !preferStory
+const uploadSlots = instagramAvailable() && !preferStory && instagramPublicationsInRollingDay < 95
   ? Math.max(0, Math.min(1 - processingCount, maxFeedPostsPerRollingDay - feedPostsPublishedInRollingDay)) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
   .filter(({ item }) => item.status === "ready" && item.content_type === "video"
@@ -459,7 +468,7 @@ for (const file of files) {
       continue;
     }
     let published;
-    if (!instagramAvailable() || instagramSteps >= 1 || preferStory || Date.parse(item.instagram_retry_at || "") > Date.now()) continue;
+    if (!instagramAvailable() || instagramSteps >= 1 || preferStory || item.instagram_reconcile_required || Date.parse(item.instagram_retry_at || "") > Date.now()) continue;
     if (isVideoItem) {
       if (!item.instagram_container_id || videoAttemptsThisRun >= 1) continue;
       videoAttemptsThisRun += 1;
@@ -470,7 +479,7 @@ for (const file of files) {
       published = isVideoItem ? await publishInstagramReel(item, itemPath) : await publishInstagramFeed(item);
     } catch (error) {
       item.instagram_error = error.message;
-      item.instagram_retry_at ||= new Date(Date.now() + 10 * 60_000).toISOString();
+      if (!(Date.parse(item.instagram_retry_at || "") > Date.now())) item.instagram_retry_at = new Date(Date.now() + 10 * 60_000).toISOString();
       await save(itemPath, item);
       await logAttempt({ file, id: item.id, platform: "instagram", status: "failed", error: error.message });
       console.error(`Instagram failed for ${file}: ${error.message}`);
@@ -514,7 +523,7 @@ for (const file of files) {
     } catch (error) {
       item.instagram_story_status = "failed";
       item.instagram_story_error = error.message;
-      item.instagram_story_retry_at ||= new Date(Date.now() + 10 * 60_000).toISOString();
+      if (!(Date.parse(item.instagram_story_retry_at || "") > Date.now())) item.instagram_story_retry_at = new Date(Date.now() + 10 * 60_000).toISOString();
       await logAttempt({ file, id: item.id, platform: "instagram_story", status: "failed", error: error.message });
       console.error(`Instagram Story failed for ${file}: ${error.message}`);
     }

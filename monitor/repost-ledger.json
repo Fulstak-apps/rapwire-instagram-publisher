@@ -455,6 +455,42 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dcw87TmPq3e/",
       "queue_id": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-",
       "video": "media/139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-.mp4"
+    },
+    "DcwMTlkyO3Q": {
+      "queue_id": "112-street-fighter-trailer-video",
+      "source_url": "https://www.instagram.com/p/DcwMTlkyO3Q/",
+      "source_handle": "saycheesetv",
+      "video": "media/112-street-fighter-trailer-video.mp4"
+    },
+    "Dcsia6MhQ_P": {
+      "queue_id": "113-young-dolph-cashier-tip-video",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/Dcsia6MhQ_P/",
+      "source_handle": "trapmatictv",
+      "video": "media/113-young-dolph-cashier-tip-video.mp4"
+    },
+    "DcsdOUIBL0H": {
+      "queue_id": "114-trippie-redd-brazil-750k-performance-video",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DcsdOUIBL0H/",
+      "source_handle": "trapmatictv",
+      "video": "media/114-trippie-redd-brazil-750k-performance-video.mp4"
+    },
+    "DcsbqRCB2Q6": {
+      "queue_id": "115-young-dolph-22-million-offer-video",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DcsbqRCB2Q6/",
+      "source_handle": "trapmatictv",
+      "video": "media/115-young-dolph-22-million-offer-video.mp4"
+    },
+    "Dcv3olVDjrL": {
+      "queue_id": "136-akademiks-repost-video",
+      "source_url": "https://www.instagram.com/akademiks/p/Dcv3olVDjrL/",
+      "source_handle": "akademiks",
+      "video": "media/136-akademiks-repost-video.mp4"
+    },
+    "Dcw709iP2FT": {
+      "queue_id": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dcw709iP2FT/",
+      "source_handle": "traploreross",
+      "video": "media/140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir.mp4"
     }
   },
   "runs": [
@@ -1196,6 +1232,21 @@
       ],
       "errors": [],
       "finished_at": "2026-09-02T04:59:05.306Z"
+    },
+    {
+      "started_at": "2026-09-02T05:01:12.015Z",
+      "candidates": 48,
+      "queued": [
+        "126-raplisted-repost-video"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/raplisted_/reel/DcwQbJ0hLhn/",
+          "stage": "logo_rebuild",
+          "error": "Command failed: git add queue media monitor/repost-ledger.json\nfatal: mmap failed: Resource deadlock avoided\n"
+        }
+      ],
+      "finished_at": "2026-09-02T05:07:02.025Z"
     }
   ]
 }

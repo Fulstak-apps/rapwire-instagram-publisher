@@ -9,12 +9,8 @@
     <string>/bin/zsh</string>
     <string>/Users/dw/Library/Application Support/RapWire/dispatch-publisher.sh</string>
   </array>
-  <key>StartCalendarInterval</key>
-  <array>
-    <dict><key>Minute</key><integer>0</integer></dict>
-    <dict><key>Minute</key><integer>20</integer></dict>
-    <dict><key>Minute</key><integer>40</integer></dict>
-  </array>
+  <key>StartInterval</key>
+  <integer>120</integer>
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>

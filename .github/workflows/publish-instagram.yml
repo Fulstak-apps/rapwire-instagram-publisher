@@ -6,6 +6,7 @@ on:
     paths-ignore:
       - "queue/**"
       - "media/**"
+      - "logs/**"
   workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
@@ -20,10 +21,19 @@ concurrency:
 jobs:
   monitor-and-publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Test resumable publisher
+        run: node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -35,6 +45,9 @@ jobs:
 
       - name: Validate approved media formats
         run: node scripts/block-non-ai.mjs
+
+      - name: Hold duplicate queue entries
+        run: node scripts/dedupe-queue.mjs
 
       - name: Save validated queue state
         run: |
@@ -69,11 +82,15 @@ jobs:
 
       - name: Save publication log
         if: ${{ always() }}
-        run: |
-          if [ -z "$(git status --porcelain -- queue logs)" ]; then exit 0; fi
-          git config user.name "RapWire 24/7"
-          git config user.email "actions@users.noreply.github.com"
-          git add -- queue logs
-          git commit -m "Log RapWire publication" || true
-          git pull --rebase origin main || true
-          git push || true
+        run: bash scripts/save-publication-state.sh
+
+      - name: Preserve recoverable publication state
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: publication-state-${{ github.run_id }}
+          path: |
+            queue/*.json
+            logs/*.json
+            logs/publish-attempts.jsonl
+          retention-days: 7

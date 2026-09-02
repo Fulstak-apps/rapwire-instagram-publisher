@@ -140,19 +140,27 @@ async function acquireLock() {
   await fs.mkdir(path.dirname(lockPath), { recursive: true });
   try {
     const existing = JSON.parse(await fs.readFile(lockPath, "utf8"));
-    const ageMs = Date.now() - Date.parse(existing.started_at || 0);
-    if (Number.isFinite(ageMs) && ageMs < 15 * 60 * 1000) {
+    let alive = false;
+    try { process.kill(existing.pid, 0); alive = true; } catch (error) { if (error.code === "EPERM") alive = true; }
+    if (alive) {
       console.log(JSON.stringify({ status: "locked", lock: existing }));
       process.exit(0);
     }
   } catch {
     // No active lock or unreadable stale lock.
   }
-  await fs.writeFile(lockPath, JSON.stringify({ pid: process.pid, started_at: new Date().toISOString() }, null, 2));
+  await fs.rm(lockPath, { force: true });
+  try {
+    await fs.writeFile(lockPath, JSON.stringify({ pid: process.pid, started_at: new Date().toISOString() }, null, 2), { flag: "wx" });
+  } catch (error) {
+    if (error.code === "EEXIST") process.exit(0);
+    throw error;
+  }
 }
 
 async function releaseLock() {
-  await fs.rm(lockPath, { force: true });
+  const current = await readJson(lockPath, {});
+  if (current.pid === process.pid) await fs.rm(lockPath, { force: true });
 }
 
 function buildBody(source, visibleCaption) {
@@ -222,7 +230,14 @@ async function queueCapture(ledger, candidate, queueNumber) {
 
 async function commitAndPush(createdIds) {
   if (!createdIds.length) return;
-  await execFileAsync("git", ["add", "queue", "media", "monitor/repost-ledger.json"]);
+  const paths = ["monitor/repost-ledger.json"];
+  for (const id of createdIds) {
+    const name = path.join("queue", `${id}.json`);
+    const item = await readJson(name, {});
+    paths.push(name);
+    if (item.video) paths.push(item.video);
+  }
+  await execFileAsync("git", ["add", "--", ...paths]);
   await execFileAsync("git", ["commit", "-m", `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}`]).catch((error) => {
     if (!/nothing to commit/i.test(error.stdout || error.stderr || "")) throw error;
   });
@@ -247,13 +262,41 @@ try {
     errors: []
   };
 
+  // Reconcile the durable queue before selecting: a crash after saving an item
+  // but before updating the ledger must not cause a duplicate capture.
+  for (const name of (await fs.readdir(queueDir)).filter(name => name.endsWith(".json"))) {
+    const item = await readJson(path.join(queueDir, name), {});
+    const code = shortcodeFromUrl(item.source_url || "");
+    if (code && item.content_type === "video") ledger.queued_shortcodes[code] ||= { queue_id: item.id, source_url: item.source_url, source_handle: item.source_handle, video: item.video };
+  }
+
+  // Resume interrupted queue delivery even if this cycle finds no new video.
+  const unsent = [];
+  for (const name of (await fs.readdir(queueDir)).filter(name => name.endsWith(".json"))) {
+    const item = await readJson(path.join(queueDir, name), {});
+    if (item.status !== "ready" || item.content_type !== "video" || name !== `${item.id}.json` || !sources.some(source => source.handle === item.source_handle)) continue;
+    const { stdout } = await execFileAsync("git", ["status", "--porcelain", "--", path.join("queue", name), item.video]);
+    if (stdout.trim()) unsent.push(item.id);
+  }
+  if (unsent.length) {
+    await writeJson(ledgerPath, ledger);
+    await commitAndPush(unsent);
+  } else {
+    // A prior local commit may not yet have reached GitHub.
+    const { stdout } = await execFileAsync("git", ["status", "--porcelain", "--untracked-files=no"]);
+    if (!stdout.trim()) {
+      await execFileAsync("git", ["pull", "--rebase", "origin", "main"]);
+      await execFileAsync("git", ["push", "origin", "HEAD:main"]);
+    }
+  }
+
   // Replace old burned-in right-side branding from the original capture.
   // Use a new media path so public media caches cannot serve the old render.
   for (const name of (await fs.readdir(queueDir)).sort()) {
     if (!/^(124|125|126|127|128|129)-.*\.json$/.test(name)) continue;
     const itemPath = path.join(queueDir, name);
     const item = await readJson(itemPath, {});
-    if (item.status !== "ready" || item.logo_position === "bottom-left") continue;
+    if (item.status !== "ready" || item.logo_position === "bottom-left" || item.instagram_container_id) continue;
     try {
       await capture(item.source_url, { headless: true });
       const shortcode = shortcodeFromUrl(item.source_url);

@@ -25,6 +25,8 @@ const queueRecords = await Promise.all(queueNames.map(async (name) => ({
 })));
 const files = queueRecords
   .sort((left, right) => {
+    const readyDelta = Number(right.item.status === "ready") - Number(left.item.status === "ready");
+    if (readyDelta) return readyDelta;
     const priorityDelta = Number(right.item.publish_priority || 0) - Number(left.item.publish_priority || 0);
     return priorityDelta || left.name.localeCompare(right.name);
   })
@@ -34,6 +36,7 @@ const files = queueRecords
 const maxFeedPostsPerRun = Math.max(1, Number(process.env.MAX_FEED_POSTS_PER_RUN || 1));
 const maxFeedPostsPerRollingDay = 96;
 let feedPostsPublishedThisRun = 0;
+let olderStoryAttemptsThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const requestTimeoutMs = 90_000;
 const signature = "@Rapwire247";
@@ -249,6 +252,7 @@ for (const file of files) {
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
+  const wasReady = item.status === "ready";
   const isVideoItem = item.content_type === "video";
   if (!isVideoItem && (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 10)) {
     console.error(`Skipped ${file}: RapWire carousels require 2-10 complete, readable slides`);
@@ -323,7 +327,9 @@ for (const file of files) {
   const retryTransientStoryFailure = item.instagram_story_status === "failed"
     && /(?:Media ID is not available|2207027)/i.test(String(item.instagram_story_error || ""));
   const storyPending = !item.instagram_story_status || item.instagram_story_status === "pending";
-  if (publishInstagramStories && (item.story || isVideoItem) && (storyPending || retryTransientStoryFailure)) {
+  if (publishInstagramStories && (item.story || isVideoItem) && (storyPending || retryTransientStoryFailure)
+    && (wasReady || olderStoryAttemptsThisRun < 1)) {
+    if (!wasReady) olderStoryAttemptsThisRun += 1;
     try {
       const published = await publishInstagramStory(item);
       item.instagram_story_status = "published";

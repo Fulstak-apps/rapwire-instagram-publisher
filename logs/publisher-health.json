@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-02T23:09:29.232Z",
+  "checked_at": "2026-09-02T23:13:28.671Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-02T22:56:55.708Z",
+    "checked_at": "2026-09-02T23:13:22.602Z",
     "usage": 47,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-02T23:11:55.708Z",
+    "next_check_at": "2026-09-02T23:28:22.602Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -16,30 +16,29 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 46,
-    "instagram_remaining": 2,
+    "instagram_usage": 47,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-02T23:19:29.136Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T23:07:02.550Z",
+  "threads_next_eligible_at": "2026-09-02T23:23:28.329Z",
   "publications": [
     {
-      "file": "132-akademiks-repost-video.json",
-      "id": "132-akademiks-repost-video",
-      "platform": "instagram",
+      "file": "168-akademiks-woody-says-durk-is-beating-this-case.json",
+      "id": "168-akademiks-woody-says-durk-is-beating-this-case",
+      "platform": "threads",
       "status": "published",
-      "media_id": "17906507643494182",
-      "content_type": "video"
+      "media_id": "18351008785169479"
     }
   ],
   "failures": [],

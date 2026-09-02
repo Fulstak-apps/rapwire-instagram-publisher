@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T20:25:46.623Z",
+  "checked_at": "2026-09-02T20:29:59.427Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T20:19:36.913Z",
@@ -30,8 +30,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T20:25:35.707Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-02T20:39:59.023Z",
+  "publications": [
+    {
+      "file": "157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d.json",
+      "id": "157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18107921681110391"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

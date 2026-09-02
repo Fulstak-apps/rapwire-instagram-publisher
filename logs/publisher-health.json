@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T22:06:08.330Z",
+  "checked_at": "2026-09-02T22:10:27.507Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T22:06:00.446Z",
@@ -16,15 +16,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 42,
-    "instagram_remaining": 6,
+    "instagram_usage": 43,
+    "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-02T22:16:08.174Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -32,16 +32,7 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-02T22:11:45.731Z",
-  "publications": [
-    {
-      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
-      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18115197313763224",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

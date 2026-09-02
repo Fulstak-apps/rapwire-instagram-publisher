@@ -804,6 +804,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
       "queue_id": "165-reposted-from-akademiks-breh-daejon-love-mugshot-is-released"
+    },
+    "Dcwsq2JGVYH": {
+      "queued_at": "2026-09-02T20:49:42.642Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
+      "queue_id": "166-akademiks-drew-findling-vonni-going-back-and-forth"
     }
   },
   "runs": [
@@ -7640,20 +7646,18 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 1,
       "finished_at": "2026-09-02T20:46:40.829Z"
+    },
+    {
+      "started_at": "2026-09-02T20:48:43.591Z",
+      "candidates": 48,
+      "queued": [
+        "166-akademiks-drew-findling-vonni-going-back-and-forth"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-02T20:49:42.642Z"
     }
   ],
-  "vip_pending": {
-    "Dcwsq2JGVYH": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
-      "shortcode": "Dcwsq2JGVYH",
-      "first_seen_at": "2026-09-02T19:52:34.711Z",
-      "profile_position": 9,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported",
-      "last_attempt_at": "2026-09-02T20:19:59.026Z",
-      "retry_at": "2026-09-02T20:21:59.026Z"
-    }
-  }
+  "vip_pending": {}
 }

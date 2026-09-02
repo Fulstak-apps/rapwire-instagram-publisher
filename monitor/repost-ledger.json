@@ -401,6 +401,36 @@
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/DczAC7Uh2i9/",
       "view_count": 0
+    },
+    "DczBCXRTpwU": {
+      "seen_at": "2026-09-02T19:52:34.711Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DczBCXRTpwU/",
+      "view_count": 0
+    },
+    "DczBcGNgRD0": {
+      "seen_at": "2026-09-02T19:52:34.711Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DczBcGNgRD0/",
+      "view_count": 0
+    },
+    "DczBpu9SgLI": {
+      "seen_at": "2026-09-02T19:52:34.711Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczBpu9SgLI/",
+      "view_count": 0
+    },
+    "DczBmQNygjY": {
+      "seen_at": "2026-09-02T19:52:34.711Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczBmQNygjY/",
+      "view_count": 0
+    },
+    "DczBG63SMue": {
+      "seen_at": "2026-09-02T19:52:34.711Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczBG63SMue/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -698,6 +728,13 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DczAC7Uh2i9/",
       "queue_id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
       "video": "media/155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.mp4"
+    },
+    "DczBpu9SgLI": {
+      "queued_at": "2026-09-02T19:57:43.515Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczBpu9SgLI/",
+      "queue_id": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got",
+      "video": "media/156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got.mp4"
     }
   },
   "runs": [
@@ -7381,6 +7418,110 @@
       "errors": [],
       "mode": "discovery",
       "finished_at": "2026-09-02T19:49:06.757Z"
+    },
+    {
+      "started_at": "2026-09-02T19:51:44.155Z",
+      "candidates": 48,
+      "queued": [
+        "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DczBcGNgRD0/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video:visible').first() to be visible\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 9,
+      "finished_at": "2026-09-02T19:57:43.515Z"
     }
-  ]
+  ],
+  "vip_pending": {
+    "DczBcGNgRD0": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DczBcGNgRD0/",
+      "shortcode": "DczBcGNgRD0",
+      "first_seen_at": "2026-09-02T19:52:34.711Z",
+      "profile_position": 0,
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video:visible').first() to be visible\n",
+      "last_attempt_at": "2026-09-02T19:52:58.476Z",
+      "retry_at": "2026-09-02T19:54:58.476Z"
+    },
+    "DcyUMrwuY-C": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DcyUMrwuY-C/",
+      "shortcode": "DcyUMrwuY-C",
+      "first_seen_at": "2026-09-02T19:52:34.711Z",
+      "profile_position": 3,
+      "state": "pending",
+      "attempts": 0
+    },
+    "DcxkMkMFS_H": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
+      "shortcode": "DcxkMkMFS_H",
+      "first_seen_at": "2026-09-02T19:52:34.711Z",
+      "profile_position": 4,
+      "state": "pending",
+      "attempts": 0
+    },
+    "Dcw2I-UjRkc": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
+      "shortcode": "Dcw2I-UjRkc",
+      "first_seen_at": "2026-09-02T19:52:34.711Z",
+      "profile_position": 7,
+      "state": "pending",
+      "attempts": 0
+    },
+    "Dcwsq2JGVYH": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
+      "shortcode": "Dcwsq2JGVYH",
+      "first_seen_at": "2026-09-02T19:52:34.711Z",
+      "profile_position": 9,
+      "state": "pending",
+      "attempts": 0
+    },
+    "DcwhYQSGSlL": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DcwhYQSGSlL/",
+      "shortcode": "DcwhYQSGSlL",
+      "first_seen_at": "2026-09-02T19:52:34.711Z",
+      "profile_position": 10,
+      "state": "pending",
+      "attempts": 0
+    },
+    "Dcwc9BUAgne": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dcwc9BUAgne/",
+      "shortcode": "Dcwc9BUAgne",
+      "first_seen_at": "2026-09-02T19:52:34.711Z",
+      "profile_position": 11,
+      "state": "pending",
+      "attempts": 0
+    },
+    "DczBmQNygjY": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczBmQNygjY/",
+      "shortcode": "DczBmQNygjY",
+      "first_seen_at": "2026-09-02T19:52:34.711Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
+    },
+    "DczBG63SMue": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczBG63SMue/",
+      "shortcode": "DczBG63SMue",
+      "first_seen_at": "2026-09-02T19:52:34.711Z",
+      "profile_position": 2,
+      "state": "pending",
+      "attempts": 0
+    }
+  }
 }

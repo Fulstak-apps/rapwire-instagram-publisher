@@ -1,3 +1,4 @@
+import {signedCaption,refreshCaptionStyle} from "./caption-style.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import {advanceMediaPost} from "./carousel-state.mjs";
@@ -67,6 +68,9 @@ const queueRecords = await Promise.all(queueNames.map(async (name) => ({
   name,
   item: JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8"))
 })));
+for (const {name,item} of queueRecords) {
+  if (refreshCaptionStyle(item)) await save(path.join(queueDir,name),item);
+}
 const files = queueRecords
   .sort((left, right) => {
     const readyDelta = Number(right.item.status === "ready") - Number(left.item.status === "ready");
@@ -98,7 +102,6 @@ let feedPostsPublishedThisRun = 0;
 let olderStoryAttemptsThisRun = 0;
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const requestTimeoutMs = 90_000;
-const signature = "@Rapwire247";
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
 
 async function refreshQuota() {
@@ -134,17 +137,6 @@ async function logAttempt(event) {
   runEvents.push(event);
   await fs.mkdir(logsDir, { recursive: true });
   await fs.appendFile(attemptsLog, `${JSON.stringify({ timestamp: new Date().toISOString(), ...event })}\n`);
-}
-
-function signedCaption(value, item = {}) {
-  const source = String(item.source_handle || "").replace(/^@/, "");
-  const sourceLine = /^[A-Za-z0-9_.]+$/.test(source) ? `\n@${source}` : "";
-  return String(value || "")
-    .trim()
-    .replace(/(?:\n\n)?Rap\s*Wire 24\/7\.?\s*\n@Rapwire247(?:\s*\n@[A-Za-z0-9_.]+)?\s*$/i, "")
-    .replace(/(?:\n\n)?RapWire 24\/7\.?\s*$/i, "")
-    .replace(/(?:\n\n)?@Rapwire247\s*$/i, "")
-    .trim() + `\n\nRap Wire 24/7\n${signature}${sourceLine}`;
 }
 
 function slideUrl(item, index) {

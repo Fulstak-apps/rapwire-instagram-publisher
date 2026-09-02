@@ -344,6 +344,27 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DctrlGAoXuB/",
       "queue_id": "129-raplisted-repost-video",
       "video": "media/129-raplisted-repost-video.mp4"
+    },
+    "DcxF65qtXmJ": {
+      "queued_at": "2026-09-02T03:49:50.829Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DcxF65qtXmJ/",
+      "queue_id": "130-akademiks-repost-video",
+      "video": "media/130-akademiks-repost-video.mp4"
+    },
+    "DcxFpA8tQlB": {
+      "queued_at": "2026-09-02T03:51:15.340Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DcxFpA8tQlB/",
+      "queue_id": "131-akademiks-repost-video",
+      "video": "media/131-akademiks-repost-video.mp4"
+    },
+    "DcwyeKlgL5p": {
+      "queued_at": "2026-09-02T03:52:45.110Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DcwyeKlgL5p/",
+      "queue_id": "132-akademiks-repost-video",
+      "video": "media/132-akademiks-repost-video.mp4"
     }
   },
   "runs": [
@@ -830,6 +851,90 @@
         }
       ],
       "finished_at": "2026-09-02T03:37:04.463Z"
+    },
+    {
+      "started_at": "2026-09-02T03:42:51.195Z",
+      "candidates": 48,
+      "queued": [
+        "130-akademiks-repost-video",
+        "131-akademiks-repost-video",
+        "132-akademiks-repost-video"
+      ],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwdVfNFJBL/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwPizElCPC/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DcwM-FbFHk4/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DcwGCkqDiTk/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/Dcv2Mf2O82Y/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DcuAOMeDpDj/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DctyaLfCCDR/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DctkvEoCEGc/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
+          "stage": "queue",
+          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
+        }
+      ],
+      "finished_at": "2026-09-02T03:52:45.110Z"
     }
   ]
 }

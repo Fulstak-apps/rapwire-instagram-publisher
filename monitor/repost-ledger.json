@@ -774,6 +774,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DcwhYQSGSlL/",
       "queue_id": "160-reposted-from-akademiks-6ix9ine-speaks"
+    },
+    "Dcwc9BUAgne": {
+      "queued_at": "2026-09-02T20:26:49.940Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dcwc9BUAgne/",
+      "queue_id": "161-reposted-from-akademiks-drew-findling-is-now-on-cross-of-otf-von"
     }
   },
   "runs": [
@@ -7544,6 +7550,17 @@
       "mode": "discovery",
       "vip_pending": 6,
       "finished_at": "2026-09-02T20:23:49.546Z"
+    },
+    {
+      "started_at": "2026-09-02T20:25:52.765Z",
+      "candidates": 48,
+      "queued": [
+        "161-reposted-from-akademiks-drew-findling-is-now-on-cross-of-otf-von"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-02T20:26:49.940Z"
     }
   ],
   "vip_pending": {
@@ -7606,15 +7623,6 @@
       "last_error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported",
       "last_attempt_at": "2026-09-02T20:19:59.026Z",
       "retry_at": "2026-09-02T20:21:59.026Z"
-    },
-    "Dcwc9BUAgne": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/Dcwc9BUAgne/",
-      "shortcode": "Dcwc9BUAgne",
-      "first_seen_at": "2026-09-02T19:52:34.711Z",
-      "profile_position": 11,
-      "state": "pending",
-      "attempts": 0
     }
   }
 }

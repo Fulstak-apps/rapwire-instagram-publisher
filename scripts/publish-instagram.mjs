@@ -155,9 +155,13 @@ async function publishInstagramReel(item) {
 }
 
 async function publishInstagramStory(item) {
-  // Stories use the dedicated 1080x1920 asset. Never publish a 4:5 feed slide as a Story.
-  if (!item.story) throw new Error("Story asset missing");
-  const story = await instagramPost("media", { media_type: "STORIES", image_url: storyUrl(item) });
+  // Image/carousel stories use the dedicated 1080x1920 asset. Video reposts use
+  // the same playable MP4 so every post also appears in Instagram Stories.
+  const isVideoItem = item.content_type === "video";
+  if (!isVideoItem && !item.story) throw new Error("Story asset missing");
+  const story = await instagramPost("media", isVideoItem
+    ? { media_type: "STORIES", video_url: videoUrl(item) }
+    : { media_type: "STORIES", image_url: storyUrl(item) });
   await waitForInstagramContainer(story.id);
   return instagramPost("media_publish", { creation_id: story.id });
 }
@@ -196,6 +200,12 @@ function contentPromiseIsKept(item) {
   const headline = String(item.headline || "");
   const body = String(item.body || "");
   const words = body.trim().split(/\s+/).filter(Boolean);
+  // Reposts are playable clips, not newsroom explainers.  They intentionally
+  // use short captions, so applying the 45-word explainer requirement here
+  // silently prevents every otherwise-valid video from publishing.
+  if (item.content_type === "video") {
+    return words.length >= 8 && /[.!?]/.test(body);
+  }
   const numberedDetails = body.match(/\b\d+\.\s/g) || [];
   if (/(?:\[\s*(?:…|\.{3})\s*\]|(?:…|\.{3}))\s*$/.test(body) || /\[\s*(?:…|\.{3})\s*\]/.test(body)) {
     return false;
@@ -285,7 +295,8 @@ for (const file of files) {
 
   const retryTransientStoryFailure = item.instagram_story_status === "failed"
     && /(?:Media ID is not available|2207027)/i.test(String(item.instagram_story_error || ""));
-  if (publishInstagramStories && item.story && (!item.instagram_story_status || retryTransientStoryFailure)) {
+  const storyPending = !item.instagram_story_status || item.instagram_story_status === "pending";
+  if (publishInstagramStories && (item.story || isVideoItem) && (storyPending || retryTransientStoryFailure)) {
     try {
       const published = await publishInstagramStory(item);
       item.instagram_story_status = "published";
@@ -300,6 +311,13 @@ for (const file of files) {
       await logAttempt({ file, id: item.id, platform: "instagram_story", status: "failed", error: error.message });
       console.error(`Instagram Story failed for ${file}: ${error.message}`);
     }
+    await save(itemPath, item);
+  }
+
+  if (!item.threads_story_status) {
+    item.threads_story_status = "not_supported";
+    item.threads_story_note = "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.";
+    await logAttempt({ file, id: item.id, platform: "threads_story", status: "not_supported", reason: "no_threads_story_publish_endpoint" });
     await save(itemPath, item);
   }
 

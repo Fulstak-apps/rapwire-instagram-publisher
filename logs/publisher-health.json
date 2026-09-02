@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T07:47:14.710Z",
+  "checked_at": "2026-09-02T07:51:15.579Z",
   "instagram_cooldown_until": null,
   "instagram_steps": 1,
   "threads_steps": 1,
@@ -7,12 +7,19 @@
     {
       "file": "125-raplisted-repost-video.json",
       "id": "125-raplisted-repost-video",
-      "platform": "instagram",
+      "platform": "threads",
       "status": "published",
-      "media_id": "17898880164596634",
-      "content_type": "video"
+      "media_id": "17900969304582961"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "file": "123-on-instagram-blueface-demoted-his-bm-nevaeh-from-being-his-main-.json",
+      "id": "123-on-instagram-blueface-demoted-his-bm-nevaeh-from-being-his-main-",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "media_publish failed: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207042,\"error_user_title\":\"Media Publish Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be published by Content Publishing API.\",\"fbtrace_id\":\"ASNYGWwAB5CYP_tjEXfPN7G\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

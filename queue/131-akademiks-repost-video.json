@@ -1,6 +1,6 @@
 {
   "id": "131-akademiks-repost-video",
-  "status": "ready",
+  "status": "published",
   "publish_priority": 50,
   "date": "2026-09-02",
   "timezone": "America/Detroit",
@@ -32,5 +32,17 @@
   "threads_status": "pending",
   "instagram_container_id": "18112095842078478",
   "instagram_container_created_at": "2026-09-02T04:45:31.667Z",
-  "instagram_error": "Instagram processing check failed: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1349210,\"error_user_title\":\"Rate Limit Exceeded\",\"error_user_msg\":\"You are hitting rate-limits on the node that you are attempting to fetch. Please wait and try again later.\",\"fbtrace_id\":\"ABcACOvH6erfSQ4QtMSbcR0\"}}"
+  "instagram_container_checked_at": "2026-09-02T05:33:23.870Z",
+  "instagram_container_status": "FINISHED",
+  "instagram_publish_requested_at": "2026-09-02T05:33:23.870Z",
+  "instagram_media_id": "18041300075637693",
+  "instagram_published_at": "2026-09-02T05:33:23.870Z",
+  "published_at": "2026-09-02T05:33:32.484Z",
+  "instagram_verified_at": "2026-09-02T05:33:32.582Z",
+  "instagram_permalink": "https://www.instagram.com/reel/DcxaNx_kxgt/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "threads_container_id": "18094808150179906",
+  "threads_container_created_at": "2026-09-02T05:33:32.583Z",
+  "threads_container_checked_at": "2026-09-02T05:33:32.583Z"
 }

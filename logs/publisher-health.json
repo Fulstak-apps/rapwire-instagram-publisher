@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-09-02T09:11:24.238Z",
+  "checked_at": "2026-09-02T09:13:28.616Z",
   "instagram_cooldown_until": null,
   "instagram_steps": 1,
   "threads_steps": 0,
   "publications": [],
   "failures": [
     {
-      "file": "130-akademiks-repost-video.json",
-      "id": "130-akademiks-repost-video",
+      "file": "131-akademiks-repost-video.json",
+      "id": "131-akademiks-repost-video",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "media_publish failed: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207042,\"error_user_title\":\"Media Publish Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be published by Content Publishing API.\",\"fbtrace_id\":\"AaLW2ThF38enG8wlyxDp-5I\"}}"
+      "error": "media_publish failed: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207042,\"error_user_title\":\"Media Publish Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be published by Content Publishing API.\",\"fbtrace_id\":\"ArYhtTLIie5-PntBWzUFJfN\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

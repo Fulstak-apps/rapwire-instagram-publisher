@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T22:01:37.783Z",
+  "checked_at": "2026-09-03T22:05:16.444Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T21:59:02.761Z",
@@ -16,15 +16,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T22:11:37.578Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -32,16 +32,7 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T22:09:09.919Z",
-  "publications": [
-    {
-      "file": "221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn.json",
-      "id": "221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18333027106285926",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -54,13 +45,6 @@
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
-      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -87,13 +71,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
-      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
       "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
       "platform": "video_layout",
@@ -108,13 +85,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
-      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
       "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
       "platform": "video_layout",
@@ -122,15 +92,36 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
-      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
+      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
+      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
-      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
+      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
+      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
+      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
+      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
+      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

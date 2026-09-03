@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T17:09:30.919Z",
+  "checked_at": "2026-09-03T17:11:58.943Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T17:01:53.848Z",
-    "usage": 41,
+    "usage": 42,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T17:16:53.848Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 57,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T17:09:06.380Z",
+    "next_feed_eligible_at": "2026-09-03T17:21:58.784Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T17:09:13.021Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T17:21:53.550Z",
+  "publications": [
+    {
+      "file": "213-juicyj-projectpat-dem-goats-out-now.json",
+      "id": "213-juicyj-projectpat-dem-goats-out-now",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18174470656437605"
+    },
+    {
+      "file": "213-juicyj-projectpat-dem-goats-out-now.json",
+      "id": "213-juicyj-projectpat-dem-goats-out-now",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18103699955567741",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

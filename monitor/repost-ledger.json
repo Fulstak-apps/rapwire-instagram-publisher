@@ -839,6 +839,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/p/Dc070iluT_P/",
       "view_count": 0
+    },
+    "Dc1UvDtvrdD": {
+      "seen_at": "2026-09-03T17:20:42.282Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc1UvDtvrdD/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1536,25 +1542,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T16:45:59.527Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dcv7u-DhIR6/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcv7u-DhIR6-capture-diagnostic.json"
-        },
-        {
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dct5T6VoMnu/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dct5T6VoMnu-capture-diagnostic.json"
-        }
-      ],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T16:48:06.975Z"
-    },
     {
       "started_at": "2026-09-02T16:50:09.993Z",
       "candidates": 48,
@@ -4462,6 +4449,22 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T17:17:32.477Z"
+    },
+    {
+      "started_at": "2026-09-03T17:19:36.121Z",
+      "candidates": 72,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/Dc1UvDtvrdD/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1UvDtvrdD-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 3,
+      "finished_at": "2026-09-03T17:23:49.171Z"
     }
   ],
   "vip_pending": {
@@ -4488,6 +4491,18 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (3 matches); refusing unrelated media; inspect Dcww5JhjqDI-5-capture-diagnostic.json",
       "last_attempt_at": "2026-09-03T16:21:59.033Z",
       "retry_at": "2026-09-03T17:21:59.033Z"
+    },
+    "Dc1UvDtvrdD": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc1UvDtvrdD/",
+      "shortcode": "Dc1UvDtvrdD",
+      "first_seen_at": "2026-09-03T17:20:42.282Z",
+      "profile_position": 0,
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1UvDtvrdD-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-03T17:23:49.171Z",
+      "retry_at": "2026-09-03T17:25:49.171Z"
     }
   }
 }

@@ -533,6 +533,12 @@
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/Dczf4aNvntG/",
       "view_count": 0
+    },
+    "DczhTHzjZ3h": {
+      "seen_at": "2026-09-03T00:33:43.985Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DczhTHzjZ3h/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -947,6 +953,13 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dczf4aNvntG/",
       "queue_id": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid",
       "video": "media/173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid.mp4"
+    },
+    "DczfktcPuOk": {
+      "queued_at": "2026-09-03T00:37:39.451Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczfktcPuOk/",
+      "queue_id": "174-traploreross-defense-resting-case-tomorrow-lunchtime-durks-defen",
+      "video": "media/174-traploreross-defense-resting-case-tomorrow-lunchtime-durks-defen.mp4"
     }
   },
   "runs": [
@@ -8457,6 +8470,17 @@
       "mode": "discovery",
       "vip_pending": 3,
       "finished_at": "2026-09-03T00:30:31.696Z"
+    },
+    {
+      "started_at": "2026-09-03T00:32:55.697Z",
+      "candidates": 48,
+      "queued": [
+        "174-traploreross-defense-resting-case-tomorrow-lunchtime-durks-defen"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T00:37:39.451Z"
     }
   ],
   "vip_pending": {
@@ -8471,18 +8495,6 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DczfMmstSSN-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-03T00:13:31.173Z",
       "retry_at": "2026-09-03T00:17:31.173Z"
-    },
-    "DczfktcPuOk": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DczfktcPuOk/",
-      "shortcode": "DczfktcPuOk",
-      "first_seen_at": "2026-09-03T00:16:20.980Z",
-      "profile_position": 0,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DczfktcPuOk-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-03T00:19:49.916Z",
-      "retry_at": "2026-09-03T00:21:49.916Z"
     },
     "DczgNEnP7kT": {
       "source_handle": "traploreross",

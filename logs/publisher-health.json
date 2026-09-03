@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T04:19:49.904Z",
+  "checked_at": "2026-09-03T04:23:34.127Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T04:05:00.187Z",
-    "usage": 44,
+    "checked_at": "2026-09-03T04:23:34.036Z",
+    "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T04:20:00.187Z",
+    "next_check_at": "2026-09-03T04:38:34.036Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 44,
-    "instagram_remaining": 4,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T04:27:35.191Z",
@@ -25,22 +25,14 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T04:29:49.305Z",
-  "publications": [
-    {
-      "file": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni.json",
-      "id": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18214405186347070"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

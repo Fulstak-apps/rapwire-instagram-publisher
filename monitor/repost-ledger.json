@@ -821,6 +821,18 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/trapmatictv/p/Dc1QV4PDmvq/",
       "view_count": 0
+    },
+    "Dc1RwJjg-8U": {
+      "seen_at": "2026-09-03T16:53:34.347Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc1RwJjg-8U/",
+      "view_count": 0
+    },
+    "Dc1R_RUD2xg": {
+      "seen_at": "2026-09-03T16:53:34.347Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/p/Dc1R_RUD2xg/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1501,28 +1513,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/Dc1L_6Ijmys/",
       "queue_id": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta",
       "video": "media/212-while-most-people-were-still-waking-up-and-getting-their-day-sta.mp4"
+    },
+    "Dc1RwJjg-8U": {
+      "queued_at": "2026-09-03T16:58:51.762Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc1RwJjg-8U/",
+      "queue_id": "213-juicyj-projectpat-dem-goats-out-now",
+      "video": "media/213-juicyj-projectpat-dem-goats-out-now.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T16:17:57.731Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/akademiks/reel/DcyT3mKO4aY/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcyT3mKO4aY-capture-diagnostic.json"
-        },
-        {
-          "source_url": "https://www.instagram.com/akademiks/reel/DcyXC7YODr8/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcyXC7YODr8-capture-diagnostic.json"
-        }
-      ],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T16:22:43.618Z"
-    },
     {
       "started_at": "2026-09-02T16:24:46.868Z",
       "candidates": 0,
@@ -4452,6 +4452,17 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T16:50:22.409Z"
+    },
+    {
+      "started_at": "2026-09-03T16:52:25.761Z",
+      "candidates": 72,
+      "queued": [
+        "213-juicyj-projectpat-dem-goats-out-now"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T16:58:51.762Z"
     }
   ],
   "vip_pending": {

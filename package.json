@@ -9,6 +9,7 @@
     "mirror:draft": "node scripts/instagram-browser-mirror.mjs draft",
     "mirror:publish": "node scripts/instagram-browser-mirror.mjs publish",
     "repost:monitor": "node scripts/instagram-repost-monitor.mjs",
+    "report": "node scripts/publisher-report.mjs",
     "repost:install": "bash scripts/install-repost-monitor.sh"
   },
   "dependencies": {

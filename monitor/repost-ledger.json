@@ -1537,21 +1537,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T16:41:34.831Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T16:43:56.016Z"
-    },
-    {
       "started_at": "2026-09-02T16:45:59.527Z",
       "candidates": 0,
       "queued": [],
@@ -4468,6 +4453,15 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T17:14:22.417Z"
+    },
+    {
+      "started_at": "2026-09-03T17:16:26.380Z",
+      "candidates": 72,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T17:17:32.477Z"
     }
   ],
   "vip_pending": {

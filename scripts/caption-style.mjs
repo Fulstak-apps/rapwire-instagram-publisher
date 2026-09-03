@@ -2,16 +2,14 @@ import {captionIsBound} from './video-caption.mjs';
 import {vipCaption} from './vip-policy.mjs';
 
 export function signedCaption(value,item={}) {
-  const source=String(item.source_handle||'').replace(/^@/,'');
-  const hiddenSource = new Set(['akademiks','traploreross','records','recordsonthis']);
-  const tag=/^[A-Za-z0-9_.]+$/.test(source) && !hiddenSource.has(source.toLowerCase())?`@${source}`:'';
+  const tag='';
   let text=String(value||'').trim()
     .replace(/(?:\n\n)?Rap\s*Wire 24\/7\.?\s*\n@Rapwire247(?:\s*\n@[A-Za-z0-9_.]+)?\s*$/i,'')
     .replace(/(?:\n\n)?Rap\s*Wire 24\/7\.?\s*$/i,'')
     .replace(/(?:\n\n)?@Rapwire247\s*$/i,'')
     .replace(/^Reposted from @[A-Za-z0-9_.]+\.\s*/i,'').trim();
   // Strip an existing standalone source credit before placing it at the top.
-  if(tag) text=text.split('\n').filter(line=>line.trim().toLowerCase()!==tag.toLowerCase()).join('\n').trim();
+  text=text.split('\n').filter(line=>!/^@[A-Za-z0-9_.]+$/.test(line.trim())).join('\n').trim();
   return [tag,text,'@rapwire247'].filter(Boolean).join('\n\n');
 }
 

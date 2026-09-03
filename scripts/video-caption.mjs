@@ -36,8 +36,8 @@ export function buildVideoCaption(raw, source, registry = []) {
   text = text.replace(/@[A-Za-z0-9_.]+/g, handle => verified.some(p => `@${p.handle}`.toLowerCase() === handle.toLowerCase()) ? handle : '').replace(/\s+/g, ' ').trim();
   const footer = `\n\n@rapwire247`;
   const legal = /\b(trial|court|murder|attacking|arrest|testif|testimony|fbi|wire|cross.examination|judge|lies|lied|lying|snitch|suspect|charged|plead|lawsuit|witness|prosecutor)\w*\b/i.test(text);
-  const prefix = legal ? 'Source commentary: ' : '';
-  const caveat = legal ? ' These are source claims, not findings of guilt.' : '';
+  const prefix = '';
+  const caveat = legal ? ' Allegations are not findings of guilt.' : '';
   const limit = 490 - footer.length - source.length - 3 - prefix.length - caveat.length;
   if (text.length > limit) {
     const sentences = text.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [];
@@ -49,7 +49,7 @@ export function buildVideoCaption(raw, source, registry = []) {
   if (text.split(/\s+/).length < 4) throw new Error('Source caption lacks usable video context');
   const body = prefix + text + (/[.!?]$/.test(text) ? '' : '.') + caveat;
   const threadsBody = `${fitDiscussionText(body, 450)}\n\n${discussionPrompt(text)}`;
-  return { body, caption: `@${source}\n\n` + body + footer, threads_text: `@${source}\n\n${threadsBody}`, artist_handles: used };
+  return { body, caption: body + footer, threads_text: threadsBody, artist_handles: used };
 }
 
 export function captionIsBound(item) {

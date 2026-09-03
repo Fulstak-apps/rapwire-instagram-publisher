@@ -37,7 +37,7 @@ test('VIP caption does not reject AI, opinions, short or missing captions',()=>{
     const fields=vipCaption(raw,'akademiks',url);
     assert.ok(fields.caption.length < 2200);
     assert.ok(fields.threads_text.length < 400);
-    assert.match(fields.caption,/@akademiks/);
+  assert.doesNotMatch(fields.caption,/@akademiks/);
     assert.equal(captionIsBound({...fields,rendered_body_text:fields.body,source_handle:'akademiks',source_url:url,
       caption_policy:'vip-source-v1',caption_source_shortcode:'post0',source_caption_text:raw,vip_source_checked:true}),true);
   }

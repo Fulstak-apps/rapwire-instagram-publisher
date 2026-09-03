@@ -19,6 +19,7 @@ const sources = [
   { handle: "raplisted_", credit: false, includePosts: true, includeReels: true },
   { handle: "akademiks", credit: true, includePosts: true, includeReels: true },
   { handle: "traploreross", credit: true, includePosts: true, includeReels: true }
+  ,{ handle: "freshouttheculture", credit: true, includePosts: true, includeReels: true }
 ];
 const maxQueuePerRun = 1;
 const candidatesPerSourceToScore = 4;

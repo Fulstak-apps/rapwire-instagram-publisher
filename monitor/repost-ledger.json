@@ -785,6 +785,24 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/trapmatictv/p/Dc1Jrx9DmJE/",
       "view_count": 0
+    },
+    "Dc1L_6Ijmys": {
+      "seen_at": "2026-09-03T16:07:08.297Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dc1L_6Ijmys/",
+      "view_count": 0
+    },
+    "Dc1MO0Oov0C": {
+      "seen_at": "2026-09-03T16:07:08.297Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dc1MO0Oov0C/",
+      "view_count": 0
+    },
+    "Dc1Iek9u6lF": {
+      "seen_at": "2026-09-03T16:07:08.297Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/onthatnotetv/reel/Dc1Iek9u6lF/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1437,19 +1455,16 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dc1EdTmuPCu/",
       "queue_id": "208-yb-speaks"
+    },
+    "Dc1Iek9u6lF": {
+      "queued_at": "2026-09-03T16:09:20.271Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/onthatnotetv/reel/Dc1Iek9u6lF/",
+      "queue_id": "209-ye-night-1-setlist-and-special-guests-greenscreen",
+      "video": "media/209-ye-night-1-setlist-and-special-guests-greenscreen.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T14:58:59.984Z",
-      "candidates": 0,
-      "queued": [
-        "136-akademiks-repost-video"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T14:59:59.410Z"
-    },
     {
       "started_at": "2026-09-02T15:02:02.509Z",
       "candidates": 0,
@@ -4393,6 +4408,17 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T16:03:56.617Z"
+    },
+    {
+      "started_at": "2026-09-03T16:06:00.997Z",
+      "candidates": 72,
+      "queued": [
+        "209-ye-night-1-setlist-and-special-guests-greenscreen"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T16:09:20.271Z"
     }
   ],
   "vip_pending": {

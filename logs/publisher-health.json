@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T18:55:20.749Z",
+  "checked_at": "2026-09-03T18:58:25.739Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T18:41:42.799Z",
+    "checked_at": "2026-09-03T18:58:24.357Z",
     "usage": 48,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T18:56:42.799Z",
+    "next_check_at": "2026-09-03T19:13:24.357Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -21,10 +21,10 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T18:58:12.944Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -129,13 +129,6 @@
     {
       "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
       "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta.json",
-      "id": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

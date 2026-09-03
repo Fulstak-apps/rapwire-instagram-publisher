@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T18:41:42.919Z",
+  "checked_at": "2026-09-03T18:43:59.433Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T18:41:42.799Z",
@@ -21,10 +21,10 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T18:43:53.097Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -115,13 +115,6 @@
     {
       "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
       "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "205-this-album-will-forever-be-connected-to-that-crazy-chapter-of-hi.json",
-      "id": "205-this-album-will-forever-be-connected-to-that-crazy-chapter-of-hi",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

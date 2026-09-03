@@ -899,6 +899,12 @@
       "source_handle": "darnellwilliams",
       "source_url": "https://www.instagram.com/darnellwilliams/reel/DOlkTPqAFMW/",
       "view_count": 0
+    },
+    "Dc1eDD3mhKX": {
+      "seen_at": "2026-09-03T18:42:37.591Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc1eDD3mhKX/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1631,21 +1637,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T18:08:40.843Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T18:11:00.683Z"
-    },
     {
       "started_at": "2026-09-02T18:13:04.115Z",
       "candidates": 48,
@@ -4523,6 +4514,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 7,
       "finished_at": "2026-09-03T18:38:59.572Z"
+    },
+    {
+      "started_at": "2026-09-03T18:41:02.646Z",
+      "candidates": 27,
+      "queued": [
+        "205-this-album-will-forever-be-connected-to-that-crazy-chapter-of-hi"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 8,
+      "finished_at": "2026-09-03T18:42:37.625Z"
     }
   ],
   "vip_pending": {
@@ -4594,20 +4596,29 @@
       "profile_position": 4,
       "state": "pending",
       "attempts": 0
+    },
+    "Dc1eDD3mhKX": {
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc1eDD3mhKX/",
+      "shortcode": "Dc1eDD3mhKX",
+      "first_seen_at": "2026-09-03T18:42:37.591Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-03T18:35:34.575Z"
+      "checked_at": "2026-09-03T18:42:29.105Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-03T18:35:38.643Z"
+      "checked_at": "2026-09-03T18:42:33.270Z"
     },
     "records": {
-      "checked_at": "2026-09-03T18:35:42.729Z"
+      "checked_at": "2026-09-03T18:42:37.331Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-03T18:35:30.377Z"
+      "checked_at": "2026-09-03T18:42:25.073Z"
     }
   }
 }

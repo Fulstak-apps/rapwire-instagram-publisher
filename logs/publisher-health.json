@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T23:27:48.099Z",
+  "checked_at": "2026-09-03T23:31:48.415Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T23:24:28.555Z",
@@ -16,15 +16,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 46,
-    "instagram_remaining": 2,
+    "instagram_usage": 47,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T23:37:47.990Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -32,16 +32,7 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T23:34:35.894Z",
-  "publications": [
-    {
-      "file": "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b.json",
-      "id": "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18193871971389950",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -122,15 +113,15 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
-      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
+      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
+      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
-      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
+      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
+      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T19:44:06.286Z",
+  "checked_at": "2026-09-03T19:46:45.404Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T19:32:32.006Z",
-    "usage": 49,
+    "usage": 50,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T19:47:32.006Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 49,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T19:42:39.264Z",
+    "next_feed_eligible_at": "2026-09-03T19:56:45.265Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -32,7 +32,16 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T19:51:38.503Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "220-brb-out-now-darnell-williams-darnellwilliams.json",
+      "id": "220-brb-out-now-darnell-williams-darnellwilliams",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18087024968232836",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

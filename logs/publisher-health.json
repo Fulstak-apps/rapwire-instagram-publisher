@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T15:41:14.986Z",
+  "checked_at": "2026-09-03T15:56:44.273Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T15:28:56.537Z",
-    "usage": 38,
+    "checked_at": "2026-09-03T15:56:30.291Z",
+    "usage": 37,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T15:43:56.537Z",
+    "next_check_at": "2026-09-03T16:11:30.291Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -16,11 +16,11 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 38,
-    "instagram_remaining": 60,
+    "instagram_usage": 36,
+    "instagram_remaining": 62,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T15:39:02.914Z",
+    "next_feed_eligible_at": "2026-09-03T16:06:37.032Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T15:39:09.501Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T16:06:43.727Z",
+  "publications": [
+    {
+      "file": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w.json",
+      "id": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18556241314075441",
+      "content_type": "video"
+    },
+    {
+      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
+      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18066641630751860"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

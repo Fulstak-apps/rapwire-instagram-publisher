@@ -92,11 +92,21 @@ jobs:
         run: node scripts/publish-instagram.mjs
 
       - name: Engage substantive Threads replies
-        if: ${{ always() }}
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
         run: node scripts/threads-engage.mjs
+
+      - name: Measure audience growth
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        run: node scripts/growth-feedback.mjs
+
+      - name: Prepare evidence-based newsroom inbox
+        run: node scripts/editorial-inbox.mjs
 
       - name: Save publication log
         if: ${{ always() }}

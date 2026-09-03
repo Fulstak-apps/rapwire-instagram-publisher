@@ -1,4 +1,4 @@
-import {signedCaption,refreshCaptionStyle} from "./caption-style.mjs";
+import {signedCaption,refreshCaptionStyle,refreshThreadsCopy} from "./caption-style.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import {advanceMediaPost} from "./carousel-state.mjs";
@@ -6,6 +6,7 @@ import {isMediaRepost, validMediaRepost} from "./repost-media-policy.mjs";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
 import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS } from "./publication-policy.mjs";
+import {reportingGate,editorialRank,recentPosts,contentLane} from './editorial-policy.mjs';
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -69,13 +70,15 @@ const queueRecords = await Promise.all(queueNames.map(async (name) => ({
   item: JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8"))
 })));
 for (const {name,item} of queueRecords) {
-  if (refreshCaptionStyle(item)) await save(path.join(queueDir,name),item);
+  const changed=refreshCaptionStyle(item);
+  if (refreshThreadsCopy(item) || changed) await save(path.join(queueDir,name),item);
 }
+const recentPublications=recentPosts(queueRecords.map(x=>x.item));
 const files = queueRecords
   .sort((left, right) => {
     const readyDelta = Number(right.item.status === "ready") - Number(left.item.status === "ready");
     if (readyDelta) return readyDelta;
-    const priorityDelta = Number(right.item.publish_priority || 0) - Number(left.item.publish_priority || 0);
+    const priorityDelta = editorialRank(right.item,recentPublications) - editorialRank(left.item,recentPublications);
     return priorityDelta || left.name.localeCompare(right.name);
   })
   .map((record) => record.name);
@@ -364,6 +367,9 @@ async function publishThreadsVideo(item, itemPath) {
 }
 
 function contentPromiseIsKept(item) {
+  if (!reportingGate(item).allowed) return false;
+  const started=['instagram','threads'].some(prefix=>item[prefix+'_media_id']||item[prefix+'_container_id']||item[prefix+'_children']?.some(Boolean));
+  if (!started && contentLane(item)==='gaming' && recentPublications.filter(x=>x.id!==item.id).slice(0,6).some(x=>contentLane(x)==='gaming')) return false;
   if (isMediaRepost(item)) return validMediaRepost(item);
   const headline = String(item.headline || "");
   const body = String(item.body || "");
@@ -443,7 +449,7 @@ await Promise.all(uploadCandidates.map(async ({ name, item }) => {
 let lastThreadsTime = Math.max(Date.parse(pacing.last_threads_published_at || '') || 0,
   ...queueRecords.map(({item}) => item.threads_media_id ? Date.parse(item.threads_published_at || '') || 0 : 0));
 const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].includes(item.status)
-  && (item.threads_container_id || item.threads_children?.some(Boolean)) && !item.threads_media_id && !item.threads_reconcile_required
+  && (item.threads_container_id || item.threads_children?.some(Boolean)) && !item.threads_media_id && !item.threads_reconcile_required && !item.threads_copy_error
   && item.rap_relevance_checked === true && contentPromiseIsKept(item)
   && (!item.publish_after || Date.parse(item.publish_after) <= Date.now())
   && (item.status !== 'ready' || (item.source_policy_checked === true
@@ -455,7 +461,7 @@ const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].in
 
 async function deliverThreads(item, itemPath, file) {
   const isVideoItem = item.content_type === 'video';
-  if (threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required
+  if (threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required || item.threads_copy_error
     || Date.now() - lastThreadsTime < FEED_INTERVAL_MS
     || (threadsInFlightId && item.id !== threadsInFlightId)
     || item.rap_relevance_checked !== true || (isVideoItem && !captionIsBound(item))
@@ -494,6 +500,12 @@ async function deliverThreads(item, itemPath, file) {
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
+  const reporting=reportingGate(item);
+  if (!reporting.allowed) {
+    item.editorial_review_required=reporting.reasons;
+    await save(itemPath,item);
+    continue;
+  }
   const wasReady = item.status === "ready";
   const legacyRightLogo = /^(124|125|126|127|128|129)-/.test(item.id || "") && item.logo_position !== "bottom-left";
   if (item.content_type === "video" && legacyRightLogo) {

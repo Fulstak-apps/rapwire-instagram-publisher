@@ -132,6 +132,21 @@ test('bad caption in-flight Threads item cannot block validated ready video', t 
   assert.equal(r.item.threads_container_id,'new-threads-container');
   assert.equal(r.report.threads_steps,1);
 });
+test('unverified case with saved containers cannot occupy either publishing lane',t=>{
+  const claim='Duane Davis was found guilty of murder.';
+  const held={...item,id:'held-claim',status:'ready',instagram_media_id:undefined,body:claim,rendered_body_text:claim,source_caption_text:claim,instagram_container_id:'held-ig',threads_container_id:'held-thread'};
+  const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
+    `if(options.method==='POST')return new Response(JSON.stringify({id:'new-container'}));throw new Error('Held claim must not be inspected');`,0,null,1,50,[held]);
+  assert.equal(r.item.instagram_container_id,'new-container');
+  assert.equal(r.item.threads_container_id,'new-container');
+});
+test('repeated gaming does not start a fresh upload inside the six-post gap',t=>{
+  const body='The new Grand Theft Auto trailer shows gameplay.';
+  const r=run(t,{...item,status:'ready',instagram_media_id:undefined,body,rendered_body_text:body,source_caption_text:body},null,
+    `throw new Error('Gaming is held for variety, not pushed repeatedly');`,0,null,1,50,
+    [{...item,id:'recent-game',body:'Street Fighter gameplay trailer.',threads_media_id:'thread',threads_status:'published',instagram_story_media_id:'story',instagram_story_status:'published',published_at:new Date(Date.now()-3600000).toISOString()}]);
+  assert.equal(r.item.instagram_container_id,undefined);assert.equal(r.item.threads_container_id,undefined);
+});
 test('authorized recovery really publishes one feed above internal cap but below platform ceiling', t => {
   const r=run(t,{...item,status:'ready',instagram_media_id:undefined,instagram_container_id:'recovery-container',threads_media_id:'thread',threads_status:'published'},null,
     `if(options.method==='POST') return new Response(JSON.stringify({id:'recovery-live'})); if(String(url).includes('/recovery-container?')) return new Response(JSON.stringify({status_code:'FINISHED'})); return new Response(JSON.stringify({id:'recovery-live',permalink:'https://www.instagram.com/p/recovered/'}));`,0,

@@ -1,88 +1,67 @@
-# RapWire continuous publisher
+# RapWire operating rules
 
-## Runtime
+Updated September 3, 2026. This is the current contract; older thread prompts are historical.
 
-- Local collector: `/Users/dw/Library/Application Support/RapWire/publisher-runtime`.
-- Signed-in source browser profile remains in Application Support/RapWire/InstagramMirrorProfile. Never export its cookies.
-- `com.rapwire.repost-monitor` checks every 120 seconds when the previous collection is finished.
-- `com.rapwire.publisher` dispatches GitHub every 120 seconds unless a job is already active/queued. Its script must stay in Application Support, not the synced Documents tree.
-- GitHub also has its supported five-minute backup schedule. Scheduled starts are not guaranteed exact by GitHub.
-- `com.rapwire.keep-awake` runs `caffeinate -s`: prevents system sleep while connected to AC. Keep the Mac plugged in, lid open, connected and logged in. This does not keep a shut-down/offline Mac collecting; GitHub can still drain its existing queue.
-- Codex health checks run only at the existing 09:00, 12:00 and 17:00 times. They do not generate newsroom stories or trigger extra reposts.
+## What runs
 
-## Delivery and safety
+- Live checkout: `/Users/dw/Library/Application Support/RapWire/publisher-runtime`.
+- Mac collector and GitHub dispatcher check every 120 seconds; overlapping runs are skipped. GitHub has a five-minute backup schedule, not an exact-start guarantee.
+- New feed posts have a minimum ten-minute gap per platform, measured from confirmed publication. Slow processing or quota holds can delay delivery. Instagram and Threads have separate IDs, timers and retries.
+- Codex runs the independent newsroom only at 9 a.m., noon and 5 p.m. America/Los_Angeles. Those existing runs research up to three strong stories, verify claims, prepare visuals and queue staggered delivery. No additional frequent Codex wakeups or model calls for routine reposts.
+- The local Ollama editor runs hourly into ignored review/local-editor. Its text drafts cannot approve themselves or publish.
+- Keep the Mac powered, connected, logged in and awake for collection. GitHub can drain its existing queue while the Mac is offline.
+- Bail Money Radio is not connected or activated. Do not reuse RapWire credentials for it.
 
-New feed videos are spaced at least **10 minutes apart**, measured from the last confirmed feed publication and preserved across restarts. One Instagram container step per processing run, with feed/Story work alternating when both are waiting. One Threads step per run, independent of Instagram cooldown and feed cadence. The two-minute script checks advance uploads and cross-posts; they do not publish a fresh video every two minutes and do not wake Codex. Processing and capacity can delay a post beyond 10 minutes. There are no catch-up bursts. No posts are deleted or edited.
+## Editorial independence and selection
 
-The conservative budget is **32 combined Instagram feed/Story publications per rolling 24 hours**, or 80% of a lower effective platform limit, whichever is lower. Use the higher of the local confirmed count and Meta's quota usage. Reserve capacity for every unfinished Story and the new video's matching Story before starting another feed item. This allows about 16 complete video/Story pairs per rolling day, fewer while clearing a Story backlog. It is not a promise of 48 videos plus 48 Stories daily. Threads has independent retry handling.
+The user authorizes independent discovery and selection. Use monitor/sources.json as the live collector source registry, not hard-coded lists in old prompts. Sources can be added after confirming the exact account from a publisher-owned website/profile and recording scope/evidence. A source identity check is not proof of its claims.
 
-Threads accepts quality-validated ready videos before their Instagram delivery, so an Instagram quota hold does not stop coverage on both platforms. Each platform keeps its own confirmed-publication timer (minimum 10 minutes), media IDs, retries and reconciliation guards. A Threads-only success leaves the queue item's Instagram status ready. Resume the existing Threads container before opening another; never repost a confirmed Threads media ID when Instagram later succeeds.
+Hip-hop is the core: music, artists, performances, substantive culture and court developments. Gaming is occasional; hold a new gaming upload if another gaming story is among the latest six distinct posted records. Finish already-started deliveries safely.
 
-A user-requested immediate recovery may name exactly one queue ID in `logs/instagram-recovery.json`, expiring within one hour. This allows only that feed/Story pair above the internal safety budget, never above a freshly verified platform limit. It requires a quota read less than five minutes old, no quota/cooldown block, normal feed pacing, and two platform slots remaining after the requested delivery. All quality and duplicate guards remain in place. It does not authorize a general backlog burst or reset quota usage.
+The collector rotates at most two non-VIP source checks per cycle, with 30-minute source intervals; VIP sources are due every five minutes. Failed source checks back off fifteen minutes. Existing VIP discoveries from akademiks, traploreross and records remain durable, but are not exempt from factual review or quality checks. After a same-source streak, give alternatives priority. A saved in-flight upload retains its delivery slot.
 
-Upload containers, publish-request markers and resulting media IDs are saved. Pending processing survives the next run. Explicit ERROR/EXPIRED responses get exponential retry delays; uncertain publish responses are held for reconciliation, never blindly duplicated. Old queue IDs are retained. A source shortcode/queue-ID duplicate is held without deleting the file.
+Ranking combines visible views, current profile position and bounded learned performance. Missing view counts are not invented. Learned source weights start only after at least three measured posts and 500 reach/views, and can change a source weight only within 0.8–1.25. This does not promise virality or prove causation.
 
-Instagram rate-limit code 4 and related limits start a 30-minute cooldown, doubling for repeated limits up to four hours, honoring longer server Retry-After values. This is our retry window, not a guarantee that Meta resets its limit then. The local safety cap counts feed AND Story publications. A failed Story is retried; a failed Threads operation has its own retry timestamp.
+Deduplicate canonical shortcodes and exact normalized captions across sources. Do not treat a genuine new development as a duplicate merely because its opening sentence resembles an older story. Retain held records; never delete them or alter existing live posts.
 
-Media Publish Limit Exceeded (9/2207042) is a separate account-wide publishing hold. Check capacity hourly while blocked; do not keep retrying publication every two minutes. If the published quota configuration disagrees with an actual rejection, honor the observed rejection ceiling until usage drops below it. The next check is not a promised reset time. Threads remains independent of the Instagram hold.
+## Reporting, captions and visuals
 
-## Matching captions to videos
+Use the exact caption attached to the captured canonical post, never surrounding comments or profile text. Keep raw evidence and source URL. Strip old Source commentary labels and leading source handles from pending public copy. Preserve artist mentions; add new handles only from verified records. End captions with @rapwire247. Do not invent eyewitness reporting, exclusive access, quotes or facts.
 
-### VIP override (user instruction, September 2, 2026)
+Court verdicts, sentences, arrests/charges, death reports and first-person investigative claims require an actual reporting review. Record news_verification with status verified, checked_at, claim_sha256 for the exact body, substantive notes, and at least two independent sources including url, publisher, supports and independent. An automated classifier or QA score is not fact verification. Case verification expires after 72 hours to catch later developments. Held items do not occupy active publishing slots. Review logs/editorial-inbox.json at the next newsroom run. Date older developments; distinguish allegations, pleas, convictions and sentences. Never use a blanket innocence disclaimer to contradict a known conviction.
 
-`@akademiks` and `@traploreross` are VIP until the user changes this rule.
-Every unreposted item discovered in their current profile grids is retained in
-`monitor/repost-ledger.json` under `vip_pending`. Future discoveries are added;
-no historical backfill beyond the current grids is authorized. VIPs do not use
-engagement ranking, the four-candidate limit, or newsroom/topic/AI-caption filters.
-An attributed source caption is used without editorial rewriting. Short, absent,
-or overlong captions get a source-link attribution instead of blocking delivery.
-The complete captured caption is retained in the queue evidence. Both feeds use
-a 10-minute minimum cadence, and each Instagram feed post has a matching Story.
-Threads has no separate Story delivery endpoint.
+Videos remain playable videos with matching complete audio, regular practical source size, H.264/AAC and no decorative card/border. Keep the compact logo bottom-left. Preserve faces, subtitles, titles, tweets and meaningful source text. Tweets/statements remain readable; a thumbnail cannot substitute for a playable video. Photos/carousels require complete ordered media, up to the supported ten API children. Keep appropriate source credit/provenance; branding does not turn somebody else's reporting into ours.
 
-Capture failures remain pending with bounded backoff, never marked as reposted.
-The current capture runtime supports videos; photos and mixed/image carousels
-remain pending until complete-media capture is implemented and verified. Do not
-publish only a carousel thumbnail or pretend those items were delivered.
+Threads copy includes at most one context-specific discussion prompt and stays within 500 characters including its footer. Preserve complete sentences. Ranking questions belong to music debates, not tragedies or verdict posts. If a source already asks a question, do not stack another. An unfit Threads caption stays held without blocking Instagram.
 
-For non-VIP sources, the following caption rules still apply:
+## Capacity, retries and state
 
-The collector reads the canonical shortcode and caption from the same post used for capture, never the surrounding article/comments. Captured complete media must uniquely match the visible video's duration and dimensions, with matching audio. Pending legacy items are repaired before new collection; already-live posts are not modified. Generic, missing, truncated or ambiguous captions are held for review, never replaced with filler. Verified artist handles come only from `monitor/artist-handles.json` and expire after 30 days. Source credit stays in the caption footer.
+Use the greater of confirmed rolling-day publications and Meta's reported quota usage. Reserve two slots below the effective platform limit. If Meta actually rejects at a lower limit, honor that observed ceiling for 24 hours instead of trusting a larger advertised number. Unknown capacity fails closed or uses the conservative policy fallback. No catch-up bursts.
 
-## See what happened
+Instagram Stories are currently disabled in the production workflow. Do not claim they are posting. Re-enabling them requires capacity planning because feed and Story publications share quota. Threads has no separate Story endpoint in this publisher.
 
-[GitHub Actions](https://github.com/Fulstak-apps/rapwire-instagram-publisher/actions/workflows/publish-instagram.yml): open a run's Summary. The delivery summary distinguishes confirmed media IDs, waiting/cooldown, and failure. A green workflow alone is not proof a post exists.
+Rate-limit errors start a 30-minute cooldown, doubling up to four hours and respecting a longer Retry-After. This is a retry time, not a promised platform reset. Publishing-quota exhaustion is checked hourly. Threads can continue when Instagram is blocked.
 
-- `logs/publisher-health.json`: latest full publishing-cycle result.
-- `logs/instagram-cooldown.json`: next eligible Instagram retry time (UTC).
-- `logs/instagram-publishing-quota.json`: observed quota, enforced hold and next capacity check (UTC).
-- `logs/publish-attempts.jsonl`: per-platform events.
-- `queue/*.json`: authoritative per-item containers, IDs, verification and permalinks.
-- Collector stdout/stderr: runtime `logs/repost-monitor.out.log` / `logs/repost-monitor.err.log`.
-- Launcher stdout/stderr: `/tmp/rapwire-publisher.log` / `/tmp/rapwire-publisher.err`.
-- Failed jobs retain a `publication-state-RUN_ID` artifact. If saving publication state fails, the next run creates a durable `logs/publication-state-hold.json` and refuses to publish. Reconcile that artifact and verify the missing media IDs before removing the hold; otherwise a successful remote post might be absent from the queue ledger.
+Save container IDs and publish intent before non-idempotent operations. If a response is lost, require reconciliation rather than blindly reposting. Verify returned media IDs and permalinks. A green workflow alone is not evidence a post exists. If saving state fails, the next run must hold publishing until the retained artifact is reconciled.
 
-## Local Ollama editor
+## Threads conversations and measurement
 
-The separate `com.rapwire.local-editor` Mac service runs hourly. It uses
-`qwen3:4b` locally through Ollama and `scripts/run-local-editor.py`, with a
-ten-minute execution limit and an exclusive lock. It writes only to ignored
-`review/local-editor/` in the runtime checkout; it never pushes or publishes.
-`review/local-editor/health.json` records the last cycle, errors, and timestamps.
-The queue is also consulted to avoid re-drafting already collected stories.
+Reply only to eligible new comments on RapWire's own recent Threads posts. Verify the account identity. No unsolicited replies to unrelated users' posts, harassment, fake agreement, fabricated facts or repeated reply loops. Debate ranking criteria; agree when the actual comment supports agreement. Skip abusive, unrelated and sensitive comments. Limit to one reply per 30 minutes, twelve per day, two per person per day and one per person/root post per day. Read back the exact reply ID, text and parent. Uncertain outcomes stay pending for reconciliation.
 
-These are text drafts, not completed media posts. Structure QA is not fact
-verification. Source corroboration, rights, subject matching, rendering and
-visual review still must be completed before any draft can become ready.
-Existing video collection and publishing continue independently with their
-current safety budget and pacing. Stop the local editor with
-`launchctl bootout gui/$(id -u)/com.rapwire.local-editor`.
+Measure up to six recent posts per platform every six hours plus account follower counts. Instagram metrics are reach, likes, comments, shares and saves; Threads metrics are views, likes, replies, reposts and quotes. Unavailable permissions/metrics remain unavailable, not zero. Follower growth is account-wide, not attributed to a specific post. Selection learns gradually from meaningful interactions per 1,000 reach/views.
 
-## Verification commands
+## Where to look
 
-`node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs scripts/media-ranges.test.mjs scripts/publication-policy.test.mjs`
+- GitHub Actions: https://github.com/Fulstak-apps/rapwire-instagram-publisher/actions/workflows/publish-instagram.yml
+- queue/*.json: durable containers, publish markers, media IDs, source evidence and permalinks.
+- logs/publisher-health.json: latest delivery, failures, quota and next eligibility.
+- logs/instagram-cooldown.json and logs/instagram-publishing-quota.json: enforced account holds.
+- logs/publish-attempts.jsonl: platform event ledger.
+- logs/editorial-inbox.json: claims/captions requiring reporting.
+- logs/growth-feedback.json and logs/growth-report.md: measured performance and missing permissions.
+- logs/threads-replies.json: reply targets, verified IDs, rate limits and blockers.
+- monitor/repost-ledger.json: source discovery, durable VIP backlog and collector errors.
 
-`python3 -m unittest discover -s scripts -p 'test_local_rapwire.py'`
+## Tests
 
-The tests use fake platform responses, never live credentials. Live feed/Threads verification reads the returned media ID and records its permalink. Stories record a readback of the returned Story ID; there is no separate Threads Story publishing endpoint.
+Run `node --test scripts/*.test.mjs` and `python3 -m unittest discover -s scripts -p test_local_rapwire.py`. Tests use fake platform responses, not live credentials. Observe a real deployment separately before claiming live feature success.

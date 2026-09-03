@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T05:15:24.069Z",
+  "checked_at": "2026-09-03T05:19:25.600Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T05:13:01.819Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T05:15:14.899Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T05:29:25.270Z",
+  "publications": [
+    {
+      "file": "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-.json",
+      "id": "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18100873241348117"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

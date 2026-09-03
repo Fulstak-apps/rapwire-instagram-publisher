@@ -761,6 +761,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0MDyiy7HM/",
       "view_count": 0
+    },
+    "Dc0PEQzlA5T": {
+      "seen_at": "2026-09-03T07:08:32.721Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/p/Dc0PEQzlA5T/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1372,89 +1378,16 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DcyeEDIjg4h/",
       "queue_id": "202-10-years-ago-today-travis-scott-dropped-birds-in-the-trap-sing-m"
+    },
+    "DcyVs6zOSen": {
+      "queued_at": "2026-09-03T07:11:13.709Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DcyVs6zOSen/",
+      "queue_id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
+      "video": "media/203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T12:30:38.396Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcwGCkqDiTk/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcwhYQSGSlL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/Dcv2Mf2O82Y/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcuAOMeDpDj/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwdVfNFJBL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwPizElCPC/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        }
-      ],
-      "finished_at": "2026-09-02T12:36:52.534Z"
-    },
     {
       "started_at": "2026-09-02T12:38:53.163Z",
       "candidates": 48,
@@ -5143,6 +5076,17 @@
       "mode": "discovery",
       "vip_pending": 3,
       "finished_at": "2026-09-03T07:05:08.897Z"
+    },
+    {
+      "started_at": "2026-09-03T07:07:14.623Z",
+      "candidates": 72,
+      "queued": [
+        "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T07:11:13.709Z"
     }
   ],
   "vip_pending": {
@@ -5157,15 +5101,6 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-03T06:08:48.644Z",
       "retry_at": "2026-09-03T06:24:48.644Z"
-    },
-    "DcyVs6zOSen": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/reel/DcyVs6zOSen/",
-      "shortcode": "DcyVs6zOSen",
-      "first_seen_at": "2026-09-03T06:22:41.175Z",
-      "profile_position": 10,
-      "state": "pending",
-      "attempts": 0
     },
     "Dcww5JhjqDI": {
       "source_handle": "records",

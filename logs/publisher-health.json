@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T14:54:03.646Z",
+  "checked_at": "2026-09-03T14:56:57.015Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T14:54:02.811Z",
-    "usage": 35,
+    "usage": 36,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T15:09:02.811Z",
@@ -20,19 +20,28 @@
     "instagram_remaining": 63,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T14:54:00.961Z",
+    "next_feed_eligible_at": "2026-09-03T15:06:56.857Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T14:54:07.393Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni.json",
+      "id": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18173715784440119",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

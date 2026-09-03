@@ -593,6 +593,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dcz4IDEJVgh/",
       "view_count": 0
+    },
+    "Dc0CWEkhsQS": {
+      "seen_at": "2026-09-03T05:24:29.129Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0CWEkhsQS/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1083,89 +1089,16 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dcz4IDEJVgh/",
       "queue_id": "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-",
       "video": "media/184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-.mp4"
+    },
+    "Dc0CWEkhsQS": {
+      "queued_at": "2026-09-03T05:25:11.096Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0CWEkhsQS/",
+      "queue_id": "185-blueface-s-production-team-keeps-switching-the-stream-ingest-fro",
+      "video": "media/185-blueface-s-production-team-keeps-switching-the-stream-ingest-fro.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T09:46:20.916Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcwGCkqDiTk/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcwhYQSGSlL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/Dcv2Mf2O82Y/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcuAOMeDpDj/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwdVfNFJBL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwPizElCPC/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        }
-      ],
-      "finished_at": "2026-09-02T09:52:30.806Z"
-    },
     {
       "started_at": "2026-09-02T09:54:31.817Z",
       "candidates": 48,
@@ -6183,6 +6116,17 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-03T05:21:39.620Z"
+    },
+    {
+      "started_at": "2026-09-03T05:23:43.108Z",
+      "candidates": 48,
+      "queued": [
+        "185-blueface-s-production-team-keeps-switching-the-stream-ingest-fro"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-03T05:25:11.096Z"
     }
   ],
   "vip_pending": {}

@@ -857,6 +857,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/ciggyblacc/reel/Dc1VDcXsXbb/",
       "view_count": 0
+    },
+    "Dc1XhHJFCOy": {
+      "seen_at": "2026-09-03T17:48:29.382Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dc1XhHJFCOy/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1558,24 +1564,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dc1Vc_Yi22H/",
       "queue_id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
       "video": "media/215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.mp4"
+    },
+    "Dc1XhHJFCOy": {
+      "queued_at": "2026-09-03T17:49:52.496Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dc1XhHJFCOy/",
+      "queue_id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
+      "video": "media/216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T17:03:24.393Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T17:05:47.353Z"
-    },
     {
       "started_at": "2026-09-02T17:07:50.320Z",
       "candidates": 48,
@@ -4500,6 +4498,17 @@
       "mode": "discovery",
       "vip_pending": 3,
       "finished_at": "2026-09-03T17:45:20.956Z"
+    },
+    {
+      "started_at": "2026-09-03T17:47:24.590Z",
+      "candidates": 72,
+      "queued": [
+        "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 3,
+      "finished_at": "2026-09-03T17:49:52.497Z"
     }
   ],
   "vip_pending": {

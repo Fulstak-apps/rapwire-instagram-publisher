@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T17:44:26.912Z",
+  "checked_at": "2026-09-03T17:49:11.881Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T17:34:16.382Z",
@@ -16,39 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 43,
-    "instagram_remaining": 55,
+    "instagram_usage": 44,
+    "instagram_remaining": 54,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T17:54:26.739Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T17:54:19.108Z",
-  "publications": [
-    {
-      "file": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.json",
-      "id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17869272147601652"
-    },
-    {
-      "file": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.json",
-      "id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18204990061369447",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -3,7 +3,7 @@ import {vipCaption} from './vip-policy.mjs';
 
 export function signedCaption(value,item={}) {
   const source=String(item.source_handle||'').replace(/^@/,'');
-  const hiddenSource = new Set(['akademiks','traploreross']);
+  const hiddenSource = new Set(['akademiks','traploreross','records','recordsonthis']);
   const tag=/^[A-Za-z0-9_.]+$/.test(source) && !hiddenSource.has(source.toLowerCase())?`@${source}`:'';
   let text=String(value||'').trim()
     .replace(/(?:\n\n)?Rap\s*Wire 24\/7\.?\s*\n@Rapwire247(?:\s*\n@[A-Za-z0-9_.]+)?\s*$/i,'')

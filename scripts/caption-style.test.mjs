@@ -7,6 +7,8 @@ test('new style has source tag, news and only the account handle as footer',()=>
  const item={source_handle:'akademiks'};
  const result=signedCaption('Reposted from @akademiks.\n\nNew album announced.\n\nRap Wire 24/7\n@Rapwire247\n@akademiks',item);
  assert.equal(result,'New album announced.\n\n@rapwire247');
+ const owned = signedCaption('Clip from the archive.', {source_handle:'records'});
+ assert.doesNotMatch(owned, /@records\b/i);
  assert.equal(signedCaption(result,item),result);
 });
 test('queue migration rebuilds only safely unpublished parent containers',()=>{

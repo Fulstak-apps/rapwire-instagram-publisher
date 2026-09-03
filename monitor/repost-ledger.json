@@ -1188,89 +1188,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DcydmPwS01j/",
       "queue_id": "187-this-might-be-one-of-cole-s-smoothest-flows-ever-j-cole-s-closin",
       "video": "media/187-this-might-be-one-of-cole-s-smoothest-flows-ever-j-cole-s-closin.mp4"
+    },
+    "DcyVt_WvKKR": {
+      "queued_at": "2026-09-03T05:57:12.633Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/DcyVt_WvKKR/",
+      "queue_id": "188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y",
+      "video": "media/188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T10:27:13.960Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcwGCkqDiTk/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcwhYQSGSlL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/Dcv2Mf2O82Y/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcuAOMeDpDj/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwdVfNFJBL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwPizElCPC/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        }
-      ],
-      "finished_at": "2026-09-02T10:33:24.913Z"
-    },
     {
       "started_at": "2026-09-02T10:35:25.512Z",
       "candidates": 48,
@@ -5960,6 +5887,17 @@
       "mode": "discovery",
       "vip_pending": 1,
       "finished_at": "2026-09-03T05:53:16.482Z"
+    },
+    {
+      "started_at": "2026-09-03T05:55:21.977Z",
+      "candidates": 60,
+      "queued": [
+        "188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 1,
+      "finished_at": "2026-09-03T05:57:12.633Z"
     }
   ],
   "vip_pending": {

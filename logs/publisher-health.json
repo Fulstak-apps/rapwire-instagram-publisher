@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T18:58:25.739Z",
+  "checked_at": "2026-09-03T19:32:39.434Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T18:58:24.357Z",
-    "usage": 48,
+    "checked_at": "2026-09-03T19:32:32.006Z",
+    "usage": 49,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T19:13:24.357Z",
+    "next_check_at": "2026-09-03T19:47:32.006Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -20,19 +20,28 @@
     "instagram_remaining": 50,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T18:58:12.944Z",
+    "next_feed_eligible_at": "2026-09-03T19:42:39.264Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T19:02:11.596Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "187-this-might-be-one-of-cole-s-smoothest-flows-ever-j-cole-s-closin.json",
+      "id": "187-this-might-be-one-of-cole-s-smoothest-flows-ever-j-cole-s-closin",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18132612658653816",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {
@@ -94,13 +103,6 @@
     {
       "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
       "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo.json",
-      "id": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

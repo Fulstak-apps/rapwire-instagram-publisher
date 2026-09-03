@@ -9,7 +9,7 @@ import { mediaFiles, isMediaRepost } from "./repost-media-policy.mjs";
 import { isVip, rememberVip, vipCandidates, deferVip, vipCaption } from './vip-policy.mjs';
 import {candidateScore} from './growth-feedback.mjs';
 import {editorialTopic} from './audience-policy.mjs';
-import {normalizeSources,dueSources} from './source-policy.mjs';
+import {normalizeSources,dueSources,dailySourceDeficits} from './source-policy.mjs';
 import {selectionAllowed,recentPosts,editorialRank,reportingGate,storyFingerprint} from './editorial-policy.mjs';
 import {capturedVideoLayout,capturedMediaItems,verifyVideoLayoutFiles,videoRepairAllowed,mediaRepairAllowed,mixedVideoLayoutReview} from './video-layout-policy.mjs';
 
@@ -425,9 +425,17 @@ try {
       || left.profilePosition - right.profilePosition
       || left.source.handle.localeCompare(right.source.handle));
   const vipPool=vipCandidates(ledger, sources).slice(0,4);
+  // Guaranteed artist slots lead the queue only until their daily quota is
+  // reserved. This gives @darnellwilliams two distinct Reel slots a day without
+  // allowing one account to take over the ordinary news rotation.
+  const priorityHandles=new Set(dailySourceDeficits(sources,records).map(entry=>entry.source.handle));
+  const dailyArtistPool=vipPool.filter(candidate=>priorityHandles.has(candidate.source.handle));
+  const remainingVipPool=vipPool.filter(candidate=>!priorityHandles.has(candidate.source.handle));
   // Keep VIP discoveries durable without letting one source occupy the whole feed.
   const repeated=recent.length>=2&&recent[0].source_handle===recent[1].source_handle;
-  const rankedCandidates = repeated&&normalCandidates.length ? [...normalCandidates,...vipPool] : [...vipPool,...normalCandidates];
+  const rankedCandidates = dailyArtistPool.length
+    ? [...dailyArtistPool,...remainingVipPool,...normalCandidates]
+    : repeated&&normalCandidates.length ? [...normalCandidates,...vipPool] : [...vipPool,...normalCandidates];
   let queueNumber = await nextQueueNumber();
   for (const candidate of rankedCandidates) {
     if (run.queued.length >= maxQueuePerRun) break;

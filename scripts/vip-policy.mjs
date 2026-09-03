@@ -2,7 +2,7 @@ import { composeThreads } from './audience-policy.mjs';
 import {cleanPublicCopy} from './editorial-policy.mjs';
 export { discussionPrompt, fitDiscussionText } from './audience-policy.mjs';
 // User instruction, 2026-09-02: repost everything from these pages until changed.
-export const VIP_HANDLES = new Set(['akademiks', 'traploreross', 'records']);
+export const VIP_HANDLES = new Set(['akademiks', 'traploreross', 'records', 'darnellwilliams']);
 export const isVip = handle => VIP_HANDLES.has(String(handle || '').replace(/^@/, '').toLowerCase());
 
 export function rememberVip(ledger, discovered, now = Date.now()) {

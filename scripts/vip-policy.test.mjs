@@ -2,11 +2,12 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {isVip, rememberVip, vipCandidates, deferVip, vipCaption} from './vip-policy.mjs';
 import {captionIsBound, sourceCaption} from './video-caption.mjs';
-const sources = [{handle:'akademiks'}, {handle:'traploreross'}];
+const sources = [{handle:'akademiks'}, {handle:'traploreross'}, {handle:'records'}];
 const discovered = Array.from({length:12}, (_,i)=>({source:sources[i%2],url:`https://www.instagram.com/p/post${i}/`,shortcode:`post${i}`,profilePosition:i}));
 test('only the two requested VIP pages bypass editorial selection',()=>{
   assert.equal(isVip('@Akademiks'),true);
   assert.equal(isVip('traploreross'),true);
+  assert.equal(isVip('records'),true);
   assert.equal(isVip('saycheesetv'),false);
 });
 test('all discovered VIP posts survive, not just the first four or videos',()=>{

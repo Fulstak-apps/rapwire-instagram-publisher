@@ -1,5 +1,5 @@
 const SOURCES = [
-  "akademiks", "nojumper", "theshaderoom", "tmz", "traploreross", "freshouttheculture", "saycheesetv",
+  "akademiks", "nojumper", "theshaderoom", "tmz", "traploreross", "freshouttheculture", "records", "saycheesetv",
   "detroitrapnews", "detroitrapdaily", "usacrime", "poetikflakkonews", "worldstarhiphop", "gta6latest"
 ];
 

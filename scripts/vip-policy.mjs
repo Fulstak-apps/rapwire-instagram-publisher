@@ -1,5 +1,5 @@
 // User instruction, 2026-09-02: repost everything from these pages until changed.
-export const VIP_HANDLES = new Set(['akademiks', 'traploreross']);
+export const VIP_HANDLES = new Set(['akademiks', 'traploreross', 'records']);
 export const isVip = handle => VIP_HANDLES.has(String(handle || '').replace(/^@/, '').toLowerCase());
 
 export function discussionPrompt(text) {

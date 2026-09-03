@@ -20,6 +20,7 @@ const sources = [
   { handle: "akademiks", credit: true, includePosts: true, includeReels: true },
   { handle: "traploreross", credit: true, includePosts: true, includeReels: true }
   ,{ handle: "freshouttheculture", credit: true, includePosts: true, includeReels: true }
+  ,{ handle: "records", credit: true, includePosts: true, includeReels: true }
 ];
 const maxQueuePerRun = 1;
 const candidatesPerSourceToScore = 4;

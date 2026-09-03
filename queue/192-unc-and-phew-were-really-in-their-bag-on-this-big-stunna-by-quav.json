@@ -15,7 +15,7 @@
   "rendered_body_text": "Unc and Phew were really in their bag on this “Big Stunna” by Quavo and Takeoff featuring Birdman is a standout collaboration that showcases the incredible chemistry between the two Migos members. Released in 2022 as a single from their collaborative album Only Built for Infinity Links, the track is driven by a heavy, bouncing trap production that gives both artists plenty of room to lock into their flows.",
   "caption": "Unc and Phew were really in their bag on this “Big Stunna” by Quavo and Takeoff featuring Birdman is a standout collaboration that showcases the incredible chemistry between the two Migos members. Released in 2022 as a single from their collaborative album Only Built for Infinity Links, the track is driven by a heavy, bouncing trap production that gives both artists plenty of room to lock into their flows.\n\n@rapwire247",
   "threads_text": "Unc and Phew were really in their bag on this “Big Stunna” by Quavo and Takeoff featuring Birdman is a standout collaboration that showcases the incredible chemistry between the two Migos members. Released in 2022 as a single from their collaborative album Only Built for Infinity Links, the track is driven by a heavy, bouncing trap production that gives both artists plenty of room to lock into their flows.\n\n@rapwire247",
-  "video": "media/192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav.mp4",
+  "video": "media/192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav-footage-only-d7435daa-cb96-4a1d-b275-8a3a0c9f949d.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/reel/DcuMuVHSEaf/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T06:19:22.589Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 27.955373,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 448,
+      "width": 720,
+      "height": 522
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 448,
+        "width": 720,
+        "height": 522
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: static top panel has no confirmed source header",
+      "sample_times": [
+        0.8386611900000001,
+        6.98884325,
+        13.9776865,
+        20.96652975,
+        27.11671181
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "7779daf239dc330a5331b73b076829327adab56067efd8984fb1d7cd604b6420",
+    "output_sha256": "e9e9fac11a54c0f7775cd8c727430aac0a8349a3e80cffcbfd6d2fd76a8327e3",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DcuMuVHSEaf-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:35:12.237Z"
+  }
 }

@@ -1087,28 +1087,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T05:53:08.578Z",
-      "candidates": 48,
-      "queued": [
-        "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-"
-      ],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        }
-      ],
-      "finished_at": "2026-09-02T05:58:39.023Z"
-    },
-    {
       "started_at": "2026-09-02T06:00:51.151Z",
       "candidates": 48,
       "queued": [
@@ -8101,6 +8079,15 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-03T04:01:42.728Z"
+    },
+    {
+      "started_at": "2026-09-03T04:03:46.415Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-03T04:04:33.203Z"
     }
   ],
   "vip_pending": {}

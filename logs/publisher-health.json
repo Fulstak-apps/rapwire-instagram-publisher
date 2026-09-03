@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T18:52:12.268Z",
+  "checked_at": "2026-09-03T18:55:20.749Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T18:41:42.799Z",
@@ -25,22 +25,14 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T19:02:11.596Z",
-  "publications": [
-    {
-      "file": "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-.json",
-      "id": "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18130170620498499"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -60,13 +52,6 @@
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
       "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
-      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -100,20 +85,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.json",
-      "id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
-      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
       "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
       "platform": "video_layout",
@@ -128,8 +99,36 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-.json",
-      "id": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-",
+      "file": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo.json",
+      "id": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.json",
+      "id": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
+      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.json",
+      "id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
+      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -137,13 +136,6 @@
     {
       "file": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta.json",
       "id": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo.json",
-      "id": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -158,13 +150,6 @@
     {
       "file": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble.json",
       "id": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.json",
-      "id": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

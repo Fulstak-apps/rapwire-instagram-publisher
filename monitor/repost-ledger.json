@@ -1074,17 +1074,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T03:08:51.442Z",
-      "candidates": 48,
-      "queued": [
-        "121-matic-tv-on-instagram-trending-female-cuts-off-her-ankle-monitor",
-        "122-matic-tv-on-instagram-trending-popular-ufc-fighter-marlon-chitov",
-        "123-on-instagram-blueface-demoted-his-bm-nevaeh-from-being-his-main-"
-      ],
-      "errors": [],
-      "finished_at": "2026-09-02T03:12:30.379Z"
-    },
-    {
       "started_at": "2026-09-02T03:17:44.585Z",
       "candidates": 48,
       "queued": [
@@ -8574,6 +8563,15 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-03T03:23:48.180Z"
+    },
+    {
+      "started_at": "2026-09-03T03:25:57.902Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-03T03:26:44.949Z"
     }
   ],
   "vip_pending": {}

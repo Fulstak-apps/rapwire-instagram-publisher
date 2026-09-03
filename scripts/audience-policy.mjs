@@ -49,16 +49,16 @@ export function discussionPrompt(text, seed = text) {
     const matches = artists.filter(([pattern]) => pattern.test(value)).map(([, name]) => name);
     if (matches.length === 1) {
       const name = matches[0];
-      if (/\b(?:freestyle|verse|bars)\b/i.test(value)) return pick([`Where does this rank among ${name}'s best verses?`, 'Which line makes your case?'],seed);
-      if (/\b(?:tour|concert|performance|performed|stage)\b/i.test(value)) return pick([`Is ${name} stronger live or on record?`, 'What performance would you put up against this?'],seed);
-      if (/\b(?:new album|new single|new song|new track|released)\b/i.test(value)) return pick([`Where does this fit in ${name}'s catalog?`, 'Is this replay value or rollout hype?'],seed);
+      if (/\b(?:freestyle|verse|bars)\b/i.test(value)) return pick([`Where does this rank among ${name}'s best verses?`, `Be honest: is this really one of ${name}'s best verses, or are we caught in the moment?`],seed);
+      if (/\b(?:tour|concert|performance|performed|stage)\b/i.test(value)) return pick([`Is ${name} stronger live or on record?`, `Stop being polite: is ${name} actually elite live?`],seed);
+      if (/\b(?:new album|new single|new song|new track|released)\b/i.test(value)) return pick([`Where does this fit in ${name}'s catalog?`, 'Be honest: replay value, or rollout hype?'],seed);
       return pick([
         `Is ${name} really top 5? Who are you moving out?`,
-        `${name}: all-time great or overrated? What is your strongest argument?`,
+        `${name}: all-time great or overrated? Stop being diplomatic.`,
         `Where do you actually rank ${name}, and which project backs it up?`,
       ], seed);
     }
-    return pick(['Which project would you put up against this?', 'Is this replay value or rollout hype?', 'What is the strongest argument for your ranking?'], seed);
+    return pick(['Which project would you put up against this?', 'Be honest: replay value, or rollout hype?', 'What is the strongest argument for your ranking?'], seed);
   }
   if (/\b(?:beef|diss|argument|clash|debate)\b/i.test(value)) return 'Whose argument holds up better—and which part convinced you?';
   // Rap/culture posts still need a real entry point, but never a generic

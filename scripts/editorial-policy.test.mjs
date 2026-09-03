@@ -52,6 +52,11 @@ test('rap culture Threads copy opens a specific conversation',()=>{
  assert.match(text,/What is the first artist|Does this add|What context would change|replay value|strongest argument/);
  assert.doesNotMatch(text,/thoughts\?/i);
 });
+test('music debate prompts can be deliberately provocative without targeting a sensitive event',()=>{
+ const prompt=discussionPrompt('Drake released a new song.', 'provocative');
+ assert.match(prompt,/replay value|catalog|rollout hype/i);
+ assert.equal(discussionPrompt('A rapper died after a shooting.', 'provocative'),'');
+});
 test('Threads budgets include question and footer and preserve complete copy',()=>{
  const text=composeThreads(('Drake performed his new single on tour. ').repeat(30));
  assert.ok([...text].length<=500);assert.ok(text.endsWith('@rapwire247'));

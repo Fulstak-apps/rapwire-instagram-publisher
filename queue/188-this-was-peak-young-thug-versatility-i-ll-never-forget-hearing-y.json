@@ -15,7 +15,7 @@
   "rendered_body_text": "This was peak Young Thug versatility I’ll never forget hearing Young Thug on Post Malone’s “Goodbyes” for the first time. The 2019 hit already had a dark, emotional atmosphere built around moody guitar melodies, heavy trap percussion, and Post Malone’s gritty vocals, but Thug’s entrance completely shifted the energy.",
   "caption": "This was peak Young Thug versatility I’ll never forget hearing Young Thug on Post Malone’s “Goodbyes” for the first time. The 2019 hit already had a dark, emotional atmosphere built around moody guitar melodies, heavy trap percussion, and Post Malone’s gritty vocals, but Thug’s entrance completely shifted the energy.\n\n@rapwire247",
   "threads_text": "This was peak Young Thug versatility I’ll never forget hearing Young Thug on Post Malone’s “Goodbyes” for the first time. The 2019 hit already had a dark, emotional atmosphere built around moody guitar melodies, heavy trap percussion, and Post Malone’s gritty vocals, but Thug’s entrance completely shifted the energy.\n\n@rapwire247",
-  "video": "media/188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y.mp4",
+  "video": "media/188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y-footage-only-ea8ba630-904f-449c-bcfc-cfa3759277ac.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/reel/DcyVt_WvKKR/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T05:57:12.462Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 28.001813,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 352,
+      "width": 720,
+      "height": 516
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 352,
+        "width": 720,
+        "height": 516
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: static top panel has no confirmed source header",
+      "sample_times": [
+        0.8400543899999999,
+        7.00045325,
+        14.0009065,
+        21.00135975,
+        27.161758609999996
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "1b48ac2df4f8caa2802b40a4b95b25ada033fac5f4a908699d54887f6c42f086",
+    "output_sha256": "6aef9561fe4ee58c0ef3e3c1b70d8ee61f6d141e949443405386de3123133684",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DcyVt_WvKKR-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:29:39.091Z"
+  }
 }

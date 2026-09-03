@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T00:40:35.700Z",
+  "checked_at": "2026-09-03T00:43:31.561Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T00:37:18.629Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T00:39:27.413Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T00:53:31.179Z",
+  "publications": [
+    {
+      "file": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid.json",
+      "id": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17910312723530351"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1638,16 +1638,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T18:17:27.929Z",
-      "candidates": 48,
-      "queued": [
-        "152-an-old-interview-of-pooh-shiesty-and-big30-resurfaced-revealing-"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T18:19:19.103Z"
-    },
-    {
       "started_at": "2026-09-02T18:21:27.087Z",
       "candidates": 48,
       "queued": [],
@@ -4521,6 +4511,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 8,
       "finished_at": "2026-09-03T18:45:35.747Z"
+    },
+    {
+      "started_at": "2026-09-03T18:47:38.918Z",
+      "candidates": 39,
+      "queued": [
+        "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 8,
+      "finished_at": "2026-09-03T18:48:49.271Z"
     }
   ],
   "vip_pending": {
@@ -4605,16 +4606,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-03T18:42:29.105Z"
+      "checked_at": "2026-09-03T18:48:40.322Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-03T18:42:33.270Z"
+      "checked_at": "2026-09-03T18:48:44.546Z"
     },
     "records": {
-      "checked_at": "2026-09-03T18:42:37.331Z"
+      "checked_at": "2026-09-03T18:48:49.130Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-03T18:42:25.073Z"
+      "checked_at": "2026-09-03T18:48:36.073Z"
     }
   }
 }

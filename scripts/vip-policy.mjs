@@ -4,10 +4,10 @@ export const isVip = handle => VIP_HANDLES.has(String(handle || '').replace(/^@/
 
 export function discussionPrompt(text) {
   const value = String(text || '').toLowerCase();
-  if (/trial|court|judge|fbi|arrest|charged|plead|testif|witness/.test(value)) return 'What detail should people be watching next?';
-  if (/album|single|song|mixtape|release|tour|concert/.test(value)) return 'Does this change the conversation around the music?';
-  if (/beef|diss|argument|fight|clash|controvers/.test(value)) return 'What is the key question in this situation?';
-  return 'How are you reading this moment?';
+  if (/trial|court|judge|fbi|arrest|charged|plead|testif|witness/.test(value)) return 'Does this actually change the case, or just the narrative?';
+  if (/album|single|song|mixtape|release|tour|concert/.test(value)) return 'Is this a real shift, or just another rollout move?';
+  if (/beef|diss|argument|fight|clash|controvers/.test(value)) return 'Which side has the stronger argument based on what is shown?';
+  return 'Are people judging the facts, or simply picking a side?';
 }
 
 export function fitDiscussionText(text, max = 450) {

@@ -16,7 +16,7 @@ test('only explicitly verified people get handles', () => {
   assert.equal(result.caption.startsWith('@akademiks\n\n'), true);
   assert.equal(result.caption.endsWith('@rapwire247'), true);
   assert.doesNotMatch(buildVideoCaption('New footage shared by @someblog shows a recording session.', 'akademiks').body, /@someblog/);
-  assert.match(result.threads_text, /What|Does|How/);
+  assert.match(result.threads_text, /What|Does|How|Is|Which|Are/);
 });
 test('caption evidence must use same shortcode', () => {
   const record = {caption_policy:'exact-source-v1',caption_source_shortcode:'other',source_url:url,source_caption_text:'A complete description of a studio recording.',body:'A complete description of a studio recording.'};

@@ -15,7 +15,7 @@
   "rendered_body_text": "San Bernardino Artist KingMostWanted Has Reportedly Passed Away KINGMOSTWANTED was a California rapper from the Inland Empire, particularly associated with San Bernardino. He began releasing music around 2018 and quickly developed a following for his laid-back delivery, catchy West Coast sound, and energetic personality.",
   "caption": "San Bernardino Artist KingMostWanted Has Reportedly Passed Away KINGMOSTWANTED was a California rapper from the Inland Empire, particularly associated with San Bernardino. He began releasing music around 2018 and quickly developed a following for his laid-back delivery, catchy West Coast sound, and energetic personality.\n\n@rapwire247",
   "threads_text": "San Bernardino Artist KingMostWanted Has Reportedly Passed Away KINGMOSTWANTED was a California rapper from the Inland Empire, particularly associated with San Bernardino. He began releasing music around 2018 and quickly developed a following for his laid-back delivery, catchy West Coast sound, and energetic personality.\n\n@rapwire247",
-  "video": "media/172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-.mp4",
+  "video": "media/172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away--footage-only-9f8832c9-a5da-41f7-aa33-4e3ed0810799.mp4",
   "source_handle": "trapmatictv",
   "source_url": "https://www.instagram.com/thatdailyslapp/p/DczSkv-kqII/",
   "source_urls": [
@@ -40,5 +40,45 @@
   "caption_checked_at": "2026-09-02T22:21:55.561Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 31.001621258254577,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 688,
+    "source_height": 860,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 688,
+      "height": 860
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 688,
+        "height": 860
+      },
+      "method": "full-frame-no-removable-source-header-v1",
+      "source_header_removed": false,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "sample_times": [
+        0.9300486377476372,
+        7.750405314563644,
+        15.500810629127288,
+        23.251215943690934,
+        30.071572620506938
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "4c25b8e96a88869fdf9e24a9177f7d092feb608bd20151984d90b083e5e912a8",
+    "output_sha256": "628aa049bbe7acc816f113d24b97037b062c4ffad92405a84eb2eb207d8aefbc",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DczSkv-kqII-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:14:35.446Z"
+  }
 }

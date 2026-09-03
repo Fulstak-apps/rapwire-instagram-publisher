@@ -11,6 +11,7 @@
     "repost:monitor": "node scripts/instagram-repost-monitor.mjs",
     "report": "node scripts/publisher-report.mjs",
     "threads:engage": "node scripts/threads-engage.mjs",
+    "threads:hourly": "node scripts/hourly-threads.mjs",
     "repost:install": "bash scripts/install-repost-monitor.sh"
   },
   "dependencies": {

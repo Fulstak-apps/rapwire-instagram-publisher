@@ -8,6 +8,7 @@ Updated September 3, 2026. This is the current contract; older thread prompts ar
 - Mac collector and GitHub dispatcher check every 120 seconds; overlapping runs are skipped. GitHub has a five-minute backup schedule, not an exact-start guarantee.
 - New feed posts have a minimum ten-minute gap per platform, measured from confirmed publication. Slow processing or quota holds can delay delivery. Instagram and Threads have separate IDs, timers and retries.
 - Codex runs the independent newsroom only at 9 a.m., noon and 5 p.m. America/Los_Angeles. Those existing runs research up to three strong stories, verify claims, prepare visuals and queue staggered delivery. No additional frequent Codex wakeups or model calls for routine reposts.
+- The local hourly Threads writer runs without waking Codex. It checks a pending container every two minutes so a safely staged post can finish, but it confirms at most one original rap conversation prompt per hour. It is Threads-only and uses no model call.
 - The local Ollama editor runs hourly into ignored review/local-editor. Its text drafts cannot approve themselves or publish.
 - Keep the Mac powered, connected, logged in and awake for collection. GitHub can drain its existing queue while the Mac is offline.
 - Bail Money Radio is not connected or activated. Do not reuse RapWire credentials for it.
@@ -37,6 +38,8 @@ For every reposted video, remove only a separate source-logo/header/handle strip
 The local `footage-only-v1` renderer samples five points across each complete source video, combines static neutral-panel boundaries with local Apple Vision text/face geometry, and records the chosen pixel rectangle. It requires macOS/Xcode command-line Swift support, ffmpeg and ffprobe; no paid model call or extra Codex wakeup. This is conservative sampled validation, not a guarantee about every unseen frame. Keep the original unbranded mux under ignored `work/instagram-mirror/*-source.mp4`, source/output samples, crop observations and center-grid preview under `*-crop-review/`. Retain failures with their exact review reason. Each video, including a mixed-carousel child, carries source/output hashes and layout evidence. The publisher checks the actual output bytes before either platform uses them. Safely unstarted legacy standalone videos can be recaptured to a new immutable asset path; never replace assets or captions on a live or uncertain/in-flight post. Unproven mixed or started legacy records stay explicitly held for review.
 
 Threads copy includes at most one context-specific discussion prompt and stays within 500 characters including its footer. Preserve complete sentences. Ranking questions belong to music debates, not tragedies or verdict posts. If a source already asks a question, do not stack another. An unfit Threads caption stays held without blocking Instagram.
+
+The hourly Threads writer uses evergreen rap conversation starters only. It never presents a current event as fact, creates Instagram media, or turns court cases, deaths, injuries, or other sensitive events into engagement bait. Its separate state is stored at `~/Library/Application Support/RapWire/hourly-threads-state.json`; install it with `bash scripts/install-hourly-threads.sh`.
 
 ## Growth format rules
 

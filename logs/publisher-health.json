@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T18:38:00.445Z",
+  "checked_at": "2026-09-03T18:41:42.919Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T18:25:28.133Z",
+    "checked_at": "2026-09-03T18:41:42.799Z",
     "usage": 47,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T18:40:28.133Z",
+    "next_check_at": "2026-09-03T18:56:42.799Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -25,22 +25,14 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T18:47:59.551Z",
-  "publications": [
-    {
-      "file": "186-baby-jane-made-starry-eyed-sound-like-a-forgotten-2010s-classic-.json",
-      "id": "186-baby-jane-made-starry-eyed-sound-like-a-forgotten-2010s-classic-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18130119160589642"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -123,13 +115,6 @@
     {
       "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
       "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "204-blueface-gets-swatted-live-on-stream-while-on-a-date-with-with-o.json",
-      "id": "204-blueface-gets-swatted-live-on-stream-while-on-a-date-with-with-o",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

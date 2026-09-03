@@ -1638,14 +1638,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T18:24:27.609Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T18:25:28.054Z"
-    },
-    {
       "started_at": "2026-09-02T18:27:31.544Z",
       "candidates": 48,
       "queued": [],
@@ -4525,6 +4517,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 8,
       "finished_at": "2026-09-03T18:52:34.029Z"
+    },
+    {
+      "started_at": "2026-09-03T18:54:37.016Z",
+      "candidates": 39,
+      "queued": [
+        "212-while-most-people-were-still-waking-up-and-getting-their-day-sta"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 8,
+      "finished_at": "2026-09-03T18:55:35.916Z"
     }
   ],
   "vip_pending": {
@@ -4609,16 +4612,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-03T18:48:40.322Z"
+      "checked_at": "2026-09-03T18:55:26.817Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-03T18:48:44.546Z"
+      "checked_at": "2026-09-03T18:55:31.238Z"
     },
     "records": {
-      "checked_at": "2026-09-03T18:48:49.130Z"
+      "checked_at": "2026-09-03T18:55:35.750Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-03T18:48:36.073Z"
+      "checked_at": "2026-09-03T18:55:22.569Z"
     }
   }
 }

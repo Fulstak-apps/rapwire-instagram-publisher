@@ -521,6 +521,18 @@
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/DczfktcPuOk/",
       "view_count": 0
+    },
+    "DczgNEnP7kT": {
+      "seen_at": "2026-09-03T00:22:43.413Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczgNEnP7kT/",
+      "view_count": 0
+    },
+    "Dczf4aNvntG": {
+      "seen_at": "2026-09-03T00:22:43.413Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dczf4aNvntG/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -928,6 +940,13 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/p/DczSkv-kqII/",
       "queue_id": "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-",
       "video": "media/172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-.mp4"
+    },
+    "Dczf4aNvntG": {
+      "queued_at": "2026-09-03T00:30:31.696Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dczf4aNvntG/",
+      "queue_id": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid",
+      "video": "media/173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid.mp4"
     }
   },
   "runs": [
@@ -8420,6 +8439,24 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T00:19:49.916Z"
+    },
+    {
+      "started_at": "2026-09-03T00:21:53.088Z",
+      "candidates": 48,
+      "queued": [
+        "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid"
+      ],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DczgNEnP7kT/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DczgNEnP7kT-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 3,
+      "finished_at": "2026-09-03T00:30:31.696Z"
     }
   ],
   "vip_pending": {
@@ -8446,6 +8483,18 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DczfktcPuOk-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-03T00:19:49.916Z",
       "retry_at": "2026-09-03T00:21:49.916Z"
+    },
+    "DczgNEnP7kT": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczgNEnP7kT/",
+      "shortcode": "DczgNEnP7kT",
+      "first_seen_at": "2026-09-03T00:22:43.413Z",
+      "profile_position": 0,
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DczgNEnP7kT-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-03T00:26:10.521Z",
+      "retry_at": "2026-09-03T00:28:10.521Z"
     }
   }
 }

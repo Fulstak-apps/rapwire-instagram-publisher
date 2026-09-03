@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T06:00:12.854Z",
+  "checked_at": "2026-09-03T06:02:25.283Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T06:00:12.152Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T05:58:26.473Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T06:12:24.870Z",
+  "publications": [
+    {
+      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
+      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17901307203354427"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

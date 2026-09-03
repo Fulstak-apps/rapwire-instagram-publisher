@@ -875,6 +875,36 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/Dc1bJArmhu7/",
       "view_count": 0
+    },
+    "DPjXCyOEUmp": {
+      "seen_at": "2026-09-03T18:26:57.890Z",
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/DPjXCyOEUmp/",
+      "view_count": 0
+    },
+    "Cxvc7j2Lu53": {
+      "seen_at": "2026-09-03T18:26:57.890Z",
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/Cxvc7j2Lu53/",
+      "view_count": 0
+    },
+    "DPzC3z0D8_y": {
+      "seen_at": "2026-09-03T18:26:57.890Z",
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/detroitrapnews/reel/DPzC3z0D8_y/",
+      "view_count": 0
+    },
+    "DPb55rogN67": {
+      "seen_at": "2026-09-03T18:26:57.890Z",
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/DPb55rogN67/",
+      "view_count": 0
+    },
+    "DOlkTPqAFMW": {
+      "seen_at": "2026-09-03T18:26:57.890Z",
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/DOlkTPqAFMW/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1607,21 +1637,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T17:46:58.286Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T17:49:18.919Z"
-    },
     {
       "started_at": "2026-09-02T17:51:22.692Z",
       "candidates": 0,
@@ -4511,6 +4526,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 3,
       "finished_at": "2026-09-03T18:24:39.347Z"
+    },
+    {
+      "started_at": "2026-09-03T18:25:56.004Z",
+      "candidates": 41,
+      "queued": [
+        "187-this-might-be-one-of-cole-s-smoothest-flows-ever-j-cole-s-closin"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 8,
+      "finished_at": "2026-09-03T18:26:57.907Z"
     }
   ],
   "vip_pending": {
@@ -4546,17 +4572,65 @@
       "profile_position": 1,
       "state": "pending",
       "attempts": 0
+    },
+    "DPjXCyOEUmp": {
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/DPjXCyOEUmp/",
+      "shortcode": "DPjXCyOEUmp",
+      "first_seen_at": "2026-09-03T18:26:57.890Z",
+      "profile_position": 0,
+      "state": "pending",
+      "attempts": 0
+    },
+    "Cxvc7j2Lu53": {
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/Cxvc7j2Lu53/",
+      "shortcode": "Cxvc7j2Lu53",
+      "first_seen_at": "2026-09-03T18:26:57.890Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
+    },
+    "DPzC3z0D8_y": {
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/detroitrapnews/reel/DPzC3z0D8_y/",
+      "shortcode": "DPzC3z0D8_y",
+      "first_seen_at": "2026-09-03T18:26:57.890Z",
+      "profile_position": 2,
+      "state": "pending",
+      "attempts": 0
+    },
+    "DPb55rogN67": {
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/DPb55rogN67/",
+      "shortcode": "DPb55rogN67",
+      "first_seen_at": "2026-09-03T18:26:57.890Z",
+      "profile_position": 3,
+      "state": "pending",
+      "attempts": 0
+    },
+    "DOlkTPqAFMW": {
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/DOlkTPqAFMW/",
+      "shortcode": "DOlkTPqAFMW",
+      "first_seen_at": "2026-09-03T18:26:57.890Z",
+      "profile_position": 4,
+      "state": "pending",
+      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-03T18:21:21.157Z"
+      "checked_at": "2026-09-03T18:26:49.200Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-03T18:21:25.536Z"
+      "checked_at": "2026-09-03T18:26:53.414Z"
     },
     "records": {
-      "checked_at": "2026-09-03T18:21:29.663Z"
+      "checked_at": "2026-09-03T18:26:57.692Z"
+    },
+    "darnellwilliams": {
+      "checked_at": "2026-09-03T18:26:45.079Z"
     }
   }
 }

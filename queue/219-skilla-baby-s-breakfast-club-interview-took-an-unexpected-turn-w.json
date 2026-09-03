@@ -15,7 +15,7 @@
   "rendered_body_text": "Skilla Baby’s Breakfast Club interview took an unexpected turn when his prayer reminder went off in the middle of the conversation. 🏽 Charlamagne immediately asked if he wanted to pause the interview and pray — and Skilla said yes. Moments later, everyone in the room stood up, joined hands, and Loren LoRosa led the group in prayer.",
   "caption": "Skilla Baby’s Breakfast Club interview took an unexpected turn when his prayer reminder went off in the middle of the conversation. 🏽 Charlamagne immediately asked if he wanted to pause the interview and pray — and Skilla said yes. Moments later, everyone in the room stood up, joined hands, and Loren LoRosa led the group in prayer.\n\n@rapwire247",
   "threads_text": "Skilla Baby’s Breakfast Club interview took an unexpected turn when his prayer reminder went off in the middle of the conversation. 🏽 Charlamagne immediately asked if he wanted to pause the interview and pray — and Skilla said yes. Moments later, everyone in the room stood up, joined hands, and Loren LoRosa led the group in prayer.\n\n@rapwire247",
-  "video": "media/219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.mp4",
+  "video": "media/219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w-footage-only-0da19a39-cc75-461f-ac85-244d47718efd.mp4",
   "source_handle": "raplisted_",
   "source_url": "https://www.instagram.com/raplisted_/reel/Dc1aBbjo_Kj/",
   "source_urls": [
@@ -40,6 +40,46 @@
   "caption_checked_at": "2026-09-03T18:11:10.091Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 76.4,
-  "caption_review_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1aBbjo_Kj-capture-diagnostic.json",
-  "caption_retry_at": "2026-09-03T20:38:51.554Z"
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 496,
+      "width": 720,
+      "height": 542
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 496,
+        "width": 720,
+        "height": 542
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: proposed edge intersects text or excludes in-video caption",
+      "sample_times": [
+        2.2920000000000003,
+        19.1,
+        38.2,
+        57.300000000000004,
+        74.108
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "7d63a2271d1f404f8fcf60c0850affdab409c6aa62f31126b2a72757f37c77a5",
+    "output_sha256": "01e8fb97e62f607fc2c955fea2b783164ac5f79ff7937f5991962d66747d3fb4",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1aBbjo_Kj-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T21:49:33.593Z"
+  }
 }

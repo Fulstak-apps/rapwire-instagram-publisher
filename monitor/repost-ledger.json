@@ -1462,19 +1462,16 @@
       "source_url": "https://www.instagram.com/onthatnotetv/reel/Dc1Iek9u6lF/",
       "queue_id": "209-ye-night-1-setlist-and-special-guests-greenscreen",
       "video": "media/209-ye-night-1-setlist-and-special-guests-greenscreen.mp4"
+    },
+    "Dc1MO0Oov0C": {
+      "queued_at": "2026-09-03T16:13:15.872Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dc1MO0Oov0C/",
+      "queue_id": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-",
+      "video": "media/210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T15:02:02.509Z",
-      "candidates": 0,
-      "queued": [
-        "137-vonni-s-telegram-name-was-el-mayo-he-said-he-was-gonna-act-emoti"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T15:06:47.866Z"
-    },
     {
       "started_at": "2026-09-02T15:08:50.966Z",
       "candidates": 0,
@@ -4419,6 +4416,17 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T16:09:20.271Z"
+    },
+    {
+      "started_at": "2026-09-03T16:11:28.033Z",
+      "candidates": 72,
+      "queued": [
+        "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T16:13:15.872Z"
     }
   ],
   "vip_pending": {

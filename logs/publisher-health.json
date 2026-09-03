@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T04:17:36.374Z",
+  "checked_at": "2026-09-03T04:19:49.904Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T04:05:00.187Z",
@@ -16,30 +16,29 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 43,
-    "instagram_remaining": 5,
+    "instagram_usage": 44,
+    "instagram_remaining": 4,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T04:27:35.191Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T04:15:06.648Z",
+  "threads_next_eligible_at": "2026-09-03T04:29:49.305Z",
   "publications": [
     {
-      "file": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a.json",
-      "id": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a",
-      "platform": "instagram",
+      "file": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni.json",
+      "id": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18114754933949423",
-      "content_type": "video"
+      "media_id": "18214405186347070"
     }
   ],
   "failures": [],

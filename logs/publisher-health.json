@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T22:52:43.637Z",
+  "checked_at": "2026-09-03T22:55:15.972Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T22:52:42.321Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T23:07:42.321Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T22:46:20.522Z",
+    "next_feed_eligible_at": "2026-09-03T23:05:08.395Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T22:52:40.978Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T23:05:15.632Z",
+  "publications": [
+    {
+      "file": "189-rolling-loud-was-not-ready-for-this-ms-lauryn-hill-delivered-a-s.json",
+      "id": "189-rolling-loud-was-not-ready-for-this-ms-lauryn-hill-delivered-a-s",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18065483288767088",
+      "content_type": "video"
+    },
+    {
+      "file": "205-this-album-will-forever-be-connected-to-that-crazy-chapter-of-hi.json",
+      "id": "205-this-album-will-forever-be-connected-to-that-crazy-chapter-of-hi",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17904395871331641"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

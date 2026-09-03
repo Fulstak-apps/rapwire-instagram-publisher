@@ -2196,19 +2196,16 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/Dc1bJArmhu7/",
       "queue_id": "224-ye-is-projected-to-surpass-1-million-in-total-attendance-across-"
+    },
+    "DPb55rogN67": {
+      "queued_at": "2026-09-03T23:55:59.235Z",
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/DPb55rogN67/",
+      "queue_id": "225-brb-freestyle-originalaigallery-darnell-williams-darnellwilliams",
+      "video": "media/225-brb-freestyle-originalaigallery-darnell-williams-darnellwilliams.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T18:56:14.000Z",
-      "candidates": 0,
-      "queued": [
-        "128-raplisted-repost-video"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T18:56:48.820Z"
-    },
     {
       "started_at": "2026-09-02T18:58:51.880Z",
       "candidates": 48,
@@ -5120,6 +5117,17 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-03T23:43:16.247Z"
+    },
+    {
+      "started_at": "2026-09-03T23:52:55.366Z",
+      "candidates": 60,
+      "queued": [
+        "225-brb-freestyle-originalaigallery-darnell-williams-darnellwilliams"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-03T23:55:59.235Z"
     }
   ],
   "vip_pending": {
@@ -5146,15 +5154,6 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json",
       "last_attempt_at": "2026-09-03T17:34:37.129Z",
       "retry_at": "2026-09-03T18:34:37.129Z"
-    },
-    "DPb55rogN67": {
-      "source_handle": "darnellwilliams",
-      "source_url": "https://www.instagram.com/darnellwilliams/reel/DPb55rogN67/",
-      "shortcode": "DPb55rogN67",
-      "first_seen_at": "2026-09-03T18:26:57.890Z",
-      "profile_position": 3,
-      "state": "pending",
-      "attempts": 0
     },
     "DOlkTPqAFMW": {
       "source_handle": "darnellwilliams",

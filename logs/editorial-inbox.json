@@ -1,6 +1,21 @@
 {
-  "checked_at": "2026-09-03T23:35:44.903Z",
+  "checked_at": "2026-09-03T23:38:19.377Z",
   "mode": "research_not_auto_approval",
-  "candidates": [],
+  "candidates": [
+    {
+      "id": "222-tupac-s-murder-has-finally-been-solved-former-gang-boss-duane-ke",
+      "queue_file": "queue/222-tupac-s-murder-has-finally-been-solved-former-gang-boss-duane-ke.json",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/hiphopdx/p/Dcv1jWmnPfL/",
+      "headline": "Tupac’s murder has finally been solved. Former gang boss Duane “Keffe D” Davis has been fo",
+      "body": "Tupac’s murder has finally been solved. Former gang boss Duane “Keffe D” Davis has been found guilty of orchestrating the murder of rapper Tupac Shakur, who was killed on September 13, 1996. The 63-year-old was convicted by a Las Vegas jury of a single count of murder with a deadly weapon and could be sentenced to life in prison. : ABC News. Allegations are not findings of guilt.",
+      "claim_sha256": null,
+      "reasons": [
+        "major_case_or_death_claim"
+      ],
+      "caption_error": null,
+      "story_fingerprint": "856c1560ff5a15a4523469048c205304deca631d5de8b7e7568cbf5629a0e723"
+    }
+  ],
   "instructions": "Check primary documents and two independent reports. Preserve the exact claim, dates, actual case posture, and source URLs. Record reviewed claim hash. Never approve based only on a model score or repeated social captions."
 }

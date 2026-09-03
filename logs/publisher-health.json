@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T06:12:27.611Z",
+  "checked_at": "2026-09-03T06:15:06.891Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T06:00:12.152Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T06:12:24.870Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T06:25:06.626Z",
+  "publications": [
+    {
+      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
+      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18088812647537095"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

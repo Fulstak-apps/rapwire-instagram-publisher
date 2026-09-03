@@ -15,7 +15,7 @@
   "rendered_body_text": "One of Kodak’s most iconic records Kodak Black’s “Tunnel Vision” became one of the defining hits of his early career after its release in 2017. Produced by Metro Boomin, Southside, and CuBeatz, the track stands out for its hypnotic woodwind melody, heavy 808s, and dark trap production. The song became Kodak’s first major mainstream breakthrough, helping establish him as a national rap star.",
   "caption": "One of Kodak’s most iconic records Kodak Black’s “Tunnel Vision” became one of the defining hits of his early career after its release in 2017. Produced by Metro Boomin, Southside, and CuBeatz, the track stands out for its hypnotic woodwind melody, heavy 808s, and dark trap production. The song became Kodak’s first major mainstream breakthrough, helping establish him as a national rap star.\n\n@rapwire247",
   "threads_text": "One of Kodak’s most iconic records Kodak Black’s “Tunnel Vision” became one of the defining hits of his early career after its release in 2017. Produced by Metro Boomin, Southside, and CuBeatz, the track stands out for its hypnotic woodwind melody, heavy 808s, and dark trap production. The song became Kodak’s first major mainstream breakthrough, helping establish him as a national rap star.\n\n@rapwire247",
-  "video": "media/191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b.mp4",
+  "video": "media/191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b-footage-only-4901a126-fb38-4983-82a0-f3c8eea752b1.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/reel/DcvmD-CvkYT/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T06:15:06.659Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 28.001813,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 50,
+      "y": 296,
+      "width": 618,
+      "height": 616
+    },
+    "analysis": {
+      "crop": {
+        "x": 50,
+        "y": 296,
+        "width": 618,
+        "height": 616
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: source branding is not isolated in a removable top header",
+      "sample_times": [
+        0.8400543899999999,
+        7.00045325,
+        14.0009065,
+        21.00135975,
+        27.161758609999996
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "6a8eae0c34cdd614b039e602b0178aa3604e3263def23234f7f5eb87defdb5c9",
+    "output_sha256": "547df5b193d9f5381528d61f07aee8671597e760bcecbed7b6ae36f98da5cf35",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DcvmD-CvkYT-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:33:46.135Z"
+  }
 }

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T18:15:13.620Z",
+  "checked_at": "2026-09-03T18:17:37.792Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T18:09:11.299Z",
-    "usage": 45,
+    "usage": 46,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T18:24:11.299Z",
@@ -20,19 +20,28 @@
     "instagram_remaining": 53,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T18:09:07.826Z",
+    "next_feed_eligible_at": "2026-09-03T18:27:36.720Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T18:09:18.982Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "194-belly-gang-kushington-just-earned-his-first-billboard-hot-100-hi.json",
+      "id": "194-belly-gang-kushington-just-earned-his-first-billboard-hot-100-hi",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17882039313686783",
+      "content_type": "carousel"
+    }
+  ],
   "failures": [],
   "reviews": [
     {
@@ -108,13 +117,6 @@
     {
       "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
       "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-.json",
-      "id": "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

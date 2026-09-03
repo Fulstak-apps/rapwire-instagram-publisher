@@ -1435,86 +1435,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T13:34:51.575Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcyUMrwuY-C/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcwGCkqDiTk/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/Dcv2Mf2O82Y/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcuAOMeDpDj/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwdVfNFJBL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwPizElCPC/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        }
-      ],
-      "finished_at": "2026-09-02T13:41:09.070Z"
-    },
-    {
       "started_at": "2026-09-02T13:43:09.669Z",
       "candidates": 48,
       "queued": [
@@ -4806,6 +4726,22 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T14:55:06.802Z"
+    },
+    {
+      "started_at": "2026-09-03T14:57:11.304Z",
+      "candidates": 72,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
+          "stage": "queue",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T14:58:43.500Z"
     }
   ],
   "vip_pending": {

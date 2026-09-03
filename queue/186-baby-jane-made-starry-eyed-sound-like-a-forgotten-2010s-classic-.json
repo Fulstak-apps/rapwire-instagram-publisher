@@ -15,7 +15,7 @@
   "rendered_body_text": "Baby Jane made “Starry Eyed” sound like a forgotten 2010s classic “Starry Eyed” has a distinctly nostalgic 2010s feel, especially in its trance-pop production and synth-driven sound. The combination of electronic rhythms, atmospheric melodies, and Baby Jane’s vocals gives the track the kind of polished, emotional club-pop sound that was prominent throughout the decade. babyjane nightcore.",
   "caption": "Baby Jane made “Starry Eyed” sound like a forgotten 2010s classic “Starry Eyed” has a distinctly nostalgic 2010s feel, especially in its trance-pop production and synth-driven sound. The combination of electronic rhythms, atmospheric melodies, and Baby Jane’s vocals gives the track the kind of polished, emotional club-pop sound that was prominent throughout the decade. babyjane nightcore.\n\n@rapwire247",
   "threads_text": "Baby Jane made “Starry Eyed” sound like a forgotten 2010s classic “Starry Eyed” has a distinctly nostalgic 2010s feel, especially in its trance-pop production and synth-driven sound. The combination of electronic rhythms, atmospheric melodies, and Baby Jane’s vocals gives the track the kind of polished, emotional club-pop sound that was prominent throughout the decade. babyjane nightcore.\n\n@rapwire247",
-  "video": "media/186-baby-jane-made-starry-eyed-sound-like-a-forgotten-2010s-classic-.mp4",
+  "video": "media/186-baby-jane-made-starry-eyed-sound-like-a-forgotten-2010s-classic--footage-only-aa396404-b1d4-40ff-b4ff-59305b759d81.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/reel/DczYLxjyA8_/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T05:45:05.996Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 28.001813,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 402,
+      "width": 720,
+      "height": 570
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 402,
+        "width": 720,
+        "height": 570
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: static top panel has no confirmed source header",
+      "sample_times": [
+        0.8400543899999999,
+        7.00045325,
+        14.0009065,
+        21.00135975,
+        27.161758609999996
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "85a1f3bad16d828ee4469782c22dfe1741636072c125c20f044fb2bd0984414f",
+    "output_sha256": "ad7055cffb5d06f552821ebe60a8aac9325e6bfa6f9eb146dd78f55a2238edc8",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DczYLxjyA8_-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:24:30.255Z"
+  }
 }

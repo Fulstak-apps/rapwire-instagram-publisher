@@ -15,7 +15,7 @@
   "rendered_body_text": "Blueface Links Up With Model KKVSH On Stream, Making Her The 5th Girl THIS WEEK That He’s Been Out With Blueface, whose real name is Johnathan Porter, is a Los Angeles rapper who became widely known for his offbeat, unconventional flow and viral personality. He broke through nationally in 2018 with “Thotiana,” which became his signature song and received major attention after remixes featuring Cardi B and YG.",
   "caption": "Blueface Links Up With Model KKVSH On Stream, Making Her The 5th Girl THIS WEEK That He’s Been Out With Blueface, whose real name is Johnathan Porter, is a Los Angeles rapper who became widely known for his offbeat, unconventional flow and viral personality. He broke through nationally in 2018 with “Thotiana,” which became his signature song and received major attention after remixes featuring Cardi B and YG.\n\n@rapwire247",
   "threads_text": "Blueface Links Up With Model KKVSH On Stream, Making Her The 5th Girl THIS WEEK That He’s Been Out With Blueface, whose real name is Johnathan Porter, is a Los Angeles rapper who became widely known for his offbeat, unconventional flow and viral personality. He broke through nationally in 2018 with “Thotiana,” which became his signature song and received major attention after remixes featuring Cardi B and YG.\n\n@rapwire247",
-  "video": "media/184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-.mp4",
+  "video": "media/184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th--footage-only-158ef5af-61ca-4b9b-bbd5-37552d7336ef.mp4",
   "source_handle": "trapmatictv",
   "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dcz4IDEJVgh/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T03:55:57.032Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 27.212334,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 900,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 174,
+      "width": 720,
+      "height": 726
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 174,
+        "width": 720,
+        "height": 726
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: static top panel has no confirmed source header",
+      "sample_times": [
+        0.8163700199999999,
+        6.8030835,
+        13.606167,
+        20.4092505,
+        26.395963979999998
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "83db4b214cfd3f66dfe6b0004e6b8ee35e6768d49d5b07bff3a306086afd0cdc",
+    "output_sha256": "bd50988524487e2ac84f5ffade75294c89b2c5739c7e742f784b2d5acd21430b",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dcz4IDEJVgh-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:17:39.213Z"
+  }
 }

@@ -30,7 +30,7 @@ export function buildVideoCaption(raw, source, registry = []) {
     if (!alias) continue;
     used.push(person.handle);
     if (!text.toLowerCase().includes(`@${person.handle.toLowerCase()}`)) {
-      text = text.replace(new RegExp(`\\b${alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i'), `${person.name} (@${person.handle})`);
+      text = text.replace(new RegExp(`\\b${alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i'), `${person.name} @${person.handle}`);
     }
   }
   // Retain only handles actually verified as people, never infer one from URL paths.

@@ -44,6 +44,11 @@ test('VIP captions omit source handles and reject blocked terms',()=>{
       caption_policy:'vip-source-v1',caption_source_shortcode:'post0',source_caption_text:raw,vip_source_checked:true}),true);
   }
 });
+
+test('Darnell Williams captions include his verified artist handle',()=>{
+  const result=vipCaption('New visual out now.', 'darnellwilliams', 'https://www.instagram.com/darnellwilliams/reel/example/');
+  assert.match(result.body,/Darnell Williams @darnellwilliams/);
+});
 test('VIP attribution never allows mismatched media or tampered body',()=>{
   const fields=vipCaption('Original source statement','akademiks',discovered[0].url);
   const record={...fields,rendered_body_text:fields.body,source_handle:'akademiks',source_url:discovered[0].url,

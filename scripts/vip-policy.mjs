@@ -47,7 +47,9 @@ export function vipCaption(raw, source, url) {
   if (/\bAI\b/i.test(text)) throw new Error('Caption contains a blocked term and needs review');
   // The source page is retained in metadata, but its handle is not shown in
   // the public repost caption for these user-requested accounts.
-  const body = text && text.length <= 2050 ? text : '';
+  let body = text && text.length <= 2050 ? text : '';
+  if (body && String(source).replace(/^@/,'').toLowerCase()==='darnellwilliams'
+    && !/@darnellwilliams\b/i.test(body)) body = `${body}\n\nDarnell Williams @darnellwilliams`;
   const caption = body;
   const threads = composeThreads(caption, {source, seed:url || text});
   return {body, caption, threads_text:threads, artist_handles:[]};

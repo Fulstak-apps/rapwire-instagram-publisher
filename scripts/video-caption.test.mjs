@@ -12,7 +12,7 @@ test('generic and truncated captions are rejected, never padded', () => {
 });
 test('only explicitly verified people get handles', () => {
   const result = buildVideoCaption('Lil Durk discusses his new album with fans.', 'akademiks', [{name:'Lil Durk',handle:'lildurk',verified_at:new Date().toISOString(),verified_url:'https://www.instagram.com/lildurk/'}]);
-  assert.match(result.body,/Lil Durk \(@lildurk\)/);
+  assert.match(result.body,/Lil Durk @lildurk/);
   assert.equal(result.caption.startsWith('Lil Durk'), true);
   assert.equal(result.caption.endsWith('@rapwire247'), true);
   assert.doesNotMatch(buildVideoCaption('New footage shared by @someblog shows a recording session.', 'akademiks').body, /@someblog/);

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T23:09:30.533Z",
+  "checked_at": "2026-09-03T23:13:28.419Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T23:09:22.805Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T23:24:22.805Z",
@@ -20,12 +20,12 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T23:05:08.395Z",
+    "next_feed_eligible_at": "2026-09-03T23:23:28.285Z",
     "feed_allowed": true,
     "story_allowed": false
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
@@ -34,11 +34,12 @@
   "threads_next_eligible_at": "2026-09-03T23:19:30.031Z",
   "publications": [
     {
-      "file": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-.json",
-      "id": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-",
-      "platform": "threads",
+      "file": "204-blueface-gets-swatted-live-on-stream-while-on-a-date-with-with-o.json",
+      "id": "204-blueface-gets-swatted-live-on-stream-while-on-a-date-with-with-o",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18101959343252765"
+      "media_id": "18131635198736674",
+      "content_type": "video"
     }
   ],
   "failures": [],
@@ -121,15 +122,15 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
-      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
+      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
+      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
-      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
+      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
+      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

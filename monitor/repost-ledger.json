@@ -833,6 +833,12 @@
       "source_handle": "freshouttheculture",
       "source_url": "https://www.instagram.com/freshouttheculture/p/Dc1R_RUD2xg/",
       "view_count": 0
+    },
+    "Dc070iluT_P": {
+      "seen_at": "2026-09-03T17:03:02.392Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Dc070iluT_P/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1520,28 +1526,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/Dc1RwJjg-8U/",
       "queue_id": "213-juicyj-projectpat-dem-goats-out-now",
       "video": "media/213-juicyj-projectpat-dem-goats-out-now.mp4"
+    },
+    "Dc1R_RUD2xg": {
+      "queued_at": "2026-09-03T17:03:40.467Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/p/Dc1R_RUD2xg/",
+      "queue_id": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo",
+      "video": "media/214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T16:24:46.868Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/traploreross/reel/Dcw87TmPq3e/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcw87TmPq3e-capture-diagnostic.json"
-        },
-        {
-          "source_url": "https://www.instagram.com/traploreross/reel/Dcw709iP2FT/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcw709iP2FT-capture-diagnostic.json"
-        }
-      ],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T16:31:38.052Z"
-    },
     {
       "started_at": "2026-09-02T16:33:40.909Z",
       "candidates": 48,
@@ -4463,6 +4457,17 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T16:58:51.762Z"
+    },
+    {
+      "started_at": "2026-09-03T17:01:24.586Z",
+      "candidates": 72,
+      "queued": [
+        "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T17:03:40.467Z"
     }
   ],
   "vip_pending": {

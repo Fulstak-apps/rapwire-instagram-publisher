@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T06:29:02.344Z",
+  "checked_at": "2026-09-03T06:31:52.354Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T06:18:34.653Z",
@@ -25,22 +25,14 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T06:39:02.121Z",
-  "publications": [
-    {
-      "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",
-      "id": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18230303200321872"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

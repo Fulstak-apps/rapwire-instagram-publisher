@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T18:29:30.493Z",
+  "checked_at": "2026-09-03T18:33:53.243Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T18:25:28.133Z",
-    "usage": 46,
+    "usage": 47,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T18:40:28.133Z",
@@ -20,19 +20,28 @@
     "instagram_remaining": 52,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T18:27:36.720Z",
+    "next_feed_eligible_at": "2026-09-03T18:43:53.097Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T18:30:09.738Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "186-baby-jane-made-starry-eyed-sound-like-a-forgotten-2010s-classic-.json",
+      "id": "186-baby-jane-made-starry-eyed-sound-like-a-forgotten-2010s-classic-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18608283721065255",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {
@@ -73,20 +82,6 @@
     {
       "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
       "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y.json",
-      "id": "188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "189-rolling-loud-was-not-ready-for-this-ms-lauryn-hill-delivered-a-s.json",
-      "id": "189-rolling-loud-was-not-ready-for-this-ms-lauryn-hill-delivered-a-s",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

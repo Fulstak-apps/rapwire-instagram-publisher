@@ -2124,19 +2124,15 @@
       "source_url": "https://www.instagram.com/rockstargames/reel/DcjfDQOgcZv/",
       "queue_id": "223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net",
       "video": "media/223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net.mp4"
+    },
+    "Dc1bJArmhu7": {
+      "queued_at": "2026-09-03T23:43:16.247Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc1bJArmhu7/",
+      "queue_id": "224-ye-is-projected-to-surpass-1-million-in-total-attendance-across-"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T18:53:27.475Z",
-      "candidates": 0,
-      "queued": [
-        "127-raplisted-repost-video"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T18:54:11.132Z"
-    },
     {
       "started_at": "2026-09-02T18:56:14.000Z",
       "candidates": 0,
@@ -5047,6 +5043,17 @@
       "mode": "discovery",
       "vip_pending": 17,
       "finished_at": "2026-09-03T23:40:37.022Z"
+    },
+    {
+      "started_at": "2026-09-03T23:42:44.365Z",
+      "candidates": 38,
+      "queued": [
+        "224-ye-is-projected-to-surpass-1-million-in-total-attendance-across-"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-03T23:43:16.247Z"
     }
   ],
   "vip_pending": {
@@ -5073,15 +5080,6 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json",
       "last_attempt_at": "2026-09-03T17:34:37.129Z",
       "retry_at": "2026-09-03T18:34:37.129Z"
-    },
-    "Dc1bJArmhu7": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/p/Dc1bJArmhu7/",
-      "shortcode": "Dc1bJArmhu7",
-      "first_seen_at": "2026-09-03T18:14:57.907Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0
     },
     "DPb55rogN67": {
       "source_handle": "darnellwilliams",
@@ -5212,16 +5210,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-03T23:34:07.886Z"
+      "checked_at": "2026-09-03T23:42:55.603Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-03T23:34:12.143Z"
+      "checked_at": "2026-09-03T23:42:59.733Z"
     },
     "records": {
-      "checked_at": "2026-09-03T23:34:16.182Z"
+      "checked_at": "2026-09-03T23:43:03.776Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-03T23:34:03.783Z"
+      "checked_at": "2026-09-03T23:42:51.540Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-03T23:23:41.620Z"

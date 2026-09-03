@@ -4,6 +4,11 @@ export const isVip = handle => VIP_HANDLES.has(String(handle || '').replace(/^@/
 
 export function discussionPrompt(text) {
   const value = String(text || '').toLowerCase();
+  if (/jay[- ]?z|shawn carter/.test(value)) return 'Is Jay-Z really top 5, or is the legacy doing the work?';
+  if (/drake|champagne papi/.test(value)) return 'Is Drake still top 5, or has the run cooled off?';
+  if (/kendrick lamar|k\. dot/.test(value)) return 'Is Kendrick the best rapper alive right now?';
+  if (/lil durk|durkio/.test(value)) return 'Is this changing how people see Durk, or just the latest headline?';
+  if (/nicki minaj|barbie/.test(value)) return 'Is Nicki still the standard, or has the culture moved on?';
   if (/trial|court|judge|fbi|arrest|charged|plead|testif|witness/.test(value)) return 'Does this actually change the case, or just the narrative?';
   if (/album|single|song|mixtape|release|tour|concert/.test(value)) return 'Is this a real shift, or just another rollout move?';
   if (/beef|diss|argument|fight|clash|controvers/.test(value)) return 'Which side has the stronger argument based on what is shown?';

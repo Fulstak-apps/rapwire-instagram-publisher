@@ -76,6 +76,9 @@ async function discoverFromProfile(context, source) {
       links.map((link) => link.href).filter(Boolean)
     );
     const unique = [...new Set(hrefs)]
+      // Profile pages also include recommended posts. Never attribute a link
+      // from another account to the monitored artist.
+      .filter((url) => new URL(url).pathname.split('/').filter(Boolean)[0]?.toLowerCase()===source.handle)
       .filter((url) => source.includeReels && /\/reel\//.test(url) || source.includePosts && /\/p\//.test(url))
       .map((url, profilePosition) => ({ source, url, shortcode: shortcodeFromUrl(url), profilePosition }))
       .filter((item) => item.shortcode);
@@ -424,13 +427,13 @@ try {
     .sort((left, right) => right.selectionScore - left.selectionScore
       || left.profilePosition - right.profilePosition
       || left.source.handle.localeCompare(right.source.handle));
-  const vipPool=vipCandidates(ledger, sources).slice(0,4);
   // Guaranteed artist slots lead the queue only until their daily quota is
   // reserved. This gives @darnellwilliams two distinct Reel slots a day without
   // allowing one account to take over the ordinary news rotation.
   const priorityHandles=new Set(dailySourceDeficits(sources,records).map(entry=>entry.source.handle));
-  const dailyArtistPool=vipPool.filter(candidate=>priorityHandles.has(candidate.source.handle));
-  const remainingVipPool=vipPool.filter(candidate=>!priorityHandles.has(candidate.source.handle));
+  const allVipCandidates=vipCandidates(ledger, sources);
+  const dailyArtistPool=allVipCandidates.filter(candidate=>priorityHandles.has(candidate.source.handle));
+  const remainingVipPool=allVipCandidates.filter(candidate=>!priorityHandles.has(candidate.source.handle)).slice(0,4);
   // Keep VIP discoveries durable without letting one source occupy the whole feed.
   const repeated=recent.length>=2&&recent[0].source_handle===recent[1].source_handle;
   const rankedCandidates = dailyArtistPool.length

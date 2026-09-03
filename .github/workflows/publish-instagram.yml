@@ -91,6 +91,13 @@ jobs:
           MAX_FEED_POSTS_PER_RUN: "1"
         run: node scripts/publish-instagram.mjs
 
+      - name: Engage substantive Threads replies
+        if: ${{ always() }}
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        run: node scripts/threads-engage.mjs
+
       - name: Save publication log
         if: ${{ always() }}
         run: bash scripts/save-publication-state.sh

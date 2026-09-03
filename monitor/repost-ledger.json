@@ -1571,24 +1571,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/Dc1XhHJFCOy/",
       "queue_id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
       "video": "media/216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.mp4"
+    },
+    "Dc1UvDtvrdD": {
+      "queued_at": "2026-09-03T17:57:34.100Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc1UvDtvrdD/",
+      "queue_id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
+      "video": "media/217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T17:07:50.320Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T17:10:10.935Z"
-    },
     {
       "started_at": "2026-09-02T17:12:13.939Z",
       "candidates": 48,
@@ -4509,6 +4501,17 @@
       "mode": "discovery",
       "vip_pending": 3,
       "finished_at": "2026-09-03T17:49:52.497Z"
+    },
+    {
+      "started_at": "2026-09-03T17:52:00.552Z",
+      "candidates": 72,
+      "queued": [
+        "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T17:57:34.101Z"
     }
   ],
   "vip_pending": {
@@ -4535,18 +4538,6 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json",
       "last_attempt_at": "2026-09-03T17:34:37.129Z",
       "retry_at": "2026-09-03T18:34:37.129Z"
-    },
-    "Dc1UvDtvrdD": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc1UvDtvrdD/",
-      "shortcode": "Dc1UvDtvrdD",
-      "first_seen_at": "2026-09-03T17:20:42.282Z",
-      "profile_position": 0,
-      "state": "retry_pending",
-      "attempts": 3,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1UvDtvrdD-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-03T17:43:06.727Z",
-      "retry_at": "2026-09-03T17:51:06.727Z"
     }
   }
 }

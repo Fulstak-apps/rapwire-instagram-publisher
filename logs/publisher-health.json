@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T02:42:15.710Z",
+  "checked_at": "2026-09-03T02:50:57.130Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T02:42:08.023Z",
-    "usage": 46,
+    "usage": 47,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T02:57:08.023Z",
@@ -20,12 +20,12 @@
     "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-02T23:33:45.137Z",
+    "next_feed_eligible_at": "2026-09-03T03:00:56.987Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
@@ -34,11 +34,12 @@
   "threads_next_eligible_at": "2026-09-03T02:52:15.202Z",
   "publications": [
     {
-      "file": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a.json",
-      "id": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a",
-      "platform": "threads",
+      "file": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid.json",
+      "id": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18074365214417485"
+      "media_id": "17921368608423439",
+      "content_type": "video"
     }
   ],
   "failures": [],

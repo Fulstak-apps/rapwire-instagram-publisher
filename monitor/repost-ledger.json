@@ -917,6 +917,12 @@
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/Dc1kD4DvVtt/",
       "view_count": 0
+    },
+    "Dc1k776PR0X": {
+      "seen_at": "2026-09-03T19:47:59.144Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc1k776PR0X/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1653,19 +1659,16 @@
       "source_url": "https://www.instagram.com/darnellwilliams/reel/DPjXCyOEUmp/",
       "queue_id": "220-brb-out-now-darnell-williams-darnellwilliams",
       "video": "media/220-brb-out-now-darnell-williams-darnellwilliams.mp4"
+    },
+    "Cxvc7j2Lu53": {
+      "queued_at": "2026-09-03T19:48:46.293Z",
+      "source_handle": "darnellwilliams",
+      "source_url": "https://www.instagram.com/darnellwilliams/reel/Cxvc7j2Lu53/",
+      "queue_id": "221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn",
+      "video": "media/221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T18:37:18.124Z",
-      "candidates": 0,
-      "queued": [
-        "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T18:42:11.248Z"
-    },
     {
       "started_at": "2026-09-02T18:44:14.259Z",
       "candidates": 0,
@@ -4567,6 +4570,23 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 9,
       "finished_at": "2026-09-03T19:40:44.532Z"
+    },
+    {
+      "started_at": "2026-09-03T19:46:46.718Z",
+      "candidates": 39,
+      "queued": [
+        "221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 9,
+      "finished_at": "2026-09-03T19:48:46.293Z"
     }
   ],
   "vip_pending": {
@@ -4599,15 +4619,6 @@
       "source_url": "https://www.instagram.com/records/p/Dc1bJArmhu7/",
       "shortcode": "Dc1bJArmhu7",
       "first_seen_at": "2026-09-03T18:14:57.907Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0
-    },
-    "Cxvc7j2Lu53": {
-      "source_handle": "darnellwilliams",
-      "source_url": "https://www.instagram.com/darnellwilliams/reel/Cxvc7j2Lu53/",
-      "shortcode": "Cxvc7j2Lu53",
-      "first_seen_at": "2026-09-03T18:26:57.890Z",
       "profile_position": 1,
       "state": "pending",
       "attempts": 0
@@ -4656,20 +4667,29 @@
       "profile_position": 1,
       "state": "pending",
       "attempts": 0
+    },
+    "Dc1k776PR0X": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc1k776PR0X/",
+      "shortcode": "Dc1k776PR0X",
+      "first_seen_at": "2026-09-03T19:47:59.145Z",
+      "profile_position": 0,
+      "state": "pending",
+      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-03T19:39:03.033Z"
+      "checked_at": "2026-09-03T19:47:49.136Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-03T19:39:07.383Z"
+      "checked_at": "2026-09-03T19:47:54.295Z"
     },
     "records": {
-      "checked_at": "2026-09-03T19:39:11.667Z"
+      "checked_at": "2026-09-03T19:47:59.037Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-03T19:38:58.797Z"
+      "checked_at": "2026-09-03T19:47:44.294Z"
     }
   }
 }

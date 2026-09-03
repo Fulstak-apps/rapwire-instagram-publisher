@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T02:23:43.741Z",
+  "checked_at": "2026-09-03T02:27:48.695Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T02:23:38.880Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T02:17:33.923Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T02:37:47.807Z",
+  "publications": [
+    {
+      "file": "178-akademiks-government-has-2-more-witnesses-expecting-to-rest-tomo.json",
+      "id": "178-akademiks-government-has-2-more-witnesses-expecting-to-rest-tomo",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17955208290214740"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

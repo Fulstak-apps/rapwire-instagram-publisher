@@ -15,7 +15,7 @@
   "rendered_body_text": "while most people were still waking up and getting their day started, Toronto rapper Top5 was already outside with a “light bag” of cash on him — $75,000 in hand. Top5 has always been an artist who generates conversation beyond the music itself. From his personality and social-media presence to the lifestyle he publicly portrays. Yall think this is a good idea? toronto.",
   "caption": "while most people were still waking up and getting their day started, Toronto rapper Top5 was already outside with a “light bag” of cash on him — $75,000 in hand. Top5 has always been an artist who generates conversation beyond the music itself. From his personality and social-media presence to the lifestyle he publicly portrays. Yall think this is a good idea? toronto.\n\n@rapwire247",
   "threads_text": "while most people were still waking up and getting their day started, Toronto rapper Top5 was already outside with a “light bag” of cash on him — $75,000 in hand. Top5 has always been an artist who generates conversation beyond the music itself. From his personality and social-media presence to the lifestyle he publicly portrays. Yall think this is a good idea? toronto.\n\n@rapwire247",
-  "video": "media/212-while-most-people-were-still-waking-up-and-getting-their-day-sta.mp4",
+  "video": "media/212-while-most-people-were-still-waking-up-and-getting-their-day-sta-footage-only-51b4cbc2-a575-4d3a-98d2-fe495de86ad9.mp4",
   "source_handle": "trapmatictv",
   "source_url": "https://www.instagram.com/trapmatictv/p/Dc1L_6Ijmys/",
   "source_urls": [
@@ -40,5 +40,45 @@
   "caption_checked_at": "2026-09-03T16:22:18.853Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 8.64,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 900,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 900
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 900
+      },
+      "method": "full-frame-no-removable-source-header-v1",
+      "source_header_removed": false,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "sample_times": [
+        0.2592,
+        2.16,
+        4.32,
+        6.48,
+        8.3808
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "637b60d46ef47910f7bb900c28c15f49f9ed48239861f76981fd322eb81dfc34",
+    "output_sha256": "f6b3a0634675efcd3989fb07739b6538a4c7d545718d08116646cf138d1f99b9",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1L_6Ijmys-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:55:11.466Z"
+  }
 }

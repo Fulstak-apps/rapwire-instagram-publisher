@@ -1499,16 +1499,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T15:36:19.084Z",
-      "candidates": 0,
-      "queued": [
-        "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T15:39:41.087Z"
-    },
-    {
       "started_at": "2026-09-02T15:41:44.566Z",
       "candidates": 0,
       "queued": [
@@ -4457,6 +4447,22 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T16:26:28.151Z"
+    },
+    {
+      "started_at": "2026-09-03T16:28:31.911Z",
+      "candidates": 72,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc0GSDvJnGO-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T16:30:34.924Z"
     }
   ],
   "vip_pending": {

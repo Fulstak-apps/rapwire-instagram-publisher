@@ -1074,15 +1074,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T05:17:28.319Z",
-      "candidates": 48,
-      "queued": [
-        "129-raplisted-repost-video"
-      ],
-      "errors": [],
-      "finished_at": "2026-09-02T05:20:33.239Z"
-    },
-    {
       "started_at": "2026-09-02T05:22:36.021Z",
       "candidates": 48,
       "queued": [
@@ -8245,6 +8236,15 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-03T03:49:42.766Z"
+    },
+    {
+      "started_at": "2026-09-03T03:51:46.270Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-03T03:52:32.961Z"
     }
   ],
   "vip_pending": {}

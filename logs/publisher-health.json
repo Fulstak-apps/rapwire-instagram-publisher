@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T02:50:57.130Z",
+  "checked_at": "2026-09-03T03:15:46.902Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T02:42:08.023Z",
-    "usage": 47,
+    "checked_at": "2026-09-03T03:15:45.526Z",
+    "usage": 43,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T02:57:08.023Z",
+    "next_check_at": "2026-09-03T03:30:45.526Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 46,
-    "instagram_remaining": 2,
+    "instagram_usage": 43,
+    "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T03:00:56.987Z",
@@ -25,23 +25,14 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T02:52:15.202Z",
-  "publications": [
-    {
-      "file": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid.json",
-      "id": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17921368608423439",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

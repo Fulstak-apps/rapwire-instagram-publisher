@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T18:43:59.433Z",
+  "checked_at": "2026-09-03T18:48:13.766Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T18:41:42.799Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T18:56:42.799Z",
@@ -20,19 +20,28 @@
     "instagram_remaining": 51,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T18:43:53.097Z",
+    "next_feed_eligible_at": "2026-09-03T18:58:12.944Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T18:47:59.551Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-.json",
+      "id": "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18107679175886183",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {
@@ -115,13 +124,6 @@
     {
       "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
       "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "206-best-audi-advertisement-ever-audi-is-the-breakout-single-from-fl.json",
-      "id": "206-best-audi-advertisement-ever-audi-is-the-breakout-single-from-fl",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

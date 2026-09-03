@@ -1,30 +1,30 @@
 {
-  "checked_at": "2026-09-03T20:32:36.420Z",
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "checked_at": "2026-09-03T21:42:06.061Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T19:50:41.312Z",
-    "usage": 50,
+    "checked_at": "2026-09-03T21:41:58.907Z",
+    "usage": 48,
     "total": 100,
-    "blocked": true,
-    "next_check_at": "2026-09-03T21:01:28.698Z",
+    "blocked": false,
+    "next_check_at": "2026-09-03T21:56:58.907Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
-    "reason": "Instagram publishing quota exhausted (9/2207042)",
+    "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
-    "effective_total": 100,
+    "effective_total": 50,
     "observed_rejection_at_usage": 50
   },
   "delivery_policy": {
     "feed_interval_minutes": 10,
-    "instagram_daily_cap": 98,
-    "instagram_usage": 50,
-    "instagram_remaining": 48,
+    "instagram_daily_cap": 48,
+    "instagram_usage": 47,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T19:56:45.265Z",
-    "feed_allowed": false,
+    "next_feed_eligible_at": "2026-09-03T21:52:05.229Z",
+    "feed_allowed": true,
     "story_allowed": false
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
@@ -34,11 +34,12 @@
   "threads_next_eligible_at": "2026-09-03T20:42:36.140Z",
   "publications": [
     {
-      "file": "185-blueface-s-production-team-keeps-switching-the-stream-ingest-fro.json",
-      "id": "185-blueface-s-production-team-keeps-switching-the-stream-ingest-fro",
-      "platform": "threads",
+      "file": "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-.json",
+      "id": "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18123594940875078"
+      "media_id": "17990314161043237",
+      "content_type": "video"
     }
   ],
   "failures": [],

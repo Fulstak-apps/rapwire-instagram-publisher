@@ -845,6 +845,12 @@
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/Dc1UvDtvrdD/",
       "view_count": 0
+    },
+    "Dc1Vc_Yi22H": {
+      "seen_at": "2026-09-03T17:26:58.896Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc1Vc_Yi22H/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1539,24 +1545,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/p/Dc1R_RUD2xg/",
       "queue_id": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo",
       "video": "media/214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo.mp4"
+    },
+    "Dc1Vc_Yi22H": {
+      "queued_at": "2026-09-03T17:27:18.111Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc1Vc_Yi22H/",
+      "queue_id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
+      "video": "media/215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T16:50:09.993Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T16:52:30.917Z"
-    },
     {
       "started_at": "2026-09-02T16:54:34.477Z",
       "candidates": 48,
@@ -4465,6 +4463,17 @@
       "mode": "discovery",
       "vip_pending": 3,
       "finished_at": "2026-09-03T17:23:49.171Z"
+    },
+    {
+      "started_at": "2026-09-03T17:25:53.120Z",
+      "candidates": 72,
+      "queued": [
+        "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 3,
+      "finished_at": "2026-09-03T17:27:18.111Z"
     }
   ],
   "vip_pending": {

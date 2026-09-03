@@ -1505,23 +1505,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T16:06:20.435Z",
-      "candidates": 0,
-      "queued": [
-        "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-",
-        "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o"
-      ],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/traploreross/reel/Dcwfbm7y2ta/",
-          "stage": "caption_repair",
-          "error": "Command failed: git push origin HEAD:main\nTo https://github.com/Fulstak-apps/rapwire-instagram-publisher.git\n ! [remote rejected] HEAD -> main (cannot lock ref 'refs/heads/main': is at defd609d168a44179de16bf25817fbae78c0e00a but expected 1e72aa2eebcb0e9cacc55117abde89139198a01d)\nerror: failed to push some refs to 'https://github.com/Fulstak-apps/rapwire-instagram-publisher.git'\n"
-        }
-      ],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T16:15:54.634Z"
-    },
-    {
       "started_at": "2026-09-02T16:17:57.731Z",
       "candidates": 0,
       "queued": [],
@@ -4460,6 +4443,15 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T16:47:14.394Z"
+    },
+    {
+      "started_at": "2026-09-03T16:49:17.868Z",
+      "candidates": 72,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T16:50:22.409Z"
     }
   ],
   "vip_pending": {

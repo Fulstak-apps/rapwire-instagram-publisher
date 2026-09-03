@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T00:11:04.449Z",
+  "checked_at": "2026-09-03T00:15:16.945Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T00:04:32.592Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T00:10:38.061Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T00:25:16.603Z",
+  "publications": [
+    {
+      "file": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-.json",
+      "id": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18113860561922947"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

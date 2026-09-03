@@ -41,6 +41,7 @@ export function vipCaption(raw, source, url) {
   if (!isVip(source)) throw new Error('VIP caption policy requires a configured VIP page');
   // Attribute the source, do not interpret, summarize or fact-certify its claims.
   const text = String(raw || '').trim();
+  if (/\bAI\b/i.test(text)) throw new Error('Caption contains a blocked term and needs review');
   // The source page is retained in metadata, but its handle is not shown in
   // the public repost caption for these user-requested accounts.
   const body = text && text.length <= 2050 ? text : '';

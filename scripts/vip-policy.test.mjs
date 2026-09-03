@@ -31,9 +31,10 @@ test('failed downloads remain pending and retry without blocking untried posts',
   assert.equal(vipCandidates(ledger,sources,200000).length,12);
   assert.notEqual(vipCandidates(ledger,sources,200000)[0].shortcode,'post0');
 });
-test('VIP caption does not reject AI, opinions, short or missing captions',()=>{
+test('VIP captions omit source handles and reject blocked terms',()=>{
   const url=discovered[0].url;
-  for(const raw of ['AI','🔥','', 'My opinion about a trial.', 'x'.repeat(2500)]) {
+  assert.throws(()=>vipCaption('AI','akademiks',url), /blocked term/);
+  for(const raw of ['🔥','', 'My opinion about a trial.', 'x'.repeat(2500)]) {
     const fields=vipCaption(raw,'akademiks',url);
     assert.ok(fields.caption.length < 2200);
     assert.ok(fields.threads_text.length < 400);
@@ -43,9 +44,9 @@ test('VIP caption does not reject AI, opinions, short or missing captions',()=>{
   }
 });
 test('VIP attribution never allows mismatched media or tampered body',()=>{
-  const fields=vipCaption('AI','akademiks',discovered[0].url);
+  const fields=vipCaption('Original source statement','akademiks',discovered[0].url);
   const record={...fields,rendered_body_text:fields.body,source_handle:'akademiks',source_url:discovered[0].url,
-    caption_policy:'vip-source-v1',caption_source_shortcode:'post0',source_caption_text:'AI',vip_source_checked:true};
+    caption_policy:'vip-source-v1',caption_source_shortcode:'post0',source_caption_text:'Original source statement',vip_source_checked:true};
   assert.equal(captionIsBound({...record,source_handle:'nojumper'}),false);
   assert.equal(captionIsBound({...record,caption_source_shortcode:'wrong'}),false);
   assert.equal(captionIsBound({...record,body:'Invented headline'}),false);

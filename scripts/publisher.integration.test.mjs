@@ -28,10 +28,10 @@ test('Instagram cooldown does not block pending Threads work', t => {
   assert.equal(r.report.instagram_steps, 0); assert.equal(r.report.threads_steps, 1);
   assert.equal(r.report.publications.length, 0);
 });
-test('VIP short AI caption publishes without newsroom scoring while IG remains held', t => {
-  const copy=vipCaption('AI',item.source_handle,item.source_url);
+test('VIP short source caption publishes without newsroom scoring while IG remains held', t => {
+  const copy=vipCaption('Source statement',item.source_handle,item.source_url);
   const record={...item,...copy,status:'ready',instagram_media_id:undefined,rendered_body_text:copy.body,
-    caption_policy:'vip-source-v1',source_caption_text:'AI',vip_source_checked:true};
+    caption_policy:'vip-source-v1',source_caption_text:'Source statement',vip_source_checked:true};
   const r=run(t,record,null,
     `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('IG stays held'); return new Response(JSON.stringify({id:'vip-container'}));`,0,
     {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
@@ -39,9 +39,9 @@ test('VIP short AI caption publishes without newsroom scoring while IG remains h
   assert.equal(r.report.threads_steps,1);
 });
 test('VIP bypass cannot authorize a non-VIP page', t => {
-  const copy=vipCaption('AI',item.source_handle,item.source_url);
+  const copy=vipCaption('Source statement',item.source_handle,item.source_url);
   const record={...item,...copy,source_handle:'unapproved',status:'ready',instagram_media_id:undefined,rendered_body_text:copy.body,
-    caption_policy:'vip-source-v1',source_caption_text:'AI',vip_source_checked:true};
+    caption_policy:'vip-source-v1',source_caption_text:'Source statement',vip_source_checked:true};
   const r=run(t,record,null,`throw new Error('No unapproved media allowed');`,0,
     {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
   assert.equal(r.report.threads_steps,0);

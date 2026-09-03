@@ -1308,89 +1308,15 @@
       "source_url": "https://www.instagram.com/records/reel/DQDfoQbjvzV/",
       "queue_id": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-",
       "video": "media/193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.mp4"
+    },
+    "DczpIGgjpVC": {
+      "queued_at": "2026-09-03T06:26:36.507Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DczpIGgjpVC/",
+      "queue_id": "194-belly-gang-kushington-just-earned-his-first-billboard-hot-100-hi"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T11:16:30.626Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcwGCkqDiTk/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcwhYQSGSlL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/Dcv2Mf2O82Y/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DcuAOMeDpDj/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwdVfNFJBL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwPizElCPC/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        }
-      ],
-      "finished_at": "2026-09-02T11:22:41.091Z"
-    },
     {
       "started_at": "2026-09-02T11:24:41.714Z",
       "candidates": 48,
@@ -5700,6 +5626,17 @@
       "mode": "discovery",
       "vip_pending": 12,
       "finished_at": "2026-09-03T06:23:10.521Z"
+    },
+    {
+      "started_at": "2026-09-03T06:25:14.654Z",
+      "candidates": 72,
+      "queued": [
+        "194-belly-gang-kushington-just-earned-his-first-billboard-hot-100-hi"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-03T06:26:36.507Z"
     }
   ],
   "vip_pending": {
@@ -5714,15 +5651,6 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-03T06:08:48.644Z",
       "retry_at": "2026-09-03T06:24:48.644Z"
-    },
-    "DczpIGgjpVC": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/p/DczpIGgjpVC/",
-      "shortcode": "DczpIGgjpVC",
-      "first_seen_at": "2026-09-03T06:22:41.175Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0
     },
     "DcubXiNDg49": {
       "source_handle": "records",

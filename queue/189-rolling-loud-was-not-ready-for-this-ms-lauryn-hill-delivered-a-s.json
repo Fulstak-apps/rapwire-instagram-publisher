@@ -15,7 +15,7 @@
   "rendered_body_text": "Rolling Loud was not ready for this Ms. Lauryn Hill delivered a standout performance of her 1998 classic “Lost Ones” at Rolling Loud Miami 2024. Backed by a full live arrangement, Hill performed the track with rapid-fire delivery and strong breath control, bringing the energy of the original recording to the festival stage.",
   "caption": "Rolling Loud was not ready for this Ms. Lauryn Hill delivered a standout performance of her 1998 classic “Lost Ones” at Rolling Loud Miami 2024. Backed by a full live arrangement, Hill performed the track with rapid-fire delivery and strong breath control, bringing the energy of the original recording to the festival stage.\n\n@rapwire247",
   "threads_text": "Rolling Loud was not ready for this Ms. Lauryn Hill delivered a standout performance of her 1998 classic “Lost Ones” at Rolling Loud Miami 2024. Backed by a full live arrangement, Hill performed the track with rapid-fire delivery and strong breath control, bringing the energy of the original recording to the festival stage.\n\n@rapwire247",
-  "video": "media/189-rolling-loud-was-not-ready-for-this-ms-lauryn-hill-delivered-a-s.mp4",
+  "video": "media/189-rolling-loud-was-not-ready-for-this-ms-lauryn-hill-delivered-a-s-footage-only-cc2643c6-c0c4-4945-a2ef-5d9ff1739132.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/reel/DcyOtbsToJA/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T06:01:22.111Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 26.701495,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 50,
+      "y": 366,
+      "width": 616,
+      "height": 682
+    },
+    "analysis": {
+      "crop": {
+        "x": 50,
+        "y": 366,
+        "width": 616,
+        "height": 682
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: source branding is not isolated in a removable top header",
+      "sample_times": [
+        0.80104485,
+        6.67537375,
+        13.3507475,
+        20.026121250000003,
+        25.90045015
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "70f745e7866e4e6d691aaba99bab45dca5a98f844cd1d8e4145af193e9574d86",
+    "output_sha256": "683784ad78a414bb37d46849e76092b9eb05456d72972e679e644695be16804c",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DcyOtbsToJA-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:31:20.483Z"
+  }
 }

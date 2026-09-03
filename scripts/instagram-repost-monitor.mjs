@@ -2,10 +2,16 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
+import {randomUUID} from 'node:crypto';
 import { capture, launch } from "./instagram-browser-mirror.mjs";
 import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-caption.mjs";
 import { mediaFiles, isMediaRepost } from "./repost-media-policy.mjs";
 import { isVip, rememberVip, vipCandidates, deferVip, vipCaption } from './vip-policy.mjs';
+import {candidateScore} from './growth-feedback.mjs';
+import {editorialTopic} from './audience-policy.mjs';
+import {normalizeSources,dueSources} from './source-policy.mjs';
+import {selectionAllowed,recentPosts,editorialRank,reportingGate,storyFingerprint} from './editorial-policy.mjs';
+import {capturedVideoLayout,capturedMediaItems,verifyVideoLayoutFiles,videoRepairAllowed,mediaRepairAllowed,mixedVideoLayoutReview} from './video-layout-policy.mjs';
 
 const execFileAsync = promisify(execFile);
 
@@ -14,14 +20,7 @@ const ledgerPath = path.join(root, "monitor", "repost-ledger.json");
 const lockPath = path.join(root, "monitor", "repost-monitor.lock");
 const queueDir = path.join(root, "queue");
 const mediaDir = path.join(root, "media");
-const sources = [
-  { handle: "trapmatictv", credit: false, includePosts: true, includeReels: true },
-  { handle: "raplisted_", credit: false, includePosts: true, includeReels: true },
-  { handle: "akademiks", credit: true, includePosts: true, includeReels: true },
-  { handle: "traploreross", credit: true, includePosts: true, includeReels: true }
-  ,{ handle: "freshouttheculture", credit: true, includePosts: true, includeReels: true }
-  ,{ handle: "records", credit: true, includePosts: true, includeReels: true }
-];
+const sources = normalizeSources(JSON.parse(await fs.readFile('monitor/sources.json','utf8')));
 const maxQueuePerRun = 1;
 const candidatesPerSourceToScore = 4;
 
@@ -149,21 +148,23 @@ async function releaseLock() {
 }
 
 async function captionFields(evidence, source) {
+  const layout=evidence.content_type==='video'||(!evidence.items&&evidence.duration)
+    ? {video_layout:capturedVideoLayout(evidence)}:{};
   if (isVip(source)) {
     const text = vipCaption(evidence.source_caption_text, source, evidence.source_url);
     return {...text, rendered_body_text:text.body, caption_policy:'vip-source-v1',
       caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text,
       caption_checked_at:evidence.captured_at, vip_source_checked:true,
-      media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration};
+      media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration,...layout};
   }
   const registry = await readJson(path.join(root, "monitor", "artist-handles.json"), []);
   const text = buildVideoCaption(evidence.source_caption_text, source, registry);
-  return { ...text, rendered_body_text:text.body, threads_text:text.caption, caption_policy:"exact-source-v1", caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text, caption_checked_at:evidence.captured_at, media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration };
+  return { ...text, rendered_body_text:text.body, caption_policy:"exact-source-v1", caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text, caption_checked_at:evidence.captured_at, media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration,...layout };
 }
 
 async function queueCapture(ledger, candidate, queueNumber) {
   const shortcode = candidate.shortcode;
-  const evidence = await capture(candidate.url, { headless: true, vip: isVip(candidate.source.handle) });
+  const evidence = await capture(candidate.url, { headless: true, vip: isVip(candidate.source.handle),sourceHandle:candidate.source.handle });
   // Keep the exact canonical URL used for caption binding on both platforms.
   candidate.url = evidence.source_url;
   const sourceVideo = path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`);
@@ -197,6 +198,8 @@ async function queueCapture(ledger, candidate, queueNumber) {
     source_url: candidate.url,
     source_urls: [candidate.url],
     source_view_count_at_selection: Number(candidate.viewCount || 0),
+    selection_score: candidate.selectionScore ?? null,
+    discussion_topic: editorialTopic(fields.body),
     visual_asset_type: "source_video",
     visual_asset_rights: "source_post_repost",
     source_video_used: true,
@@ -210,12 +213,14 @@ async function queueCapture(ledger, candidate, queueNumber) {
     threads_status: "pending"
   };
   Object.assign(queueItem, fields);
+  queueItem.story_fingerprint=storyFingerprint(body);
+  queueItem.editorial_review_required=reportingGate(queueItem).reasons;
   if (multiMedia) {
-    const mediaItems=[];
+    const destinations=[];
     for (const [index,media] of evidence.items.entries()) {
       const destination=path.join(mediaDir,`${id}-${index+1}.${media.type==='video'?'mp4':'jpg'}`);
       await fs.copyFile(media.path,destination);
-      mediaItems.push({type:media.type,path:path.relative(root,destination),source_index:index});
+      destinations.push(path.relative(root,destination));
     }
     const story=path.join(mediaDir,`${id}-story.jpg`);
     await fs.copyFile(evidence.story,story);
@@ -223,9 +228,11 @@ async function queueCapture(ledger, candidate, queueNumber) {
     delete queueItem.source_video_used;
     Object.assign(queueItem, {type:'source_media_repost',content_type:evidence.content_type,
       layout_template:'rapwire-source-media-v1',visual_asset_type:'source_media',
-      media_items:mediaItems,media_capture_complete:evidence.complete,source_item_count:evidence.item_count,
+      media_items:capturedMediaItems(evidence,destinations),media_capture_complete:evidence.complete,source_item_count:evidence.item_count,
       story:path.relative(root,story),story_is_preview:true});
   }
+  const layoutCheck=await verifyVideoLayoutFiles(queueItem,root);
+  if(!layoutCheck.allowed)throw new Error(layoutCheck.issues.join('; '));
   await writeJson(path.join(queueDir, `${id}.json`), queueItem);
   ledger.queued_shortcodes[shortcode] = {
     queued_at: new Date().toISOString(),
@@ -307,26 +314,42 @@ try {
     if (!name.endsWith(".json")) continue;
     const itemPath = path.join(queueDir, name);
     const item = await readJson(itemPath, {});
-    if (item.status !== "ready" || item.content_type !== "video" || captionIsBound(item)
+    if (!mediaRepairAllowed(item)
       || !sources.some(source => source.handle === item.source_handle)
-      || item.instagram_media_id || item.instagram_publish_requested_at || item.instagram_reconcile_required
       || Date.parse(item.caption_retry_at || "") > Date.now()) continue;
+    const layoutCheck=await verifyVideoLayoutFiles(item,root);
+    const mixedReview=mixedVideoLayoutReview(item,layoutCheck);
+    if(mixedReview) {
+      if(JSON.stringify(item.video_layout_review_required)!==JSON.stringify(mixedReview)) {
+        item.video_layout_review_required=mixedReview;
+        await writeJson(itemPath,item);run.queued.push(item.id);
+        await commitAndPush([item.id]);
+      }
+      run.errors.push({source_url:item.source_url,stage:'video_layout_review',error:mixedReview.reason,video_indices:mixedReview.video_indices});
+      continue;
+    }
+    if(layoutCheck.allowed&&item.video_layout_review_required) {
+      delete item.video_layout_review_required;
+      await writeJson(itemPath,item);run.queued.push(item.id);
+      await commitAndPush([item.id]);
+    }
+    if(!videoRepairAllowed(item))continue;
+    const needsCaptionRepair=!captionIsBound(item);
+    if(!needsCaptionRepair&&layoutCheck.allowed)continue;
     if (repairAttempts++ >= 3) break;
     try {
-      const evidence = await capture(item.source_url, { headless: true, vip: isVip(item.source_handle) });
-      item.source_url = evidence.source_url;
-      const fields = await captionFields(evidence, item.source_handle);
-      const shortcode = shortcodeFromUrl(item.source_url);
-      const destination = path.join(mediaDir, `${item.id}-caption-matched.mp4`);
+      const evidence = await capture(item.source_url, { headless: true, vip: isVip(item.source_handle),sourceHandle:item.source_handle });
+      // A layout-only repair must not rewrite the already-bound source copy.
+      const fields = needsCaptionRepair?await captionFields(evidence,item.source_handle)
+        : {video_layout:capturedVideoLayout(evidence),media_capture_evidence:evidence.media_match_method,source_video_duration:evidence.duration};
+      const shortcode = shortcodeFromUrl(evidence.source_url);
+      const destination = path.join(mediaDir, `${item.id}-footage-only-${randomUUID()}.mp4`);
       await fs.copyFile(path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`), destination);
-      item.video = path.relative(root, destination);
-      delete item.video_url;
-      item.logo_position = "bottom-left";
-      if (item.instagram_container_id) {
-        item.superseded_unpublished_container_ids = [...(item.superseded_unpublished_container_ids || []), item.instagram_container_id];
-        for (const field of ["instagram_container_id", "instagram_container_created_at", "instagram_container_checked_at", "instagram_container_status", "instagram_retry_at"]) delete item[field];
-      }
-      Object.assign(item, fields);
+      const repaired={...item,...fields,source_url:evidence.source_url,video:path.relative(root,destination),logo_position:'bottom-left'};
+      delete repaired.video_url;
+      const renderedCheck=await verifyVideoLayoutFiles(repaired,root);
+      if(!renderedCheck.allowed)throw new Error(renderedCheck.issues.join('; '));
+      Object.assign(item,repaired);delete item.video_url;
       delete item.caption_review_error; delete item.caption_retry_at;
       await writeJson(itemPath, item);
       run.queued.push(item.id);
@@ -347,12 +370,18 @@ try {
   {
   const discovered = [];
   let rankedPool = [];
+  const records=await Promise.all((await fs.readdir(queueDir)).filter(x=>x.endsWith('.json')).map(x=>readJson(path.join(queueDir,x),{})));
+  const recent=recentPosts(records);
+  ledger.source_checks ||= {};
+  const selectedSources=dueSources(sources,ledger);
   await withFreshBrowser(async (context) => {
-    for (const source of sources) {
+    for (const source of selectedSources) {
       if (repairAttempts && !isVip(source.handle)) continue;
       try {
         discovered.push(...await discoverFromProfile(context, source));
+        ledger.source_checks[source.handle]={checked_at:new Date().toISOString()};
       } catch (error) {
+        ledger.source_checks[source.handle]={checked_at:new Date().toISOString(),retry_at:new Date(Date.now()+15*60000).toISOString(),error:error.message};
         run.errors.push({ source_handle: source.handle, stage: "discover", error: error.message });
       }
     }
@@ -387,11 +416,18 @@ try {
   // captures. It cannot disappear just because it falls out of the profile grid.
   rememberVip(ledger, discovered);
   await writeJson(ledgerPath, ledger);
+  const feedback=await readJson(path.join(root,'logs','growth-feedback.json'),{});
+  for(const candidate of rankedPool) candidate.selectionScore=candidateScore(candidate,feedback.summary||{})
+    + editorialRank({body:candidate.visibleCaption,source_handle:candidate.source.handle},recent)/10;
   const normalCandidates = rankedPool
-    .sort((left, right) => Number(right.viewCount || 0) - Number(left.viewCount || 0)
+    .filter(candidate=>selectionAllowed(candidate,recent))
+    .sort((left, right) => right.selectionScore - left.selectionScore
       || left.profilePosition - right.profilePosition
       || left.source.handle.localeCompare(right.source.handle));
-  const rankedCandidates = [...vipCandidates(ledger, sources).slice(0, 4), ...normalCandidates];
+  const vipPool=vipCandidates(ledger, sources).slice(0,4);
+  // Keep VIP discoveries durable without letting one source occupy the whole feed.
+  const repeated=recent.length>=2&&recent[0].source_handle===recent[1].source_handle;
+  const rankedCandidates = repeated&&normalCandidates.length ? [...normalCandidates,...vipPool] : [...vipPool,...normalCandidates];
   let queueNumber = await nextQueueNumber();
   for (const candidate of rankedCandidates) {
     if (run.queued.length >= maxQueuePerRun) break;

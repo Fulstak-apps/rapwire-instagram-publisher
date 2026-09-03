@@ -1,46 +1,11 @@
-# RapWire 24/7 source monitor
+# RapWire source monitor
 
-This directory defines the monitoring contract for the RapWire newsroom. Keep routine reposting cheap and automatic: local/GitHub scripts should poll, capture, transcode, caption, queue, publish, and log repost videos without spending Codex or AI newsroom cycles. Reserve AI generation/research for real reported news, court cases, allegations, or explainers that need synthesis.
+The live registry is [sources.json](sources.json). See [OPERATIONS.md](../OPERATIONS.md) for the complete, current rules.
 
-Lead accounts:
-- @akademiks
-- @traploreross
-- @trapmatictv
-- @raplisted_
+The user authorizes independent source discovery. Add exact verified accounts with their publisher-owned identity evidence and topic scope. Hip-hop is the core; gaming remains occasional. Social sources are leads, not independent proof of claims.
 
-Research-only news sources, used by the AI newsroom only when making factual explainer posts:
-- @complexmusic
-- @nojumper
-- @poetikflakkonews
-- @saycheesetv
-- @worldstarhiphop
-- @theshaderoom when directly rap-related
-- @detroitrapnews
-- @detroitrapdaily
-- @gta6latest as the only occasional gaming exception
+The collector uses a bounded rotating window of non-VIP sources and retains VIP discoveries in repost-ledger.json. Selection prefers source/topic variety and gradually incorporates measured RapWire results. Failed captures remain pending. Source shortcodes and exact-caption fingerprints prevent duplicates; existing live posts are never edited or deleted.
 
-Important: this repository does not contain Instagram login credentials. Browser-based capture must use the dedicated signed-in Chrome profile on the user's Mac and must not export cookies. API credentials stay only in GitHub Actions secrets.
+Canonical source captions and complete video/audio must match. Caption matching is not factual corroboration. Major court/death claims require two-source reporting recorded against the exact body hash. The existing three-times-daily newsroom resolves the editorial inbox and can independently find new reporting; ordinary reposts do not invoke Codex.
 
-Cheap repost contract:
-1. Check every two minutes; publish no more than one new post per platform per ten minutes, subject to quota and processing. Never run the AI newsroom for routine reposts.
-2. Source videos from @trapmatictv, @raplisted_, @akademiks, and @traploreross only.
-3. @akademiks and @traploreross are VIP: retain every unreposted post from their current grids and future posts, without editorial selection or view-count scoring. No historical backfill. Unsupported media and download failures stay in the durable pending backlog, not silently skipped. @trapmatictv and @raplisted_ keep their existing rules. See OPERATIONS.md for current media support.
-4. Download the playable video with audio and publish it as video, not as a screenshot carousel.
-5. Preserve the regular source size, use full 1080px width whenever practical, and never shrink footage into a narrow card.
-6. Put the round RapWire 24/7 logo at the bottom or on already-empty video space without covering faces, subtitles, captions, trailer titles, or meaningful source text. Do not use the old rectangular border badge.
-7. Remove blog/source @handles from the graphic. Omit written credit only for user-owned @trapmatictv and @raplisted_; otherwise keep source credit in the written caption.
-8. Use simple template captions for reposts. Do not call AI just to write a routine repost caption.
-9. Validate H.264/AAC, 1080x1350, duration, and center-grid preview before publishing.
-10. Publish to Instagram and Threads, log both media IDs/permalinks, keep a JSONL attempt ledger, and retry only the failed platform on later runs.
-
-News/explainer contract:
-1. Wake Codex only three times daily for AI newsroom work: about 9am, 12pm, and 5pm Los Angeles time.
-2. Persist a cursor per source.
-3. Normalize links, entities, timestamps, and claim fingerprints.
-4. Deduplicate across sources and against the last 48 hours of RapWire posts.
-5. Independently verify claims.
-6. Obtain a documented reuse-permitted image.
-7. Write one queue item with source handle, subject handle, source URL, rights basis, verification notes, graphic asset, caption, and publish-after time.
-8. Publisher handles Instagram + Threads delivery.
-9. Retry transient errors with exponential backoff and never duplicate an event.
-10. Quarantine high-risk or unverified claims.
+Do not export cookies or store credentials here. GitHub Actions secrets contain the platform tokens. Keep publishing history, raw source evidence, verified artist handles, source-check times and recoverable errors.

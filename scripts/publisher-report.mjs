@@ -41,6 +41,8 @@ console.log(JSON.stringify({
   source_counts: sourceCounts,
   latest_publications: latestPublications,
   recent_failures: recentFailures,
+  audience_growth: (await readJson('logs/growth-feedback.json', {})).summary || null,
+  replies: await readJson('logs/threads-replies.json', null),
   publisher_health: await readJson('logs/publisher-health.json', null),
   monitor_health: await readJson('logs/repost-monitor-health.json', null),
 }, null, 2));

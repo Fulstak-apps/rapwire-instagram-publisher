@@ -9,7 +9,7 @@ previous=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/publish-instagram.
 if [ -z "$previous" ]; then exit 0; fi
 jobs=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$previous/jobs")
 save_result=$(jq -r '[.jobs[].steps[]? | select(.name == "Save publication log") | .conclusion][0] // "missing"' <<< "$jobs")
-publish_result=$(jq -r '[.jobs[].steps[]? | select(.name == "Publish queued post to Instagram, Story, and Threads") | .conclusion][0] // "skipped"' <<< "$jobs")
+publish_result=$(jq -r '[.jobs[].steps[]? | select((.name | startswith("Publish queued post to Instagram")) or .name == "Engage substantive Threads replies") | .conclusion | select(. != "skipped" and . != null)][0] // "skipped"' <<< "$jobs")
 if [[ "$publish_result" != "skipped" && "$save_result" != "success" ]]; then
   mkdir -p logs
   jq -n --arg run "$previous" --arg state "$save_result" '{run_id:$run,save_result:$state,reason:"Prior publication state was not saved; recover its artifact and reconcile media IDs before resuming"}' > "$hold"

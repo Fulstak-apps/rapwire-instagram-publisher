@@ -1,31 +1,9 @@
+import { composeThreads } from './audience-policy.mjs';
+import {cleanPublicCopy} from './editorial-policy.mjs';
+export { discussionPrompt, fitDiscussionText } from './audience-policy.mjs';
 // User instruction, 2026-09-02: repost everything from these pages until changed.
 export const VIP_HANDLES = new Set(['akademiks', 'traploreross', 'records']);
 export const isVip = handle => VIP_HANDLES.has(String(handle || '').replace(/^@/, '').toLowerCase());
-
-export function discussionPrompt(text) {
-  const value = String(text || '').toLowerCase();
-  if (/jay[- ]?z|shawn carter/.test(value)) return 'Is Jay-Z really top 5, or is the legacy doing the work?';
-  if (/drake|champagne papi/.test(value)) return 'Is Drake still top 5, or has the run cooled off?';
-  if (/kendrick lamar|k\. dot/.test(value)) return 'Is Kendrick the best rapper alive right now?';
-  if (/lil durk|durkio/.test(value)) return 'Is this changing how people see Durk, or just the latest headline?';
-  if (/nicki minaj|barbie/.test(value)) return 'Is Nicki still the standard, or has the culture moved on?';
-  if (/trial|court|judge|fbi|arrest|charged|plead|testif|witness/.test(value)) return 'Does this actually change the case, or just the narrative?';
-  if (/album|single|song|mixtape|release|tour|concert/.test(value)) return 'Is this a real shift, or just another rollout move?';
-  if (/beef|diss|argument|fight|clash|controvers/.test(value)) return 'Which side has the stronger argument based on what is shown?';
-  return 'Are people judging the facts, or simply picking a side?';
-}
-
-export function fitDiscussionText(text, max = 450) {
-  const value = String(text || '').trim();
-  if (value.length <= max) return value;
-  const sentences = value.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [];
-  let fitted = '';
-  for (const sentence of sentences) {
-    if ((fitted + sentence).trim().length > max) break;
-    fitted += sentence;
-  }
-  return (fitted.trim() || value.slice(0, max).replace(/\s+\S*$/, '')).trim();
-}
 
 export function rememberVip(ledger, discovered, now = Date.now()) {
   ledger.vip_pending ||= {};
@@ -65,14 +43,13 @@ export function deferVip(ledger, candidate, error, now = Date.now()) {
 export function vipCaption(raw, source, url) {
   if (!isVip(source)) throw new Error('VIP caption policy requires a configured VIP page');
   // Attribute the source, do not interpret, summarize or fact-certify its claims.
-  const text = String(raw || '').trim();
+  const text = cleanPublicCopy(raw,source);
   if (/\bAI\b/i.test(text)) throw new Error('Caption contains a blocked term and needs review');
   // The source page is retained in metadata, but its handle is not shown in
   // the public repost caption for these user-requested accounts.
   const body = text && text.length <= 2050 ? text : '';
   const caption = body;
-  const prompt = discussionPrompt(text);
-  const threads = `${fitDiscussionText(caption, 450)}\n\n${prompt}`;
+  const threads = composeThreads(caption, {source, seed:url || text});
   return {body, caption, threads_text:threads, artist_handles:[]};
 }
 

@@ -1632,21 +1632,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T17:59:54.751Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T18:02:15.030Z"
-    },
-    {
       "started_at": "2026-09-02T18:04:18.364Z",
       "candidates": 48,
       "queued": [],
@@ -4519,6 +4504,29 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 7,
       "finished_at": "2026-09-03T18:31:29.972Z"
+    },
+    {
+      "started_at": "2026-09-03T18:31:49.994Z",
+      "candidates": 39,
+      "queued": [
+        "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b",
+        "192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/DcvmD-CvkYT/",
+          "stage": "caption_repair",
+          "error": "Command failed: git push origin HEAD:main\nTo https://github.com/Fulstak-apps/rapwire-instagram-publisher.git\n ! [remote rejected] HEAD -> main (cannot lock ref 'refs/heads/main': is at ee65d8906e0518748c66ba9ebe55fba3426642bb but expected a58231ebac6145feb466cd1c83e1fa9daae466ac)\nerror: failed to push some refs to 'https://github.com/Fulstak-apps/rapwire-instagram-publisher.git'\n"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 7,
+      "finished_at": "2026-09-03T18:35:43.112Z"
     }
   ],
   "vip_pending": {
@@ -4594,16 +4602,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-03T18:26:49.200Z"
+      "checked_at": "2026-09-03T18:35:34.575Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-03T18:26:53.414Z"
+      "checked_at": "2026-09-03T18:35:38.643Z"
     },
     "records": {
-      "checked_at": "2026-09-03T18:26:57.692Z"
+      "checked_at": "2026-09-03T18:35:42.729Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-03T18:26:45.079Z"
+      "checked_at": "2026-09-03T18:35:30.377Z"
     }
   }
 }

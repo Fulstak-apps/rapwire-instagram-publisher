@@ -1499,16 +1499,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T15:28:55.256Z",
-      "candidates": 0,
-      "queued": [
-        "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T15:34:15.652Z"
-    },
-    {
       "started_at": "2026-09-02T15:36:19.084Z",
       "candidates": 0,
       "queued": [
@@ -4451,6 +4441,22 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T16:22:19.014Z"
+    },
+    {
+      "started_at": "2026-09-03T16:24:26.303Z",
+      "candidates": 72,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc0GSDvJnGO-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T16:26:28.151Z"
     }
   ],
   "vip_pending": {

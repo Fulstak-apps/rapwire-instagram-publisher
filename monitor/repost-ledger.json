@@ -1499,27 +1499,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T15:44:40.738Z",
-      "candidates": 0,
-      "queued": [
-        "129-raplisted-repost-video"
-      ],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dcv7u-DhIR6/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcv7u-DhIR6-capture-diagnostic.json"
-        },
-        {
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dct5T6VoMnu/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dct5T6VoMnu-capture-diagnostic.json"
-        }
-      ],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T15:47:14.152Z"
-    },
-    {
       "started_at": "2026-09-02T15:49:17.384Z",
       "candidates": 0,
       "queued": [
@@ -4469,6 +4448,22 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T16:34:12.869Z"
+    },
+    {
+      "started_at": "2026-09-03T16:36:16.577Z",
+      "candidates": 72,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
+          "stage": "queue",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T16:37:45.803Z"
     }
   ],
   "vip_pending": {

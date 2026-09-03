@@ -779,6 +779,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dc1EdTmuPCu/",
       "view_count": 0
+    },
+    "Dc1Jrx9DmJE": {
+      "seen_at": "2026-09-03T15:45:23.154Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dc1Jrx9DmJE/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1434,16 +1440,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T14:45:31.973Z",
-      "candidates": 0,
-      "queued": [
-        "134-traploreross-repost-video"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T14:49:27.245Z"
-    },
     {
       "started_at": "2026-09-02T14:51:30.761Z",
       "candidates": 0,
@@ -4357,6 +4353,34 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T15:32:24.771Z"
+    },
+    {
+      "started_at": "2026-09-03T15:40:34.017Z",
+      "candidates": 72,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "score",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
+          "stage": "score",
+          "error": "page.goto: net::ERR_NETWORK_CHANGED at https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc0GSDvJnGO-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T15:46:19.931Z"
     }
   ],
   "vip_pending": {

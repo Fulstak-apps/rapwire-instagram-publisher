@@ -15,7 +15,7 @@
   "rendered_body_text": "That time DJ Khaled refused to let his Jordans touch the floor DJ Khaled took his love for sneakers to another level in November 2022 when he brought a custom silk pillow courtside at a Miami Heat game just to keep his shoes off the floor. The salmon-pink pillow featured his famous “WE THE BEST” slogan, making the entire setup impossible to miss. Allegations are not findings of guilt.",
   "caption": "That time DJ Khaled refused to let his Jordans touch the floor DJ Khaled took his love for sneakers to another level in November 2022 when he brought a custom silk pillow courtside at a Miami Heat game just to keep his shoes off the floor. The salmon-pink pillow featured his famous “WE THE BEST” slogan, making the entire setup impossible to miss. Allegations are not findings of guilt.\n\n@rapwire247",
   "threads_text": "That time DJ Khaled refused to let his Jordans touch the floor DJ Khaled took his love for sneakers to another level in November 2022 when he brought a custom silk pillow courtside at a Miami Heat game just to keep his shoes off the floor. The salmon-pink pillow featured his famous “WE THE BEST” slogan, making the entire setup impossible to miss. Allegations are not findings of guilt.\n\n@rapwire247",
-  "video": "media/207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d.mp4",
+  "video": "media/207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d-footage-only-6ea4443f-acea-494b-9e0a-ac8e08db6165.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/reel/Dc0reLpvobl/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T13:31:16.300Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 17.808253,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 410,
+      "width": 720,
+      "height": 558
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 410,
+        "width": 720,
+        "height": 558
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: static top panel has no confirmed source header",
+      "sample_times": [
+        0.53424759,
+        4.45206325,
+        8.9041265,
+        13.35618975,
+        17.27400541
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "c1ab6eb68021fb38c6546870f94561965b8f8e263bef2e438228ab1df0134335",
+    "output_sha256": "1727dcc82a9dc3256311bf0598067ca03f0a334d642219569012943d6008a3b5",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc0reLpvobl-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:48:25.915Z"
+  }
 }

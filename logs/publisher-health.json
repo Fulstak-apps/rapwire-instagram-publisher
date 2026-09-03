@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T17:59:20.497Z",
+  "checked_at": "2026-09-03T18:02:49.590Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T17:52:54.029Z",
@@ -16,39 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 44,
-    "instagram_remaining": 54,
+    "instagram_usage": 45,
+    "instagram_remaining": 53,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T18:09:07.826Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T18:09:18.982Z",
-  "publications": [
-    {
-      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
-      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17873506515572759",
-      "content_type": "video"
-    },
-    {
-      "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
-      "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18112391866817120"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

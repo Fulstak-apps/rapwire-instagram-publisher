@@ -1074,54 +1074,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T03:17:44.585Z",
-      "candidates": 48,
-      "queued": [
-        "124-raplisted-repost-video",
-        "125-raplisted-repost-video",
-        "126-raplisted-repost-video"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dcwp3NSFO4-/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwfS5BFIvD/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwdVfNFJBL/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwPizElCPC/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DcwM-FbFHk4/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/DXzliJ7jizZ/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video').first() to be visible\n"
-        }
-      ],
-      "finished_at": "2026-09-02T03:23:58.660Z"
-    },
-    {
       "started_at": "2026-09-02T03:29:16.309Z",
       "candidates": 48,
       "queued": [
@@ -8572,6 +8524,15 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-03T03:26:44.949Z"
+    },
+    {
+      "started_at": "2026-09-03T03:28:48.510Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-03T03:29:35.895Z"
     }
   ],
   "vip_pending": {}

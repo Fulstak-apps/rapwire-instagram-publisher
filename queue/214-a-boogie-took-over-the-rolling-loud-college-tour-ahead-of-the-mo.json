@@ -15,7 +15,7 @@
   "rendered_body_text": "A Boogie took over the Rolling Loud College Tour ahead of the movie The Rolling Loud College Tour is bringing the hype ahead of the Rolling Loud movie, with A Boogie joining the tour. The film stars Owen Wilson, Travis Scott, Matt Rife, and more, and hits theaters October 2nd. : :.",
   "caption": "A Boogie took over the Rolling Loud College Tour ahead of the movie The Rolling Loud College Tour is bringing the hype ahead of the Rolling Loud movie, with A Boogie joining the tour. The film stars Owen Wilson, Travis Scott, Matt Rife, and more, and hits theaters October 2nd. : :.\n\n@rapwire247",
   "threads_text": "A Boogie took over the Rolling Loud College Tour ahead of the movie The Rolling Loud College Tour is bringing the hype ahead of the Rolling Loud movie, with A Boogie joining the tour. The film stars Owen Wilson, Travis Scott, Matt Rife, and more, and hits theaters October 2nd. : :.\n\n@rapwire247",
-  "video": "media/214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo.mp4",
+  "video": "media/214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo-footage-only-b9e36976-c632-4de8-b813-e1248af83999.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/p/Dc1R_RUD2xg/",
   "source_urls": [
@@ -39,6 +39,48 @@
   "source_caption_text": "A Boogie took over the Rolling Loud College Tour ahead of the movie\n\nThe Rolling Loud College Tour is bringing the hype ahead of the Rolling Loud movie, with A Boogie joining the tour. The film stars Owen Wilson, Travis Scott, Matt Rife, and more, and hits theaters October 2nd.\n\n📷: @deechmedia\n🎥: @rollingloud",
   "caption_checked_at": "2026-09-03T17:03:40.371Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 26.051337,
-  "caption_style": "source-tag-v1"
+  "source_video_duration": 26.166031,
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 906,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 72,
+      "width": 720,
+      "height": 834
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 72,
+        "width": 720,
+        "height": 834
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: static top panel has no confirmed source header",
+      "sample_times": [
+        0.78498093,
+        6.54150775,
+        13.0830155,
+        19.62452325,
+        25.38105007
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "68ae494eeadfb729d03d71324bc457a274c56e33a7edf7b08f4a844ab3b832ec",
+    "output_sha256": "ced2775204019d516adb6dabe69b957096b75970df48c65c1b2664778f953721",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1R_RUD2xg-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:58:52.092Z"
+  }
 }

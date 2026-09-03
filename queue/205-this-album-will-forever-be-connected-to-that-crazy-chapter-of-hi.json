@@ -15,7 +15,7 @@
   "rendered_body_text": "This album will forever be connected to that crazy chapter of history Gunna’s sophomore album WUNNA arrived on May 22, 2020, during the height of the COVID-19 pandemic. With much of the world stuck at home and dealing with uncertainty, the album offered listeners a welcome escape through its smooth production, relaxed atmosphere, and luxurious themes.",
   "caption": "This album will forever be connected to that crazy chapter of history Gunna’s sophomore album WUNNA arrived on May 22, 2020, during the height of the COVID-19 pandemic. With much of the world stuck at home and dealing with uncertainty, the album offered listeners a welcome escape through its smooth production, relaxed atmosphere, and luxurious themes.\n\n@rapwire247",
   "threads_text": "This album will forever be connected to that crazy chapter of history Gunna’s sophomore album WUNNA arrived on May 22, 2020, during the height of the COVID-19 pandemic. With much of the world stuck at home and dealing with uncertainty, the album offered listeners a welcome escape through its smooth production, relaxed atmosphere, and luxurious themes.\n\n@rapwire247",
-  "video": "media/205-this-album-will-forever-be-connected-to-that-crazy-chapter-of-hi.mp4",
+  "video": "media/205-this-album-will-forever-be-connected-to-that-crazy-chapter-of-hi-footage-only-c553bbff-333c-408e-83db-6b47c9b2cebf.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/reel/DctI5ZsyDAG/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T07:27:39.258Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 28.001813,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 442,
+      "width": 720,
+      "height": 534
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 442,
+        "width": 720,
+        "height": 534
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: static top panel has no confirmed source header",
+      "sample_times": [
+        0.8400543899999999,
+        7.00045325,
+        14.0009065,
+        21.00135975,
+        27.161758609999996
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "22b56121e99c1759840e0944df5f80cfd6a539541257934033987004807c9f9e",
+    "output_sha256": "d576bf2e75ae5e3d157e740becc84f521ffb4e7509d36474826eba9d6131f12d",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DctI5ZsyDAG-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:42:09.139Z"
+  }
 }

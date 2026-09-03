@@ -6,13 +6,13 @@ export function normalizeSources(config) {
       || (!x.identity_source&&x.approved_by!=='user')) throw new Error('Invalid or unverified source configuration');
     const dailyMinimum=Number(x.daily_minimum||0);
     if(!Number.isInteger(dailyMinimum)||dailyMinimum<0||dailyMinimum>4) throw new Error('Invalid daily source minimum');
-    seen.add(x.handle);return {...x,daily_minimum:dailyMinimum,includePosts:x.include_posts!==false,includeReels:x.include_reels!==false};
+    seen.add(x.handle);return {...x,daily_minimum:dailyMinimum,fastTrack:x.fast_track===true,includePosts:x.include_posts!==false,includeReels:x.include_reels!==false};
   });
 }
 export function dueSources(sources,ledger,now=Date.now()) {
   const history=ledger.source_checks||{};
   const due=sources.filter(x=>!(Date.parse(history[x.handle]?.retry_at||'')>now)
-    && now-(Date.parse(history[x.handle]?.checked_at||'')||0)>=(isVip(x.handle)?5:30)*60000)
+    && now-(Date.parse(history[x.handle]?.checked_at||'')||0)>=(isVip(x.handle)?5:x.fastTrack?10:30)*60000)
     .sort((a,b)=>(Date.parse(history[a.handle]?.checked_at||'')||0)-(Date.parse(history[b.handle]?.checked_at||'')||0));
   return [...due.filter(x=>isVip(x.handle)),...due.filter(x=>!isVip(x.handle)).slice(0,2)];
 }

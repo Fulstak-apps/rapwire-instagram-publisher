@@ -19,9 +19,9 @@ The user authorizes independent discovery and selection. Use monitor/sources.jso
 
 Hip-hop is the core: music, artists, performances, substantive culture and court developments. Gaming is occasional; hold a new gaming upload if another gaming story is among the latest six distinct posted records. Finish already-started deliveries safely.
 
-The collector rotates at most two non-VIP source checks per cycle, with 30-minute source intervals; VIP sources are due every five minutes. Failed source checks back off fifteen minutes. Existing VIP discoveries from akademiks, traploreross and records remain durable, but are not exempt from factual review or quality checks. After a same-source streak, give alternatives priority. A saved in-flight upload retains its delivery slot.
+The collector rotates at most two non-VIP source checks per cycle. Fast-track hip-hop sources are due every ten minutes, ordinary sources every thirty minutes, and VIP sources every five minutes. Failed source checks back off fifteen minutes. Existing VIP discoveries from akademiks, traploreross and records remain durable, but are not exempt from factual review or quality checks. After a same-source streak, give alternatives priority. A saved in-flight upload retains its delivery slot.
 
-Ranking combines visible views, current profile position and bounded learned performance. Missing view counts are not invented. Learned source weights start only after at least three measured posts and 500 reach/views, and can change a source weight only within 0.8–1.25. This does not promise virality or prove causation.
+Ranking combines visible views, current profile position, a bounded observed view-velocity signal and learned performance. The velocity signal is based only on two recorded visible view counts; missing counts never become a guessed trend. Learned source weights start only after at least three measured posts and 500 reach/views, and can change a source weight only within 0.8–1.25. This improves selection but does not promise virality or prove causation.
 
 Deduplicate canonical shortcodes and exact normalized captions across sources. Do not treat a genuine new development as a duplicate merely because its opening sentence resembles an older story. Retain held records; never delete them or alter existing live posts.
 

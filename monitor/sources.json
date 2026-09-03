@@ -2,16 +2,16 @@
   "version": 1,
   "selection": "Hip-hop first; rotate sources; gaming at most one of the latest seven posts. Source identity is not independent fact verification.",
   "sources": [
-    {"handle":"trapmatictv","scope":"hiphop","enabled":true,"approved_by":"user"},
-    {"handle":"raplisted_","scope":"hiphop","enabled":true,"approved_by":"user"},
+    {"handle":"trapmatictv","scope":"hiphop","enabled":true,"approved_by":"user","fast_track":true},
+    {"handle":"raplisted_","scope":"hiphop","enabled":true,"approved_by":"user","fast_track":true},
     {"handle":"akademiks","scope":"hiphop","enabled":true,"approved_by":"user"},
     {"handle":"traploreross","scope":"hiphop","enabled":true,"approved_by":"user"},
-    {"handle":"freshouttheculture","scope":"hiphop","enabled":true,"approved_by":"user"},
+    {"handle":"freshouttheculture","scope":"hiphop","enabled":true,"approved_by":"user","fast_track":true},
     {"handle":"records","scope":"hiphop","enabled":true,"approved_by":"user"},
     {"handle":"darnellwilliams","scope":"hiphop","enabled":true,"approved_by":"user","daily_minimum":2,"include_posts":false},
-    {"handle":"complexmusic","scope":"hiphop","enabled":true,"approved_by":"user"},
-    {"handle":"xxl","scope":"hiphop","enabled":true,"identity_source":"https://www.xxlmag.com/contact/","checked_at":"2026-09-03"},
-    {"handle":"hiphopdx","scope":"hiphop","enabled":true,"identity_source":"https://hiphopdx.com/staff/","checked_at":"2026-09-03"},
+    {"handle":"complexmusic","scope":"hiphop","enabled":true,"approved_by":"user","fast_track":true},
+    {"handle":"xxl","scope":"hiphop","enabled":true,"identity_source":"https://www.xxlmag.com/contact/","checked_at":"2026-09-03","fast_track":true},
+    {"handle":"hiphopdx","scope":"hiphop","enabled":true,"identity_source":"https://hiphopdx.com/staff/","checked_at":"2026-09-03","fast_track":true},
     {"handle":"rockstargames","scope":"gaming","enabled":true,"identity_source":"https://www.rockstargames.com/es/contact","checked_at":"2026-09-03"},
     {"handle":"igndotcom","scope":"gaming","enabled":true,"identity_source":"https://world.ziffdavis.com/","checked_at":"2026-09-03"}
   ]

@@ -399,9 +399,15 @@ try {
     for (const candidate of selectedForScoring) {
       try {
         const metadata = await readPostMetadata(context, candidate.url);
+        const prior=ledger.seen_shortcodes[candidate.shortcode]||{};
+        const priorViews=Number(prior.view_count)||0;
+        const checkedAt=Date.parse(prior.view_count_checked_at||prior.seen_at||'');
+        const elapsedHours=(Date.now()-checkedAt)/3600000;
         candidate.visibleCaption = metadata.caption;
         candidate.isVideo = metadata.isVideo;
         candidate.viewCount = metadata.viewCount;
+        candidate.viewVelocity=priorViews>0&&elapsedHours>=.1&&metadata.viewCount>=priorViews
+          ? (metadata.viewCount-priorViews)/elapsedHours : 0;
       } catch (error) {
         run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "score", error: error.message });
       }
@@ -413,7 +419,8 @@ try {
       seen_at: ledger.seen_shortcodes[item.shortcode]?.seen_at || new Date().toISOString(),
       source_handle: item.source.handle,
       source_url: item.url,
-      view_count: item.viewCount || ledger.seen_shortcodes[item.shortcode]?.view_count || 0
+      view_count: item.viewCount || ledger.seen_shortcodes[item.shortcode]?.view_count || 0,
+      view_count_checked_at: item.viewCount ? new Date().toISOString() : ledger.seen_shortcodes[item.shortcode]?.view_count_checked_at || null
     };
   }
   // Every discovered VIP post is durable, including photos/carousels and failed

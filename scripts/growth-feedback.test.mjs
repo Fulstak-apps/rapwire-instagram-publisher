@@ -149,6 +149,8 @@ test('candidate scoring uses only fresh learned weights and clamps feedback infl
   assert.equal(candidateScore(candidate,{generated_at:iso(NOW),source_weights:{source:50}},NOW),base*1.25+1);
   assert.equal(candidateScore(candidate,{generated_at:iso(NOW),source_weights:{source:-50}},NOW),base*.8+1);
   assert.equal(candidateScore(candidate,{generated_at:iso(NOW-8*DAY),source_weights:{source:1.25}},NOW),base+1);
+  assert.ok(candidateScore({...candidate,viewVelocity:10_000},{},NOW)>candidateScore(candidate,{},NOW));
+  assert.equal(candidateScore({...candidate,viewVelocity:-100},{},NOW),base+1);
 });
 
 test('followers use account-wide daily history and missing follower metrics are unavailable',async()=>{

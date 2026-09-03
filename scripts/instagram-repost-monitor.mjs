@@ -439,7 +439,7 @@ try {
   const repeated=recent.length>=2&&recent[0].source_handle===recent[1].source_handle;
   const rankedCandidates = dailyArtistPool.length
     ? [...dailyArtistPool,...remainingVipPool,...normalCandidates]
-    : repeated&&normalCandidates.length ? [...normalCandidates,...vipPool] : [...vipPool,...normalCandidates];
+    : repeated&&normalCandidates.length ? [...normalCandidates,...remainingVipPool] : [...remainingVipPool,...normalCandidates];
   let queueNumber = await nextQueueNumber();
   for (const candidate of rankedCandidates) {
     if (run.queued.length >= maxQueuePerRun) break;

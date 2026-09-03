@@ -8,7 +8,7 @@ Updated September 3, 2026. This is the current contract; older thread prompts ar
 - Mac collector and GitHub dispatcher check every 120 seconds; overlapping runs are skipped. GitHub has a five-minute backup schedule, not an exact-start guarantee.
 - New feed posts have a minimum ten-minute gap per platform, measured from confirmed publication. Slow processing or quota holds can delay delivery. Instagram and Threads have separate IDs, timers and retries.
 - Codex runs the independent newsroom only at 9 a.m., noon and 5 p.m. America/Los_Angeles. Those existing runs research up to three strong stories, verify claims, prepare visuals and queue staggered delivery. No additional frequent Codex wakeups or model calls for routine reposts.
-- The local hourly Threads writer runs without waking Codex. It checks a pending container every two minutes so a safely staged post can finish, but it confirms at most one original rap conversation prompt per hour. It is Threads-only and uses no model call.
+- The hourly Threads writer runs in the existing GitHub workflow without waking Codex. The workflow checks it every five minutes so a safely staged post can finish, but it confirms at most one original rap conversation prompt per hour. It is Threads-only and uses no model call.
 - The local Ollama editor runs hourly into ignored review/local-editor. Its text drafts cannot approve themselves or publish.
 - Keep the Mac powered, connected, logged in and awake for collection. GitHub can drain its existing queue while the Mac is offline.
 - Bail Money Radio is not connected or activated. Do not reuse RapWire credentials for it.
@@ -39,7 +39,7 @@ The local `footage-only-v1` renderer samples five points across each complete so
 
 Threads copy includes at most one context-specific discussion prompt and stays within 500 characters including its footer. Preserve complete sentences. Ranking questions belong to music debates, not tragedies or verdict posts. If a source already asks a question, do not stack another. An unfit Threads caption stays held without blocking Instagram.
 
-The hourly Threads writer uses evergreen rap conversation starters only. It never presents a current event as fact, creates Instagram media, or turns court cases, deaths, injuries, or other sensitive events into engagement bait. Its separate state is stored at `~/Library/Application Support/RapWire/hourly-threads-state.json`; install it with `bash scripts/install-hourly-threads.sh`.
+The hourly Threads writer uses evergreen rap conversation starters only. It never presents a current event as fact, creates Instagram media, or turns court cases, deaths, injuries, or other sensitive events into engagement bait. In GitHub Actions its durable state is `logs/hourly-threads.json`, saved with the ordinary publication log; local use can set `RAPWIRE_HOURLY_THREADS_STATE` or use the default state path. It is checked by the existing five-minute workflow schedule, while the confirmed-post guard enforces the hourly limit.
 
 ## Growth format rules
 

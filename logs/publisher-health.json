@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T23:38:19.063Z",
+  "checked_at": "2026-09-03T23:42:17.758Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T23:24:28.555Z",
-    "usage": 47,
+    "checked_at": "2026-09-03T23:42:04.165Z",
+    "usage": 48,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T23:39:28.555Z",
+    "next_check_at": "2026-09-03T23:57:04.165Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T23:37:47.990Z",
+    "next_feed_eligible_at": "2026-09-03T23:52:10.422Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T23:34:35.894Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T23:52:17.413Z",
+  "publications": [
+    {
+      "file": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-.json",
+      "id": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17865009852661747",
+      "content_type": "video"
+    },
+    {
+      "file": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta.json",
+      "id": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18377645596229025"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

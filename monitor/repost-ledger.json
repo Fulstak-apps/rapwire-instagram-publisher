@@ -1499,16 +1499,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T15:41:44.566Z",
-      "candidates": 0,
-      "queued": [
-        "126-raplisted-repost-video"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T15:42:37.787Z"
-    },
-    {
       "started_at": "2026-09-02T15:44:40.738Z",
       "candidates": 0,
       "queued": [
@@ -4463,6 +4453,22 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T16:30:34.924Z"
+    },
+    {
+      "started_at": "2026-09-03T16:32:39.817Z",
+      "candidates": 72,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
+          "stage": "queue",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T16:34:12.869Z"
     }
   ],
   "vip_pending": {

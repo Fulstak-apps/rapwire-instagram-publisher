@@ -2104,19 +2104,16 @@
       "source_url": "https://www.instagram.com/darnellwilliams/reel/Cxvc7j2Lu53/",
       "queue_id": "221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn",
       "video": "media/221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn.mp4"
+    },
+    "Dcv1jWmnPfL": {
+      "queued_at": "2026-09-03T23:36:49.850Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/hiphopdx/p/Dcv1jWmnPfL/",
+      "queue_id": "222-tupac-s-murder-has-finally-been-solved-former-gang-boss-duane-ke",
+      "video": "media/222-tupac-s-murder-has-finally-been-solved-former-gang-boss-duane-ke.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T18:44:14.259Z",
-      "candidates": 0,
-      "queued": [
-        "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T18:48:29.741Z"
-    },
     {
       "started_at": "2026-09-02T18:50:32.980Z",
       "candidates": 0,
@@ -5025,6 +5022,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 9,
       "finished_at": "2026-09-03T19:48:46.293Z"
+    },
+    {
+      "started_at": "2026-09-03T23:33:54.208Z",
+      "candidates": 52,
+      "queued": [
+        "222-tupac-s-murder-has-finally-been-solved-former-gang-boss-duane-ke"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 17,
+      "finished_at": "2026-09-03T23:36:49.850Z"
     }
   ],
   "vip_pending": {
@@ -5190,16 +5198,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-03T23:23:29.326Z"
+      "checked_at": "2026-09-03T23:34:07.886Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-03T23:23:33.489Z"
+      "checked_at": "2026-09-03T23:34:12.143Z"
     },
     "records": {
-      "checked_at": "2026-09-03T23:23:37.528Z"
+      "checked_at": "2026-09-03T23:34:16.182Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-03T23:23:25.194Z"
+      "checked_at": "2026-09-03T23:34:03.783Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-03T23:23:41.620Z"
@@ -5214,10 +5222,10 @@
       "checked_at": "2026-09-03T23:28:26.526Z"
     },
     "xxl": {
-      "checked_at": "2026-09-03T23:02:34.346Z"
+      "checked_at": "2026-09-03T23:34:20.300Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-03T23:02:38.356Z"
+      "checked_at": "2026-09-03T23:34:24.424Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-03T23:05:12.827Z"

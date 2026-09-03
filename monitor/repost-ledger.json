@@ -1632,25 +1632,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T17:51:22.692Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dcv7u-DhIR6/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcv7u-DhIR6-capture-diagnostic.json"
-        },
-        {
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dct5T6VoMnu/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dct5T6VoMnu-capture-diagnostic.json"
-        }
-      ],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T17:53:29.802Z"
-    },
-    {
       "started_at": "2026-09-02T17:55:32.490Z",
       "candidates": 48,
       "queued": [],
@@ -4531,6 +4512,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 8,
       "finished_at": "2026-09-03T18:26:57.907Z"
+    },
+    {
+      "started_at": "2026-09-03T18:28:42.811Z",
+      "candidates": 0,
+      "queued": [
+        "188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 7,
+      "finished_at": "2026-09-03T18:29:47.228Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T21:44:44.898Z",
+  "checked_at": "2026-09-03T21:46:50.583Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T21:41:58.907Z",
@@ -25,22 +25,14 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T21:54:44.200Z",
-  "publications": [
-    {
-      "file": "188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y.json",
-      "id": "188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18655266508016265"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -60,6 +52,13 @@
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
       "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
+      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -93,34 +92,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
-      "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
-      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.json",
-      "id": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
-      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.json",
       "id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
       "platform": "video_layout",
@@ -135,6 +106,20 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
+      "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
+      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
       "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
       "platform": "video_layout",
@@ -142,8 +127,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble.json",
-      "id": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble",
+      "file": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.json",
+      "id": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

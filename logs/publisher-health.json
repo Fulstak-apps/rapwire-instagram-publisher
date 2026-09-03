@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T04:30:01.096Z",
+  "checked_at": "2026-09-03T04:34:03.879Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T04:23:34.036Z",
@@ -16,30 +16,29 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T04:40:00.327Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T04:29:49.305Z",
+  "threads_next_eligible_at": "2026-09-03T04:44:03.528Z",
   "publications": [
     {
-      "file": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e.json",
-      "id": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e",
-      "platform": "instagram",
+      "file": "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu.json",
+      "id": "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18169496368454672",
-      "content_type": "video"
+      "media_id": "18142404493589498"
     }
   ],
   "failures": [],

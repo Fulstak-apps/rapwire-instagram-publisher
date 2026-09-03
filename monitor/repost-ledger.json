@@ -1562,21 +1562,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T16:58:59.999Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T17:01:20.771Z"
-    },
-    {
       "started_at": "2026-09-02T17:03:24.393Z",
       "candidates": 48,
       "queued": [],
@@ -4493,6 +4478,28 @@
       "mode": "discovery",
       "vip_pending": 3,
       "finished_at": "2026-09-03T17:36:51.281Z"
+    },
+    {
+      "started_at": "2026-09-03T17:38:54.891Z",
+      "candidates": 60,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/Dc1UvDtvrdD/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1UvDtvrdD-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/ciggyblacc/reel/Dc1VDcXsXbb/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1VDcXsXbb-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 3,
+      "finished_at": "2026-09-03T17:45:20.956Z"
     }
   ],
   "vip_pending": {
@@ -4527,10 +4534,10 @@
       "first_seen_at": "2026-09-03T17:20:42.282Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 2,
+      "attempts": 3,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1UvDtvrdD-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-03T17:33:37.045Z",
-      "retry_at": "2026-09-03T17:37:37.045Z"
+      "last_attempt_at": "2026-09-03T17:43:06.727Z",
+      "retry_at": "2026-09-03T17:51:06.727Z"
     }
   }
 }

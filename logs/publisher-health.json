@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T05:44:40.858Z",
+  "checked_at": "2026-09-03T05:48:26.724Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T05:44:39.872Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T05:43:42.037Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T05:58:26.473Z",
+  "publications": [
+    {
+      "file": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released.json",
+      "id": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17954752443015675"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

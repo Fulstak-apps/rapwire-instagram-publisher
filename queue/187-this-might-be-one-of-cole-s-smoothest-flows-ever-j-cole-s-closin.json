@@ -15,7 +15,7 @@
   "rendered_body_text": "This might be one of Cole’s smoothest flows ever J. Cole’s closing verse on “Sacrifices” is one of the most memorable moments from Dreamville’s 2019 compilation album Revenge of the Dreamers III. After standout performances from Smino, Saba, and EARTHGANG, Cole closes the nearly six-minute track with a verse that combines technical precision with genuine emotion.",
   "caption": "This might be one of Cole’s smoothest flows ever J. Cole’s closing verse on “Sacrifices” is one of the most memorable moments from Dreamville’s 2019 compilation album Revenge of the Dreamers III. After standout performances from Smino, Saba, and EARTHGANG, Cole closes the nearly six-minute track with a verse that combines technical precision with genuine emotion.\n\n@rapwire247",
   "threads_text": "This might be one of Cole’s smoothest flows ever J. Cole’s closing verse on “Sacrifices” is one of the most memorable moments from Dreamville’s 2019 compilation album Revenge of the Dreamers III. After standout performances from Smino, Saba, and EARTHGANG, Cole closes the nearly six-minute track with a verse that combines technical precision with genuine emotion.\n\n@rapwire247",
-  "video": "media/187-this-might-be-one-of-cole-s-smoothest-flows-ever-j-cole-s-closin.mp4",
+  "video": "media/187-this-might-be-one-of-cole-s-smoothest-flows-ever-j-cole-s-closin-footage-only-940b2855-70f5-4679-a21d-ce82b24ed4f4.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/reel/DcydmPwS01j/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T05:53:16.232Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 28.001813,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 412,
+      "width": 720,
+      "height": 560
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 412,
+        "width": 720,
+        "height": 560
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: static top panel has no confirmed source header",
+      "sample_times": [
+        0.8400543899999999,
+        7.00045325,
+        14.0009065,
+        21.00135975,
+        27.161758609999996
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "38ee1d6f28fc81957ba6ae2061fb4c85e193eb8f0ac0cf59f2f6f6ecddd5d9ea",
+    "output_sha256": "87649ac6bb82ad57dff95f3a6251cdc2671b66198de3600dfadd35e6a23aeb44",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DcydmPwS01j-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:26:34.801Z"
+  }
 }

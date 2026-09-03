@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T07:02:46.976Z",
+  "checked_at": "2026-09-03T07:05:50.468Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T06:51:36.463Z",
-    "usage": 31,
+    "usage": 32,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T07:06:36.463Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 17,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T07:01:42.556Z",
+    "next_feed_eligible_at": "2026-09-03T07:15:50.349Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T06:56:01.405Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T07:15:43.520Z",
+  "publications": [
+    {
+      "file": "195-breaking-duane-keefe-d-davis-has-been-found-guilty-in-connection.json",
+      "id": "195-breaking-duane-keefe-d-davis-has-been-found-guilty-in-connection",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18107964242175926"
+    },
+    {
+      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
+      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17885703903682584",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T05:29:31.042Z",
+  "checked_at": "2026-09-03T05:33:42.258Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T05:29:30.300Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T05:29:25.270Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T05:43:42.037Z",
+  "publications": [
+    {
+      "file": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o.json",
+      "id": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18019232951715882"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

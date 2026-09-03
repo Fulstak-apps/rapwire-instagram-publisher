@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T08:32:58.788Z",
+  "checked_at": "2026-09-03T09:39:26.572Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T08:32:53.627Z",
-    "usage": 31,
+    "checked_at": "2026-09-03T09:39:14.203Z",
+    "usage": 32,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T08:47:53.627Z",
+    "next_check_at": "2026-09-03T09:54:14.203Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 17,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T07:30:42.609Z",
+    "next_feed_eligible_at": "2026-09-03T09:49:26.439Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -32,7 +32,16 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T07:34:37.228Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
+      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17963719554178669",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

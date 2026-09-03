@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T04:27:48.785Z",
+  "checked_at": "2026-09-03T04:30:01.096Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T04:23:34.036Z",
-    "usage": 29,
+    "usage": 30,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T04:38:34.036Z",
@@ -20,19 +20,28 @@
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T04:27:35.191Z",
+    "next_feed_eligible_at": "2026-09-03T04:40:00.327Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T04:29:49.305Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e.json",
+      "id": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18169496368454672",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

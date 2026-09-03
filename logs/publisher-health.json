@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T18:12:46.287Z",
+  "checked_at": "2026-09-03T18:15:13.620Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T18:09:11.299Z",
@@ -241,6 +241,13 @@
     {
       "file": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble.json",
       "id": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.json",
+      "id": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

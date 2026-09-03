@@ -869,6 +869,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/Dc1aBbjo_Kj/",
       "view_count": 0
+    },
+    "Dc1bJArmhu7": {
+      "seen_at": "2026-09-03T18:14:57.907Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc1bJArmhu7/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -1601,21 +1607,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T17:21:05.058Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T17:23:29.544Z"
-    },
     {
       "started_at": "2026-09-02T17:25:32.762Z",
       "candidates": 0,
@@ -4531,6 +4522,17 @@
       "mode": "discovery",
       "vip_pending": 2,
       "finished_at": "2026-09-03T18:11:10.301Z"
+    },
+    {
+      "started_at": "2026-09-03T18:13:18.787Z",
+      "candidates": 36,
+      "queued": [
+        "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 3,
+      "finished_at": "2026-09-03T18:14:57.911Z"
     }
   ],
   "vip_pending": {
@@ -4557,6 +4559,26 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json",
       "last_attempt_at": "2026-09-03T17:34:37.129Z",
       "retry_at": "2026-09-03T18:34:37.129Z"
+    },
+    "Dc1bJArmhu7": {
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc1bJArmhu7/",
+      "shortcode": "Dc1bJArmhu7",
+      "first_seen_at": "2026-09-03T18:14:57.907Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
+    }
+  },
+  "source_checks": {
+    "akademiks": {
+      "checked_at": "2026-09-03T18:14:49.271Z"
+    },
+    "traploreross": {
+      "checked_at": "2026-09-03T18:14:53.427Z"
+    },
+    "records": {
+      "checked_at": "2026-09-03T18:14:57.567Z"
     }
   }
 }

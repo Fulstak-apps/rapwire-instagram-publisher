@@ -15,7 +15,7 @@
   "rendered_body_text": "Best Audi advertisement ever “Audi” is the breakout single from Florida rapper Smokepurpp, released in 2017, and produced by Ronny J. Built around distorted bass, minimal production, and explosive energy, the track quickly became one of the defining songs of the SoundCloud rap era. The song’s repetitive hook, wild ad-libs, and hypnotic production gave it an instantly recognizable sound.",
   "caption": "Best Audi advertisement ever “Audi” is the breakout single from Florida rapper Smokepurpp, released in 2017, and produced by Ronny J. Built around distorted bass, minimal production, and explosive energy, the track quickly became one of the defining songs of the SoundCloud rap era. The song’s repetitive hook, wild ad-libs, and hypnotic production gave it an instantly recognizable sound.\n\n@rapwire247",
   "threads_text": "Best Audi advertisement ever “Audi” is the breakout single from Florida rapper Smokepurpp, released in 2017, and produced by Ronny J. Built around distorted bass, minimal production, and explosive energy, the track quickly became one of the defining songs of the SoundCloud rap era. The song’s repetitive hook, wild ad-libs, and hypnotic production gave it an instantly recognizable sound.\n\n@rapwire247",
-  "video": "media/206-best-audi-advertisement-ever-audi-is-the-breakout-single-from-fl.mp4",
+  "video": "media/206-best-audi-advertisement-ever-audi-is-the-breakout-single-from-fl-footage-only-8b2fe4eb-29de-42db-b16e-a5dca2223a32.mp4",
   "source_handle": "freshouttheculture",
   "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcs-aPevRTN/",
   "source_urls": [
@@ -40,5 +40,47 @@
   "caption_checked_at": "2026-09-03T08:47:33.664Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 18.017232,
-  "caption_style": "source-tag-v1"
+  "caption_style": "source-tag-v1",
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 720,
+    "source_height": 1280,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 430,
+      "width": 720,
+      "height": 556
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 430,
+        "width": 720,
+        "height": 556
+      },
+      "method": "proven-solo-footage-panel-fallback-v1",
+      "source_header_removed": true,
+      "caption_panel_removed": true,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "header_only_crop_error": "Crop review required: static top panel has no confirmed source header",
+      "sample_times": [
+        0.5405169599999999,
+        4.504308,
+        9.008616,
+        13.512924,
+        17.47671504
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "c8387480d62db41cf85e0689354f9377cd104b598238531871f94dabcc274120",
+    "output_sha256": "02daad7acd32f965406d527de480477192f8291a505e93a91b8df1d0d35c5504",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dcs-aPevRTN-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T18:45:28.435Z"
+  }
 }

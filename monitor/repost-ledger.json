@@ -1361,6 +1361,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/trapmatictv/p/Dc1-xQ_jRi2/",
       "view_count": 0
+    },
+    "Dc1-Fy0CXuc": {
+      "seen_at": "2026-09-03T23:39:36.172Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Dc1-Fy0CXuc/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -2111,19 +2117,16 @@
       "source_url": "https://www.instagram.com/hiphopdx/p/Dcv1jWmnPfL/",
       "queue_id": "222-tupac-s-murder-has-finally-been-solved-former-gang-boss-duane-ke",
       "video": "media/222-tupac-s-murder-has-finally-been-solved-former-gang-boss-duane-ke.mp4"
+    },
+    "DcjfDQOgcZv": {
+      "queued_at": "2026-09-03T23:40:37.022Z",
+      "source_handle": "rockstargames",
+      "source_url": "https://www.instagram.com/rockstargames/reel/DcjfDQOgcZv/",
+      "queue_id": "223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net",
+      "video": "media/223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T18:50:32.980Z",
-      "candidates": 0,
-      "queued": [
-        "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-"
-      ],
-      "errors": [],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T18:51:24.554Z"
-    },
     {
       "started_at": "2026-09-02T18:53:27.475Z",
       "candidates": 0,
@@ -5033,6 +5036,17 @@
       "mode": "discovery",
       "vip_pending": 17,
       "finished_at": "2026-09-03T23:36:49.850Z"
+    },
+    {
+      "started_at": "2026-09-03T23:38:55.262Z",
+      "candidates": 23,
+      "queued": [
+        "223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 17,
+      "finished_at": "2026-09-03T23:40:37.022Z"
     }
   ],
   "vip_pending": {
@@ -5228,10 +5242,10 @@
       "checked_at": "2026-09-03T23:34:24.424Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-03T23:05:12.827Z"
+      "checked_at": "2026-09-03T23:39:02.337Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-03T23:05:16.977Z"
+      "checked_at": "2026-09-03T23:39:06.502Z"
     }
   }
 }

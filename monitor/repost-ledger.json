@@ -8710,6 +8710,28 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-03T01:49:17.859Z"
+    },
+    {
+      "started_at": "2026-09-03T01:51:21.076Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/bounceoutrecords/p/DczVD5uD68A/",
+          "stage": "score",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/bounceoutrecords/p/DczVD5uD68A/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/Dcy1Jt5Dg1u/",
+          "stage": "score",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/p/Dcy1Jt5Dg1u/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-03T01:55:33.244Z"
     }
   ],
   "vip_pending": {}

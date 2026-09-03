@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T21:59:10.210Z",
+  "checked_at": "2026-09-03T22:01:37.783Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T21:59:02.761Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T22:14:02.761Z",
@@ -20,12 +20,12 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T21:52:05.229Z",
+    "next_feed_eligible_at": "2026-09-03T22:11:37.578Z",
     "feed_allowed": true,
     "story_allowed": false
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
@@ -34,11 +34,12 @@
   "threads_next_eligible_at": "2026-09-03T22:09:09.919Z",
   "publications": [
     {
-      "file": "189-rolling-loud-was-not-ready-for-this-ms-lauryn-hill-delivered-a-s.json",
-      "id": "189-rolling-loud-was-not-ready-for-this-ms-lauryn-hill-delivered-a-s",
-      "platform": "threads",
+      "file": "221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn.json",
+      "id": "221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18093920105435486"
+      "media_id": "18333027106285926",
+      "content_type": "video"
     }
   ],
   "failures": [],
@@ -121,15 +122,15 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
-      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
+      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
+      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
-      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
+      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
+      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

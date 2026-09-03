@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T23:24:36.269Z",
+  "checked_at": "2026-09-03T23:27:48.099Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T23:24:28.555Z",
-    "usage": 46,
+    "usage": 47,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T23:39:28.555Z",
@@ -20,12 +20,12 @@
     "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T23:23:28.285Z",
+    "next_feed_eligible_at": "2026-09-03T23:37:47.990Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
@@ -34,11 +34,12 @@
   "threads_next_eligible_at": "2026-09-03T23:34:35.894Z",
   "publications": [
     {
-      "file": "206-best-audi-advertisement-ever-audi-is-the-breakout-single-from-fl.json",
-      "id": "206-best-audi-advertisement-ever-audi-is-the-breakout-single-from-fl",
-      "platform": "threads",
+      "file": "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b.json",
+      "id": "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18071391758467138"
+      "media_id": "18193871971389950",
+      "content_type": "video"
     }
   ],
   "failures": [],

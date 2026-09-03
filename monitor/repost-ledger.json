@@ -1638,14 +1638,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T18:27:31.544Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T18:28:31.134Z"
-    },
-    {
       "started_at": "2026-09-02T18:30:34.097Z",
       "candidates": 0,
       "queued": [
@@ -4528,6 +4520,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 8,
       "finished_at": "2026-09-03T18:55:35.916Z"
+    },
+    {
+      "started_at": "2026-09-03T18:57:39.404Z",
+      "candidates": 0,
+      "queued": [
+        "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 8,
+      "finished_at": "2026-09-03T18:59:03.591Z"
     }
   ],
   "vip_pending": {

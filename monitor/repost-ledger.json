@@ -1638,14 +1638,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T18:21:27.087Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T18:22:25.067Z"
-    },
-    {
       "started_at": "2026-09-02T18:24:27.609Z",
       "candidates": 48,
       "queued": [],
@@ -4522,6 +4514,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 8,
       "finished_at": "2026-09-03T18:48:49.271Z"
+    },
+    {
+      "started_at": "2026-09-03T18:50:52.974Z",
+      "candidates": 0,
+      "queued": [
+        "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 8,
+      "finished_at": "2026-09-03T18:52:34.029Z"
     }
   ],
   "vip_pending": {

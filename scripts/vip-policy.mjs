@@ -10,6 +10,18 @@ export function discussionPrompt(text) {
   return 'How are you reading this moment?';
 }
 
+export function fitDiscussionText(text, max = 450) {
+  const value = String(text || '').trim();
+  if (value.length <= max) return value;
+  const sentences = value.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [];
+  let fitted = '';
+  for (const sentence of sentences) {
+    if ((fitted + sentence).trim().length > max) break;
+    fitted += sentence;
+  }
+  return (fitted.trim() || value.slice(0, max).replace(/\s+\S*$/, '')).trim();
+}
+
 export function rememberVip(ledger, discovered, now = Date.now()) {
   ledger.vip_pending ||= {};
   for (const item of discovered) {
@@ -55,7 +67,7 @@ export function vipCaption(raw, source, url) {
   const body = text && text.length <= 2050 ? text : '';
   const caption = body;
   const prompt = discussionPrompt(text);
-  const threads = caption.length + prompt.length + 2 <= 500 ? `${caption}\n\n${prompt}` : text.slice(0, Math.max(0, 500 - prompt.length - 2)) + `\n\n${prompt}`;
+  const threads = `${fitDiscussionText(caption, 450)}\n\n${prompt}`;
   return {body, caption, threads_text:threads, artist_handles:[]};
 }
 

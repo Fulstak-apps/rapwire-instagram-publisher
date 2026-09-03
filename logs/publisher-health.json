@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T18:17:37.792Z",
+  "checked_at": "2026-09-03T18:20:10.056Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T18:09:11.299Z",
@@ -16,30 +16,29 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 45,
-    "instagram_remaining": 53,
+    "instagram_usage": 46,
+    "instagram_remaining": 52,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T18:27:36.720Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T18:09:18.982Z",
+  "threads_next_eligible_at": "2026-09-03T18:30:09.738Z",
   "publications": [
     {
-      "file": "194-belly-gang-kushington-just-earned-his-first-billboard-hot-100-hi.json",
-      "id": "194-belly-gang-kushington-just-earned-his-first-billboard-hot-100-hi",
-      "platform": "instagram",
+      "file": "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-.json",
+      "id": "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-",
+      "platform": "threads",
       "status": "published",
-      "media_id": "17882039313686783",
-      "content_type": "carousel"
+      "media_id": "18108223361173386"
     }
   ],
   "failures": [],
@@ -117,13 +116,6 @@
     {
       "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
       "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-.json",
-      "id": "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

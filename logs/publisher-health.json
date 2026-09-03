@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T06:46:01.810Z",
+  "checked_at": "2026-09-03T06:49:35.071Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T06:35:42.027Z",
@@ -21,26 +21,18 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T06:49:12.789Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T06:56:01.405Z",
-  "publications": [
-    {
-      "file": "194-belly-gang-kushington-just-earned-his-first-billboard-hot-100-hi.json",
-      "id": "194-belly-gang-kushington-just-earned-his-first-billboard-hot-100-hi",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18486726325105599"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

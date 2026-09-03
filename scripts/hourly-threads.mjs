@@ -8,18 +8,18 @@ import {errorDelay,metaClient} from './meta-client.mjs';
 export const HOUR=60*60_000;
 const REPEAT_WINDOW=30*24*HOUR;
 export const PROMPTS=[
-  'Be honest: what is the most overrated “classic” rap album—and why?',
-  'Which rapper has the strongest three-album run? Make the case.',
-  'What matters most in a top-five debate: catalog, pen, influence, or longevity?',
-  'Who has the best guest-verse catalog in rap? One name and one verse.',
-  'Which producer had the best run—and what records prove it?',
-  'What album gets better every year you revisit it?',
-  'Who is the best live rapper right now? Name the performance that sold you.',
-  'What is one rap opinion you changed your mind about?',
-  'Which rapper’s catalog deserves a deeper listen than it gets?',
-  'All-time great or overrated? Pick one rapper and defend your answer.',
-  'What is the best rap album opener ever?',
-  'Which city has the strongest rap scene right now—and who is leading it?'
+  'Be real: what “classic” rap album gets overrated the most—and why?',
+  'Who got the strongest three-album run in rap? Make your case.',
+  'When y’all talk top 5, what matters most: catalog, pen, influence, or longevity?',
+  'Who got the best guest-verse catalog in rap? Name one verse too.',
+  'Which producer really had the best run—and what records prove it?',
+  'What rap album gets better every time you run it back?',
+  'Who is the best live rapper right now? What performance sold you?',
+  'What rap opinion did y’all actually change your mind about?',
+  'Which rapper’s catalog deserves way more respect?',
+  'All-time great or overrated? Pick one rapper and stand on it.',
+  'What is the best rap album opener ever? Don’t say it without a reason.',
+  'Which city got the strongest rap scene right now—and who is really leading it?'
 ];
 
 export const hourlyText=prompt=>`${prompt}\n\n@rapwire247`;

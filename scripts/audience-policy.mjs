@@ -37,37 +37,49 @@ export function discussionPrompt(text, seed = text) {
   // A person's name never overrides the context of a case or a tragedy.
   if (topic === 'sensitive') return '';
   if (topic === 'court') return pick([
-    'Which detail needs more context before you draw a conclusion?',
-    'What would you need to see in the record to change your view?',
-    'Which matters more here: the testimony or the evidence supporting it?',
+    'Before y’all pick a side, what detail needs more context?',
+    'What would you need to see in the record before changing your mind?',
+    'What matters more here: the testimony or the evidence behind it?',
   ], seed);
   if (topic === 'gaming') return pick([
-    'Day one, or waiting for reviews?', 'What would make this worth your money?',
-    'Which matters more to you here: gameplay or story?',
+    'Y’all playing this day one, or waiting on reviews?', 'What would make this worth the money?',
+    'Be real: gameplay or story—which one matters more here?',
   ], seed);
   if (topic === 'music') {
     const matches = artists.filter(([pattern]) => pattern.test(value)).map(([, name]) => name);
     if (matches.length === 1) {
       const name = matches[0];
-      if (/\b(?:freestyle|verse|bars)\b/i.test(value)) return pick([`Where does this rank among ${name}'s best verses?`, `Be honest: is this really one of ${name}'s best verses, or are we caught in the moment?`],seed);
-      if (/\b(?:tour|concert|performance|performed|stage)\b/i.test(value)) return pick([`Is ${name} stronger live or on record?`, `Stop being polite: is ${name} actually elite live?`],seed);
-      if (/\b(?:new album|new single|new song|new track|released)\b/i.test(value)) return pick([`Where does this fit in ${name}'s catalog?`, 'Be honest: replay value, or rollout hype?'],seed);
+      if (/\b(?:freestyle|verse|bars)\b/i.test(value)) return pick([`Be real: where does this land in ${name}'s best verses?`, `Y’all got this in ${name}'s best-verse conversation, or nah?`],seed);
+      if (/\b(?:tour|concert|performance|performed|stage)\b/i.test(value)) return pick([`Y’all think ${name} is better live or on record?`, `Be real: is ${name} actually elite live?`],seed);
+      if (/\b(?:new album|new single|new song|new track|released)\b/i.test(value)) return pick([`Where does this fit in ${name}'s catalog for y’all?`, 'Y’all hearing replay value, or just rollout hype?'],seed);
       return pick([
-        `Is ${name} really top 5? Who are you moving out?`,
-        `${name}: all-time great or overrated? Stop being diplomatic.`,
-        `Where do you actually rank ${name}, and which project backs it up?`,
+        `Y’all really got ${name} top 5? Who comes off your list?`,
+        `${name}: all-time great or overrated? Be real.`,
+        `Where do y’all rank ${name}, and which project makes the case?`,
       ], seed);
     }
-    return pick(['Which project would you put up against this?', 'Be honest: replay value, or rollout hype?', 'What is the strongest argument for your ranking?'], seed);
+    return pick(['What project are y’all putting up against this?', 'Y’all hearing replay value, or rollout hype?', 'What is really carrying your ranking here?'], seed);
   }
-  if (/\b(?:beef|diss|argument|clash|debate)\b/i.test(value)) return 'Whose argument holds up better—and which part convinced you?';
+  if (/\b(?:beef|diss|argument|clash|debate)\b/i.test(value)) return 'Whose argument holds up better to y’all—and why?';
   // Rap/culture posts still need a real entry point, but never a generic
   // engagement demand. The question asks for a comparison or point of view.
   if (/\b(?:hip.?hop|rap|rapper|artist|producer|dj|mixtape|freestyle|bars|culture)\b/i.test(value)) return pick([
-    'What is the first artist or moment this makes you think of?',
-    'Does this add to the conversation, or is it just a viral moment?',
-    'What context would change how you see this?',
+    'What artist or moment does this make y’all think of first?',
+    'Is this really adding to the conversation, or just going viral?',
+    'What context would change how y’all see this?',
   ], seed);
+  return '';
+}
+
+// A short conversational closing line makes the feed read like a real hip-hop
+// desk without changing any reported source facts. Sensitive and court posts
+// deliberately receive no engagement hook.
+export function captionVoicePrompt(text, seed = text) {
+  const value=String(text||'');
+  if(value.includes('?') || ['court','sensitive'].includes(editorialTopic(value))) return '';
+  if(editorialTopic(value)==='gaming') return pick(['Y’all playing this day one, or waiting it out?', 'Day one, or y’all need to see more first?'],seed);
+  if(editorialTopic(value)==='music') return pick(['Y’all running this back, or nah?', 'This staying in rotation for y’all, or nah?', 'Be real—y’all feeling this one?'],seed);
+  if(/\b(?:hip.?hop|rap|rapper|artist|producer|dj|mixtape|freestyle|bars|culture)\b/i.test(value)) return pick(['Y’all buying this, or nah?', 'What y’all think about this one?', 'This got a real point, or nah?'],seed);
   return '';
 }
 

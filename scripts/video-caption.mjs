@@ -1,5 +1,5 @@
 import { isVip, vipCaption, legacyVipBody } from './vip-policy.mjs';
-import { composeThreads } from './audience-policy.mjs';
+import { captionVoicePrompt, composeThreads } from './audience-policy.mjs';
 export const shortcode = value => String(value || '').match(/\/(?:reel|p)\/([\w-]+)/)?.[1] || '';
 export const genericCaption = value => /a new hip.hop video is|keeping the (?:hip.hop )?video feed moving|clean repost coverage|on Instagram:|newsroom schedule/i.test(String(value || ''));
 
@@ -35,11 +35,12 @@ export function buildVideoCaption(raw, source, registry = []) {
   }
   // Retain only handles actually verified as people, never infer one from URL paths.
   text = text.replace(/@[A-Za-z0-9_.]+/g, handle => verified.some(p => `@${p.handle}`.toLowerCase() === handle.toLowerCase()) ? handle : '').replace(/\s+/g, ' ').trim();
+  const voice=captionVoicePrompt(text,raw);
   const footer = `\n\n@rapwire247`;
   const legal = /\b(trial|court|murder|attacking|arrest|testif|testimony|fbi|wire|cross.examination|judge|lies|lied|lying|snitch|suspect|charged|plead|lawsuit|witness|prosecutor)\w*\b/i.test(text);
   const prefix = '';
   const caveat = legal ? ' Allegations are not findings of guilt.' : '';
-  const limit = 490 - footer.length - source.length - 3 - prefix.length - caveat.length;
+  const limit = 490 - footer.length - source.length - 3 - prefix.length - caveat.length - (voice ? voice.length + 2 : 0);
   if (text.length > limit) {
     const sentences = text.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [];
     let fitted = '';
@@ -50,7 +51,7 @@ export function buildVideoCaption(raw, source, registry = []) {
   if (text.split(/\s+/).length < 4) throw new Error('Source caption lacks usable video context');
   const body = prefix + text + (/[.!?]$/.test(text) ? '' : '.') + caveat;
   const threadsBody = composeThreads(body, {source, seed:raw});
-  return { body, caption: body + footer, threads_text: threadsBody, artist_handles: used };
+  return { body, caption: [body,voice,'@rapwire247'].filter(Boolean).join('\n\n'), threads_text: threadsBody, artist_handles: used };
 }
 
 export function captionIsBound(item) {

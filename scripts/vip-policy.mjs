@@ -1,4 +1,4 @@
-import { composeThreads } from './audience-policy.mjs';
+import { captionVoicePrompt, composeThreads } from './audience-policy.mjs';
 import {cleanPublicCopy} from './editorial-policy.mjs';
 export { discussionPrompt, fitDiscussionText } from './audience-policy.mjs';
 // User instruction, 2026-09-02: repost everything from these pages until changed.
@@ -50,7 +50,7 @@ export function vipCaption(raw, source, url) {
   let body = text && text.length <= 2050 ? text : '';
   if (body && String(source).replace(/^@/,'').toLowerCase()==='darnellwilliams'
     && !/@darnellwilliams\b/i.test(body)) body = `${body}\n\nDarnell Williams @darnellwilliams`;
-  const caption = body;
+  const caption = [body,captionVoicePrompt(body,url)].filter(Boolean).join('\n\n');
   const threads = composeThreads(caption, {source, seed:url || text});
   return {body, caption, threads_text:threads, artist_handles:[]};
 }

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {cleanPublicCopy,reportingGate,claimHash,storyFingerprint,editorialRank,selectionAllowed} from './editorial-policy.mjs';
 import {dueSources,normalizeSources} from './source-policy.mjs';
-import {composeThreads,discussionPrompt,selectReply,editorialSeries} from './audience-policy.mjs';
+import {captionVoicePrompt,composeThreads,discussionPrompt,selectReply,editorialSeries} from './audience-policy.mjs';
 const now=Date.parse('2026-09-03T07:00:00Z');
 test('remove legacy source headers without dropping the artist mention',()=>{
  assert.equal(cleanPublicCopy('@traploreross Source commentary: Lil Durk (@lildurk) discussed his album.','traploreross'),'Lil Durk (@lildurk) discussed his album.');
@@ -49,13 +49,18 @@ test('recurring formats follow the actual post context',()=>{
 });
 test('rap culture Threads copy opens a specific conversation',()=>{
  const text=composeThreads('A Detroit rap artist brought a new sound to the culture.',{seed:'detroit'});
- assert.match(text,/What is the first artist|Does this add|What context would change|replay value|strongest argument/);
+ assert.match(text,/What artist|adding to the conversation|context would change|replay value|carrying your ranking/i);
  assert.doesNotMatch(text,/thoughts\?/i);
 });
 test('music debate prompts can be deliberately provocative without targeting a sensitive event',()=>{
  const prompt=discussionPrompt('Drake released a new song.', 'provocative');
  assert.match(prompt,/replay value|catalog|rollout hype/i);
  assert.equal(discussionPrompt('A rapper died after a shooting.', 'provocative'),'');
+});
+test('caption voice is conversational but never hooks court or sensitive posts',()=>{
+ assert.match(captionVoicePrompt('A new rap album is out now.','album'),/y’all|real/i);
+ assert.equal(captionVoicePrompt('The judge set a court date.','court'),'');
+ assert.equal(captionVoicePrompt('The artist died yesterday.','sensitive'),'');
 });
 test('Threads budgets include question and footer and preserve complete copy',()=>{
  const text=composeThreads(('Drake performed his new single on tour. ').repeat(30));

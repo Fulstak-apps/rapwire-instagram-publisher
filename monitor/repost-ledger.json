@@ -1632,21 +1632,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T18:04:18.364Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcygkEBIfty/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DcygkEBIfty-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T18:06:37.754Z"
-    },
-    {
       "started_at": "2026-09-02T18:08:40.843Z",
       "candidates": 48,
       "queued": [],
@@ -4527,6 +4512,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 7,
       "finished_at": "2026-09-03T18:35:43.112Z"
+    },
+    {
+      "started_at": "2026-09-03T18:37:46.535Z",
+      "candidates": 0,
+      "queued": [
+        "204-blueface-gets-swatted-live-on-stream-while-on-a-date-with-with-o"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 7,
+      "finished_at": "2026-09-03T18:38:59.572Z"
     }
   ],
   "vip_pending": {

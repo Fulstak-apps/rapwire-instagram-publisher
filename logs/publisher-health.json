@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T07:16:16.903Z",
+  "checked_at": "2026-09-03T07:20:43.041Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T07:07:51.491Z",
-    "usage": 32,
+    "usage": 33,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T07:22:51.491Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 16,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T07:15:50.349Z",
+    "next_feed_eligible_at": "2026-09-03T07:30:42.609Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -32,7 +32,16 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T07:15:43.520Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
+      "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18075372116709735",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

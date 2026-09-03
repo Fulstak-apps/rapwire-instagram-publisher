@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-03T17:25:51.741Z",
+  "checked_at": "2026-09-03T17:30:07.506Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T17:17:38.273Z",
-    "usage": 42,
+    "usage": 43,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-03T17:32:38.273Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 56,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T17:21:58.784Z",
+    "next_feed_eligible_at": "2026-09-03T17:39:59.452Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T17:21:53.550Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T17:40:07.211Z",
+  "publications": [
+    {
+      "file": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released.json",
+      "id": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18615527026036608",
+      "content_type": "video"
+    },
+    {
+      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
+      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17986849152024118"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T15:56:44.273Z",
+  "checked_at": "2026-09-03T15:59:41.303Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T15:56:30.291Z",
@@ -16,39 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 36,
-    "instagram_remaining": 62,
+    "instagram_usage": 37,
+    "instagram_remaining": 61,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T16:06:37.032Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T16:06:43.727Z",
-  "publications": [
-    {
-      "file": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w.json",
-      "id": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18556241314075441",
-      "content_type": "video"
-    },
-    {
-      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
-      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18066641630751860"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

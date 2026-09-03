@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-02T23:54:18.018Z",
+  "checked_at": "2026-09-03T00:00:38.565Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-02T23:48:08.295Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-02T23:52:36.070Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T00:10:38.061Z",
+  "publications": [
+    {
+      "file": "138-lil-durk-was-at-dj-khaleds-house-in-miami-day-before-murder.json",
+      "id": "138-lil-durk-was-at-dj-khaleds-house-in-miami-day-before-murder",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17895014391670467"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

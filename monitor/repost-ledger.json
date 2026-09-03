@@ -1037,6 +1037,13 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DczsMEwN9Uz/",
       "queue_id": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e",
       "video": "media/180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e.mp4"
+    },
+    "DczuBH0v7Lx": {
+      "queued_at": "2026-09-03T02:37:19.843Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczuBH0v7Lx/",
+      "queue_id": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi",
+      "video": "media/181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi.mp4"
     }
   },
   "runs": [
@@ -8815,17 +8822,18 @@
       "mode": "discovery",
       "vip_pending": 1,
       "finished_at": "2026-09-03T02:30:51.844Z"
+    },
+    {
+      "started_at": "2026-09-03T02:33:05.463Z",
+      "candidates": 48,
+      "queued": [
+        "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-03T02:37:19.843Z"
     }
   ],
-  "vip_pending": {
-    "DczuBH0v7Lx": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DczuBH0v7Lx/",
-      "shortcode": "DczuBH0v7Lx",
-      "first_seen_at": "2026-09-03T02:22:40.348Z",
-      "profile_position": 0,
-      "state": "pending",
-      "attempts": 0
-    }
-  }
+  "vip_pending": {}
 }

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {cleanPublicCopy,reportingGate,claimHash,storyFingerprint,editorialRank,selectionAllowed} from './editorial-policy.mjs';
 import {dueSources,normalizeSources} from './source-policy.mjs';
-import {composeThreads,discussionPrompt,selectReply} from './audience-policy.mjs';
+import {composeThreads,discussionPrompt,selectReply,editorialSeries} from './audience-policy.mjs';
 const now=Date.parse('2026-09-03T07:00:00Z');
 test('remove legacy source headers without dropping the artist mention',()=>{
  assert.equal(cleanPublicCopy('@traploreross Source commentary: Lil Durk (@lildurk) discussed his album.','traploreross'),'Lil Durk (@lildurk) discussed his album.');
@@ -40,6 +40,12 @@ test('court/tragedy context never gets a top-five question',()=>{
  assert.doesNotMatch(discussionPrompt('Drake appeared in court after being charged.'),/top 5|overrated/);
  assert.equal(discussionPrompt('Kendrick mourns a friend who died.'),'');
  assert.equal(selectReply('Jay-Z is a top five rapper.','My refrigerator delivery arrives tomorrow.'),null);
+});
+test('recurring formats follow the actual post context',()=>{
+ assert.equal(editorialSeries('The jury returned a guilty verdict.'),'Case File');
+ assert.equal(editorialSeries('The new album is out now.'),'New Music Watch');
+ assert.equal(editorialSeries('A classic verse from the archive.'),'From the Vault');
+ assert.equal(editorialSeries('Jay-Z is top five. Who are you moving out?'),'RapWire Debate');
 });
 test('Threads budgets include question and footer and preserve complete copy',()=>{
  const text=composeThreads(('Drake performed his new single on tour. ').repeat(30));

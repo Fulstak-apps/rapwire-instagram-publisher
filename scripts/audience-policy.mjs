@@ -20,6 +20,15 @@ export function editorialTopic(text) {
   if (music.test(text)) return 'music';
   return 'culture';
 }
+export function editorialSeries(text, {storyType = ''} = {}) {
+  const value=String(text||'');
+  if (editorialTopic(value)==='court') return 'Case File';
+  if (/\b(?:released|release date|out now|drops?|new album|new single|new track)\b/i.test(value)) return 'New Music Watch';
+  if (storyType==='throwback' || /\b(?:classic|from the vault|throwback|archive)\b/i.test(value)) return 'From the Vault';
+  if (/\b(?:top\s*(?:5|five|10|ten)|goat|greatest|rank\w*|overrated|underrated)\b/i.test(value)) return 'RapWire Debate';
+  if (discussionPrompt(value,'series-check')) return 'RapWire Debate';
+  return 'What Happened?';
+}
 export function discussionPrompt(text, seed = text) {
   const value = String(text || '');
   if (value.trim().length < 15) return '';

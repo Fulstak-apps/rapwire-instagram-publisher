@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 import {metaClient,errorDelay} from './meta-client.mjs';
-import {editorialTopic} from './audience-policy.mjs';
+import {editorialTopic,editorialSeries} from './audience-policy.mjs';
 
 const DAY=86400000;
 export function metricValues(payload) {
@@ -18,7 +18,7 @@ export function growthSummary(state,now=Date.now()) {
     const fields=sample.platform==='instagram'?['shares','saved','comments']:['replies','reposts','quotes'];
     if(!(denom>0)||fields.some(key=>typeof m[key]!=='number')) continue;
     const interactions=fields.reduce((sum,key)=>sum+m[key],0);
-    for(const [kind,value] of [['source',sample.source],['topic',sample.topic],['question',sample.question]]) {
+    for(const [kind,value] of [['source',sample.source],['topic',sample.topic],['series',sample.series],['question',sample.question]]) {
       if(!value)continue;
       const key=JSON.stringify([sample.platform,kind,value]);
       const group=groups[key] ||= {platform:sample.platform,kind,value,posts:0,exposures:0,interactions:0};
@@ -71,7 +71,7 @@ export async function collectGrowth({clients,records,state,save,now=Date.now(),i
         const id=item[platform+'_media_id'];
         const metrics=metricValues(await config.api.get('/'+id+'/insights',{metric:platform==='instagram'?'reach,likes,comments,shares,saved':'views,likes,replies,reposts,quotes'}));
         state.media[platform+':'+id]={platform,id,queue_id:item.id,source:item.source_handle,
-          topic:editorialTopic(item.source_caption_text||item.body||''),question:item.threads_copy_policy||'legacy',
+          topic:editorialTopic(item.source_caption_text||item.body||''),series:item.editorial_series||editorialSeries(item.source_caption_text||item.body||'',{storyType:item.story_type}),question:item.threads_copy_policy||'legacy',
           published_at:item[platform+'_published_at']||item.published_at,permalink:item[platform+'_permalink']||null,checked_at:new Date(now).toISOString(),metrics};
         await save();
       }

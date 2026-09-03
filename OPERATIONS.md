@@ -38,6 +38,16 @@ The local `footage-only-v1` renderer samples five points across each complete so
 
 Threads copy includes at most one context-specific discussion prompt and stays within 500 characters including its footer. Preserve complete sentences. Ranking questions belong to music debates, not tragedies or verdict posts. If a source already asks a question, do not stack another. An unfit Threads caption stays held without blocking Instagram.
 
+## Growth format rules
+
+- Lead with the actual moment and artist, never a source-page name. A caption must make sense on mute alongside the first video frame.
+- Keep a clip full-size and playable. Never turn it into a narrow card, add decorative boxes, or hide useful subtitles behind branding.
+- Use one compact RapWire mark at bottom-left only. It must not cover a face, subtitle, tweet, trailer title or primary action.
+- When a current official artist handle is verified, caption the first artist mention as `Artist Name @officialhandle`. If not verified, use the artist name without guessing a handle. Never substitute a blog/source handle for an artist handle.
+- Assign each new item a factual recurring series for measurement: `Case File`, `New Music Watch`, `From the Vault`, `RapWire Debate`, or `What Happened?`. Series is metadata and caption framing, not an intrusive visual box.
+- Threads may add one specific, good-faith conversation prompt; Instagram keeps the complete caption. Ranking and catalog debates can be provocative, but never turn court allegations, deaths, injuries or other sensitive events into engagement bait.
+- The weekly report compares shares, saves, comments/replies, reposts/quotes, reach/views and follower change by source, topic and series. Only sufficiently sampled results may adjust selection; no format is declared a winner from a single post.
+
 ## Capacity, retries and state
 
 Use the greater of confirmed rolling-day publications and Meta's reported quota usage. Reserve two slots below the effective platform limit. If Meta actually rejects at a lower limit, honor that observed ceiling for 24 hours instead of trusting a larger advertised number. Unknown capacity fails closed or uses the conservative policy fallback. No catch-up bursts.

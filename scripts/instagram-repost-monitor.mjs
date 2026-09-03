@@ -8,7 +8,7 @@ import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-captio
 import { mediaFiles, isMediaRepost } from "./repost-media-policy.mjs";
 import { isVip, rememberVip, vipCandidates, deferVip, vipCaption } from './vip-policy.mjs';
 import {candidateScore} from './growth-feedback.mjs';
-import {editorialTopic} from './audience-policy.mjs';
+import {editorialTopic,editorialSeries} from './audience-policy.mjs';
 import {normalizeSources,dueSources,dailySourceDeficits} from './source-policy.mjs';
 import {selectionAllowed,recentPosts,editorialRank,reportingGate,storyFingerprint} from './editorial-policy.mjs';
 import {capturedVideoLayout,capturedMediaItems,verifyVideoLayoutFiles,videoRepairAllowed,mediaRepairAllowed,mixedVideoLayoutReview} from './video-layout-policy.mjs';
@@ -189,6 +189,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
     content_type: "video",
     type: "source_video_repost",
     story_type: "throwback",
+    editorial_series: editorialSeries(fields.body),
     layout_template: "rapwire-video-grid-safe-v1",
     editorial_lane: "rap_culture",
     headline: cleanText(headlineSeed).slice(0, 90) || "RapWire Video Repost",

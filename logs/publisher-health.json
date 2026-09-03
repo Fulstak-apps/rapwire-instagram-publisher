@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T00:27:12.143Z",
+  "checked_at": "2026-09-03T00:29:27.880Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T00:21:07.490Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T00:25:16.603Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T00:39:27.413Z",
+  "publications": [
+    {
+      "file": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir.json",
+      "id": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18109946234324180"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

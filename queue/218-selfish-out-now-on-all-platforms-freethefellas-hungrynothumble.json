@@ -15,7 +15,7 @@
   "rendered_body_text": "- “ SELFISH “ OUT NOW ON ALL PLATFORMS freethefellas Hungrynothumble.",
   "caption": "- “ SELFISH “ OUT NOW ON ALL PLATFORMS freethefellas Hungrynothumble.\n\n@rapwire247",
   "threads_text": "- “ SELFISH “ OUT NOW ON ALL PLATFORMS freethefellas Hungrynothumble.\n\n@rapwire247",
-  "video": "media/218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble.mp4",
+  "video": "media/218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble-footage-only-573dce3f-7b30-4276-b60d-cf864d6af0bd.mp4",
   "source_handle": "trapmatictv",
   "source_url": "https://www.instagram.com/ciggyblacc/reel/Dc1VDcXsXbb/",
   "source_urls": [
@@ -41,6 +41,44 @@
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 104.75,
   "caption_style": "source-tag-v1",
-  "caption_review_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1VDcXsXbb-capture-diagnostic.json",
-  "caption_retry_at": "2026-09-03T20:36:25.108Z"
+  "video_layout": {
+    "version": "footage-only-v1",
+    "status": "validated",
+    "source_width": 960,
+    "source_height": 720,
+    "output_width": 1080,
+    "output_height": 1350,
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 960,
+      "height": 720
+    },
+    "analysis": {
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 960,
+        "height": 720
+      },
+      "method": "full-frame-no-removable-source-header-v1",
+      "source_header_removed": false,
+      "inspected_frames": 5,
+      "removed_text": [],
+      "sample_times": [
+        3.1425,
+        26.1875,
+        52.375,
+        78.5625,
+        101.6075
+      ],
+      "logo_size": 170
+    },
+    "source_sha256": "a2e10339dd245ea98df93aab3fd50c0b50003bc237c0f1cf92e5bf509424d1df",
+    "output_sha256": "8c8b114e25f454450f4af473efe044a6e6d669a3d187277cdf84e6c7c0aa4edd",
+    "source_path": "/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1VDcXsXbb-source.mp4",
+    "caption_overlay": false,
+    "logo_position": "bottom-left",
+    "checked_at": "2026-09-03T21:45:07.803Z"
+  }
 }

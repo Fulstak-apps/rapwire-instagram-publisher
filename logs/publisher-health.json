@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T16:24:24.121Z",
+  "checked_at": "2026-09-03T16:28:22.310Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T16:11:58.906Z",
-    "usage": 38,
+    "checked_at": "2026-09-03T16:28:10.052Z",
+    "usage": 39,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T16:26:58.906Z",
+    "next_check_at": "2026-09-03T16:43:10.052Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 60,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T16:22:06.514Z",
+    "next_feed_eligible_at": "2026-09-03T16:38:22.205Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T16:22:13.559Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T16:38:15.631Z",
+  "publications": [
+    {
+      "file": "209-ye-night-1-setlist-and-special-guests-greenscreen.json",
+      "id": "209-ye-night-1-setlist-and-special-guests-greenscreen",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18132505144631196"
+    },
+    {
+      "file": "209-ye-night-1-setlist-and-special-guests-greenscreen.json",
+      "id": "209-ye-night-1-setlist-and-special-guests-greenscreen",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17942429721310503",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,4 +1,4 @@
-import { isVip, vipCaption, legacyVipBody } from './vip-policy.mjs';
+import { isVip, vipCaption, legacyVipBody, discussionPrompt } from './vip-policy.mjs';
 export const shortcode = value => String(value || '').match(/\/(?:reel|p)\/([\w-]+)/)?.[1] || '';
 export const genericCaption = value => /a new hip.hop video is|keeping the (?:hip.hop )?video feed moving|clean repost coverage|on Instagram:|newsroom schedule/i.test(String(value || ''));
 
@@ -48,7 +48,8 @@ export function buildVideoCaption(raw, source, registry = []) {
   }
   if (text.split(/\s+/).length < 4) throw new Error('Source caption lacks usable video context');
   const body = prefix + text + (/[.!?]$/.test(text) ? '' : '.') + caveat;
-  return { body, caption: `@${source}\n\n` + body + footer, artist_handles: used };
+  const threadsBody = `${body}\n\n${discussionPrompt(text)}`;
+  return { body, caption: `@${source}\n\n` + body + footer, threads_text: `@${source}\n\n${threadsBody}`, artist_handles: used };
 }
 
 export function captionIsBound(item) {

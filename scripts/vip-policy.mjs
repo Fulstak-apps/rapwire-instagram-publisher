@@ -2,6 +2,14 @@
 export const VIP_HANDLES = new Set(['akademiks', 'traploreross']);
 export const isVip = handle => VIP_HANDLES.has(String(handle || '').replace(/^@/, '').toLowerCase());
 
+export function discussionPrompt(text) {
+  const value = String(text || '').toLowerCase();
+  if (/trial|court|judge|fbi|arrest|charged|plead|testif|witness/.test(value)) return 'What detail should people be watching next?';
+  if (/album|single|song|mixtape|release|tour|concert/.test(value)) return 'Does this change the conversation around the music?';
+  if (/beef|diss|argument|fight|clash|controvers/.test(value)) return 'What is the key question in this situation?';
+  return 'How are you reading this moment?';
+}
+
 export function rememberVip(ledger, discovered, now = Date.now()) {
   ledger.vip_pending ||= {};
   for (const item of discovered) {
@@ -46,7 +54,8 @@ export function vipCaption(raw, source, url) {
   // the public repost caption for these user-requested accounts.
   const body = text && text.length <= 2050 ? text : '';
   const caption = body;
-  const threads = caption.length <= 400 ? caption : text.slice(0, 400);
+  const prompt = discussionPrompt(text);
+  const threads = caption.length + prompt.length + 2 <= 500 ? `${caption}\n\n${prompt}` : text.slice(0, Math.max(0, 500 - prompt.length - 2)) + `\n\n${prompt}`;
   return {body, caption, threads_text:threads, artist_handles:[]};
 }
 

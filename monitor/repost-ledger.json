@@ -545,6 +545,30 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/reel/DczieCJt2ET/",
       "view_count": 0
+    },
+    "DczsEsoCLNp": {
+      "seen_at": "2026-09-03T02:04:53.654Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/drillmusic00/p/DczsEsoCLNp/",
+      "view_count": 0
+    },
+    "DczsROJNIjJ": {
+      "seen_at": "2026-09-03T02:04:53.654Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DczsROJNIjJ/",
+      "view_count": 0
+    },
+    "DczsMEwN9Uz": {
+      "seen_at": "2026-09-03T02:04:53.654Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DczsMEwN9Uz/",
+      "view_count": 0
+    },
+    "DczsQfUPoYG": {
+      "seen_at": "2026-09-03T02:04:53.654Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczsQfUPoYG/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -987,6 +1011,12 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DczfMmstSSN/",
       "queue_id": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour",
       "video": "media/177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour.mp4"
+    },
+    "DczsROJNIjJ": {
+      "queued_at": "2026-09-03T02:05:06.714Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DczsROJNIjJ/",
+      "queue_id": "178-akademiks-government-has-2-more-witnesses-expecting-to-rest-tomo"
     }
   },
   "runs": [
@@ -8732,7 +8762,37 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-03T01:55:33.244Z"
+    },
+    {
+      "started_at": "2026-09-03T02:04:00.905Z",
+      "candidates": 48,
+      "queued": [
+        "178-akademiks-government-has-2-more-witnesses-expecting-to-rest-tomo"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 2,
+      "finished_at": "2026-09-03T02:05:06.714Z"
     }
   ],
-  "vip_pending": {}
+  "vip_pending": {
+    "DczsMEwN9Uz": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DczsMEwN9Uz/",
+      "shortcode": "DczsMEwN9Uz",
+      "first_seen_at": "2026-09-03T02:04:53.655Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
+    },
+    "DczsQfUPoYG": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DczsQfUPoYG/",
+      "shortcode": "DczsQfUPoYG",
+      "first_seen_at": "2026-09-03T02:04:53.655Z",
+      "profile_position": 0,
+      "state": "pending",
+      "attempts": 0
+    }
+  }
 }

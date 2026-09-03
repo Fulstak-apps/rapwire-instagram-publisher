@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T14:44:08.066Z",
+  "checked_at": "2026-09-03T14:47:50.207Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T14:38:58.160Z",
@@ -16,39 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 34,
-    "instagram_remaining": 64,
+    "instagram_usage": 35,
+    "instagram_remaining": 63,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T14:54:00.961Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T14:54:07.393Z",
-  "publications": [
-    {
-      "file": "141-vonni-offered-to-wear-a-wire-on-durk-and-brought-up-american-gan.json",
-      "id": "141-vonni-offered-to-wear-a-wire-on-durk-and-brought-up-american-gan",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18087673301462008",
-      "content_type": "video"
-    },
-    {
-      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
-      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18130103851591263"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

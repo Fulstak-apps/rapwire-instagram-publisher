@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T04:58:49.233Z",
+  "checked_at": "2026-09-03T05:01:36.447Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T04:56:27.309Z",
@@ -16,32 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T05:08:49.122Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T05:00:20.435Z",
-  "publications": [
-    {
-      "file": "182-akademiks-mo3-killer-parked-right-behind-him.json",
-      "id": "182-akademiks-mo3-killer-parked-right-behind-him",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17868987270639633",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

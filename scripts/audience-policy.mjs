@@ -61,7 +61,14 @@ export function discussionPrompt(text, seed = text) {
     return pick(['Which project would you put up against this?', 'Is this replay value or rollout hype?', 'What is the strongest argument for your ranking?'], seed);
   }
   if (/\b(?:beef|diss|argument|clash|debate)\b/i.test(value)) return 'Whose argument holds up better—and which part convinced you?';
-  return ''; // No generic argument bait on a post with no clear debate angle.
+  // Rap/culture posts still need a real entry point, but never a generic
+  // engagement demand. The question asks for a comparison or point of view.
+  if (/\b(?:hip.?hop|rap|rapper|artist|producer|dj|mixtape|freestyle|bars|culture)\b/i.test(value)) return pick([
+    'What is the first artist or moment this makes you think of?',
+    'Does this add to the conversation, or is it just a viral moment?',
+    'What context would change how you see this?',
+  ], seed);
+  return '';
 }
 
 export function fitDiscussionText(text, max = 450) {

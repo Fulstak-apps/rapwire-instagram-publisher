@@ -47,6 +47,11 @@ test('recurring formats follow the actual post context',()=>{
  assert.equal(editorialSeries('A classic verse from the archive.'),'From the Vault');
  assert.equal(editorialSeries('Jay-Z is top five. Who are you moving out?'),'RapWire Debate');
 });
+test('rap culture Threads copy opens a specific conversation',()=>{
+ const text=composeThreads('A Detroit rap artist brought a new sound to the culture.',{seed:'detroit'});
+ assert.match(text,/What is the first artist|Does this add|What context would change|replay value|strongest argument/);
+ assert.doesNotMatch(text,/thoughts\?/i);
+});
 test('Threads budgets include question and footer and preserve complete copy',()=>{
  const text=composeThreads(('Drake performed his new single on tour. ').repeat(30));
  assert.ok([...text].length<=500);assert.ok(text.endsWith('@rapwire247'));

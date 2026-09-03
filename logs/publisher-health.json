@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T04:01:08.848Z",
+  "checked_at": "2026-09-03T04:05:07.079Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T03:48:41.804Z",
+    "checked_at": "2026-09-03T04:05:00.187Z",
     "usage": 43,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T04:03:41.804Z",
+    "next_check_at": "2026-09-03T04:20:00.187Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -16,30 +16,29 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 42,
-    "instagram_remaining": 6,
+    "instagram_usage": 43,
+    "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T04:11:08.191Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T03:58:56.433Z",
+  "threads_next_eligible_at": "2026-09-03T04:15:06.648Z",
   "publications": [
     {
-      "file": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour.json",
-      "id": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour",
-      "platform": "instagram",
+      "file": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie.json",
+      "id": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18099791954458779",
-      "content_type": "video"
+      "media_id": "18064231046755748"
     }
   ],
   "failures": [],

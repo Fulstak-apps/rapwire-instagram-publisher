@@ -1608,25 +1608,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T17:32:20.099Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/traploreross/reel/Dcw87TmPq3e/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcw87TmPq3e-capture-diagnostic.json"
-        },
-        {
-          "source_url": "https://www.instagram.com/traploreross/reel/Dcw709iP2FT/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcw709iP2FT-capture-diagnostic.json"
-        }
-      ],
-      "mode": "caption_repair",
-      "finished_at": "2026-09-02T17:39:12.188Z"
-    },
-    {
       "started_at": "2026-09-02T17:41:15.190Z",
       "candidates": 48,
       "queued": [
@@ -4525,6 +4506,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 3,
       "finished_at": "2026-09-03T18:17:49.353Z"
+    },
+    {
+      "started_at": "2026-09-03T18:19:52.695Z",
+      "candidates": 36,
+      "queued": [
+        "185-blueface-s-production-team-keeps-switching-the-stream-ingest-fro"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 3,
+      "finished_at": "2026-09-03T18:21:29.756Z"
     }
   ],
   "vip_pending": {
@@ -4564,13 +4556,13 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-03T18:14:49.271Z"
+      "checked_at": "2026-09-03T18:21:21.157Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-03T18:14:53.427Z"
+      "checked_at": "2026-09-03T18:21:25.536Z"
     },
     "records": {
-      "checked_at": "2026-09-03T18:14:57.567Z"
+      "checked_at": "2026-09-03T18:21:29.663Z"
     }
   }
 }

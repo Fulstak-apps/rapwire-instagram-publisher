@@ -1074,21 +1074,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T05:01:12.015Z",
-      "candidates": 48,
-      "queued": [
-        "126-raplisted-repost-video"
-      ],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/raplisted_/reel/DcwQbJ0hLhn/",
-          "stage": "logo_rebuild",
-          "error": "Command failed: git add queue media monitor/repost-ledger.json\nfatal: mmap failed: Resource deadlock avoided\n"
-        }
-      ],
-      "finished_at": "2026-09-02T05:07:02.025Z"
-    },
-    {
       "started_at": "2026-09-02T05:12:12.877Z",
       "candidates": 48,
       "queued": [
@@ -8251,6 +8236,15 @@
       "mode": "discovery",
       "vip_pending": 0,
       "finished_at": "2026-09-03T03:43:56.907Z"
+    },
+    {
+      "started_at": "2026-09-03T03:46:00.132Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 0,
+      "finished_at": "2026-09-03T03:46:50.398Z"
     }
   ],
   "vip_pending": {}

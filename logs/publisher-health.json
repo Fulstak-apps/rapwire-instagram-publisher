@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T13:32:15.677Z",
+  "checked_at": "2026-09-03T13:53:22.153Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-03T13:32:10.261Z",
-    "usage": 33,
+    "checked_at": "2026-09-03T13:53:09.075Z",
+    "usage": 34,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T13:47:10.261Z",
+    "next_check_at": "2026-09-03T14:08:09.075Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 15,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T13:14:03.070Z",
+    "next_feed_eligible_at": "2026-09-03T14:03:22.014Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-03T11:07:46.614Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-03T14:03:15.105Z",
+  "publications": [
+    {
+      "file": "202-10-years-ago-today-travis-scott-dropped-birds-in-the-trap-sing-m.json",
+      "id": "202-10-years-ago-today-travis-scott-dropped-birds-in-the-trap-sing-m",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18619724179018903"
+    },
+    {
+      "file": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir.json",
+      "id": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18620668135003994",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

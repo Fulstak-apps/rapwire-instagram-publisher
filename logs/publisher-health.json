@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T20:01:28.755Z",
+  "checked_at": "2026-09-03T20:18:22.344Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T19:50:41.312Z",
@@ -21,11 +21,11 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T19:56:45.265Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
@@ -33,15 +33,7 @@
   },
   "threads_next_eligible_at": "2026-09-03T20:04:57.731Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-.json",
-      "id": "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "Instagram publishing quota exhausted; next capacity check 2026-09-03T21:01:28.698Z"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour.json",

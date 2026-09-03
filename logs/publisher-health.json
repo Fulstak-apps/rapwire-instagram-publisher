@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T16:12:14.048Z",
+  "checked_at": "2026-09-03T16:15:47.407Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T16:11:58.906Z",
@@ -16,39 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 37,
-    "instagram_remaining": 61,
+    "instagram_usage": 38,
+    "instagram_remaining": 60,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T16:22:06.514Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T16:22:13.559Z",
-  "publications": [
-    {
-      "file": "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-.json",
-      "id": "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18085737995691198",
-      "content_type": "video"
-    },
-    {
-      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
-      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18102359513206468"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

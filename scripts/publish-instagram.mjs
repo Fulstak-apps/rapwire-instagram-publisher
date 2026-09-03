@@ -7,6 +7,7 @@ import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
 import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS } from "./publication-policy.mjs";
 import {reportingGate,editorialRank,recentPosts,contentLane} from './editorial-policy.mjs';
+import {videoLayoutGate,verifyVideoLayoutFiles} from './video-layout-policy.mjs';
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -69,7 +70,17 @@ const queueRecords = await Promise.all(queueNames.map(async (name) => ({
   name,
   item: JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8"))
 })));
+const videoLayoutChecks=new WeakMap(),videoLayoutChecksByFile=new Map();
+const footageOnlyAllowed=item=>videoLayoutGate(item).allowed && videoLayoutChecks.get(item)?.allowed!==false;
 for (const {name,item} of queueRecords) {
+  // Immutable completed history is not being uploaded again. Avoid re-reading
+  // its entire video archive on every scheduled publisher run.
+  const deliveryPending=['ready','published'].includes(item.status) && (!item.instagram_media_id||!item.threads_media_id
+    || publishInstagramStories&&!item.instagram_story_media_id&&(item.story||item.content_type==='video'));
+  const layoutCheck=deliveryPending?await verifyVideoLayoutFiles(item):videoLayoutGate(item);
+  videoLayoutChecks.set(item,layoutCheck);videoLayoutChecksByFile.set(name,layoutCheck);
+  // Retain every caption and publication marker on unsafe legacy assets.
+  if(!layoutCheck.allowed)continue;
   const changed=refreshCaptionStyle(item);
   if (refreshThreadsCopy(item) || changed) await save(path.join(queueDir,name),item);
 }
@@ -367,6 +378,7 @@ async function publishThreadsVideo(item, itemPath) {
 }
 
 function contentPromiseIsKept(item) {
+  if (!footageOnlyAllowed(item)) return false;
   if (!reportingGate(item).allowed) return false;
   const started=['instagram','threads'].some(prefix=>item[prefix+'_media_id']||item[prefix+'_container_id']||item[prefix+'_children']?.some(Boolean));
   if (!started && contentLane(item)==='gaming' && recentPublications.filter(x=>x.id!==item.id).slice(0,6).some(x=>contentLane(x)==='gaming')) return false;
@@ -415,6 +427,7 @@ const instagramInFlightId = queueRecords.find(({item}) => item.status === 'ready
   && !item.instagram_reconcile_required && contentPromiseIsKept(item))?.item.id;
 const processingCount = instagramInFlightId ? 1 : 0;
 const pendingStoryId = queueRecords.filter(({ item }) => item.status === "published"
+  && footageOnlyAllowed(item)
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
   && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"))
@@ -462,6 +475,7 @@ const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].in
 async function deliverThreads(item, itemPath, file) {
   const isVideoItem = item.content_type === 'video';
   if (threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required || item.threads_copy_error
+    || !footageOnlyAllowed(item)
     || Date.now() - lastThreadsTime < FEED_INTERVAL_MS
     || (threadsInFlightId && item.id !== threadsInFlightId)
     || item.rap_relevance_checked !== true || (isVideoItem && !captionIsBound(item))
@@ -500,6 +514,14 @@ async function deliverThreads(item, itemPath, file) {
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
+  const layoutCheck=videoLayoutChecksByFile.get(file);
+  videoLayoutChecks.set(item,layoutCheck);
+  if(!layoutCheck.allowed) {
+    const unfinished=['ready','published'].includes(item.status) && (!item.instagram_media_id||!item.threads_media_id
+      || publishInstagramStories&&!item.instagram_story_media_id&&(item.story||item.content_type==='video'));
+    if(unfinished)await logAttempt({file,id:item.id,platform:'video_layout',status:'review_required',reason:layoutCheck.issues.join('; ')});
+    continue;
+  }
   const reporting=reportingGate(item);
   if (!reporting.allowed) {
     item.editorial_review_required=reporting.reasons;
@@ -657,6 +679,7 @@ const report = {
   threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + FEED_INTERVAL_MS).toISOString() : null,
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),
+  reviews: runEvents.filter(event => event.status==='review_required'),
   note: "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 };
 await fs.writeFile(path.join(logsDir, "publisher-health.json"), JSON.stringify(report, null, 2) + "\n");
@@ -664,6 +687,11 @@ await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date
 const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
 console.log(summary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, summary);
+if(report.reviews.length) {
+  const reviewSummary=`\nVideo layout review: ${report.reviews.length} item(s) held; existing media and publication markers were preserved.\n\n${report.reviews.map(x=>`- ${x.id}: ${x.reason}`).join('\n')}\n`;
+  console.log(reviewSummary);
+  if(process.env.GITHUB_STEP_SUMMARY)await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,reviewSummary);
+}
 const policySummary = `\nFeed cadence: at least ${deliveryPolicy.feed_interval_minutes} minutes between confirmed posts. Instagram budget: ${deliveryPolicy.instagram_daily_cap} feed/Story publications per rolling 24 hours; ${deliveryPolicy.instagram_remaining} available at start of run, ${deliveryPolicy.reserved_story_slots} reserved for outstanding Stories. Next feed no earlier than: ${report.delivery_policy.next_feed_eligible_at || "when capacity permits"}. Quota and processing may delay publication further.\n`;
 console.log(policySummary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, policySummary);

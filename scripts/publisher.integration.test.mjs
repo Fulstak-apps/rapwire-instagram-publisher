@@ -5,15 +5,26 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import {createHash} from 'node:crypto';
+import {videoAssets} from './video-layout-policy.mjs';
 const script = path.resolve('scripts/publish-instagram.mjs');
+const renderBytes=Buffer.from('fixture-only rendered video bytes');
+const videoLayout={version:'footage-only-v1',status:'validated',source_width:1080,source_height:1920,
+  crop:{x:0,y:300,width:1080,height:1440},output_width:1080,output_height:1350,caption_overlay:false,
+  logo_position:'bottom-left',source_sha256:'1'.repeat(64),output_sha256:createHash('sha256').update(renderBytes).digest('hex')};
 const body = 'This is a verified video with a complete descriptive caption.';
-const item = { caption_style:'source-tag-v1', id: 'test', status: 'published', content_type: 'video', video: 'media/test.mp4', source_handle: 'akademiks', source_url:'https://www.instagram.com/akademiks/reel/ExactPost/', caption_policy:'exact-source-v1', caption_source_shortcode:'ExactPost', source_caption_text:body, body, rendered_body_text: body, caption: body, threads_text: body, layout_template: 'rapwire-video-grid-safe-v1', source_policy_checked: true, rap_relevance_checked: true, content_claim_checked: true, editorial_substance_checked: true, text_overflow_checked: true, instagram_media_id: 'existing', threads_status: 'pending' };
+const item = { caption_style:'source-tag-v1', id: 'test', status: 'published', content_type: 'video', video: 'media/test.mp4',video_layout:videoLayout, source_handle: 'akademiks', source_url:'https://www.instagram.com/akademiks/reel/ExactPost/', caption_policy:'exact-source-v1', caption_source_shortcode:'ExactPost', source_caption_text:body, body, rendered_body_text: body, caption: body, threads_text: body, layout_template: 'rapwire-video-grid-safe-v1', source_policy_checked: true, rap_relevance_checked: true, content_claim_checked: true, editorial_substance_checked: true, text_overflow_checked: true, instagram_media_id: 'existing', threads_status: 'pending' };
 function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, usage = 1, total = 50, otherRecords = [], recovery = null, publishStories = true) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'rapwire-test-'));
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
   fs.mkdirSync(path.join(dir, 'queue')); fs.mkdirSync(path.join(dir, 'logs'));
   fs.writeFileSync(path.join(dir, 'queue/test.json'), JSON.stringify(record));
   for(const extra of otherRecords) fs.writeFileSync(path.join(dir, `queue/${extra.id}.json`), JSON.stringify(extra));
+  for(const entry of [record,...otherRecords])for(const asset of videoAssets(entry)) {
+    if(typeof asset.path!=='string')continue;
+    fs.mkdirSync(path.dirname(path.join(dir,asset.path)),{recursive:true});
+    fs.writeFileSync(path.join(dir,asset.path),renderBytes);
+  }
   if(cooldown) fs.writeFileSync(path.join(dir,'logs/instagram-cooldown.json'), JSON.stringify(cooldown));
   if(quotaState) fs.writeFileSync(path.join(dir,'logs/instagram-publishing-quota.json'), JSON.stringify(quotaState));
   if(recovery) fs.writeFileSync(path.join(dir,'logs/instagram-recovery.json'),JSON.stringify(recovery));
@@ -169,7 +180,7 @@ function photoRecord(count=1) {
    caption_policy:'vip-source-v1',source_caption_text:'',vip_source_checked:true,
    layout_template:'rapwire-source-media-v1',visual_asset_rights:'source_post_repost',
    media_capture_complete:true,source_item_count:count,
-   media_items:Array.from({length:count},(_,i)=>({type:i===1?'video':'image',path:`media/test-${i}.${i===1?'mp4':'jpg'}`,source_index:i})),
+   media_items:Array.from({length:count},(_,i)=>({type:i===1?'video':'image',path:`media/test-${i}.${i===1?'mp4':'jpg'}`,source_index:i,...(i===1?{video_layout:videoLayout}:{})})),
    story:'media/test-story.jpg'};
 }
 test('VIP photo creates a single Threads image even while Instagram is held',t=>{
@@ -205,4 +216,44 @@ test('disabled Stories never resume an outstanding Story upload',t=>{
  const r=run(t,{...item,instagram_story_container_id:'old-story',threads_status:'published',threads_media_id:'thread'},null,`throw new Error('No publishing calls allowed');`,0,null,40,50,[],null,false);
  assert.equal(r.report.instagram_steps,0);
  assert.equal(r.item.instagram_story_media_id,undefined);
+});
+
+test('unproven legacy video retains all markers and captions and requests review without publishing',t=>{
+ const record={...item,video_layout:undefined,status:'ready',instagram_media_id:undefined,instagram_container_id:'old-ig',
+  threads_container_id:'old-thread',threads_publish_requested_at:'2026-09-03T05:00:00Z',threads_reconcile_required:true,
+  caption_style:undefined,caption:'Source commentary: Keep the exact prior caption.',threads_text:'Keep the exact prior Threads text.'};
+ const r=run(t,record,null,`throw new Error('Legacy crop cannot be published or inspected');`);
+ assert.deepEqual(r.item,JSON.parse(JSON.stringify(record)));
+ assert.equal(r.report.instagram_steps,0);assert.equal(r.report.threads_steps,0);
+ assert.match(r.report.reviews[0].reason,/validated footage-only/);
+});
+
+test('unsafe legacy in-flight video cannot occupy either lane ahead of a validated render',t=>{
+ const legacy={...item,id:'old-layout',status:'ready',instagram_media_id:undefined,video_layout:undefined,
+  instagram_container_id:'old-ig',threads_container_id:'old-thread'};
+ const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
+  `if(options.method==='POST')return new Response(JSON.stringify({id:'new-container'}));throw new Error('Unsafe legacy containers must not be inspected');`,0,null,1,50,[legacy]);
+ assert.equal(r.item.instagram_container_id,'new-container');assert.equal(r.item.threads_container_id,'new-container');
+ assert.equal(r.report.reviews.length,1);
+});
+
+test('a changed render hash blocks publication on both platforms',t=>{
+ const r=run(t,{...item,status:'ready',instagram_media_id:undefined,video_layout:{...videoLayout,output_sha256:'0'.repeat(64)}},null,
+  `throw new Error('Changed asset must not publish');`);
+ assert.equal(r.report.instagram_steps,0);assert.equal(r.report.threads_steps,0);
+ assert.match(r.report.reviews[0].reason,/no longer match/);
+});
+
+test('mixed carousel cannot publish a video child without its own layout evidence',t=>{
+ const record=photoRecord(2);delete record.media_items[1].video_layout;
+ const r=run(t,record,null,`throw new Error('Unproven carousel video must not publish');`);
+ assert.equal(r.report.instagram_steps,0);assert.equal(r.report.threads_steps,0);
+ assert.match(r.report.reviews[0].reason,/media_items\[1\]/);
+});
+
+test('already-live legacy media with a pending platform remains unchanged and held for review',t=>{
+ const record={...item,video_layout:undefined,caption_style:undefined,caption:'Original published caption',threads_text:'Original pending caption'};
+ const r=run(t,record,null,`throw new Error('Legacy asset must not be delivered on another platform');`,0,null,1,50,[],null,false);
+ assert.deepEqual(r.item,JSON.parse(JSON.stringify(record)));
+ assert.equal(r.report.reviews.length,1);assert.equal(r.report.threads_steps,0);
 });

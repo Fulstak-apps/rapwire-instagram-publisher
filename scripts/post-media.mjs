@@ -3,6 +3,7 @@ import path from 'node:path';
 import {execFile} from 'node:child_process';
 import {promisify} from 'node:util';
 import {sourceCaption, shortcode} from './video-caption.mjs';
+import {capturedVideoLayout} from './video-layout-policy.mjs';
 const exec = promisify(execFile);
 
 // This function reads rendered DOM only. Intersect every clipping ancestor so
@@ -112,6 +113,7 @@ export async function capturePostMedia({page,requestedUrl,outputDir,captureVideo
       }
       return {type:current.type,path:destination,source_media_url:current.src,
         width:current.width,height:current.height,duration:videoEvidence?.duration,
+        ...(current.type==='video'?{video_layout:capturedVideoLayout(videoEvidence)}:{}),
         bytes:(await fs.stat(destination)).size};
     },
     next:()=>article.getByRole('button',{name:'Next',exact:true}).isVisible().catch(()=>false),
@@ -131,6 +133,7 @@ export async function capturePostMedia({page,requestedUrl,outputDir,captureVideo
   if(items.length===1 && items[0].type==='video') {
     // Keep the legacy video repair path and Reel queue shape compatible.
     evidence.duration=items[0].duration;
+    evidence.video_layout=capturedVideoLayout(items[0]);
     evidence.destination=path.join(outputDir,`${code}.mp4`);
     await fs.copyFile(items[0].path,evidence.destination);
   }

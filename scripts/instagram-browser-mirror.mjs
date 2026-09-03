@@ -7,6 +7,7 @@ import { chromium } from "playwright-core";
 import { readExactPost } from "./post-metadata.mjs";
 import { capturePostMedia } from "./post-media.mjs";
 import { assembleRanges } from "./media-ranges.mjs";
+import { renderFootageOnly } from "./video-footage.mjs";
 
 const execFileAsync = promisify(execFile);
 
@@ -119,23 +120,14 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
       audioInput = matchedVideos[0].hasAudio ? videoInput : matchedAudio.length === 1 ? matchedAudio[0] : "";
       if (!audioInput) throw new Error("No unambiguous matching audio stream; refusing silent or unrelated audio");
       if (!videoInput) throw new Error("Captured Instagram fragments did not contain a complete video stream.");
-      const ffmpegArgs = ["-y", "-i", videoInput];
-      if (audioInput) ffmpegArgs.push("-i", audioInput);
-      const logoInputIndex = audioInput ? 2 : 1;
-      ffmpegArgs.push("-loop", "1", "-i", path.resolve("assets", "rapwire247-logo.png"));
-      const videoFilter = `[0:v]split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[${logoInputIndex}:v]scale=170:170[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v]`;
-      ffmpegArgs.push(
-        "-filter_complex",
-        videoFilter,
-        "-map", "[v]"
-      );
-      if (audioInput) ffmpegArgs.push("-map", "1:a:0");
-      ffmpegArgs.push("-c:v", "libx264", "-pix_fmt", "yuv420p");
-      if (audioInput) ffmpegArgs.push("-c:a", "aac");
-      else ffmpegArgs.push("-an");
-      ffmpegArgs.push("-shortest");
-      ffmpegArgs.push("-movflags", "+faststart", destination);
-      await execFileAsync("ffmpeg", ffmpegArgs);
+      // Keep the exact unbranded audio/video locally so a later layout repair
+      // never crops an already-branded render or needs to recapture the post.
+      const original = path.join(outputDir, `${shortcode}-source.mp4`);
+      await execFileAsync("ffmpeg", ["-v", "error", "-y", "-i", videoInput, "-i", audioInput,
+        "-map", "0:v:0", "-map", "1:a:0", "-c", "copy", "-movflags", "+faststart", original]);
+      const sourceHandle = options.sourceHandle || new URL(reelUrl).pathname.split('/').filter(Boolean)[0];
+      sourceEvidence.video_layout = await renderFootageOnly({input:original,destination,sourceHandle,
+        width:sourceEvidence.width,height:sourceEvidence.height,duration:sourceEvidence.duration});
 
       const { stdout: probeOutput } = await execFileAsync("ffprobe", [
         "-v", "error", "-show_entries", "stream=codec_name,codec_type,width,height,duration:format=duration",

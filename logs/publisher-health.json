@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-03T23:42:17.758Z",
+  "checked_at": "2026-09-03T23:46:35.972Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-03T23:42:04.165Z",
@@ -16,39 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-03T23:52:10.422Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T23:52:17.413Z",
-  "publications": [
-    {
-      "file": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-.json",
-      "id": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17865009852661747",
-      "content_type": "video"
-    },
-    {
-      "file": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta.json",
-      "id": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18377645596229025"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -129,15 +113,15 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
-      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
+      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
+      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
-      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
+      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
+      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

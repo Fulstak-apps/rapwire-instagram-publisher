@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-03T00:00:38.565Z",
+  "checked_at": "2026-09-03T00:04:32.668Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-02T23:48:08.295Z",
+    "checked_at": "2026-09-03T00:04:32.592Z",
     "usage": 48,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-03T00:03:08.295Z",
+    "next_check_at": "2026-09-03T00:19:32.592Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-02T14:31:56.408Z",
@@ -25,22 +25,14 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-03T00:10:38.061Z",
-  "publications": [
-    {
-      "file": "138-lil-durk-was-at-dj-khaleds-house-in-miami-day-before-murder.json",
-      "id": "138-lil-durk-was-at-dj-khaleds-house-in-miami-day-before-murder",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17895014391670467"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

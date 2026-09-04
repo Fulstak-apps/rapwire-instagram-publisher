@@ -59,6 +59,10 @@ export function inspectBands(frames, width, height) {
 
 const normalize = value => String(value || '').toLowerCase().replace(/[^a-z0-9]/g,'');
 const aliases = handle => [handle, {records:'records',traploreross:'trap lore ross',freshouttheculture:'fresh out the culture',raplisted_:'raplisted',complexmusic:'complex music'}[handle]].filter(Boolean).map(normalize);
+// OCR boxes can end a few pixels before the visible antialiased edge of a logo.
+// Keep a deterministic clearance after a confirmed removable header. Records
+// and Raplisted use circular/heavy marks that need more room than plain text.
+export const sourceHeaderClearance = handle => ({records:18,raplisted:18}[normalize(handle)] || 12);
 function sourceBrandLine(item,handle) {
   const escaped=handle.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
   if (new RegExp(`(?:^|\\s)@${escaped}(?![a-z0-9_.])`,'i').test(item.text)) return true;
@@ -102,7 +106,7 @@ export function chooseFootageCrop({bands, sampleWidth, sampleHeight, sourceWidth
   // allowance handles antialiasing at its bottom edge but cannot reach caption
   // lines below it.
   if (sourceMarks.some(o=>o.box.y<0 || o.box.y+o.box.height>bandRect.y+0.012)) throw new Error('Crop review required: source branding overlaps footage instead of a removable outer panel');
-  const cropTop=Math.min(1,markBottom+Math.max(2/sourceHeight,0.004));
+  const cropTop=Math.min(1,markBottom+sourceHeaderClearance(sourceHandle)/sourceHeight);
   const rect={x:0,y:cropTop,width:1,height:1-cropTop};
   const nonSourceText=text.filter(o=>!sourceBrandLine(o,sourceHandle));
   // A boundary through a caption, subtitle, or title is never acceptable.

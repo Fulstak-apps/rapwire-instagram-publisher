@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {sampleTimes,inspectBands,chooseFootageCrop,chooseSoloFootageCrop,chooseLogoSize,footageFilter} from './video-footage.mjs';
+import {sampleTimes,inspectBands,chooseFootageCrop,chooseSoloFootageCrop,chooseLogoSize,footageFilter,sourceHeaderClearance} from './video-footage.mjs';
 
 const width=100,height=160;
 function frames({top=50,bottom=150,background=0,movingHeader=false}={}) {
@@ -34,13 +34,21 @@ test('detects separate black or white headers without a fixed crop percentage',(
 test('only source header is removed before blur; the source on-video caption stays',()=>{
   const plan=choose(inspectBands(frames(),width,height));
   assert.equal(plan.source_header_removed,true);
-  assert.equal(plan.crop.y,200);
+  assert.equal(plan.crop.y,212);
   assert.deepEqual(plan.removed_text,['Records','@records']);
   const filter=footageFilter(plan.crop);
-  assert.match(filter,/^\[0:v\]crop=720:952:0:200/);
+  assert.match(filter,/^\[0:v\]crop=720:940:0:212/);
   assert.ok(filter.indexOf('crop=')<filter.indexOf('split='));
   assert.doesNotMatch(filter,/drawtext/);
   assert.match(filter,/overlay=x=34:y=H-h-34/);
+});
+test('known source headers get enough fixed clearance to remove antialiased logo remnants',()=>{
+  assert.equal(sourceHeaderClearance('records'),18);
+  assert.equal(sourceHeaderClearance('raplisted_'),18);
+  assert.equal(sourceHeaderClearance('akademiks'),12);
+  const plan=choose(inspectBands(frames(),width,height));
+  assert.ok(plan.crop.y/1152 >= .17 + 15/1152);
+  assert.ok(plan.crop.y/1152 < .22);
 });
 test('clean full-frame footage remains full-frame',()=>{
   const bands=inspectBands(frames({top:0,bottom:height}),width,height);

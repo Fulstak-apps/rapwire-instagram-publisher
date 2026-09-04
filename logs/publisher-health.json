@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T17:08:28.115Z",
+  "checked_at": "2026-09-04T17:12:17.050Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T17:05:55.238Z",
@@ -16,16 +16,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T17:18:27.902Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,23 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-04T17:18:20.688Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [
-    {
-      "file": "258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic.json",
-      "id": "258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18087122291289580"
-    },
-    {
-      "file": "258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic.json",
-      "id": "258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18126558964801757",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -71,6 +55,13 @@
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
       "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
+      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -104,27 +95,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
-      "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
-      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
-      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.json",
       "id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
       "platform": "video_layout",
@@ -134,6 +104,20 @@
     {
       "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
       "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
+      "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
+      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

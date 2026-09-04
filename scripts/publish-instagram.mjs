@@ -30,7 +30,30 @@ if (!instagramToken || !instagramUserId || !threadsToken || !threadsUserId || !r
 const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
 const facebookConfigured=Boolean(facebookPageToken&&facebookPageId);
-const facebookApi=facebookConfigured?metaClient('https://graph.facebook.com',facebookPageToken):null;
+let facebookApi=facebookConfigured?metaClient('https://graph.facebook.com',facebookPageToken):null;
+let facebookTokenResolved=!facebookConfigured;
+let facebookUsingPageToken=false;
+
+// The secret can be either a Page token or a user token granted Page access.
+// Facebook requires the actual Page token for uploads (especially unpublished
+// carousel children), so exchange only in memory and never write it to logs.
+async function resolveFacebookPageApi() {
+  if (!facebookConfigured || facebookTokenResolved) return facebookApi;
+  facebookTokenResolved=true;
+  try {
+    const page=await facebookApi.get(`/${facebookPageId}`,{fields:'id,access_token'});
+    if (page.access_token) {
+      facebookApi=metaClient('https://graph.facebook.com',page.access_token);
+      facebookUsingPageToken=true;
+      console.log('Facebook: resolved Page-scoped publishing token');
+    } else console.warn('Facebook: configured token did not return a Page-scoped publishing token');
+  } catch (error) {
+    // Keep the configured token as a fallback so existing Page-token setups
+    // remain compatible. The later upload error is logged against its item.
+    console.warn(`Facebook: Page-token resolution unavailable (${error.message})`);
+  }
+  return facebookApi;
+}
 const queueDir = "queue";
 const logsDir = "logs";
 const attemptsLog = path.join(logsDir, "publish-attempts.jsonl");
@@ -556,6 +579,14 @@ async function deliverThreads(item, itemPath, file) {
 }
 
 async function deliverFacebook(item,itemPath,file) {
+  const pageApi=await resolveFacebookPageApi();
+  // These attempts were rejected before a Page token was used. They were never
+  // published, so retry them once with the correctly scoped token.
+  if (facebookUsingPageToken && /publish_actions are not available|Unpublished posts must be posted to a page as the page itself/i.test(item.facebook_error||'')) {
+    delete item.facebook_retry_at;
+    delete item.facebook_error;
+    if (item.facebook_status==='failed') item.facebook_status='pending';
+  }
   if(!facebookConfigured || facebookSteps>=1 || item.facebook_verified_at || item.facebook_reconcile_required
     || Date.parse(item.facebook_retry_at||'')>Date.now())return;
   const verificationOnly=Boolean(item.facebook_media_id);
@@ -563,7 +594,7 @@ async function deliverFacebook(item,itemPath,file) {
   try {
     facebookSteps+=1;
     const result=await deliverFacebookPage({
-      item,api:facebookApi,pageId:facebookPageId,
+      item,api:pageApi,pageId:facebookPageId,
       caption:signedCaption(item.caption,item),
       media:facebookMedia(item,{mediaUrl,slideUrl,videoUrl}),
       save:()=>save(itemPath,item)

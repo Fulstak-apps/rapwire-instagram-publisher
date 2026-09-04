@@ -95,7 +95,7 @@ async function checkInstagramRateLimit(response, payload) {
 
 function assertInstagramAvailable() {
   if (Date.parse(cooldown.until || "") > Date.now()) throw new Error(`Instagram cooling down until ${cooldown.until}`);
-  if (quota.blocked) throw new Error(`Instagram publishing quota is blocked; capacity check ${quota.next_check_at}`);
+  if (quota.blocked) throw new Error(`Instagram publishing deferred: ${quota.reason || 'capacity unavailable'}; next check ${quota.next_check_at}`);
 }
 const queueNames = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
 const queueRecords = await Promise.all(queueNames.map(async (name) => ({

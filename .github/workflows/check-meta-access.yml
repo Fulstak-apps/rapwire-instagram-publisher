@@ -8,6 +8,9 @@ jobs:
     timeout-minutes: 3
     steps:
       - uses: actions/checkout@v6
+        with:
+          sparse-checkout: scripts/check-meta-access.mjs
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v6
         with:
           node-version: '22'

@@ -79,9 +79,7 @@
   "facebook_child_requests": [
     "2026-09-04T15:18:10.190Z"
   ],
-  "facebook_error": "(#200) Unpublished posts must be posted to a page as the page itself.",
-  "facebook_status": "failed",
-  "facebook_retry_at": "2026-09-05T15:18:11.609Z",
+  "facebook_status": "reconciliation_required",
   "threads_children": [
     {
       "id": "18095659769179906",
@@ -112,5 +110,6 @@
   "threads_media_id": "17905130229517228",
   "threads_published_at": "2026-09-04T15:38:39.316Z",
   "threads_verified_at": "2026-09-04T15:38:39.490Z",
-  "threads_permalink": "https://www.threads.com/@rapwire247/post/Dc3uO7BFm-d"
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/Dc3uO7BFm-d",
+  "facebook_reconcile_required": true
 }

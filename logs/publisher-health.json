@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T16:14:51.435Z",
+  "checked_at": "2026-09-04T16:18:57.867Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T16:14:49.358Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T16:29:49.358Z",
@@ -20,13 +20,13 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T16:10:38.328Z",
+    "next_feed_eligible_at": "2026-09-04T16:28:57.481Z",
     "feed_allowed": true,
     "story_allowed": false
   },
   "instagram_steps": 1,
   "threads_steps": 0,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,7 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-04T16:10:30.033Z",
   "facebook_next_eligible_at": "2026-09-04T16:18:37.859Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net.json",
+      "id": "223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18168025756462465",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

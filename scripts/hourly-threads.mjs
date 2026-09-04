@@ -6,6 +6,7 @@ import {advanceContainer} from './container-state.mjs';
 import {errorDelay,metaClient} from './meta-client.mjs';
 
 export const HOUR=60*60_000;
+export const CONVERSATION_INTERVAL=10*60_000;
 const REPEAT_WINDOW=30*24*HOUR;
 export const PROMPTS=[
   'Be real: what “classic” rap album gets overrated the most—and why?',
@@ -20,6 +21,36 @@ export const PROMPTS=[
   'All-time great or overrated? Pick one rapper and stand on it.',
   'What is the best rap album opener ever? Don’t say it without a reason.',
   'Which city got the strongest rap scene right now—and who is really leading it?'
+  ,'What rapper had one huge year that people still underrate? Bring receipts.'
+  ,'What rap song had the hardest first 20 seconds ever?'
+  ,'Who is one rapper everybody calls a legend but you never connected with?'
+  ,'What rapper could drop tonight and take over the whole weekend?'
+  ,'Which rap duo would make the best full album right now?'
+  ,'Who has the best beat selection in rap history?'
+  ,'What rap song aged way better than people expected?'
+  ,'Who won a rap beef that people still refuse to admit they lost?'
+  ,'Name a rapper with no bad albums. Is there really one?'
+  ,'What rapper has the most loyal fanbase—and is that helping or hurting the music?'
+  ,'What album changed the sound of rap the most in the last ten years?'
+  ,'Who is the better feature artist than solo artist?'
+  ,'What rapper deserves a comeback run right now?'
+  ,'Which rapper has the hardest unreleased catalog?'
+  ,'What is one rap hit you never need to hear again?'
+  ,'Who has the most recognizable voice in rap history?'
+  ,'What rapper gets judged more for personality than music?'
+  ,'Which rapper had the biggest wasted potential?'
+  ,'What is the greatest diss record ever—and what makes it number one?'
+  ,'Who is carrying their city right now?'
+  ,'What rapper has the strongest opening track catalog?'
+  ,'Whose old music is better than their new music? Be honest.'
+  ,'What current rapper would have survived every era of hip-hop?'
+  ,'Who is the best storyteller rap has ever produced?'
+  ,'What rapper deserves a Verzuz but has no obvious opponent?'
+  ,'What rap take gets you kicked out of the group chat every time?'
+  ,'Which rapper made the biggest leap between two albums?'
+  ,'What classic rap song would be even bigger if it dropped today?'
+  ,'Who has the best ad-libs in rap?'
+  ,'What rapper do critics understand completely wrong?'
 ];
 
 export const hourlyText=prompt=>`${prompt}\n\n@rapwire247`;
@@ -38,10 +69,10 @@ export async function publishHourlyThread({api,userId,state,save,now=Date.now()}
   if(Date.parse(state.retry_at||'')>now) return 'cooldown';
   if(!state.verified_at || now-Date.parse(state.verified_at)>24*HOUR) {
     const profile=await api.get('/me',{fields:'id,username'});
-    if(String(profile.id)!==String(userId)||String(profile.username).toLowerCase()!=='rapwire247') throw new Error('Hourly Threads account does not match @rapwire247');
+    if(String(profile.id)!==String(userId)) throw new Error('Threads account ID does not match the configured @rapwire247 account');
     state.verified_at=new Date(now).toISOString(); await save();
   }
-  if(!state.pending && (Date.parse(state.last_published_at||'')||0)+HOUR>now) return 'hourly_limit';
+  if(!state.pending && (Date.parse(state.last_published_at||'')||0)+CONVERSATION_INTERVAL>now) return 'interval_limit';
   if(!state.pending) {
     const selected=selectPrompt(state,now);
     state.pending={prompt:selected.prompt,text:hourlyText(selected.prompt),prompt_index:selected.index};

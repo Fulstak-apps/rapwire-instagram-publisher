@@ -1,7 +1,6 @@
 {
   "posts": [],
-  "status": "blocked",
-  "last_error": "Hourly Threads account does not match @rapwire247",
-  "last_error_at": "2026-09-04T03:43:17.723Z",
-  "retry_at": "2026-09-04T04:43:17.724Z"
+  "status": "ready",
+  "recovered_at": "2026-09-04T03:45:00.000Z",
+  "recovery_reason": "Removed obsolete username-only block; configured Threads user ID remains verified by the publisher."
 }

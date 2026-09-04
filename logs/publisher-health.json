@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T06:19:51.069Z",
+  "checked_at": "2026-09-04T06:22:04.216Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T06:16:55.311Z",
@@ -16,39 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 46,
-    "instagram_remaining": 2,
+    "instagram_usage": 47,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T06:29:44.591Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T06:29:50.691Z",
-  "publications": [
-    {
-      "file": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.json",
-      "id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18554801143079009",
-      "content_type": "video"
-    },
-    {
-      "file": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble.json",
-      "id": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17899956381568649"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

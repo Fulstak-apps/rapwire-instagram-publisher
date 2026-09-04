@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T06:34:28.726Z",
+  "checked_at": "2026-09-04T06:38:03.807Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T06:34:13.331Z",
@@ -16,39 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 46,
-    "instagram_remaining": 2,
+    "instagram_usage": 47,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T06:44:21.537Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T06:44:28.482Z",
-  "publications": [
-    {
-      "file": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von.json",
-      "id": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18081874556334944",
-      "content_type": "video"
-    },
-    {
-      "file": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.json",
-      "id": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18117966686316704"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

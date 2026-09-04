@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T17:40:53.123Z",
+  "checked_at": "2026-09-04T17:45:12.241Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T17:40:51.747Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T17:55:51.747Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T17:36:13.201Z",
+    "next_feed_eligible_at": "2026-09-04T17:55:11.875Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -35,7 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-04T17:46:58.715Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "251-getting-paid-to-hang-out-with-your-bro-is-a-different-type-of-jo.json",
+      "id": "251-getting-paid-to-hang-out-with-your-bro-is-a-different-type-of-jo",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18130043800677586",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

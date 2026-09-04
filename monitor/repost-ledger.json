@@ -1909,6 +1909,13 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/Dc3-E5JlE5a/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc3_C3Zm0e4": {
+      "seen_at": "2026-09-04T18:14:25.242Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Dc3_C3Zm0e4/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2932,15 +2939,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T03:40:16.296Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T03:41:03.462Z"
-    },
     {
       "started_at": "2026-09-03T03:43:06.827Z",
       "candidates": 48,
@@ -7676,6 +7674,28 @@
       "mode": "discovery",
       "vip_pending": 9,
       "finished_at": "2026-09-04T18:11:38.630Z"
+    },
+    {
+      "started_at": "2026-09-04T18:13:45.266Z",
+      "candidates": 23,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc3-LqbG5jK/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc3-LqbG5jK-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 9,
+      "finished_at": "2026-09-04T18:16:15.241Z"
     }
   ],
   "vip_pending": {
@@ -7746,10 +7766,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 5,
+      "attempts": 6,
       "last_error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-04T17:41:13.997Z",
-      "retry_at": "2026-09-04T18:13:13.997Z"
+      "last_attempt_at": "2026-09-04T18:16:15.241Z",
+      "retry_at": "2026-09-04T19:16:15.241Z"
     },
     "Dc32-qLsTq5": {
       "source_handle": "akademiks",
@@ -7782,10 +7802,10 @@
       "first_seen_at": "2026-09-04T18:00:32.552Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc3-LqbG5jK-3-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T18:06:52.862Z",
-      "retry_at": "2026-09-04T18:08:52.862Z"
+      "attempts": 2,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc3-LqbG5jK-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-04T18:15:55.958Z",
+      "retry_at": "2026-09-04T18:19:55.958Z"
     }
   },
   "source_checks": {
@@ -7820,10 +7840,10 @@
       "checked_at": "2026-09-04T18:04:02.200Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T17:40:21.517Z"
+      "checked_at": "2026-09-04T18:13:52.538Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T17:40:25.466Z"
+      "checked_at": "2026-09-04T18:13:56.930Z"
     }
   }
 }

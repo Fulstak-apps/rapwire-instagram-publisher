@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T15:11:25.816Z",
+  "checked_at": "2026-09-04T15:15:51.407Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T15:08:13.038Z",
@@ -16,16 +16,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T15:21:25.381Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,23 +35,14 @@
   },
   "threads_next_eligible_at": "2026-09-04T14:40:10.468Z",
   "facebook_next_eligible_at": null,
-  "publications": [
-    {
-      "file": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble.json",
-      "id": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18189154312396623",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "208-yb-speaks.json",
-      "id": "208-yb-speaks",
+      "file": "224-ye-is-projected-to-surpass-1-million-in-total-attendance-across-.json",
+      "id": "224-ye-is-projected-to-surpass-1-million-in-total-attendance-across-",
       "platform": "facebook",
       "status": "failed",
-      "error": "(#200) The permission(s) publish_actions are not available. It has been deprecated. If you want to provide a way for your app users to share content to Facebook, we encourage you to use our Sharing products instead."
+      "error": "(#200) Unpublished posts must be posted to a page as the page itself."
     }
   ],
   "reviews": [
@@ -72,13 +63,6 @@
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
       "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
-      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -112,20 +96,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.json",
-      "id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
-      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
       "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
       "platform": "video_layout",
@@ -135,6 +105,27 @@
     {
       "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
       "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
+      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.json",
+      "id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
+      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

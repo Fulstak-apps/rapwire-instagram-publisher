@@ -2477,20 +2477,16 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/Dc10M-ZD75s/",
       "queue_id": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th"
+    },
+    "Dc10q-DgEG-": {
+      "queued_at": "2026-09-04T03:00:34.938Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc10q-DgEG-/",
+      "queue_id": "242-dj-scheme-speaks",
+      "video": "media/242-dj-scheme-speaks.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T20:22:49.516Z",
-      "candidates": 48,
-      "queued": [
-        "160-reposted-from-akademiks-6ix9ine-speaks"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 6,
-      "finished_at": "2026-09-02T20:23:49.546Z"
-    },
     {
       "started_at": "2026-09-02T20:25:52.765Z",
       "candidates": 48,
@@ -5599,6 +5595,17 @@
       "mode": "discovery",
       "vip_pending": 10,
       "finished_at": "2026-09-04T02:56:31.307Z"
+    },
+    {
+      "started_at": "2026-09-04T02:58:41.622Z",
+      "candidates": 49,
+      "queued": [
+        "242-dj-scheme-speaks"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 9,
+      "finished_at": "2026-09-04T03:00:34.938Z"
     }
   ],
   "vip_pending": {
@@ -5649,18 +5656,6 @@
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
       "last_attempt_at": "2026-09-04T02:32:43.343Z",
       "retry_at": "2026-09-04T02:48:43.343Z"
-    },
-    "Dc10q-DgEG-": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/reel/Dc10q-DgEG-/",
-      "shortcode": "Dc10q-DgEG-",
-      "first_seen_at": "2026-09-03T21:58:14.714Z",
-      "profile_position": 0,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc10q-DgEG--1-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc10q-DgEG--1-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc10q-DgEG--1-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc10q-DgEG--1-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc10q-DgEG--1-crop-review/source-5.png\n",
-      "last_attempt_at": "2026-09-04T01:07:24.202Z",
-      "retry_at": "2026-09-04T01:09:24.202Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -5725,22 +5720,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T02:53:37.999Z"
+      "checked_at": "2026-09-04T02:58:55.724Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T02:53:42.203Z"
+      "checked_at": "2026-09-04T02:58:59.808Z"
     },
     "records": {
       "checked_at": "2026-09-04T02:53:46.295Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T02:53:33.977Z"
+      "checked_at": "2026-09-04T02:58:51.532Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-04T02:10:30.812Z"
+      "checked_at": "2026-09-04T02:59:03.919Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-04T02:10:34.859Z"
+      "checked_at": "2026-09-04T02:59:08.031Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-04T02:27:06.405Z"

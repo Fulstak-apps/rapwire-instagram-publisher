@@ -8,6 +8,7 @@ import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-captio
 import { mediaFiles, isMediaRepost } from "./repost-media-policy.mjs";
 import { isVip, rememberVip, vipCandidates, deferVip, vipCaption } from './vip-policy.mjs';
 import {candidateScore} from './growth-feedback.mjs';
+import {priorityArtistsIn} from './artist-priority.mjs';
 import {editorialTopic,editorialSeries} from './audience-policy.mjs';
 import {normalizeSources,dueSources,dailySourceDeficits} from './source-policy.mjs';
 import {selectionAllowed,recentPosts,editorialRank,reportingGate,storyFingerprint} from './editorial-policy.mjs';
@@ -182,7 +183,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
   const queueItem = {
     id,
     status: "ready",
-    publish_priority: isVip(candidate.source.handle) ? 100 : 50,
+    publish_priority: candidate.priorityArtists?.length ? 125 : isVip(candidate.source.handle) ? 100 : 50,
     vip_repost: isVip(candidate.source.handle),
     date: new Date().toISOString().slice(0, 10),
     timezone: "America/Detroit",
@@ -203,6 +204,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
     source_urls: [candidate.url],
     source_view_count_at_selection: Number(candidate.viewCount || 0),
     selection_score: candidate.selectionScore ?? null,
+    priority_artists: candidate.priorityArtists || [],
     discussion_topic: editorialTopic(fields.body),
     visual_asset_type: "source_video",
     visual_asset_rights: "source_post_repost",
@@ -392,7 +394,7 @@ try {
     // Score only the current visible window from each approved page. This keeps
     // reposts timely while choosing the videos already pulling the strongest
     // audience, rather than blindly reposting every new upload.
-    const selectedForScoring = sources.filter(source => !isVip(source.handle)).flatMap((source) => discovered
+    const selectedForScoring = selectedSources.flatMap((source) => discovered
       .filter((candidate) => candidate.source.handle === source.handle && !ledger.queued_shortcodes[candidate.shortcode])
       .slice(0, candidatesPerSourceToScore));
     rankedPool = selectedForScoring;
@@ -406,6 +408,7 @@ try {
         candidate.visibleCaption = metadata.caption;
         candidate.isVideo = metadata.isVideo;
         candidate.viewCount = metadata.viewCount;
+        candidate.priorityArtists=priorityArtistsIn(metadata.caption);
         candidate.viewVelocity=priorViews>0&&elapsedHours>=.1&&metadata.viewCount>=priorViews
           ? (metadata.viewCount-priorViews)/elapsedHours : 0;
       } catch (error) {

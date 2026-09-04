@@ -23,6 +23,8 @@ The collector rotates at most two non-VIP source checks per cycle. Fast-track hi
 
 Ranking combines visible views, current profile position, a bounded observed view-velocity signal and learned performance. The velocity signal is based only on two recorded visible view counts; missing counts never become a guessed trend. Learned source weights start only after at least three measured posts and 500 reach/views, and can change a source weight only within 0.8–1.25. This improves selection but does not promise virality or prove causation.
 
+The current priority-artist roster is encoded in `scripts/artist-priority.mjs`. A fresh, eligible post naming one of those artists receives a transparent queue boost and is recorded with the matched artist name. This is a priority signal, not a waiver for relevance, duplicate checks, media validation, claim verification, or account limits. Broad culture clips and older videos continue rotating between priority stories.
+
 Deduplicate canonical shortcodes and exact normalized captions across sources. Do not treat a genuine new development as a duplicate merely because its opening sentence resembles an older story. Retain held records; never delete them or alter existing live posts.
 
 ## Reporting, captions and visuals

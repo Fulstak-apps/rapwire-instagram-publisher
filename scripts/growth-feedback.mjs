@@ -58,7 +58,8 @@ export function candidateScore(candidate,summary={},now=Date.now()) {
   // counts are engagement data.
   const hourlyVelocity=Math.max(0,Number(candidate.viewVelocity)||0);
   const velocityBonus=Math.min(4,Math.log1p(hourlyVelocity/250));
-  return lifetimeViews*weight + velocityBonus + 1/(1+Math.max(0,candidate.profilePosition||0));
+  const artistBonus=candidate.priorityArtists?.length?4:0;
+  return lifetimeViews*weight + velocityBonus + artistBonus + 1/(1+Math.max(0,candidate.profilePosition||0));
 }
 export async function collectGrowth({clients,records,state,save,now=Date.now(),instagramBlocked=false}) {
   state.media ||= {};state.platforms ||= {};state.followers ||= {};

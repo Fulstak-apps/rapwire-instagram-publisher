@@ -1,5 +1,6 @@
 import {createHash} from 'node:crypto';
 import {editorialTopic} from './audience-policy.mjs';
+import {hasPriorityArtist} from './artist-priority.mjs';
 
 export function cleanPublicCopy(value, source='') {
   const handle=String(source).replace(/^@/,'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
@@ -62,7 +63,7 @@ export function selectionAllowed(candidate, recent=[]) {
   const lane=contentLane({body});
   if(lane==='gaming'&&recent.slice(0,6).some(x=>contentLane(x)==='gaming')) return false;
   if(candidate.source.scope==='gaming'&&lane!=='gaming') return false;
-  if(candidate.source.scope==='hiphop' && !/\b(?:hip[- ]?hop|rap(?:per)?|mixtape|freestyle|drake|kendrick|durk|cole|tupac|youngboy|young thug|jay[- ]?z|nicki|cardi|doechii|travis scott|21 savage|future|lil wayne)\b/i.test(body)) return false;
+  if(candidate.source.scope==='hiphop' && !hasPriorityArtist(body) && !/\b(?:hip[- ]?hop|rap(?:per)?|mixtape|freestyle|drake|kendrick|durk|cole|tupac|youngboy|young thug|jay[- ]?z|nicki|cardi|doechii|travis scott|21 savage|future|lil wayne)\b/i.test(body)) return false;
   const fingerprint=storyFingerprint(body);
   return !fingerprint || !recent.some(item=>storyFingerprint(item.body)===fingerprint);
 }

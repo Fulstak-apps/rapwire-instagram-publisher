@@ -2607,15 +2607,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T23:42:14.688Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-02T23:43:03.813Z"
-    },
-    {
       "started_at": "2026-09-02T23:45:07.118Z",
       "candidates": 48,
       "queued": [],
@@ -6697,6 +6688,28 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T12:18:27.144Z"
+    },
+    {
+      "started_at": "2026-09-04T12:20:40.329Z",
+      "candidates": 14,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "xxl",
+          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcoh8_UkRR8-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T12:23:45.815Z"
     }
   ],
   "vip_pending": {
@@ -6719,10 +6732,10 @@
       "first_seen_at": "2026-09-03T06:22:41.175Z",
       "profile_position": 11,
       "state": "retry_pending",
-      "attempts": 15,
+      "attempts": 16,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T11:10:30.548Z",
-      "retry_at": "2026-09-04T12:10:30.548Z"
+      "last_attempt_at": "2026-09-04T12:23:45.815Z",
+      "retry_at": "2026-09-04T13:23:45.815Z"
     },
     "Dc1oLsTgfLu": {
       "source_handle": "akademiks",
@@ -6787,10 +6800,10 @@
       "checked_at": "2026-09-04T12:16:14.531Z"
     },
     "xxl": {
-      "checked_at": "2026-09-04T11:52:08.477Z"
+      "checked_at": "2026-09-04T12:20:47.340Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-04T11:52:12.475Z"
+      "checked_at": "2026-09-04T12:20:51.403Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-04T12:08:44.732Z"

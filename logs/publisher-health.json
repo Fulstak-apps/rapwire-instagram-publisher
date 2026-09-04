@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T03:20:44.448Z",
+  "checked_at": "2026-09-04T03:25:02.987Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T03:20:43.229Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T03:35:43.229Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T03:16:54.833Z",
+    "next_feed_eligible_at": "2026-09-04T03:34:56.876Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T03:17:01.451Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T03:35:02.724Z",
+  "publications": [
+    {
+      "file": "226-have-a-good-ass-day-darnell-williams-darnellwilliams.json",
+      "id": "226-have-a-good-ass-day-darnell-williams-darnellwilliams",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18111539441116159",
+      "content_type": "video"
+    },
+    {
+      "file": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne.json",
+      "id": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18074226842426517"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

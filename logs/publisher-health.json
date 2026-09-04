@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T23:10:09.853Z",
+  "checked_at": "2026-09-04T23:24:27.714Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -26,7 +26,7 @@
   },
   "instagram_steps": 0,
   "threads_steps": 1,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -38,11 +38,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
-      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
+      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
+      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
       "platform": "threads",
       "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AIjC4CyTHt76aFnBfXZtJ8x\"}}"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ASyKowSNW_R7ZDO9FHvacKJ\"}}"
     }
   ],
   "reviews": [

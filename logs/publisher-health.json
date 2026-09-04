@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-04T06:46:49.889Z",
+  "checked_at": "2026-09-04T06:50:31.302Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-04T06:34:13.331Z",
-    "usage": 48,
+    "checked_at": "2026-09-04T06:50:31.178Z",
+    "usage": 47,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-04T06:49:13.331Z",
+    "next_check_at": "2026-09-04T07:05:31.178Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -21,34 +21,18 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T06:56:43.607Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T06:56:49.527Z",
-  "publications": [
-    {
-      "file": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du.json",
-      "id": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18102146033350927",
-      "content_type": "video"
-    },
-    {
-      "file": "223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net.json",
-      "id": "223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17961994751983621"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -150,13 +134,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
-      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
       "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
       "platform": "video_layout",
@@ -173,6 +150,13 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
+      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

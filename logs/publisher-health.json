@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T16:31:11.489Z",
+  "checked_at": "2026-09-04T16:35:50.336Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T16:31:03.537Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T16:46:03.537Z",
@@ -20,13 +20,13 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T16:28:57.481Z",
+    "next_feed_eligible_at": "2026-09-04T16:45:49.942Z",
     "feed_allowed": true,
     "story_allowed": false
   },
   "instagram_steps": 1,
   "threads_steps": 0,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -37,12 +37,12 @@
   "facebook_next_eligible_at": "2026-09-04T16:41:10.998Z",
   "publications": [
     {
-      "file": "208-yb-speaks.json",
-      "id": "208-yb-speaks",
-      "platform": "facebook",
+      "file": "248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked.json",
+      "id": "248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "225657267788680_1461758532430247",
-      "permalink": "https://www.facebook.com/1461742512431849/posts/1461758532430247"
+      "media_id": "18276477874292373",
+      "content_type": "video"
     }
   ],
   "failures": [],

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T20:51:37.239Z",
+  "checked_at": "2026-09-04T20:54:33.982Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -25,7 +25,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -34,9 +34,26 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
-  "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [],
-  "failures": [],
+  "facebook_next_eligible_at": "2026-09-04T21:04:33.431Z",
+  "publications": [
+    {
+      "file": "254-meek-speaks.json",
+      "id": "254-meek-speaks",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "225657267788680_1461917922414308",
+      "permalink": "https://www.facebook.com/1461742512431849/posts/1461917922414308"
+    }
+  ],
+  "failures": [
+    {
+      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
+      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
+      "platform": "threads",
+      "status": "failed",
+      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A09ar4aJQxJ_herjBH9gXHL\"}}"
+    }
+  ],
   "reviews": [
     {
       "file": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour.json",
@@ -51,13 +68,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th.json",
-      "id": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th",
-      "platform": "facebook",
-      "status": "review_required",
-      "reason": "unsupported_facebook_media_mix"
     },
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",

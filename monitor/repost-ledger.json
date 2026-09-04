@@ -2070,6 +2070,20 @@
       "source_url": "https://www.instagram.com/igndotcom/p/Dc4VQGzDVZG/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc4T950lK8b": {
+      "seen_at": "2026-09-04T21:33:13.939Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dc4T950lK8b/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc4CvrzoZGY": {
+      "seen_at": "2026-09-04T21:33:13.941Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dc4CvrzoZGY/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -3145,18 +3159,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc4SlcDSWt_/",
       "queue_id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
       "video": "media/270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.mp4"
+    },
+    "Dc4SVACyKPu": {
+      "queued_at": "2026-09-04T21:38:13.925Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4SVACyKPu/",
+      "queue_id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
+      "video": "media/271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T04:54:58.061Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T04:55:54.321Z"
-    },
     {
       "started_at": "2026-09-03T04:57:58.029Z",
       "candidates": 48,
@@ -8250,6 +8262,17 @@
       "mode": "discovery",
       "vip_pending": 12,
       "finished_at": "2026-09-04T21:29:26.180Z"
+    },
+    {
+      "started_at": "2026-09-04T21:31:56.821Z",
+      "candidates": 55,
+      "queued": [
+        "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-04T21:38:13.925Z"
     }
   ],
   "vip_pending": {
@@ -8384,35 +8407,26 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc4ClEzSeh_-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-04T20:37:21.971Z",
       "retry_at": "2026-09-04T21:37:21.971Z"
-    },
-    "Dc4SVACyKPu": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc4SVACyKPu/",
-      "shortcode": "Dc4SVACyKPu",
-      "first_seen_at": "2026-09-04T21:09:07.250Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T21:23:32.336Z"
+      "checked_at": "2026-09-04T21:32:14.369Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T21:23:36.600Z"
+      "checked_at": "2026-09-04T21:32:18.649Z"
     },
     "records": {
-      "checked_at": "2026-09-04T21:18:29.748Z"
+      "checked_at": "2026-09-04T21:32:05.928Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T21:18:33.988Z"
+      "checked_at": "2026-09-04T21:32:10.119Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-04T20:54:15.936Z"
+      "checked_at": "2026-09-04T21:32:22.878Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-04T20:54:20.191Z"
+      "checked_at": "2026-09-04T21:32:27.163Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-04T20:57:40.482Z"

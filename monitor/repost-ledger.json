@@ -2471,45 +2471,15 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc1w77pybix/",
       "queue_id": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-",
       "video": "media/240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-.mp4"
+    },
+    "Dc10M-ZD75s": {
+      "queued_at": "2026-09-04T02:56:31.307Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc10M-ZD75s/",
+      "queue_id": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T20:18:18.761Z",
-      "candidates": 48,
-      "queued": [
-        "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi"
-      ],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcyUMrwuY-C/",
-          "stage": "queue",
-          "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('video:visible').first() to be visible\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DcxkMkMFS_H/",
-          "stage": "queue",
-          "error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcw2I-UjRkc/",
-          "stage": "queue",
-          "error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dcwsq2JGVYH/",
-          "stage": "queue",
-          "error": "Multi-item VIP post remains pending: complete carousel capture is not yet supported"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 7,
-      "finished_at": "2026-09-02T20:20:41.776Z"
-    },
     {
       "started_at": "2026-09-02T20:22:49.516Z",
       "candidates": 48,
@@ -5618,6 +5588,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-04T02:50:57.127Z"
+    },
+    {
+      "started_at": "2026-09-04T02:53:25.183Z",
+      "candidates": 47,
+      "queued": [
+        "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-04T02:56:31.307Z"
     }
   ],
   "vip_pending": {
@@ -5668,18 +5649,6 @@
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
       "last_attempt_at": "2026-09-04T02:32:43.343Z",
       "retry_at": "2026-09-04T02:48:43.343Z"
-    },
-    "Dc10M-ZD75s": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/p/Dc10M-ZD75s/",
-      "shortcode": "Dc10M-ZD75s",
-      "first_seen_at": "2026-09-03T21:52:46.245Z",
-      "profile_position": 1,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc10M-ZD75s-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T01:04:09.780Z",
-      "retry_at": "2026-09-04T01:06:09.780Z"
     },
     "Dc10q-DgEG-": {
       "source_handle": "akademiks",
@@ -5756,16 +5725,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T02:45:53.076Z"
+      "checked_at": "2026-09-04T02:53:37.999Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T02:45:57.165Z"
+      "checked_at": "2026-09-04T02:53:42.203Z"
     },
     "records": {
-      "checked_at": "2026-09-04T02:46:01.210Z"
+      "checked_at": "2026-09-04T02:53:46.295Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T02:45:49.047Z"
+      "checked_at": "2026-09-04T02:53:33.977Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T02:10:30.812Z"
@@ -5780,10 +5749,10 @@
       "checked_at": "2026-09-04T02:27:10.409Z"
     },
     "xxl": {
-      "checked_at": "2026-09-04T01:58:28.501Z"
+      "checked_at": "2026-09-04T02:53:50.347Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-04T01:58:33.181Z"
+      "checked_at": "2026-09-04T02:53:54.407Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-04T02:13:39.469Z"

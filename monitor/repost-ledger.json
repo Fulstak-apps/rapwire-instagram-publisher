@@ -1565,6 +1565,13 @@
       "source_url": "https://www.instagram.com/akademiks/p/Dc2NyIqNGe1/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc2LsycETfB": {
+      "seen_at": "2026-09-04T01:50:20.133Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dc2LsycETfB/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2395,19 +2402,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc2IpNCplN6/",
       "queue_id": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd",
       "video": "media/234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd.mp4"
+    },
+    "Dc1ukLegBA-": {
+      "queued_at": "2026-09-04T01:54:43.459Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/Dc1ukLegBA-/",
+      "queue_id": "235-why-did-keffe-d-feel-so-comfortable-confessing-to-his-role-in-th",
+      "video": "media/235-why-did-keffe-d-feel-so-comfortable-confessing-to-his-role-in-th.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T19:33:33.689Z",
-      "candidates": 36,
-      "queued": [
-        "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T19:35:06.889Z"
-    },
     {
       "started_at": "2026-09-02T19:37:11.608Z",
       "candidates": 48,
@@ -5495,6 +5499,24 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-04T01:46:02.730Z"
+    },
+    {
+      "started_at": "2026-09-04T01:48:29.836Z",
+      "candidates": 55,
+      "queued": [
+        "235-why-did-keffe-d-feel-so-comfortable-confessing-to-his-role-in-th"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-04T01:54:43.459Z"
     }
   ],
   "vip_pending": {
@@ -5601,10 +5623,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 4,
+      "attempts": 5,
       "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-04T01:41:57.259Z",
-      "retry_at": "2026-09-04T01:57:57.259Z"
+      "last_attempt_at": "2026-09-04T01:51:20.556Z",
+      "retry_at": "2026-09-04T02:23:20.556Z"
     },
     "Dc2ChIlvSpw": {
       "source_handle": "traploreross",
@@ -5684,16 +5706,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T01:40:26.186Z"
+      "checked_at": "2026-09-04T01:49:05.809Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T01:40:30.115Z"
+      "checked_at": "2026-09-04T01:49:09.765Z"
     },
     "records": {
-      "checked_at": "2026-09-04T01:40:34.084Z"
+      "checked_at": "2026-09-04T01:49:13.802Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T01:40:22.210Z"
+      "checked_at": "2026-09-04T01:49:01.843Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T00:44:16.575Z"
@@ -5702,10 +5724,10 @@
       "checked_at": "2026-09-04T00:44:20.608Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-04T00:19:12.008Z"
+      "checked_at": "2026-09-04T01:49:17.722Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-04T00:19:16.099Z"
+      "checked_at": "2026-09-04T01:49:21.702Z"
     },
     "xxl": {
       "checked_at": "2026-09-04T00:37:26.792Z"

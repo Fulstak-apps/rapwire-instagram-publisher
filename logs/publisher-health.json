@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T20:57:28.016Z",
+  "checked_at": "2026-09-04T20:59:34.230Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -25,7 +25,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -36,15 +36,7 @@
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-04T21:04:33.431Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "266-travis-scott-travisscott-has-reportedly-touched-down-in-chicago-.json",
-      "id": "266-travis-scott-travisscott-has-reportedly-touched-down-in-chicago-",
-      "platform": "threads",
-      "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQ5TrCs4g85NLicKpR86op4\"}}"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

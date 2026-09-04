@@ -2427,14 +2427,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T19:40:19.442Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T19:41:23.945Z"
-    },
-    {
       "started_at": "2026-09-02T19:43:26.810Z",
       "candidates": 48,
       "queued": [
@@ -5541,6 +5533,17 @@
       "mode": "discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-04T02:03:53.671Z"
+    },
+    {
+      "started_at": "2026-09-04T02:05:58.290Z",
+      "candidates": 36,
+      "queued": [
+        "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-"
+      ],
+      "errors": [],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-04T02:08:17.362Z"
     }
   ],
   "vip_pending": {
@@ -5724,16 +5727,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T01:58:01.962Z"
+      "checked_at": "2026-09-04T02:07:37.915Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T01:58:05.947Z"
+      "checked_at": "2026-09-04T02:07:41.914Z"
     },
     "records": {
-      "checked_at": "2026-09-04T01:58:16.501Z"
+      "checked_at": "2026-09-04T02:07:45.811Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T01:57:57.866Z"
+      "checked_at": "2026-09-04T02:07:33.919Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T00:44:16.575Z"

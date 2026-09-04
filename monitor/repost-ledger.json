@@ -2787,28 +2787,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T01:51:21.076Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/bounceoutrecords/p/DczVD5uD68A/",
-          "stage": "score",
-          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/bounceoutrecords/p/DczVD5uD68A/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/p/Dcy1Jt5Dg1u/",
-          "stage": "score",
-          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/p/Dcy1Jt5Dg1u/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T01:55:33.244Z"
-    },
-    {
       "started_at": "2026-09-03T02:04:00.905Z",
       "candidates": 48,
       "queued": [
@@ -7399,6 +7377,40 @@
       "mode": "discovery",
       "vip_pending": 7,
       "finished_at": "2026-09-04T16:45:21.417Z"
+    },
+    {
+      "started_at": "2026-09-04T16:47:25.353Z",
+      "candidates": 46,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc30Vl4O1lo/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc30Vl4O1lo-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "xxl",
+          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcoh8_UkRR8-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 7,
+      "finished_at": "2026-09-04T16:52:23.043Z"
     }
   ],
   "vip_pending": {
@@ -7445,10 +7457,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 87,
+      "attempts": 88,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T16:45:21.417Z",
-      "retry_at": "2026-09-04T17:45:21.417Z"
+      "last_attempt_at": "2026-09-04T16:52:23.043Z",
+      "retry_at": "2026-09-04T17:52:23.043Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -7469,10 +7481,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 2,
+      "attempts": 3,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc30Vl4O1lo-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T16:42:58.924Z",
-      "retry_at": "2026-09-04T16:46:58.924Z"
+      "last_attempt_at": "2026-09-04T16:49:24.698Z",
+      "retry_at": "2026-09-04T16:57:24.698Z"
     },
     "Dc30JSSjmsc": {
       "source_handle": "akademiks",
@@ -7481,24 +7493,24 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 2,
+      "attempts": 3,
       "last_error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-04T16:43:17.789Z",
-      "retry_at": "2026-09-04T16:47:17.789Z"
+      "last_attempt_at": "2026-09-04T16:49:43.817Z",
+      "retry_at": "2026-09-04T16:57:43.817Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T16:41:02.566Z"
+      "checked_at": "2026-09-04T16:47:35.932Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T16:41:06.704Z"
+      "checked_at": "2026-09-04T16:47:39.960Z"
     },
     "records": {
-      "checked_at": "2026-09-04T16:41:10.751Z"
+      "checked_at": "2026-09-04T16:47:43.976Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T16:40:58.573Z"
+      "checked_at": "2026-09-04T16:47:31.942Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T16:16:10.193Z"
@@ -7513,10 +7525,10 @@
       "checked_at": "2026-09-04T16:41:18.842Z"
     },
     "xxl": {
-      "checked_at": "2026-09-04T16:07:59.788Z"
+      "checked_at": "2026-09-04T16:47:47.922Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-04T16:08:04.359Z"
+      "checked_at": "2026-09-04T16:47:51.930Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-04T16:32:31.200Z"

@@ -26,3 +26,10 @@ test('fully published posts keep their recorded captions',()=>{
  const item={status:'published',instagram_media_id:'ig',threads_media_id:'threads',caption:'historical'};
  assert.equal(refreshCaptionStyle(item),false);assert.equal(item.caption,'historical');
 });
+test('unpublished artist copy gains only a verified artist handle',()=>{
+ const item={status:'ready',source_handle:'akademiks',caption_style:'source-tag-v1',body:'Drake announced a new date.',caption:'Drake announced a new date.\n\n@rapwire247',threads_text:'Drake announced a new date.\n\n@rapwire247'};
+ const registry=[{name:'Drake',handle:'champagnepapi',verified_at:new Date().toISOString(),verified_url:'https://www.instagram.com/champagnepapi/'}];
+ assert.equal(refreshCaptionStyle(item,registry),true);
+ assert.match(item.caption,/Drake @champagnepapi/);
+ assert.deepEqual(item.artist_handles,['champagnepapi']);
+});

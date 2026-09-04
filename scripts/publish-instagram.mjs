@@ -108,6 +108,9 @@ const sourceRegistry=normalizeSources(JSON.parse(await fs.readFile('monitor/sour
   // source-specific cap rather than a startup failure.
   if(error.code==='ENOENT') return '{"sources":[]}'; throw error;
 })));
+const artistHandleRegistry=JSON.parse(await fs.readFile('monitor/artist-handles.json','utf8').catch(error=>{
+  if(error.code==='ENOENT') return '[]'; throw error;
+}));
 const sourceByHandle=new Map(sourceRegistry.map(source=>[source.handle,source]));
 const sourceFeedAllowed=item=>{
   const source=sourceByHandle.get(String(item.source_handle||'').toLowerCase());
@@ -128,7 +131,7 @@ for (const {name,item} of queueRecords) {
   videoLayoutChecks.set(item,layoutCheck);videoLayoutChecksByFile.set(name,layoutCheck);
   // Retain every caption and publication marker on unsafe legacy assets.
   if(!layoutCheck.allowed)continue;
-  const changed=refreshCaptionStyle(item);
+  const changed=refreshCaptionStyle(item,artistHandleRegistry);
   if (refreshThreadsCopy(item) || changed) await save(path.join(queueDir,name),item);
 }
 const recentPublications=recentPosts(queueRecords.map(x=>x.item));

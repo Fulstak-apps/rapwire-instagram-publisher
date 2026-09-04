@@ -1,5 +1,5 @@
 import {captionIsBound} from './video-caption.mjs';
-import {vipCaption} from './vip-policy.mjs';
+import {applyVerifiedArtistLabels,vipCaption} from './vip-policy.mjs';
 import {composeThreads, editorialTopic, threadsTopicTag} from './audience-policy.mjs';
 import {cleanPublicCopy} from './editorial-policy.mjs';
 
@@ -41,15 +41,26 @@ export function refreshThreadsCopy(item) {
   return true;
 }
 
-export function refreshCaptionStyle(item) {
+export function refreshCaptionStyle(item, registry=[]) {
   const wrapperPresent=[item.caption,item.threads_text].some(value=>cleanPublicCopy(value,item.source_handle)!==String(value||'').trim());
-  if((item.caption_style==='source-tag-v1' && !wrapperPresent) || !['ready','published'].includes(item.status)) return false;
+  const labelPreview=applyVerifiedArtistLabels(item.caption||item.body,registry);
+  const publicCaption=cleanPublicCopy(item.caption||item.body,item.source_handle);
+  const needsLabels=labelPreview.artist_mentions.length>0 && labelPreview.artist_handles
+    .some(handle=>!new RegExp(`@${String(handle).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,'i').test(publicCaption));
+  if((item.caption_style==='source-tag-v1' && !wrapperPresent && !needsLabels) || !['ready','published'].includes(item.status)) return false;
   const pending=prefix=>!item[`${prefix}_media_id`] && !item[`${prefix}_publish_requested_at`] && !item[`${prefix}_reconcile_required`];
   if(!pending('instagram') && !pending('threads')) return false;
   // Preserve the source binding. Never turn unverified source metadata into copy.
   if(item.caption_policy==='vip-source-v1' && !item.instagram_media_id && !item.threads_media_id && captionIsBound(item)) {
-    const fields=vipCaption(item.source_caption_text,item.source_handle,item.source_url);
+    const fields=vipCaption(item.source_caption_text,item.source_handle,item.source_url,registry);
     Object.assign(item,fields,{rendered_body_text:fields.body});
+  }
+  if (needsLabels) {
+    item.artist_handles=labelPreview.artist_handles;
+    item.artist_mentions=labelPreview.artist_mentions;
+    item.caption=labelPreview.text;
+    item.threads_text=labelPreview.text;
+    item.threads_topic_tag=threadsTopicTag(labelPreview.text,{artistMentions:labelPreview.artist_mentions});
   }
   item.caption=signedCaption(item.caption,item);
   item.threads_text=signedCaption(item.threads_text||item.caption,item);

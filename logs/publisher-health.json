@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T19:09:02.919Z",
+  "checked_at": "2026-09-04T19:13:16.226Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T19:06:52.291Z",
@@ -16,15 +16,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T19:19:02.775Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 1,
   "facebook_configured": true,
@@ -33,16 +33,15 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T19:00:39.263Z",
+  "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
   "publications": [
     {
-      "file": "263-has-been-on-a-legendary-run-since-going-officially-independent-t.json",
-      "id": "263-has-been-on-a-legendary-run-since-going-officially-independent-t",
-      "platform": "instagram",
+      "file": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-.json",
+      "id": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18077670008707781",
-      "content_type": "video"
+      "media_id": "18101269757343955"
     }
   ],
   "failures": [],

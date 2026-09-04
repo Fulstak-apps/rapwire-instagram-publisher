@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {normalizeSources,dailySourceDeficits,dueSources} from './source-policy.mjs';
+import {normalizeSources,dailySourceDeficits,dueSources,sourceCanQueueToday} from './source-policy.mjs';
 
 test('artist minimum reserves two Reel slots and honors an explicit posts exclusion',()=>{
-  const [artist]=normalizeSources({sources:[{handle:'darnellwilliams',scope:'hiphop',enabled:true,approved_by:'user',daily_minimum:2,include_posts:false}]});
+  const [artist]=normalizeSources({sources:[{handle:'darnellwilliams',scope:'hiphop',enabled:true,approved_by:'user',daily_minimum:2,daily_maximum:2,include_posts:false}]});
   assert.equal(artist.includePosts,false);
   assert.equal(artist.includeReels,true);
   const now=Date.parse('2026-09-03T18:00:00Z');
@@ -12,6 +12,14 @@ test('artist minimum reserves two Reel slots and honors an explicit posts exclus
   assert.deepEqual(dailySourceDeficits([artist],once,now).map(x=>x.remaining),[1]);
   const twice=[...once,{source_handle:'darnellwilliams',status:'ready',date:'2026-09-03'}];
   assert.deepEqual(dailySourceDeficits([artist],twice,now),[]);
+});
+
+test('daily maximum is a hard cap for new Darnell queue items',()=>{
+ const [artist]=normalizeSources({sources:[{handle:'darnellwilliams',scope:'hiphop',enabled:true,approved_by:'user',daily_minimum:2,daily_maximum:2}]});
+ const now=Date.parse('2026-09-03T18:00:00Z');
+ const two=[{source_handle:'darnellwilliams',status:'published',date:'2026-09-03'},{source_handle:'darnellwilliams',status:'ready',date:'2026-09-03'}];
+ assert.equal(sourceCanQueueToday(artist,two,now),false);
+ assert.throws(()=>normalizeSources({sources:[{handle:'darnellwilliams',scope:'hiphop',enabled:true,approved_by:'user',daily_minimum:2,daily_maximum:1}]}),/daily source maximum/);
 });
 
 test('invalid daily minimum is rejected',()=>{

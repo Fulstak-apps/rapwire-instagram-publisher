@@ -25,6 +25,8 @@ Ranking combines visible views, current profile position, a bounded observed vie
 
 The current priority-artist roster is encoded in `scripts/artist-priority.mjs`. A fresh, eligible post naming one of those artists receives a transparent queue boost and is recorded with the matched artist name. This is a priority signal, not a waiver for relevance, duplicate checks, media validation, claim verification, or account limits. Broad culture clips and older videos continue rotating between priority stories.
 
+`@darnellwilliams` has a hard maximum of two scheduled posts per America/Detroit calendar day. The collector retains extra discoveries but will not queue them; the publisher also refuses a third Instagram feed post. Existing live posts are never changed retroactively.
+
 Deduplicate canonical shortcodes and exact normalized captions across sources. Do not treat a genuine new development as a duplicate merely because its opening sentence resembles an older story. Retain held records; never delete them or alter existing live posts.
 
 ## Reporting, captions and visuals

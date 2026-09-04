@@ -4,9 +4,10 @@ export function normalizeSources(config) {
   return config.sources.filter(x=>x.enabled).map(x=>{
     if(!/^[a-z0-9_.]{1,30}$/.test(x.handle)||seen.has(x.handle)||!['hiphop','gaming'].includes(x.scope)
       || (!x.identity_source&&x.approved_by!=='user')) throw new Error('Invalid or unverified source configuration');
-    const dailyMinimum=Number(x.daily_minimum||0);
+    const dailyMinimum=Number(x.daily_minimum||0),dailyMaximum=x.daily_maximum==null?Infinity:Number(x.daily_maximum);
     if(!Number.isInteger(dailyMinimum)||dailyMinimum<0||dailyMinimum>4) throw new Error('Invalid daily source minimum');
-    seen.add(x.handle);return {...x,daily_minimum:dailyMinimum,fastTrack:x.fast_track===true,includePosts:x.include_posts!==false,includeReels:x.include_reels!==false};
+    if(!(dailyMaximum===Infinity||Number.isInteger(dailyMaximum)&&dailyMaximum>0&&dailyMaximum<=12)||dailyMaximum<dailyMinimum) throw new Error('Invalid daily source maximum');
+    seen.add(x.handle);return {...x,daily_minimum:dailyMinimum,daily_maximum:dailyMaximum,fastTrack:x.fast_track===true,includePosts:x.include_posts!==false,includeReels:x.include_reels!==false};
   });
 }
 export function dueSources(sources,ledger,now=Date.now()) {
@@ -35,4 +36,13 @@ export function dailySourceDeficits(sources, records, now=Date.now()) {
       && (detroitDay(item.instagram_published_at||item.published_at||'')===today || item.date===today)).length;
     return {source,scheduled,remaining:Math.max(0,source.daily_minimum-scheduled)};
   }).filter(entry=>entry.remaining>0);
+}
+
+export function sourcePostsToday(source,records,now=Date.now()) {
+  const today=detroitDay(now);
+  return records.filter(item=>String(item.source_handle||'').toLowerCase()===source.handle
+    && item.status!=='failed' && (detroitDay(item.instagram_published_at||item.published_at||'')===today || item.date===today));
+}
+export function sourceCanQueueToday(source,records,now=Date.now()) {
+  return sourcePostsToday(source,records,now).length<source.daily_maximum;
 }

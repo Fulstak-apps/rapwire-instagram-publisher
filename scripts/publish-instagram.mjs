@@ -8,6 +8,7 @@ import { captionIsBound } from "./video-caption.mjs";
 import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS } from "./publication-policy.mjs";
 import {reportingGate,editorialRank,recentPosts,contentLane} from './editorial-policy.mjs';
 import {videoLayoutGate,verifyVideoLayoutFiles} from './video-layout-policy.mjs';
+import {normalizeSources,sourcePostsToday} from './source-policy.mjs';
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -70,6 +71,21 @@ const queueRecords = await Promise.all(queueNames.map(async (name) => ({
   name,
   item: JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8"))
 })));
+const sourceRegistry=normalizeSources(JSON.parse(await fs.readFile('monitor/sources.json','utf8').catch(error=>{
+  // Publisher integration fixtures intentionally contain only queue/media.
+  // Production always has the registry; an absent fixture registry means no
+  // source-specific cap rather than a startup failure.
+  if(error.code==='ENOENT') return '{"sources":[]}'; throw error;
+})));
+const sourceByHandle=new Map(sourceRegistry.map(source=>[source.handle,source]));
+const sourceFeedAllowed=item=>{
+  const source=sourceByHandle.get(String(item.source_handle||'').toLowerCase());
+  if(!source||source.daily_maximum===Infinity)return true;
+  // Count confirmed Instagram feed posts only. The collector separately limits
+  // queued items, so an unfinished cross-platform delivery cannot inflate the
+  // cap or allow a third feed post.
+  return sourcePostsToday(source,queueRecords.map(record=>record.item).filter(record=>record.id!==item.id&&record.instagram_media_id),Date.now()).length<source.daily_maximum;
+};
 const videoLayoutChecks=new WeakMap(),videoLayoutChecksByFile=new Map();
 const footageOnlyAllowed=item=>videoLayoutGate(item).allowed && videoLayoutChecks.get(item)?.allowed!==false;
 for (const {name,item} of queueRecords) {
@@ -438,6 +454,7 @@ const uploadSlots = instagramAvailable() && !preferStory && (deliveryPolicy.feed
   ? Math.max(0, 1 - processingCount) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
   .filter(({ item }) => item.status === "ready" && item.content_type === "video"
+    && sourceFeedAllowed(item)
     && (deliveryPolicy.feed_allowed || (recovery.feed_allowed && item.id === recovery.item_id))
     && !item.instagram_container_id && String(item.video || "").endsWith(".mp4")
     && !item.instagram_reconcile_required && !(Date.parse(item.instagram_retry_at || "") > Date.now())
@@ -587,6 +604,10 @@ for (const file of files) {
     // All content checks passed. Threads must not wait on Instagram's quota,
     // feed cadence, processing, or a failed Instagram upload.
     await deliverThreads(item, itemPath, file);
+    if (!sourceFeedAllowed(item)) {
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "source_daily_maximum_reached" });
+      continue;
+    }
     if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "run_feed_limit_reached" });
       continue;

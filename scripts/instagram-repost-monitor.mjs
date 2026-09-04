@@ -10,7 +10,7 @@ import { isVip, rememberVip, vipCandidates, deferVip, vipCaption } from './vip-p
 import {candidateScore} from './growth-feedback.mjs';
 import {priorityArtistsIn} from './artist-priority.mjs';
 import {editorialTopic,editorialSeries} from './audience-policy.mjs';
-import {normalizeSources,dueSources,dailySourceDeficits} from './source-policy.mjs';
+import {normalizeSources,dueSources,dailySourceDeficits,sourceCanQueueToday} from './source-policy.mjs';
 import {selectionAllowed,recentPosts,editorialRank,reportingGate,storyFingerprint} from './editorial-policy.mjs';
 import {capturedVideoLayout,capturedMediaItems,verifyVideoLayoutFiles,videoRepairAllowed,mediaRepairAllowed,mixedVideoLayoutReview} from './video-layout-policy.mjs';
 
@@ -442,14 +442,15 @@ try {
   // reserved. This gives @darnellwilliams two distinct Reel slots a day without
   // allowing one account to take over the ordinary news rotation.
   const priorityHandles=new Set(dailySourceDeficits(sources,records).map(entry=>entry.source.handle));
-  const allVipCandidates=vipCandidates(ledger, sources);
+  const allVipCandidates=vipCandidates(ledger, sources).filter(candidate=>sourceCanQueueToday(candidate.source,records));
   const dailyArtistPool=allVipCandidates.filter(candidate=>priorityHandles.has(candidate.source.handle));
   const remainingVipPool=allVipCandidates.filter(candidate=>!priorityHandles.has(candidate.source.handle)).slice(0,4);
   // Keep VIP discoveries durable without letting one source occupy the whole feed.
   const repeated=recent.length>=2&&recent[0].source_handle===recent[1].source_handle;
-  const rankedCandidates = dailyArtistPool.length
+  const rankedCandidates = (dailyArtistPool.length
     ? [...dailyArtistPool,...remainingVipPool,...normalCandidates]
-    : repeated&&normalCandidates.length ? [...normalCandidates,...remainingVipPool] : [...remainingVipPool,...normalCandidates];
+    : repeated&&normalCandidates.length ? [...normalCandidates,...remainingVipPool] : [...remainingVipPool,...normalCandidates])
+    .filter(candidate=>sourceCanQueueToday(candidate.source,records));
   let queueNumber = await nextQueueNumber();
   for (const candidate of rankedCandidates) {
     if (run.queued.length >= maxQueuePerRun) break;

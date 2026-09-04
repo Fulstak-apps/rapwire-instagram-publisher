@@ -2484,20 +2484,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/Dc10q-DgEG-/",
       "queue_id": "242-dj-scheme-speaks",
       "video": "media/242-dj-scheme-speaks.mp4"
+    },
+    "Dc2ChIlvSpw": {
+      "queued_at": "2026-09-04T03:09:11.472Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc2ChIlvSpw/",
+      "queue_id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
+      "video": "media/243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T20:25:52.765Z",
-      "candidates": 48,
-      "queued": [
-        "161-reposted-from-akademiks-drew-findling-is-now-on-cross-of-otf-von"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 5,
-      "finished_at": "2026-09-02T20:26:49.940Z"
-    },
     {
       "started_at": "2026-09-02T20:28:53.645Z",
       "candidates": 48,
@@ -5606,6 +5602,17 @@
       "mode": "discovery",
       "vip_pending": 9,
       "finished_at": "2026-09-04T03:00:34.938Z"
+    },
+    {
+      "started_at": "2026-09-04T03:02:42.273Z",
+      "candidates": 28,
+      "queued": [
+        "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 8,
+      "finished_at": "2026-09-04T03:09:11.472Z"
     }
   ],
   "vip_pending": {
@@ -5669,18 +5676,6 @@
       "last_attempt_at": "2026-09-04T02:30:18.421Z",
       "retry_at": "2026-09-04T03:30:18.421Z"
     },
-    "Dc2ChIlvSpw": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc2ChIlvSpw/",
-      "shortcode": "Dc2ChIlvSpw",
-      "first_seen_at": "2026-09-04T00:33:47.719Z",
-      "profile_position": 0,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2ChIlvSpw-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T01:10:54.259Z",
-      "retry_at": "2026-09-04T01:12:54.259Z"
-    },
     "Dc2GMSgPIW2": {
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/Dc2GMSgPIW2/",
@@ -5726,7 +5721,7 @@
       "checked_at": "2026-09-04T02:58:59.808Z"
     },
     "records": {
-      "checked_at": "2026-09-04T02:53:46.295Z"
+      "checked_at": "2026-09-04T03:02:50.780Z"
     },
     "darnellwilliams": {
       "checked_at": "2026-09-04T02:58:51.532Z"
@@ -5750,10 +5745,10 @@
       "checked_at": "2026-09-04T02:53:54.407Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T02:13:39.469Z"
+      "checked_at": "2026-09-04T03:02:54.992Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T02:13:43.475Z"
+      "checked_at": "2026-09-04T03:02:59.067Z"
     }
   }
 }

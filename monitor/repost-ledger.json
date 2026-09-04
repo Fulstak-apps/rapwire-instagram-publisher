@@ -1874,6 +1874,20 @@
       "source_url": "https://www.instagram.com/xxl/p/Dc38EFnlLHz/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc3-W1EAU46": {
+      "seen_at": "2026-09-04T18:00:32.552Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc3-W1EAU46/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc3-LqbG5jK": {
+      "seen_at": "2026-09-04T18:00:32.552Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc3-LqbG5jK/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2880,18 +2894,16 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dc352eOAdrL/",
       "queue_id": "260-tory-via-tmz-the-jury-in-lindsay-clancy-s-murder-case-was-unable"
+    },
+    "Dc3-W1EAU46": {
+      "queued_at": "2026-09-04T18:01:41.646Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc3-W1EAU46/",
+      "queue_id": "261-man-who-interrupted-the-kewon-white-trial-guy-accused-of-k-llin-",
+      "video": "media/261-man-who-interrupted-the-kewon-white-trial-guy-accused-of-k-llin-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T03:31:39.335Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T03:32:27.091Z"
-    },
     {
       "started_at": "2026-09-03T03:34:30.449Z",
       "candidates": 48,
@@ -7604,6 +7616,23 @@
       "mode": "discovery",
       "vip_pending": 8,
       "finished_at": "2026-09-04T17:57:07.263Z"
+    },
+    {
+      "started_at": "2026-09-04T17:59:11.280Z",
+      "candidates": 32,
+      "queued": [
+        "261-man-who-interrupted-the-kewon-white-trial-guy-accused-of-k-llin-"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 9,
+      "finished_at": "2026-09-04T18:01:41.646Z"
     }
   ],
   "vip_pending": {
@@ -7702,20 +7731,29 @@
       "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
       "last_attempt_at": "2026-09-04T17:56:08.141Z",
       "retry_at": "2026-09-04T18:28:08.141Z"
+    },
+    "Dc3-LqbG5jK": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc3-LqbG5jK/",
+      "shortcode": "Dc3-LqbG5jK",
+      "first_seen_at": "2026-09-04T18:00:32.552Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T17:53:13.993Z"
+      "checked_at": "2026-09-04T18:00:06.636Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T17:53:17.986Z"
+      "checked_at": "2026-09-04T18:00:10.698Z"
     },
     "records": {
-      "checked_at": "2026-09-04T17:53:22.053Z"
+      "checked_at": "2026-09-04T18:00:14.635Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T17:53:26.149Z"
+      "checked_at": "2026-09-04T18:00:18.675Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T17:50:32.055Z"

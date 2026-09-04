@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-04T07:17:40.649Z",
+  "checked_at": "2026-09-04T07:22:52.275Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-04T07:06:49.744Z",
-    "usage": 47,
+    "checked_at": "2026-09-04T07:22:52.134Z",
+    "usage": 46,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-04T07:21:49.744Z",
+    "next_check_at": "2026-09-04T07:37:52.134Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -21,34 +21,18 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T07:27:34.775Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T07:27:40.495Z",
-  "publications": [
-    {
-      "file": "205-this-album-will-forever-be-connected-to-that-crazy-chapter-of-hi.json",
-      "id": "205-this-album-will-forever-be-connected-to-that-crazy-chapter-of-hi",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18024303599700139",
-      "content_type": "video"
-    },
-    {
-      "file": "248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked.json",
-      "id": "248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17941658703341385"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

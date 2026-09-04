@@ -2572,17 +2572,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T21:56:29.641Z",
-      "candidates": 48,
-      "queued": [
-        "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-02T22:00:35.417Z"
-    },
-    {
       "started_at": "2026-09-02T22:02:56.920Z",
       "candidates": 48,
       "queued": [],
@@ -6031,6 +6020,34 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T07:13:52.413Z"
+    },
+    {
+      "started_at": "2026-09-04T07:15:55.845Z",
+      "candidates": 52,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Dc2BEcwjfIR/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T07:21:32.989Z"
     }
   ],
   "vip_pending": {
@@ -6065,10 +6082,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 23,
+      "attempts": 24,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T07:13:52.413Z",
-      "retry_at": "2026-09-04T08:13:52.413Z"
+      "last_attempt_at": "2026-09-04T07:21:19.358Z",
+      "retry_at": "2026-09-04T08:21:19.358Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -6077,10 +6094,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 26,
-      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-04T07:10:41.855Z",
-      "retry_at": "2026-09-04T08:10:41.855Z"
+      "attempts": 27,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-04T07:18:08.860Z",
+      "retry_at": "2026-09-04T08:18:08.860Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -6097,22 +6114,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T07:09:25.940Z"
+      "checked_at": "2026-09-04T07:16:07.427Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T07:09:29.893Z"
+      "checked_at": "2026-09-04T07:16:11.391Z"
     },
     "records": {
-      "checked_at": "2026-09-04T07:09:33.933Z"
+      "checked_at": "2026-09-04T07:16:15.341Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T07:09:21.905Z"
+      "checked_at": "2026-09-04T07:16:03.460Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-04T06:31:16.784Z"
+      "checked_at": "2026-09-04T07:16:19.391Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-04T06:31:20.728Z"
+      "checked_at": "2026-09-04T07:16:23.356Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-04T06:47:22.193Z"

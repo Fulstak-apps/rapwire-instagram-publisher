@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-04T04:25:05.882Z",
+  "checked_at": "2026-09-04T04:28:59.445Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-04T04:12:03.790Z",
-    "usage": 48,
+    "checked_at": "2026-09-04T04:28:50.987Z",
+    "usage": 47,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-04T04:27:03.790Z",
+    "next_check_at": "2026-09-04T04:43:50.987Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,23 +16,31 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 48,
-    "instagram_remaining": 0,
+    "instagram_usage": 47,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T04:26:23.963Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": false
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T04:22:10.850Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T04:38:58.157Z",
+  "publications": [
+    {
+      "file": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.json",
+      "id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18474090619116104"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

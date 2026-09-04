@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T17:26:13.346Z",
+  "checked_at": "2026-09-04T17:30:00.167Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T17:22:33.788Z",
@@ -16,15 +16,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T17:36:13.201Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 1,
   "facebook_configured": true,
@@ -35,16 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-04T17:32:41.709Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [
-    {
-      "file": "259-wat-in-the-zeus-network-going-on-here.json",
-      "id": "259-wat-in-the-zeus-network-going-on-here",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17871717474584089",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

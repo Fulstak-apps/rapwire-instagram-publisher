@@ -2533,20 +2533,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/Dc2Q0-ljXob/",
       "queue_id": "248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked",
       "video": "media/248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked.mp4"
+    },
+    "DJUD2N-gRNa": {
+      "queued_at": "2026-09-04T04:45:08.704Z",
+      "source_handle": "rockstargames",
+      "source_url": "https://www.instagram.com/rockstargames/reel/DJUD2N-gRNa/",
+      "queue_id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
+      "video": "media/249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T20:48:43.591Z",
-      "candidates": 48,
-      "queued": [
-        "166-akademiks-drew-findling-vonni-going-back-and-forth"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-02T20:49:42.642Z"
-    },
     {
       "started_at": "2026-09-02T20:51:46.022Z",
       "candidates": 48,
@@ -5701,6 +5697,24 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T04:33:36.552Z"
+    },
+    {
+      "started_at": "2026-09-04T04:35:50.422Z",
+      "candidates": 56,
+      "queued": [
+        "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-5.png\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T04:45:08.704Z"
     }
   ],
   "vip_pending": {
@@ -5747,10 +5761,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 8,
-      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-04T04:01:16.738Z",
-      "retry_at": "2026-09-04T05:01:16.738Z"
+      "attempts": 9,
+      "last_error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc13XZkGTqg-1-crop-review/source-5.png\n",
+      "last_attempt_at": "2026-09-04T04:40:18.172Z",
+      "retry_at": "2026-09-04T05:40:18.172Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -5767,16 +5781,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T04:24:35.946Z"
+      "checked_at": "2026-09-04T04:36:03.251Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T04:24:40.125Z"
+      "checked_at": "2026-09-04T04:36:07.357Z"
     },
     "records": {
-      "checked_at": "2026-09-04T04:24:44.158Z"
+      "checked_at": "2026-09-04T04:36:11.457Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T04:24:31.810Z"
+      "checked_at": "2026-09-04T04:35:59.119Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T04:24:48.190Z"
@@ -5797,10 +5811,10 @@
       "checked_at": "2026-09-04T04:13:22.000Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T03:50:59.630Z"
+      "checked_at": "2026-09-04T04:36:15.538Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T03:51:03.687Z"
+      "checked_at": "2026-09-04T04:36:19.680Z"
     }
   }
 }

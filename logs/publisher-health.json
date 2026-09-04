@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T21:18:44.016Z",
+  "checked_at": "2026-09-04T21:22:14.381Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -25,8 +25,8 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
-  "facebook_steps": 1,
+  "threads_steps": 0,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,25 +35,8 @@
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-04T21:28:43.321Z",
-  "publications": [
-    {
-      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
-      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1551591496111011",
-      "permalink": "/reel/1551591496111011/"
-    }
-  ],
-  "failures": [
-    {
-      "file": "268-rapwire-repost-video.json",
-      "id": "268-rapwire-repost-video",
-      "platform": "threads",
-      "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AnZzGaZ0XcQe1goJ0B-P5BY\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

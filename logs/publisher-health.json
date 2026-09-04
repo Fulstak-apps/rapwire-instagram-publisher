@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T18:38:58.715Z",
+  "checked_at": "2026-09-04T18:42:13.712Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T18:35:07.793Z",
@@ -16,15 +16,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 46,
-    "instagram_remaining": 2,
+    "instagram_usage": 47,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T18:48:58.576Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 1,
   "facebook_configured": true,
@@ -35,16 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-04T18:32:01.124Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [
-    {
-      "file": "262-everyone-deserves-to-experience-a-ye-concert-in-person-at-least-.json",
-      "id": "262-everyone-deserves-to-experience-a-ye-concert-in-person-at-least-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18112939291976077",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T15:23:35.131Z",
+  "checked_at": "2026-09-04T15:27:44.317Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T15:23:34.032Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T15:38:34.032Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T15:21:25.381Z",
+    "next_feed_eligible_at": "2026-09-04T15:37:44.148Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -35,14 +35,23 @@
   },
   "threads_next_eligible_at": "2026-09-04T15:28:18.553Z",
   "facebook_next_eligible_at": null,
-  "publications": [],
+  "publications": [
+    {
+      "file": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.json",
+      "id": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18618598579018352",
+      "content_type": "video"
+    }
+  ],
   "failures": [
     {
-      "file": "231-drake-just-announced-fomo-is-dropping-on-youtube-on-september-15.json",
-      "id": "231-drake-just-announced-fomo-is-dropping-on-youtube-on-september-15",
+      "file": "237-smurk-w-a-message.json",
+      "id": "237-smurk-w-a-message",
       "platform": "facebook",
       "status": "failed",
-      "error": "(#200) Unpublished posts must be posted to a page as the page itself."
+      "error": "(#200) The permission(s) publish_actions are not available. It has been deprecated. If you want to provide a way for your app users to share content to Facebook, we encourage you to use our Sharing products instead."
     }
   ],
   "reviews": [

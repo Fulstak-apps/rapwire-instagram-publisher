@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T17:22:42.659Z",
+  "checked_at": "2026-09-04T17:26:13.346Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T17:22:33.788Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T17:37:33.788Z",
@@ -20,12 +20,12 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T17:18:27.902Z",
+    "next_feed_eligible_at": "2026-09-04T17:36:13.201Z",
     "feed_allowed": true,
     "story_allowed": false
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -39,9 +39,10 @@
     {
       "file": "259-wat-in-the-zeus-network-going-on-here.json",
       "id": "259-wat-in-the-zeus-network-going-on-here",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17897918043597164"
+      "media_id": "17871717474584089",
+      "content_type": "video"
     }
   ],
   "failures": [],

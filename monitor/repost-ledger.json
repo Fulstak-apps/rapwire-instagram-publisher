@@ -3124,18 +3124,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc4QXUgT8Gs/",
       "queue_id": "268-rapwire-repost-video",
       "video": "media/268-rapwire-repost-video.mp4"
+    },
+    "Dc4SaRSSD0O": {
+      "queued_at": "2026-09-04T21:21:08.755Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4SaRSSD0O/",
+      "queue_id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
+      "video": "media/269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T04:49:20.161Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T04:50:05.670Z"
-    },
     {
       "started_at": "2026-09-03T04:52:08.757Z",
       "candidates": 48,
@@ -8219,6 +8217,23 @@
       "mode": "discovery",
       "vip_pending": 14,
       "finished_at": "2026-09-04T21:14:54.496Z"
+    },
+    {
+      "started_at": "2026-09-04T21:17:24.464Z",
+      "candidates": 34,
+      "queued": [
+        "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 13,
+      "finished_at": "2026-09-04T21:21:08.755Z"
     }
   ],
   "vip_pending": {
@@ -8354,15 +8369,6 @@
       "last_attempt_at": "2026-09-04T20:37:21.971Z",
       "retry_at": "2026-09-04T21:37:21.971Z"
     },
-    "Dc4SaRSSD0O": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc4SaRSSD0O/",
-      "shortcode": "Dc4SaRSSD0O",
-      "first_seen_at": "2026-09-04T20:55:17.813Z",
-      "profile_position": 0,
-      "state": "pending",
-      "attempts": 0
-    },
     "Dc4SlcDSWt_": {
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/Dc4SlcDSWt_/",
@@ -8384,16 +8390,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T21:07:57.953Z"
+      "checked_at": "2026-09-04T21:18:21.121Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T21:08:02.746Z"
+      "checked_at": "2026-09-04T21:18:25.440Z"
     },
     "records": {
-      "checked_at": "2026-09-04T21:08:06.951Z"
+      "checked_at": "2026-09-04T21:18:29.748Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T21:08:11.392Z"
+      "checked_at": "2026-09-04T21:18:33.988Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T20:54:15.936Z"

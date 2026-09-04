@@ -3184,15 +3184,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T05:06:33.558Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T05:07:21.179Z"
-    },
-    {
       "started_at": "2026-09-03T05:09:24.677Z",
       "candidates": 48,
       "queued": [],
@@ -8370,6 +8361,21 @@
       "mode": "discovery",
       "vip_pending": 10,
       "finished_at": "2026-09-04T22:23:25.841Z"
+    },
+    {
+      "started_at": "2026-09-04T22:25:53.776Z",
+      "candidates": 34,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-04T22:27:26.928Z"
     }
   ],
   "vip_pending": {
@@ -8496,16 +8502,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T22:14:44.079Z"
+      "checked_at": "2026-09-04T22:27:05.721Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T22:14:48.182Z"
+      "checked_at": "2026-09-04T22:27:10.081Z"
     },
     "records": {
-      "checked_at": "2026-09-04T22:14:35.795Z"
+      "checked_at": "2026-09-04T22:26:57.313Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T22:14:39.925Z"
+      "checked_at": "2026-09-04T22:27:01.425Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T21:32:22.878Z"

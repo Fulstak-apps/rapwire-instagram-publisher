@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T17:45:12.241Z",
+  "checked_at": "2026-09-04T17:49:13.021Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T17:40:51.747Z",
@@ -16,15 +16,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T17:55:11.875Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 1,
   "facebook_configured": true,
@@ -35,16 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-04T17:46:58.715Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [
-    {
-      "file": "251-getting-paid-to-hang-out-with-your-bro-is-a-different-type-of-jo.json",
-      "id": "251-getting-paid-to-hang-out-with-your-bro-is-a-different-type-of-jo",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18130043800677586",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -153,6 +144,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
+      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
       "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
       "platform": "video_layout",
@@ -169,13 +167,6 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
-      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

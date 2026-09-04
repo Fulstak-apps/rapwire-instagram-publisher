@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-04T01:17:25.626Z",
+  "checked_at": "2026-09-04T01:21:34.377Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-04T01:05:01.186Z",
+    "checked_at": "2026-09-04T01:21:26.636Z",
     "usage": 48,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-04T01:20:01.186Z",
+    "next_check_at": "2026-09-04T01:36:26.636Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T01:15:07.874Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T01:31:33.256Z",
+  "publications": [
+    {
+      "file": "228-durk-had-no-passport-at-the-airport-his-lawyers-denied-he-tried-.json",
+      "id": "228-durk-had-no-passport-at-the-airport-his-lawyers-denied-he-tried-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18120042655722086"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

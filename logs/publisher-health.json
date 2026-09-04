@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T02:06:31.730Z",
+  "checked_at": "2026-09-04T02:08:42.542Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T01:58:22.173Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T02:05:01.986Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T02:18:42.236Z",
+  "publications": [
+    {
+      "file": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd.json",
+      "id": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17898736575596057"
+    }
+  ],
   "failures": [],
   "reviews": [
     {
@@ -115,13 +123,6 @@
     {
       "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
       "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
-      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

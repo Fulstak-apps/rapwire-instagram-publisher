@@ -2565,17 +2565,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T20:58:09.124Z",
-      "candidates": 48,
-      "queued": [
-        "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-02T20:59:44.746Z"
-    },
-    {
       "started_at": "2026-09-02T21:01:49.243Z",
       "candidates": 48,
       "queued": [],
@@ -5775,6 +5764,40 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T05:04:44.641Z"
+    },
+    {
+      "started_at": "2026-09-04T05:06:48.494Z",
+      "candidates": 45,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "xxl",
+          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T05:14:39.615Z"
     }
   ],
   "vip_pending": {
@@ -5809,10 +5832,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 8,
+      "attempts": 9,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-04T05:04:44.641Z",
-      "retry_at": "2026-09-04T06:04:44.641Z"
+      "last_attempt_at": "2026-09-04T05:14:39.615Z",
+      "retry_at": "2026-09-04T06:14:39.615Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -5821,10 +5844,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 11,
+      "attempts": 12,
       "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-04T05:02:19.658Z",
-      "retry_at": "2026-09-04T06:02:19.658Z"
+      "last_attempt_at": "2026-09-04T05:12:12.833Z",
+      "retry_at": "2026-09-04T06:12:12.833Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -5833,24 +5856,24 @@
       "first_seen_at": "2026-09-04T01:28:48.855Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 4,
+      "attempts": 5,
       "last_error": "Crop review required: No distinct footage region between static panels",
-      "last_attempt_at": "2026-09-04T04:51:30.819Z",
-      "retry_at": "2026-09-04T05:07:30.819Z"
+      "last_attempt_at": "2026-09-04T05:10:19.153Z",
+      "retry_at": "2026-09-04T05:42:19.153Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T05:00:27.830Z"
+      "checked_at": "2026-09-04T05:07:01.795Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T05:00:32.026Z"
+      "checked_at": "2026-09-04T05:07:05.979Z"
     },
     "records": {
-      "checked_at": "2026-09-04T05:00:36.095Z"
+      "checked_at": "2026-09-04T05:07:10.179Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T05:00:23.525Z"
+      "checked_at": "2026-09-04T05:06:57.633Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T04:24:48.190Z"
@@ -5865,10 +5888,10 @@
       "checked_at": "2026-09-04T04:48:24.859Z"
     },
     "xxl": {
-      "checked_at": "2026-09-04T04:13:17.783Z"
+      "checked_at": "2026-09-04T05:07:14.235Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-04T04:13:22.000Z"
+      "checked_at": "2026-09-04T05:07:18.360Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-04T04:36:15.538Z"

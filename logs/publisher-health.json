@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T05:25:45.199Z",
+  "checked_at": "2026-09-04T05:28:19.907Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T05:18:08.452Z",
@@ -21,26 +21,18 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T05:28:15.993Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": false
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T05:35:44.765Z",
-  "publications": [
-    {
-      "file": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo.json",
-      "id": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17892392817672156"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -49,6 +41,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
+      "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
@@ -72,8 +71,22 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "153-source-commentary-durks-full-opp-list-revealed-in-court-included.json",
+      "id": "153-source-commentary-durks-full-opp-list-revealed-in-court-included",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
       "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
+      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -107,22 +120,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
-      "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "153-source-commentary-durks-full-opp-list-revealed-in-court-included.json",
-      "id": "153-source-commentary-durks-full-opp-list-revealed-in-court-included",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
-      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
+      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
+      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -158,13 +157,6 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
-      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

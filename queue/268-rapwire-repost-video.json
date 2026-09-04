@@ -14,7 +14,7 @@
   "headline": "RapWire Video Repost",
   "body": "",
   "rendered_body_text": "",
-  "caption": "",
+  "caption": "@rapwire247",
   "threads_text": "@rapwire247",
   "video": "media/268-rapwire-repost-video.mp4",
   "source_handle": "traploreross",
@@ -36,7 +36,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "failed",
   "threads_topic_tag": "Hip-Hop Culture",
   "artist_handles": [],
   "artist_mentions": [],
@@ -88,5 +88,9 @@
     "checked_at": "2026-09-04T21:14:53.720Z"
   },
   "story_fingerprint": null,
-  "editorial_review_required": []
+  "editorial_review_required": [],
+  "caption_style": "source-tag-v1",
+  "threads_copy_policy": "discussion-v2",
+  "threads_error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AnZzGaZ0XcQe1goJ0B-P5BY\"}}",
+  "threads_retry_at": "2026-09-04T21:48:43.935Z"
 }

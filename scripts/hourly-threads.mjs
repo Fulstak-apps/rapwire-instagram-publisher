@@ -4,6 +4,7 @@ import os from 'node:os';
 import {pathToFileURL} from 'node:url';
 import {advanceContainer} from './container-state.mjs';
 import {errorDelay,metaClient} from './meta-client.mjs';
+import {threadsTopicTag} from './audience-policy.mjs';
 
 export const HOUR=60*60_000;
 export const CONVERSATION_INTERVAL=10*60_000;
@@ -75,12 +76,12 @@ export async function publishHourlyThread({api,userId,state,save,now=Date.now()}
   if(!state.pending && (Date.parse(state.last_published_at||'')||0)+CONVERSATION_INTERVAL>now) return 'interval_limit';
   if(!state.pending) {
     const selected=selectPrompt(state,now);
-    state.pending={prompt:selected.prompt,text:hourlyText(selected.prompt),prompt_index:selected.index};
+    state.pending={prompt:selected.prompt,text:hourlyText(selected.prompt),topic_tag:threadsTopicTag(selected.prompt),prompt_index:selected.index};
     await save();
   }
   const pending=state.pending;
   const result=await advanceContainer({item:pending,prefix:'threads',now,save,
-    create:()=>api.post(`/${userId}/threads`,{media_type:'TEXT',text:pending.text}),
+    create:()=>api.post(`/${userId}/threads`,{media_type:'TEXT',text:pending.text,topic_tag:pending.topic_tag}),
     inspect:id=>api.get(`/${id}`,{fields:'status,error_message'}),
     publish:id=>api.post(`/${userId}/threads_publish`,{creation_id:id})
   });

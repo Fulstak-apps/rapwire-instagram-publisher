@@ -1,4 +1,5 @@
 import {signedCaption,refreshCaptionStyle,refreshThreadsCopy} from "./caption-style.mjs";
+import {threadsTopicTag} from './audience-policy.mjs';
 import fs from "node:fs/promises";
 import path from "node:path";
 import {advanceMediaPost} from "./carousel-state.mjs";
@@ -269,13 +270,24 @@ async function waitForInstagramContainer(containerId) {
 
 async function threadsPost(endpoint, fields) {
   if (!threadsToken || !threadsUserId) throw new Error("Missing THREADS_ACCESS_TOKEN or THREADS_USER_ID");
-  const body = new URLSearchParams({ ...fields, access_token: threadsToken });
-  const response = await fetch(`${threadsBase}/${threadsUserId}/${endpoint}`, {
-    method: "POST",
-    body,
-    signal: AbortSignal.timeout(requestTimeoutMs)
-  });
-  const payload = await response.json();
+  const submit = async requestFields => {
+    const body = new URLSearchParams({ ...requestFields, access_token: threadsToken });
+    const response = await fetch(`${threadsBase}/${threadsUserId}/${endpoint}`, {
+      method: "POST",
+      body,
+      signal: AbortSignal.timeout(requestTimeoutMs)
+    });
+    return {response, payload: await response.json()};
+  };
+  let {response, payload} = await submit(fields);
+  // Topic support varies between Threads API versions/accounts. A rejected
+  // optional topic must never block the actual reporting post.
+  const topicRejected = fields.topic_tag && /topic[ _-]?tag|unsupported parameter|invalid parameter/i.test(JSON.stringify(payload));
+  if ((!response.ok || payload.error) && topicRejected) {
+    const {topic_tag, ...withoutTopic} = fields;
+    ({response, payload} = await submit(withoutTopic));
+    if (response.ok && !payload.error) console.warn(`Threads ${endpoint}: topic tag unavailable; published without it`);
+  }
   if (!response.ok || payload.error) throw Object.assign(new Error(`Threads ${endpoint} failed: ${JSON.stringify(payload)}`), { definitiveRejection: Boolean(payload.error) && response.status < 500 });
   return payload;
 }
@@ -336,7 +348,10 @@ async function publishMediaFeed(item,itemPath,platform) {
   const create=fields=>ig?instagramPost('media',fields):threadsPost('threads',fields);
   const fields=m=>m.type==='video'?{media_type:'VIDEO',video_url:m.url}
     : ig?{image_url:m.url}:{media_type:'IMAGE',image_url:m.url};
-  const copy=ig?{caption:signedCaption(item.caption,item)}:{text:signedCaption(item.threads_text||item.caption,item)};
+  const copy=ig?{caption:signedCaption(item.caption,item)}:{
+    text:signedCaption(item.threads_text||item.caption,item),
+    topic_tag:item.threads_topic_tag||threadsTopicTag(item.body||item.threads_text||item.caption,{artistMentions:item.artist_mentions||[]})
+  };
   return advanceMediaPost({item,prefix:platform,media,
     createChild:m=>create({...fields(m),is_carousel_item:'true'}),
     createSingle:m=>create({...fields(m),...copy}),
@@ -393,7 +408,10 @@ async function publishInstagramStory(item, itemPath) {
 
 async function publishThreadsVideo(item, itemPath) {
   return advanceContainer({ item, prefix: "threads",
-    create: () => threadsPost("threads", { media_type: "VIDEO", video_url: videoUrl(item), text: signedCaption(item.threads_text || item.caption, item) }),
+    create: () => threadsPost("threads", {
+      media_type: "VIDEO", video_url: videoUrl(item), text: signedCaption(item.threads_text || item.caption, item),
+      topic_tag:item.threads_topic_tag||threadsTopicTag(item.body||item.threads_text||item.caption,{artistMentions:item.artist_mentions||[]})
+    }),
     inspect: id => inspectContainer("threads", id),
     publish: id => threadsPost("threads_publish", { creation_id: id }),
     save: () => save(itemPath, item)

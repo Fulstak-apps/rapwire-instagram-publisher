@@ -20,6 +20,20 @@ export function editorialTopic(text) {
   if (music.test(text)) return 'music';
   return 'culture';
 }
+
+// Threads accepts one topic tag per post.  Prefer a named subject when the
+// caption has an independently verified artist/company identity; otherwise use
+// a clear, platform-recognized editorial topic.  This is metadata for Threads,
+// not extra copy, so it never changes the reported claim.
+export function threadsTopicTag(text, {artistMentions = []} = {}) {
+  const verified = (artistMentions || []).find(person => person?.name && person?.handle);
+  if (verified) return verified.name;
+  const topic = editorialTopic(text);
+  if (topic === 'court') return 'Hip-Hop News';
+  if (topic === 'gaming') return /\b(?:gta\s*6|grand theft auto)\b/i.test(String(text || '')) ? 'Grand Theft Auto VI' : 'Gaming';
+  if (topic === 'music') return 'Hip-Hop';
+  return 'Hip-Hop Culture';
+}
 export function editorialSeries(text, {storyType = ''} = {}) {
   const value=String(text||'');
   if (editorialTopic(value)==='court') return 'Case File';
@@ -95,7 +109,7 @@ export function fitDiscussionText(text, max = 450) {
   // Never publish a fragment merely to fit a discussion question.
   return fitted.trim();
 }
-export function composeThreads(text, { seed = text, source = '' } = {}) {
+export function composeThreads(text, { seed = text, source = '', artistMentions = [] } = {}) {
   const handle = String(source).replace(/^@/, '').toLowerCase();
   const cleaned = String(text || '').replace(/^Source commentary:\s*/i, '')
     .split('\n').filter(line => !['@rapwire247', `@${handle}`].includes(line.trim().toLowerCase())).join('\n').trim();

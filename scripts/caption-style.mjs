@@ -1,6 +1,6 @@
 import {captionIsBound} from './video-caption.mjs';
 import {vipCaption} from './vip-policy.mjs';
-import {composeThreads, editorialTopic} from './audience-policy.mjs';
+import {composeThreads, editorialTopic, threadsTopicTag} from './audience-policy.mjs';
 import {cleanPublicCopy} from './editorial-policy.mjs';
 
 export function signedCaption(value,item={}) {
@@ -21,7 +21,9 @@ export function refreshThreadsCopy(item) {
     || item.threads_publish_requested_at || item.threads_reconcile_required
     || !['ready','published'].includes(item.status)) return false;
   try { if (!captionIsBound(item)) return false; } catch { return false; }
-  const text=composeThreads(cleanPublicCopy(item.body,item.source_handle), {source:item.source_handle,seed:item.source_url||item.id});
+  const text=composeThreads(cleanPublicCopy(item.body,item.source_handle), {
+    source:item.source_handle, seed:item.source_url||item.id, artistMentions:item.artist_mentions||[]
+  });
   if (!text) {
     item.threads_copy_error='No complete caption fits Threads; Instagram copy is unchanged.';
     return true;
@@ -34,6 +36,7 @@ export function refreshThreadsCopy(item) {
   item.threads_text=text;
   item.threads_copy_policy='discussion-v2';
   item.discussion_topic=editorialTopic(item.body);
+  item.threads_topic_tag=threadsTopicTag(item.body,{artistMentions:item.artist_mentions||[]});
   delete item.threads_copy_error;
   return true;
 }

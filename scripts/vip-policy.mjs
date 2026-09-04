@@ -1,4 +1,4 @@
-import { captionVoicePrompt, composeThreads } from './audience-policy.mjs';
+import { captionVoicePrompt, composeThreads, threadsTopicTag } from './audience-policy.mjs';
 import {cleanPublicCopy} from './editorial-policy.mjs';
 export { discussionPrompt, fitDiscussionText } from './audience-policy.mjs';
 // User instruction, 2026-09-02: repost everything from these pages until changed.
@@ -74,8 +74,8 @@ export function vipCaption(raw, source, url, registry = []) {
   if (body && String(source).replace(/^@/,'').toLowerCase()==='darnellwilliams'
     && !/@darnellwilliams\b/i.test(body)) body = `${body}\n\nDarnell Williams @darnellwilliams`;
   const caption = [body,captionVoicePrompt(body,url)].filter(Boolean).join('\n\n');
-  const threads = composeThreads(caption, {source, seed:url || text});
-  return {body, caption, threads_text:threads, artist_handles:artistCopy.artist_handles,artist_mentions:artistCopy.artist_mentions};
+  const threads = composeThreads(caption, {source, seed:url || text, artistMentions:artistCopy.artist_mentions});
+  return {body, caption, threads_text:threads, threads_topic_tag:threadsTopicTag(body,{artistMentions:artistCopy.artist_mentions}), artist_handles:artistCopy.artist_handles,artist_mentions:artistCopy.artist_mentions};
 }
 
 // Accept only the exact prior format while older queued items migrate.

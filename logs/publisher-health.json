@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T14:54:57.251Z",
+  "checked_at": "2026-09-04T14:58:48.352Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T14:52:41.726Z",
@@ -16,18 +16,18 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T15:04:57.009Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
-  "facebook_steps": 0,
-  "facebook_configured": false,
+  "facebook_steps": 1,
+  "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
@@ -35,17 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-04T14:40:10.468Z",
   "facebook_next_eligible_at": null,
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-.json",
-      "id": "216-the-revelation-comes-after-the-couple-has-endured-major-turmoil-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17906094009518316",
-      "content_type": "video"
+      "file": "230-drake-announced-september-15-on-youtube-9pm.json",
+      "id": "230-drake-announced-september-15-on-youtube-9pm",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "(#200) The permission(s) publish_actions are not available. It has been deprecated. If you want to provide a way for your app users to share content to Facebook, we encourage you to use our Sharing products instead."
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour.json",

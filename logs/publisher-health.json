@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T03:04:11.351Z",
+  "checked_at": "2026-09-04T03:07:02.640Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T03:04:09.517Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T03:19:09.517Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-03T23:52:10.422Z",
+    "next_feed_eligible_at": "2026-09-04T03:16:54.833Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T03:01:58.182Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T03:17:01.451Z",
+  "publications": [
+    {
+      "file": "225-brb-freestyle-originalaigallery-darnell-williams-darnellwilliams.json",
+      "id": "225-brb-freestyle-originalaigallery-darnell-williams-darnellwilliams",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18136212337549834",
+      "content_type": "video"
+    },
+    {
+      "file": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil.json",
+      "id": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17966381834960677"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T20:15:37.429Z",
+  "checked_at": "2026-09-04T20:18:45.405Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:15:31.598Z",
-    "usage": 48,
+    "usage": 49,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T20:30:31.598Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 50,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T20:12:40.778Z",
+    "next_feed_eligible_at": "2026-09-04T20:28:45.223Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,7 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "230-drake-announced-september-15-on-youtube-9pm.json",
+      "id": "230-drake-announced-september-15-on-youtube-9pm",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18070193009730085",
+      "content_type": "image"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T07:45:48.786Z",
+  "checked_at": "2026-09-04T07:48:15.550Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T07:39:42.921Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T07:54:42.921Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T07:43:44.210Z",
+    "next_feed_eligible_at": "2026-09-04T07:58:07.449Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T07:43:50.388Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T07:58:15.094Z",
+  "publications": [
+    {
+      "file": "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d.json",
+      "id": "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18378226180238241",
+      "content_type": "video"
+    },
+    {
+      "file": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis.json",
+      "id": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18103565486592389"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

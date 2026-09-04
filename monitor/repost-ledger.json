@@ -2884,15 +2884,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T03:25:57.902Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T03:26:44.949Z"
-    },
-    {
       "started_at": "2026-09-03T03:28:48.510Z",
       "candidates": 48,
       "queued": [],
@@ -7585,6 +7576,15 @@
       "mode": "discovery",
       "vip_pending": 8,
       "finished_at": "2026-09-04T17:48:21.337Z"
+    },
+    {
+      "started_at": "2026-09-04T17:50:24.800Z",
+      "candidates": 21,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 8,
+      "finished_at": "2026-09-04T17:51:03.617Z"
     }
   ],
   "vip_pending": {
@@ -7699,10 +7699,10 @@
       "checked_at": "2026-09-04T17:46:03.550Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-04T17:25:45.614Z"
+      "checked_at": "2026-09-04T17:50:32.055Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-04T17:25:49.777Z"
+      "checked_at": "2026-09-04T17:50:36.123Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-04T17:35:27.008Z"

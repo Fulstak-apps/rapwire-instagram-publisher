@@ -1656,6 +1656,20 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Dc3SMXHv536/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc3bAVTg0Hf": {
+      "seen_at": "2026-09-04T12:55:50.782Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc3bAVTg0Hf/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc3ayvBuWQt": {
+      "seen_at": "2026-09-04T12:55:50.782Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc3ayvBuWQt/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2603,18 +2617,15 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Dc3SMXHv536/",
       "queue_id": "251-getting-paid-to-hang-out-with-your-bro-is-a-different-type-of-jo",
       "video": "media/251-getting-paid-to-hang-out-with-your-bro-is-a-different-type-of-jo.mp4"
+    },
+    "Dc3bAVTg0Hf": {
+      "queued_at": "2026-09-04T12:56:00.392Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc3bAVTg0Hf/",
+      "queue_id": "252-story-andrew-tate-has-been-indicted-for-having-sex-with-a-minor-"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T23:53:43.176Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-02T23:54:32.478Z"
-    },
     {
       "started_at": "2026-09-02T23:56:35.687Z",
       "candidates": 48,
@@ -6772,6 +6783,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T12:52:33.529Z"
+    },
+    {
+      "started_at": "2026-09-04T12:54:37.321Z",
+      "candidates": 53,
+      "queued": [
+        "252-story-andrew-tate-has-been-indicted-for-having-sex-with-a-minor-"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 6,
+      "finished_at": "2026-09-04T12:56:00.392Z"
     }
   ],
   "vip_pending": {
@@ -6834,20 +6856,29 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-04T11:49:42.909Z",
       "retry_at": "2026-09-04T12:49:42.909Z"
+    },
+    "Dc3ayvBuWQt": {
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc3ayvBuWQt/",
+      "shortcode": "Dc3ayvBuWQt",
+      "first_seen_at": "2026-09-04T12:55:50.782Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T12:43:40.259Z"
+      "checked_at": "2026-09-04T12:54:48.111Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T12:43:44.335Z"
+      "checked_at": "2026-09-04T12:54:52.158Z"
     },
     "records": {
-      "checked_at": "2026-09-04T12:43:48.552Z"
+      "checked_at": "2026-09-04T12:54:56.168Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T12:43:36.155Z"
+      "checked_at": "2026-09-04T12:54:44.048Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T12:26:12.454Z"
@@ -6868,10 +6899,10 @@
       "checked_at": "2026-09-04T12:20:51.403Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T12:08:44.732Z"
+      "checked_at": "2026-09-04T12:55:00.172Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T12:08:48.691Z"
+      "checked_at": "2026-09-04T12:55:04.158Z"
     }
   }
 }

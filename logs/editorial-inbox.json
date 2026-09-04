@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T12:55:40.858Z",
+  "checked_at": "2026-09-04T12:57:44.120Z",
   "mode": "research_not_auto_approval",
   "candidates": [
     {
@@ -29,6 +29,20 @@
       ],
       "caption_error": null,
       "story_fingerprint": "cecfd514c92b168dcc15b8674fb531bb13a9191ea63fa8aa7060c53f1e3b4c05"
+    },
+    {
+      "id": "252-story-andrew-tate-has-been-indicted-for-having-sex-with-a-minor-",
+      "queue_file": "queue/252-story-andrew-tate-has-been-indicted-for-having-sex-with-a-minor-.json",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc3bAVTg0Hf/",
+      "headline": "Story - Andrew Tate has been indicted for having sex with a minor, trafficking and money l",
+      "body": "Story - Andrew Tate has been indicted for having sex with a minor, trafficking and money laundering – and allegedly recruited a 15-year-old girl for sexual exploitation, Romanian prosecutors announced Friday.\n\nTate, 39, was issued with the fresh charges while he and his brother Tristan Tate, 38, remain detained at the Federal Detention Center in Miami, Fla., as they fight extradition back to the UK for alleged offenses that took place between 2010 and 2017.\n\nTristan Tate has been charged with complicity as part of the investigation spearheaded by Romania’s Directorate for Investigating Organized Crime and Terrorism.\n\nAndrew Tate allegedly recruited a girl, who was 15, and sexually exploited her in the UK and Romania between 2012 and December 2021, according to prosecutors.\n\nHe allowed the girl to fall in love but used coercion, emotional blackmail, as well as physical aggression to ensure compliance, it is alleged. \n\nTate allegedly forced the girl to produce sexually explicit material and practice so-called video chat activities for his pleasure, prosecutors alleged.\n\nWhile the alleged sexual exploitation occurred, Tristan Tate allegedly supported his brother rather than reporting the crime.\n\nTristan Tate managed the girl’s video chat accounts and monitored her activity, prosecutors said.\n\nHe also “resorted to acts of physical aggression [against the girl],” prosecutors said.",
+      "claim_sha256": null,
+      "reasons": [
+        "major_case_or_death_claim"
+      ],
+      "caption_error": null,
+      "story_fingerprint": "1b9c50257e6c77781efbe02da446ac05d29a01dc9f5be68cb1236b3cacbd0f55"
     }
   ],
   "instructions": "Check primary documents and two independent reports. Preserve the exact claim, dates, actual case posture, and source URLs. Record reviewed claim hash. Never approve based only on a model score or repeated social captions."

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-04T07:03:18.319Z",
+  "checked_at": "2026-09-04T07:06:49.870Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-04T06:50:31.178Z",
-    "usage": 48,
+    "checked_at": "2026-09-04T07:06:49.744Z",
+    "usage": 46,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-04T07:05:31.178Z",
+    "next_check_at": "2026-09-04T07:21:49.744Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,39 +16,23 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 46,
+    "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T07:13:12.241Z",
-    "feed_allowed": true,
-    "story_allowed": false
+    "feed_allowed": false,
+    "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T07:13:18.121Z",
-  "publications": [
-    {
-      "file": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir.json",
-      "id": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18077256308344317",
-      "content_type": "video"
-    },
-    {
-      "file": "232-nba-youngboy-casually-had-over-100k-in-cash-during-a-traffic-sto.json",
-      "id": "232-nba-youngboy-casually-had-over-100k-in-cash-during-a-traffic-sto",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18092366792273675"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

@@ -1755,6 +1755,13 @@
       "source_url": "https://www.instagram.com/xxl/p/Dc3shXeESoo/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc3vyS3uECT": {
+      "seen_at": "2026-09-04T15:54:26.915Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc3vyS3uECT/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2734,18 +2741,16 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/Dc3q_LIDt25/",
       "queue_id": "256-travis-scott-dropped-rodeo-11-years-ago-today-and-rihanna-made-s"
+    },
+    "Dc3vyS3uECT": {
+      "queued_at": "2026-09-04T15:55:23.657Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc3vyS3uECT/",
+      "queue_id": "257-ye-brought-out-future-at-night-1-in-chicago-and-he-performed-f-u",
+      "video": "media/257-ye-brought-out-future-at-night-1-in-chicago-and-he-performed-f-u.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T01:31:30.016Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T01:32:16.498Z"
-    },
     {
       "started_at": "2026-09-03T01:34:19.879Z",
       "candidates": 48,
@@ -7235,6 +7240,23 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T15:50:55.346Z"
+    },
+    {
+      "started_at": "2026-09-04T15:53:00.011Z",
+      "candidates": 32,
+      "queued": [
+        "257-ye-brought-out-future-at-night-1-in-chicago-and-he-performed-f-u"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T15:55:23.657Z"
     }
   ],
   "vip_pending": {
@@ -7301,16 +7323,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T15:45:46.421Z"
+      "checked_at": "2026-09-04T15:54:00.510Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T15:45:50.467Z"
+      "checked_at": "2026-09-04T15:54:04.541Z"
     },
     "records": {
-      "checked_at": "2026-09-04T15:45:54.604Z"
+      "checked_at": "2026-09-04T15:54:08.589Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T15:45:42.334Z"
+      "checked_at": "2026-09-04T15:53:56.439Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T15:45:58.647Z"

@@ -1741,6 +1741,13 @@
       "source_url": "https://www.instagram.com/xxl/p/Dc3olCKkbKR/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc3sUuTEcuH": {
+      "seen_at": "2026-09-04T15:30:51.100Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dc3sUuTEcuH/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2723,15 +2730,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T01:22:49.193Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T01:23:44.154Z"
-    },
     {
       "started_at": "2026-09-03T01:25:47.002Z",
       "candidates": 48,
@@ -7164,6 +7162,28 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T15:27:38.631Z"
+    },
+    {
+      "started_at": "2026-09-04T15:29:42.630Z",
+      "candidates": 50,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T15:34:34.485Z"
     }
   ],
   "vip_pending": {
@@ -7198,10 +7218,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 73,
+      "attempts": 74,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-04T15:27:38.628Z",
-      "retry_at": "2026-09-04T16:27:38.628Z"
+      "last_attempt_at": "2026-09-04T15:34:34.482Z",
+      "retry_at": "2026-09-04T16:34:34.482Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -7210,10 +7230,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 79,
+      "attempts": 80,
       "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-04T15:24:59.123Z",
-      "retry_at": "2026-09-04T16:24:59.123Z"
+      "last_attempt_at": "2026-09-04T15:32:08.753Z",
+      "retry_at": "2026-09-04T16:32:08.753Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -7230,16 +7250,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T15:22:34.354Z"
+      "checked_at": "2026-09-04T15:29:55.508Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T15:22:38.562Z"
+      "checked_at": "2026-09-04T15:29:59.638Z"
     },
     "records": {
-      "checked_at": "2026-09-04T15:22:42.727Z"
+      "checked_at": "2026-09-04T15:30:03.860Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T15:22:30.168Z"
+      "checked_at": "2026-09-04T15:29:51.191Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T15:22:46.952Z"
@@ -7248,10 +7268,10 @@
       "checked_at": "2026-09-04T15:22:51.075Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-04T15:04:48.371Z"
+      "checked_at": "2026-09-04T15:30:08.040Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-04T15:04:52.368Z"
+      "checked_at": "2026-09-04T15:30:12.166Z"
     },
     "xxl": {
       "checked_at": "2026-09-04T15:14:04.726Z"

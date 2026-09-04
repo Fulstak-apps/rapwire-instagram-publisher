@@ -1579,6 +1579,20 @@
       "source_url": "https://www.instagram.com/xxl/p/Dc2KPjvDPxx/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc2Q0-ljXob": {
+      "seen_at": "2026-09-04T02:11:02.029Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dc2Q0-ljXob/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc2Nxc9jX26": {
+      "seen_at": "2026-09-04T02:11:02.029Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dc2Nxc9jX26/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2423,19 +2437,15 @@
       "source_url": "https://www.instagram.com/records/reel/Dc2MCuNOp6Q/",
       "queue_id": "236-ye-just-revealed-his-new-mask-for-his-chicago-show-tonight-the-m",
       "video": "media/236-ye-just-revealed-his-new-mask-for-his-chicago-show-tonight-the-m.mp4"
+    },
+    "Dc2NyIqNGe1": {
+      "queued_at": "2026-09-04T02:11:11.183Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc2NyIqNGe1/",
+      "queue_id": "237-smurk-w-a-message"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T19:43:26.810Z",
-      "candidates": 48,
-      "queued": [
-        "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T19:49:06.757Z"
-    },
     {
       "started_at": "2026-09-02T19:51:44.155Z",
       "candidates": 48,
@@ -5544,6 +5554,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-04T02:08:17.362Z"
+    },
+    {
+      "started_at": "2026-09-04T02:10:21.399Z",
+      "candidates": 22,
+      "queued": [
+        "237-smurk-w-a-message"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 14,
+      "finished_at": "2026-09-04T02:11:11.183Z"
     }
   ],
   "vip_pending": {
@@ -5714,15 +5735,6 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-04T02:02:30.879Z",
       "retry_at": "2026-09-04T02:04:30.879Z"
-    },
-    "Dc2NyIqNGe1": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/Dc2NyIqNGe1/",
-      "shortcode": "Dc2NyIqNGe1",
-      "first_seen_at": "2026-09-04T01:41:08.124Z",
-      "profile_position": 0,
-      "state": "pending",
-      "attempts": 0
     }
   },
   "source_checks": {
@@ -5739,10 +5751,10 @@
       "checked_at": "2026-09-04T02:07:33.919Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-04T00:44:16.575Z"
+      "checked_at": "2026-09-04T02:10:30.812Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-04T00:44:20.608Z"
+      "checked_at": "2026-09-04T02:10:34.859Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-04T01:49:17.722Z"

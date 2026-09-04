@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T19:41:54.718Z",
+  "checked_at": "2026-09-04T19:45:57.938Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T19:41:53.082Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T19:56:53.082Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T19:19:02.775Z",
+    "next_feed_eligible_at": "2026-09-04T19:55:57.774Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -35,7 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-.json",
+      "id": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18086499077360861",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

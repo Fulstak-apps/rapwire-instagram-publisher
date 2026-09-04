@@ -2752,15 +2752,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T01:34:19.879Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T01:35:07.661Z"
-    },
-    {
       "started_at": "2026-09-03T01:37:11.608Z",
       "candidates": 48,
       "queued": [],
@@ -7257,6 +7248,15 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T15:55:23.657Z"
+    },
+    {
+      "started_at": "2026-09-04T15:57:30.893Z",
+      "candidates": 23,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T15:58:13.602Z"
     }
   ],
   "vip_pending": {
@@ -7353,10 +7353,10 @@
       "checked_at": "2026-09-04T15:37:06.809Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T15:17:14.981Z"
+      "checked_at": "2026-09-04T15:57:39.851Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T15:17:19.033Z"
+      "checked_at": "2026-09-04T15:57:44.185Z"
     }
   }
 }

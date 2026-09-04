@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T19:06:54.065Z",
+  "checked_at": "2026-09-04T19:09:02.919Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T19:06:52.291Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T19:21:52.291Z",
@@ -20,12 +20,12 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T19:04:48.195Z",
+    "next_feed_eligible_at": "2026-09-04T19:19:02.775Z",
     "feed_allowed": true,
     "story_allowed": false
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,7 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-04T19:00:39.263Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "263-has-been-on-a-legendary-run-since-going-officially-independent-t.json",
+      "id": "263-has-been-on-a-legendary-run-since-going-officially-independent-t",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18077670008707781",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T04:28:59.445Z",
+  "checked_at": "2026-09-04T04:33:02.654Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T04:28:50.987Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T04:43:50.987Z",
@@ -20,12 +20,12 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T04:26:23.963Z",
+    "next_feed_eligible_at": "2026-09-04T04:43:02.335Z",
     "feed_allowed": true,
     "story_allowed": false
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
@@ -34,11 +34,12 @@
   "threads_next_eligible_at": "2026-09-04T04:38:58.157Z",
   "publications": [
     {
-      "file": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.json",
-      "id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
-      "platform": "threads",
+      "file": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd.json",
+      "id": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18474090619116104"
+      "media_id": "18033381830836268",
+      "content_type": "video"
     }
   ],
   "failures": [],
@@ -51,8 +52,8 @@
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
-      "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
+      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
+      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -72,15 +73,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "153-source-commentary-durks-full-opp-list-revealed-in-court-included.json",
-      "id": "153-source-commentary-durks-full-opp-list-revealed-in-court-included",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
-      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
+      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
+      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -88,6 +82,13 @@
     {
       "file": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.json",
       "id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
+      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -107,29 +108,22 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
-      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
+      "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
+      "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
-      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
+      "file": "153-source-commentary-durks-full-opp-list-revealed-in-court-included.json",
+      "id": "153-source-commentary-durks-full-opp-list-revealed-in-court-included",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
-      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
-      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
+      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
+      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -165,6 +159,13 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
+      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

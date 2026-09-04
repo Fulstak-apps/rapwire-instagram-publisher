@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-04T09:18:17.371Z",
+  "checked_at": "2026-09-04T09:22:26.891Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-04T09:04:12.820Z",
+    "checked_at": "2026-09-04T09:22:18.117Z",
     "usage": 48,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-04T09:19:12.820Z",
+    "next_check_at": "2026-09-04T09:37:18.117Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T07:58:15.094Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T09:32:26.597Z",
+  "publications": [
+    {
+      "file": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo.json",
+      "id": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18121822456846548"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

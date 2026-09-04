@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T01:58:22.603Z",
+  "checked_at": "2026-09-04T02:00:23.350Z",
   "mode": "research_not_auto_approval",
   "candidates": [
     {
@@ -15,6 +15,20 @@
       ],
       "caption_error": null,
       "story_fingerprint": "856c1560ff5a15a4523469048c205304deca631d5de8b7e7568cbf5629a0e723"
+    },
+    {
+      "id": "235-why-did-keffe-d-feel-so-comfortable-confessing-to-his-role-in-th",
+      "queue_file": "queue/235-why-did-keffe-d-feel-so-comfortable-confessing-to-his-role-in-th.json",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/Dc1ukLegBA-/",
+      "headline": "Why did Keffe D feel so comfortable confessing to his role in the murder of Tupac Shakur? ",
+      "body": "Why did Keffe D feel so comfortable confessing to his role in the murder of Tupac Shakur? ⁣ ⁣ This week, after someone was finally convicted of killing the rap icon, fans were quick to call Keffe D an idiot for admitting to crimes on camera and in his book. ⁣ ⁣ But there may have been a very good reason why he assumed he'd never get convicted and why even local police thought the crime would never get solved. Allegations are not findings of guilt.",
+      "claim_sha256": null,
+      "reasons": [
+        "major_case_or_death_claim"
+      ],
+      "caption_error": null,
+      "story_fingerprint": "cecfd514c92b168dcc15b8674fb531bb13a9191ea63fa8aa7060c53f1e3b4c05"
     }
   ],
   "instructions": "Check primary documents and two independent reports. Preserve the exact claim, dates, actual case posture, and source URLs. Record reviewed claim hash. Never approve based only on a model score or repeated social captions."

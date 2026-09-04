@@ -73,6 +73,12 @@ Measure up to six recent posts per platform every six hours plus account followe
 
 ## Where to look
 
+### Darnell Williams Facebook Page mirror
+
+The publisher mirrors each validated feed item to the Darnell Williams Facebook Artist Page as a separate lane. Configure GitHub Actions secrets `FACEBOOK_PAGE_ID` (the Page's numeric ID) and `FACEBOOK_PAGE_ACCESS_TOKEN` (a Page access token for that Page with `pages_manage_posts` and `pages_read_engagement`). Never put the token in a committed file or queue record.
+
+The Facebook lane supports one video, one photo, or a photo carousel. It holds mixed photo/video and multi-video records instead of publishing an incomplete copy. Each public create request receives a durable intent marker first; if a request is interrupted, it is held for reconciliation instead of automatically duplicated. Facebook errors do not block Instagram or Threads.
+
 - GitHub Actions: https://github.com/Fulstak-apps/rapwire-instagram-publisher/actions/workflows/publish-instagram.yml
 - queue/*.json: durable containers, publish markers, media IDs, source evidence and permalinks.
 - logs/publisher-health.json: latest delivery, failures, quota and next eligibility.

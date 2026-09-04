@@ -9,11 +9,15 @@ import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS } from "./publicati
 import {reportingGate,editorialRank,recentPosts,contentLane} from './editorial-policy.mjs';
 import {videoLayoutGate,verifyVideoLayoutFiles} from './video-layout-policy.mjs';
 import {normalizeSources,sourcePostsToday} from './source-policy.mjs';
+import {metaClient} from './meta-client.mjs';
+import {deliverFacebookPage,facebookMedia} from './facebook-page.mjs';
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
 const threadsToken = process.env.THREADS_ACCESS_TOKEN;
 const threadsUserId = process.env.THREADS_USER_ID;
+const facebookPageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+const facebookPageId = process.env.FACEBOOK_PAGE_ID;
 const publishInstagramStories = process.env.PUBLISH_INSTAGRAM_STORIES === "true";
 const repository = process.env.GITHUB_REPOSITORY;
 const refName = process.env.GITHUB_REF_NAME || "main";
@@ -24,6 +28,8 @@ if (!instagramToken || !instagramUserId || !threadsToken || !threadsUserId || !r
 
 const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
+const facebookConfigured=Boolean(facebookPageToken&&facebookPageId);
+const facebookApi=facebookConfigured?metaClient('https://graph.facebook.com',facebookPageToken):null;
 const queueDir = "queue";
 const logsDir = "logs";
 const attemptsLog = path.join(logsDir, "publish-attempts.jsonl");
@@ -40,6 +46,7 @@ if (Date.parse(cooldown.until || "") > Date.now()) {
 const runEvents = [];
 let instagramSteps = 0;
 let threadsSteps = 0;
+let facebookSteps = 0;
 let instagramLane = "";
 const instagramAvailable = () => !(Date.parse(cooldown.until || "") > Date.now()) && quota.blocked !== true;
 
@@ -478,6 +485,8 @@ await Promise.all(uploadCandidates.map(async ({ name, item }) => {
 
 let lastThreadsTime = Math.max(Date.parse(pacing.last_threads_published_at || '') || 0,
   ...queueRecords.map(({item}) => item.threads_media_id ? Date.parse(item.threads_published_at || '') || 0 : 0));
+let lastFacebookTime = Math.max(Date.parse(pacing.last_facebook_published_at || '') || 0,
+  ...queueRecords.map(({item}) => item.facebook_media_id ? Date.parse(item.facebook_published_at || '') || 0 : 0));
 const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].includes(item.status)
   && (item.threads_container_id || item.threads_children?.some(Boolean)) && !item.threads_media_id && !item.threads_reconcile_required && !item.threads_copy_error
   && item.rap_relevance_checked === true && contentPromiseIsKept(item)
@@ -526,6 +535,37 @@ async function deliverThreads(item, itemPath, file) {
     console.error(`Threads failed for ${file}: ${error.message}`);
   }
   await save(itemPath, item);
+}
+
+async function deliverFacebook(item,itemPath,file) {
+  if(!facebookConfigured || facebookSteps>=1 || item.facebook_verified_at || item.facebook_reconcile_required
+    || Date.parse(item.facebook_retry_at||'')>Date.now())return;
+  const verificationOnly=Boolean(item.facebook_media_id);
+  if(!verificationOnly&&Date.now()-lastFacebookTime<FEED_INTERVAL_MS)return;
+  try {
+    facebookSteps+=1;
+    const result=await deliverFacebookPage({
+      item,api:facebookApi,pageId:facebookPageId,
+      caption:signedCaption(item.caption,item),
+      media:facebookMedia(item,{mediaUrl,slideUrl,videoUrl}),
+      save:()=>save(itemPath,item)
+    });
+    if(result.status==='published') {
+      lastFacebookTime=Date.parse(item.facebook_published_at);
+      pacing.last_facebook_published_at=item.facebook_published_at;
+      await fs.writeFile(pacingPath,JSON.stringify({...pacing,last_run_at:new Date().toISOString()})+'\n');
+      await logAttempt({file,id:item.id,platform:'facebook',status:'published',media_id:result.id,permalink:result.permalink});
+      console.log(`Published Facebook Page ${file}: ${result.id}`);
+    } else if(result.status==='verified') {
+      await logAttempt({file,id:item.id,platform:'facebook',status:'verified',media_id:result.id,permalink:result.permalink});
+    } else if(result.status==='review_required') {
+      await logAttempt({file,id:item.id,platform:'facebook',status:'review_required',reason:result.reason});
+    }
+  } catch(error) {
+    await logAttempt({file,id:item.id,platform:'facebook',status:'failed',error:error.message});
+    console.error(`Facebook failed for ${file}: ${error.message}`);
+  }
+  await save(itemPath,item);
 }
 
 for (const file of files) {
@@ -604,6 +644,7 @@ for (const file of files) {
     // All content checks passed. Threads must not wait on Instagram's quota,
     // feed cadence, processing, or a failed Instagram upload.
     await deliverThreads(item, itemPath, file);
+    await deliverFacebook(item,itemPath,file);
     if (!sourceFeedAllowed(item)) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "source_daily_maximum_reached" });
       continue;
@@ -688,6 +729,7 @@ for (const file of files) {
   }
 
   await deliverThreads(item, itemPath, file);
+  await deliverFacebook(item,itemPath,file);
 }
 
 const report = {
@@ -695,9 +737,11 @@ const report = {
   instagram_cooldown_until: instagramAvailable() ? null : cooldown.until,
   instagram_publishing_quota: quota,
   delivery_policy: { ...deliveryPolicy, next_feed_eligible_at: pacing.last_feed_published_at ? new Date(Date.parse(pacing.last_feed_published_at) + FEED_INTERVAL_MS).toISOString() : deliveryPolicy.next_feed_eligible_at },
-  instagram_steps: instagramSteps, threads_steps: threadsSteps,
+  instagram_steps: instagramSteps, threads_steps: threadsSteps, facebook_steps: facebookSteps,
+  facebook_configured: facebookConfigured,
   instagram_recovery: recovery,
   threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + FEED_INTERVAL_MS).toISOString() : null,
+  facebook_next_eligible_at: lastFacebookTime ? new Date(lastFacebookTime + FEED_INTERVAL_MS).toISOString() : null,
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),
   reviews: runEvents.filter(event => event.status==='review_required'),

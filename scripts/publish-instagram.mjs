@@ -579,6 +579,8 @@ async function deliverThreads(item, itemPath, file) {
 }
 
 async function deliverFacebook(item,itemPath,file) {
+  if(!facebookConfigured || facebookSteps>=1 || item.facebook_verified_at || item.facebook_reconcile_required
+    || item.facebook_status==='review_required' || Date.parse(item.facebook_retry_at||'')>Date.now())return;
   const pageApi=await resolveFacebookPageApi();
   // These attempts were rejected before a Page token was used. They were never
   // published, so retry them once with the correctly scoped token.
@@ -587,12 +589,9 @@ async function deliverFacebook(item,itemPath,file) {
     delete item.facebook_error;
     if (item.facebook_status==='failed') item.facebook_status='pending';
   }
-  if(!facebookConfigured || facebookSteps>=1 || item.facebook_verified_at || item.facebook_reconcile_required
-    || Date.parse(item.facebook_retry_at||'')>Date.now())return;
   const verificationOnly=Boolean(item.facebook_media_id);
   if(!verificationOnly&&Date.now()-lastFacebookTime<FEED_INTERVAL_MS)return;
   try {
-    facebookSteps+=1;
     const result=await deliverFacebookPage({
       item,api:pageApi,pageId:facebookPageId,
       caption:signedCaption(item.caption,item),
@@ -600,12 +599,14 @@ async function deliverFacebook(item,itemPath,file) {
       save:()=>save(itemPath,item)
     });
     if(result.status==='published') {
+      facebookSteps+=1;
       lastFacebookTime=Date.parse(item.facebook_published_at);
       pacing.last_facebook_published_at=item.facebook_published_at;
       await fs.writeFile(pacingPath,JSON.stringify({...pacing,last_run_at:new Date().toISOString()})+'\n');
       await logAttempt({file,id:item.id,platform:'facebook',status:'published',media_id:result.id,permalink:result.permalink});
       console.log(`Published Facebook Page ${file}: ${result.id}`);
     } else if(result.status==='verified') {
+      facebookSteps+=1;
       await logAttempt({file,id:item.id,platform:'facebook',status:'verified',media_id:result.id,permalink:result.permalink});
     } else if(result.status==='review_required') {
       await logAttempt({file,id:item.id,platform:'facebook',status:'review_required',reason:result.reason});

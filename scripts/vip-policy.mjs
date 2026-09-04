@@ -13,11 +13,12 @@ export function applyVerifiedArtistLabels(value, registry = [], now = Date.now()
   const mentions=[];
   for(const person of verified) {
     const aliases=[person.name,...(person.aliases||[])].filter(Boolean);
-    const alias=aliases.find(name=>new RegExp(`\\b${String(name).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,'i').test(text));
+    const flags=person.case_sensitive?'':'i';
+    const alias=aliases.find(name=>new RegExp(`\\b${String(name).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,flags).test(text));
     if(!alias) continue;
     const label=`${person.name} @${person.handle}`;
     if(!new RegExp(`@${String(person.handle).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,'i').test(text))
-      text=text.replace(new RegExp(`\\b${String(alias).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,'i'),label);
+      text=text.replace(new RegExp(`\\b${String(alias).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,flags),label);
     mentions.push(person);
   }
   // Never guess that a source-page or unknown handle belongs to the person.

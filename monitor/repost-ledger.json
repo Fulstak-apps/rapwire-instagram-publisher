@@ -2464,20 +2464,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc2HVMTvNmN/",
       "queue_id": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne",
       "video": "media/239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne.mp4"
+    },
+    "Dc1w77pybix": {
+      "queued_at": "2026-09-04T02:50:57.127Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc1w77pybix/",
+      "queue_id": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-",
+      "video": "media/240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T20:08:02.842Z",
-      "candidates": 48,
-      "queued": [
-        "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 7,
-      "finished_at": "2026-09-02T20:15:53.423Z"
-    },
     {
       "started_at": "2026-09-02T20:18:18.761Z",
       "candidates": 48,
@@ -5605,6 +5601,23 @@
       "mode": "discovery",
       "vip_pending": 12,
       "finished_at": "2026-09-04T02:41:16.775Z"
+    },
+    {
+      "started_at": "2026-09-04T02:43:44.557Z",
+      "candidates": 30,
+      "queued": [
+        "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcvzv3fv2GR-capture-diagnostic.json"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-04T02:50:57.127Z"
     }
   ],
   "vip_pending": {
@@ -5655,18 +5668,6 @@
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
       "last_attempt_at": "2026-09-04T02:32:43.343Z",
       "retry_at": "2026-09-04T02:48:43.343Z"
-    },
-    "Dc1w77pybix": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc1w77pybix/",
-      "shortcode": "Dc1w77pybix",
-      "first_seen_at": "2026-09-03T21:45:53.508Z",
-      "profile_position": 0,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1w77pybix-1-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1w77pybix-1-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1w77pybix-1-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1w77pybix-1-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1w77pybix-1-crop-review/source-5.png\nSwift/ErrorType.swift:254: Fatal error: Error raised at top level: TextRecognition.CRImageReaderError.e5rtError(\"e5rt_execution_stream_operation_create_precompiled_compute_operation_with_options call failed\", 13)\nStack dump:\n0.\tProgram arguments:",
-      "last_attempt_at": "2026-09-04T01:03:11.424Z",
-      "retry_at": "2026-09-04T01:05:11.424Z"
     },
     "Dc10M-ZD75s": {
       "source_handle": "records",
@@ -5755,16 +5756,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T02:26:54.323Z"
+      "checked_at": "2026-09-04T02:45:53.076Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T02:26:58.319Z"
+      "checked_at": "2026-09-04T02:45:57.165Z"
     },
     "records": {
-      "checked_at": "2026-09-04T02:27:02.389Z"
+      "checked_at": "2026-09-04T02:46:01.210Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T02:26:50.296Z"
+      "checked_at": "2026-09-04T02:45:49.047Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T02:10:30.812Z"

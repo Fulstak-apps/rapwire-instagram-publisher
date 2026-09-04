@@ -2063,6 +2063,13 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc4SVACyKPu/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc4VQGzDVZG": {
+      "seen_at": "2026-09-04T21:24:37.413Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Dc4VQGzDVZG/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -3131,18 +3138,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc4SaRSSD0O/",
       "queue_id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
       "video": "media/269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.mp4"
+    },
+    "Dc4SlcDSWt_": {
+      "queued_at": "2026-09-04T21:29:26.180Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4SlcDSWt_/",
+      "queue_id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
+      "video": "media/270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T04:52:08.757Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T04:52:54.710Z"
-    },
     {
       "started_at": "2026-09-03T04:54:58.061Z",
       "candidates": 48,
@@ -8234,6 +8239,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 13,
       "finished_at": "2026-09-04T21:21:08.755Z"
+    },
+    {
+      "started_at": "2026-09-04T21:23:23.432Z",
+      "candidates": 46,
+      "queued": [
+        "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 12,
+      "finished_at": "2026-09-04T21:29:26.180Z"
     }
   ],
   "vip_pending": {
@@ -8369,15 +8385,6 @@
       "last_attempt_at": "2026-09-04T20:37:21.971Z",
       "retry_at": "2026-09-04T21:37:21.971Z"
     },
-    "Dc4SlcDSWt_": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc4SlcDSWt_/",
-      "shortcode": "Dc4SlcDSWt_",
-      "first_seen_at": "2026-09-04T21:09:07.250Z",
-      "profile_position": 0,
-      "state": "pending",
-      "attempts": 0
-    },
     "Dc4SVACyKPu": {
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/Dc4SVACyKPu/",
@@ -8390,10 +8397,10 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T21:18:21.121Z"
+      "checked_at": "2026-09-04T21:23:32.336Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T21:18:25.440Z"
+      "checked_at": "2026-09-04T21:23:36.600Z"
     },
     "records": {
       "checked_at": "2026-09-04T21:18:29.748Z"
@@ -8420,10 +8427,10 @@
       "checked_at": "2026-09-04T21:08:19.933Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T20:39:34.498Z"
+      "checked_at": "2026-09-04T21:23:41.511Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T20:39:38.742Z"
+      "checked_at": "2026-09-04T21:23:45.719Z"
     }
   }
 }

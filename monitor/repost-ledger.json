@@ -3096,18 +3096,16 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/Dc4RPdLj6_q/",
       "queue_id": "266-travis-scott-travisscott-has-reportedly-touched-down-in-chicago-"
+    },
+    "Dc4REAXy7xk": {
+      "queued_at": "2026-09-04T21:05:16.251Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4REAXy7xk/",
+      "queue_id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
+      "video": "media/267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T04:43:41.588Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T04:44:28.011Z"
-    },
     {
       "started_at": "2026-09-03T04:46:30.706Z",
       "candidates": 48,
@@ -8180,6 +8178,17 @@
       "mode": "discovery",
       "vip_pending": 14,
       "finished_at": "2026-09-04T20:55:28.531Z"
+    },
+    {
+      "started_at": "2026-09-04T20:57:32.303Z",
+      "candidates": 19,
+      "queued": [
+        "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 13,
+      "finished_at": "2026-09-04T21:05:16.251Z"
     }
   ],
   "vip_pending": {
@@ -8315,15 +8324,6 @@
       "last_attempt_at": "2026-09-04T20:37:21.971Z",
       "retry_at": "2026-09-04T21:37:21.971Z"
     },
-    "Dc4REAXy7xk": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc4REAXy7xk/",
-      "shortcode": "Dc4REAXy7xk",
-      "first_seen_at": "2026-09-04T20:44:34.317Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0
-    },
     "Dc4QXUgT8Gs": {
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/Dc4QXUgT8Gs/",
@@ -8363,10 +8363,10 @@
       "checked_at": "2026-09-04T20:54:20.191Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-04T20:35:02.976Z"
+      "checked_at": "2026-09-04T20:57:40.482Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-04T20:35:07.176Z"
+      "checked_at": "2026-09-04T20:57:44.726Z"
     },
     "xxl": {
       "checked_at": "2026-09-04T20:43:39.399Z"

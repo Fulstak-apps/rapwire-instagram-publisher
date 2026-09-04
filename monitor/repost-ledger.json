@@ -2724,15 +2724,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T01:17:10.881Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T01:17:56.644Z"
-    },
-    {
       "started_at": "2026-09-03T01:19:59.414Z",
       "candidates": 48,
       "queued": [],
@@ -7138,6 +7129,22 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T15:14:59.134Z"
+    },
+    {
+      "started_at": "2026-09-04T15:17:05.071Z",
+      "candidates": 23,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T15:20:16.664Z"
     }
   ],
   "vip_pending": {
@@ -7196,10 +7203,10 @@
       "first_seen_at": "2026-09-04T01:28:48.855Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 13,
+      "attempts": 14,
       "last_error": "Crop review required: No distinct footage region between static panels",
-      "last_attempt_at": "2026-09-04T14:14:56.246Z",
-      "retry_at": "2026-09-04T15:14:56.246Z"
+      "last_attempt_at": "2026-09-04T15:20:16.664Z",
+      "retry_at": "2026-09-04T16:20:16.664Z"
     }
   },
   "source_checks": {
@@ -7234,10 +7241,10 @@
       "checked_at": "2026-09-04T15:14:08.782Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T14:43:30.841Z"
+      "checked_at": "2026-09-04T15:17:14.981Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T14:43:35.041Z"
+      "checked_at": "2026-09-04T15:17:19.033Z"
     }
   }
 }

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T20:33:40.379Z",
+  "checked_at": "2026-09-04T20:37:50.627Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
-    "usage": 49,
+    "usage": 50,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T20:45:41.869Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 49,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T20:28:45.223Z",
+    "next_feed_eligible_at": "2026-09-04T20:47:50.467Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,7 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "256-travis-scott-dropped-rodeo-11-years-ago-today-and-rihanna-made-s.json",
+      "id": "256-travis-scott-dropped-rodeo-11-years-ago-today-and-rihanna-made-s",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18119098786730841",
+      "content_type": "carousel"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

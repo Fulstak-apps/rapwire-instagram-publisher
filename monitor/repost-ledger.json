@@ -2014,6 +2014,34 @@
       "source_url": "https://www.instagram.com/igndotcom/p/Dc4OSYFH_i7/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc4RIC0Stdl": {
+      "seen_at": "2026-09-04T20:44:34.317Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4RIC0Stdl/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc4REAXy7xk": {
+      "seen_at": "2026-09-04T20:44:34.317Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4REAXy7xk/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc4QXUgT8Gs": {
+      "seen_at": "2026-09-04T20:44:34.317Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4QXUgT8Gs/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc4RPdLj6_q": {
+      "seen_at": "2026-09-04T20:44:34.317Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc4RPdLj6_q/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -3048,18 +3076,16 @@
       "source_url": "https://www.instagram.com/complexmusic/p/Dc4BKWBEX9H/",
       "queue_id": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-",
       "video": "media/264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-.mp4"
+    },
+    "Dc4RIC0Stdl": {
+      "queued_at": "2026-09-04T20:51:10.829Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4RIC0Stdl/",
+      "queue_id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
+      "video": "media/265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T04:38:03.421Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T04:38:49.511Z"
-    },
     {
       "started_at": "2026-09-03T04:40:52.553Z",
       "candidates": 48,
@@ -8114,6 +8140,24 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-04T20:41:10.868Z"
+    },
+    {
+      "started_at": "2026-09-04T20:43:14.889Z",
+      "candidates": 48,
+      "queued": [
+        "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out"
+      ],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/Dc4QXUgT8Gs/",
+          "stage": "score",
+          "error": "Exact source caption missing, generic or truncated; needs review"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 14,
+      "finished_at": "2026-09-04T20:51:10.829Z"
     }
   ],
   "vip_pending": {
@@ -8248,20 +8292,47 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc4ClEzSeh_-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-04T20:37:21.971Z",
       "retry_at": "2026-09-04T21:37:21.971Z"
+    },
+    "Dc4REAXy7xk": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4REAXy7xk/",
+      "shortcode": "Dc4REAXy7xk",
+      "first_seen_at": "2026-09-04T20:44:34.317Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
+    },
+    "Dc4QXUgT8Gs": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc4QXUgT8Gs/",
+      "shortcode": "Dc4QXUgT8Gs",
+      "first_seen_at": "2026-09-04T20:44:34.317Z",
+      "profile_position": 2,
+      "state": "pending",
+      "attempts": 0
+    },
+    "Dc4RPdLj6_q": {
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc4RPdLj6_q/",
+      "shortcode": "Dc4RPdLj6_q",
+      "first_seen_at": "2026-09-04T20:44:34.317Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T20:34:46.128Z"
+      "checked_at": "2026-09-04T20:43:22.657Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T20:34:50.282Z"
+      "checked_at": "2026-09-04T20:43:26.856Z"
     },
     "records": {
-      "checked_at": "2026-09-04T20:34:54.578Z"
+      "checked_at": "2026-09-04T20:43:31.033Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T20:34:58.795Z"
+      "checked_at": "2026-09-04T20:43:35.181Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T20:29:02.037Z"
@@ -8276,10 +8347,10 @@
       "checked_at": "2026-09-04T20:35:07.176Z"
     },
     "xxl": {
-      "checked_at": "2026-09-04T20:22:27.486Z"
+      "checked_at": "2026-09-04T20:43:39.399Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-04T20:22:31.642Z"
+      "checked_at": "2026-09-04T20:43:43.577Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-04T20:39:34.498Z"

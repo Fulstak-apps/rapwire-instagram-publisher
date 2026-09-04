@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T03:37:16.585Z",
+  "checked_at": "2026-09-04T03:39:31.562Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T03:37:15.299Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T03:52:15.299Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T03:34:56.876Z",
+    "next_feed_eligible_at": "2026-09-04T03:49:25.271Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -31,8 +31,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T03:35:02.724Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T03:49:31.254Z",
+  "publications": [
+    {
+      "file": "228-durk-had-no-passport-at-the-airport-his-lawyers-denied-he-tried-.json",
+      "id": "228-durk-had-no-passport-at-the-airport-his-lawyers-denied-he-tried-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18093596675646319",
+      "content_type": "video"
+    },
+    {
+      "file": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-.json",
+      "id": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18582273877070399"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

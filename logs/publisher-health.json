@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T16:06:10.029Z",
+  "checked_at": "2026-09-04T16:08:38.579Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T15:58:17.482Z",
@@ -34,8 +34,17 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T16:10:30.033Z",
-  "facebook_next_eligible_at": null,
-  "publications": [],
+  "facebook_next_eligible_at": "2026-09-04T16:18:37.859Z",
+  "publications": [
+    {
+      "file": "230-drake-announced-september-15-on-youtube-9pm.json",
+      "id": "230-drake-announced-september-15-on-youtube-9pm",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "225657267788680_1461742472431853",
+      "permalink": "https://www.facebook.com/1461742512431849/posts/1461742472431853"
+    }
+  ],
   "failures": [],
   "reviews": [
     {
@@ -51,13 +60,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th.json",
-      "id": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th",
-      "platform": "facebook",
-      "status": "review_required",
-      "reason": "unsupported_facebook_media_mix"
     },
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",

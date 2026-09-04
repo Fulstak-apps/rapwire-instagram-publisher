@@ -135,10 +135,14 @@ for (const {name,item} of queueRecords) {
   if (refreshThreadsCopy(item) || changed) await save(path.join(queueDir,name),item);
 }
 const recentPublications=recentPosts(queueRecords.map(x=>x.item));
+const isFacebookVideoItem=item=>item.content_type==='video'
+  || (Array.isArray(item.media_items) && item.media_items.length===1 && item.media_items[0]?.type==='video');
 const files = queueRecords
   .sort((left, right) => {
     const readyDelta = Number(right.item.status === "ready") - Number(left.item.status === "ready");
     if (readyDelta) return readyDelta;
+    const videoDelta=Number(isFacebookVideoItem(right.item))-Number(isFacebookVideoItem(left.item));
+    if(videoDelta) return videoDelta;
     const priorityDelta = editorialRank(right.item,recentPublications) - editorialRank(left.item,recentPublications);
     return priorityDelta || left.name.localeCompare(right.name);
   })
@@ -531,6 +535,11 @@ let lastThreadsTime = Math.max(Date.parse(pacing.last_threads_published_at || ''
   ...queueRecords.map(({item}) => item.threads_media_id ? Date.parse(item.threads_published_at || '') || 0 : 0));
 let lastFacebookTime = Math.max(Date.parse(pacing.last_facebook_published_at || '') || 0,
   ...queueRecords.map(({item}) => item.facebook_media_id ? Date.parse(item.facebook_published_at || '') || 0 : 0));
+let facebookImagesToday=queueRecords.filter(({item})=>item.facebook_media_id && !isFacebookVideoItem(item)
+  && Date.parse(item.facebook_published_at||'')>Date.now()-86400000).length;
+const facebookVideoWaiting=()=>queueRecords.some(({item})=>isFacebookVideoItem(item) && !item.facebook_media_id
+  && !item.facebook_reconcile_required && item.facebook_status!=='review_required'
+  && ['ready','published'].includes(item.status) && footageOnlyAllowed(item));
 const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].includes(item.status)
   && (item.threads_container_id || item.threads_children?.some(Boolean)) && !item.threads_media_id && !item.threads_reconcile_required && !item.threads_copy_error
   && item.rap_relevance_checked === true && contentPromiseIsKept(item)
@@ -594,6 +603,10 @@ async function deliverFacebook(item,itemPath,file) {
   }
   const verificationOnly=Boolean(item.facebook_media_id);
   if(!verificationOnly&&Date.now()-lastFacebookTime<FEED_INTERVAL_MS)return;
+  const videoItem=isFacebookVideoItem(item);
+  // Facebook is a video-led channel. Let a ready Reel go first and cap the
+  // supplemental photo/carousel posts at two confirmed posts per day.
+  if(!verificationOnly && !videoItem && (facebookImagesToday>=2 || facebookVideoWaiting()))return;
   try {
     const result=await deliverFacebookPage({
       item,api:pageApi,pageId:facebookPageId,
@@ -604,6 +617,7 @@ async function deliverFacebook(item,itemPath,file) {
     if(result.status==='published') {
       facebookSteps+=1;
       lastFacebookTime=Date.parse(item.facebook_published_at);
+      if(!videoItem) facebookImagesToday+=1;
       pacing.last_facebook_published_at=item.facebook_published_at;
       await fs.writeFile(pacingPath,JSON.stringify({...pacing,last_run_at:new Date().toISOString()})+'\n');
       await logAttempt({file,id:item.id,platform:'facebook',status:'published',media_id:result.id,permalink:result.permalink});

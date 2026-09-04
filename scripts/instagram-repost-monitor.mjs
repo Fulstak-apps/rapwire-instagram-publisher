@@ -154,14 +154,14 @@ async function releaseLock() {
 async function captionFields(evidence, source) {
   const layout=evidence.content_type==='video'||(!evidence.items&&evidence.duration)
     ? {video_layout:capturedVideoLayout(evidence)}:{};
+  const registry = await readJson(path.join(root, "monitor", "artist-handles.json"), []);
   if (isVip(source)) {
-    const text = vipCaption(evidence.source_caption_text, source, evidence.source_url);
+    const text = vipCaption(evidence.source_caption_text, source, evidence.source_url,registry);
     return {...text, rendered_body_text:text.body, caption_policy:'vip-source-v1',
       caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text,
       caption_checked_at:evidence.captured_at, vip_source_checked:true,
       media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration,...layout};
   }
-  const registry = await readJson(path.join(root, "monitor", "artist-handles.json"), []);
   const text = buildVideoCaption(evidence.source_caption_text, source, registry);
   return { ...text, rendered_body_text:text.body, caption_policy:"exact-source-v1", caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text, caption_checked_at:evidence.captured_at, media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration,...layout };
 }

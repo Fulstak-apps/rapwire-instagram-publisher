@@ -49,6 +49,16 @@ test('Darnell Williams captions include his verified artist handle',()=>{
   const result=vipCaption('New visual out now.', 'darnellwilliams', 'https://www.instagram.com/darnellwilliams/reel/example/');
   assert.match(result.body,/Darnell Williams @darnellwilliams/);
 });
+test('VIP captions use verified artist label on Instagram and Threads with a name-only fallback',()=>{
+  const verified={name:'Lil Durk',aliases:['Durk'],handle:'lildurk',verified_at:new Date().toISOString(),verified_url:'https://www.instagram.com/lildurk/'};
+  const tagged=vipCaption('Lil Durk spoke after the show.','records','https://www.instagram.com/records/reel/post1/',[verified]);
+  assert.match(tagged.caption,/Lil Durk @lildurk/);
+  assert.match(tagged.threads_text,/Lil Durk @lildurk/);
+  assert.deepEqual(tagged.artist_handles,['lildurk']);
+  const fallback=vipCaption('Unknown Artist @unverified spoke after the show.','records','https://www.instagram.com/records/reel/post2/',[]);
+  assert.match(fallback.body,/Unknown Artist spoke/);
+  assert.doesNotMatch(fallback.body,/@unverified/);
+});
 test('VIP attribution never allows mismatched media or tampered body',()=>{
   const fields=vipCaption('Original source statement','akademiks',discovered[0].url);
   const record={...fields,rendered_body_text:fields.body,source_handle:'akademiks',source_url:discovered[0].url,

@@ -1,4 +1,4 @@
-import { isVip, vipCaption, legacyVipBody } from './vip-policy.mjs';
+import { applyVerifiedArtistLabels, isVip, vipCaption, legacyVipBody } from './vip-policy.mjs';
 import { captionVoicePrompt, composeThreads } from './audience-policy.mjs';
 export const shortcode = value => String(value || '').match(/\/(?:reel|p)\/([\w-]+)/)?.[1] || '';
 export const genericCaption = value => /a new hip.hop video is|keeping the (?:hip.hop )?video feed moving|clean repost coverage|on Instagram:|newsroom schedule/i.test(String(value || ''));
@@ -22,19 +22,8 @@ export function buildVideoCaption(raw, source, registry = []) {
   if (!raw || genericCaption(raw)) throw new Error('No video-specific caption available');
   let text = raw.replace(/https?:\/\/\S+/g, '').replace(/#(\w+)/g, (_, name) => /^(explore|explorepage|viral|viralvideo|fyp|trending)$/i.test(name) ? '' : name).replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu, '').replace(/\s+/g, ' ').trim();
   if (/\bAI\b/i.test(text)) throw new Error('Caption needs editorial review under the no-AI-caption rule');
-  const verified = registry.filter(person => Date.now() - Date.parse(person.verified_at || '') < 30 * 86400000 && /^https:\/\/www\.instagram\.com\//.test(person.verified_url || ''));
-  const used = [];
-  for (const person of verified) {
-    const aliases = [person.name, ...(person.aliases || [])];
-    const alias = aliases.find(name => new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(text));
-    if (!alias) continue;
-    used.push(person.handle);
-    if (!text.toLowerCase().includes(`@${person.handle.toLowerCase()}`)) {
-      text = text.replace(new RegExp(`\\b${alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i'), `${person.name} @${person.handle}`);
-    }
-  }
-  // Retain only handles actually verified as people, never infer one from URL paths.
-  text = text.replace(/@[A-Za-z0-9_.]+/g, handle => verified.some(p => `@${p.handle}`.toLowerCase() === handle.toLowerCase()) ? handle : '').replace(/\s+/g, ' ').trim();
+  const artistCopy=applyVerifiedArtistLabels(text,registry);
+  text=artistCopy.text;
   const voice=captionVoicePrompt(text,raw);
   const footer = `\n\n@rapwire247`;
   const legal = /\b(trial|court|murder|attacking|arrest|testif|testimony|fbi|wire|cross.examination|judge|lies|lied|lying|snitch|suspect|charged|plead|lawsuit|witness|prosecutor)\w*\b/i.test(text);
@@ -51,14 +40,14 @@ export function buildVideoCaption(raw, source, registry = []) {
   if (text.split(/\s+/).length < 4) throw new Error('Source caption lacks usable video context');
   const body = prefix + text + (/[.!?]$/.test(text) ? '' : '.') + caveat;
   const threadsBody = composeThreads(body, {source, seed:raw});
-  return { body, caption: [body,voice,'@rapwire247'].filter(Boolean).join('\n\n'), threads_text: threadsBody, artist_handles: used };
+  return { body, caption: [body,voice,'@rapwire247'].filter(Boolean).join('\n\n'), threads_text: threadsBody, artist_handles: artistCopy.artist_handles,artist_mentions:artistCopy.artist_mentions };
 }
 
 export function captionIsBound(item) {
   if (item.caption_policy === 'vip-source-v1') {
     if (!isVip(item.source_handle) || item.caption_source_shortcode !== shortcode(item.source_url)
       || !item.caption_source_shortcode || item.vip_source_checked !== true) return false;
-    const expected = vipCaption(item.source_caption_text, item.source_handle, item.source_url);
+    const expected = vipCaption(item.source_caption_text, item.source_handle, item.source_url,item.artist_mentions||[]);
     return [expected.body,legacyVipBody(item.source_caption_text,item.source_handle,item.source_url)].some(body=>item.body===body && item.rendered_body_text===body);
   }
   return item.caption_policy === 'exact-source-v1' && item.caption_source_shortcode === shortcode(item.source_url)

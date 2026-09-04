@@ -5,6 +5,28 @@ export { discussionPrompt, fitDiscussionText } from './audience-policy.mjs';
 export const VIP_HANDLES = new Set(['akademiks', 'traploreross', 'records', 'darnellwilliams']);
 export const isVip = handle => VIP_HANDLES.has(String(handle || '').replace(/^@/, '').toLowerCase());
 
+export function applyVerifiedArtistLabels(value, registry = [], now = Date.now()) {
+  let text=String(value||'').trim();
+  const verified=registry.filter(person=>person?.name && /^[A-Za-z0-9._]+$/.test(person.handle||'')
+    && now-Date.parse(person.verified_at||'')<30*86400000
+    && /^https:\/\/www\.instagram\.com\/[A-Za-z0-9._]+\/?$/i.test(person.verified_url||''));
+  const mentions=[];
+  for(const person of verified) {
+    const aliases=[person.name,...(person.aliases||[])].filter(Boolean);
+    const alias=aliases.find(name=>new RegExp(`\\b${String(name).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,'i').test(text));
+    if(!alias) continue;
+    const label=`${person.name} @${person.handle}`;
+    if(!new RegExp(`@${String(person.handle).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,'i').test(text))
+      text=text.replace(new RegExp(`\\b${String(alias).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,'i'),label);
+    mentions.push(person);
+  }
+  // Never guess that a source-page or unknown handle belongs to the person.
+  // Removing only the @handle leaves an adjacent written artist name intact.
+  text=text.replace(/@[A-Za-z0-9_.]+/g,handle=>verified.some(person=>`@${person.handle}`.toLowerCase()===handle.toLowerCase())?handle:'')
+    .replace(/\s+/g,' ').trim();
+  return {text,artist_handles:[...new Set(mentions.map(person=>person.handle))],artist_mentions:mentions};
+}
+
 export function rememberVip(ledger, discovered, now = Date.now()) {
   ledger.vip_pending ||= {};
   for (const item of discovered) {
@@ -40,10 +62,11 @@ export function deferVip(ledger, candidate, error, now = Date.now()) {
   entry.retry_at = new Date(now + Math.min(60, 2 ** Math.min(entry.attempts,6)) * 60000).toISOString();
 }
 
-export function vipCaption(raw, source, url) {
+export function vipCaption(raw, source, url, registry = []) {
   if (!isVip(source)) throw new Error('VIP caption policy requires a configured VIP page');
   // Attribute the source, do not interpret, summarize or fact-certify its claims.
-  const text = cleanPublicCopy(raw,source);
+  const artistCopy=applyVerifiedArtistLabels(cleanPublicCopy(raw,source),registry);
+  const text = artistCopy.text;
   if (/\bAI\b/i.test(text)) throw new Error('Caption contains a blocked term and needs review');
   // The source page is retained in metadata, but its handle is not shown in
   // the public repost caption for these user-requested accounts.
@@ -52,7 +75,7 @@ export function vipCaption(raw, source, url) {
     && !/@darnellwilliams\b/i.test(body)) body = `${body}\n\nDarnell Williams @darnellwilliams`;
   const caption = [body,captionVoicePrompt(body,url)].filter(Boolean).join('\n\n');
   const threads = composeThreads(caption, {source, seed:url || text});
-  return {body, caption, threads_text:threads, artist_handles:[]};
+  return {body, caption, threads_text:threads, artist_handles:artistCopy.artist_handles,artist_mentions:artistCopy.artist_mentions};
 }
 
 // Accept only the exact prior format while older queued items migrate.

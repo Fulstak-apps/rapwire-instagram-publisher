@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T22:49:43.055Z",
+  "checked_at": "2026-09-04T22:53:29.976Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -26,7 +26,7 @@
   },
   "instagram_steps": 0,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,23 +35,14 @@
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-04T22:59:42.194Z",
-  "publications": [
-    {
-      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
-      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1210474125492246",
-      "permalink": "/reel/1210474125492246/"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
-      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
+      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
+      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
       "platform": "threads",
       "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AstGg1XAORyPYOGDBZtRlxE\"}}"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A1wlfz_WIZaf3qk9v2knEZs\"}}"
     }
   ],
   "reviews": [

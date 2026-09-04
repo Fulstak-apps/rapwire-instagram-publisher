@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T17:06:06.057Z",
+  "checked_at": "2026-09-04T17:08:28.115Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T17:05:55.238Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T17:20:55.238Z",
@@ -20,29 +20,36 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T17:00:13.983Z",
+    "next_feed_eligible_at": "2026-09-04T17:18:27.902Z",
     "feed_allowed": true,
     "story_allowed": false
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T16:10:30.033Z",
+  "threads_next_eligible_at": "2026-09-04T17:18:20.688Z",
   "facebook_next_eligible_at": "2026-09-04T17:16:05.549Z",
   "publications": [
     {
       "file": "258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic.json",
       "id": "258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic",
-      "platform": "facebook",
+      "platform": "threads",
       "status": "published",
-      "media_id": "2541995562984192",
-      "permalink": "/reel/2541995562984192/"
+      "media_id": "18087122291289580"
+    },
+    {
+      "file": "258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic.json",
+      "id": "258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18126558964801757",
+      "content_type": "video"
     }
   ],
   "failures": [],

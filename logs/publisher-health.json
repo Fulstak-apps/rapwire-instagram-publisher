@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T23:06:56.406Z",
+  "checked_at": "2026-09-04T23:10:09.853Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -26,7 +26,7 @@
   },
   "instagram_steps": 0,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,23 +35,14 @@
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-04T23:16:55.989Z",
-  "publications": [
-    {
-      "file": "280-known-for-his-aggressive-aggressive-delivery-and-hyper-energetic.json",
-      "id": "280-known-for-his-aggressive-aggressive-delivery-and-hyper-energetic",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "3417685141772049",
-      "permalink": "/reel/3417685141772049/"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
-      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
+      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
+      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
       "platform": "threads",
       "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Awx6dfrOMa42eoTLVkvz7l-\"}}"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AIjC4CyTHt76aFnBfXZtJ8x\"}}"
     }
   ],
   "reviews": [

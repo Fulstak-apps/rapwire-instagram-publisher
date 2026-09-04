@@ -2818,20 +2818,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Dc337MIIUU3/",
       "queue_id": "258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic",
       "video": "media/258-adrien-broner-got-rejected-but-didn-t-care-realizing-after-janic.mp4"
+    },
+    "Dc30Vl4O1lo": {
+      "queued_at": "2026-09-04T17:10:05.546Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc30Vl4O1lo/",
+      "queue_id": "259-wat-in-the-zeus-network-going-on-here",
+      "video": "media/259-wat-in-the-zeus-network-going-on-here.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T02:29:09.190Z",
-      "candidates": 48,
-      "queued": [
-        "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 1,
-      "finished_at": "2026-09-03T02:30:51.844Z"
-    },
     {
       "started_at": "2026-09-03T02:33:05.463Z",
       "candidates": 48,
@@ -7462,6 +7458,30 @@
       "mode": "discovery",
       "vip_pending": 9,
       "finished_at": "2026-09-04T17:02:04.434Z"
+    },
+    {
+      "started_at": "2026-09-04T17:06:13.709Z",
+      "candidates": 55,
+      "queued": [
+        "259-wat-in-the-zeus-network-going-on-here"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 8,
+      "finished_at": "2026-09-04T17:10:05.546Z"
     }
   ],
   "vip_pending": {
@@ -7525,18 +7545,6 @@
       "last_attempt_at": "2026-09-04T16:37:42.043Z",
       "retry_at": "2026-09-04T17:37:42.043Z"
     },
-    "Dc30Vl4O1lo": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/reel/Dc30Vl4O1lo/",
-      "shortcode": "Dc30Vl4O1lo",
-      "first_seen_at": "2026-09-04T16:33:19.251Z",
-      "profile_position": 0,
-      "state": "retry_pending",
-      "attempts": 3,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc30Vl4O1lo-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T16:49:24.698Z",
-      "retry_at": "2026-09-04T16:57:24.698Z"
-    },
     "Dc30JSSjmsc": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
@@ -7556,10 +7564,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc32-qLsTq5-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T16:57:34.928Z",
-      "retry_at": "2026-09-04T16:59:34.928Z"
+      "attempts": 2,
+      "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
+      "last_attempt_at": "2026-09-04T17:07:51.838Z",
+      "retry_at": "2026-09-04T17:11:51.838Z"
     },
     "Dc322YeFQyh": {
       "source_handle": "akademiks",
@@ -7568,24 +7576,24 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T16:58:55.939Z",
-      "retry_at": "2026-09-04T17:00:55.939Z"
+      "attempts": 2,
+      "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
+      "last_attempt_at": "2026-09-04T17:09:34.083Z",
+      "retry_at": "2026-09-04T17:13:34.083Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T16:56:09.446Z"
+      "checked_at": "2026-09-04T17:06:26.100Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T16:56:13.401Z"
+      "checked_at": "2026-09-04T17:06:30.083Z"
     },
     "records": {
-      "checked_at": "2026-09-04T16:56:17.425Z"
+      "checked_at": "2026-09-04T17:06:34.077Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T16:56:05.423Z"
+      "checked_at": "2026-09-04T17:06:22.105Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T17:01:06.862Z"
@@ -7606,10 +7614,10 @@
       "checked_at": "2026-09-04T16:47:51.930Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T16:32:31.200Z"
+      "checked_at": "2026-09-04T17:06:38.040Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T16:32:35.213Z"
+      "checked_at": "2026-09-04T17:06:42.000Z"
     }
   }
 }

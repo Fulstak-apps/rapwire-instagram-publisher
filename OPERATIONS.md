@@ -9,7 +9,7 @@ Updated September 3, 2026. This is the current contract; older thread prompts ar
 - New feed posts have a minimum ten-minute gap per platform, measured from confirmed publication. Slow processing or quota holds can delay delivery. Instagram and Threads have separate IDs, timers and retries.
 - Codex runs the independent newsroom only at 9 a.m., noon and 5 p.m. America/Los_Angeles. Those existing runs research up to three strong stories, verify claims, prepare visuals and queue staggered delivery. No additional frequent Codex wakeups or model calls for routine reposts.
 - The hourly Threads writer runs in the existing GitHub workflow without waking Codex. The workflow checks it every five minutes so a safely staged post can finish, but it confirms at most one original rap conversation prompt per hour. It is Threads-only and uses no model call.
-- The local Ollama editor runs hourly into ignored review/local-editor. Its text drafts cannot approve themselves or publish.
+- The legacy local Ollama editor runs hourly into ignored review/local-editor. The autonomous local newsroom is installed separately through `scripts/install-local-newsroom.sh`, runs about every five minutes, and uses `qwen3:4b` by default. It writes evidence drafts and may only produce `status=ready` after real local media and every existing publisher compatibility gate pass; incomplete work remains review-only.
 - Keep the Mac powered, connected, logged in and awake for collection. GitHub can drain its existing queue while the Mac is offline.
 - Bail Money Radio is not connected or activated. Do not reuse RapWire credentials for it.
 
@@ -85,4 +85,4 @@ Measure up to six recent posts per platform every six hours plus account followe
 
 ## Tests
 
-Run `node --test scripts/*.test.mjs` and `python3 -m unittest discover -s scripts -p test_local_rapwire.py`. Tests use fake platform responses, not live credentials. Observe a real deployment separately before claiming live feature success.
+Run `node --test scripts/*.test.mjs` and `python3 -m unittest discover -s scripts -p 'test_local_rapwire*.py'`. Run `python3 scripts/local-rapwire-autonomous.py --health` for local dependencies and `python3 scripts/local-rapwire-autonomous.py --dry-run` for a read-only proposed queue record. Tests use fake platform responses, not live credentials. Observe a real deployment separately before claiming live feature success.

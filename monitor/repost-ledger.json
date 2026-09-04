@@ -2491,20 +2491,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc2ChIlvSpw/",
       "queue_id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
       "video": "media/243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.mp4"
+    },
+    "Dc2GMSgPIW2": {
+      "queued_at": "2026-09-04T03:19:17.606Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc2GMSgPIW2/",
+      "queue_id": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von",
+      "video": "media/244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T20:28:53.645Z",
-      "candidates": 48,
-      "queued": [
-        "162-reposted-from-akademiks-lil-durk-allegedly-sent-a-message-to-som"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 4,
-      "finished_at": "2026-09-02T20:29:52.964Z"
-    },
     {
       "started_at": "2026-09-02T20:31:56.047Z",
       "candidates": 48,
@@ -5613,6 +5609,17 @@
       "mode": "discovery",
       "vip_pending": 8,
       "finished_at": "2026-09-04T03:09:11.472Z"
+    },
+    {
+      "started_at": "2026-09-04T03:11:45.640Z",
+      "candidates": 52,
+      "queued": [
+        "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 7,
+      "finished_at": "2026-09-04T03:19:17.606Z"
     }
   ],
   "vip_pending": {
@@ -5676,18 +5683,6 @@
       "last_attempt_at": "2026-09-04T02:30:18.421Z",
       "retry_at": "2026-09-04T03:30:18.421Z"
     },
-    "Dc2GMSgPIW2": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc2GMSgPIW2/",
-      "shortcode": "Dc2GMSgPIW2",
-      "first_seen_at": "2026-09-04T00:45:17.802Z",
-      "profile_position": 1,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-5.png\nSwift/ErrorType.swift:254: Fatal error: Error raised at top level: TextRecognition.CRImageReaderError.e5rtError(\"e5rt_execution_stream_operation_create_precompiled_compute_operation_with_options call failed\", 13)\nStack dump:\n0.\tProgram arguments:",
-      "last_attempt_at": "2026-09-04T01:32:43.835Z",
-      "retry_at": "2026-09-04T01:34:43.835Z"
-    },
     "Dc2Ia79J-Nm": {
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/Dc2Ia79J-Nm/",
@@ -5715,16 +5710,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T02:58:55.724Z"
+      "checked_at": "2026-09-04T03:11:58.971Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T02:58:59.808Z"
+      "checked_at": "2026-09-04T03:12:03.176Z"
     },
     "records": {
-      "checked_at": "2026-09-04T03:02:50.780Z"
+      "checked_at": "2026-09-04T03:12:07.371Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T02:58:51.532Z"
+      "checked_at": "2026-09-04T03:11:54.805Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T02:59:03.919Z"
@@ -5733,10 +5728,10 @@
       "checked_at": "2026-09-04T02:59:08.031Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-04T02:27:06.405Z"
+      "checked_at": "2026-09-04T03:12:11.559Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-04T02:27:10.409Z"
+      "checked_at": "2026-09-04T03:12:15.961Z"
     },
     "xxl": {
       "checked_at": "2026-09-04T02:53:50.347Z"

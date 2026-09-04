@@ -2572,15 +2572,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T22:14:22.849Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-02T22:15:11.913Z"
-    },
-    {
       "started_at": "2026-09-02T22:17:15.295Z",
       "candidates": 48,
       "queued": [],
@@ -6118,6 +6109,34 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T07:53:52.939Z"
+    },
+    {
+      "started_at": "2026-09-04T07:55:56.611Z",
+      "candidates": 54,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T08:05:33.040Z"
     }
   ],
   "vip_pending": {
@@ -6128,10 +6147,10 @@
       "first_seen_at": "2026-09-03T05:30:10.862Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 12,
+      "attempts": 13,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T06:52:18.621Z",
-      "retry_at": "2026-09-04T07:52:18.621Z"
+      "last_attempt_at": "2026-09-04T08:01:19.089Z",
+      "retry_at": "2026-09-04T09:01:19.089Z"
     },
     "Dcww5JhjqDI": {
       "source_handle": "records",
@@ -6152,10 +6171,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 28,
+      "attempts": 29,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T07:53:38.992Z",
-      "retry_at": "2026-09-04T08:53:38.992Z"
+      "last_attempt_at": "2026-09-04T08:05:33.040Z",
+      "retry_at": "2026-09-04T09:05:33.040Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -6164,10 +6183,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 31,
+      "attempts": 32,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T07:50:29.661Z",
-      "retry_at": "2026-09-04T08:50:29.661Z"
+      "last_attempt_at": "2026-09-04T08:02:23.151Z",
+      "retry_at": "2026-09-04T09:02:23.151Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -6184,16 +6203,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T07:47:28.367Z"
+      "checked_at": "2026-09-04T07:56:07.109Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T07:47:32.318Z"
+      "checked_at": "2026-09-04T07:56:11.101Z"
     },
     "records": {
-      "checked_at": "2026-09-04T07:47:36.261Z"
+      "checked_at": "2026-09-04T07:56:15.077Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T07:47:24.396Z"
+      "checked_at": "2026-09-04T07:56:03.146Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T07:47:40.223Z"
@@ -6214,10 +6233,10 @@
       "checked_at": "2026-09-04T07:38:54.132Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T07:23:59.396Z"
+      "checked_at": "2026-09-04T07:56:19.002Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T07:24:03.418Z"
+      "checked_at": "2026-09-04T07:56:22.968Z"
     }
   }
 }

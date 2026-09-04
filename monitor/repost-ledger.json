@@ -2526,20 +2526,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc1kmwOP1gD/",
       "queue_id": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir",
       "video": "media/247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir.mp4"
+    },
+    "Dc2Q0-ljXob": {
+      "queued_at": "2026-09-04T04:33:36.552Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dc2Q0-ljXob/",
+      "queue_id": "248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked",
+      "video": "media/248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T20:41:07.912Z",
-      "candidates": 24,
-      "queued": [
-        "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got"
-      ],
-      "errors": [],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 1,
-      "finished_at": "2026-09-02T20:46:40.829Z"
-    },
     {
       "started_at": "2026-09-02T20:48:43.591Z",
       "candidates": 48,
@@ -5675,6 +5671,36 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T04:21:49.658Z"
+    },
+    {
+      "started_at": "2026-09-04T04:24:21.737Z",
+      "candidates": 54,
+      "queued": [
+        "248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T04:33:36.552Z"
     }
   ],
   "vip_pending": {
@@ -5685,10 +5711,10 @@
       "first_seen_at": "2026-09-03T05:30:10.862Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 9,
+      "attempts": 10,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-03T17:11:12.981Z",
-      "retry_at": "2026-09-03T18:11:12.981Z"
+      "last_attempt_at": "2026-09-04T04:33:04.887Z",
+      "retry_at": "2026-09-04T05:33:04.887Z"
     },
     "Dcww5JhjqDI": {
       "source_handle": "records",
@@ -5697,10 +5723,10 @@
       "first_seen_at": "2026-09-03T06:22:41.175Z",
       "profile_position": 11,
       "state": "retry_pending",
-      "attempts": 8,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-03T17:34:37.129Z",
-      "retry_at": "2026-09-03T18:34:37.129Z"
+      "attempts": 9,
+      "last_error": "Crop review required: source branding is not isolated in a removable top header",
+      "last_attempt_at": "2026-09-04T04:28:49.436Z",
+      "retry_at": "2026-09-04T05:28:49.436Z"
     },
     "Dc1oLsTgfLu": {
       "source_handle": "akademiks",
@@ -5733,30 +5759,30 @@
       "first_seen_at": "2026-09-04T01:28:48.855Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 2,
+      "attempts": 3,
       "last_error": "Crop review required: No distinct footage region between static panels",
-      "last_attempt_at": "2026-09-04T04:16:28.434Z",
-      "retry_at": "2026-09-04T04:20:28.434Z"
+      "last_attempt_at": "2026-09-04T04:27:59.832Z",
+      "retry_at": "2026-09-04T04:35:59.832Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T04:13:00.751Z"
+      "checked_at": "2026-09-04T04:24:35.946Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T04:13:04.880Z"
+      "checked_at": "2026-09-04T04:24:40.125Z"
     },
     "records": {
-      "checked_at": "2026-09-04T04:13:13.686Z"
+      "checked_at": "2026-09-04T04:24:44.158Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T04:12:56.530Z"
+      "checked_at": "2026-09-04T04:24:31.810Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-04T03:28:55.391Z"
+      "checked_at": "2026-09-04T04:24:48.190Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-04T03:28:59.421Z"
+      "checked_at": "2026-09-04T04:24:52.220Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-04T03:58:09.226Z"

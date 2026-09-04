@@ -2572,15 +2572,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T21:13:08.822Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-02T21:13:58.836Z"
-    },
-    {
       "started_at": "2026-09-02T21:16:01.852Z",
       "candidates": 48,
       "queued": [],
@@ -5881,6 +5872,40 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T05:46:54.246Z"
+    },
+    {
+      "started_at": "2026-09-04T05:48:57.773Z",
+      "candidates": 52,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Dc2BEcwjfIR/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T05:56:46.322Z"
     }
   ],
   "vip_pending": {
@@ -5915,10 +5940,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 13,
+      "attempts": 14,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-04T05:46:54.246Z",
-      "retry_at": "2026-09-04T06:46:54.246Z"
+      "last_attempt_at": "2026-09-04T05:53:28.057Z",
+      "retry_at": "2026-09-04T06:53:28.057Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -5927,10 +5952,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 16,
+      "attempts": 17,
       "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-04T05:44:26.970Z",
-      "retry_at": "2026-09-04T06:44:26.970Z"
+      "last_attempt_at": "2026-09-04T05:51:04.057Z",
+      "retry_at": "2026-09-04T06:51:04.057Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -5939,30 +5964,30 @@
       "first_seen_at": "2026-09-04T01:28:48.855Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 5,
-      "last_error": "Crop review required: No distinct footage region between static panels",
-      "last_attempt_at": "2026-09-04T05:10:19.153Z",
-      "retry_at": "2026-09-04T05:42:19.153Z"
+      "attempts": 6,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-04T05:56:46.321Z",
+      "retry_at": "2026-09-04T06:56:46.321Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T05:37:47.054Z"
+      "checked_at": "2026-09-04T05:49:09.672Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T05:37:51.086Z"
+      "checked_at": "2026-09-04T05:49:13.602Z"
     },
     "records": {
-      "checked_at": "2026-09-04T05:37:55.050Z"
+      "checked_at": "2026-09-04T05:49:17.595Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T05:37:43.046Z"
+      "checked_at": "2026-09-04T05:49:05.735Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-04T05:17:08.973Z"
+      "checked_at": "2026-09-04T05:49:21.583Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-04T05:17:13.060Z"
+      "checked_at": "2026-09-04T05:49:25.654Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-04T05:30:35.447Z"

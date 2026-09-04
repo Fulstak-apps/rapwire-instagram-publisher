@@ -1502,6 +1502,13 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Dc2DN_5IbhX/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc2ChIlvSpw": {
+      "seen_at": "2026-09-04T00:33:47.719Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc2ChIlvSpw/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2299,17 +2306,15 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc1l9HYS-Mq/",
       "queue_id": "229-durk-really-did-have-a-wedding-to-attend-on-aug-20th-was-allowed",
       "video": "media/229-durk-really-did-have-a-wedding-to-attend-on-aug-20th-was-allowed.mp4"
+    },
+    "Dc1tAdqgEAK": {
+      "queued_at": "2026-09-04T00:35:10.673Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc1tAdqgEAK/",
+      "queue_id": "230-drake-announced-september-15-on-youtube-9pm"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T19:11:23.400Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T19:12:27.402Z"
-    },
     {
       "started_at": "2026-09-02T19:14:31.015Z",
       "candidates": 48,
@@ -5262,6 +5267,29 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-04T00:29:25.385Z"
+    },
+    {
+      "started_at": "2026-09-04T00:31:58.224Z",
+      "candidates": 37,
+      "queued": [
+        "230-drake-announced-september-15-on-youtube-9pm"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-04T00:35:10.674Z"
     }
   ],
   "vip_pending": {
@@ -5331,15 +5359,6 @@
       "state": "pending",
       "attempts": 0
     },
-    "Dc1tAdqgEAK": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/Dc1tAdqgEAK/",
-      "shortcode": "Dc1tAdqgEAK",
-      "first_seen_at": "2026-09-03T21:45:53.508Z",
-      "profile_position": 0,
-      "state": "pending",
-      "attempts": 0
-    },
     "Dc1w77pybix": {
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/Dc1w77pybix/",
@@ -5373,22 +5392,34 @@
       "shortcode": "Dc13XZkGTqg",
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
+      "last_attempt_at": "2026-09-04T00:34:54.910Z",
+      "retry_at": "2026-09-04T00:36:54.910Z"
+    },
+    "Dc2ChIlvSpw": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc2ChIlvSpw/",
+      "shortcode": "Dc2ChIlvSpw",
+      "first_seen_at": "2026-09-04T00:33:47.719Z",
+      "profile_position": 0,
       "state": "pending",
       "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T00:18:59.713Z"
+      "checked_at": "2026-09-04T00:33:04.197Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T00:19:03.957Z"
+      "checked_at": "2026-09-04T00:33:08.229Z"
     },
     "records": {
-      "checked_at": "2026-09-04T00:19:08.012Z"
+      "checked_at": "2026-09-04T00:33:12.393Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T00:18:55.547Z"
+      "checked_at": "2026-09-04T00:33:00.130Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T00:04:18.200Z"

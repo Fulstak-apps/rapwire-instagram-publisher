@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T22:06:36.638Z",
+  "checked_at": "2026-09-04T22:09:38.763Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -26,7 +26,7 @@
   },
   "instagram_steps": 0,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,23 +35,14 @@
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-04T22:16:36.076Z",
-  "publications": [
-    {
-      "file": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-.json",
-      "id": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1391975605652092",
-      "permalink": "/reel/1391975605652092/"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
-      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
+      "file": "266-travis-scott-travisscott-has-reportedly-touched-down-in-chicago-.json",
+      "id": "266-travis-scott-travisscott-has-reportedly-touched-down-in-chicago-",
       "platform": "threads",
       "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AUUDeWSs7uf-22YSlnf_y3z\"}}"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ao53baG-E7FLnTnjcdurbHI\"}}"
     }
   ],
   "reviews": [

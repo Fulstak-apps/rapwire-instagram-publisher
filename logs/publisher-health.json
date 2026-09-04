@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T15:08:14.585Z",
+  "checked_at": "2026-09-04T15:11:25.816Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T15:08:13.038Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T15:23:13.038Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T15:04:57.009Z",
+    "next_feed_eligible_at": "2026-09-04T15:21:25.381Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -35,14 +35,23 @@
   },
   "threads_next_eligible_at": "2026-09-04T14:40:10.468Z",
   "facebook_next_eligible_at": null,
-  "publications": [],
+  "publications": [
+    {
+      "file": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble.json",
+      "id": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18189154312396623",
+      "content_type": "video"
+    }
+  ],
   "failures": [
     {
-      "file": "202-10-years-ago-today-travis-scott-dropped-birds-in-the-trap-sing-m.json",
-      "id": "202-10-years-ago-today-travis-scott-dropped-birds-in-the-trap-sing-m",
+      "file": "208-yb-speaks.json",
+      "id": "208-yb-speaks",
       "platform": "facebook",
       "status": "failed",
-      "error": "(#200) Unpublished posts must be posted to a page as the page itself."
+      "error": "(#200) The permission(s) publish_actions are not available. It has been deprecated. If you want to provide a way for your app users to share content to Facebook, we encourage you to use our Sharing products instead."
     }
   ],
   "reviews": [

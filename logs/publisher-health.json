@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T21:28:15.288Z",
+  "checked_at": "2026-09-04T21:30:36.798Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -26,7 +26,7 @@
   },
   "instagram_steps": 0,
   "threads_steps": 1,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -34,15 +34,24 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
-  "facebook_next_eligible_at": "2026-09-04T21:28:43.321Z",
-  "publications": [],
+  "facebook_next_eligible_at": "2026-09-04T21:40:36.184Z",
+  "publications": [
+    {
+      "file": "268-rapwire-repost-video.json",
+      "id": "268-rapwire-repost-video",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "858733373992639",
+      "permalink": "/reel/858733373992639/"
+    }
+  ],
   "failures": [
     {
-      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
-      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
+      "file": "266-travis-scott-travisscott-has-reportedly-touched-down-in-chicago-.json",
+      "id": "266-travis-scott-travisscott-has-reportedly-touched-down-in-chicago-",
       "platform": "threads",
       "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3nWQ05SZMYtGWEYm9bOAyQ\"}}"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ANIfRH_JtDMvwf0LQZeIuJ3\"}}"
     }
   ],
   "reviews": [

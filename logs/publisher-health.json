@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T15:27:44.317Z",
+  "checked_at": "2026-09-04T15:31:50.424Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T15:23:34.032Z",
@@ -16,16 +16,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T15:37:44.148Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,25 +35,8 @@
   },
   "threads_next_eligible_at": "2026-09-04T15:28:18.553Z",
   "facebook_next_eligible_at": null,
-  "publications": [
-    {
-      "file": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.json",
-      "id": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18618598579018352",
-      "content_type": "video"
-    }
-  ],
-  "failures": [
-    {
-      "file": "237-smurk-w-a-message.json",
-      "id": "237-smurk-w-a-message",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "(#200) The permission(s) publish_actions are not available. It has been deprecated. If you want to provide a way for your app users to share content to Facebook, we encourage you to use our Sharing products instead."
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "reviews": [
     {
       "file": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour.json",
@@ -68,6 +51,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th.json",
+      "id": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th",
+      "platform": "facebook",
+      "status": "review_required",
+      "reason": "unsupported_facebook_media_mix"
     },
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",

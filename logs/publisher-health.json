@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T05:36:43.189Z",
+  "checked_at": "2026-09-04T05:40:53.095Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T05:36:42.003Z",
@@ -21,18 +21,26 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T05:40:34.894Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": false
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T05:35:44.765Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T05:50:52.763Z",
+  "publications": [
+    {
+      "file": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir.json",
+      "id": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18113014529053874"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

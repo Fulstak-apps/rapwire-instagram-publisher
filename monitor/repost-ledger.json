@@ -2623,18 +2623,16 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dc3bAVTg0Hf/",
       "queue_id": "252-story-andrew-tate-has-been-indicted-for-having-sex-with-a-minor-"
+    },
+    "Dc3ayvBuWQt": {
+      "queued_at": "2026-09-04T12:58:54.475Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc3ayvBuWQt/",
+      "queue_id": "253-ye-cut-off-praise-god-mid-set-and-said-his-iconic-play-off-the-g",
+      "video": "media/253-ye-cut-off-praise-god-mid-set-and-said-his-iconic-play-off-the-g.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T23:56:35.687Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-02T23:57:25.520Z"
-    },
     {
       "started_at": "2026-09-02T23:59:28.019Z",
       "candidates": 48,
@@ -6794,6 +6792,17 @@
       "mode": "discovery",
       "vip_pending": 6,
       "finished_at": "2026-09-04T12:56:00.392Z"
+    },
+    {
+      "started_at": "2026-09-04T12:58:04.957Z",
+      "candidates": 14,
+      "queued": [
+        "253-ye-cut-off-praise-god-mid-set-and-said-his-iconic-play-off-the-g"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T12:58:54.476Z"
     }
   ],
   "vip_pending": {
@@ -6856,15 +6865,6 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-04T11:49:42.909Z",
       "retry_at": "2026-09-04T12:49:42.909Z"
-    },
-    "Dc3ayvBuWQt": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/reel/Dc3ayvBuWQt/",
-      "shortcode": "Dc3ayvBuWQt",
-      "first_seen_at": "2026-09-04T12:55:50.782Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0
     }
   },
   "source_checks": {
@@ -6893,10 +6893,10 @@
       "checked_at": "2026-09-04T12:33:56.091Z"
     },
     "xxl": {
-      "checked_at": "2026-09-04T12:20:47.340Z"
+      "checked_at": "2026-09-04T12:58:11.561Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-04T12:20:51.403Z"
+      "checked_at": "2026-09-04T12:58:15.576Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-04T12:55:00.172Z"

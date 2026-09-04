@@ -1677,6 +1677,20 @@
       "source_url": "https://www.instagram.com/xxl/p/Dc3cYtYETcp/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc3i_FnOncS": {
+      "seen_at": "2026-09-04T14:09:36.767Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc3i_FnOncS/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc3jXK8kdZg": {
+      "seen_at": "2026-09-04T14:09:36.767Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Dc3jXK8kdZg/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2637,20 +2651,15 @@
       "source_url": "https://www.instagram.com/records/reel/Dc3ayvBuWQt/",
       "queue_id": "253-ye-cut-off-praise-god-mid-set-and-said-his-iconic-play-off-the-g",
       "video": "media/253-ye-cut-off-praise-god-mid-set-and-said-his-iconic-play-off-the-g.mp4"
+    },
+    "Dc3i_FnOncS": {
+      "queued_at": "2026-09-04T14:09:45.992Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc3i_FnOncS/",
+      "queue_id": "254-meek-speaks"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T00:32:55.697Z",
-      "candidates": 48,
-      "queued": [
-        "174-traploreross-defense-resting-case-tomorrow-lunchtime-durks-defen"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 2,
-      "finished_at": "2026-09-03T00:37:39.451Z"
-    },
     {
       "started_at": "2026-09-03T00:40:06.845Z",
       "candidates": 48,
@@ -6924,6 +6933,24 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T14:06:31.920Z"
+    },
+    {
+      "started_at": "2026-09-04T14:08:36.446Z",
+      "candidates": 44,
+      "queued": [
+        "254-meek-speaks"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc3i_FnOncS/",
+          "stage": "score",
+          "error": "Exact source caption missing, generic or truncated; needs review"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T14:09:45.992Z"
     }
   ],
   "vip_pending": {
@@ -6990,16 +7017,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T13:56:01.543Z"
+      "checked_at": "2026-09-04T14:08:48.206Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T13:56:05.505Z"
+      "checked_at": "2026-09-04T14:08:52.186Z"
     },
     "records": {
-      "checked_at": "2026-09-04T13:56:09.504Z"
+      "checked_at": "2026-09-04T14:08:56.213Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T13:55:57.458Z"
+      "checked_at": "2026-09-04T14:08:44.017Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T13:38:00.907Z"
@@ -7014,10 +7041,10 @@
       "checked_at": "2026-09-04T13:56:17.660Z"
     },
     "xxl": {
-      "checked_at": "2026-09-04T13:20:33.648Z"
+      "checked_at": "2026-09-04T14:09:00.249Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-04T13:20:37.628Z"
+      "checked_at": "2026-09-04T14:09:04.233Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-04T13:29:28.277Z"

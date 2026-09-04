@@ -1544,6 +1544,20 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Dc2IQZTJTLb/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc2MKfkNwc4": {
+      "seen_at": "2026-09-04T01:28:48.854Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc2MCuNOp6Q": {
+      "seen_at": "2026-09-04T01:28:48.854Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc2MCuNOp6Q/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2360,17 +2374,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Dc1uhrmog7g/",
       "queue_id": "232-nba-youngboy-casually-had-over-100k-in-cash-during-a-traffic-sto",
       "video": "media/232-nba-youngboy-casually-had-over-100k-in-cash-during-a-traffic-sto.mp4"
+    },
+    "Dc2IQZTJTLb": {
+      "queued_at": "2026-09-04T01:36:53.773Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc2IQZTJTLb/",
+      "queue_id": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-",
+      "video": "media/233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T19:23:52.604Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "finished_at": "2026-09-02T19:24:59.418Z"
-    },
     {
       "started_at": "2026-09-02T19:27:03.225Z",
       "candidates": 48,
@@ -5437,6 +5450,24 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-04T01:25:11.784Z"
+    },
+    {
+      "started_at": "2026-09-04T01:27:15.886Z",
+      "candidates": 59,
+      "queued": [
+        "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-"
+      ],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/Dc2GMSgPIW2/",
+          "stage": "queue",
+          "error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-5.png\nSwift/ErrorType.swift:254: Fatal error: Error raised at top level: TextRecognition.CRImageReaderError.e5rtError(\"e5rt_execution_stream_operation_create_precompiled_compute_operation_with_options call failed\", 13)\nStack dump:\n0.\tProgram arguments: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -interpret \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift\" -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -no-color-diagnostics -Xcc -fno-color-diagnostics -new-driver-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-driver -empty-abi-descriptor -no-auto-bridging-header-chaining -module-name main -disable-clang-spi -target-sdk-version 26.5 -target-sdk-name macosx26.5 -external-plugin-path /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -- \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-1.png\" \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-2.png\" \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-3.png\" \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-4.png\" \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-5.png\"\n1.\tApple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)\n2.\tCompiling with effective version 5.10\n3.\tWhile running user code \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift\"\nStack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):\n0  swift-frontend           0x0000000106f7908c llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 56\n1  swift-frontend           0x0000000106f7652c llvm::sys::RunSignalHandlers() + 172\n2  swift-frontend           0x0000000106f7967c SignalHandler(int, __siginfo*, void*) + 356\n3  libsystem_platform.dylib 0x000000019bfe0144 _sigtramp + 56\n4  libswiftCore.dylib       0x00000001b062bd4c $ss17_assertionFailure__4file4line5flagss5NeverOs12StaticStringV_SSAHSus6UInt32VtF + 216\n5  libswiftCore.dylib       0x00000001b050b8e8 swift_errorInMain + 632\n6  (error)                  0x00000001180f49d4\n7  swift-frontend           0x0000000100c6cc48 llvm::orc::runAsMain(int (*)(int, char**), llvm::ArrayRef<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>, std::__1::optional<llvm::StringRef>) + 908\n8  swift-frontend           0x0000000100b69f94 swift::SwiftJIT::runMain(llvm::ArrayRef<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>) + 636\n9  swift-frontend           0x0000000100b7623c swift::RunImmediately(swift::CompilerInstance&, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>> const&, swift::IRGenOptions const&, swift::SILOptions const&, std::__1::unique_ptr<swift::SILModule, std::__1::default_delete<swift::SILModule>>&&) + 964\n10 swift-frontend           0x0000000100aea0d0 processCommandLineAndRunImmediately(swift::CompilerInstance&, std::__1::unique_ptr<swift::SILModule, std::__1::default_delete<swift::SILModule>>&&, llvm::PointerUnion<swift::ModuleDecl*, swift::SourceFile*>, swift::FrontendObserver*, int&) + 484\n11 swift-frontend           0x0000000100ae389c performCompileStepsPostSILGen(swift::CompilerInstance&, std::__1::unique_ptr<swift::SILModule, std::__1::default_delete<swift::SILModule>>, llvm::PointerUnion<swift::ModuleDecl*, swift::SourceFile*>, swift::PrimarySpecificPaths const&, int&, swift::FrontendObserver*, llvm::ArrayRef<char const*>) + 2068\n12 swift-frontend           0x0000000100ae2ecc swift::performCompileStepsPostSema(swift::CompilerInstance&, int&, swift::FrontendObserver*, llvm::ArrayRef<char const*>) + 4560\n13 swift-frontend           0x0000000100ae83a0 performCompile(swift::CompilerInstance&, int&, swift::FrontendObserver*, llvm::ArrayRef<char const*>) + 4028\n14 swift-frontend           0x0000000100ae4818 swift::performFrontend(llvm::ArrayRef<char const*>, char const*, void*, swift::FrontendObserver*) + 3308\n15 swift-frontend           0x0000000100a64424 swift::mainEntry(int, char const**) + 5224\n16 dyld                     0x000000019bbffe88 start + 6688\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-04T01:36:53.773Z"
     }
   ],
   "vip_pending": {
@@ -5578,8 +5609,11 @@
       "shortcode": "Dc2GMSgPIW2",
       "first_seen_at": "2026-09-04T00:45:17.802Z",
       "profile_position": 1,
-      "state": "pending",
-      "attempts": 0
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2GMSgPIW2-1-crop-review/source-5.png\nSwift/ErrorType.swift:254: Fatal error: Error raised at top level: TextRecognition.CRImageReaderError.e5rtError(\"e5rt_execution_stream_operation_create_precompiled_compute_operation_with_options call failed\", 13)\nStack dump:\n0.\tProgram arguments:",
+      "last_attempt_at": "2026-09-04T01:32:43.835Z",
+      "retry_at": "2026-09-04T01:34:43.835Z"
     },
     "Dc2IpNCplN6": {
       "source_handle": "traploreross",
@@ -5605,28 +5639,37 @@
       "last_attempt_at": "2026-09-04T01:18:53.664Z",
       "retry_at": "2026-09-04T01:20:53.664Z"
     },
-    "Dc2IQZTJTLb": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc2IQZTJTLb/",
-      "shortcode": "Dc2IQZTJTLb",
-      "first_seen_at": "2026-09-04T00:59:39.462Z",
-      "profile_position": 2,
+    "Dc2MKfkNwc4": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+      "shortcode": "Dc2MKfkNwc4",
+      "first_seen_at": "2026-09-04T01:28:48.855Z",
+      "profile_position": 0,
+      "state": "pending",
+      "attempts": 0
+    },
+    "Dc2MCuNOp6Q": {
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc2MCuNOp6Q/",
+      "shortcode": "Dc2MCuNOp6Q",
+      "first_seen_at": "2026-09-04T01:28:48.855Z",
+      "profile_position": 1,
       "state": "pending",
       "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T00:59:00.849Z"
+      "checked_at": "2026-09-04T01:27:28.437Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T00:59:04.919Z"
+      "checked_at": "2026-09-04T01:27:32.420Z"
     },
     "records": {
-      "checked_at": "2026-09-04T00:59:08.894Z"
+      "checked_at": "2026-09-04T01:27:36.939Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T00:58:56.842Z"
+      "checked_at": "2026-09-04T01:27:24.383Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T00:44:16.575Z"
@@ -5647,10 +5690,10 @@
       "checked_at": "2026-09-04T00:37:30.938Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T00:10:10.617Z"
+      "checked_at": "2026-09-04T01:27:40.923Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T00:10:14.740Z"
+      "checked_at": "2026-09-04T01:27:44.856Z"
     }
   }
 }

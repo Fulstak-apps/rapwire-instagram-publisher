@@ -2572,15 +2572,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-02T22:29:48.518Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-02T22:30:51.533Z"
-    },
-    {
       "started_at": "2026-09-02T22:32:54.884Z",
       "candidates": 48,
       "queued": [],
@@ -6210,6 +6201,28 @@
       "mode": "discovery",
       "vip_pending": 5,
       "finished_at": "2026-09-04T08:40:53.362Z"
+    },
+    {
+      "started_at": "2026-09-04T08:42:56.689Z",
+      "candidates": 54,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 5,
+      "finished_at": "2026-09-04T08:48:19.006Z"
     }
   ],
   "vip_pending": {
@@ -6244,10 +6257,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 33,
+      "attempts": 34,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T08:40:39.583Z",
-      "retry_at": "2026-09-04T09:40:39.583Z"
+      "last_attempt_at": "2026-09-04T08:48:19.006Z",
+      "retry_at": "2026-09-04T09:48:19.006Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -6256,10 +6269,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 36,
+      "attempts": 37,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T08:37:30.045Z",
-      "retry_at": "2026-09-04T09:37:30.045Z"
+      "last_attempt_at": "2026-09-04T08:45:09.290Z",
+      "retry_at": "2026-09-04T09:45:09.290Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -6276,16 +6289,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T08:35:28.491Z"
+      "checked_at": "2026-09-04T08:43:07.337Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T08:35:32.565Z"
+      "checked_at": "2026-09-04T08:43:11.289Z"
     },
     "records": {
-      "checked_at": "2026-09-04T08:35:36.578Z"
+      "checked_at": "2026-09-04T08:43:15.259Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T08:35:24.498Z"
+      "checked_at": "2026-09-04T08:43:03.239Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T08:35:40.611Z"
@@ -6306,10 +6319,10 @@
       "checked_at": "2026-09-04T08:26:54.657Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-04T07:56:19.002Z"
+      "checked_at": "2026-09-04T08:43:19.225Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-04T07:56:22.968Z"
+      "checked_at": "2026-09-04T08:43:23.247Z"
     }
   }
 }

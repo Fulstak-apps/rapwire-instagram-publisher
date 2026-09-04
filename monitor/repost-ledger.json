@@ -1600,6 +1600,13 @@
       "source_url": "https://www.instagram.com/complexmusic/reel/Dc2TykqRYDC/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc2dB39po2c": {
+      "seen_at": "2026-09-04T03:59:00.447Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/Dc2dB39po2c/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -2505,20 +2512,16 @@
       "source_url": "https://www.instagram.com/igndotcom/reel/Dc1yA_-Ee1G/",
       "queue_id": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis",
       "video": "media/245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis.mp4"
+    },
+    "Dc2Ia79J-Nm": {
+      "queued_at": "2026-09-04T04:09:43.611Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Dc2Ia79J-Nm/",
+      "queue_id": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du",
+      "video": "media/246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-02T20:35:01.218Z",
-      "candidates": 48,
-      "queued": [
-        "164-reposted-from-akademiks-young-thug-says-he-ll-never-say-f-the-st"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 2,
-      "finished_at": "2026-09-02T20:35:58.009Z"
-    },
     {
       "started_at": "2026-09-02T20:38:01.523Z",
       "candidates": 48,
@@ -5634,6 +5637,30 @@
       "mode": "discovery",
       "vip_pending": 7,
       "finished_at": "2026-09-04T03:55:34.908Z"
+    },
+    {
+      "started_at": "2026-09-04T03:57:43.627Z",
+      "candidates": 53,
+      "queued": [
+        "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 6,
+      "finished_at": "2026-09-04T04:09:43.612Z"
     }
   ],
   "vip_pending": {
@@ -5680,10 +5707,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 4,
+      "attempts": 5,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-04T02:32:43.343Z",
-      "retry_at": "2026-09-04T02:48:43.343Z"
+      "last_attempt_at": "2026-09-04T04:03:42.065Z",
+      "retry_at": "2026-09-04T04:35:42.065Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -5692,22 +5719,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 7,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T03:52:56.969Z",
-      "retry_at": "2026-09-04T04:52:56.969Z"
-    },
-    "Dc2Ia79J-Nm": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/Dc2Ia79J-Nm/",
-      "shortcode": "Dc2Ia79J-Nm",
-      "first_seen_at": "2026-09-04T00:59:39.462Z",
-      "profile_position": 1,
-      "state": "retry_pending",
-      "attempts": 2,
-      "last_error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2Ia79J-Nm-1-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2Ia79J-Nm-1-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2Ia79J-Nm-1-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2Ia79J-Nm-1-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc2Ia79J-Nm-1-crop-review/source-5.png\nSwift/ErrorType.swift:254: Fatal error: Error raised at top level: TextRecognition.CRImageReaderError.e5rtError(\"e5rt_execution_stream_operation_create_precompiled_compute_operation_with_options call failed\", 13)\nStack dump:\n0.\tProgram arguments:",
-      "last_attempt_at": "2026-09-04T02:36:08.202Z",
-      "retry_at": "2026-09-04T02:40:08.202Z"
+      "attempts": 8,
+      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
+      "last_attempt_at": "2026-09-04T04:01:16.738Z",
+      "retry_at": "2026-09-04T05:01:16.738Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -5724,16 +5739,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T03:50:47.448Z"
+      "checked_at": "2026-09-04T03:57:56.668Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T03:50:51.544Z"
+      "checked_at": "2026-09-04T03:58:00.872Z"
     },
     "records": {
-      "checked_at": "2026-09-04T03:50:55.648Z"
+      "checked_at": "2026-09-04T03:58:05.042Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T03:50:43.410Z"
+      "checked_at": "2026-09-04T03:57:52.232Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T03:28:55.391Z"
@@ -5742,10 +5757,10 @@
       "checked_at": "2026-09-04T03:28:59.421Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-04T03:12:11.559Z"
+      "checked_at": "2026-09-04T03:58:09.226Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-04T03:12:15.961Z"
+      "checked_at": "2026-09-04T03:58:13.438Z"
     },
     "xxl": {
       "checked_at": "2026-09-04T03:22:16.781Z"

@@ -100,7 +100,6 @@
   "facebook_child_requests": [
     "2026-09-04T15:08:13.521Z"
   ],
-  "facebook_error": "(#200) Unpublished posts must be posted to a page as the page itself.",
-  "facebook_status": "failed",
-  "facebook_retry_at": "2026-09-05T15:08:14.516Z"
+  "facebook_status": "reconciliation_required",
+  "facebook_reconcile_required": true
 }

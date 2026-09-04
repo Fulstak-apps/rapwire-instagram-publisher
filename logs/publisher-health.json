@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-04T15:38:39.569Z",
+  "checked_at": "2026-09-04T15:42:01.858Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-04T15:23:34.032Z",
-    "usage": 48,
+    "checked_at": "2026-09-04T15:42:01.236Z",
+    "usage": 47,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-04T15:38:34.032Z",
+    "next_check_at": "2026-09-04T15:57:01.236Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,16 +16,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 48,
-    "instagram_usage": 48,
-    "instagram_remaining": 0,
+    "instagram_usage": 47,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-04T15:37:44.148Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": false
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,15 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-04T15:48:39.316Z",
   "facebook_next_eligible_at": null,
-  "publications": [
-    {
-      "file": "256-travis-scott-dropped-rodeo-11-years-ago-today-and-rihanna-made-s.json",
-      "id": "256-travis-scott-dropped-rodeo-11-years-ago-today-and-rihanna-made-s",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17905130229517228"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

@@ -3010,15 +3010,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T04:15:09.517Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T04:16:00.154Z"
-    },
-    {
       "started_at": "2026-09-03T04:18:04.217Z",
       "candidates": 48,
       "queued": [],
@@ -7945,6 +7936,34 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-04T19:41:36.157Z"
+    },
+    {
+      "started_at": "2026-09-04T19:43:40.010Z",
+      "candidates": 55,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc4ClEzSeh_/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc4ClEzSeh_-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-04T19:52:01.629Z"
     }
   ],
   "vip_pending": {
@@ -7955,10 +7974,10 @@
       "first_seen_at": "2026-09-03T05:30:10.862Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 22,
+      "attempts": 23,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T18:43:22.495Z",
-      "retry_at": "2026-09-04T19:43:22.495Z"
+      "last_attempt_at": "2026-09-04T19:50:26.346Z",
+      "retry_at": "2026-09-04T20:50:26.346Z"
     },
     "Dcww5JhjqDI": {
       "source_handle": "records",
@@ -8039,10 +8058,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 6,
+      "attempts": 7,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T18:39:06.147Z",
-      "retry_at": "2026-09-04T19:39:06.147Z"
+      "last_attempt_at": "2026-09-04T19:46:09.090Z",
+      "retry_at": "2026-09-04T20:46:09.090Z"
     },
     "Dc3-LqbG5jK": {
       "source_handle": "akademiks",
@@ -8075,30 +8094,30 @@
       "first_seen_at": "2026-09-04T18:47:06.254Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 7,
+      "attempts": 8,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc4ClEzSeh_-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-04T19:36:25.676Z",
-      "retry_at": "2026-09-04T20:36:25.676Z"
+      "last_attempt_at": "2026-09-04T19:52:01.628Z",
+      "retry_at": "2026-09-04T20:52:01.628Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T19:33:47.355Z"
+      "checked_at": "2026-09-04T19:43:48.147Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T19:33:51.405Z"
+      "checked_at": "2026-09-04T19:43:52.188Z"
     },
     "records": {
-      "checked_at": "2026-09-04T19:33:55.565Z"
+      "checked_at": "2026-09-04T19:43:56.284Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T19:33:59.671Z"
+      "checked_at": "2026-09-04T19:44:00.393Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-04T19:26:30.551Z"
+      "checked_at": "2026-09-04T19:44:04.473Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-04T19:26:34.602Z"
+      "checked_at": "2026-09-04T19:44:08.625Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-04T19:34:03.971Z"

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-04T13:59:17.599Z",
+  "checked_at": "2026-09-04T14:01:32.768Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T13:59:17.007Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-04T14:14:17.007Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T13:18:33.347Z",
+    "next_feed_eligible_at": "2026-09-04T14:11:32.632Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -32,7 +32,16 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T13:18:25.146Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo.json",
+      "id": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18066911537732341",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

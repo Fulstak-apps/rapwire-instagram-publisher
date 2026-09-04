@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-04T01:00:50.442Z",
+  "checked_at": "2026-09-04T01:05:09.000Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-04T00:46:18.193Z",
+    "checked_at": "2026-09-04T01:05:01.186Z",
     "usage": 48,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-04T01:01:18.193Z",
+    "next_check_at": "2026-09-04T01:20:01.186Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -31,8 +31,16 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T00:56:23.613Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-04T01:15:07.874Z",
+  "publications": [
+    {
+      "file": "227-julia-wolf-just-landed-her-first-no-1-single-with-in-my-room-the.json",
+      "id": "227-julia-wolf-just-landed-her-first-no-1-single-with-in-my-room-the",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18092914460557416"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

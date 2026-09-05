@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T20:18:10.237Z",
+  "checked_at": "2026-09-05T20:25:08.783Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T20:05:31.127Z",
-    "usage": 19,
+    "checked_at": "2026-09-05T20:25:05.779Z",
+    "usage": 18,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T20:20:31.127Z",
+    "next_check_at": "2026-09-05T20:40:05.779Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 19,
-    "instagram_remaining": 79,
+    "instagram_usage": 18,
+    "instagram_remaining": 80,
     "reserved_story_slots": 1,
     "pending_story_count": 111,
     "next_feed_eligible_at": "2026-09-05T20:45:16.853Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -36,15 +36,7 @@
   "threads_next_eligible_at": "2026-09-05T20:20:35.887Z",
   "facebook_next_eligible_at": "2026-09-05T20:45:09.167Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
-      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T20:48:09.813Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

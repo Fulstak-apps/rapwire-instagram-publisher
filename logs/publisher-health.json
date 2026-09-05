@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T15:36:41.070Z",
+  "checked_at": "2026-09-05T15:42:48.878Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T15:31:37.351Z",
@@ -26,17 +26,41 @@
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T15:33:36.098Z",
-  "facebook_next_eligible_at": "2026-09-05T15:39:39.625Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-05T15:57:42.061Z",
+  "facebook_next_eligible_at": "2026-09-05T16:12:48.062Z",
+  "publications": [
+    {
+      "file": "311-this-song-live.json",
+      "id": "311-this-song-live",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18111634307085003"
+    },
+    {
+      "file": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-.json",
+      "id": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "2153387205529504",
+      "permalink": "/reel/2153387205529504/"
+    }
+  ],
+  "failures": [
+    {
+      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
+      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T16:42:48.406Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

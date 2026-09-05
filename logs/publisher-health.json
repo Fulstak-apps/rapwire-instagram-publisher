@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T03:28:34.217Z",
+  "checked_at": "2026-09-05T03:32:36.442Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T03:16:14.239Z",
-    "usage": 42,
+    "checked_at": "2026-09-05T03:32:28.655Z",
+    "usage": 41,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T03:31:14.239Z",
+    "next_check_at": "2026-09-05T03:47:28.655Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,17 +16,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 42,
-    "instagram_remaining": 56,
+    "instagram_usage": 41,
+    "instagram_remaining": 57,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-05T03:30:26.944Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 0,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -34,8 +34,17 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-05T03:33:31.501Z",
-  "facebook_next_eligible_at": "2026-09-05T03:30:38.633Z",
-  "publications": [],
+  "facebook_next_eligible_at": "2026-09-05T03:42:35.892Z",
+  "publications": [
+    {
+      "file": "296-don-toliver-dontoliver-is-in-the-building.json",
+      "id": "296-don-toliver-dontoliver-is-in-the-building",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "1357790499850713",
+      "permalink": "/reel/1357790499850713/"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

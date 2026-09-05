@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T03:56:29.931Z",
+  "checked_at": "2026-09-05T03:59:02.491Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T03:50:47.184Z",
@@ -26,7 +26,7 @@
   },
   "instagram_steps": 0,
   "threads_steps": 0,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,25 +35,8 @@
   },
   "threads_next_eligible_at": "2026-09-05T04:03:13.334Z",
   "facebook_next_eligible_at": "2026-09-05T04:06:29.591Z",
-  "publications": [
-    {
-      "file": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago.json",
-      "id": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1449088403754674",
-      "permalink": "/reel/1449088403754674/"
-    }
-  ],
-  "failures": [
-    {
-      "file": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as.json",
-      "id": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '28739446932328514' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

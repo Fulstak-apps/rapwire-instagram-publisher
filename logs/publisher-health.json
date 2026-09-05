@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T22:21:16.552Z",
+  "checked_at": "2026-09-05T22:26:08.114Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T22:16:03.353Z",
@@ -25,8 +25,8 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
-  "facebook_steps": 0,
+  "threads_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -34,17 +34,26 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-05T22:36:14.397Z",
-  "facebook_next_eligible_at": "2026-09-05T22:21:33.481Z",
+  "facebook_next_eligible_at": "2026-09-05T22:56:07.492Z",
   "publications": [
     {
-      "file": "314-ye-put-on-a-crazy-light-show-for-all-of-the-lights-and-flashing-.json",
-      "id": "314-ye-put-on-a-crazy-light-show-for-all-of-the-lights-and-flashing-",
-      "platform": "threads",
+      "file": "242-dj-scheme-speaks.json",
+      "id": "242-dj-scheme-speaks",
+      "platform": "facebook",
       "status": "published",
-      "media_id": "18107017046268957"
+      "media_id": "1603819091143144",
+      "permalink": "/reel/1603819091143144/"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
+      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T00:26:07.823Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

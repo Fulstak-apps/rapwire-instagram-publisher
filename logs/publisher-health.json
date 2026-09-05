@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T04:07:47.135Z",
+  "checked_at": "2026-09-05T04:13:23.102Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T04:07:28.072Z",
@@ -16,17 +16,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 41,
-    "instagram_remaining": 57,
+    "instagram_usage": 42,
+    "instagram_remaining": 56,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-05T04:17:34.521Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
-  "facebook_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,40 +35,9 @@
   },
   "threads_next_eligible_at": "2026-09-05T04:17:41.679Z",
   "facebook_next_eligible_at": "2026-09-05T04:17:46.802Z",
-  "publications": [
-    {
-      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
-      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18103435853215007",
-      "content_type": "video"
-    },
-    {
-      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
-      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18027761117895185"
-    },
-    {
-      "file": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u.json",
-      "id": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1696141272228300",
-      "permalink": "/reel/1696141272228300/"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
-    {
-      "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
-      "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
       "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -91,22 +60,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "153-source-commentary-durks-full-opp-list-revealed-in-court-included.json",
-      "id": "153-source-commentary-durks-full-opp-list-revealed-in-court-included",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
       "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
-      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -140,18 +95,32 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
+      "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "153-source-commentary-durks-full-opp-list-revealed-in-court-included.json",
+      "id": "153-source-commentary-durks-full-opp-list-revealed-in-court-included",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
+      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour.json",
       "id": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
-      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
       "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
@@ -184,6 +153,13 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
+      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

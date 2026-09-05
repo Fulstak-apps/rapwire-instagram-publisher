@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T14:00:01.667Z",
+  "checked_at": "2026-09-05T14:05:44.264Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T13:51:50.115Z",
@@ -21,12 +21,12 @@
     "reserved_story_slots": 1,
     "pending_story_count": 111,
     "next_feed_eligible_at": "2026-09-05T14:02:15.181Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
   "threads_steps": 0,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,25 +35,8 @@
   },
   "threads_next_eligible_at": "2026-09-05T14:07:01.141Z",
   "facebook_next_eligible_at": "2026-09-05T14:30:01.013Z",
-  "publications": [
-    {
-      "file": "309-ye-brought-out-chief-keef-to-perform-love-sosa-in-chicago-for-ov.json",
-      "id": "309-ye-brought-out-chief-keef-to-perform-love-sosa-in-chicago-for-ov",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "2154516305178443",
-      "permalink": "/reel/2154516305178443/"
-    }
-  ],
-  "failures": [
-    {
-      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
-      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T14:30:01.407Z: ERROR"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

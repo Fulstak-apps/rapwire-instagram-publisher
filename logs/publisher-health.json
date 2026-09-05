@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T23:21:45.204Z",
+  "checked_at": "2026-09-05T23:26:43.401Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T23:21:42.899Z",
@@ -33,10 +33,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T23:17:05.793Z",
+  "threads_next_eligible_at": "2026-09-05T23:41:41.282Z",
   "facebook_next_eligible_at": "2026-09-05T23:32:15.533Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "316-ye-and-kid-cudi-walk-out-together-after-reuniting.json",
+      "id": "316-ye-and-kid-cudi-walk-out-together-after-reuniting",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18623093440019660"
+    }
+  ],
+  "failures": [
+    {
+      "file": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a.json",
+      "id": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T23:56:43.188Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

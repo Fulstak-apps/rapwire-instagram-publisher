@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T04:38:11.206Z",
+  "checked_at": "2026-09-05T04:43:11.762Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T04:23:45.230Z",
-    "usage": 42,
+    "checked_at": "2026-09-05T04:43:09.227Z",
+    "usage": 41,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T04:38:45.230Z",
+    "next_check_at": "2026-09-05T04:58:09.227Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 42,
-    "instagram_remaining": 56,
+    "instagram_usage": 41,
+    "instagram_remaining": 57,
     "reserved_story_slots": 1,
     "pending_story_count": 109,
     "next_feed_eligible_at": "2026-09-05T05:07:34.521Z",
@@ -25,8 +25,8 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
-  "facebook_steps": 1,
+  "threads_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,17 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-05T04:43:06.181Z",
   "facebook_next_eligible_at": "2026-09-05T05:08:09.960Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "300-this-is-so-peak.json",
-      "id": "300-this-is-so-peak",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1086397293982455",
-      "permalink": "/reel/1086397293982455/"
+      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
+      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T05:13:11.648Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",

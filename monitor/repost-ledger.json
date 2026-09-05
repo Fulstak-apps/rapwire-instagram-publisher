@@ -2658,6 +2658,20 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/Dc6kc6NlCFc/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc6m5XnjyoJ": {
+      "seen_at": "2026-09-05T18:55:10.543Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dc6m5XnjyoJ/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc6krxJmPc7": {
+      "seen_at": "2026-09-05T18:55:10.543Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dc6krxJmPc7/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -4034,31 +4048,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Dc6cuUiItk3/",
       "queue_id": "338-a-cop-is-going-viral-after-randomly-yelling-free-lil-durk-lildur",
       "video": "media/338-a-cop-is-going-viral-after-randomly-yelling-free-lil-durk-lildur.mp4"
+    },
+    "Dc57CAhvBxx": {
+      "queued_at": "2026-09-05T18:56:31.419Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/Dc57CAhvBxx/",
+      "queue_id": "339-when-chrisean-rock-got-emotional-mid-interview-and-had-everyone-",
+      "video": "media/339-when-chrisean-rock-got-emotional-mid-interview-and-had-everyone-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T17:38:54.891Z",
-      "candidates": 60,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/Dc1UvDtvrdD/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1UvDtvrdD-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/ciggyblacc/reel/Dc1VDcXsXbb/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1VDcXsXbb-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 3,
-      "finished_at": "2026-09-03T17:45:20.956Z"
-    },
     {
       "started_at": "2026-09-03T17:47:24.590Z",
       "candidates": 72,
@@ -9654,6 +9653,24 @@
       "mode": "discovery",
       "vip_pending": 10,
       "finished_at": "2026-09-05T18:49:08.328Z"
+    },
+    {
+      "started_at": "2026-09-05T18:54:12.430Z",
+      "candidates": 53,
+      "queued": [
+        "339-when-chrisean-rock-got-emotional-mid-interview-and-had-everyone-"
+      ],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-05T18:56:31.419Z"
     }
   ],
   "vip_pending": {
@@ -9772,24 +9789,24 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 9,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T18:49:08.328Z",
-      "retry_at": "2026-09-05T19:49:08.328Z"
+      "attempts": 10,
+      "last_error": "Crop review required: source branding is not isolated in a removable top header",
+      "last_attempt_at": "2026-09-05T18:55:50.796Z",
+      "retry_at": "2026-09-05T19:55:50.796Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T18:41:29.868Z"
+      "checked_at": "2026-09-05T18:54:19.939Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T18:41:33.785Z"
+      "checked_at": "2026-09-05T18:54:23.914Z"
     },
     "records": {
-      "checked_at": "2026-09-05T18:41:37.697Z"
+      "checked_at": "2026-09-05T18:54:27.837Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T18:41:41.570Z"
+      "checked_at": "2026-09-05T18:54:31.783Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T18:41:45.499Z"
@@ -9798,10 +9815,10 @@
       "checked_at": "2026-09-05T18:41:49.423Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-05T17:58:55.223Z"
+      "checked_at": "2026-09-05T18:54:35.678Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-05T17:58:59.098Z"
+      "checked_at": "2026-09-05T18:54:39.655Z"
     },
     "xxl": {
       "checked_at": "2026-09-05T18:16:13.181Z"

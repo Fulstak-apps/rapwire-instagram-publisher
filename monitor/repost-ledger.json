@@ -3542,20 +3542,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dc49fO-udMX/",
       "queue_id": "298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf",
       "video": "media/298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf.mp4"
+    },
+    "Dc4_q4duTel": {
+      "queued_at": "2026-09-05T03:40:17.173Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc4_q4duTel/",
+      "queue_id": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago",
+      "video": "media/299-ye-is-bringing-out-everybody-at-night-2-in-chicago.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T06:28:40.515Z",
-      "candidates": 72,
-      "queued": [
-        "195-breaking-duane-keefe-d-davis-has-been-found-guilty-in-connection"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 10,
-      "finished_at": "2026-09-03T06:29:59.244Z"
-    },
     {
       "started_at": "2026-09-03T06:32:02.947Z",
       "candidates": 72,
@@ -8889,6 +8885,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-05T03:37:06.385Z"
+    },
+    {
+      "started_at": "2026-09-05T03:39:15.749Z",
+      "candidates": 14,
+      "queued": [
+        "299-ye-is-bringing-out-everybody-at-night-2-in-chicago"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 14,
+      "finished_at": "2026-09-05T03:40:17.173Z"
     }
   ],
   "vip_pending": {
@@ -9048,15 +9055,6 @@
       "last_attempt_at": "2026-09-05T03:26:32.402Z",
       "retry_at": "2026-09-05T03:34:32.402Z"
     },
-    "Dc4_q4duTel": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/reel/Dc4_q4duTel/",
-      "shortcode": "Dc4_q4duTel",
-      "first_seen_at": "2026-09-05T03:36:31.986Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0
-    },
     "Dc4-3N1OS8B": {
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/Dc4-3N1OS8B/",
@@ -9093,10 +9091,10 @@
       "checked_at": "2026-09-05T03:24:04.545Z"
     },
     "xxl": {
-      "checked_at": "2026-09-05T03:05:41.759Z"
+      "checked_at": "2026-09-05T03:39:29.466Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-05T03:05:45.764Z"
+      "checked_at": "2026-09-05T03:39:33.466Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-05T03:19:29.320Z"

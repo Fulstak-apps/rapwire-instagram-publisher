@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T23:41:53.100Z",
+  "checked_at": "2026-09-05T23:46:54.691Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T23:41:49.127Z",
@@ -33,18 +33,18 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T23:41:41.282Z",
+  "threads_next_eligible_at": "2026-09-06T00:01:53.126Z",
   "facebook_next_eligible_at": "2026-09-06T00:06:49.723Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis.json",
-      "id": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T00:41:52.878Z: ERROR"
+      "file": "317-this-was-so-peak.json",
+      "id": "317-this-was-so-peak",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18126605110802014"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

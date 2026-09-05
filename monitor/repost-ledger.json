@@ -2315,6 +2315,20 @@
       "source_url": "https://www.instagram.com/records/reel/Dc48Pk3OJTa/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc49fO-udMX": {
+      "seen_at": "2026-09-05T03:20:28.234Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc49fO-udMX/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc48xpyuJbF": {
+      "seen_at": "2026-09-05T03:20:28.234Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc48xpyuJbF/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -3472,27 +3486,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dc48Pk3OJTa/",
       "queue_id": "295-ye-had-70-000-fans-singing-heartless-for-him-peak",
       "video": "media/295-ye-had-70-000-fans-singing-heartless-for-him-peak.mp4"
+    },
+    "Dc48xpyuJbF": {
+      "queued_at": "2026-09-05T03:21:48.408Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc48xpyuJbF/",
+      "queue_id": "296-don-toliver-dontoliver-is-in-the-building",
+      "video": "media/296-don-toliver-dontoliver-is-in-the-building.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T06:17:12.944Z",
-      "candidates": 60,
-      "queued": [
-        "192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
-          "stage": "queue",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 1,
-      "finished_at": "2026-09-03T06:19:23.144Z"
-    },
     {
       "started_at": "2026-09-03T06:21:30.531Z",
       "candidates": 72,
@@ -8794,6 +8797,24 @@
       "mode": "discovery",
       "vip_pending": 14,
       "finished_at": "2026-09-05T03:17:00.536Z"
+    },
+    {
+      "started_at": "2026-09-05T03:19:04.723Z",
+      "candidates": 60,
+      "queued": [
+        "296-don-toliver-dontoliver-is-in-the-building"
+      ],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/reel/Dc49fO-udMX/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc49fO-udMX-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-05T03:21:48.408Z"
     }
   ],
   "vip_pending": {
@@ -8964,20 +8985,32 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc47SFaObcx-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-05T03:10:55.854Z",
       "retry_at": "2026-09-05T03:14:55.854Z"
+    },
+    "Dc49fO-udMX": {
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc49fO-udMX/",
+      "shortcode": "Dc49fO-udMX",
+      "first_seen_at": "2026-09-05T03:20:28.235Z",
+      "profile_position": 1,
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc49fO-udMX-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-05T03:21:26.282Z",
+      "retry_at": "2026-09-05T03:23:26.282Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T03:05:25.751Z"
+      "checked_at": "2026-09-05T03:19:12.972Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T03:05:29.725Z"
+      "checked_at": "2026-09-05T03:19:16.999Z"
     },
     "records": {
-      "checked_at": "2026-09-05T03:05:33.755Z"
+      "checked_at": "2026-09-05T03:19:21.269Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T03:05:37.766Z"
+      "checked_at": "2026-09-05T03:19:25.220Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T03:09:18.703Z"
@@ -8998,10 +9031,10 @@
       "checked_at": "2026-09-05T03:05:45.764Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-05T02:42:53.326Z"
+      "checked_at": "2026-09-05T03:19:29.320Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-05T02:42:57.390Z"
+      "checked_at": "2026-09-05T03:19:33.326Z"
     }
   }
 }

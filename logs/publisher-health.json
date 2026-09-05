@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T13:52:02.026Z",
+  "checked_at": "2026-09-05T14:00:01.667Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T13:51:50.115Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -34,17 +34,26 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-05T14:07:01.141Z",
-  "facebook_next_eligible_at": "2026-09-05T13:32:23.725Z",
+  "facebook_next_eligible_at": "2026-09-05T14:30:01.013Z",
   "publications": [
     {
-      "file": "312-prosecutors-claim-yella-beezy-used-kewon-white-as-a-crash-dummy-.json",
-      "id": "312-prosecutors-claim-yella-beezy-used-kewon-white-as-a-crash-dummy-",
-      "platform": "threads",
+      "file": "309-ye-brought-out-chief-keef-to-perform-love-sosa-in-chicago-for-ov.json",
+      "id": "309-ye-brought-out-chief-keef-to-perform-love-sosa-in-chicago-for-ov",
+      "platform": "facebook",
       "status": "published",
-      "media_id": "18131010469579321"
+      "media_id": "2154516305178443",
+      "permalink": "/reel/2154516305178443/"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
+      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T14:30:01.407Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

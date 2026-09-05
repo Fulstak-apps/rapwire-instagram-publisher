@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-05T03:32:36.442Z",
+  "checked_at": "2026-09-05T03:37:04.476Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T03:32:28.655Z",
-    "usage": 41,
+    "usage": 42,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-05T03:47:28.655Z",
@@ -20,13 +20,13 @@
     "instagram_remaining": 57,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-05T03:30:26.944Z",
+    "next_feed_eligible_at": "2026-09-05T03:47:02.357Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
-  "facebook_steps": 1,
+  "threads_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -37,12 +37,12 @@
   "facebook_next_eligible_at": "2026-09-05T03:42:35.892Z",
   "publications": [
     {
-      "file": "296-don-toliver-dontoliver-is-in-the-building.json",
-      "id": "296-don-toliver-dontoliver-is-in-the-building",
-      "platform": "facebook",
+      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
+      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "1357790499850713",
-      "permalink": "/reel/1357790499850713/"
+      "media_id": "18620835487011237",
+      "content_type": "video"
     }
   ],
   "failures": [],

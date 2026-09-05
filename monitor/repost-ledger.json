@@ -4176,23 +4176,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T19:46:46.718Z",
-      "candidates": 39,
-      "queued": [
-        "221-it-s-only-so-many-summers-maserati-out-now-darnell-williams-darn"
-      ],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Crop review required: No distinct footage region between static panels"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 9,
-      "finished_at": "2026-09-03T19:48:46.293Z"
-    },
-    {
       "started_at": "2026-09-03T23:33:54.208Z",
       "candidates": 52,
       "queued": [
@@ -10132,6 +10115,39 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-05T22:47:40.368Z"
+    },
+    {
+      "started_at": "2026-09-05T22:52:43.723Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcvzv3fv2GR-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-05T22:57:13.636Z"
     }
   ],
   "vip_pending": {
@@ -10226,10 +10242,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 19,
-      "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
-      "last_attempt_at": "2026-09-05T21:53:57.048Z",
-      "retry_at": "2026-09-05T22:53:57.048Z"
+      "attempts": 20,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-05T22:57:13.636Z",
+      "retry_at": "2026-09-05T23:57:13.636Z"
     },
     "Dc3-LqbG5jK": {
       "source_handle": "akademiks",
@@ -10250,10 +10266,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 26,
+      "attempts": 27,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T22:46:35.970Z",
-      "retry_at": "2026-09-05T23:46:35.970Z"
+      "last_attempt_at": "2026-09-05T22:55:52.498Z",
+      "retry_at": "2026-09-05T23:55:52.498Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10262,24 +10278,24 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 12,
+      "attempts": 13,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-05T22:45:38.412Z",
-      "retry_at": "2026-09-05T23:45:38.412Z"
+      "last_attempt_at": "2026-09-05T22:54:56.338Z",
+      "retry_at": "2026-09-05T23:54:56.338Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T22:44:23.140Z"
+      "checked_at": "2026-09-05T22:54:19.855Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T22:44:27.255Z"
+      "checked_at": "2026-09-05T22:54:24.450Z"
     },
     "records": {
-      "checked_at": "2026-09-05T22:44:31.839Z"
+      "checked_at": "2026-09-05T22:54:28.463Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T22:44:36.493Z"
+      "checked_at": "2026-09-05T22:54:32.553Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T22:25:49.743Z"

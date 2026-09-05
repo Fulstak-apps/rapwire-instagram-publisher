@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T20:30:18.901Z",
+  "checked_at": "2026-09-05T20:35:11.453Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T20:25:05.779Z",
@@ -16,16 +16,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 18,
-    "instagram_remaining": 80,
+    "instagram_usage": 19,
+    "instagram_remaining": 79,
     "reserved_story_slots": 1,
-    "pending_story_count": 111,
+    "pending_story_count": 110,
     "next_feed_eligible_at": "2026-09-05T20:45:16.853Z",
     "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,22 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-05T20:45:12.847Z",
   "facebook_next_eligible_at": "2026-09-05T20:45:09.167Z",
-  "publications": [
-    {
-      "file": "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip.json",
-      "id": "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17984393558879349"
-    },
-    {
-      "file": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-.json",
-      "id": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-",
-      "platform": "instagram_story",
-      "status": "published",
-      "media_id": "18129766462667722"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

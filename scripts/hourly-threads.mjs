@@ -7,7 +7,7 @@ import {errorDelay,metaClient} from './meta-client.mjs';
 import {threadsTopicTag} from './audience-policy.mjs';
 
 export const HOUR=60*60_000;
-export const CONVERSATION_INTERVAL=10*60_000;
+export const CONVERSATION_INTERVAL=15*60_000;
 const REPEAT_WINDOW=30*24*HOUR;
 export const PROMPTS=[
   'Be real: what “classic” rap album gets overrated the most—and why?',

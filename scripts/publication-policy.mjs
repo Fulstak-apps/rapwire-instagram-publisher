@@ -1,4 +1,6 @@
-export const FEED_INTERVAL_MS = 10 * 60_000;
+export const FEED_INTERVAL_MS = 60 * 60_000;
+export const THREADS_INTERVAL_MS = 15 * 60_000;
+export const FACEBOOK_INTERVAL_MS = 30 * 60_000;
 const UNKNOWN_QUOTA_CAP = 32;
 const PLATFORM_HEADROOM = 2;
 

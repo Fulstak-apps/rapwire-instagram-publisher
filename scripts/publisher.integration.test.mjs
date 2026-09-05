@@ -106,7 +106,7 @@ test('recent feed publication blocks the next feed but not Threads delivery', t 
     `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Feed must wait 10 minutes'); return new Response(JSON.stringify({id:'threads-container'}));`,0,null,1,50,
     [{...item,id:'recent',published_at:new Date(Date.now()-5*60000).toISOString(),instagram_story_media_id:'story',instagram_story_status:'published'}]);
   assert.equal(r.item.status,'ready'); assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_steps,1);
-  assert.equal(r.report.delivery_policy.feed_interval_minutes,10);
+  assert.equal(r.report.delivery_policy.feed_interval_minutes,60);
 });
 test('two-slot platform headroom prevents uploads near the account limit', t => {
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread'},null,

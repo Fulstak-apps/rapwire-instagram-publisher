@@ -6,7 +6,7 @@ import {advanceMediaPost} from "./carousel-state.mjs";
 import {isMediaRepost, validMediaRepost} from "./repost-media-policy.mjs";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
-import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS } from "./publication-policy.mjs";
+import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
 import {reportingGate,editorialRank,recentPosts,contentLane} from './editorial-policy.mjs';
 import {videoLayoutGate,verifyVideoLayoutFiles} from './video-layout-policy.mjs';
 import {normalizeSources,sourcePostsToday} from './source-policy.mjs';
@@ -161,7 +161,7 @@ const pacing = JSON.parse(await fs.readFile(pacingPath, "utf8").catch(error => {
   throw error;
 }));
 if (Date.now() - Date.parse(pacing.last_run_at || "") < 120_000) {
-  console.log("Two-minute processing-check interval has not elapsed (feed cadence is 10 minutes).");
+  console.log("Two-minute processing-check interval has not elapsed (feed cadence is 60 minutes).");
   process.exit(0);
 }
 await fs.mkdir(logsDir, { recursive: true });
@@ -555,7 +555,7 @@ async function deliverThreads(item, itemPath, file) {
   const isVideoItem = item.content_type === 'video';
   if (threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required || item.threads_copy_error
     || !footageOnlyAllowed(item)
-    || Date.now() - lastThreadsTime < FEED_INTERVAL_MS
+    || Date.now() - lastThreadsTime < THREADS_INTERVAL_MS
     || (threadsInFlightId && item.id !== threadsInFlightId)
     || item.rap_relevance_checked !== true || (isVideoItem && !captionIsBound(item))
     || (isMediaRepost(item) && !validMediaRepost(item))
@@ -602,7 +602,7 @@ async function deliverFacebook(item,itemPath,file) {
     if (item.facebook_status==='failed') item.facebook_status='pending';
   }
   const verificationOnly=Boolean(item.facebook_media_id);
-  if(!verificationOnly&&Date.now()-lastFacebookTime<FEED_INTERVAL_MS)return;
+  if(!verificationOnly&&Date.now()-lastFacebookTime<FACEBOOK_INTERVAL_MS)return;
   const videoItem=isFacebookVideoItem(item);
   // Facebook is a video-led channel. Let a ready Reel go first and cap the
   // supplemental photo/carousel posts at two confirmed posts per day.
@@ -807,8 +807,8 @@ const report = {
   instagram_steps: instagramSteps, threads_steps: threadsSteps, facebook_steps: facebookSteps,
   facebook_configured: facebookConfigured,
   instagram_recovery: recovery,
-  threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + FEED_INTERVAL_MS).toISOString() : null,
-  facebook_next_eligible_at: lastFacebookTime ? new Date(lastFacebookTime + FEED_INTERVAL_MS).toISOString() : null,
+  threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + THREADS_INTERVAL_MS).toISOString() : null,
+  facebook_next_eligible_at: lastFacebookTime ? new Date(lastFacebookTime + FACEBOOK_INTERVAL_MS).toISOString() : null,
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),
   reviews: runEvents.filter(event => event.status==='review_required'),

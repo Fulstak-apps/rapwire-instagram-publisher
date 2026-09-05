@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T20:05:39.031Z",
+  "checked_at": "2026-09-05T20:09:55.500Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T20:05:31.127Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,16 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-05T20:20:35.887Z",
   "facebook_next_eligible_at": "2026-09-05T20:10:32.782Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "308-ye-showing-loving-to-smurk.json",
-      "id": "308-ye-showing-loving-to-smurk",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18073400615446432"
+      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
+      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T00:09:55.261Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

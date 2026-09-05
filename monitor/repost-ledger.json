@@ -3577,20 +3577,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dc46YY2uD7S/",
       "queue_id": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress",
       "video": "media/303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress.mp4"
+    },
+    "Dc47SFaObcx": {
+      "queued_at": "2026-09-05T03:58:19.419Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc47SFaObcx/",
+      "queue_id": "305-free-durk-ye-shows-support-to-lil-durk-lildurk",
+      "video": "media/305-free-durk-ye-shows-support-to-lil-durk-lildurk.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T06:48:00.427Z",
-      "candidates": 72,
-      "queued": [
-        "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 6,
-      "finished_at": "2026-09-03T06:52:47.055Z"
-    },
     {
       "started_at": "2026-09-03T06:55:12.884Z",
       "candidates": 72,
@@ -8924,6 +8920,24 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-05T03:54:04.271Z"
+    },
+    {
+      "started_at": "2026-09-05T03:56:12.128Z",
+      "candidates": 14,
+      "queued": [
+        "305-free-durk-ye-shows-support-to-lil-durk-lildurk"
+      ],
+      "errors": [
+        {
+          "source_handle": "xxl",
+          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-05T03:58:19.419Z"
     }
   ],
   "vip_pending": {
@@ -9046,18 +9060,6 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc4s2QSNv11-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-05T03:27:54.889Z",
       "retry_at": "2026-09-05T03:43:54.889Z"
-    },
-    "Dc47SFaObcx": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/reel/Dc47SFaObcx/",
-      "shortcode": "Dc47SFaObcx",
-      "first_seen_at": "2026-09-05T02:58:15.886Z",
-      "profile_position": 1,
-      "state": "retry_pending",
-      "attempts": 3,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc47SFaObcx-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T03:26:32.402Z",
-      "retry_at": "2026-09-05T03:34:32.402Z"
     }
   },
   "source_checks": {
@@ -9086,10 +9088,10 @@
       "checked_at": "2026-09-05T03:46:41.168Z"
     },
     "xxl": {
-      "checked_at": "2026-09-05T03:39:29.466Z"
+      "checked_at": "2026-09-05T03:56:20.767Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-05T03:39:33.466Z"
+      "checked_at": "2026-09-05T03:56:24.761Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-05T03:52:33.558Z"

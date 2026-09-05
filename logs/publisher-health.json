@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T16:47:54.013Z",
+  "checked_at": "2026-09-05T16:52:44.950Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T16:42:30.855Z",
@@ -25,8 +25,8 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
-  "facebook_steps": 1,
+  "threads_steps": 0,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,57 +35,20 @@
   },
   "threads_next_eligible_at": "2026-09-05T17:02:34.826Z",
   "facebook_next_eligible_at": "2026-09-05T17:17:53.657Z",
-  "publications": [
-    {
-      "file": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig.json",
-      "id": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18087491240215144"
-    },
-    {
-      "file": "318-travis-was-so-hyped-to-see-ye-and-kid-cudi-reunite-together.json",
-      "id": "318-travis-was-so-hyped-to-see-ye-and-kid-cudi-reunite-together",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "27540968748916423",
-      "permalink": "/reel/27540968748916423/"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig.json",
-      "id": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig",
-      "platform": "facebook",
+      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
+      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
+      "platform": "instagram_story",
       "status": "failed",
-      "error": "Unsupported get request. Object with ID '1814731852998082' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    },
-    {
-      "file": "316-ye-and-kid-cudi-walk-out-together-after-reuniting.json",
-      "id": "316-ye-and-kid-cudi-walk-out-together-after-reuniting",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '1028007773600825' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    },
-    {
-      "file": "317-this-was-so-peak.json",
-      "id": "317-this-was-so-peak",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '2582834045462053' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+      "error": "instagram_story: ERROR; retry after 2026-09-05T18:52:44.066Z: ERROR"
     }
   ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
-      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -112,13 +75,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
-      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
       "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
       "platform": "video_layout",
@@ -133,13 +89,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
-      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
       "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
       "platform": "video_layout",
@@ -149,6 +98,27 @@
     {
       "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
       "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
+      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
+      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
+      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -224,41 +194,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a.json",
-      "id": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e.json",
-      "id": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi.json",
-      "id": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "182-akademiks-mo3-killer-parked-right-behind-him.json",
-      "id": "182-akademiks-mo3-killer-parked-right-behind-him",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie.json",
-      "id": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",
       "id": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-",
       "platform": "video_layout",
@@ -294,29 +229,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
-      "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "209-ye-night-1-setlist-and-special-guests-greenscreen.json",
-      "id": "209-ye-night-1-setlist-and-special-guests-greenscreen",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know.json",
       "id": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "213-juicyj-projectpat-dem-goats-out-now.json",
-      "id": "213-juicyj-projectpat-dem-goats-out-now",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -336,27 +250,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "123-on-instagram-blueface-demoted-his-bm-nevaeh-from-being-his-main-.json",
-      "id": "123-on-instagram-blueface-demoted-his-bm-nevaeh-from-being-his-main-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "125-raplisted-repost-video.json",
-      "id": "125-raplisted-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "126-raplisted-repost-video.json",
-      "id": "126-raplisted-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "127-raplisted-repost-video.json",
       "id": "127-raplisted-repost-video",
       "platform": "video_layout",
@@ -371,27 +264,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "129-raplisted-repost-video.json",
-      "id": "129-raplisted-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "130-akademiks-repost-video.json",
-      "id": "130-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "131-akademiks-repost-video.json",
-      "id": "131-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "132-akademiks-repost-video.json",
       "id": "132-akademiks-repost-video",
       "platform": "video_layout",
@@ -401,13 +273,6 @@
     {
       "file": "133-akademiks-repost-video.json",
       "id": "133-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "135-traploreross-repost-video.json",
-      "id": "135-traploreross-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -434,13 +299,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-.json",
-      "id": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir.json",
       "id": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir",
       "platform": "video_layout",
@@ -450,6 +308,125 @@
     {
       "file": "141-vonni-offered-to-wear-a-wire-on-durk-and-brought-up-american-gan.json",
       "id": "141-vonni-offered-to-wear-a-wire-on-durk-and-brought-up-american-gan",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
+      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a.json",
+      "id": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e.json",
+      "id": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi.json",
+      "id": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "182-akademiks-mo3-killer-parked-right-behind-him.json",
+      "id": "182-akademiks-mo3-killer-parked-right-behind-him",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie.json",
+      "id": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
+      "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "209-ye-night-1-setlist-and-special-guests-greenscreen.json",
+      "id": "209-ye-night-1-setlist-and-special-guests-greenscreen",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "213-juicyj-projectpat-dem-goats-out-now.json",
+      "id": "213-juicyj-projectpat-dem-goats-out-now",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "123-on-instagram-blueface-demoted-his-bm-nevaeh-from-being-his-main-.json",
+      "id": "123-on-instagram-blueface-demoted-his-bm-nevaeh-from-being-his-main-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "125-raplisted-repost-video.json",
+      "id": "125-raplisted-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "126-raplisted-repost-video.json",
+      "id": "126-raplisted-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "129-raplisted-repost-video.json",
+      "id": "129-raplisted-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "130-akademiks-repost-video.json",
+      "id": "130-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "131-akademiks-repost-video.json",
+      "id": "131-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "135-traploreross-repost-video.json",
+      "id": "135-traploreross-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-.json",
+      "id": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -499,13 +476,6 @@
     {
       "file": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released.json",
       "id": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
-      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

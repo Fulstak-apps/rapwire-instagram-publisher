@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T18:32:35.468Z",
+  "checked_at": "2026-09-05T18:37:46.684Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T18:23:33.915Z",
@@ -25,8 +25,8 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
-  "facebook_steps": 0,
+  "threads_steps": 1,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -34,8 +34,17 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-05T18:33:39.934Z",
-  "facebook_next_eligible_at": "2026-09-05T18:34:35.797Z",
-  "publications": [],
+  "facebook_next_eligible_at": "2026-09-05T19:07:45.597Z",
+  "publications": [
+    {
+      "file": "330-bobby-shmurda-stil-not-jackin-no-rats.json",
+      "id": "330-bobby-shmurda-stil-not-jackin-no-rats",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "2025480224758907",
+      "permalink": "/reel/2025480224758907/"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

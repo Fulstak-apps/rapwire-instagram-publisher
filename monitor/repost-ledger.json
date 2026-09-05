@@ -2364,6 +2364,13 @@
       "source_url": "https://www.instagram.com/records/reel/Dc4-3N1OS8B/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc5AaDiRnmE": {
+      "seen_at": "2026-09-05T03:47:06.208Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/Dc5AaDiRnmE/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -3556,20 +3563,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dc4-3N1OS8B/",
       "queue_id": "300-this-is-so-peak",
       "video": "media/300-this-is-so-peak.mp4"
+    },
+    "Dc44_2luWv4": {
+      "queued_at": "2026-09-05T03:47:54.882Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc44_2luWv4/",
+      "queue_id": "301-ye-had-all-70-000-fans-singing-power-for-him-in-chicago",
+      "video": "media/301-ye-had-all-70-000-fans-singing-power-for-him-in-chicago.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T06:37:18.177Z",
-      "candidates": 72,
-      "queued": [
-        "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 8,
-      "finished_at": "2026-09-03T06:42:19.195Z"
-    },
     {
       "started_at": "2026-09-03T06:44:35.426Z",
       "candidates": 72,
@@ -8903,6 +8906,17 @@
       "mode": "discovery",
       "vip_pending": 13,
       "finished_at": "2026-09-05T03:44:18.196Z"
+    },
+    {
+      "started_at": "2026-09-05T03:46:27.309Z",
+      "candidates": 21,
+      "queued": [
+        "301-ye-had-all-70-000-fans-singing-power-for-him-in-chicago"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 12,
+      "finished_at": "2026-09-05T03:47:54.882Z"
     }
   ],
   "vip_pending": {
@@ -9026,18 +9040,6 @@
       "last_attempt_at": "2026-09-05T03:27:54.889Z",
       "retry_at": "2026-09-05T03:43:54.889Z"
     },
-    "Dc44_2luWv4": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/reel/Dc44_2luWv4/",
-      "shortcode": "Dc44_2luWv4",
-      "first_seen_at": "2026-09-05T02:39:44.303Z",
-      "profile_position": 1,
-      "state": "retry_pending",
-      "attempts": 3,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc44_2luWv4-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T03:14:04.942Z",
-      "retry_at": "2026-09-05T03:22:04.942Z"
-    },
     "Dc46YY2uD7S": {
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/Dc46YY2uD7S/",
@@ -9083,10 +9085,10 @@
       "checked_at": "2026-09-05T03:42:50.359Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-05T03:24:00.591Z"
+      "checked_at": "2026-09-05T03:46:37.088Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-05T03:24:04.545Z"
+      "checked_at": "2026-09-05T03:46:41.168Z"
     },
     "xxl": {
       "checked_at": "2026-09-05T03:39:29.466Z"

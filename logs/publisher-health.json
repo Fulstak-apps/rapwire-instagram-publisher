@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T03:53:23.488Z",
+  "checked_at": "2026-09-05T03:56:29.931Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T03:50:47.184Z",
@@ -16,17 +16,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 41,
-    "instagram_remaining": 57,
+    "instagram_usage": 42,
+    "instagram_remaining": 56,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-05T04:03:22.577Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
-  "facebook_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -34,25 +34,26 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-05T04:03:13.334Z",
-  "facebook_next_eligible_at": "2026-09-05T03:54:48.491Z",
+  "facebook_next_eligible_at": "2026-09-05T04:06:29.591Z",
   "publications": [
     {
-      "file": "298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf.json",
-      "id": "298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf",
-      "platform": "threads",
+      "file": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago.json",
+      "id": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago",
+      "platform": "facebook",
       "status": "published",
-      "media_id": "17875112091629791"
-    },
-    {
-      "file": "298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf.json",
-      "id": "298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18087606017469383",
-      "content_type": "video"
+      "media_id": "1449088403754674",
+      "permalink": "/reel/1449088403754674/"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "file": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as.json",
+      "id": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '28739446932328514' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

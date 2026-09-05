@@ -2539,6 +2539,13 @@
       "source_url": "https://www.instagram.com/complexmusic/p/Dc6Pb2jEeM_/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc6REarOBuz": {
+      "seen_at": "2026-09-05T15:22:15.220Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc6REarOBuz/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -3861,31 +3868,16 @@
       "source_url": "https://www.instagram.com/complexmusic/reel/Dc5ijHJJtaw/",
       "queue_id": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-",
       "video": "media/325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-.mp4"
+    },
+    "Dc6QMq7OTNe": {
+      "queued_at": "2026-09-05T15:22:50.823Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc6QMq7OTNe/",
+      "queue_id": "326-mo-3-mom-tells-his-killer-that-she-loves-him-and-that-the-ppl-th",
+      "video": "media/326-mo-3-mom-tells-his-killer-that-she-loves-him-and-that-the-ppl-th.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T15:58:05.340Z",
-      "candidates": 72,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
-          "stage": "score",
-          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 2,
-      "finished_at": "2026-09-03T16:03:56.617Z"
-    },
     {
       "started_at": "2026-09-03T16:06:00.997Z",
       "candidates": 72,
@@ -9280,6 +9272,17 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-05T15:15:58.652Z"
+    },
+    {
+      "started_at": "2026-09-05T15:21:06.866Z",
+      "candidates": 58,
+      "queued": [
+        "326-mo-3-mom-tells-his-killer-that-she-loves-him-and-that-the-ppl-th"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-05T15:22:50.824Z"
     }
   ],
   "vip_pending": {
@@ -9391,15 +9394,6 @@
       "last_attempt_at": "2026-09-05T15:08:31.018Z",
       "retry_at": "2026-09-05T16:08:31.018Z"
     },
-    "Dc6QMq7OTNe": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/reel/Dc6QMq7OTNe/",
-      "shortcode": "Dc6QMq7OTNe",
-      "first_seen_at": "2026-09-05T15:15:04.947Z",
-      "profile_position": 0,
-      "state": "pending",
-      "attempts": 0
-    },
     "Dc6P6IWutsD": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dc6P6IWutsD/",
@@ -9408,20 +9402,29 @@
       "profile_position": 1,
       "state": "pending",
       "attempts": 0
+    },
+    "Dc6REarOBuz": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc6REarOBuz/",
+      "shortcode": "Dc6REarOBuz",
+      "first_seen_at": "2026-09-05T15:22:15.221Z",
+      "profile_position": 0,
+      "state": "pending",
+      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T15:14:08.008Z"
+      "checked_at": "2026-09-05T15:21:15.846Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T15:14:12.174Z"
+      "checked_at": "2026-09-05T15:21:19.856Z"
     },
     "records": {
-      "checked_at": "2026-09-05T15:14:16.194Z"
+      "checked_at": "2026-09-05T15:21:23.903Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T15:14:20.233Z"
+      "checked_at": "2026-09-05T15:21:28.027Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T15:02:14.137Z"
@@ -9442,10 +9445,10 @@
       "checked_at": "2026-09-05T14:47:57.223Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-05T14:31:48.755Z"
+      "checked_at": "2026-09-05T15:21:32.218Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-05T14:31:52.841Z"
+      "checked_at": "2026-09-05T15:21:36.223Z"
     }
   }
 }

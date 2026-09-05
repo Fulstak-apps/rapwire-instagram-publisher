@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T14:43:33.351Z",
+  "checked_at": "2026-09-05T14:50:03.364Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T14:33:07.796Z",
+    "checked_at": "2026-09-05T14:50:00.466Z",
     "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T14:48:07.796Z",
+    "next_check_at": "2026-09-05T15:05:00.466Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -36,15 +36,7 @@
   "threads_next_eligible_at": "2026-09-05T14:48:21.715Z",
   "facebook_next_eligible_at": "2026-09-05T15:03:28.102Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
-      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T15:13:33.044Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

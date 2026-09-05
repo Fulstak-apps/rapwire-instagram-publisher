@@ -2686,6 +2686,27 @@
       "source_url": "https://www.instagram.com/igndotcom/p/Dc6sGpwjvtL/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc6qZbCo3JI": {
+      "seen_at": "2026-09-05T20:14:22.416Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dc6qZbCo3JI/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc6oeHPI-jG": {
+      "seen_at": "2026-09-05T20:14:22.416Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Dc6oeHPI-jG/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc6kIFdItzO": {
+      "seen_at": "2026-09-05T20:14:22.416Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dc6kIFdItzO/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -4075,20 +4096,16 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/Dc6viqdEQTd/",
       "queue_id": "340-kid-cudi-stood-by-ye-after-peter-rosenberg-criticized-those-show"
+    },
+    "Dc6qZbCo3JI": {
+      "queued_at": "2026-09-05T20:15:44.747Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dc6qZbCo3JI/",
+      "queue_id": "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip",
+      "video": "media/341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T18:07:42.230Z",
-      "candidates": 72,
-      "queued": [
-        "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 2,
-      "finished_at": "2026-09-03T18:11:10.301Z"
-    },
     {
       "started_at": "2026-09-03T18:13:18.787Z",
       "candidates": 36,
@@ -9753,6 +9770,24 @@
       "mode": "discovery",
       "vip_pending": 10,
       "finished_at": "2026-09-05T20:08:11.370Z"
+    },
+    {
+      "started_at": "2026-09-05T20:13:15.635Z",
+      "candidates": 55,
+      "queued": [
+        "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-05T20:15:44.747Z"
     }
   ],
   "vip_pending": {
@@ -9799,10 +9834,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 96,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T18:48:09.845Z",
-      "retry_at": "2026-09-05T19:48:09.845Z"
+      "attempts": 97,
+      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
+      "last_attempt_at": "2026-09-05T20:15:20.282Z",
+      "retry_at": "2026-09-05T21:15:20.282Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -9879,22 +9914,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T19:57:44.228Z"
+      "checked_at": "2026-09-05T20:13:23.550Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T19:57:48.740Z"
+      "checked_at": "2026-09-05T20:13:27.622Z"
     },
     "records": {
-      "checked_at": "2026-09-05T19:57:53.239Z"
+      "checked_at": "2026-09-05T20:13:31.802Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T19:57:57.410Z"
+      "checked_at": "2026-09-05T20:13:36.724Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-05T18:41:45.499Z"
+      "checked_at": "2026-09-05T20:13:41.493Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-05T18:41:49.423Z"
+      "checked_at": "2026-09-05T20:13:46.634Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-05T18:54:35.678Z"

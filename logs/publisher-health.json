@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-05T18:04:38.453Z",
+  "checked_at": "2026-09-05T18:08:36.530Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T18:04:26.633Z",
-    "usage": 21,
+    "usage": 22,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-05T18:19:26.633Z",
@@ -16,17 +16,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 20,
-    "instagram_remaining": 78,
+    "instagram_usage": 21,
+    "instagram_remaining": 77,
     "reserved_story_slots": 1,
-    "pending_story_count": 112,
-    "next_feed_eligible_at": "2026-09-05T17:57:47.946Z",
+    "pending_story_count": 111,
+    "next_feed_eligible_at": "2026-09-05T19:08:35.204Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
   "threads_steps": 0,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -37,30 +37,15 @@
   "facebook_next_eligible_at": "2026-09-05T18:34:35.797Z",
   "publications": [
     {
-      "file": "328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea.json",
-      "id": "328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea",
-      "platform": "facebook",
+      "file": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig.json",
+      "id": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "1006358882421610",
-      "permalink": "/reel/1006358882421610/"
-    },
-    {
-      "file": "230-drake-announced-september-15-on-youtube-9pm.json",
-      "id": "230-drake-announced-september-15-on-youtube-9pm",
-      "platform": "instagram_story",
-      "status": "published",
-      "media_id": "18163206424475767"
+      "media_id": "18020414858873462",
+      "content_type": "video"
     }
   ],
-  "failures": [
-    {
-      "file": "326-mo-3-mom-tells-his-killer-that-she-loves-him-and-that-the-ppl-th.json",
-      "id": "326-mo-3-mom-tells-his-killer-that-she-loves-him-and-that-the-ppl-th",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '1279082114242584' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

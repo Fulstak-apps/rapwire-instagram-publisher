@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-05T04:28:07.802Z",
+  "checked_at": "2026-09-05T04:33:53.285Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T04:23:45.230Z",
-    "usage": 41,
+    "usage": 42,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-05T04:38:45.230Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -37,11 +37,11 @@
   "facebook_next_eligible_at": "2026-09-05T04:37:46.802Z",
   "publications": [
     {
-      "file": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a.json",
-      "id": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a",
-      "platform": "threads",
+      "file": "298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf.json",
+      "id": "298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf",
+      "platform": "instagram_story",
       "status": "published",
-      "media_id": "18112274204049685"
+      "media_id": "18068941817755727"
     }
   ],
   "failures": [],
@@ -131,15 +131,8 @@
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow.json",
-      "id": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour.json",
-      "id": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour",
+      "file": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a.json",
+      "id": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -147,6 +140,13 @@
     {
       "file": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e.json",
       "id": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi.json",
+      "id": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -173,22 +173,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
-      "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
       "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
-      "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -271,13 +257,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "128-raplisted-repost-video.json",
-      "id": "128-raplisted-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "129-raplisted-repost-video.json",
       "id": "129-raplisted-repost-video",
       "platform": "video_layout",
@@ -299,15 +278,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "132-akademiks-repost-video.json",
-      "id": "132-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "133-akademiks-repost-video.json",
-      "id": "133-akademiks-repost-video",
+      "file": "135-traploreross-repost-video.json",
+      "id": "135-traploreross-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -320,6 +292,27 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-.json",
+      "id": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni.json",
+      "id": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu.json",
+      "id": "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-.json",
       "id": "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-",
       "platform": "video_layout",
@@ -327,15 +320,29 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released.json",
-      "id": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released",
+      "file": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w.json",
+      "id": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
-      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
+      "file": "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-.json",
+      "id": "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o.json",
+      "id": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released.json",
+      "id": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -383,6 +390,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow.json",
+      "id": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "176-traploreross-durks-lawyer-marissa-goldberg-cornered-the-top-fbi-.json",
       "id": "176-traploreross-durks-lawyer-marissa-goldberg-cornered-the-top-fbi-",
       "platform": "video_layout",
@@ -390,22 +404,43 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a.json",
-      "id": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a",
+      "file": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour.json",
+      "id": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi.json",
-      "id": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi",
+      "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
+      "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "135-traploreross-repost-video.json",
-      "id": "135-traploreross-repost-video",
+      "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
+      "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "128-raplisted-repost-video.json",
+      "id": "128-raplisted-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "132-akademiks-repost-video.json",
+      "id": "132-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "133-akademiks-repost-video.json",
+      "id": "133-akademiks-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -425,13 +460,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-.json",
-      "id": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir.json",
       "id": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir",
       "platform": "video_layout",
@@ -446,36 +474,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni.json",
-      "id": "142-drew-findling-had-a-bad-start-to-his-cross-examination-of-vonni",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu.json",
-      "id": "143-vonni-confirmed-durk-wanted-to-slide4von-because-of-6ix9ine-s-pu",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w.json",
-      "id": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-.json",
-      "id": "146-durk-told-vonni-to-burn-the-car-vonni-lied-and-said-he-did-durk-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o.json",
-      "id": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o",
+      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
+      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T15:42:48.878Z",
+  "checked_at": "2026-09-05T15:46:59.573Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T15:31:37.351Z",
+    "checked_at": "2026-09-05T15:46:50.454Z",
     "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T15:46:37.351Z",
+    "next_check_at": "2026-09-05T16:01:50.454Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,17 +16,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 25,
-    "instagram_remaining": 73,
+    "instagram_usage": 24,
+    "instagram_remaining": 74,
     "reserved_story_slots": 1,
     "pending_story_count": 112,
-    "next_feed_eligible_at": "2026-09-05T15:33:14.306Z",
+    "next_feed_eligible_at": "2026-09-05T16:46:58.532Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
-  "facebook_steps": 1,
+  "threads_steps": 0,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -37,34 +37,26 @@
   "facebook_next_eligible_at": "2026-09-05T16:12:48.062Z",
   "publications": [
     {
-      "file": "311-this-song-live.json",
-      "id": "311-this-song-live",
-      "platform": "threads",
+      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
+      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18111634307085003"
-    },
-    {
-      "file": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-.json",
-      "id": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "2153387205529504",
-      "permalink": "/reel/2153387205529504/"
+      "media_id": "18033985088652706",
+      "content_type": "video"
     }
   ],
-  "failures": [
-    {
-      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
-      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T16:42:48.406Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
+      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -91,6 +83,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
+      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
       "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
       "platform": "video_layout",
@@ -105,6 +104,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
+      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
       "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
       "platform": "video_layout",
@@ -114,27 +120,6 @@
     {
       "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
       "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
-      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
-      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
-      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -210,132 +195,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",
-      "id": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
-      "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
-      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
-      "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
-      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know.json",
-      "id": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.json",
-      "id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "112-street-fighter-trailer-video.json",
-      "id": "112-street-fighter-trailer-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "127-raplisted-repost-video.json",
-      "id": "127-raplisted-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "128-raplisted-repost-video.json",
-      "id": "128-raplisted-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "132-akademiks-repost-video.json",
-      "id": "132-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "133-akademiks-repost-video.json",
-      "id": "133-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "136-akademiks-repost-video.json",
-      "id": "136-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "137-vonni-s-telegram-name-was-el-mayo-he-said-he-was-gonna-act-emoti.json",
-      "id": "137-vonni-s-telegram-name-was-el-mayo-he-said-he-was-gonna-act-emoti",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "138-lil-durk-was-at-dj-khaleds-house-in-miami-day-before-murder.json",
-      "id": "138-lil-durk-was-at-dj-khaleds-house-in-miami-day-before-murder",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir.json",
-      "id": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "141-vonni-offered-to-wear-a-wire-on-durk-and-brought-up-american-gan.json",
-      "id": "141-vonni-offered-to-wear-a-wire-on-durk-and-brought-up-american-gan",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
-      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a.json",
       "id": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a",
       "platform": "video_layout",
@@ -371,6 +230,41 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",
+      "id": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
+      "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
+      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
+      "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
+      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
       "platform": "video_layout",
@@ -385,8 +279,29 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know.json",
+      "id": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "213-juicyj-projectpat-dem-goats-out-now.json",
       "id": "213-juicyj-projectpat-dem-goats-out-now",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.json",
+      "id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "112-street-fighter-trailer-video.json",
+      "id": "112-street-fighter-trailer-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -413,6 +328,20 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "127-raplisted-repost-video.json",
+      "id": "127-raplisted-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "128-raplisted-repost-video.json",
+      "id": "128-raplisted-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "129-raplisted-repost-video.json",
       "id": "129-raplisted-repost-video",
       "platform": "video_layout",
@@ -434,6 +363,20 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "132-akademiks-repost-video.json",
+      "id": "132-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "133-akademiks-repost-video.json",
+      "id": "133-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "135-traploreross-repost-video.json",
       "id": "135-traploreross-repost-video",
       "platform": "video_layout",
@@ -441,8 +384,43 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "136-akademiks-repost-video.json",
+      "id": "136-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "137-vonni-s-telegram-name-was-el-mayo-he-said-he-was-gonna-act-emoti.json",
+      "id": "137-vonni-s-telegram-name-was-el-mayo-he-said-he-was-gonna-act-emoti",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "138-lil-durk-was-at-dj-khaleds-house-in-miami-day-before-murder.json",
+      "id": "138-lil-durk-was-at-dj-khaleds-house-in-miami-day-before-murder",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-.json",
       "id": "139-drew-showed-video-of-vonni-proposing-to-gf-from-jail-and-called-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir.json",
+      "id": "140-vonni-said-to-the-fbi-he-s-like-a-candle-on-the-cake-ain-t-a-bir",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "141-vonni-offered-to-wear-a-wire-on-durk-and-brought-up-american-gan.json",
+      "id": "141-vonni-offered-to-wear-a-wire-on-durk-and-brought-up-american-gan",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -492,6 +470,13 @@
     {
       "file": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released.json",
       "id": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
+      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

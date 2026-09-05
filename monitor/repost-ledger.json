@@ -2672,6 +2672,20 @@
       "source_url": "https://www.instagram.com/complexmusic/p/Dc6krxJmPc7/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc6viqdEQTd": {
+      "seen_at": "2026-09-05T19:52:17.319Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc6viqdEQTd/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc6sGpwjvtL": {
+      "seen_at": "2026-09-05T19:52:17.319Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Dc6sGpwjvtL/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -4055,20 +4069,15 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Dc57CAhvBxx/",
       "queue_id": "339-when-chrisean-rock-got-emotional-mid-interview-and-had-everyone-",
       "video": "media/339-when-chrisean-rock-got-emotional-mid-interview-and-had-everyone-.mp4"
+    },
+    "Dc6viqdEQTd": {
+      "queued_at": "2026-09-05T19:52:31.858Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc6viqdEQTd/",
+      "queue_id": "340-kid-cudi-stood-by-ye-after-peter-rosenberg-criticized-those-show"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T17:52:00.552Z",
-      "candidates": 72,
-      "queued": [
-        "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 2,
-      "finished_at": "2026-09-03T17:57:34.101Z"
-    },
     {
       "started_at": "2026-09-03T18:00:08.086Z",
       "candidates": 72,
@@ -9705,6 +9714,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 10,
       "finished_at": "2026-09-05T19:46:09.929Z"
+    },
+    {
+      "started_at": "2026-09-05T19:51:14.176Z",
+      "candidates": 57,
+      "queued": [
+        "340-kid-cudi-stood-by-ye-after-peter-rosenberg-criticized-those-show"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-05T19:52:31.858Z"
     }
   ],
   "vip_pending": {
@@ -9831,16 +9851,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T19:35:03.126Z"
+      "checked_at": "2026-09-05T19:51:21.932Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T19:35:07.188Z"
+      "checked_at": "2026-09-05T19:51:26.207Z"
     },
     "records": {
-      "checked_at": "2026-09-05T19:35:12.636Z"
+      "checked_at": "2026-09-05T19:51:30.387Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T19:35:16.640Z"
+      "checked_at": "2026-09-05T19:51:34.421Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T18:41:45.499Z"
@@ -9861,10 +9881,10 @@
       "checked_at": "2026-09-05T18:16:17.154Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-05T18:06:58.315Z"
+      "checked_at": "2026-09-05T19:51:38.582Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-05T18:07:02.255Z"
+      "checked_at": "2026-09-05T19:51:42.692Z"
     }
   }
 }

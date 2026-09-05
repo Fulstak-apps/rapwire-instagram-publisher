@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T22:36:19.441Z",
+  "checked_at": "2026-09-05T22:41:21.323Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T22:31:10.791Z",
@@ -33,16 +33,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T22:36:14.397Z",
+  "threads_next_eligible_at": "2026-09-05T22:56:18.334Z",
   "facebook_next_eligible_at": "2026-09-05T22:56:07.492Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "315-ye-and-kid-cudi-shared-a-hug-on-stage-after-they-reunited.json",
+      "id": "315-ye-and-kid-cudi-shared-a-hug-on-stage-after-they-reunited",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18035446964831867"
+    }
+  ],
   "failures": [
     {
-      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
-      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
+      "file": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis.json",
+      "id": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T02:36:19.070Z: ERROR"
+      "error": "instagram_story: ERROR; retry after 2026-09-05T23:11:20.863Z: ERROR"
     }
   ],
   "reviews": [

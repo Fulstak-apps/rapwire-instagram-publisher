@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T15:09:40.687Z",
+  "checked_at": "2026-09-05T15:13:30.645Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T15:09:30.686Z",
@@ -25,8 +25,8 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
-  "facebook_steps": 1,
+  "threads_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,23 +35,14 @@
   },
   "threads_next_eligible_at": "2026-09-05T15:10:16.005Z",
   "facebook_next_eligible_at": "2026-09-05T15:39:39.625Z",
-  "publications": [
-    {
-      "file": "322-kanyewest-ye-made-a-powerful-moment-during-his-chicago-homecomin.json",
-      "id": "322-kanyewest-ye-made-a-powerful-moment-during-his-chicago-homecomin",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1529771382171358",
-      "permalink": "/reel/1529771382171358/"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
-      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
+      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
+      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T17:09:40.293Z: ERROR"
+      "error": "instagram_story: ERROR; retry after 2026-09-05T16:13:30.326Z: ERROR"
     }
   ],
   "reviews": [

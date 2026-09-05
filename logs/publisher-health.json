@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T19:54:55.036Z",
+  "checked_at": "2026-09-05T19:59:49.715Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T19:49:49.972Z",
@@ -16,16 +16,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 19,
-    "instagram_remaining": 79,
+    "instagram_usage": 20,
+    "instagram_remaining": 78,
     "reserved_story_slots": 1,
-    "pending_story_count": 112,
+    "pending_story_count": 111,
     "next_feed_eligible_at": "2026-09-05T20:45:16.853Z",
     "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,16 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-05T19:55:12.487Z",
   "facebook_next_eligible_at": "2026-09-05T20:10:32.782Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "332-ye-packed-night-two-of-his-sold-out-chicago-homecoming-at-soldie.json",
-      "id": "332-ye-packed-night-two-of-his-sold-out-chicago-homecoming-at-soldie",
+      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
+      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
       "platform": "instagram_story",
-      "status": "published",
-      "media_id": "18585326938071674"
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T23:59:49.466Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

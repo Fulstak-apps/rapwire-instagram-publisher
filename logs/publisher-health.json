@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-05T23:11:30.016Z",
+  "checked_at": "2026-09-05T23:16:43.221Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T23:01:58.667Z",
-    "usage": 26,
+    "usage": 27,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-05T23:16:58.668Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 72,
     "reserved_story_slots": 1,
     "pending_story_count": 106,
-    "next_feed_eligible_at": "2026-09-05T23:05:58.212Z",
+    "next_feed_eligible_at": "2026-09-06T00:16:42.092Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,7 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-05T23:17:05.793Z",
   "facebook_next_eligible_at": "2026-09-05T23:32:15.533Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a.json",
+      "id": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18118121780313102",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -59,6 +59,8 @@ const logsDir = "logs";
 const attemptsLog = path.join(logsDir, "publish-attempts.jsonl");
 const cooldownPath = path.join(logsDir, "instagram-cooldown.json");
 const quotaPath = path.join(logsDir, "instagram-publishing-quota.json");
+const threadsCooldownPath = path.join(logsDir, 'threads-delivery-cooldown.json');
+let threadsCooldown = JSON.parse(await fs.readFile(threadsCooldownPath, 'utf8').catch(error => { if(error.code==='ENOENT') return '{}'; throw error; }));
 let quota = JSON.parse(await fs.readFile(quotaPath, "utf8").catch(error => { if (error.code === "ENOENT") return "{}"; throw error; }));
 let cooldown = JSON.parse(await fs.readFile(cooldownPath, "utf8").catch(error => {
   if (error.code === "ENOENT") return "{}";
@@ -553,7 +555,7 @@ const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].in
 
 async function deliverThreads(item, itemPath, file) {
   const isVideoItem = item.content_type === 'video';
-  if (threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required || item.threads_copy_error
+  if (Date.parse(threadsCooldown.until || '') > Date.now() || threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required || item.threads_copy_error
     || !footageOnlyAllowed(item)
     || Date.now() - lastThreadsTime < THREADS_INTERVAL_MS
     || (threadsInFlightId && item.id !== threadsInFlightId)
@@ -584,6 +586,12 @@ async function deliverThreads(item, itemPath, file) {
     item.threads_status = 'failed';
     item.threads_error = error.message;
     item.threads_retry_at = new Date(Date.now() + 30 * 60000).toISOString();
+    // Account-wide errors affect every queued item. Do not rotate through the
+    // queue and send the same rejected request for a different post each run.
+    if (/API access blocked|rate.limit|request limit|maximum number of posts|too many actions/i.test(error.message)) {
+      threadsCooldown={until:new Date(Date.now()+3600000).toISOString(),reason:error.message};
+      await fs.writeFile(threadsCooldownPath,JSON.stringify(threadsCooldown,null,2)+'\n');
+    }
     await logAttempt({ file, id: item.id, platform: 'threads', status: 'failed', error: error.message });
     console.error(`Threads failed for ${file}: ${error.message}`);
   }

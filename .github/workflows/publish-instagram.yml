@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           ref: main
 
       - uses: actions/setup-node@v6
@@ -38,6 +38,7 @@ jobs:
         run: node --test scripts/*.test.mjs
 
       - name: Check prior publication state
+        id: state_check
         env:
           GH_TOKEN: ${{ github.token }}
         run: bash scripts/check-publication-state.sh
@@ -107,6 +108,7 @@ jobs:
         run: node scripts/hourly-threads.mjs
 
       - name: Publish Facebook Page conversation
+        if: ${{ !cancelled() && steps.state_check.outcome == 'success' }}
         env:
           FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
@@ -122,6 +124,7 @@ jobs:
         run: node scripts/growth-feedback.mjs
 
       - name: Prepare evidence-based newsroom inbox
+        if: ${{ !cancelled() && steps.state_check.outcome == 'success' }}
         run: node scripts/editorial-inbox.mjs
 
       - name: Save publication log

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T15:22:43.383Z",
+  "checked_at": "2026-09-05T15:31:39.618Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T15:09:30.686Z",
-    "usage": 27,
+    "checked_at": "2026-09-05T15:31:37.351Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T15:24:30.686Z",
+    "next_check_at": "2026-09-05T15:46:37.351Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 27,
-    "instagram_remaining": 71,
+    "instagram_usage": 25,
+    "instagram_remaining": 73,
     "reserved_story_slots": 1,
     "pending_story_count": 112,
     "next_feed_eligible_at": "2026-09-05T15:33:14.306Z",
@@ -36,15 +36,7 @@
   "threads_next_eligible_at": "2026-09-05T15:33:36.098Z",
   "facebook_next_eligible_at": "2026-09-05T15:39:39.625Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
-      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T16:22:42.938Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

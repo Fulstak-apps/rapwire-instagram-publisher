@@ -3982,17 +3982,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T17:01:24.586Z",
-      "candidates": 72,
-      "queued": [
-        "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 2,
-      "finished_at": "2026-09-03T17:03:40.467Z"
-    },
-    {
       "started_at": "2026-09-03T17:05:49.345Z",
       "candidates": 60,
       "queued": [],
@@ -9502,6 +9491,40 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 10,
       "finished_at": "2026-09-05T17:29:19.368Z"
+    },
+    {
+      "started_at": "2026-09-05T17:34:23.334Z",
+      "candidates": 57,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-05T17:38:41.199Z"
     }
   ],
   "vip_pending": {
@@ -9548,10 +9571,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 94,
-      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-05T16:30:07.099Z",
-      "retry_at": "2026-09-05T17:30:07.099Z"
+      "attempts": 95,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-05T17:37:43.938Z",
+      "retry_at": "2026-09-05T18:37:43.938Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -9572,10 +9595,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 15,
+      "attempts": 16,
       "last_error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-05T16:15:51.044Z",
-      "retry_at": "2026-09-05T17:15:51.044Z"
+      "last_attempt_at": "2026-09-05T17:36:40.084Z",
+      "retry_at": "2026-09-05T18:36:40.084Z"
     },
     "Dc32-qLsTq5": {
       "source_handle": "akademiks",
@@ -9620,24 +9643,24 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 2,
+      "attempts": 4,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T17:29:19.368Z",
-      "retry_at": "2026-09-05T17:33:19.368Z"
+      "last_attempt_at": "2026-09-05T17:38:41.199Z",
+      "retry_at": "2026-09-05T17:54:41.199Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T17:23:13.114Z"
+      "checked_at": "2026-09-05T17:34:30.761Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T17:23:17.128Z"
+      "checked_at": "2026-09-05T17:34:34.762Z"
     },
     "records": {
-      "checked_at": "2026-09-05T17:23:21.149Z"
+      "checked_at": "2026-09-05T17:34:38.822Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T17:23:25.297Z"
+      "checked_at": "2026-09-05T17:34:42.812Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T16:56:24.260Z"
@@ -9658,10 +9681,10 @@
       "checked_at": "2026-09-05T16:48:44.451Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-05T16:42:38.296Z"
+      "checked_at": "2026-09-05T17:34:46.955Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-05T16:42:42.260Z"
+      "checked_at": "2026-09-05T17:34:51.005Z"
     }
   }
 }

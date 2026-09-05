@@ -3570,20 +3570,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dc44_2luWv4/",
       "queue_id": "301-ye-had-all-70-000-fans-singing-power-for-him-in-chicago",
       "video": "media/301-ye-had-all-70-000-fans-singing-power-for-him-in-chicago.mp4"
+    },
+    "Dc46YY2uD7S": {
+      "queued_at": "2026-09-05T03:54:04.271Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc46YY2uD7S/",
+      "queue_id": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress",
+      "video": "media/303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T06:44:35.426Z",
-      "candidates": 72,
-      "queued": [
-        "198-drake-has-been-spotify-s-most-streamed-rapper-for-18-months-stra"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 7,
-      "finished_at": "2026-09-03T06:45:55.786Z"
-    },
     {
       "started_at": "2026-09-03T06:48:00.427Z",
       "candidates": 72,
@@ -8917,6 +8913,17 @@
       "mode": "discovery",
       "vip_pending": 12,
       "finished_at": "2026-09-05T03:47:54.882Z"
+    },
+    {
+      "started_at": "2026-09-05T03:52:08.683Z",
+      "candidates": 60,
+      "queued": [
+        "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-05T03:54:04.271Z"
     }
   ],
   "vip_pending": {
@@ -9040,18 +9047,6 @@
       "last_attempt_at": "2026-09-05T03:27:54.889Z",
       "retry_at": "2026-09-05T03:43:54.889Z"
     },
-    "Dc46YY2uD7S": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/reel/Dc46YY2uD7S/",
-      "shortcode": "Dc46YY2uD7S",
-      "first_seen_at": "2026-09-05T02:47:21.835Z",
-      "profile_position": 1,
-      "state": "retry_pending",
-      "attempts": 3,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc46YY2uD7S-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T03:15:00.119Z",
-      "retry_at": "2026-09-05T03:23:00.119Z"
-    },
     "Dc47SFaObcx": {
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/Dc47SFaObcx/",
@@ -9067,16 +9062,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T03:42:30.170Z"
+      "checked_at": "2026-09-05T03:52:17.696Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T03:42:34.141Z"
+      "checked_at": "2026-09-05T03:52:21.635Z"
     },
     "records": {
-      "checked_at": "2026-09-05T03:42:38.177Z"
+      "checked_at": "2026-09-05T03:52:25.592Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T03:42:42.234Z"
+      "checked_at": "2026-09-05T03:52:29.565Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T03:42:46.309Z"
@@ -9097,10 +9092,10 @@
       "checked_at": "2026-09-05T03:39:33.466Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-05T03:19:29.320Z"
+      "checked_at": "2026-09-05T03:52:33.558Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-05T03:19:33.326Z"
+      "checked_at": "2026-09-05T03:52:37.534Z"
     }
   }
 }

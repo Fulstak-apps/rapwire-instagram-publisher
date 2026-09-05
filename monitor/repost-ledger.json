@@ -4149,17 +4149,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T18:47:38.918Z",
-      "candidates": 39,
-      "queued": [
-        "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d"
-      ],
-      "errors": [],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 8,
-      "finished_at": "2026-09-03T18:48:49.271Z"
-    },
-    {
       "started_at": "2026-09-03T18:50:52.974Z",
       "candidates": 0,
       "queued": [
@@ -10016,6 +10005,34 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-05T21:57:17.501Z"
+    },
+    {
+      "started_at": "2026-09-05T22:02:22.216Z",
+      "candidates": 58,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-05T22:08:53.409Z"
     }
   ],
   "vip_pending": {
@@ -10026,10 +10043,10 @@
       "first_seen_at": "2026-09-03T05:30:10.862Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 31,
+      "attempts": 32,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T21:01:09.801Z",
-      "retry_at": "2026-09-05T22:01:09.801Z"
+      "last_attempt_at": "2026-09-05T22:07:39.584Z",
+      "retry_at": "2026-09-05T23:07:39.584Z"
     },
     "Dcww5JhjqDI": {
       "source_handle": "records",
@@ -10134,10 +10151,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 22,
-      "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-05T21:57:17.500Z",
-      "retry_at": "2026-09-05T22:57:17.500Z"
+      "attempts": 23,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-05T22:08:53.409Z",
+      "retry_at": "2026-09-05T23:08:53.409Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10146,24 +10163,24 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 8,
+      "attempts": 9,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-05T21:56:39.025Z",
-      "retry_at": "2026-09-05T22:56:39.025Z"
+      "last_attempt_at": "2026-09-05T22:07:56.963Z",
+      "retry_at": "2026-09-05T23:07:56.963Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T21:51:15.911Z"
+      "checked_at": "2026-09-05T22:02:30.452Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T21:51:20.049Z"
+      "checked_at": "2026-09-05T22:02:34.561Z"
     },
     "records": {
-      "checked_at": "2026-09-05T21:51:24.266Z"
+      "checked_at": "2026-09-05T22:02:38.613Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T21:51:28.300Z"
+      "checked_at": "2026-09-05T22:02:42.657Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T21:35:44.846Z"
@@ -10184,10 +10201,10 @@
       "checked_at": "2026-09-05T21:27:57.213Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-05T21:17:18.012Z"
+      "checked_at": "2026-09-05T22:02:47.428Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-05T21:17:22.076Z"
+      "checked_at": "2026-09-05T22:02:51.498Z"
     }
   }
 }

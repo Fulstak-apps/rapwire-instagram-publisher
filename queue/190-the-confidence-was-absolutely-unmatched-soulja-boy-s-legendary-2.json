@@ -41,6 +41,6 @@
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 57.8,
   "caption_style": "source-tag-v1",
-  "caption_review_error": "Crop review required: No distinct footage region between static panels",
-  "caption_retry_at": "2026-09-05T06:51:33.726Z"
+  "caption_review_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/\", waiting until \"domcontentloaded\"\n",
+  "caption_retry_at": "2026-09-05T11:38:55.679Z"
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T02:25:01.857Z",
+  "checked_at": "2026-09-05T02:28:13.824Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -33,9 +33,17 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
+  "threads_next_eligible_at": "2026-09-05T02:38:12.255Z",
   "facebook_next_eligible_at": "2026-09-05T02:31:31.655Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "268-rapwire-repost-video.json",
+      "id": "268-rapwire-repost-video",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18107478185166355"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

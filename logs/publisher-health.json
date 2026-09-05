@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T21:51:40.782Z",
+  "checked_at": "2026-09-05T21:56:10.323Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T21:40:54.268Z",
+    "checked_at": "2026-09-05T21:55:59.234Z",
     "usage": 24,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T21:55:54.268Z",
+    "next_check_at": "2026-09-05T22:10:59.234Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,58 +16,35 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 23,
-    "instagram_remaining": 75,
+    "instagram_usage": 24,
+    "instagram_remaining": 74,
     "reserved_story_slots": 1,
-    "pending_story_count": 107,
+    "pending_story_count": 106,
     "next_feed_eligible_at": "2026-09-05T21:55:34.906Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T21:50:54.082Z",
+  "threads_next_eligible_at": "2026-09-05T22:11:08.972Z",
   "facebook_next_eligible_at": "2026-09-05T22:21:33.481Z",
   "publications": [
     {
-      "file": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.json",
-      "id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
-      "platform": "facebook",
+      "file": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u.json",
+      "id": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u",
+      "platform": "threads",
       "status": "published",
-      "media_id": "1078162625154151",
-      "permalink": "/reel/1078162625154151/"
-    },
-    {
-      "file": "261-man-who-interrupted-the-kewon-white-trial-guy-accused-of-k-llin-.json",
-      "id": "261-man-who-interrupted-the-kewon-white-trial-guy-accused-of-k-llin-",
-      "platform": "instagram_story",
-      "status": "published",
-      "media_id": "17967789225156114"
+      "media_id": "18169201834395623"
     }
   ],
-  "failures": [
-    {
-      "file": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne.json",
-      "id": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '1750782322870119' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    },
-    {
-      "file": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-.json",
-      "id": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '1068661155534343' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

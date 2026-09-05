@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T03:10:17.880Z",
+  "checked_at": "2026-09-05T03:14:02.729Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
@@ -25,7 +25,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,15 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-05T03:20:15.482Z",
   "facebook_next_eligible_at": "2026-09-05T03:17:07.589Z",
-  "publications": [
-    {
-      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
-      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17916316929243148"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -145,6 +137,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
+      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
       "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
       "platform": "video_layout",
@@ -161,13 +160,6 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
-      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

@@ -8,7 +8,7 @@ on:
       - "scripts/local-rapwire-autonomous-v2.py"
       - "scripts/run-local-newsroom.sh"
       - "scripts/install-local-newsroom.sh"
-      - "scripts/test_local_rapwire_newsroom.py"
+      - "scripts/test_local_rapwire_newsroom*.py"
       - ".github/workflows/newsroom-v2-tests.yml"
   push:
     branches:
@@ -19,7 +19,7 @@ on:
       - "scripts/local-rapwire-autonomous-v2.py"
       - "scripts/run-local-newsroom.sh"
       - "scripts/install-local-newsroom.sh"
-      - "scripts/test_local_rapwire_newsroom.py"
+      - "scripts/test_local_rapwire_newsroom*.py"
       - ".github/workflows/newsroom-v2-tests.yml"
 
 permissions:
@@ -41,4 +41,4 @@ jobs:
           scripts/local-rapwire-v2.py
           scripts/local-rapwire-autonomous-v2.py
       - name: Run deterministic newsroom tests
-        run: python -m unittest scripts/test_local_rapwire_newsroom.py -v
+        run: python -m unittest discover -s scripts -p 'test_local_rapwire_newsroom*.py' -v

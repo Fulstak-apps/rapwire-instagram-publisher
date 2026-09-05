@@ -4142,29 +4142,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T18:31:49.994Z",
-      "candidates": 39,
-      "queued": [
-        "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b",
-        "192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav"
-      ],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Crop review required: No distinct footage region between static panels"
-        },
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/DcvmD-CvkYT/",
-          "stage": "caption_repair",
-          "error": "Command failed: git push origin HEAD:main\nTo https://github.com/Fulstak-apps/rapwire-instagram-publisher.git\n ! [remote rejected] HEAD -> main (cannot lock ref 'refs/heads/main': is at ee65d8906e0518748c66ba9ebe55fba3426642bb but expected a58231ebac6145feb466cd1c83e1fa9daae466ac)\nerror: failed to push some refs to 'https://github.com/Fulstak-apps/rapwire-instagram-publisher.git'\n"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 7,
-      "finished_at": "2026-09-03T18:35:43.112Z"
-    },
-    {
       "started_at": "2026-09-03T18:37:46.535Z",
       "candidates": 0,
       "queued": [
@@ -9942,6 +9919,34 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-05T21:22:25.135Z"
+    },
+    {
+      "started_at": "2026-09-05T21:27:29.080Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "xxl",
+          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-05T21:30:13.994Z"
     }
   ],
   "vip_pending": {
@@ -10060,10 +10065,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 18,
+      "attempts": 19,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-05T21:22:25.135Z",
-      "retry_at": "2026-09-05T22:22:25.135Z"
+      "last_attempt_at": "2026-09-05T21:30:13.993Z",
+      "retry_at": "2026-09-05T22:30:13.993Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10072,24 +10077,24 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 4,
+      "attempts": 5,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-05T21:21:45.440Z",
-      "retry_at": "2026-09-05T21:37:45.440Z"
+      "last_attempt_at": "2026-09-05T21:29:29.777Z",
+      "retry_at": "2026-09-05T22:01:29.777Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T21:17:01.499Z"
+      "checked_at": "2026-09-05T21:27:36.679Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T21:17:05.632Z"
+      "checked_at": "2026-09-05T21:27:40.859Z"
     },
     "records": {
-      "checked_at": "2026-09-05T21:17:09.675Z"
+      "checked_at": "2026-09-05T21:27:44.912Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T21:17:13.865Z"
+      "checked_at": "2026-09-05T21:27:49.024Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T20:56:18.214Z"
@@ -10104,10 +10109,10 @@
       "checked_at": "2026-09-05T21:07:39.653Z"
     },
     "xxl": {
-      "checked_at": "2026-09-05T20:43:30.550Z"
+      "checked_at": "2026-09-05T21:27:53.110Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-05T20:43:34.956Z"
+      "checked_at": "2026-09-05T21:27:57.213Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-05T21:17:18.012Z"

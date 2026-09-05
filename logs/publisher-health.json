@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T18:37:46.684Z",
+  "checked_at": "2026-09-05T18:43:20.988Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T18:23:33.915Z",
-    "usage": 22,
+    "checked_at": "2026-09-05T18:43:13.084Z",
+    "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T18:38:33.915Z",
+    "next_check_at": "2026-09-05T18:58:13.084Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 22,
-    "instagram_remaining": 76,
+    "instagram_usage": 21,
+    "instagram_remaining": 77,
     "reserved_story_slots": 1,
     "pending_story_count": 111,
     "next_feed_eligible_at": "2026-09-05T19:08:35.204Z",
@@ -26,26 +26,33 @@
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T18:33:39.934Z",
+  "threads_next_eligible_at": "2026-09-05T18:58:18.802Z",
   "facebook_next_eligible_at": "2026-09-05T19:07:45.597Z",
   "publications": [
     {
-      "file": "330-bobby-shmurda-stil-not-jackin-no-rats.json",
-      "id": "330-bobby-shmurda-stil-not-jackin-no-rats",
-      "platform": "facebook",
+      "file": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress.json",
+      "id": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress",
+      "platform": "threads",
       "status": "published",
-      "media_id": "2025480224758907",
-      "permalink": "/reel/2025480224758907/"
+      "media_id": "17900170125663006"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
+      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T22:43:20.544Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

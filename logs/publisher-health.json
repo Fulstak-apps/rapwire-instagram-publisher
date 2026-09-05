@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-09-05T00:26:46.475Z",
+  "checked_at": "2026-09-05T01:14:16.852Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
     "usage": 50,
     "total": 100,
     "blocked": true,
-    "next_check_at": "2026-09-05T01:11:34.516Z",
+    "next_check_at": "2026-09-05T02:14:01.697Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
-    "reason": "Quota check unavailable: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ab33v_p26FDAISNz4lw4vMY\"}}",
+    "reason": "Quota check unavailable: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A6kimdZUb98cCCAjBdChoWA\"}}",
     "detected_at": "2026-09-03T20:01:28.698Z",
     "effective_total": 100,
     "observed_rejection_at_usage": 50
@@ -34,24 +34,31 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
-  "facebook_next_eligible_at": "2026-09-05T00:36:45.985Z",
+  "facebook_next_eligible_at": "2026-09-05T01:24:16.538Z",
   "publications": [
     {
-      "file": "283-visiting-the-8th-wonder-of-the-world-ye-s-childhood-home.json",
-      "id": "283-visiting-the-8th-wonder-of-the-world-ye-s-childhood-home",
+      "file": "228-durk-had-no-passport-at-the-airport-his-lawyers-denied-he-tried-.json",
+      "id": "228-durk-had-no-passport-at-the-airport-his-lawyers-denied-he-tried-",
       "platform": "facebook",
       "status": "published",
-      "media_id": "2105019757566501",
-      "permalink": "/reel/2105019757566501/"
+      "media_id": "1391816935723799",
+      "permalink": "/reel/1391816935723799/"
     }
   ],
   "failures": [
     {
-      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
-      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
+      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
+      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
       "platform": "threads",
       "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ardem22qWPmkOe0ZOSjIgel\"}}"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ayi3_gdFswSykuwL9J5cuhP\"}}"
+    },
+    {
+      "file": "226-have-a-good-ass-day-darnell-williams-darnellwilliams.json",
+      "id": "226-have-a-good-ass-day-darnell-williams-darnellwilliams",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '1089196980311328' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
     }
   ],
   "reviews": [

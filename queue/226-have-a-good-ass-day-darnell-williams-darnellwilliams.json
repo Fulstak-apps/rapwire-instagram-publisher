@@ -110,5 +110,10 @@
   "instagram_verified_at": "2026-09-04T03:24:56.951Z",
   "instagram_permalink": "https://www.instagram.com/reel/Dc2aGNoFKFa/",
   "threads_story_status": "not_supported",
-  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "facebook_media_id": "1089196980311328",
+  "facebook_status": "failed",
+  "facebook_published_at": "2026-09-05T01:14:08.347Z",
+  "facebook_error": "Unsupported get request. Object with ID '1089196980311328' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+  "facebook_retry_at": "2026-09-05T02:14:08.603Z"
 }

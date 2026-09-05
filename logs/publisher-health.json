@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T22:51:19.586Z",
+  "checked_at": "2026-09-05T22:56:49.687Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T22:46:12.957Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -36,15 +36,7 @@
   "threads_next_eligible_at": "2026-09-05T22:56:18.334Z",
   "facebook_next_eligible_at": "2026-09-05T22:56:07.492Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
-      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T02:51:19.322Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T04:33:53.285Z",
+  "checked_at": "2026-09-05T04:38:11.206Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T04:23:45.230Z",
@@ -16,17 +16,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 41,
-    "instagram_remaining": 57,
+    "instagram_usage": 42,
+    "instagram_remaining": 56,
     "reserved_story_slots": 1,
-    "pending_story_count": 110,
+    "pending_story_count": 109,
     "next_feed_eligible_at": "2026-09-05T05:07:34.521Z",
     "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
   "threads_steps": 0,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -34,14 +34,15 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-05T04:43:06.181Z",
-  "facebook_next_eligible_at": "2026-09-05T04:37:46.802Z",
+  "facebook_next_eligible_at": "2026-09-05T05:08:09.960Z",
   "publications": [
     {
-      "file": "298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf.json",
-      "id": "298-omggg-travis-scott-travisscott-just-came-out-in-chicago-and-perf",
-      "platform": "instagram_story",
+      "file": "300-this-is-so-peak.json",
+      "id": "300-this-is-so-peak",
+      "platform": "facebook",
       "status": "published",
-      "media_id": "18068941817755727"
+      "media_id": "1086397293982455",
+      "permalink": "/reel/1086397293982455/"
     }
   ],
   "failures": [],

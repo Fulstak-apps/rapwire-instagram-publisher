@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T19:34:34.984Z",
+  "checked_at": "2026-09-05T19:40:33.825Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T19:34:32.572Z",
@@ -33,10 +33,41 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T18:58:18.802Z",
-  "facebook_next_eligible_at": "2026-09-05T19:07:45.597Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-05T19:55:12.487Z",
+  "facebook_next_eligible_at": "2026-09-05T20:10:32.782Z",
+  "publications": [
+    {
+      "file": "305-free-durk-ye-shows-support-to-lil-durk-lildurk.json",
+      "id": "305-free-durk-ye-shows-support-to-lil-durk-lildurk",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18172801132395633"
+    },
+    {
+      "file": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd.json",
+      "id": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "2487609931720996",
+      "permalink": "/reel/2487609931720996/"
+    }
+  ],
+  "failures": [
+    {
+      "file": "338-a-cop-is-going-viral-after-randomly-yelling-free-lil-durk-lildur.json",
+      "id": "338-a-cop-is-going-viral-after-randomly-yelling-free-lil-durk-lildur",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '1632826938560895' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    },
+    {
+      "file": "339-when-chrisean-rock-got-emotional-mid-interview-and-had-everyone-.json",
+      "id": "339-when-chrisean-rock-got-emotional-mid-interview-and-had-everyone-",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '1075273291533485' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

@@ -21,7 +21,15 @@ export RAPWIRE_AUTONOMOUS="${RAPWIRE_AUTONOMOUS:-1}"
 export RAPWIRE_QA_THRESHOLD="${RAPWIRE_QA_THRESHOLD:-88}"
 export RAPWIRE_AUTONOMOUS_SCORE="${RAPWIRE_AUTONOMOUS_SCORE:-92}"
 
-"$PYTHON_BIN" scripts/local-rapwire-autonomous.py "$@"
+# Newsroom v2 ranks, deduplicates and diversifies candidates before the existing
+# autonomous Ollama/evidence/QA pipeline. These can be tuned without code changes.
+export RAPWIRE_NEWSROOM_POOL="${RAPWIRE_NEWSROOM_POOL:-7}"
+export RAPWIRE_AUTONOMOUS_SHORTLIST="${RAPWIRE_AUTONOMOUS_SHORTLIST:-8}"
+export RAPWIRE_VIRAL_MIN_SCORE="${RAPWIRE_VIRAL_MIN_SCORE:-42}"
+export RAPWIRE_ENTITY_COOLDOWN_HOURS="${RAPWIRE_ENTITY_COOLDOWN_HOURS:-12}"
+export RAPWIRE_HISTORY_ITEMS="${RAPWIRE_HISTORY_ITEMS:-100}"
+
+"$PYTHON_BIN" scripts/local-rapwire-autonomous-v2.py "$@"
 
 # Health and dry-run modes are strictly read-only.
 for argument in "$@"; do

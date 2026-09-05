@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T04:23:48.441Z",
+  "checked_at": "2026-09-05T04:28:07.802Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T04:23:45.230Z",
@@ -26,25 +26,25 @@
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T04:22:41.679Z",
+  "threads_next_eligible_at": "2026-09-05T04:43:06.181Z",
   "facebook_next_eligible_at": "2026-09-05T04:37:46.802Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
-      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T04:53:48.066Z: ERROR"
+      "file": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a.json",
+      "id": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18112274204049685"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",

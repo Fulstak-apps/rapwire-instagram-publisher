@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T16:57:48.190Z",
+  "checked_at": "2026-09-05T17:03:36.327Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T16:57:40.056Z",
@@ -16,16 +16,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 21,
-    "instagram_remaining": 77,
+    "instagram_usage": 22,
+    "instagram_remaining": 76,
     "reserved_story_slots": 1,
-    "pending_story_count": 113,
+    "pending_story_count": 114,
     "next_feed_eligible_at": "2026-09-05T17:57:47.946Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,16 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-05T17:02:34.826Z",
   "facebook_next_eligible_at": "2026-09-05T17:17:53.657Z",
-  "publications": [
-    {
-      "file": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-.json",
-      "id": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17912504601464329",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

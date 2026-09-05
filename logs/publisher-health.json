@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T05:50:26.907Z",
+  "checked_at": "2026-09-05T05:55:52.896Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T05:50:17.026Z",
@@ -16,12 +16,12 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 36,
-    "instagram_remaining": 62,
+    "instagram_usage": 37,
+    "instagram_remaining": 61,
     "reserved_story_slots": 1,
-    "pending_story_count": 109,
+    "pending_story_count": 110,
     "next_feed_eligible_at": "2026-09-05T06:50:25.013Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -33,27 +33,19 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T05:48:27.030Z",
+  "threads_next_eligible_at": "2026-09-05T06:10:50.766Z",
   "facebook_next_eligible_at": "2026-09-05T06:03:40.008Z",
   "publications": [
     {
-      "file": "268-rapwire-repost-video.json",
-      "id": "268-rapwire-repost-video",
-      "platform": "instagram",
+      "file": "291-ye-just-brought-out-big-sean.json",
+      "id": "291-ye-just-brought-out-big-sean",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18112473778826166",
-      "content_type": "video"
+      "media_id": "17927702793167463"
     }
   ],
   "failures": [],
   "reviews": [
-    {
-      "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
-      "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
       "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -76,22 +68,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "153-source-commentary-durks-full-opp-list-revealed-in-court-included.json",
-      "id": "153-source-commentary-durks-full-opp-list-revealed-in-court-included",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
       "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
-      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -125,6 +103,27 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
+      "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "153-source-commentary-durks-full-opp-list-revealed-in-court-included.json",
+      "id": "153-source-commentary-durks-full-opp-list-revealed-in-court-included",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
+      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour.json",
       "id": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour",
       "platform": "video_layout",
@@ -132,57 +131,8 @@
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got.json",
-      "id": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d.json",
-      "id": "157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie.json",
-      "id": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
-      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid.json",
-      "id": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "174-traploreross-defense-resting-case-tomorrow-lunchtime-durks-defen.json",
-      "id": "174-traploreross-defense-resting-case-tomorrow-lunchtime-durks-defen",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow.json",
       "id": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "176-traploreross-durks-lawyer-marissa-goldberg-cornered-the-top-fbi-.json",
-      "id": "176-traploreross-durks-lawyer-marissa-goldberg-cornered-the-top-fbi-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -195,22 +145,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a.json",
-      "id": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e.json",
       "id": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi.json",
-      "id": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -377,15 +313,99 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "135-traploreross-repost-video.json",
-      "id": "135-traploreross-repost-video",
+      "file": "136-akademiks-repost-video.json",
+      "id": "136-akademiks-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "136-akademiks-repost-video.json",
-      "id": "136-akademiks-repost-video",
+      "file": "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-.json",
+      "id": "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released.json",
+      "id": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
+      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got.json",
+      "id": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d.json",
+      "id": "157-reposted-from-traploreross-fbi-introduced-akademiks-clip-where-d",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie.json",
+      "id": "158-reposted-from-traploreross-recorded-convos-of-thf-zoo-and-boonie",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
+      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid.json",
+      "id": "173-traploreross-fbi-agent-showed-otf-s-most-incriminating-music-vid",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "174-traploreross-defense-resting-case-tomorrow-lunchtime-durks-defen.json",
+      "id": "174-traploreross-defense-resting-case-tomorrow-lunchtime-durks-defen",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "176-traploreross-durks-lawyer-marissa-goldberg-cornered-the-top-fbi-.json",
+      "id": "176-traploreross-durks-lawyer-marissa-goldberg-cornered-the-top-fbi-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a.json",
+      "id": "179-traploreross-exposing-nelk-i-spent-2-months-investigating-nelk-a",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi.json",
+      "id": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "135-traploreross-repost-video.json",
+      "id": "135-traploreross-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -440,13 +460,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-.json",
-      "id": "144-this-man-was-kicked-out-the-house-by-his-cheating-ex-girlfriend-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w.json",
       "id": "145-drew-findling-torched-vonni-on-the-stand-said-we-re-near-holly-w",
       "platform": "video_layout",
@@ -463,20 +476,6 @@
     {
       "file": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o.json",
       "id": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released.json",
-      "id": "148-body-cam-footage-of-yb-getting-pulled-over-in-utah-gets-released",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
-      "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

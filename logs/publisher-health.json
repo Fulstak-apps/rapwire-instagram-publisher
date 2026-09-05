@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T14:50:03.364Z",
+  "checked_at": "2026-09-05T14:55:17.661Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T14:50:00.466Z",
@@ -33,10 +33,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T14:48:21.715Z",
+  "threads_next_eligible_at": "2026-09-05T15:10:16.005Z",
   "facebook_next_eligible_at": "2026-09-05T15:03:28.102Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "296-don-toliver-dontoliver-is-in-the-building.json",
+      "id": "296-don-toliver-dontoliver-is-in-the-building",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18128075348493881"
+    }
+  ],
+  "failures": [
+    {
+      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
+      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T15:55:17.432Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

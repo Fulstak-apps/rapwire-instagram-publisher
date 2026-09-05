@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T16:27:26.706Z",
+  "checked_at": "2026-09-05T16:32:22.892Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T16:24:16.493Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,16 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-05T16:42:25.023Z",
   "facebook_next_eligible_at": "2026-09-05T16:47:18.067Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago.json",
-      "id": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18114047357004560"
+      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
+      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T17:32:22.640Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

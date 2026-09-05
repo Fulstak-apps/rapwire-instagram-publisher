@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T16:37:24.500Z",
+  "checked_at": "2026-09-05T16:42:33.060Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T16:24:16.493Z",
-    "usage": 23,
+    "checked_at": "2026-09-05T16:42:30.855Z",
+    "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T16:39:16.493Z",
+    "next_check_at": "2026-09-05T16:57:30.855Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 23,
-    "instagram_remaining": 75,
+    "instagram_usage": 22,
+    "instagram_remaining": 76,
     "reserved_story_slots": 1,
     "pending_story_count": 113,
     "next_feed_eligible_at": "2026-09-05T16:46:58.532Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -36,15 +36,7 @@
   "threads_next_eligible_at": "2026-09-05T16:42:25.023Z",
   "facebook_next_eligible_at": "2026-09-05T16:47:18.067Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
-      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T18:37:24.153Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

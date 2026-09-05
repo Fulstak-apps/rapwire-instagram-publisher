@@ -3950,25 +3950,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/Dc6XTXLu9SK/",
       "queue_id": "330-bobby-shmurda-stil-not-jackin-no-rats",
       "video": "media/330-bobby-shmurda-stil-not-jackin-no-rats.mp4"
+    },
+    "Dc6S5DRRCQb": {
+      "queued_at": "2026-09-05T16:37:07.299Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/Dc6S5DRRCQb/",
+      "queue_id": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig",
+      "video": "media/331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T16:36:16.577Z",
-      "candidates": 72,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
-          "stage": "queue",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 2,
-      "finished_at": "2026-09-03T16:37:45.803Z"
-    },
     {
       "started_at": "2026-09-03T16:39:49.401Z",
       "candidates": 72,
@@ -9398,6 +9389,17 @@
       "mode": "discovery",
       "vip_pending": 9,
       "finished_at": "2026-09-05T16:30:23.267Z"
+    },
+    {
+      "started_at": "2026-09-05T16:35:26.849Z",
+      "candidates": 53,
+      "queued": [
+        "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 9,
+      "finished_at": "2026-09-05T16:37:07.299Z"
     }
   ],
   "vip_pending": {
@@ -9512,16 +9514,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T16:28:23.721Z"
+      "checked_at": "2026-09-05T16:35:36.651Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T16:28:27.790Z"
+      "checked_at": "2026-09-05T16:35:40.675Z"
     },
     "records": {
-      "checked_at": "2026-09-05T16:28:31.877Z"
+      "checked_at": "2026-09-05T16:35:44.689Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T16:28:35.858Z"
+      "checked_at": "2026-09-05T16:35:48.788Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T16:28:39.877Z"
@@ -9530,10 +9532,10 @@
       "checked_at": "2026-09-05T16:28:43.866Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-05T15:46:32.188Z"
+      "checked_at": "2026-09-05T16:35:52.851Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-05T15:46:36.294Z"
+      "checked_at": "2026-09-05T16:35:56.946Z"
     },
     "xxl": {
       "checked_at": "2026-09-05T16:21:18.058Z"

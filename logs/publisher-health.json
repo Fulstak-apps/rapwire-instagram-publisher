@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T05:33:40.973Z",
+  "checked_at": "2026-09-05T05:50:26.907Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T05:33:20.444Z",
+    "checked_at": "2026-09-05T05:50:17.026Z",
     "usage": 37,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T05:48:20.444Z",
+    "next_check_at": "2026-09-05T06:05:17.026Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,17 +16,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 37,
-    "instagram_remaining": 61,
+    "instagram_usage": 36,
+    "instagram_remaining": 62,
     "reserved_story_slots": 1,
     "pending_story_count": 109,
-    "next_feed_eligible_at": "2026-09-05T05:07:34.521Z",
+    "next_feed_eligible_at": "2026-09-05T06:50:25.013Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -37,30 +37,15 @@
   "facebook_next_eligible_at": "2026-09-05T06:03:40.008Z",
   "publications": [
     {
-      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
-      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
-      "platform": "threads",
+      "file": "268-rapwire-repost-video.json",
+      "id": "268-rapwire-repost-video",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18141209635585714"
-    },
-    {
-      "file": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress.json",
-      "id": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1031750709903107",
-      "permalink": "/reel/1031750709903107/"
+      "media_id": "18112473778826166",
+      "content_type": "video"
     }
   ],
-  "failures": [
-    {
-      "file": "301-ye-had-all-70-000-fans-singing-power-for-him-in-chicago.json",
-      "id": "301-ye-had-all-70-000-fans-singing-power-for-him-in-chicago",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '1873965953572736' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

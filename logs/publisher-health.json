@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-09-05T01:14:16.852Z",
+  "checked_at": "2026-09-05T02:15:02.029Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-04T20:30:41.869Z",
     "usage": 50,
     "total": 100,
     "blocked": true,
-    "next_check_at": "2026-09-05T02:14:01.697Z",
+    "next_check_at": "2026-09-05T03:15:00.651Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
-    "reason": "Quota check unavailable: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A6kimdZUb98cCCAjBdChoWA\"}}",
+    "reason": "Quota check unavailable: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Av7Nzbrz3scnG0w-aN74d-N\"}}",
     "detected_at": "2026-09-03T20:01:28.698Z",
     "effective_total": 100,
     "observed_rejection_at_usage": 50
@@ -35,30 +35,14 @@
   },
   "threads_next_eligible_at": "2026-09-04T19:23:15.841Z",
   "facebook_next_eligible_at": "2026-09-05T01:24:16.538Z",
-  "publications": [
-    {
-      "file": "228-durk-had-no-passport-at-the-airport-his-lawyers-denied-he-tried-.json",
-      "id": "228-durk-had-no-passport-at-the-airport-his-lawyers-denied-he-tried-",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1391816935723799",
-      "permalink": "/reel/1391816935723799/"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
       "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
       "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
       "platform": "threads",
       "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ayi3_gdFswSykuwL9J5cuhP\"}}"
-    },
-    {
-      "file": "226-have-a-good-ass-day-darnell-williams-darnellwilliams.json",
-      "id": "226-have-a-good-ass-day-darnell-williams-darnellwilliams",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '1089196980311328' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aupbxy9_niV5wT73Wv-soD8\"}}"
     }
   ],
   "reviews": [

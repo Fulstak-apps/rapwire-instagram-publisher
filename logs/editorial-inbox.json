@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T02:28:15.353Z",
+  "checked_at": "2026-09-05T02:31:08.588Z",
   "mode": "research_not_auto_approval",
   "candidates": [
     {
@@ -43,6 +43,20 @@
       ],
       "caption_error": null,
       "story_fingerprint": "1b9c50257e6c77781efbe02da446ac05d29a01dc9f5be68cb1236b3cacbd0f55"
+    },
+    {
+      "id": "286-story-story-the-jury-has-reached-a-verdict-in-the-first-case-to-",
+      "queue_file": "queue/286-story-story-the-jury-has-reached-a-verdict-in-the-first-case-to-.json",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dc4x0o4jSzk/",
+      "headline": "Story - Story - The jury has reached a verdict in the first case to be tried in the case i",
+      "body": "Story - Story - The jury has reached a verdict in the first case to be tried in the case involving Dallas rapper MO3’s murder in 2020, when Melvin Noble was killed in an ambush shooting on Interstate 35E. The first man to be tried was Kewon White, who allegedly was hired by Markies Conway to murder Noble. Conway is another rapper, known as Yella Beezy, who allegedly was embroiled in a feud with MO3. On Friday, Sept. 4, jurors handed down a guilty verdict of capital murder. The judge sentenced White to life in prison without parole. Prosecutors say White ambushed the Dallas rapper for a promised payment. The defense says the state proved a murder — but not murder-for-hire. Jurors were shown video of the ambush that showed MO3 jumping out of the gold Honda he was driving before a masked suspect chased him down the freeway with a gun.",
+      "claim_sha256": null,
+      "reasons": [
+        "major_case_or_death_claim"
+      ],
+      "caption_error": null,
+      "story_fingerprint": "058c8476f48d183c7e90927b40bb814f0b29731ec89913070911c477ceb24512"
     }
   ],
   "instructions": "Check primary documents and two independent reports. Preserve the exact claim, dates, actual case posture, and source URLs. Record reviewed claim hash. Never approve based only on a model score or repeated social captions."

@@ -5,6 +5,9 @@ on:
     paths:
       - "scripts/newsroom_engine.py"
       - "scripts/local-rapwire-v2.py"
+      - "scripts/local-rapwire-autonomous-v2.py"
+      - "scripts/run-local-newsroom.sh"
+      - "scripts/install-local-newsroom.sh"
       - "scripts/test_local_rapwire_newsroom.py"
       - ".github/workflows/newsroom-v2-tests.yml"
   push:
@@ -13,6 +16,9 @@ on:
     paths:
       - "scripts/newsroom_engine.py"
       - "scripts/local-rapwire-v2.py"
+      - "scripts/local-rapwire-autonomous-v2.py"
+      - "scripts/run-local-newsroom.sh"
+      - "scripts/install-local-newsroom.sh"
       - "scripts/test_local_rapwire_newsroom.py"
       - ".github/workflows/newsroom-v2-tests.yml"
 
@@ -29,6 +35,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Compile newsroom entrypoints
-        run: python -m py_compile scripts/newsroom_engine.py scripts/local-rapwire-v2.py
+        run: >-
+          python -m py_compile
+          scripts/newsroom_engine.py
+          scripts/local-rapwire-v2.py
+          scripts/local-rapwire-autonomous-v2.py
       - name: Run deterministic newsroom tests
         run: python -m unittest scripts/test_local_rapwire_newsroom.py -v

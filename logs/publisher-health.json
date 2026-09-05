@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T22:56:49.687Z",
+  "checked_at": "2026-09-05T23:02:16.530Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T22:46:12.957Z",
+    "checked_at": "2026-09-05T23:01:58.667Z",
     "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T23:01:12.957Z",
+    "next_check_at": "2026-09-05T23:16:58.668Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -33,10 +33,34 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T22:56:18.334Z",
-  "facebook_next_eligible_at": "2026-09-05T22:56:07.492Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-05T23:17:05.793Z",
+  "facebook_next_eligible_at": "2026-09-05T23:32:15.533Z",
+  "publications": [
+    {
+      "file": "326-mo-3-mom-tells-his-killer-that-she-loves-him-and-that-the-ppl-th.json",
+      "id": "326-mo-3-mom-tells-his-killer-that-she-loves-him-and-that-the-ppl-th",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18181725136414741"
+    },
+    {
+      "file": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von.json",
+      "id": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "1087009890564617",
+      "permalink": "/reel/1087009890564617/"
+    }
+  ],
+  "failures": [
+    {
+      "file": "268-rapwire-repost-video.json",
+      "id": "268-rapwire-repost-video",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T03:02:16.009Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

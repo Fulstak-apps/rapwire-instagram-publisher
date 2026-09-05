@@ -3476,24 +3476,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T06:12:38.404Z",
-      "candidates": 60,
-      "queued": [
-        "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dc0GSDvJnGO/",
-          "stage": "queue",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 1,
-      "finished_at": "2026-09-03T06:15:06.830Z"
-    },
-    {
       "started_at": "2026-09-03T06:17:12.944Z",
       "candidates": 60,
       "queued": [
@@ -8766,6 +8748,52 @@
       "mode": "discovery",
       "vip_pending": 14,
       "finished_at": "2026-09-05T03:07:01.671Z"
+    },
+    {
+      "started_at": "2026-09-05T03:09:09.988Z",
+      "candidates": 22,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/reel/Dc47SFaObcx/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc47SFaObcx-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc4svlmNYHV/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc4svlmNYHV-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/reel/Dc44_2luWv4/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc44_2luWv4-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/reel/Dc46YY2uD7S/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc46YY2uD7S-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dc4f8xXOOpD/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc4f8xXOOpD-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dc4MkA5oFuH/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc4MkA5oFuH-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 14,
+      "finished_at": "2026-09-05T03:17:00.536Z"
     }
   ],
   "vip_pending": {
@@ -8896,10 +8924,10 @@
       "first_seen_at": "2026-09-05T01:49:01.874Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 2,
+      "attempts": 3,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc4svlmNYHV-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T02:54:51.906Z",
-      "retry_at": "2026-09-05T02:58:51.906Z"
+      "last_attempt_at": "2026-09-05T03:13:02.154Z",
+      "retry_at": "2026-09-05T03:21:02.154Z"
     },
     "Dc44_2luWv4": {
       "source_handle": "records",
@@ -8908,10 +8936,10 @@
       "first_seen_at": "2026-09-05T02:39:44.303Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 2,
+      "attempts": 3,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc44_2luWv4-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T03:00:23.353Z",
-      "retry_at": "2026-09-05T03:04:23.353Z"
+      "last_attempt_at": "2026-09-05T03:14:04.942Z",
+      "retry_at": "2026-09-05T03:22:04.942Z"
     },
     "Dc46YY2uD7S": {
       "source_handle": "records",
@@ -8920,10 +8948,10 @@
       "first_seen_at": "2026-09-05T02:47:21.835Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 2,
+      "attempts": 3,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc46YY2uD7S-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T03:01:19.290Z",
-      "retry_at": "2026-09-05T03:05:19.290Z"
+      "last_attempt_at": "2026-09-05T03:15:00.119Z",
+      "retry_at": "2026-09-05T03:23:00.119Z"
     },
     "Dc47SFaObcx": {
       "source_handle": "records",
@@ -8932,10 +8960,10 @@
       "first_seen_at": "2026-09-05T02:58:15.886Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 1,
+      "attempts": 2,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc47SFaObcx-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T02:59:21.104Z",
-      "retry_at": "2026-09-05T03:01:21.104Z"
+      "last_attempt_at": "2026-09-05T03:10:55.854Z",
+      "retry_at": "2026-09-05T03:14:55.854Z"
     }
   },
   "source_checks": {
@@ -8952,10 +8980,10 @@
       "checked_at": "2026-09-05T03:05:37.766Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-05T02:46:41.774Z"
+      "checked_at": "2026-09-05T03:09:18.703Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-05T02:46:45.722Z"
+      "checked_at": "2026-09-05T03:09:22.966Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-05T02:57:23.124Z"

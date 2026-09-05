@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T04:53:14.477Z",
+  "checked_at": "2026-09-05T04:58:56.469Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T04:43:09.227Z",
-    "usage": 41,
+    "checked_at": "2026-09-05T04:58:54.625Z",
+    "usage": 40,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T04:58:09.227Z",
+    "next_check_at": "2026-09-05T05:13:54.625Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 41,
-    "instagram_remaining": 57,
+    "instagram_usage": 40,
+    "instagram_remaining": 58,
     "reserved_story_slots": 1,
     "pending_story_count": 109,
     "next_feed_eligible_at": "2026-09-05T05:07:34.521Z",
@@ -26,7 +26,7 @@
   },
   "instagram_steps": 1,
   "threads_steps": 0,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -36,15 +36,7 @@
   "threads_next_eligible_at": "2026-09-05T05:03:48.418Z",
   "facebook_next_eligible_at": "2026-09-05T05:08:09.960Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
-      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T05:23:14.055Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

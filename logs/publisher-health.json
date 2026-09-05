@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T17:33:10.031Z",
+  "checked_at": "2026-09-05T17:38:03.376Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T17:33:00.686Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,16 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-05T17:48:07.418Z",
   "facebook_next_eligible_at": "2026-09-05T17:48:28.494Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "300-this-is-so-peak.json",
-      "id": "300-this-is-so-peak",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18016833245731355"
+      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
+      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T19:38:03.015Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

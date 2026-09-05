@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-05T18:13:26.121Z",
+  "checked_at": "2026-09-05T18:18:46.295Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T18:04:26.633Z",
-    "usage": 22,
+    "usage": 23,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-05T18:19:26.633Z",
@@ -33,9 +33,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T18:13:17.135Z",
+  "threads_next_eligible_at": "2026-09-05T18:33:39.934Z",
   "facebook_next_eligible_at": "2026-09-05T18:34:35.797Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "280-known-for-his-aggressive-aggressive-delivery-and-hyper-energetic.json",
+      "id": "280-known-for-his-aggressive-aggressive-delivery-and-hyper-energetic",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18095306750530126"
+    },
+    {
+      "file": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig.json",
+      "id": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "18105249863191153"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

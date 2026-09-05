@@ -19,8 +19,20 @@ test('queue migration rebuilds only safely unpublished parent containers',()=>{
  assert.equal(item.instagram_container_id,undefined);
  assert.deepEqual(item.instagram_children,[{id:'child'}]);
  assert.equal(item.threads_container_id,'uncertain-thread');
+ assert.equal(item.threads_text,'old caption');
  assert.equal(captionIsBound(item),true);
  assert.equal(refreshCaptionStyle(item),false);
+});
+test('artist migration preserves published Threads copy and fits pending Threads copy',()=>{
+ const registry=[{name:'Drake',handle:'champagnepapi',verified_at:new Date().toISOString(),verified_url:'https://www.instagram.com/champagnepapi/'}];
+ const caption='Drake announced a new date. '+('Fans are discussing the upcoming show. '.repeat(18));
+ const published={status:'published',caption,body:caption,threads_text:'Already published.',threads_media_id:'existing'};
+ refreshCaptionStyle(published,registry);
+ assert.equal(published.threads_text,'Already published.');
+ const pending={status:'ready',caption,body:caption,threads_text:'Drake announced a new date.',threads_copy_policy:'discussion-v2'};
+ refreshCaptionStyle(pending,registry);
+ assert.ok(pending.threads_text.length<=500);
+ assert.match(pending.threads_text,/@champagnepapi/);
 });
 test('fully published posts keep their recorded captions',()=>{
  const item={status:'published',instagram_media_id:'ig',threads_media_id:'threads',caption:'historical'};

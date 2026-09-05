@@ -50,6 +50,8 @@ export function refreshCaptionStyle(item, registry=[]) {
   if((item.caption_style==='source-tag-v1' && !wrapperPresent && !needsLabels) || !['ready','published'].includes(item.status)) return false;
   const pending=prefix=>!item[`${prefix}_media_id`] && !item[`${prefix}_publish_requested_at`] && !item[`${prefix}_reconcile_required`];
   if(!pending('instagram') && !pending('threads')) return false;
+  const originalCaption=item.caption;
+  const originalThreads=item.threads_text;
   // Preserve the source binding. Never turn unverified source metadata into copy.
   if(item.caption_policy==='vip-source-v1' && !item.instagram_media_id && !item.threads_media_id && captionIsBound(item)) {
     const fields=vipCaption(item.source_caption_text,item.source_handle,item.source_url,registry);
@@ -64,6 +66,14 @@ export function refreshCaptionStyle(item, registry=[]) {
   }
   item.caption=signedCaption(item.caption,item);
   item.threads_text=signedCaption(item.threads_text||item.caption,item);
+  if (!pending('instagram')) item.caption=originalCaption;
+  if (!pending('threads')) item.threads_text=originalThreads;
+  else {
+    const fitted=composeThreads(cleanPublicCopy(item.threads_text,item.source_handle), {
+      source:item.source_handle, seed:item.source_url||item.id, artistMentions:item.artist_mentions||[]
+    });
+    if (fitted) item.threads_text=fitted;
+  }
   for(const prefix of ['instagram','threads']) {
     if(!pending(prefix) || !item[`${prefix}_container_id`]) continue;
     // Captions are baked into parent uploads. Keep child uploads and published

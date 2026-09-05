@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T23:36:51.215Z",
+  "checked_at": "2026-09-05T23:41:53.100Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T23:21:42.899Z",
+    "checked_at": "2026-09-05T23:41:49.127Z",
     "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T23:36:42.899Z",
+    "next_check_at": "2026-09-05T23:56:49.127Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -25,8 +25,8 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
-  "facebook_steps": 1,
+  "threads_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,17 +35,16 @@
   },
   "threads_next_eligible_at": "2026-09-05T23:41:41.282Z",
   "facebook_next_eligible_at": "2026-09-06T00:06:49.723Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa.json",
-      "id": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1633513511478758",
-      "permalink": "/reel/1633513511478758/"
+      "file": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis.json",
+      "id": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T00:41:52.878Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

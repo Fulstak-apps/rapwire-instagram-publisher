@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T17:28:01.026Z",
+  "checked_at": "2026-09-05T17:33:10.031Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T17:13:17.968Z",
-    "usage": 22,
+    "checked_at": "2026-09-05T17:33:00.686Z",
+    "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T17:28:17.968Z",
+    "next_check_at": "2026-09-05T17:48:00.686Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 22,
-    "instagram_remaining": 76,
+    "instagram_usage": 21,
+    "instagram_remaining": 77,
     "reserved_story_slots": 1,
     "pending_story_count": 113,
     "next_feed_eligible_at": "2026-09-05T17:57:47.946Z",
@@ -26,25 +26,25 @@
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T17:24:42.774Z",
+  "threads_next_eligible_at": "2026-09-05T17:48:07.418Z",
   "facebook_next_eligible_at": "2026-09-05T17:48:28.494Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
-      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T19:28:00.782Z: ERROR"
+      "file": "300-this-is-so-peak.json",
+      "id": "300-this-is-so-peak",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18016833245731355"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

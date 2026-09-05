@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T20:45:36.636Z",
+  "checked_at": "2026-09-05T20:50:40.118Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T20:40:18.469Z",
@@ -33,27 +33,18 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T20:45:12.847Z",
+  "threads_next_eligible_at": "2026-09-05T21:05:35.089Z",
   "facebook_next_eligible_at": "2026-09-05T21:15:36.215Z",
   "publications": [
     {
       "file": "342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th.json",
       "id": "342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th",
-      "platform": "facebook",
+      "platform": "threads",
       "status": "published",
-      "media_id": "1637383511253297",
-      "permalink": "/reel/1637383511253297/"
+      "media_id": "18037689278826696"
     }
   ],
-  "failures": [
-    {
-      "file": "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip.json",
-      "id": "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '1860647851585785' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

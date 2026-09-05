@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T23:31:45.491Z",
+  "checked_at": "2026-09-05T23:36:51.215Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T23:21:42.899Z",
@@ -26,7 +26,7 @@
   },
   "instagram_steps": 1,
   "threads_steps": 0,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -34,17 +34,18 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-05T23:41:41.282Z",
-  "facebook_next_eligible_at": "2026-09-05T23:32:15.533Z",
-  "publications": [],
-  "failures": [
+  "facebook_next_eligible_at": "2026-09-06T00:06:49.723Z",
+  "publications": [
     {
-      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
-      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T03:31:45.231Z: ERROR"
+      "file": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa.json",
+      "id": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "1633513511478758",
+      "permalink": "/reel/1633513511478758/"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T04:19:34.820Z",
+  "checked_at": "2026-09-05T04:23:48.441Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T04:07:28.072Z",
-    "usage": 42,
+    "checked_at": "2026-09-05T04:23:45.230Z",
+    "usage": 41,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T04:22:28.072Z",
+    "next_check_at": "2026-09-05T04:38:45.230Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 42,
-    "instagram_remaining": 56,
+    "instagram_usage": 41,
+    "instagram_remaining": 57,
     "reserved_story_slots": 1,
     "pending_story_count": 110,
     "next_feed_eligible_at": "2026-09-05T05:07:34.521Z",
@@ -25,8 +25,8 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
-  "facebook_steps": 0,
+  "threads_steps": 1,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -36,7 +36,15 @@
   "threads_next_eligible_at": "2026-09-05T04:22:41.679Z",
   "facebook_next_eligible_at": "2026-09-05T04:37:46.802Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
+      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T04:53:48.066Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T20:55:36.394Z",
+  "checked_at": "2026-09-05T21:00:36.829Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T20:55:27.832Z",
@@ -16,12 +16,12 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 19,
-    "instagram_remaining": 79,
+    "instagram_usage": 20,
+    "instagram_remaining": 78,
     "reserved_story_slots": 1,
-    "pending_story_count": 109,
+    "pending_story_count": 110,
     "next_feed_eligible_at": "2026-09-05T21:55:34.906Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -35,16 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-05T21:05:35.089Z",
   "facebook_next_eligible_at": "2026-09-05T21:15:36.215Z",
-  "publications": [
-    {
-      "file": "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip.json",
-      "id": "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18142149031573597",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

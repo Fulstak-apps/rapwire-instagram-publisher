@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T04:43:11.762Z",
+  "checked_at": "2026-09-05T04:48:50.191Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T04:43:09.227Z",
@@ -33,18 +33,18 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T04:43:06.181Z",
+  "threads_next_eligible_at": "2026-09-05T05:03:48.418Z",
   "facebook_next_eligible_at": "2026-09-05T05:08:09.960Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
-      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T05:13:11.648Z: ERROR"
+      "file": "289-ye-just-brought-out-2-chainz-for-mercy-and-performed-his-iconic-.json",
+      "id": "289-ye-just-brought-out-2-chainz-for-mercy-and-performed-his-iconic-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18018544958726477"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",

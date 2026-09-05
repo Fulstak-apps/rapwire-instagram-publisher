@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T16:07:06.993Z",
+  "checked_at": "2026-09-05T16:12:11.891Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T16:02:10.283Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,24 +35,8 @@
   },
   "threads_next_eligible_at": "2026-09-05T16:22:05.147Z",
   "facebook_next_eligible_at": "2026-09-05T16:12:48.062Z",
-  "publications": [
-    {
-      "file": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-.json",
-      "id": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18071388083476338"
-    }
-  ],
-  "failures": [
-    {
-      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
-      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T18:07:06.728Z: ERROR"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

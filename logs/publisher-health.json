@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T15:51:57.125Z",
+  "checked_at": "2026-09-05T15:56:56.879Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T15:46:50.454Z",
@@ -36,7 +36,15 @@
   "threads_next_eligible_at": "2026-09-05T15:57:42.061Z",
   "facebook_next_eligible_at": "2026-09-05T16:12:48.062Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
+      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-05T16:26:56.601Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T14:14:16.161Z",
+  "checked_at": "2026-09-05T14:33:28.501Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T14:14:13.373Z",
-    "usage": 27,
+    "checked_at": "2026-09-05T14:33:07.796Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T14:29:13.373Z",
+    "next_check_at": "2026-09-05T14:48:07.796Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -20,22 +20,46 @@
     "instagram_remaining": 71,
     "reserved_story_slots": 1,
     "pending_story_count": 111,
-    "next_feed_eligible_at": "2026-09-05T14:02:15.181Z",
+    "next_feed_eligible_at": "2026-09-05T15:33:14.306Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T14:07:01.141Z",
-  "facebook_next_eligible_at": "2026-09-05T14:30:01.013Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-05T14:48:21.715Z",
+  "facebook_next_eligible_at": "2026-09-05T15:03:28.102Z",
+  "publications": [
+    {
+      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
+      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17908761828532306",
+      "content_type": "video"
+    },
+    {
+      "file": "295-ye-had-70-000-fans-singing-heartless-for-him-peak.json",
+      "id": "295-ye-had-70-000-fans-singing-heartless-for-him-peak",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18123096205853699"
+    },
+    {
+      "file": "311-this-song-live.json",
+      "id": "311-this-song-live",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "1093333173134392",
+      "permalink": "/reel/1093333173134392/"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

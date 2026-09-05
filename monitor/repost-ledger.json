@@ -3682,44 +3682,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dc5E1srOhwD/",
       "queue_id": "314-ye-put-on-a-crazy-light-show-for-all-of-the-lights-and-flashing-",
       "video": "media/314-ye-put-on-a-crazy-light-show-for-all-of-the-lights-and-flashing-.mp4"
+    },
+    "Dc5GXRQOv4w": {
+      "queued_at": "2026-09-05T04:39:26.670Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc5GXRQOv4w/",
+      "queue_id": "315-ye-and-kid-cudi-shared-a-hug-on-stage-after-they-reunited",
+      "video": "media/315-ye-and-kid-cudi-shared-a-hug-on-stage-after-they-reunited.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T12:07:07.475Z",
-      "candidates": 60,
-      "queued": [
-        "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/",
-          "stage": "score",
-          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
-          "stage": "queue",
-          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 2,
-      "finished_at": "2026-09-03T13:31:16.463Z"
-    },
     {
       "started_at": "2026-09-03T14:37:48.841Z",
       "candidates": 72,
@@ -9018,6 +8990,23 @@
       "mode": "discovery",
       "vip_pending": 10,
       "finished_at": "2026-09-05T04:32:33.573Z"
+    },
+    {
+      "started_at": "2026-09-05T04:37:43.785Z",
+      "candidates": 38,
+      "queued": [
+        "315-ye-and-kid-cudi-shared-a-hug-on-stage-after-they-reunited"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 9,
+      "finished_at": "2026-09-05T04:39:26.670Z"
     }
   ],
   "vip_pending": {
@@ -9128,29 +9117,20 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc3-LqbG5jK-3-capture-diagnostic.json",
       "last_attempt_at": "2026-09-05T02:21:31.110Z",
       "retry_at": "2026-09-05T03:21:31.110Z"
-    },
-    "Dc5GXRQOv4w": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/reel/Dc5GXRQOv4w/",
-      "shortcode": "Dc5GXRQOv4w",
-      "first_seen_at": "2026-09-05T04:31:48.188Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T04:30:56.650Z"
+      "checked_at": "2026-09-05T04:38:39.130Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T04:31:00.726Z"
+      "checked_at": "2026-09-05T04:38:43.072Z"
     },
     "records": {
-      "checked_at": "2026-09-05T04:31:04.693Z"
+      "checked_at": "2026-09-05T04:38:47.078Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T04:31:08.688Z"
+      "checked_at": "2026-09-05T04:38:51.102Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T04:13:59.394Z"

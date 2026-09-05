@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T16:42:33.060Z",
+  "checked_at": "2026-09-05T16:47:54.013Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T16:42:30.855Z",
@@ -21,22 +21,60 @@
     "reserved_story_slots": 1,
     "pending_story_count": 113,
     "next_feed_eligible_at": "2026-09-05T16:46:58.532Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T16:42:25.023Z",
-  "facebook_next_eligible_at": "2026-09-05T16:47:18.067Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-05T17:02:34.826Z",
+  "facebook_next_eligible_at": "2026-09-05T17:17:53.657Z",
+  "publications": [
+    {
+      "file": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig.json",
+      "id": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18087491240215144"
+    },
+    {
+      "file": "318-travis-was-so-hyped-to-see-ye-and-kid-cudi-reunite-together.json",
+      "id": "318-travis-was-so-hyped-to-see-ye-and-kid-cudi-reunite-together",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "27540968748916423",
+      "permalink": "/reel/27540968748916423/"
+    }
+  ],
+  "failures": [
+    {
+      "file": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig.json",
+      "id": "331-don-toliver-dontoliver-and-sosa-link-up-after-ye-s-show-last-nig",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '1814731852998082' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    },
+    {
+      "file": "316-ye-and-kid-cudi-walk-out-together-after-reuniting.json",
+      "id": "316-ye-and-kid-cudi-walk-out-together-after-reuniting",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '1028007773600825' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    },
+    {
+      "file": "317-this-was-so-peak.json",
+      "id": "317-this-was-so-peak",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '2582834045462053' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

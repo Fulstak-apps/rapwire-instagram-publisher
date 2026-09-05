@@ -3888,20 +3888,16 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dc6P6IWutsD/",
       "queue_id": "327-doodie-lo-reacts-to-lil-pump-dissing-lil-durk-lildurk"
+    },
+    "Dc6REarOBuz": {
+      "queued_at": "2026-09-05T15:40:56.386Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc6REarOBuz/",
+      "queue_id": "328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea",
+      "video": "media/328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T16:11:28.033Z",
-      "candidates": 72,
-      "queued": [
-        "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 2,
-      "finished_at": "2026-09-03T16:13:15.872Z"
-    },
     {
       "started_at": "2026-09-03T16:15:22.199Z",
       "candidates": 72,
@@ -9296,6 +9292,17 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-05T15:33:07.197Z"
+    },
+    {
+      "started_at": "2026-09-05T15:38:11.796Z",
+      "candidates": 56,
+      "queued": [
+        "328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-05T15:40:56.386Z"
     }
   ],
   "vip_pending": {
@@ -9407,15 +9414,6 @@
       "last_attempt_at": "2026-09-05T15:08:31.018Z",
       "retry_at": "2026-09-05T16:08:31.018Z"
     },
-    "Dc6REarOBuz": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/reel/Dc6REarOBuz/",
-      "shortcode": "Dc6REarOBuz",
-      "first_seen_at": "2026-09-05T15:22:15.221Z",
-      "profile_position": 0,
-      "state": "pending",
-      "attempts": 0
-    },
     "Dc6R08DkUbq": {
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/Dc6R08DkUbq/",
@@ -9428,22 +9426,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T15:32:07.364Z"
+      "checked_at": "2026-09-05T15:38:20.112Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T15:32:12.109Z"
+      "checked_at": "2026-09-05T15:38:24.217Z"
     },
     "records": {
-      "checked_at": "2026-09-05T15:32:16.453Z"
+      "checked_at": "2026-09-05T15:38:28.288Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T15:32:22.133Z"
+      "checked_at": "2026-09-05T15:38:32.444Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-05T15:02:14.137Z"
+      "checked_at": "2026-09-05T15:38:36.529Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-05T15:02:20.183Z"
+      "checked_at": "2026-09-05T15:38:40.577Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-05T15:14:24.241Z"

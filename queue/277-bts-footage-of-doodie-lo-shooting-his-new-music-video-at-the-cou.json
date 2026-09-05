@@ -36,7 +36,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "failed",
+  "threads_status": "pending",
   "threads_topic_tag": "Lil Durk",
   "artist_handles": [
     "lildurk"
@@ -111,5 +111,8 @@
   "facebook_verified_at": "2026-09-04T22:49:42.990Z",
   "facebook_permalink": "/reel/1210474125492246/",
   "threads_error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AIjC4CyTHt76aFnBfXZtJ8x\"}}",
-  "threads_retry_at": "2026-09-04T23:40:08.846Z"
+  "threads_retry_at": "2026-09-04T23:40:08.846Z",
+  "threads_container_id": "18095817068179906",
+  "threads_container_created_at": "2026-09-05T02:53:30.403Z",
+  "threads_container_checked_at": "2026-09-05T02:53:30.403Z"
 }

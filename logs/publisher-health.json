@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-05T21:45:56.300Z",
+  "checked_at": "2026-09-05T21:51:40.782Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T21:40:54.268Z",
-    "usage": 23,
+    "usage": 24,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-05T21:55:54.268Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -34,9 +34,40 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-05T21:50:54.082Z",
-  "facebook_next_eligible_at": "2026-09-05T21:45:58.915Z",
-  "publications": [],
-  "failures": [],
+  "facebook_next_eligible_at": "2026-09-05T22:21:33.481Z",
+  "publications": [
+    {
+      "file": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.json",
+      "id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "1078162625154151",
+      "permalink": "/reel/1078162625154151/"
+    },
+    {
+      "file": "261-man-who-interrupted-the-kewon-white-trial-guy-accused-of-k-llin-.json",
+      "id": "261-man-who-interrupted-the-kewon-white-trial-guy-accused-of-k-llin-",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "17967789225156114"
+    }
+  ],
+  "failures": [
+    {
+      "file": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne.json",
+      "id": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '1750782322870119' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    },
+    {
+      "file": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-.json",
+      "id": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '1068661155534343' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

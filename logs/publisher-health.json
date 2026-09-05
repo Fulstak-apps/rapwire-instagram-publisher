@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T20:50:40.118Z",
+  "checked_at": "2026-09-05T20:55:36.394Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T20:40:18.469Z",
-    "usage": 19,
+    "checked_at": "2026-09-05T20:55:27.832Z",
+    "usage": 20,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T20:55:18.469Z",
+    "next_check_at": "2026-09-05T21:10:27.832Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -20,13 +20,13 @@
     "instagram_remaining": 79,
     "reserved_story_slots": 1,
     "pending_story_count": 109,
-    "next_feed_eligible_at": "2026-09-05T20:45:16.853Z",
+    "next_feed_eligible_at": "2026-09-05T21:55:34.906Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
-  "facebook_steps": 1,
+  "threads_steps": 0,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -37,11 +37,12 @@
   "facebook_next_eligible_at": "2026-09-05T21:15:36.215Z",
   "publications": [
     {
-      "file": "342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th.json",
-      "id": "342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th",
-      "platform": "threads",
+      "file": "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip.json",
+      "id": "341-drake-champagnepapi-had-a-storage-bin-full-of-money-at-the-strip",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18037689278826696"
+      "media_id": "18142149031573597",
+      "content_type": "video"
     }
   ],
   "failures": [],

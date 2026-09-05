@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T18:43:20.988Z",
+  "checked_at": "2026-09-05T18:47:45.901Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T18:43:13.084Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -35,22 +35,14 @@
   },
   "threads_next_eligible_at": "2026-09-05T18:58:18.802Z",
   "facebook_next_eligible_at": "2026-09-05T19:07:45.597Z",
-  "publications": [
-    {
-      "file": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress.json",
-      "id": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17900170125663006"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
-      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
+      "file": "268-rapwire-repost-video.json",
+      "id": "268-rapwire-repost-video",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T22:43:20.544Z: ERROR"
+      "error": "instagram_story: ERROR; retry after 2026-09-05T22:47:45.402Z: ERROR"
     }
   ],
   "reviews": [

@@ -1146,14 +1146,127 @@
         "reposts": 0,
         "quotes": 0
       }
+    },
+    "instagram:18119098786730841": {
+      "platform": "instagram",
+      "id": "18119098786730841",
+      "queue_id": "256-travis-scott-dropped-rodeo-11-years-ago-today-and-rihanna-made-s",
+      "source": "records",
+      "topic": "music",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-04T20:37:46.030Z",
+      "permalink": "https://www.instagram.com/p/Dc4QTJyD0aF/",
+      "checked_at": "2026-09-05T03:16:17.198Z",
+      "metrics": {
+        "reach": 3,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18070193009730085": {
+      "platform": "instagram",
+      "id": "18070193009730085",
+      "queue_id": "230-drake-announced-september-15-on-youtube-9pm",
+      "source": "akademiks",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-04T20:18:41.704Z",
+      "permalink": "https://www.instagram.com/p/Dc4OO4YG2hO/",
+      "checked_at": "2026-09-05T03:16:17.198Z",
+      "metrics": {
+        "reach": 2,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18332960836278389": {
+      "platform": "instagram",
+      "id": "18332960836278389",
+      "queue_id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
+      "source": "rockstargames",
+      "topic": "gaming",
+      "series": "RapWire Debate",
+      "question": "discussion-v2",
+      "published_at": "2026-09-04T20:02:33.762Z",
+      "permalink": "https://www.instagram.com/reel/Dc4MQyhCpSv/",
+      "checked_at": "2026-09-05T03:16:17.198Z",
+      "metrics": {
+        "reach": 8,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18086499077360861": {
+      "platform": "instagram",
+      "id": "18086499077360861",
+      "queue_id": "264-travis-scott-s-new-album-is-right-around-the-corner-featured-on-",
+      "source": "complexmusic",
+      "topic": "music",
+      "series": "New Music Watch",
+      "question": "discussion-v2",
+      "published_at": "2026-09-04T19:45:50.801Z",
+      "permalink": "https://www.instagram.com/reel/Dc4KYhdDQmu/",
+      "checked_at": "2026-09-05T03:16:17.198Z",
+      "metrics": {
+        "reach": 10,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18077670008707781": {
+      "platform": "instagram",
+      "id": "18077670008707781",
+      "queue_id": "263-has-been-on-a-legendary-run-since-going-officially-independent-t",
+      "source": "trapmatictv",
+      "topic": "music",
+      "series": "New Music Watch",
+      "question": "discussion-v2",
+      "published_at": "2026-09-04T19:08:56.201Z",
+      "permalink": "https://www.instagram.com/reel/Dc4GYAeAVg_/",
+      "checked_at": "2026-09-05T03:16:17.198Z",
+      "metrics": {
+        "reach": 121,
+        "likes": 7,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:17958359511207439": {
+      "platform": "instagram",
+      "id": "17958359511207439",
+      "queue_id": "255-this-might-genuinely-be-his-best-verse-ever-blueface-may-have-pe",
+      "source": "freshouttheculture",
+      "topic": "music",
+      "series": "RapWire Debate",
+      "question": "discussion-v2",
+      "published_at": "2026-09-04T18:54:41.773Z",
+      "permalink": "https://www.instagram.com/reel/Dc4EgNImC3D/",
+      "checked_at": "2026-09-05T03:16:17.198Z",
+      "metrics": {
+        "reach": 165,
+        "likes": 11,
+        "comments": 0,
+        "shares": 0,
+        "saved": 2
+      }
     }
   },
   "platforms": {
     "instagram": {
-      "next_at": "2026-09-05T00:19:29.773Z",
-      "checked_at": "2026-09-04T18:19:29.773Z",
-      "status": "waiting_for_instagram_capacity",
-      "error": "Unsupported get request. Object with ID '18130043800677586' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
+      "next_at": "2026-09-05T09:16:17.198Z",
+      "checked_at": "2026-09-05T03:16:17.198Z",
+      "status": "collected"
     },
     "threads": {
       "next_at": "2026-09-05T08:25:08.755Z",
@@ -1178,6 +1291,10 @@
       {
         "at": "2026-09-04T12:18:52.219Z",
         "count": 29
+      },
+      {
+        "at": "2026-09-05T03:16:17.198Z",
+        "count": 33
       }
     ],
     "threads": [
@@ -1208,17 +1325,27 @@
     ]
   },
   "summary": {
-    "generated_at": "2026-09-05T03:14:03.937Z",
-    "measured_posts": 61,
+    "generated_at": "2026-09-05T03:16:17.198Z",
+    "measured_posts": 67,
     "rates": [
       {
         "platform": "instagram",
         "kind": "source",
         "value": "akademiks",
-        "posts": 2,
-        "exposures": 8,
+        "posts": 3,
+        "exposures": 10,
         "interactions": 1,
-        "interactions_per_1000": 125,
+        "interactions_per_1000": 100,
+        "sufficient_sample": false
+      },
+      {
+        "platform": "instagram",
+        "kind": "series",
+        "value": "RapWire Debate",
+        "posts": 3,
+        "exposures": 175,
+        "interactions": 2,
+        "interactions_per_1000": 11.4,
         "sufficient_sample": false
       },
       {
@@ -1285,11 +1412,11 @@
         "platform": "instagram",
         "kind": "source",
         "value": "records",
-        "posts": 2,
-        "exposures": 582,
+        "posts": 3,
+        "exposures": 585,
         "interactions": 3,
-        "interactions_per_1000": 5.2,
-        "sufficient_sample": false
+        "interactions_per_1000": 5.1,
+        "sufficient_sample": true
       },
       {
         "platform": "instagram",
@@ -1335,10 +1462,20 @@
         "platform": "instagram",
         "kind": "topic",
         "value": "music",
-        "posts": 10,
-        "exposures": 1589,
-        "interactions": 6,
-        "interactions_per_1000": 3.8,
+        "posts": 14,
+        "exposures": 1888,
+        "interactions": 8,
+        "interactions_per_1000": 4.2,
+        "sufficient_sample": true
+      },
+      {
+        "platform": "instagram",
+        "kind": "source",
+        "value": "freshouttheculture",
+        "posts": 7,
+        "exposures": 1149,
+        "interactions": 4,
+        "interactions_per_1000": 3.5,
         "sufficient_sample": true
       },
       {
@@ -1355,10 +1492,10 @@
         "platform": "instagram",
         "kind": "question",
         "value": "discussion-v2",
-        "posts": 17,
-        "exposures": 1943,
-        "interactions": 5,
-        "interactions_per_1000": 2.6,
+        "posts": 23,
+        "exposures": 2252,
+        "interactions": 7,
+        "interactions_per_1000": 3.1,
         "sufficient_sample": true
       },
       {
@@ -1373,32 +1510,22 @@
       },
       {
         "platform": "instagram",
-        "kind": "source",
-        "value": "trapmatictv",
-        "posts": 3,
-        "exposures": 475,
+        "kind": "topic",
+        "value": "culture",
+        "posts": 8,
+        "exposures": 537,
         "interactions": 1,
-        "interactions_per_1000": 2.1,
-        "sufficient_sample": false
-      },
-      {
-        "platform": "instagram",
-        "kind": "source",
-        "value": "freshouttheculture",
-        "posts": 6,
-        "exposures": 984,
-        "interactions": 2,
-        "interactions_per_1000": 2,
+        "interactions_per_1000": 1.9,
         "sufficient_sample": true
       },
       {
         "platform": "instagram",
-        "kind": "topic",
-        "value": "culture",
-        "posts": 7,
-        "exposures": 535,
+        "kind": "source",
+        "value": "trapmatictv",
+        "posts": 4,
+        "exposures": 596,
         "interactions": 1,
-        "interactions_per_1000": 1.9,
+        "interactions_per_1000": 1.7,
         "sufficient_sample": true
       },
       {
@@ -1454,19 +1581,9 @@
       {
         "platform": "instagram",
         "kind": "series",
-        "value": "RapWire Debate",
-        "posts": 1,
-        "exposures": 2,
-        "interactions": 0,
-        "interactions_per_1000": 0,
-        "sufficient_sample": false
-      },
-      {
-        "platform": "instagram",
-        "kind": "series",
         "value": "What Happened?",
-        "posts": 2,
-        "exposures": 21,
+        "posts": 4,
+        "exposures": 26,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
@@ -1515,8 +1632,8 @@
         "platform": "instagram",
         "kind": "series",
         "value": "New Music Watch",
-        "posts": 1,
-        "exposures": 149,
+        "posts": 3,
+        "exposures": 280,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
@@ -1580,17 +1697,48 @@
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
+      },
+      {
+        "platform": "instagram",
+        "kind": "source",
+        "value": "rockstargames",
+        "posts": 1,
+        "exposures": 8,
+        "interactions": 0,
+        "interactions_per_1000": 0,
+        "sufficient_sample": false
+      },
+      {
+        "platform": "instagram",
+        "kind": "topic",
+        "value": "gaming",
+        "posts": 1,
+        "exposures": 8,
+        "interactions": 0,
+        "interactions_per_1000": 0,
+        "sufficient_sample": false
+      },
+      {
+        "platform": "instagram",
+        "kind": "source",
+        "value": "complexmusic",
+        "posts": 1,
+        "exposures": 10,
+        "interactions": 0,
+        "interactions_per_1000": 0,
+        "sufficient_sample": false
       }
     ],
     "source_weights": {
-      "freshouttheculture": 0.9839999999999999,
-      "records": 0.9964000000000002
+      "records": 1.1232000000000002,
+      "freshouttheculture": 1.0193750000000001,
+      "trapmatictv": 0.8
     },
     "followers": {
       "instagram": {
-        "count": 29,
-        "checked_at": "2026-09-04T12:18:52.219Z",
-        "change_since_prior_day": null
+        "count": 33,
+        "checked_at": "2026-09-05T03:16:17.198Z",
+        "change_since_prior_day": 4
       },
       "threads": {
         "count": 114,

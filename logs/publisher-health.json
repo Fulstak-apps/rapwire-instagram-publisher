@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T03:20:38.918Z",
+  "checked_at": "2026-09-05T03:23:33.444Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T03:16:14.239Z",
@@ -16,15 +16,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 10,
     "instagram_daily_cap": 98,
-    "instagram_usage": 41,
-    "instagram_remaining": 57,
+    "instagram_usage": 42,
+    "instagram_remaining": 56,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-05T03:30:26.944Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 1,
   "facebook_configured": true,
@@ -33,35 +33,18 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T03:20:15.482Z",
+  "threads_next_eligible_at": "2026-09-05T03:33:31.501Z",
   "facebook_next_eligible_at": "2026-09-05T03:30:38.633Z",
   "publications": [
     {
-      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
-      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
-      "platform": "instagram",
+      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
+      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
+      "platform": "threads",
       "status": "published",
-      "media_id": "17910848484460985",
-      "content_type": "video"
-    },
-    {
-      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
-      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "2340993369975966",
-      "permalink": "/reel/2340993369975966/"
+      "media_id": "18039466391684596"
     }
   ],
-  "failures": [
-    {
-      "file": "295-ye-had-70-000-fans-singing-heartless-for-him-peak.json",
-      "id": "295-ye-had-70-000-fans-singing-heartless-for-him-peak",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '1712650486458946' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

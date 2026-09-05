@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-05T03:16:16.200Z",
+  "checked_at": "2026-09-05T03:20:38.918Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T03:16:14.239Z",
-    "usage": 41,
+    "usage": 42,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-05T03:31:14.239Z",
@@ -20,13 +20,13 @@
     "instagram_remaining": 57,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-04T20:47:50.467Z",
+    "next_feed_eligible_at": "2026-09-05T03:30:26.944Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
-  "facebook_steps": 0,
+  "threads_steps": 1,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -34,9 +34,34 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-05T03:20:15.482Z",
-  "facebook_next_eligible_at": "2026-09-05T03:17:07.589Z",
-  "publications": [],
-  "failures": [],
+  "facebook_next_eligible_at": "2026-09-05T03:30:38.633Z",
+  "publications": [
+    {
+      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
+      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17910848484460985",
+      "content_type": "video"
+    },
+    {
+      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
+      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "2340993369975966",
+      "permalink": "/reel/2340993369975966/"
+    }
+  ],
+  "failures": [
+    {
+      "file": "295-ye-had-70-000-fans-singing-heartless-for-him-peak.json",
+      "id": "295-ye-had-70-000-fans-singing-heartless-for-him-peak",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Unsupported get request. Object with ID '1712650486458946' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

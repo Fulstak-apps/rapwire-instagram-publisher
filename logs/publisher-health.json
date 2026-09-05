@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T17:53:22.760Z",
+  "checked_at": "2026-09-05T17:58:18.670Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T17:48:05.610Z",
@@ -21,7 +21,7 @@
     "reserved_story_slots": 1,
     "pending_story_count": 112,
     "next_feed_eligible_at": "2026-09-05T17:57:47.946Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -33,9 +33,17 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T17:48:07.418Z",
+  "threads_next_eligible_at": "2026-09-05T18:13:17.135Z",
   "facebook_next_eligible_at": "2026-09-05T17:48:28.494Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "301-ye-had-all-70-000-fans-singing-power-for-him-in-chicago.json",
+      "id": "301-ye-had-all-70-000-fans-singing-power-for-him-in-chicago",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18410561680085684"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

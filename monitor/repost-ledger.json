@@ -4128,17 +4128,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-03T18:17:01.240Z",
-      "candidates": 0,
-      "queued": [
-        "184-blueface-links-up-with-model-kkvsh-on-stream-making-her-the-5th-"
-      ],
-      "errors": [],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 3,
-      "finished_at": "2026-09-03T18:17:49.353Z"
-    },
-    {
       "started_at": "2026-09-03T18:19:52.695Z",
       "candidates": 36,
       "queued": [
@@ -9809,6 +9798,22 @@
       "mode": "discovery",
       "vip_pending": 10,
       "finished_at": "2026-09-05T20:23:02.071Z"
+    },
+    {
+      "started_at": "2026-09-05T20:28:13.747Z",
+      "candidates": 57,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-05T20:30:29.733Z"
     }
   ],
   "vip_pending": {
@@ -9927,24 +9932,24 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 12,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T20:08:11.369Z",
-      "retry_at": "2026-09-05T21:08:11.369Z"
+      "attempts": 13,
+      "last_error": "Crop review required: source branding is not isolated in a removable top header",
+      "last_attempt_at": "2026-09-05T20:30:29.733Z",
+      "retry_at": "2026-09-05T21:30:29.733Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T20:21:00.161Z"
+      "checked_at": "2026-09-05T20:28:22.005Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T20:21:04.628Z"
+      "checked_at": "2026-09-05T20:28:26.473Z"
     },
     "records": {
-      "checked_at": "2026-09-05T20:21:09.665Z"
+      "checked_at": "2026-09-05T20:28:30.615Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T20:21:14.352Z"
+      "checked_at": "2026-09-05T20:28:34.900Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T20:13:41.493Z"
@@ -9965,10 +9970,10 @@
       "checked_at": "2026-09-05T19:58:06.034Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-05T19:51:38.582Z"
+      "checked_at": "2026-09-05T20:28:39.165Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-05T19:51:42.692Z"
+      "checked_at": "2026-09-05T20:28:43.371Z"
     }
   }
 }

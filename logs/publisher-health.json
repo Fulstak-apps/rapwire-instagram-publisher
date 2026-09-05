@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T22:06:00.096Z",
+  "checked_at": "2026-09-05T22:10:53.233Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T21:55:59.234Z",
@@ -16,12 +16,12 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 24,
-    "instagram_remaining": 74,
+    "instagram_usage": 25,
+    "instagram_remaining": 73,
     "reserved_story_slots": 1,
-    "pending_story_count": 106,
+    "pending_story_count": 107,
     "next_feed_eligible_at": "2026-09-05T23:05:58.212Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -35,16 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-05T22:11:08.972Z",
   "facebook_next_eligible_at": "2026-09-05T22:21:33.481Z",
-  "publications": [
-    {
-      "file": "342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th.json",
-      "id": "342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18097897349107903",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

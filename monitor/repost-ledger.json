@@ -2749,6 +2749,20 @@
       "source_url": "https://www.instagram.com/xxl/reel/Dc6_FYyp0tC/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc7Ck-cESVR": {
+      "seen_at": "2026-09-05T22:39:00.279Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc7Ck-cESVR/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc6_khpDYZG": {
+      "seen_at": "2026-09-05T22:39:00.279Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dc6_khpDYZG/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -4152,20 +4166,15 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Dc5uqL-v0hU/",
       "queue_id": "342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th",
       "video": "media/342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th.mp4"
+    },
+    "Dc7Ck-cESVR": {
+      "queued_at": "2026-09-05T22:39:11.708Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc7Ck-cESVR/",
+      "queue_id": "343-two-years-ago-today-the-world-lost-rich-homie-quan-from-type-of-"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T18:57:39.404Z",
-      "candidates": 0,
-      "queued": [
-        "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo"
-      ],
-      "errors": [],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 8,
-      "finished_at": "2026-09-03T18:59:03.591Z"
-    },
     {
       "started_at": "2026-09-03T19:25:41.489Z",
       "candidates": 39,
@@ -10104,6 +10113,24 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-05T22:32:20.034Z"
+    },
+    {
+      "started_at": "2026-09-05T22:37:24.065Z",
+      "candidates": 54,
+      "queued": [
+        "343-two-years-ago-today-the-world-lost-rich-homie-quan-from-type-of-"
+      ],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "score",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-05T22:39:11.708Z"
     }
   ],
   "vip_pending": {
@@ -10242,16 +10269,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T22:25:32.932Z"
+      "checked_at": "2026-09-05T22:37:32.764Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T22:25:36.905Z"
+      "checked_at": "2026-09-05T22:37:37.391Z"
     },
     "records": {
-      "checked_at": "2026-09-05T22:25:41.600Z"
+      "checked_at": "2026-09-05T22:37:42.324Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T22:25:45.715Z"
+      "checked_at": "2026-09-05T22:37:47.055Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T22:25:49.743Z"
@@ -10260,10 +10287,10 @@
       "checked_at": "2026-09-05T22:25:53.893Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-05T21:51:32.569Z"
+      "checked_at": "2026-09-05T22:37:51.483Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-05T21:51:36.811Z"
+      "checked_at": "2026-09-05T22:37:56.129Z"
     },
     "xxl": {
       "checked_at": "2026-09-05T22:14:21.588Z"

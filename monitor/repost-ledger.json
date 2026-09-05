@@ -2112,6 +2112,13 @@
       "source_url": "https://www.instagram.com/xxl/p/Dc4gA_ZmZd9/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc4mGGoOGpF": {
+      "seen_at": "2026-09-05T00:22:00.923Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc4mGGoOGpF/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -3208,18 +3215,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Dc4CvrzoZGY/",
       "queue_id": "280-known-for-his-aggressive-aggressive-delivery-and-hyper-energetic",
       "video": "media/280-known-for-his-aggressive-aggressive-delivery-and-hyper-energetic.mp4"
+    },
+    "Dc4mGGoOGpF": {
+      "queued_at": "2026-09-05T00:25:10.495Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dc4mGGoOGpF/",
+      "queue_id": "283-visiting-the-8th-wonder-of-the-world-ye-s-childhood-home",
+      "video": "media/283-visiting-the-8th-wonder-of-the-world-ye-s-childhood-home.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-03T05:17:59.848Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 0,
-      "finished_at": "2026-09-03T05:18:49.168Z"
-    },
     {
       "started_at": "2026-09-03T05:20:52.851Z",
       "candidates": 48,
@@ -8438,6 +8443,23 @@
       "mode": "discovery",
       "vip_pending": 10,
       "finished_at": "2026-09-04T23:58:13.054Z"
+    },
+    {
+      "started_at": "2026-09-05T00:19:10.299Z",
+      "candidates": 35,
+      "queued": [
+        "283-visiting-the-8th-wonder-of-the-world-ye-s-childhood-home"
+      ],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 10,
+      "finished_at": "2026-09-05T00:25:10.495Z"
     }
   ],
   "vip_pending": {
@@ -8564,16 +8586,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-04T22:57:48.510Z"
+      "checked_at": "2026-09-05T00:21:39.033Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-04T22:57:52.886Z"
+      "checked_at": "2026-09-05T00:21:43.070Z"
     },
     "records": {
-      "checked_at": "2026-09-04T22:57:40.026Z"
+      "checked_at": "2026-09-05T00:21:30.769Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-04T22:57:44.312Z"
+      "checked_at": "2026-09-05T00:21:35.028Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-04T22:46:57.776Z"

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T15:56:56.879Z",
+  "checked_at": "2026-09-05T16:02:12.674Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T15:46:50.454Z",
-    "usage": 25,
+    "checked_at": "2026-09-05T16:02:10.283Z",
+    "usage": 24,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T16:01:50.454Z",
+    "next_check_at": "2026-09-05T16:17:10.283Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 25,
-    "instagram_remaining": 73,
+    "instagram_usage": 24,
+    "instagram_remaining": 74,
     "reserved_story_slots": 1,
     "pending_story_count": 113,
     "next_feed_eligible_at": "2026-09-05T16:46:58.532Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -36,15 +36,7 @@
   "threads_next_eligible_at": "2026-09-05T15:57:42.061Z",
   "facebook_next_eligible_at": "2026-09-05T16:12:48.062Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
-      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T16:26:56.601Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

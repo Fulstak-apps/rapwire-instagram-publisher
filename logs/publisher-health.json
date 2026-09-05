@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-05T16:17:18.733Z",
+  "checked_at": "2026-09-05T16:24:19.077Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-05T16:02:10.283Z",
-    "usage": 24,
+    "checked_at": "2026-09-05T16:24:16.493Z",
+    "usage": 23,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-05T16:17:10.283Z",
+    "next_check_at": "2026-09-05T16:39:16.493Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -16,8 +16,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 24,
-    "instagram_remaining": 74,
+    "instagram_usage": 23,
+    "instagram_remaining": 75,
     "reserved_story_slots": 1,
     "pending_story_count": 113,
     "next_feed_eligible_at": "2026-09-05T16:46:58.532Z",
@@ -25,8 +25,8 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
-  "facebook_steps": 1,
+  "threads_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,39 +35,8 @@
   },
   "threads_next_eligible_at": "2026-09-05T16:22:05.147Z",
   "facebook_next_eligible_at": "2026-09-05T16:47:18.067Z",
-  "publications": [
-    {
-      "file": "315-ye-and-kid-cudi-shared-a-hug-on-stage-after-they-reunited.json",
-      "id": "315-ye-and-kid-cudi-shared-a-hug-on-stage-after-they-reunited",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1614208563385344",
-      "permalink": "/reel/1614208563385344/"
-    }
-  ],
-  "failures": [
-    {
-      "file": "313-ye-and-kid-cudi-just-reunited-this-is-insane.json",
-      "id": "313-ye-and-kid-cudi-just-reunited-this-is-insane",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '1028330570188375' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    },
-    {
-      "file": "314-ye-put-on-a-crazy-light-show-for-all-of-the-lights-and-flashing-.json",
-      "id": "314-ye-put-on-a-crazy-light-show-for-all-of-the-lights-and-flashing-",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Unsupported get request. Object with ID '2331606951001291' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-    },
-    {
-      "file": "268-rapwire-repost-video.json",
-      "id": "268-rapwire-repost-video",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-05T18:17:18.437Z: ERROR"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

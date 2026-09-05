@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T03:50:52.025Z",
+  "checked_at": "2026-09-05T03:53:24.592Z",
   "mode": "research_not_auto_approval",
   "candidates": [
     {
@@ -57,6 +57,20 @@
       ],
       "caption_error": null,
       "story_fingerprint": "058c8476f48d183c7e90927b40bb814f0b29731ec89913070911c477ceb24512"
+    },
+    {
+      "id": "302-dallas-rapper-mo3-murder-case-verdict-kewon-white-guilt",
+      "queue_file": "queue/302-dallas-rapper-mo3-murder-case-verdict-kewon-white-guilt.json",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/p/Dc4x0o4jSzk/",
+      "headline": "Dallas Rapper MO3 Murder Case Verdict: Kewon White Guilty of Capital Murder",
+      "body": "Jurors have reached a verdict in the first case to be tried in the murder of Dallas rapper MO3 in 2020. Kewon White, allegedly hired by Yella Beezy (Markies Conway) to kill MO3, was found guilty of capital murder. The judge sentenced White to life in prison without parole. Prosecutors claim White ambushed MO3 for a promised payment, while the defense argues the state proved murder but not murder-for-hire. Jurors viewed video showing MO3 jumping from his gold Honda before being chased by a masked suspect on Interstate 35E.",
+      "claim_sha256": null,
+      "reasons": [
+        "major_case_or_death_claim"
+      ],
+      "caption_error": null,
+      "story_fingerprint": "63094da8176289dc9beaefe2134acd4b6a08a074ad12bbfe7d9b38d66b284b9f"
     }
   ],
   "instructions": "Check primary documents and two independent reports. Preserve the exact claim, dates, actual case posture, and source URLs. Record reviewed claim hash. Never approve based only on a model score or repeated social captions."

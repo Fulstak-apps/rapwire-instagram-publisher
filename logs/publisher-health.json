@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-05T17:03:36.327Z",
+  "checked_at": "2026-09-05T17:09:50.248Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T16:57:40.056Z",
-    "usage": 22,
+    "usage": 23,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-05T17:12:40.056Z",
@@ -33,9 +33,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-05T17:02:34.826Z",
+  "threads_next_eligible_at": "2026-09-05T17:24:42.774Z",
   "facebook_next_eligible_at": "2026-09-05T17:17:53.657Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "332-ye-packed-night-two-of-his-sold-out-chicago-homecoming-at-soldie.json",
+      "id": "332-ye-packed-night-two-of-his-sold-out-chicago-homecoming-at-soldie",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18120082327693766"
+    },
+    {
+      "file": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-.json",
+      "id": "325-night-2-was-one-we-ll-never-forget-ye-s-full-setlist-at-soldier-",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "18158049091499469"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

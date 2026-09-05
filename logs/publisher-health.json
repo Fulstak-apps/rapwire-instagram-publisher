@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T15:46:59.573Z",
+  "checked_at": "2026-09-05T15:51:57.125Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T15:46:50.454Z",
@@ -16,12 +16,12 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 24,
-    "instagram_remaining": 74,
+    "instagram_usage": 25,
+    "instagram_remaining": 73,
     "reserved_story_slots": 1,
-    "pending_story_count": 112,
+    "pending_story_count": 113,
     "next_feed_eligible_at": "2026-09-05T16:46:58.532Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -35,16 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-05T15:57:42.061Z",
   "facebook_next_eligible_at": "2026-09-05T16:12:48.062Z",
-  "publications": [
-    {
-      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
-      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18033985088652706",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

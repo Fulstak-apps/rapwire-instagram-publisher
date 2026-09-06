@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-06T00:22:12.744Z",
+  "checked_at": "2026-09-06T00:27:40.693Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T00:12:18.556Z",
-    "usage": 28,
+    "usage": 29,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-06T00:27:18.556Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 70,
     "reserved_story_slots": 1,
     "pending_story_count": 106,
-    "next_feed_eligible_at": "2026-09-06T00:16:42.092Z",
+    "next_feed_eligible_at": "2026-09-06T01:27:39.331Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -33,18 +33,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T00:20:57.432Z",
+  "threads_next_eligible_at": "2026-09-06T00:42:28.873Z",
   "facebook_next_eligible_at": "2026-09-06T00:42:24.937Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
-      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T04:22:12.577Z: ERROR"
+      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
+      "id": "345-nba-youngboy-2021-jail-altercation-footage",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17912636547455068"
+    },
+    {
+      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
+      "id": "345-nba-youngboy-2021-jail-altercation-footage",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18092963948441505",
+      "content_type": "video"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

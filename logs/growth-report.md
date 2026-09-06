@@ -1,9 +1,9 @@
 ## RapWire audience report
 
-Measured posts: 111.
+Measured posts: 117.
 
 instagram: followers 35; daily change 6; collection waiting_for_instagram_capacity.
-threads: followers 197; daily change 81; collection collected.
+threads: followers 198; daily change 53; collection collected.
 
 | Platform | Category | Source or topic | Posts | Meaningful interactions / 1,000 reach or views |
 |---|---|---|---:|---:|
@@ -18,7 +18,7 @@ threads: followers 197; daily change 81; collection collected.
 | threads | question | legacy | 3 | 6.4 (small sample) |
 | threads | series | From the Vault | 5 | 6.4 (small sample) |
 | instagram | topic | culture | 14 | 6.3 |
-| threads | series | RapWire Debate | 10 | 5.8 |
+| threads | series | RapWire Debate | 11 | 5.8 |
 | threads | topic | music | 18 | 5.5 |
 | instagram | question | discussion-v2 | 37 | 5.3 |
 | instagram | source | records | 5 | 3.9 |

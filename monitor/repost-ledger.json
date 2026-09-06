@@ -4200,39 +4200,15 @@
       "source_url": "https://www.instagram.com/records/reel/Dc7H20iNwIB/",
       "queue_id": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa",
       "video": "media/344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa.mp4"
+    },
+    "Dc7D6Z1Ihd6": {
+      "queue_id": "345-nba-youngboy-2021-jail-altercation-footage",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dc7D6Z1Ihd6/",
+      "source_handle": "raplisted_",
+      "video": "media/345-nba-youngboy-2021-jail-altercation-footage.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-04T00:09:47.306Z",
-      "candidates": 61,
-      "queued": [
-        "228-durk-had-no-passport-at-the-airport-his-lawyers-denied-he-tried-"
-      ],
-      "errors": [
-        {
-          "source_handle": "igndotcom",
-          "source_url": "https://www.instagram.com/igndotcom/reel/Dc1yA_-Ee1G/",
-          "stage": "score",
-          "error": "page.goto: net::ERR_ABORTED at https://www.instagram.com/igndotcom/reel/Dc1yA_-Ee1G/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/reel/Dc1yA_-Ee1G/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "igndotcom",
-          "source_url": "https://www.instagram.com/igndotcom/p/Dc1wW23Hfnz/",
-          "stage": "score",
-          "error": "browserContext.newPage: Protocol error (Target.createTarget): Failed to open a new tab"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/Dc1kmwOP1gD/",
-          "stage": "queue",
-          "error": "page.waitForTimeout: Target page, context or browser has been closed"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 12,
-      "finished_at": "2026-09-04T00:17:34.218Z"
-    },
     {
       "started_at": "2026-09-04T00:18:47.078Z",
       "candidates": 56,
@@ -10314,6 +10290,33 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-06T00:02:11.842Z"
+    },
+    {
+      "started_at": "2026-09-06T00:07:14.024Z",
+      "candidates": 37,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dc7D6Z1Ihd6/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-06T00:09:30.590Z"
     }
   ],
   "vip_pending": {
@@ -10432,10 +10435,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 32,
+      "attempts": 33,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-05T23:59:52.238Z",
-      "retry_at": "2026-09-06T00:59:52.238Z"
+      "last_attempt_at": "2026-09-06T00:09:30.590Z",
+      "retry_at": "2026-09-06T01:09:30.590Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10444,24 +10447,24 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 18,
+      "attempts": 19,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-05T23:58:54.902Z",
-      "retry_at": "2026-09-06T00:58:54.902Z"
+      "last_attempt_at": "2026-09-06T00:08:54.603Z",
+      "retry_at": "2026-09-06T01:08:54.603Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T23:58:16.259Z"
+      "checked_at": "2026-09-06T00:08:20.002Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T23:58:20.475Z"
+      "checked_at": "2026-09-06T00:08:23.905Z"
     },
     "records": {
-      "checked_at": "2026-09-05T23:58:24.584Z"
+      "checked_at": "2026-09-06T00:08:27.788Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T23:58:28.743Z"
+      "checked_at": "2026-09-06T00:08:31.739Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T23:14:29.756Z"

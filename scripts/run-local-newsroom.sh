@@ -28,6 +28,13 @@ for argument in "$@"; do
   [[ "$argument" == "--health" || "$argument" == "--dry-run" ]] && exit 0
 done
 
+# This is a local, no-Codex-credit recovery check. The local newsroom has just
+# completed its Ollama cycle; the watchdog only uses deterministic queue and
+# pacing state, then asks GitHub to retry once if a feed window was genuinely
+# missed. Meta cooldowns, quotas, and uncertain containers remain untouched.
+node scripts/publisher-watchdog.mjs
+WATCHDOG_DISPATCH=$(node -e 'const fs=require("fs");try{console.log(JSON.parse(fs.readFileSync("logs/publisher-watchdog.json","utf8")).dispatch ? "true" : "false")}catch{console.log("false")}')
+
 # Push newly prepared queue state so the existing GitHub Actions publisher can see it.
 # Never force-push. If the repo changed remotely, rebase once and retry.
 # Only publish durable content changes. Operational logs stay local and must never
@@ -46,4 +53,9 @@ if [[ -n "$(git status --porcelain -- queue media 2>/dev/null)" ]]; then
     echo "RapWire newsroom: push failed; local commit retained for retry." >&2
     exit 1
   fi
+fi
+
+if [[ "$WATCHDOG_DISPATCH" == "true" ]]; then
+  echo "RapWire watchdog: missed publishing window; requesting one safe retry."
+  scripts/dispatch-publisher.sh
 fi

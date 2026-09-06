@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T00:12:26.499Z",
+  "checked_at": "2026-09-06T00:17:16.020Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T00:12:18.556Z",
@@ -21,12 +21,12 @@
     "reserved_story_slots": 1,
     "pending_story_count": 106,
     "next_feed_eligible_at": "2026-09-06T00:16:42.092Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
   "threads_steps": 0,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -35,16 +35,7 @@
   },
   "threads_next_eligible_at": "2026-09-06T00:20:57.432Z",
   "facebook_next_eligible_at": "2026-09-06T00:42:24.937Z",
-  "publications": [
-    {
-      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
-      "id": "345-nba-youngboy-2021-jail-altercation-footage",
-      "platform": "facebook",
-      "status": "published",
-      "media_id": "1422020943132350",
-      "permalink": "/reel/1422020943132350/"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

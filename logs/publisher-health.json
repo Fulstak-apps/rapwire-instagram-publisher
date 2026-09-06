@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-06T19:29:17.209Z",
+  "checked_at": "2026-09-06T19:34:14.362Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-06T19:17:50.972Z",
+    "checked_at": "2026-09-06T19:34:13.587Z",
     "usage": 19,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-06T19:32:50.972Z",
+    "next_check_at": "2026-09-06T19:49:13.587Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 18,
-    "instagram_remaining": 80,
+    "instagram_usage": 19,
+    "instagram_remaining": 79,
     "reserved_story_slots": 1,
-    "pending_story_count": 107,
+    "pending_story_count": 106,
     "next_feed_eligible_at": "2026-09-06T20:24:02.267Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -36,16 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-06T19:39:09.156Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
-      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
+      "file": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as.json",
+      "id": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as",
       "platform": "instagram_story",
-      "status": "published",
-      "media_id": "18103392046971270"
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T21:34:13.734Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

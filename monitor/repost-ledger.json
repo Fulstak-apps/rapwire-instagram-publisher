@@ -4373,27 +4373,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dc7iMWvND_j/",
       "queue_id": "348-ye-and-kim-proudly-watched-their-daughter-north-west-take-the-st",
       "video": "media/348-ye-and-kim-proudly-watched-their-daughter-north-west-take-the-st.mp4"
+    },
+    "Dc527YPoU5p": {
+      "queued_at": "2026-09-06T03:47:18.451Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc527YPoU5p/",
+      "queue_id": "349-jay-z-had-the-london-crowd-break-into-happy-birthday-for-beyonc-",
+      "video": "media/349-jay-z-had-the-london-crowd-break-into-happy-birthday-for-beyonc-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-04T04:12:13.634Z",
-      "candidates": 47,
-      "queued": [
-        "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir"
-      ],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
-          "stage": "queue",
-          "error": "Crop review required: No distinct footage region between static panels"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 5,
-      "finished_at": "2026-09-04T04:21:49.658Z"
-    },
     {
       "started_at": "2026-09-04T04:24:21.737Z",
       "candidates": 54,
@@ -10750,6 +10739,30 @@
       "mode": "discovery",
       "vip_pending": 12,
       "finished_at": "2026-09-06T03:36:28.549Z"
+    },
+    {
+      "started_at": "2026-09-06T03:41:32.419Z",
+      "candidates": 59,
+      "queued": [
+        "349-jay-z-had-the-london-crowd-break-into-happy-birthday-for-beyonc-"
+      ],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc7aOI7DbK4/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc7aOI7DbK4-6-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 12,
+      "finished_at": "2026-09-06T03:47:18.451Z"
     }
   ],
   "vip_pending": {
@@ -10892,27 +10905,27 @@
       "first_seen_at": "2026-09-06T02:03:50.609Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 5,
+      "attempts": 6,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc7aOI7DbK4-6-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-06T03:02:02.319Z",
-      "retry_at": "2026-09-06T03:34:02.319Z"
+      "last_attempt_at": "2026-09-06T03:44:10.481Z",
+      "retry_at": "2026-09-06T04:44:10.481Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T03:31:33.408Z"
+      "checked_at": "2026-09-06T03:41:40.527Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T03:31:38.188Z"
+      "checked_at": "2026-09-06T03:41:44.565Z"
     },
     "records": {
-      "checked_at": "2026-09-06T03:31:42.628Z"
+      "checked_at": "2026-09-06T03:41:48.559Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T03:31:46.964Z"
+      "checked_at": "2026-09-06T03:41:52.511Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-06T02:51:52.102Z"
+      "checked_at": "2026-09-06T03:42:00.899Z"
     },
     "raplisted_": {
       "checked_at": "2026-09-06T02:51:56.221Z"
@@ -10936,7 +10949,7 @@
       "checked_at": "2026-09-06T03:12:36.800Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-06T02:37:15.296Z"
+      "checked_at": "2026-09-06T03:41:56.908Z"
     }
   }
 }

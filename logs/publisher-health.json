@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-09-06T11:03:16.162Z",
+  "checked_at": "2026-09-06T11:08:33.339Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T02:38:52.759Z",
     "usage": 32,
     "total": 100,
     "blocked": true,
-    "next_check_at": "2026-09-06T11:07:51.770Z",
+    "next_check_at": "2026-09-06T12:08:32.911Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
-    "reason": "Quota check unavailable: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ArjhENv3GnrtLjvZdT7jjfu\"}}",
+    "reason": "Quota check unavailable: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AlcSLFxy0xEXBOIL1xDv2uV\"}}",
     "detected_at": "2026-09-03T20:01:28.698Z",
     "effective_total": 100,
     "observed_rejection_at_usage": 50

@@ -75,6 +75,7 @@ jobs:
           git push
 
       - name: Check Instagram auth recovery state
+        id: instagram_auth
         env:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}

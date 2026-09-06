@@ -10,6 +10,13 @@ export function isInstagramAuthFailureReason(reason = '') {
   return /error validating access token|session has been invalidated|oauth(?:exception)?.*code[^0-9]*190|\"code\"\s*:\s*190/i.test(String(reason));
 }
 
+export function instagramBlockKind(reason = '') {
+  if (isInstagramAuthFailureReason(reason)) return 'authentication';
+  if (/2207042|publishing (?:capacity|quota).*exhausted|media publish limit/i.test(String(reason))) return 'publishing_limit';
+  if (/rate.?limit|application request limit|too many requests/i.test(String(reason))) return 'rate_limit';
+  return 'unknown';
+}
+
 export function recoverQuotaAfterValidAuth(quota = {}, now = Date.now()) {
   if (quota.blocked !== true || !isInstagramAuthFailureReason(quota.reason)) return {quota, changed: false};
   const recovered = {
@@ -58,9 +65,18 @@ export async function main() {
   await fs.writeFile(healthPath, `${JSON.stringify({checked_at: checkedAt, ...result}, null, 2)}\n`);
 
   if (!result.valid) {
+    if (process.env.GITHUB_OUTPUT) {
+      await fs.appendFile(process.env.GITHUB_OUTPUT, `valid=false\nerror_code=${result.error_code || ''}\n`);
+    }
+    if (process.env.GITHUB_STEP_SUMMARY) {
+      await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,
+        `## Instagram authentication offline\n\nMeta rejected the saved Instagram credential${result.error_code ? ` with code ${result.error_code}` : ''}. Replace the repository secret \`INSTAGRAM_ACCESS_TOKEN\`; the next scheduled run will verify it and resume the saved queue automatically.\n`);
+    }
     console.warn(`Instagram auth health: unavailable${result.error_code ? ` (Meta code ${result.error_code})` : ''}: ${result.message}`);
     return;
   }
+
+  if (process.env.GITHUB_OUTPUT) await fs.appendFile(process.env.GITHUB_OUTPUT, 'valid=true\nerror_code=\n');
 
   const quota = JSON.parse(await fs.readFile(quotaPath, 'utf8').catch(error => {
     if (error.code === 'ENOENT') return '{}';

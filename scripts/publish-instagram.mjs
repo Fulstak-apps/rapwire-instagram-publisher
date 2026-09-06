@@ -12,6 +12,7 @@ import {videoLayoutGate,verifyVideoLayoutFiles} from './video-layout-policy.mjs'
 import {normalizeSources,sourcePostsToday} from './source-policy.mjs';
 import {metaClient} from './meta-client.mjs';
 import {deliverFacebookPage,facebookMedia} from './facebook-page.mjs';
+import {instagramBlockKind} from './instagram-auth-state.mjs';
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -196,7 +197,8 @@ async function refreshQuota() {
     const effectiveTotal = rejectedAtUsage > 0 && Date.now() - Date.parse(quota.detected_at || "") < 86400000 ? Math.min(total, rejectedAtUsage) : total;
     quota = { ...quota, checked_at: new Date().toISOString(), usage, total, effective_total: effectiveTotal, observed_rejection_at_usage: rejectedAtUsage, blocked: usage >= effectiveTotal, next_check_at: new Date(Date.now() + (usage >= effectiveTotal ? 3600000 : 15 * 60000)).toISOString(), reason: usage >= effectiveTotal ? "Publishing capacity exhausted; honoring actual publish rejection" : "Capacity available" };
   } catch (error) {
-    quota = { ...quota, blocked: true, next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: error.message };
+    const authFailure = instagramBlockKind(error.message) === 'authentication';
+    quota = { ...quota, blocked: true, next_check_at: new Date(Date.now() + (authFailure ? 5 * 60_000 : 3600000)).toISOString(), reason: error.message };
     console.error(error.message);
   }
   await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
@@ -824,7 +826,10 @@ const report = {
 };
 await fs.writeFile(path.join(logsDir, "publisher-health.json"), JSON.stringify(report, null, 2) + "\n");
 await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString(), last_instagram_lane: instagramLane || pacing.last_instagram_lane }) + "\n");
-const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
+const instagramBlockLabel = instagramBlockKind(quota.reason) === 'authentication'
+  ? `Instagram authentication blocked. Next credential check ${quota.next_check_at}.`
+  : `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.`;
+const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `${instagramBlockLabel}\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
 console.log(summary);
 if (quota.blocked && quota.reason) {
   const blockedSummary = `\nInstagram block reason: ${quota.reason}\n`;

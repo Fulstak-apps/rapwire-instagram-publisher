@@ -1,10 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {isInstagramAuthFailureReason, recoverQuotaAfterValidAuth, checkInstagramIdentity} from './instagram-auth-state.mjs';
+import {isInstagramAuthFailureReason, instagramBlockKind, recoverQuotaAfterValidAuth, checkInstagramIdentity} from './instagram-auth-state.mjs';
 
 test('recognizes Meta code 190 auth failures without confusing quota exhaustion', () => {
   assert.equal(isInstagramAuthFailureReason('Error validating access token: session has been invalidated. OAuthException code 190'), true);
   assert.equal(isInstagramAuthFailureReason('Instagram publishing quota exhausted (9/2207042)'), false);
+});
+
+test('separates authentication, publishing-limit and request-limit blocks', () => {
+  assert.equal(instagramBlockKind('Error validating access token: session invalidated, code 190'), 'authentication');
+  assert.equal(instagramBlockKind('Media Publish Limit Exceeded 2207042'), 'publishing_limit');
+  assert.equal(instagramBlockKind('Application request limit reached'), 'rate_limit');
 });
 
 test('valid auth clears only a stale auth-created quota hold', () => {

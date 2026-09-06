@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T02:28:23.212Z",
+  "checked_at": "2026-09-06T02:33:42.241Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T02:23:34.172Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,24 +35,8 @@
   },
   "threads_next_eligible_at": "2026-09-06T02:43:21.898Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
-      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17986759866049755"
-    }
-  ],
-  "failures": [
-    {
-      "file": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as.json",
-      "id": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T03:28:22.853Z: ERROR"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

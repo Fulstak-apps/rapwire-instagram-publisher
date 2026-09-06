@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-06T01:37:49.457Z",
+  "checked_at": "2026-09-06T01:43:28.999Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T01:37:48.229Z",
-    "usage": 29,
+    "usage": 30,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-06T01:52:48.229Z",
@@ -20,7 +20,7 @@
     "instagram_remaining": 69,
     "reserved_story_slots": 1,
     "pending_story_count": 107,
-    "next_feed_eligible_at": "2026-09-06T01:27:39.331Z",
+    "next_feed_eligible_at": "2026-09-06T02:43:22.881Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -33,18 +33,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T01:32:59.352Z",
+  "threads_next_eligible_at": "2026-09-06T01:58:28.676Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
-      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T05:37:49.160Z: ERROR"
+      "file": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as.json",
+      "id": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18085638497662850",
+      "content_type": "video"
+    },
+    {
+      "file": "330-bobby-shmurda-stil-not-jackin-no-rats.json",
+      "id": "330-bobby-shmurda-stil-not-jackin-no-rats",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18115370623995248"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

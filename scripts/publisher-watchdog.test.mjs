@@ -5,6 +5,13 @@ import {assessWatchdog} from './publisher-watchdog.mjs';
 const NOW = Date.parse('2026-09-06T12:00:00Z');
 const item = {id:'ready-video', status:'ready'};
 
+test('retry eligibility uses the supplied clock and protects uncertain publish requests', () => {
+  const health={delivery_policy:{next_feed_eligible_at:new Date(NOW-16*60_000).toISOString()}};
+  assert.equal(assessWatchdog({now:NOW,health,items:[{...item,instagram_retry_at:new Date(NOW+60000).toISOString()}]}).dispatch,false);
+  assert.equal(assessWatchdog({now:NOW,health,items:[{...item,instagram_publish_requested_at:new Date(NOW-60000).toISOString()}]}).dispatch,false);
+  assert.equal(assessWatchdog({now:NOW,health,items:[{...item,instagram_retry_at:new Date(NOW-60000).toISOString()}]}).dispatch,true);
+});
+
 test('watchdog dispatches one safe retry after a missed eligible window', () => {
   const outcome = assessWatchdog({now:NOW, health:{delivery_policy:{next_feed_eligible_at:new Date(NOW-16*60_000).toISOString()}},items:[item]});
   assert.equal(outcome.dispatch, true);

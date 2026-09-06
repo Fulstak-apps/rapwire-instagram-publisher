@@ -77,10 +77,6 @@ jobs:
       - name: Wait for public media propagation
         run: sleep 10
 
-      - uses: actions/setup-node@v6
-        with:
-          node-version: "24"
-
       - name: Publish queued post to Instagram feed and Threads
         env:
           RAPWIRE_BRAND: "24/7"
@@ -93,6 +89,7 @@ jobs:
         run: node scripts/publish-instagram.mjs
 
       - name: Engage substantive Threads replies
+        if: ${{ !cancelled() && steps.state_check.outcome == 'success' }}
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
@@ -106,6 +103,7 @@ jobs:
         run: node scripts/hourly-threads.mjs
 
       - name: Measure audience growth
+        if: ${{ !cancelled() && steps.state_check.outcome == 'success' }}
         env:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}

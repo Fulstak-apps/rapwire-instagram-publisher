@@ -1,21 +1,21 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const HOUR = 60 * 60_000;
 const readJson = async (file, fallback) => JSON.parse(await fs.readFile(file, 'utf8').catch(error => {
   if (error.code === 'ENOENT') return JSON.stringify(fallback);
   throw error;
 }));
 
-const retryable = item => item.status === 'ready'
+const retryable = (item, now) => item.status === 'ready'
   && !item.instagram_media_id && !item.instagram_container_id && !item.instagram_reconcile_required
-  && !(Date.parse(item.instagram_retry_at || '') > Date.now());
+  && !item.instagram_publish_requested_at
+  && !(Date.parse(item.instagram_retry_at || '') > now);
 
 export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
   const nextAt = Date.parse(health.delivery_policy?.next_feed_eligible_at || '');
   const cooldown = Date.parse(health.instagram_cooldown_until || '');
   const quotaBlocked = Boolean(health.instagram_publishing_quota?.blocked);
-  const ready = items.filter(retryable);
+  const ready = items.filter(item => retryable(item, now));
   const overdue = Number.isFinite(nextAt) && now > nextAt + 15 * 60_000;
   const blocked = quotaBlocked || (Number.isFinite(cooldown) && cooldown > now);
   return {
@@ -36,22 +36,11 @@ async function main() {
   // A definite, repeated failure should not let one bad item halt the entire
   // feed. Never alter uncertain containers: those require reconciliation to
   // avoid duplicate posts.
-  const failures = new Map((health.failures || []).map(event => [event.id, event]));
   const deferred = [];
-  for (const record of records) {
-    const failure = failures.get(record.item.id);
-    if (!failure || record.item.instagram_container_id || record.item.instagram_reconcile_required) continue;
-    const count = Number(record.item.watchdog_failures || 0) + 1;
-    record.item.watchdog_failures = count;
-    record.item.watchdog_last_failure = String(failure.error || 'publisher failure').slice(0, 600);
-    record.item.watchdog_checked_at = new Date().toISOString();
-    if (count >= 2 && retryable(record.item)) {
-      record.item.status = 'paused';
-      record.item.watchdog_hold_reason = 'Deferred after two definite publisher failures so the next eligible post can proceed.';
-      deferred.push(record.item.id);
-    }
-    await fs.writeFile(record.file, `${JSON.stringify(record.item, null, 2)}\n`);
-  }
+  // Health is a snapshot, not a stream of distinct failures. Never count it
+  // repeatedly or pause the whole item for a single platform's failure.
+  // The publisher owns platform-specific retries and reconciliation; keeping
+  // this check read-only also avoids racing the collector's queue writes.
 
   const decision = assessWatchdog({health, items: records.map(record => record.item)});
   const result = {...decision, checked_at: new Date().toISOString(), deferred};

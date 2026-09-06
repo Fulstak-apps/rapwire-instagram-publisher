@@ -826,6 +826,11 @@ await fs.writeFile(path.join(logsDir, "publisher-health.json"), JSON.stringify(r
 await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString(), last_instagram_lane: instagramLane || pacing.last_instagram_lane }) + "\n");
 const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
 console.log(summary);
+if (quota.blocked && quota.reason) {
+  const blockedSummary = `\nInstagram block reason: ${quota.reason}\n`;
+  console.log(blockedSummary);
+  if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, blockedSummary);
+}
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, summary);
 if(report.reviews.length) {
   const reviewSummary=`\nVideo layout review: ${report.reviews.length} item(s) held; existing media and publication markers were preserved.\n\n${report.reviews.map(x=>`- ${x.id}: ${x.reason}`).join('\n')}\n`;

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-06T20:04:22.248Z",
+  "checked_at": "2026-09-06T20:09:30.908Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-06T19:50:01.459Z",
-    "usage": 18,
+    "checked_at": "2026-09-06T20:09:23.614Z",
+    "usage": 17,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-06T20:05:01.459Z",
+    "next_check_at": "2026-09-06T20:24:23.614Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -17,8 +17,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 18,
-    "instagram_remaining": 80,
+    "instagram_usage": 17,
+    "instagram_remaining": 81,
     "reserved_story_slots": 1,
     "pending_story_count": 106,
     "next_feed_eligible_at": "2026-09-06T20:24:02.267Z",
@@ -34,18 +34,18 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T19:59:14.980Z",
+  "threads_next_eligible_at": "2026-09-06T20:24:28.932Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
-      "id": "345-nba-youngboy-2021-jail-altercation-footage",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T00:04:21.984Z: ERROR"
+      "file": "363-qc-p-shook-back-yall.json",
+      "id": "363-qc-p-shook-back-yall",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18072326072719476"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-06T02:18:15.220Z",
+  "checked_at": "2026-09-06T02:23:36.149Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-06T02:08:15.528Z",
+    "checked_at": "2026-09-06T02:23:34.172Z",
     "usage": 32,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-06T02:23:15.528Z",
+    "next_check_at": "2026-09-06T02:38:34.172Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -36,15 +36,7 @@
   "threads_next_eligible_at": "2026-09-06T02:23:22.182Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
-      "id": "345-nba-youngboy-2021-jail-altercation-footage",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T04:18:14.664Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

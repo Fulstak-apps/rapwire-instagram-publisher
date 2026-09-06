@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T00:32:10.669Z",
+  "checked_at": "2026-09-06T00:37:23.523Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T00:32:08.839Z",
@@ -36,7 +36,15 @@
   "threads_next_eligible_at": "2026-09-06T00:42:28.873Z",
   "facebook_next_eligible_at": "2026-09-06T00:42:24.937Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
+      "id": "345-nba-youngboy-2021-jail-altercation-footage",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T01:07:23.144Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

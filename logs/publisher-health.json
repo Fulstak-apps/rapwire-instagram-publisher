@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T00:47:32.255Z",
+  "checked_at": "2026-09-06T00:52:42.367Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T00:47:25.693Z",
@@ -33,18 +33,18 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T00:42:28.873Z",
+  "threads_next_eligible_at": "2026-09-06T01:07:40.279Z",
   "facebook_next_eligible_at": "2026-09-06T01:12:49.190Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
-      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T04:47:32.081Z: ERROR"
+      "file": "343-two-years-ago-today-the-world-lost-rich-homie-quan-from-type-of-.json",
+      "id": "343-two-years-ago-today-the-world-lost-rich-homie-quan-from-type-of-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18028031582850755"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

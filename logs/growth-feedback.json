@@ -1868,18 +1868,132 @@
         "reposts": 2,
         "quotes": 0
       }
+    },
+    "threads:17968469349152196": {
+      "platform": "threads",
+      "id": "17968469349152196",
+      "queue_id": "348-ye-and-kim-proudly-watched-their-daughter-north-west-take-the-st",
+      "source": "records",
+      "topic": "music",
+      "series": "RapWire Debate",
+      "question": "discussion-v2",
+      "published_at": "2026-09-06T03:29:10.357Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/Dc7kECvDc74",
+      "checked_at": "2026-09-06T03:44:12.059Z",
+      "metrics": {
+        "views": 0,
+        "likes": 1,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
+    },
+    "threads:18093820742359348": {
+      "platform": "threads",
+      "id": "18093820742359348",
+      "queue_id": "322-kanyewest-ye-made-a-powerful-moment-during-his-chicago-homecomin",
+      "source": "trapmatictv",
+      "topic": "court",
+      "series": "Case File",
+      "question": "discussion-v2",
+      "published_at": "2026-09-06T03:08:54.084Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/Dc7hvbik2bW",
+      "checked_at": "2026-09-06T03:44:12.059Z",
+      "metrics": {
+        "views": 28,
+        "likes": 3,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
+    },
+    "threads:18589190548069256": {
+      "platform": "threads",
+      "id": "18589190548069256",
+      "queue_id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
+      "source": "complexmusic",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-06T02:48:35.674Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/Dc7fa9iCHsf",
+      "checked_at": "2026-09-06T03:44:12.059Z",
+      "metrics": {
+        "views": 51,
+        "likes": 5,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
+    },
+    "threads:17986759866049755": {
+      "platform": "threads",
+      "id": "17986759866049755",
+      "queue_id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
+      "source": "hiphop_firstnewsmusic",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-06T02:28:21.898Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/Dc7dJoJCPVI",
+      "checked_at": "2026-09-06T03:44:12.059Z",
+      "metrics": {
+        "views": 120,
+        "likes": 10,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
+    },
+    "threads:18127880761774989": {
+      "platform": "threads",
+      "id": "18127880761774989",
+      "queue_id": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa",
+      "source": "records",
+      "topic": "music",
+      "series": "RapWire Debate",
+      "question": "discussion-v2",
+      "published_at": "2026-09-06T02:08:22.182Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/Dc7a06VEZX4",
+      "checked_at": "2026-09-06T03:44:12.059Z",
+      "metrics": {
+        "views": 130,
+        "likes": 3,
+        "replies": 1,
+        "reposts": 0,
+        "quotes": 0
+      }
+    },
+    "threads:18115370623995248": {
+      "platform": "threads",
+      "id": "18115370623995248",
+      "queue_id": "330-bobby-shmurda-stil-not-jackin-no-rats",
+      "source": "akademiks",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-06T01:43:28.676Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/Dc7X6V-Dpfq",
+      "checked_at": "2026-09-06T03:44:12.059Z",
+      "metrics": {
+        "views": 14,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
     }
   },
   "platforms": {
     "instagram": {
       "next_at": "2026-09-06T03:41:01.838Z",
       "checked_at": "2026-09-05T21:41:01.838Z",
-      "status": "unavailable",
+      "status": "waiting_for_instagram_capacity",
       "error": "Unsupported get request. Object with ID '18130043800677586' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     },
     "threads": {
-      "next_at": "2026-09-06T03:41:01.838Z",
-      "checked_at": "2026-09-05T21:41:01.838Z",
+      "next_at": "2026-09-06T09:44:12.059Z",
+      "checked_at": "2026-09-06T03:44:12.059Z",
       "status": "collected"
     }
   },
@@ -1946,12 +2060,16 @@
       {
         "at": "2026-09-05T21:41:01.838Z",
         "count": 194
+      },
+      {
+        "at": "2026-09-06T03:44:12.059Z",
+        "count": 196
       }
     ]
   },
   "summary": {
-    "generated_at": "2026-09-06T03:39:11.116Z",
-    "measured_posts": 99,
+    "generated_at": "2026-09-06T03:44:12.059Z",
+    "measured_posts": 105,
     "rates": [
       {
         "platform": "instagram",
@@ -2004,16 +2122,6 @@
         "sufficient_sample": true
       },
       {
-        "platform": "threads",
-        "kind": "source",
-        "value": "trapmatictv",
-        "posts": 6,
-        "exposures": 415,
-        "interactions": 4,
-        "interactions_per_1000": 9.6,
-        "sufficient_sample": false
-      },
-      {
         "platform": "instagram",
         "kind": "series",
         "value": "What Happened?",
@@ -2022,6 +2130,16 @@
         "interactions": 7,
         "interactions_per_1000": 9.3,
         "sufficient_sample": true
+      },
+      {
+        "platform": "threads",
+        "kind": "source",
+        "value": "trapmatictv",
+        "posts": 7,
+        "exposures": 443,
+        "interactions": 4,
+        "interactions_per_1000": 9,
+        "sufficient_sample": false
       },
       {
         "platform": "instagram",
@@ -2067,20 +2185,20 @@
         "platform": "threads",
         "kind": "series",
         "value": "RapWire Debate",
-        "posts": 9,
-        "exposures": 901,
-        "interactions": 5,
-        "interactions_per_1000": 5.5,
+        "posts": 10,
+        "exposures": 1031,
+        "interactions": 6,
+        "interactions_per_1000": 5.8,
         "sufficient_sample": true
       },
       {
         "platform": "threads",
         "kind": "topic",
         "value": "music",
-        "posts": 17,
-        "exposures": 1327,
-        "interactions": 7,
-        "interactions_per_1000": 5.3,
+        "posts": 18,
+        "exposures": 1457,
+        "interactions": 8,
+        "interactions_per_1000": 5.5,
         "sufficient_sample": true
       },
       {
@@ -2107,10 +2225,10 @@
         "platform": "threads",
         "kind": "source",
         "value": "records",
-        "posts": 12,
-        "exposures": 1685,
-        "interactions": 6,
-        "interactions_per_1000": 3.6,
+        "posts": 13,
+        "exposures": 1815,
+        "interactions": 7,
+        "interactions_per_1000": 3.9,
         "sufficient_sample": true
       },
       {
@@ -2157,30 +2275,30 @@
         "platform": "threads",
         "kind": "question",
         "value": "discussion-v2",
-        "posts": 42,
-        "exposures": 3693,
-        "interactions": 11,
+        "posts": 47,
+        "exposures": 4036,
+        "interactions": 12,
         "interactions_per_1000": 3,
-        "sufficient_sample": true
-      },
-      {
-        "platform": "threads",
-        "kind": "topic",
-        "value": "culture",
-        "posts": 18,
-        "exposures": 1797,
-        "interactions": 5,
-        "interactions_per_1000": 2.8,
         "sufficient_sample": true
       },
       {
         "platform": "threads",
         "kind": "series",
         "value": "What Happened?",
-        "posts": 16,
-        "exposures": 1763,
+        "posts": 19,
+        "exposures": 1948,
         "interactions": 5,
-        "interactions_per_1000": 2.8,
+        "interactions_per_1000": 2.6,
+        "sufficient_sample": true
+      },
+      {
+        "platform": "threads",
+        "kind": "topic",
+        "value": "culture",
+        "posts": 21,
+        "exposures": 1982,
+        "interactions": 5,
+        "interactions_per_1000": 2.5,
         "sufficient_sample": true
       },
       {
@@ -2207,8 +2325,8 @@
         "platform": "threads",
         "kind": "source",
         "value": "akademiks",
-        "posts": 8,
-        "exposures": 337,
+        "posts": 9,
+        "exposures": 351,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
@@ -2257,8 +2375,8 @@
         "platform": "threads",
         "kind": "topic",
         "value": "court",
-        "posts": 7,
-        "exposures": 671,
+        "posts": 8,
+        "exposures": 699,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": true
@@ -2267,8 +2385,8 @@
         "platform": "threads",
         "kind": "series",
         "value": "Case File",
-        "posts": 7,
-        "exposures": 671,
+        "posts": 8,
+        "exposures": 699,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": true
@@ -2327,8 +2445,8 @@
         "platform": "threads",
         "kind": "source",
         "value": "complexmusic",
-        "posts": 1,
-        "exposures": 113,
+        "posts": 2,
+        "exposures": 164,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
@@ -2362,14 +2480,24 @@
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
+      },
+      {
+        "platform": "threads",
+        "kind": "source",
+        "value": "hiphop_firstnewsmusic",
+        "posts": 1,
+        "exposures": 120,
+        "interactions": 0,
+        "interactions_per_1000": 0,
+        "sufficient_sample": false
       }
     ],
     "source_weights": {
-      "records": 0.91795,
+      "records": 0.9269333333333334,
       "traploreross": 1.25,
       "freshouttheculture": 0.8,
       "trapmatictv": 0.8,
-      "raplisted_": 0.9208000000000001
+      "raplisted_": 0.8647111111111112
     },
     "followers": {
       "instagram": {
@@ -2378,9 +2506,9 @@
         "change_since_prior_day": 6
       },
       "threads": {
-        "count": 194,
-        "checked_at": "2026-09-05T21:41:01.838Z",
-        "change_since_prior_day": 125
+        "count": 196,
+        "checked_at": "2026-09-06T03:44:12.059Z",
+        "change_since_prior_day": 82
       }
     },
     "note": "Missing metrics are unavailable, not zero. Follower change is account-wide, not credited to a particular repost. Source weighting starts after 3 measured posts and 500 exposures."

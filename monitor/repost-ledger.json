@@ -4433,24 +4433,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T12:15:47.557Z",
-      "candidates": 51,
-      "queued": [
-        "251-getting-paid-to-hang-out-with-your-bro-is-a-different-type-of-jo"
-      ],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 5,
-      "finished_at": "2026-09-04T12:18:27.144Z"
-    },
-    {
       "started_at": "2026-09-04T12:20:40.329Z",
       "candidates": 14,
       "queued": [],
@@ -11357,6 +11339,40 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 13,
       "finished_at": "2026-09-06T14:35:02.159Z"
+    },
+    {
+      "started_at": "2026-09-06T14:40:05.423Z",
+      "candidates": 50,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "xxl",
+          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 13,
+      "finished_at": "2026-09-06T14:47:04.632Z"
     }
   ],
   "vip_pending": {
@@ -11367,10 +11383,10 @@
       "first_seen_at": "2026-09-03T05:30:10.862Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 45,
+      "attempts": 46,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-06T13:34:56.709Z",
-      "retry_at": "2026-09-06T14:34:56.709Z"
+      "last_attempt_at": "2026-09-06T14:47:04.632Z",
+      "retry_at": "2026-09-06T15:47:04.632Z"
     },
     "Dcww5JhjqDI": {
       "source_handle": "records",
@@ -11475,10 +11491,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 103,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-06T14:33:40.205Z",
-      "retry_at": "2026-09-06T15:33:40.205Z"
+      "attempts": 104,
+      "last_error": "Crop review required: source branding is not isolated in a removable top header",
+      "last_attempt_at": "2026-09-06T14:42:49.756Z",
+      "retry_at": "2026-09-06T15:42:49.756Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -11487,10 +11503,10 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 89,
+      "attempts": 90,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T14:32:43.589Z",
-      "retry_at": "2026-09-06T15:32:43.589Z"
+      "last_attempt_at": "2026-09-06T14:42:07.739Z",
+      "retry_at": "2026-09-06T15:42:07.739Z"
     },
     "Dc7aOI7DbK4": {
       "source_handle": "records",
@@ -11519,16 +11535,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T14:32:00.666Z"
+      "checked_at": "2026-09-06T14:40:13.553Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T14:32:04.676Z"
+      "checked_at": "2026-09-06T14:40:17.586Z"
     },
     "records": {
-      "checked_at": "2026-09-06T14:32:08.672Z"
+      "checked_at": "2026-09-06T14:40:21.676Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T14:32:12.817Z"
+      "checked_at": "2026-09-06T14:40:25.893Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-06T13:54:50.380Z"
@@ -11543,10 +11559,10 @@
       "checked_at": "2026-09-06T14:07:26.574Z"
     },
     "xxl": {
-      "checked_at": "2026-09-06T13:17:29.556Z"
+      "checked_at": "2026-09-06T14:40:29.943Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-06T13:40:23.819Z"
+      "checked_at": "2026-09-06T14:40:33.926Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-06T14:19:09.261Z"

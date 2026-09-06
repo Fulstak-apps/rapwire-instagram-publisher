@@ -4356,17 +4356,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T02:58:41.622Z",
-      "candidates": 49,
-      "queued": [
-        "242-dj-scheme-speaks"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 9,
-      "finished_at": "2026-09-04T03:00:34.938Z"
-    },
-    {
       "started_at": "2026-09-04T03:02:42.273Z",
       "candidates": 28,
       "queued": [
@@ -10634,6 +10623,34 @@
       "mode": "discovery",
       "vip_pending": 12,
       "finished_at": "2026-09-06T02:46:23.036Z"
+    },
+    {
+      "started_at": "2026-09-06T02:51:27.404Z",
+      "candidates": 58,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dc66wLLoy7s/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 12,
+      "finished_at": "2026-09-06T02:54:03.434Z"
     }
   ],
   "vip_pending": {
@@ -10752,10 +10769,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 46,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-06T02:46:23.036Z",
-      "retry_at": "2026-09-06T03:46:23.036Z"
+      "attempts": 47,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-06T02:54:03.434Z",
+      "retry_at": "2026-09-06T03:54:03.434Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10764,10 +10781,10 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 32,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-06T02:46:19.246Z",
-      "retry_at": "2026-09-06T03:46:19.246Z"
+      "attempts": 33,
+      "last_error": "Crop review required: source branding is not isolated in a removable top header",
+      "last_attempt_at": "2026-09-06T02:53:06.543Z",
+      "retry_at": "2026-09-06T03:53:06.543Z"
     },
     "Dc7aOI7DbK4": {
       "source_handle": "records",
@@ -10784,22 +10801,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T02:36:54.894Z"
+      "checked_at": "2026-09-06T02:51:35.427Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T02:36:58.882Z"
+      "checked_at": "2026-09-06T02:51:39.531Z"
     },
     "records": {
-      "checked_at": "2026-09-06T02:37:02.810Z"
+      "checked_at": "2026-09-06T02:51:43.741Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T02:37:07.008Z"
+      "checked_at": "2026-09-06T02:51:47.991Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-06T01:42:18.470Z"
+      "checked_at": "2026-09-06T02:51:52.102Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-06T01:49:12.006Z"
+      "checked_at": "2026-09-06T02:51:56.221Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-06T01:49:16.000Z"

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-06T01:12:39.849Z",
+  "checked_at": "2026-09-06T01:18:17.922Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-06T01:02:32.214Z",
+    "checked_at": "2026-09-06T01:17:51.399Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-06T01:17:32.214Z",
+    "next_check_at": "2026-09-06T01:32:51.399Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -26,23 +26,39 @@
   },
   "instagram_steps": 1,
   "threads_steps": 1,
-  "facebook_steps": 0,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T01:07:40.279Z",
-  "facebook_next_eligible_at": "2026-09-06T01:12:49.190Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-06T01:32:59.352Z",
+  "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
+  "publications": [
+    {
+      "file": "318-travis-was-so-hyped-to-see-ye-and-kid-cudi-reunite-together.json",
+      "id": "318-travis-was-so-hyped-to-see-ye-and-kid-cudi-reunite-together",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18219683842339175"
+    },
+    {
+      "file": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du.json",
+      "id": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "1060320073380877",
+      "permalink": "/reel/1060320073380877/"
+    }
+  ],
   "failures": [
     {
-      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
-      "id": "345-nba-youngboy-2021-jail-altercation-footage",
+      "file": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a.json",
+      "id": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T02:12:39.557Z: ERROR"
+      "error": "instagram_story: ERROR; retry after 2026-09-06T03:18:17.361Z: ERROR"
     }
   ],
   "reviews": [

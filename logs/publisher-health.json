@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T00:37:23.523Z",
+  "checked_at": "2026-09-06T00:42:49.991Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T00:32:08.839Z",
@@ -25,8 +25,8 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
-  "facebook_steps": 0,
+  "threads_steps": 1,
+  "facebook_steps": 1,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
@@ -34,17 +34,18 @@
     "story_allowed": false
   },
   "threads_next_eligible_at": "2026-09-06T00:42:28.873Z",
-  "facebook_next_eligible_at": "2026-09-06T00:42:24.937Z",
-  "publications": [],
-  "failures": [
+  "facebook_next_eligible_at": "2026-09-06T01:12:49.190Z",
+  "publications": [
     {
-      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
-      "id": "345-nba-youngboy-2021-jail-altercation-footage",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T01:07:23.144Z: ERROR"
+      "file": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir.json",
+      "id": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir",
+      "platform": "facebook",
+      "status": "published",
+      "media_id": "1828027191692155",
+      "permalink": "/reel/1828027191692155/"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

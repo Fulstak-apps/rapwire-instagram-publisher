@@ -4391,33 +4391,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T04:59:25.624Z",
-      "candidates": 33,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Crop review required: No distinct footage region between static panels"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
-          "stage": "queue",
-          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 5,
-      "finished_at": "2026-09-04T05:04:44.641Z"
-    },
-    {
       "started_at": "2026-09-04T05:06:48.494Z",
       "candidates": 45,
       "queued": [],
@@ -10790,6 +10763,51 @@
       "mode": "discovery",
       "vip_pending": 12,
       "finished_at": "2026-09-06T04:18:17.506Z"
+    },
+    {
+      "started_at": "2026-09-06T04:23:20.810Z",
+      "candidates": 38,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 12,
+      "finished_at": "2026-09-06T04:29:51.920Z"
     }
   ],
   "vip_pending": {
@@ -10824,10 +10842,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 95,
+      "attempts": 96,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-06T03:24:32.260Z",
-      "retry_at": "2026-09-06T04:24:32.260Z"
+      "last_attempt_at": "2026-09-06T04:28:58.777Z",
+      "retry_at": "2026-09-06T05:28:58.777Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -10872,10 +10890,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 24,
+      "attempts": 25,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-06T03:20:26.687Z",
-      "retry_at": "2026-09-06T04:20:26.687Z"
+      "last_attempt_at": "2026-09-06T04:24:51.835Z",
+      "retry_at": "2026-09-06T05:24:51.835Z"
     },
     "Dc322YeFQyh": {
       "source_handle": "akademiks",
@@ -10884,10 +10902,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 24,
+      "attempts": 25,
       "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
-      "last_attempt_at": "2026-09-06T03:22:07.781Z",
-      "retry_at": "2026-09-06T04:22:07.781Z"
+      "last_attempt_at": "2026-09-06T04:26:34.000Z",
+      "retry_at": "2026-09-06T05:26:34.000Z"
     },
     "Dc3-LqbG5jK": {
       "source_handle": "akademiks",
@@ -10908,10 +10926,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 53,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-06T04:18:17.506Z",
-      "retry_at": "2026-09-06T05:18:17.506Z"
+      "attempts": 54,
+      "last_error": "Crop review required: source branding is not isolated in a removable top header",
+      "last_attempt_at": "2026-09-06T04:29:51.920Z",
+      "retry_at": "2026-09-06T05:29:51.920Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10920,10 +10938,10 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 39,
+      "attempts": 40,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T04:17:21.245Z",
-      "retry_at": "2026-09-06T05:17:21.245Z"
+      "last_attempt_at": "2026-09-06T04:29:15.092Z",
+      "retry_at": "2026-09-06T05:29:15.092Z"
     },
     "Dc7aOI7DbK4": {
       "source_handle": "records",
@@ -10940,16 +10958,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T04:13:32.737Z"
+      "checked_at": "2026-09-06T04:24:16.270Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T04:13:36.693Z"
+      "checked_at": "2026-09-06T04:24:20.249Z"
     },
     "records": {
-      "checked_at": "2026-09-06T04:13:40.688Z"
+      "checked_at": "2026-09-06T04:24:24.214Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T04:13:44.623Z"
+      "checked_at": "2026-09-06T04:24:28.321Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-06T03:42:00.899Z"

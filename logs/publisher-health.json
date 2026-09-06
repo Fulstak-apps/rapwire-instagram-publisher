@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-06T19:17:52.520Z",
+  "checked_at": "2026-09-06T19:24:09.460Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T19:17:50.972Z",
-    "usage": 17,
+    "usage": 18,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-06T19:32:50.972Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 81,
     "reserved_story_slots": 1,
     "pending_story_count": 106,
-    "next_feed_eligible_at": "2026-09-06T02:43:22.881Z",
+    "next_feed_eligible_at": "2026-09-06T20:24:02.267Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -34,9 +34,25 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T19:00:05.959Z",
+  "threads_next_eligible_at": "2026-09-06T19:39:09.156Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
+      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18093227678430897",
+      "content_type": "video"
+    },
+    {
+      "file": "361-otf-vonni-stole-king-von-s-money-and-his-pregnant-girlfriend-he-.json",
+      "id": "361-otf-vonni-stole-king-von-s-money-and-his-pregnant-girlfriend-he-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18412187209154639"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

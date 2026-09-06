@@ -4224,30 +4224,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T00:37:17.067Z",
-      "candidates": 14,
-      "queued": [
-        "231-drake-just-announced-fomo-is-dropping-on-youtube-on-september-15"
-      ],
-      "errors": [
-        {
-          "source_handle": "xxl",
-          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
-          "stage": "queue",
-          "error": "Five complete RGB samples are required"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 10,
-      "finished_at": "2026-09-04T00:41:44.021Z"
-    },
-    {
       "started_at": "2026-09-04T00:43:50.640Z",
       "candidates": 59,
       "queued": [
@@ -10352,6 +10328,28 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-06T00:30:29.340Z"
+    },
+    {
+      "started_at": "2026-09-06T00:35:32.927Z",
+      "candidates": 60,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-06T00:37:45.469Z"
     }
   ],
   "vip_pending": {
@@ -10470,10 +10468,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 35,
+      "attempts": 36,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T00:30:29.340Z",
-      "retry_at": "2026-09-06T01:30:29.340Z"
+      "last_attempt_at": "2026-09-06T00:37:45.468Z",
+      "retry_at": "2026-09-06T01:37:45.468Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10482,24 +10480,24 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 21,
+      "attempts": 22,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T00:29:49.506Z",
-      "retry_at": "2026-09-06T01:29:49.506Z"
+      "last_attempt_at": "2026-09-06T00:36:51.423Z",
+      "retry_at": "2026-09-06T01:36:51.423Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T00:24:23.089Z"
+      "checked_at": "2026-09-06T00:35:40.651Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T00:24:27.014Z"
+      "checked_at": "2026-09-06T00:35:44.649Z"
     },
     "records": {
-      "checked_at": "2026-09-06T00:24:30.949Z"
+      "checked_at": "2026-09-06T00:35:48.708Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T00:24:34.860Z"
+      "checked_at": "2026-09-06T00:35:52.797Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-06T00:14:57.279Z"
@@ -10520,10 +10518,10 @@
       "checked_at": "2026-09-05T23:48:01.515Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-05T23:34:30.819Z"
+      "checked_at": "2026-09-06T00:35:56.855Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-05T23:34:34.823Z"
+      "checked_at": "2026-09-06T00:36:00.892Z"
     }
   }
 }

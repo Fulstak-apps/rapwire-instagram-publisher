@@ -74,6 +74,12 @@ jobs:
           git pull --rebase origin main
           git push
 
+      - name: Check Instagram auth recovery state
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+        run: node scripts/instagram-auth-state.mjs
+
       - name: Wait for public media propagation
         run: sleep 10
 

@@ -2987,6 +2987,27 @@
       "source_url": "https://www.instagram.com/akademiks/p/Dc8zAr3DpZg/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc84jJ4uu87": {
+      "seen_at": "2026-09-06T15:59:11.300Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc84jJ4uu87/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc85YrijoQh": {
+      "seen_at": "2026-09-06T15:59:11.302Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc85YrijoQh/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "Dc82W6KFJio": {
+      "seen_at": "2026-09-06T15:59:11.302Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Dc82W6KFJio/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -4456,20 +4477,16 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/Dc7aOI7DbK4/",
       "queue_id": "353-it-s-time-to-have-the-conversation-is-ye-the-greatest-live-perfo"
+    },
+    "Dc84jJ4uu87": {
+      "queued_at": "2026-09-06T16:05:49.516Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc84jJ4uu87/",
+      "queue_id": "354-ice-spice-shows-off-her-new-tattoo",
+      "video": "media/354-ice-spice-shows-off-her-new-tattoo.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-04T12:54:37.321Z",
-      "candidates": 53,
-      "queued": [
-        "252-story-andrew-tate-has-been-indicted-for-having-sex-with-a-minor-"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 6,
-      "finished_at": "2026-09-04T12:56:00.392Z"
-    },
     {
       "started_at": "2026-09-04T12:58:04.957Z",
       "candidates": 14,
@@ -11446,6 +11463,17 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 13,
       "finished_at": "2026-09-06T15:50:14.980Z"
+    },
+    {
+      "started_at": "2026-09-06T15:55:54.063Z",
+      "candidates": 62,
+      "queued": [
+        "354-ice-spice-shows-off-her-new-tattoo"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 14,
+      "finished_at": "2026-09-06T16:05:49.516Z"
     }
   ],
   "vip_pending": {
@@ -11604,20 +11632,29 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc8zAr3DpZg-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-06T15:43:32.288Z",
       "retry_at": "2026-09-06T15:47:32.288Z"
+    },
+    "Dc85YrijoQh": {
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc85YrijoQh/",
+      "shortcode": "Dc85YrijoQh",
+      "first_seen_at": "2026-09-06T15:59:11.302Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T15:41:53.808Z"
+      "checked_at": "2026-09-06T15:56:25.369Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T15:41:58.176Z"
+      "checked_at": "2026-09-06T15:56:32.656Z"
     },
     "records": {
-      "checked_at": "2026-09-06T15:42:02.529Z"
+      "checked_at": "2026-09-06T15:56:39.505Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T15:42:06.883Z"
+      "checked_at": "2026-09-06T15:56:46.320Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-06T14:52:36.769Z"
@@ -11632,7 +11669,7 @@
       "checked_at": "2026-09-06T15:18:57.055Z"
     },
     "xxl": {
-      "checked_at": "2026-09-06T14:40:29.943Z"
+      "checked_at": "2026-09-06T15:57:02.161Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-06T14:40:33.926Z"
@@ -11641,7 +11678,7 @@
       "checked_at": "2026-09-06T15:19:01.628Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-06T14:19:13.278Z"
+      "checked_at": "2026-09-06T15:56:53.203Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-06T14:52:32.732Z"

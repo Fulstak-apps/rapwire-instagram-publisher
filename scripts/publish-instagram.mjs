@@ -77,6 +77,38 @@ let facebookSteps = 0;
 let instagramLane = "";
 const instagramAvailable = () => !(Date.parse(cooldown.until || "") > Date.now()) && quota.blocked !== true;
 
+// A bad asset or a permanently rejected container must never pin the whole
+// Instagram lane to one queue item. Account-wide errors are deliberately kept
+// as account-wide holds; rotating the queue for those errors would only make a
+// Meta throttle worse.
+function isAccountWideInstagramFailure(error = "") {
+  return /error validating access token|session has been invalidated|oauth(?:exception)?.*code[^0-9]*190|\b2207042\b|publishing (?:capacity|quota).*exhausted|media publish limit|application request limit|rate.?limit|too many requests|too many actions/i.test(String(error));
+}
+
+function recordInstagramDeliveryFailure(item, error, {story = false} = {}) {
+  const prefix = story ? "instagram_story" : "instagram";
+  const message = String(error?.message || error);
+  const errorKey = `${prefix}_error`;
+  const retryKey = `${prefix}_retry_at`;
+  const attemptsKey = `${prefix}_failure_count`;
+  const statusKey = `${prefix}_status`;
+  item[errorKey] = message;
+  if (isAccountWideInstagramFailure(message)) {
+    item[retryKey] = new Date(Date.now() + 10 * 60_000).toISOString();
+    return {terminal: false, accountWide: true, attempts: Number(item[attemptsKey] || 0)};
+  }
+  const attempts = Number(item[attemptsKey] || 0) + 1;
+  item[attemptsKey] = attempts;
+  if (attempts >= 3) {
+    item[statusKey] = "review_required";
+    item[`${prefix}_skip_reason`] = "three_item_specific_delivery_failures";
+    delete item[retryKey];
+    return {terminal: true, accountWide: false, attempts};
+  }
+  item[retryKey] = new Date(Date.now() + 10 * 60_000).toISOString();
+  return {terminal: false, accountWide: false, attempts};
+}
+
 async function checkInstagramRateLimit(response, payload) {
   if (payload.error?.code === 9 && payload.error?.error_subcode === 2207042) {
     quota = { ...quota, blocked: true, observed_rejection_at_usage: quota.usage, detected_at: new Date().toISOString(), next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: "Instagram publishing quota exhausted (9/2207042)" };
@@ -499,7 +531,7 @@ const recovery = recoveryPolicy(queueRecords.map(record => record.item), {
 // their slots across runs so slow processing cannot create an upload pileup.
 const instagramInFlightId = queueRecords.find(({item}) => item.status === 'ready'
   && (item.instagram_container_id || item.instagram_children?.some(Boolean))
-  && !item.instagram_reconcile_required && contentPromiseIsKept(item))?.item.id;
+  && !item.instagram_reconcile_required && item.instagram_status !== 'review_required' && contentPromiseIsKept(item))?.item.id;
 const processingCount = instagramInFlightId ? 1 : 0;
 const pendingStoryId = queueRecords.filter(({ item }) => item.status === "published"
   && footageOnlyAllowed(item)
@@ -516,7 +548,7 @@ const uploadCandidates = files.map(name => queueRecords.find(record => record.na
     && sourceFeedAllowed(item)
     && (deliveryPolicy.feed_allowed || (recovery.feed_allowed && item.id === recovery.item_id))
     && !item.instagram_container_id && String(item.video || "").endsWith(".mp4")
-    && !item.instagram_reconcile_required && !(Date.parse(item.instagram_retry_at || "") > Date.now())
+    && !item.instagram_reconcile_required && item.instagram_status !== "review_required" && !(Date.parse(item.instagram_retry_at || "") > Date.now())
     && (!item.publish_after || Date.parse(item.publish_after) <= Date.now())
     && item.layout_template === "rapwire-video-grid-safe-v1"
     && item.text_overflow_checked === true && item.rendered_body_text === item.body
@@ -531,7 +563,10 @@ await Promise.all(uploadCandidates.map(async ({ name, item }) => {
     await prepareInstagramReel(item, path.join(queueDir, name));
     console.log(`Prepared upload ${item.id}: ${item.instagram_container_id}`);
   } catch (error) {
+    const failure = recordInstagramDeliveryFailure(item, error);
+    await save(path.join(queueDir, name), item);
     await logAttempt({ file: name, id: item.id, platform: "instagram", status: "failed", error: error.message });
+    if (failure.terminal) await logAttempt({ file: name, id: item.id, platform: "instagram", status: "review_required", reason: item.instagram_skip_reason });
   }
 }));
 
@@ -735,7 +770,7 @@ for (const file of files) {
       continue;
     }
     let published;
-    if ((instagramInFlightId && instagramInFlightId !== item.id) || !instagramAvailable() || instagramSteps >= 1 || preferStory || item.instagram_reconcile_required || Date.parse(item.instagram_retry_at || "") > Date.now()) continue;
+    if ((instagramInFlightId && instagramInFlightId !== item.id) || !instagramAvailable() || instagramSteps >= 1 || preferStory || item.instagram_reconcile_required || item.instagram_status === "review_required" || Date.parse(item.instagram_retry_at || "") > Date.now()) continue;
     if (isVideoItem) {
       if (!item.instagram_container_id || videoAttemptsThisRun >= 1) continue;
       videoAttemptsThisRun += 1;
@@ -745,10 +780,10 @@ for (const file of files) {
       instagramLane = "feed";
       published = isVideoItem ? await publishInstagramReel(item, itemPath) : await publishMediaFeed(item,itemPath,'instagram');
     } catch (error) {
-      item.instagram_error = error.message;
-      if (!(Date.parse(item.instagram_retry_at || "") > Date.now())) item.instagram_retry_at = new Date(Date.now() + 10 * 60_000).toISOString();
+      const failure = recordInstagramDeliveryFailure(item, error);
       await save(itemPath, item);
       await logAttempt({ file, id: item.id, platform: "instagram", status: "failed", error: error.message });
+      if (failure.terminal) await logAttempt({ file, id: item.id, platform: "instagram", status: "review_required", reason: item.instagram_skip_reason });
       console.error(`Instagram failed for ${file}: ${error.message}`);
       continue;
     }
@@ -756,6 +791,9 @@ for (const file of files) {
     item.status = "published";
     item.instagram_media_id = published.id;
     delete item.instagram_error;
+    delete item.instagram_failure_count;
+    delete item.instagram_status;
+    delete item.instagram_skip_reason;
     item.published_at = new Date().toISOString();
     await logAttempt({ file, id: item.id, platform: "instagram", status: "published", media_id: published.id, content_type: item.content_type || "carousel" });
     await save(itemPath, item);
@@ -770,7 +808,7 @@ for (const file of files) {
 
   const storyPending = !item.instagram_story_media_id && item.instagram_story_status !== "published";
   if (publishInstagramStories && instagramAvailable() && (deliveryPolicy.story_allowed || (recovery.story_allowed && item.id === recovery.item_id)) && instagramSteps < 1 && (wasReady || item.id === pendingStoryId || item.id === recovery.item_id) && (item.story || isVideoItem) && storyPending
-    && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
+    && !item.instagram_story_reconcile_required && item.instagram_story_status !== "review_required" && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
     && (wasReady || olderStoryAttemptsThisRun < 1)) {
     if (!wasReady) olderStoryAttemptsThisRun += 1;
     try {
@@ -789,10 +827,10 @@ for (const file of files) {
       await verifyPublication(item, itemPath, "instagram_story");
       }
     } catch (error) {
-      item.instagram_story_status = "failed";
-      item.instagram_story_error = error.message;
-      if (!(Date.parse(item.instagram_story_retry_at || "") > Date.now())) item.instagram_story_retry_at = new Date(Date.now() + 10 * 60_000).toISOString();
+      const failure = recordInstagramDeliveryFailure(item, error, {story: true});
+      if (!failure.terminal) item.instagram_story_status = "failed";
       await logAttempt({ file, id: item.id, platform: "instagram_story", status: "failed", error: error.message });
+      if (failure.terminal) await logAttempt({ file, id: item.id, platform: "instagram_story", status: "review_required", reason: item.instagram_story_skip_reason });
       console.error(`Instagram Story failed for ${file}: ${error.message}`);
     }
     await save(itemPath, item);

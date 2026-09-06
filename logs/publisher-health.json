@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T19:39:13.749Z",
+  "checked_at": "2026-09-06T19:44:16.159Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T19:34:13.587Z",
@@ -34,10 +34,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T19:39:09.156Z",
+  "threads_next_eligible_at": "2026-09-06T19:59:14.980Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "362-kodak-black-in-the-studio-listening-to-zeze-before-it-was-releas.json",
+      "id": "362-kodak-black-in-the-studio-listening-to-zeze-before-it-was-releas",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18130550032676499"
+    }
+  ],
+  "failures": [
+    {
+      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
+      "id": "345-nba-youngboy-2021-jail-altercation-footage",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T23:44:15.931Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

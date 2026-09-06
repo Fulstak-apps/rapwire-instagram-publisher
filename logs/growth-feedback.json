@@ -2210,13 +2210,89 @@
         "reposts": 0,
         "quotes": 0
       }
+    },
+    "instagram:18085638497662850": {
+      "platform": "instagram",
+      "id": "18085638497662850",
+      "queue_id": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as",
+      "source": "akademiks",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-06T01:43:16.399Z",
+      "permalink": "https://www.instagram.com/reel/Dc7XaDiAp7O/",
+      "checked_at": "2026-09-06T19:17:52.791Z",
+      "metrics": {
+        "reach": 14,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18092963948441505": {
+      "platform": "instagram",
+      "id": "18092963948441505",
+      "queue_id": "345-nba-youngboy-2021-jail-altercation-footage",
+      "source": "raplisted_",
+      "topic": "culture",
+      "series": "RapWire Now",
+      "question": "discussion-v2",
+      "published_at": "2026-09-06T00:27:29.162Z",
+      "permalink": "https://www.instagram.com/reel/Dc7Or-7lab-/",
+      "checked_at": "2026-09-06T19:17:52.791Z",
+      "metrics": {
+        "reach": 563,
+        "likes": 20,
+        "comments": 0,
+        "shares": 15,
+        "saved": 2
+      }
+    },
+    "instagram:18118121780313102": {
+      "platform": "instagram",
+      "id": "18118121780313102",
+      "queue_id": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a",
+      "source": "akademiks",
+      "topic": "court",
+      "series": "Case File",
+      "question": "discussion-v2",
+      "published_at": "2026-09-05T23:16:33.006Z",
+      "permalink": "https://www.instagram.com/reel/Dc7GrxxALop/",
+      "checked_at": "2026-09-06T19:17:52.791Z",
+      "metrics": {
+        "reach": 135,
+        "likes": 5,
+        "comments": 0,
+        "shares": 1,
+        "saved": 0
+      }
+    },
+    "instagram:18097897349107903": {
+      "platform": "instagram",
+      "id": "18097897349107903",
+      "queue_id": "342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th",
+      "source": "freshouttheculture",
+      "topic": "music",
+      "series": "New Music Watch",
+      "question": "discussion-v2",
+      "published_at": "2026-09-05T22:05:50.821Z",
+      "permalink": "https://www.instagram.com/reel/Dc6-hrQjWl1/",
+      "checked_at": "2026-09-06T19:17:52.791Z",
+      "metrics": {
+        "reach": 111,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
     }
   },
   "platforms": {
     "instagram": {
-      "next_at": "2026-09-06T03:41:01.838Z",
-      "checked_at": "2026-09-05T21:41:01.838Z",
-      "status": "waiting_for_instagram_capacity",
+      "next_at": "2026-09-07T01:17:52.791Z",
+      "checked_at": "2026-09-06T19:17:52.791Z",
+      "status": "unavailable",
       "error": "Unsupported get request. Object with ID '18130043800677586' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     },
     "threads": {
@@ -2304,17 +2380,47 @@
     ]
   },
   "summary": {
-    "generated_at": "2026-09-06T19:13:50.652Z",
-    "measured_posts": 117,
+    "generated_at": "2026-09-06T19:17:52.791Z",
+    "measured_posts": 121,
     "rates": [
+      {
+        "platform": "instagram",
+        "kind": "series",
+        "value": "RapWire Now",
+        "posts": 1,
+        "exposures": 563,
+        "interactions": 17,
+        "interactions_per_1000": 30.2,
+        "sufficient_sample": false
+      },
+      {
+        "platform": "instagram",
+        "kind": "source",
+        "value": "raplisted_",
+        "posts": 3,
+        "exposures": 617,
+        "interactions": 17,
+        "interactions_per_1000": 27.6,
+        "sufficient_sample": true
+      },
+      {
+        "platform": "instagram",
+        "kind": "topic",
+        "value": "culture",
+        "posts": 16,
+        "exposures": 1844,
+        "interactions": 25,
+        "interactions_per_1000": 13.6,
+        "sufficient_sample": true
+      },
       {
         "platform": "instagram",
         "kind": "source",
         "value": "akademiks",
-        "posts": 5,
-        "exposures": 48,
-        "interactions": 1,
-        "interactions_per_1000": 20.8,
+        "posts": 7,
+        "exposures": 197,
+        "interactions": 2,
+        "interactions_per_1000": 10.2,
         "sufficient_sample": false
       },
       {
@@ -2329,26 +2435,6 @@
       },
       {
         "platform": "instagram",
-        "kind": "topic",
-        "value": "court",
-        "posts": 10,
-        "exposures": 812,
-        "interactions": 8,
-        "interactions_per_1000": 9.9,
-        "sufficient_sample": true
-      },
-      {
-        "platform": "instagram",
-        "kind": "series",
-        "value": "Case File",
-        "posts": 10,
-        "exposures": 812,
-        "interactions": 8,
-        "interactions_per_1000": 9.9,
-        "sufficient_sample": true
-      },
-      {
-        "platform": "instagram",
         "kind": "source",
         "value": "traploreross",
         "posts": 13,
@@ -2359,12 +2445,32 @@
       },
       {
         "platform": "instagram",
+        "kind": "topic",
+        "value": "court",
+        "posts": 11,
+        "exposures": 947,
+        "interactions": 9,
+        "interactions_per_1000": 9.5,
+        "sufficient_sample": true
+      },
+      {
+        "platform": "instagram",
+        "kind": "series",
+        "value": "Case File",
+        "posts": 11,
+        "exposures": 947,
+        "interactions": 9,
+        "interactions_per_1000": 9.5,
+        "sufficient_sample": true
+      },
+      {
+        "platform": "instagram",
         "kind": "series",
         "value": "What Happened?",
-        "posts": 10,
-        "exposures": 756,
+        "posts": 11,
+        "exposures": 770,
         "interactions": 7,
-        "interactions_per_1000": 9.3,
+        "interactions_per_1000": 9.1,
         "sufficient_sample": true
       },
       {
@@ -2376,6 +2482,16 @@
         "interactions": 4,
         "interactions_per_1000": 9,
         "sufficient_sample": false
+      },
+      {
+        "platform": "instagram",
+        "kind": "question",
+        "value": "discussion-v2",
+        "posts": 41,
+        "exposures": 4601,
+        "interactions": 38,
+        "interactions_per_1000": 8.3,
+        "sufficient_sample": true
       },
       {
         "platform": "instagram",
@@ -2408,16 +2524,6 @@
         "sufficient_sample": false
       },
       {
-        "platform": "instagram",
-        "kind": "topic",
-        "value": "culture",
-        "posts": 14,
-        "exposures": 1267,
-        "interactions": 8,
-        "interactions_per_1000": 6.3,
-        "sufficient_sample": true
-      },
-      {
         "platform": "threads",
         "kind": "series",
         "value": "RapWire Debate",
@@ -2439,42 +2545,12 @@
       },
       {
         "platform": "instagram",
-        "kind": "question",
-        "value": "discussion-v2",
-        "posts": 37,
-        "exposures": 3778,
-        "interactions": 20,
-        "interactions_per_1000": 5.3,
-        "sufficient_sample": true
-      },
-      {
-        "platform": "instagram",
         "kind": "source",
         "value": "records",
         "posts": 5,
         "exposures": 769,
         "interactions": 3,
         "interactions_per_1000": 3.9,
-        "sufficient_sample": true
-      },
-      {
-        "platform": "instagram",
-        "kind": "topic",
-        "value": "music",
-        "posts": 16,
-        "exposures": 2280,
-        "interactions": 8,
-        "interactions_per_1000": 3.5,
-        "sufficient_sample": true
-      },
-      {
-        "platform": "instagram",
-        "kind": "source",
-        "value": "freshouttheculture",
-        "posts": 7,
-        "exposures": 1149,
-        "interactions": 4,
-        "interactions_per_1000": 3.5,
         "sufficient_sample": true
       },
       {
@@ -2488,6 +2564,16 @@
         "sufficient_sample": true
       },
       {
+        "platform": "instagram",
+        "kind": "topic",
+        "value": "music",
+        "posts": 17,
+        "exposures": 2391,
+        "interactions": 8,
+        "interactions_per_1000": 3.3,
+        "sufficient_sample": true
+      },
+      {
         "platform": "threads",
         "kind": "source",
         "value": "records",
@@ -2495,6 +2581,16 @@
         "exposures": 2423,
         "interactions": 8,
         "interactions_per_1000": 3.3,
+        "sufficient_sample": true
+      },
+      {
+        "platform": "instagram",
+        "kind": "source",
+        "value": "freshouttheculture",
+        "posts": 8,
+        "exposures": 1260,
+        "interactions": 4,
+        "interactions_per_1000": 3.2,
         "sufficient_sample": true
       },
       {
@@ -2578,16 +2674,6 @@
         "sufficient_sample": false
       },
       {
-        "platform": "instagram",
-        "kind": "source",
-        "value": "raplisted_",
-        "posts": 2,
-        "exposures": 54,
-        "interactions": 0,
-        "interactions_per_1000": 0,
-        "sufficient_sample": false
-      },
-      {
         "platform": "threads",
         "kind": "source",
         "value": "freshouttheculture",
@@ -2641,8 +2727,8 @@
         "platform": "instagram",
         "kind": "series",
         "value": "New Music Watch",
-        "posts": 3,
-        "exposures": 280,
+        "posts": 4,
+        "exposures": 391,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
@@ -2730,10 +2816,10 @@
     ],
     "source_weights": {
       "records": 0.97615,
-      "traploreross": 1.25,
+      "traploreross": 1.1853399999999998,
+      "raplisted_": 1.1836909090909091,
       "freshouttheculture": 0.8,
       "trapmatictv": 0.8,
-      "raplisted_": 1.1173818181818183,
       "hiphop_firstnewsmusic": 0.8
     },
     "followers": {

@@ -2812,6 +2812,13 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/Dc7RdA7NfXo/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc7Sa34G8QW": {
+      "seen_at": "2026-09-06T01:14:06.152Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dc7Sa34G8QW/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -4243,29 +4250,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-04T01:39:21.882Z",
-      "candidates": 36,
-      "queued": [
-        "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd"
-      ],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcvzv3fv2GR-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
-          "stage": "queue",
-          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-04T01:46:02.730Z"
-    },
     {
       "started_at": "2026-09-04T01:48:29.836Z",
       "candidates": 55,
@@ -10361,6 +10345,28 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-06T01:07:57.683Z"
+    },
+    {
+      "started_at": "2026-09-06T01:13:01.745Z",
+      "candidates": 55,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-06T01:15:06.538Z"
     }
   ],
   "vip_pending": {
@@ -10479,10 +10485,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 38,
+      "attempts": 39,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T01:07:57.683Z",
-      "retry_at": "2026-09-06T02:07:57.683Z"
+      "last_attempt_at": "2026-09-06T01:15:06.538Z",
+      "retry_at": "2026-09-06T02:15:06.538Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10491,24 +10497,24 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 24,
+      "attempts": 25,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T01:07:14.750Z",
-      "retry_at": "2026-09-06T02:07:14.750Z"
+      "last_attempt_at": "2026-09-06T01:14:25.381Z",
+      "retry_at": "2026-09-06T02:14:25.381Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T01:03:49.584Z"
+      "checked_at": "2026-09-06T01:13:10.078Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T01:03:53.612Z"
+      "checked_at": "2026-09-06T01:13:14.088Z"
     },
     "records": {
-      "checked_at": "2026-09-06T01:03:57.558Z"
+      "checked_at": "2026-09-06T01:13:18.026Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T01:04:01.450Z"
+      "checked_at": "2026-09-06T01:13:22.082Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-06T00:56:55.547Z"
@@ -10517,10 +10523,10 @@
       "checked_at": "2026-09-06T00:56:59.602Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-06T00:24:38.814Z"
+      "checked_at": "2026-09-06T01:13:26.021Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-06T00:24:42.747Z"
+      "checked_at": "2026-09-06T01:13:30.011Z"
     },
     "xxl": {
       "checked_at": "2026-09-06T00:43:12.206Z"

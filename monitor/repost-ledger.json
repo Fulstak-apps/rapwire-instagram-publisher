@@ -4722,34 +4722,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T16:07:26.109Z",
-      "candidates": 46,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "xxl",
-          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
-          "stage": "queue",
-          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
-          "stage": "queue",
-          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 5,
-      "finished_at": "2026-09-04T16:13:38.641Z"
-    },
-    {
       "started_at": "2026-09-04T16:15:42.610Z",
       "candidates": 53,
       "queued": [],
@@ -11935,6 +11907,39 @@
       "mode": "discovery",
       "vip_pending": 14,
       "finished_at": "2026-09-06T21:44:46.390Z"
+    },
+    {
+      "started_at": "2026-09-06T21:49:49.681Z",
+      "candidates": 39,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 14,
+      "finished_at": "2026-09-06T21:52:34.185Z"
     }
   ],
   "vip_pending": {
@@ -12005,10 +12010,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 38,
+      "attempts": 39,
       "last_error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-06T20:45:58.181Z",
-      "retry_at": "2026-09-06T21:45:58.181Z"
+      "last_attempt_at": "2026-09-06T21:52:17.038Z",
+      "retry_at": "2026-09-06T22:52:17.038Z"
     },
     "Dc32-qLsTq5": {
       "source_handle": "akademiks",
@@ -12065,10 +12070,10 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 107,
+      "attempts": 108,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T21:44:46.390Z",
-      "retry_at": "2026-09-06T22:44:46.390Z"
+      "last_attempt_at": "2026-09-06T21:52:34.185Z",
+      "retry_at": "2026-09-06T22:52:34.185Z"
     },
     "Dc9E0l7FoTk": {
       "source_handle": "records",
@@ -12089,10 +12094,10 @@
       "first_seen_at": "2026-09-06T20:20:59.759Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 5,
+      "attempts": 6,
       "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-06T21:16:00.063Z",
-      "retry_at": "2026-09-06T21:48:00.063Z"
+      "last_attempt_at": "2026-09-06T21:51:58.129Z",
+      "retry_at": "2026-09-06T22:51:58.129Z"
     },
     "Dc9YSd_gCof": {
       "source_handle": "akademiks",
@@ -12109,16 +12114,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T21:40:36.205Z"
+      "checked_at": "2026-09-06T21:50:48.699Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T21:40:40.271Z"
+      "checked_at": "2026-09-06T21:50:52.900Z"
     },
     "records": {
-      "checked_at": "2026-09-06T21:40:44.364Z"
+      "checked_at": "2026-09-06T21:50:57.062Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T21:40:48.426Z"
+      "checked_at": "2026-09-06T21:51:01.142Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-06T21:14:37.505Z"

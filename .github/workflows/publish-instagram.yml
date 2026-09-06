@@ -137,6 +137,16 @@ jobs:
         if: ${{ always() }}
         run: bash scripts/save-publication-state.sh
 
+      # A Meta-revoked credential cannot be repaired by a queue retry. Keep
+      # Threads running, preserve every queued Instagram item, but make the
+      # root cause unmistakable in Actions instead of reporting a green run
+      # with zero Instagram publications.
+      - name: Surface Instagram credential outage
+        if: ${{ always() && steps.instagram_auth.outputs.valid == 'false' }}
+        run: |
+          echo "::error title=Instagram credential rejected::Meta rejected INSTAGRAM_ACCESS_TOKEN. Replace the token; the saved queue will resume automatically on the next run."
+          exit 1
+
       - name: Preserve recoverable publication state
         if: ${{ failure() }}
         uses: actions/upload-artifact@v4

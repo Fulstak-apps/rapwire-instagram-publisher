@@ -4356,17 +4356,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T02:53:25.183Z",
-      "candidates": 47,
-      "queued": [
-        "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 10,
-      "finished_at": "2026-09-04T02:56:31.307Z"
-    },
-    {
       "started_at": "2026-09-04T02:58:41.622Z",
       "candidates": 49,
       "queued": [
@@ -10593,6 +10582,58 @@
       "mode": "discovery",
       "vip_pending": 12,
       "finished_at": "2026-09-06T02:31:42.186Z"
+    },
+    {
+      "started_at": "2026-09-06T02:36:46.103Z",
+      "candidates": 49,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc7aOI7DbK4/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc7aOI7DbK4-6-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc527YPoU5p/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DcyPwhbIaG-/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 12,
+      "finished_at": "2026-09-06T02:46:23.036Z"
     }
   ],
   "vip_pending": {
@@ -10603,10 +10644,10 @@
       "first_seen_at": "2026-09-03T05:30:10.862Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 35,
+      "attempts": 36,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-06T01:36:47.079Z",
-      "retry_at": "2026-09-06T02:36:47.079Z"
+      "last_attempt_at": "2026-09-06T02:43:31.811Z",
+      "retry_at": "2026-09-06T03:43:31.811Z"
     },
     "Dcww5JhjqDI": {
       "source_handle": "records",
@@ -10711,10 +10752,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 45,
-      "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T02:31:42.186Z",
-      "retry_at": "2026-09-06T03:31:42.186Z"
+      "attempts": 46,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-06T02:46:23.036Z",
+      "retry_at": "2026-09-06T03:46:23.036Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10723,10 +10764,10 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 31,
-      "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T02:31:07.267Z",
-      "retry_at": "2026-09-06T03:31:07.267Z"
+      "attempts": 32,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-06T02:46:19.246Z",
+      "retry_at": "2026-09-06T03:46:19.246Z"
     },
     "Dc7aOI7DbK4": {
       "source_handle": "records",
@@ -10735,24 +10776,24 @@
       "first_seen_at": "2026-09-06T02:03:50.609Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 3,
+      "attempts": 4,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc7aOI7DbK4-6-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-06T02:27:37.138Z",
-      "retry_at": "2026-09-06T02:35:37.138Z"
+      "last_attempt_at": "2026-09-06T02:39:12.363Z",
+      "retry_at": "2026-09-06T02:55:12.363Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T02:24:56.096Z"
+      "checked_at": "2026-09-06T02:36:54.894Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T02:25:00.106Z"
+      "checked_at": "2026-09-06T02:36:58.882Z"
     },
     "records": {
-      "checked_at": "2026-09-06T02:25:04.102Z"
+      "checked_at": "2026-09-06T02:37:02.810Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T02:25:08.027Z"
+      "checked_at": "2026-09-06T02:37:07.008Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-06T01:42:18.470Z"
@@ -10770,7 +10811,7 @@
       "checked_at": "2026-09-06T02:25:16.055Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-06T01:30:09.017Z"
+      "checked_at": "2026-09-06T02:37:11.119Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-06T02:03:12.687Z"
@@ -10779,7 +10820,7 @@
       "checked_at": "2026-09-06T02:25:12.052Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-06T01:42:14.491Z"
+      "checked_at": "2026-09-06T02:37:15.296Z"
     }
   }
 }

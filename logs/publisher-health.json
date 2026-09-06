@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-06T01:32:44.077Z",
+  "checked_at": "2026-09-06T01:37:49.457Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-06T01:17:51.399Z",
+    "checked_at": "2026-09-06T01:37:48.229Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-06T01:32:51.399Z",
+    "next_check_at": "2026-09-06T01:52:48.229Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -25,7 +25,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -36,7 +36,15 @@
   "threads_next_eligible_at": "2026-09-06T01:32:59.352Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer.json",
+      "id": "267-lil-durk-lildurk-just-took-2-major-ws-in-court-judge-won-t-refer",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T05:37:49.160Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

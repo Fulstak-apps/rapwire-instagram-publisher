@@ -80,6 +80,17 @@ jobs:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
         run: node scripts/instagram-auth-state.mjs
 
+      - name: Resolve verified RapWire Facebook target
+        env:
+          # Prefer dedicated RapWire credentials. If they have not been created,
+          # reuse the older Meta connection only to discover a managed Page whose
+          # identity positively matches RapWire 24/7. The resolver refuses any
+          # other Page, including the Darnell Williams Page used previously.
+          FACEBOOK_DISCOVERY_ACCESS_TOKEN: ${{ secrets.RAPWIRE_FACEBOOK_PAGE_ACCESS_TOKEN || secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          RAPWIRE_FACEBOOK_PAGE_ID: ${{ secrets.RAPWIRE_FACEBOOK_PAGE_ID }}
+          RAPWIRE_FACEBOOK_EXPECTED_NAME: "RapWire 24/7"
+        run: node scripts/facebook-target.mjs
+
       - name: Wait for public media propagation
         run: sleep 10
 
@@ -90,10 +101,6 @@ jobs:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-          # RapWire-specific Facebook secrets intentionally do not reuse the
-          # old generic Facebook secrets that previously targeted Darnell's page.
-          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.RAPWIRE_FACEBOOK_PAGE_ACCESS_TOKEN }}
-          FACEBOOK_PAGE_ID: ${{ secrets.RAPWIRE_FACEBOOK_PAGE_ID }}
           PUBLISH_INSTAGRAM_STORIES: "true"
           MAX_FEED_POSTS_PER_RUN: "1"
         run: node scripts/publish-instagram.mjs

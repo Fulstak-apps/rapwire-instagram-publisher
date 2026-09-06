@@ -1,8 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {isVip, rememberVip, vipCandidates, deferVip, vipCaption} from './vip-policy.mjs';
+import {isVip, rememberVip, vipCandidates, deferVip, vipCaption, applyVerifiedArtistLabels} from './vip-policy.mjs';
 import {captionIsBound, sourceCaption} from './video-caption.mjs';
 const sources = [{handle:'akademiks'}, {handle:'traploreross'}, {handle:'records'}];
+test('restores missing at sign without duplicating the artist handle',()=>{
+  const registry=[{name:'Drake',handle:'champagnepapi',verified_at:new Date().toISOString(),verified_url:'https://www.instagram.com/champagnepapi/'}];
+  assert.equal(applyVerifiedArtistLabels('Drake champagnepapi performed.',registry).text,'Drake @champagnepapi performed.');
+  assert.equal(applyVerifiedArtistLabels('Drake @champagnepapi performed.',registry).text,'Drake @champagnepapi performed.');
+  assert.equal(applyVerifiedArtistLabels('Drake performed.',registry).text,'Drake @champagnepapi performed.');
+});
 const discovered = Array.from({length:12}, (_,i)=>({source:sources[i%2],url:`https://www.instagram.com/p/post${i}/`,shortcode:`post${i}`,profilePosition:i}));
 test('only the two requested VIP pages bypass editorial selection',()=>{
   assert.equal(isVip('@Akademiks'),true);

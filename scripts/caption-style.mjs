@@ -21,7 +21,7 @@ export function refreshThreadsCopy(item) {
     || item.threads_publish_requested_at || item.threads_reconcile_required
     || !['ready','published'].includes(item.status)) return false;
   try { if (!captionIsBound(item)) return false; } catch { return false; }
-  const text=composeThreads(cleanPublicCopy(item.body,item.source_handle), {
+  const text=composeThreads(applyVerifiedArtistLabels(cleanPublicCopy(item.body,item.source_handle),item.artist_mentions||[]).text, {
     source:item.source_handle, seed:item.source_url||item.id, artistMentions:item.artist_mentions||[]
   });
   if (!text) {

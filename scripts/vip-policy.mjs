@@ -16,6 +16,11 @@ export function applyVerifiedArtistLabels(value, registry = [], now = Date.now()
     const flags=person.case_sensitive?'':'i';
     const alias=aliases.find(name=>new RegExp(`\\b${String(name).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,flags).test(text));
     if(!alias) continue;
+    // Repair a screen name whose @ was lost upstream before adding a label.
+    // Require the artist name/alias above so ordinary words are not tagged.
+    const escapedHandle=String(person.handle).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    if(person.handle.toLowerCase()!==alias.toLowerCase())
+      text=text.replace(new RegExp(`(?<![@\\w.])${escapedHandle}(?![\\w])`,'gi'),`@${person.handle}`);
     const label=`${person.name} @${person.handle}`;
     if(!new RegExp(`@${String(person.handle).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,'i').test(text))
       text=text.replace(new RegExp(`\\b${String(alias).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}\\b`,flags),label);

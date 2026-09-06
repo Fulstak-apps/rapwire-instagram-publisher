@@ -4210,24 +4210,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T00:18:47.078Z",
-      "candidates": 56,
-      "queued": [
-        "229-durk-really-did-have-a-wedding-to-attend-on-aug-20th-was-allowed"
-      ],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/Dc1k776PR0X/",
-          "stage": "queue",
-          "error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-5.png\nSwift/ErrorType.swift:254: Fatal error: Error raised at top level: TextRecognition.CRImageReaderError.e5rtError(\"e5rt_execution_stream_operation_create_precompiled_compute_operation_with_options call failed\", 13)\nStack dump:\n0.\tProgram arguments: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -interpret \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift\" -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -no-color-diagnostics -Xcc -fno-color-diagnostics -new-driver-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-driver -empty-abi-descriptor -no-auto-bridging-header-chaining -module-name main -disable-clang-spi -target-sdk-version 26.5 -target-sdk-name macosx26.5 -external-plugin-path /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -- \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-1.png\" \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-2.png\" \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-3.png\" \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-4.png\" \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc1k776PR0X-1-crop-review/source-5.png\"\n1.\tApple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)\n2.\tCompiling with effective version 5.10\n3.\tWhile running user code \"/Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift\"\nStack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):\n0  swift-frontend           0x000000010b55108c llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 56\n1  swift-frontend           0x000000010b54e52c llvm::sys::RunSignalHandlers() + 172\n2  swift-frontend           0x000000010b55167c SignalHandler(int, __siginfo*, void*) + 356\n3  libsystem_platform.dylib 0x000000019bfe0144 _sigtramp + 56\n4  libswiftCore.dylib       0x00000001b062bd4c $ss17_assertionFailure__4file4line5flagss5NeverOs12StaticStringV_SSAHSus6UInt32VtF + 216\n5  libswiftCore.dylib       0x00000001b050b8e8 swift_errorInMain + 632\n6  (error)                  0x000000011c6789d4\n7  swift-frontend           0x0000000105244c48 llvm::orc::runAsMain(int (*)(int, char**), llvm::ArrayRef<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>, std::__1::optional<llvm::StringRef>) + 908\n8  swift-frontend           0x0000000105141f94 swift::SwiftJIT::runMain(llvm::ArrayRef<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>) + 636\n9  swift-frontend           0x000000010514e23c swift::RunImmediately(swift::CompilerInstance&, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>> const&, swift::IRGenOptions const&, swift::SILOptions const&, std::__1::unique_ptr<swift::SILModule, std::__1::default_delete<swift::SILModule>>&&) + 964\n10 swift-frontend           0x00000001050c20d0 processCommandLineAndRunImmediately(swift::CompilerInstance&, std::__1::unique_ptr<swift::SILModule, std::__1::default_delete<swift::SILModule>>&&, llvm::PointerUnion<swift::ModuleDecl*, swift::SourceFile*>, swift::FrontendObserver*, int&) + 484\n11 swift-frontend           0x00000001050bb89c performCompileStepsPostSILGen(swift::CompilerInstance&, std::__1::unique_ptr<swift::SILModule, std::__1::default_delete<swift::SILModule>>, llvm::PointerUnion<swift::ModuleDecl*, swift::SourceFile*>, swift::PrimarySpecificPaths const&, int&, swift::FrontendObserver*, llvm::ArrayRef<char const*>) + 2068\n12 swift-frontend           0x00000001050baecc swift::performCompileStepsPostSema(swift::CompilerInstance&, int&, swift::FrontendObserver*, llvm::ArrayRef<char const*>) + 4560\n13 swift-frontend           0x00000001050c03a0 performCompile(swift::CompilerInstance&, int&, swift::FrontendObserver*, llvm::ArrayRef<char const*>) + 4028\n14 swift-frontend           0x00000001050bc818 swift::performFrontend(llvm::ArrayRef<char const*>, char const*, void*, swift::FrontendObserver*) + 3308\n15 swift-frontend           0x000000010503c424 swift::mainEntry(int, char const**) + 5224\n16 dyld                     0x000000019bbffe88 start + 6688\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 11,
-      "finished_at": "2026-09-04T00:29:25.385Z"
-    },
-    {
       "started_at": "2026-09-04T00:31:58.224Z",
       "candidates": 37,
       "queued": [
@@ -10317,6 +10299,40 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-06T00:09:30.590Z"
+    },
+    {
+      "started_at": "2026-09-06T00:14:33.856Z",
+      "candidates": 59,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dc66wLLoy7s/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-06T00:19:12.086Z"
     }
   ],
   "vip_pending": {
@@ -10375,10 +10391,10 @@
       "first_seen_at": "2026-09-04T01:28:48.855Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 28,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T23:09:02.483Z",
-      "retry_at": "2026-09-06T00:09:02.483Z"
+      "attempts": 29,
+      "last_error": "Crop review required: No distinct footage region between static panels",
+      "last_attempt_at": "2026-09-06T00:18:04.126Z",
+      "retry_at": "2026-09-06T01:18:04.126Z"
     },
     "Dc30JSSjmsc": {
       "source_handle": "akademiks",
@@ -10435,10 +10451,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 33,
+      "attempts": 34,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T00:09:30.590Z",
-      "retry_at": "2026-09-06T01:09:30.590Z"
+      "last_attempt_at": "2026-09-06T00:18:58.396Z",
+      "retry_at": "2026-09-06T01:18:58.396Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10447,30 +10463,30 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 19,
+      "attempts": 20,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-06T00:08:54.603Z",
-      "retry_at": "2026-09-06T01:08:54.603Z"
+      "last_attempt_at": "2026-09-06T00:18:20.202Z",
+      "retry_at": "2026-09-06T01:18:20.202Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-06T00:08:20.002Z"
+      "checked_at": "2026-09-06T00:14:41.372Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-06T00:08:23.905Z"
+      "checked_at": "2026-09-06T00:14:45.363Z"
     },
     "records": {
-      "checked_at": "2026-09-06T00:08:27.788Z"
+      "checked_at": "2026-09-06T00:14:49.369Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-06T00:08:31.739Z"
+      "checked_at": "2026-09-06T00:14:53.276Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-05T23:14:29.756Z"
+      "checked_at": "2026-09-06T00:14:57.279Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-05T23:14:33.697Z"
+      "checked_at": "2026-09-06T00:15:01.174Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-05T23:27:54.824Z"

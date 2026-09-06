@@ -4204,17 +4204,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T00:00:44.592Z",
-      "candidates": 52,
-      "queued": [
-        "227-julia-wolf-just-landed-her-first-no-1-single-with-in-my-room-the"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 13,
-      "finished_at": "2026-09-04T00:02:05.517Z"
-    },
-    {
       "started_at": "2026-09-04T00:09:47.306Z",
       "candidates": 61,
       "queued": [
@@ -10292,6 +10281,39 @@
       "mode": "discovery",
       "vip_pending": 11,
       "finished_at": "2026-09-05T23:52:15.697Z"
+    },
+    {
+      "started_at": "2026-09-05T23:57:19.079Z",
+      "candidates": 37,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 11,
+      "finished_at": "2026-09-06T00:02:11.842Z"
     }
   ],
   "vip_pending": {
@@ -10386,10 +10408,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 20,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-05T22:57:13.636Z",
-      "retry_at": "2026-09-05T23:57:13.636Z"
+      "attempts": 21,
+      "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
+      "last_attempt_at": "2026-09-06T00:02:11.841Z",
+      "retry_at": "2026-09-06T01:02:11.841Z"
     },
     "Dc3-LqbG5jK": {
       "source_handle": "akademiks",
@@ -10410,10 +10432,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 31,
+      "attempts": 32,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-05T23:50:51.297Z",
-      "retry_at": "2026-09-06T00:50:51.297Z"
+      "last_attempt_at": "2026-09-05T23:59:52.238Z",
+      "retry_at": "2026-09-06T00:59:52.238Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -10422,24 +10444,24 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 17,
+      "attempts": 18,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-05T23:49:38.426Z",
-      "retry_at": "2026-09-06T00:49:38.426Z"
+      "last_attempt_at": "2026-09-05T23:58:54.902Z",
+      "retry_at": "2026-09-06T00:58:54.902Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-05T23:47:39.842Z"
+      "checked_at": "2026-09-05T23:58:16.259Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-05T23:47:43.993Z"
+      "checked_at": "2026-09-05T23:58:20.475Z"
     },
     "records": {
-      "checked_at": "2026-09-05T23:47:48.314Z"
+      "checked_at": "2026-09-05T23:58:24.584Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-05T23:47:52.592Z"
+      "checked_at": "2026-09-05T23:58:28.743Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-05T23:14:29.756Z"

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-06T21:36:06.313Z",
+  "checked_at": "2026-09-06T21:40:30.920Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-06T21:25:09.640Z",
-    "usage": 13,
+    "checked_at": "2026-09-06T21:40:30.783Z",
+    "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-06T21:40:09.640Z",
+    "next_check_at": "2026-09-06T21:55:30.783Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -17,8 +17,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 13,
-    "instagram_remaining": 85,
+    "instagram_usage": 12,
+    "instagram_remaining": 86,
     "reserved_story_slots": 1,
     "pending_story_count": 106,
     "next_feed_eligible_at": "2026-09-06T20:24:02.267Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -36,15 +36,7 @@
   },
   "threads_next_eligible_at": "2026-09-06T21:51:05.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz.json",
-      "id": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18105527561211655"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

@@ -149,7 +149,10 @@ const artistHandleRegistry=JSON.parse(await fs.readFile('monitor/artist-handles.
 const sourceByHandle=new Map(sourceRegistry.map(source=>[source.handle,source]));
 const sourceFeedAllowed=item=>{
   const source=sourceByHandle.get(String(item.source_handle||'').toLowerCase());
-  if(!source||source.daily_maximum===Infinity)return true;
+  // A source cap is opt-in.  Most approved sources intentionally have no
+  // `daily_maximum`; comparing a count with `undefined` always returns false,
+  // which silently blocks every otherwise-ready repost from that source.
+  if(!source||!Number.isFinite(source.daily_maximum)||source.daily_maximum===Infinity)return true;
   // Count confirmed Instagram feed posts only. The collector separately limits
   // queued items, so an unfinished cross-platform delivery cannot inflate the
   // cap or allow a third feed post.

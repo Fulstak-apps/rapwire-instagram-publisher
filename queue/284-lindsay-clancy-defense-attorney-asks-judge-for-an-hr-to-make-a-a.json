@@ -119,12 +119,10 @@
   "threads_story_status": "not_supported",
   "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
   "instagram_story_container_created_at": "2026-09-05T23:56:58.114Z",
-  "instagram_story_status": "pending",
+  "instagram_story_status": "failed",
   "instagram_story_container_status": "ERROR",
-  "instagram_story_container_failures": 1,
-  "instagram_story_previous_container_id": "18112507694078478",
-  "instagram_story_retry_at": "2026-09-05T23:56:43.188Z",
-  "instagram_story_error": "instagram_story: ERROR; retry after 2026-09-05T23:56:43.188Z: ERROR",
-  "instagram_story_container_id": "18112509911078478",
-  "instagram_story_container_checked_at": "2026-09-05T23:56:58.114Z"
+  "instagram_story_container_failures": 2,
+  "instagram_story_previous_container_id": "18112509911078478",
+  "instagram_story_retry_at": "2026-09-06T01:00:39.434Z",
+  "instagram_story_error": "instagram_story: ERROR; retry after 2026-09-06T01:00:39.434Z: ERROR"
 }

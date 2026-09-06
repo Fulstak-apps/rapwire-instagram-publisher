@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T23:56:58.769Z",
+  "checked_at": "2026-09-06T00:00:39.670Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T23:56:57.040Z",
@@ -36,8 +36,23 @@
   "threads_next_eligible_at": "2026-09-06T00:01:53.126Z",
   "facebook_next_eligible_at": "2026-09-06T00:06:49.723Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a.json",
+      "id": "284-lindsay-clancy-defense-attorney-asks-judge-for-an-hr-to-make-a-a",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T01:00:39.434Z: ERROR"
+    }
+  ],
   "reviews": [
+    {
+      "file": "345-nba-youngboy-2021-jail-altercation-footage.json",
+      "id": "345-nba-youngboy-2021-jail-altercation-footage",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T20:14:35.880Z",
+  "checked_at": "2026-09-06T20:19:29.545Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T20:09:23.614Z",
@@ -25,7 +25,7 @@
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-06T20:24:28.932Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as.json",
-      "id": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T00:14:35.576Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -298,13 +290,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as.json",
-      "id": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as",
-      "platform": "instagram_story",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

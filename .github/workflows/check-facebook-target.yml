@@ -1,0 +1,35 @@
+name: Check RapWire Facebook target
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/check-facebook-target.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-facebook-target:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          sparse-checkout: |
+            scripts/facebook-target.mjs
+            scripts/facebook-target.test.mjs
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Test Facebook target resolver
+        run: node --test scripts/facebook-target.test.mjs
+      - name: Resolve RapWire Facebook Page
+        env:
+          FACEBOOK_DISCOVERY_ACCESS_TOKEN: ${{ secrets.RAPWIRE_FACEBOOK_PAGE_ACCESS_TOKEN || secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          RAPWIRE_FACEBOOK_PAGE_ID: ${{ secrets.RAPWIRE_FACEBOOK_PAGE_ID }}
+          RAPWIRE_FACEBOOK_EXPECTED_NAME: 'RapWire 24/7'
+        run: node scripts/facebook-target.mjs

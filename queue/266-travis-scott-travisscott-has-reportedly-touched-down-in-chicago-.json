@@ -77,15 +77,18 @@
   "threads_children": [
     {
       "id": "18096213650179906",
-      "checked_at": "2026-09-06T05:15:04.589Z",
-      "status": "IN_PROGRESS"
+      "checked_at": "2026-09-06T05:20:05.520Z",
+      "status": "FINISHED"
     },
     {
       "id": "18096213677179906",
-      "checked_at": "2026-09-06T05:15:04.589Z",
-      "status": "IN_PROGRESS"
+      "checked_at": "2026-09-06T05:20:05.520Z",
+      "status": "FINISHED"
     }
   ],
   "threads_error": "Threads threads failed: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ao53baG-E7FLnTnjcdurbHI\"}}",
-  "threads_retry_at": "2026-09-04T22:39:38.701Z"
+  "threads_retry_at": "2026-09-04T22:39:38.701Z",
+  "threads_container_id": "18096214793179906",
+  "threads_container_created_at": "2026-09-06T05:20:05.520Z",
+  "threads_container_checked_at": "2026-09-06T05:20:05.520Z"
 }

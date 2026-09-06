@@ -1,0 +1,38 @@
+name: RapWire publisher watchdog
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: rapwire-publisher-watchdog
+  cancel-in-progress: false
+
+jobs:
+  check-and-recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          ref: main
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      - name: Check for missed feed and defer repeated definite failures
+        id: watchdog
+        run: node scripts/publisher-watchdog.mjs
+      - name: Save watchdog state
+        if: ${{ always() }}
+        run: bash scripts/save-publication-state.sh
+      - name: Retry the publisher once
+        if: ${{ steps.watchdog.outputs.dispatch == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publish-instagram.yml --repo "$GITHUB_REPOSITORY" --ref main

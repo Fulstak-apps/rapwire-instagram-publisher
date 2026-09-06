@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T02:43:25.517Z",
+  "checked_at": "2026-09-06T02:48:36.209Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T02:38:52.759Z",
@@ -33,10 +33,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T02:43:21.898Z",
+  "threads_next_eligible_at": "2026-09-06T03:03:35.674Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
+      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18589190548069256"
+    }
+  ],
+  "failures": [
+    {
+      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
+      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram status check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"APMWbEYNCTgDajOXCr0rR8O\"}}"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

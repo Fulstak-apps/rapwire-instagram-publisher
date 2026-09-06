@@ -133,12 +133,12 @@
   "threads_story_status": "not_supported",
   "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
   "instagram_story_container_created_at": "2026-09-06T02:38:52.923Z",
-  "instagram_story_status": "pending",
+  "instagram_story_status": "failed",
   "instagram_story_container_status": "ERROR",
   "instagram_story_container_failures": 5,
   "instagram_story_previous_container_id": "18112504835078478",
-  "instagram_story_retry_at": "2026-09-06T02:36:19.070Z",
-  "instagram_story_error": "instagram_story: ERROR; retry after 2026-09-06T02:36:19.070Z: ERROR",
+  "instagram_story_retry_at": "2026-09-06T02:58:36.154Z",
+  "instagram_story_error": "instagram status check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"APMWbEYNCTgDajOXCr0rR8O\"}}",
   "instagram_story_container_id": "18112522790078478",
   "instagram_story_container_checked_at": "2026-09-06T02:38:52.923Z"
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T00:03:33.312Z",
+  "checked_at": "2026-09-06T00:05:59.041Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-05T23:56:57.040Z",
@@ -33,10 +33,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T00:01:53.126Z",
+  "threads_next_eligible_at": "2026-09-06T00:20:57.432Z",
   "facebook_next_eligible_at": "2026-09-06T00:06:49.723Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea.json",
+      "id": "328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18115193629763739"
+    }
+  ],
+  "failures": [
+    {
+      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
+      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-06T04:05:58.866Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

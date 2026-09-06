@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T19:34:14.362Z",
+  "checked_at": "2026-09-06T19:39:13.749Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-06T19:34:13.587Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-06T19:39:09.156Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as.json",
-      "id": "297-king-von-sister-kayla-b-exposes-video-of-king-von-kicking-out-as",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-06T21:34:13.734Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

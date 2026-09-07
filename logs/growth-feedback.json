@@ -2400,12 +2400,50 @@
         "reposts": 0,
         "quotes": 0
       }
+    },
+    "instagram:18103090019194020": {
+      "platform": "instagram",
+      "id": "18103090019194020",
+      "queue_id": "362-kodak-black-in-the-studio-listening-to-zeze-before-it-was-releas",
+      "source": "freshouttheculture",
+      "topic": "music",
+      "series": "New Music Watch",
+      "question": "discussion-v2",
+      "published_at": "2026-09-07T00:21:32.113Z",
+      "permalink": "https://www.instagram.com/reel/Dc9Y3NzArro/",
+      "checked_at": "2026-09-07T01:22:50.187Z",
+      "metrics": {
+        "reach": 9,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18093227678430897": {
+      "platform": "instagram",
+      "id": "18093227678430897",
+      "queue_id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
+      "source": "hiphop_firstnewsmusic",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-06T19:23:54.577Z",
+      "permalink": "https://www.instagram.com/reel/Dc7fayuCIKg/",
+      "checked_at": "2026-09-07T01:22:50.187Z",
+      "metrics": {
+        "reach": 2,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
     }
   },
   "platforms": {
     "instagram": {
-      "next_at": "2026-09-07T01:17:52.791Z",
-      "checked_at": "2026-09-06T19:17:52.791Z",
+      "next_at": "2026-09-07T07:22:50.187Z",
+      "checked_at": "2026-09-07T01:22:50.187Z",
       "status": "unavailable",
       "error": "Unsupported get request. Object with ID '18130043800677586' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     },
@@ -2498,8 +2536,8 @@
     ]
   },
   "summary": {
-    "generated_at": "2026-09-07T01:17:31.255Z",
-    "measured_posts": 127,
+    "generated_at": "2026-09-07T01:22:50.187Z",
+    "measured_posts": 129,
     "rates": [
       {
         "platform": "instagram",
@@ -2525,10 +2563,10 @@
         "platform": "instagram",
         "kind": "topic",
         "value": "culture",
-        "posts": 16,
-        "exposures": 1844,
+        "posts": 17,
+        "exposures": 1846,
         "interactions": 25,
-        "interactions_per_1000": 13.6,
+        "interactions_per_1000": 13.5,
         "sufficient_sample": true
       },
       {
@@ -2585,8 +2623,8 @@
         "platform": "instagram",
         "kind": "series",
         "value": "What Happened?",
-        "posts": 11,
-        "exposures": 770,
+        "posts": 12,
+        "exposures": 772,
         "interactions": 7,
         "interactions_per_1000": 9.1,
         "sufficient_sample": true
@@ -2605,10 +2643,10 @@
         "platform": "instagram",
         "kind": "question",
         "value": "discussion-v2",
-        "posts": 41,
-        "exposures": 4601,
+        "posts": 43,
+        "exposures": 4612,
         "interactions": 38,
-        "interactions_per_1000": 8.3,
+        "interactions_per_1000": 8.2,
         "sufficient_sample": true
       },
       {
@@ -2695,8 +2733,8 @@
         "platform": "instagram",
         "kind": "topic",
         "value": "music",
-        "posts": 17,
-        "exposures": 2391,
+        "posts": 18,
+        "exposures": 2400,
         "interactions": 8,
         "interactions_per_1000": 3.3,
         "sufficient_sample": true
@@ -2715,8 +2753,8 @@
         "platform": "instagram",
         "kind": "source",
         "value": "freshouttheculture",
-        "posts": 8,
-        "exposures": 1260,
+        "posts": 9,
+        "exposures": 1269,
         "interactions": 4,
         "interactions_per_1000": 3.2,
         "sufficient_sample": true
@@ -2845,8 +2883,8 @@
         "platform": "instagram",
         "kind": "series",
         "value": "New Music Watch",
-        "posts": 4,
-        "exposures": 391,
+        "posts": 5,
+        "exposures": 400,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
@@ -2940,11 +2978,21 @@
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
+      },
+      {
+        "platform": "instagram",
+        "kind": "source",
+        "value": "hiphop_firstnewsmusic",
+        "posts": 1,
+        "exposures": 2,
+        "interactions": 0,
+        "interactions_per_1000": 0,
+        "sufficient_sample": false
       }
     ],
     "source_weights": {
       "records": 0.9910535714285714,
-      "traploreross": 0.9926699999999999,
+      "traploreross": 0.9939171428571428,
       "raplisted_": 1.25,
       "freshouttheculture": 0.8,
       "trapmatictv": 0.8,

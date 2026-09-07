@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T03:13:37.383Z",
+  "checked_at": "2026-09-07T03:18:44.544Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T03:09:08.153Z",
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "368-2-chainz-really-is-a-national-treasure-mann-we-gotta-protect-him.json",
-      "id": "368-2-chainz-really-is-a-national-treasure-mann-we-gotta-protect-him",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T05:13:37.040Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -130,13 +122,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "368-2-chainz-really-is-a-national-treasure-mann-we-gotta-protect-him.json",
-      "id": "368-2-chainz-really-is-a-national-treasure-mann-we-gotta-protect-him",
-      "platform": "instagram_story",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "156-reposted-from-traploreross-durks-home-wifi-router-cooked-him-got.json",

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T16:00:48.214Z",
+  "checked_at": "2026-09-07T16:05:51.784Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T15:57:08.500Z",
-    "usage": 42,
+    "usage": 43,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T16:12:08.500Z",
@@ -34,9 +34,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T15:30:12.264Z",
+  "threads_next_eligible_at": "2026-09-07T16:20:45.086Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "387-drake-champagnepapi-popped-out-w-gordo-while-he-played-hoe-phase.json",
+      "id": "387-drake-champagnepapi-popped-out-w-gordo-while-he-played-hoe-phase",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18335017018273583"
+    },
+    {
+      "file": "296-don-toliver-dontoliver-is-in-the-building.json",
+      "id": "296-don-toliver-dontoliver-is-in-the-building",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "17907059643501916"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

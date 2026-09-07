@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T15:35:19.234Z",
+  "checked_at": "2026-09-07T15:40:22.692Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T15:20:14.599Z",
+    "checked_at": "2026-09-07T15:40:21.980Z",
     "usage": 41,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T15:35:14.599Z",
+    "next_check_at": "2026-09-07T15:55:21.980Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 40,
-    "instagram_remaining": 58,
+    "instagram_usage": 41,
+    "instagram_remaining": 57,
     "reserved_story_slots": 1,
-    "pending_story_count": 96,
+    "pending_story_count": 95,
     "next_feed_eligible_at": "2026-09-07T15:47:25.601Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -36,15 +36,7 @@
   },
   "threads_next_eligible_at": "2026-09-07T15:30:12.264Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav.json",
-      "id": "192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav",
-      "platform": "instagram_story",
-      "status": "published",
-      "media_id": "18101592218208084"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

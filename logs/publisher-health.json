@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T07:21:03.368Z",
+  "checked_at": "2026-09-07T07:26:06.584Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T07:08:11.409Z",
+    "checked_at": "2026-09-07T07:26:06.251Z",
     "usage": 15,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T07:23:11.409Z",
+    "next_check_at": "2026-09-07T07:41:06.251Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -39,11 +39,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
-      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
+      "file": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis.json",
+      "id": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T11:21:03.090Z: ERROR"
+      "error": "instagram_story: ERROR; retry after 2026-09-07T11:26:06.387Z: ERROR"
     }
   ],
   "reviews": [

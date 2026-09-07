@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T04:14:26.187Z",
+  "checked_at": "2026-09-07T04:19:25.109Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T04:05:14.478Z",
@@ -34,10 +34,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
+  "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "380-don-toliver-dontoliver-is-gearing-up-for-a-new-era.json",
+      "id": "380-don-toliver-dontoliver-is-gearing-up-for-a-new-era",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18407262625080853"
+    }
+  ],
+  "failures": [
+    {
+      "file": "268-rapwire-repost-video.json",
+      "id": "268-rapwire-repost-video",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T08:19:24.865Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

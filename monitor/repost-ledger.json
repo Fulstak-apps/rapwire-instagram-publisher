@@ -3421,6 +3421,13 @@
       "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "Dc_OwQ1jrB7": {
+      "seen_at": "2026-09-07T13:40:54.285Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc_OwQ1jrB7/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -5023,27 +5030,15 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dc_G8d3g8Sm/",
       "queue_id": "383-mo3-girlfriend-claims-the-middle-man-who-was-her-baby-daddy-was-"
+    },
+    "Dc_OwQ1jrB7": {
+      "queued_at": "2026-09-07T13:41:09.042Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dc_OwQ1jrB7/",
+      "queue_id": "384-eight-years-ago-today-the-world-lost-mac-miller-at-just-26-years"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-05T03:56:12.128Z",
-      "candidates": 14,
-      "queued": [
-        "305-free-durk-ye-shows-support-to-lil-durk-lildurk"
-      ],
-      "errors": [
-        {
-          "source_handle": "xxl",
-          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
-          "stage": "queue",
-          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 10,
-      "finished_at": "2026-09-05T03:58:19.419Z"
-    },
     {
       "started_at": "2026-09-05T04:00:30.384Z",
       "candidates": 59,
@@ -13704,6 +13699,17 @@
       "mode": "discovery",
       "vip_pending": 19,
       "finished_at": "2026-09-07T13:34:26.636Z"
+    },
+    {
+      "started_at": "2026-09-07T13:39:33.350Z",
+      "candidates": 59,
+      "queued": [
+        "384-eight-years-ago-today-the-world-lost-mac-miller-at-just-26-years"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 19,
+      "finished_at": "2026-09-07T13:41:09.042Z"
     }
   ],
   "vip_pending": {
@@ -13938,16 +13944,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-07T13:17:47.764Z"
+      "checked_at": "2026-09-07T13:39:40.846Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-07T13:17:51.894Z"
+      "checked_at": "2026-09-07T13:39:44.947Z"
     },
     "records": {
-      "checked_at": "2026-09-07T13:17:55.870Z"
+      "checked_at": "2026-09-07T13:39:48.932Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-07T13:17:59.964Z"
+      "checked_at": "2026-09-07T13:39:52.974Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-07T12:41:45.075Z"
@@ -13959,7 +13965,7 @@
       "checked_at": "2026-09-07T13:18:08.479Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-07T11:59:15.093Z"
+      "checked_at": "2026-09-07T13:39:57.064Z"
     },
     "xxl": {
       "checked_at": "2026-09-07T12:29:40.646Z"
@@ -13968,7 +13974,7 @@
       "checked_at": "2026-09-07T12:29:44.899Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-07T12:16:43.710Z"
+      "checked_at": "2026-09-07T13:40:01.060Z"
     },
     "igndotcom": {
       "checked_at": "2026-09-07T12:16:47.867Z"

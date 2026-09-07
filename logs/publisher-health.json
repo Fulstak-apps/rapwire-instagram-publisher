@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T02:28:58.716Z",
+  "checked_at": "2026-09-07T02:33:41.905Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T02:15:13.243Z",
-    "usage": 6,
+    "checked_at": "2026-09-07T02:33:34.317Z",
+    "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T02:30:13.243Z",
+    "next_check_at": "2026-09-07T02:48:34.317Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 92,
     "reserved_story_slots": 1,
     "pending_story_count": 106,
-    "next_feed_eligible_at": "2026-09-07T02:27:46.751Z",
+    "next_feed_eligible_at": "2026-09-07T03:33:41.431Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "368-2-chainz-really-is-a-national-treasure-mann-we-gotta-protect-him.json",
+      "id": "368-2-chainz-really-is-a-national-treasure-mann-we-gotta-protect-him",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18472632655113229",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

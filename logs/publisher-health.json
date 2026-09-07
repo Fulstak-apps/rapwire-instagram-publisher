@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T07:36:12.681Z",
+  "checked_at": "2026-09-07T07:41:21.917Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T07:26:06.251Z",
+    "checked_at": "2026-09-07T07:41:20.525Z",
     "usage": 15,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T07:41:06.251Z",
+    "next_check_at": "2026-09-07T07:56:20.525Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
-      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T11:36:12.458Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -417,13 +409,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
-      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
-      "platform": "instagram_story",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",

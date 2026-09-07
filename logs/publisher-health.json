@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T18:47:56.274Z",
+  "checked_at": "2026-09-07T18:52:37.837Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T18:42:37.003Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T18:57:42.558Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd.json",
+      "id": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T19:22:37.567Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

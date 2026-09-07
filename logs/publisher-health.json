@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T16:37:07.642Z",
+  "checked_at": "2026-09-07T16:41:11.133Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T16:31:16.127Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T16:41:05.611Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-.json",
+      "id": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T17:41:10.913Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

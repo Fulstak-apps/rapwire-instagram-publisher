@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T01:27:47.503Z",
+  "checked_at": "2026-09-07T01:32:40.106Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T01:22:48.013Z",
@@ -17,12 +17,12 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 7,
-    "instagram_remaining": 91,
+    "instagram_usage": 8,
+    "instagram_remaining": 90,
     "reserved_story_slots": 1,
-    "pending_story_count": 106,
+    "pending_story_count": 107,
     "next_feed_eligible_at": "2026-09-07T02:27:46.751Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -36,16 +36,7 @@
   },
   "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "365-lil-baby-shows-off-the-ysl-chain-young-thug-thuggerthugger1-gift.json",
-      "id": "365-lil-baby-shows-off-the-ysl-chain-young-thug-thuggerthugger1-gift",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18369251893209971",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

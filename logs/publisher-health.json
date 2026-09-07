@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T04:09:06.548Z",
+  "checked_at": "2026-09-07T04:14:26.187Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T04:05:14.478Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
-      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T08:09:06.304Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -298,13 +290,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
-      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
-      "platform": "instagram_story",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

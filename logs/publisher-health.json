@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T12:03:05.134Z",
+  "checked_at": "2026-09-07T12:08:14.327Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T11:58:50.177Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 30,
-    "instagram_remaining": 68,
+    "instagram_usage": 31,
+    "instagram_remaining": 67,
     "reserved_story_slots": 1,
-    "pending_story_count": 100,
+    "pending_story_count": 99,
     "next_feed_eligible_at": "2026-09-07T12:23:46.508Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -34,15 +34,15 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
+  "threads_next_eligible_at": "2026-09-07T12:23:13.151Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [
     {
-      "file": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta.json",
-      "id": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta",
-      "platform": "instagram_story",
+      "file": "382-otf-jam-got-some-more-to-say.json",
+      "id": "382-otf-jam-got-some-more-to-say",
+      "platform": "threads",
       "status": "published",
-      "media_id": "17929909293396557"
+      "media_id": "18341139448271409"
     }
   ],
   "failures": [],

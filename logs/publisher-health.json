@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T12:08:14.327Z",
+  "checked_at": "2026-09-07T12:13:10.727Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T11:58:50.177Z",
-    "usage": 31,
+    "usage": 32,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T12:13:50.177Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,11 +38,11 @@
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [
     {
-      "file": "382-otf-jam-got-some-more-to-say.json",
-      "id": "382-otf-jam-got-some-more-to-say",
-      "platform": "threads",
+      "file": "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d.json",
+      "id": "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d",
+      "platform": "instagram_story",
       "status": "published",
-      "media_id": "18341139448271409"
+      "media_id": "17908386321496574"
     }
   ],
   "failures": [],
@@ -174,22 +174,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow.json",
-      "id": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "176-traploreross-durks-lawyer-marissa-goldberg-cornered-the-top-fbi-.json",
       "id": "176-traploreross-durks-lawyer-marissa-goldberg-cornered-the-top-fbi-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour.json",
-      "id": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -202,29 +188,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e.json",
-      "id": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi.json",
       "id": "181-traploreross-nelk-scams-exposed-they-tried-to-delete-all-the-evi",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "182-akademiks-mo3-killer-parked-right-behind-him.json",
-      "id": "182-akademiks-mo3-killer-parked-right-behind-him",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie.json",
-      "id": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -286,13 +251,6 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "213-juicyj-projectpat-dem-goats-out-now.json",
-      "id": "213-juicyj-projectpat-dem-goats-out-now",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.json",
       "id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
       "platform": "video_layout",
@@ -349,43 +307,8 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "130-akademiks-repost-video.json",
-      "id": "130-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "131-akademiks-repost-video.json",
-      "id": "131-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "132-akademiks-repost-video.json",
-      "id": "132-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "133-akademiks-repost-video.json",
-      "id": "133-akademiks-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "135-traploreross-repost-video.json",
       "id": "135-traploreross-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "136-akademiks-repost-video.json",
-      "id": "136-akademiks-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -463,6 +386,83 @@
     {
       "file": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o.json",
       "id": "147-vonni-just-finished-durk-even-more-said-durk-told-him-the-plan-o",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow.json",
+      "id": "175-akademiks-prosecutors-to-rest-case-vs-durk-tomorrow",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour.json",
+      "id": "177-akademiks-doodie-lo-tries-to-keep-the-peace-outside-of-durk-cour",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e.json",
+      "id": "180-akademiks-stoolpresidente-had-800k-riding-on-any-horse-winning-e",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "182-akademiks-mo3-killer-parked-right-behind-him.json",
+      "id": "182-akademiks-mo3-killer-parked-right-behind-him",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie.json",
+      "id": "183-akademiks-tyreek-hill-says-daejonlove-really-his-homie",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "213-juicyj-projectpat-dem-goats-out-now.json",
+      "id": "213-juicyj-projectpat-dem-goats-out-now",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "130-akademiks-repost-video.json",
+      "id": "130-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "131-akademiks-repost-video.json",
+      "id": "131-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "132-akademiks-repost-video.json",
+      "id": "132-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "133-akademiks-repost-video.json",
+      "id": "133-akademiks-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "136-akademiks-repost-video.json",
+      "id": "136-akademiks-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

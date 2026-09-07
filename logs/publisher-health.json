@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T19:18:03.632Z",
+  "checked_at": "2026-09-07T19:22:56.359Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T19:18:01.927Z",
-    "usage": 48,
+    "usage": 49,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T19:33:01.927Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 50,
     "reserved_story_slots": 1,
     "pending_story_count": 94,
-    "next_feed_eligible_at": "2026-09-07T19:17:50.284Z",
+    "next_feed_eligible_at": "2026-09-07T20:22:56.154Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T19:22:59.456Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "397-5-billion-streams-on-spotify-marking-another-huge-milestone-for-.json",
+      "id": "397-5-billion-streams-on-spotify-marking-another-huge-milestone-for-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18030051899673213",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

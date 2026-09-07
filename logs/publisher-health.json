@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T12:13:10.727Z",
+  "checked_at": "2026-09-07T12:18:10.587Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T11:58:50.177Z",
+    "checked_at": "2026-09-07T12:18:09.854Z",
     "usage": 32,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T12:13:50.177Z",
+    "next_check_at": "2026-09-07T12:33:09.854Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 31,
-    "instagram_remaining": 67,
+    "instagram_usage": 32,
+    "instagram_remaining": 66,
     "reserved_story_slots": 1,
-    "pending_story_count": 99,
+    "pending_story_count": 98,
     "next_feed_eligible_at": "2026-09-07T12:23:46.508Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -36,15 +36,7 @@
   },
   "threads_next_eligible_at": "2026-09-07T12:23:13.151Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d.json",
-      "id": "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d",
-      "platform": "instagram_story",
-      "status": "published",
-      "media_id": "17908386321496574"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

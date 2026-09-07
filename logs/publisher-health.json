@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T15:00:05.359Z",
+  "checked_at": "2026-09-07T15:04:55.666Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T14:47:18.946Z",
+    "checked_at": "2026-09-07T15:04:55.381Z",
     "usage": 40,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T15:02:18.946Z",
+    "next_check_at": "2026-09-07T15:19:55.381Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T15:05:13.422Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von.json",
+      "id": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T17:04:55.522Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -290,6 +298,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von.json",
+      "id": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

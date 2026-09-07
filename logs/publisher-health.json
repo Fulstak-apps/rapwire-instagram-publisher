@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T08:46:56.171Z",
+  "checked_at": "2026-09-07T08:52:13.769Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T08:46:55.654Z",
-    "usage": 18,
+    "usage": 19,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T09:01:55.654Z",
@@ -36,7 +36,15 @@
   },
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net.json",
+      "id": "223-watch-grand-theft-auto-vi-an-extended-look-now-on-netflix-at-net",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "18170086453454834"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

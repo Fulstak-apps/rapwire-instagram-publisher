@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T06:31:09.815Z",
+  "checked_at": "2026-09-07T06:35:35.440Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T06:20:28.756Z",
+    "checked_at": "2026-09-07T06:35:35.086Z",
     "usage": 13,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T06:35:28.756Z",
+    "next_check_at": "2026-09-07T06:50:35.086Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -39,11 +39,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
-      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
+      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
+      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T10:31:09.549Z: ERROR"
+      "error": "instagram_story: ERROR; retry after 2026-09-07T10:35:35.261Z: ERROR"
     }
   ],
   "reviews": [

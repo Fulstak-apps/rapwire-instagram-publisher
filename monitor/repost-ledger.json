@@ -5442,28 +5442,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-05T17:58:28.947Z",
-      "candidates": 52,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dc57CAhvBxx/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc57CAhvBxx-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 10,
-      "finished_at": "2026-09-05T18:01:30.532Z"
-    },
-    {
       "started_at": "2026-09-05T18:06:33.963Z",
       "candidates": 57,
       "queued": [],
@@ -14590,6 +14568,51 @@
       "mode": "discovery",
       "vip_pending": 18,
       "finished_at": "2026-09-07T21:35:06.629Z"
+    },
+    {
+      "started_at": "2026-09-07T21:40:15.480Z",
+      "candidates": 37,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcvzv3fv2GR-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc_vtVum4ht/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_vtVum4ht-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9YSd_gCof-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc92SHgju43/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc92SHgju43-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 18,
+      "finished_at": "2026-09-07T21:47:27.249Z"
     }
   ],
   "vip_pending": {
@@ -14732,10 +14755,10 @@
       "first_seen_at": "2026-09-06T17:44:31.499Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 26,
+      "attempts": 27,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-07T20:38:25.919Z",
-      "retry_at": "2026-09-07T21:38:25.919Z"
+      "last_attempt_at": "2026-09-07T21:46:30.285Z",
+      "retry_at": "2026-09-07T22:46:30.285Z"
     },
     "Dc9XO1DAR8r": {
       "source_handle": "akademiks",
@@ -14744,10 +14767,10 @@
       "first_seen_at": "2026-09-06T20:20:59.759Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 24,
+      "attempts": 25,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T20:16:12.595Z",
-      "retry_at": "2026-09-07T21:16:12.595Z"
+      "last_attempt_at": "2026-09-07T21:45:16.872Z",
+      "retry_at": "2026-09-07T22:45:16.872Z"
     },
     "Dc9YSd_gCof": {
       "source_handle": "akademiks",
@@ -14756,10 +14779,10 @@
       "first_seen_at": "2026-09-06T20:31:48.547Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 24,
+      "attempts": 25,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9YSd_gCof-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T20:38:05.831Z",
-      "retry_at": "2026-09-07T21:38:05.831Z"
+      "last_attempt_at": "2026-09-07T21:46:12.923Z",
+      "retry_at": "2026-09-07T22:46:12.923Z"
     },
     "Dc92SHgju43": {
       "source_handle": "records",
@@ -14768,10 +14791,10 @@
       "first_seen_at": "2026-09-07T00:55:29.989Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 81,
+      "attempts": 82,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc92SHgju43-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T20:53:11.665Z",
-      "retry_at": "2026-09-07T21:53:11.665Z"
+      "last_attempt_at": "2026-09-07T21:47:27.247Z",
+      "retry_at": "2026-09-07T22:47:27.247Z"
     },
     "Dc_KAyJG1jU": {
       "source_handle": "akademiks",
@@ -14804,24 +14827,24 @@
       "first_seen_at": "2026-09-07T18:31:08.379Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 6,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc_vtVum4ht-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T20:27:55.505Z",
-      "retry_at": "2026-09-07T21:27:55.505Z"
+      "attempts": 7,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_vtVum4ht-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-07T21:43:53.828Z",
+      "retry_at": "2026-09-07T22:43:53.828Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-07T21:32:31.638Z"
+      "checked_at": "2026-09-07T21:41:54.212Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-07T21:32:35.709Z"
+      "checked_at": "2026-09-07T21:41:58.321Z"
     },
     "records": {
-      "checked_at": "2026-09-07T21:32:39.760Z"
+      "checked_at": "2026-09-07T21:42:02.472Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-07T21:32:43.923Z"
+      "checked_at": "2026-09-07T21:42:06.594Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-07T21:04:06.696Z"

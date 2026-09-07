@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T08:21:42.814Z",
+  "checked_at": "2026-09-07T08:28:43.391Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T08:13:28.949Z",
+    "checked_at": "2026-09-07T08:28:42.861Z",
     "usage": 17,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T08:28:28.949Z",
+    "next_check_at": "2026-09-07T08:43:42.861Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -39,11 +39,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis.json",
-      "id": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis",
+      "file": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo.json",
+      "id": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T12:21:42.582Z: ERROR"
+      "error": "media_publish failed: {\"error\":{\"message\":\"Unsupported request - method type: post\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"Al-T3MtHPL5YHpY8xKTMDoh\"}}"
     }
   ],
   "reviews": [
@@ -480,13 +480,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis.json",
-      "id": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis",
-      "platform": "instagram_story",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

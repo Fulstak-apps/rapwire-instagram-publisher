@@ -4973,17 +4973,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T22:46:25.787Z",
-      "candidates": 56,
-      "queued": [
-        "280-known-for-his-aggressive-aggressive-delivery-and-hyper-energetic"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 10,
-      "finished_at": "2026-09-04T22:48:22.763Z"
-    },
-    {
       "started_at": "2026-09-04T22:50:31.237Z",
       "candidates": 17,
       "queued": [],
@@ -13017,6 +13006,52 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-07T08:24:42.999Z"
+    },
+    {
+      "started_at": "2026-09-07T08:29:46.468Z",
+      "candidates": 63,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc-UNlYO9A7/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc-UNlYO9A7-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc92SHgju43/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc92SHgju43-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "xxl",
+          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcoh8_UkRR8-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "igndotcom",
+          "source_url": "https://www.instagram.com/igndotcom/reel/Dc-OJf3BUkt/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc-OJf3BUkt-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-07T08:37:58.700Z"
     }
   ],
   "vip_pending": {
@@ -13147,10 +13182,10 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 150,
+      "attempts": 151,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-07T08:24:42.999Z",
-      "retry_at": "2026-09-07T09:24:42.999Z"
+      "last_attempt_at": "2026-09-07T08:37:58.700Z",
+      "retry_at": "2026-09-07T09:37:58.700Z"
     },
     "Dc9E0l7FoTk": {
       "source_handle": "records",
@@ -13171,10 +13206,10 @@
       "first_seen_at": "2026-09-06T20:20:59.759Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 14,
+      "attempts": 15,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T07:25:23.047Z",
-      "retry_at": "2026-09-07T08:25:23.047Z"
+      "last_attempt_at": "2026-09-07T08:32:27.670Z",
+      "retry_at": "2026-09-07T09:32:27.670Z"
     },
     "Dc9YSd_gCof": {
       "source_handle": "akademiks",
@@ -13195,10 +13230,10 @@
       "first_seen_at": "2026-09-07T00:55:29.989Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 36,
+      "attempts": 37,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc92SHgju43-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T08:24:27.244Z",
-      "retry_at": "2026-09-07T09:24:27.244Z"
+      "last_attempt_at": "2026-09-07T08:34:41.456Z",
+      "retry_at": "2026-09-07T09:34:41.456Z"
     },
     "Dc-UNlYO9A7": {
       "source_handle": "akademiks",
@@ -13207,24 +13242,24 @@
       "first_seen_at": "2026-09-07T05:07:21.267Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 16,
+      "attempts": 17,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc-UNlYO9A7-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T08:23:31.725Z",
-      "retry_at": "2026-09-07T09:23:31.725Z"
+      "last_attempt_at": "2026-09-07T08:33:45.995Z",
+      "retry_at": "2026-09-07T09:33:45.995Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-07T08:17:32.263Z"
+      "checked_at": "2026-09-07T08:29:53.917Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-07T08:17:36.202Z"
+      "checked_at": "2026-09-07T08:29:57.918Z"
     },
     "records": {
-      "checked_at": "2026-09-07T08:17:40.344Z"
+      "checked_at": "2026-09-07T08:30:01.998Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-07T08:17:44.316Z"
+      "checked_at": "2026-09-07T08:30:05.995Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-07T07:30:54.076Z"
@@ -13239,7 +13274,7 @@
       "checked_at": "2026-09-07T07:57:05.225Z"
     },
     "xxl": {
-      "checked_at": "2026-09-07T07:19:18.434Z"
+      "checked_at": "2026-09-07T08:30:13.872Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-07T07:19:22.400Z"
@@ -13248,7 +13283,7 @@
       "checked_at": "2026-09-07T07:57:09.208Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-07T06:45:49.626Z"
+      "checked_at": "2026-09-07T08:30:09.899Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-07T07:30:50.115Z"

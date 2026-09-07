@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T15:15:12.677Z",
+  "checked_at": "2026-09-07T15:20:15.132Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T15:04:55.381Z",
+    "checked_at": "2026-09-07T15:20:14.599Z",
     "usage": 40,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T15:19:55.381Z",
+    "next_check_at": "2026-09-07T15:35:14.599Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -36,24 +36,8 @@
   },
   "threads_next_eligible_at": "2026-09-07T15:30:12.264Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "386-suddenly-i-understand-stan-a-little-too-well-stan-is-one-of-emin.json",
-      "id": "386-suddenly-i-understand-stan-a-little-too-well-stan-is-one-of-emin",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17892321672671432"
-    }
-  ],
-  "failures": [
-    {
-      "file": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.json",
-      "id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T15:45:12.509Z: ERROR"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

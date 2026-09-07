@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T17:01:30.774Z",
+  "checked_at": "2026-09-07T17:08:14.163Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T17:01:28.725Z",
-    "usage": 43,
+    "usage": 44,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T17:16:28.725Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 55,
     "reserved_story_slots": 1,
     "pending_story_count": 95,
-    "next_feed_eligible_at": "2026-09-07T16:57:16.366Z",
+    "next_feed_eligible_at": "2026-09-07T18:08:06.456Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -34,9 +34,25 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T17:01:26.411Z",
+  "threads_next_eligible_at": "2026-09-07T17:23:13.806Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa.json",
+      "id": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18094258541437152",
+      "content_type": "video"
+    },
+    {
+      "file": "396-in-2021-an-ole-head-tried-to-step-to-yb-over-him-bullying-the-do.json",
+      "id": "396-in-2021-an-ole-head-tried-to-step-to-yb-over-him-bullying-the-do",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17947093662057829"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

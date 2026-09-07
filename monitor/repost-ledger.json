@@ -4854,23 +4854,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T17:59:11.280Z",
-      "candidates": 32,
-      "queued": [
-        "261-man-who-interrupted-the-kewon-white-trial-guy-accused-of-k-llin-"
-      ],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Crop review required: No distinct footage region between static panels"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 9,
-      "finished_at": "2026-09-04T18:01:41.646Z"
-    },
-    {
       "started_at": "2026-09-04T18:03:50.263Z",
       "candidates": 14,
       "queued": [],
@@ -12239,6 +12222,39 @@
       "mode": "discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-07T01:12:54.494Z"
+    },
+    {
+      "started_at": "2026-09-07T01:17:58.554Z",
+      "candidates": 40,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc92SHgju43/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc92SHgju43-2-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-07T01:22:36.131Z"
     }
   ],
   "vip_pending": {
@@ -12273,10 +12289,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 111,
+      "attempts": 112,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-07T00:06:08.116Z",
-      "retry_at": "2026-09-07T01:06:08.116Z"
+      "last_attempt_at": "2026-09-07T01:21:47.164Z",
+      "retry_at": "2026-09-07T02:21:47.164Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -12369,10 +12385,10 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 118,
+      "attempts": 119,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-07T01:12:54.494Z",
-      "retry_at": "2026-09-07T02:12:54.494Z"
+      "last_attempt_at": "2026-09-07T01:22:36.131Z",
+      "retry_at": "2026-09-07T02:22:36.131Z"
     },
     "Dc9E0l7FoTk": {
       "source_handle": "records",
@@ -12417,24 +12433,24 @@
       "first_seen_at": "2026-09-07T00:55:29.989Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 4,
+      "attempts": 5,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc92SHgju43-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T01:12:36.586Z",
-      "retry_at": "2026-09-07T01:28:36.586Z"
+      "last_attempt_at": "2026-09-07T01:22:20.112Z",
+      "retry_at": "2026-09-07T01:54:20.112Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-07T01:04:14.293Z"
+      "checked_at": "2026-09-07T01:18:53.402Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-07T01:04:18.963Z"
+      "checked_at": "2026-09-07T01:18:57.362Z"
     },
     "records": {
-      "checked_at": "2026-09-07T01:04:22.893Z"
+      "checked_at": "2026-09-07T01:19:01.423Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-07T01:04:26.800Z"
+      "checked_at": "2026-09-07T01:19:05.490Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-07T00:40:48.846Z"

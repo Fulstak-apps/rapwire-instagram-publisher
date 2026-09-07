@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T18:57:26.264Z",
+  "checked_at": "2026-09-07T19:02:41.281Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T18:42:37.003Z",
+    "checked_at": "2026-09-07T19:02:40.023Z",
     "usage": 48,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T18:57:37.003Z",
+    "next_check_at": "2026-09-07T19:17:40.023Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T18:57:42.558Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-.json",
+      "id": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T20:02:41.088Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

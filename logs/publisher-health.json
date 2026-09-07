@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T14:47:27.174Z",
+  "checked_at": "2026-09-07T14:50:14.408Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T14:47:18.946Z",
@@ -17,12 +17,12 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 38,
-    "instagram_remaining": 60,
+    "instagram_usage": 39,
+    "instagram_remaining": 59,
     "reserved_story_slots": 1,
-    "pending_story_count": 96,
+    "pending_story_count": 97,
     "next_feed_eligible_at": "2026-09-07T15:47:25.601Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -34,16 +34,15 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T14:10:09.440Z",
+  "threads_next_eligible_at": "2026-09-07T15:05:13.422Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [
     {
-      "file": "309-ye-brought-out-chief-keef-to-perform-love-sosa-in-chicago-for-ov.json",
-      "id": "309-ye-brought-out-chief-keef-to-perform-love-sosa-in-chicago-for-ov",
-      "platform": "instagram",
+      "file": "385-mac-miller-s-handwritten-message-is-still-inside-the-empty-pool-.json",
+      "id": "385-mac-miller-s-handwritten-message-is-still-inside-the-empty-pool-",
+      "platform": "threads",
       "status": "published",
-      "media_id": "17981404536109172",
-      "content_type": "video"
+      "media_id": "18095520968093713"
     }
   ],
   "failures": [],
@@ -231,8 +230,71 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",
+      "id": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
+      "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
+      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
+      "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
+      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
+      "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "209-ye-night-1-setlist-and-special-guests-greenscreen.json",
+      "id": "209-ye-night-1-setlist-and-special-guests-greenscreen",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know.json",
+      "id": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "213-juicyj-projectpat-dem-goats-out-now.json",
       "id": "213-juicyj-projectpat-dem-goats-out-now",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.json",
+      "id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -415,69 +477,6 @@
     {
       "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
       "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",
-      "id": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
-      "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
-      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
-      "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
-      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
-      "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "209-ye-night-1-setlist-and-special-guests-greenscreen.json",
-      "id": "209-ye-night-1-setlist-and-special-guests-greenscreen",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know.json",
-      "id": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.json",
-      "id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

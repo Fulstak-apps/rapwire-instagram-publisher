@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T01:02:45.405Z",
+  "checked_at": "2026-09-07T01:07:29.414Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T00:47:51.299Z",
+    "checked_at": "2026-09-07T01:07:19.787Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T01:02:51.299Z",
+    "next_check_at": "2026-09-07T01:22:19.787Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -34,18 +34,18 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T00:57:27.650Z",
+  "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
-      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T05:02:45.049Z: ERROR"
+      "file": "378-est-gee-was-in-his-bag-during-this-era-est-gee-really-had-the-pa.json",
+      "id": "378-est-gee-was-in-his-bag-during-this-era-est-gee-really-had-the-pa",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18129267859671170"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

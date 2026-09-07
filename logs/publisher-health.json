@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T13:49:19.999Z",
+  "checked_at": "2026-09-07T13:55:10.170Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T13:44:04.336Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 37,
-    "instagram_remaining": 61,
+    "instagram_usage": 38,
+    "instagram_remaining": 60,
     "reserved_story_slots": 1,
-    "pending_story_count": 97,
+    "pending_story_count": 96,
     "next_feed_eligible_at": "2026-09-07T14:39:14.920Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -34,18 +34,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T12:58:25.632Z",
+  "threads_next_eligible_at": "2026-09-07T14:10:09.440Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [
     {
-      "file": "311-this-song-live.json",
-      "id": "311-this-song-live",
-      "platform": "instagram_story",
+      "file": "384-eight-years-ago-today-the-world-lost-mac-miller-at-just-26-years.json",
+      "id": "384-eight-years-ago-today-the-world-lost-mac-miller-at-just-26-years",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18147217939558747"
+      "media_id": "18621609610056451"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "file": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir.json",
+      "id": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T15:55:09.784Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -298,6 +306,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir.json",
+      "id": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

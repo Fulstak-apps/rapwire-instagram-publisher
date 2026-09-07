@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T09:32:17.414Z",
+  "checked_at": "2026-09-07T09:37:22.045Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T09:20:04.631Z",
-    "usage": 22,
+    "checked_at": "2026-09-07T09:37:16.567Z",
+    "usage": 23,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T09:35:04.631Z",
+    "next_check_at": "2026-09-07T09:52:16.567Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -36,7 +36,15 @@
   },
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "232-nba-youngboy-casually-had-over-100k-in-cash-during-a-traffic-sto.json",
+      "id": "232-nba-youngboy-casually-had-over-100k-in-cash-during-a-traffic-sto",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "18126456325762298"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

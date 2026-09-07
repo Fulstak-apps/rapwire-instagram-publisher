@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T10:24:01.900Z",
+  "checked_at": "2026-09-07T10:28:05.121Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T10:10:23.583Z",
-    "usage": 24,
+    "checked_at": "2026-09-07T10:27:58.023Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T10:25:23.583Z",
+    "next_check_at": "2026-09-07T10:42:58.023Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -36,7 +36,15 @@
   },
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "292-ye-just-brought-out-chief-keef-and-performed-love-sosa.json",
+      "id": "292-ye-just-brought-out-chief-keef-and-performed-love-sosa",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "17896778583669367"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

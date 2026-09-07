@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T08:36:55.787Z",
+  "checked_at": "2026-09-07T08:42:34.115Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T08:28:42.861Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 17,
-    "instagram_remaining": 81,
+    "instagram_usage": 18,
+    "instagram_remaining": 80,
     "reserved_story_slots": 1,
-    "pending_story_count": 107,
+    "pending_story_count": 106,
     "next_feed_eligible_at": "2026-09-07T09:01:34.155Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -36,16 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked.json",
-      "id": "248-atlanta-rapper-just-had-a-major-moment-the-atlanta-native-walked",
+      "file": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo.json",
+      "id": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo",
       "platform": "instagram_story",
-      "status": "published",
-      "media_id": "17978741343111514"
+      "status": "failed",
+      "error": "media_publish failed: {\"error\":{\"message\":\"Unsupported request - method type: post\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"A2CqaoJ7wHClRZp0Nkr1Wet\"}}"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -480,6 +480,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo.json",
+      "id": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

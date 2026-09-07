@@ -1,5 +1,6 @@
 import {createHash} from 'node:crypto';
 import {createReadStream} from 'node:fs';
+import {readFile, stat} from 'node:fs/promises';
 import path from 'node:path';
 
 const sha256=/^[a-f0-9]{64}$/i;
@@ -45,6 +46,20 @@ export async function verifyVideoLayoutFiles(item,root=process.cwd()) {
       continue;
     }
     try {
+      // GitHub Actions checks out LFS objects as tiny pointer files unless a
+      // full repository-wide LFS download is requested. The pointer's SHA-256
+      // is the immutable digest of the real media object, so validate it
+      // directly rather than treating every safe MP4 as missing or downloading
+      // the entire archive on every five-minute run.
+      const info=await stat(filename);
+      if(info.size<1024) {
+        const pointer=await readFile(filename,'utf8');
+        const lfs=pointer.match(/^version https:\/\/git-lfs\.github\.com\/spec\/v1\s+oid sha256:([a-f0-9]{64})\s+size \d+\s*$/im);
+        if(lfs) {
+          if(lfs[1].toLowerCase()!==asset.video_layout.output_sha256.toLowerCase())result.issues.push(`${asset.label}: LFS media object no longer matches the validated output hash; review or recapture required`);
+          continue;
+        }
+      }
       const hash=createHash('sha256');
       for await(const bytes of createReadStream(filename))hash.update(bytes);
       if(hash.digest('hex')!==asset.video_layout.output_sha256.toLowerCase())result.issues.push(`${asset.label}: rendered bytes no longer match the validated output hash; review or recapture required`);

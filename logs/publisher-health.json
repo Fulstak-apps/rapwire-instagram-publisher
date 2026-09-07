@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T18:22:57.235Z",
+  "checked_at": "2026-09-07T18:27:28.283Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T18:12:10.142Z",
-    "usage": 46,
+    "checked_at": "2026-09-07T18:27:22.706Z",
+    "usage": 47,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T18:27:10.142Z",
+    "next_check_at": "2026-09-07T18:42:22.706Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -36,7 +36,15 @@
   },
   "threads_next_eligible_at": "2026-09-07T18:32:58.100Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "387-drake-champagnepapi-popped-out-w-gordo-while-he-played-hoe-phase.json",
+      "id": "387-drake-champagnepapi-popped-out-w-gordo-while-he-played-hoe-phase",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "18112370054037366"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

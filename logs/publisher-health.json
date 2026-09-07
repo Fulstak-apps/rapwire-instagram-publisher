@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T19:38:06.797Z",
+  "checked_at": "2026-09-07T19:43:09.480Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T19:33:14.675Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -36,22 +36,14 @@
   },
   "threads_next_eligible_at": "2026-09-07T19:53:06.250Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "402-ciara-announces-she-s-pregnant-with-her-5th-child.json",
-      "id": "402-ciara-announces-she-s-pregnant-with-her-5th-child",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18132609853642928"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-.json",
-      "id": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-",
+      "file": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd.json",
+      "id": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T21:38:06.481Z: ERROR"
+      "error": "instagram_story: ERROR; retry after 2026-09-07T20:43:09.242Z: ERROR"
     }
   ],
   "reviews": [
@@ -65,6 +57,20 @@
     {
       "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
       "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
+      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "152-an-old-interview-of-pooh-shiesty-and-big30-resurfaced-revealing-.json",
+      "id": "152-an-old-interview-of-pooh-shiesty-and-big30-resurfaced-revealing-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -91,29 +97,15 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
-      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
-      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "152-an-old-interview-of-pooh-shiesty-and-big30-resurfaced-revealing-.json",
-      "id": "152-an-old-interview-of-pooh-shiesty-and-big30-resurfaced-revealing-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
       "file": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.json",
       "id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
+      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -238,6 +230,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",
+      "id": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
       "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
       "platform": "video_layout",
@@ -259,6 +258,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
+      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
       "platform": "video_layout",
@@ -273,6 +279,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know.json",
+      "id": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "213-juicyj-projectpat-dem-goats-out-now.json",
       "id": "213-juicyj-projectpat-dem-goats-out-now",
       "platform": "video_layout",
@@ -280,11 +293,11 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-.json",
-      "id": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-",
-      "platform": "instagram_story",
+      "file": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.json",
+      "id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
+      "platform": "video_layout",
       "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
       "file": "112-street-fighter-trailer-video.json",
@@ -310,6 +323,13 @@
     {
       "file": "126-raplisted-repost-video.json",
       "id": "126-raplisted-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "127-raplisted-repost-video.json",
+      "id": "127-raplisted-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -359,6 +379,13 @@
     {
       "file": "135-traploreross-repost-video.json",
       "id": "135-traploreross-repost-video",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "136-akademiks-repost-video.json",
+      "id": "136-akademiks-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -450,48 +477,6 @@
     {
       "file": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-.json",
       "id": "149-man-tells-his-best-friend-he-was-responsible-for-mo3-murder-his-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",
-      "id": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
-      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know.json",
-      "id": "211-j-cole-really-started-praying-that-the-9-year-old-fan-would-know",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de.json",
-      "id": "215-the-view-of-ye-s-globe-from-the-sky-for-his-chicago-shows-via-de",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "127-raplisted-repost-video.json",
-      "id": "127-raplisted-repost-video",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "136-akademiks-repost-video.json",
-      "id": "136-akademiks-repost-video",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

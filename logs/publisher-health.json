@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T19:33:27.111Z",
+  "checked_at": "2026-09-07T19:38:06.797Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T19:33:14.675Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 47,
-    "instagram_remaining": 51,
+    "instagram_usage": 48,
+    "instagram_remaining": 50,
     "reserved_story_slots": 1,
-    "pending_story_count": 95,
+    "pending_story_count": 94,
     "next_feed_eligible_at": "2026-09-07T20:22:56.154Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -34,18 +34,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T19:22:59.456Z",
+  "threads_next_eligible_at": "2026-09-07T19:53:06.250Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [
     {
-      "file": "397-5-billion-streams-on-spotify-marking-another-huge-milestone-for-.json",
-      "id": "397-5-billion-streams-on-spotify-marking-another-huge-milestone-for-",
-      "platform": "instagram_story",
+      "file": "402-ciara-announces-she-s-pregnant-with-her-5th-child.json",
+      "id": "402-ciara-announces-she-s-pregnant-with-her-5th-child",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18092230709138546"
+      "media_id": "18132609853642928"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "file": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-.json",
+      "id": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T21:38:06.481Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -270,6 +278,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-.json",
+      "id": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

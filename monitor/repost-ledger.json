@@ -5085,20 +5085,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Dc_NqVcxu0M/",
       "queue_id": "386-suddenly-i-understand-stan-a-little-too-well-stan-is-one-of-emin",
       "video": "media/386-suddenly-i-understand-stan-a-little-too-well-stan-is-one-of-emin.mp4"
+    },
+    "Dc_HigzADSW": {
+      "queued_at": "2026-09-07T15:56:38.405Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dc_HigzADSW/",
+      "queue_id": "387-drake-champagnepapi-popped-out-w-gordo-while-he-played-hoe-phase",
+      "video": "media/387-drake-champagnepapi-popped-out-w-gordo-while-he-played-hoe-phase.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-05T04:44:31.622Z",
-      "candidates": 59,
-      "queued": [
-        "316-ye-and-kid-cudi-walk-out-together-after-reuniting"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 10,
-      "finished_at": "2026-09-05T04:46:47.407Z"
-    },
     {
       "started_at": "2026-09-05T04:51:55.072Z",
       "candidates": 58,
@@ -14008,6 +14004,48 @@
       "mode": "discovery",
       "vip_pending": 20,
       "finished_at": "2026-09-07T15:40:43.025Z"
+    },
+    {
+      "started_at": "2026-09-07T15:45:48.206Z",
+      "candidates": 58,
+      "queued": [
+        "387-drake-champagnepapi-popped-out-w-gordo-while-he-played-hoe-phase"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_R3L-uBG0/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_R3L-uBG0-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
+          "stage": "queue",
+          "error": "Crop review required: Side crop would remove too much source content"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 19,
+      "finished_at": "2026-09-07T15:56:38.405Z"
     }
   ],
   "vip_pending": {
@@ -14090,10 +14128,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 52,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc32-qLsTq5-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T14:30:54.393Z",
-      "retry_at": "2026-09-07T15:30:54.393Z"
+      "attempts": 53,
+      "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
+      "last_attempt_at": "2026-09-07T15:52:04.275Z",
+      "retry_at": "2026-09-07T16:52:04.275Z"
     },
     "Dc322YeFQyh": {
       "source_handle": "akademiks",
@@ -14162,10 +14200,10 @@
       "first_seen_at": "2026-09-06T20:20:59.759Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 20,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T14:29:50.610Z",
-      "retry_at": "2026-09-07T15:29:50.610Z"
+      "attempts": 21,
+      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
+      "last_attempt_at": "2026-09-07T15:51:50.572Z",
+      "retry_at": "2026-09-07T16:51:50.572Z"
     },
     "Dc9YSd_gCof": {
       "source_handle": "akademiks",
@@ -14215,18 +14253,6 @@
       "last_attempt_at": "2026-09-07T15:01:48.540Z",
       "retry_at": "2026-09-07T16:01:48.540Z"
     },
-    "Dc_HigzADSW": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/reel/Dc_HigzADSW/",
-      "shortcode": "Dc_HigzADSW",
-      "first_seen_at": "2026-09-07T12:42:36.292Z",
-      "profile_position": 0,
-      "state": "retry_pending",
-      "attempts": 13,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_HigzADSW-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T15:38:13.218Z",
-      "retry_at": "2026-09-07T16:38:13.218Z"
-    },
     "Dc_KAyJG1jU": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
@@ -14234,10 +14260,10 @@
       "first_seen_at": "2026-09-07T13:02:39.813Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 5,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_KAyJG1jU-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T15:00:14.611Z",
-      "retry_at": "2026-09-07T15:32:14.611Z"
+      "attempts": 6,
+      "last_error": "Crop review required: Side crop would remove too much source content",
+      "last_attempt_at": "2026-09-07T15:51:07.330Z",
+      "retry_at": "2026-09-07T16:51:07.330Z"
     },
     "Dc_R3L-uBG0": {
       "source_handle": "akademiks",
@@ -14246,27 +14272,27 @@
       "first_seen_at": "2026-09-07T14:05:43.471Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 4,
+      "attempts": 5,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_R3L-uBG0-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T15:16:29.846Z",
-      "retry_at": "2026-09-07T15:32:29.846Z"
+      "last_attempt_at": "2026-09-07T15:49:40.843Z",
+      "retry_at": "2026-09-07T16:21:40.843Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-07T15:27:10.862Z"
+      "checked_at": "2026-09-07T15:45:55.452Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-07T15:27:14.892Z"
+      "checked_at": "2026-09-07T15:45:59.493Z"
     },
     "records": {
-      "checked_at": "2026-09-07T15:27:18.897Z"
+      "checked_at": "2026-09-07T15:46:03.481Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-07T15:27:22.920Z"
+      "checked_at": "2026-09-07T15:46:07.504Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-07T14:37:46.313Z"
+      "checked_at": "2026-09-07T15:46:15.590Z"
     },
     "raplisted_": {
       "checked_at": "2026-09-07T14:37:50.392Z"
@@ -14290,7 +14316,7 @@
       "checked_at": "2026-09-07T14:55:19.632Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-07T14:19:33.040Z"
+      "checked_at": "2026-09-07T15:46:11.552Z"
     }
   }
 }

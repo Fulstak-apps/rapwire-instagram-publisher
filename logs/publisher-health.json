@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T06:50:47.532Z",
+  "checked_at": "2026-09-07T06:55:49.409Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T06:50:46.384Z",
-    "usage": 13,
+    "usage": 14,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T07:05:46.384Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 85,
     "reserved_story_slots": 1,
     "pending_story_count": 107,
-    "next_feed_eligible_at": "2026-09-07T06:47:39.144Z",
+    "next_feed_eligible_at": "2026-09-07T07:55:49.221Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "289-ye-just-brought-out-2-chainz-for-mercy-and-performed-his-iconic-.json",
+      "id": "289-ye-just-brought-out-2-chainz-for-mercy-and-performed-his-iconic-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18103887127969001",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

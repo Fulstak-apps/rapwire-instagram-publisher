@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T15:48:30.372Z",
+  "checked_at": "2026-09-07T15:57:16.645Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T15:40:21.980Z",
-    "usage": 41,
+    "checked_at": "2026-09-07T15:57:08.500Z",
+    "usage": 42,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T15:55:21.980Z",
+    "next_check_at": "2026-09-07T16:12:08.500Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 57,
     "reserved_story_slots": 1,
     "pending_story_count": 95,
-    "next_feed_eligible_at": "2026-09-07T15:47:25.601Z",
+    "next_feed_eligible_at": "2026-09-07T16:57:16.366Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T15:30:12.264Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "296-don-toliver-dontoliver-is-in-the-building.json",
+      "id": "296-don-toliver-dontoliver-is-in-the-building",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18125713226510017",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

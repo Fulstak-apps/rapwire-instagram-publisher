@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T18:37:30.650Z",
+  "checked_at": "2026-09-07T18:42:43.389Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T18:27:22.706Z",
+    "checked_at": "2026-09-07T18:42:37.003Z",
     "usage": 48,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T18:42:22.706Z",
+    "next_check_at": "2026-09-07T18:57:37.003Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -34,10 +34,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T18:32:58.100Z",
+  "threads_next_eligible_at": "2026-09-07T18:57:42.558Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "398-lil-yachty-has-had-one-of-the-most-interesting-evolutions-in-mod.json",
+      "id": "398-lil-yachty-has-had-one-of-the-most-interesting-evolutions-in-mod",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17986916943028123"
+    }
+  ],
+  "failures": [
+    {
+      "file": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-.json",
+      "id": "233-otf-jam-s-wife-got-put-in-a-blender-they-accused-her-of-being-a-",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T19:12:43.208Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

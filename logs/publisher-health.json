@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T05:41:57.596Z",
+  "checked_at": "2026-09-07T05:45:07.794Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T05:29:58.213Z",
+    "checked_at": "2026-09-07T05:45:06.803Z",
     "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T05:44:58.213Z",
+    "next_check_at": "2026-09-07T06:00:06.803Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -22,7 +22,7 @@
     "reserved_story_slots": 1,
     "pending_story_count": 107,
     "next_feed_eligible_at": "2026-09-07T05:44:46.848Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou.json",
-      "id": "277-bts-footage-of-doodie-lo-shooting-his-new-music-video-at-the-cou",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T09:41:57.107Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T03:18:44.544Z",
+  "checked_at": "2026-09-07T03:24:39.605Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T03:09:08.153Z",
+    "checked_at": "2026-09-07T03:24:39.174Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T03:24:08.153Z",
+    "next_check_at": "2026-09-07T03:39:39.174Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
+      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T07:24:39.345Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -290,6 +298,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-.json",
+      "id": "270-jury-tampering-investigated-in-lil-durk-lildurk-trial-allegedly-",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

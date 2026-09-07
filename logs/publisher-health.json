@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T14:34:40.121Z",
+  "checked_at": "2026-09-07T14:39:55.305Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T14:29:32.961Z",
@@ -22,7 +22,7 @@
     "reserved_story_slots": 1,
     "pending_story_count": 96,
     "next_feed_eligible_at": "2026-09-07T14:39:14.920Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-07T14:10:09.440Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von.json",
-      "id": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T15:34:39.840Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

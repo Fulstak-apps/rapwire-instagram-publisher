@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T14:24:34.932Z",
+  "checked_at": "2026-09-07T14:29:33.518Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T14:14:30.062Z",
+    "checked_at": "2026-09-07T14:29:32.961Z",
     "usage": 38,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T14:29:30.062Z",
+    "next_check_at": "2026-09-07T14:44:32.961Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-07T14:10:09.440Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du.json",
-      "id": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T16:24:34.598Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -235,13 +227,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du.json",
-      "id": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du",
-      "platform": "instagram_story",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

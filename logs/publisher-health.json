@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T02:04:27.078Z",
+  "checked_at": "2026-09-07T02:08:04.505Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T01:58:27.895Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
+      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T06:08:03.430Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -290,6 +298,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up.json",
+      "id": "271-judge-compared-lil-durk-lildurk-to-elon-musk-said-if-elon-put-up",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

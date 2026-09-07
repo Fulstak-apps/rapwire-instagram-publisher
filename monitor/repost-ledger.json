@@ -5526,17 +5526,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-05T20:20:50.848Z",
-      "candidates": 52,
-      "queued": [
-        "342-that-lemonade-intro-takes-me-back-instantly-every-single-time-th"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 10,
-      "finished_at": "2026-09-05T20:23:02.071Z"
-    },
-    {
       "started_at": "2026-09-05T20:28:13.747Z",
       "candidates": 57,
       "queued": [],
@@ -14731,6 +14720,51 @@
       "mode": "discovery",
       "vip_pending": 18,
       "finished_at": "2026-09-07T23:39:36.370Z"
+    },
+    {
+      "started_at": "2026-09-07T23:44:43.435Z",
+      "candidates": 37,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc_vtVum4ht/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc_vtVum4ht-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc3-LqbG5jK/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc3-LqbG5jK-3-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc92SHgju43/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc92SHgju43-2-capture-diagnostic.json"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 18,
+      "finished_at": "2026-09-07T23:55:08.921Z"
     }
   ],
   "vip_pending": {
@@ -14801,10 +14835,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 58,
+      "attempts": 59,
       "last_error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-07T22:45:22.756Z",
-      "retry_at": "2026-09-07T23:45:22.756Z"
+      "last_attempt_at": "2026-09-07T23:54:09.600Z",
+      "retry_at": "2026-09-08T00:54:09.600Z"
     },
     "Dc32-qLsTq5": {
       "source_handle": "akademiks",
@@ -14825,10 +14859,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 57,
+      "attempts": 58,
       "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
-      "last_attempt_at": "2026-09-07T22:34:10.747Z",
-      "retry_at": "2026-09-07T23:34:10.747Z"
+      "last_attempt_at": "2026-09-07T23:49:27.833Z",
+      "retry_at": "2026-09-08T00:49:27.833Z"
     },
     "Dc3-LqbG5jK": {
       "source_handle": "akademiks",
@@ -14837,10 +14871,10 @@
       "first_seen_at": "2026-09-04T18:00:32.552Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 57,
+      "attempts": 58,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc3-LqbG5jK-3-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T22:36:49.367Z",
-      "retry_at": "2026-09-07T23:36:49.367Z"
+      "last_attempt_at": "2026-09-07T23:53:44.184Z",
+      "retry_at": "2026-09-08T00:53:44.184Z"
     },
     "Dc6e8SjEY1u": {
       "source_handle": "records",
@@ -14909,10 +14943,10 @@
       "first_seen_at": "2026-09-07T00:55:29.989Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 87,
+      "attempts": 88,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc92SHgju43-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T23:39:06.728Z",
-      "retry_at": "2026-09-08T00:39:06.728Z"
+      "last_attempt_at": "2026-09-07T23:55:08.921Z",
+      "retry_at": "2026-09-08T00:55:08.921Z"
     },
     "Dc_KAyJG1jU": {
       "source_handle": "akademiks",
@@ -14945,24 +14979,24 @@
       "first_seen_at": "2026-09-07T18:31:08.379Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 8,
+      "attempts": 9,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc_vtVum4ht-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T22:45:03.098Z",
-      "retry_at": "2026-09-07T23:45:03.098Z"
+      "last_attempt_at": "2026-09-07T23:47:02.254Z",
+      "retry_at": "2026-09-08T00:47:02.254Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-07T23:33:03.014Z"
+      "checked_at": "2026-09-07T23:45:48.592Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-07T23:33:07.101Z"
+      "checked_at": "2026-09-07T23:45:52.707Z"
     },
     "records": {
-      "checked_at": "2026-09-07T23:33:11.121Z"
+      "checked_at": "2026-09-07T23:45:56.600Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-07T23:33:15.216Z"
+      "checked_at": "2026-09-07T23:46:00.695Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-07T23:33:19.114Z"

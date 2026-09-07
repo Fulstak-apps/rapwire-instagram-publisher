@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T18:02:38.866Z",
+  "checked_at": "2026-09-07T18:07:12.857Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T17:52:31.394Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T18:12:07.484Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil.json",
+      "id": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T20:07:12.598Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -290,6 +298,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil.json",
+      "id": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

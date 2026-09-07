@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T07:46:18.169Z",
+  "checked_at": "2026-09-07T07:51:24.735Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T07:41:20.525Z",
@@ -39,11 +39,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis.json",
-      "id": "245-the-lego-playstation-has-dioramas-from-ape-escape-and-gran-turis",
+      "file": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo.json",
+      "id": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T11:46:17.855Z: ERROR"
+      "error": "media_publish failed: {\"error\":{\"message\":\"Unsupported request - method type: post\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"AQ9XXvscYuK_2NjhJfUJPFe\"}}"
     }
   ],
   "reviews": [

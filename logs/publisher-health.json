@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T15:30:48.999Z",
+  "checked_at": "2026-09-07T15:35:19.234Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T15:20:14.599Z",
-    "usage": 40,
+    "usage": 41,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T15:35:14.599Z",
@@ -36,16 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T15:30:12.264Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.json",
-      "id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
+      "file": "192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav.json",
+      "id": "192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav",
       "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T16:30:48.181Z: ERROR"
+      "status": "published",
+      "media_id": "18101592218208084"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

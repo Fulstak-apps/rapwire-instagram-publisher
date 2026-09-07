@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T19:57:17.511Z",
+  "checked_at": "2026-09-07T20:04:41.722Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T19:53:09.698Z",
@@ -34,16 +34,24 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T19:53:06.250Z",
+  "threads_next_eligible_at": "2026-09-07T20:19:41.192Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "401-fans-reportedly-took-the-mac-miller-rd-sign-so-many-times-that-i.json",
+      "id": "401-fans-reportedly-took-the-mac-miller-rd-sign-so-many-times-that-i",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18112179586957920"
+    }
+  ],
   "failures": [
     {
-      "file": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd.json",
-      "id": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd",
+      "file": "229-durk-really-did-have-a-wedding-to-attend-on-aug-20th-was-allowed.json",
+      "id": "229-durk-really-did-have-a-wedding-to-attend-on-aug-20th-was-allowed",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T21:57:17.324Z: ERROR"
+      "error": "instagram_story: ERROR; retry after 2026-09-07T20:34:41.511Z: ERROR"
     }
   ],
   "reviews": [
@@ -298,13 +306,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd.json",
-      "id": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd",
-      "platform": "instagram_story",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T17:47:03.318Z",
+  "checked_at": "2026-09-07T17:52:36.494Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T17:36:54.633Z",
+    "checked_at": "2026-09-07T17:52:31.394Z",
     "usage": 45,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T17:51:54.633Z",
+    "next_check_at": "2026-09-07T18:07:31.394Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T17:46:48.440Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil.json",
+      "id": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T18:52:35.623Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

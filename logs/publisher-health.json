@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T09:02:25.553Z",
+  "checked_at": "2026-09-07T09:07:19.041Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T09:02:24.463Z",
-    "usage": 19,
+    "usage": 20,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T09:17:24.463Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 79,
     "reserved_story_slots": 1,
     "pending_story_count": 105,
-    "next_feed_eligible_at": "2026-09-07T09:01:34.155Z",
+    "next_feed_eligible_at": "2026-09-07T10:07:18.476Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "291-ye-just-brought-out-big-sean.json",
+      "id": "291-ye-just-brought-out-big-sean",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17998947623809470",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

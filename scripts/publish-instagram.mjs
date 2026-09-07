@@ -13,6 +13,7 @@ import {normalizeSources,sourcePostsToday} from './source-policy.mjs';
 import {metaClient} from './meta-client.mjs';
 import {deliverFacebookPage,facebookMedia} from './facebook-page.mjs';
 import {instagramBlockKind} from './instagram-auth-state.mjs';
+import {storyCanRun, shouldPreferStory} from './instagram-lane-policy.mjs';
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -536,14 +537,15 @@ const instagramInFlightId = queueRecords.find(({item}) => item.status === 'ready
   && (item.instagram_container_id || item.instagram_children?.some(Boolean))
   && !item.instagram_reconcile_required && item.instagram_status !== 'review_required' && contentPromiseIsKept(item))?.item.id;
 const processingCount = instagramInFlightId ? 1 : 0;
-const pendingStoryId = queueRecords.filter(({ item }) => item.status === "published"
+const pendingStoryId = queueRecords.filter(({ item }) => storyCanRun(item)
+  && reportingGate(item).allowed
   && footageOnlyAllowed(item)
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
   && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"))
   .sort((a,b)=>(Date.parse(b.item.published_at||b.item.instagram_published_at||'')||0)-(Date.parse(a.item.published_at||a.item.instagram_published_at||'')||0))[0]?.item.id;
 const pendingStory = publishInstagramStories && Boolean(pendingStoryId);
-const preferStory = deliveryPolicy.story_allowed && !recovery.feed_allowed && pendingStory && pacing.last_instagram_lane === "feed";
+const preferStory = shouldPreferStory({storyAllowed:deliveryPolicy.story_allowed, feedAllowed:deliveryPolicy.feed_allowed, recoveryFeedAllowed:recovery.feed_allowed, pendingStory, lastLane:pacing.last_instagram_lane});
 const uploadSlots = instagramAvailable() && !preferStory && (deliveryPolicy.feed_allowed || recovery.feed_allowed)
   ? Math.max(0, 1 - processingCount) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))

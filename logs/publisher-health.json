@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T09:52:42.007Z",
+  "checked_at": "2026-09-07T09:57:33.231Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T09:52:41.232Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble.json",
+      "id": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T10:27:32.542Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

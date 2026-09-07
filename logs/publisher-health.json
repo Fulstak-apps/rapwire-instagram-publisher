@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T07:08:15.834Z",
+  "checked_at": "2026-09-07T07:10:54.456Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T07:08:11.409Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 14,
-    "instagram_remaining": 84,
+    "instagram_usage": 15,
+    "instagram_remaining": 83,
     "reserved_story_slots": 1,
-    "pending_story_count": 108,
+    "pending_story_count": 107,
     "next_feed_eligible_at": "2026-09-07T07:55:49.221Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -36,16 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "289-ye-just-brought-out-2-chainz-for-mercy-and-performed-his-iconic-.json",
-      "id": "289-ye-just-brought-out-2-chainz-for-mercy-and-performed-his-iconic-",
+      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
+      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
       "platform": "instagram_story",
-      "status": "published",
-      "media_id": "17871569226636387"
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T11:10:54.207Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -235,6 +235,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out.json",
+      "id": "265-dede-s-lawyer-just-got-the-worst-evidence-against-him-thrown-out",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T12:59:09.477Z",
+  "checked_at": "2026-09-07T13:03:39.075Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T12:53:34.234Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T12:58:25.632Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir.json",
+      "id": "247-prosecution-rest-their-case-durk-s-defence-just-bought-their-fir",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T13:33:38.804Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

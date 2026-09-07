@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T00:19:12.261Z",
+  "checked_at": "2026-09-07T00:21:52.021Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T00:06:52.161Z",
-    "usage": 6,
+    "usage": 7,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T00:21:52.161Z",
@@ -21,11 +21,11 @@
     "instagram_remaining": 92,
     "reserved_story_slots": 1,
     "pending_story_count": 106,
-    "next_feed_eligible_at": "2026-09-06T20:24:02.267Z",
+    "next_feed_eligible_at": "2026-09-07T01:21:40.706Z",
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -34,9 +34,25 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-06T23:16:14.859Z",
+  "threads_next_eligible_at": "2026-09-07T00:36:50.827Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "362-kodak-black-in-the-studio-listening-to-zeze-before-it-was-releas.json",
+      "id": "362-kodak-black-in-the-studio-listening-to-zeze-before-it-was-releas",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18103090019194020",
+      "content_type": "video"
+    },
+    {
+      "file": "376-otf-jam-speaks-says-f-lil-durk-why-didn-t-you-warn-us-about-the-.json",
+      "id": "376-otf-jam-speaks-says-f-lil-durk-why-didn-t-you-warn-us-about-the-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18110658074036390"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

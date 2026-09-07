@@ -17,7 +17,8 @@ export function signedCaption(value,item={}) {
 }
 
 export function refreshThreadsCopy(item) {
-  if (item.threads_copy_policy === 'discussion-v2' || item.threads_media_id
+  const retiredPrompt = /What project are y[’']all putting up against this\?/i.test(item.threads_text || '');
+  if ((item.threads_copy_policy === 'discussion-v2' && !retiredPrompt) || item.threads_media_id
     || item.threads_publish_requested_at || item.threads_reconcile_required
     || !['ready','published'].includes(item.status)) return false;
   try { if (!captionIsBound(item)) return false; } catch { return false; }

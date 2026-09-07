@@ -68,7 +68,9 @@ export function discussionPrompt(text, seed = text) {
         `Where do y’all rank ${name}, and which project makes the case?`,
       ], seed);
     }
-    return pick(['What project are y’all putting up against this?', 'Y’all hearing replay value, or rollout hype?', 'What is really carrying your ranking here?'], seed);
+    // Broad music keywords do not establish that this is a project, rollout,
+    // or ranking. Keep the caption alone when no specific prompt fits.
+    return '';
   }
   if (/\b(?:beef|diss|argument|clash|debate)\b/i.test(value)) return 'Whose argument holds up better to y’all—and why?';
   // Rap/culture posts still need a real entry point, but never a generic

@@ -49,7 +49,7 @@ test('recurring formats follow the actual post context',()=>{
 });
 test('rap culture Threads copy opens a specific conversation',()=>{
  const text=composeThreads('A Detroit rap artist brought a new sound to the culture.',{seed:'detroit'});
- assert.match(text,/What artist|adding to the conversation|context would change|replay value|carrying your ranking/i);
+ assert.doesNotMatch(text,/putting up against|rollout hype|carrying your ranking/i);
  assert.doesNotMatch(text,/thoughts\?/i);
 });
 test('music debate prompts can be deliberately provocative without targeting a sensitive event',()=>{

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T20:23:31.082Z",
+  "checked_at": "2026-09-07T20:28:48.424Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T20:09:12.085Z",
-    "usage": 49,
+    "checked_at": "2026-09-07T20:28:31.762Z",
+    "usage": 50,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T20:24:12.085Z",
+    "next_check_at": "2026-09-07T20:43:31.762Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 49,
     "reserved_story_slots": 1,
     "pending_story_count": 93,
-    "next_feed_eligible_at": "2026-09-07T20:22:56.154Z",
+    "next_feed_eligible_at": "2026-09-07T21:28:39.536Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -34,9 +34,25 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T20:19:41.192Z",
+  "threads_next_eligible_at": "2026-09-07T20:43:47.601Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago.json",
+      "id": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18441638320192138",
+      "content_type": "video"
+    },
+    {
+      "file": "403-the-3-certainties-in-life-baby-keem-babykeem-and-kendrick-lamar-.json",
+      "id": "403-the-3-certainties-in-life-baby-keem-babykeem-and-kendrick-lamar-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18112721576587244"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

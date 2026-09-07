@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T00:21:52.021Z",
+  "checked_at": "2026-09-07T00:28:10.334Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T00:06:52.161Z",
-    "usage": 7,
+    "checked_at": "2026-09-07T00:28:09.651Z",
+    "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T00:21:52.161Z",
+    "next_check_at": "2026-09-07T00:43:09.651Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -20,13 +20,13 @@
     "instagram_usage": 6,
     "instagram_remaining": 92,
     "reserved_story_slots": 1,
-    "pending_story_count": 106,
+    "pending_story_count": 107,
     "next_feed_eligible_at": "2026-09-07T01:21:40.706Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -36,23 +36,7 @@
   },
   "threads_next_eligible_at": "2026-09-07T00:36:50.827Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "362-kodak-black-in-the-studio-listening-to-zeze-before-it-was-releas.json",
-      "id": "362-kodak-black-in-the-studio-listening-to-zeze-before-it-was-releas",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18103090019194020",
-      "content_type": "video"
-    },
-    {
-      "file": "376-otf-jam-speaks-says-f-lil-durk-why-didn-t-you-warn-us-about-the-.json",
-      "id": "376-otf-jam-speaks-says-f-lil-durk-why-didn-t-you-warn-us-about-the-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18110658074036390"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

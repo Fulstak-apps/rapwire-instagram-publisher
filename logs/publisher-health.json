@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T17:16:57.341Z",
+  "checked_at": "2026-09-07T17:22:22.031Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T17:16:45.550Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 44,
-    "instagram_remaining": 54,
+    "instagram_usage": 45,
+    "instagram_remaining": 53,
     "reserved_story_slots": 1,
-    "pending_story_count": 96,
+    "pending_story_count": 95,
     "next_feed_eligible_at": "2026-09-07T18:08:06.456Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -36,16 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T17:23:13.806Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa.json",
-      "id": "344-a-fan-proposed-to-his-girlfriend-at-ye-s-chicago-show-and-she-sa",
+      "file": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne.json",
+      "id": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne",
       "platform": "instagram_story",
-      "status": "published",
-      "media_id": "18106477430608917"
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T18:22:01.005Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T00:28:10.334Z",
+  "checked_at": "2026-09-07T00:32:17.649Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T00:28:09.651Z",
-    "usage": 6,
+    "usage": 7,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T00:43:09.651Z",
@@ -36,7 +36,15 @@
   },
   "threads_next_eligible_at": "2026-09-07T00:36:50.827Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "362-kodak-black-in-the-studio-listening-to-zeze-before-it-was-releas.json",
+      "id": "362-kodak-black-in-the-studio-listening-to-zeze-before-it-was-releas",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "17988504836851453"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

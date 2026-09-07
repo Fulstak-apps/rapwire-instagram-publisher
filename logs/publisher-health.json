@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T02:38:54.846Z",
+  "checked_at": "2026-09-07T02:43:27.085Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T02:33:34.317Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "368-2-chainz-really-is-a-national-treasure-mann-we-gotta-protect-him.json",
+      "id": "368-2-chainz-really-is-a-national-treasure-mann-we-gotta-protect-him",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T03:13:26.755Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

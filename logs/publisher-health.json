@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T15:25:19.393Z",
+  "checked_at": "2026-09-07T15:30:48.999Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T15:20:14.599Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T15:30:12.264Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl.json",
+      "id": "243-witness-from-durks-label-tried-to-save-him-but-the-government-cl",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T16:30:48.181Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

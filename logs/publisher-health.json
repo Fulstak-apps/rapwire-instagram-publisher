@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T03:48:58.341Z",
+  "checked_at": "2026-09-07T03:54:31.087Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T03:45:18.378Z",
@@ -17,10 +17,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 60,
     "instagram_daily_cap": 98,
-    "instagram_usage": 8,
-    "instagram_remaining": 90,
+    "instagram_usage": 9,
+    "instagram_remaining": 89,
     "reserved_story_slots": 1,
-    "pending_story_count": 108,
+    "pending_story_count": 107,
     "next_feed_eligible_at": "2026-09-07T04:39:06.826Z",
     "feed_allowed": false,
     "story_allowed": true
@@ -36,16 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T01:22:28.709Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "378-est-gee-was-in-his-bag-during-this-era-est-gee-really-had-the-pa.json",
-      "id": "378-est-gee-was-in-his-bag-during-this-era-est-gee-really-had-the-pa",
+      "file": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi.json",
+      "id": "269-lil-durk-lildurk-judge-addresses-kanye-directly-kanye-is-not-evi",
       "platform": "instagram_story",
-      "status": "published",
-      "media_id": "18072850394461916"
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T07:54:30.339Z: ERROR"
     }
   ],
-  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

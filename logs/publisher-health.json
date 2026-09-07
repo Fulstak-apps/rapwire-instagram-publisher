@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T07:31:42.069Z",
+  "checked_at": "2026-09-07T07:36:12.681Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T07:26:06.251Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T04:34:24.497Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
+      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T11:36:12.458Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -409,6 +417,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
+      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "193-never-forget-when-nba-youngboy-ended-his-live-after-he-realized-.json",

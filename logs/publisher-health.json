@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T16:41:11.133Z",
+  "checked_at": "2026-09-07T16:46:28.611Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T16:31:16.127Z",
+    "checked_at": "2026-09-07T16:46:19.257Z",
     "usage": 43,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T16:46:16.127Z",
+    "next_check_at": "2026-09-07T17:01:19.257Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -34,18 +34,18 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T16:41:05.611Z",
+  "threads_next_eligible_at": "2026-09-07T17:01:26.411Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [
+  "publications": [
     {
-      "file": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-.json",
-      "id": "240-the-gov-just-smoked-durks-best-witness-jam-s-ex-gf-caught-lying-",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T17:41:10.913Z: ERROR"
+      "file": "395-drake-champagnepapi-performs-over-on-stage-with-gordo-in-toronto.json",
+      "id": "395-drake-champagnepapi-performs-over-on-stage-with-gordo-in-toronto",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17940783210090750"
     }
   ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

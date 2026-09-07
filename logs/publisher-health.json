@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T12:18:10.587Z",
+  "checked_at": "2026-09-07T12:23:15.693Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T12:18:09.854Z",
-    "usage": 32,
+    "usage": 33,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T12:33:09.854Z",
@@ -36,7 +36,15 @@
   },
   "threads_next_eligible_at": "2026-09-07T12:23:13.151Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "206-best-audi-advertisement-ever-audi-is-the-breakout-single-from-fl.json",
+      "id": "206-best-audi-advertisement-ever-audi-is-the-breakout-single-from-fl",
+      "platform": "instagram_story",
+      "status": "published",
+      "media_id": "18106614686230968"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

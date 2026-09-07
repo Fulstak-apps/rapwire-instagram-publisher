@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T17:41:49.968Z",
+  "checked_at": "2026-09-07T17:47:03.318Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T17:36:54.633Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-07T17:46:48.440Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne.json",
-      "id": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T19:41:49.738Z: ERROR"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -298,13 +290,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne.json",
-      "id": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne",
-      "platform": "instagram_story",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

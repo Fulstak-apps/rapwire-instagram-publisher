@@ -2780,13 +2780,109 @@
         "reposts": 0,
         "quotes": 0
       }
+    },
+    "instagram:18175053808446936": {
+      "platform": "instagram",
+      "id": "18175053808446936",
+      "queue_id": "295-ye-had-70-000-fans-singing-heartless-for-him-peak",
+      "source": "records",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-07T12:33:56.476Z",
+      "permalink": "https://www.instagram.com/reel/Dc_HKIUDN8Z/",
+      "checked_at": "2026-09-07T13:29:32.418Z",
+      "metrics": {
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18101511560577507": {
+      "platform": "instagram",
+      "id": "18101511560577507",
+      "queue_id": "312-prosecutors-claim-yella-beezy-used-kewon-white-as-a-crash-dummy-",
+      "source": "akademiks",
+      "topic": "court",
+      "series": "Case File",
+      "question": "discussion-v2",
+      "published_at": "2026-09-07T11:23:40.877Z",
+      "permalink": "https://www.instagram.com/reel/Dc-_I9bDDuY/",
+      "checked_at": "2026-09-07T13:29:32.418Z",
+      "metrics": {
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:17901765669564432": {
+      "platform": "instagram",
+      "id": "17901765669564432",
+      "queue_id": "292-ye-just-brought-out-chief-keef-and-performed-love-sosa",
+      "source": "records",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-07T10:17:52.603Z",
+      "permalink": "https://www.instagram.com/reel/Dc-3XgIj_1U/",
+      "checked_at": "2026-09-07T13:29:32.418Z",
+      "metrics": {
+        "reach": 28,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:17998947623809470": {
+      "platform": "instagram",
+      "id": "17998947623809470",
+      "queue_id": "291-ye-just-brought-out-big-sean",
+      "source": "records",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-07T09:07:11.448Z",
+      "permalink": "https://www.instagram.com/reel/Dc-vldBlJG1/",
+      "checked_at": "2026-09-07T13:29:32.418Z",
+      "metrics": {
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18469438864114495": {
+      "platform": "instagram",
+      "id": "18469438864114495",
+      "queue_id": "308-ye-showing-loving-to-smurk",
+      "source": "akademiks",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-07T08:01:28.440Z",
+      "permalink": "https://www.instagram.com/reel/Dc-oJucj7gb/",
+      "checked_at": "2026-09-07T13:29:32.418Z",
+      "metrics": {
+        "reach": 4,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
     }
   },
   "platforms": {
     "instagram": {
-      "next_at": "2026-09-07T13:26:06.768Z",
-      "checked_at": "2026-09-07T07:26:06.768Z",
-      "status": "collected"
+      "next_at": "2026-09-07T19:29:32.418Z",
+      "checked_at": "2026-09-07T13:29:32.418Z",
+      "status": "unavailable",
+      "error": "Unsupported get request. Object with ID '18130043800677586' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     },
     "threads": {
       "next_at": "2026-09-07T16:02:42.168Z",
@@ -2889,8 +2985,8 @@
     ]
   },
   "summary": {
-    "generated_at": "2026-09-07T13:24:09.123Z",
-    "measured_posts": 147,
+    "generated_at": "2026-09-07T13:29:32.418Z",
+    "measured_posts": 152,
     "rates": [
       {
         "platform": "instagram",
@@ -2916,21 +3012,11 @@
         "platform": "instagram",
         "kind": "topic",
         "value": "culture",
-        "posts": 19,
-        "exposures": 1849,
+        "posts": 23,
+        "exposures": 1883,
         "interactions": 25,
-        "interactions_per_1000": 13.5,
+        "interactions_per_1000": 13.3,
         "sufficient_sample": true
-      },
-      {
-        "platform": "instagram",
-        "kind": "source",
-        "value": "akademiks",
-        "posts": 7,
-        "exposures": 197,
-        "interactions": 2,
-        "interactions_per_1000": 10.2,
-        "sufficient_sample": false
       },
       {
         "platform": "instagram",
@@ -2941,6 +3027,16 @@
         "interactions": 5,
         "interactions_per_1000": 10,
         "sufficient_sample": true
+      },
+      {
+        "platform": "instagram",
+        "kind": "source",
+        "value": "akademiks",
+        "posts": 9,
+        "exposures": 202,
+        "interactions": 2,
+        "interactions_per_1000": 9.9,
+        "sufficient_sample": false
       },
       {
         "platform": "instagram",
@@ -2966,8 +3062,8 @@
         "platform": "instagram",
         "kind": "topic",
         "value": "court",
-        "posts": 11,
-        "exposures": 947,
+        "posts": 12,
+        "exposures": 948,
         "interactions": 9,
         "interactions_per_1000": 9.5,
         "sufficient_sample": true
@@ -2976,20 +3072,10 @@
         "platform": "instagram",
         "kind": "series",
         "value": "Case File",
-        "posts": 11,
-        "exposures": 947,
+        "posts": 12,
+        "exposures": 948,
         "interactions": 9,
         "interactions_per_1000": 9.5,
-        "sufficient_sample": true
-      },
-      {
-        "platform": "instagram",
-        "kind": "question",
-        "value": "discussion-v2",
-        "posts": 48,
-        "exposures": 4962,
-        "interactions": 45,
-        "interactions_per_1000": 9.1,
         "sufficient_sample": true
       },
       {
@@ -3004,12 +3090,22 @@
       },
       {
         "platform": "instagram",
+        "kind": "question",
+        "value": "discussion-v2",
+        "posts": 53,
+        "exposures": 4997,
+        "interactions": 45,
+        "interactions_per_1000": 9,
+        "sufficient_sample": true
+      },
+      {
+        "platform": "instagram",
         "kind": "series",
         "value": "What Happened?",
-        "posts": 14,
-        "exposures": 775,
+        "posts": 18,
+        "exposures": 809,
         "interactions": 7,
-        "interactions_per_1000": 9,
+        "interactions_per_1000": 8.7,
         "sufficient_sample": true
       },
       {
@@ -3096,10 +3192,10 @@
         "platform": "instagram",
         "kind": "source",
         "value": "records",
-        "posts": 6,
-        "exposures": 774,
+        "posts": 9,
+        "exposures": 804,
         "interactions": 3,
-        "interactions_per_1000": 3.9,
+        "interactions_per_1000": 3.7,
         "sufficient_sample": true
       },
       {
@@ -3355,11 +3451,11 @@
     ],
     "source_weights": {
       "records": 0.9437142857142857,
-      "traploreross": 1.0009009625126646,
+      "traploreross": 1.0039967071935156,
       "raplisted_": 1.25,
       "freshouttheculture": 0.8,
       "trapmatictv": 0.8,
-      "complexmusic": 1.092127659574468,
+      "complexmusic": 1.0985106382978724,
       "akademiks": 0.8,
       "hiphop_firstnewsmusic": 0.8
     },

@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T13:34:09.963Z",
+  "checked_at": "2026-09-07T13:39:15.577Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T13:24:08.341Z",
-    "usage": 36,
+    "usage": 37,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T13:39:08.341Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 62,
     "reserved_story_slots": 1,
     "pending_story_count": 96,
-    "next_feed_eligible_at": "2026-09-07T13:34:01.846Z",
+    "next_feed_eligible_at": "2026-09-07T14:39:14.920Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-07T12:58:25.632Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "311-this-song-live.json",
+      "id": "311-this-song-live",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18024158090857478",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

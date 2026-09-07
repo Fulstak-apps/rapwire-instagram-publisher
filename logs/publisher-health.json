@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T20:38:48.027Z",
+  "checked_at": "2026-09-07T20:43:47.504Z",
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T20:28:31.762Z",
@@ -23,9 +23,9 @@
     "pending_story_count": 94,
     "next_feed_eligible_at": "2026-09-07T21:28:39.536Z",
     "feed_allowed": false,
-    "story_allowed": true
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -37,15 +37,7 @@
   "threads_next_eligible_at": "2026-09-07T20:43:47.601Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago.json",
-      "id": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "Instagram publishing quota exhausted; next capacity check 2026-09-07T21:38:47.979Z"
-    }
-  ],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

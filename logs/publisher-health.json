@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-07T17:31:49.794Z",
+  "checked_at": "2026-09-07T17:36:55.209Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-07T17:16:45.550Z",
+    "checked_at": "2026-09-07T17:36:54.633Z",
     "usage": 45,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-07T17:31:45.550Z",
+    "next_check_at": "2026-09-07T17:51:54.633Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-03T20:01:28.698Z",
@@ -26,7 +26,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -36,24 +36,8 @@
   },
   "threads_next_eligible_at": "2026-09-07T17:46:48.440Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "397-5-billion-streams-on-spotify-marking-another-huge-milestone-for-.json",
-      "id": "397-5-billion-streams-on-spotify-marking-another-huge-milestone-for-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17865551310660200"
-    }
-  ],
-  "failures": [
-    {
-      "file": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil.json",
-      "id": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-09-07T18:01:49.500Z: ERROR"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

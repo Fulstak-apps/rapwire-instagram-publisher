@@ -4896,15 +4896,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-04T19:30:55.469Z",
-      "candidates": 22,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 11,
-      "finished_at": "2026-09-04T19:31:35.483Z"
-    },
-    {
       "started_at": "2026-09-04T19:33:39.466Z",
       "candidates": 50,
       "queued": [],
@@ -12424,6 +12415,39 @@
       "mode": "discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-07T03:29:09.237Z"
+    },
+    {
+      "started_at": "2026-09-07T03:34:13.042Z",
+      "candidates": 39,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc92SHgju43/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc92SHgju43-2-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-07T03:38:55.044Z"
     }
   ],
   "vip_pending": {
@@ -12458,10 +12482,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 113,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T02:32:02.961Z",
-      "retry_at": "2026-09-07T03:32:02.961Z"
+      "attempts": 114,
+      "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
+      "last_attempt_at": "2026-09-07T03:38:01.984Z",
+      "retry_at": "2026-09-07T04:38:01.984Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -12554,10 +12578,10 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 129,
+      "attempts": 130,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-07T03:29:09.237Z",
-      "retry_at": "2026-09-07T04:29:09.237Z"
+      "last_attempt_at": "2026-09-07T03:38:55.044Z",
+      "retry_at": "2026-09-07T04:38:55.044Z"
     },
     "Dc9E0l7FoTk": {
       "source_handle": "records",
@@ -12602,24 +12626,24 @@
       "first_seen_at": "2026-09-07T00:55:29.989Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 15,
+      "attempts": 16,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc92SHgju43-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-07T03:28:07.040Z",
-      "retry_at": "2026-09-07T04:28:07.040Z"
+      "last_attempt_at": "2026-09-07T03:38:39.622Z",
+      "retry_at": "2026-09-07T04:38:39.622Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-07T03:21:01.757Z"
+      "checked_at": "2026-09-07T03:35:09.628Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-07T03:21:05.768Z"
+      "checked_at": "2026-09-07T03:35:13.647Z"
     },
     "records": {
-      "checked_at": "2026-09-07T03:21:09.772Z"
+      "checked_at": "2026-09-07T03:35:17.612Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-07T03:21:13.758Z"
+      "checked_at": "2026-09-07T03:35:21.544Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-07T02:49:03.280Z"

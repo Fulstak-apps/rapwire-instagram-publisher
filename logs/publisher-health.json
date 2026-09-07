@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T14:19:24.207Z",
+  "checked_at": "2026-09-07T14:24:34.932Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T14:14:30.062Z",
@@ -37,7 +37,15 @@
   "threads_next_eligible_at": "2026-09-07T14:10:09.440Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du.json",
+      "id": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T16:24:34.598Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
@@ -227,6 +235,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du.json",
+      "id": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du",
+      "platform": "instagram_story",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "112-street-fighter-trailer-video.json",

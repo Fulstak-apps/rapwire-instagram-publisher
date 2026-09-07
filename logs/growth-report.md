@@ -1,9 +1,9 @@
 ## RapWire audience report
 
-Measured posts: 161.
+Measured posts: 162.
 
 instagram: followers 37; daily change 2; collection unavailable.
-threads: followers 228; daily change 30; collection collected.
+threads: followers 228; daily change 30; collection unavailable.
 
 | Platform | Category | Source or topic | Posts | Meaningful interactions / 1,000 reach or views |
 |---|---|---|---:|---:|

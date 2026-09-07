@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T17:26:45.324Z",
+  "checked_at": "2026-09-07T17:31:49.794Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T17:16:45.550Z",
@@ -34,10 +34,26 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T17:23:13.806Z",
+  "threads_next_eligible_at": "2026-09-07T17:46:48.440Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "397-5-billion-streams-on-spotify-marking-another-huge-milestone-for-.json",
+      "id": "397-5-billion-streams-on-spotify-marking-another-huge-milestone-for-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17865551310660200"
+    }
+  ],
+  "failures": [
+    {
+      "file": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil.json",
+      "id": "238-durk-was-hanging-with-young-spray-and-central-cee-in-london-whil",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-09-07T18:01:49.500Z: ERROR"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

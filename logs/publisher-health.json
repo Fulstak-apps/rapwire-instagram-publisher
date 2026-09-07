@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-07T18:12:11.461Z",
+  "checked_at": "2026-09-07T18:17:59.025Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-07T18:12:10.142Z",
-    "usage": 45,
+    "usage": 46,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-07T18:27:10.142Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 53,
     "reserved_story_slots": 1,
     "pending_story_count": 95,
-    "next_feed_eligible_at": "2026-09-07T18:08:06.456Z",
+    "next_feed_eligible_at": "2026-09-07T19:17:50.284Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -34,9 +34,25 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-07T18:12:07.484Z",
+  "threads_next_eligible_at": "2026-09-07T18:32:58.100Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "387-drake-champagnepapi-popped-out-w-gordo-while-he-played-hoe-phase.json",
+      "id": "387-drake-champagnepapi-popped-out-w-gordo-while-he-played-hoe-phase",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18192908050386734",
+      "content_type": "video"
+    },
+    {
+      "file": "399-ben-10-speaks.json",
+      "id": "399-ben-10-speaks",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18223889719328186"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -87,8 +87,8 @@
     "430-ye-s-all-of-the-lights-has-officially-surpassed-1-billion-stream",
     "431-drake-champagnepapi-has-fans-guessing-after-teasing-fomo-for-sep"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-08T15:44:16.358Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-08T15:49:08.228Z",
   "deferred": []
 }

@@ -644,7 +644,7 @@ let facebookImagesToday=queueRecords.filter(({item})=>item.facebook_media_id && 
 const facebookVideoWaiting=()=>queueRecords.some(({item})=>isFacebookVideoItem(item) && !item.facebook_media_id
   && !item.facebook_reconcile_required && item.facebook_status!=='review_required'
   && ['ready','published'].includes(item.status) && footageOnlyAllowed(item));
-const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].includes(item.status)
+const threadsInFlightRecord = queueRecords.find(({item}) => ['ready','published'].includes(item.status)
   && (item.threads_container_id || item.threads_children?.some(Boolean)) && !item.threads_media_id && !item.threads_reconcile_required && !item.threads_copy_error
   && item.rap_relevance_checked === true && contentPromiseIsKept(item)
   && (!item.publish_after || Date.parse(item.publish_after) <= Date.now())
@@ -653,7 +653,14 @@ const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].in
     && item.content_claim_checked === true && item.editorial_substance_checked === true
     && (item.content_type === 'video' ? item.layout_template === 'rapwire-video-grid-safe-v1'
       : (validMediaRepost(item) || item.layout_template === 'rapwire-unified-v3' && hasPublishableVisual(item)))))
-  && !(Date.parse(item.threads_retry_at || '') > Date.now()))?.item.id;
+  && !(Date.parse(item.threads_retry_at || '') > Date.now()));
+const threadsInFlightId = threadsInFlightRecord?.item.id;
+// A carousel container that has been pending for this long stays intact for
+// reconciliation, but it must not freeze the independent video lane forever.
+const threadsInFlightStale = Boolean(threadsInFlightRecord) && Date.now() - Math.max(
+  Date.parse(threadsInFlightRecord.item.threads_container_checked_at || '') || 0,
+  Date.parse(threadsInFlightRecord.item.threads_container_created_at || '') || 0
+) >= 30 * 60_000;
 
 async function deliverThreads(item, itemPath, file) {
   const isVideoItem = item.content_type === 'video';
@@ -935,7 +942,7 @@ for (const file of files) {
 // post is old, rotate one already-approved source video that has not previously
 // been used by this continuity lane. This never touches Instagram and never
 // replaces a pending fresh Threads upload.
-const noThreadsWorkInFlight = !threadsInFlightId && threadsSteps === 0;
+const noThreadsWorkInFlight = (!threadsInFlightId || threadsInFlightStale) && threadsSteps === 0;
 const threadsVideoOverdue = !lastThreadsVideoTime || Date.now() - lastThreadsVideoTime >= threadsVideoFallbackMs;
 if (noThreadsWorkInFlight && threadsVideoOverdue && !(Date.parse(threadsCooldown.until || '') > Date.now())) {
   const replay = queueRecords

@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-08T13:17:32.764Z",
+  "checked_at": "2026-09-08T13:22:43.732Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T13:17:31.754Z",
-    "usage": 35,
+    "usage": 36,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-08T13:32:31.754Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 13,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T13:17:19.530Z",
+    "next_feed_eligible_at": "2026-09-08T13:52:43.179Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-08T13:12:30.579Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-08T12:47:19.530Z",
+    "instagram_feed_at": "2026-09-08T13:22:43.179Z",
     "threads_at": "2026-09-08T12:57:30.579Z",
     "threads_video_at": "2026-09-08T12:57:30.579Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "403-the-3-certainties-in-life-baby-keem-babykeem-and-kendrick-lamar-.json",
+      "id": "403-the-3-certainties-in-life-baby-keem-babykeem-and-kendrick-lamar-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18126305524796065",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

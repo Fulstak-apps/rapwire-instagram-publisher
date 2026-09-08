@@ -5676,40 +5676,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-06T10:25:15.761Z",
-      "candidates": 58,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc58CVBIpOF-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 13,
-      "finished_at": "2026-09-06T10:34:03.766Z"
-    },
-    {
       "started_at": "2026-09-06T10:39:07.465Z",
       "candidates": 62,
       "queued": [],
@@ -14601,6 +14567,28 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-08T15:13:36.466Z"
+    },
+    {
+      "started_at": "2026-09-08T15:18:40.566Z",
+      "candidates": 55,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc58CVBIpOF-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/reel/DdB5QV2Ozvj/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdB5QV2Ozvj-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-08T15:23:58.604Z"
     }
   ],
   "vip_pending": {
@@ -14791,27 +14779,27 @@
       "first_seen_at": "2026-09-08T14:29:47.411Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 6,
+      "attempts": 7,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdB5QV2Ozvj-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T15:12:07.950Z",
-      "retry_at": "2026-09-08T16:12:07.950Z"
+      "last_attempt_at": "2026-09-08T15:23:58.604Z",
+      "retry_at": "2026-09-08T16:23:58.604Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-08T15:06:26.404Z"
+      "checked_at": "2026-09-08T15:18:49.035Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-08T15:06:30.395Z"
+      "checked_at": "2026-09-08T15:18:53.012Z"
     },
     "records": {
-      "checked_at": "2026-09-08T15:06:34.512Z"
+      "checked_at": "2026-09-08T15:18:57.016Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-08T15:06:38.557Z"
+      "checked_at": "2026-09-08T15:19:01.054Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-08T14:16:48.612Z"
+      "checked_at": "2026-09-08T15:19:09.103Z"
     },
     "raplisted_": {
       "checked_at": "2026-09-08T14:16:52.673Z"
@@ -14835,7 +14823,7 @@
       "checked_at": "2026-09-08T14:54:28.245Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-08T14:07:05.093Z"
+      "checked_at": "2026-09-08T15:19:05.029Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "overdue": false,
+  "overdue": true,
   "blocked": false,
   "threads_video_overdue": false,
   "threads_blocked": false,
@@ -93,8 +93,8 @@
     "442-lil-durk-lildurk-s-federal-trial-entered-day-13-today-as-support",
     "444-the-sketch-played-on-drake-s-reputation-for-taking-things-person"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-08T19:16:12.000Z",
+  "dispatch": true,
+  "reason": "missed_feed_window",
+  "checked_at": "2026-09-08T19:21:11.771Z",
   "deferred": []
 }

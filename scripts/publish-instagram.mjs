@@ -909,7 +909,7 @@ for (const file of files) {
 // replaces a pending fresh Threads upload.
 const noThreadsWorkInFlight = !threadsInFlightId && threadsSteps === 0;
 const threadsVideoOverdue = !lastThreadsTime || Date.now() - lastThreadsTime >= threadsVideoFallbackMs;
-if (noThreadsWorkInFlight && threadsVideoOverdue && Date.parse(threadsCooldown.until || '') <= Date.now()) {
+if (noThreadsWorkInFlight && threadsVideoOverdue && !(Date.parse(threadsCooldown.until || '') > Date.now())) {
   const replay = queueRecords
     .filter(({item}) => item.status === 'published' && item.content_type === 'video'
       && item.threads_media_id && !item.threads_replay_media_id

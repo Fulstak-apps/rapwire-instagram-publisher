@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T15:13:50.653Z",
+  "checked_at": "2026-09-08T15:19:01.419Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T14:58:32.559Z",
+  "threads_next_eligible_at": "2026-09-08T15:34:01.418Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-08T15:08:56.460Z",
-    "threads_at": "2026-09-08T14:43:32.559Z",
-    "threads_video_at": "2026-09-08T14:43:32.559Z",
+    "threads_at": "2026-09-08T15:19:01.418Z",
+    "threads_video_at": "2026-09-08T15:19:01.418Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd.json",
+      "id": "234-durk-sound-engineer-fumbled-said-there-was-no-discussion-of-murd",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "17987243085099436"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

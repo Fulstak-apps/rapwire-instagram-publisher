@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -98,10 +98,11 @@
     "454-prosecutors-cooked-lil-durk-lildurk-with-mountains-of-evidence-i",
     "455-brian-steele-trashed-otf-vonni-said-he-s-took-advantage-and-had-",
     "456-drew-findling-trashed-lapd-and-fbi-said-case-was-garbage-and-ask",
-    "457-moneybagg-yo-admits-he-sometimes-acts-happy-because-he-feels-he-"
+    "457-moneybagg-yo-admits-he-sometimes-acts-happy-because-he-feels-he-",
+    "458-fivio-on-the-gospel-drill-wave"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-08T23:18:30.291Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-08T23:23:31.263Z",
   "deferred": []
 }

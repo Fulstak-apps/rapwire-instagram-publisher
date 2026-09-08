@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -93,8 +93,8 @@
     "428-mark-curry-explaining-his-issue-wit-50-cent-doc-that-promised-hi",
     "429-az-chike-and-tyler-the-creator-feliciathegoat-s-look-like-my-mam"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-08T11:06:08.208Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-08T11:11:15.348Z",
   "deferred": []
 }

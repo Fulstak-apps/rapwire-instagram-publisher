@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { publicationPolicy, recoveryPolicy } from './publication-policy.mjs';
 const now = Date.parse('2026-09-02T15:00:00Z');
-const feed = {status:'published',content_type:'video',instagram_media_id:'feed',published_at:new Date(now-60*60000).toISOString(),instagram_story_status:'published',instagram_story_media_id:'story',instagram_story_published_at:new Date(now-5*60000).toISOString()};
-test('60-minute boundary uses the feed time, not the more recent Story time', () => {
+const feed = {status:'published',content_type:'video',instagram_media_id:'feed',published_at:new Date(now-30*60000).toISOString(),instagram_story_status:'published',instagram_story_media_id:'story',instagram_story_published_at:new Date(now-5*60000).toISOString()};
+test('30-minute boundary uses the feed time, not the more recent Story time', () => {
   assert.equal(publicationPolicy([feed],{now:now-1}).feed_allowed,false);
   assert.equal(publicationPolicy([feed],{now}).feed_allowed,true);
 });
@@ -19,6 +19,11 @@ test('one remaining slot can finish a Story but cannot start another video/Story
   const p=publicationPolicy([],{now,quota:{usage:97,total:100}});
   assert.equal(p.story_allowed,true); assert.equal(p.feed_allowed,false);
   assert.equal(publicationPolicy([],{now,quota:{usage:98,total:100}}).story_allowed,false);
+});
+test('feed-only mode keeps all remaining capacity for feed videos', () => {
+  const p=publicationPolicy([],{now,includeStories:false,quota:{usage:47,total:100,effective_total:50}});
+  assert.equal(p.feed_allowed,true); assert.equal(p.story_allowed,true);
+  assert.equal(p.reserved_story_slots,0);
 });
 test('lower platform limits reduce our budget; duplicate IDs are counted once', () => {
   const p=publicationPolicy([feed,feed],{now,quota:{usage:1,total:100,effective_total:20}});

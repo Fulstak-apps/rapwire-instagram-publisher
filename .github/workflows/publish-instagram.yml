@@ -102,7 +102,10 @@ jobs:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-          PUBLISH_INSTAGRAM_STORIES: "true"
+          # Instagram counts Stories and feed videos against the same rolling
+          # publishing capacity. Feed-first matches the stable SportsWire
+          # setup; Stories are left out rather than starving the feed.
+          PUBLISH_INSTAGRAM_STORIES: "false"
           MAX_FEED_POSTS_PER_RUN: "1"
         run: node scripts/publish-instagram.mjs
 

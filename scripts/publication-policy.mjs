@@ -1,4 +1,6 @@
-export const FEED_INTERVAL_MS = 60 * 60_000;
+// Match the stable SportsWire feed-only pace: 48 feed uploads per rolling day
+// stays below RapWire's observed 50-post Meta ceiling.
+export const FEED_INTERVAL_MS = 30 * 60_000;
 export const THREADS_INTERVAL_MS = 15 * 60_000;
 export const FACEBOOK_INTERVAL_MS = 30 * 60_000;
 const UNKNOWN_QUOTA_CAP = 32;

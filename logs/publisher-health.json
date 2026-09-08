@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-08T14:28:22.759Z",
+  "checked_at": "2026-09-08T14:33:33.241Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T14:18:18.097Z",
-    "usage": 35,
+    "checked_at": "2026-09-08T14:33:18.478Z",
+    "usage": 36,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T14:33:18.097Z",
+    "next_check_at": "2026-09-08T14:48:18.478Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 13,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T14:26:31.514Z",
+    "next_feed_eligible_at": "2026-09-08T15:03:26.260Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,15 +35,31 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T14:23:10.570Z",
+  "threads_next_eligible_at": "2026-09-08T14:48:32.732Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-08T13:56:31.514Z",
-    "threads_at": "2026-09-08T14:08:10.570Z",
+    "instagram_feed_at": "2026-09-08T14:33:26.260Z",
+    "threads_at": "2026-09-08T14:33:32.732Z",
     "threads_video_at": "2026-09-08T14:08:10.570Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "352-le-bebe-complaining-like-a-lil-schoolgirl-to-bendadonn-over-a-yo.json",
+      "id": "352-le-bebe-complaining-like-a-lil-schoolgirl-to-bendadonn-over-a-yo",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17906442957509313",
+      "content_type": "video"
+    },
+    {
+      "file": "430-ye-s-all-of-the-lights-has-officially-surpassed-1-billion-stream.json",
+      "id": "430-ye-s-all-of-the-lights-has-officially-surpassed-1-billion-stream",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18109806173023865"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

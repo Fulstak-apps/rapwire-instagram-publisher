@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T18:00:56.954Z",
+  "checked_at": "2026-09-08T18:05:54.015Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 34,
-    "instagram_remaining": 14,
+    "instagram_usage": 35,
+    "instagram_remaining": 13,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T18:30:56.711Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,22 +35,21 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T18:04:24.320Z",
+  "threads_next_eligible_at": "2026-09-08T18:20:53.568Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-08T18:00:56.711Z",
-    "threads_at": "2026-09-08T17:49:24.320Z",
+    "threads_at": "2026-09-08T18:05:53.568Z",
     "threads_video_at": "2026-09-08T17:49:24.320Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "377-5-die-on-board-of-amazon-airline-plane-when-it-overshoots-the-ru.json",
-      "id": "377-5-die-on-board-of-amazon-airline-plane-when-it-overshoots-the-ru",
-      "platform": "instagram",
+      "file": "431-drake-champagnepapi-has-fans-guessing-after-teasing-fomo-for-sep.json",
+      "id": "431-drake-champagnepapi-has-fans-guessing-after-teasing-fomo-for-sep",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18133174225570014",
-      "content_type": "video"
+      "media_id": "18377973352233056"
     }
   ],
   "failures": [],

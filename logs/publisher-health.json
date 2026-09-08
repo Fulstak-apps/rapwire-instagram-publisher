@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-08T08:34:39.269Z",
+  "checked_at": "2026-09-08T08:39:47.109Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T08:29:36.418Z",
-    "usage": 46,
+    "usage": 47,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-08T08:44:36.418Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T08:34:20.595Z",
+    "next_feed_eligible_at": "2026-09-08T09:09:46.552Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-08T08:29:25.197Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "385-mac-miller-s-handwritten-message-is-still-inside-the-empty-pool-.json",
+      "id": "385-mac-miller-s-handwritten-message-is-still-inside-the-empty-pool-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18148336393545440",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

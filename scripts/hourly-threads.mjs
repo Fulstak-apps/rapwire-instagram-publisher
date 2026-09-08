@@ -7,7 +7,9 @@ import {errorDelay,metaClient} from './meta-client.mjs';
 import {threadsTopicTag} from './audience-policy.mjs';
 
 export const HOUR=60*60_000;
-export const CONVERSATION_INTERVAL=15*60_000;
+// Conversation prompts are supplemental. Keep them sparse so they do not
+// crowd out the primary video lane or make the account look automated.
+export const CONVERSATION_INTERVAL=6*60*60_000;
 const REPEAT_WINDOW=30*24*HOUR;
 export const PROMPTS=[
   'Be real: what “classic” rap album gets overrated the most—and why?',

@@ -5851,49 +5851,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdCR84ICh2K/",
       "queue_id": "438-six-years-ago-today-travis-scott-travisscott-and-mcdonald-s-rele",
       "video": "media/438-six-years-ago-today-travis-scott-travisscott-and-mcdonald-s-rele.mp4"
+    },
+    "DdCEM4Uokhp": {
+      "queued_at": "2026-09-08T18:14:00.725Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdCEM4Uokhp/",
+      "queue_id": "439-throwback-to-ken-carson-explaining-to-a-cop-why-he-wears-an-upsi",
+      "video": "media/439-throwback-to-ken-carson-explaining-to-a-cop-why-he-wears-an-upsi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-06T13:54:26.868Z",
-      "candidates": 58,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dc66wLLoy7s/",
-          "stage": "queue",
-          "error": "Crop review required: No distinct footage region between static panels"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/Dc71BgMvy-4/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc71BgMvy-4-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 13,
-      "finished_at": "2026-09-06T14:01:55.118Z"
-    },
     {
       "started_at": "2026-09-06T14:06:58.998Z",
       "candidates": 57,
@@ -14561,6 +14528,42 @@
       "mode": "discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-08T18:03:15.819Z"
+    },
+    {
+      "started_at": "2026-09-08T18:08:23.417Z",
+      "candidates": 55,
+      "queued": [
+        "439-throwback-to-ken-carson-explaining-to-a-cop-why-he-wears-an-upsi"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
+          "stage": "queue",
+          "error": "Crop review required: Side crop would remove too much source content"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-08T18:14:00.725Z"
     }
   ],
   "vip_pending": {
@@ -14583,10 +14586,10 @@
       "first_seen_at": "2026-09-03T06:22:41.175Z",
       "profile_position": 11,
       "state": "retry_pending",
-      "attempts": 81,
+      "attempts": 82,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-08T16:54:13.687Z",
-      "retry_at": "2026-09-08T17:54:13.687Z"
+      "last_attempt_at": "2026-09-08T18:12:46.590Z",
+      "retry_at": "2026-09-08T19:12:46.590Z"
     },
     "Dc1oLsTgfLu": {
       "source_handle": "akademiks",
@@ -14631,10 +14634,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 73,
+      "attempts": 74,
       "last_error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-08T17:08:47.721Z",
-      "retry_at": "2026-09-08T18:08:47.721Z"
+      "last_attempt_at": "2026-09-08T18:12:00.632Z",
+      "retry_at": "2026-09-08T19:12:00.632Z"
     },
     "Dc32-qLsTq5": {
       "source_handle": "akademiks",
@@ -14727,10 +14730,10 @@
       "first_seen_at": "2026-09-07T13:02:39.813Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 27,
+      "attempts": 28,
       "last_error": "Crop review required: Side crop would remove too much source content",
-      "last_attempt_at": "2026-09-08T17:08:28.882Z",
-      "retry_at": "2026-09-08T18:08:28.882Z"
+      "last_attempt_at": "2026-09-08T18:11:42.351Z",
+      "retry_at": "2026-09-08T19:11:42.351Z"
     },
     "Dc_spGMAPFc": {
       "source_handle": "akademiks",
@@ -14739,30 +14742,30 @@
       "first_seen_at": "2026-09-07T18:06:33.637Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 24,
+      "attempts": 25,
       "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-08T17:07:07.737Z",
-      "retry_at": "2026-09-08T18:07:07.737Z"
+      "last_attempt_at": "2026-09-08T18:10:26.197Z",
+      "retry_at": "2026-09-08T19:10:26.197Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-08T18:01:58.529Z"
+      "checked_at": "2026-09-08T18:08:32.939Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-08T18:02:02.444Z"
+      "checked_at": "2026-09-08T18:08:36.898Z"
     },
     "records": {
-      "checked_at": "2026-09-08T18:02:06.360Z"
+      "checked_at": "2026-09-08T18:08:40.872Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-08T18:02:10.273Z"
+      "checked_at": "2026-09-08T18:08:44.811Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-08T17:14:39.436Z"
+      "checked_at": "2026-09-08T18:08:48.710Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-08T17:26:30.033Z"
+      "checked_at": "2026-09-08T18:08:52.636Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-08T17:26:33.948Z"

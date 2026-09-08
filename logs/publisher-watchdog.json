@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -91,8 +91,8 @@
     "438-six-years-ago-today-travis-scott-travisscott-and-mcdonald-s-rele",
     "439-throwback-to-ken-carson-explaining-to-a-cop-why-he-wears-an-upsi"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-08T18:15:47.065Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-08T18:20:49.344Z",
   "deferred": []
 }

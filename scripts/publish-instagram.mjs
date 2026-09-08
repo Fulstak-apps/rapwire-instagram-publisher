@@ -18,7 +18,7 @@ import {storyCanRun, shouldPreferStory} from './instagram-lane-policy.mjs';
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
 const threadsToken = process.env.THREADS_ACCESS_TOKEN;
-const threadsUserId = process.env.THREADS_USER_ID;
+let threadsUserId = process.env.THREADS_USER_ID;
 const facebookPageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
 const facebookPageId = process.env.FACEBOOK_PAGE_ID;
 const publishInstagramStories = process.env.PUBLISH_INSTAGRAM_STORIES === "true";
@@ -63,6 +63,24 @@ const cooldownPath = path.join(logsDir, "instagram-cooldown.json");
 const quotaPath = path.join(logsDir, "instagram-publishing-quota.json");
 const threadsCooldownPath = path.join(logsDir, 'threads-delivery-cooldown.json');
 let threadsCooldown = JSON.parse(await fs.readFile(threadsCooldownPath, 'utf8').catch(error => { if(error.code==='ENOENT') return '{}'; throw error; }));
+async function resolveVerifiedThreadsIdentity() {
+  const expected=String(process.env.RAPWIRE_THREADS_EXPECTED_USERNAME||'').replace(/^@/,'').toLowerCase();
+  if (!expected || !threadsToken) return;
+  try {
+    const url=new URL(`${threadsBase}/me`);
+    url.searchParams.set('fields','id,username'); url.searchParams.set('access_token',threadsToken);
+    const response=await fetch(url,{signal:AbortSignal.timeout(30_000)});
+    const profile=await response.json();
+    if (!response.ok || profile.error) throw new Error(profile.error?.message||'Threads identity check failed');
+    if (String(profile.username||'').replace(/^@/,'').toLowerCase()!==expected) throw new Error(`Threads token belongs to @${profile.username||'unknown'}, not @${expected}`);
+    if (String(profile.id)!==String(threadsUserId)) console.warn('Threads: refreshed stale configured profile ID for verified @rapwire247');
+    threadsUserId=String(profile.id);
+  } catch (error) {
+    threadsCooldown={until:new Date(Date.now()+60*60000).toISOString(),reason:`Threads identity: ${error.message}`};
+    await fs.writeFile(threadsCooldownPath,JSON.stringify(threadsCooldown,null,2)+'\n');
+    console.error(`Threads delivery paused: ${error.message}`);
+  }
+}
 let quota = JSON.parse(await fs.readFile(quotaPath, "utf8").catch(error => { if (error.code === "ENOENT") return "{}"; throw error; }));
 let cooldown = JSON.parse(await fs.readFile(cooldownPath, "utf8").catch(error => {
   if (error.code === "ENOENT") return "{}";
@@ -240,6 +258,7 @@ async function refreshQuota() {
   await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
 }
 await refreshQuota();
+await resolveVerifiedThreadsIdentity();
 
 async function logAttempt(event) {
   runEvents.push(event);

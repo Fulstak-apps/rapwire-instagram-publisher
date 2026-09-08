@@ -65,14 +65,22 @@ export function selectPrompt(state,now=Date.now()) {
   return {prompt:PROMPTS[start],index:start};
 }
 
-export async function publishHourlyThread({api,userId,state,save,now=Date.now()}) {
+export async function publishHourlyThread({api,userId,state,save,now=Date.now(),expectedUsername='rapwire247'}) {
   state.posts ||= [];
   if(Date.parse(state.retry_at||'')>now) return 'cooldown';
+  let resolvedUserId=userId;
   if(!state.verified_at || now-Date.parse(state.verified_at)>24*HOUR) {
     const profile=await api.get('/me',{fields:'id,username'});
-    if(String(profile.id)!==String(userId)) throw new Error('Threads account ID does not match the configured @rapwire247 account');
+    if(String(profile.username||'').replace(/^@/,'').toLowerCase()!==String(expectedUsername).replace(/^@/,'').toLowerCase()) {
+      throw new Error(`Threads token belongs to @${profile.username||'unknown'}, not @${expectedUsername}`);
+    }
+    // Meta can rotate the numeric Threads profile ID while the account token
+    // remains valid. The verified username is the account binding; use its
+    // current ID rather than leaving hourly conversation posts blocked.
+    resolvedUserId=String(profile.id);
+    state.resolved_user_id=resolvedUserId;
     state.verified_at=new Date(now).toISOString(); await save();
-  }
+  } else resolvedUserId=String(state.resolved_user_id||userId);
   if(!state.pending && (Date.parse(state.last_published_at||'')||0)+CONVERSATION_INTERVAL>now) return 'interval_limit';
   if(!state.pending) {
     const selected=selectPrompt(state,now);
@@ -81,7 +89,7 @@ export async function publishHourlyThread({api,userId,state,save,now=Date.now()}
   }
   const pending=state.pending;
   const result=await advanceContainer({item:pending,prefix:'threads',now,save,
-    create:()=>api.post(`/${userId}/threads`,{media_type:'TEXT',text:pending.text,topic_tag:pending.topic_tag}),
+    create:()=>api.post(`/${resolvedUserId}/threads`,{media_type:'TEXT',text:pending.text,topic_tag:pending.topic_tag}),
     inspect:id=>api.get(`/${id}`,{fields:'status,error_message'}),
     publish:id=>api.post(`/${userId}/threads_publish`,{creation_id:id})
   });
@@ -103,7 +111,7 @@ async function main() {
   if(!token||!userId) {console.log('Hourly Threads: credentials unavailable');return;}
   const file=statePath(); const state=JSON.parse(await fs.readFile(file,'utf8').catch(error=>{if(error.code==='ENOENT')return '{}';throw error;}));
   const save=async()=>{await fs.mkdir(path.dirname(file),{recursive:true});const temp=`${file}.${process.pid}.tmp`;await fs.writeFile(temp,JSON.stringify(state,null,2)+'\n');await fs.rename(temp,file);};
-  try {console.log(`Hourly Threads: ${await publishHourlyThread({api:metaClient('https://graph.threads.net/v1.0',token),userId,state,save})}`);}
+  try {console.log(`Hourly Threads: ${await publishHourlyThread({api:metaClient('https://graph.threads.net/v1.0',token),userId,state,save,expectedUsername:process.env.RAPWIRE_THREADS_EXPECTED_USERNAME||'rapwire247'})}`);}
   catch(error) {state.status=state.pending?.threads_reconcile_required?'reconciliation_required':'blocked';state.last_error=String(error.message).replaceAll(token,'[redacted]').slice(0,800);state.last_error_at=new Date().toISOString();state.retry_at=new Date(Date.now()+errorDelay(error)).toISOString();await save();console.log(`Hourly Threads: ${state.status}; ${state.last_error}`);}
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href) await main();

@@ -102,6 +102,7 @@ jobs:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          RAPWIRE_THREADS_EXPECTED_USERNAME: "rapwire247"
           # Instagram counts Stories and feed videos against the same rolling
           # publishing capacity. Feed-first matches the stable SportsWire
           # setup; Stories are left out rather than starving the feed.
@@ -114,6 +115,7 @@ jobs:
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          RAPWIRE_THREADS_EXPECTED_USERNAME: "rapwire247"
         run: node scripts/threads-engage.mjs
 
       - name: Publish hourly RapWire Threads conversation

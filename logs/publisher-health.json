@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T09:20:05.507Z",
+  "checked_at": "2026-09-08T09:25:08.701Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T09:04:46.091Z",
+  "threads_next_eligible_at": "2026-09-08T09:40:08.700Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-08T09:15:06.917Z",
-    "threads_at": "2026-09-08T08:49:46.091Z",
-    "threads_video_at": "2026-09-08T08:49:46.091Z",
+    "threads_at": "2026-09-08T09:25:08.700Z",
+    "threads_video_at": "2026-09-08T09:25:08.700Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b.json",
+      "id": "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "17994355389035917"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

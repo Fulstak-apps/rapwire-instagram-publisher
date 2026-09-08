@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-08T11:41:29.233Z",
+  "checked_at": "2026-09-08T11:46:37.136Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T11:31:28.495Z",
-    "usage": 42,
+    "checked_at": "2026-09-08T11:46:30.324Z",
+    "usage": 40,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T11:46:28.495Z",
+    "next_check_at": "2026-09-08T12:01:30.324Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 42,
-    "instagram_remaining": 6,
+    "instagram_usage": 40,
+    "instagram_remaining": 8,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T12:06:28.829Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T11:26:15.250Z",
+  "threads_next_eligible_at": "2026-09-08T12:01:37.135Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-08T11:36:28.829Z",
-    "threads_at": "2026-09-08T11:11:15.250Z",
-    "threads_video_at": "2026-09-08T11:11:15.250Z",
+    "threads_at": "2026-09-08T11:46:37.135Z",
+    "threads_video_at": "2026-09-08T11:46:37.135Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-.json",
+      "id": "210-when-offset-went-on-instagram-live-at-5am-in-the-morning-to-beg-",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18127021954813774"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

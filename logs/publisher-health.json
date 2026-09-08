@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-08T07:39:05.979Z",
+  "checked_at": "2026-09-08T07:44:01.625Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T07:28:58.033Z",
+    "checked_at": "2026-09-08T07:44:01.205Z",
     "usage": 47,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T07:43:58.033Z",
+    "next_check_at": "2026-09-08T07:59:01.205Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,7 +26,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -36,15 +36,7 @@
   },
   "threads_next_eligible_at": "2026-09-08T07:54:05.977Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "185-blueface-s-production-team-keeps-switching-the-stream-ingest-fro.json",
-      "id": "185-blueface-s-production-team-keeps-switching-the-stream-ingest-fro",
-      "platform": "threads_video_fallback",
-      "status": "published",
-      "media_id": "18127258963775940"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

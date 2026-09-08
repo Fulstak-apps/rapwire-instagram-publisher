@@ -567,6 +567,13 @@ function contentPromiseIsKept(item) {
   return words.length >= 45 && completeSentences.length >= 2;
 }
 
+const threadsVideoFallbackCandidateAvailable = () => queueRecords.some(({item}) =>
+  item.status === 'published' && item.content_type === 'video' && item.threads_media_id
+  && !item.threads_replay_media_id && footageOnlyAllowed(item)
+  && reportingGate(item).allowed && contentPromiseIsKept(item)
+  && Number.isFinite(Date.parse(item.threads_published_at || ''))
+  && Date.parse(item.threads_published_at) <= Date.now() - threadsVideoFallbackMs);
+
 const rollingDayStart = Date.now() - 24 * 60 * 60 * 1000;
 let instagramPublicationsInRollingDay = 0;
 for (const file of files) {
@@ -647,6 +654,12 @@ const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].in
 
 async function deliverThreads(item, itemPath, file) {
   const isVideoItem = item.content_type === 'video';
+  // Video is the primary Threads lane. Hold a non-video item when a tracked
+  // continuity video is overdue so a carousel/text item cannot consume the
+  // only Threads step for this workflow run.
+  if (!isVideoItem && threadsSteps === 0
+    && Date.now() - lastThreadsTime >= threadsVideoFallbackMs
+    && threadsVideoFallbackCandidateAvailable()) return;
   if (Date.parse(threadsCooldown.until || '') > Date.now() || threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required || item.threads_copy_error
     || !footageOnlyAllowed(item)
     || Date.now() - lastThreadsTime < THREADS_INTERVAL_MS

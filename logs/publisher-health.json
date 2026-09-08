@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-08T07:23:54.609Z",
+  "checked_at": "2026-09-08T07:29:07.149Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T07:13:48.806Z",
-    "usage": 46,
+    "checked_at": "2026-09-08T07:28:58.033Z",
+    "usage": 47,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T07:28:48.806Z",
+    "next_check_at": "2026-09-08T07:43:58.033Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T07:23:41.505Z",
+    "next_feed_eligible_at": "2026-09-08T07:59:06.938Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-08T07:18:44.734Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "326-mo-3-mom-tells-his-killer-that-she-loves-him-and-that-the-ppl-th.json",
+      "id": "326-mo-3-mom-tells-his-killer-that-she-loves-him-and-that-the-ppl-th",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18418392178156818",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

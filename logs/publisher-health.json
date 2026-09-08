@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T06:58:35.755Z",
+  "checked_at": "2026-09-08T07:03:44.735Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T06:58:34.754Z",
@@ -26,7 +26,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -34,9 +34,17 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T07:08:47.071Z",
+  "threads_next_eligible_at": "2026-09-08T07:18:44.734Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "187-this-might-be-one-of-cole-s-smoothest-flows-ever-j-cole-s-closin.json",
+      "id": "187-this-might-be-one-of-cole-s-smoothest-flows-ever-j-cole-s-closin",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18007522085976252"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

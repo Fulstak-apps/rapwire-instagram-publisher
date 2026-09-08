@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-08T06:48:36.823Z",
+  "checked_at": "2026-09-08T06:53:47.430Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T06:43:28.390Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-08T06:58:28.390Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T06:48:18.824Z",
+    "next_feed_eligible_at": "2026-09-08T07:23:41.505Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -34,9 +34,25 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T06:43:25.726Z",
+  "threads_next_eligible_at": "2026-09-08T07:08:47.071Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "348-ye-and-kim-proudly-watched-their-daughter-north-west-take-the-st.json",
+      "id": "348-ye-and-kim-proudly-watched-their-daughter-north-west-take-the-st",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18213193513357410",
+      "content_type": "video"
+    },
+    {
+      "file": "429-az-chike-and-tyler-the-creator-feliciathegoat-s-look-like-my-mam.json",
+      "id": "429-az-chike-and-tyler-the-creator-feliciathegoat-s-look-like-my-mam",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18637471147018048"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

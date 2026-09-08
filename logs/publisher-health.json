@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T17:23:26.220Z",
+  "checked_at": "2026-09-08T17:24:25.252Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 34,
-    "instagram_remaining": 14,
+    "instagram_usage": 35,
+    "instagram_remaining": 13,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T17:53:25.909Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -43,16 +43,7 @@
     "threads_video_at": "2026-09-08T15:19:01.418Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "376-otf-jam-speaks-says-f-lil-durk-why-didn-t-you-warn-us-about-the-.json",
-      "id": "376-otf-jam-speaks-says-f-lil-durk-why-didn-t-you-warn-us-about-the-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18195935236386978",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

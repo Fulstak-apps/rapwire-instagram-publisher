@@ -26,7 +26,7 @@ const publishInstagramStories = process.env.PUBLISH_INSTAGRAM_STORIES === "true"
 // where the local collector is temporarily unable to capture a fresh clip.
 // It makes a real playable-video post from the approved back catalogue rather
 // than filling the video channel with a text-only prompt.
-const threadsVideoFallbackMs = Math.max(60, Number(process.env.THREADS_VIDEO_FALLBACK_MINUTES || 90)) * 60_000;
+const threadsVideoFallbackMs = Math.max(30, Number(process.env.THREADS_VIDEO_FALLBACK_MINUTES || 30)) * 60_000;
 const repository = process.env.GITHUB_REPOSITORY;
 const refName = process.env.GITHUB_REF_NAME || "main";
 

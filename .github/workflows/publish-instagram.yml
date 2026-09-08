@@ -120,7 +120,7 @@ jobs:
           # If the local collector is temporarily unable to capture a fresh
           # source video, keep Threads video-first with a controlled, tracked
           # back-catalogue replay rather than falling silent.
-          THREADS_VIDEO_FALLBACK_MINUTES: "90"
+          THREADS_VIDEO_FALLBACK_MINUTES: "30"
           RAPWIRE_REMOTE_MEDIA_VALIDATED: "true"
           # Instagram counts Stories and feed videos against the same rolling
           # publishing capacity. Feed-first matches the stable SportsWire

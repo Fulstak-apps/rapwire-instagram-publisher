@@ -5607,17 +5607,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-06T01:41:50.949Z",
-      "candidates": 58,
-      "queued": [
-        "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 11,
-      "finished_at": "2026-09-06T01:43:27.486Z"
-    },
-    {
       "started_at": "2026-09-06T01:48:39.142Z",
       "candidates": 61,
       "queued": [],
@@ -14907,6 +14896,34 @@
       "mode": "discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-08T07:04:23.246Z"
+    },
+    {
+      "started_at": "2026-09-08T07:09:27.095Z",
+      "candidates": 60,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9YSd_gCof-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-08T07:13:00.454Z"
     }
   ],
   "vip_pending": {
@@ -15037,10 +15054,10 @@
       "first_seen_at": "2026-09-06T17:44:31.499Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 34,
+      "attempts": 35,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-08T06:08:10.166Z",
-      "retry_at": "2026-09-08T07:08:10.166Z"
+      "last_attempt_at": "2026-09-08T07:13:00.454Z",
+      "retry_at": "2026-09-08T08:13:00.454Z"
     },
     "Dc9XO1DAR8r": {
       "source_handle": "akademiks",
@@ -15049,10 +15066,10 @@
       "first_seen_at": "2026-09-06T20:20:59.759Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 32,
+      "attempts": 33,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T06:07:00.012Z",
-      "retry_at": "2026-09-08T07:07:00.012Z"
+      "last_attempt_at": "2026-09-08T07:11:49.834Z",
+      "retry_at": "2026-09-08T08:11:49.834Z"
     },
     "Dc9YSd_gCof": {
       "source_handle": "akademiks",
@@ -15061,10 +15078,10 @@
       "first_seen_at": "2026-09-06T20:31:48.547Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 32,
+      "attempts": 33,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9YSd_gCof-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T06:07:56.143Z",
-      "retry_at": "2026-09-08T07:07:56.143Z"
+      "last_attempt_at": "2026-09-08T07:12:46.484Z",
+      "retry_at": "2026-09-08T08:12:46.484Z"
     },
     "Dc_KAyJG1jU": {
       "source_handle": "akademiks",
@@ -15093,16 +15110,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-08T06:59:21.409Z"
+      "checked_at": "2026-09-08T07:09:34.886Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-08T06:59:25.311Z"
+      "checked_at": "2026-09-08T07:09:38.850Z"
     },
     "records": {
-      "checked_at": "2026-09-08T06:59:29.220Z"
+      "checked_at": "2026-09-08T07:09:43.088Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-08T06:59:33.249Z"
+      "checked_at": "2026-09-08T07:09:47.070Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-08T06:53:35.613Z"
@@ -15123,10 +15140,10 @@
       "checked_at": "2026-09-08T06:34:19.868Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-08T06:05:02.337Z"
+      "checked_at": "2026-09-08T07:09:51.108Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-08T06:17:20.262Z"
+      "checked_at": "2026-09-08T07:09:55.129Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-08T06:34:23.770Z"

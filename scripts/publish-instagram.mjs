@@ -679,11 +679,13 @@ async function deliverThreads(item, itemPath, file) {
     || Date.parse(item.threads_retry_at || '') > Date.now()
     || ![undefined,'pending','failed','skipped_for_instagram_only_post'].includes(item.threads_status)) return;
   try {
-    threadsSteps += 1;
     const published = isVideoItem ? await publishThreadsVideo(item, itemPath) : await publishMediaFeed(item,itemPath,'threads');
     if (!published) {
+      // A container still processing is not a publication attempt. Leave the
+      // Threads step open so an overdue playable-video fallback can run.
       item.threads_status = 'pending';
     } else {
+      threadsSteps += 1;
       item.threads_status = 'published';
       item.threads_media_id = published.id;
       item.threads_published_at = new Date().toISOString();
@@ -701,6 +703,9 @@ async function deliverThreads(item, itemPath, file) {
       await verifyPublication(item, itemPath, 'threads');
     }
   } catch (error) {
+    // One rejected request is enough for this run; retry state decides what
+    // happens on the next cycle.
+    threadsSteps += 1;
     item.threads_error = error.message;
     const accountWide = /API access blocked|rate.limit|request limit|maximum number of posts|too many actions/i.test(error.message);
     const attempts = accountWide ? Number(item.threads_failure_count || 0) : Number(item.threads_failure_count || 0) + 1;

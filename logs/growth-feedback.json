@@ -3521,6 +3521,25 @@
         "shares": 0,
         "saved": 0
       }
+    },
+    "threads:18109806173023865": {
+      "platform": "threads",
+      "id": "18109806173023865",
+      "queue_id": "430-ye-s-all-of-the-lights-has-officially-surpassed-1-billion-stream",
+      "source": "records",
+      "topic": "music",
+      "series": "New Music Watch",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T14:33:32.732Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/DdB5rz6jNxs",
+      "checked_at": "2026-09-08T16:16:38.497Z",
+      "metrics": {
+        "views": 225,
+        "likes": 15,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
     }
   },
   "platforms": {
@@ -3530,9 +3549,10 @@
       "status": "collected"
     },
     "threads": {
-      "next_at": "2026-09-08T16:15:35.884Z",
-      "checked_at": "2026-09-08T10:15:35.884Z",
-      "status": "collected"
+      "next_at": "2026-09-08T22:16:38.497Z",
+      "checked_at": "2026-09-08T16:16:38.497Z",
+      "status": "unavailable",
+      "error": "Unsupported get request. Object with ID '18124691725641309' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     }
   },
   "followers": {
@@ -3646,8 +3666,8 @@
     ]
   },
   "summary": {
-    "generated_at": "2026-09-08T16:14:31.255Z",
-    "measured_posts": 186,
+    "generated_at": "2026-09-08T16:16:38.497Z",
+    "measured_posts": 187,
     "rates": [
       {
         "platform": "instagram",
@@ -3810,16 +3830,6 @@
         "sufficient_sample": true
       },
       {
-        "platform": "threads",
-        "kind": "topic",
-        "value": "music",
-        "posts": 27,
-        "exposures": 2724,
-        "interactions": 12,
-        "interactions_per_1000": 4.4,
-        "sufficient_sample": true
-      },
-      {
         "platform": "instagram",
         "kind": "topic",
         "value": "music",
@@ -3852,6 +3862,16 @@
       {
         "platform": "threads",
         "kind": "topic",
+        "value": "music",
+        "posts": 28,
+        "exposures": 2949,
+        "interactions": 12,
+        "interactions_per_1000": 4.1,
+        "sufficient_sample": true
+      },
+      {
+        "platform": "threads",
+        "kind": "topic",
         "value": "sensitive",
         "posts": 1,
         "exposures": 271,
@@ -3873,10 +3893,10 @@
         "platform": "threads",
         "kind": "source",
         "value": "records",
-        "posts": 25,
-        "exposures": 3193,
+        "posts": 26,
+        "exposures": 3418,
         "interactions": 8,
-        "interactions_per_1000": 2.5,
+        "interactions_per_1000": 2.3,
         "sufficient_sample": true
       },
       {
@@ -3943,8 +3963,8 @@
         "platform": "threads",
         "kind": "question",
         "value": "discussion-v2",
-        "posts": 92,
-        "exposures": 45288,
+        "posts": 93,
+        "exposures": 45513,
         "interactions": 59,
         "interactions_per_1000": 1.3,
         "sufficient_sample": true
@@ -3993,8 +4013,8 @@
         "platform": "threads",
         "kind": "series",
         "value": "New Music Watch",
-        "posts": 7,
-        "exposures": 236,
+        "posts": 8,
+        "exposures": 461,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
@@ -4118,7 +4138,7 @@
       "trapmatictv": 1.025,
       "complexmusic": 1.2,
       "akademiks": 1.25,
-      "hiphop_firstnewsmusic": 0.8958999999999999
+      "hiphop_firstnewsmusic": 0.9004
     },
     "followers": {
       "instagram": {

@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-08T18:31:15.787Z",
+  "checked_at": "2026-09-08T18:36:09.505Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T18:20:47.698Z",
-    "usage": 34,
+    "checked_at": "2026-09-08T18:36:00.389Z",
+    "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T18:35:47.698Z",
+    "next_check_at": "2026-09-08T18:51:00.389Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 34,
-    "instagram_remaining": 14,
+    "instagram_usage": 32,
+    "instagram_remaining": 16,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T18:30:56.711Z",
+    "next_feed_eligible_at": "2026-09-08T19:06:09.284Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,7 +38,7 @@
   "threads_next_eligible_at": "2026-09-08T18:46:14.305Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-08T18:00:56.711Z",
+    "instagram_feed_at": "2026-09-08T18:36:09.284Z",
     "threads_at": "2026-09-08T18:31:14.305Z",
     "threads_video_at": "2026-09-08T18:31:14.305Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
@@ -47,9 +47,10 @@
     {
       "file": "437-six-years-ago-today-travis-scott-travisscott-teamed-up-with-mcdo.json",
       "id": "437-six-years-ago-today-travis-scott-travisscott-teamed-up-with-mcdo",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18125688436768002"
+      "media_id": "17957894519997257",
+      "content_type": "video"
     }
   ],
   "failures": [],

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T03:50:20.664Z",
+  "checked_at": "2026-09-08T03:55:23.501Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T03:45:41.393Z",
@@ -17,15 +17,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T04:20:20.368Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -36,16 +36,7 @@
   },
   "threads_next_eligible_at": "2026-09-08T02:07:17.074Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "300-this-is-so-peak.json",
-      "id": "300-this-is-so-peak",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18482291332105619",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

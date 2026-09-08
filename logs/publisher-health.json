@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-08T05:37:52.316Z",
+  "checked_at": "2026-09-08T05:43:03.671Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T05:37:48.851Z",
-    "usage": 47,
+    "usage": 48,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-08T05:52:48.851Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T05:34:58.623Z",
+    "next_feed_eligible_at": "2026-09-08T06:12:58.782Z",
     "feed_allowed": true,
     "story_allowed": false
   },
@@ -34,9 +34,25 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T05:30:51.756Z",
+  "threads_next_eligible_at": "2026-09-08T05:58:03.406Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress.json",
+      "id": "303-ye-just-brought-out-rick-ross-for-devil-in-a-new-dress",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17982431193088287",
+      "content_type": "video"
+    },
+    {
+      "file": "427-king-von-sister-vs-queen-von-via.json",
+      "id": "427-king-von-sister-vs-queen-von-via",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18102903863621400"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

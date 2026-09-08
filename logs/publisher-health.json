@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-08T13:53:03.569Z",
+  "checked_at": "2026-09-08T13:56:31.805Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T13:48:04.542Z",
-    "usage": 35,
+    "usage": 36,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-08T14:03:04.542Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 13,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T13:52:43.179Z",
+    "next_feed_eligible_at": "2026-09-08T14:26:31.514Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-08T13:47:48.296Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-08T13:22:43.179Z",
+    "instagram_feed_at": "2026-09-08T13:56:31.514Z",
     "threads_at": "2026-09-08T13:32:48.296Z",
     "threads_video_at": "2026-09-08T13:32:48.296Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "318-travis-was-so-hyped-to-see-ye-and-kid-cudi-reunite-together.json",
+      "id": "318-travis-was-so-hyped-to-see-ye-and-kid-cudi-reunite-together",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18119275831904215",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

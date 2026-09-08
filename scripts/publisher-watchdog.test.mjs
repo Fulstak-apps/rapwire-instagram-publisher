@@ -27,3 +27,12 @@ test('watchdog leaves a healthy cadence alone', () => {
   const health={delivery_policy:{next_feed_eligible_at:new Date(NOW+10*60_000).toISOString()}};
   assert.equal(assessWatchdog({now:NOW,health,items:[item]}).dispatch, false);
 });
+
+test('watchdog restores the Threads video lane without waiting for Instagram', () => {
+  const old = new Date(NOW - 31 * 60_000).toISOString();
+  const outcome = assessWatchdog({now:NOW, items:[{
+    id:'published-video', status:'published', content_type:'video', threads_media_id:'t1', threads_published_at:old
+  }]});
+  assert.equal(outcome.dispatch, true);
+  assert.equal(outcome.reason, 'missed_threads_video_window');
+});

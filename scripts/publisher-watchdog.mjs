@@ -18,12 +18,24 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
   const ready = items.filter(item => retryable(item, now));
   const overdue = Number.isFinite(nextAt) && now > nextAt + 15 * 60_000;
   const blocked = quotaBlocked || (Number.isFinite(cooldown) && cooldown > now);
+  const lastThreadsVideo = Math.max(0, ...items.map(item => item.content_type === 'video'
+    ? Math.max(Date.parse(item.threads_published_at || '') || 0, Date.parse(item.threads_replay_published_at || '') || 0)
+    : 0));
+  const threadsCooldown = Date.parse(health.threads_cooldown_until || '');
+  const replayableVideo = items.some(item => item.status === 'published' && item.content_type === 'video'
+    && item.threads_media_id && !item.threads_replay_media_id && item.threads_status !== 'review_required');
+  const threadsVideoOverdue = replayableVideo && (!lastThreadsVideo || now - lastThreadsVideo >= 30 * 60_000);
+  const threadsBlocked = Number.isFinite(threadsCooldown) && threadsCooldown > now;
+  const instagramDispatch = overdue && !blocked && ready.length > 0;
+  const threadsDispatch = threadsVideoOverdue && !threadsBlocked;
   return {
     overdue,
     blocked,
+    threads_video_overdue: threadsVideoOverdue,
+    threads_blocked: threadsBlocked,
     ready: ready.map(item => item.id),
-    dispatch: overdue && !blocked && ready.length > 0,
-    reason: blocked ? 'platform_cooldown_or_quota' : overdue ? (ready.length ? 'missed_feed_window' : 'no_eligible_item') : 'within_pacing_window'
+    dispatch: instagramDispatch || threadsDispatch,
+    reason: threadsDispatch ? 'missed_threads_video_window' : blocked ? 'platform_cooldown_or_quota' : overdue ? (ready.length ? 'missed_feed_window' : 'no_eligible_item') : 'within_pacing_window'
   };
 }
 

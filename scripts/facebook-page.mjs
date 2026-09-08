@@ -75,6 +75,8 @@ export async function deliverFacebookPage({item,api,pageId,caption,media,save,no
     item.facebook_status='published';
     item.facebook_published_at=iso(now());
     delete item.facebook_error;
+    delete item.facebook_failure_count;
+    delete item.facebook_review_reason;
     delete item.facebook_retry_at;
     await save();
     const live=await api.get(`/${item.facebook_media_id}`,{fields:'id,permalink_url'});
@@ -87,8 +89,16 @@ export async function deliverFacebookPage({item,api,pageId,caption,media,save,no
     item.facebook_error=error.message;
     if(error.definitiveRejection) {
       delete item.facebook_publish_requested_at;
-      item.facebook_status='failed';
-      item.facebook_retry_at=iso(now()+errorDelay(error,now()));
+      const failures=Number(item.facebook_failure_count||0)+1;
+      item.facebook_failure_count=failures;
+      if(failures>=3) {
+        item.facebook_status='review_required';
+        item.facebook_review_reason='three_item_specific_delivery_failures';
+        delete item.facebook_retry_at;
+      } else {
+        item.facebook_status='failed';
+        item.facebook_retry_at=iso(now()+errorDelay(error,now()));
+      }
     } else {
       item.facebook_status='reconciliation_required';
       item.facebook_reconcile_required=true;

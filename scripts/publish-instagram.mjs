@@ -681,6 +681,8 @@ async function deliverThreads(item, itemPath, file) {
       item.threads_media_id = published.id;
       item.threads_published_at = new Date().toISOString();
       delete item.threads_error;
+      delete item.threads_failure_count;
+      delete item.threads_skip_reason;
       lastThreadsTime = Date.parse(item.threads_published_at);
       if (isVideoItem) lastThreadsVideoTime = lastThreadsTime;
       pacing.last_threads_published_at = item.threads_published_at;
@@ -692,12 +694,21 @@ async function deliverThreads(item, itemPath, file) {
       await verifyPublication(item, itemPath, 'threads');
     }
   } catch (error) {
-    item.threads_status = 'failed';
     item.threads_error = error.message;
-    item.threads_retry_at = new Date(Date.now() + 30 * 60000).toISOString();
+    const accountWide = /API access blocked|rate.limit|request limit|maximum number of posts|too many actions/i.test(error.message);
+    const attempts = accountWide ? Number(item.threads_failure_count || 0) : Number(item.threads_failure_count || 0) + 1;
+    if (!accountWide) item.threads_failure_count = attempts;
+    if (attempts >= 3) {
+      item.threads_status = 'review_required';
+      item.threads_skip_reason = 'three_item_specific_delivery_failures';
+      delete item.threads_retry_at;
+    } else {
+      item.threads_status = 'failed';
+      item.threads_retry_at = new Date(Date.now() + 30 * 60000).toISOString();
+    }
     // Account-wide errors affect every queued item. Do not rotate through the
     // queue and send the same rejected request for a different post each run.
-    if (/API access blocked|rate.limit|request limit|maximum number of posts|too many actions/i.test(error.message)) {
+    if (accountWide) {
       threadsCooldown={until:new Date(Date.now()+3600000).toISOString(),reason:error.message};
       await fs.writeFile(threadsCooldownPath,JSON.stringify(threadsCooldown,null,2)+'\n');
     }
@@ -951,6 +962,7 @@ if (noThreadsWorkInFlight && threadsVideoOverdue && !(Date.parse(threadsCooldown
 const report = {
   checked_at: new Date().toISOString(),
   instagram_cooldown_until: instagramAvailable() ? null : cooldown.until,
+  threads_cooldown_until: Date.parse(threadsCooldown.until || '') > Date.now() ? threadsCooldown.until : null,
   instagram_publishing_quota: quota,
   delivery_policy: { ...deliveryPolicy, next_feed_eligible_at: pacing.last_feed_published_at ? new Date(Date.parse(pacing.last_feed_published_at) + FEED_INTERVAL_MS).toISOString() : deliveryPolicy.next_feed_eligible_at },
   instagram_steps: instagramSteps, threads_steps: threadsSteps, facebook_steps: facebookSteps,
@@ -958,6 +970,12 @@ const report = {
   instagram_recovery: recovery,
   threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + THREADS_INTERVAL_MS).toISOString() : null,
   facebook_next_eligible_at: lastFacebookTime ? new Date(lastFacebookTime + FACEBOOK_INTERVAL_MS).toISOString() : null,
+  last_confirmed: {
+    instagram_feed_at: pacing.last_feed_published_at || null,
+    threads_at: lastThreadsTime ? new Date(lastThreadsTime).toISOString() : null,
+    threads_video_at: lastThreadsVideoTime ? new Date(lastThreadsVideoTime).toISOString() : null,
+    facebook_at: lastFacebookTime ? new Date(lastFacebookTime).toISOString() : null
+  },
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),
   reviews: runEvents.filter(event => event.status==='review_required'),

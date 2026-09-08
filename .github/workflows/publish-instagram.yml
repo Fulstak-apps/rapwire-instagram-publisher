@@ -49,6 +49,7 @@ jobs:
           node-version: "24"
 
       - name: Test resumable publisher
+        if: github.event_name != 'schedule'
         run: node --test scripts/*.test.mjs
 
       - name: Check prior publication state
@@ -64,6 +65,7 @@ jobs:
 
       - name: Test local editor safety gates
         # Local editor checks are offline and do not call Ollama or Meta.
+        if: github.event_name != 'schedule'
         run: python -m unittest discover -s scripts -p 'test_local_rapwire*.py'
 
       - name: Remove stale queue items

@@ -30,6 +30,18 @@ test('holds mixed media rather than publishing an incomplete Facebook copy',asyn
   assert.equal(result.status,'review_required');assert.equal(posted,false);
 });
 
+test('holds a definitively rejected Facebook item after three retries',async()=>{
+  const item={};
+  const failure=Object.assign(new Error('unsupported video'),{definitiveRejection:true});
+  const api={post:async()=>{throw failure}};
+  for(let attempt=0;attempt<3;attempt+=1) {
+    await assert.rejects(deliverFacebookPage({item,api,pageId:'42',caption:'x',media:[{type:'video',url:'v'}],save:async()=>{}}));
+  }
+  assert.equal(item.facebook_status,'review_required');
+  assert.equal(item.facebook_failure_count,3);
+  assert.equal(item.facebook_retry_at,undefined);
+});
+
 test('builds media from videos, slides, and repost media',()=>{
   const urls={mediaUrl:p=>`m:${p}`,slideUrl:(_,i)=>`s:${i}`,videoUrl:()=>`v`};
   assert.deepEqual(facebookMedia({content_type:'video'},urls),[{type:'video',url:'v'}]);

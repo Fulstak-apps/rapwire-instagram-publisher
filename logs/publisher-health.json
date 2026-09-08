@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-08T13:27:44.307Z",
+  "checked_at": "2026-09-08T13:32:48.297Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T13:17:31.754Z",
+    "checked_at": "2026-09-08T13:32:39.631Z",
     "usage": 36,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T13:32:31.754Z",
+    "next_check_at": "2026-09-08T13:47:39.631Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T13:12:30.579Z",
+  "threads_next_eligible_at": "2026-09-08T13:47:48.296Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-08T13:22:43.179Z",
-    "threads_at": "2026-09-08T12:57:30.579Z",
-    "threads_video_at": "2026-09-08T12:57:30.579Z",
+    "threads_at": "2026-09-08T13:32:48.296Z",
+    "threads_video_at": "2026-09-08T13:32:48.296Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "226-have-a-good-ass-day-darnell-williams-darnellwilliams.json",
+      "id": "226-have-a-good-ass-day-darnell-williams-darnellwilliams",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18111223499583113"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

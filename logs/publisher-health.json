@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T01:42:13.275Z",
+  "checked_at": "2026-09-08T01:47:08.194Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T01:37:03.083Z",
@@ -17,16 +17,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 48,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T02:12:13.080Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -36,16 +36,7 @@
   },
   "threads_next_eligible_at": "2026-09-08T01:31:50.814Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [
-    {
-      "file": "412-he-just-had-to-survive-five-minutes-in-the-ring-and-boat-came-ou.json",
-      "id": "412-he-just-had-to-survive-five-minutes-in-the-ring-and-boat-came-ou",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17966695644157194",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

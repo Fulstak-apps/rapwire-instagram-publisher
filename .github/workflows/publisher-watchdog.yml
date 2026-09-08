@@ -1,0 +1,53 @@
+name: RapWire publisher watchdog
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: rapwire-publisher-watchdog
+  cancel-in-progress: true
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          ref: main
+          filter: blob:none
+          sparse-checkout: |
+            scripts
+            logs
+            queue
+            package.json
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Evaluate publisher health
+        id: health
+        run: node scripts/publisher-watchdog.mjs
+
+      - name: Redispatch one safe publisher run
+        if: steps.health.outputs.dispatch == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publish-instagram.yml --ref main
+
+      - name: Upload watchdog report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: watchdog-${{ github.run_id }}
+          path: logs/publisher-watchdog.json
+          retention-days: 14

@@ -1,0 +1,36 @@
+name: RapWire daily health summary
+
+on:
+  schedule:
+    - cron: "15 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          ref: main
+          filter: blob:none
+          sparse-checkout: |
+            logs
+            queue
+          sparse-checkout-cone-mode: false
+      - name: Create health summary
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          health=json.loads(pathlib.Path('logs/publisher-health.json').read_text()) if pathlib.Path('logs/publisher-health.json').exists() else {}
+          watchdog=json.loads(pathlib.Path('logs/publisher-watchdog.json').read_text()) if pathlib.Path('logs/publisher-watchdog.json').exists() else {}
+          pubs=health.get('publications', [])
+          print('## RapWire daily health')
+          print(f"- Confirmed publications in latest snapshot: {len(pubs)}")
+          print(f"- Instagram quota blocked: {health.get('instagram_publishing_quota',{}).get('blocked', 'unknown')}")
+          print(f"- Watchdog status: {watchdog.get('reason', 'unknown')}")
+          print(f"- Ready items: {len(watchdog.get('ready', []))}")
+          PY

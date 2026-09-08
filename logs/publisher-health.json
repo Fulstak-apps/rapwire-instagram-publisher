@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-08T09:55:20.273Z",
+  "checked_at": "2026-09-08T10:00:31.614Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T09:45:19.952Z",
+    "checked_at": "2026-09-08T10:00:24.784Z",
     "usage": 43,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T10:00:19.952Z",
+    "next_check_at": "2026-09-08T10:15:24.784Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T09:40:08.700Z",
+  "threads_next_eligible_at": "2026-09-08T10:15:31.613Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-08T09:50:05.680Z",
-    "threads_at": "2026-09-08T09:25:08.700Z",
-    "threads_video_at": "2026-09-08T09:25:08.700Z",
+    "threads_at": "2026-09-08T10:00:31.613Z",
+    "threads_video_at": "2026-09-08T10:00:31.613Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav.json",
+      "id": "192-unc-and-phew-were-really-in-their-bag-on-this-big-stunna-by-quav",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18037172243832285"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

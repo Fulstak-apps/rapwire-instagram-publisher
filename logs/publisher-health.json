@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-08T15:39:25.031Z",
+  "checked_at": "2026-09-08T15:44:16.256Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T15:39:03.164Z",
-    "usage": 34,
+    "usage": 35,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-08T15:54:03.164Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 14,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T15:38:56.460Z",
+    "next_feed_eligible_at": "2026-09-08T16:14:11.252Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-08T15:34:01.418Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-08T15:08:56.460Z",
+    "instagram_feed_at": "2026-09-08T15:44:11.252Z",
     "threads_at": "2026-09-08T15:19:01.418Z",
     "threads_video_at": "2026-09-08T15:19:01.418Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "358-lil-baby-didn-t-forget-about-this-old-bendadonn-video-while-the-.json",
+      "id": "358-lil-baby-didn-t-forget-about-this-old-bendadonn-video-while-the-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17934611469124438",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

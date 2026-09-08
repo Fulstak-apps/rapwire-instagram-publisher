@@ -531,6 +531,7 @@ async function publishThreadsVideoFallback(item, itemPath, file) {
   item.threads_replay_published_at = new Date().toISOString();
   pacing.last_threads_published_at = item.threads_replay_published_at;
   lastThreadsTime = Date.parse(item.threads_replay_published_at);
+  lastThreadsVideoTime = lastThreadsTime;
   await save(itemPath, item);
   await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString() }) + '\n');
   await logAttempt({ file, id: item.id, platform: "threads_video_fallback", status: "published", media_id: published.id });
@@ -634,6 +635,8 @@ await Promise.all(uploadCandidates.map(async ({ name, item }) => {
 
 let lastThreadsTime = Math.max(Date.parse(pacing.last_threads_published_at || '') || 0,
   ...queueRecords.map(({item}) => item.threads_media_id ? Date.parse(item.threads_published_at || '') || 0 : 0));
+let lastThreadsVideoTime = Math.max(0, ...queueRecords.map(({item}) => item.content_type === 'video'
+  ? Math.max(Date.parse(item.threads_published_at || '') || 0, Date.parse(item.threads_replay_published_at || '') || 0) : 0));
 let lastFacebookTime = Math.max(Date.parse(pacing.last_facebook_published_at || '') || 0,
   ...queueRecords.map(({item}) => item.facebook_media_id ? Date.parse(item.facebook_published_at || '') || 0 : 0));
 let facebookImagesToday=queueRecords.filter(({item})=>item.facebook_media_id && !isFacebookVideoItem(item)
@@ -658,7 +661,7 @@ async function deliverThreads(item, itemPath, file) {
   // continuity video is overdue so a carousel/text item cannot consume the
   // only Threads step for this workflow run.
   if (!isVideoItem && threadsSteps === 0
-    && Date.now() - lastThreadsTime >= threadsVideoFallbackMs
+    && Date.now() - lastThreadsVideoTime >= threadsVideoFallbackMs
     && threadsVideoFallbackCandidateAvailable()) return;
   if (Date.parse(threadsCooldown.until || '') > Date.now() || threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required || item.threads_copy_error
     || !footageOnlyAllowed(item)
@@ -679,6 +682,7 @@ async function deliverThreads(item, itemPath, file) {
       item.threads_published_at = new Date().toISOString();
       delete item.threads_error;
       lastThreadsTime = Date.parse(item.threads_published_at);
+      if (isVideoItem) lastThreadsVideoTime = lastThreadsTime;
       pacing.last_threads_published_at = item.threads_published_at;
       // Preserve the Instagram-ready state; its delivery can happen later.
       await save(itemPath, item);
@@ -921,7 +925,7 @@ for (const file of files) {
 // been used by this continuity lane. This never touches Instagram and never
 // replaces a pending fresh Threads upload.
 const noThreadsWorkInFlight = !threadsInFlightId && threadsSteps === 0;
-const threadsVideoOverdue = !lastThreadsTime || Date.now() - lastThreadsTime >= threadsVideoFallbackMs;
+const threadsVideoOverdue = !lastThreadsVideoTime || Date.now() - lastThreadsVideoTime >= threadsVideoFallbackMs;
 if (noThreadsWorkInFlight && threadsVideoOverdue && !(Date.parse(threadsCooldown.until || '') > Date.now())) {
   const replay = queueRecords
     .filter(({item}) => item.status === 'published' && item.content_type === 'video'

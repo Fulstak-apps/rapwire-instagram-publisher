@@ -112,12 +112,27 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
           // Ignore incomplete or duplicate streaming groups.
         }
       }
-      if (matchedVideos.length !== 1) {
+      // Instagram will occasionally serve the exact same visible Reel through
+      // more than one CDN URL while it is buffering.  They are distinct
+      // network responses but not distinct pieces of content.  The old
+      // `length !== 1` rule treated that normal duplicate delivery as an
+      // ambiguity and starved the publisher of new videos.  At this point
+      // every member has already passed the visible post's *exact* duration
+      // and dimensions checks, so choosing the largest complete rendition is
+      // deterministic and still cannot switch to a different visible post.
+      if (matchedVideos.length < 1) {
         await fs.writeFile(path.join(outputDir, `${shortcode}-capture-diagnostic.json`), JSON.stringify({source:sourceEvidence,streams:diagnostics},null,2));
         throw new Error(`Captured media cannot be uniquely matched to the visible source video (${matchedVideos.length} matches); refusing unrelated media; inspect ${shortcode}-capture-diagnostic.json`);
       }
-      videoInput = matchedVideos[0].path;
-      audioInput = matchedVideos[0].hasAudio ? videoInput : matchedAudio.length === 1 ? matchedAudio[0] : "";
+      const fileSize = async candidate => (await fs.stat(candidate)).size;
+      const preferredVideo = (await Promise.all(matchedVideos.map(async candidate => ({ ...candidate, bytes:await fileSize(candidate.path) }))))
+        .sort((a,b) => b.bytes - a.bytes)[0];
+      videoInput = preferredVideo.path;
+      // If the video is video-only, select the largest complete audio stream
+      // with the same source duration.  This handles Instagram's duplicated
+      // CDN audio responses without silently accepting a partial stream.
+      audioInput = preferredVideo.hasAudio ? videoInput : (await Promise.all(matchedAudio.map(async candidate => ({ path:candidate, bytes:await fileSize(candidate) }))))
+        .sort((a,b) => b.bytes - a.bytes)[0]?.path || "";
       if (!audioInput) throw new Error("No unambiguous matching audio stream; refusing silent or unrelated audio");
       if (!videoInput) throw new Error("Captured Instagram fragments did not contain a complete video stream.");
       // Keep the exact unbranded audio/video locally so a later layout repair

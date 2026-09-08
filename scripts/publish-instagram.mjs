@@ -22,6 +22,11 @@ let threadsUserId = process.env.THREADS_USER_ID;
 const facebookPageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
 const facebookPageId = process.env.FACEBOOK_PAGE_ID;
 const publishInstagramStories = process.env.PUBLISH_INSTAGRAM_STORIES === "true";
+// The normal lane always wins. This is only a continuity guard for the case
+// where the local collector is temporarily unable to capture a fresh clip.
+// It makes a real playable-video post from the approved back catalogue rather
+// than filling the video channel with a text-only prompt.
+const threadsVideoFallbackMs = Math.max(60, Number(process.env.THREADS_VIDEO_FALLBACK_MINUTES || 90)) * 60_000;
 const repository = process.env.GITHUB_REPOSITORY;
 const refName = process.env.GITHUB_REF_NAME || "main";
 
@@ -507,6 +512,29 @@ async function publishThreadsVideo(item, itemPath) {
   });
 }
 
+async function publishThreadsVideoFallback(item, itemPath, file) {
+  if (threadsSteps >= 1 || Date.parse(threadsCooldown.until || '') > Date.now()) return false;
+  const published = await advanceContainer({ item, prefix: "threads_replay",
+    create: () => threadsPost("threads", {
+      media_type: "VIDEO", video_url: videoUrl(item), text: signedCaption(item.threads_text || item.caption, item),
+      topic_tag:item.threads_topic_tag||threadsTopicTag(item.body||item.threads_text||item.caption,{artistMentions:item.artist_mentions||[]})
+    }),
+    inspect: id => inspectContainer("threads", id),
+    publish: id => threadsPost("threads_publish", { creation_id: id }),
+    save: () => save(itemPath, item)
+  });
+  if (!published) return false;
+  threadsSteps += 1;
+  item.threads_replay_published_at = new Date().toISOString();
+  pacing.last_threads_published_at = item.threads_replay_published_at;
+  lastThreadsTime = Date.parse(item.threads_replay_published_at);
+  await save(itemPath, item);
+  await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString() }) + '\n');
+  await logAttempt({ file, id: item.id, platform: "threads_video_fallback", status: "published", media_id: published.id });
+  console.log(`Published Threads continuity video ${file}: ${published.id}`);
+  return true;
+}
+
 function contentPromiseIsKept(item) {
   if (!footageOnlyAllowed(item)) return false;
   if (!reportingGate(item).allowed) return false;
@@ -869,6 +897,35 @@ for (const file of files) {
 
   await deliverThreads(item, itemPath, file);
   await deliverFacebook(item,itemPath,file);
+}
+
+// Do not let a capture outage turn the video channel into an indefinite text
+// feed. If there is no new, eligible queue video and the last playable Threads
+// post is old, rotate one already-approved source video that has not previously
+// been used by this continuity lane. This never touches Instagram and never
+// replaces a pending fresh Threads upload.
+const noThreadsWorkInFlight = !threadsInFlightId && threadsSteps === 0;
+const threadsVideoOverdue = !lastThreadsTime || Date.now() - lastThreadsTime >= threadsVideoFallbackMs;
+if (noThreadsWorkInFlight && threadsVideoOverdue && Date.parse(threadsCooldown.until || '') <= Date.now()) {
+  const replay = queueRecords
+    .filter(({item}) => item.status === 'published' && item.content_type === 'video'
+      && item.threads_media_id && !item.threads_replay_media_id
+      && footageOnlyAllowed(item) && reportingGate(item).allowed && contentPromiseIsKept(item)
+      && Number.isFinite(Date.parse(item.threads_published_at || ''))
+      && Date.parse(item.threads_published_at) <= Date.now() - threadsVideoFallbackMs)
+    .sort((left,right) => (Number(right.item.source_view_count_at_selection) || 0) - (Number(left.item.source_view_count_at_selection) || 0)
+      || Date.parse(left.item.threads_published_at || '') - Date.parse(right.item.threads_published_at || ''))[0];
+  if (replay) {
+    try {
+      await publishThreadsVideoFallback(replay.item, path.join(queueDir, replay.name), replay.name);
+    } catch (error) {
+      replay.item.threads_replay_error = error.message;
+      replay.item.threads_replay_retry_at = new Date(Date.now() + 30 * 60_000).toISOString();
+      await save(path.join(queueDir, replay.name), replay.item);
+      await logAttempt({ file: replay.name, id: replay.item.id, platform: 'threads_video_fallback', status: 'failed', error: error.message });
+      console.error(`Threads continuity video failed for ${replay.name}: ${error.message}`);
+    }
+  }
 }
 
 const report = {

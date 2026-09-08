@@ -103,6 +103,10 @@ jobs:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           RAPWIRE_THREADS_EXPECTED_USERNAME: "rapwire247"
+          # If the local collector is temporarily unable to capture a fresh
+          # source video, keep Threads video-first with a controlled, tracked
+          # back-catalogue replay rather than falling silent.
+          THREADS_VIDEO_FALLBACK_MINUTES: "90"
           # Instagram counts Stories and feed videos against the same rolling
           # publishing capacity. Feed-first matches the stable SportsWire
           # setup; Stories are left out rather than starving the feed.

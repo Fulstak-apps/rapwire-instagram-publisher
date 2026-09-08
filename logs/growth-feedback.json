@@ -3654,6 +3654,82 @@
         "shares": 0,
         "saved": 0
       }
+    },
+    "threads:17907338907515043": {
+      "platform": "threads",
+      "id": "17907338907515043",
+      "queue_id": "444-the-sketch-played-on-drake-s-reputation-for-taking-things-person",
+      "source": "freshouttheculture",
+      "topic": "music",
+      "series": "RapWire Debate",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T22:48:31.001Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/DdCiFOQDY_U",
+      "checked_at": "2026-09-08T22:48:32.203Z",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
+    },
+    "threads:17934255480371541": {
+      "platform": "threads",
+      "id": "17934255480371541",
+      "queue_id": "439-throwback-to-ken-carson-explaining-to-a-cop-why-he-wears-an-upsi",
+      "source": "raplisted_",
+      "topic": "culture",
+      "series": "From the Vault",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T18:56:23.960Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/DdCXxGLgOPC",
+      "checked_at": "2026-09-08T22:48:32.203Z",
+      "metrics": {
+        "views": 157,
+        "likes": 3,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
+    },
+    "threads:18125688436768002": {
+      "platform": "threads",
+      "id": "18125688436768002",
+      "queue_id": "437-six-years-ago-today-travis-scott-travisscott-teamed-up-with-mcdo",
+      "source": "xxl",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T18:31:14.305Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/DdCU4MJj3hm",
+      "checked_at": "2026-09-08T22:48:32.203Z",
+      "metrics": {
+        "views": 75,
+        "likes": 2,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
+    },
+    "threads:18377973352233056": {
+      "platform": "threads",
+      "id": "18377973352233056",
+      "queue_id": "431-drake-champagnepapi-has-fans-guessing-after-teasing-fomo-for-sep",
+      "source": "records",
+      "topic": "music",
+      "series": "New Music Watch",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T18:05:53.568Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/DdCCW4zGyCo",
+      "checked_at": "2026-09-08T22:48:32.203Z",
+      "metrics": {
+        "views": 88,
+        "likes": 5,
+        "replies": 0,
+        "reposts": 0,
+        "quotes": 0
+      }
     }
   },
   "platforms": {
@@ -3663,8 +3739,8 @@
       "status": "collected"
     },
     "threads": {
-      "next_at": "2026-09-08T22:16:38.497Z",
-      "checked_at": "2026-09-08T16:16:38.497Z",
+      "next_at": "2026-09-09T04:48:32.203Z",
+      "checked_at": "2026-09-08T22:48:32.203Z",
       "status": "unavailable",
       "error": "Unsupported get request. Object with ID '18124691725641309' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     }
@@ -3784,8 +3860,8 @@
     ]
   },
   "summary": {
-    "generated_at": "2026-09-08T20:21:35.804Z",
-    "measured_posts": 193,
+    "generated_at": "2026-09-08T22:48:32.203Z",
+    "measured_posts": 197,
     "rates": [
       {
         "platform": "instagram",
@@ -3928,16 +4004,6 @@
         "sufficient_sample": false
       },
       {
-        "platform": "threads",
-        "kind": "series",
-        "value": "From the Vault",
-        "posts": 5,
-        "exposures": 156,
-        "interactions": 1,
-        "interactions_per_1000": 6.4,
-        "sufficient_sample": false
-      },
-      {
         "platform": "instagram",
         "kind": "source",
         "value": "records",
@@ -3981,10 +4047,10 @@
         "platform": "threads",
         "kind": "topic",
         "value": "music",
-        "posts": 28,
-        "exposures": 2949,
+        "posts": 29,
+        "exposures": 3037,
         "interactions": 12,
-        "interactions_per_1000": 4.1,
+        "interactions_per_1000": 4,
         "sufficient_sample": true
       },
       {
@@ -3995,6 +4061,16 @@
         "exposures": 271,
         "interactions": 1,
         "interactions_per_1000": 3.7,
+        "sufficient_sample": false
+      },
+      {
+        "platform": "threads",
+        "kind": "series",
+        "value": "From the Vault",
+        "posts": 6,
+        "exposures": 313,
+        "interactions": 1,
+        "interactions_per_1000": 3.2,
         "sufficient_sample": false
       },
       {
@@ -4011,8 +4087,8 @@
         "platform": "threads",
         "kind": "source",
         "value": "records",
-        "posts": 26,
-        "exposures": 3418,
+        "posts": 27,
+        "exposures": 3506,
         "interactions": 8,
         "interactions_per_1000": 2.3,
         "sufficient_sample": true
@@ -4081,8 +4157,8 @@
         "platform": "threads",
         "kind": "question",
         "value": "discussion-v2",
-        "posts": 93,
-        "exposures": 45513,
+        "posts": 96,
+        "exposures": 45833,
         "interactions": 59,
         "interactions_per_1000": 1.3,
         "sufficient_sample": true
@@ -4101,8 +4177,8 @@
         "platform": "threads",
         "kind": "topic",
         "value": "culture",
-        "posts": 53,
-        "exposures": 40920,
+        "posts": 55,
+        "exposures": 41152,
         "interactions": 44,
         "interactions_per_1000": 1.1,
         "sufficient_sample": true
@@ -4111,8 +4187,8 @@
         "platform": "threads",
         "kind": "series",
         "value": "What Happened?",
-        "posts": 51,
-        "exposures": 41018,
+        "posts": 52,
+        "exposures": 41093,
         "interactions": 45,
         "interactions_per_1000": 1.1,
         "sufficient_sample": true
@@ -4121,8 +4197,8 @@
         "platform": "threads",
         "kind": "source",
         "value": "raplisted_",
-        "posts": 8,
-        "exposures": 34041,
+        "posts": 9,
+        "exposures": 34198,
         "interactions": 35,
         "interactions_per_1000": 1,
         "sufficient_sample": true
@@ -4131,11 +4207,11 @@
         "platform": "threads",
         "kind": "series",
         "value": "New Music Watch",
-        "posts": 8,
-        "exposures": 461,
+        "posts": 9,
+        "exposures": 549,
         "interactions": 0,
         "interactions_per_1000": 0,
-        "sufficient_sample": false
+        "sufficient_sample": true
       },
       {
         "platform": "instagram",
@@ -4231,8 +4307,8 @@
         "platform": "threads",
         "kind": "source",
         "value": "xxl",
-        "posts": 2,
-        "exposures": 289,
+        "posts": 3,
+        "exposures": 364,
         "interactions": 0,
         "interactions_per_1000": 0,
         "sufficient_sample": false
@@ -4256,7 +4332,7 @@
       "trapmatictv": 1.025,
       "complexmusic": 0.8,
       "akademiks": 1.25,
-      "hiphop_firstnewsmusic": 0.9004
+      "hiphop_firstnewsmusic": 0.9053
     },
     "followers": {
       "instagram": {

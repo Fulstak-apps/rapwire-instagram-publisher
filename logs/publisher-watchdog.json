@@ -1,7 +1,7 @@
 {
-  "overdue": true,
+  "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -97,8 +97,8 @@
     "453-brian-steele-said-otf-jam-is-a-serial-killer-how-dare-the-fbi-pu",
     "454-prosecutors-cooked-lil-durk-lildurk-with-mountains-of-evidence-i"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-08T22:43:34.453Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-08T22:48:31.523Z",
   "deferred": []
 }

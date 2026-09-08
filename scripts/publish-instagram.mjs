@@ -222,8 +222,11 @@ const pacing = JSON.parse(await fs.readFile(pacingPath, "utf8").catch(error => {
   if (error.code === "ENOENT") return "{}";
   throw error;
 }));
-if (Date.now() - Date.parse(pacing.last_run_at || "") < 120_000) {
-  console.log("Two-minute processing-check interval has not elapsed (feed cadence is 60 minutes).");
+// GitHub Actions already serializes this workflow. A 30-second guard only
+// blocks a genuine duplicate start; the old two-minute guard regularly made a
+// newly queued run do no delivery work after a preceding state-only run.
+if (Date.now() - Date.parse(pacing.last_run_at || "") < 30_000) {
+  console.log("Duplicate processing-check start within 30 seconds; delivery state is retained.");
   process.exit(0);
 }
 await fs.mkdir(logsDir, { recursive: true });

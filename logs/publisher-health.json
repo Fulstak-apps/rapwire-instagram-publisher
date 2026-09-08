@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-08T09:09:53.638Z",
+  "checked_at": "2026-09-08T09:15:07.123Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T08:59:46.965Z",
+    "checked_at": "2026-09-08T09:15:00.937Z",
     "usage": 45,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T09:14:46.965Z",
+    "next_check_at": "2026-09-08T09:30:00.937Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -17,11 +17,11 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 45,
-    "instagram_remaining": 3,
+    "instagram_usage": 44,
+    "instagram_remaining": 4,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T09:09:46.552Z",
+    "next_feed_eligible_at": "2026-09-08T09:45:06.917Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-08T09:04:46.091Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea.json",
+      "id": "328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18007044365979521",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

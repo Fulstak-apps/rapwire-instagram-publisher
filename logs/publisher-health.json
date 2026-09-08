@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-08T06:13:15.643Z",
+  "checked_at": "2026-09-08T06:18:24.369Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T06:08:05.732Z",
-    "usage": 46,
+    "usage": 47,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-08T06:23:05.732Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T06:12:58.782Z",
+    "next_feed_eligible_at": "2026-09-08T06:48:18.824Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -34,9 +34,25 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T06:08:02.532Z",
+  "threads_next_eligible_at": "2026-09-08T06:33:24.159Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "305-free-durk-ye-shows-support-to-lil-durk-lildurk.json",
+      "id": "305-free-durk-ye-shows-support-to-lil-durk-lildurk",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18382259809231431",
+      "content_type": "video"
+    },
+    {
+      "file": "428-mark-curry-explaining-his-issue-wit-50-cent-doc-that-promised-hi.json",
+      "id": "428-mark-curry-explaining-his-issue-wit-50-cent-doc-that-promised-hi",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17907278553537197"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

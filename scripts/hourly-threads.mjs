@@ -67,6 +67,11 @@ export function selectPrompt(state,now=Date.now()) {
 
 export async function publishHourlyThread({api,userId,state,save,now=Date.now(),expectedUsername='rapwire247'}) {
   state.posts ||= [];
+  // A stale numeric-ID mismatch was fixed by resolving the token's verified
+  // username. Do not keep an hour-long cooldown created by that retired check.
+  if (Date.parse(state.retry_at||'')>now && /account ID does not match the configured @rapwire247 account/i.test(state.last_error||'')) {
+    delete state.retry_at; state.status='pending'; await save();
+  }
   if(Date.parse(state.retry_at||'')>now) return 'cooldown';
   let resolvedUserId=userId;
   if(!state.verified_at || now-Date.parse(state.verified_at)>24*HOUR) {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T14:33:33.241Z",
+  "checked_at": "2026-09-08T14:38:28.209Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 35,
-    "instagram_remaining": 13,
+    "instagram_usage": 36,
+    "instagram_remaining": 12,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T15:03:26.260Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,23 +43,7 @@
     "threads_video_at": "2026-09-08T14:08:10.570Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "352-le-bebe-complaining-like-a-lil-schoolgirl-to-bendadonn-over-a-yo.json",
-      "id": "352-le-bebe-complaining-like-a-lil-schoolgirl-to-bendadonn-over-a-yo",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17906442957509313",
-      "content_type": "video"
-    },
-    {
-      "file": "430-ye-s-all-of-the-lights-has-officially-surpassed-1-billion-stream.json",
-      "id": "430-ye-s-all-of-the-lights-has-officially-surpassed-1-billion-stream",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18109806173023865"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

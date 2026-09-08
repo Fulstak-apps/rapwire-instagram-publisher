@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -88,8 +88,8 @@
     "429-az-chike-and-tyler-the-creator-feliciathegoat-s-look-like-my-mam",
     "430-ye-s-all-of-the-lights-has-officially-surpassed-1-billion-stream"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-08T14:33:33.347Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-08T14:38:28.318Z",
   "deferred": []
 }

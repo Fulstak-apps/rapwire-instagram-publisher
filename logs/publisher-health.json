@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-08T09:45:20.887Z",
+  "checked_at": "2026-09-08T09:50:05.899Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T09:45:19.952Z",
-    "usage": 42,
+    "usage": 43,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-08T10:00:19.952Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 6,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T09:45:06.917Z",
+    "next_feed_eligible_at": "2026-09-08T10:20:05.680Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-08T09:40:08.700Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-08T09:15:06.917Z",
+    "instagram_feed_at": "2026-09-08T09:50:05.680Z",
     "threads_at": "2026-09-08T09:25:08.700Z",
     "threads_video_at": "2026-09-08T09:25:08.700Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "314-ye-put-on-a-crazy-light-show-for-all-of-the-lights-and-flashing-.json",
+      "id": "314-ye-put-on-a-crazy-light-show-for-all-of-the-lights-and-flashing-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18057270017543481",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

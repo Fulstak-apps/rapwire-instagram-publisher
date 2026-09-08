@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-08T04:59:16.521Z",
+  "checked_at": "2026-09-08T05:04:59.002Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T04:49:32.215Z",
+    "checked_at": "2026-09-08T05:04:44.790Z",
     "usage": 47,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T05:04:32.215Z",
+    "next_check_at": "2026-09-08T05:19:44.790Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -17,13 +17,13 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 47,
-    "instagram_remaining": 1,
+    "instagram_usage": 46,
+    "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-08T04:54:34.545Z",
+    "next_feed_eligible_at": "2026-09-08T05:34:58.623Z",
     "feed_allowed": true,
-    "story_allowed": false
+    "story_allowed": true
   },
   "instagram_steps": 1,
   "threads_steps": 0,
@@ -36,7 +36,16 @@
   },
   "threads_next_eligible_at": "2026-09-08T02:07:17.074Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "400-kur-speaking-for-a-lot-of-us-in-this-2023-susquehanna-road-song.json",
+      "id": "400-kur-speaking-for-a-lot-of-us-in-this-2023-susquehanna-road-song",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18622086490016835",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

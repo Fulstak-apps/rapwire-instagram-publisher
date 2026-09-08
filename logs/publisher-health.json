@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T11:01:17.616Z",
+  "checked_at": "2026-09-08T11:06:08.096Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 42,
-    "instagram_remaining": 6,
+    "instagram_usage": 43,
+    "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T11:31:17.366Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -43,21 +43,19 @@
     "threads_video_at": "2026-09-08T10:35:56.001Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "408-riotusa-says-today-s-short-attention-spans-are-changing-the-way-.json",
-      "id": "408-riotusa-says-today-s-short-attention-spans-are-changing-the-way-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18131451292677525",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
+      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -84,6 +82,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
+      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
       "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
       "platform": "video_layout",
@@ -98,6 +103,13 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
+      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
       "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
       "platform": "video_layout",
@@ -107,27 +119,6 @@
     {
       "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
       "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
-      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
-      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
-      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

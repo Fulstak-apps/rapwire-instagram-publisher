@@ -5953,52 +5953,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-06T15:18:21.774Z",
-      "candidates": 56,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc8zAr3DpZg/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc8zAr3DpZg-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/Dc71BgMvy-4/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc71BgMvy-4-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-2-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 14,
-      "finished_at": "2026-09-06T15:34:55.994Z"
-    },
-    {
       "started_at": "2026-09-06T15:40:05.530Z",
       "candidates": 38,
       "queued": [
@@ -14573,6 +14527,40 @@
       "mode": "discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-08T19:10:34.841Z"
+    },
+    {
+      "started_at": "2026-09-08T19:15:41.837Z",
+      "candidates": 54,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
+          "stage": "queue",
+          "error": "Crop review required: Side crop would remove too much source content"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-08T19:20:21.972Z"
     }
   ],
   "vip_pending": {
@@ -14595,10 +14583,10 @@
       "first_seen_at": "2026-09-03T06:22:41.175Z",
       "profile_position": 11,
       "state": "retry_pending",
-      "attempts": 82,
+      "attempts": 83,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-08T18:12:46.590Z",
-      "retry_at": "2026-09-08T19:12:46.590Z"
+      "last_attempt_at": "2026-09-08T19:20:21.972Z",
+      "retry_at": "2026-09-08T20:20:21.972Z"
     },
     "Dc1oLsTgfLu": {
       "source_handle": "akademiks",
@@ -14643,10 +14631,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 74,
+      "attempts": 75,
       "last_error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-08T18:12:00.632Z",
-      "retry_at": "2026-09-08T19:12:00.632Z"
+      "last_attempt_at": "2026-09-08T19:19:36.663Z",
+      "retry_at": "2026-09-08T20:19:36.663Z"
     },
     "Dc32-qLsTq5": {
       "source_handle": "akademiks",
@@ -14739,10 +14727,10 @@
       "first_seen_at": "2026-09-07T13:02:39.813Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 28,
+      "attempts": 29,
       "last_error": "Crop review required: Side crop would remove too much source content",
-      "last_attempt_at": "2026-09-08T18:11:42.351Z",
-      "retry_at": "2026-09-08T19:11:42.351Z"
+      "last_attempt_at": "2026-09-08T19:19:17.520Z",
+      "retry_at": "2026-09-08T20:19:17.520Z"
     },
     "Dc_spGMAPFc": {
       "source_handle": "akademiks",
@@ -14751,24 +14739,24 @@
       "first_seen_at": "2026-09-07T18:06:33.637Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 25,
+      "attempts": 26,
       "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-08T18:10:26.197Z",
-      "retry_at": "2026-09-08T19:10:26.197Z"
+      "last_attempt_at": "2026-09-08T19:17:56.404Z",
+      "retry_at": "2026-09-08T20:17:56.404Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-08T19:09:10.843Z"
+      "checked_at": "2026-09-08T19:15:50.142Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-08T19:09:14.928Z"
+      "checked_at": "2026-09-08T19:15:54.326Z"
     },
     "records": {
-      "checked_at": "2026-09-08T19:09:19.064Z"
+      "checked_at": "2026-09-08T19:15:58.498Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-08T19:09:23.118Z"
+      "checked_at": "2026-09-08T19:16:02.669Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-08T18:58:35.480Z"
@@ -14780,7 +14768,7 @@
       "checked_at": "2026-09-08T19:09:31.222Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-08T18:19:41.831Z"
+      "checked_at": "2026-09-08T19:16:06.885Z"
     },
     "xxl": {
       "checked_at": "2026-09-08T18:42:28.784Z"
@@ -14789,7 +14777,7 @@
       "checked_at": "2026-09-08T18:42:32.687Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-08T18:35:29.715Z"
+      "checked_at": "2026-09-08T19:16:11.113Z"
     },
     "igndotcom": {
       "checked_at": "2026-09-08T18:35:33.599Z"

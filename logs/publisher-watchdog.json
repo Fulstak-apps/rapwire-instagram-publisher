@@ -1,7 +1,7 @@
 {
   "overdue": true,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -94,7 +94,7 @@
     "444-the-sketch-played-on-drake-s-reputation-for-taking-things-person"
   ],
   "dispatch": true,
-  "reason": "missed_feed_window",
-  "checked_at": "2026-09-08T19:26:16.242Z",
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-08T19:26:56.497Z",
   "deferred": []
 }

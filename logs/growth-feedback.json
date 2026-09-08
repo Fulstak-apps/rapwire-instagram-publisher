@@ -3065,12 +3065,31 @@
         "reposts": 0,
         "quotes": 0
       }
+    },
+    "instagram:18441638320192138": {
+      "platform": "instagram",
+      "id": "18441638320192138",
+      "queue_id": "299-ye-is-bringing-out-everybody-at-night-2-in-chicago",
+      "source": "records",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-07T20:28:31.851Z",
+      "permalink": "https://www.instagram.com/reel/Dc_9h1YFXnj/",
+      "checked_at": "2026-09-08T01:37:04.069Z",
+      "metrics": {
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
     }
   },
   "platforms": {
     "instagram": {
-      "next_at": "2026-09-08T01:33:27.370Z",
-      "checked_at": "2026-09-07T19:33:27.370Z",
+      "next_at": "2026-09-08T07:37:04.069Z",
+      "checked_at": "2026-09-08T01:37:04.069Z",
       "status": "unavailable",
       "error": "Unsupported get request. Object with ID '18125713226510017' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     },
@@ -3180,8 +3199,8 @@
     ]
   },
   "summary": {
-    "generated_at": "2026-09-08T01:32:00.366Z",
-    "measured_posts": 162,
+    "generated_at": "2026-09-08T01:37:04.069Z",
+    "measured_posts": 163,
     "rates": [
       {
         "platform": "instagram",
@@ -3207,8 +3226,8 @@
         "platform": "instagram",
         "kind": "topic",
         "value": "culture",
-        "posts": 24,
-        "exposures": 1999,
+        "posts": 25,
+        "exposures": 2000,
         "interactions": 25,
         "interactions_per_1000": 12.5,
         "sufficient_sample": true
@@ -3267,8 +3286,8 @@
         "platform": "instagram",
         "kind": "question",
         "value": "discussion-v2",
-        "posts": 55,
-        "exposures": 5320,
+        "posts": 56,
+        "exposures": 5321,
         "interactions": 45,
         "interactions_per_1000": 8.5,
         "sufficient_sample": true
@@ -3287,8 +3306,8 @@
         "platform": "instagram",
         "kind": "series",
         "value": "What Happened?",
-        "posts": 19,
-        "exposures": 925,
+        "posts": 20,
+        "exposures": 926,
         "interactions": 7,
         "interactions_per_1000": 7.6,
         "sufficient_sample": true
@@ -3397,8 +3416,8 @@
         "platform": "instagram",
         "kind": "source",
         "value": "records",
-        "posts": 10,
-        "exposures": 1011,
+        "posts": 11,
+        "exposures": 1012,
         "interactions": 3,
         "interactions_per_1000": 3,
         "sufficient_sample": true
@@ -3646,11 +3665,11 @@
     ],
     "source_weights": {
       "records": 0.9242666666666667,
-      "traploreross": 1.040957345491388,
+      "traploreross": 1.0410605369807497,
       "raplisted_": 1.25,
       "freshouttheculture": 0.8,
       "trapmatictv": 0.8,
-      "complexmusic": 1.1425531914893619,
+      "complexmusic": 1.1427659574468085,
       "akademiks": 0.8,
       "hiphop_firstnewsmusic": 0.8
     },

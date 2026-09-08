@@ -5607,40 +5607,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-06T04:04:16.746Z",
-      "candidates": 56,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc3-LqbG5jK/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc3-LqbG5jK-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
-          "stage": "queue",
-          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 12,
-      "finished_at": "2026-09-06T04:08:21.436Z"
-    },
-    {
       "started_at": "2026-09-06T04:13:24.797Z",
       "candidates": 62,
       "queued": [],
@@ -14794,6 +14760,40 @@
       "mode": "discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-08T09:16:33.610Z"
+    },
+    {
+      "started_at": "2026-09-08T09:21:37.510Z",
+      "candidates": 56,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
+          "stage": "queue",
+          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-08T09:26:20.457Z"
     }
   ],
   "vip_pending": {
@@ -14924,10 +14924,10 @@
       "first_seen_at": "2026-09-06T17:44:31.499Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 36,
+      "attempts": 37,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-08T08:17:15.122Z",
-      "retry_at": "2026-09-08T09:17:15.122Z"
+      "last_attempt_at": "2026-09-08T09:23:46.064Z",
+      "retry_at": "2026-09-08T10:23:46.064Z"
     },
     "Dc9XO1DAR8r": {
       "source_handle": "akademiks",
@@ -14936,10 +14936,10 @@
       "first_seen_at": "2026-09-06T20:20:59.759Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 34,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T08:16:05.607Z",
-      "retry_at": "2026-09-08T09:16:05.607Z"
+      "attempts": 35,
+      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
+      "last_attempt_at": "2026-09-08T09:23:15.254Z",
+      "retry_at": "2026-09-08T10:23:15.254Z"
     },
     "Dc9YSd_gCof": {
       "source_handle": "akademiks",
@@ -14948,10 +14948,10 @@
       "first_seen_at": "2026-09-06T20:31:48.547Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 34,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9YSd_gCof-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T08:17:01.316Z",
-      "retry_at": "2026-09-08T09:17:01.316Z"
+      "attempts": 35,
+      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
+      "last_attempt_at": "2026-09-08T09:23:31.694Z",
+      "retry_at": "2026-09-08T10:23:31.694Z"
     },
     "Dc_KAyJG1jU": {
       "source_handle": "akademiks",
@@ -14980,19 +14980,19 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-08T09:12:37.899Z"
+      "checked_at": "2026-09-08T09:21:47.777Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-08T09:12:41.894Z"
+      "checked_at": "2026-09-08T09:21:51.783Z"
     },
     "records": {
-      "checked_at": "2026-09-08T09:12:45.926Z"
+      "checked_at": "2026-09-08T09:21:55.793Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-08T09:12:49.888Z"
+      "checked_at": "2026-09-08T09:21:59.826Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-08T08:36:27.506Z"
+      "checked_at": "2026-09-08T09:22:07.802Z"
     },
     "raplisted_": {
       "checked_at": "2026-09-08T08:36:31.448Z"
@@ -15016,7 +15016,7 @@
       "checked_at": "2026-09-08T09:05:30.454Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-08T08:24:19.891Z"
+      "checked_at": "2026-09-08T09:22:03.815Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T05:13:54.933Z",
+  "checked_at": "2026-09-08T05:15:51.757Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-08T05:04:44.790Z",
@@ -26,7 +26,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -34,9 +34,17 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T02:07:17.074Z",
+  "threads_next_eligible_at": "2026-09-08T05:30:51.756Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-.json",
+      "id": "172-san-bernardino-artist-kingmostwanted-has-reportedly-passed-away-",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "17890416150612206"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

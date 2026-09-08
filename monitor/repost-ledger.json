@@ -5953,17 +5953,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-06T15:55:54.063Z",
-      "candidates": 62,
-      "queued": [
-        "354-ice-spice-shows-off-her-new-tattoo"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 14,
-      "finished_at": "2026-09-06T16:05:49.516Z"
-    },
-    {
       "started_at": "2026-09-06T16:11:14.633Z",
       "candidates": 50,
       "queued": [
@@ -14560,6 +14549,34 @@
       "mode": "discovery",
       "vip_pending": 15,
       "finished_at": "2026-09-08T19:30:50.060Z"
+    },
+    {
+      "started_at": "2026-09-08T19:35:53.294Z",
+      "candidates": 49,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 15,
+      "finished_at": "2026-09-08T19:42:15.295Z"
     }
   ],
   "vip_pending": {
@@ -14594,10 +14611,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 140,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T18:28:38.752Z",
-      "retry_at": "2026-09-08T19:28:38.752Z"
+      "attempts": 141,
+      "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
+      "last_attempt_at": "2026-09-08T19:38:58.813Z",
+      "retry_at": "2026-09-08T20:38:58.813Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -14666,10 +14683,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 142,
+      "attempts": 143,
       "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-08T18:29:19.543Z",
-      "retry_at": "2026-09-08T19:29:19.543Z"
+      "last_attempt_at": "2026-09-08T19:39:40.665Z",
+      "retry_at": "2026-09-08T20:39:40.665Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -14746,16 +14763,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-08T19:25:33.563Z"
+      "checked_at": "2026-09-08T19:36:00.739Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-08T19:25:37.646Z"
+      "checked_at": "2026-09-08T19:36:04.675Z"
     },
     "records": {
-      "checked_at": "2026-09-08T19:25:41.748Z"
+      "checked_at": "2026-09-08T19:36:08.789Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-08T19:25:45.863Z"
+      "checked_at": "2026-09-08T19:36:12.879Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-08T18:58:35.480Z"
@@ -14773,7 +14790,7 @@
       "checked_at": "2026-09-08T19:25:53.968Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-08T18:42:32.687Z"
+      "checked_at": "2026-09-08T19:36:16.811Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-08T19:16:11.113Z"
@@ -14782,7 +14799,7 @@
       "checked_at": "2026-09-08T19:25:50.045Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-08T18:58:31.247Z"
+      "checked_at": "2026-09-08T19:36:20.947Z"
     }
   }
 }

@@ -1,19 +1,20 @@
 {
-  "posts": [],
-  "status": "pending",
+  "posts": [
+    {
+      "id": "18114323101913276",
+      "prompt": "Be real: what “classic” rap album gets overrated the most—and why?",
+      "text": "Be real: what “classic” rap album gets overrated the most—and why?\n\n@rapwire247",
+      "published_at": "2026-09-08T04:24:34.930Z",
+      "permalink": "https://www.threads.com/@rapwire247/post/DdA0SAykbuE"
+    }
+  ],
+  "status": "verified",
   "recovered_at": "2026-09-04T03:45:00.000Z",
   "recovery_reason": "Removed obsolete username-only block; configured Threads user ID remains verified by the publisher.",
-  "last_error": "Threads account ID does not match the configured @rapwire247 account",
   "last_error_at": "2026-09-08T03:40:23.700Z",
   "resolved_user_id": "38774916518762101",
   "verified_at": "2026-09-08T04:21:57.597Z",
-  "pending": {
-    "prompt": "Be real: what “classic” rap album gets overrated the most—and why?",
-    "text": "Be real: what “classic” rap album gets overrated the most—and why?\n\n@rapwire247",
-    "topic_tag": "Rap Threads",
-    "prompt_index": 0,
-    "threads_container_id": "18096880079179906",
-    "threads_container_created_at": "2026-09-08T04:21:57.597Z",
-    "threads_container_checked_at": "2026-09-08T04:21:57.597Z"
-  }
+  "last_published_at": "2026-09-08T04:24:34.930Z",
+  "next_prompt_index": 1,
+  "checked_at": "2026-09-08T04:24:34.930Z"
 }

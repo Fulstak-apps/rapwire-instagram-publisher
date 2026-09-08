@@ -5589,40 +5589,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-05T21:51:07.564Z",
-      "candidates": 52,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
-          "stage": "queue",
-          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
-          "stage": "queue",
-          "error": "Crop review required: No distinct footage region between static panels"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 11,
-      "finished_at": "2026-09-05T21:57:17.501Z"
-    },
-    {
       "started_at": "2026-09-05T22:02:22.216Z",
       "candidates": 58,
       "queued": [],
@@ -14836,6 +14802,46 @@
       "mode": "discovery",
       "vip_pending": 18,
       "finished_at": "2026-09-08T01:40:24.668Z"
+    },
+    {
+      "started_at": "2026-09-08T01:45:35.972Z",
+      "candidates": 57,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc92SHgju43/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc92SHgju43-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 18,
+      "finished_at": "2026-09-08T01:57:00.958Z"
     }
   ],
   "vip_pending": {
@@ -14846,10 +14852,10 @@
       "first_seen_at": "2026-09-03T05:30:10.862Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 69,
+      "attempts": 70,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T00:35:22.048Z",
-      "retry_at": "2026-09-08T01:35:22.048Z"
+      "last_attempt_at": "2026-09-08T01:50:55.207Z",
+      "retry_at": "2026-09-08T02:50:55.207Z"
     },
     "Dcww5JhjqDI": {
       "source_handle": "records",
@@ -14870,10 +14876,10 @@
       "first_seen_at": "2026-09-03T20:10:38.969Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 126,
-      "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-08T00:37:44.895Z",
-      "retry_at": "2026-09-08T01:37:44.895Z"
+      "attempts": 127,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-08T01:54:04.964Z",
+      "retry_at": "2026-09-08T02:54:04.964Z"
     },
     "Dc13XZkGTqg": {
       "source_handle": "akademiks",
@@ -14882,10 +14888,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 130,
-      "last_error": "Crop review required: source branding overlaps footage instead of a removable outer panel",
-      "last_attempt_at": "2026-09-08T00:42:38.848Z",
-      "retry_at": "2026-09-08T01:42:38.848Z"
+      "attempts": 131,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-08T01:56:05.133Z",
+      "retry_at": "2026-09-08T02:56:05.133Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -14954,10 +14960,10 @@
       "first_seen_at": "2026-09-05T17:23:28.792Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 128,
-      "last_error": "Command failed: /usr/bin/swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/scripts/inspect-video-frame.swift /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc6e8SjEY1u-2-crop-review/source-1.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc6e8SjEY1u-2-crop-review/source-2.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc6e8SjEY1u-2-crop-review/source-3.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc6e8SjEY1u-2-crop-review/source-4.png /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/Dc6e8SjEY1u-2-crop-review/source-5.png\nSwift/ErrorType.swift:254: Fatal error: Error raised at top level: TextRecognition.CRImageReaderError.e5rtError(\"e5rt_execution_stream_operation_create_precompiled_compute_operation_with_options call failed\", 13)\nStack dump:\n0.\tProgram arguments:",
-      "last_attempt_at": "2026-09-08T00:40:12.031Z",
-      "retry_at": "2026-09-08T01:40:12.031Z"
+      "attempts": 129,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-08T01:55:01.687Z",
+      "retry_at": "2026-09-08T02:55:01.687Z"
     },
     "Dc64BMzkef9": {
       "source_handle": "records",
@@ -15014,10 +15020,10 @@
       "first_seen_at": "2026-09-07T00:55:29.989Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 94,
+      "attempts": 95,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc92SHgju43-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T01:34:00.368Z",
-      "retry_at": "2026-09-08T02:34:00.368Z"
+      "last_attempt_at": "2026-09-08T01:57:00.958Z",
+      "retry_at": "2026-09-08T02:57:00.958Z"
     },
     "Dc_KAyJG1jU": {
       "source_handle": "akademiks",
@@ -15058,22 +15064,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-08T01:39:13.457Z"
+      "checked_at": "2026-09-08T01:45:43.585Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-08T01:39:17.455Z"
+      "checked_at": "2026-09-08T01:45:47.552Z"
     },
     "records": {
-      "checked_at": "2026-09-08T01:39:21.509Z"
+      "checked_at": "2026-09-08T01:45:51.523Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-08T01:39:25.431Z"
+      "checked_at": "2026-09-08T01:45:55.486Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-08T00:30:25.333Z"
+      "checked_at": "2026-09-08T01:45:59.419Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-08T01:00:11.879Z"
+      "checked_at": "2026-09-08T01:46:03.411Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-08T01:00:15.828Z"

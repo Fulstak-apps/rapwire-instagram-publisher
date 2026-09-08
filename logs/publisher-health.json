@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T12:52:15.727Z",
+  "checked_at": "2026-09-08T12:57:30.580Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T12:37:02.019Z",
+  "threads_next_eligible_at": "2026-09-08T13:12:30.579Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-08T12:47:19.530Z",
-    "threads_at": "2026-09-08T12:22:02.019Z",
-    "threads_video_at": "2026-09-08T12:22:02.019Z",
+    "threads_at": "2026-09-08T12:57:30.579Z",
+    "threads_video_at": "2026-09-08T12:57:30.579Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta.json",
+      "id": "212-while-most-people-were-still-waking-up-and-getting-their-day-sta",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "17944952547084940"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

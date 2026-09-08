@@ -6157,37 +6157,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdCfx-VSCSd/",
       "queue_id": "454-prosecutors-cooked-lil-durk-lildurk-with-mountains-of-evidence-i",
       "video": "media/454-prosecutors-cooked-lil-durk-lildurk-with-mountains-of-evidence-i.mp4"
+    },
+    "DdChDSySxhw": {
+      "queued_at": "2026-09-08T22:54:24.142Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdChDSySxhw/",
+      "queue_id": "455-brian-steele-trashed-otf-vonni-said-he-s-took-advantage-and-had-",
+      "video": "media/455-brian-steele-trashed-otf-vonni-said-he-s-took-advantage-and-had-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-06T18:56:30.449Z",
-      "candidates": 51,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc58CVBIpOF-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 13,
-      "finished_at": "2026-09-06T19:02:03.047Z"
-    },
     {
       "started_at": "2026-09-06T19:07:07.616Z",
       "candidates": 59,
@@ -14775,6 +14754,36 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 20,
       "finished_at": "2026-09-08T22:38:44.398Z"
+    },
+    {
+      "started_at": "2026-09-08T22:44:26.386Z",
+      "candidates": 50,
+      "queued": [
+        "455-brian-steele-trashed-otf-vonni-said-he-s-took-advantage-and-had-"
+      ],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdCtbqxSs3F/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCtbqxSs3F-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/DdCwFDyjtIh/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCwFDyjtIh-2-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
+          "stage": "queue",
+          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 19,
+      "finished_at": "2026-09-08T22:54:24.142Z"
     }
   ],
   "vip_pending": {
@@ -14970,18 +14979,6 @@
       "last_attempt_at": "2026-09-08T22:34:16.686Z",
       "retry_at": "2026-09-08T23:06:16.686Z"
     },
-    "DdChDSySxhw": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DdChDSySxhw/",
-      "shortcode": "DdChDSySxhw",
-      "first_seen_at": "2026-09-08T20:26:19.361Z",
-      "profile_position": 2,
-      "state": "retry_pending",
-      "attempts": 4,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdChDSySxhw-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T21:46:53.159Z",
-      "retry_at": "2026-09-08T22:02:53.159Z"
-    },
     "DdCsCe8AoWO": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
@@ -14989,10 +14986,10 @@
       "first_seen_at": "2026-09-08T21:55:54.045Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 3,
+      "attempts": 4,
       "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
-      "last_attempt_at": "2026-09-08T22:30:50.084Z",
-      "retry_at": "2026-09-08T22:38:50.084Z"
+      "last_attempt_at": "2026-09-08T22:50:45.464Z",
+      "retry_at": "2026-09-08T23:06:45.464Z"
     },
     "DdCtbqxSs3F": {
       "source_handle": "traploreross",
@@ -15001,10 +14998,10 @@
       "first_seen_at": "2026-09-08T22:25:33.850Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 1,
+      "attempts": 2,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCtbqxSs3F-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T22:29:03.792Z",
-      "retry_at": "2026-09-08T22:31:03.792Z"
+      "last_attempt_at": "2026-09-08T22:48:56.406Z",
+      "retry_at": "2026-09-08T22:52:56.406Z"
     },
     "DdCwFDyjtIh": {
       "source_handle": "records",
@@ -15013,24 +15010,24 @@
       "first_seen_at": "2026-09-08T22:25:33.850Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 1,
+      "attempts": 2,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCwFDyjtIh-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T22:30:33.479Z",
-      "retry_at": "2026-09-08T22:32:33.479Z"
+      "last_attempt_at": "2026-09-08T22:50:26.705Z",
+      "retry_at": "2026-09-08T22:54:26.705Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-08T22:25:00.622Z"
+      "checked_at": "2026-09-08T22:44:33.929Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-08T22:25:04.697Z"
+      "checked_at": "2026-09-08T22:44:38.747Z"
     },
     "records": {
-      "checked_at": "2026-09-08T22:25:08.781Z"
+      "checked_at": "2026-09-08T22:44:42.693Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-08T22:25:12.875Z"
+      "checked_at": "2026-09-08T22:44:46.873Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-08T20:50:01.328Z"
@@ -15048,7 +15045,7 @@
       "checked_at": "2026-09-08T22:06:38.277Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-08T20:25:51.635Z"
+      "checked_at": "2026-09-08T22:44:51.002Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-08T21:55:09.541Z"
@@ -15057,7 +15054,7 @@
       "checked_at": "2026-09-08T22:06:34.191Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-08T20:49:57.233Z"
+      "checked_at": "2026-09-08T22:44:55.156Z"
     }
   }
 }

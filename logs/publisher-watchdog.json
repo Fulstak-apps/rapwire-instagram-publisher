@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -89,8 +89,8 @@
     "435-ye-casually-previewed-all-of-the-lights-during-a-livestream-befo",
     "436-lil-durk-lildurk-s-jury-instruction-completed-judge-was-not-play"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-08T17:44:56.390Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-08T17:49:24.435Z",
   "deferred": []
 }

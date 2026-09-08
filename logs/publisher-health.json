@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-08T08:09:18.636Z",
+  "checked_at": "2026-09-08T08:14:25.198Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T07:59:13.913Z",
-    "usage": 48,
+    "checked_at": "2026-09-08T08:14:19.264Z",
+    "usage": 46,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T08:14:13.913Z",
+    "next_check_at": "2026-09-08T08:29:19.264Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -17,16 +17,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 48,
-    "instagram_remaining": 0,
+    "instagram_usage": 46,
+    "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T08:34:20.595Z",
     "feed_allowed": false,
-    "story_allowed": false
+    "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -34,9 +34,17 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-08T07:54:05.977Z",
+  "threads_next_eligible_at": "2026-09-08T08:29:25.197Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y.json",
+      "id": "188-this-was-peak-young-thug-versatility-i-ll-never-forget-hearing-y",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18124226422853713"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

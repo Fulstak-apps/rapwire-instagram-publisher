@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T11:36:29.034Z",
+  "checked_at": "2026-09-08T11:41:29.233Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 41,
-    "instagram_remaining": 7,
+    "instagram_usage": 42,
+    "instagram_remaining": 6,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T12:06:28.829Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -43,16 +43,7 @@
     "threads_video_at": "2026-09-08T11:11:15.250Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "316-ye-and-kid-cudi-walk-out-together-after-reuniting.json",
-      "id": "316-ye-and-kid-cudi-walk-out-together-after-reuniting",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18006746576774404",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

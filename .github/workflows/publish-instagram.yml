@@ -129,6 +129,18 @@ jobs:
           MAX_FEED_POSTS_PER_RUN: "1"
         run: node scripts/publish-instagram.mjs
 
+      - name: Run deterministic publisher watchdog
+        if: ${{ always() }}
+        continue-on-error: true
+        run: node scripts/publisher-watchdog.mjs
+
+      - name: Warn when a run completes without a confirmed publication
+        if: ${{ always() }}
+        run: |
+          if node -e 'const fs=require("fs"); try { const h=JSON.parse(fs.readFileSync("logs/publisher-health.json","utf8")); process.exit(Array.isArray(h.publications)&&h.publications.length===0?0:1) } catch { process.exit(1) }'; then
+            echo "::warning title=No confirmed publication::This run completed without a confirmed media ID; quota, cooldown, or queue validation may be holding delivery."
+          fi
+
       - name: Engage substantive Threads replies
         if: ${{ !cancelled() && steps.state_check.outcome == 'success' }}
         env:
@@ -161,6 +173,17 @@ jobs:
       - name: Save publication log
         if: ${{ always() }}
         run: bash scripts/save-publication-state.sh
+
+      - name: Upload publisher health and watchdog state
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: publisher-state-${{ github.run_id }}
+          path: |
+            logs/publisher-health.json
+            logs/publisher-watchdog.json
+            logs/publish-attempts.jsonl
+          retention-days: 14
 
       # A Meta-revoked credential cannot be repaired by a queue retry. Keep
       # Threads running, preserve every queued Instagram item, but make the

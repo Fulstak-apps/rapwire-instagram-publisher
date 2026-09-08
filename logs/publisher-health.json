@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-08T09:25:08.701Z",
+  "checked_at": "2026-09-08T09:30:09.685Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-08T09:15:00.937Z",
-    "usage": 45,
+    "checked_at": "2026-09-08T09:30:09.070Z",
+    "usage": 43,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-08T09:30:00.937Z",
+    "next_check_at": "2026-09-08T09:45:09.070Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 45,
-    "instagram_remaining": 3,
+    "instagram_usage": 43,
+    "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-08T09:45:06.917Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,15 +43,7 @@
     "threads_video_at": "2026-09-08T09:25:08.700Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b.json",
-      "id": "191-one-of-kodak-s-most-iconic-records-kodak-black-s-tunnel-vision-b",
-      "platform": "threads_video_fallback",
-      "status": "published",
-      "media_id": "17994355389035917"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

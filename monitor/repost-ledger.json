@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T01:39:05.252Z",
-      "candidates": 49,
-      "queued": [
-        "426-tyler-the-creator-feliciathegoat-s-reaction-to-lil-yachty-gettin"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-08T01:40:24.668Z"
-    },
-    {
       "started_at": "2026-09-08T01:45:35.972Z",
       "candidates": 57,
       "queued": [],
@@ -13903,6 +13892,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T14:50:44.723Z"
+    },
+    {
+      "started_at": "2026-09-09T14:55:47.775Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T14:55:55.976Z"
     }
   ],
   "vip_pending": {
@@ -14146,8 +14155,8 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-09T14:29:50.690Z",
-      "retry_at": "2026-09-09T14:44:50.690Z",
+      "checked_at": "2026-09-09T14:55:54.984Z",
+      "retry_at": "2026-09-09T15:10:54.984Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
     },
     "rockstargames": {
@@ -14161,8 +14170,8 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-09T14:35:06.833Z",
-      "retry_at": "2026-09-09T14:50:06.833Z",
+      "checked_at": "2026-09-09T14:55:55.560Z",
+      "retry_at": "2026-09-09T15:10:55.560Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
     }
   }

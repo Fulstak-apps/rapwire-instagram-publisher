@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T16:19:25.626Z",
+  "checked_at": "2026-09-09T16:24:05.786Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T16:08:45.836Z",
-    "usage": 15,
+    "checked_at": "2026-09-09T16:23:56.065Z",
+    "usage": 14,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T16:23:45.836Z",
+    "next_check_at": "2026-09-09T16:38:56.065Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 15,
-    "instagram_remaining": 83,
+    "instagram_usage": 14,
+    "instagram_remaining": 84,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T05:27:20.995Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,22 +35,30 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T16:03:40.876Z",
+  "threads_next_eligible_at": "2026-09-09T16:39:05.785Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T15:48:40.876Z",
-    "threads_video_at": "2026-09-09T15:48:40.876Z",
+    "threads_at": "2026-09-09T16:24:05.785Z",
+    "threads_video_at": "2026-09-09T16:24:05.785Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w.json",
+      "id": "219-skilla-baby-s-breakfast-club-interview-took-an-unexpected-turn-w",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18101637743002345"
+    }
+  ],
   "failures": [
     {
-      "file": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz.json",
-      "id": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz",
+      "file": "369-jammy-the-bull-otf-jam-speaks-out-ahead-of-verdict-day-he-says-l.json",
+      "id": "369-jammy-the-bull-otf-jam-speaks-out-ahead-of-verdict-day-he-says-l",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AlCKeRukovnP3tHSRCbcdb1\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AqkaSC6O3XP77-WA_Nimtbh\"}}"
     }
   ],
   "reviews": [
@@ -139,8 +147,8 @@
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz.json",
-      "id": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz",
+      "file": "369-jammy-the-bull-otf-jam-speaks-out-ahead-of-verdict-day-he-says-l.json",
+      "id": "369-jammy-the-bull-otf-jam-speaks-out-ahead-of-verdict-day-he-says-l",
       "platform": "instagram",
       "status": "review_required",
       "reason": "three_item_specific_delivery_failures"

@@ -6481,46 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T01:45:35.972Z",
-      "candidates": 57,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc92SHgju43/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc92SHgju43-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-08T01:57:00.958Z"
-    },
-    {
       "started_at": "2026-09-08T02:02:05.954Z",
       "candidates": 37,
       "queued": [],
@@ -13912,6 +13872,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T14:55:55.976Z"
+    },
+    {
+      "started_at": "2026-09-09T15:00:59.320Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T15:01:06.644Z"
     }
   ],
   "vip_pending": {
@@ -14130,13 +14110,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-09T14:35:07.270Z",
-      "retry_at": "2026-09-09T14:50:07.270Z",
+      "checked_at": "2026-09-09T15:01:06.045Z",
+      "retry_at": "2026-09-09T15:16:06.045Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
     },
     "raplisted_": {
-      "checked_at": "2026-09-09T14:40:17.985Z",
-      "retry_at": "2026-09-09T14:55:17.985Z",
+      "checked_at": "2026-09-09T15:01:06.512Z",
+      "retry_at": "2026-09-09T15:16:06.512Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
     },
     "freshouttheculture": {

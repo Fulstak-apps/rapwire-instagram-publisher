@@ -106,7 +106,26 @@ const instagramAvailable = () => !(Date.parse(cooldown.until || "") > Date.now()
 // as account-wide holds; rotating the queue for those errors would only make a
 // Meta throttle worse.
 function isAccountWideInstagramFailure(error = "") {
-  return /error validating access token|session has been invalidated|oauth(?:exception)?.*code[^0-9]*190|\b2207042\b|publishing (?:capacity|quota).*exhausted|media publish limit|application request limit|rate.?limit|too many requests|too many actions/i.test(String(error));
+  return /error validating access token|session has been invalidated|oauth(?:exception)?.*code[^0-9]*190|\b2207042\b|\b2207050\b|user access is restricted|instagram account is restricted|publishing (?:capacity|quota).*exhausted|media publish limit|application request limit|rate.?limit|too many requests|too many actions/i.test(String(error));
+}
+
+function isInstagramAccountRestricted(error = "") {
+  return /\b2207050\b|user access is restricted|instagram account is restricted/i.test(String(error));
+}
+
+async function holdRestrictedInstagramAccount(error) {
+  if (!isInstagramAccountRestricted(error)) return false;
+  // Code 25/2207050 is an account restriction, not a single bad reel.  Do not
+  // hammer Meta every five minutes; preserve the queue and let Threads/Facebook
+  // continue while the account owner resolves the restriction in Instagram.
+  cooldown = {
+    detected_at: new Date().toISOString(),
+    until: new Date(Date.now() + 6 * 60 * 60_000).toISOString(),
+    reason: "Instagram account restricted (Meta 25/2207050); feed retries paused while other platforms continue."
+  };
+  await fs.mkdir(logsDir, { recursive: true });
+  await fs.writeFile(cooldownPath, JSON.stringify(cooldown, null, 2) + "\n");
+  return true;
 }
 
 function recordInstagramDeliveryFailure(item, error, {story = false} = {}) {
@@ -119,7 +138,7 @@ function recordInstagramDeliveryFailure(item, error, {story = false} = {}) {
   item[errorKey] = message;
   if (isAccountWideInstagramFailure(message)) {
     item[retryKey] = new Date(Date.now() + 10 * 60_000).toISOString();
-    return {terminal: false, accountWide: true, attempts: Number(item[attemptsKey] || 0)};
+    return {terminal: false, accountWide: true, accountRestricted: isInstagramAccountRestricted(message), attempts: Number(item[attemptsKey] || 0)};
   }
   const attempts = Number(item[attemptsKey] || 0) + 1;
   item[attemptsKey] = attempts;
@@ -627,6 +646,7 @@ await Promise.all(uploadCandidates.map(async ({ name, item }) => {
     console.log(`Prepared upload ${item.id}: ${item.instagram_container_id}`);
   } catch (error) {
     const failure = recordInstagramDeliveryFailure(item, error);
+    await holdRestrictedInstagramAccount(error);
     await save(path.join(queueDir, name), item);
     await logAttempt({ file: name, id: item.id, platform: "instagram", status: "failed", error: error.message });
     if (failure.terminal) await logAttempt({ file: name, id: item.id, platform: "instagram", status: "review_required", reason: item.instagram_skip_reason });
@@ -877,6 +897,7 @@ for (const file of files) {
       published = isVideoItem ? await publishInstagramReel(item, itemPath) : await publishMediaFeed(item,itemPath,'instagram');
     } catch (error) {
       const failure = recordInstagramDeliveryFailure(item, error);
+      await holdRestrictedInstagramAccount(error);
       await save(itemPath, item);
       await logAttempt({ file, id: item.id, platform: "instagram", status: "failed", error: error.message });
       if (failure.terminal) await logAttempt({ file, id: item.id, platform: "instagram", status: "review_required", reason: item.instagram_skip_reason });
@@ -924,6 +945,7 @@ for (const file of files) {
       }
     } catch (error) {
       const failure = recordInstagramDeliveryFailure(item, error, {story: true});
+      await holdRestrictedInstagramAccount(error);
       if (!failure.terminal) item.instagram_story_status = "failed";
       await logAttempt({ file, id: item.id, platform: "instagram_story", status: "failed", error: error.message });
       if (failure.terminal) await logAttempt({ file, id: item.id, platform: "instagram_story", status: "review_required", reason: item.instagram_story_skip_reason });

@@ -6442,55 +6442,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdDIWE4PoNf/",
       "queue_id": "469-gov-cooked-durks-witnesses-one-by-one-with-nicknames-and-records",
       "video": "media/469-gov-cooked-durks-witnesses-one-by-one-with-nicknames-and-records.mp4"
+    },
+    "DdDEaOwp8yo": {
+      "queued_at": "2026-09-09T03:15:36.041Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdDEaOwp8yo/",
+      "queue_id": "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom",
+      "video": "media/471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-06T23:06:32.826Z",
-      "candidates": 51,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc9nhCiAQY1/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9nhCiAQY1-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
-          "stage": "queue",
-          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc32-qLsTq5-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc58CVBIpOF-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-06T23:16:49.689Z"
-    },
     {
       "started_at": "2026-09-06T23:21:53.217Z",
       "candidates": 58,
@@ -14887,6 +14848,24 @@
       "mode": "discovery",
       "vip_pending": 18,
       "finished_at": "2026-09-09T03:02:41.676Z"
+    },
+    {
+      "started_at": "2026-09-09T03:08:09.390Z",
+      "candidates": 60,
+      "queued": [
+        "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom"
+      ],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DdDDgRUDQRo/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 17,
+      "finished_at": "2026-09-09T03:15:36.041Z"
     }
   ],
   "vip_pending": {
@@ -15093,38 +15072,26 @@
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDC1BxJswE-1-capture-diagnostic.json",
       "last_attempt_at": "2026-09-09T02:30:03.976Z",
       "retry_at": "2026-09-09T02:46:03.976Z"
-    },
-    "DdDEaOwp8yo": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DdDEaOwp8yo/",
-      "shortcode": "DdDEaOwp8yo",
-      "first_seen_at": "2026-09-09T01:34:35.928Z",
-      "profile_position": 0,
-      "state": "retry_pending",
-      "attempts": 5,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDEaOwp8yo-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-09T02:26:46.972Z",
-      "retry_at": "2026-09-09T02:58:46.972Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T02:56:20.839Z"
+      "checked_at": "2026-09-09T03:08:20.185Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T02:56:25.463Z"
+      "checked_at": "2026-09-09T03:08:24.333Z"
     },
     "records": {
-      "checked_at": "2026-09-09T02:56:29.942Z"
+      "checked_at": "2026-09-09T03:08:28.277Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T02:56:34.447Z"
+      "checked_at": "2026-09-09T03:08:32.305Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-09T01:23:55.626Z"
+      "checked_at": "2026-09-09T03:08:36.465Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-09T01:33:53.861Z"
+      "checked_at": "2026-09-09T03:08:40.601Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-09T01:33:57.831Z"

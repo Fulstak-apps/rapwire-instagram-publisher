@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T13:29:52.785Z",
+  "checked_at": "2026-09-09T13:32:22.200Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T13:17:06.574Z",
-    "usage": 20,
+    "checked_at": "2026-09-09T13:32:20.650Z",
+    "usage": 19,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T13:32:06.574Z",
+    "next_check_at": "2026-09-09T13:47:20.650Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 20,
-    "instagram_remaining": 78,
+    "instagram_usage": 19,
+    "instagram_remaining": 79,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T05:27:20.995Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,22 +43,14 @@
     "threads_video_at": "2026-09-09T13:29:52.784Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du.json",
-      "id": "246-durk-and-von-childhood-friend-said-vonni-wanted-to-pop-quando-du",
-      "platform": "threads_video_fallback",
-      "status": "published",
-      "media_id": "18030313430887220"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "237-smurk-w-a-message.json",
-      "id": "237-smurk-w-a-message",
+      "file": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th.json",
+      "id": "241-fettypfranklin-and-bandplay-have-the-internet-going-crazy-for-th",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A18ec3aWRtIcidOHTnftjzN\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AI5aq8RU9iEYuHEp3PsAODc\"}}"
     }
   ],
   "reviews": [

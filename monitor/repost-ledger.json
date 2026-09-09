@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-07T20:02:50.459Z",
-      "candidates": 61,
-      "queued": [
-        "403-the-3-certainties-in-life-baby-keem-babykeem-and-kendrick-lamar-"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 19,
-      "finished_at": "2026-09-07T20:04:46.762Z"
-    },
-    {
       "started_at": "2026-09-07T20:10:08.034Z",
       "candidates": 56,
       "queued": [],
@@ -13865,6 +13854,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T12:35:06.142Z"
+    },
+    {
+      "started_at": "2026-09-09T12:40:08.976Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "complexmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T12:40:14.752Z"
     }
   ],
   "vip_pending": {
@@ -14093,13 +14102,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-09T12:09:03.734Z",
-      "retry_at": "2026-09-09T12:24:03.734Z",
+      "checked_at": "2026-09-09T12:40:14.078Z",
+      "retry_at": "2026-09-09T12:55:14.078Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T12:24:41.715Z",
-      "retry_at": "2026-09-09T12:39:41.715Z",
+      "checked_at": "2026-09-09T12:40:14.576Z",
+      "retry_at": "2026-09-09T12:55:14.576Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {

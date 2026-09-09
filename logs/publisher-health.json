@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T14:37:55.060Z",
+  "checked_at": "2026-09-09T14:41:27.011Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "329-kid-cudi-reacts-to-reuniting-with-ye-after-years-love-u-big-bro-.json",
-      "id": "329-kid-cudi-reacts-to-reuniting-with-ye-after-years-love-u-big-bro-",
+      "file": "324-we-are-so-back-dimitrios-kambouris-getty-images.json",
+      "id": "324-we-are-so-back-dimitrios-kambouris-getty-images",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AnTLrhW47OHVcB-FOXXkMTd\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AEXkw4_7RK5Vr83p2egy_3U\"}}"
     }
   ],
   "reviews": [
@@ -137,6 +137,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "324-we-are-so-back-dimitrios-kambouris-getty-images.json",
+      "id": "324-we-are-so-back-dimitrios-kambouris-getty-images",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",

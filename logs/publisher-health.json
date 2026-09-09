@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T08:39:13.679Z",
+  "checked_at": "2026-09-09T08:44:48.568Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -46,21 +46,14 @@
   "publications": [],
   "failures": [
     {
-      "file": "460-brian-steel-went-hard-in-durks-closing-argument-compared-his-def.json",
-      "id": "460-brian-steel-went-hard-in-durks-closing-argument-compared-his-def",
+      "file": "465-government-just-deep-fried-all-of-durks-defences-on-rebuttal-sai.json",
+      "id": "465-government-just-deep-fried-all-of-durks-defences-on-rebuttal-sai",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AD9ftKQdDmSqsyswyDvx__j\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AGer8eyI8Qae04pENUANWAW\"}}"
     }
   ],
   "reviews": [
-    {
-      "file": "460-brian-steel-went-hard-in-durks-closing-argument-compared-his-def.json",
-      "id": "460-brian-steel-went-hard-in-durks-closing-argument-compared-his-def",
-      "platform": "instagram",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
-    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",

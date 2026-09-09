@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-07T13:39:33.350Z",
-      "candidates": 59,
-      "queued": [
-        "384-eight-years-ago-today-the-world-lost-mac-miller-at-just-26-years"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 19,
-      "finished_at": "2026-09-07T13:41:09.042Z"
-    },
-    {
       "started_at": "2026-09-07T13:46:12.992Z",
       "candidates": 63,
       "queued": [],
@@ -13878,6 +13867,36 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T09:48:17.784Z"
+    },
+    {
+      "started_at": "2026-09-09T09:53:20.690Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "traploreross",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "complexmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "xxl",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T09:53:26.846Z"
     }
   ],
   "vip_pending": {
@@ -14076,13 +14095,13 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T09:37:53.666Z",
-      "retry_at": "2026-09-09T09:52:53.666Z",
+      "checked_at": "2026-09-09T09:53:25.393Z",
+      "retry_at": "2026-09-09T10:08:25.393Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T09:37:54.022Z",
-      "retry_at": "2026-09-09T09:52:54.022Z",
+      "checked_at": "2026-09-09T09:53:25.752Z",
+      "retry_at": "2026-09-09T10:08:25.752Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
     },
     "records": {
@@ -14111,13 +14130,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T09:27:36.574Z",
-      "retry_at": "2026-09-09T09:42:36.574Z",
+      "checked_at": "2026-09-09T09:53:26.090Z",
+      "retry_at": "2026-09-09T10:08:26.090Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {
-      "checked_at": "2026-09-09T09:32:45.703Z",
-      "retry_at": "2026-09-09T09:47:45.703Z",
+      "checked_at": "2026-09-09T09:53:26.724Z",
+      "retry_at": "2026-09-09T10:08:26.724Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {

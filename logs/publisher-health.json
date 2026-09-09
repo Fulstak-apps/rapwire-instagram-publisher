@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T12:53:46.090Z",
+  "checked_at": "2026-09-09T12:56:59.577Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,22 +35,30 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T12:51:55.395Z",
+  "threads_next_eligible_at": "2026-09-09T13:11:59.576Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T12:36:55.395Z",
-    "threads_video_at": "2026-09-09T12:21:35.206Z",
+    "threads_at": "2026-09-09T12:56:59.576Z",
+    "threads_video_at": "2026-09-09T12:56:59.576Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von.json",
+      "id": "244-defence-rested-their-case-after-2-insane-witnesses-kema-king-von",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18054819098797541"
+    }
+  ],
   "failures": [
     {
-      "file": "198-drake-has-been-spotify-s-most-streamed-rapper-for-18-months-stra.json",
-      "id": "198-drake-has-been-spotify-s-most-streamed-rapper-for-18-months-stra",
+      "file": "202-10-years-ago-today-travis-scott-dropped-birds-in-the-trap-sing-m.json",
+      "id": "202-10-years-ago-today-travis-scott-dropped-birds-in-the-trap-sing-m",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ACHDYxy4wjCUVr48nsy0wJf\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A-YGtbCLML47Jp9bbtzqbFW\"}}"
     }
   ],
   "reviews": [
@@ -130,13 +138,6 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "198-drake-has-been-spotify-s-most-streamed-rapper-for-18-months-stra.json",
-      "id": "198-drake-has-been-spotify-s-most-streamed-rapper-for-18-months-stra",
-      "platform": "instagram",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour.json",

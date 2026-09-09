@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T06:43:14.870Z",
+  "checked_at": "2026-09-09T06:47:11.102Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -46,21 +46,14 @@
   "publications": [],
   "failures": [
     {
-      "file": "442-lil-durk-lildurk-s-federal-trial-entered-day-13-today-as-support.json",
-      "id": "442-lil-durk-lildurk-s-federal-trial-entered-day-13-today-as-support",
+      "file": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin.json",
+      "id": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A2Uyo5Eas4eUPgRl8XJH7ME\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AVbFWcUG3GWRhlDq3lzogjd\"}}"
     }
   ],
   "reviews": [
-    {
-      "file": "442-lil-durk-lildurk-s-federal-trial-entered-day-13-today-as-support.json",
-      "id": "442-lil-durk-lildurk-s-federal-trial-entered-day-13-today-as-support",
-      "platform": "instagram",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
-    },
     {
       "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
       "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",

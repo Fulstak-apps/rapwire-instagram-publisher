@@ -6481,39 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T07:47:11.633Z",
-      "candidates": 37,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcvzv3fv2GR-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_spGMAPFc-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T07:52:20.954Z"
-    },
-    {
       "started_at": "2026-09-08T07:57:24.621Z",
       "candidates": 61,
       "queued": [],
@@ -13917,6 +13884,38 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T17:11:13.186Z"
+    },
+    {
+      "started_at": "2026-09-09T17:16:16.573Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
+          "stage": "queue",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
+          "stage": "queue",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T17:16:27.601Z"
     }
   ],
   "vip_pending": {
@@ -14095,10 +14094,10 @@
       "first_seen_at": "2026-09-07T18:06:33.637Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 43,
+      "attempts": 44,
       "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T16:14:06.514Z",
-      "retry_at": "2026-09-09T17:14:06.514Z"
+      "last_attempt_at": "2026-09-09T17:16:27.601Z",
+      "retry_at": "2026-09-09T18:16:27.601Z"
     },
     "DdCsCe8AoWO": {
       "source_handle": "akademiks",
@@ -14107,10 +14106,10 @@
       "first_seen_at": "2026-09-08T21:55:54.045Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 20,
+      "attempts": 21,
       "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T16:14:05.302Z",
-      "retry_at": "2026-09-09T17:14:05.302Z"
+      "last_attempt_at": "2026-09-09T17:16:25.845Z",
+      "retry_at": "2026-09-09T18:16:25.845Z"
     }
   },
   "source_checks": {
@@ -14160,8 +14159,8 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-09T16:50:24.770Z",
-      "retry_at": "2026-09-09T17:05:24.770Z",
+      "checked_at": "2026-09-09T17:16:23.072Z",
+      "retry_at": "2026-09-09T17:31:23.072Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
     },
     "rockstargames": {
@@ -14175,8 +14174,8 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-09T17:00:49.875Z",
-      "retry_at": "2026-09-09T17:15:49.875Z",
+      "checked_at": "2026-09-09T17:16:23.586Z",
+      "retry_at": "2026-09-09T17:31:23.586Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
     }
   }

@@ -4394,6 +4394,20 @@
       "source_url": "https://www.instagram.com/complexmusic/p/DdDFXY1Ec8L/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdDKjL9jpSq": {
+      "seen_at": "2026-09-09T02:36:28.309Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdDKjL9jpSq/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdDDs6NjcBq": {
+      "seen_at": "2026-09-09T02:36:28.309Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdDDs6NjcBq/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -6414,55 +6428,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdCmm0tIm3y/",
       "queue_id": "467-richthekid-gunna-gunna-are-teaming-up-dropping-a-song-too-bad-th",
       "video": "media/467-richthekid-gunna-gunna-are-teaming-up-dropping-a-song-too-bad-th.mp4"
+    },
+    "DdDISLuzkf0": {
+      "queued_at": "2026-09-09T02:44:37.127Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdDISLuzkf0/",
+      "queue_id": "468-gov-destroyed-durks-jam-is-a-liar-defence-said-if-jam-is-a-liar-",
+      "video": "media/468-gov-destroyed-durks-jam-is-a-liar-defence-said-if-jam-is-a-liar-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-06T22:35:37.107Z",
-      "candidates": 63,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "xxl",
-          "source_url": "https://www.instagram.com/xxl/reel/Dcoh8_UkRR8/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcoh8_UkRR8-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 14,
-      "finished_at": "2026-09-06T22:47:56.754Z"
-    },
     {
       "started_at": "2026-09-06T22:53:01.479Z",
       "candidates": 39,
@@ -14921,6 +14896,24 @@
       "mode": "discovery",
       "vip_pending": 20,
       "finished_at": "2026-09-09T02:30:03.977Z"
+    },
+    {
+      "started_at": "2026-09-09T02:35:12.297Z",
+      "candidates": 62,
+      "queued": [
+        "468-gov-destroyed-durks-jam-is-a-liar-defence-said-if-jam-is-a-liar-"
+      ],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDIWE4PoNf/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDIWE4PoNf-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 19,
+      "finished_at": "2026-09-09T02:44:37.127Z"
     }
   ],
   "vip_pending": {
@@ -15147,36 +15140,24 @@
       "first_seen_at": "2026-09-09T02:11:17.825Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 1,
+      "attempts": 2,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDIWE4PoNf-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-09T02:14:45.835Z",
-      "retry_at": "2026-09-09T02:16:45.835Z"
-    },
-    "DdDISLuzkf0": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DdDISLuzkf0/",
-      "shortcode": "DdDISLuzkf0",
-      "first_seen_at": "2026-09-09T02:11:17.825Z",
-      "profile_position": 1,
-      "state": "retry_pending",
-      "attempts": 1,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDISLuzkf0-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-09T02:18:14.313Z",
-      "retry_at": "2026-09-09T02:20:14.313Z"
+      "last_attempt_at": "2026-09-09T02:39:55.415Z",
+      "retry_at": "2026-09-09T02:43:55.415Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T02:10:11.970Z"
+      "checked_at": "2026-09-09T02:35:21.668Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T02:10:15.956Z"
+      "checked_at": "2026-09-09T02:35:25.663Z"
     },
     "records": {
-      "checked_at": "2026-09-09T02:10:19.969Z"
+      "checked_at": "2026-09-09T02:35:29.630Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T02:10:24.017Z"
+      "checked_at": "2026-09-09T02:35:33.660Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-09T01:23:55.626Z"
@@ -15191,7 +15172,7 @@
       "checked_at": "2026-09-09T02:10:27.932Z"
     },
     "xxl": {
-      "checked_at": "2026-09-09T01:12:34.076Z"
+      "checked_at": "2026-09-09T02:35:41.769Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-09T01:12:38.010Z"
@@ -15200,7 +15181,7 @@
       "checked_at": "2026-09-09T02:10:31.875Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-09T01:04:08.409Z"
+      "checked_at": "2026-09-09T02:35:37.653Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-09T01:23:51.543Z"

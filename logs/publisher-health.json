@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T06:07:53.204Z",
+  "checked_at": "2026-09-09T06:11:35.029Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -35,25 +35,40 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T06:05:58.201Z",
+  "threads_next_eligible_at": "2026-09-09T06:26:33.664Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T05:50:58.201Z",
-    "threads_video_at": "2026-09-09T05:50:58.201Z",
+    "threads_at": "2026-09-09T06:11:33.664Z",
+    "threads_video_at": "2026-09-09T06:11:33.664Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "466-he-s-no-jay-z-the-jig-is-up-the-government-violated-lil-durk-lil.json",
+      "id": "466-he-s-no-jay-z-the-jig-is-up-the-government-violated-lil-durk-lil",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18028688399681398"
+    }
+  ],
   "failures": [
     {
-      "file": "426-tyler-the-creator-feliciathegoat-s-reaction-to-lil-yachty-gettin.json",
-      "id": "426-tyler-the-creator-feliciathegoat-s-reaction-to-lil-yachty-gettin",
+      "file": "424-ye-s-day-1-john-monopoly-has-made-a-real-impact-on-the-culture.json",
+      "id": "424-ye-s-day-1-john-monopoly-has-made-a-real-impact-on-the-culture",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AsCmYM-orRMKHe1T6MxSzbs\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A8e_Nyklw7TxzkMx8JkjO2G\"}}"
     }
   ],
   "reviews": [
+    {
+      "file": "424-ye-s-day-1-john-monopoly-has-made-a-real-impact-on-the-culture.json",
+      "id": "424-ye-s-day-1-john-monopoly-has-made-a-real-impact-on-the-culture",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
+    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",

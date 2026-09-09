@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T10:05:05.020Z",
+  "checked_at": "2026-09-09T10:10:18.676Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T09:54:55.717Z",
+    "checked_at": "2026-09-09T10:10:12.310Z",
     "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T10:09:55.717Z",
+    "next_check_at": "2026-09-09T10:25:12.310Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,28 +35,36 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T10:00:00.892Z",
+  "threads_next_eligible_at": "2026-09-09T10:25:18.271Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T09:45:00.892Z",
+    "threads_at": "2026-09-09T10:10:18.271Z",
     "threads_video_at": "2026-09-09T09:45:00.892Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "445-lil-yachty-and-ice-spice-turned-their-latest-music-video-into-a-.json",
+      "id": "445-lil-yachty-and-ice-spice-turned-their-latest-music-video-into-a-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18123685708880030"
+    }
+  ],
   "failures": [
     {
-      "file": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u.json",
-      "id": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u",
+      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
+      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"Asybxz3PCOoPBZsN-XKullW\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AUf0L-LMAI0FBTECkmGe7E2\"}}"
     }
   ],
   "reviews": [
     {
-      "file": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u.json",
-      "id": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u",
+      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
+      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
       "platform": "instagram",
       "status": "review_required",
       "reason": "three_item_specific_delivery_failures"

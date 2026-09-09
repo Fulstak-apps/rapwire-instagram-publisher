@@ -6397,24 +6397,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-06T22:17:33.997Z",
-      "candidates": 63,
-      "queued": [
-        "368-2-chainz-really-is-a-national-treasure-mann-we-gotta-protect-him"
-      ],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 14,
-      "finished_at": "2026-09-06T22:23:50.625Z"
-    },
-    {
       "started_at": "2026-09-06T22:29:08.365Z",
       "candidates": 57,
       "queued": [
@@ -14832,6 +14814,57 @@
       "mode": "discovery",
       "vip_pending": 18,
       "finished_at": "2026-09-09T01:42:17.761Z"
+    },
+    {
+      "started_at": "2026-09-09T01:47:26.918Z",
+      "candidates": 39,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcvzv3fv2GR-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDC1BxJswE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDC1BxJswE-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDEaOwp8yo/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDEaOwp8yo-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc32-qLsTq5-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDEaOwp8yo/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDEaOwp8yo-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDC1BxJswE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDC1BxJswE-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 18,
+      "finished_at": "2026-09-09T02:04:56.760Z"
     }
   ],
   "vip_pending": {
@@ -14914,10 +14947,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 76,
-      "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-09T00:12:20.374Z",
-      "retry_at": "2026-09-09T01:12:20.374Z"
+      "attempts": 77,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc32-qLsTq5-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-09T01:57:03.838Z",
+      "retry_at": "2026-09-09T02:57:03.838Z"
     },
     "Dc322YeFQyh": {
       "source_handle": "akademiks",
@@ -14926,10 +14959,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 76,
-      "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
-      "last_attempt_at": "2026-09-09T00:14:39.595Z",
-      "retry_at": "2026-09-09T01:14:39.595Z"
+      "attempts": 77,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-09T01:58:22.471Z",
+      "retry_at": "2026-09-09T02:58:22.471Z"
     },
     "Dc6e8SjEY1u": {
       "source_handle": "records",
@@ -15034,10 +15067,10 @@
       "first_seen_at": "2026-09-09T01:24:33.204Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 1,
+      "attempts": 3,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDC1BxJswE-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-09T01:37:52.350Z",
-      "retry_at": "2026-09-09T01:39:52.350Z"
+      "last_attempt_at": "2026-09-09T02:04:56.760Z",
+      "retry_at": "2026-09-09T02:12:56.760Z"
     },
     "DdDEaOwp8yo": {
       "source_handle": "traploreross",
@@ -15046,24 +15079,24 @@
       "first_seen_at": "2026-09-09T01:34:35.928Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 1,
+      "attempts": 3,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDEaOwp8yo-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-09T01:41:08.607Z",
-      "retry_at": "2026-09-09T01:43:08.607Z"
+      "last_attempt_at": "2026-09-09T02:01:40.980Z",
+      "retry_at": "2026-09-09T02:09:40.980Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T01:33:37.991Z"
+      "checked_at": "2026-09-09T01:49:04.735Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T01:33:42.044Z"
+      "checked_at": "2026-09-09T01:49:08.767Z"
     },
     "records": {
-      "checked_at": "2026-09-09T01:33:45.989Z"
+      "checked_at": "2026-09-09T01:49:12.756Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T01:33:49.930Z"
+      "checked_at": "2026-09-09T01:49:16.720Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-09T01:23:55.626Z"

@@ -34,7 +34,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "published",
   "threads_topic_tag": "Rap Threads",
   "artist_handles": [],
   "artist_mentions": [],
@@ -96,10 +96,13 @@
       "status": "FINISHED"
     }
   ],
-  "threads_error": "Threads threads failed: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AqRf2ocCQkTvyj5cabcyM-M\"}}",
-  "threads_failure_count": 1,
-  "threads_retry_at": "2026-09-09T11:41:00.682Z",
   "threads_container_id": "18097331792179906",
   "threads_container_created_at": "2026-09-09T12:06:31.457Z",
-  "threads_container_checked_at": "2026-09-09T12:06:31.457Z"
+  "threads_container_checked_at": "2026-09-09T12:11:22.926Z",
+  "threads_container_status": "FINISHED",
+  "threads_publish_requested_at": "2026-09-09T12:11:22.926Z",
+  "threads_media_id": "18140625301608977",
+  "threads_published_at": "2026-09-09T12:11:30.464Z",
+  "threads_verified_at": "2026-09-09T12:11:30.786Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DdEOPffFBrE"
 }

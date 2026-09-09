@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-09T02:30:42.561Z",
+  "checked_at": "2026-09-09T02:35:54.840Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-09T02:30:41.413Z",
-    "usage": 32,
+    "usage": 33,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-09T02:45:41.413Z",
@@ -22,12 +22,12 @@
     "instagram_remaining": 66,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-09T02:26:02.648Z",
+    "next_feed_eligible_at": "2026-09-09T03:05:53.469Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-09T02:35:42.159Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-09T01:56:02.648Z",
+    "instagram_feed_at": "2026-09-09T02:35:53.469Z",
     "threads_at": "2026-09-09T02:20:42.159Z",
     "threads_video_at": "2026-09-09T02:20:42.159Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "395-drake-champagnepapi-performs-over-on-stage-with-gordo-in-toronto.json",
+      "id": "395-drake-champagnepapi-performs-over-on-stage-with-gordo-in-toronto",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18099003878564151",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

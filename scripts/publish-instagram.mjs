@@ -965,17 +965,23 @@ for (const file of files) {
   await deliverFacebook(item,itemPath,file);
 }
 
-// Do not let a capture outage turn the video channel into an indefinite text
-// feed. If there is no new, eligible queue video and the last playable Threads
-// post is old, rotate one already-approved source video that has not previously
-// been used by this continuity lane. This never touches Instagram and never
-// replaces a pending fresh Threads upload.
+// Never use archive replays to fill Threads. A video fallback is allowed only
+// for a source item that is still inside the same 48-hour current-news window.
+// This keeps the feed active without resurfacing clips RapWire already covered
+// days ago. Evergreen memes must arrive as a newly discovered queue item.
 const noThreadsWorkInFlight = (!threadsInFlightId || threadsInFlightStale) && threadsSteps === 0;
 const threadsVideoOverdue = !lastThreadsVideoTime || Date.now() - lastThreadsVideoTime >= threadsVideoFallbackMs;
+const threadsCurrentNewsCutoff = Date.now() - 48 * 60 * 60_000;
+const isCurrentThreadsVideo = item => {
+  const sourceTime = Date.parse(item.source_published_at || item.source_post_date || '');
+  return Number.isFinite(sourceTime) && sourceTime >= threadsCurrentNewsCutoff
+    && item.story_type !== 'throwback' && item.story_type !== 'evergreen_meme';
+};
 if (noThreadsWorkInFlight && threadsVideoOverdue && !(Date.parse(threadsCooldown.until || '') > Date.now())) {
   const replay = queueRecords
     .filter(({item}) => item.status === 'published' && item.content_type === 'video'
       && item.threads_media_id && !item.threads_replay_media_id
+      && isCurrentThreadsVideo(item)
       && footageOnlyAllowed(item) && reportingGate(item).allowed && contentPromiseIsKept(item)
       && Number.isFinite(Date.parse(item.threads_published_at || ''))
       && Date.parse(item.threads_published_at) <= Date.now() - threadsVideoFallbackMs)

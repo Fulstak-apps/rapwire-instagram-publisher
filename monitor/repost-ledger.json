@@ -6481,29 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T05:33:46.847Z",
-      "candidates": 37,
-      "queued": [
-        "428-mark-curry-explaining-his-issue-wit-50-cent-doc-that-promised-hi"
-      ],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Crop review required: No distinct footage region between static panels"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
-          "stage": "queue",
-          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-08T05:47:51.777Z"
-    },
-    {
       "started_at": "2026-09-08T05:53:16.477Z",
       "candidates": 61,
       "queued": [],
@@ -13859,6 +13836,32 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T16:14:06.514Z"
+    },
+    {
+      "started_at": "2026-09-09T16:19:09.662Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "complexmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "xxl",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
+          "stage": "queue",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T16:19:15.618Z"
     }
   ],
   "vip_pending": {
@@ -14025,10 +14028,10 @@
       "first_seen_at": "2026-09-07T13:02:39.813Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 44,
+      "attempts": 45,
       "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T15:16:43.951Z",
-      "retry_at": "2026-09-09T16:16:43.951Z"
+      "last_attempt_at": "2026-09-09T16:19:15.618Z",
+      "retry_at": "2026-09-09T17:19:15.618Z"
     },
     "Dc_spGMAPFc": {
       "source_handle": "akademiks",
@@ -14092,13 +14095,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T15:58:36.071Z",
-      "retry_at": "2026-09-09T16:13:36.071Z",
+      "checked_at": "2026-09-09T16:19:13.910Z",
+      "retry_at": "2026-09-09T16:34:13.910Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {
-      "checked_at": "2026-09-09T16:03:44.401Z",
-      "retry_at": "2026-09-09T16:18:44.401Z",
+      "checked_at": "2026-09-09T16:19:14.385Z",
+      "retry_at": "2026-09-09T16:34:14.385Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {

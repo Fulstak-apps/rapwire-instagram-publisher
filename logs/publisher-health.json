@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T15:48:40.877Z",
+  "checked_at": "2026-09-09T15:53:35.183Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T15:37:53.611Z",
-    "usage": 16,
+    "checked_at": "2026-09-09T15:53:34.399Z",
+    "usage": 15,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T15:52:53.611Z",
+    "next_check_at": "2026-09-09T16:08:34.399Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 16,
-    "instagram_remaining": 82,
+    "instagram_usage": 15,
+    "instagram_remaining": 83,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T05:27:20.995Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,22 +43,14 @@
     "threads_video_at": "2026-09-09T15:48:40.876Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble.json",
-      "id": "218-selfish-out-now-on-all-platforms-freethefellas-hungrynothumble",
-      "platform": "threads_video_fallback",
-      "status": "published",
-      "media_id": "18484806997107055"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "363-qc-p-shook-back-yall.json",
-      "id": "363-qc-p-shook-back-yall",
+      "file": "356-webbie-collapsed-while-performing-with-boosie-on-stage-yesterday.json",
+      "id": "356-webbie-collapsed-while-performing-with-boosie-on-stage-yesterday",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AgJTlPkvUcJv3p2EeiRWpn-\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ASmENVE_RaYNib22FKjfVxW\"}}"
     }
   ],
   "reviews": [
@@ -145,6 +137,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "356-webbie-collapsed-while-performing-with-boosie-on-stage-yesterday.json",
+      "id": "356-webbie-collapsed-while-performing-with-boosie-on-stage-yesterday",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",

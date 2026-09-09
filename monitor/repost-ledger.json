@@ -6481,51 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T03:07:15.437Z",
-      "candidates": 37,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Crop review required: No distinct footage region between static panels"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
-          "stage": "queue",
-          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_vtVum4ht/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc_vtVum4ht-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc92SHgju43/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc92SHgju43-2-capture-diagnostic.json"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-08T03:17:54.292Z"
-    },
-    {
       "started_at": "2026-09-08T03:23:00.041Z",
       "candidates": 55,
       "queued": [],
@@ -13889,6 +13844,45 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T15:21:56.674Z"
+    },
+    {
+      "started_at": "2026-09-09T15:26:59.596Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
+          "stage": "caption_repair",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "caption_repair_and_vip_discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T15:27:28.284Z"
     }
   ],
   "vip_pending": {
@@ -13959,10 +13953,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 88,
-      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T14:24:39.405Z",
-      "retry_at": "2026-09-09T15:24:39.405Z"
+      "attempts": 89,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-09T15:27:24.241Z",
+      "retry_at": "2026-09-09T16:27:24.241Z"
     },
     "Dc32-qLsTq5": {
       "source_handle": "akademiks",
@@ -13971,10 +13965,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 88,
-      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T14:24:40.907Z",
-      "retry_at": "2026-09-09T15:24:40.907Z"
+      "attempts": 89,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-09T15:27:28.284Z",
+      "retry_at": "2026-09-09T16:27:28.284Z"
     },
     "Dc322YeFQyh": {
       "source_handle": "akademiks",
@@ -14019,10 +14013,10 @@
       "first_seen_at": "2026-09-06T17:44:31.499Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 60,
-      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T14:24:38.208Z",
-      "retry_at": "2026-09-09T15:24:38.208Z"
+      "attempts": 61,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-09T15:27:20.338Z",
+      "retry_at": "2026-09-09T16:27:20.338Z"
     },
     "Dc9XO1DAR8r": {
       "source_handle": "akademiks",
@@ -14043,10 +14037,10 @@
       "first_seen_at": "2026-09-06T20:31:48.547Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 58,
-      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T14:24:36.839Z",
-      "retry_at": "2026-09-09T15:24:36.839Z"
+      "attempts": 59,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-09T15:27:16.207Z",
+      "retry_at": "2026-09-09T16:27:16.207Z"
     },
     "Dc_KAyJG1jU": {
       "source_handle": "akademiks",

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T05:47:46.943Z",
+  "checked_at": "2026-09-09T05:50:58.566Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -35,22 +35,30 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T05:47:40.068Z",
+  "threads_next_eligible_at": "2026-09-09T06:05:58.201Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T05:32:40.068Z",
-    "threads_video_at": "2026-09-09T05:32:40.068Z",
+    "threads_at": "2026-09-09T05:50:58.201Z",
+    "threads_video_at": "2026-09-09T05:50:58.201Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "452-42dugg-links-up-with-lilbaby-s-son-jason-the-one-he-s-always-get.json",
+      "id": "452-42dugg-links-up-with-lilbaby-s-son-jason-the-one-he-s-always-get",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18097228796160678"
+    }
+  ],
   "failures": [
     {
-      "file": "415-blueface-baby-mama-admits-she-lied-to-blueface-when-he-was-in-ja.json",
-      "id": "415-blueface-baby-mama-admits-she-lied-to-blueface-when-he-was-in-ja",
+      "file": "424-ye-s-day-1-john-monopoly-has-made-a-real-impact-on-the-culture.json",
+      "id": "424-ye-s-day-1-john-monopoly-has-made-a-real-impact-on-the-culture",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ANRUJoN6UMlb1ryPJqOlOHN\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AODwgra1xPqON2om2Ijg4mF\"}}"
     }
   ],
   "reviews": [

@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T12:43:32.540Z",
+  "checked_at": "2026-09-09T12:46:48.880Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T12:31:34.439Z",
+    "checked_at": "2026-09-09T12:46:48.289Z",
     "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T12:46:34.439Z",
+    "next_check_at": "2026-09-09T13:01:48.289Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "198-drake-has-been-spotify-s-most-streamed-rapper-for-18-months-stra.json",
-      "id": "198-drake-has-been-spotify-s-most-streamed-rapper-for-18-months-stra",
+      "file": "202-10-years-ago-today-travis-scott-dropped-birds-in-the-trap-sing-m.json",
+      "id": "202-10-years-ago-today-travis-scott-dropped-birds-in-the-trap-sing-m",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A_nPlkXdm2ElD4rakhwoSK7\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AWLBXlELTNBYITvXEdhKTZm\"}}"
     }
   ],
   "reviews": [

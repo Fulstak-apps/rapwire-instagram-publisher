@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T13:55:16.650Z",
+  "checked_at": "2026-09-09T13:57:29.049Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "260-tory-via-tmz-the-jury-in-lindsay-clancy-s-murder-case-was-unable.json",
-      "id": "260-tory-via-tmz-the-jury-in-lindsay-clancy-s-murder-case-was-unable",
+      "file": "254-meek-speaks.json",
+      "id": "254-meek-speaks",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A26J-PxSUeRJ5zoxAK8tVjG\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ALrZVaDNONJ6IxRXJZwLntF\"}}"
     }
   ],
   "reviews": [
@@ -137,6 +137,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "254-meek-speaks.json",
+      "id": "254-meek-speaks",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",

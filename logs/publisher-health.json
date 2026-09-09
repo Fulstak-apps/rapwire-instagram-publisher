@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T01:50:15.254Z",
+  "checked_at": "2026-09-09T01:56:02.900Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T01:40:07.942Z",
+    "checked_at": "2026-09-09T01:55:56.072Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T01:55:07.942Z",
+    "next_check_at": "2026-09-09T02:10:56.072Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 33,
-    "instagram_remaining": 65,
+    "instagram_usage": 32,
+    "instagram_remaining": 66,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-09T01:50:03.605Z",
+    "next_feed_eligible_at": "2026-09-09T02:26:02.648Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-09T01:55:15.257Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-09T01:20:03.605Z",
+    "instagram_feed_at": "2026-09-09T01:56:02.648Z",
     "threads_at": "2026-09-09T01:40:15.257Z",
     "threads_video_at": "2026-09-09T01:40:15.257Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "467-richthekid-gunna-gunna-are-teaming-up-dropping-a-song-too-bad-th.json",
+      "id": "467-richthekid-gunna-gunna-are-teaming-up-dropping-a-song-too-bad-th",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18141609268602919",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

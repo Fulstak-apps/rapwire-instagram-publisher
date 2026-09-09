@@ -6481,22 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T09:05:02.883Z",
-      "candidates": 60,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "Crop review required: Side crop would remove too much source content"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T09:07:25.013Z"
-    },
-    {
       "started_at": "2026-09-08T09:12:29.838Z",
       "candidates": 49,
       "queued": [],
@@ -13898,6 +13882,15 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T17:56:17.864Z"
+    },
+    {
+      "started_at": "2026-09-09T18:01:21.310Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T18:01:55.644Z"
     }
   ],
   "vip_pending": {
@@ -14096,16 +14089,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T17:55:40.726Z"
+      "checked_at": "2026-09-09T18:01:34.067Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T17:55:44.952Z"
+      "checked_at": "2026-09-09T18:01:38.415Z"
     },
     "records": {
-      "checked_at": "2026-09-09T17:55:49.200Z"
+      "checked_at": "2026-09-09T18:01:42.487Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T17:55:53.490Z"
+      "checked_at": "2026-09-09T18:01:46.802Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-09T17:50:26.861Z"
@@ -14126,10 +14119,10 @@
       "checked_at": "2026-09-09T17:44:47.644Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-09T17:27:21.542Z"
+      "checked_at": "2026-09-09T18:01:51.216Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-09T17:27:25.799Z"
+      "checked_at": "2026-09-09T18:01:55.490Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-09T17:50:22.637Z"

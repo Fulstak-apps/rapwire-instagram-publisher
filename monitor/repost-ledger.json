@@ -4373,6 +4373,27 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdDEaOwp8yo/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdDIWE4PoNf": {
+      "seen_at": "2026-09-09T02:11:17.823Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdDIWE4PoNf/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdDISLuzkf0": {
+      "seen_at": "2026-09-09T02:11:17.825Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdDISLuzkf0/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdDFXY1Ec8L": {
+      "seen_at": "2026-09-09T02:11:17.825Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdDFXY1Ec8L/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -6396,17 +6417,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-06T22:29:08.365Z",
-      "candidates": 57,
-      "queued": [
-        "369-jammy-the-bull-otf-jam-speaks-out-ahead-of-verdict-day-he-says-l"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 14,
-      "finished_at": "2026-09-06T22:30:33.881Z"
-    },
     {
       "started_at": "2026-09-06T22:35:37.107Z",
       "candidates": 63,
@@ -14865,6 +14875,52 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 18,
       "finished_at": "2026-09-09T02:04:56.760Z"
+    },
+    {
+      "started_at": "2026-09-09T02:10:02.859Z",
+      "candidates": 57,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDIWE4PoNf/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDIWE4PoNf-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDISLuzkf0/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDISLuzkf0-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDEaOwp8yo/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDEaOwp8yo-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_spGMAPFc-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDEaOwp8yo/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDEaOwp8yo-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdDC1BxJswE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDC1BxJswE-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 20,
+      "finished_at": "2026-09-09T02:30:03.977Z"
     }
   ],
   "vip_pending": {
@@ -15043,10 +15099,10 @@
       "first_seen_at": "2026-09-07T18:06:33.637Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 29,
+      "attempts": 30,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_spGMAPFc-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-09T00:58:10.559Z",
-      "retry_at": "2026-09-09T01:58:10.559Z"
+      "last_attempt_at": "2026-09-09T02:23:27.448Z",
+      "retry_at": "2026-09-09T03:23:27.448Z"
     },
     "DdCsCe8AoWO": {
       "source_handle": "akademiks",
@@ -15067,10 +15123,10 @@
       "first_seen_at": "2026-09-09T01:24:33.204Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 3,
+      "attempts": 4,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDC1BxJswE-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-09T02:04:56.760Z",
-      "retry_at": "2026-09-09T02:12:56.760Z"
+      "last_attempt_at": "2026-09-09T02:30:03.976Z",
+      "retry_at": "2026-09-09T02:46:03.976Z"
     },
     "DdDEaOwp8yo": {
       "source_handle": "traploreross",
@@ -15079,24 +15135,48 @@
       "first_seen_at": "2026-09-09T01:34:35.928Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 3,
+      "attempts": 5,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDEaOwp8yo-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-09T02:01:40.980Z",
-      "retry_at": "2026-09-09T02:09:40.980Z"
+      "last_attempt_at": "2026-09-09T02:26:46.972Z",
+      "retry_at": "2026-09-09T02:58:46.972Z"
+    },
+    "DdDIWE4PoNf": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdDIWE4PoNf/",
+      "shortcode": "DdDIWE4PoNf",
+      "first_seen_at": "2026-09-09T02:11:17.825Z",
+      "profile_position": 0,
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDIWE4PoNf-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-09T02:14:45.835Z",
+      "retry_at": "2026-09-09T02:16:45.835Z"
+    },
+    "DdDISLuzkf0": {
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdDISLuzkf0/",
+      "shortcode": "DdDISLuzkf0",
+      "first_seen_at": "2026-09-09T02:11:17.825Z",
+      "profile_position": 1,
+      "state": "retry_pending",
+      "attempts": 1,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdDISLuzkf0-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-09T02:18:14.313Z",
+      "retry_at": "2026-09-09T02:20:14.313Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T01:49:04.735Z"
+      "checked_at": "2026-09-09T02:10:11.970Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T01:49:08.767Z"
+      "checked_at": "2026-09-09T02:10:15.956Z"
     },
     "records": {
-      "checked_at": "2026-09-09T01:49:12.756Z"
+      "checked_at": "2026-09-09T02:10:19.969Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T01:49:16.720Z"
+      "checked_at": "2026-09-09T02:10:24.017Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-09T01:23:55.626Z"
@@ -15108,7 +15188,7 @@
       "checked_at": "2026-09-09T01:33:57.831Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T00:55:45.954Z"
+      "checked_at": "2026-09-09T02:10:27.932Z"
     },
     "xxl": {
       "checked_at": "2026-09-09T01:12:34.076Z"
@@ -15117,7 +15197,7 @@
       "checked_at": "2026-09-09T01:12:38.010Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-09T01:04:04.529Z"
+      "checked_at": "2026-09-09T02:10:31.875Z"
     },
     "igndotcom": {
       "checked_at": "2026-09-09T01:04:08.409Z"

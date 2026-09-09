@@ -6481,52 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T20:49:33.076Z",
-      "candidates": 58,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DdCgteHyUdY/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCgteHyUdY-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DdCg5nky2XG/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCg5nky2XG-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DdChDSySxhw/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdChDSySxhw-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_spGMAPFc-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc58CVBIpOF-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DdCfx-VSCSd/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCfx-VSCSd-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 19,
-      "finished_at": "2026-09-08T21:09:05.339Z"
-    },
-    {
       "started_at": "2026-09-08T21:14:08.587Z",
       "candidates": 38,
       "queued": [],
@@ -13665,6 +13619,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T23:54:13.302Z"
+    },
+    {
+      "started_at": "2026-09-09T23:59:16.428Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T23:59:21.675Z"
     }
   ],
   "vip_pending": {
@@ -13883,8 +13857,8 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-09T23:43:40.437Z",
-      "retry_at": "2026-09-09T23:58:40.437Z",
+      "checked_at": "2026-09-09T23:59:21.431Z",
+      "retry_at": "2026-09-10T00:14:21.431Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
     },
     "raplisted_": {
@@ -13923,8 +13897,8 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-09T23:38:32.685Z",
-      "retry_at": "2026-09-09T23:53:32.685Z",
+      "checked_at": "2026-09-09T23:59:20.929Z",
+      "retry_at": "2026-09-10T00:14:20.929Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
     }
   }

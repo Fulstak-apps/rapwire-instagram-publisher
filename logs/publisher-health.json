@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T12:36:56.402Z",
+  "checked_at": "2026-09-09T12:38:34.744Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,32 +43,17 @@
     "threads_video_at": "2026-09-09T12:21:35.206Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "459-they-really-assembled-the-avengers-for-this-commercial-lebron-ja.json",
-      "id": "459-they-really-assembled-the-avengers-for-this-commercial-lebron-ja",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17947627197295797"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "464-fans-put-free-lil-durk-lildurk-signs-outside-the-courthouse-alle.json",
-      "id": "464-fans-put-free-lil-durk-lildurk-signs-outside-the-courthouse-alle",
+      "file": "429-az-chike-and-tyler-the-creator-feliciathegoat-s-look-like-my-mam.json",
+      "id": "429-az-chike-and-tyler-the-creator-feliciathegoat-s-look-like-my-mam",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AJctIVr-jZSG8OR4P4GHPah\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AHmf2gEcCZKKPq9Q3BAxTeN\"}}"
     }
   ],
   "reviews": [
-    {
-      "file": "464-fans-put-free-lil-durk-lildurk-signs-outside-the-courthouse-alle.json",
-      "id": "464-fans-put-free-lil-durk-lildurk-signs-outside-the-courthouse-alle",
-      "platform": "instagram",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
-    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
@@ -145,6 +130,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "429-az-chike-and-tyler-the-creator-feliciathegoat-s-look-like-my-mam.json",
+      "id": "429-az-chike-and-tyler-the-creator-feliciathegoat-s-look-like-my-mam",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour.json",

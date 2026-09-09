@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T07:02:27.886Z",
+  "checked_at": "2026-09-09T07:03:30.403Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T06:48:20.886Z",
-    "usage": 31,
+    "checked_at": "2026-09-09T07:03:29.770Z",
+    "usage": 30,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T07:03:20.886Z",
+    "next_check_at": "2026-09-09T07:18:29.770Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 31,
-    "instagram_remaining": 67,
+    "instagram_usage": 30,
+    "instagram_remaining": 68,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T05:27:20.995Z",
@@ -46,21 +46,14 @@
   "publications": [],
   "failures": [
     {
-      "file": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin.json",
-      "id": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin",
+      "file": "453-brian-steele-said-otf-jam-is-a-serial-killer-how-dare-the-fbi-pu.json",
+      "id": "453-brian-steele-said-otf-jam-is-a-serial-killer-how-dare-the-fbi-pu",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"Af5jIyPsLsqLzvc30hositD\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"Afb_YnczjjOFc0tewWqMTAM\"}}"
     }
   ],
   "reviews": [
-    {
-      "file": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin.json",
-      "id": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin",
-      "platform": "instagram",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
-    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",

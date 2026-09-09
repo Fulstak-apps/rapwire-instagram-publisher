@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T01:35:04.200Z",
+  "checked_at": "2026-09-09T01:40:15.593Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T01:24:57.178Z",
+    "checked_at": "2026-09-09T01:40:07.942Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T01:39:57.178Z",
+    "next_check_at": "2026-09-09T01:55:07.942Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T01:35:17.450Z",
+  "threads_next_eligible_at": "2026-09-09T01:55:15.257Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T01:20:03.605Z",
-    "threads_at": "2026-09-09T01:20:17.450Z",
-    "threads_video_at": "2026-09-09T01:20:17.450Z",
+    "threads_at": "2026-09-09T01:40:15.257Z",
+    "threads_video_at": "2026-09-09T01:40:15.257Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "440-yachty-really-could-not-let-this-go-lil-yachty-went-viral-after-.json",
+      "id": "440-yachty-really-could-not-let-this-go-lil-yachty-went-viral-after-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17976206709120959"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

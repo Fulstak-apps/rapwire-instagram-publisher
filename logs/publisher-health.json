@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T13:45:00.655Z",
+  "checked_at": "2026-09-09T13:47:23.037Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T13:32:20.650Z",
+    "checked_at": "2026-09-09T13:47:22.460Z",
     "usage": 19,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T13:47:20.650Z",
+    "next_check_at": "2026-09-09T14:02:22.460Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "260-tory-via-tmz-the-jury-in-lindsay-clancy-s-murder-case-was-unable.json",
-      "id": "260-tory-via-tmz-the-jury-in-lindsay-clancy-s-murder-case-was-unable",
+      "file": "254-meek-speaks.json",
+      "id": "254-meek-speaks",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AM6Bngt3LpLXmUwWmTwhxUz\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ACk_5_PKYDWH0Qhg1SXQ1_V\"}}"
     }
   ],
   "reviews": [

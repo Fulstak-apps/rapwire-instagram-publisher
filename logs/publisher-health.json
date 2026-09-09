@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T16:34:05.440Z",
+  "checked_at": "2026-09-09T16:39:09.518Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T16:23:56.065Z",
+    "checked_at": "2026-09-09T16:39:08.831Z",
     "usage": 14,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T16:38:56.065Z",
+    "next_check_at": "2026-09-09T16:54:08.831Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "383-mo3-girlfriend-claims-the-middle-man-who-was-her-baby-daddy-was-.json",
-      "id": "383-mo3-girlfriend-claims-the-middle-man-who-was-her-baby-daddy-was-",
+      "file": "382-otf-jam-got-some-more-to-say.json",
+      "id": "382-otf-jam-got-some-more-to-say",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ApZe2K1jHZim_SAnpdGdV8H\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A4v-nQ0r6SjITnZjW4sR1UO\"}}"
     }
   ],
   "reviews": [

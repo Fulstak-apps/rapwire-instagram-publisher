@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T17:24:43.297Z",
+  "checked_at": "2026-09-09T17:30:14.901Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "401-fans-reportedly-took-the-mac-miller-rd-sign-so-many-times-that-i.json",
-      "id": "401-fans-reportedly-took-the-mac-miller-rd-sign-so-many-times-that-i",
+      "file": "390-eazy-e-would-ve-turned-62-years-old-today-happy-heavenly-birthda.json",
+      "id": "390-eazy-e-would-ve-turned-62-years-old-today-happy-heavenly-birthda",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AwHN0_HLw0ToQQq_X_zhomm\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AO85YdQhrb451icckTVGaqS\"}}"
     }
   ],
   "reviews": [
@@ -137,6 +137,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "390-eazy-e-would-ve-turned-62-years-old-today-happy-heavenly-birthda.json",
+      "id": "390-eazy-e-would-ve-turned-62-years-old-today-happy-heavenly-birthda",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",

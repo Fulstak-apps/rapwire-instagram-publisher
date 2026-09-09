@@ -6481,24 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-07T20:25:48.363Z",
-      "candidates": 61,
-      "queued": [
-        "408-riotusa-says-today-s-short-attention-spans-are-changing-the-way-"
-      ],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_vtVum4ht/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (2 matches); refusing unrelated media; inspect Dc_vtVum4ht-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-07T20:28:46.087Z"
-    },
-    {
       "started_at": "2026-09-07T20:34:01.664Z",
       "candidates": 37,
       "queued": [],
@@ -13898,6 +13880,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T12:45:31.294Z"
+    },
+    {
+      "started_at": "2026-09-09T12:50:33.826Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "xxl",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "hiphopdx",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T12:50:40.736Z"
     }
   ],
   "vip_pending": {
@@ -14136,13 +14138,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {
-      "checked_at": "2026-09-09T12:24:42.068Z",
-      "retry_at": "2026-09-09T12:39:42.068Z",
+      "checked_at": "2026-09-09T12:50:40.276Z",
+      "retry_at": "2026-09-09T13:05:40.276Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-09T12:29:55.315Z",
-      "retry_at": "2026-09-09T12:44:55.315Z",
+      "checked_at": "2026-09-09T12:50:40.628Z",
+      "retry_at": "2026-09-09T13:05:40.628Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
     },
     "rockstargames": {

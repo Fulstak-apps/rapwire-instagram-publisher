@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T14:26:07.353Z",
+  "checked_at": "2026-09-09T14:27:51.097Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "323-every-guest-ye-brought-out-for-night-2-in-chicago.json",
-      "id": "323-every-guest-ye-brought-out-for-night-2-in-chicago",
+      "file": "320-ye-and-kid-cudi-reunited-after-six-years-and-i-still-haven-t-ful.json",
+      "id": "320-ye-and-kid-cudi-reunited-after-six-years-and-i-still-haven-t-ful",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A__XGSq5mghGXE97J3mbHRX\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A7KronIQUSjlRT62RvS4UkN\"}}"
     }
   ],
   "reviews": [
@@ -137,6 +137,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "320-ye-and-kid-cudi-reunited-after-six-years-and-i-still-haven-t-ful.json",
+      "id": "320-ye-and-kid-cudi-reunited-after-six-years-and-i-still-haven-t-ful",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",

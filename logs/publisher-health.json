@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T04:26:58.130Z",
+  "checked_at": "2026-09-09T04:31:58.057Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T04:16:50.714Z",
-    "usage": 34,
+    "checked_at": "2026-09-09T04:31:57.476Z",
+    "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T04:31:50.714Z",
+    "next_check_at": "2026-09-09T04:46:57.476Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 34,
-    "instagram_remaining": 64,
+    "instagram_usage": 33,
+    "instagram_remaining": 65,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T04:52:10.493Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,15 +43,7 @@
     "threads_video_at": "2026-09-09T04:26:57.618Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin.json",
-      "id": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18005845575002397"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

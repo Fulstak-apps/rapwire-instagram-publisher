@@ -6481,58 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-07T01:36:42.726Z",
-      "candidates": 52,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9YSd_gCof-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
-          "stage": "queue",
-          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc3-LqbG5jK/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc3-LqbG5jK-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc58CVBIpOF-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc92SHgju43/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc92SHgju43-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-07T01:46:10.299Z"
-    },
-    {
       "started_at": "2026-09-07T01:51:14.223Z",
       "candidates": 59,
       "queued": [],
@@ -14803,6 +14751,34 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T05:04:12.767Z"
+    },
+    {
+      "started_at": "2026-09-09T05:09:16.021Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T05:09:58.630Z"
     }
   ],
   "vip_pending": {
@@ -14825,10 +14801,10 @@
       "first_seen_at": "2026-09-03T06:22:41.175Z",
       "profile_position": 11,
       "state": "retry_pending",
-      "attempts": 85,
-      "last_error": "Crop review required: source branding is not isolated in a removable top header",
-      "last_attempt_at": "2026-09-09T04:06:45.866Z",
-      "retry_at": "2026-09-09T05:06:45.866Z"
+      "attempts": 86,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-09T05:09:58.630Z",
+      "retry_at": "2026-09-09T06:09:58.630Z"
     },
     "Dc1oLsTgfLu": {
       "source_handle": "akademiks",
@@ -14861,10 +14837,10 @@
       "first_seen_at": "2026-09-04T01:28:48.855Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 83,
-      "last_error": "Crop review required: No distinct footage region between static panels",
-      "last_attempt_at": "2026-09-09T04:05:22.031Z",
-      "retry_at": "2026-09-09T05:05:22.031Z"
+      "attempts": 84,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-09T05:09:54.713Z",
+      "retry_at": "2026-09-09T06:09:54.713Z"
     },
     "Dc30JSSjmsc": {
       "source_handle": "akademiks",
@@ -14897,10 +14873,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 78,
-      "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
-      "last_attempt_at": "2026-09-09T04:02:52.889Z",
-      "retry_at": "2026-09-09T05:02:52.889Z"
+      "attempts": 79,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-09T05:09:50.748Z",
+      "retry_at": "2026-09-09T06:09:50.748Z"
     },
     "Dc6e8SjEY1u": {
       "source_handle": "records",
@@ -15001,22 +14977,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T05:03:43.771Z"
+      "checked_at": "2026-09-09T05:09:25.645Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T05:03:47.949Z"
+      "checked_at": "2026-09-09T05:09:29.712Z"
     },
     "records": {
-      "checked_at": "2026-09-09T05:03:52.248Z"
+      "checked_at": "2026-09-09T05:09:33.942Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T05:03:56.699Z"
+      "checked_at": "2026-09-09T05:09:38.183Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-09T04:16:35.121Z"
+      "checked_at": "2026-09-09T05:09:42.451Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-09T04:31:36.895Z"
+      "checked_at": "2026-09-09T05:09:46.690Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-09T04:31:40.836Z"

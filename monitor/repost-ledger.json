@@ -6481,42 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-07T21:13:45.335Z",
-      "candidates": 55,
-      "queued": [
-        "412-he-just-had-to-survive-five-minutes-in-the-ring-and-boat-came-ou"
-      ],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
-          "stage": "queue",
-          "error": "Crop review required: source branding overlaps footage instead of a removable outer panel"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "Crop review required: Side crop would remove too much source content"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
-          "stage": "queue",
-          "error": "Crop review required: No distinct footage region between static panels"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-07T21:26:49.337Z"
-    },
-    {
       "started_at": "2026-09-07T21:32:23.669Z",
       "candidates": 60,
       "queued": [
@@ -13880,6 +13844,32 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T13:06:25.602Z"
+    },
+    {
+      "started_at": "2026-09-09T13:11:28.616Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
+          "stage": "queue",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T13:11:37.124Z"
     }
   ],
   "vip_pending": {
@@ -14046,10 +14036,10 @@
       "first_seen_at": "2026-09-07T13:02:39.813Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 41,
+      "attempts": 42,
       "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T12:09:04.798Z",
-      "retry_at": "2026-09-09T13:09:04.798Z"
+      "last_attempt_at": "2026-09-09T13:11:37.124Z",
+      "retry_at": "2026-09-09T14:11:37.124Z"
     },
     "Dc_spGMAPFc": {
       "source_handle": "akademiks",
@@ -14119,8 +14109,8 @@
       "checked_at": "2026-09-09T13:06:17.288Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-09T12:50:40.628Z",
-      "retry_at": "2026-09-09T13:05:40.628Z",
+      "checked_at": "2026-09-09T13:11:34.995Z",
+      "retry_at": "2026-09-09T13:26:34.995Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
     },
     "rockstargames": {
@@ -14134,8 +14124,8 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-09T12:55:49.422Z",
-      "retry_at": "2026-09-09T13:10:49.422Z",
+      "checked_at": "2026-09-09T13:11:35.793Z",
+      "retry_at": "2026-09-09T13:26:35.793Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
     }
   }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T03:46:34.004Z",
+  "checked_at": "2026-09-09T03:51:37.353Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 33,
-    "instagram_remaining": 65,
+    "instagram_usage": 34,
+    "instagram_remaining": 64,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T04:16:33.772Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -43,16 +43,7 @@
     "threads_video_at": "2026-09-09T03:41:42.087Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "399-ben-10-speaks.json",
-      "id": "399-ben-10-speaks",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18026976113854192",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

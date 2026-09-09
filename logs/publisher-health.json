@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T07:17:48.976Z",
+  "checked_at": "2026-09-09T07:22:59.623Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T07:03:29.770Z",
+    "checked_at": "2026-09-09T07:22:59.090Z",
     "usage": 30,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T07:18:29.770Z",
+    "next_check_at": "2026-09-09T07:37:59.090Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,17 +46,17 @@
   "publications": [],
   "failures": [
     {
-      "file": "434-lil-durk-lildurk-s-dad-says-it-hurt-watching-otf-jam-take-the-st.json",
-      "id": "434-lil-durk-lildurk-s-dad-says-it-hurt-watching-otf-jam-take-the-st",
+      "file": "438-six-years-ago-today-travis-scott-travisscott-and-mcdonald-s-rele.json",
+      "id": "438-six-years-ago-today-travis-scott-travisscott-and-mcdonald-s-rele",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AvZDQ6uLIMbX_8DAdOKpcql\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AFR8zrE07bqbflmwCfU0YK_\"}}"
     }
   ],
   "reviews": [
     {
-      "file": "434-lil-durk-lildurk-s-dad-says-it-hurt-watching-otf-jam-take-the-st.json",
-      "id": "434-lil-durk-lildurk-s-dad-says-it-hurt-watching-otf-jam-take-the-st",
+      "file": "438-six-years-ago-today-travis-scott-travisscott-and-mcdonald-s-rele.json",
+      "id": "438-six-years-ago-today-travis-scott-travisscott-and-mcdonald-s-rele",
       "platform": "instagram",
       "status": "review_required",
       "reason": "three_item_specific_delivery_failures"

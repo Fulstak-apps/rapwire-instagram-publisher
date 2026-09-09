@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T08:18:54.678Z",
+  "checked_at": "2026-09-09T08:24:01.197Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T08:08:54.956Z",
+    "checked_at": "2026-09-09T08:24:00.525Z",
     "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T08:23:54.956Z",
+    "next_check_at": "2026-09-09T08:39:00.525Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,14 +46,21 @@
   "publications": [],
   "failures": [
     {
-      "file": "460-brian-steel-went-hard-in-durks-closing-argument-compared-his-def.json",
-      "id": "460-brian-steel-went-hard-in-durks-closing-argument-compared-his-def",
+      "file": "455-brian-steele-trashed-otf-vonni-said-he-s-took-advantage-and-had-.json",
+      "id": "455-brian-steele-trashed-otf-vonni-said-he-s-took-advantage-and-had-",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"Ar-4G0ICO9vZ1LynZN-VQS4\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"El usuario está restringido\",\"error_user_msg\":\"La cuenta de Instagram está restringida.\",\"fbtrace_id\":\"ARLwULrdcwL29asP5PL2aqt\"}}"
     }
   ],
   "reviews": [
+    {
+      "file": "455-brian-steele-trashed-otf-vonni-said-he-s-took-advantage-and-had-.json",
+      "id": "455-brian-steele-trashed-otf-vonni-said-he-s-took-advantage-and-had-",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
+    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",

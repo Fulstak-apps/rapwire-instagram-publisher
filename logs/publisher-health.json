@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T12:17:59.952Z",
+  "checked_at": "2026-09-09T12:21:35.207Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,28 +35,36 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T12:26:30.464Z",
+  "threads_next_eligible_at": "2026-09-09T12:36:35.206Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T12:11:30.464Z",
-    "threads_video_at": "2026-09-09T11:46:12.221Z",
+    "threads_at": "2026-09-09T12:21:35.206Z",
+    "threads_video_at": "2026-09-09T12:21:35.206Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d.json",
+      "id": "207-that-time-dj-khaled-refused-to-let-his-jordans-touch-the-floor-d",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18086945105236645"
+    }
+  ],
   "failures": [
     {
-      "file": "418-cardi-b-offset-s-son-wished-for-his-dad-to-come-to-his-birthday-.json",
-      "id": "418-cardi-b-offset-s-son-wished-for-his-dad-to-come-to-his-birthday-",
+      "file": "440-yachty-really-could-not-let-this-go-lil-yachty-went-viral-after-.json",
+      "id": "440-yachty-really-could-not-let-this-go-lil-yachty-went-viral-after-",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AJUj4PkFgzkDu5UCjGPuo3m\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AYj1EfwUvt58PlRNG8XDlt7\"}}"
     }
   ],
   "reviews": [
     {
-      "file": "418-cardi-b-offset-s-son-wished-for-his-dad-to-come-to-his-birthday-.json",
-      "id": "418-cardi-b-offset-s-son-wished-for-his-dad-to-come-to-his-birthday-",
+      "file": "440-yachty-really-could-not-let-this-go-lil-yachty-went-viral-after-.json",
+      "id": "440-yachty-really-could-not-let-this-go-lil-yachty-went-viral-after-",
       "platform": "instagram",
       "status": "review_required",
       "reason": "three_item_specific_delivery_failures"

@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T09:34:49.391Z",
+  "checked_at": "2026-09-09T09:39:46.309Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T09:24:35.820Z",
+    "checked_at": "2026-09-09T09:39:45.206Z",
     "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T09:39:35.820Z",
+    "next_check_at": "2026-09-09T09:54:45.206Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "472-feds-claim-akademiks-knew-about-lul-pab-murder-and-couldn-t-even.json",
-      "id": "472-feds-claim-akademiks-knew-about-lul-pab-murder-and-couldn-t-even",
+      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
+      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A_ht0Hl1bRe1huNXwa8dLai\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AAp_bclBZJU5ZEWBDb_mSX7\"}}"
     }
   ],
   "reviews": [

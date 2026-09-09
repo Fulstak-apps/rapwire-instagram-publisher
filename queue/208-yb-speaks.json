@@ -65,7 +65,8 @@
   "facebook_published_at": "2026-09-04T16:31:10.998Z",
   "facebook_verified_at": "2026-09-04T16:31:11.417Z",
   "facebook_permalink": "https://www.facebook.com/1461742512431849/posts/1461758532430247",
-  "instagram_error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AN2TVnWUC6_ekJE4vJOtLfm\"}}",
-  "instagram_failure_count": 2,
-  "instagram_retry_at": "2026-09-09T13:08:54.965Z"
+  "instagram_error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ALK5umLCzKw8CZ15Hg7Z2sI\"}}",
+  "instagram_failure_count": 3,
+  "instagram_status": "review_required",
+  "instagram_skip_reason": "three_item_specific_delivery_failures"
 }

@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T06:01:10.008Z",
+  "checked_at": "2026-09-09T06:02:49.967Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T05:47:44.844Z",
+    "checked_at": "2026-09-09T06:02:49.331Z",
     "usage": 32,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T06:02:44.844Z",
+    "next_check_at": "2026-09-09T06:17:49.332Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,14 +46,21 @@
   "publications": [],
   "failures": [
     {
-      "file": "424-ye-s-day-1-john-monopoly-has-made-a-real-impact-on-the-culture.json",
-      "id": "424-ye-s-day-1-john-monopoly-has-made-a-real-impact-on-the-culture",
+      "file": "417-blueface-baby-mama-says-she-picked-her-side-she-choose-blueface-.json",
+      "id": "417-blueface-baby-mama-says-she-picked-her-side-she-choose-blueface-",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AmQ2pp3fAE5sCDe2juiLqk0\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ALPj6tnVDpnp6JC9kAeyNya\"}}"
     }
   ],
   "reviews": [
+    {
+      "file": "417-blueface-baby-mama-says-she-picked-her-side-she-choose-blueface-.json",
+      "id": "417-blueface-baby-mama-says-she-picked-her-side-she-choose-blueface-",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
+    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",

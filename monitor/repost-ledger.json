@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T17:26:02.508Z",
-      "candidates": 60,
-      "queued": [
-        "436-lil-durk-lildurk-s-jury-instruction-completed-judge-was-not-play"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T17:31:48.953Z"
-    },
-    {
       "started_at": "2026-09-08T17:37:15.807Z",
       "candidates": 53,
       "queued": [],
@@ -13546,6 +13535,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T22:08:02.689Z"
+    },
+    {
+      "started_at": "2026-09-09T22:13:05.808Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T22:13:10.461Z"
     }
   ],
   "vip_pending": {
@@ -13764,13 +13773,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-09T21:47:07.371Z",
-      "retry_at": "2026-09-09T22:02:07.371Z",
+      "checked_at": "2026-09-09T22:13:09.835Z",
+      "retry_at": "2026-09-09T22:28:09.835Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
     },
     "raplisted_": {
-      "checked_at": "2026-09-09T21:52:21.047Z",
-      "retry_at": "2026-09-09T22:07:21.047Z",
+      "checked_at": "2026-09-09T22:13:10.364Z",
+      "retry_at": "2026-09-09T22:28:10.364Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
     },
     "freshouttheculture": {

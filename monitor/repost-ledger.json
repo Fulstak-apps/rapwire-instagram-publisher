@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T19:47:18.561Z",
-      "candidates": 58,
-      "queued": [
-        "445-lil-yachty-and-ice-spice-turned-their-latest-music-video-into-a-"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T19:48:42.101Z"
-    },
-    {
       "started_at": "2026-09-08T19:53:48.545Z",
       "candidates": 38,
       "queued": [],
@@ -13601,6 +13590,58 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T23:28:11.383Z"
+    },
+    {
+      "started_at": "2026-09-09T23:33:14.366Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "traploreross",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "records",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "darnellwilliams",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "rockstargames",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/rockstargames/\nCall log:\n  - navigating to \"https://www.instagram.com/rockstargames/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "igndotcom",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
+          "stage": "queue",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
+          "stage": "queue",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T23:33:24.153Z"
     }
   ],
   "vip_pending": {
@@ -13779,10 +13820,10 @@
       "first_seen_at": "2026-09-07T18:06:33.637Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 49,
+      "attempts": 50,
       "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T22:28:44.473Z",
-      "retry_at": "2026-09-09T23:28:44.473Z"
+      "last_attempt_at": "2026-09-09T23:33:24.153Z",
+      "retry_at": "2026-09-10T00:33:24.153Z"
     },
     "DdCsCe8AoWO": {
       "source_handle": "akademiks",
@@ -13791,31 +13832,31 @@
       "first_seen_at": "2026-09-08T21:55:54.045Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 26,
+      "attempts": 27,
       "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T22:28:43.182Z",
-      "retry_at": "2026-09-09T23:28:43.182Z"
+      "last_attempt_at": "2026-09-09T23:33:23.078Z",
+      "retry_at": "2026-09-10T00:33:23.078Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T23:17:52.077Z",
-      "retry_at": "2026-09-09T23:32:52.077Z",
+      "checked_at": "2026-09-09T23:33:18.480Z",
+      "retry_at": "2026-09-09T23:48:18.480Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T23:17:52.568Z",
-      "retry_at": "2026-09-09T23:32:52.568Z",
+      "checked_at": "2026-09-09T23:33:18.991Z",
+      "retry_at": "2026-09-09T23:48:18.991Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
     },
     "records": {
-      "checked_at": "2026-09-09T23:17:52.954Z",
-      "retry_at": "2026-09-09T23:32:52.954Z",
+      "checked_at": "2026-09-09T23:33:19.903Z",
+      "retry_at": "2026-09-09T23:48:19.903Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T23:17:53.554Z",
-      "retry_at": "2026-09-09T23:32:53.554Z",
+      "checked_at": "2026-09-09T23:33:20.469Z",
+      "retry_at": "2026-09-09T23:48:20.469Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
     },
     "trapmatictv": {
@@ -13847,10 +13888,14 @@
       "checked_at": "2026-09-09T23:12:33.067Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-09T23:01:13.859Z"
+      "checked_at": "2026-09-09T23:33:21.063Z",
+      "retry_at": "2026-09-09T23:48:21.063Z",
+      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/rockstargames/\nCall log:\n  - navigating to \"https://www.instagram.com/rockstargames/\", waiting until \"domcontentloaded\"\n"
     },
     "igndotcom": {
-      "checked_at": "2026-09-09T23:01:18.514Z"
+      "checked_at": "2026-09-09T23:33:21.755Z",
+      "retry_at": "2026-09-09T23:48:21.755Z",
+      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-09T23:17:54.699Z",

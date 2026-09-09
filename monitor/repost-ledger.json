@@ -6481,34 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T13:43:44.788Z",
-      "candidates": 54,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc32-qLsTq5-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T13:49:57.478Z"
-    },
-    {
       "started_at": "2026-09-08T13:55:01.711Z",
       "candidates": 60,
       "queued": [],
@@ -13632,6 +13604,28 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T20:18:07.681Z"
+    },
+    {
+      "started_at": "2026-09-09T20:23:10.799Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T20:23:52.051Z"
     }
   ],
   "vip_pending": {
@@ -13810,10 +13804,10 @@
       "first_seen_at": "2026-09-07T18:06:33.637Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 46,
+      "attempts": 47,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T19:21:21.206Z",
-      "retry_at": "2026-09-09T20:21:21.206Z"
+      "last_attempt_at": "2026-09-09T20:23:52.051Z",
+      "retry_at": "2026-09-09T21:23:52.051Z"
     },
     "DdCsCe8AoWO": {
       "source_handle": "akademiks",
@@ -13822,33 +13816,33 @@
       "first_seen_at": "2026-09-08T21:55:54.045Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 23,
+      "attempts": 24,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T19:21:17.202Z",
-      "retry_at": "2026-09-09T20:21:17.202Z"
+      "last_attempt_at": "2026-09-09T20:23:47.604Z",
+      "retry_at": "2026-09-09T21:23:47.604Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T20:17:45.667Z"
+      "checked_at": "2026-09-09T20:23:18.581Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T20:17:50.062Z"
+      "checked_at": "2026-09-09T20:23:22.964Z"
     },
     "records": {
-      "checked_at": "2026-09-09T20:17:54.441Z"
+      "checked_at": "2026-09-09T20:23:27.351Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T20:17:58.641Z"
+      "checked_at": "2026-09-09T20:23:31.740Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-09T20:12:32.666Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-09T19:55:30.891Z"
+      "checked_at": "2026-09-09T20:23:36.120Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-09T20:01:01.711Z"
+      "checked_at": "2026-09-09T20:23:40.858Z"
     },
     "complexmusic": {
       "checked_at": "2026-09-09T20:01:05.943Z"

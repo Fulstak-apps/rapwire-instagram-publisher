@@ -1,7 +1,7 @@
 {
   "overdue": true,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
@@ -49,7 +49,6 @@
     "350-jay-z-pulled-up-to-his-pop-up-at-trafalgar-square-ahead-of-his-l",
     "353-it-s-time-to-have-the-conversation-is-ye-the-greatest-live-perfo",
     "355-ye-s-new-world-tour-zine-created-with-aus-taylor-gives-fans-a-cl",
-    "356-webbie-collapsed-while-performing-with-boosie-on-stage-yesterday",
     "357-ice-spice-is-currently-going-viral-for-her-new-leg-tattoo-she-ju",
     "363-qc-p-shook-back-yall",
     "364-old-footage-shows-lil-durk-driving-the-300-trackhawk-that-otf-vo",
@@ -106,7 +105,7 @@
     "472-feds-claim-akademiks-knew-about-lul-pab-murder-and-couldn-t-even"
   ],
   "dispatch": true,
-  "reason": "missed_feed_window",
-  "checked_at": "2026-09-09T15:37:54.487Z",
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-09T15:43:02.912Z",
   "deferred": []
 }

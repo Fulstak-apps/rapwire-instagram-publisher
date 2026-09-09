@@ -6481,15 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T06:53:12.228Z",
-      "candidates": 58,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T06:54:09.345Z"
-    },
-    {
       "started_at": "2026-09-08T06:59:13.090Z",
       "candidates": 56,
       "queued": [],
@@ -13886,6 +13877,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T16:45:16.181Z"
+    },
+    {
+      "started_at": "2026-09-09T16:50:19.727Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "xxl",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "hiphopdx",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T16:50:24.875Z"
     }
   ],
   "vip_pending": {
@@ -14124,13 +14135,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {
-      "checked_at": "2026-09-09T16:19:14.385Z",
-      "retry_at": "2026-09-09T16:34:14.385Z",
+      "checked_at": "2026-09-09T16:50:24.383Z",
+      "retry_at": "2026-09-09T17:05:24.383Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-09T16:34:51.078Z",
-      "retry_at": "2026-09-09T16:49:51.078Z",
+      "checked_at": "2026-09-09T16:50:24.770Z",
+      "retry_at": "2026-09-09T17:05:24.770Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
     },
     "rockstargames": {

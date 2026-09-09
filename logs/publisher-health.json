@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T14:46:42.435Z",
+  "checked_at": "2026-09-09T14:48:04.300Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T14:32:51.338Z",
-    "usage": 18,
+    "checked_at": "2026-09-09T14:48:02.994Z",
+    "usage": 17,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T14:47:51.338Z",
+    "next_check_at": "2026-09-09T15:03:02.994Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 18,
-    "instagram_remaining": 80,
+    "instagram_usage": 17,
+    "instagram_remaining": 81,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T05:27:20.995Z",
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "340-kid-cudi-stood-by-ye-after-peter-rosenberg-criticized-those-show.json",
-      "id": "340-kid-cudi-stood-by-ye-after-peter-rosenberg-criticized-those-show",
+      "file": "329-kid-cudi-reacts-to-reuniting-with-ye-after-years-love-u-big-bro-.json",
+      "id": "329-kid-cudi-reacts-to-reuniting-with-ye-after-years-love-u-big-bro-",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AsYx6yNCtQId_bIUMh0gNAI\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"Ak9vy7Ov7wfmZ3CT8ry_XNS\"}}"
     }
   ],
   "reviews": [

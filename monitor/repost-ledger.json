@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-07T23:02:42.593Z",
-      "candidates": 61,
-      "queued": [
-        "417-blueface-baby-mama-says-she-picked-her-side-she-choose-blueface-"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-07T23:10:01.403Z"
-    },
-    {
       "started_at": "2026-09-07T23:15:20.658Z",
       "candidates": 49,
       "queued": [],
@@ -13907,6 +13896,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T13:48:12.487Z"
+    },
+    {
+      "started_at": "2026-09-09T13:53:15.795Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T13:53:22.147Z"
     }
   ],
   "vip_pending": {
@@ -14130,13 +14139,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
     },
     "raplisted_": {
-      "checked_at": "2026-09-09T13:27:17.329Z",
-      "retry_at": "2026-09-09T13:42:17.329Z",
+      "checked_at": "2026-09-09T13:53:21.687Z",
+      "retry_at": "2026-09-09T14:08:21.687Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-09T13:32:33.058Z",
-      "retry_at": "2026-09-09T13:47:33.058Z",
+      "checked_at": "2026-09-09T13:53:22.038Z",
+      "retry_at": "2026-09-09T14:08:22.038Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {

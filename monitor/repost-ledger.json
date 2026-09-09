@@ -6481,28 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T13:12:47.929Z",
-      "candidates": 56,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc58CVBIpOF-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T13:21:14.731Z"
-    },
-    {
       "started_at": "2026-09-08T13:32:55.519Z",
       "candidates": 61,
       "queued": [],
@@ -13670,6 +13648,15 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T20:06:56.795Z"
+    },
+    {
+      "started_at": "2026-09-09T20:12:01.532Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T20:12:32.780Z"
     }
   ],
   "vip_pending": {
@@ -13868,19 +13855,19 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T20:06:34.139Z"
+      "checked_at": "2026-09-09T20:12:10.873Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T20:06:38.633Z"
+      "checked_at": "2026-09-09T20:12:15.251Z"
     },
     "records": {
-      "checked_at": "2026-09-09T20:06:43.067Z"
+      "checked_at": "2026-09-09T20:12:19.686Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T20:06:47.570Z"
+      "checked_at": "2026-09-09T20:12:24.017Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-09T19:55:26.716Z"
+      "checked_at": "2026-09-09T20:12:32.666Z"
     },
     "raplisted_": {
       "checked_at": "2026-09-09T19:55:30.891Z"
@@ -13904,7 +13891,7 @@
       "checked_at": "2026-09-09T19:44:04.679Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-09T19:49:53.021Z"
+      "checked_at": "2026-09-09T20:12:28.466Z"
     }
   }
 }

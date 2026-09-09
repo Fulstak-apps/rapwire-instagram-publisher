@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T20:26:43.884Z",
+  "checked_at": "2026-09-09T20:31:50.441Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T20:16:35.265Z",
+    "checked_at": "2026-09-09T20:31:41.711Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T20:31:35.265Z",
+    "next_check_at": "2026-09-09T20:46:41.711Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T20:11:31.685Z",
+  "threads_next_eligible_at": "2026-09-09T20:46:50.440Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T19:56:31.685Z",
-    "threads_video_at": "2026-09-09T19:56:31.685Z",
+    "threads_at": "2026-09-09T20:31:50.440Z",
+    "threads_video_at": "2026-09-09T20:31:50.440Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "251-getting-paid-to-hang-out-with-your-bro-is-a-different-type-of-jo.json",
+      "id": "251-getting-paid-to-hang-out-with-your-bro-is-a-different-type-of-jo",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18618406111058020"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T00:14:19.273Z",
+  "checked_at": "2026-09-09T00:19:44.761Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T00:03:54.357Z",
+    "checked_at": "2026-09-09T00:19:35.709Z",
     "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T00:18:54.357Z",
+    "next_check_at": "2026-09-09T00:34:35.709Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T00:19:00.915Z",
+  "threads_next_eligible_at": "2026-09-09T00:34:44.300Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T00:06:24.065Z",
-    "threads_at": "2026-09-09T00:04:00.915Z",
-    "threads_video_at": "2026-09-09T00:04:00.915Z",
+    "threads_at": "2026-09-09T00:19:44.300Z",
+    "threads_video_at": "2026-09-09T00:19:44.300Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "435-ye-casually-previewed-all-of-the-lights-during-a-livestream-befo.json",
+      "id": "435-ye-casually-previewed-all-of-the-lights-during-a-livestream-befo",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18071093699755037"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

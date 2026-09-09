@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T17:19:44.744Z",
+  "checked_at": "2026-09-09T17:24:43.297Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T17:09:30.854Z",
-    "usage": 13,
+    "checked_at": "2026-09-09T17:24:42.593Z",
+    "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T17:24:30.854Z",
+    "next_check_at": "2026-09-09T17:39:42.593Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 13,
-    "instagram_remaining": 85,
+    "instagram_usage": 12,
+    "instagram_remaining": 86,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T05:27:20.995Z",
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "390-eazy-e-would-ve-turned-62-years-old-today-happy-heavenly-birthda.json",
-      "id": "390-eazy-e-would-ve-turned-62-years-old-today-happy-heavenly-birthda",
+      "file": "401-fans-reportedly-took-the-mac-miller-rd-sign-so-many-times-that-i.json",
+      "id": "401-fans-reportedly-took-the-mac-miller-rd-sign-so-many-times-that-i",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AUI-PxGUkKeMaBSsPgyVpG6\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AwHN0_HLw0ToQQq_X_zhomm\"}}"
     }
   ],
   "reviews": [

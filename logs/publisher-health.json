@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T03:41:42.442Z",
+  "checked_at": "2026-09-09T03:46:34.004Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T03:31:21.816Z",
-    "usage": 33,
+    "checked_at": "2026-09-09T03:46:27.001Z",
+    "usage": 34,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T03:46:21.816Z",
+    "next_check_at": "2026-09-09T04:01:27.001Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -22,12 +22,12 @@
     "instagram_remaining": 65,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-09T03:41:13.018Z",
+    "next_feed_eligible_at": "2026-09-09T04:16:33.772Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,18 +38,19 @@
   "threads_next_eligible_at": "2026-09-09T03:56:42.087Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-09T03:11:13.018Z",
+    "instagram_feed_at": "2026-09-09T03:46:33.772Z",
     "threads_at": "2026-09-09T03:41:42.087Z",
     "threads_video_at": "2026-09-09T03:41:42.087Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "457-moneybagg-yo-admits-he-sometimes-acts-happy-because-he-feels-he-.json",
-      "id": "457-moneybagg-yo-admits-he-sometimes-acts-happy-because-he-feels-he-",
-      "platform": "threads",
+      "file": "399-ben-10-speaks.json",
+      "id": "399-ben-10-speaks",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17969395536148607"
+      "media_id": "18026976113854192",
+      "content_type": "video"
     }
   ],
   "failures": [],

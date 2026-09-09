@@ -6481,28 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T10:57:47.386Z",
-      "candidates": 56,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc58CVBIpOF-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T11:06:13.214Z"
-    },
-    {
       "started_at": "2026-09-08T11:16:21.507Z",
       "candidates": 37,
       "queued": [],
@@ -13804,6 +13782,15 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T19:04:31.943Z"
+    },
+    {
+      "started_at": "2026-09-09T19:09:35.524Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T19:10:05.674Z"
     }
   ],
   "vip_pending": {
@@ -14002,16 +13989,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T19:04:06.534Z"
+      "checked_at": "2026-09-09T19:09:43.572Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T19:04:14.010Z"
+      "checked_at": "2026-09-09T19:09:47.945Z"
     },
     "records": {
-      "checked_at": "2026-09-09T19:04:18.550Z"
+      "checked_at": "2026-09-09T19:09:52.402Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T19:04:22.859Z"
+      "checked_at": "2026-09-09T19:09:56.827Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-09T19:04:27.303Z"
@@ -14032,10 +14019,10 @@
       "checked_at": "2026-09-09T18:58:32.241Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-09T18:35:41.195Z"
+      "checked_at": "2026-09-09T19:10:01.182Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-09T18:35:45.495Z"
+      "checked_at": "2026-09-09T19:10:05.557Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-09T18:58:36.718Z"

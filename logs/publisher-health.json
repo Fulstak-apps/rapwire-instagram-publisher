@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T15:54:29.256Z",
+  "checked_at": "2026-09-09T15:58:41.665Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz.json",
-      "id": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz",
+      "file": "363-qc-p-shook-back-yall.json",
+      "id": "363-qc-p-shook-back-yall",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A3Ez1dgEWlBR21Q_FRlO3n6\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A_btQimt833NYrv1qhx7EOT\"}}"
     }
   ],
   "reviews": [
@@ -137,6 +137,13 @@
       "platform": "video_layout",
       "status": "review_required",
       "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "363-qc-p-shook-back-yall.json",
+      "id": "363-qc-p-shook-back-yall",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
     },
     {
       "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T09:14:38.335Z",
+  "checked_at": "2026-09-09T09:19:35.568Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -46,17 +46,17 @@
   "publications": [],
   "failures": [
     {
-      "file": "466-he-s-no-jay-z-the-jig-is-up-the-government-violated-lil-durk-lil.json",
-      "id": "466-he-s-no-jay-z-the-jig-is-up-the-government-violated-lil-durk-lil",
+      "file": "468-gov-destroyed-durks-jam-is-a-liar-defence-said-if-jam-is-a-liar-.json",
+      "id": "468-gov-destroyed-durks-jam-is-a-liar-defence-said-if-jam-is-a-liar-",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AnM8-Aw6w4Dr8Wu1uAWgZJz\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AXYyTuePgzbnaBTpOI9dGi1\"}}"
     }
   ],
   "reviews": [
     {
-      "file": "466-he-s-no-jay-z-the-jig-is-up-the-government-violated-lil-durk-lil.json",
-      "id": "466-he-s-no-jay-z-the-jig-is-up-the-government-violated-lil-durk-lil",
+      "file": "468-gov-destroyed-durks-jam-is-a-liar-defence-said-if-jam-is-a-liar-.json",
+      "id": "468-gov-destroyed-durks-jam-is-a-liar-defence-said-if-jam-is-a-liar-",
       "platform": "instagram",
       "status": "review_required",
       "reason": "three_item_specific_delivery_failures"

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T10:55:40.241Z",
+  "checked_at": "2026-09-09T11:00:39.657Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,22 +43,14 @@
     "threads_video_at": "2026-09-09T10:55:40.240Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "242-dj-scheme-speaks.json",
-      "id": "242-dj-scheme-speaks",
-      "platform": "threads_video_fallback",
-      "status": "published",
-      "media_id": "17986760154105506"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "357-ice-spice-is-currently-going-viral-for-her-new-leg-tattoo-she-ju.json",
-      "id": "357-ice-spice-is-currently-going-viral-for-her-new-leg-tattoo-she-ju",
+      "file": "349-jay-z-had-the-london-crowd-break-into-happy-birthday-for-beyonc-.json",
+      "id": "349-jay-z-had-the-london-crowd-break-into-happy-birthday-for-beyonc-",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AqGQdeqdr7Ao3akqeQy1wbu\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"Amiemc6kRtoISCcec3l2QUX\"}}"
     }
   ],
   "reviews": [

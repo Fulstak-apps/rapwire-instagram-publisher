@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T06:47:11.102Z",
+  "checked_at": "2026-09-09T06:48:21.336Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T06:33:09.715Z",
+    "checked_at": "2026-09-09T06:48:20.886Z",
     "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T06:48:09.715Z",
+    "next_check_at": "2026-09-09T07:03:20.886Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin.json",
-      "id": "461-breaks-down-how-listeners-shorter-attention-spans-are-influencin",
+      "file": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u.json",
+      "id": "307-lil-durk-lildurk-s-federal-murder-for-hire-trial-is-officially-u",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AVbFWcUG3GWRhlDq3lzogjd\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AU3ijCVBq8kpZQOU2jlKekZ\"}}"
     }
   ],
   "reviews": [

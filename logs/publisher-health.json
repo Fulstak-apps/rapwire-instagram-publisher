@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T05:27:38.404Z",
+  "checked_at": "2026-09-09T05:32:40.553Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T05:17:23.087Z",
+    "checked_at": "2026-09-09T05:32:32.736Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T05:32:23.087Z",
+    "next_check_at": "2026-09-09T05:47:32.736Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,22 +35,30 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T05:22:23.658Z",
+  "threads_next_eligible_at": "2026-09-09T05:47:40.068Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T05:07:23.658Z",
-    "threads_video_at": "2026-09-09T05:07:23.658Z",
+    "threads_at": "2026-09-09T05:32:40.068Z",
+    "threads_video_at": "2026-09-09T05:32:40.068Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "469-gov-cooked-durks-witnesses-one-by-one-with-nicknames-and-records.json",
+      "id": "469-gov-cooked-durks-witnesses-one-by-one-with-nicknames-and-records",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18125030159493645"
+    }
+  ],
   "failures": [
     {
-      "file": "436-lil-durk-lildurk-s-jury-instruction-completed-judge-was-not-play.json",
-      "id": "436-lil-durk-lildurk-s-jury-instruction-completed-judge-was-not-play",
+      "file": "442-lil-durk-lildurk-s-federal-trial-entered-day-13-today-as-support.json",
+      "id": "442-lil-durk-lildurk-s-federal-trial-entered-day-13-today-as-support",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AyURTDq7iXD-6PD-6b_ki1Y\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AOQAv3qTY268xYMgeN8MQRz\"}}"
     }
   ],
   "reviews": [

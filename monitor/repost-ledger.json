@@ -6481,15 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T17:37:15.807Z",
-      "candidates": 53,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T17:38:16.880Z"
-    },
-    {
       "started_at": "2026-09-08T17:43:17.740Z",
       "candidates": 36,
       "queued": [],
@@ -13555,6 +13546,46 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T22:13:10.461Z"
+    },
+    {
+      "started_at": "2026-09-09T22:18:13.697Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "traploreross",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "records",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "darnellwilliams",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "complexmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T22:18:23.800Z"
     }
   ],
   "vip_pending": {
@@ -13753,23 +13784,23 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T22:02:42.371Z",
-      "retry_at": "2026-09-09T22:17:42.371Z",
+      "checked_at": "2026-09-09T22:18:20.417Z",
+      "retry_at": "2026-09-09T22:33:20.417Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T22:02:42.817Z",
-      "retry_at": "2026-09-09T22:17:42.817Z",
+      "checked_at": "2026-09-09T22:18:20.853Z",
+      "retry_at": "2026-09-09T22:33:20.853Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
     },
     "records": {
-      "checked_at": "2026-09-09T22:02:43.350Z",
-      "retry_at": "2026-09-09T22:17:43.350Z",
+      "checked_at": "2026-09-09T22:18:21.363Z",
+      "retry_at": "2026-09-09T22:33:21.363Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T22:02:43.772Z",
-      "retry_at": "2026-09-09T22:17:43.772Z",
+      "checked_at": "2026-09-09T22:18:21.815Z",
+      "retry_at": "2026-09-09T22:33:21.815Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
     },
     "trapmatictv": {
@@ -13783,13 +13814,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-09T21:52:21.545Z",
-      "retry_at": "2026-09-09T22:07:21.545Z",
+      "checked_at": "2026-09-09T22:18:22.581Z",
+      "retry_at": "2026-09-09T22:33:22.581Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T22:02:44.389Z",
-      "retry_at": "2026-09-09T22:17:44.389Z",
+      "checked_at": "2026-09-09T22:18:23.069Z",
+      "retry_at": "2026-09-09T22:33:23.069Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {

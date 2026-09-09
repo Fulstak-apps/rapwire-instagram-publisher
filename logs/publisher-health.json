@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T02:15:32.898Z",
+  "checked_at": "2026-09-09T02:20:42.540Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T02:15:27.151Z",
+  "threads_next_eligible_at": "2026-09-09T02:35:42.159Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T01:56:02.648Z",
-    "threads_at": "2026-09-09T02:00:27.151Z",
-    "threads_video_at": "2026-09-09T02:00:27.151Z",
+    "threads_at": "2026-09-09T02:20:42.159Z",
+    "threads_video_at": "2026-09-09T02:20:42.159Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "453-brian-steele-said-otf-jam-is-a-serial-killer-how-dare-the-fbi-pu.json",
+      "id": "453-brian-steele-said-otf-jam-is-a-serial-killer-how-dare-the-fbi-pu",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18111516731469249"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

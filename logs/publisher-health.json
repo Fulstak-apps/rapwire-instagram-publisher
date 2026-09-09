@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-09T03:06:06.546Z",
+  "checked_at": "2026-09-09T03:11:13.410Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-09T03:00:57.759Z",
-    "usage": 32,
+    "usage": 33,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-09T03:15:57.759Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 66,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-09T03:05:53.469Z",
+    "next_feed_eligible_at": "2026-09-09T03:41:13.018Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-09T03:16:06.943Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-09T02:35:53.469Z",
+    "instagram_feed_at": "2026-09-09T03:11:13.018Z",
     "threads_at": "2026-09-09T03:01:06.943Z",
     "threads_video_at": "2026-09-09T03:01:06.943Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "396-in-2021-an-ole-head-tried-to-step-to-yb-over-him-bullying-the-do.json",
+      "id": "396-in-2021-an-ole-head-tried-to-step-to-yb-over-him-bullying-the-do",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18189513235392595",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

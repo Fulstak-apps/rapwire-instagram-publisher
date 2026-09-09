@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T09:39:46.309Z",
+  "checked_at": "2026-09-09T09:45:00.893Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,22 +35,30 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T09:39:41.964Z",
+  "threads_next_eligible_at": "2026-09-09T10:00:00.892Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T09:24:41.964Z",
-    "threads_video_at": "2026-09-09T09:09:33.998Z",
+    "threads_at": "2026-09-09T09:45:00.892Z",
+    "threads_video_at": "2026-09-09T09:45:00.892Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne.json",
+      "id": "239-king-von-s-bm-kema-might-have-just-saved-durk-she-was-best-witne",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18487530337098452"
+    }
+  ],
   "failures": [
     {
-      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
-      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
+      "file": "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom.json",
+      "id": "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AAp_bclBZJU5ZEWBDb_mSX7\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ACEfAP4PmV2jsVrWjO3rlwt\"}}"
     }
   ],
   "reviews": [

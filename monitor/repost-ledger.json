@@ -6481,15 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T07:57:24.621Z",
-      "candidates": 61,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T07:58:24.830Z"
-    },
-    {
       "started_at": "2026-09-08T08:03:28.117Z",
       "candidates": 55,
       "queued": [],
@@ -13916,6 +13907,22 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T17:16:27.601Z"
+    },
+    {
+      "started_at": "2026-09-09T17:21:30.671Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T17:21:49.851Z"
     }
   ],
   "vip_pending": {
@@ -14082,10 +14089,10 @@
       "first_seen_at": "2026-09-07T13:02:39.813Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 45,
-      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T16:19:15.618Z",
-      "retry_at": "2026-09-09T17:19:15.618Z"
+      "attempts": 46,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-09T17:21:49.851Z",
+      "retry_at": "2026-09-09T18:21:49.851Z"
     },
     "Dc_spGMAPFc": {
       "source_handle": "akademiks",
@@ -14134,14 +14141,10 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-09T17:00:50.342Z",
-      "retry_at": "2026-09-09T17:15:50.342Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-09T17:21:40.842Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-09T17:06:00.254Z",
-      "retry_at": "2026-09-09T17:21:00.254Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-09T17:21:45.396Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-09T17:06:00.612Z",

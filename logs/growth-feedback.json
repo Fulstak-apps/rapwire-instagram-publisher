@@ -4186,13 +4186,109 @@
         "reposts": 0,
         "quotes": 0
       }
+    },
+    "instagram:18119275831904215": {
+      "platform": "instagram",
+      "id": "18119275831904215",
+      "queue_id": "318-travis-was-so-hyped-to-see-ye-and-kid-cudi-reunite-together",
+      "source": "records",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T13:56:23.830Z",
+      "permalink": "https://www.instagram.com/reel/DdB1tCLDObj/",
+      "checked_at": "2026-09-09T14:31:21.907Z",
+      "metrics": {
+        "reach": 243,
+        "likes": 22,
+        "comments": 0,
+        "shares": 2,
+        "saved": 0
+      }
+    },
+    "instagram:18057270017543481": {
+      "platform": "instagram",
+      "id": "18057270017543481",
+      "queue_id": "314-ye-put-on-a-crazy-light-show-for-all-of-the-lights-and-flashing-",
+      "source": "records",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T09:49:58.871Z",
+      "permalink": "https://www.instagram.com/reel/DdBZVCXCLz2/",
+      "checked_at": "2026-09-09T14:31:21.907Z",
+      "metrics": {
+        "reach": 224,
+        "likes": 10,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18007044365979521": {
+      "platform": "instagram",
+      "id": "18007044365979521",
+      "queue_id": "328-vonnie-brasco-and-jammy-the-bull-what-yall-think-king-von-in-hea",
+      "source": "akademiks",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T09:15:01.217Z",
+      "permalink": "https://www.instagram.com/reel/DdBVPEvlTkQ/",
+      "checked_at": "2026-09-09T14:31:21.907Z",
+      "metrics": {
+        "reach": 13,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
+    },
+    "instagram:18148336393545440": {
+      "platform": "instagram",
+      "id": "18148336393545440",
+      "queue_id": "385-mac-miller-s-handwritten-message-is-still-inside-the-empty-pool-",
+      "source": "records",
+      "topic": "music",
+      "series": "RapWire Debate",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T08:39:38.594Z",
+      "permalink": "https://www.instagram.com/reel/DdBRS_tEvPa/",
+      "checked_at": "2026-09-09T14:31:21.907Z",
+      "metrics": {
+        "reach": 602,
+        "likes": 18,
+        "comments": 1,
+        "shares": 0,
+        "saved": 2
+      }
+    },
+    "instagram:18114888601783761": {
+      "platform": "instagram",
+      "id": "18114888601783761",
+      "queue_id": "313-ye-and-kid-cudi-just-reunited-this-is-insane",
+      "source": "records",
+      "topic": "culture",
+      "series": "What Happened?",
+      "question": "discussion-v2",
+      "published_at": "2026-09-08T08:04:13.644Z",
+      "permalink": "https://www.instagram.com/reel/DdBNJjFFeMp/",
+      "checked_at": "2026-09-09T14:31:21.907Z",
+      "metrics": {
+        "reach": 6,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saved": 0
+      }
     }
   },
   "platforms": {
     "instagram": {
-      "next_at": "2026-09-09T14:29:01.689Z",
-      "checked_at": "2026-09-09T08:29:01.689Z",
-      "status": "collected"
+      "next_at": "2026-09-09T20:31:21.907Z",
+      "checked_at": "2026-09-09T14:31:21.907Z",
+      "status": "unavailable",
+      "error": "Unsupported get request. Object with ID '18137037349621836' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     },
     "threads": {
       "next_at": "2026-09-09T16:55:40.613Z",
@@ -4331,8 +4427,8 @@
     ]
   },
   "summary": {
-    "generated_at": "2026-09-09T14:27:51.491Z",
-    "measured_posts": 221,
+    "generated_at": "2026-09-09T14:31:21.907Z",
+    "measured_posts": 226,
     "rates": [
       {
         "platform": "instagram",
@@ -4358,10 +4454,10 @@
         "platform": "instagram",
         "kind": "series",
         "value": "RapWire Debate",
-        "posts": 13,
-        "exposures": 9356,
-        "interactions": 319,
-        "interactions_per_1000": 34.1,
+        "posts": 14,
+        "exposures": 9958,
+        "interactions": 322,
+        "interactions_per_1000": 32.3,
         "sufficient_sample": true
       },
       {
@@ -4378,20 +4474,20 @@
         "platform": "instagram",
         "kind": "question",
         "value": "discussion-v2",
-        "posts": 82,
-        "exposures": 15525,
-        "interactions": 369,
-        "interactions_per_1000": 23.8,
+        "posts": 87,
+        "exposures": 16613,
+        "interactions": 374,
+        "interactions_per_1000": 22.5,
         "sufficient_sample": true
       },
       {
         "platform": "instagram",
         "kind": "topic",
         "value": "culture",
-        "posts": 43,
-        "exposures": 3525,
-        "interactions": 38,
-        "interactions_per_1000": 10.8,
+        "posts": 47,
+        "exposures": 4011,
+        "interactions": 40,
+        "interactions_per_1000": 10,
         "sufficient_sample": true
       },
       {
@@ -4478,19 +4574,19 @@
         "platform": "instagram",
         "kind": "series",
         "value": "What Happened?",
-        "posts": 40,
-        "exposures": 2480,
-        "interactions": 14,
-        "interactions_per_1000": 5.6,
+        "posts": 44,
+        "exposures": 2966,
+        "interactions": 16,
+        "interactions_per_1000": 5.4,
         "sufficient_sample": true
       },
       {
         "platform": "instagram",
         "kind": "source",
         "value": "records",
-        "posts": 18,
-        "exposures": 2362,
-        "interactions": 11,
+        "posts": 22,
+        "exposures": 3437,
+        "interactions": 16,
         "interactions_per_1000": 4.7,
         "sufficient_sample": true
       },
@@ -4498,10 +4594,10 @@
         "platform": "instagram",
         "kind": "topic",
         "value": "music",
-        "posts": 29,
-        "exposures": 4082,
-        "interactions": 18,
-        "interactions_per_1000": 4.4,
+        "posts": 30,
+        "exposures": 4684,
+        "interactions": 21,
+        "interactions_per_1000": 4.5,
         "sufficient_sample": true
       },
       {
@@ -4548,10 +4644,10 @@
         "platform": "instagram",
         "kind": "source",
         "value": "akademiks",
-        "posts": 21,
-        "exposures": 922,
+        "posts": 22,
+        "exposures": 935,
         "interactions": 2,
-        "interactions_per_1000": 2.2,
+        "interactions_per_1000": 2.1,
         "sufficient_sample": true
       },
       {

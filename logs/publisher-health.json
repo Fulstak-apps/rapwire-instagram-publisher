@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T17:52:46.798Z",
+  "checked_at": "2026-09-09T17:55:08.997Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T17:39:52.701Z",
+    "checked_at": "2026-09-09T17:55:08.389Z",
     "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T17:54:52.701Z",
+    "next_check_at": "2026-09-09T18:10:08.389Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "427-king-von-sister-vs-queen-von-via.json",
-      "id": "427-king-von-sister-vs-queen-von-via",
+      "file": "411-the-two-concrete-boys-members-linked-up-for-a-new-track-adding-a.json",
+      "id": "411-the-two-concrete-boys-members-linked-up-for-a-new-track-adding-a",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ArvJNk6uXbWHqMSv6HAAHri\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ANOsLhuBFKdNrXChJvVgWfZ\"}}"
     }
   ],
   "reviews": [

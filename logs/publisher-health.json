@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T09:54:56.238Z",
+  "checked_at": "2026-09-09T09:57:18.845Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -46,21 +46,14 @@
   "publications": [],
   "failures": [
     {
-      "file": "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom.json",
-      "id": "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom",
+      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
+      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AsgBMeUWoReYkpHntD-iS7S\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AGeyOljdpididGYAuQTHMf2\"}}"
     }
   ],
   "reviews": [
-    {
-      "file": "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom.json",
-      "id": "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom",
-      "platform": "instagram",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
-    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",

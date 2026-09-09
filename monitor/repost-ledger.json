@@ -6481,52 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T20:25:22.893Z",
-      "candidates": 50,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DdCgteHyUdY/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCgteHyUdY-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DdCg5nky2XG/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCg5nky2XG-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DdChDSySxhw/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdChDSySxhw-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DdCfx-VSCSd/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCfx-VSCSd-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/traploreross/reel/DdCfx-VSCSd/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCfx-VSCSd-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "xxl",
-          "source_url": "https://www.instagram.com/xxl/p/DdCflGWmePt/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdCflGWmePt-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 19,
-      "finished_at": "2026-09-08T20:44:30.023Z"
-    },
-    {
       "started_at": "2026-09-08T20:49:33.076Z",
       "candidates": 58,
       "queued": [],
@@ -13673,6 +13627,44 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T23:48:57.423Z"
+    },
+    {
+      "started_at": "2026-09-09T23:54:00.214Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "xxl",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "hiphopdx",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
+          "stage": "queue",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T23:54:13.302Z"
     }
   ],
   "vip_pending": {
@@ -13695,10 +13687,10 @@
       "first_seen_at": "2026-09-03T06:22:41.175Z",
       "profile_position": 11,
       "state": "retry_pending",
-      "attempts": 103,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T22:50:04.769Z",
-      "retry_at": "2026-09-09T23:50:04.769Z"
+      "attempts": 104,
+      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
+      "last_attempt_at": "2026-09-09T23:54:13.302Z",
+      "retry_at": "2026-09-10T00:54:13.302Z"
     },
     "Dc1oLsTgfLu": {
       "source_handle": "akademiks",
@@ -13731,10 +13723,10 @@
       "first_seen_at": "2026-09-04T01:28:48.855Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 101,
+      "attempts": 102,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T22:50:00.691Z",
-      "retry_at": "2026-09-09T23:50:00.691Z"
+      "last_attempt_at": "2026-09-09T23:54:11.945Z",
+      "retry_at": "2026-09-10T00:54:11.945Z"
     },
     "Dc30JSSjmsc": {
       "source_handle": "akademiks",
@@ -13767,10 +13759,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 96,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T22:49:56.577Z",
-      "retry_at": "2026-09-09T23:49:56.577Z"
+      "attempts": 97,
+      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
+      "last_attempt_at": "2026-09-09T23:54:07.361Z",
+      "retry_at": "2026-09-10T00:54:07.361Z"
     },
     "Dc6e8SjEY1u": {
       "source_handle": "records",
@@ -13911,13 +13903,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {
-      "checked_at": "2026-09-09T23:28:11.262Z",
-      "retry_at": "2026-09-09T23:43:11.262Z",
+      "checked_at": "2026-09-09T23:54:05.774Z",
+      "retry_at": "2026-09-10T00:09:05.774Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-09T23:38:32.324Z",
-      "retry_at": "2026-09-09T23:53:32.324Z",
+      "checked_at": "2026-09-09T23:54:06.094Z",
+      "retry_at": "2026-09-10T00:09:06.094Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
     },
     "rockstargames": {

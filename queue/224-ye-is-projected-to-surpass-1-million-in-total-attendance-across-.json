@@ -97,5 +97,9 @@
     "2026-09-04T15:15:49.852Z"
   ],
   "facebook_status": "reconciliation_required",
-  "facebook_reconcile_required": true
+  "facebook_reconcile_required": true,
+  "instagram_children": [],
+  "instagram_error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"Api6XmMd-tB2skLlaNrG14V\"}}",
+  "instagram_failure_count": 1,
+  "instagram_retry_at": "2026-09-09T13:11:51.640Z"
 }

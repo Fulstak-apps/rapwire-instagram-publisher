@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T03:16:14.278Z",
+  "checked_at": "2026-09-09T03:21:21.479Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T03:16:06.943Z",
+  "threads_next_eligible_at": "2026-09-09T03:36:20.010Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T03:11:13.018Z",
-    "threads_at": "2026-09-09T03:01:06.943Z",
-    "threads_video_at": "2026-09-09T03:01:06.943Z",
+    "threads_at": "2026-09-09T03:21:20.010Z",
+    "threads_video_at": "2026-09-09T03:21:20.010Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "456-drew-findling-trashed-lapd-and-fbi-said-case-was-garbage-and-ask.json",
+      "id": "456-drew-findling-trashed-lapd-and-fbi-said-case-was-garbage-and-ask",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18441375232133210"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

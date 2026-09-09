@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-09T04:52:11.572Z",
+  "checked_at": "2026-09-09T04:57:21.509Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-09T04:47:09.284Z",
-    "usage": 33,
+    "usage": 34,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-09T05:02:09.284Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 65,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-09T04:52:10.493Z",
+    "next_feed_eligible_at": "2026-09-09T05:27:20.995Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-09T05:02:16.477Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-09T04:22:10.493Z",
+    "instagram_feed_at": "2026-09-09T04:57:20.995Z",
     "threads_at": "2026-09-09T04:47:16.477Z",
     "threads_video_at": "2026-09-09T04:47:16.477Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "413-cops-gave-kodak-some-grace-n-let-him-finish-his-food-before-putt.json",
+      "id": "413-cops-gave-kodak-some-grace-n-let-him-finish-his-food-before-putt",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18122311103510336",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

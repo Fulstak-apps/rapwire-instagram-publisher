@@ -100,7 +100,8 @@
   "threads_published_at": "2026-09-09T03:21:20.010Z",
   "threads_verified_at": "2026-09-09T03:21:21.305Z",
   "threads_permalink": "https://www.threads.com/@rapwire247/post/DdDRj3XgcO0",
-  "instagram_error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A1RpH-ecVV1xkegtE4vyCXa\"}}",
-  "instagram_failure_count": 2,
-  "instagram_retry_at": "2026-09-09T07:22:45.646Z"
+  "instagram_error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AnDk_Pl1oXI4kSc4ZloTQi2\"}}",
+  "instagram_failure_count": 3,
+  "instagram_status": "review_required",
+  "instagram_skip_reason": "three_item_specific_delivery_failures"
 }

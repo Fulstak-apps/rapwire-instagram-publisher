@@ -1,6 +1,6 @@
 {
   "id": "338-a-cop-is-going-viral-after-randomly-yelling-free-lil-durk-lildur",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "vip_repost": false,
   "date": "2026-09-05",
@@ -11,11 +11,11 @@
   "editorial_series": "What Happened?",
   "layout_template": "rapwire-video-grid-safe-v1",
   "editorial_lane": "rap_culture",
-  "headline": "A cop is going viral after randomly yelling, “FREE Lil Durk @lildurk,” during livestream !",
-  "body": "A cop is going viral after randomly yelling, “FREE Lil Durk @lildurk,” during livestream ! LilDurk FreeDurk.",
-  "rendered_body_text": "A cop is going viral after randomly yelling, “FREE Lil Durk @lildurk,” during livestream ! LilDurk FreeDurk.",
-  "caption": "A cop is going viral after randomly yelling, “FREE Lil Durk @lildurk,” during livestream ! LilDurk FreeDurk.\n\n@rapwire247",
-  "threads_text": "A cop is going viral after randomly yelling, “FREE Lil Durk @lildurk,” during livestream ! LilDurk FreeDurk.\n\n@rapwire247",
+  "headline": "A cop is going viral after randomly yelling, \u201cFREE Lil Durk @lildurk,\u201d during livestream !",
+  "body": "A cop is going viral after randomly yelling, \u201cFREE Lil Durk @lildurk,\u201d during livestream ! LilDurk FreeDurk.",
+  "rendered_body_text": "A cop is going viral after randomly yelling, \u201cFREE Lil Durk @lildurk,\u201d during livestream ! LilDurk FreeDurk.",
+  "caption": "A cop is going viral after randomly yelling, \u201cFREE Lil Durk @lildurk,\u201d during livestream ! LilDurk FreeDurk.\n\n@rapwire247",
+  "threads_text": "A cop is going viral after randomly yelling, \u201cFREE Lil Durk @lildurk,\u201d during livestream ! LilDurk FreeDurk.\n\n@rapwire247",
   "video": "media/338-a-cop-is-going-viral-after-randomly-yelling-free-lil-durk-lildur.mp4",
   "source_handle": "raplisted_",
   "source_url": "https://www.instagram.com/raplisted_/reel/Dc6cuUiItk3/",
@@ -55,7 +55,7 @@
   ],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "Dc6cuUiItk3",
-  "source_caption_text": "A cop is going viral after randomly yelling, “FREE LIL DURK,” during livestream 😭👮‍♂️! #Explorepage #Explore #LilDurk #FreeDurk",
+  "source_caption_text": "A cop is going viral after randomly yelling, \u201cFREE LIL DURK,\u201d during livestream \ud83d\ude2d\ud83d\udc6e\u200d\u2642\ufe0f! #Explorepage #Explore #LilDurk #FreeDurk",
   "caption_checked_at": "2026-09-05T17:53:26.439Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 15.114738,
@@ -83,7 +83,7 @@
       "source_header_removed": true,
       "inspected_frames": 5,
       "removed_text": [
-        "RapListed •",
+        "RapListed \u2022",
         "@Raplisted_"
       ],
       "sample_times": [
@@ -125,5 +125,6 @@
   "instagram_error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AJ0Vt0mJtsODPCcWu8dbG21\"}}",
   "instagram_failure_count": 3,
   "instagram_status": "review_required",
-  "instagram_skip_reason": "three_item_specific_delivery_failures"
+  "instagram_skip_reason": "three_item_specific_delivery_failures",
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

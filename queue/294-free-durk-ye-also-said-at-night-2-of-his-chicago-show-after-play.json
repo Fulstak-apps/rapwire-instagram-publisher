@@ -1,6 +1,6 @@
 {
   "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "vip_repost": false,
   "date": "2026-09-05",
@@ -55,7 +55,7 @@
   ],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "Dc46-rnR6lx",
-  "source_caption_text": "\"FREE DURK\" Ye also said at night 2 of his Chicago show after playing a short phone call from Lil Durk 🙏",
+  "source_caption_text": "\"FREE DURK\" Ye also said at night 2 of his Chicago show after playing a short phone call from Lil Durk \ud83d\ude4f",
   "caption_checked_at": "2026-09-05T03:03:08.787Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 19.549749,
@@ -121,5 +121,6 @@
   "instagram_error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AUf0L-LMAI0FBTECkmGe7E2\"}}",
   "instagram_failure_count": 3,
   "instagram_status": "review_required",
-  "instagram_skip_reason": "three_item_specific_delivery_failures"
+  "instagram_skip_reason": "three_item_specific_delivery_failures",
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

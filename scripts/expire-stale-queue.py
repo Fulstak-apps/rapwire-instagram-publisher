@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE = ROOT / "queue"
 MAX_AGE_HOURS = 48
+EVERGREEN_MARKERS = ("meme", "memes", "throwback", "from the vault", "on this day", "years ago", "year ago", "classic", "archive")
 now = datetime.now(timezone.utc)
 changed = 0
 
@@ -47,7 +48,13 @@ for path in QUEUE.glob("*.json"):
         continue
     if item.get("status") != "ready":
         continue
-    if item.get("story_type") == "throwback":
+    # Legacy collector records labelled every repost a "throwback", which
+    # unintentionally bypassed freshness enforcement.  Preserve only items
+    # explicitly identified as an evergreen meme/archive; all other reposts
+    # are current news and must carry a recent source timestamp.
+    body = " ".join(str(item.get(key, "")) for key in ("headline", "body", "source_caption_text")).lower()
+    evergreen = item.get("story_type") == "evergreen_meme" and any(marker in body for marker in EVERGREEN_MARKERS)
+    if evergreen:
         continue
 
     source_date = item.get("source_published_at") or item.get("source_post_date")

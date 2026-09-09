@@ -98,17 +98,44 @@ function viewCountFromText(value) {
   return Math.round(number * multiplier);
 }
 
+const CURRENT_NEWS_WINDOW_MS = 48 * 60 * 60 * 1000;
+const EVERGREEN_MARKERS = /\b(?:meme|memes|throwback|from the vault|on this day|years? ago|classic|archive)\b/i;
+
+function sourceAgeMs(candidate, now = Date.now()) {
+  const publishedAt = Date.parse(candidate.sourcePublishedAt || '');
+  return Number.isFinite(publishedAt) ? now - publishedAt : Number.POSITIVE_INFINITY;
+}
+
+function editorialStoryType(caption, sourcePublishedAt) {
+  return EVERGREEN_MARKERS.test(String(caption || '')) && sourceAgeMs({sourcePublishedAt}) > CURRENT_NEWS_WINDOW_MS
+    ? 'evergreen_meme' : 'current';
+}
+
+function isFreshCurrentCandidate(candidate) {
+  const age = sourceAgeMs(candidate);
+  return candidate.storyType !== 'evergreen_meme' && age >= -60 * 60 * 1000 && age <= CURRENT_NEWS_WINDOW_MS;
+}
+
+function isEligibleEvergreenCandidate(candidate) {
+  return candidate.storyType === 'evergreen_meme' && EVERGREEN_MARKERS.test(String(candidate.visibleCaption || ''));
+}
+
 async function readPostMetadata(context, url) {
   const page = await context.newPage();
   try {
     await page.goto(url, { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(2500);
     const get = property => page.locator(`meta[property="${property}"]`).getAttribute("content", { timeout: 5000 }).catch(() => "");
-    const [canonicalUrl, title, description] = await Promise.all([get("og:url"),get("og:title"),get("og:description")]);
+    const [canonicalUrl, title, description, articlePublishedAt, timePublishedAt] = await Promise.all([
+      get("og:url"), get("og:title"), get("og:description"),
+      get("article:published_time"),
+      page.locator('time[datetime]').first().getAttribute('datetime', { timeout: 5000 }).catch(() => "")
+    ]);
     return {
       caption: sourceCaption({ requestedUrl:url, canonicalUrl, title, description }),
       isVideo: await page.locator("video:visible").count() === 1,
-      viewCount: viewCountFromText(description)
+      viewCount: viewCountFromText(description),
+      sourcePublishedAt: articlePublishedAt || timePublishedAt || null
     };
   } finally {
     await page.close();
@@ -189,7 +216,9 @@ async function queueCapture(ledger, candidate, queueNumber) {
     timezone: "America/Detroit",
     content_type: "video",
     type: "source_video_repost",
-    story_type: "throwback",
+    // Reposts are news by default.  Only explicitly identified evergreen memes
+    // may use the archive lane, and they are kept behind current reporting.
+    story_type: candidate.storyType || "current",
     editorial_series: editorialSeries(fields.body),
     layout_template: "rapwire-video-grid-safe-v1",
     editorial_lane: "rap_culture",
@@ -202,6 +231,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
     source_handle: candidate.source.handle,
     source_url: candidate.url,
     source_urls: [candidate.url],
+    source_published_at: candidate.sourcePublishedAt || null,
     source_view_count_at_selection: Number(candidate.viewCount || 0),
     selection_score: candidate.selectionScore ?? null,
     priority_artists: candidate.priorityArtists || [],
@@ -409,6 +439,8 @@ try {
         candidate.isVideo = metadata.isVideo;
         candidate.viewCount = metadata.viewCount;
         candidate.priorityArtists=priorityArtistsIn(metadata.caption);
+        candidate.sourcePublishedAt=metadata.sourcePublishedAt;
+        candidate.storyType=editorialStoryType(metadata.caption, metadata.sourcePublishedAt);
         candidate.viewVelocity=priorViews>0&&elapsedHours>=.1&&metadata.viewCount>=priorViews
           ? (metadata.viewCount-priorViews)/elapsedHours : 0;
       } catch (error) {
@@ -433,7 +465,12 @@ try {
   const feedback=await readJson(path.join(root,'logs','growth-feedback.json'),{});
   for(const candidate of rankedPool) candidate.selectionScore=candidateScore(candidate,feedback.summary||{})
     + editorialRank({body:candidate.visibleCaption,source_handle:candidate.source.handle},recent)/10;
-  const normalCandidates = rankedPool
+  const freshNews = rankedPool.filter(candidate=>isFreshCurrentCandidate(candidate));
+  // Archive material never competes with a fresh current-news clip.  It can
+  // appear only when the fresh window is empty and it is clearly a meme or a
+  // deliberate throwback, not merely an old video with a high view count.
+  const eligiblePool = freshNews.length ? freshNews : rankedPool.filter(candidate=>isEligibleEvergreenCandidate(candidate));
+  const normalCandidates = eligiblePool
     .filter(candidate=>selectionAllowed(candidate,recent))
     .sort((left, right) => right.selectionScore - left.selectionScore
       || left.profilePosition - right.profilePosition

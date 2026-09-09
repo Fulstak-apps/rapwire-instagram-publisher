@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T09:24:42.333Z",
+  "checked_at": "2026-09-09T09:29:48.191Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,32 +43,17 @@
     "threads_video_at": "2026-09-09T09:09:33.998Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "433-lil-durk-lildurk-fans-outside-the-courthouse-hold-signs-as-closi.json",
-      "id": "433-lil-durk-lildurk-fans-outside-the-courthouse-hold-signs-as-closi",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18006768497988278"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "469-gov-cooked-durks-witnesses-one-by-one-with-nicknames-and-records.json",
-      "id": "469-gov-cooked-durks-witnesses-one-by-one-with-nicknames-and-records",
+      "file": "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom.json",
+      "id": "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"APe7Ux9-iAIua7VpS28Q4ts\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A6vnt9Cz6_DEfvaV7O6GU1p\"}}"
     }
   ],
   "reviews": [
-    {
-      "file": "469-gov-cooked-durks-witnesses-one-by-one-with-nicknames-and-records.json",
-      "id": "469-gov-cooked-durks-witnesses-one-by-one-with-nicknames-and-records",
-      "platform": "instagram",
-      "status": "review_required",
-      "reason": "three_item_specific_delivery_failures"
-    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",

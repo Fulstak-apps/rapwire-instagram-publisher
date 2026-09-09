@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-07T21:03:37.597Z",
-      "candidates": 58,
-      "queued": [
-        "411-the-two-concrete-boys-members-linked-up-for-a-new-track-adding-a"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-07T21:08:32.081Z"
-    },
-    {
       "started_at": "2026-09-07T21:13:45.335Z",
       "candidates": 55,
       "queued": [
@@ -13869,6 +13858,28 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T13:01:00.919Z"
+    },
+    {
+      "started_at": "2026-09-09T13:06:04.456Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T13:06:25.602Z"
     }
   ],
   "vip_pending": {
@@ -14047,10 +14058,10 @@
       "first_seen_at": "2026-09-07T18:06:33.637Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 39,
+      "attempts": 40,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T12:03:54.137Z",
-      "retry_at": "2026-09-09T13:03:54.137Z"
+      "last_attempt_at": "2026-09-09T13:06:25.602Z",
+      "retry_at": "2026-09-09T14:06:25.602Z"
     },
     "DdCsCe8AoWO": {
       "source_handle": "akademiks",
@@ -14059,10 +14070,10 @@
       "first_seen_at": "2026-09-08T21:55:54.045Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 16,
+      "attempts": 17,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T12:03:50.182Z",
-      "retry_at": "2026-09-09T13:03:50.182Z"
+      "last_attempt_at": "2026-09-09T13:06:21.673Z",
+      "retry_at": "2026-09-09T14:06:21.673Z"
     }
   },
   "source_checks": {
@@ -14102,14 +14113,10 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T12:40:14.576Z",
-      "retry_at": "2026-09-09T12:55:14.576Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-09T13:06:12.981Z"
     },
     "xxl": {
-      "checked_at": "2026-09-09T12:50:40.276Z",
-      "retry_at": "2026-09-09T13:05:40.276Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-09T13:06:17.288Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-09T12:50:40.628Z",

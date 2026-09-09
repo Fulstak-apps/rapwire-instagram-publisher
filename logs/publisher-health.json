@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T12:33:25.350Z",
+  "checked_at": "2026-09-09T12:36:56.402Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,25 +35,40 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T12:36:35.206Z",
+  "threads_next_eligible_at": "2026-09-09T12:51:55.395Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T12:21:35.206Z",
+    "threads_at": "2026-09-09T12:36:55.395Z",
     "threads_video_at": "2026-09-09T12:21:35.206Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "459-they-really-assembled-the-avengers-for-this-commercial-lebron-ja.json",
+      "id": "459-they-really-assembled-the-avengers-for-this-commercial-lebron-ja",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17947627197295797"
+    }
+  ],
   "failures": [
     {
-      "file": "198-drake-has-been-spotify-s-most-streamed-rapper-for-18-months-stra.json",
-      "id": "198-drake-has-been-spotify-s-most-streamed-rapper-for-18-months-stra",
+      "file": "464-fans-put-free-lil-durk-lildurk-signs-outside-the-courthouse-alle.json",
+      "id": "464-fans-put-free-lil-durk-lildurk-signs-outside-the-courthouse-alle",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A2R6dh57ShFmPmccekJlNkx\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AJctIVr-jZSG8OR4P4GHPah\"}}"
     }
   ],
   "reviews": [
+    {
+      "file": "464-fans-put-free-lil-durk-lildurk-signs-outside-the-courthouse-alle.json",
+      "id": "464-fans-put-free-lil-durk-lildurk-signs-outside-the-courthouse-alle",
+      "platform": "instagram",
+      "status": "review_required",
+      "reason": "three_item_specific_delivery_failures"
+    },
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
       "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",

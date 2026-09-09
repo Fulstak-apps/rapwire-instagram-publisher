@@ -6481,28 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T12:07:27.131Z",
-      "candidates": 49,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc58CVBIpOF-capture-diagnostic.json"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-08T12:15:44.294Z"
-    },
-    {
       "started_at": "2026-09-08T12:20:48.570Z",
       "candidates": 33,
       "queued": [],
@@ -13713,6 +13691,40 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T19:32:41.198Z"
+    },
+    {
+      "started_at": "2026-09-09T19:37:44.564Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T19:38:31.431Z"
     }
   ],
   "vip_pending": {
@@ -13783,10 +13795,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 92,
+      "attempts": 93,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T18:35:57.869Z",
-      "retry_at": "2026-09-09T19:35:57.869Z"
+      "last_attempt_at": "2026-09-09T19:38:27.509Z",
+      "retry_at": "2026-09-09T20:38:27.509Z"
     },
     "Dc32-qLsTq5": {
       "source_handle": "akademiks",
@@ -13795,10 +13807,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 92,
+      "attempts": 93,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T18:36:01.875Z",
-      "retry_at": "2026-09-09T19:36:01.875Z"
+      "last_attempt_at": "2026-09-09T19:38:31.431Z",
+      "retry_at": "2026-09-09T20:38:31.431Z"
     },
     "Dc322YeFQyh": {
       "source_handle": "akademiks",
@@ -13843,10 +13855,10 @@
       "first_seen_at": "2026-09-06T17:44:31.499Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 64,
+      "attempts": 65,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T18:35:53.694Z",
-      "retry_at": "2026-09-09T19:35:53.694Z"
+      "last_attempt_at": "2026-09-09T19:38:23.369Z",
+      "retry_at": "2026-09-09T20:38:23.369Z"
     },
     "Dc9XO1DAR8r": {
       "source_handle": "akademiks",
@@ -13867,10 +13879,10 @@
       "first_seen_at": "2026-09-06T20:31:48.547Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 62,
+      "attempts": 63,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-09T18:35:49.674Z",
-      "retry_at": "2026-09-09T19:35:49.674Z"
+      "last_attempt_at": "2026-09-09T19:38:19.278Z",
+      "retry_at": "2026-09-09T20:38:19.278Z"
     },
     "Dc_KAyJG1jU": {
       "source_handle": "akademiks",
@@ -13911,16 +13923,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T19:32:14.417Z"
+      "checked_at": "2026-09-09T19:37:52.252Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T19:32:18.745Z"
+      "checked_at": "2026-09-09T19:37:56.774Z"
     },
     "records": {
-      "checked_at": "2026-09-09T19:32:23.180Z"
+      "checked_at": "2026-09-09T19:38:01.189Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T19:32:27.646Z"
+      "checked_at": "2026-09-09T19:38:05.684Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-09T19:26:56.939Z"
@@ -13932,10 +13944,10 @@
       "checked_at": "2026-09-09T19:32:36.693Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T19:15:38.504Z"
+      "checked_at": "2026-09-09T19:38:10.401Z"
     },
     "xxl": {
-      "checked_at": "2026-09-09T19:21:08.301Z"
+      "checked_at": "2026-09-09T19:38:14.790Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-09T19:21:12.715Z"

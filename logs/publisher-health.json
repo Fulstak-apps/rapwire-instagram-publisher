@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T19:51:19.801Z",
+  "checked_at": "2026-09-09T19:56:31.686Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T19:36:05.928Z",
+  "threads_next_eligible_at": "2026-09-09T20:11:31.685Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T19:21:05.928Z",
-    "threads_video_at": "2026-09-09T19:21:05.928Z",
+    "threads_at": "2026-09-09T19:56:31.685Z",
+    "threads_video_at": "2026-09-09T19:56:31.685Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo.json",
+      "id": "250-four-years-ago-today-the-battle-rap-community-lost-one-of-its-mo",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18632740108044357"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

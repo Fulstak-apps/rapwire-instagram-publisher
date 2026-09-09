@@ -1,11 +1,11 @@
 {
   "overdue": true,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-09T19:51:19.917Z",
+  "dispatch": false,
+  "reason": "no_eligible_item",
+  "checked_at": "2026-09-09T19:56:31.806Z",
   "deferred": []
 }

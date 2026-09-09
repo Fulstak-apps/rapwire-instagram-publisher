@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T10:10:18.676Z",
+  "checked_at": "2026-09-09T10:15:09.122Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,28 +43,20 @@
     "threads_video_at": "2026-09-09T09:45:00.892Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "445-lil-yachty-and-ice-spice-turned-their-latest-music-video-into-a-.json",
-      "id": "445-lil-yachty-and-ice-spice-turned-their-latest-music-video-into-a-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18123685708880030"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
-      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
-      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
+      "file": "322-kanyewest-ye-made-a-powerful-moment-during-his-chicago-homecomin.json",
+      "id": "322-kanyewest-ye-made-a-powerful-moment-during-his-chicago-homecomin",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AUf0L-LMAI0FBTECkmGe7E2\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AeT904YfDNRVFQbW7wcz7ld\"}}"
     }
   ],
   "reviews": [
     {
-      "file": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play.json",
-      "id": "294-free-durk-ye-also-said-at-night-2-of-his-chicago-show-after-play",
+      "file": "322-kanyewest-ye-made-a-powerful-moment-during-his-chicago-homecomin.json",
+      "id": "322-kanyewest-ye-made-a-powerful-moment-during-his-chicago-homecomin",
       "platform": "instagram",
       "status": "review_required",
       "reason": "three_item_specific_delivery_failures"

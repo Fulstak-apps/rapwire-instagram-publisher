@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-07T18:12:29.888Z",
-      "candidates": 62,
-      "queued": [
-        "400-kur-speaking-for-a-lot-of-us-in-this-2023-susquehanna-road-song"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-07T18:14:58.276Z"
-    },
-    {
       "started_at": "2026-09-07T18:20:08.835Z",
       "candidates": 50,
       "queued": [
@@ -13895,6 +13884,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T11:48:03.811Z"
+    },
+    {
+      "started_at": "2026-09-09T11:53:06.816Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "complexmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T11:53:13.477Z"
     }
   ],
   "vip_pending": {
@@ -14123,13 +14132,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-09T11:27:16.604Z",
-      "retry_at": "2026-09-09T11:42:16.604Z",
+      "checked_at": "2026-09-09T11:53:12.933Z",
+      "retry_at": "2026-09-09T12:08:12.933Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T11:32:26.709Z",
-      "retry_at": "2026-09-09T11:47:26.709Z",
+      "checked_at": "2026-09-09T11:53:13.408Z",
+      "retry_at": "2026-09-09T12:08:13.408Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {

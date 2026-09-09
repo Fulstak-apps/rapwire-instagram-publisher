@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T18:15:19.490Z",
+  "checked_at": "2026-09-09T18:16:34.979Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -26,7 +26,7 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -44,100 +44,8 @@
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [],
-  "failures": [
-    {
-      "file": "428-mark-curry-explaining-his-issue-wit-50-cent-doc-that-promised-hi.json",
-      "id": "428-mark-curry-explaining-his-issue-wit-50-cent-doc-that-promised-hi",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AYaMCCjQhkBahzNzof7dis8\"}}"
-    }
-  ],
+  "failures": [],
   "reviews": [
-    {
-      "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",
-      "id": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild.json",
-      "id": "150-source-commentary-nba-youngboy-fan-gets-pressed-by-lil-durk-lild",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the.json",
-      "id": "151-8-years-ago-today-tupid-young-pulled-up-to-vladtv-for-one-of-the",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "152-an-old-interview-of-pooh-shiesty-and-big30-resurfaced-revealing-.json",
-      "id": "152-an-old-interview-of-pooh-shiesty-and-big30-resurfaced-revealing-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "153-source-commentary-durks-full-opp-list-revealed-in-court-included.json",
-      "id": "153-source-commentary-durks-full-opp-list-revealed-in-court-included",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-.json",
-      "id": "154-lil-woody-gets-emotional-speaking-about-lil-durk-lildurk-saying-",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test.json",
-      "id": "155-source-commentary-otf-vonni-smoked-the-defence-and-finished-test",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi.json",
-      "id": "159-this-oil-field-boss-is-making-13-000-a-week-and-somehow-still-fi",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom.json",
-      "id": "167-in-a-technology-store-in-russia-a-robot-tried-to-attack-a-custom",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu.json",
-      "id": "169-blueface-says-that-when-he-was-younger-he-let-his-dog-lick-peanu",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2.json",
-      "id": "190-the-confidence-was-absolutely-unmatched-soulja-boy-s-legendary-2",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour.json",
-      "id": "199-fans-are-going-crazy-for-the-first-week-of-b-s-greyday2026-tour",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "media_items[1]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[2]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[3]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[4]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid; media_items[5]: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
     {
       "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
       "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",

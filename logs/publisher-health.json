@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T14:00:21.295Z",
+  "checked_at": "2026-09-09T14:02:44.486Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T13:47:22.460Z",
-    "usage": 19,
+    "checked_at": "2026-09-09T14:02:36.382Z",
+    "usage": 18,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T14:02:22.460Z",
+    "next_check_at": "2026-09-09T14:17:36.382Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 19,
-    "instagram_remaining": 79,
+    "instagram_usage": 18,
+    "instagram_remaining": 80,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T05:27:20.995Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,22 +35,30 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T13:44:52.784Z",
+  "threads_next_eligible_at": "2026-09-09T14:17:44.485Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T13:29:52.784Z",
-    "threads_video_at": "2026-09-09T13:29:52.784Z",
+    "threads_at": "2026-09-09T14:02:44.485Z",
+    "threads_video_at": "2026-09-09T14:02:44.485Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo.json",
+      "id": "214-a-boogie-took-over-the-rolling-loud-college-tour-ahead-of-the-mo",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18110918635870947"
+    }
+  ],
   "failures": [
     {
-      "file": "266-travis-scott-travisscott-has-reportedly-touched-down-in-chicago-.json",
-      "id": "266-travis-scott-travisscott-has-reportedly-touched-down-in-chicago-",
+      "file": "287-boosie-speaks-on-dj-vlad.json",
+      "id": "287-boosie-speaks-on-dj-vlad",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"Awj4a1iHzDZIl7YWuppDDYO\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"ApDBhLqSIpl9pCPJoFi6SbD\"}}"
     }
   ],
   "reviews": [

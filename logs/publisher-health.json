@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T21:37:25.575Z",
+  "checked_at": "2026-09-09T21:42:35.178Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T21:19:20.606Z",
+  "threads_next_eligible_at": "2026-09-09T21:57:35.177Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T04:57:20.995Z",
-    "threads_at": "2026-09-09T21:04:20.606Z",
-    "threads_video_at": "2026-09-09T21:04:20.606Z",
+    "threads_at": "2026-09-09T21:42:35.177Z",
+    "threads_video_at": "2026-09-09T21:42:35.177Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be.json",
+      "id": "249-watch-grand-theft-auto-vi-trailer-2-now-explore-vice-city-and-be",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "17944650867313555"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

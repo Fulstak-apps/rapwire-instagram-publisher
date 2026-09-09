@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T15:29:03.108Z",
-      "candidates": 60,
-      "queued": [
-        "431-drake-champagnepapi-has-fans-guessing-after-teasing-fomo-for-sep"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-08T15:30:24.388Z"
-    },
-    {
       "started_at": "2026-09-08T15:35:27.811Z",
       "candidates": 36,
       "queued": [],
@@ -13515,6 +13504,15 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T21:09:41.200Z"
+    },
+    {
+      "started_at": "2026-09-09T21:14:44.453Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T21:15:14.817Z"
     }
   ],
   "vip_pending": {
@@ -13713,16 +13711,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T21:09:17.543Z"
+      "checked_at": "2026-09-09T21:14:51.994Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T21:09:22.484Z"
+      "checked_at": "2026-09-09T21:14:56.547Z"
     },
     "records": {
-      "checked_at": "2026-09-09T21:09:27.265Z"
+      "checked_at": "2026-09-09T21:15:01.062Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T21:09:31.779Z"
+      "checked_at": "2026-09-09T21:15:05.495Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-09T21:03:46.359Z"
@@ -13734,10 +13732,10 @@
       "checked_at": "2026-09-09T21:09:40.930Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T20:46:36.272Z"
+      "checked_at": "2026-09-09T21:15:09.991Z"
     },
     "xxl": {
-      "checked_at": "2026-09-09T20:58:04.088Z"
+      "checked_at": "2026-09-09T21:15:14.629Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-09T20:58:08.759Z"

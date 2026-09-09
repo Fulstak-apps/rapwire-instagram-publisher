@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-09T16:03:46.575Z",
+  "checked_at": "2026-09-09T16:08:46.580Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-09T15:53:34.399Z",
+    "checked_at": "2026-09-09T16:08:45.836Z",
     "usage": 15,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-09T16:08:34.399Z",
+    "next_check_at": "2026-09-09T16:23:45.836Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "369-jammy-the-bull-otf-jam-speaks-out-ahead-of-verdict-day-he-says-l.json",
-      "id": "369-jammy-the-bull-otf-jam-speaks-out-ahead-of-verdict-day-he-says-l",
+      "file": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz.json",
+      "id": "366-king-harris-is-warns-content-creator-607-unc-to-stop-playing-cuz",
       "platform": "instagram",
       "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"Aoc3mG6_PJfcbBY0-82S4s1\"}}"
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"A_hW50Yw1K-uTlBBBUpBaMI\"}}"
     }
   ],
   "reviews": [

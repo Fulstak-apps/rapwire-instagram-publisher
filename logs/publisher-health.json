@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T00:06:24.281Z",
+  "checked_at": "2026-09-09T00:09:15.718Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 30,
-    "instagram_remaining": 68,
+    "instagram_usage": 31,
+    "instagram_remaining": 67,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T00:36:24.065Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -43,16 +43,7 @@
     "threads_video_at": "2026-09-09T00:04:00.915Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "444-the-sketch-played-on-drake-s-reputation-for-taking-things-person.json",
-      "id": "444-the-sketch-played-on-drake-s-reputation-for-taking-things-person",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18163756708471243",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

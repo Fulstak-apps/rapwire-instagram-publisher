@@ -6313,51 +6313,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-06T20:39:44.995Z",
-      "candidates": 39,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcvzv3fv2GR-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9YSd_gCof-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc9VOErGU6s/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9VOErGU6s-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
-          "stage": "queue",
-          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 15,
-      "finished_at": "2026-09-06T20:46:14.117Z"
-    },
-    {
       "started_at": "2026-09-06T20:51:17.531Z",
       "candidates": 63,
       "queued": [
@@ -14819,6 +14774,40 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T00:05:22.075Z"
+    },
+    {
+      "started_at": "2026-09-09T00:10:28.732Z",
+      "candidates": 61,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
+          "stage": "queue",
+          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T00:14:39.596Z"
     }
   ],
   "vip_pending": {
@@ -14901,10 +14890,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 75,
+      "attempts": 76,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-08T19:26:35.612Z",
-      "retry_at": "2026-09-08T20:26:35.612Z"
+      "last_attempt_at": "2026-09-09T00:12:20.374Z",
+      "retry_at": "2026-09-09T01:12:20.374Z"
     },
     "Dc322YeFQyh": {
       "source_handle": "akademiks",
@@ -14913,10 +14902,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 75,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-08T19:59:32.585Z",
-      "retry_at": "2026-09-08T20:59:32.585Z"
+      "attempts": 76,
+      "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
+      "last_attempt_at": "2026-09-09T00:14:39.595Z",
+      "retry_at": "2026-09-09T01:14:39.595Z"
     },
     "Dc6e8SjEY1u": {
       "source_handle": "records",
@@ -14949,10 +14938,10 @@
       "first_seen_at": "2026-09-06T17:44:31.499Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 47,
+      "attempts": 48,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-08T21:57:21.670Z",
-      "retry_at": "2026-09-08T22:57:21.670Z"
+      "last_attempt_at": "2026-09-09T00:12:06.252Z",
+      "retry_at": "2026-09-09T01:12:06.252Z"
     },
     "Dc9XO1DAR8r": {
       "source_handle": "akademiks",
@@ -15009,24 +14998,24 @@
       "first_seen_at": "2026-09-08T21:55:54.045Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 5,
+      "attempts": 6,
       "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
-      "last_attempt_at": "2026-09-08T23:35:59.943Z",
-      "retry_at": "2026-09-09T00:07:59.943Z"
+      "last_attempt_at": "2026-09-09T00:11:51.371Z",
+      "retry_at": "2026-09-09T01:11:51.371Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-09T00:04:14.126Z"
+      "checked_at": "2026-09-09T00:10:40.999Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-09T00:04:18.128Z"
+      "checked_at": "2026-09-09T00:10:45.095Z"
     },
     "records": {
-      "checked_at": "2026-09-09T00:04:22.175Z"
+      "checked_at": "2026-09-09T00:10:49.144Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-09T00:04:26.289Z"
+      "checked_at": "2026-09-09T00:10:53.309Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-08T23:46:26.401Z"
@@ -15041,7 +15030,7 @@
       "checked_at": "2026-09-09T00:04:30.336Z"
     },
     "xxl": {
-      "checked_at": "2026-09-08T23:35:18.538Z"
+      "checked_at": "2026-09-09T00:11:01.473Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-08T23:35:22.514Z"
@@ -15050,7 +15039,7 @@
       "checked_at": "2026-09-09T00:04:34.420Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-08T23:19:52.692Z"
+      "checked_at": "2026-09-09T00:10:57.376Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-08T23:46:22.300Z"

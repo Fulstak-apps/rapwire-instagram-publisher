@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-07T16:01:53.523Z",
-      "candidates": 63,
-      "queued": [
-        "390-eazy-e-would-ve-turned-62-years-old-today-happy-heavenly-birthda"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 19,
-      "finished_at": "2026-09-07T16:03:25.965Z"
-    },
-    {
       "started_at": "2026-09-07T16:08:29.314Z",
       "candidates": 60,
       "queued": [
@@ -13812,6 +13801,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-09T10:40:31.667Z"
+    },
+    {
+      "started_at": "2026-09-09T10:45:34.566Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "complexmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "xxl",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-09T10:45:41.170Z"
     }
   ],
   "vip_pending": {
@@ -14045,13 +14054,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {
-      "checked_at": "2026-09-09T10:19:43.603Z",
-      "retry_at": "2026-09-09T10:34:43.603Z",
+      "checked_at": "2026-09-09T10:45:40.655Z",
+      "retry_at": "2026-09-09T11:00:40.655Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {
-      "checked_at": "2026-09-09T10:24:57.803Z",
-      "retry_at": "2026-09-09T10:39:57.803Z",
+      "checked_at": "2026-09-09T10:45:41.015Z",
+      "retry_at": "2026-09-09T11:00:41.015Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {

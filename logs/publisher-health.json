@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T05:21:59.357Z",
+  "checked_at": "2026-09-09T05:27:38.404Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -23,11 +23,11 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-09T05:27:20.995Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -44,7 +44,15 @@
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "436-lil-durk-lildurk-s-jury-instruction-completed-judge-was-not-play.json",
+      "id": "436-lil-durk-lildurk-s-jury-instruction-completed-judge-was-not-play",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "media failed: {\"error\":{\"message\":\"User access is restricted\",\"type\":\"OAuthException\",\"code\":25,\"error_subcode\":2207050,\"is_transient\":false,\"error_user_title\":\"User is restricted\",\"error_user_msg\":\"The Instagram account is restricted.\",\"fbtrace_id\":\"AyURTDq7iXD-6PD-6b_ki1Y\"}}"
+    }
+  ],
   "reviews": [
     {
       "file": "217-fbi-said-durk-took-them-on-a-chase-in-his-bulletproof-truck-afte.json",

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T00:54:40.738Z",
+  "checked_at": "2026-09-09T00:59:59.805Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-09T00:54:41.159Z",
+  "threads_next_eligible_at": "2026-09-09T01:14:58.267Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-09T00:44:17.331Z",
-    "threads_at": "2026-09-09T00:39:41.159Z",
-    "threads_video_at": "2026-09-09T00:39:41.159Z",
+    "threads_at": "2026-09-09T00:59:58.267Z",
+    "threads_video_at": "2026-09-09T00:59:58.267Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "438-six-years-ago-today-travis-scott-travisscott-and-mcdonald-s-rele.json",
+      "id": "438-six-years-ago-today-travis-scott-travisscott-and-mcdonald-s-rele",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17985963171027207"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

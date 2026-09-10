@@ -5255,6 +5255,20 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdHUrIUtA98/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdHcdJQll_W": {
+      "seen_at": "2026-09-10T18:25:22.986Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdHcdJQll_W/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdHY0H9EXL0": {
+      "seen_at": "2026-09-10T18:25:22.986Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdHY0H9EXL0/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -7410,35 +7424,15 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdHaX_YPjTx/",
       "queue_id": "512-otf-dede-had-a-major-w-in-court-close-to-being-granted-a-mistria",
       "video": "media/512-otf-dede-had-a-major-w-in-court-close-to-being-granted-a-mistria.mp4"
+    },
+    "DdHZtfdlthg": {
+      "queued_at": "2026-09-10T18:25:34.023Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdHZtfdlthg/",
+      "queue_id": "513-never-forget-the-iconic-t-shirt-baby-keem-babykeem-wore-before-h"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T13:11:28.616Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T13:11:37.124Z"
-    },
     {
       "started_at": "2026-09-09T13:16:40.435Z",
       "candidates": 0,
@@ -15739,6 +15733,17 @@
       "mode": "discovery",
       "vip_pending": 39,
       "finished_at": "2026-09-10T18:16:37.522Z"
+    },
+    {
+      "started_at": "2026-09-10T18:22:09.139Z",
+      "candidates": 59,
+      "queued": [
+        "513-never-forget-the-iconic-t-shirt-baby-keem-babykeem-wore-before-h"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 38,
+      "finished_at": "2026-09-10T18:25:34.023Z"
     }
   ],
   "vip_pending": {
@@ -16195,18 +16200,6 @@
       "last_attempt_at": "2026-09-10T15:06:41.667Z",
       "retry_at": "2026-09-10T15:22:41.667Z"
     },
-    "DdHZtfdlthg": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/p/DdHZtfdlthg/",
-      "shortcode": "DdHZtfdlthg",
-      "first_seen_at": "2026-09-10T18:01:39.183Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0,
-      "source_published_at": "2026-09-10T17:44:30.000Z",
-      "visible_caption": "Never forget the iconic T-Shirt Baby Keem wore before he won his first ever Grammy 😂😂😭",
-      "story_type": "current"
-    },
     "DdHaGpFyRsU": {
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/DdHaGpFyRsU/",
@@ -16246,16 +16239,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T18:07:12.514Z"
+      "checked_at": "2026-09-10T18:22:27.982Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T18:07:08.368Z"
+      "checked_at": "2026-09-10T18:22:24.074Z"
     },
     "records": {
-      "checked_at": "2026-09-10T18:07:04.376Z"
+      "checked_at": "2026-09-10T18:22:20.147Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T18:07:00.372Z"
+      "checked_at": "2026-09-10T18:22:16.198Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-10T17:58:52.545Z"
@@ -16267,7 +16260,7 @@
       "checked_at": "2026-09-10T18:07:20.577Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-10T17:19:01.760Z"
+      "checked_at": "2026-09-10T18:22:35.868Z"
     },
     "xxl": {
       "checked_at": "2026-09-10T17:31:05.609Z"
@@ -16276,7 +16269,7 @@
       "checked_at": "2026-09-10T17:31:09.554Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-10T17:09:31.528Z"
+      "checked_at": "2026-09-10T18:22:31.966Z"
     },
     "igndotcom": {
       "checked_at": "2026-09-10T17:19:05.730Z"

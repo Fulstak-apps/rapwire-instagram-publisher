@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-10T16:18:17.984Z",
+  "checked_at": "2026-09-10T16:23:28.266Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T16:18:15.701Z",
+  "threads_next_eligible_at": "2026-09-10T16:38:27.607Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-10T16:03:22.307Z",
-    "threads_at": "2026-09-10T16:03:15.701Z",
-    "threads_video_at": "2026-09-10T16:03:15.701Z",
+    "threads_at": "2026-09-10T16:23:27.607Z",
+    "threads_video_at": "2026-09-10T16:23:27.607Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "503-we-would-have-popped-otf-quando-s-dispensary-responds-to-otf-jam.json",
+      "id": "503-we-would-have-popped-otf-quando-s-dispensary-responds-to-otf-jam",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18135440536727688"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

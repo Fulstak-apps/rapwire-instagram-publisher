@@ -7002,29 +7002,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdDC1BxJswE/",
       "queue_id": "472-feds-claim-akademiks-knew-about-lul-pab-murder-and-couldn-t-even",
       "video": "media/472-feds-claim-akademiks-knew-about-lul-pab-murder-and-couldn-t-even.mp4"
+    },
+    "DdFNVzjS-VA": {
+      "queued_at": "2026-09-10T14:35:50.442Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdFNVzjS-VA/",
+      "queue_id": "497-rapwire-repost-video",
+      "video": "media/497-rapwire-repost-video.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T11:47:57.278Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T11:48:03.811Z"
-    },
     {
       "started_at": "2026-09-09T11:53:06.816Z",
       "candidates": 0,
@@ -15500,6 +15487,17 @@
       "mode": "discovery",
       "vip_pending": 43,
       "finished_at": "2026-09-10T14:24:57.362Z"
+    },
+    {
+      "started_at": "2026-09-10T14:30:37.285Z",
+      "candidates": 24,
+      "queued": [
+        "497-rapwire-repost-video"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 42,
+      "finished_at": "2026-09-10T14:35:50.442Z"
     }
   ],
   "vip_pending": {
@@ -15959,18 +15957,6 @@
       "last_attempt_at": "2026-09-10T14:24:57.362Z",
       "retry_at": "2026-09-10T14:40:57.362Z"
     },
-    "DdFNVzjS-VA": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DdFNVzjS-VA/",
-      "shortcode": "DdFNVzjS-VA",
-      "first_seen_at": "2026-09-10T13:42:59.076Z",
-      "profile_position": 5,
-      "state": "retry_pending",
-      "attempts": 3,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T14:13:03.776Z",
-      "retry_at": "2026-09-10T14:21:03.776Z"
-    },
     "DdE_Q2EP3ID": {
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/traploreross/reel/DdE_Q2EP3ID/",
@@ -16022,9 +16008,7 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T14:12:25.734Z",
-      "retry_at": "2026-09-10T14:27:25.735Z",
-      "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+      "checked_at": "2026-09-10T14:30:45.534Z"
     },
     "traploreross": {
       "checked_at": "2026-09-10T14:24:33.887Z",
@@ -16067,9 +16051,7 @@
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "hiphopdx": {
-      "checked_at": "2026-09-10T14:00:41.229Z",
-      "retry_at": "2026-09-10T14:15:41.229Z",
-      "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+      "checked_at": "2026-09-10T14:30:49.572Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-10T14:18:46.297Z",
@@ -16082,7 +16064,7 @@
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-10T14:06:17.612Z"
+      "checked_at": "2026-09-10T14:30:53.603Z"
     }
   }
 }

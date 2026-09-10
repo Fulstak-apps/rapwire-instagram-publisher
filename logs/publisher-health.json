@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-10T20:51:13.741Z",
+  "checked_at": "2026-09-10T20:56:20.220Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-10T20:46:13.559Z",
-    "usage": 10,
+    "usage": 11,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-10T21:01:13.559Z",
@@ -22,12 +22,12 @@
     "instagram_remaining": 88,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-10T20:50:59.902Z",
+    "next_feed_eligible_at": "2026-09-10T21:26:20.011Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-10T20:56:11.234Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-10T20:20:59.902Z",
+    "instagram_feed_at": "2026-09-10T20:56:20.011Z",
     "threads_at": "2026-09-10T20:41:11.234Z",
     "threads_video_at": "2026-09-10T20:41:11.234Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "525-lil-durk-born-durk-derrick-banks-is-one-of-chicago-s-most-influe.json",
+      "id": "525-lil-durk-born-durk-derrick-banks-is-one-of-chicago-s-most-influe",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18109290299591875",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

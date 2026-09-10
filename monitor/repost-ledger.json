@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T22:59:30.015Z",
-      "candidates": 58,
-      "queued": [
-        "456-drew-findling-trashed-lapd-and-fbi-said-case-was-garbage-and-ask"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-08T23:05:53.560Z"
-    },
-    {
       "started_at": "2026-09-08T23:11:26.577Z",
       "candidates": 57,
       "queued": [
@@ -13539,6 +13528,28 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T00:31:57.239Z"
+    },
+    {
+      "started_at": "2026-09-10T00:37:00.595Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T00:37:39.255Z"
     }
   ],
   "vip_pending": {
@@ -13717,10 +13728,10 @@
       "first_seen_at": "2026-09-07T18:06:33.637Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 50,
-      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T23:33:24.153Z",
-      "retry_at": "2026-09-10T00:33:24.153Z"
+      "attempts": 51,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-10T00:37:39.255Z",
+      "retry_at": "2026-09-10T01:37:39.255Z"
     },
     "DdCsCe8AoWO": {
       "source_handle": "akademiks",
@@ -13729,24 +13740,24 @@
       "first_seen_at": "2026-09-08T21:55:54.045Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 27,
-      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T23:33:23.078Z",
-      "retry_at": "2026-09-10T00:33:23.078Z"
+      "attempts": 28,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-10T00:37:35.554Z",
+      "retry_at": "2026-09-10T01:37:35.554Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T00:31:36.510Z"
+      "checked_at": "2026-09-10T00:37:09.396Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T00:31:40.703Z"
+      "checked_at": "2026-09-10T00:37:13.647Z"
     },
     "records": {
-      "checked_at": "2026-09-10T00:31:44.850Z"
+      "checked_at": "2026-09-10T00:37:17.958Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T00:31:48.780Z"
+      "checked_at": "2026-09-10T00:37:22.130Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-10T00:26:21.431Z"
@@ -13767,14 +13778,10 @@
       "checked_at": "2026-09-10T00:20:48.678Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-10T00:04:30.273Z",
-      "retry_at": "2026-09-10T00:19:30.273Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/rockstargames/\nCall log:\n  - navigating to \"https://www.instagram.com/rockstargames/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-10T00:37:26.579Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-10T00:04:30.616Z",
-      "retry_at": "2026-09-10T00:19:30.616Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-10T00:37:30.776Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-10T00:20:52.800Z"

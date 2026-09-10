@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo",
@@ -18,8 +18,8 @@
     "523-the-jurors-sent-the-just-two-notes-this-morning-asking-for-clari",
     "526-durk-cant-get-a-fair-trial-judge-always-rules-against-against-hi"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-10T22:47:34.161Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-10T22:52:34.248Z",
   "deferred": []
 }

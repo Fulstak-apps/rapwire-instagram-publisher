@@ -4954,6 +4954,20 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdG-X8zIeo_/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdG2O_DOOwT": {
+      "seen_at": "2026-09-10T14:44:02.665Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdG2O_DOOwT/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdFE_7ztFC7": {
+      "seen_at": "2026-09-10T14:44:02.666Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdFE_7ztFC7/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -7009,29 +7023,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdFNVzjS-VA/",
       "queue_id": "497-rapwire-repost-video",
       "video": "media/497-rapwire-repost-video.mp4"
+    },
+    "DdG2O_DOOwT": {
+      "queued_at": "2026-09-10T14:44:35.262Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdG2O_DOOwT/",
+      "queue_id": "498-ishowspeed-got-his-hands-on-apple-s-first-foldable-and-the-first",
+      "video": "media/498-ishowspeed-got-his-hands-on-apple-s-first-foldable-and-the-first.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T11:53:06.816Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "complexmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T11:53:13.477Z"
-    },
     {
       "started_at": "2026-09-09T11:58:20.636Z",
       "candidates": 0,
@@ -15498,6 +15499,24 @@
       "mode": "discovery",
       "vip_pending": 42,
       "finished_at": "2026-09-10T14:35:50.442Z"
+    },
+    {
+      "started_at": "2026-09-10T14:40:41.840Z",
+      "candidates": 62,
+      "queued": [
+        "498-ishowspeed-got-his-hands-on-apple-s-first-foldable-and-the-first"
+      ],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdFaMKavW-y/",
+          "stage": "score",
+          "error": "Exact source caption missing, generic or truncated; needs review"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 42,
+      "finished_at": "2026-09-10T14:44:35.262Z"
     }
   ],
   "vip_pending": {
@@ -16008,32 +16027,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T14:30:45.534Z"
+      "checked_at": "2026-09-10T14:41:03.048Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T14:24:33.887Z",
-      "retry_at": "2026-09-10T14:39:33.887Z",
-      "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+      "checked_at": "2026-09-10T14:40:59.009Z"
     },
     "records": {
-      "checked_at": "2026-09-10T14:18:41.968Z",
-      "retry_at": "2026-09-10T14:33:41.968Z",
-      "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+      "checked_at": "2026-09-10T14:40:54.976Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T14:18:37.691Z",
-      "retry_at": "2026-09-10T14:33:37.692Z",
-      "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+      "checked_at": "2026-09-10T14:40:50.781Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-10T14:06:21.662Z",
-      "retry_at": "2026-09-10T14:21:21.662Z",
-      "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+      "checked_at": "2026-09-10T14:41:07.352Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-10T14:12:30.146Z",
-      "retry_at": "2026-09-10T14:27:30.147Z",
-      "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+      "checked_at": "2026-09-10T14:41:11.398Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-10T14:12:34.708Z",

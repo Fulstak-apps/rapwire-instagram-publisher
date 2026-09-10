@@ -37,11 +37,17 @@ export function rememberVip(ledger, discovered, now = Date.now()) {
   ledger.vip_pending ||= {};
   for (const item of discovered) {
     if (!isVip(item.source.handle) || ledger.queued_shortcodes[item.shortcode]) continue;
-    ledger.vip_pending[item.shortcode] ||= {
+    const pending = ledger.vip_pending[item.shortcode] ||= {
       source_handle: item.source.handle, source_url: item.url, shortcode: item.shortcode,
       first_seen_at: new Date(now).toISOString(), profile_position: item.profilePosition,
       state: 'pending', attempts: 0
     };
+    // Preserve the metadata gathered from the live post. VIP entries are
+    // durable, but they must retain enough evidence to pass the same freshness
+    // checks as every other source.
+    if (item.sourcePublishedAt) pending.source_published_at = item.sourcePublishedAt;
+    if (item.visibleCaption) pending.visible_caption = item.visibleCaption;
+    if (item.storyType) pending.story_type = item.storyType;
   }
   for (const code of Object.keys(ledger.vip_pending)) {
     if (ledger.queued_shortcodes[code]) delete ledger.vip_pending[code];
@@ -54,7 +60,13 @@ export function vipCandidates(ledger, sources, now = Date.now()) {
       && !(Date.parse(x.retry_at || '') > now))
     .sort((a,b) => (a.attempts || 0) - (b.attempts || 0) || a.first_seen_at.localeCompare(b.first_seen_at)
       || a.profile_position - b.profile_position || a.source_handle.localeCompare(b.source_handle))
-    .map(x => ({source:sources.find(s=>s.handle===x.source_handle),url:x.source_url,shortcode:x.shortcode,profilePosition:x.profile_position}))
+    .map(x => ({
+      source:sources.find(s=>s.handle===x.source_handle), url:x.source_url,
+      shortcode:x.shortcode, profilePosition:x.profile_position,
+      sourcePublishedAt:x.source_published_at || null,
+      visibleCaption:x.visible_caption || '', storyType:x.story_type || 'current',
+      firstSeenAt:x.first_seen_at || null
+    }))
     .filter(x=>x.source);
 }
 

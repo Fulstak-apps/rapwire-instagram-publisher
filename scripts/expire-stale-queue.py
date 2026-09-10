@@ -60,6 +60,13 @@ for path in QUEUE.glob("*.json"):
     source_date = item.get("source_published_at") or item.get("source_post_date")
     published = parse_source_date(source_date)
     if not published:
+        # Instagram does not expose a machine-readable publication time for
+        # every authenticated Reel. A just-discovered, fully captured video is
+        # safe for one short delivery window; older timestamp-less VIP backlog
+        # remains paused rather than being mistaken for breaking news.
+        discovered = parse_source_date(item.get("source_discovered_at"))
+        if discovered and item.get("media_capture_evidence") and (now - discovered).total_seconds() <= 2 * 3600:
+            continue
         item["status"] = "paused"
         item["stale_reason"] = "Unparseable source publication date; held to prevent stale news from publishing."
         path.write_text(json.dumps(item, indent=2) + "\n")

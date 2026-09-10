@@ -236,6 +236,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
     source_url: candidate.url,
     source_urls: [candidate.url],
     source_published_at: candidate.sourcePublishedAt || null,
+    source_discovered_at: candidate.firstSeenAt || new Date().toISOString(),
     source_view_count_at_selection: Number(candidate.viewCount || 0),
     selection_score: candidate.selectionScore ?? null,
     priority_artists: candidate.priorityArtists || [],

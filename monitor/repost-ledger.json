@@ -5514,6 +5514,27 @@
       "source_url": "https://www.instagram.com/records/p/DdIAW9Sjgw7/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdIDVUKDig7": {
+      "seen_at": "2026-09-10T23:54:14.085Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdIDVUKDig7/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdH_Fj6DdYk": {
+      "seen_at": "2026-09-10T23:54:14.085Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdH_Fj6DdYk/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdH_kb6t8XN": {
+      "seen_at": "2026-09-10T23:54:14.085Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdH_kb6t8XN/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -7782,29 +7803,15 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdIB5g1jihr/",
       "queue_id": "531-rolling-loud-india-has-been-announced-for-december-12-13-2026-th"
+    },
+    "DdIDVUKDig7": {
+      "queued_at": "2026-09-10T23:55:48.062Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdIDVUKDig7/",
+      "queue_id": "534-the-wait-continues-in-lil-durk-lildurk-s-trial-with-another-day-"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T15:00:59.320Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T15:01:06.644Z"
-    },
     {
       "started_at": "2026-09-09T15:06:09.714Z",
       "candidates": 0,
@@ -15898,6 +15905,24 @@
       "mode": "discovery",
       "vip_pending": 36,
       "finished_at": "2026-09-10T23:46:23.436Z"
+    },
+    {
+      "started_at": "2026-09-10T23:51:28.213Z",
+      "candidates": 62,
+      "queued": [
+        "534-the-wait-continues-in-lil-durk-lildurk-s-trial-with-another-day-"
+      ],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/DdH_kb6t8XN/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdH_kb6t8XN-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 36,
+      "finished_at": "2026-09-10T23:55:48.062Z"
     }
   ],
   "vip_pending": {
@@ -16372,22 +16397,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T23:36:55.268Z"
+      "checked_at": "2026-09-10T23:51:47.811Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T23:36:51.130Z"
+      "checked_at": "2026-09-10T23:51:43.246Z"
     },
     "records": {
-      "checked_at": "2026-09-10T23:36:47.052Z"
+      "checked_at": "2026-09-10T23:51:39.091Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T23:36:42.244Z"
+      "checked_at": "2026-09-10T23:51:35.072Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-10T22:15:25.196Z"
+      "checked_at": "2026-09-10T23:51:51.804Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-10T22:42:19.596Z"
+      "checked_at": "2026-09-10T23:51:55.970Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-10T22:42:24.250Z"

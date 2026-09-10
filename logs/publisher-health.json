@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-10T18:24:38.288Z",
+  "checked_at": "2026-09-10T18:29:51.284Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-10T18:19:34.918Z",
-    "usage": 6,
+    "usage": 7,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-10T18:34:34.918Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 92,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-10T18:24:21.656Z",
+    "next_feed_eligible_at": "2026-09-10T18:59:44.119Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,15 +35,31 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T18:24:31.414Z",
+  "threads_next_eligible_at": "2026-09-10T18:44:50.850Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-10T17:54:21.656Z",
-    "threads_at": "2026-09-10T18:09:31.414Z",
-    "threads_video_at": "2026-09-10T18:09:31.414Z",
+    "instagram_feed_at": "2026-09-10T18:29:44.119Z",
+    "threads_at": "2026-09-10T18:29:50.850Z",
+    "threads_video_at": "2026-09-10T18:29:50.850Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "505-ceddy-nash-denies-lil-durk-lildurk-s-team-expected-a-mistrial-fo.json",
+      "id": "505-ceddy-nash-denies-lil-durk-lildurk-s-team-expected-a-mistrial-fo",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18179512483420877",
+      "content_type": "video"
+    },
+    {
+      "file": "510-judge-said-lil-durk-lildurk-never-denied-lul-pab-murder-in-akade.json",
+      "id": "510-judge-said-lil-durk-lildurk-never-denied-lul-pab-murder-in-akade",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18187082326406184"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

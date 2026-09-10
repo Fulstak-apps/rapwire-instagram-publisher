@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-10T22:32:20.281Z",
+  "checked_at": "2026-09-10T22:37:23.883Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T22:32:10.595Z",
+  "threads_next_eligible_at": "2026-09-10T22:52:23.077Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-10T22:07:34.096Z",
-    "threads_at": "2026-09-10T22:17:10.595Z",
+    "threads_at": "2026-09-10T22:37:23.077Z",
     "threads_video_at": "2026-09-10T22:17:10.595Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "511-a-note-was-sent-in-by-the-jury-in-lil-durk-lildurk-s-trial.json",
+      "id": "511-a-note-was-sent-in-by-the-jury-in-lil-durk-lildurk-s-trial",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18099193280375793"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

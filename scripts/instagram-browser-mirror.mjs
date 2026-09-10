@@ -50,9 +50,22 @@ async function login() {
   const page = context.pages()[0] || await context.newPage();
   await page.goto("https://www.instagram.com/", { waitUntil: "domcontentloaded" });
   console.log("Sign into @rapwire247 in this dedicated window, then close the window. The login will be reused by scheduled runs.");
-  // Login is intentionally interactive and may take longer than Playwright's
-  // default 30-second event timeout.
-  await new Promise((resolve) => context.once("close", resolve));
+  // Never leave the scheduled collector locked behind an abandoned login window.
+  let timer;
+  try {
+    await Promise.race([
+      new Promise((resolve) => context.once("close", resolve)),
+      new Promise((resolve) => {
+        timer = setTimeout(() => {
+          console.error("Login window timed out after 15 minutes; releasing collector profile. Run mirror:login again if needed.");
+          resolve();
+        }, 15 * 60 * 1000);
+      })
+    ]);
+  } finally {
+    clearTimeout(timer);
+    await context.close();
+  }
 }
 
 async function captureVideo(page, video, candidates, reelUrl, options, destination, shortcode) {

@@ -6481,24 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T03:08:09.390Z",
-      "candidates": 60,
-      "queued": [
-        "471-feds-reveal-worst-evidence-against-lil-durk-lildurk-in-final-mom"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DdDDgRUDQRo/",
-          "stage": "queue",
-          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 17,
-      "finished_at": "2026-09-09T03:15:36.041Z"
-    },
-    {
       "started_at": "2026-09-09T03:21:01.638Z",
       "candidates": 57,
       "queued": [
@@ -13663,6 +13645,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T02:25:22.103Z"
+    },
+    {
+      "started_at": "2026-09-10T02:30:25.560Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "complexmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "xxl",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T02:30:32.135Z"
     }
   ],
   "vip_pending": {
@@ -13896,13 +13898,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {
-      "checked_at": "2026-09-10T02:04:30.871Z",
-      "retry_at": "2026-09-10T02:19:30.871Z",
+      "checked_at": "2026-09-10T02:30:31.688Z",
+      "retry_at": "2026-09-10T02:45:31.688Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
     },
     "xxl": {
-      "checked_at": "2026-09-10T02:09:43.805Z",
-      "retry_at": "2026-09-10T02:24:43.805Z",
+      "checked_at": "2026-09-10T02:30:32.037Z",
+      "retry_at": "2026-09-10T02:45:32.037Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {

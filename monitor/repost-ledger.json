@@ -6481,45 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T00:35:51.835Z",
-      "candidates": 39,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcvzv3fv2GR-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc1oLsTgfLu-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc6e8SjEY1u-2-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc13XZkGTqg-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T00:43:12.538Z"
-    },
-    {
       "started_at": "2026-09-09T00:48:16.712Z",
       "candidates": 59,
       "queued": [],
@@ -13552,6 +13513,46 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T01:28:12.196Z"
+    },
+    {
+      "started_at": "2026-09-10T01:33:15.617Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "records",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "darnellwilliams",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "traploreross",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T01:33:24.214Z"
     }
   ],
   "vip_pending": {
@@ -13750,24 +13751,28 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T01:27:59.254Z"
+      "checked_at": "2026-09-10T01:33:22.542Z",
+      "retry_at": "2026-09-10T01:48:22.542Z",
+      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T01:28:03.763Z"
+      "checked_at": "2026-09-10T01:33:22.972Z",
+      "retry_at": "2026-09-10T01:48:22.972Z",
+      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
     },
     "records": {
-      "checked_at": "2026-09-10T01:17:09.861Z",
-      "retry_at": "2026-09-10T01:32:09.861Z",
+      "checked_at": "2026-09-10T01:33:21.727Z",
+      "retry_at": "2026-09-10T01:48:21.727Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T01:17:10.276Z",
-      "retry_at": "2026-09-10T01:32:10.276Z",
+      "checked_at": "2026-09-10T01:33:22.073Z",
+      "retry_at": "2026-09-10T01:48:22.073Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-10T01:17:10.595Z",
-      "retry_at": "2026-09-10T01:32:10.595Z",
+      "checked_at": "2026-09-10T01:33:24.005Z",
+      "retry_at": "2026-09-10T01:48:24.005Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
     },
     "raplisted_": {
@@ -13794,7 +13799,9 @@
       "checked_at": "2026-09-10T01:11:51.194Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-10T01:06:09.691Z"
+      "checked_at": "2026-09-10T01:33:23.502Z",
+      "retry_at": "2026-09-10T01:48:23.502Z",
+      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
     }
   }
 }

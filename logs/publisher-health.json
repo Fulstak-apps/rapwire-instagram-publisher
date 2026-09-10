@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-10T21:26:41.849Z",
+  "checked_at": "2026-09-10T21:31:49.008Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-10T21:16:40.655Z",
-    "usage": 11,
+    "usage": 12,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-10T21:31:40.655Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 87,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-10T21:26:20.011Z",
+    "next_feed_eligible_at": "2026-09-10T22:01:48.595Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-10T21:36:34.761Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-10T20:56:20.011Z",
+    "instagram_feed_at": "2026-09-10T21:31:48.595Z",
     "threads_at": "2026-09-10T21:21:34.761Z",
     "threads_video_at": "2026-09-10T21:21:34.761Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "514-jury-asking-for-more-info-but-the-judge-said-no-this-could-be-ma.json",
+      "id": "514-jury-asking-for-more-info-but-the-judge-said-no-this-could-be-ma",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18115184662790005",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

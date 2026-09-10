@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-10T18:44:53.253Z",
+  "checked_at": "2026-09-10T18:50:06.187Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-10T18:34:41.146Z",
+    "checked_at": "2026-09-10T18:49:53.074Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-10T18:49:41.146Z",
+    "next_check_at": "2026-09-10T19:04:53.074Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T18:44:50.850Z",
+  "threads_next_eligible_at": "2026-09-10T19:05:05.486Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-10T18:29:44.119Z",
-    "threads_at": "2026-09-10T18:29:50.850Z",
-    "threads_video_at": "2026-09-10T18:29:50.850Z",
+    "threads_at": "2026-09-10T18:50:05.486Z",
+    "threads_video_at": "2026-09-10T18:50:05.486Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "512-otf-dede-had-a-major-w-in-court-close-to-being-granted-a-mistria.json",
+      "id": "512-otf-dede-had-a-major-w-in-court-close-to-being-granted-a-mistria",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18629074813053617"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

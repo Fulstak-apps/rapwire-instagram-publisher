@@ -5297,6 +5297,27 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/DdHgmWFzOVx/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdHkQb7D7ew": {
+      "seen_at": "2026-09-10T19:34:15.638Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdHkQb7D7ew/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdHlpqRk64s": {
+      "seen_at": "2026-09-10T19:34:15.640Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/DdHlpqRk64s/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdHgcvFowK-": {
+      "seen_at": "2026-09-10T19:34:15.640Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdHgcvFowK-/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -7486,29 +7507,15 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdE_CwWvlLT/",
       "queue_id": "517-did-jam-really-post-the-ig-story-about-lil-durk-lildurk-himself-",
       "video": "media/517-did-jam-really-post-the-ig-story-about-lil-durk-lildurk-himself-.mp4"
+    },
+    "DdHcGjFmhyg": {
+      "queued_at": "2026-09-10T19:34:33.408Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdHcGjFmhyg/",
+      "queue_id": "518-ynw-melly-s-mother-shared-a-heartfelt-message-about-how-much-she"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T13:37:38.293Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "xxl",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T13:37:45.523Z"
-    },
     {
       "started_at": "2026-09-09T13:42:48.628Z",
       "candidates": 0,
@@ -15727,6 +15734,17 @@
       "mode": "discovery",
       "vip_pending": 36,
       "finished_at": "2026-09-10T19:25:12.586Z"
+    },
+    {
+      "started_at": "2026-09-10T19:30:41.284Z",
+      "candidates": 59,
+      "queued": [
+        "518-ynw-melly-s-mother-shared-a-heartfelt-message-about-how-much-she"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 36,
+      "finished_at": "2026-09-10T19:34:33.408Z"
     }
   ],
   "vip_pending": {
@@ -16168,18 +16186,6 @@
       "last_attempt_at": "2026-09-10T15:06:41.667Z",
       "retry_at": "2026-09-10T15:22:41.667Z"
     },
-    "DdHcGjFmhyg": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/p/DdHcGjFmhyg/",
-      "shortcode": "DdHcGjFmhyg",
-      "first_seen_at": "2026-09-10T18:10:10.485Z",
-      "profile_position": 1,
-      "state": "pending",
-      "attempts": 0,
-      "source_published_at": "2026-09-10T18:05:25.000Z",
-      "visible_caption": "YNW Melly’s mother shared a heartfelt message about how much she misses her son as he approaches eight years behind bars 💔\n\n“Almost 8 years later and my heart still aches everyday,” she wrote on Instagram. “My 1st born my first heartbeat. I’m just waiting patiently for you to come home.” 🙏🏽\n\nHer words focused on the pain of being separated from her firstborn and her continued hope that they’ll be reunited. ❤️",
-      "story_type": "current"
-    },
     "DdHgukLmvdT": {
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdHgukLmvdT/",
@@ -16191,20 +16197,32 @@
       "source_published_at": "2026-09-10T18:45:49.000Z",
       "visible_caption": "Mike McFarland, the voice behind Master Roshi in the English dub of Dragon Ball, has passed away at 56. 🕊️💔\n\nHis work was part of countless fans’ childhoods, bringing characters like Master Roshi and Yajirobe to life alongside Buggy in One Piece and Jean Kirstein in Attack on Titan.\n\nBeyond the microphone, McFarland also worked as a voice director, helping shape the English dubs of beloved anime including Fullmetal Alchemist, Attack on Titan and Tokyo Ghoul. His contributions reached far beyond the characters fans recognized him for.\n\nSending love to his family, friends, colleagues and everyone who grew up hearing his voice. Rest in peace, Mike. ❤️",
       "story_type": "current"
+    },
+    "DdHkQb7D7ew": {
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdHkQb7D7ew/",
+      "shortcode": "DdHkQb7D7ew",
+      "first_seen_at": "2026-09-10T19:34:15.640Z",
+      "profile_position": 1,
+      "state": "pending",
+      "attempts": 0,
+      "source_published_at": "2026-09-10T19:16:40.000Z",
+      "visible_caption": "One beat, 38 songs, and almost 2 BILLION combined streams 🤯🔥\n\nYou’ve probably heard the Coolie Dance Rhythm more times than you realize. Created by Jamaican producer Cordel “Scatta” Burrell, it connects songs like Nina Sky’s “Move Ya Body,” Pitbull’s “Culo,” Kehlani’s “After Hours,” and KAROL G, Judeline and rusowsky’s “BBY WOW.” 🇯🇲\n\nFor more than 20 years, artists have continued reimagining the rhythm, bringing their own sound to it and introducing it to new generations. Those familiar hits are part of a much bigger story spanning 38 songs.\n\nSpotify’s SongDNA lets you explore the samples, writers, producers and musical connections behind your favorite tracks including the shared roots of songs you might never have connected. 👀\n\nWhich song did you hear this beat in first? 👇",
+      "story_type": "current"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T19:14:06.762Z"
+      "checked_at": "2026-09-10T19:31:24.558Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T19:14:02.714Z"
+      "checked_at": "2026-09-10T19:31:19.901Z"
     },
     "records": {
-      "checked_at": "2026-09-10T19:13:58.628Z"
+      "checked_at": "2026-09-10T19:31:15.782Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T19:13:54.370Z"
+      "checked_at": "2026-09-10T19:31:11.527Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-10T19:05:10.991Z"
@@ -16216,7 +16234,7 @@
       "checked_at": "2026-09-10T19:14:10.887Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-10T18:22:35.868Z"
+      "checked_at": "2026-09-10T19:31:28.847Z"
     },
     "xxl": {
       "checked_at": "2026-09-10T18:31:04.481Z"
@@ -16228,7 +16246,7 @@
       "checked_at": "2026-09-10T19:14:14.979Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-10T18:31:00.563Z"
+      "checked_at": "2026-09-10T19:31:33.250Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-10T18:49:27.460Z"

@@ -5395,6 +5395,13 @@
       "source_url": "https://www.instagram.com/xxl/p/DdHm8D9maUQ/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdHrnFxtjdg": {
+      "seen_at": "2026-09-10T20:46:45.796Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdHrnFxtjdg/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -7629,35 +7636,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdHref0PEUx/",
       "queue_id": "524-i-would-never-recover-from-this-via-a-fan-sold-their-ticket-to-j",
       "video": "media/524-i-would-never-recover-from-this-via-a-fan-sold-their-ticket-to-j.mp4"
+    },
+    "DdHjI8BuYeJ": {
+      "queued_at": "2026-09-10T20:49:51.441Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdHjI8BuYeJ/",
+      "queue_id": "525-lil-durk-born-durk-derrick-banks-is-one-of-chicago-s-most-influe",
+      "video": "media/525-lil-durk-born-durk-derrick-banks-is-one-of-chicago-s-most-influe.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T14:13:59.658Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "complexmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T14:14:08.050Z"
-    },
     {
       "started_at": "2026-09-09T14:19:11.015Z",
       "candidates": 0,
@@ -15751,6 +15739,17 @@
       "mode": "discovery",
       "vip_pending": 33,
       "finished_at": "2026-09-10T20:39:11.910Z"
+    },
+    {
+      "started_at": "2026-09-10T20:44:18.020Z",
+      "candidates": 63,
+      "queued": [
+        "525-lil-durk-born-durk-derrick-banks-is-one-of-chicago-s-most-influe"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 33,
+      "finished_at": "2026-09-10T20:49:51.441Z"
     }
   ],
   "vip_pending": {
@@ -16183,22 +16182,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T20:36:52.976Z"
+      "checked_at": "2026-09-10T20:44:38.397Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T20:36:48.826Z"
+      "checked_at": "2026-09-10T20:44:34.175Z"
     },
     "records": {
-      "checked_at": "2026-09-10T20:36:44.630Z"
+      "checked_at": "2026-09-10T20:44:29.907Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T20:36:40.449Z"
+      "checked_at": "2026-09-10T20:44:25.697Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-10T19:47:49.661Z"
+      "checked_at": "2026-09-10T20:44:42.522Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-10T19:55:58.274Z"
+      "checked_at": "2026-09-10T20:44:46.686Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-10T19:56:02.522Z"

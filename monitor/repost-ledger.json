@@ -6838,42 +6838,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T09:01:26.639Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "complexmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "xxl",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T09:01:34.766Z"
-    },
-    {
       "started_at": "2026-09-09T09:06:37.878Z",
       "candidates": 0,
       "queued": [],
@@ -14945,6 +14909,31 @@
       "mode": "discovery",
       "vip_pending": 33,
       "finished_at": "2026-09-10T11:14:07.784Z"
+    },
+    {
+      "started_at": "2026-09-10T11:19:11.879Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "rockstargames",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 33,
+      "finished_at": "2026-09-10T11:19:30.474Z"
     }
   ],
   "vip_pending": {
@@ -15347,8 +15336,8 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T11:01:05.570Z",
-      "retry_at": "2026-09-10T11:16:05.570Z",
+      "checked_at": "2026-09-10T11:19:22.036Z",
+      "retry_at": "2026-09-10T11:34:22.036Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "traploreross": {
@@ -15375,8 +15364,8 @@
       "checked_at": "2026-09-10T11:13:27.370Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-10T10:54:54.750Z",
-      "retry_at": "2026-09-10T11:09:54.750Z",
+      "checked_at": "2026-09-10T11:19:29.978Z",
+      "retry_at": "2026-09-10T11:34:29.978Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "complexmusic": {
@@ -15393,8 +15382,8 @@
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "rockstargames": {
-      "checked_at": "2026-09-10T10:49:11.917Z",
-      "retry_at": "2026-09-10T11:04:11.917Z",
+      "checked_at": "2026-09-10T11:19:26.011Z",
+      "retry_at": "2026-09-10T11:34:26.011Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "igndotcom": {

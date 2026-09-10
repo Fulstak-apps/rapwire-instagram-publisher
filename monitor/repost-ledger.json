@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T23:19:20.711Z",
-      "candidates": 59,
-      "queued": [
-        "458-fivio-on-the-gospel-drill-wave"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-08T23:21:11.488Z"
-    },
-    {
       "started_at": "2026-09-08T23:26:16.263Z",
       "candidates": 38,
       "queued": [
@@ -13555,6 +13544,22 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T00:43:17.639Z"
+    },
+    {
+      "started_at": "2026-09-10T00:48:21.802Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T00:48:56.825Z"
     }
   ],
   "vip_pending": {
@@ -13697,10 +13702,10 @@
       "first_seen_at": "2026-09-06T20:20:59.759Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 67,
-      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T23:43:42.039Z",
-      "retry_at": "2026-09-10T00:43:42.039Z"
+      "attempts": 68,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-10T00:48:56.825Z",
+      "retry_at": "2026-09-10T01:48:56.825Z"
     },
     "Dc9YSd_gCof": {
       "source_handle": "akademiks",
@@ -13753,19 +13758,19 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T00:42:52.136Z"
+      "checked_at": "2026-09-10T00:48:30.667Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T00:42:56.518Z"
+      "checked_at": "2026-09-10T00:48:34.952Z"
     },
     "records": {
-      "checked_at": "2026-09-10T00:43:00.691Z"
+      "checked_at": "2026-09-10T00:48:39.347Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T00:43:04.976Z"
+      "checked_at": "2026-09-10T00:48:43.575Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-10T00:26:21.431Z"
+      "checked_at": "2026-09-10T00:48:51.820Z"
     },
     "raplisted_": {
       "checked_at": "2026-09-10T00:26:25.685Z"
@@ -13789,7 +13794,7 @@
       "checked_at": "2026-09-10T00:37:30.776Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-10T00:20:52.800Z"
+      "checked_at": "2026-09-10T00:48:47.772Z"
     }
   }
 }

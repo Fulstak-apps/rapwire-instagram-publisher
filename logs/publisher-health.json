@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-10T20:21:08.272Z",
+  "checked_at": "2026-09-10T20:26:02.257Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 9,
-    "instagram_remaining": 89,
+    "instagram_usage": 10,
+    "instagram_remaining": 88,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-10T20:50:59.902Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,25 +43,16 @@
     "threads_video_at": "2026-09-10T20:21:07.564Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "516-offset-attended-his-son-wave-s-5th-birthday-party-after-wave-tol.json",
-      "id": "516-offset-attended-his-son-wave-s-5th-birthday-party-after-wave-tol",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18043478504817285",
-      "content_type": "video"
-    },
-    {
-      "file": "517-did-jam-really-post-the-ig-story-about-lil-durk-lildurk-himself-.json",
-      "id": "517-did-jam-really-post-the-ig-story-about-lil-durk-lildurk-himself-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17918075373445488"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
+    {
+      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
+      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
     {
       "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
       "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
@@ -93,13 +84,6 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
-      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

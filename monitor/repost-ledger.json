@@ -6677,54 +6677,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T07:12:45.125Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "xxl",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T07:12:54.908Z"
-    },
-    {
       "started_at": "2026-09-09T07:17:57.863Z",
       "candidates": 0,
       "queued": [],
@@ -14479,6 +14431,50 @@
       "mode": "discovery",
       "vip_pending": 26,
       "finished_at": "2026-09-10T09:12:23.630Z"
+    },
+    {
+      "started_at": "2026-09-10T09:17:26.398Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/DdFkLYYDr86/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/DdFam2zjkUx/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 26,
+      "finished_at": "2026-09-10T09:17:56.031Z"
     }
   ],
   "vip_pending": {
@@ -14525,10 +14521,10 @@
       "first_seen_at": "2026-09-03T22:23:11.138Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 168,
+      "attempts": 169,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T07:02:49.647Z",
-      "retry_at": "2026-09-10T08:02:49.647Z"
+      "last_attempt_at": "2026-09-10T09:17:52.462Z",
+      "retry_at": "2026-09-10T10:17:52.462Z"
     },
     "Dc2MKfkNwc4": {
       "source_handle": "akademiks",
@@ -14597,10 +14593,10 @@
       "first_seen_at": "2026-09-05T21:08:13.504Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 209,
+      "attempts": 210,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T07:02:53.484Z",
-      "retry_at": "2026-09-10T08:02:53.484Z"
+      "last_attempt_at": "2026-09-10T09:17:56.031Z",
+      "retry_at": "2026-09-10T10:17:56.031Z"
     },
     "Dc9E0l7FoTk": {
       "source_handle": "records",
@@ -14681,10 +14677,10 @@
       "first_seen_at": "2026-09-10T07:51:46.291Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 5,
+      "attempts": 6,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T08:43:22.941Z",
-      "retry_at": "2026-09-10T09:15:22.941Z"
+      "last_attempt_at": "2026-09-10T09:17:45.014Z",
+      "retry_at": "2026-09-10T10:17:45.014Z"
     },
     "DdFam2zjkUx": {
       "source_handle": "records",
@@ -14693,10 +14689,10 @@
       "first_seen_at": "2026-09-10T07:51:46.291Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 5,
+      "attempts": 6,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T08:43:26.976Z",
-      "retry_at": "2026-09-10T09:15:26.976Z"
+      "last_attempt_at": "2026-09-10T09:17:48.754Z",
+      "retry_at": "2026-09-10T10:17:48.754Z"
     },
     "DdFPMn_Dwvf": {
       "source_handle": "records",
@@ -14822,13 +14818,13 @@
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "raplisted_": {
-      "checked_at": "2026-09-10T08:49:06.902Z",
-      "retry_at": "2026-09-10T09:04:06.902Z",
+      "checked_at": "2026-09-10T09:17:36.838Z",
+      "retry_at": "2026-09-10T09:32:36.838Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-10T08:55:10.143Z",
-      "retry_at": "2026-09-10T09:10:10.143Z",
+      "checked_at": "2026-09-10T09:17:40.891Z",
+      "retry_at": "2026-09-10T09:32:40.891Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "complexmusic": {

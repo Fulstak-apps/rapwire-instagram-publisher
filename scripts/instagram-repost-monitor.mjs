@@ -73,6 +73,10 @@ async function discoverFromProfile(context, source) {
   try {
     await page.goto(`https://www.instagram.com/${source.handle}/`, { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(3500);
+    if (await page.getByRole('link', { name: 'Log In', exact: true }).count()
+        || await page.getByText('Continue as rapwire247', { exact: true }).count()) {
+      throw new Error('Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored.');
+    }
     const hrefs = await page.locator('a[href*="/reel/"], a[href*="/p/"]').evaluateAll((links) =>
       links.map((link) => link.href).filter(Boolean)
     );

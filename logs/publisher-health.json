@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-10T17:28:39.423Z",
+  "checked_at": "2026-09-10T17:34:07.027Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-10T17:18:53.012Z",
+    "checked_at": "2026-09-10T17:33:57.112Z",
     "usage": 5,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-10T17:33:53.012Z",
+    "next_check_at": "2026-09-10T17:48:57.112Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T17:23:54.840Z",
+  "threads_next_eligible_at": "2026-09-10T17:49:06.097Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-10T17:19:00.138Z",
-    "threads_at": "2026-09-10T17:08:54.840Z",
-    "threads_video_at": "2026-09-10T17:08:54.840Z",
+    "threads_at": "2026-09-10T17:34:06.097Z",
+    "threads_video_at": "2026-09-10T17:34:06.097Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "508-lil-uzi-vert-and-mgk-really-didn-t-care-about-getting-kicked-out.json",
+      "id": "508-lil-uzi-vert-and-mgk-really-didn-t-care-about-getting-kicked-out",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17977874469096211"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

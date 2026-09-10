@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T23:11:26.577Z",
-      "candidates": 57,
-      "queued": [
-        "457-moneybagg-yo-admits-he-sometimes-acts-happy-because-he-feels-he-"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-08T23:14:11.287Z"
-    },
-    {
       "started_at": "2026-09-08T23:19:20.711Z",
       "candidates": 59,
       "queued": [
@@ -13550,6 +13539,22 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T00:37:39.255Z"
+    },
+    {
+      "started_at": "2026-09-10T00:42:43.088Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T00:43:17.639Z"
     }
   ],
   "vip_pending": {
@@ -13716,10 +13721,10 @@
       "first_seen_at": "2026-09-07T13:02:39.813Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 52,
-      "last_error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n",
-      "last_attempt_at": "2026-09-09T23:38:33.893Z",
-      "retry_at": "2026-09-10T00:38:33.893Z"
+      "attempts": 53,
+      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
+      "last_attempt_at": "2026-09-10T00:43:17.638Z",
+      "retry_at": "2026-09-10T01:43:17.638Z"
     },
     "Dc_spGMAPFc": {
       "source_handle": "akademiks",
@@ -13748,16 +13753,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T00:37:09.396Z"
+      "checked_at": "2026-09-10T00:42:52.136Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T00:37:13.647Z"
+      "checked_at": "2026-09-10T00:42:56.518Z"
     },
     "records": {
-      "checked_at": "2026-09-10T00:37:17.958Z"
+      "checked_at": "2026-09-10T00:43:00.691Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T00:37:22.130Z"
+      "checked_at": "2026-09-10T00:43:04.976Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-10T00:26:21.431Z"
@@ -13772,10 +13777,10 @@
       "checked_at": "2026-09-10T00:31:57.110Z"
     },
     "xxl": {
-      "checked_at": "2026-09-10T00:15:04.303Z"
+      "checked_at": "2026-09-10T00:43:09.258Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-10T00:20:48.678Z"
+      "checked_at": "2026-09-10T00:43:13.581Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-10T00:37:26.579Z"

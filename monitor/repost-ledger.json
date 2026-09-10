@@ -5143,6 +5143,20 @@
       "source_url": "https://www.instagram.com/xxl/p/DdHOpvRgALB/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdHS_JQuNsw": {
+      "seen_at": "2026-09-10T17:00:14.435Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdHS_JQuNsw/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdHP-fiucxu": {
+      "seen_at": "2026-09-10T17:00:14.436Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdHP-fiucxu/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -7259,29 +7273,15 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdFam2zjkUx/",
       "queue_id": "506-update-there-will-reportedly-be-no-verdict-in-lil-durk-lildurk-s"
+    },
+    "DdFPMn_Dwvf": {
+      "queued_at": "2026-09-10T17:03:57.888Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdFPMn_Dwvf/",
+      "queue_id": "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T12:40:08.976Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "complexmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T12:40:14.752Z"
-    },
     {
       "started_at": "2026-09-09T12:45:17.693Z",
       "candidates": 0,
@@ -15638,6 +15638,36 @@
       "mode": "discovery",
       "vip_pending": 38,
       "finished_at": "2026-09-10T16:51:54.151Z"
+    },
+    {
+      "started_at": "2026-09-10T16:56:58.327Z",
+      "candidates": 62,
+      "queued": [
+        "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti"
+      ],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/DdFkLYYDr86/",
+          "stage": "queue",
+          "error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
+          "stage": "queue",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 37,
+      "finished_at": "2026-09-10T17:03:57.888Z"
     }
   ],
   "vip_pending": {
@@ -15840,27 +15870,12 @@
       "first_seen_at": "2026-09-10T07:51:46.291Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 12,
+      "attempts": 13,
       "last_error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-10T16:48:54.429Z",
-      "retry_at": "2026-09-10T17:48:54.429Z",
+      "last_attempt_at": "2026-09-10T17:00:34.360Z",
+      "retry_at": "2026-09-10T18:00:34.360Z",
       "source_published_at": "2026-09-10T00:37:30.000Z",
       "visible_caption": "Ye lands at #1 on Complex’s latest “Hottest Rappers Right Now” ranking 🐐🔥\n\nMoving up eight spots in September’s ReRank, Ye took the top position following his recent hometown shows in Chicago. Complex credited those performances with helping push him to #1.\n\nDon Toliver came in at #2, followed by Drake, Playboi Carti and Travis Scott. J. Cole, Ken Carson, Kendrick Lamar, JAY-Z and NBA YoungBoy rounded out the top 10.\n\nSwipe through to see the list 👀 Do you agree with the rankings? 🤔\n\n📸: @cambamscam",
-      "story_type": "current"
-    },
-    "DdFPMn_Dwvf": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/p/DdFPMn_Dwvf/",
-      "shortcode": "DdFPMn_Dwvf",
-      "first_seen_at": "2026-09-10T07:51:46.291Z",
-      "profile_position": 3,
-      "state": "retry_pending",
-      "attempts": 9,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T13:08:23.144Z",
-      "retry_at": "2026-09-10T14:08:23.144Z",
-      "source_published_at": "2026-09-09T21:34:10.000Z",
-      "visible_caption": "BREAKING: Lil Durk’s lawyers have filed an emergency motion before a verdict is reached in his trial. 👀\n\nHis defense is asking jurors to hear more of his 2023 interview with DJ Akademiks, arguing that prosecutors used a “misleading” excerpt during their rebuttal closing argument.\n\nHis attorneys say the additional footage would provide context for his remarks. The filing also requests an alternative: a corrective instruction addressing the prosecution’s arguments and reminding jurors to base their decision on the evidence.\n\nThe motion is a request from his defense and does not mean the judge has granted it.",
       "story_type": "current"
     },
     "DdFHmhOjzz6": {
@@ -15888,7 +15903,10 @@
       "attempts": 9,
       "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
       "last_attempt_at": "2026-09-10T13:13:58.779Z",
-      "retry_at": "2026-09-10T14:13:58.779Z"
+      "retry_at": "2026-09-10T14:13:58.779Z",
+      "source_published_at": "2026-09-09T20:01:09.000Z",
+      "visible_caption": "Tory Lanez is repping Toronto in a major way! 👀🇨🇦 His “Toronto/Hasty Market” video celebrates the city and the local artists making noise. 🎬🔥 Y’all tuning in?",
+      "story_type": "current"
     },
     "DdFCZjivPS0": {
       "source_handle": "records",
@@ -15972,10 +15990,10 @@
       "first_seen_at": "2026-09-10T09:24:00.848Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 13,
+      "attempts": 14,
       "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
-      "last_attempt_at": "2026-09-10T16:51:42.355Z",
-      "retry_at": "2026-09-10T17:51:42.355Z",
+      "last_attempt_at": "2026-09-10T17:03:44.960Z",
+      "retry_at": "2026-09-10T18:03:44.960Z",
       "source_published_at": "2026-09-09T23:35:42.000Z",
       "visible_caption": "No verdict in Lil Durk’s trial today as the jury wanted digitized evidence and they wouldn’t get it until tomorrow",
       "story_type": "current"
@@ -16133,22 +16151,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T16:46:07.157Z"
+      "checked_at": "2026-09-10T16:57:18.473Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T16:46:03.131Z"
+      "checked_at": "2026-09-10T16:57:14.420Z"
     },
     "records": {
-      "checked_at": "2026-09-10T16:45:59.014Z"
+      "checked_at": "2026-09-10T16:57:10.228Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T16:45:54.874Z"
+      "checked_at": "2026-09-10T16:57:06.187Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-10T16:00:43.846Z"
+      "checked_at": "2026-09-10T16:57:22.538Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-10T16:09:24.409Z"
+      "checked_at": "2026-09-10T16:57:26.625Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-10T16:09:28.620Z"

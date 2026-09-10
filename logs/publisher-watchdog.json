@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo",
@@ -12,8 +12,8 @@
     "510-judge-said-lil-durk-lildurk-never-denied-lul-pab-murder-in-akade",
     "511-a-note-was-sent-in-by-the-jury-in-lil-durk-lildurk-s-trial"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-10T18:04:20.677Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-10T18:09:31.529Z",
   "deferred": []
 }

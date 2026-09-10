@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-10T23:53:17.732Z",
+  "checked_at": "2026-09-10T23:58:20.024Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-10T23:42:54.050Z",
-    "usage": 15,
+    "checked_at": "2026-09-10T23:58:04.646Z",
+    "usage": 16,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-10T23:57:54.050Z",
+    "next_check_at": "2026-09-11T00:13:04.646Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 83,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-10T23:52:50.378Z",
+    "next_feed_eligible_at": "2026-09-11T00:28:11.804Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,15 +35,31 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T23:47:54.794Z",
+  "threads_next_eligible_at": "2026-09-11T00:13:18.968Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-10T23:22:50.378Z",
-    "threads_at": "2026-09-10T23:32:54.794Z",
+    "instagram_feed_at": "2026-09-10T23:58:11.804Z",
+    "threads_at": "2026-09-10T23:58:18.968Z",
     "threads_video_at": "2026-09-10T23:32:54.794Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "522-judge-defends-akademiks-says-he-d-be-furious-too-if-they-used-hi.json",
+      "id": "522-judge-defends-akademiks-says-he-d-be-furious-too-if-they-used-hi",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18139083613609494",
+      "content_type": "video"
+    },
+    {
+      "file": "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti.json",
+      "id": "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18104221019258194"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

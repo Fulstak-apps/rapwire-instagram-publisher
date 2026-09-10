@@ -6481,46 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T00:19:44.282Z",
-      "candidates": 51,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
-          "stage": "queue",
-          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
-          "stage": "queue",
-          "error": "Crop review required: No distinct footage region between static panels"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
-          "stage": "queue",
-          "error": "Crop review required: source branding is not isolated in a removable top header"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dc58CVBIpOF/",
-          "stage": "queue",
-          "error": "Crop review required: No distinct footage region between static panels"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T00:30:45.510Z"
-    },
-    {
       "started_at": "2026-09-09T00:35:51.835Z",
       "candidates": 39,
       "queued": [],
@@ -13583,6 +13543,15 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T01:22:44.935Z"
+    },
+    {
+      "started_at": "2026-09-10T01:27:49.583Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T01:28:12.196Z"
     }
   ],
   "vip_pending": {
@@ -13781,10 +13750,10 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T01:22:31.638Z"
+      "checked_at": "2026-09-10T01:27:59.254Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T01:22:35.954Z"
+      "checked_at": "2026-09-10T01:28:03.763Z"
     },
     "records": {
       "checked_at": "2026-09-10T01:17:09.861Z",
@@ -13813,10 +13782,10 @@
       "checked_at": "2026-09-10T01:22:44.585Z"
     },
     "xxl": {
-      "checked_at": "2026-09-10T01:00:23.560Z"
+      "checked_at": "2026-09-10T01:28:07.934Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-10T01:06:05.476Z"
+      "checked_at": "2026-09-10T01:28:11.920Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-10T01:11:46.944Z"

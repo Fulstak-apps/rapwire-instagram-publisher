@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "publish": "python scripts/convert-media-to-jpeg.py && node scripts/publish-instagram.mjs",
+    "publish": "./.venv/bin/python scripts/convert-media-to-jpeg.py && node scripts/publish-instagram.mjs",
     "mirror:login": "node scripts/instagram-browser-mirror.mjs login",
     "mirror:capture": "node scripts/instagram-browser-mirror.mjs capture",
     "mirror:draft": "node scripts/instagram-browser-mirror.mjs draft",

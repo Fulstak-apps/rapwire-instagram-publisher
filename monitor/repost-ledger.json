@@ -4681,6 +4681,55 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdFhLitItG0/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdF7fQAkTiX": {
+      "seen_at": "2026-09-10T11:01:46.484Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdF7fQAkTiX/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdF7daqkeTb": {
+      "seen_at": "2026-09-10T11:01:46.484Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdF7daqkeTb/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdFsuPjkRgW": {
+      "seen_at": "2026-09-10T11:01:46.484Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdFsuPjkRgW/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdFh2y3xGmn": {
+      "seen_at": "2026-09-10T11:01:46.484Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DdFh2y3xGmn/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdFgtUqkWfD": {
+      "seen_at": "2026-09-10T11:01:46.484Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdFgtUqkWfD/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdFUfgqj5aI": {
+      "seen_at": "2026-09-10T11:01:46.484Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdFUfgqj5aI/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdFEe2Ljxz4": {
+      "seen_at": "2026-09-10T11:01:46.484Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdFEe2Ljxz4/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -6732,36 +6781,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T08:45:58.407Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "xxl",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T08:46:04.947Z"
-    },
     {
       "started_at": "2026-09-09T08:51:07.830Z",
       "candidates": 0,
@@ -14825,6 +14844,32 @@
       "mode": "discovery",
       "vip_pending": 33,
       "finished_at": "2026-09-10T10:55:50.065Z"
+    },
+    {
+      "started_at": "2026-09-10T11:00:55.344Z",
+      "candidates": 7,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "xxl",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "complexmusic",
+          "source_url": "https://www.instagram.com/complexmusic/p/DdF7fQAkTiX/",
+          "stage": "queue",
+          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 33,
+      "finished_at": "2026-09-10T11:01:50.318Z"
     }
   ],
   "vip_pending": {
@@ -15227,7 +15272,9 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T10:54:46.537Z"
+      "checked_at": "2026-09-10T11:01:05.570Z",
+      "retry_at": "2026-09-10T11:16:05.570Z",
+      "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "traploreross": {
       "checked_at": "2026-09-10T10:49:00.191Z",
@@ -15260,13 +15307,11 @@
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "complexmusic": {
-      "checked_at": "2026-09-10T10:32:15.566Z",
-      "retry_at": "2026-09-10T10:47:15.566Z",
-      "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+      "checked_at": "2026-09-10T11:01:09.504Z"
     },
     "xxl": {
-      "checked_at": "2026-09-10T10:37:50.605Z",
-      "retry_at": "2026-09-10T10:52:50.605Z",
+      "checked_at": "2026-09-10T11:01:13.584Z",
+      "retry_at": "2026-09-10T11:16:13.584Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "hiphopdx": {

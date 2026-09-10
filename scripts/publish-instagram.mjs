@@ -288,6 +288,26 @@ await refreshQuota();
 await resolveVerifiedThreadsIdentity();
 
 async function logAttempt(event) {
+  // This file is committed after every publisher run.  Leaving it unbounded
+  // eventually makes checkout, rebase and state-save steps slow enough to
+  // miss the next delivery window.  Keep a generous recent audit trail while
+  // preventing an ever-growing JSONL file from becoming a loop failure.
+  if (!logAttempt.trimmed) {
+    logAttempt.trimmed = true;
+    try {
+      const stat = await fs.stat(attemptsLog);
+      if (stat.size > 5 * 1024 * 1024) {
+        const lines = (await fs.readFile(attemptsLog, "utf8")).trimEnd().split("\n");
+        const recent = `${lines.slice(-12_000).join("\n")}\n`;
+        const temporary = `${attemptsLog}.${process.pid}.tmp`;
+        await fs.writeFile(temporary, recent);
+        await fs.rename(temporary, attemptsLog);
+        console.log(`Trimmed publish attempt log from ${stat.size} bytes to the latest ${Math.min(lines.length, 12_000)} events.`);
+      }
+    } catch (error) {
+      if (error.code !== "ENOENT") console.warn(`Publish attempt-log cleanup skipped: ${error.message}`);
+    }
+  }
   runEvents.push(event);
   await fs.mkdir(logsDir, { recursive: true });
   await fs.appendFile(attemptsLog, `${JSON.stringify({ timestamp: new Date().toISOString(), ...event })}\n`);

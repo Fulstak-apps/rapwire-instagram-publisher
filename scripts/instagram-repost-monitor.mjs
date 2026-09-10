@@ -160,7 +160,18 @@ async function acquireLock() {
   try {
     const existing = JSON.parse(await fs.readFile(lockPath, "utf8"));
     let alive = false;
-    try { process.kill(existing.pid, 0); alive = true; } catch (error) { if (error.code === "EPERM") alive = true; }
+    try {
+      process.kill(existing.pid, 0);
+      // PIDs can be reused after a crash.  A bare kill(0) used to make an
+      // unrelated process look like the collector forever, silently blocking
+      // every later scheduled run.  Only honour a lock owned by this monitor.
+      const { stdout } = await execFileAsync("/bin/ps", ["-p", String(existing.pid), "-o", "command="]);
+      alive = stdout.includes("instagram-repost-monitor.mjs");
+    } catch (error) {
+      // EPERM can only occur for a live process we cannot inspect; preserve
+      // the conservative old behaviour in that unusual case.
+      if (error.code === "EPERM") alive = true;
+    }
     if (alive) {
       console.log(JSON.stringify({ status: "locked", lock: existing }));
       process.exit(0);

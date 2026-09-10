@@ -90,8 +90,18 @@ jobs:
           # as a fatal pathspec, so validation cleanup can never abort delivery.
           git add --sparse queue media
           git commit -m "Save validated RapWire queue"
-          git pull --rebase origin main
-          git push
+          # The collector may push a new item while this scheduled workflow is
+          # saving validation state. Retry transient remote races rather than
+          # aborting the entire delivery run before it reaches the publisher.
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort || true
+            sleep "$((attempt * 5))"
+          done
+          echo "Could not safely save validated queue state after retries." >&2
+          exit 1
 
       - name: Check Instagram auth recovery state
         id: instagram_auth

@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T01:12:09.126Z",
-      "candidates": 51,
-      "queued": [
-        "465-government-just-deep-fried-all-of-durks-defences-on-rebuttal-sai"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T01:17:58.296Z"
-    },
-    {
       "started_at": "2026-09-09T01:23:25.348Z",
       "candidates": 60,
       "queued": [
@@ -13595,6 +13584,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T01:48:58.689Z"
+    },
+    {
+      "started_at": "2026-09-10T01:54:01.720Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T01:54:08.076Z"
     }
   ],
   "vip_pending": {
@@ -13838,7 +13847,9 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-10T01:28:11.920Z"
+      "checked_at": "2026-09-10T01:54:07.438Z",
+      "retry_at": "2026-09-10T02:09:07.438Z",
+      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
     },
     "rockstargames": {
       "checked_at": "2026-09-10T01:43:45.233Z",
@@ -13851,8 +13862,8 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-10T01:33:23.502Z",
-      "retry_at": "2026-09-10T01:48:23.502Z",
+      "checked_at": "2026-09-10T01:54:07.749Z",
+      "retry_at": "2026-09-10T02:09:07.749Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
     }
   }

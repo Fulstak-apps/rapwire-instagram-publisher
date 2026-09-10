@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-10T15:22:53.593Z",
+  "checked_at": "2026-09-10T15:27:21.280Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-10T15:22:52.298Z",
-    "usage": 1,
+    "usage": 2,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-10T15:37:52.298Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 97,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-10T15:17:08.791Z",
+    "next_feed_eligible_at": "2026-09-10T15:57:20.891Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,15 +35,31 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T15:02:01.833Z",
+  "threads_next_eligible_at": "2026-09-10T15:42:14.128Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-10T14:47:08.791Z",
-    "threads_at": "2026-09-10T14:47:01.833Z",
-    "threads_video_at": "2026-09-10T14:47:01.833Z",
+    "instagram_feed_at": "2026-09-10T15:27:20.891Z",
+    "threads_at": "2026-09-10T15:27:14.128Z",
+    "threads_video_at": "2026-09-10T15:27:14.128Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "499-speed-really-had-one-song-in-mind-ishowspeed-really-made-n-s-in-.json",
+      "id": "499-speed-really-had-one-song-in-mind-ishowspeed-really-made-n-s-in-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18094758818638581"
+    },
+    {
+      "file": "499-speed-really-had-one-song-in-mind-ishowspeed-really-made-n-s-in-.json",
+      "id": "499-speed-really-had-one-song-in-mind-ishowspeed-really-made-n-s-in-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18071439302723625",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -6544,15 +6544,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T05:37:36.915Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T05:38:08.770Z"
-    },
-    {
       "started_at": "2026-09-09T05:43:13.418Z",
       "candidates": 0,
       "queued": [],
@@ -13870,6 +13861,41 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T07:35:07.803Z"
+    },
+    {
+      "started_at": "2026-09-10T07:40:10.886Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "traploreross",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "darnellwilliams",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "raplisted_",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "stage": "discover",
+          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T07:40:36.461Z"
     }
   ],
   "vip_pending": {
@@ -14068,13 +14094,13 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T07:24:14.742Z",
-      "retry_at": "2026-09-10T07:39:14.742Z",
+      "checked_at": "2026-09-10T07:40:20.425Z",
+      "retry_at": "2026-09-10T07:55:20.425Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "traploreross": {
-      "checked_at": "2026-09-10T07:24:18.875Z",
-      "retry_at": "2026-09-10T07:39:18.875Z",
+      "checked_at": "2026-09-10T07:40:24.293Z",
+      "retry_at": "2026-09-10T07:55:24.293Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "records": {
@@ -14083,8 +14109,8 @@
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T07:24:23.027Z",
-      "retry_at": "2026-09-10T07:39:23.027Z",
+      "checked_at": "2026-09-10T07:40:28.171Z",
+      "retry_at": "2026-09-10T07:55:28.171Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "trapmatictv": {
@@ -14093,13 +14119,13 @@
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "raplisted_": {
-      "checked_at": "2026-09-10T07:13:40.572Z",
-      "retry_at": "2026-09-10T07:28:40.572Z",
+      "checked_at": "2026-09-10T07:40:32.157Z",
+      "retry_at": "2026-09-10T07:55:32.157Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-10T07:18:56.912Z",
-      "retry_at": "2026-09-10T07:33:56.912Z",
+      "checked_at": "2026-09-10T07:40:36.226Z",
+      "retry_at": "2026-09-10T07:55:36.226Z",
       "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
     },
     "complexmusic": {

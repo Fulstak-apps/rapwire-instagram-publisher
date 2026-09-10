@@ -6481,24 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-08T22:06:08.669Z",
-      "candidates": 60,
-      "queued": [
-        "453-brian-steele-said-otf-jam-is-a-serial-killer-how-dare-the-fbi-pu"
-      ],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
-          "stage": "queue",
-          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 19,
-      "finished_at": "2026-09-08T22:12:02.139Z"
-    },
-    {
       "started_at": "2026-09-08T22:23:04.669Z",
       "candidates": 38,
       "queued": [
@@ -13601,6 +13583,15 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T00:15:20.708Z"
+    },
+    {
+      "started_at": "2026-09-10T00:20:24.138Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T00:20:53.058Z"
     }
   ],
   "vip_pending": {
@@ -13799,24 +13790,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T00:04:28.674Z",
-      "retry_at": "2026-09-10T00:19:28.674Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-10T00:20:32.049Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T00:04:28.990Z",
-      "retry_at": "2026-09-10T00:19:28.990Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-10T00:20:36.267Z"
     },
     "records": {
-      "checked_at": "2026-09-10T00:04:29.438Z",
-      "retry_at": "2026-09-10T00:19:29.438Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-10T00:20:40.422Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T00:04:29.849Z",
-      "retry_at": "2026-09-10T00:19:29.849Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-10T00:20:44.551Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-09T23:59:21.431Z",
@@ -13836,9 +13819,7 @@
       "checked_at": "2026-09-10T00:15:04.303Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-09T23:54:06.094Z",
-      "retry_at": "2026-09-10T00:09:06.094Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-10T00:20:48.678Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-10T00:04:30.273Z",
@@ -13851,9 +13832,7 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-09T23:59:20.929Z",
-      "retry_at": "2026-09-10T00:14:20.929Z",
-      "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
+      "checked_at": "2026-09-10T00:20:52.800Z"
     }
   }
 }

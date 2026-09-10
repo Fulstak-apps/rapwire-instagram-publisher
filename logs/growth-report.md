@@ -3,7 +3,7 @@
 Measured posts: 244.
 
 instagram: followers 44; daily change 7; collection unavailable.
-threads: followers 290; daily change 4; collection collected.
+threads: followers 290; daily change 4; collection unavailable.
 
 | Platform | Category | Source or topic | Posts | Meaningful interactions / 1,000 reach or views |
 |---|---|---|---:|---:|

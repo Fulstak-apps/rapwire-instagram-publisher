@@ -4633,9 +4633,10 @@
       "error": "Unsupported get request. Object with ID '18137037349621836' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     },
     "threads": {
-      "next_at": "2026-09-10T11:05:23.652Z",
-      "checked_at": "2026-09-10T05:05:23.652Z",
-      "status": "collected"
+      "next_at": "2026-09-10T17:07:18.942Z",
+      "checked_at": "2026-09-10T11:07:18.942Z",
+      "status": "unavailable",
+      "error": "Unsupported get request. Object with ID '18124691725641309' does not exist, cannot be loaded due to missing permissions, or does not support this operation"
     }
   },
   "followers": {
@@ -4781,7 +4782,7 @@
     ]
   },
   "summary": {
-    "generated_at": "2026-09-10T11:05:02.195Z",
+    "generated_at": "2026-09-10T11:07:18.942Z",
     "measured_posts": 244,
     "rates": [
       {

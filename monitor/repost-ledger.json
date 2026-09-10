@@ -5486,6 +5486,20 @@
       "source_url": "https://www.instagram.com/complexmusic/p/DdH4Yy8DxjK/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdH4ycYm4wS": {
+      "seen_at": "2026-09-10T23:11:02.445Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdH4ycYm4wS/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdHx7GAI1e5": {
+      "seen_at": "2026-09-10T23:11:02.445Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdHx7GAI1e5/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -7751,70 +7765,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T14:50:32.086Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "rockstargames",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/rockstargames/\nCall log:\n  - navigating to \"https://www.instagram.com/rockstargames/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "igndotcom",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc6e8SjEY1u/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc13XZkGTqg/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc64BMzkef9/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T14:50:44.723Z"
-    },
     {
       "started_at": "2026-09-09T14:55:47.775Z",
       "candidates": 0,
@@ -15866,6 +15816,58 @@
       "mode": "discovery",
       "vip_pending": 35,
       "finished_at": "2026-09-10T23:03:01.106Z"
+    },
+    {
+      "started_at": "2026-09-10T23:08:29.530Z",
+      "candidates": 62,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdHv308yeu_/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHv308yeu_-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdE-hhohZmL/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdE-hhohZmL-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdHmN8AgLxb/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHmN8AgLxb-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdHvXedSzJ_/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHvXedSzJ_-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/DdFkLYYDr86/",
+          "stage": "queue",
+          "error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdHvXedSzJ_/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHvXedSzJ_-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 35,
+      "finished_at": "2026-09-10T23:31:32.647Z"
     }
   ],
   "vip_pending": {
@@ -16068,10 +16070,10 @@
       "first_seen_at": "2026-09-10T07:51:46.291Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 25,
+      "attempts": 26,
       "last_error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-10T22:25:05.841Z",
-      "retry_at": "2026-09-10T23:25:05.841Z",
+      "last_attempt_at": "2026-09-10T23:24:35.619Z",
+      "retry_at": "2026-09-11T00:24:35.619Z",
       "source_published_at": "2026-09-10T00:37:30.000Z",
       "visible_caption": "Ye lands at #1 on Complex’s latest “Hottest Rappers Right Now” ranking 🐐🔥\n\nMoving up eight spots in September’s ReRank, Ye took the top position following his recent hometown shows in Chicago. Complex credited those performances with helping push him to #1.\n\nDon Toliver came in at #2, followed by Drake, Playboi Carti and Travis Scott. J. Cole, Ken Carson, Kendrick Lamar, JAY-Z and NBA YoungBoy rounded out the top 10.\n\nSwipe through to see the list 👀 Do you agree with the rankings? 🤔\n\n📸: @cambamscam",
       "story_type": "current"
@@ -16179,10 +16181,10 @@
       "first_seen_at": "2026-09-10T09:24:00.848Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 24,
+      "attempts": 25,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-10T22:24:46.142Z",
-      "retry_at": "2026-09-10T23:24:46.142Z",
+      "last_attempt_at": "2026-09-10T23:31:32.647Z",
+      "retry_at": "2026-09-11T00:31:32.647Z",
       "source_published_at": "2026-09-09T23:35:42.000Z",
       "visible_caption": "No verdict in Lil Durk’s trial today as the jury wanted digitized evidence and they wouldn’t get it until tomorrow",
       "story_type": "current"
@@ -16275,10 +16277,10 @@
       "first_seen_at": "2026-09-10T13:42:59.076Z",
       "profile_position": 9,
       "state": "retry_pending",
-      "attempts": 4,
+      "attempts": 5,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdE-hhohZmL-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-10T15:06:41.667Z",
-      "retry_at": "2026-09-10T15:22:41.667Z"
+      "last_attempt_at": "2026-09-10T23:17:51.574Z",
+      "retry_at": "2026-09-10T23:49:51.574Z"
     },
     "DdHmN8AgLxb": {
       "source_handle": "akademiks",
@@ -16287,13 +16289,13 @@
       "first_seen_at": "2026-09-10T19:42:02.267Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 4,
+      "attempts": 5,
       "source_published_at": "2026-09-10T19:35:21.000Z",
       "visible_caption": "Wack 100 calls out Akademiks 😳",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHmN8AgLxb-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-10T22:36:51.153Z",
-      "retry_at": "2026-09-10T22:52:51.153Z"
+      "last_attempt_at": "2026-09-10T23:20:48.478Z",
+      "retry_at": "2026-09-10T23:52:48.478Z"
     },
     "DdHv308yeu_": {
       "source_handle": "traploreross",
@@ -16302,13 +16304,13 @@
       "first_seen_at": "2026-09-10T21:14:08.563Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 3,
+      "attempts": 4,
       "source_published_at": "2026-09-10T21:00:13.000Z",
       "visible_caption": "Ceddy Nash CALLS OUT AKADEMIKS, for posting Lul Pab murder location in LA 😳👀😬",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHv308yeu_-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-10T22:33:52.451Z",
-      "retry_at": "2026-09-10T22:41:52.451Z"
+      "last_attempt_at": "2026-09-10T23:14:29.310Z",
+      "retry_at": "2026-09-10T23:30:29.310Z"
     },
     "DdHvXedSzJ_": {
       "source_handle": "traploreross",
@@ -16317,27 +16319,27 @@
       "first_seen_at": "2026-09-10T21:14:08.563Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 5,
+      "attempts": 7,
       "source_published_at": "2026-09-10T20:56:40.000Z",
       "visible_caption": "69 clip would have SAVED DURK: Ross and Ceddy disagree 😡😤",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHvXedSzJ_-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-10T22:21:16.277Z",
-      "retry_at": "2026-09-10T22:53:16.277Z"
+      "last_attempt_at": "2026-09-10T23:28:02.964Z",
+      "retry_at": "2026-09-11T00:28:02.964Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T22:53:18.589Z"
+      "checked_at": "2026-09-10T23:08:48.785Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T22:53:14.221Z"
+      "checked_at": "2026-09-10T23:08:44.894Z"
     },
     "records": {
-      "checked_at": "2026-09-10T22:53:09.951Z"
+      "checked_at": "2026-09-10T23:08:40.998Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T22:53:05.882Z"
+      "checked_at": "2026-09-10T23:08:37.062Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-10T22:15:25.196Z"
@@ -16352,7 +16354,7 @@
       "checked_at": "2026-09-10T22:53:26.864Z"
     },
     "xxl": {
-      "checked_at": "2026-09-10T21:43:42.280Z"
+      "checked_at": "2026-09-10T23:08:56.608Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-10T21:43:46.722Z"
@@ -16361,7 +16363,7 @@
       "checked_at": "2026-09-10T22:53:22.716Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-10T21:11:43.270Z"
+      "checked_at": "2026-09-10T23:08:52.699Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-10T22:15:20.987Z"

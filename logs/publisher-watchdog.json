@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo",
@@ -9,10 +9,11 @@
     "506-update-there-will-reportedly-be-no-verdict-in-lil-durk-lildurk-s",
     "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti",
     "509-jhene-aiko-s-coming-back-strong-with-all-of-these-rap-features-c",
-    "510-judge-said-lil-durk-lildurk-never-denied-lul-pab-murder-in-akade"
+    "510-judge-said-lil-durk-lildurk-never-denied-lul-pab-murder-in-akade",
+    "511-a-note-was-sent-in-by-the-jury-in-lil-durk-lildurk-s-trial"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-10T17:59:26.753Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-10T18:04:20.677Z",
   "deferred": []
 }

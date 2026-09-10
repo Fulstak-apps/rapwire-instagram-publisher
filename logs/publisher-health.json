@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-10T22:07:43.189Z",
+  "checked_at": "2026-09-10T22:12:03.514Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-10T21:56:56.045Z",
+    "checked_at": "2026-09-10T22:12:02.023Z",
     "usage": 13,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-10T22:11:56.045Z",
+    "next_check_at": "2026-09-10T22:27:02.023Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 12,
-    "instagram_remaining": 86,
+    "instagram_usage": 13,
+    "instagram_remaining": 85,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-10T22:37:34.096Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,25 +43,16 @@
     "threads_video_at": "2026-09-10T21:41:48.969Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "524-i-would-never-recover-from-this-via-a-fan-sold-their-ticket-to-j.json",
-      "id": "524-i-would-never-recover-from-this-via-a-fan-sold-their-ticket-to-j",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18067692764745907",
-      "content_type": "video"
-    },
-    {
-      "file": "506-update-there-will-reportedly-be-no-verdict-in-lil-durk-lildurk-s.json",
-      "id": "506-update-there-will-reportedly-be-no-verdict-in-lil-durk-lildurk-s",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18139683292520532"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
+    {
+      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
+      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
     {
       "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
       "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
@@ -93,13 +84,6 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
-      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

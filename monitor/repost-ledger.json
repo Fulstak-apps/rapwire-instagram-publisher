@@ -6481,17 +6481,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T02:55:59.121Z",
-      "candidates": 51,
-      "queued": [
-        "469-gov-cooked-durks-witnesses-one-by-one-with-nicknames-and-records"
-      ],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 18,
-      "finished_at": "2026-09-09T03:02:41.676Z"
-    },
-    {
       "started_at": "2026-09-09T03:08:09.390Z",
       "candidates": 60,
       "queued": [
@@ -13654,6 +13643,26 @@
       "mode": "discovery",
       "vip_pending": 16,
       "finished_at": "2026-09-10T02:20:10.201Z"
+    },
+    {
+      "started_at": "2026-09-10T02:25:14.489Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 16,
+      "finished_at": "2026-09-10T02:25:22.103Z"
     }
   ],
   "vip_pending": {
@@ -13877,13 +13886,13 @@
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
     },
     "raplisted_": {
-      "checked_at": "2026-09-10T01:59:16.805Z",
-      "retry_at": "2026-09-10T02:14:16.805Z",
+      "checked_at": "2026-09-10T02:25:21.616Z",
+      "retry_at": "2026-09-10T02:40:21.616Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-10T02:04:30.566Z",
-      "retry_at": "2026-09-10T02:19:30.566Z",
+      "checked_at": "2026-09-10T02:25:21.978Z",
+      "retry_at": "2026-09-10T02:40:21.978Z",
       "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
     },
     "complexmusic": {

@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-10T20:15:49.027Z",
+  "checked_at": "2026-09-10T20:21:08.272Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-10T20:15:47.654Z",
-    "usage": 9,
+    "usage": 10,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-10T20:30:47.654Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 89,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-10T20:10:39.956Z",
+    "next_feed_eligible_at": "2026-09-10T20:50:59.902Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,15 +35,31 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T20:10:41.420Z",
+  "threads_next_eligible_at": "2026-09-10T20:36:07.564Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-10T19:40:39.956Z",
-    "threads_at": "2026-09-10T19:55:41.420Z",
-    "threads_video_at": "2026-09-10T19:55:41.420Z",
+    "instagram_feed_at": "2026-09-10T20:20:59.902Z",
+    "threads_at": "2026-09-10T20:21:07.564Z",
+    "threads_video_at": "2026-09-10T20:21:07.564Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "516-offset-attended-his-son-wave-s-5th-birthday-party-after-wave-tol.json",
+      "id": "516-offset-attended-his-son-wave-s-5th-birthday-party-after-wave-tol",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18043478504817285",
+      "content_type": "video"
+    },
+    {
+      "file": "517-did-jam-really-post-the-ig-story-about-lil-durk-lildurk-himself-.json",
+      "id": "517-did-jam-really-post-the-ig-story-about-lil-durk-lildurk-himself-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17918075373445488"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

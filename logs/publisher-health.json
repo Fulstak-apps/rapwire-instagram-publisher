@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-10T19:05:10.509Z",
+  "checked_at": "2026-09-10T19:10:13.701Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 7,
-    "instagram_remaining": 91,
+    "instagram_usage": 8,
+    "instagram_remaining": 90,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-10T19:35:09.506Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -35,22 +35,21 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T19:05:05.486Z",
+  "threads_next_eligible_at": "2026-09-10T19:25:13.367Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-10T19:05:09.506Z",
-    "threads_at": "2026-09-10T18:50:05.486Z",
-    "threads_video_at": "2026-09-10T18:50:05.486Z",
+    "threads_at": "2026-09-10T19:10:13.367Z",
+    "threads_video_at": "2026-09-10T19:10:13.367Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "510-judge-said-lil-durk-lildurk-never-denied-lul-pab-murder-in-akade.json",
-      "id": "510-judge-said-lil-durk-lildurk-never-denied-lul-pab-murder-in-akade",
-      "platform": "instagram",
+      "file": "514-jury-asking-for-more-info-but-the-judge-said-no-this-could-be-ma.json",
+      "id": "514-jury-asking-for-more-info-but-the-judge-said-no-this-could-be-ma",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18115718041985915",
-      "content_type": "video"
+      "media_id": "18127408441734792"
     }
   ],
   "failures": [],

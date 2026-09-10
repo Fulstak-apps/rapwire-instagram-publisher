@@ -1,6 +1,6 @@
 {
   "id": "500-rapwire-repost-video",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 100,
   "vip_repost": true,
   "date": "2026-09-10",
@@ -90,5 +90,6 @@
     "checked_at": "2026-09-10T15:45:16.182Z"
   },
   "story_fingerprint": null,
-  "editorial_review_required": []
+  "editorial_review_required": [],
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

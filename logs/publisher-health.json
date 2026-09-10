@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-10T20:56:20.220Z",
+  "checked_at": "2026-09-10T21:01:33.292Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-10T20:46:13.559Z",
+    "checked_at": "2026-09-10T21:01:21.406Z",
     "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-10T21:01:13.559Z",
+    "next_check_at": "2026-09-10T21:16:21.406Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 10,
-    "instagram_remaining": 88,
+    "instagram_usage": 11,
+    "instagram_remaining": 87,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-10T21:26:20.011Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -35,26 +35,32 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-10T20:56:11.234Z",
+  "threads_next_eligible_at": "2026-09-10T21:16:32.823Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-10T20:56:20.011Z",
-    "threads_at": "2026-09-10T20:41:11.234Z",
-    "threads_video_at": "2026-09-10T20:41:11.234Z",
+    "threads_at": "2026-09-10T21:01:32.823Z",
+    "threads_video_at": "2026-09-10T21:01:32.823Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
       "file": "525-lil-durk-born-durk-derrick-banks-is-one-of-chicago-s-most-influe.json",
       "id": "525-lil-durk-born-durk-derrick-banks-is-one-of-chicago-s-most-influe",
-      "platform": "instagram",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18109290299591875",
-      "content_type": "video"
+      "media_id": "18090433853662653"
     }
   ],
   "failures": [],
   "reviews": [
+    {
+      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
+      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
     {
       "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
       "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
@@ -86,13 +92,6 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
-      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

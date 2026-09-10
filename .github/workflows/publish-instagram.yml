@@ -85,7 +85,10 @@ jobs:
           fi
           git config user.name "RapWire 24/7"
           git config user.email "actions@users.noreply.github.com"
-          git add queue media
+          # `media` is deliberately excluded by sparse checkout. `--sparse`
+          # stages changed queue records without treating that absent directory
+          # as a fatal pathspec, so validation cleanup can never abort delivery.
+          git add --sparse queue media
           git commit -m "Save validated RapWire queue"
           git pull --rebase origin main
           git push

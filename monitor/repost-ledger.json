@@ -5360,6 +5360,41 @@
       "source_url": "https://www.instagram.com/complexmusic/p/DdHm2pOj7SH/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdHref0PEUx": {
+      "seen_at": "2026-09-10T20:31:17.892Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdHref0PEUx/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdHnvLYGxuW": {
+      "seen_at": "2026-09-10T20:31:17.893Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdHnvLYGxuW/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdHrkPTmQEz": {
+      "seen_at": "2026-09-10T20:31:17.893Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdHrkPTmQEz/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdHqJOcmd8A": {
+      "seen_at": "2026-09-10T20:31:17.893Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdHqJOcmd8A/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdHm8D9maUQ": {
+      "seen_at": "2026-09-10T20:31:17.893Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdHm8D9maUQ/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -7581,49 +7616,15 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdFcD0CPXq3/",
       "queue_id": "522-judge-defends-akademiks-says-he-d-be-furious-too-if-they-used-hi",
       "video": "media/522-judge-defends-akademiks-says-he-d-be-furious-too-if-they-used-hi.mp4"
+    },
+    "DdHpaIDAxRR": {
+      "queued_at": "2026-09-10T20:31:28.785Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdHpaIDAxRR/",
+      "queue_id": "523-the-jurors-sent-the-just-two-notes-this-morning-asking-for-clari"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T14:03:33.839Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T14:03:43.826Z"
-    },
     {
       "started_at": "2026-09-09T14:08:47.027Z",
       "candidates": 0,
@@ -15753,6 +15754,17 @@
       "mode": "discovery",
       "vip_pending": 34,
       "finished_at": "2026-09-10T20:23:13.586Z"
+    },
+    {
+      "started_at": "2026-09-10T20:28:40.769Z",
+      "candidates": 63,
+      "queued": [
+        "523-the-jurors-sent-the-just-two-notes-this-morning-asking-for-clari"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 34,
+      "finished_at": "2026-09-10T20:31:28.785Z"
     }
   ],
   "vip_pending": {
@@ -16182,31 +16194,31 @@
       "last_attempt_at": "2026-09-10T20:00:26.076Z",
       "retry_at": "2026-09-10T20:02:26.076Z"
     },
-    "DdHpaIDAxRR": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/DdHpaIDAxRR/",
-      "shortcode": "DdHpaIDAxRR",
-      "first_seen_at": "2026-09-10T20:13:17.354Z",
-      "profile_position": 0,
+    "DdHref0PEUx": {
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdHref0PEUx/",
+      "shortcode": "DdHref0PEUx",
+      "first_seen_at": "2026-09-10T20:31:17.893Z",
+      "profile_position": 1,
       "state": "pending",
       "attempts": 0,
-      "source_published_at": "2026-09-10T20:01:41.000Z",
-      "visible_caption": "The jurors sent the just two notes this morning. Asking for clarification on specific words and phrases related to the stalking conspiracy charge and intent to murder.",
+      "source_published_at": "2026-09-10T20:20:01.000Z",
+      "visible_caption": "I would NEVER recover from this 😭😂😂\nVia: @bonnielu02 / @thealejandroortiz \n\nA fan sold their ticket to J. Cole’s show, then saw the buyer posting Cole sitting right next to him on his Instagram Story 😭💀\n\nDuring a stop on Cole’s tour, the person who bought the ticket shared footage of himself dapping up the rapper, with Cole also sitting beside him in the crowd and performing. What started as buying someone’s seat ended up becoming a concert experience he’ll probably be talking about forever 🤝🔥\n\nImagine selling your ticket and opening Instagram just to see the person who bought it having THAT moment from your seat. Missing the show is already one thing, but finding out Cole was right there makes it hurt a little more 😭\n\nHow long would it take you to recover from this? 😂",
       "story_type": "current"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-10T20:10:46.212Z"
+      "checked_at": "2026-09-10T20:29:00.375Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-10T20:10:41.925Z"
+      "checked_at": "2026-09-10T20:28:56.172Z"
     },
     "records": {
-      "checked_at": "2026-09-10T20:10:37.507Z"
+      "checked_at": "2026-09-10T20:28:51.971Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-10T20:10:33.029Z"
+      "checked_at": "2026-09-10T20:28:47.849Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-10T19:47:49.661Z"
@@ -16221,7 +16233,7 @@
       "checked_at": "2026-09-10T20:10:55.200Z"
     },
     "xxl": {
-      "checked_at": "2026-09-10T19:40:02.686Z"
+      "checked_at": "2026-09-10T20:29:08.623Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-10T19:40:07.136Z"
@@ -16230,7 +16242,7 @@
       "checked_at": "2026-09-10T20:10:50.313Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-10T19:31:33.250Z"
+      "checked_at": "2026-09-10T20:29:04.427Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-10T19:47:45.329Z"

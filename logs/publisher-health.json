@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-10T17:49:35.003Z",
+  "checked_at": "2026-09-10T17:54:26.099Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-10T17:49:11.919Z",
-    "usage": 5,
+    "usage": 6,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-10T18:04:11.919Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 93,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-10T17:49:00.138Z",
+    "next_feed_eligible_at": "2026-09-10T18:24:21.656Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-10T17:49:06.097Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-10T17:19:00.138Z",
+    "instagram_feed_at": "2026-09-10T17:54:21.656Z",
     "threads_at": "2026-09-10T17:34:06.097Z",
     "threads_video_at": "2026-09-10T17:34:06.097Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "508-lil-uzi-vert-and-mgk-really-didn-t-care-about-getting-kicked-out.json",
+      "id": "508-lil-uzi-vert-and-mgk-really-didn-t-care-about-getting-kicked-out",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17943455970312328",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo",
@@ -19,10 +19,11 @@
     "541-lebron-cosigns-2-chainz-s-new-single",
     "542-big30-goes-off-on-people-for-asking-him-for-money-chains-while-h",
     "543-thank-you-judge-fitzgerald",
-    "544-memo600-shares-his-dms-with-otf-jam"
+    "544-memo600-shares-his-dms-with-otf-jam",
+    "545-memo600-dissed-jammy-the-bull-aka-otf-jam"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-11T01:49:17.096Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-11T01:52:33.628Z",
   "deferred": []
 }

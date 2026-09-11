@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T08:28:11.995Z",
+  "checked_at": "2026-09-11T08:33:17.024Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T08:33:08.179Z",
+  "threads_next_eligible_at": "2026-09-11T08:48:17.023Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T08:08:07.092Z",
-    "threads_at": "2026-09-11T08:18:08.179Z",
-    "threads_video_at": "2026-09-11T07:58:05.514Z",
+    "threads_at": "2026-09-11T08:33:17.023Z",
+    "threads_video_at": "2026-09-11T08:33:17.023Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "517-did-jam-really-post-the-ig-story-about-lil-durk-lildurk-himself-.json",
+      "id": "517-did-jam-really-post-the-ig-story-about-lil-durk-lildurk-himself-",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "17886202842617866"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

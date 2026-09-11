@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T05:56:39.318Z",
+  "checked_at": "2026-09-11T06:01:46.443Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T05:46:37.717Z",
+    "checked_at": "2026-09-11T06:01:40.182Z",
     "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T06:01:37.717Z",
+    "next_check_at": "2026-09-11T06:16:40.182Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T06:06:39.918Z",
+  "threads_next_eligible_at": "2026-09-11T06:16:46.442Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T05:41:40.060Z",
-    "threads_at": "2026-09-11T05:51:39.918Z",
-    "threads_video_at": "2026-09-11T05:26:29.978Z",
+    "threads_at": "2026-09-11T06:01:46.442Z",
+    "threads_video_at": "2026-09-11T06:01:46.442Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "514-jury-asking-for-more-info-but-the-judge-said-no-this-could-be-ma.json",
+      "id": "514-jury-asking-for-more-info-but-the-judge-said-no-this-could-be-ma",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18146105908563155"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

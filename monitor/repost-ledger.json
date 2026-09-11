@@ -6164,6 +6164,12 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKfqBUvTce/",
       "view_count": 0
+    },
+    "DdKkECJgZs_": {
+      "seen_at": "2026-09-11T23:18:37.499Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdKkECJgZs_/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -8762,61 +8768,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdKcg3vPj1A/",
       "queue_id": "595-ebro-and-rap-life-review-discuss-the-potential-downsides-of-the-",
       "video": "media/595-ebro-and-rap-life-review-discuss-the-potential-downsides-of-the-.mp4"
+    },
+    "DdJ_Jk-P9h1": {
+      "queued_at": "2026-09-11T23:22:26.163Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdJ_Jk-P9h1/",
+      "queue_id": "598-jury-taking-3-days-could-be-great-news-for-lil-durk-lildurk",
+      "video": "media/598-jury-taking-3-days-could-be-great-news-for-lil-durk-lildurk.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T23:33:14.366Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "rockstargames",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/rockstargames/\nCall log:\n  - navigating to \"https://www.instagram.com/rockstargames/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "igndotcom",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T23:33:24.153Z"
-    },
     {
       "started_at": "2026-09-09T23:38:28.049Z",
       "candidates": 0,
@@ -17292,6 +17253,16 @@
       "errors": [],
       "mode": "discovery",
       "finished_at": "2026-09-11T23:11:22.168Z"
+    },
+    {
+      "started_at": "2026-09-11T23:16:32.829Z",
+      "candidates": 84,
+      "queued": [
+        "598-jury-taking-3-days-could-be-great-news-for-lil-durk-lildurk"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "finished_at": "2026-09-11T23:22:26.163Z"
     }
   ],
   "vip_pending": {

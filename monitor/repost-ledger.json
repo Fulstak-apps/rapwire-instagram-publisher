@@ -6122,6 +6122,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DdKawaZGUoG/",
       "view_count": 0
+    },
+    "DdKcg3vPj1A": {
+      "seen_at": "2026-09-11T22:13:03.008Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdKcg3vPj1A/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -8678,25 +8684,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdKNThUS2dJ/",
       "queue_id": "587-doodie-lo-kept-his-promise-10-000-being-given-out-to-the-mothers",
       "video": "media/587-doodie-lo-kept-his-promise-10-000-being-given-out-to-the-mothers.mp4"
+    },
+    "DdKW6_oP-Et": {
+      "queued_at": "2026-09-11T22:15:38.206Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKW6_oP-Et/",
+      "queue_id": "588-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
+      "video": "media/588-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T23:00:46.800Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T23:01:23.099Z"
-    },
     {
       "started_at": "2026-09-09T23:06:26.058Z",
       "candidates": 0,
@@ -17280,6 +17277,23 @@
       "errors": [],
       "mode": "discovery",
       "finished_at": "2026-09-11T22:05:09.145Z"
+    },
+    {
+      "started_at": "2026-09-11T22:10:38.510Z",
+      "candidates": 84,
+      "queued": [
+        "588-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his"
+      ],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdG-X8zIeo_/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        }
+      ],
+      "mode": "discovery",
+      "finished_at": "2026-09-11T22:15:38.206Z"
     }
   ],
   "vip_pending": {

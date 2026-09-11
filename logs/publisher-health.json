@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-11T01:08:53.726Z",
+  "checked_at": "2026-09-11T01:13:55.904Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-11T00:58:54.442Z",
-    "usage": 17,
+    "usage": 18,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-11T01:13:54.442Z",
@@ -22,12 +22,12 @@
     "instagram_remaining": 81,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T01:03:48.332Z",
+    "next_feed_eligible_at": "2026-09-11T01:43:55.062Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,18 +38,19 @@
   "threads_next_eligible_at": "2026-09-11T01:23:53.404Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T00:33:48.332Z",
+    "instagram_feed_at": "2026-09-11T01:13:55.062Z",
     "threads_at": "2026-09-11T01:08:53.404Z",
     "threads_video_at": "2026-09-11T00:43:36.586Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "513-never-forget-the-iconic-t-shirt-baby-keem-babykeem-wore-before-h.json",
-      "id": "513-never-forget-the-iconic-t-shirt-baby-keem-babykeem-wore-before-h",
-      "platform": "threads",
+      "file": "527-i-got-10-000-for-the-doodie-lo-challenge-will-he-accept-and-do-s.json",
+      "id": "527-i-got-10-000-for-the-doodie-lo-challenge-will-he-accept-and-do-s",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18107290046212521"
+      "media_id": "18117226312822596",
+      "content_type": "video"
     }
   ],
   "failures": [],

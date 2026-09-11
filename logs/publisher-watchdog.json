@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo",
@@ -20,8 +20,8 @@
     "541-lebron-cosigns-2-chainz-s-new-single",
     "542-big30-goes-off-on-people-for-asking-him-for-money-chains-while-h"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-11T01:08:53.853Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-11T01:13:56.004Z",
   "deferred": []
 }

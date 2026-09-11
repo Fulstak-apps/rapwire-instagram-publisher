@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "518-ynw-melly-s-mother-shared-a-heartfelt-message-about-how-much-she",
@@ -19,8 +19,8 @@
     "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m",
     "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-11T10:39:34.441Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-11T10:44:37.435Z",
   "deferred": []
 }

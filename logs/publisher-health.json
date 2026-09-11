@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-11T10:39:34.340Z",
+  "checked_at": "2026-09-11T10:44:37.315Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-11T10:39:27.683Z",
-    "usage": 32,
+    "usage": 33,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-11T10:54:27.683Z",
@@ -22,12 +22,12 @@
     "instagram_remaining": 66,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T10:29:21.484Z",
+    "next_feed_eligible_at": "2026-09-11T11:14:30.288Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,31 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T10:44:23.740Z",
+  "threads_next_eligible_at": "2026-09-11T10:59:37.314Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T09:59:21.484Z",
-    "threads_at": "2026-09-11T10:29:23.740Z",
-    "threads_video_at": "2026-09-11T10:09:15.439Z",
+    "instagram_feed_at": "2026-09-11T10:44:30.288Z",
+    "threads_at": "2026-09-11T10:44:37.314Z",
+    "threads_video_at": "2026-09-11T10:44:37.314Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "513-never-forget-the-iconic-t-shirt-baby-keem-babykeem-wore-before-h.json",
+      "id": "513-never-forget-the-iconic-t-shirt-baby-keem-babykeem-wore-before-h",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18368532541209756",
+      "content_type": "carousel"
+    },
+    {
+      "file": "524-i-would-never-recover-from-this-via-a-fan-sold-their-ticket-to-j.json",
+      "id": "524-i-would-never-recover-from-this-via-a-fan-sold-their-ticket-to-j",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18104002253248275"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "506-update-there-will-reportedly-be-no-verdict-in-lil-durk-lildurk-s",
@@ -22,8 +22,8 @@
     "545-memo600-dissed-jammy-the-bull-aka-otf-jam",
     "546-600-breezy-shows-lil-durk-lildurk-support"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-11T02:24:39.279Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-11T02:28:24.419Z",
   "deferred": []
 }

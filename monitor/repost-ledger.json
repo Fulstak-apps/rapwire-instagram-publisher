@@ -6128,6 +6128,18 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/DdKcg3vPj1A/",
       "view_count": 0
+    },
+    "DdKdaPADtCq": {
+      "seen_at": "2026-09-11T22:23:05.939Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DdKdaPADtCq/",
+      "view_count": 0
+    },
+    "DdKdc2EPrMT": {
+      "seen_at": "2026-09-11T22:23:05.940Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKdc2EPrMT/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -8691,18 +8703,16 @@
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKW6_oP-Et/",
       "queue_id": "588-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
       "video": "media/588-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
+    },
+    "DdKdc2EPrMT": {
+      "queued_at": "2026-09-11T22:23:36.540Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKdc2EPrMT/",
+      "queue_id": "589-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up",
+      "video": "media/589-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T23:06:26.058Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T23:06:57.907Z"
-    },
     {
       "started_at": "2026-09-09T23:12:01.205Z",
       "candidates": 0,
@@ -17294,6 +17304,16 @@
       ],
       "mode": "discovery",
       "finished_at": "2026-09-11T22:15:38.206Z"
+    },
+    {
+      "started_at": "2026-09-11T22:20:46.212Z",
+      "candidates": 84,
+      "queued": [
+        "589-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "finished_at": "2026-09-11T22:23:36.540Z"
     }
   ],
   "vip_pending": {

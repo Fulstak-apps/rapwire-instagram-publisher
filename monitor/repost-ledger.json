@@ -5675,6 +5675,20 @@
       "source_url": "https://www.instagram.com/xxl/p/DdJbqhWkQWV/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdJiuunjsjC": {
+      "seen_at": "2026-09-11T13:50:31.565Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdJiuunjsjC/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdJebKPth0m": {
+      "seen_at": "2026-09-11T13:50:31.565Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdJebKPth0m/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -8107,18 +8121,15 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdJF_kFvBP_/",
       "queue_id": "568-the-second-lil-wayne-comes-in-over-tyler-the-creator-feliciatheg",
       "video": "media/568-the-second-lil-wayne-comes-in-over-tyler-the-creator-feliciatheg.mp4"
+    },
+    "DdJiuunjsjC": {
+      "queued_at": "2026-09-11T13:50:46.217Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdJiuunjsjC/",
+      "queue_id": "569-ye-s-graduation-turns-19-today-released-on-september-11-2007-the"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T20:17:36.593Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T20:18:07.681Z"
-    },
     {
       "started_at": "2026-09-09T20:23:10.799Z",
       "candidates": 0,
@@ -16626,6 +16637,17 @@
       "mode": "discovery",
       "vip_pending": 22,
       "finished_at": "2026-09-11T13:42:58.918Z"
+    },
+    {
+      "started_at": "2026-09-11T13:48:02.559Z",
+      "candidates": 62,
+      "queued": [
+        "569-ye-s-graduation-turns-19-today-released-on-september-11-2007-the"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 22,
+      "finished_at": "2026-09-11T13:50:46.217Z"
     }
   ],
   "vip_pending": {
@@ -16914,19 +16936,19 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T13:34:26.011Z"
+      "checked_at": "2026-09-11T13:48:23.119Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T13:34:21.935Z"
+      "checked_at": "2026-09-11T13:48:19.107Z"
     },
     "records": {
-      "checked_at": "2026-09-11T13:34:17.870Z"
+      "checked_at": "2026-09-11T13:48:14.819Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T13:34:13.851Z"
+      "checked_at": "2026-09-11T13:48:10.785Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-11T12:59:20.304Z"
+      "checked_at": "2026-09-11T13:48:31.382Z"
     },
     "raplisted_": {
       "checked_at": "2026-09-11T12:59:24.385Z"
@@ -16950,7 +16972,7 @@
       "checked_at": "2026-09-11T13:19:37.440Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-11T12:52:01.917Z"
+      "checked_at": "2026-09-11T13:48:27.212Z"
     }
   }
 }

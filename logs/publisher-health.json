@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T01:03:45.742Z",
+  "checked_at": "2026-09-11T01:08:53.726Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -23,10 +23,10 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T01:03:48.332Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T00:58:36.586Z",
+  "threads_next_eligible_at": "2026-09-11T01:23:53.404Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T00:33:48.332Z",
-    "threads_at": "2026-09-11T00:43:36.586Z",
+    "threads_at": "2026-09-11T01:08:53.404Z",
     "threads_video_at": "2026-09-11T00:43:36.586Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "513-never-forget-the-iconic-t-shirt-baby-keem-babykeem-wore-before-h.json",
+      "id": "513-never-forget-the-iconic-t-shirt-baby-keem-babykeem-wore-before-h",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18107290046212521"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

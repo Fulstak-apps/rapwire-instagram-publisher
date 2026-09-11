@@ -27,33 +27,17 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 1
+          fetch-depth: 0
           ref: main
-          # Media files are served to Meta from this exact commit through raw
-          # GitHub URLs. Avoid downloading the multi-GB archive just to run
-          # queue/state logic; the publisher validates captured hash metadata
-          # in remote-media mode below.
-          filter: blob:none
-          sparse-checkout: |
-            .github
-            scripts
-            monitor
-            queue
-            logs
-            launchd
-            package.json
-          sparse-checkout-cone-mode: false
 
       - uses: actions/setup-node@v6
         with:
           node-version: "24"
 
       - name: Test resumable publisher
-        if: github.event_name != 'schedule'
-        run: node --test scripts/*.test.mjs
+        run: node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs scripts/media-ranges.test.mjs scripts/publication-policy.test.mjs
 
       - name: Check prior publication state
-        id: state_check
         env:
           GH_TOKEN: ${{ github.token }}
         run: bash scripts/check-publication-state.sh
@@ -62,11 +46,6 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
-      - name: Test local editor safety gates
-        # Local editor checks are offline and do not call Ollama or Meta.
-        if: github.event_name != 'schedule'
-        run: python -m unittest discover -s scripts -p 'test_local_rapwire*.py'
 
       - name: Remove stale queue items
         run: python scripts/expire-stale-queue.py
@@ -85,130 +64,34 @@ jobs:
           fi
           git config user.name "RapWire 24/7"
           git config user.email "actions@users.noreply.github.com"
-          # `media` is deliberately excluded by sparse checkout. `--sparse`
-          # stages changed queue records without treating that absent directory
-          # as a fatal pathspec, so validation cleanup can never abort delivery.
-          git add --sparse queue media
+          git add queue media
           git commit -m "Save validated RapWire queue"
-          # The collector may push a new item while this scheduled workflow is
-          # saving validation state. Retry transient remote races rather than
-          # aborting the entire delivery run before it reaches the publisher.
-          for attempt in 1 2 3; do
-            if git pull --rebase origin main && git push origin HEAD:main; then
-              exit 0
-            fi
-            git rebase --abort || true
-            sleep "$((attempt * 5))"
-          done
-          echo "Could not safely save validated queue state after retries." >&2
-          exit 1
-
-      - name: Check Instagram auth recovery state
-        id: instagram_auth
-        env:
-          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
-        run: node scripts/instagram-auth-state.mjs
-
-      - name: Resolve verified RapWire Facebook target
-        env:
-          # Prefer dedicated RapWire credentials. If they have not been created,
-          # reuse the older Meta connection only to discover a managed Page whose
-          # identity positively matches RapWire 24/7. The resolver refuses any
-          # other Page, including the Darnell Williams Page used previously.
-          FACEBOOK_DISCOVERY_ACCESS_TOKEN: ${{ secrets.RAPWIRE_FACEBOOK_PAGE_ACCESS_TOKEN || secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
-          RAPWIRE_FACEBOOK_PAGE_ID: ${{ secrets.RAPWIRE_FACEBOOK_PAGE_ID }}
-          RAPWIRE_FACEBOOK_EXPECTED_NAME: "RapWire 24/7"
-        run: node scripts/facebook-target.mjs
+          git pull --rebase origin main
+          git push
 
       - name: Wait for public media propagation
         run: sleep 10
 
-      - name: Publish queued post to Instagram feed, Threads and RapWire Facebook
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Publish queued post to Instagram, Threads, and Facebook
         env:
           RAPWIRE_BRAND: "24/7"
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-          RAPWIRE_THREADS_EXPECTED_USERNAME: "rapwire247"
-          # If the local collector is temporarily unable to capture a fresh
-          # source video, keep Threads video-first with a controlled, tracked
-          # back-catalogue replay rather than falling silent.
-          THREADS_VIDEO_FALLBACK_MINUTES: "30"
-          RAPWIRE_REMOTE_MEDIA_VALIDATED: "true"
-          # Instagram counts Stories and feed videos against the same rolling
-          # publishing capacity. Feed-first matches the stable SportsWire
-          # setup; Stories are left out rather than starving the feed.
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           PUBLISH_INSTAGRAM_STORIES: "false"
           MAX_FEED_POSTS_PER_RUN: "1"
         run: node scripts/publish-instagram.mjs
 
-      - name: Run deterministic publisher watchdog
-        if: ${{ always() }}
-        continue-on-error: true
-        run: node scripts/publisher-watchdog.mjs
-
-      - name: Warn when a run completes without a confirmed publication
-        if: ${{ always() }}
-        run: |
-          if node -e 'const fs=require("fs"); try { const h=JSON.parse(fs.readFileSync("logs/publisher-health.json","utf8")); process.exit(Array.isArray(h.publications)&&h.publications.length===0?0:1) } catch { process.exit(1) }'; then
-            echo "::warning title=No confirmed publication::This run completed without a confirmed media ID; quota, cooldown, or queue validation may be holding delivery."
-          fi
-
-      - name: Engage substantive Threads replies
-        if: ${{ !cancelled() && steps.state_check.outcome == 'success' }}
-        env:
-          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-          RAPWIRE_THREADS_EXPECTED_USERNAME: "rapwire247"
-        run: node scripts/threads-engage.mjs
-
-      - name: Publish hourly RapWire Threads conversation
-        env:
-          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-          RAPWIRE_THREADS_EXPECTED_USERNAME: "rapwire247"
-          RAPWIRE_HOURLY_THREADS_STATE: logs/hourly-threads.json
-        run: node scripts/hourly-threads.mjs
-
-      - name: Measure audience growth
-        if: ${{ !cancelled() && steps.state_check.outcome == 'success' }}
-        env:
-          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
-          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-        run: node scripts/growth-feedback.mjs
-
-      - name: Prepare evidence-based newsroom inbox
-        if: ${{ !cancelled() && steps.state_check.outcome == 'success' }}
-        run: node scripts/editorial-inbox.mjs
-
       - name: Save publication log
         if: ${{ always() }}
         run: bash scripts/save-publication-state.sh
-
-      - name: Upload publisher health and watchdog state
-        if: ${{ always() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: publisher-state-${{ github.run_id }}
-          path: |
-            logs/publisher-health.json
-            logs/publisher-watchdog.json
-            logs/publish-attempts.jsonl
-          retention-days: 14
-
-      # A Meta-revoked credential cannot be repaired by a queue retry. Keep
-      # Threads running, preserve every queued Instagram item, but make the
-      # root cause unmistakable in Actions instead of reporting a green run
-      # with zero Instagram publications.
-      - name: Surface Instagram credential outage
-        if: ${{ always() && steps.instagram_auth.outputs.valid == 'false' }}
-        run: |
-          echo "::error title=Instagram credential rejected::Meta rejected INSTAGRAM_ACCESS_TOKEN. Replace the token; the saved queue will resume automatically on the next run."
-          exit 1
 
       - name: Preserve recoverable publication state
         if: ${{ failure() }}

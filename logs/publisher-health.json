@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T15:02:11.082Z",
+  "checked_at": "2026-09-11T15:07:14.745Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T14:51:59.735Z",
-    "usage": 38,
+    "checked_at": "2026-09-11T15:07:06.655Z",
+    "usage": 39,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T15:06:59.735Z",
+    "next_check_at": "2026-09-11T15:22:06.655Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 60,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T15:02:00.981Z",
+    "next_feed_eligible_at": "2026-09-11T15:37:14.453Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-11T15:12:10.857Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T14:32:00.981Z",
+    "instagram_feed_at": "2026-09-11T15:07:14.453Z",
     "threads_at": "2026-09-11T14:57:10.857Z",
     "threads_video_at": "2026-09-11T14:57:10.857Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "567-akademiks-couldn-t-believe-trap-lore-ross-physically-went-to-eve.json",
+      "id": "567-akademiks-couldn-t-believe-trap-lore-ross-physically-went-to-eve",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18112239662465560",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

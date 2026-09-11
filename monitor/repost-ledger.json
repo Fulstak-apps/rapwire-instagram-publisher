@@ -8431,26 +8431,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T22:13:05.808Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T22:13:10.461Z"
-    },
-    {
       "started_at": "2026-09-09T22:18:13.697Z",
       "candidates": 0,
       "queued": [],
@@ -17012,6 +16992,16 @@
       "mode": "caption_repair_and_vip_discovery",
       "vip_pending": 30,
       "finished_at": "2026-09-11T19:11:43.941Z"
+    },
+    {
+      "started_at": "2026-09-11T19:16:47.345Z",
+      "candidates": 0,
+      "queued": [
+        "578-honestav-really-took-the-term-crowd-surfing-literally-honestav-s"
+      ],
+      "errors": [],
+      "mode": "caption_repair",
+      "finished_at": "2026-09-11T19:17:22.377Z"
     }
   ],
   "vip_pending": {

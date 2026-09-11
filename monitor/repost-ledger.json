@@ -8037,25 +8037,16 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DdImTFXOkYM/",
       "queue_id": "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar"
+    },
+    "DdHrnFxtjdg": {
+      "queued_at": "2026-09-11T05:55:04.412Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdHrnFxtjdg/",
+      "queue_id": "562-blac-youngsta-really-fell-mid-performance-and-tried-to-act-like-",
+      "video": "media/562-blac-youngsta-really-fell-mid-performance-and-tried-to-act-like-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T17:21:30.671Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T17:21:49.851Z"
-    },
     {
       "started_at": "2026-09-09T17:26:53.529Z",
       "candidates": 0,
@@ -15896,6 +15887,42 @@
       "mode": "discovery",
       "vip_pending": 21,
       "finished_at": "2026-09-11T05:37:43.187Z"
+    },
+    {
+      "started_at": "2026-09-11T05:42:48.601Z",
+      "candidates": 62,
+      "queued": [
+        "562-blac-youngsta-really-fell-mid-performance-and-tried-to-act-like-"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 21,
+      "finished_at": "2026-09-11T05:55:04.413Z"
     }
   ],
   "vip_pending": {
@@ -15906,10 +15933,10 @@
       "first_seen_at": "2026-09-03T05:30:10.862Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 112,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T12:46:12.588Z",
-      "retry_at": "2026-09-10T13:46:12.588Z"
+      "attempts": 113,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dczyy4st5wl-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-11T05:54:39.524Z",
+      "retry_at": "2026-09-11T06:54:39.524Z"
     },
     "Dcww5JhjqDI": {
       "source_handle": "records",
@@ -15918,10 +15945,10 @@
       "first_seen_at": "2026-09-03T06:22:41.175Z",
       "profile_position": 11,
       "state": "retry_pending",
-      "attempts": 111,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T12:46:08.748Z",
-      "retry_at": "2026-09-10T13:46:08.748Z"
+      "attempts": 112,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-11T05:50:25.023Z",
+      "retry_at": "2026-09-11T06:50:25.023Z"
     },
     "Dc1oLsTgfLu": {
       "source_handle": "akademiks",
@@ -15954,10 +15981,10 @@
       "first_seen_at": "2026-09-04T01:28:48.855Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 109,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T12:46:05.114Z",
-      "retry_at": "2026-09-10T13:46:05.114Z"
+      "attempts": 110,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-11T05:49:24.769Z",
+      "retry_at": "2026-09-11T06:49:24.769Z"
     },
     "Dc30JSSjmsc": {
       "source_handle": "akademiks",
@@ -15990,10 +16017,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 104,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T12:46:01.422Z",
-      "retry_at": "2026-09-10T13:46:01.422Z"
+      "attempts": 105,
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-11T05:46:17.964Z",
+      "retry_at": "2026-09-11T06:46:17.964Z"
     },
     "Dc6e8SjEY1u": {
       "source_handle": "records",
@@ -16169,22 +16196,22 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T05:31:05.839Z"
+      "checked_at": "2026-09-11T05:43:07.858Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T05:31:01.696Z"
+      "checked_at": "2026-09-11T05:43:03.833Z"
     },
     "records": {
-      "checked_at": "2026-09-11T05:30:57.702Z"
+      "checked_at": "2026-09-11T05:42:59.803Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T05:30:53.632Z"
+      "checked_at": "2026-09-11T05:42:55.819Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-11T04:45:42.093Z"
+      "checked_at": "2026-09-11T05:43:11.892Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-11T04:59:55.015Z"
+      "checked_at": "2026-09-11T05:43:15.926Z"
     },
     "freshouttheculture": {
       "checked_at": "2026-09-11T04:59:59.032Z"

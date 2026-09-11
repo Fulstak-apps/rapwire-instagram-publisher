@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo",
@@ -17,10 +17,11 @@
     "527-i-got-10-000-for-the-doodie-lo-challenge-will-he-accept-and-do-s",
     "528-otf-would-have-all-died-ceddy-nash-confirms-litco-dispensary-had",
     "531-rolling-loud-india-has-been-announced-for-december-12-13-2026-th",
-    "534-the-wait-continues-in-lil-durk-lildurk-s-trial-with-another-day-"
+    "534-the-wait-continues-in-lil-durk-lildurk-s-trial-with-another-day-",
+    "541-lebron-cosigns-2-chainz-s-new-single"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-11T00:33:53.974Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-11T00:38:29.884Z",
   "deferred": []
 }

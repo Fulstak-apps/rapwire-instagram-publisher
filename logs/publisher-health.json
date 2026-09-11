@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T00:33:53.879Z",
+  "checked_at": "2026-09-11T00:38:29.771Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 16,
-    "instagram_remaining": 82,
+    "instagram_usage": 17,
+    "instagram_remaining": 81,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T01:03:48.332Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,23 +43,7 @@
     "threads_video_at": "2026-09-11T00:08:18.908Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "526-durk-cant-get-a-fair-trial-judge-always-rules-against-against-hi.json",
-      "id": "526-durk-cant-get-a-fair-trial-judge-always-rules-against-against-hi",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18102663110247782",
-      "content_type": "video"
-    },
-    {
-      "file": "509-jhene-aiko-s-coming-back-strong-with-all-of-these-rap-features-c.json",
-      "id": "509-jhene-aiko-s-coming-back-strong-with-all-of-these-rap-features-c",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18473784007113171"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

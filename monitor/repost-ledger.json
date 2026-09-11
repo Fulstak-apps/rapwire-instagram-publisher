@@ -7942,55 +7942,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdE2ydVKicI/",
       "queue_id": "553-speed-couldn-t-believe-the-new-tech-in-the-iphone-18-apple-just-",
       "video": "media/553-speed-couldn-t-believe-the-new-tech-in-the-iphone-18-apple-just-.mp4"
+    },
+    "DdE-hhohZmL": {
+      "queued_at": "2026-09-11T03:44:28.788Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdE-hhohZmL/",
+      "queue_id": "554-debating-who-won-lil-durk-lildurk-s-closing-arguments-w-ceddy-na",
+      "video": "media/554-debating-who-won-lil-durk-lildurk-s-closing-arguments-w-ceddy-na.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T16:24:18.431Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "rockstargames",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/rockstargames/\nCall log:\n  - navigating to \"https://www.instagram.com/rockstargames/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "igndotcom",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/igndotcom/\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T16:24:28.087Z"
-    },
     {
       "started_at": "2026-09-09T16:29:31.379Z",
       "candidates": 0,
@@ -15945,6 +15906,17 @@
       "mode": "discovery",
       "vip_pending": 27,
       "finished_at": "2026-09-11T03:33:01.902Z"
+    },
+    {
+      "started_at": "2026-09-11T03:38:08.705Z",
+      "candidates": 62,
+      "queued": [
+        "554-debating-who-won-lil-durk-lildurk-s-closing-arguments-w-ceddy-na"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 26,
+      "finished_at": "2026-09-11T03:44:28.788Z"
     }
   ],
   "vip_pending": {
@@ -16239,18 +16211,6 @@
       "visible_caption": "Durk’s last minute plea to include Ak x Durk saying 69 doesn’t bother him DENIED",
       "story_type": "current"
     },
-    "DdE-hhohZmL": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DdE-hhohZmL/",
-      "shortcode": "DdE-hhohZmL",
-      "first_seen_at": "2026-09-10T13:42:59.076Z",
-      "profile_position": 9,
-      "state": "retry_pending",
-      "attempts": 8,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdE-hhohZmL-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T02:33:04.407Z",
-      "retry_at": "2026-09-11T03:33:04.407Z"
-    },
     "DdHmN8AgLxb": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/reel/DdHmN8AgLxb/",
@@ -16299,16 +16259,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T03:30:40.486Z"
+      "checked_at": "2026-09-11T03:38:28.133Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T03:30:36.320Z"
+      "checked_at": "2026-09-11T03:38:23.939Z"
     },
     "records": {
-      "checked_at": "2026-09-11T03:30:32.105Z"
+      "checked_at": "2026-09-11T03:38:19.871Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T03:30:27.953Z"
+      "checked_at": "2026-09-11T03:38:15.891Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T03:07:59.481Z"
@@ -16323,7 +16283,7 @@
       "checked_at": "2026-09-11T03:30:48.755Z"
     },
     "xxl": {
-      "checked_at": "2026-09-11T02:51:46.564Z"
+      "checked_at": "2026-09-11T03:38:36.531Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-11T02:51:50.639Z"
@@ -16332,7 +16292,7 @@
       "checked_at": "2026-09-11T03:30:44.683Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-11T02:42:20.778Z"
+      "checked_at": "2026-09-11T03:38:32.369Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-11T03:07:55.289Z"

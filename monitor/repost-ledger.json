@@ -7863,48 +7863,15 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DdFd1DmtT6J/",
       "queue_id": "542-big30-goes-off-on-people-for-asking-him-for-money-chains-while-h"
+    },
+    "DdFWky3gSeB": {
+      "queued_at": "2026-09-11T01:29:40.550Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdFWky3gSeB/",
+      "queue_id": "543-thank-you-judge-fitzgerald"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T15:26:59.596Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_url": "https://www.instagram.com/freshouttheculture/reel/Dcvzv3fv2GR/",
-          "stage": "caption_repair",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "caption_repair_and_vip_discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T15:27:28.284Z"
-    },
     {
       "started_at": "2026-09-09T15:32:32.086Z",
       "candidates": 0,
@@ -15960,6 +15927,60 @@
       "mode": "discovery",
       "vip_pending": 36,
       "finished_at": "2026-09-11T01:06:03.440Z"
+    },
+    {
+      "started_at": "2026-09-11T01:11:08.472Z",
+      "candidates": 62,
+      "queued": [
+        "543-thank-you-judge-fitzgerald"
+      ],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/DdH_kb6t8XN/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdH_kb6t8XN-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdHvXedSzJ_/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHvXedSzJ_-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/reel/DdGjUyKP73j/",
+          "stage": "queue",
+          "error": "Crop review required: No distinct footage region between static panels"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdIFzeVDZ2A/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIFzeVDZ2A-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdE-hhohZmL/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdE-hhohZmL-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdHmN8AgLxb/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHmN8AgLxb-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 35,
+      "finished_at": "2026-09-11T01:29:40.550Z"
     }
   ],
   "vip_pending": {
@@ -16258,27 +16279,12 @@
       "first_seen_at": "2026-09-10T09:24:00.848Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 28,
+      "attempts": 29,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T00:56:21.988Z",
-      "retry_at": "2026-09-11T01:56:21.988Z",
+      "last_attempt_at": "2026-09-11T01:22:15.800Z",
+      "retry_at": "2026-09-11T02:22:15.800Z",
       "source_published_at": "2026-09-09T23:35:42.000Z",
       "visible_caption": "No verdict in Lil Durk’s trial today as the jury wanted digitized evidence and they wouldn’t get it until tomorrow",
-      "story_type": "current"
-    },
-    "DdFWky3gSeB": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/DdFWky3gSeB/",
-      "shortcode": "DdFWky3gSeB",
-      "first_seen_at": "2026-09-10T09:24:00.848Z",
-      "profile_position": 2,
-      "state": "retry_pending",
-      "attempts": 8,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T12:51:51.520Z",
-      "retry_at": "2026-09-10T13:51:51.520Z",
-      "source_published_at": "2026-09-09T22:39:27.000Z",
-      "visible_caption": "Thank you Judge Fitzgerald.",
       "story_type": "current"
     },
     "DdFPKykAtjN": {
@@ -16354,10 +16360,10 @@
       "first_seen_at": "2026-09-10T13:42:59.076Z",
       "profile_position": 9,
       "state": "retry_pending",
-      "attempts": 6,
+      "attempts": 7,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdE-hhohZmL-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T00:10:41.546Z",
-      "retry_at": "2026-09-11T01:10:41.546Z"
+      "last_attempt_at": "2026-09-11T01:26:34.433Z",
+      "retry_at": "2026-09-11T02:26:34.433Z"
     },
     "DdHmN8AgLxb": {
       "source_handle": "akademiks",
@@ -16366,13 +16372,13 @@
       "first_seen_at": "2026-09-10T19:42:02.267Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 6,
+      "attempts": 7,
       "source_published_at": "2026-09-10T19:35:21.000Z",
       "visible_caption": "Wack 100 calls out Akademiks 😳",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHmN8AgLxb-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T00:13:39.988Z",
-      "retry_at": "2026-09-11T01:13:39.988Z"
+      "last_attempt_at": "2026-09-11T01:29:31.618Z",
+      "retry_at": "2026-09-11T02:29:31.618Z"
     },
     "DdHv308yeu_": {
       "source_handle": "traploreross",
@@ -16396,13 +16402,13 @@
       "first_seen_at": "2026-09-10T21:14:08.563Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 10,
+      "attempts": 11,
       "source_published_at": "2026-09-10T20:56:40.000Z",
       "visible_caption": "69 clip would have SAVED DURK: Ross and Ceddy disagree 😡😤",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHvXedSzJ_-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T00:52:53.207Z",
-      "retry_at": "2026-09-11T01:52:53.207Z"
+      "last_attempt_at": "2026-09-11T01:18:30.213Z",
+      "retry_at": "2026-09-11T02:18:30.213Z"
     },
     "DdIAW9Sjgw7": {
       "source_handle": "records",
@@ -16426,36 +16432,36 @@
       "first_seen_at": "2026-09-11T00:33:15.582Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 2,
+      "attempts": 3,
       "source_published_at": "2026-09-11T00:09:47.000Z",
       "visible_caption": "LeBron cosigns 2 Chainz’s new single 🔥🔥",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIFzeVDZ2A-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T01:04:53.001Z",
-      "retry_at": "2026-09-11T01:08:53.001Z"
+      "last_attempt_at": "2026-09-11T01:23:12.868Z",
+      "retry_at": "2026-09-11T01:31:12.868Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T01:01:44.470Z"
+      "checked_at": "2026-09-11T01:11:27.524Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T01:01:40.577Z"
+      "checked_at": "2026-09-11T01:11:23.611Z"
     },
     "records": {
-      "checked_at": "2026-09-11T01:01:36.680Z"
+      "checked_at": "2026-09-11T01:11:19.681Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T01:01:32.729Z"
+      "checked_at": "2026-09-11T01:11:15.738Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T01:01:52.333Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-10T23:51:55.970Z"
+      "checked_at": "2026-09-11T01:11:31.424Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-11T00:01:13.763Z"
+      "checked_at": "2026-09-11T01:11:35.308Z"
     },
     "complexmusic": {
       "checked_at": "2026-09-11T00:31:03.977Z"

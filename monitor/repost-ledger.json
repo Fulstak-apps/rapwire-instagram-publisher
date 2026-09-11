@@ -8055,40 +8055,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T18:35:16.184Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T18:36:01.875Z"
-    },
-    {
       "started_at": "2026-09-09T18:41:06.570Z",
       "candidates": 0,
       "queued": [],
@@ -16217,6 +16183,46 @@
       "mode": "discovery",
       "vip_pending": 22,
       "finished_at": "2026-09-11T09:11:16.621Z"
+    },
+    {
+      "started_at": "2026-09-11T09:16:20.279Z",
+      "candidates": 61,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/DdFkLYYDr86/",
+          "stage": "queue",
+          "error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
+          "stage": "queue",
+          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9XO1DAR8r/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9YSd_gCof-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 22,
+      "finished_at": "2026-09-11T09:25:06.391Z"
     }
   ],
   "vip_pending": {
@@ -16359,10 +16365,10 @@
       "first_seen_at": "2026-09-06T20:20:59.759Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 78,
+      "attempts": 79,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9XO1DAR8r-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T07:46:44.322Z",
-      "retry_at": "2026-09-11T08:46:44.322Z"
+      "last_attempt_at": "2026-09-11T09:20:41.046Z",
+      "retry_at": "2026-09-11T10:20:41.046Z"
     },
     "Dc9YSd_gCof": {
       "source_handle": "akademiks",
@@ -16371,10 +16377,10 @@
       "first_seen_at": "2026-09-06T20:31:48.547Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 78,
+      "attempts": 79,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc9YSd_gCof-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T08:02:12.547Z",
-      "retry_at": "2026-09-11T09:02:12.547Z"
+      "last_attempt_at": "2026-09-11T09:21:37.183Z",
+      "retry_at": "2026-09-11T10:21:37.183Z"
     },
     "Dc_KAyJG1jU": {
       "source_handle": "akademiks",
@@ -16407,10 +16413,10 @@
       "first_seen_at": "2026-09-08T21:55:54.045Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 40,
+      "attempts": 41,
       "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
-      "last_attempt_at": "2026-09-11T08:14:37.842Z",
-      "retry_at": "2026-09-11T09:14:37.842Z"
+      "last_attempt_at": "2026-09-11T09:19:16.839Z",
+      "retry_at": "2026-09-11T10:19:16.839Z"
     },
     "DdFkLYYDr86": {
       "source_handle": "records",
@@ -16419,10 +16425,10 @@
       "first_seen_at": "2026-09-10T07:51:46.291Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 31,
+      "attempts": 32,
       "last_error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-11T08:14:20.394Z",
-      "retry_at": "2026-09-11T09:14:20.394Z",
+      "last_attempt_at": "2026-09-11T09:18:57.757Z",
+      "retry_at": "2026-09-11T10:18:57.757Z",
       "source_published_at": "2026-09-10T00:37:30.000Z",
       "visible_caption": "Ye lands at #1 on Complex’s latest “Hottest Rappers Right Now” ranking 🐐🔥\n\nMoving up eight spots in September’s ReRank, Ye took the top position following his recent hometown shows in Chicago. Complex credited those performances with helping push him to #1.\n\nDon Toliver came in at #2, followed by Drake, Playboi Carti and Travis Scott. J. Cole, Ken Carson, Kendrick Lamar, JAY-Z and NBA YoungBoy rounded out the top 10.\n\nSwipe through to see the list 👀 Do you agree with the rankings? 🤔\n\n📸: @cambamscam",
       "story_type": "current"
@@ -16434,10 +16440,10 @@
       "first_seen_at": "2026-09-10T09:24:00.848Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 48,
+      "attempts": 49,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T09:11:16.621Z",
-      "retry_at": "2026-09-11T10:11:16.621Z",
+      "last_attempt_at": "2026-09-11T09:25:06.391Z",
+      "retry_at": "2026-09-11T10:25:06.391Z",
       "source_published_at": "2026-09-09T23:35:42.000Z",
       "visible_caption": "No verdict in Lil Durk’s trial today as the jury wanted digitized evidence and they wouldn’t get it until tomorrow",
       "story_type": "current"
@@ -16505,19 +16511,19 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T09:00:10.876Z"
+      "checked_at": "2026-09-11T09:16:41.052Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T09:00:06.862Z"
+      "checked_at": "2026-09-11T09:16:36.938Z"
     },
     "records": {
-      "checked_at": "2026-09-11T09:00:02.885Z"
+      "checked_at": "2026-09-11T09:16:32.881Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T08:59:58.877Z"
+      "checked_at": "2026-09-11T09:16:28.845Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-11T08:07:40.137Z"
+      "checked_at": "2026-09-11T09:16:49.054Z"
     },
     "raplisted_": {
       "checked_at": "2026-09-11T08:07:44.201Z"
@@ -16541,7 +16547,7 @@
       "checked_at": "2026-09-11T08:37:27.233Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-11T07:53:15.191Z"
+      "checked_at": "2026-09-11T09:16:45.093Z"
     }
   }
 }

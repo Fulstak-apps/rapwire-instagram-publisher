@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T17:23:37.483Z",
+  "checked_at": "2026-09-11T17:28:40.604Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T17:09:02.337Z",
+    "checked_at": "2026-09-11T17:28:31.481Z",
     "usage": 39,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T17:24:02.337Z",
+    "next_check_at": "2026-09-11T17:43:31.481Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,11 +18,11 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 39,
-    "instagram_remaining": 59,
+    "instagram_usage": 38,
+    "instagram_remaining": 60,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T17:23:31.165Z",
+    "next_feed_eligible_at": "2026-09-11T17:58:40.348Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-11T17:28:46.640Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T16:53:31.165Z",
+    "instagram_feed_at": "2026-09-11T17:28:40.348Z",
     "threads_at": "2026-09-11T17:13:46.640Z",
     "threads_video_at": "2026-09-11T17:13:46.640Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "575-doodie-lo-challenge-accepted-10-000-going-to-families-on-both-si.json",
+      "id": "575-doodie-lo-challenge-accepted-10-000-going-to-families-on-both-si",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18426957256197350",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

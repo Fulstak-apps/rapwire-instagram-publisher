@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T11:09:49.576Z",
+  "checked_at": "2026-09-11T11:14:59.708Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -23,11 +23,11 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T11:14:30.288Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,15 +43,7 @@
     "threads_video_at": "2026-09-11T10:44:37.314Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "542-big30-goes-off-on-people-for-asking-him-for-money-chains-while-h.json",
-      "id": "542-big30-goes-off-on-people-for-asking-him-for-money-chains-while-h",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17991833757042405"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

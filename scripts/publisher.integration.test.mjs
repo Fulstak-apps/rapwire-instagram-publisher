@@ -82,8 +82,8 @@ test('recent feed publication blocks the next feed but not Threads delivery', t 
 });
 test('daily safety budget prevents uploads even when Meta reports spare capacity', t => {
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread'},null,
-    `throw new Error('No platform work expected at the daily safety cap');`,0,null,32,100);
-  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,32);
+    `throw new Error('No platform work expected at the daily safety cap');`,0,null,40,100);
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,40);
   assert.equal(r.item.instagram_container_id,undefined);
 });
 test('ready video publishes on Threads while Instagram quota is exhausted', t => {

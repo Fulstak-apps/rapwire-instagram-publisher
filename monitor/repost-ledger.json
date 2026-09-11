@@ -5612,6 +5612,13 @@
       "source_url": "https://www.instagram.com/complexmusic/p/DdIgBATFss2/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdImTFXOkYM": {
+      "seen_at": "2026-09-11T05:01:49.242Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdImTFXOkYM/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -8003,29 +8010,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdFCZjivPS0/",
       "queue_id": "559-speed-met-apple-s-new-ceo-and-immediately-started-barking-and-di",
       "video": "media/559-speed-met-apple-s-new-ceo-and-immediately-started-barking-and-di.mp4"
+    },
+    "DdH_kb6t8XN": {
+      "queued_at": "2026-09-11T05:03:55.045Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdH_kb6t8XN/",
+      "queue_id": "560-ynw-melly-s-mother-shares-an-emotional-message-as-he-approaches-",
+      "video": "media/560-ynw-melly-s-mother-shares-an-emotional-message-as-he-approaches-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T17:00:43.408Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T17:00:50.455Z"
-    },
     {
       "started_at": "2026-09-09T17:05:54.155Z",
       "candidates": 0,
@@ -15872,6 +15866,17 @@
       "mode": "discovery",
       "vip_pending": 21,
       "finished_at": "2026-09-11T04:54:26.835Z"
+    },
+    {
+      "started_at": "2026-09-11T04:59:31.071Z",
+      "candidates": 62,
+      "queued": [
+        "560-ynw-melly-s-mother-shares-an-emotional-message-as-he-approaches-"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 22,
+      "finished_at": "2026-09-11T05:03:55.045Z"
     }
   ],
   "vip_pending": {
@@ -16141,29 +16146,41 @@
       "last_error": "Five complete RGB samples are required",
       "last_attempt_at": "2026-09-11T04:28:00.960Z",
       "retry_at": "2026-09-11T05:28:00.960Z"
+    },
+    "DdImTFXOkYM": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdImTFXOkYM/",
+      "shortcode": "DdImTFXOkYM",
+      "first_seen_at": "2026-09-11T05:01:49.243Z",
+      "profile_position": 0,
+      "state": "pending",
+      "attempts": 0,
+      "source_published_at": "2026-09-11T04:53:46.000Z",
+      "visible_caption": "FBI Houston Spokesperson Connor Hagen tells TMZ ... 6 people were arrested by the FBI and their partner agencies this morning in Louisiana and Texas ... including the rappers.\n\nNo word yet on the charges Ben10, OG 3Three, and the other 4 people are facing. The FBI is referring all questions about specific charges to the U.S. Attorney’s Office for the Southern District of Texas.",
+      "story_type": "current"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T04:45:33.887Z"
+      "checked_at": "2026-09-11T04:59:50.980Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T04:45:29.775Z"
+      "checked_at": "2026-09-11T04:59:46.813Z"
     },
     "records": {
-      "checked_at": "2026-09-11T04:45:25.590Z"
+      "checked_at": "2026-09-11T04:59:42.683Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T04:45:21.637Z"
+      "checked_at": "2026-09-11T04:59:38.606Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T04:45:42.093Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-11T04:00:09.891Z"
+      "checked_at": "2026-09-11T04:59:55.015Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-11T04:08:24.283Z"
+      "checked_at": "2026-09-11T04:59:59.032Z"
     },
     "complexmusic": {
       "checked_at": "2026-09-11T04:20:45.671Z"

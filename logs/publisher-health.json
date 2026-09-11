@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-11T00:28:23.887Z",
+  "checked_at": "2026-09-11T00:33:53.879Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-11T00:28:22.661Z",
-    "usage": 16,
+    "usage": 17,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-11T00:43:22.661Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 82,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T00:28:11.804Z",
+    "next_feed_eligible_at": "2026-09-11T01:03:48.332Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,15 +35,31 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T00:23:18.908Z",
+  "threads_next_eligible_at": "2026-09-11T00:48:53.427Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-10T23:58:11.804Z",
-    "threads_at": "2026-09-11T00:08:18.908Z",
+    "instagram_feed_at": "2026-09-11T00:33:48.332Z",
+    "threads_at": "2026-09-11T00:33:53.427Z",
     "threads_video_at": "2026-09-11T00:08:18.908Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "526-durk-cant-get-a-fair-trial-judge-always-rules-against-against-hi.json",
+      "id": "526-durk-cant-get-a-fair-trial-judge-always-rules-against-against-hi",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18102663110247782",
+      "content_type": "video"
+    },
+    {
+      "file": "509-jhene-aiko-s-coming-back-strong-with-all-of-these-rap-features-c.json",
+      "id": "509-jhene-aiko-s-coming-back-strong-with-all-of-these-rap-features-c",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18473784007113171"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

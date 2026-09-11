@@ -7969,55 +7969,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DdEaj5yuD4k/",
       "queue_id": "556-the-free-lil-durk-lildurk-crew-was-vibing-yesterday",
       "video": "media/556-the-free-lil-durk-lildurk-crew-was-vibing-yesterday.mp4"
+    },
+    "DdFbwrPv-O-": {
+      "queued_at": "2026-09-11T04:14:58.755Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdFbwrPv-O-/",
+      "queue_id": "557-lil-durk-lildurk-s-last-minute-plea-to-include-ak-x-durk-saying-",
+      "video": "media/557-lil-durk-lildurk-s-last-minute-plea-to-include-ak-x-durk-saying-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T16:39:57.613Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T16:40:05.965Z"
-    },
     {
       "started_at": "2026-09-09T16:45:09.397Z",
       "candidates": 0,
@@ -15889,6 +15850,17 @@
       "mode": "discovery",
       "vip_pending": 24,
       "finished_at": "2026-09-11T04:02:42.285Z"
+    },
+    {
+      "started_at": "2026-09-11T04:08:00.456Z",
+      "candidates": 61,
+      "queued": [
+        "557-lil-durk-lildurk-s-last-minute-plea-to-include-ak-x-durk-saying-"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 23,
+      "finished_at": "2026-09-11T04:14:58.755Z"
     }
   ],
   "vip_pending": {
@@ -16144,21 +16116,6 @@
       "visible_caption": "No verdict in Lil Durk’s trial today as the jury wanted digitized evidence and they wouldn’t get it until tomorrow",
       "story_type": "current"
     },
-    "DdFbwrPv-O-": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DdFbwrPv-O-/",
-      "shortcode": "DdFbwrPv-O-",
-      "first_seen_at": "2026-09-10T13:42:59.076Z",
-      "profile_position": 2,
-      "state": "retry_pending",
-      "attempts": 9,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFbwrPv-O--1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T02:11:53.539Z",
-      "retry_at": "2026-09-11T03:11:53.539Z",
-      "source_published_at": "2026-09-09T23:25:45.000Z",
-      "visible_caption": "Durk’s last minute plea to include Ak x Durk saying 69 doesn’t bother him DENIED",
-      "story_type": "current"
-    },
     "DdHmN8AgLxb": {
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/reel/DdHmN8AgLxb/",
@@ -16207,16 +16164,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T04:00:01.814Z"
+      "checked_at": "2026-09-11T04:08:20.072Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T03:59:57.732Z"
+      "checked_at": "2026-09-11T04:08:15.883Z"
     },
     "records": {
-      "checked_at": "2026-09-11T03:59:53.666Z"
+      "checked_at": "2026-09-11T04:08:11.803Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T03:59:49.475Z"
+      "checked_at": "2026-09-11T04:08:07.757Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T04:00:05.837Z"
@@ -16225,7 +16182,7 @@
       "checked_at": "2026-09-11T04:00:09.891Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-11T03:23:22.623Z"
+      "checked_at": "2026-09-11T04:08:24.283Z"
     },
     "complexmusic": {
       "checked_at": "2026-09-11T03:30:48.755Z"
@@ -16237,7 +16194,7 @@
       "checked_at": "2026-09-11T03:50:18.507Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-11T03:30:44.683Z"
+      "checked_at": "2026-09-11T04:08:28.545Z"
     },
     "igndotcom": {
       "checked_at": "2026-09-11T03:38:32.369Z"

@@ -8062,40 +8062,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T19:37:44.564Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc9YSd_gCof/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dc9E0l7FoTk/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T19:38:31.431Z"
-    },
-    {
       "started_at": "2026-09-09T19:43:34.681Z",
       "candidates": 0,
       "queued": [],
@@ -16498,6 +16464,46 @@
       "mode": "discovery",
       "vip_pending": 22,
       "finished_at": "2026-09-11T12:14:29.185Z"
+    },
+    {
+      "started_at": "2026-09-11T12:19:32.658Z",
+      "candidates": 58,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdIz5guAFTM/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIz5guAFTM-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/DdIAW9Sjgw7/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIAW9Sjgw7-7-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdIFzeVDZ2A/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIFzeVDZ2A-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc30JSSjmsc/",
+          "stage": "queue",
+          "error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 22,
+      "finished_at": "2026-09-11T12:29:02.400Z"
     }
   ],
   "vip_pending": {
@@ -16568,10 +16574,10 @@
       "first_seen_at": "2026-09-04T16:33:19.251Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 109,
+      "attempts": 110,
       "last_error": "Complete 11-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-11T10:43:01.304Z",
-      "retry_at": "2026-09-11T11:43:01.304Z"
+      "last_attempt_at": "2026-09-11T12:25:30.784Z",
+      "retry_at": "2026-09-11T13:25:30.784Z"
     },
     "Dc32-qLsTq5": {
       "source_handle": "akademiks",
@@ -16715,10 +16721,10 @@
       "first_seen_at": "2026-09-10T09:24:00.848Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 59,
+      "attempts": 60,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T12:14:29.185Z",
-      "retry_at": "2026-09-11T13:14:29.185Z",
+      "last_attempt_at": "2026-09-11T12:29:02.400Z",
+      "retry_at": "2026-09-11T13:29:02.400Z",
       "source_published_at": "2026-09-09T23:35:42.000Z",
       "visible_caption": "No verdict in Lil Durk’s trial today as the jury wanted digitized evidence and they wouldn’t get it until tomorrow",
       "story_type": "current"
@@ -16745,13 +16751,13 @@
       "first_seen_at": "2026-09-10T23:38:52.761Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 13,
+      "attempts": 14,
       "source_published_at": "2026-09-10T23:22:15.000Z",
       "visible_caption": "CZARFACE is back with more of that grimy boom-bap, sharp lyricism, and comic-book-inspired chaos. CZARFACE Meets Frankie Pulitzer brings @czarface_eso and @frankiepulitzer together for a hard-hitting collision of underground energy. 🦂🔥",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIAW9Sjgw7-7-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T11:16:04.731Z",
-      "retry_at": "2026-09-11T12:16:04.731Z"
+      "last_attempt_at": "2026-09-11T12:24:12.825Z",
+      "retry_at": "2026-09-11T13:24:12.825Z"
     },
     "DdIFzeVDZ2A": {
       "source_handle": "akademiks",
@@ -16760,13 +16766,13 @@
       "first_seen_at": "2026-09-11T00:33:15.582Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 13,
+      "attempts": 14,
       "source_published_at": "2026-09-11T00:09:47.000Z",
       "visible_caption": "LeBron cosigns 2 Chainz’s new single 🔥🔥",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIFzeVDZ2A-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T11:17:01.715Z",
-      "retry_at": "2026-09-11T12:17:01.715Z"
+      "last_attempt_at": "2026-09-11T12:25:11.783Z",
+      "retry_at": "2026-09-11T13:25:11.783Z"
     },
     "DdIz5guAFTM": {
       "source_handle": "akademiks",
@@ -16775,27 +16781,27 @@
       "first_seen_at": "2026-09-11T07:03:40.916Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 8,
+      "attempts": 9,
       "source_published_at": "2026-09-11T06:52:57.000Z",
       "visible_caption": "Yachty back doing his pod.. and this episode w karrahboo got heated",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIz5guAFTM-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T11:15:01.120Z",
-      "retry_at": "2026-09-11T12:15:01.120Z"
+      "last_attempt_at": "2026-09-11T12:23:10.525Z",
+      "retry_at": "2026-09-11T13:23:10.525Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T12:02:59.063Z"
+      "checked_at": "2026-09-11T12:19:52.070Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T12:02:55.050Z"
+      "checked_at": "2026-09-11T12:19:47.991Z"
     },
     "records": {
-      "checked_at": "2026-09-11T12:02:51.067Z"
+      "checked_at": "2026-09-11T12:19:43.833Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T12:02:47.026Z"
+      "checked_at": "2026-09-11T12:19:39.762Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T11:46:46.446Z"
@@ -16807,7 +16813,7 @@
       "checked_at": "2026-09-11T12:03:07.187Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-11T11:11:48.796Z"
+      "checked_at": "2026-09-11T12:20:00.345Z"
     },
     "xxl": {
       "checked_at": "2026-09-11T11:26:57.801Z"
@@ -16816,7 +16822,7 @@
       "checked_at": "2026-09-11T11:27:01.831Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-11T10:52:59.979Z"
+      "checked_at": "2026-09-11T12:19:56.135Z"
     },
     "igndotcom": {
       "checked_at": "2026-09-11T11:11:52.931Z"

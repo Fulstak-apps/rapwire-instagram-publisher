@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T21:16:12.094Z",
+  "checked_at": "2026-09-11T21:20:37.474Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-11T21:16:10.992Z",
@@ -16,13 +16,13 @@
   },
   "delivery_policy": {
     "feed_interval_minutes": 30,
-    "instagram_daily_cap": 32,
+    "instagram_daily_cap": 40,
     "instagram_usage": 35,
-    "instagram_remaining": 0,
+    "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-11T19:10:08.973Z",
-    "feed_allowed": false,
-    "story_allowed": false
+    "feed_allowed": true,
+    "story_allowed": true
   },
   "instagram_steps": 0,
   "threads_steps": 1,
@@ -35,15 +35,23 @@
   "threads_interval_seconds": 60,
   "threads_publishing_quota": {
     "checked_at": "2026-09-11T21:16:11.324Z",
-    "usage": 63,
+    "usage": 64,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-11T21:31:11.324Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-11T18:30:31.330Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-11T21:21:36.920Z",
+  "publications": [
+    {
+      "file": "578-honestav-really-took-the-term-crowd-surfing-literally-honestav-s.json",
+      "id": "578-honestav-really-took-the-term-crowd-surfing-literally-honestav-s",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18008494400977022"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -8062,22 +8062,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T19:26:25.919Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T19:27:01.755Z"
-    },
-    {
       "started_at": "2026-09-09T19:32:05.753Z",
       "candidates": 0,
       "queued": [],
@@ -16438,6 +16422,46 @@
       "mode": "discovery",
       "vip_pending": 22,
       "finished_at": "2026-09-11T11:41:15.035Z"
+    },
+    {
+      "started_at": "2026-09-11T11:46:18.797Z",
+      "candidates": 61,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdHmN8AgLxb/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHmN8AgLxb-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/DdFkLYYDr86/",
+          "stage": "queue",
+          "error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdCsCe8AoWO/",
+          "stage": "queue",
+          "error": "Crop review required: bottom-left logo would cover meaningful source text or a face"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc_spGMAPFc/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_spGMAPFc-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 22,
+      "finished_at": "2026-09-11T11:57:35.953Z"
     }
   ],
   "vip_pending": {
@@ -16616,10 +16640,10 @@
       "first_seen_at": "2026-09-07T18:06:33.637Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 65,
+      "attempts": 66,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc_spGMAPFc-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T10:41:28.667Z",
-      "retry_at": "2026-09-11T11:41:28.667Z"
+      "last_attempt_at": "2026-09-11T11:54:06.607Z",
+      "retry_at": "2026-09-11T12:54:06.607Z"
     },
     "DdCsCe8AoWO": {
       "source_handle": "akademiks",
@@ -16628,10 +16652,10 @@
       "first_seen_at": "2026-09-08T21:55:54.045Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 42,
+      "attempts": 43,
       "last_error": "Crop review required: bottom-left logo would cover meaningful source text or a face",
-      "last_attempt_at": "2026-09-11T10:30:46.685Z",
-      "retry_at": "2026-09-11T11:30:46.685Z"
+      "last_attempt_at": "2026-09-11T11:52:12.480Z",
+      "retry_at": "2026-09-11T12:52:12.480Z"
     },
     "DdFkLYYDr86": {
       "source_handle": "records",
@@ -16640,10 +16664,10 @@
       "first_seen_at": "2026-09-10T07:51:46.291Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 33,
+      "attempts": 34,
       "last_error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery",
-      "last_attempt_at": "2026-09-11T10:30:29.690Z",
-      "retry_at": "2026-09-11T11:30:29.690Z",
+      "last_attempt_at": "2026-09-11T11:51:55.193Z",
+      "retry_at": "2026-09-11T12:51:55.193Z",
       "source_published_at": "2026-09-10T00:37:30.000Z",
       "visible_caption": "Ye lands at #1 on Complex’s latest “Hottest Rappers Right Now” ranking 🐐🔥\n\nMoving up eight spots in September’s ReRank, Ye took the top position following his recent hometown shows in Chicago. Complex credited those performances with helping push him to #1.\n\nDon Toliver came in at #2, followed by Drake, Playboi Carti and Travis Scott. J. Cole, Ken Carson, Kendrick Lamar, JAY-Z and NBA YoungBoy rounded out the top 10.\n\nSwipe through to see the list 👀 Do you agree with the rankings? 🤔\n\n📸: @cambamscam",
       "story_type": "current"
@@ -16655,10 +16679,10 @@
       "first_seen_at": "2026-09-10T09:24:00.848Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 57,
+      "attempts": 58,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T11:41:15.034Z",
-      "retry_at": "2026-09-11T12:41:15.034Z",
+      "last_attempt_at": "2026-09-11T11:57:35.953Z",
+      "retry_at": "2026-09-11T12:57:35.953Z",
       "source_published_at": "2026-09-09T23:35:42.000Z",
       "visible_caption": "No verdict in Lil Durk’s trial today as the jury wanted digitized evidence and they wouldn’t get it until tomorrow",
       "story_type": "current"
@@ -16670,13 +16694,13 @@
       "first_seen_at": "2026-09-10T19:42:02.267Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 14,
+      "attempts": 15,
       "source_published_at": "2026-09-10T19:35:21.000Z",
       "visible_caption": "Wack 100 calls out Akademiks 😳",
       "story_type": "current",
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHmN8AgLxb-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T10:30:09.729Z",
-      "retry_at": "2026-09-11T11:30:09.729Z"
+      "last_attempt_at": "2026-09-11T11:51:34.675Z",
+      "retry_at": "2026-09-11T12:51:34.675Z"
     },
     "DdIAW9Sjgw7": {
       "source_handle": "records",
@@ -16726,19 +16750,19 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T11:26:53.759Z"
+      "checked_at": "2026-09-11T11:46:38.373Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T11:26:49.739Z"
+      "checked_at": "2026-09-11T11:46:34.393Z"
     },
     "records": {
-      "checked_at": "2026-09-11T11:26:45.728Z"
+      "checked_at": "2026-09-11T11:46:30.384Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T11:26:41.728Z"
+      "checked_at": "2026-09-11T11:46:26.304Z"
     },
     "trapmatictv": {
-      "checked_at": "2026-09-11T10:37:37.363Z"
+      "checked_at": "2026-09-11T11:46:46.446Z"
     },
     "raplisted_": {
       "checked_at": "2026-09-11T10:37:41.338Z"
@@ -16762,7 +16786,7 @@
       "checked_at": "2026-09-11T11:11:52.931Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-11T10:22:27.876Z"
+      "checked_at": "2026-09-11T11:46:42.425Z"
     }
   }
 }

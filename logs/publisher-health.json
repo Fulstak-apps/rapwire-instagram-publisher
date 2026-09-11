@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-11T17:59:03.693Z",
+  "checked_at": "2026-09-11T18:04:07.200Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-11T17:58:56.727Z",
-    "usage": 38,
+    "usage": 39,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-11T18:13:56.727Z",
@@ -22,12 +22,12 @@
     "instagram_remaining": 60,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T17:58:40.348Z",
+    "next_feed_eligible_at": "2026-09-11T18:34:06.994Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,18 +38,19 @@
   "threads_next_eligible_at": "2026-09-11T18:14:03.224Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T17:28:40.348Z",
+    "instagram_feed_at": "2026-09-11T18:04:06.994Z",
     "threads_at": "2026-09-11T17:59:03.224Z",
     "threads_video_at": "2026-09-11T17:38:46.375Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar.json",
-      "id": "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar",
-      "platform": "threads",
+      "file": "576-never-forget-when-nba-youngboy-realized-nearly-200-000-people-we.json",
+      "id": "576-never-forget-when-nba-youngboy-realized-nearly-200-000-people-we",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17909589372495001"
+      "media_id": "17882904753504357",
+      "content_type": "video"
     }
   ],
   "failures": [],

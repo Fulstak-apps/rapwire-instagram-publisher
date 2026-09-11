@@ -1,10 +1,9 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo",
     "506-update-there-will-reportedly-be-no-verdict-in-lil-durk-lildurk-s",
     "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti",
     "509-jhene-aiko-s-coming-back-strong-with-all-of-these-rap-features-c",
@@ -23,8 +22,8 @@
     "545-memo600-dissed-jammy-the-bull-aka-otf-jam",
     "546-600-breezy-shows-lil-durk-lildurk-support"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-11T02:19:56.399Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-11T02:24:39.279Z",
   "deferred": []
 }

@@ -543,7 +543,9 @@ const pendingStory = queueRecords.some(({ item }) => item.status === "published"
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
   && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"));
-const preferStory = !recovery.feed_allowed && pendingStory && pacing.last_instagram_lane === "feed";
+// Stories are intentionally disabled in this workflow. Do not let outstanding
+// Story work reserve the only feed lane, or Instagram can remain idle forever.
+const preferStory = publishInstagramStories && !recovery.feed_allowed && pendingStory && pacing.last_instagram_lane === "feed";
 const uploadSlots = instagramAvailable() && !preferStory && (deliveryPolicy.feed_allowed || recovery.feed_allowed)
   ? Math.max(0, 1 - processingCount) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))

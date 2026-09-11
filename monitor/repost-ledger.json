@@ -6116,6 +6116,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/DdKaCTZqmb_/",
       "view_count": 0
+    },
+    "DdKawaZGUoG": {
+      "seen_at": "2026-09-11T22:00:12.886Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdKawaZGUoG/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -8665,18 +8671,16 @@
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKXqYwvY91/",
       "queue_id": "586-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up",
       "video": "media/586-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up.mp4"
+    },
+    "DdKNThUS2dJ": {
+      "queued_at": "2026-09-11T22:05:09.145Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdKNThUS2dJ/",
+      "queue_id": "587-doodie-lo-kept-his-promise-10-000-being-given-out-to-the-mothers",
+      "video": "media/587-doodie-lo-kept-his-promise-10-000-being-given-out-to-the-mothers.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T22:55:09.077Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T22:55:43.931Z"
-    },
     {
       "started_at": "2026-09-09T23:00:46.800Z",
       "candidates": 0,
@@ -17266,6 +17270,16 @@
       "errors": [],
       "mode": "discovery",
       "finished_at": "2026-09-11T21:52:55.103Z"
+    },
+    {
+      "started_at": "2026-09-11T21:58:02.935Z",
+      "candidates": 84,
+      "queued": [
+        "587-doodie-lo-kept-his-promise-10-000-being-given-out-to-the-mothers"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "finished_at": "2026-09-11T22:05:09.145Z"
     }
   ],
   "vip_pending": {

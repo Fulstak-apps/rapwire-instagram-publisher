@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T16:48:17.705Z",
+  "checked_at": "2026-09-11T16:53:31.625Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T16:38:01.244Z",
+    "checked_at": "2026-09-11T16:53:18.764Z",
     "usage": 39,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T16:53:01.244Z",
+    "next_check_at": "2026-09-11T17:08:18.764Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 39,
-    "instagram_remaining": 59,
+    "instagram_usage": 38,
+    "instagram_remaining": 60,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T16:47:55.939Z",
+    "next_feed_eligible_at": "2026-09-11T17:23:31.165Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,18 +38,19 @@
   "threads_next_eligible_at": "2026-09-11T17:03:17.170Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T16:17:55.939Z",
+    "instagram_feed_at": "2026-09-11T16:53:31.165Z",
     "threads_at": "2026-09-11T16:48:17.170Z",
     "threads_video_at": "2026-09-11T16:33:03.387Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m.json",
-      "id": "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m",
-      "platform": "threads",
+      "file": "574-playing-migos-in-a-kids-movie-is-crazy-migos-were-one-of-the-mos.json",
+      "id": "574-playing-migos-in-a-kids-movie-is-crazy-migos-were-one-of-the-mos",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18480867655106470"
+      "media_id": "17907090339477952",
+      "content_type": "video"
     }
   ],
   "failures": [],

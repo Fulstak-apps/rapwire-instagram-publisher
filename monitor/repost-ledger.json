@@ -7935,35 +7935,16 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdE8S7EmlL2/",
       "queue_id": "552-apple-officially-unveiled-its-first-foldable-iphone-the-iphone-d"
+    },
+    "DdE2ydVKicI": {
+      "queued_at": "2026-09-11T03:33:01.902Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdE2ydVKicI/",
+      "queue_id": "553-speed-couldn-t-believe-the-new-tech-in-the-iphone-18-apple-just-",
+      "video": "media/553-speed-couldn-t-believe-the-new-tech-in-the-iphone-18-apple-just-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T16:19:09.662Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "complexmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "xxl",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T16:19:15.618Z"
-    },
     {
       "started_at": "2026-09-09T16:24:18.431Z",
       "candidates": 0,
@@ -15953,6 +15934,17 @@
       "mode": "discovery",
       "vip_pending": 28,
       "finished_at": "2026-09-11T03:25:16.039Z"
+    },
+    {
+      "started_at": "2026-09-11T03:30:19.990Z",
+      "candidates": 57,
+      "queued": [
+        "553-speed-couldn-t-believe-the-new-tech-in-the-iphone-18-apple-just-"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 27,
+      "finished_at": "2026-09-11T03:33:01.902Z"
     }
   ],
   "vip_pending": {
@@ -16193,18 +16185,6 @@
       "visible_caption": "Speed met Apple’s new CEO and immediately started barking and did a backflip in front of him 😭😂 \n\nVia; @ishowspeed \n\nSpeed met Apple’s new CEO, John Ternus, and decided to introduce himself by barking and doing a backflip in front of him 😭😂\n\nTernus recently took over from Tim Cook after spending years leading Apple’s hardware engineering team. Today marked his first major product showcase as CEO, with Apple unveiling its first foldable iPhone, the iPhone Duo, alongside the new iPhone 18 Pro lineup. 📱\n\nBut even with all the new technology being announced, Speed still managed to bring his own entertainment. Meeting the person running Apple apparently wasn’t a reason to turn the energy down 😭\n\nImagine becoming Apple’s CEO and one of your first experiences is getting the full Speed introduction 😂",
       "story_type": "current"
     },
-    "DdE2ydVKicI": {
-      "source_handle": "records",
-      "source_url": "https://www.instagram.com/records/reel/DdE2ydVKicI/",
-      "shortcode": "DdE2ydVKicI",
-      "first_seen_at": "2026-09-10T07:51:46.291Z",
-      "profile_position": 9,
-      "state": "retry_pending",
-      "attempts": 9,
-      "last_error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first.",
-      "last_attempt_at": "2026-09-10T13:31:05.172Z",
-      "retry_at": "2026-09-10T14:31:05.172Z"
-    },
     "DdEqShjjiQJ": {
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdEqShjjiQJ/",
@@ -16319,16 +16299,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T03:23:14.331Z"
+      "checked_at": "2026-09-11T03:30:40.486Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T03:23:10.151Z"
+      "checked_at": "2026-09-11T03:30:36.320Z"
     },
     "records": {
-      "checked_at": "2026-09-11T03:23:05.947Z"
+      "checked_at": "2026-09-11T03:30:32.105Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T03:23:01.773Z"
+      "checked_at": "2026-09-11T03:30:27.953Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T03:07:59.481Z"
@@ -16340,7 +16320,7 @@
       "checked_at": "2026-09-11T03:23:22.623Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-11T02:42:16.667Z"
+      "checked_at": "2026-09-11T03:30:48.755Z"
     },
     "xxl": {
       "checked_at": "2026-09-11T02:51:46.564Z"
@@ -16349,7 +16329,7 @@
       "checked_at": "2026-09-11T02:51:50.639Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-11T02:27:41.856Z"
+      "checked_at": "2026-09-11T03:30:44.683Z"
     },
     "igndotcom": {
       "checked_at": "2026-09-11T02:42:20.778Z"

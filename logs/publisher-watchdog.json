@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "506-update-there-will-reportedly-be-no-verdict-in-lil-durk-lildurk-s",
@@ -24,8 +24,8 @@
     "550-69-clip-would-have-saved-lil-durk-lildurk-ross-and-ceddy-disagre",
     "551-ceddy-nash-calls-out-akademiks-for-posting-lul-pab-murder-locati"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-11T03:45:05.555Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-11T03:49:42.788Z",
   "deferred": []
 }

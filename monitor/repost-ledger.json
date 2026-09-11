@@ -7915,29 +7915,16 @@
       "source_url": "https://www.instagram.com/complexmusic/reel/DdIFYZKxJQA/",
       "queue_id": "549-lucki-names-his-chicago-rapper-mt-rushmore-he-also-reacted-to-hi",
       "video": "media/549-lucki-names-his-chicago-rapper-mt-rushmore-he-also-reacted-to-hi.mp4"
+    },
+    "DdHvXedSzJ_": {
+      "queued_at": "2026-09-11T03:01:55.256Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdHvXedSzJ_/",
+      "queue_id": "550-69-clip-would-have-saved-lil-durk-lildurk-ross-and-ceddy-disagre",
+      "video": "media/550-69-clip-would-have-saved-lil-durk-lildurk-ross-and-ceddy-disagre.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T16:03:39.487Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "xxl",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T16:03:44.961Z"
-    },
     {
       "started_at": "2026-09-09T16:08:48.030Z",
       "candidates": 0,
@@ -15972,6 +15959,24 @@
       "mode": "discovery",
       "vip_pending": 31,
       "finished_at": "2026-09-11T02:46:12.639Z"
+    },
+    {
+      "started_at": "2026-09-11T02:51:22.605Z",
+      "candidates": 50,
+      "queued": [
+        "550-69-clip-would-have-saved-lil-durk-lildurk-ross-and-ceddy-disagre"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 30,
+      "finished_at": "2026-09-11T03:01:55.257Z"
     }
   ],
   "vip_pending": {
@@ -16255,10 +16260,10 @@
       "first_seen_at": "2026-09-10T09:24:00.848Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 30,
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T02:22:10.180Z",
-      "retry_at": "2026-09-11T03:22:10.180Z",
+      "attempts": 31,
+      "last_error": "No unambiguous matching audio stream; refusing silent or unrelated audio",
+      "last_attempt_at": "2026-09-11T02:56:02.560Z",
+      "retry_at": "2026-09-11T03:56:02.560Z",
       "source_published_at": "2026-09-09T23:35:42.000Z",
       "visible_caption": "No verdict in Lil Durk’s trial today as the jury wanted digitized evidence and they wouldn’t get it until tomorrow",
       "story_type": "current"
@@ -16332,21 +16337,6 @@
       "last_attempt_at": "2026-09-11T01:50:30.235Z",
       "retry_at": "2026-09-11T02:50:30.235Z"
     },
-    "DdHvXedSzJ_": {
-      "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DdHvXedSzJ_/",
-      "shortcode": "DdHvXedSzJ_",
-      "first_seen_at": "2026-09-10T21:14:08.563Z",
-      "profile_position": 2,
-      "state": "retry_pending",
-      "attempts": 12,
-      "source_published_at": "2026-09-10T20:56:40.000Z",
-      "visible_caption": "69 clip would have SAVED DURK: Ross and Ceddy disagree 😡😤",
-      "story_type": "current",
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdHvXedSzJ_-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T02:18:41.048Z",
-      "retry_at": "2026-09-11T03:18:41.048Z"
-    },
     "DdIAW9Sjgw7": {
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdIAW9Sjgw7/",
@@ -16380,16 +16370,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T02:42:12.380Z"
+      "checked_at": "2026-09-11T02:51:42.477Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T02:42:08.240Z"
+      "checked_at": "2026-09-11T02:51:38.477Z"
     },
     "records": {
-      "checked_at": "2026-09-11T02:42:04.093Z"
+      "checked_at": "2026-09-11T02:51:34.393Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T02:41:59.943Z"
+      "checked_at": "2026-09-11T02:51:30.253Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T02:05:19.550Z"
@@ -16404,10 +16394,10 @@
       "checked_at": "2026-09-11T02:42:16.667Z"
     },
     "xxl": {
-      "checked_at": "2026-09-11T01:44:57.910Z"
+      "checked_at": "2026-09-11T02:51:46.564Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-11T01:56:07.463Z"
+      "checked_at": "2026-09-11T02:51:50.639Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-11T02:27:41.856Z"

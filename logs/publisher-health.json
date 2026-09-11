@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-11T08:38:13.712Z",
+  "checked_at": "2026-09-11T08:43:17.638Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-11T08:38:08.976Z",
-    "usage": 29,
+    "usage": 30,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-11T08:53:08.976Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 69,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T08:38:07.092Z",
+    "next_feed_eligible_at": "2026-09-11T09:13:17.437Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-11T08:48:17.023Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T08:08:07.092Z",
+    "instagram_feed_at": "2026-09-11T08:43:17.437Z",
     "threads_at": "2026-09-11T08:33:17.023Z",
     "threads_video_at": "2026-09-11T08:33:17.023Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "511-a-note-was-sent-in-by-the-jury-in-lil-durk-lildurk-s-trial.json",
+      "id": "511-a-note-was-sent-in-by-the-jury-in-lil-durk-lildurk-s-trial",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18089281790261649",
+      "content_type": "image"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

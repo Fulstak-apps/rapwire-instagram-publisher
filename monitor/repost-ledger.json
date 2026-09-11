@@ -8755,29 +8755,16 @@
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKfqBUvTce/",
       "queue_id": "593-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up",
       "video": "media/593-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up.mp4"
+    },
+    "DdKcg3vPj1A": {
+      "queued_at": "2026-09-11T23:11:22.168Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdKcg3vPj1A/",
+      "queue_id": "595-ebro-and-rap-life-review-discuss-the-potential-downsides-of-the-",
+      "video": "media/595-ebro-and-rap-life-review-discuss-the-potential-downsides-of-the-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T23:28:06.888Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "complexmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "xxl",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/xxl/\nCall log:\n  - navigating to \"https://www.instagram.com/xxl/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T23:28:11.383Z"
-    },
     {
       "started_at": "2026-09-09T23:33:14.366Z",
       "candidates": 0,
@@ -17295,6 +17282,16 @@
       "errors": [],
       "mode": "discovery",
       "finished_at": "2026-09-11T23:03:25.605Z"
+    },
+    {
+      "started_at": "2026-09-11T23:08:30.398Z",
+      "candidates": 84,
+      "queued": [
+        "595-ebro-and-rap-life-review-discuss-the-potential-downsides-of-the-"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "finished_at": "2026-09-11T23:11:22.168Z"
     }
   ],
   "vip_pending": {

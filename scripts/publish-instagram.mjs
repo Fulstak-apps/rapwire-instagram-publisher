@@ -537,6 +537,7 @@ const recovery = recoveryPolicy(queueRecords.map(record => record.item), {
 
 const processingCount = queueRecords.filter(({ item }) => item.status === "ready"
   && item.content_type === "video" && item.instagram_container_id && !item.instagram_reconcile_required
+  && !(Date.parse(item.instagram_retry_at || "") > Date.now())
   && contentPromiseIsKept(item)).length;
 const pendingStory = queueRecords.some(({ item }) => item.status === "published"
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
@@ -566,6 +567,7 @@ await Promise.all(uploadCandidates.map(async ({ name, item }) => {
     console.log(`Prepared upload ${item.id}: ${item.instagram_container_id}`);
   } catch (error) {
     await logAttempt({ file: name, id: item.id, platform: "instagram", status: "failed", error: error.message });
+    console.error(`Instagram prepare failed for ${name}: ${error.message}`);
   }
 }));
 

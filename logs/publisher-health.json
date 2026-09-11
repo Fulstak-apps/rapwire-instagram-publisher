@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T16:02:43.498Z",
+  "checked_at": "2026-09-11T16:07:46.917Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T15:52:33.064Z",
-    "usage": 39,
+    "checked_at": "2026-09-11T16:07:46.314Z",
+    "usage": 38,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T16:07:33.064Z",
+    "next_check_at": "2026-09-11T16:22:46.314Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,8 +18,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 39,
-    "instagram_remaining": 59,
+    "instagram_usage": 38,
+    "instagram_remaining": 60,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T16:12:36.942Z",

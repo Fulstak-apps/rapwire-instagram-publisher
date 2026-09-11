@@ -5801,6 +5801,13 @@
       "source_url": "https://www.instagram.com/xxl/p/DdJxd3PFFlz/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdJ4zxWv_BD": {
+      "seen_at": "2026-09-11T17:07:36.565Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdJ4zxWv_BD/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -8273,55 +8280,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdJruaqI3Ym/",
       "queue_id": "574-playing-migos-in-a-kids-movie-is-crazy-migos-were-one-of-the-mos",
       "video": "media/574-playing-migos-in-a-kids-movie-is-crazy-migos-were-one-of-the-mos.mp4"
+    },
+    "DdJ2IUSPMaJ": {
+      "queued_at": "2026-09-11T17:20:33.948Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdJ2IUSPMaJ/",
+      "queue_id": "575-doodie-lo-challenge-accepted-10-000-going-to-families-on-both-si",
+      "video": "media/575-doodie-lo-challenge-accepted-10-000-going-to-families-on-both-si.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T21:31:23.972Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T21:31:31.914Z"
-    },
     {
       "started_at": "2026-09-09T21:36:34.816Z",
       "candidates": 0,
@@ -17007,6 +16975,24 @@
       "mode": "discovery",
       "vip_pending": 24,
       "finished_at": "2026-09-11T17:00:19.034Z"
+    },
+    {
+      "started_at": "2026-09-11T17:05:23.605Z",
+      "candidates": 47,
+      "queued": [
+        "575-doodie-lo-challenge-accepted-10-000-going-to-families-on-both-si"
+      ],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdJ4zxWv_BD/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdJ4zxWv_BD-1-source.mp4 -loop 1 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/assets/rapwire247-logo.png -filter_complex [0:v]crop=720:1280:0:0,setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[1:v]scale=170:170[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v] -map [v] -map 0:a:0 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest -movflags +faststart /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdJ4zxWv_BD-1.mp4\n"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 24,
+      "finished_at": "2026-09-11T17:20:33.948Z"
     }
   ],
   "vip_pending": {
@@ -17304,34 +17290,34 @@
       "last_attempt_at": "2026-09-11T16:55:33.641Z",
       "retry_at": "2026-09-11T17:03:33.641Z"
     },
-    "DdJ2IUSPMaJ": {
+    "DdJ4zxWv_BD": {
       "source_handle": "traploreross",
-      "source_url": "https://www.instagram.com/traploreross/reel/DdJ2IUSPMaJ/",
-      "shortcode": "DdJ2IUSPMaJ",
-      "first_seen_at": "2026-09-11T16:43:20.461Z",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdJ4zxWv_BD/",
+      "shortcode": "DdJ4zxWv_BD",
+      "first_seen_at": "2026-09-11T17:07:36.566Z",
       "profile_position": 0,
       "state": "retry_pending",
       "attempts": 1,
-      "source_published_at": "2026-09-11T16:31:50.000Z",
-      "visible_caption": "Doodie Lo challenge accepted! $10,000 going to families on both sides who’ve been affected by the war in Chicago 💜💯🕊️",
+      "source_published_at": "2026-09-11T16:55:08.000Z",
+      "visible_caption": "Durk Verdict Predictions with Mickey Truth 👀",
       "story_type": "current",
-      "last_error": "Command failed: ffmpeg -v error -y -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdJ2IUSPMaJ-1-source.mp4 -loop 1 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/assets/rapwire247-logo.png -filter_complex [0:v]crop=720:1280:0:0,setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[1:v]scale=170:170[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v] -map [v] -map 0:a:0 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest -movflags +faststart /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdJ2IUSPMaJ-1.mp4\n",
-      "last_attempt_at": "2026-09-11T16:51:16.938Z",
-      "retry_at": "2026-09-11T16:53:16.938Z"
+      "last_error": "Command failed: ffmpeg -v error -y -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdJ4zxWv_BD-1-source.mp4 -loop 1 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/assets/rapwire247-logo.png -filter_complex [0:v]crop=720:1280:0:0,setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[1:v]scale=170:170[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v] -map [v] -map 0:a:0 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest -movflags +faststart /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdJ4zxWv_BD-1.mp4\n",
+      "last_attempt_at": "2026-09-11T17:15:36.240Z",
+      "retry_at": "2026-09-11T17:17:36.240Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T16:41:09.098Z"
+      "checked_at": "2026-09-11T17:05:48.244Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T16:41:04.902Z"
+      "checked_at": "2026-09-11T17:05:43.579Z"
     },
     "records": {
-      "checked_at": "2026-09-11T16:41:00.712Z"
+      "checked_at": "2026-09-11T17:05:39.317Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T16:40:56.548Z"
+      "checked_at": "2026-09-11T17:05:34.942Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T15:54:18.737Z"
@@ -17349,7 +17335,7 @@
       "checked_at": "2026-09-11T16:41:17.608Z"
     },
     "hiphopdx": {
-      "checked_at": "2026-09-11T15:41:28.357Z"
+      "checked_at": "2026-09-11T17:05:52.788Z"
     },
     "rockstargames": {
       "checked_at": "2026-09-11T16:22:44.304Z"
@@ -17358,7 +17344,7 @@
       "checked_at": "2026-09-11T16:41:13.500Z"
     },
     "hiphop_firstnewsmusic": {
-      "checked_at": "2026-09-11T15:54:14.700Z"
+      "checked_at": "2026-09-11T17:05:57.184Z"
     }
   }
 }

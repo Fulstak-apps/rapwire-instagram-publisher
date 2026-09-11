@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T11:04:39.420Z",
+  "checked_at": "2026-09-11T11:09:49.576Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T10:54:28.954Z",
+    "checked_at": "2026-09-11T11:09:43.311Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T11:09:28.954Z",
+    "next_check_at": "2026-09-11T11:24:43.311Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T10:59:37.314Z",
+  "threads_next_eligible_at": "2026-09-11T11:24:49.001Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T10:44:30.288Z",
-    "threads_at": "2026-09-11T10:44:37.314Z",
+    "threads_at": "2026-09-11T11:09:49.001Z",
     "threads_video_at": "2026-09-11T10:44:37.314Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "542-big30-goes-off-on-people-for-asking-him-for-money-chains-while-h.json",
+      "id": "542-big30-goes-off-on-people-for-asking-him-for-money-chains-while-h",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17991833757042405"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

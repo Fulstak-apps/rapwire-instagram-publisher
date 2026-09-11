@@ -30,6 +30,15 @@ jobs:
           # Publishing only needs the current queue/log state. A shallow checkout
           # avoids cloning the growing media/history repository on every 5-minute run.
           fetch-depth: 1
+          # Media is served to Meta from its immutable raw-GitHub URL; the runner
+          # never reads the bytes. Keeping it out of the checkout removes hundreds
+          # of megabytes from every scheduled cycle.
+          sparse-checkout: |
+            .github
+            scripts
+            queue
+            logs
+            monitor
           ref: main
 
       - uses: actions/setup-node@v6
@@ -60,13 +69,13 @@ jobs:
 
       - name: Save validated queue state
         run: |
-          if [ -z "$(git status --porcelain -- queue media)" ]; then
-            echo "No queue/media changes."
+          if [ -z "$(git status --porcelain -- queue)" ]; then
+            echo "No queue changes."
             exit 0
           fi
           git config user.name "RapWire 24/7"
           git config user.email "actions@users.noreply.github.com"
-          git add queue media
+          git add queue
           git commit -m "Save validated RapWire queue"
           git pull --rebase origin main
           git push

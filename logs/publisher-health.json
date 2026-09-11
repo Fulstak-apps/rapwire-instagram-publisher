@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-11T13:51:22.684Z",
+  "checked_at": "2026-09-11T13:56:32.606Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-11T13:46:11.153Z",
-    "usage": 37,
+    "usage": 38,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-11T14:01:11.153Z",
@@ -22,12 +22,12 @@
     "instagram_remaining": 61,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T13:51:10.215Z",
+    "next_feed_eligible_at": "2026-09-11T14:26:27.047Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-11T13:56:16.312Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T13:21:10.215Z",
+    "instagram_feed_at": "2026-09-11T13:56:27.047Z",
     "threads_at": "2026-09-11T13:41:16.312Z",
     "threads_video_at": "2026-09-11T13:41:16.312Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "566-today-marks-19-years-since-ye-and-50-cent-put-their-albums-head-.json",
+      "id": "566-today-marks-19-years-since-ye-and-50-cent-put-their-albums-head-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18565268917077320",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

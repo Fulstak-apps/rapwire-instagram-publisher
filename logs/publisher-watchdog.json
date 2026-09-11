@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "506-update-there-will-reportedly-be-no-verdict-in-lil-durk-lildurk-s",
@@ -24,10 +24,11 @@
     "557-lil-durk-lildurk-s-last-minute-plea-to-include-ak-x-durk-saying-",
     "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m",
     "560-ynw-melly-s-mother-shares-an-emotional-message-as-he-approaches-",
-    "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar"
+    "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar",
+    "562-blac-youngsta-really-fell-mid-performance-and-tried-to-act-like-"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-11T05:51:40.506Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-11T05:56:39.454Z",
   "deferred": []
 }

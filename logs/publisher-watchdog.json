@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "520-one-beat-38-songs-and-almost-2-billion-combined-streams-you-ve-p",
@@ -17,8 +17,8 @@
     "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m",
     "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-11T12:25:24.644Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-11T12:30:28.659Z",
   "deferred": []
 }

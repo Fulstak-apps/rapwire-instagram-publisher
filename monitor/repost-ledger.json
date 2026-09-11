@@ -6170,6 +6170,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DdKkECJgZs_/",
       "view_count": 0
+    },
+    "DdKlATRjtJS": {
+      "seen_at": "2026-09-11T23:29:52.933Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DdKlATRjtJS/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -8775,35 +8781,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdJ_Jk-P9h1/",
       "queue_id": "598-jury-taking-3-days-could-be-great-news-for-lil-durk-lildurk",
       "video": "media/598-jury-taking-3-days-could-be-great-news-for-lil-durk-lildurk.mp4"
+    },
+    "DdKlATRjtJS": {
+      "queued_at": "2026-09-11T23:30:38.242Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DdKlATRjtJS/",
+      "queue_id": "601-pete-davidson-pays-tribute-to-his-father-a-firefighter-who-tragi",
+      "video": "media/601-pete-davidson-pays-tribute-to-his-father-a-firefighter-who-tragi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T23:38:28.049Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc_KAyJG1jU/",
-          "stage": "queue",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T23:38:33.893Z"
-    },
     {
       "started_at": "2026-09-09T23:43:36.727Z",
       "candidates": 0,
@@ -17263,6 +17250,16 @@
       "errors": [],
       "mode": "discovery",
       "finished_at": "2026-09-11T23:22:26.163Z"
+    },
+    {
+      "started_at": "2026-09-11T23:27:47.459Z",
+      "candidates": 84,
+      "queued": [
+        "601-pete-davidson-pays-tribute-to-his-father-a-firefighter-who-tragi"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "finished_at": "2026-09-11T23:30:38.242Z"
     }
   ],
   "vip_pending": {

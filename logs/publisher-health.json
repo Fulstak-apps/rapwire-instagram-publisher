@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T18:04:07.200Z",
+  "checked_at": "2026-09-11T18:09:10.937Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 38,
-    "instagram_remaining": 60,
+    "instagram_usage": 39,
+    "instagram_remaining": 59,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T18:34:06.994Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,22 +35,21 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T18:14:03.224Z",
+  "threads_next_eligible_at": "2026-09-11T18:24:10.936Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T18:04:06.994Z",
-    "threads_at": "2026-09-11T17:59:03.224Z",
-    "threads_video_at": "2026-09-11T17:38:46.375Z",
+    "threads_at": "2026-09-11T18:09:10.936Z",
+    "threads_video_at": "2026-09-11T18:09:10.936Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "576-never-forget-when-nba-youngboy-realized-nearly-200-000-people-we.json",
-      "id": "576-never-forget-when-nba-youngboy-realized-nearly-200-000-people-we",
-      "platform": "instagram",
+      "file": "551-ceddy-nash-calls-out-akademiks-for-posting-lul-pab-murder-locati.json",
+      "id": "551-ceddy-nash-calls-out-akademiks-for-posting-lul-pab-murder-locati",
+      "platform": "threads_video_fallback",
       "status": "published",
-      "media_id": "17882904753504357",
-      "content_type": "video"
+      "media_id": "18114396292939491"
     }
   ],
   "failures": [],

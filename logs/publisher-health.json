@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T18:24:25.212Z",
+  "checked_at": "2026-09-11T18:29:32.651Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T18:14:14.178Z",
+    "checked_at": "2026-09-11T18:29:24.851Z",
     "usage": 39,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T18:29:14.178Z",
+    "next_check_at": "2026-09-11T18:44:24.851Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -28,29 +28,28 @@
   },
   "instagram_steps": 0,
   "threads_steps": 1,
-  "facebook_steps": 1,
+  "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
     "item_id": null,
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T18:24:10.936Z",
+  "threads_next_eligible_at": "2026-09-11T18:44:31.330Z",
   "facebook_next_eligible_at": "2026-09-11T18:54:24.895Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T18:04:06.994Z",
-    "threads_at": "2026-09-11T18:09:10.936Z",
-    "threads_video_at": "2026-09-11T18:09:10.936Z",
+    "threads_at": "2026-09-11T18:29:31.330Z",
+    "threads_video_at": "2026-09-11T18:29:31.330Z",
     "facebook_at": "2026-09-11T18:24:24.895Z"
   },
   "publications": [
     {
       "file": "577-lil-durk-lildurk-verdict-predictions-with-mickey-truth.json",
       "id": "577-lil-durk-lildurk-verdict-predictions-with-mickey-truth",
-      "platform": "facebook",
+      "platform": "threads",
       "status": "published",
-      "media_id": "1476500447641392",
-      "permalink": "/reel/1476500447641392/"
+      "media_id": "18094949696268299"
     }
   ],
   "failures": [],

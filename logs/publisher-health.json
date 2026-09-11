@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T12:44:09.746Z",
+  "checked_at": "2026-09-11T12:45:36.807Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 35,
-    "instagram_remaining": 63,
+    "instagram_usage": 36,
+    "instagram_remaining": 62,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T13:14:09.505Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -43,16 +43,7 @@
     "threads_video_at": "2026-09-11T12:36:06.335Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "520-one-beat-38-songs-and-almost-2-billion-combined-streams-you-ve-p.json",
-      "id": "520-one-beat-38-songs-and-almost-2-billion-combined-streams-you-ve-p",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17901693267593190",
-      "content_type": "carousel"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

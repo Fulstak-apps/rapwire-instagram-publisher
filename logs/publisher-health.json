@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T01:13:55.904Z",
+  "checked_at": "2026-09-11T01:18:57.281Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T00:58:54.442Z",
+    "checked_at": "2026-09-11T01:18:51.016Z",
     "usage": 18,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T01:13:54.442Z",
+    "next_check_at": "2026-09-11T01:33:51.016Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 17,
-    "instagram_remaining": 81,
+    "instagram_usage": 18,
+    "instagram_remaining": 80,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T01:43:55.062Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,22 +35,21 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T01:23:53.404Z",
+  "threads_next_eligible_at": "2026-09-11T01:33:57.280Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T01:13:55.062Z",
-    "threads_at": "2026-09-11T01:08:53.404Z",
-    "threads_video_at": "2026-09-11T00:43:36.586Z",
+    "threads_at": "2026-09-11T01:18:57.280Z",
+    "threads_video_at": "2026-09-11T01:18:57.280Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "527-i-got-10-000-for-the-doodie-lo-challenge-will-he-accept-and-do-s.json",
-      "id": "527-i-got-10-000-for-the-doodie-lo-challenge-will-he-accept-and-do-s",
-      "platform": "instagram",
+      "file": "508-lil-uzi-vert-and-mgk-really-didn-t-care-about-getting-kicked-out.json",
+      "id": "508-lil-uzi-vert-and-mgk-really-didn-t-care-about-getting-kicked-out",
+      "platform": "threads_video_fallback",
       "status": "published",
-      "media_id": "18117226312822596",
-      "content_type": "video"
+      "media_id": "18188779120408953"
     }
   ],
   "failures": [],

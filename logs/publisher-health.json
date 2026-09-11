@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T15:32:36.599Z",
+  "checked_at": "2026-09-11T15:37:29.444Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T15:22:12.910Z",
-    "usage": 39,
+    "checked_at": "2026-09-11T15:37:28.548Z",
+    "usage": 38,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T15:37:12.910Z",
+    "next_check_at": "2026-09-11T15:52:28.548Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 39,
-    "instagram_remaining": 59,
+    "instagram_usage": 38,
+    "instagram_remaining": 60,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T15:37:14.453Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,15 +43,7 @@
     "threads_video_at": "2026-09-11T15:32:36.598Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "549-lucki-names-his-chicago-rapper-mt-rushmore-he-also-reacted-to-hi.json",
-      "id": "549-lucki-names-his-chicago-rapper-mt-rushmore-he-also-reacted-to-hi",
-      "platform": "threads_video_fallback",
-      "status": "published",
-      "media_id": "18369117388215301"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T17:53:59.410Z",
+  "checked_at": "2026-09-11T17:59:03.693Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T17:43:41.773Z",
-    "usage": 39,
+    "checked_at": "2026-09-11T17:58:56.727Z",
+    "usage": 38,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T17:58:41.773Z",
+    "next_check_at": "2026-09-11T18:13:56.727Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 39,
-    "instagram_remaining": 59,
+    "instagram_usage": 38,
+    "instagram_remaining": 60,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T17:58:40.348Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T17:53:46.375Z",
+  "threads_next_eligible_at": "2026-09-11T18:14:03.224Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T17:28:40.348Z",
-    "threads_at": "2026-09-11T17:38:46.375Z",
+    "threads_at": "2026-09-11T17:59:03.224Z",
     "threads_video_at": "2026-09-11T17:38:46.375Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar.json",
+      "id": "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17909589372495001"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

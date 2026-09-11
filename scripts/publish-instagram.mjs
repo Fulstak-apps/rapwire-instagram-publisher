@@ -1,32 +1,16 @@
-import {signedCaption,refreshCaptionStyle,refreshThreadsCopy} from "./caption-style.mjs";
-import {threadsTopicTag} from './audience-policy.mjs';
 import fs from "node:fs/promises";
 import path from "node:path";
-import {advanceMediaPost} from "./carousel-state.mjs";
-import {isMediaRepost, validMediaRepost} from "./repost-media-policy.mjs";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
 import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
-import {reportingGate,editorialRank,recentPosts,contentLane} from './editorial-policy.mjs';
-import {videoLayoutGate,verifyVideoLayoutFiles} from './video-layout-policy.mjs';
-import {normalizeSources,sourcePostsToday} from './source-policy.mjs';
-import {metaClient} from './meta-client.mjs';
-import {deliverFacebookPage,facebookMedia} from './facebook-page.mjs';
-import {instagramBlockKind} from './instagram-auth-state.mjs';
-import {storyCanRun, shouldPreferStory} from './instagram-lane-policy.mjs';
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
 const threadsToken = process.env.THREADS_ACCESS_TOKEN;
-let threadsUserId = process.env.THREADS_USER_ID;
-const facebookPageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+const threadsUserId = process.env.THREADS_USER_ID;
+const facebookToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
 const facebookPageId = process.env.FACEBOOK_PAGE_ID;
 const publishInstagramStories = process.env.PUBLISH_INSTAGRAM_STORIES === "true";
-// The normal lane always wins. This is only a continuity guard for the case
-// where the local collector is temporarily unable to capture a fresh clip.
-// It makes a real playable-video post from the approved back catalogue rather
-// than filling the video channel with a text-only prompt.
-const threadsVideoFallbackMs = Math.max(30, Number(process.env.THREADS_VIDEO_FALLBACK_MINUTES || 30)) * 60_000;
 const repository = process.env.GITHUB_REPOSITORY;
 const refName = process.env.GITHUB_REF_NAME || "main";
 
@@ -36,121 +20,34 @@ if (!instagramToken || !instagramUserId || !threadsToken || !threadsUserId || !r
 
 const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
-const facebookConfigured=Boolean(facebookPageToken&&facebookPageId);
-let facebookApi=facebookConfigured?metaClient('https://graph.facebook.com',facebookPageToken):null;
-let facebookTokenResolved=!facebookConfigured;
-let facebookUsingPageToken=false;
-
-// The secret can be either a Page token or a user token granted Page access.
-// Facebook requires the actual Page token for uploads (especially unpublished
-// carousel children), so exchange only in memory and never write it to logs.
-async function resolveFacebookPageApi() {
-  if (!facebookConfigured || facebookTokenResolved) return facebookApi;
-  facebookTokenResolved=true;
-  try {
-    const page=await facebookApi.get(`/${facebookPageId}`,{fields:'id,access_token'});
-    if (page.access_token) {
-      facebookApi=metaClient('https://graph.facebook.com',page.access_token);
-      facebookUsingPageToken=true;
-      console.log('Facebook: resolved Page-scoped publishing token');
-    } else console.warn('Facebook: configured token did not return a Page-scoped publishing token');
-  } catch (error) {
-    // Keep the configured token as a fallback so existing Page-token setups
-    // remain compatible. The later upload error is logged against its item.
-    console.warn(`Facebook: Page-token resolution unavailable (${error.message})`);
-  }
-  return facebookApi;
-}
+const facebookBase = "https://graph.facebook.com/v26.0";
 const queueDir = "queue";
 const logsDir = "logs";
 const attemptsLog = path.join(logsDir, "publish-attempts.jsonl");
 const cooldownPath = path.join(logsDir, "instagram-cooldown.json");
 const quotaPath = path.join(logsDir, "instagram-publishing-quota.json");
-const threadsCooldownPath = path.join(logsDir, 'threads-delivery-cooldown.json');
-let threadsCooldown = JSON.parse(await fs.readFile(threadsCooldownPath, 'utf8').catch(error => { if(error.code==='ENOENT') return '{}'; throw error; }));
-async function resolveVerifiedThreadsIdentity() {
-  const expected=String(process.env.RAPWIRE_THREADS_EXPECTED_USERNAME||'').replace(/^@/,'').toLowerCase();
-  if (!expected || !threadsToken) return;
-  try {
-    const url=new URL(`${threadsBase}/me`);
-    url.searchParams.set('fields','id,username'); url.searchParams.set('access_token',threadsToken);
-    const response=await fetch(url,{signal:AbortSignal.timeout(30_000)});
-    const profile=await response.json();
-    if (!response.ok || profile.error) throw new Error(profile.error?.message||'Threads identity check failed');
-    if (String(profile.username||'').replace(/^@/,'').toLowerCase()!==expected) throw new Error(`Threads token belongs to @${profile.username||'unknown'}, not @${expected}`);
-    if (String(profile.id)!==String(threadsUserId)) console.warn('Threads: refreshed stale configured profile ID for verified @rapwire247');
-    threadsUserId=String(profile.id);
-  } catch (error) {
-    threadsCooldown={until:new Date(Date.now()+60*60000).toISOString(),reason:`Threads identity: ${error.message}`};
-    await fs.writeFile(threadsCooldownPath,JSON.stringify(threadsCooldown,null,2)+'\n');
-    console.error(`Threads delivery paused: ${error.message}`);
-  }
-}
+const threadsQuotaPath = path.join(logsDir, "threads-publishing-quota.json");
+
+let threadsQuota = JSON.parse(await fs.readFile(threadsQuotaPath, "utf8").catch(error => {
+  if (error.code === "ENOENT") return "{}";
+  throw error;
+}));
 let quota = JSON.parse(await fs.readFile(quotaPath, "utf8").catch(error => { if (error.code === "ENOENT") return "{}"; throw error; }));
 let cooldown = JSON.parse(await fs.readFile(cooldownPath, "utf8").catch(error => {
   if (error.code === "ENOENT") return "{}";
   throw error;
 }));
+
 if (Date.parse(cooldown.until || "") > Date.now()) {
   console.log(`Instagram rate-limit cooldown until ${cooldown.until}; saved uploads retained.`);
 }
+
 const runEvents = [];
 let instagramSteps = 0;
 let threadsSteps = 0;
-let facebookSteps = 0;
 let instagramLane = "";
-const instagramAvailable = () => !(Date.parse(cooldown.until || "") > Date.now()) && quota.blocked !== true;
-
-// A bad asset or a permanently rejected container must never pin the whole
-// Instagram lane to one queue item. Account-wide errors are deliberately kept
-// as account-wide holds; rotating the queue for those errors would only make a
-// Meta throttle worse.
-function isAccountWideInstagramFailure(error = "") {
-  return /error validating access token|session has been invalidated|oauth(?:exception)?.*code[^0-9]*190|\b2207042\b|\b2207050\b|user access is restricted|instagram account is restricted|publishing (?:capacity|quota).*exhausted|media publish limit|application request limit|rate.?limit|too many requests|too many actions/i.test(String(error));
-}
-
-function isInstagramAccountRestricted(error = "") {
-  return /\b2207050\b|user access is restricted|instagram account is restricted/i.test(String(error));
-}
-
-async function holdRestrictedInstagramAccount(error) {
-  if (!isInstagramAccountRestricted(error)) return false;
-  // Code 25/2207050 is an account restriction, not a single bad reel.  Do not
-  // hammer Meta every five minutes; preserve the queue and let Threads/Facebook
-  // continue while the account owner resolves the restriction in Instagram.
-  cooldown = {
-    detected_at: new Date().toISOString(),
-    until: new Date(Date.now() + 6 * 60 * 60_000).toISOString(),
-    reason: "Instagram account restricted (Meta 25/2207050); feed retries paused while other platforms continue."
-  };
-  await fs.mkdir(logsDir, { recursive: true });
-  await fs.writeFile(cooldownPath, JSON.stringify(cooldown, null, 2) + "\n");
-  return true;
-}
-
-function recordInstagramDeliveryFailure(item, error, {story = false} = {}) {
-  const prefix = story ? "instagram_story" : "instagram";
-  const message = String(error?.message || error);
-  const errorKey = `${prefix}_error`;
-  const retryKey = `${prefix}_retry_at`;
-  const attemptsKey = `${prefix}_failure_count`;
-  const statusKey = `${prefix}_status`;
-  item[errorKey] = message;
-  if (isAccountWideInstagramFailure(message)) {
-    item[retryKey] = new Date(Date.now() + 10 * 60_000).toISOString();
-    return {terminal: false, accountWide: true, accountRestricted: isInstagramAccountRestricted(message), attempts: Number(item[attemptsKey] || 0)};
-  }
-  const attempts = Number(item[attemptsKey] || 0) + 1;
-  item[attemptsKey] = attempts;
-  if (attempts >= 3) {
-    item[statusKey] = "review_required";
-    item[`${prefix}_skip_reason`] = "three_item_specific_delivery_failures";
-    delete item[retryKey];
-    return {terminal: true, accountWide: false, attempts};
-  }
-  item[retryKey] = new Date(Date.now() + 10 * 60_000).toISOString();
-  return {terminal: false, accountWide: false, attempts};
-}
+let facebookSteps = 0;
+const instagramAvailable = () => instagramCycleDue && !(Date.parse(cooldown.until || "") > Date.now()) && quota.blocked !== true;
 
 async function checkInstagramRateLimit(response, payload) {
   if (payload.error?.code === 9 && payload.error?.error_subcode === 2207042) {
@@ -173,65 +70,25 @@ async function checkInstagramRateLimit(response, payload) {
 
 function assertInstagramAvailable() {
   if (Date.parse(cooldown.until || "") > Date.now()) throw new Error(`Instagram cooling down until ${cooldown.until}`);
-  if (quota.blocked) throw new Error(`Instagram publishing deferred: ${quota.reason || 'capacity unavailable'}; next check ${quota.next_check_at}`);
+  if (quota.blocked) throw new Error(`Instagram publishing quota is blocked; capacity check ${quota.next_check_at}`);
 }
+
 const queueNames = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
 const queueRecords = await Promise.all(queueNames.map(async (name) => ({
   name,
   item: JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8"))
 })));
-const sourceRegistry=normalizeSources(JSON.parse(await fs.readFile('monitor/sources.json','utf8').catch(error=>{
-  // Publisher integration fixtures intentionally contain only queue/media.
-  // Production always has the registry; an absent fixture registry means no
-  // source-specific cap rather than a startup failure.
-  if(error.code==='ENOENT') return '{"sources":[]}'; throw error;
-})));
-const artistHandleRegistry=JSON.parse(await fs.readFile('monitor/artist-handles.json','utf8').catch(error=>{
-  if(error.code==='ENOENT') return '[]'; throw error;
-}));
-const sourceByHandle=new Map(sourceRegistry.map(source=>[source.handle,source]));
-const sourceFeedAllowed=item=>{
-  const source=sourceByHandle.get(String(item.source_handle||'').toLowerCase());
-  // A source cap is opt-in.  Most approved sources intentionally have no
-  // `daily_maximum`; comparing a count with `undefined` always returns false,
-  // which silently blocks every otherwise-ready repost from that source.
-  if(!source||!Number.isFinite(source.daily_maximum)||source.daily_maximum===Infinity)return true;
-  // Count confirmed Instagram feed posts only. The collector separately limits
-  // queued items, so an unfinished cross-platform delivery cannot inflate the
-  // cap or allow a third feed post.
-  return sourcePostsToday(source,queueRecords.map(record=>record.item).filter(record=>record.id!==item.id&&record.instagram_media_id),Date.now()).length<source.daily_maximum;
-};
-const videoLayoutChecks=new WeakMap(),videoLayoutChecksByFile=new Map();
-const footageOnlyAllowed=item=>videoLayoutGate(item).allowed && videoLayoutChecks.get(item)?.allowed!==false;
-for (const {name,item} of queueRecords) {
-  // Immutable completed history is not being uploaded again. Avoid re-reading
-  // its entire video archive on every scheduled publisher run.
-  const deliveryPending=['ready','published'].includes(item.status) && (!item.instagram_media_id||!item.threads_media_id
-    || publishInstagramStories&&!item.instagram_story_media_id&&(item.story||item.content_type==='video'));
-  const layoutCheck=deliveryPending?await verifyVideoLayoutFiles(item):videoLayoutGate(item);
-  videoLayoutChecks.set(item,layoutCheck);videoLayoutChecksByFile.set(name,layoutCheck);
-  // Retain every caption and publication marker on unsafe legacy assets.
-  if(!layoutCheck.allowed)continue;
-  const changed=refreshCaptionStyle(item,artistHandleRegistry);
-  if (refreshThreadsCopy(item) || changed) await save(path.join(queueDir,name),item);
-}
-const recentPublications=recentPosts(queueRecords.map(x=>x.item));
-const isFacebookVideoItem=item=>item.content_type==='video'
-  || (Array.isArray(item.media_items) && item.media_items.length===1 && item.media_items[0]?.type==='video');
+
 const files = queueRecords
   .sort((left, right) => {
     const readyDelta = Number(right.item.status === "ready") - Number(left.item.status === "ready");
     if (readyDelta) return readyDelta;
-    const videoDelta=Number(isFacebookVideoItem(right.item))-Number(isFacebookVideoItem(left.item));
-    if(videoDelta) return videoDelta;
-    const priorityDelta = editorialRank(right.item,recentPublications) - editorialRank(left.item,recentPublications);
+    const priorityDelta = Number(right.item.publish_priority || 0) - Number(left.item.publish_priority || 0);
     return priorityDelta || left.name.localeCompare(right.name);
   })
   .map((record) => record.name);
-// Respect the workflow's pacing limit. The newsroom may prepare a batch, but
-// only the configured number of feed posts should go live in one cycle.
+
 const maxFeedPostsPerRun = 1;
-let videoAttemptsThisRun = 0;
 const pacingPath = path.join(logsDir, "publisher-pacing.json");
 const recoveryAuthorization = JSON.parse(await fs.readFile(path.join(logsDir, 'instagram-recovery.json'), 'utf8').catch(error => {
   if (error.code === 'ENOENT') return '{}';
@@ -241,22 +98,27 @@ const pacing = JSON.parse(await fs.readFile(pacingPath, "utf8").catch(error => {
   if (error.code === "ENOENT") return "{}";
   throw error;
 }));
-// GitHub Actions already serializes this workflow. A 30-second guard only
-// blocks a genuine duplicate start; the old two-minute guard regularly made a
-// newly queued run do no delivery work after a preceding state-only run.
-if (Date.now() - Date.parse(pacing.last_run_at || "") < 30_000) {
-  console.log("Duplicate processing-check start within 30 seconds; delivery state is retained.");
+
+const runStartedAt = new Date().toISOString();
+if (Date.now() - Date.parse(pacing.last_run_at || "") < THREADS_INTERVAL_MS) {
+  console.log("One-minute scheduler interval has not elapsed; no platform requests made.");
   process.exit(0);
 }
+const instagramCycleDue = Date.now() - (Date.parse(pacing.last_instagram_cycle_at || pacing.last_run_at || "") || 0) >= 120_000;
+if (instagramCycleDue) pacing.last_instagram_cycle_at = runStartedAt;
 await fs.mkdir(logsDir, { recursive: true });
-await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString() }) + "\n");
+await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: runStartedAt }) + "\n");
 let feedPostsPublishedThisRun = 0;
 let olderStoryAttemptsThisRun = 0;
+let videoAttemptsThisRun = 0;
+
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const requestTimeoutMs = 90_000;
+const signature = "@Rapwire247";
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
 
 async function refreshQuota() {
+  if (!instagramCycleDue) return;
   const recoveryItem = queueRecords.find(({item}) => item.id === recoveryAuthorization.item_id)?.item;
   const recoveryNeedsCheck = recoveryAuthorization.mode === 'one-feed-and-story'
     && Date.parse(recoveryAuthorization.expires_at || '') > Date.now()
@@ -272,45 +134,77 @@ async function refreshQuota() {
     const data = payload.data?.[0];
     const usage = Number(data?.quota_usage), total = Number(data?.config?.quota_total);
     if (!response.ok || payload.error || !Number.isFinite(usage) || !Number.isFinite(total) || total <= 0) throw new Error(`Quota check unavailable: ${JSON.stringify(payload)}`);
-    // Meta can reject at a lower usage than config.quota_total advertises.
-    // Keep its actual rejection authoritative until usage falls below it.
     const rejectedAtUsage = quota.observed_rejection_at_usage ?? (/9\/2207042/.test(quota.reason || "") ? quota.usage : undefined);
     const effectiveTotal = rejectedAtUsage > 0 && Date.now() - Date.parse(quota.detected_at || "") < 86400000 ? Math.min(total, rejectedAtUsage) : total;
     quota = { ...quota, checked_at: new Date().toISOString(), usage, total, effective_total: effectiveTotal, observed_rejection_at_usage: rejectedAtUsage, blocked: usage >= effectiveTotal, next_check_at: new Date(Date.now() + (usage >= effectiveTotal ? 3600000 : 15 * 60000)).toISOString(), reason: usage >= effectiveTotal ? "Publishing capacity exhausted; honoring actual publish rejection" : "Capacity available" };
   } catch (error) {
-    const authFailure = instagramBlockKind(error.message) === 'authentication';
-    quota = { ...quota, blocked: true, next_check_at: new Date(Date.now() + (authFailure ? 5 * 60_000 : 3600000)).toISOString(), reason: error.message };
+    quota = { ...quota, blocked: true, next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: error.message };
     console.error(error.message);
   }
   await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
 }
 await refreshQuota();
-await resolveVerifiedThreadsIdentity();
 
 async function logAttempt(event) {
-  // This file is committed after every publisher run.  Leaving it unbounded
-  // eventually makes checkout, rebase and state-save steps slow enough to
-  // miss the next delivery window.  Keep a generous recent audit trail while
-  // preventing an ever-growing JSONL file from becoming a loop failure.
-  if (!logAttempt.trimmed) {
-    logAttempt.trimmed = true;
-    try {
-      const stat = await fs.stat(attemptsLog);
-      if (stat.size > 5 * 1024 * 1024) {
-        const lines = (await fs.readFile(attemptsLog, "utf8")).trimEnd().split("\n");
-        const recent = `${lines.slice(-12_000).join("\n")}\n`;
-        const temporary = `${attemptsLog}.${process.pid}.tmp`;
-        await fs.writeFile(temporary, recent);
-        await fs.rename(temporary, attemptsLog);
-        console.log(`Trimmed publish attempt log from ${stat.size} bytes to the latest ${Math.min(lines.length, 12_000)} events.`);
-      }
-    } catch (error) {
-      if (error.code !== "ENOENT") console.warn(`Publish attempt-log cleanup skipped: ${error.message}`);
-    }
-  }
   runEvents.push(event);
   await fs.mkdir(logsDir, { recursive: true });
   await fs.appendFile(attemptsLog, `${JSON.stringify({ timestamp: new Date().toISOString(), ...event })}\n`);
+}
+
+const localThreadsUsage = new Set(queueRecords.map(({ item }) => item)
+  .filter(item => item.threads_media_id && Date.parse(item.threads_published_at || "") > Date.now() - 86400000)
+  .map(item => item.threads_media_id)).size;
+const threadsAvailable = () => threadsQuota.blocked === false && !(Date.parse(threadsQuota.until || "") > Date.now())
+  && Number.isFinite(threadsQuota.total) && Number.isFinite(threadsQuota.usage)
+  && Math.max(localThreadsUsage, threadsQuota.usage) < threadsQuota.total;
+
+async function checkThreadsRateLimit(response, payload) {
+  if (response.status !== 429 && ![4, 9, 17, 32, 613].includes(payload.error?.code)) return;
+  const retry = response.headers.get("retry-after");
+  const serverDelay = Number.isFinite(Number(retry)) ? Math.max(0, Number(retry) * 1000) : Math.max(0, Date.parse(retry) - Date.now()) || 0;
+  const until = new Date(Date.now() + Math.max(serverDelay, 30 * 60000)).toISOString();
+  threadsQuota = { ...threadsQuota, blocked: true, until, next_check_at: until, reason: "Threads rate or publishing limit; retaining saved uploads" };
+  await fs.writeFile(threadsQuotaPath, JSON.stringify(threadsQuota, null, 2) + "\n");
+  throw Object.assign(new Error(`Threads limited until ${until}`), { definitiveRejection: true });
+}
+
+async function refreshThreadsQuota() {
+  if (Date.parse(threadsQuota.next_check_at || "") > Date.now() || Date.parse(threadsQuota.until || "") > Date.now()) return;
+  try {
+    const url = new URL(`${threadsBase}/${threadsUserId}/threads_publishing_limit`);
+    url.searchParams.set("fields", "quota_usage,config");
+    url.searchParams.set("access_token", threadsToken);
+    const response = await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) });
+    const payload = await response.json();
+    await checkThreadsRateLimit(response, payload);
+    const data = payload.data?.[0];
+    const usage = Number(data?.quota_usage);
+    const total = Number(data?.config?.quota_total);
+    if (!response.ok || payload.error || !Number.isFinite(usage) || !Number.isFinite(total) || total <= 0) throw new Error(`Threads quota unavailable: ${JSON.stringify(payload)}`);
+    const blocked = Math.max(localThreadsUsage, usage) >= total;
+    threadsQuota = {
+      checked_at: new Date().toISOString(), usage, total, blocked,
+      next_check_at: new Date(Date.now() + (blocked ? 60 : 15) * 60000).toISOString(),
+      reason: blocked ? "Threads publishing quota exhausted" : "Capacity available"
+    };
+  } catch (error) {
+    threadsQuota = { ...threadsQuota, blocked: true, next_check_at: threadsQuota.until || new Date(Date.now() + 15 * 60000).toISOString(), reason: error.message };
+    console.error(error.message);
+    await logAttempt({ platform: "threads", status: "failed", error: error.message });
+  }
+  await fs.writeFile(threadsQuotaPath, JSON.stringify(threadsQuota, null, 2) + "\n");
+}
+await refreshThreadsQuota();
+
+function signedCaption(value, item = {}) {
+  const source = String(item.source_handle || "").replace(/^@/, "");
+  const sourceLine = /^[A-Za-z0-9_.]+$/.test(source) ? `\n@${source}` : "";
+  return String(value || "")
+    .trim()
+    .replace(/(?:\n\n)?Rap\s*Wire 24\/7\.?\s*\n@Rapwire247(?:\s*\n@[A-Za-z0-9_.]+)?\s*$/i, "")
+    .replace(/(?:\n\n)?RapWire 24\/7\.?\s*$/i, "")
+    .replace(/(?:\n\n)?@Rapwire247\s*$/i, "")
+    .trim() + `\n\nRap Wire 24/7\n${signature}${sourceLine}`;
 }
 
 function slideUrl(item, index) {
@@ -329,7 +223,6 @@ function videoUrl(item) {
 }
 
 function hasPublishableVisual(item) {
-  if (isMediaRepost(item)) return validMediaRepost(item);
   if (item.visual_asset_type === "original_graphic" && item.visual_asset_rights === "owned") return true;
   if (item.visual_asset_type === "source_photo" && item.visual_asset_rights === "source_post_repost") {
     return Boolean(item.story || item.slides?.length);
@@ -405,27 +298,66 @@ async function waitForInstagramContainer(containerId) {
 }
 
 async function threadsPost(endpoint, fields) {
+  if (!threadsAvailable()) throw Object.assign(new Error("Threads publishing capacity unavailable; queued for later"), { definitiveRejection: true });
   if (!threadsToken || !threadsUserId) throw new Error("Missing THREADS_ACCESS_TOKEN or THREADS_USER_ID");
-  const submit = async requestFields => {
-    const body = new URLSearchParams({ ...requestFields, access_token: threadsToken });
-    const response = await fetch(`${threadsBase}/${threadsUserId}/${endpoint}`, {
+  const body = new URLSearchParams({ ...fields, access_token: threadsToken });
+  const response = await fetch(`${threadsBase}/${threadsUserId}/${endpoint}`, {
+    method: "POST",
+    body,
+    signal: AbortSignal.timeout(requestTimeoutMs)
+  });
+  const payload = await response.json();
+  await checkThreadsRateLimit(response, payload);
+  if (!response.ok || payload.error) throw Object.assign(new Error(`Threads ${endpoint} failed: ${JSON.stringify(payload)}`), { definitiveRejection: Boolean(payload.error) && response.status < 500 });
+  if (endpoint === "threads_publish") {
+    threadsQuota.usage = Math.max(localThreadsUsage, threadsQuota.usage) + 1;
+    threadsQuota.blocked = threadsQuota.usage >= threadsQuota.total;
+    await fs.writeFile(threadsQuotaPath, JSON.stringify(threadsQuota, null, 2) + "\n");
+  }
+  return payload;
+}
+
+async function facebookPost(item, itemPath) {
+  if (!facebookToken || !facebookPageId || item.facebook_media_id || item.content_type !== "video") return false;
+  
+  const lastFB = Date.parse(pacing.last_facebook_published_at || '') || 0;
+  if (Date.now() - lastFB < FACEBOOK_INTERVAL_MS) return false;
+
+  try {
+    if (item.content_type !== "video" || !item.video) return;
+    const sourceUrl = videoUrl(item);
+    const caption = signedCaption(item.caption, item);
+    
+    const formData = new FormData();
+    formData.append("source", sourceUrl);
+    formData.append("description", caption);
+    formData.append("access_token", facebookToken);
+
+    const response = await fetch(`${facebookBase}/${facebookPageId}/videos`, {
       method: "POST",
-      body,
+      body: formData,
       signal: AbortSignal.timeout(requestTimeoutMs)
     });
-    return {response, payload: await response.json()};
-  };
-  let {response, payload} = await submit(fields);
-  // Topic support varies between Threads API versions/accounts. A rejected
-  // optional topic must never block the actual reporting post.
-  const topicRejected = fields.topic_tag && /topic[ _-]?tag|unsupported parameter|invalid parameter/i.test(JSON.stringify(payload));
-  if ((!response.ok || payload.error) && topicRejected) {
-    const {topic_tag, ...withoutTopic} = fields;
-    ({response, payload} = await submit(withoutTopic));
-    if (response.ok && !payload.error) console.warn(`Threads ${endpoint}: topic tag unavailable; published without it`);
+    const payload = await response.json();
+    
+    if (!response.ok || payload.error) throw new Error(`Facebook failed: ${JSON.stringify(payload)}`);
+    
+    item.facebook_media_id = payload.id;
+    item.facebook_published_at = new Date().toISOString();
+    pacing.last_facebook_published_at = item.facebook_published_at;
+    
+    await save(itemPath, item);
+    await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_facebook_published_at: item.facebook_published_at }) + "\n");
+    await logAttempt({ file: itemPath, id: item.id, platform: "facebook", status: "published", media_id: payload.id });
+    console.log(`Published Facebook ${item.id}: ${payload.id}`);
+    return true;
+  } catch (error) {
+    item.facebook_error = error.message;
+    await save(itemPath, item);
+    await logAttempt({ file: itemPath, id: item.id, platform: "facebook", status: "failed", error: error.message });
+    console.error(`Facebook failed for ${item.id}: ${error.message}`);
+    return false;
   }
-  if (!response.ok || payload.error) throw Object.assign(new Error(`Threads ${endpoint} failed: ${JSON.stringify(payload)}`), { definitiveRejection: Boolean(payload.error) && response.status < 500 });
-  return payload;
 }
 
 async function inspectContainer(platform, id) {
@@ -436,6 +368,7 @@ async function inspectContainer(platform, id) {
   const response = await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) });
   const payload = await response.json();
   if (platform === "instagram") await checkInstagramRateLimit(response, payload);
+  else await checkThreadsRateLimit(response, payload);
   if (!response.ok || payload.error) throw new Error(`${platform} status check failed: ${JSON.stringify(payload)}`);
   return payload;
 }
@@ -462,48 +395,13 @@ async function verifyPublication(item, itemPath, prefix) {
   await save(itemPath, item);
 }
 
-async function waitForThreadsContainer(containerId) {
-  for (let attempt = 0; attempt < 30; attempt += 1) {
-    const url = new URL(`${threadsBase}/${containerId}`);
-    url.searchParams.set("fields", "status,error_message");
-    url.searchParams.set("access_token", threadsToken);
-    const payload = await (await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) })).json();
-    if (payload.status === "FINISHED") return;
-    if (["ERROR", "EXPIRED"].includes(payload.status)) {
-      throw new Error(`Threads container ${containerId} failed: ${JSON.stringify(payload)}`);
-    }
-    await sleep(10_000);
-  }
-  throw new Error(`Threads container ${containerId} did not finish in time`);
-}
-
-async function publishMediaFeed(item,itemPath,platform) {
-  const media = isMediaRepost(item) ? item.media_items.map(m=>({...m,url:mediaUrl(m.path)}))
-    : item.slides.map((p,index)=>({type:'image',url:slideUrl(item,index)}));
-  const ig=platform==='instagram';
-  const create=fields=>ig?instagramPost('media',fields):threadsPost('threads',fields);
-  const fields=m=>m.type==='video'?{media_type:'VIDEO',video_url:m.url}
-    : ig?{image_url:m.url}:{media_type:'IMAGE',image_url:m.url};
-  const copy=ig?{caption:signedCaption(item.caption,item)}:{
-    text:signedCaption(item.threads_text||item.caption,item),
-    topic_tag:item.threads_topic_tag||threadsTopicTag(item.body||item.threads_text||item.caption,{artistMentions:item.artist_mentions||[]})
-  };
-  return advanceMediaPost({item,prefix:platform,media,
-    createChild:m=>create({...fields(m),is_carousel_item:'true'}),
-    createSingle:m=>create({...fields(m),...copy}),
-    createParent:ids=>create({media_type:'CAROUSEL',children:ids.join(','),...copy}),
-    inspect:id=>inspectContainer(platform,id),
-    publish:id=>ig?instagramPost('media_publish',{creation_id:id},item,'feed'):threadsPost('threads_publish',{creation_id:id}),
-    save:()=>save(itemPath,item)});
-}
-
 async function prepareInstagramReel(item, itemPath) {
   if (!item.instagram_container_id) {
     const reel = await instagramPost("media", {
-    media_type: "REELS",
-    video_url: videoUrl(item),
-    caption: signedCaption(item.caption, item),
-    share_to_feed: "true"
+      media_type: "REELS",
+      video_url: videoUrl(item),
+      caption: signedCaption(item.caption, item),
+      share_to_feed: "true"
     });
     item.instagram_container_id = reel.id;
     item.instagram_container_created_at = new Date().toISOString();
@@ -517,16 +415,30 @@ async function publishInstagramReel(item, itemPath) {
   return advanceContainer({ item, prefix: "instagram",
     create: () => instagramPost("media", { media_type: "REELS", video_url: videoUrl(item), caption: signedCaption(item.caption, item), share_to_feed: "true" }),
     inspect: id => inspectContainer("instagram", id),
-    publish: id => instagramPost("media_publish", { creation_id: id }, item, 'feed'),
+    publish: id => instagramPost("media_publish", { creation_id: id }, item, "feed"),
     save: () => save(itemPath, item)
   });
 }
 
+async function publishInstagramFeed(item) {
+  const childIds = [];
+  for (let index = 0; index < item.slides.length; index += 1) {
+    const child = await instagramPost("media", { image_url: slideUrl(item, index), is_carousel_item: "true" });
+    await waitForInstagramContainer(child.id);
+    childIds.push(child.id);
+  }
+  const carousel = await instagramPost("media", {
+    media_type: "CAROUSEL",
+    children: childIds.join(","),
+    caption: signedCaption(item.caption, item)
+  });
+  await waitForInstagramContainer(carousel.id);
+  return instagramPost("media_publish", { creation_id: carousel.id });
+}
+
 async function publishInstagramStory(item, itemPath) {
-  // Use a dedicated playable Story preview when prepared; never shorten the Reel.
   const isVideoItem = item.content_type === "video";
   if (!isVideoItem && !item.story) throw new Error("Story asset missing");
-  // Recover the container ID left only inside legacy timeout errors.
   const oldId = String(item.instagram_story_error || "").match(/Instagram container (\d+) did not finish/);
   if (!item.instagram_story_container_id && oldId) {
     item.instagram_story_container_id = oldId[1];
@@ -537,61 +449,63 @@ async function publishInstagramStory(item, itemPath) {
       ? { media_type: "STORIES", video_url: item.story_video ? mediaUrl(item.story_video) : videoUrl(item) }
       : { media_type: "STORIES", image_url: storyUrl(item) }),
     inspect: id => inspectContainer("instagram", id),
-    publish: id => instagramPost("media_publish", { creation_id: id }, item, 'story'),
+    publish: id => instagramPost("media_publish", { creation_id: id }, item, "story"),
     save: () => save(itemPath, item)
   });
+}
+
+async function publishThreadsCarousel(item) {
+  const children = [];
+  for (let index = 0; index < item.slides.length; index += 1) {
+    const child = await threadsPost("threads", {
+      media_type: "IMAGE",
+      image_url: slideUrl(item, index),
+      is_carousel_item: "true"
+    });
+    await waitForThreadsContainer(child.id);
+    children.push(child.id);
+  }
+  const carousel = await threadsPost("threads", {
+    media_type: "CAROUSEL",
+    children: children.join(","),
+    text: signedCaption(item.threads_text || item.caption, item)
+  });
+  await waitForThreadsContainer(carousel.id);
+  return threadsPost("threads_publish", { creation_id: carousel.id });
+}
+
+async function waitForThreadsContainer(containerId) {
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    const url = new URL(`${threadsBase}/${containerId}`);
+    url.searchParams.set("fields", "status,error_message");
+    url.searchParams.set("access_token", threadsToken);
+    const response = await fetch(url, { signal: AbortSignal.timeout(requestTimeoutMs) });
+    const payload = await response.json();
+    await checkThreadsRateLimit(response, payload);
+    if (!response.ok || payload.error) throw new Error(`Threads status check failed: ${JSON.stringify(payload)}`);
+    if (payload.status === "FINISHED") return;
+    if (["ERROR", "EXPIRED"].includes(payload.status)) {
+      throw new Error(`Threads container ${containerId} failed: ${JSON.stringify(payload)}`);
+    }
+    await sleep(60_000);
+  }
+  throw new Error(`Threads container ${containerId} did not finish in time`);
 }
 
 async function publishThreadsVideo(item, itemPath) {
-  return advanceContainer({ item, prefix: "threads",
-    create: () => threadsPost("threads", {
-      media_type: "VIDEO", video_url: videoUrl(item), text: signedCaption(item.threads_text || item.caption, item),
-      topic_tag:item.threads_topic_tag||threadsTopicTag(item.body||item.threads_text||item.caption,{artistMentions:item.artist_mentions||[]})
-    }),
+  return advanceContainer({ item, prefix: "threads", checkIntervalMs: THREADS_INTERVAL_MS,
+    create: () => threadsPost("threads", { media_type: "VIDEO", video_url: videoUrl(item), text: signedCaption(item.threads_text || item.caption, item) }),
     inspect: id => inspectContainer("threads", id),
     publish: id => threadsPost("threads_publish", { creation_id: id }),
     save: () => save(itemPath, item)
   });
-}
-
-async function publishThreadsVideoFallback(item, itemPath, file) {
-  if (threadsSteps >= 1 || Date.parse(threadsCooldown.until || '') > Date.now()) return false;
-  const published = await advanceContainer({ item, prefix: "threads_replay",
-    create: () => threadsPost("threads", {
-      media_type: "VIDEO", video_url: videoUrl(item), text: signedCaption(item.threads_text || item.caption, item),
-      topic_tag:item.threads_topic_tag||threadsTopicTag(item.body||item.threads_text||item.caption,{artistMentions:item.artist_mentions||[]})
-    }),
-    inspect: id => inspectContainer("threads", id),
-    publish: id => threadsPost("threads_publish", { creation_id: id }),
-    save: () => save(itemPath, item)
-  });
-  if (!published) return false;
-  threadsSteps += 1;
-  item.threads_replay_published_at = new Date().toISOString();
-  pacing.last_threads_published_at = item.threads_replay_published_at;
-  lastThreadsTime = Date.parse(item.threads_replay_published_at);
-  lastThreadsVideoTime = lastThreadsTime;
-  await save(itemPath, item);
-  await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString() }) + '\n');
-  await logAttempt({ file, id: item.id, platform: "threads_video_fallback", status: "published", media_id: published.id });
-  console.log(`Published Threads continuity video ${file}: ${published.id}`);
-  return true;
 }
 
 function contentPromiseIsKept(item) {
-  if (!footageOnlyAllowed(item)) return false;
-  if (!reportingGate(item).allowed) return false;
-  const started=['instagram','threads'].some(prefix=>item[prefix+'_media_id']||item[prefix+'_container_id']||item[prefix+'_children']?.some(Boolean));
-  if (!started && contentLane(item)==='gaming' && recentPublications.filter(x=>x.id!==item.id).slice(0,6).some(x=>contentLane(x)==='gaming')) return false;
-  if (isMediaRepost(item)) return validMediaRepost(item);
   const headline = String(item.headline || "");
   const body = String(item.body || "");
   const words = body.trim().split(/\s+/).filter(Boolean);
-  // Reposts are playable clips, not newsroom explainers.  They intentionally
-  // use short captions, so applying the 45-word explainer requirement here
-  // silently prevents every otherwise-valid video from publishing.
   if (item.content_type === "video") {
-    if (item.caption_policy === 'vip-source-v1') return captionIsBound(item);
     return captionIsBound(item) && words.length >= 4 && /[.!?]/.test(body);
   }
   const numberedDetails = body.match(/\b\d+\.\s/g) || [];
@@ -607,13 +521,6 @@ function contentPromiseIsKept(item) {
   return words.length >= 45 && completeSentences.length >= 2;
 }
 
-const threadsVideoFallbackCandidateAvailable = () => queueRecords.some(({item}) =>
-  item.status === 'published' && item.content_type === 'video' && item.threads_media_id
-  && !item.threads_replay_media_id && footageOnlyAllowed(item)
-  && reportingGate(item).allowed && contentPromiseIsKept(item)
-  && Number.isFinite(Date.parse(item.threads_published_at || ''))
-  && Date.parse(item.threads_published_at) <= Date.now() - threadsVideoFallbackMs);
-
 const rollingDayStart = Date.now() - 24 * 60 * 60 * 1000;
 let instagramPublicationsInRollingDay = 0;
 for (const file of files) {
@@ -628,29 +535,21 @@ const recovery = recoveryPolicy(queueRecords.map(record => record.item), {
   quota, authorization: recoveryAuthorization, lastFeedPublishedAt: pacing.last_feed_published_at
 });
 
-// One processing slot. Existing uploads retain
-// their slots across runs so slow processing cannot create an upload pileup.
-const instagramInFlightId = queueRecords.find(({item}) => item.status === 'ready'
-  && (item.instagram_container_id || item.instagram_children?.some(Boolean))
-  && !item.instagram_reconcile_required && item.instagram_status !== 'review_required' && contentPromiseIsKept(item))?.item.id;
-const processingCount = instagramInFlightId ? 1 : 0;
-const pendingStoryId = queueRecords.filter(({ item }) => storyCanRun(item)
-  && reportingGate(item).allowed
-  && footageOnlyAllowed(item)
+const processingCount = queueRecords.filter(({ item }) => item.status === "ready"
+  && item.content_type === "video" && item.instagram_container_id && !item.instagram_reconcile_required
+  && contentPromiseIsKept(item)).length;
+const pendingStory = queueRecords.some(({ item }) => item.status === "published"
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
-  && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"))
-  .sort((a,b)=>(Date.parse(b.item.published_at||b.item.instagram_published_at||'')||0)-(Date.parse(a.item.published_at||a.item.instagram_published_at||'')||0))[0]?.item.id;
-const pendingStory = publishInstagramStories && Boolean(pendingStoryId);
-const preferStory = shouldPreferStory({storyAllowed:deliveryPolicy.story_allowed, feedAllowed:deliveryPolicy.feed_allowed, recoveryFeedAllowed:recovery.feed_allowed, pendingStory, lastLane:pacing.last_instagram_lane});
+  && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"));
+const preferStory = !recovery.feed_allowed && pendingStory && pacing.last_instagram_lane === "feed";
 const uploadSlots = instagramAvailable() && !preferStory && (deliveryPolicy.feed_allowed || recovery.feed_allowed)
   ? Math.max(0, 1 - processingCount) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
   .filter(({ item }) => item.status === "ready" && item.content_type === "video"
-    && sourceFeedAllowed(item)
     && (deliveryPolicy.feed_allowed || (recovery.feed_allowed && item.id === recovery.item_id))
     && !item.instagram_container_id && String(item.video || "").endsWith(".mp4")
-    && !item.instagram_reconcile_required && item.instagram_status !== "review_required" && !(Date.parse(item.instagram_retry_at || "") > Date.now())
+    && !item.instagram_reconcile_required && !(Date.parse(item.instagram_retry_at || "") > Date.now())
     && (!item.publish_after || Date.parse(item.publish_after) <= Date.now())
     && item.layout_template === "rapwire-video-grid-safe-v1"
     && item.text_overflow_checked === true && item.rendered_body_text === item.body
@@ -658,6 +557,7 @@ const uploadCandidates = files.map(name => queueRecords.find(record => record.na
     && contentPromiseIsKept(item) && item.source_policy_checked === true && item.rap_relevance_checked === true
     && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"))
   .slice(0, uploadSlots);
+
 await Promise.all(uploadCandidates.map(async ({ name, item }) => {
   try {
     instagramSteps += 1;
@@ -665,68 +565,34 @@ await Promise.all(uploadCandidates.map(async ({ name, item }) => {
     await prepareInstagramReel(item, path.join(queueDir, name));
     console.log(`Prepared upload ${item.id}: ${item.instagram_container_id}`);
   } catch (error) {
-    const failure = recordInstagramDeliveryFailure(item, error);
-    await holdRestrictedInstagramAccount(error);
-    await save(path.join(queueDir, name), item);
     await logAttempt({ file: name, id: item.id, platform: "instagram", status: "failed", error: error.message });
-    if (failure.terminal) await logAttempt({ file: name, id: item.id, platform: "instagram", status: "review_required", reason: item.instagram_skip_reason });
   }
 }));
 
 let lastThreadsTime = Math.max(Date.parse(pacing.last_threads_published_at || '') || 0,
   ...queueRecords.map(({item}) => item.threads_media_id ? Date.parse(item.threads_published_at || '') || 0 : 0));
-let lastThreadsVideoTime = Math.max(0, ...queueRecords.map(({item}) => item.content_type === 'video'
-  ? Math.max(Date.parse(item.threads_published_at || '') || 0, Date.parse(item.threads_replay_published_at || '') || 0) : 0));
-let lastFacebookTime = Math.max(Date.parse(pacing.last_facebook_published_at || '') || 0,
-  ...queueRecords.map(({item}) => item.facebook_media_id ? Date.parse(item.facebook_published_at || '') || 0 : 0));
-let facebookImagesToday=queueRecords.filter(({item})=>item.facebook_media_id && !isFacebookVideoItem(item)
-  && Date.parse(item.facebook_published_at||'')>Date.now()-86400000).length;
-const facebookVideoWaiting=()=>queueRecords.some(({item})=>isFacebookVideoItem(item) && !item.facebook_media_id
-  && !item.facebook_reconcile_required && item.facebook_status!=='review_required'
-  && ['ready','published'].includes(item.status) && footageOnlyAllowed(item));
-const threadsInFlightRecord = queueRecords.find(({item}) => ['ready','published'].includes(item.status)
-  && (item.threads_container_id || item.threads_children?.some(Boolean)) && !item.threads_media_id && !item.threads_reconcile_required && !item.threads_copy_error
+const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].includes(item.status)
+  && item.threads_container_id && !item.threads_media_id && !item.threads_reconcile_required
   && item.rap_relevance_checked === true && contentPromiseIsKept(item)
   && (!item.publish_after || Date.parse(item.publish_after) <= Date.now())
   && (item.status !== 'ready' || (item.source_policy_checked === true
     && item.text_overflow_checked === true && item.rendered_body_text === item.body
     && item.content_claim_checked === true && item.editorial_substance_checked === true
     && (item.content_type === 'video' ? item.layout_template === 'rapwire-video-grid-safe-v1'
-      : (validMediaRepost(item) || item.layout_template === 'rapwire-unified-v3' && hasPublishableVisual(item)))))
-  && !(Date.parse(item.threads_retry_at || '') > Date.now()));
-const threadsInFlightId = threadsInFlightRecord?.item.id;
-// A carousel container that has been pending for this long stays intact for
-// reconciliation, but it must not freeze the independent video lane forever.
-const threadsInFlightStale = Boolean(threadsInFlightRecord) && Date.now() - Math.max(
-  Date.parse(threadsInFlightRecord.item.threads_container_checked_at || '') || 0,
-  Date.parse(threadsInFlightRecord.item.threads_container_created_at || '') || 0
-) >= 30 * 60_000;
+      : item.layout_template === 'rapwire-unified-v3' && hasPublishableVisual(item))))
+  && !(Date.parse(item.threads_retry_at || '') > Date.now()))?.item.id;
 
 async function deliverThreads(item, itemPath, file) {
   const isVideoItem = item.content_type === 'video';
-  // Video is the primary Threads lane. Hold a non-video item when a tracked
-  // continuity video is overdue so a carousel/text item cannot consume the
-  // only Threads step for this workflow run.
-  if (!isVideoItem && threadsSteps === 0
-    && Date.now() - lastThreadsVideoTime >= threadsVideoFallbackMs
-    && threadsVideoFallbackCandidateAvailable()) return;
-  // Keep the saved carousel for later reconciliation, but do not spend this
-  // run's only Threads request checking it when the playable-video lane is
-  // overdue.
-  if (!isVideoItem && item.id === threadsInFlightId && threadsInFlightStale
-    && Date.now() - lastThreadsVideoTime >= threadsVideoFallbackMs
-    && threadsVideoFallbackCandidateAvailable()) return;
-  if (Date.parse(threadsCooldown.until || '') > Date.now() || threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required || item.threads_copy_error
-    || !footageOnlyAllowed(item)
+  if (!threadsAvailable() || threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required
     || Date.now() - lastThreadsTime < THREADS_INTERVAL_MS
     || (threadsInFlightId && item.id !== threadsInFlightId)
     || item.rap_relevance_checked !== true || (isVideoItem && !captionIsBound(item))
-    || (isMediaRepost(item) && !validMediaRepost(item))
     || Date.parse(item.threads_retry_at || '') > Date.now()
     || ![undefined,'pending','failed','skipped_for_instagram_only_post'].includes(item.threads_status)) return;
   try {
     threadsSteps += 1;
-    const published = isVideoItem ? await publishThreadsVideo(item, itemPath) : await publishMediaFeed(item,itemPath,'threads');
+    const published = isVideoItem ? await publishThreadsVideo(item, itemPath) : await publishThreadsCarousel(item);
     if (!published) {
       item.threads_status = 'pending';
     } else {
@@ -734,105 +600,27 @@ async function deliverThreads(item, itemPath, file) {
       item.threads_media_id = published.id;
       item.threads_published_at = new Date().toISOString();
       delete item.threads_error;
-      delete item.threads_failure_count;
-      delete item.threads_skip_reason;
       lastThreadsTime = Date.parse(item.threads_published_at);
-      if (isVideoItem) lastThreadsVideoTime = lastThreadsTime;
       pacing.last_threads_published_at = item.threads_published_at;
-      // Preserve the Instagram-ready state; its delivery can happen later.
       await save(itemPath, item);
-      await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString() }) + '\n');
+      await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: runStartedAt }) + '\n');
       await logAttempt({ file, id: item.id, platform: 'threads', status: 'published', media_id: published.id });
       console.log(`Published Threads ${file}: ${published.id}`);
       await verifyPublication(item, itemPath, 'threads');
     }
   } catch (error) {
+    item.threads_status = 'failed';
     item.threads_error = error.message;
-    const accountWide = /API access blocked|rate.limit|request limit|maximum number of posts|too many actions/i.test(error.message);
-    const attempts = accountWide ? Number(item.threads_failure_count || 0) : Number(item.threads_failure_count || 0) + 1;
-    if (!accountWide) item.threads_failure_count = attempts;
-    if (attempts >= 3) {
-      item.threads_status = 'review_required';
-      item.threads_skip_reason = 'three_item_specific_delivery_failures';
-      delete item.threads_retry_at;
-    } else {
-      item.threads_status = 'failed';
-      item.threads_retry_at = new Date(Date.now() + 30 * 60000).toISOString();
-    }
-    // Account-wide errors affect every queued item. Do not rotate through the
-    // queue and send the same rejected request for a different post each run.
-    if (accountWide) {
-      threadsCooldown={until:new Date(Date.now()+3600000).toISOString(),reason:error.message};
-      await fs.writeFile(threadsCooldownPath,JSON.stringify(threadsCooldown,null,2)+'\n');
-    }
+    item.threads_retry_at = new Date(Date.now() + 30 * 60000).toISOString();
     await logAttempt({ file, id: item.id, platform: 'threads', status: 'failed', error: error.message });
     console.error(`Threads failed for ${file}: ${error.message}`);
   }
   await save(itemPath, item);
 }
 
-async function deliverFacebook(item,itemPath,file) {
-  if(!facebookConfigured || facebookSteps>=1 || item.facebook_verified_at || item.facebook_reconcile_required
-    || item.facebook_status==='review_required' || Date.parse(item.facebook_retry_at||'')>Date.now())return;
-  const pageApi=await resolveFacebookPageApi();
-  // These attempts were rejected before a Page token was used. They were never
-  // published, so retry them once with the correctly scoped token.
-  if (facebookUsingPageToken && /publish_actions are not available|Unpublished posts must be posted to a page as the page itself/i.test(item.facebook_error||'')) {
-    delete item.facebook_retry_at;
-    delete item.facebook_error;
-    if (item.facebook_status==='failed') item.facebook_status='pending';
-  }
-  const verificationOnly=Boolean(item.facebook_media_id);
-  if(!verificationOnly&&Date.now()-lastFacebookTime<FACEBOOK_INTERVAL_MS)return;
-  const videoItem=isFacebookVideoItem(item);
-  // Facebook is a video-led channel. Let a ready Reel go first and cap the
-  // supplemental photo/carousel posts at two confirmed posts per day.
-  if(!verificationOnly && !videoItem && (facebookImagesToday>=2 || facebookVideoWaiting()))return;
-  try {
-    const result=await deliverFacebookPage({
-      item,api:pageApi,pageId:facebookPageId,
-      caption:signedCaption(item.caption,item),
-      media:facebookMedia(item,{mediaUrl,slideUrl,videoUrl}),
-      save:()=>save(itemPath,item)
-    });
-    if(result.status==='published') {
-      facebookSteps+=1;
-      lastFacebookTime=Date.parse(item.facebook_published_at);
-      if(!videoItem) facebookImagesToday+=1;
-      pacing.last_facebook_published_at=item.facebook_published_at;
-      await fs.writeFile(pacingPath,JSON.stringify({...pacing,last_run_at:new Date().toISOString()})+'\n');
-      await logAttempt({file,id:item.id,platform:'facebook',status:'published',media_id:result.id,permalink:result.permalink});
-      console.log(`Published Facebook Page ${file}: ${result.id}`);
-    } else if(result.status==='verified') {
-      facebookSteps+=1;
-      await logAttempt({file,id:item.id,platform:'facebook',status:'verified',media_id:result.id,permalink:result.permalink});
-    } else if(result.status==='review_required') {
-      await logAttempt({file,id:item.id,platform:'facebook',status:'review_required',reason:result.reason});
-    }
-  } catch(error) {
-    await logAttempt({file,id:item.id,platform:'facebook',status:'failed',error:error.message});
-    console.error(`Facebook failed for ${file}: ${error.message}`);
-  }
-  await save(itemPath,item);
-}
-
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
   const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
-  const layoutCheck=videoLayoutChecksByFile.get(file);
-  videoLayoutChecks.set(item,layoutCheck);
-  if(!layoutCheck.allowed) {
-    const unfinished=['ready','published'].includes(item.status) && (!item.instagram_media_id||!item.threads_media_id
-      || publishInstagramStories&&!item.instagram_story_media_id&&(item.story||item.content_type==='video'));
-    if(unfinished)await logAttempt({file,id:item.id,platform:'video_layout',status:'review_required',reason:layoutCheck.issues.join('; ')});
-    continue;
-  }
-  const reporting=reportingGate(item);
-  if (!reporting.allowed) {
-    item.editorial_review_required=reporting.reasons;
-    await save(itemPath,item);
-    continue;
-  }
   const wasReady = item.status === "ready";
   const legacyRightLogo = /^(124|125|126|127|128|129)-/.test(item.id || "") && item.logo_position !== "bottom-left";
   if (item.content_type === "video" && legacyRightLogo) {
@@ -840,7 +628,7 @@ for (const file of files) {
     continue;
   }
   const isVideoItem = item.content_type === "video";
-  if (!isVideoItem && !validMediaRepost(item) && (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 10)) {
+  if (!isVideoItem && (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 10)) {
     console.error(`Skipped ${file}: RapWire carousels require 2-10 complete, readable slides`);
     await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "invalid_carousel_slide_count" });
     continue;
@@ -854,8 +642,6 @@ for (const file of files) {
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
-    // Keep captions consistent even if an item was queued before the current
-    // identity rule was introduced.
     const normalizedCaption = signedCaption(item.caption, item);
     const normalizedThreadsText = signedCaption(item.threads_text || item.caption, item);
     if (item.caption !== normalizedCaption || item.threads_text !== normalizedThreadsText) {
@@ -863,7 +649,7 @@ for (const file of files) {
       item.threads_text = normalizedThreadsText;
       await save(itemPath, item);
     }
-    if ((!isVideoItem && !validMediaRepost(item) && item.layout_template !== "rapwire-unified-v3")
+    if ((!isVideoItem && item.layout_template !== "rapwire-unified-v3")
       || (isVideoItem && item.layout_template !== "rapwire-video-grid-safe-v1")) {
       console.error(`Skipped ${file}: asset does not use the locked RapWire template`);
       await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "invalid_layout_template" });
@@ -889,14 +675,8 @@ for (const file of files) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "visual_verification_missing" });
       continue;
     }
-    // All content checks passed. Threads must not wait on Instagram's quota,
-    // feed cadence, processing, or a failed Instagram upload.
+    if (isVideoItem && facebookSteps < 1 && await facebookPost(item, itemPath)) facebookSteps += 1;
     await deliverThreads(item, itemPath, file);
-    await deliverFacebook(item,itemPath,file);
-    if (!sourceFeedAllowed(item)) {
-      await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "source_daily_maximum_reached" });
-      continue;
-    }
     if (feedPostsPublishedThisRun >= maxFeedPostsPerRun) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "deferred", reason: "run_feed_limit_reached" });
       continue;
@@ -906,7 +686,7 @@ for (const file of files) {
       continue;
     }
     let published;
-    if ((instagramInFlightId && instagramInFlightId !== item.id) || !instagramAvailable() || instagramSteps >= 1 || preferStory || item.instagram_reconcile_required || item.instagram_status === "review_required" || Date.parse(item.instagram_retry_at || "") > Date.now()) continue;
+    if (!instagramAvailable() || instagramSteps >= 1 || preferStory || item.instagram_reconcile_required || Date.parse(item.instagram_retry_at || "") > Date.now()) continue;
     if (isVideoItem) {
       if (!item.instagram_container_id || videoAttemptsThisRun >= 1) continue;
       videoAttemptsThisRun += 1;
@@ -914,13 +694,12 @@ for (const file of files) {
     try {
       instagramSteps += 1;
       instagramLane = "feed";
-      published = isVideoItem ? await publishInstagramReel(item, itemPath) : await publishMediaFeed(item,itemPath,'instagram');
+      published = isVideoItem ? await publishInstagramReel(item, itemPath) : await publishInstagramFeed(item);
     } catch (error) {
-      const failure = recordInstagramDeliveryFailure(item, error);
-      await holdRestrictedInstagramAccount(error);
+      item.instagram_error = error.message;
+      if (!(Date.parse(item.instagram_retry_at || "") > Date.now())) item.instagram_retry_at = new Date(Date.now() + 10 * 60_000).toISOString();
       await save(itemPath, item);
       await logAttempt({ file, id: item.id, platform: "instagram", status: "failed", error: error.message });
-      if (failure.terminal) await logAttempt({ file, id: item.id, platform: "instagram", status: "review_required", reason: item.instagram_skip_reason });
       console.error(`Instagram failed for ${file}: ${error.message}`);
       continue;
     }
@@ -928,14 +707,11 @@ for (const file of files) {
     item.status = "published";
     item.instagram_media_id = published.id;
     delete item.instagram_error;
-    delete item.instagram_failure_count;
-    delete item.instagram_status;
-    delete item.instagram_skip_reason;
     item.published_at = new Date().toISOString();
     await logAttempt({ file, id: item.id, platform: "instagram", status: "published", media_id: published.id, content_type: item.content_type || "carousel" });
     await save(itemPath, item);
     pacing.last_feed_published_at = item.published_at;
-    await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString() }) + "\n");
+    await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: runStartedAt }) + "\n");
     await verifyPublication(item, itemPath, "instagram");
     feedPostsPublishedThisRun += 1;
     console.log(`Published Instagram feed ${file}: ${published.id}`);
@@ -943,9 +719,11 @@ for (const file of files) {
 
   if (item.status !== "published") continue;
 
+  if (isVideoItem && facebookSteps < 1 && await facebookPost(item, itemPath)) facebookSteps += 1;
+
   const storyPending = !item.instagram_story_media_id && item.instagram_story_status !== "published";
-  if (publishInstagramStories && instagramAvailable() && (deliveryPolicy.story_allowed || (recovery.story_allowed && item.id === recovery.item_id)) && instagramSteps < 1 && (wasReady || item.id === pendingStoryId || item.id === recovery.item_id) && (item.story || isVideoItem) && storyPending
-    && !item.instagram_story_reconcile_required && item.instagram_story_status !== "review_required" && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
+  if (publishInstagramStories && instagramAvailable() && (deliveryPolicy.story_allowed || (recovery.story_allowed && item.id === recovery.item_id)) && instagramSteps < 1 && (item.story || isVideoItem) && storyPending
+    && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
     && (wasReady || olderStoryAttemptsThisRun < 1)) {
     if (!wasReady) olderStoryAttemptsThisRun += 1;
     try {
@@ -964,11 +742,10 @@ for (const file of files) {
       await verifyPublication(item, itemPath, "instagram_story");
       }
     } catch (error) {
-      const failure = recordInstagramDeliveryFailure(item, error, {story: true});
-      await holdRestrictedInstagramAccount(error);
-      if (!failure.terminal) item.instagram_story_status = "failed";
+      item.instagram_story_status = "failed";
+      item.instagram_story_error = error.message;
+      if (!(Date.parse(item.instagram_story_retry_at || "") > Date.now())) item.instagram_story_retry_at = new Date(Date.now() + 10 * 60_000).toISOString();
       await logAttempt({ file, id: item.id, platform: "instagram_story", status: "failed", error: error.message });
-      if (failure.terminal) await logAttempt({ file, id: item.id, platform: "instagram_story", status: "review_required", reason: item.instagram_story_skip_reason });
       console.error(`Instagram Story failed for ${file}: ${error.message}`);
     }
     await save(itemPath, item);
@@ -982,85 +759,32 @@ for (const file of files) {
   }
 
   await deliverThreads(item, itemPath, file);
-  await deliverFacebook(item,itemPath,file);
-}
-
-// Never use archive replays to fill Threads. A video fallback is allowed only
-// for a source item that is still inside the same 48-hour current-news window.
-// This keeps the feed active without resurfacing clips RapWire already covered
-// days ago. Evergreen memes must arrive as a newly discovered queue item.
-const noThreadsWorkInFlight = (!threadsInFlightId || threadsInFlightStale) && threadsSteps === 0;
-const threadsVideoOverdue = !lastThreadsVideoTime || Date.now() - lastThreadsVideoTime >= threadsVideoFallbackMs;
-const threadsCurrentNewsCutoff = Date.now() - 48 * 60 * 60_000;
-const isCurrentThreadsVideo = item => {
-  const sourceTime = Date.parse(item.source_published_at || item.source_post_date || '');
-  return Number.isFinite(sourceTime) && sourceTime >= threadsCurrentNewsCutoff
-    && item.story_type !== 'throwback' && item.story_type !== 'evergreen_meme';
-};
-if (noThreadsWorkInFlight && threadsVideoOverdue && !(Date.parse(threadsCooldown.until || '') > Date.now())) {
-  const replay = queueRecords
-    .filter(({item}) => item.status === 'published' && item.content_type === 'video'
-      && item.threads_media_id && !item.threads_replay_media_id
-      && isCurrentThreadsVideo(item)
-      && footageOnlyAllowed(item) && reportingGate(item).allowed && contentPromiseIsKept(item)
-      && Number.isFinite(Date.parse(item.threads_published_at || ''))
-      && Date.parse(item.threads_published_at) <= Date.now() - threadsVideoFallbackMs)
-    .sort((left,right) => (Number(right.item.source_view_count_at_selection) || 0) - (Number(left.item.source_view_count_at_selection) || 0)
-      || Date.parse(left.item.threads_published_at || '') - Date.parse(right.item.threads_published_at || ''))[0];
-  if (replay) {
-    try {
-      await publishThreadsVideoFallback(replay.item, path.join(queueDir, replay.name), replay.name);
-    } catch (error) {
-      replay.item.threads_replay_error = error.message;
-      replay.item.threads_replay_retry_at = new Date(Date.now() + 30 * 60_000).toISOString();
-      await save(path.join(queueDir, replay.name), replay.item);
-      await logAttempt({ file: replay.name, id: replay.item.id, platform: 'threads_video_fallback', status: 'failed', error: error.message });
-      console.error(`Threads continuity video failed for ${replay.name}: ${error.message}`);
-    }
-  }
 }
 
 const report = {
   checked_at: new Date().toISOString(),
   instagram_cooldown_until: instagramAvailable() ? null : cooldown.until,
-  threads_cooldown_until: Date.parse(threadsCooldown.until || '') > Date.now() ? threadsCooldown.until : null,
   instagram_publishing_quota: quota,
   delivery_policy: { ...deliveryPolicy, next_feed_eligible_at: pacing.last_feed_published_at ? new Date(Date.parse(pacing.last_feed_published_at) + FEED_INTERVAL_MS).toISOString() : deliveryPolicy.next_feed_eligible_at },
   instagram_steps: instagramSteps, threads_steps: threadsSteps, facebook_steps: facebookSteps,
-  facebook_configured: facebookConfigured,
   instagram_recovery: recovery,
+  threads_interval_seconds: THREADS_INTERVAL_MS / 1000,
+  threads_publishing_quota: threadsQuota,
+  instagram_processing_interval_seconds: 120,
   threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + THREADS_INTERVAL_MS).toISOString() : null,
-  facebook_next_eligible_at: lastFacebookTime ? new Date(lastFacebookTime + FACEBOOK_INTERVAL_MS).toISOString() : null,
-  last_confirmed: {
-    instagram_feed_at: pacing.last_feed_published_at || null,
-    threads_at: lastThreadsTime ? new Date(lastThreadsTime).toISOString() : null,
-    threads_video_at: lastThreadsVideoTime ? new Date(lastThreadsVideoTime).toISOString() : null,
-    facebook_at: lastFacebookTime ? new Date(lastFacebookTime).toISOString() : null
-  },
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),
-  reviews: runEvents.filter(event => event.status==='review_required'),
   note: "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 };
 await fs.writeFile(path.join(logsDir, "publisher-health.json"), JSON.stringify(report, null, 2) + "\n");
-await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: new Date().toISOString(), last_instagram_lane: instagramLane || pacing.last_instagram_lane }) + "\n");
-const instagramBlockLabel = instagramBlockKind(quota.reason) === 'authentication'
-  ? `Instagram authentication blocked. Next credential check ${quota.next_check_at}.`
-  : `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.`;
-const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `${instagramBlockLabel}\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
+await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: runStartedAt, last_instagram_lane: instagramLane || pacing.last_instagram_lane }) + "\n");
+const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
 console.log(summary);
-if (quota.blocked && quota.reason) {
-  const blockedSummary = `\nInstagram block reason: ${quota.reason}\n`;
-  console.log(blockedSummary);
-  if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, blockedSummary);
-}
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, summary);
-if(report.reviews.length) {
-  const reviewSummary=`\nVideo layout review: ${report.reviews.length} item(s) held; existing media and publication markers were preserved.\n\n${report.reviews.map(x=>`- ${x.id}: ${x.reason}`).join('\n')}\n`;
-  console.log(reviewSummary);
-  if(process.env.GITHUB_STEP_SUMMARY)await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,reviewSummary);
-}
-const policySummary = `\nFeed cadence: at least ${deliveryPolicy.feed_interval_minutes} minutes between confirmed posts. Instagram budget: ${deliveryPolicy.instagram_daily_cap} feed/Story publications per rolling 24 hours; ${deliveryPolicy.instagram_remaining} available at start of run, ${deliveryPolicy.reserved_story_slots} reserved for outstanding Stories. Next feed no earlier than: ${report.delivery_policy.next_feed_eligible_at || "when capacity permits"}. Quota and processing may delay publication further.\n`;
+const policySummary = `\nFeed cadence: at least 30 minutes between confirmed posts. Instagram budget: ${deliveryPolicy.instagram_daily_cap} feed/Story publications per rolling 24 hours; ${deliveryPolicy.instagram_remaining} available at start of run, ${deliveryPolicy.reserved_story_slots} reserved for outstanding Stories. Next feed no earlier than: ${report.delivery_policy.next_feed_eligible_at || "when capacity permits"}. Quota and processing may delay publication further.\n`;
 console.log(policySummary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, policySummary);
+const threadsSummary = `\nThreads: one-minute checks, at most one confirmed post per minute; quota ${threadsQuota.usage ?? "unknown"}/${threadsQuota.total ?? "unknown"}. ${threadsQuota.blocked ? `Held: ${threadsQuota.reason}. Next check ${threadsQuota.next_check_at}.` : "Processing and runner availability can delay delivery."}\n`;
+console.log(threadsSummary);
+if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, threadsSummary);
 if (report.failures.length) process.exitCode = 1;

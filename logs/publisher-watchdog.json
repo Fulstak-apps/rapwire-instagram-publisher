@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo",
@@ -20,8 +20,8 @@
     "534-the-wait-continues-in-lil-durk-lildurk-s-trial-with-another-day-",
     "541-lebron-cosigns-2-chainz-s-new-single"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-11T00:39:32.586Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-11T00:43:36.712Z",
   "deferred": []
 }

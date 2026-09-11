@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "523-the-jurors-sent-the-just-two-notes-this-morning-asking-for-clari",
@@ -16,10 +16,11 @@
     "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m",
     "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar",
     "567-akademiks-couldn-t-believe-trap-lore-ross-physically-went-to-eve",
-    "569-ye-s-graduation-turns-19-today-released-on-september-11-2007-the"
+    "569-ye-s-graduation-turns-19-today-released-on-september-11-2007-the",
+    "570-this-is-actually-how-me-and-bro-operate-secondhand-by-don-tolive"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-11T14:06:33.065Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-11T14:11:33.714Z",
   "deferred": []
 }

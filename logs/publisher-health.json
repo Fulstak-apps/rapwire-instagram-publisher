@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T13:21:10.469Z",
+  "checked_at": "2026-09-11T13:26:02.387Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 36,
-    "instagram_remaining": 62,
+    "instagram_usage": 37,
+    "instagram_remaining": 61,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T13:51:10.215Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,23 +43,7 @@
     "threads_video_at": "2026-09-11T13:21:04.145Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "568-the-second-lil-wayne-comes-in-over-tyler-the-creator-feliciatheg.json",
-      "id": "568-the-second-lil-wayne-comes-in-over-tyler-the-creator-feliciatheg",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18076089494443939"
-    },
-    {
-      "file": "568-the-second-lil-wayne-comes-in-over-tyler-the-creator-feliciatheg.json",
-      "id": "568-the-second-lil-wayne-comes-in-over-tyler-the-creator-feliciatheg",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18106792172230404",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -91,15 +75,15 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
-      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
+      "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
+      "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
-      "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
-      "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
+      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
+      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

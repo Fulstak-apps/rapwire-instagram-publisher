@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T11:19:54.744Z",
+  "checked_at": "2026-09-11T11:24:52.568Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T11:09:43.311Z",
-    "usage": 33,
+    "checked_at": "2026-09-11T11:24:47.833Z",
+    "usage": 34,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T11:24:43.311Z",
+    "next_check_at": "2026-09-11T11:39:47.833Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -22,12 +22,12 @@
     "instagram_remaining": 65,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T11:14:30.288Z",
+    "next_feed_eligible_at": "2026-09-11T11:54:52.323Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,18 +38,19 @@
   "threads_next_eligible_at": "2026-09-11T11:34:54.743Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T10:44:30.288Z",
+    "instagram_feed_at": "2026-09-11T11:24:52.323Z",
     "threads_at": "2026-09-11T11:19:54.743Z",
     "threads_video_at": "2026-09-11T11:19:54.743Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "526-durk-cant-get-a-fair-trial-judge-always-rules-against-against-hi.json",
-      "id": "526-durk-cant-get-a-fair-trial-judge-always-rules-against-against-hi",
-      "platform": "threads_video_fallback",
+      "file": "518-ynw-melly-s-mother-shared-a-heartfelt-message-about-how-much-she.json",
+      "id": "518-ynw-melly-s-mother-shared-a-heartfelt-message-about-how-much-she",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18115996163081644"
+      "media_id": "17884527333654017",
+      "content_type": "carousel"
     }
   ],
   "failures": [],

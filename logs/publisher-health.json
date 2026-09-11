@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T12:05:15.242Z",
+  "checked_at": "2026-09-11T12:10:15.186Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T11:55:10.374Z",
+    "checked_at": "2026-09-11T12:10:14.719Z",
     "usage": 35,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T12:10:10.374Z",
+    "next_check_at": "2026-09-11T12:25:14.719Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 34,
-    "instagram_remaining": 64,
+    "instagram_usage": 35,
+    "instagram_remaining": 63,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T12:35:15.028Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -43,16 +43,7 @@
     "threads_video_at": "2026-09-11T11:55:25.036Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "519-mike-mcfarland-the-voice-behind-master-roshi-in-the-english-dub-.json",
-      "id": "519-mike-mcfarland-the-voice-behind-master-roshi-in-the-english-dub-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18092602382553672",
-      "content_type": "carousel"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

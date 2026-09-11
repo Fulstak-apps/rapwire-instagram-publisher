@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "523-the-jurors-sent-the-just-two-notes-this-morning-asking-for-clari",
@@ -18,8 +18,8 @@
     "572-ye-s-chicago-homecoming-brought-in-29-8-million-across-just-two-",
     "574-playing-migos-in-a-kids-movie-is-crazy-migos-were-one-of-the-mos"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-11T16:27:55.948Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-11T16:33:03.515Z",
   "deferred": []
 }

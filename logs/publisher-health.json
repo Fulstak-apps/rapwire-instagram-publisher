@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T16:27:55.813Z",
+  "checked_at": "2026-09-11T16:33:03.388Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T15:47:36.598Z",
+  "threads_next_eligible_at": "2026-09-11T16:48:03.387Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T16:17:55.939Z",
-    "threads_at": "2026-09-11T15:32:36.598Z",
-    "threads_video_at": "2026-09-11T15:32:36.598Z",
+    "threads_at": "2026-09-11T16:33:03.387Z",
+    "threads_video_at": "2026-09-11T16:33:03.387Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "550-69-clip-would-have-saved-lil-durk-lildurk-ross-and-ceddy-disagre.json",
+      "id": "550-69-clip-would-have-saved-lil-durk-lildurk-ross-and-ceddy-disagre",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18388590151164979"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

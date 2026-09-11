@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T11:50:10.257Z",
+  "checked_at": "2026-09-11T11:55:25.037Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T11:39:58.738Z",
+    "checked_at": "2026-09-11T11:55:10.374Z",
     "usage": 34,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T11:54:58.738Z",
+    "next_check_at": "2026-09-11T12:10:10.374Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -23,11 +23,11 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T11:54:52.323Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T12:00:07.660Z",
+  "threads_next_eligible_at": "2026-09-11T12:10:25.036Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T11:24:52.323Z",
-    "threads_at": "2026-09-11T11:45:07.660Z",
-    "threads_video_at": "2026-09-11T11:19:54.743Z",
+    "threads_at": "2026-09-11T11:55:25.036Z",
+    "threads_video_at": "2026-09-11T11:55:25.036Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "527-i-got-10-000-for-the-doodie-lo-challenge-will-he-accept-and-do-s.json",
+      "id": "527-i-got-10-000-for-the-doodie-lo-challenge-will-he-accept-and-do-s",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18077220863427145"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

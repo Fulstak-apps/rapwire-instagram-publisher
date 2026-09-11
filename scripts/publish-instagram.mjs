@@ -688,7 +688,10 @@ for (const file of files) {
     let published;
     if (!instagramAvailable() || instagramSteps >= 1 || preferStory || item.instagram_reconcile_required || Date.parse(item.instagram_retry_at || "") > Date.now()) continue;
     if (isVideoItem) {
-      if (!item.instagram_container_id || videoAttemptsThisRun >= 1) continue;
+      // advanceContainer creates the first Reel container when none exists, then
+      // resumes that saved container on a later cycle. Requiring an existing ID
+      // here made every new video skip Instagram forever while Threads continued.
+      if (videoAttemptsThisRun >= 1) continue;
       videoAttemptsThisRun += 1;
     }
     try {

@@ -8748,29 +8748,16 @@
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKgQgBPoe6/",
       "queue_id": "591-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
       "video": "media/591-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
+    },
+    "DdKfqBUvTce": {
+      "queued_at": "2026-09-11T23:03:25.604Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKfqBUvTce/",
+      "queue_id": "593-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up",
+      "video": "media/593-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T23:22:58.433Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T23:23:04.045Z"
-    },
     {
       "started_at": "2026-09-09T23:28:06.888Z",
       "candidates": 0,
@@ -17298,6 +17285,16 @@
       "errors": [],
       "mode": "discovery",
       "finished_at": "2026-09-11T22:55:29.505Z"
+    },
+    {
+      "started_at": "2026-09-11T23:00:45.397Z",
+      "candidates": 84,
+      "queued": [
+        "593-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "finished_at": "2026-09-11T23:03:25.605Z"
     }
   ],
   "vip_pending": {

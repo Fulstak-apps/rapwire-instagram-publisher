@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T00:03:07.520Z",
+  "checked_at": "2026-09-11T00:08:18.909Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T00:13:18.968Z",
+  "threads_next_eligible_at": "2026-09-11T00:23:18.908Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-10T23:58:11.804Z",
-    "threads_at": "2026-09-10T23:58:18.968Z",
-    "threads_video_at": "2026-09-10T23:32:54.794Z",
+    "threads_at": "2026-09-11T00:08:18.908Z",
+    "threads_video_at": "2026-09-11T00:08:18.908Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "504-it-took-2-days-for-the-fbg-duck-murder-jurors-to-deliver-a-verdi.json",
+      "id": "504-it-took-2-days-for-the-fbg-duck-murder-jurors-to-deliver-a-verdi",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "17890557138438429"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

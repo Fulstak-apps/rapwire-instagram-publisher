@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T14:32:01.216Z",
+  "checked_at": "2026-09-11T14:36:50.932Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 38,
-    "instagram_remaining": 60,
+    "instagram_usage": 39,
+    "instagram_remaining": 59,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T15:02:00.981Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -35,22 +35,21 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T14:30:33.916Z",
+  "threads_next_eligible_at": "2026-09-11T14:51:50.411Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T14:32:00.981Z",
-    "threads_at": "2026-09-11T14:15:33.916Z",
-    "threads_video_at": "2026-09-11T14:15:33.916Z",
+    "threads_at": "2026-09-11T14:36:50.411Z",
+    "threads_video_at": "2026-09-11T14:36:50.411Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
       "file": "570-this-is-actually-how-me-and-bro-operate-secondhand-by-don-tolive.json",
       "id": "570-this-is-actually-how-me-and-bro-operate-secondhand-by-don-tolive",
-      "platform": "instagram",
+      "platform": "threads",
       "status": "published",
-      "media_id": "17997001278008724",
-      "content_type": "video"
+      "media_id": "17944912257341216"
     }
   ],
   "failures": [],

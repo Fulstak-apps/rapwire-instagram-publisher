@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T01:44:12.089Z",
+  "checked_at": "2026-09-11T01:49:16.972Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T01:34:02.158Z",
-    "usage": 18,
+    "checked_at": "2026-09-11T01:49:06.972Z",
+    "usage": 19,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T01:49:02.158Z",
+    "next_check_at": "2026-09-11T02:04:06.972Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -22,12 +22,12 @@
     "instagram_remaining": 80,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T01:43:55.062Z",
+    "next_feed_eligible_at": "2026-09-11T02:19:16.215Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -38,18 +38,19 @@
   "threads_next_eligible_at": "2026-09-11T01:59:11.798Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T01:13:55.062Z",
+    "instagram_feed_at": "2026-09-11T01:49:16.215Z",
     "threads_at": "2026-09-11T01:44:11.798Z",
     "threads_video_at": "2026-09-11T01:18:57.280Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
   "publications": [
     {
-      "file": "518-ynw-melly-s-mother-shared-a-heartfelt-message-about-how-much-she.json",
-      "id": "518-ynw-melly-s-mother-shared-a-heartfelt-message-about-how-much-she",
-      "platform": "threads",
+      "file": "528-otf-would-have-all-died-ceddy-nash-confirms-litco-dispensary-had.json",
+      "id": "528-otf-would-have-all-died-ceddy-nash-confirms-litco-dispensary-had",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17991294729044945"
+      "media_id": "18421537582144531",
+      "content_type": "video"
     }
   ],
   "failures": [],

@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T17:38:47.026Z",
+  "checked_at": "2026-09-11T17:43:42.198Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T17:28:31.481Z",
+    "checked_at": "2026-09-11T17:43:41.773Z",
     "usage": 39,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T17:43:31.481Z",
+    "next_check_at": "2026-09-11T17:58:41.773Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,15 +43,7 @@
     "threads_video_at": "2026-09-11T17:38:46.375Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "576-never-forget-when-nba-youngboy-realized-nearly-200-000-people-we.json",
-      "id": "576-never-forget-when-nba-youngboy-realized-nearly-200-000-people-we",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18094024016532244"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

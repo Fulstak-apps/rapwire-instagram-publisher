@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T18:29:32.651Z",
+  "checked_at": "2026-09-11T18:34:29.526Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -23,11 +23,11 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T18:34:06.994Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": true,
   "instagram_recovery": {
@@ -43,15 +43,7 @@
     "threads_video_at": "2026-09-11T18:29:31.330Z",
     "facebook_at": "2026-09-11T18:24:24.895Z"
   },
-  "publications": [
-    {
-      "file": "577-lil-durk-lildurk-verdict-predictions-with-mickey-truth.json",
-      "id": "577-lil-durk-lildurk-verdict-predictions-with-mickey-truth",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18094949696268299"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T10:29:24.185Z",
+  "checked_at": "2026-09-11T10:34:31.389Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -23,11 +23,11 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T10:29:21.484Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,15 +43,7 @@
     "threads_video_at": "2026-09-11T10:09:15.439Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "541-lebron-cosigns-2-chainz-s-new-single.json",
-      "id": "541-lebron-cosigns-2-chainz-s-new-single",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18113026007010258"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

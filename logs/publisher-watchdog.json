@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti",
@@ -22,8 +22,8 @@
     "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m",
     "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-11T08:58:27.567Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-11T09:03:27.097Z",
   "deferred": []
 }

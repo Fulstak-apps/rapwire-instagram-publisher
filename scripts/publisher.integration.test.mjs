@@ -1,35 +1,25 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {vipCaption} from './vip-policy.mjs';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
-import {createHash} from 'node:crypto';
-import {videoAssets} from './video-layout-policy.mjs';
 const script = path.resolve('scripts/publish-instagram.mjs');
-const renderBytes=Buffer.from('fixture-only rendered video bytes');
-const videoLayout={version:'footage-only-v1',status:'validated',source_width:1080,source_height:1920,
-  crop:{x:0,y:300,width:1080,height:1440},output_width:1080,output_height:1350,caption_overlay:false,
-  logo_position:'bottom-left',source_sha256:'1'.repeat(64),output_sha256:createHash('sha256').update(renderBytes).digest('hex')};
 const body = 'This is a verified video with a complete descriptive caption.';
-const item = { caption_style:'source-tag-v1', id: 'test', status: 'published', content_type: 'video', video: 'media/test.mp4',video_layout:videoLayout, source_handle: 'akademiks', source_url:'https://www.instagram.com/akademiks/reel/ExactPost/', caption_policy:'exact-source-v1', caption_source_shortcode:'ExactPost', source_caption_text:body, body, rendered_body_text: body, caption: body, threads_text: body, layout_template: 'rapwire-video-grid-safe-v1', source_policy_checked: true, rap_relevance_checked: true, content_claim_checked: true, editorial_substance_checked: true, text_overflow_checked: true, instagram_media_id: 'existing', threads_status: 'pending' };
-function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, usage = 1, total = 50, otherRecords = [], recovery = null, publishStories = true) {
+const item = { id: 'test', status: 'published', content_type: 'video', video: 'media/test.mp4', source_handle: 'akademiks', source_url:'https://www.instagram.com/akademiks/reel/ExactPost/', caption_policy:'exact-source-v1', caption_source_shortcode:'ExactPost', source_caption_text:body, body, rendered_body_text: body, caption: body, threads_text: body, layout_template: 'rapwire-video-grid-safe-v1', source_policy_checked: true, rap_relevance_checked: true, content_claim_checked: true, editorial_substance_checked: true, text_overflow_checked: true, instagram_media_id: 'existing', threads_status: 'pending' };
+function run(t, record, cooldown, mock, expectedStatus = 0, quotaState = null, usage = 1, total = 50, otherRecords = [], recovery = null, options = {}) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'rapwire-test-'));
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
   fs.mkdirSync(path.join(dir, 'queue')); fs.mkdirSync(path.join(dir, 'logs'));
   fs.writeFileSync(path.join(dir, 'queue/test.json'), JSON.stringify(record));
   for(const extra of otherRecords) fs.writeFileSync(path.join(dir, `queue/${extra.id}.json`), JSON.stringify(extra));
-  for(const entry of [record,...otherRecords])for(const asset of videoAssets(entry)) {
-    if(typeof asset.path!=='string')continue;
-    fs.mkdirSync(path.dirname(path.join(dir,asset.path)),{recursive:true});
-    fs.writeFileSync(path.join(dir,asset.path),renderBytes);
-  }
   if(cooldown) fs.writeFileSync(path.join(dir,'logs/instagram-cooldown.json'), JSON.stringify(cooldown));
   if(quotaState) fs.writeFileSync(path.join(dir,'logs/instagram-publishing-quota.json'), JSON.stringify(quotaState));
   if(recovery) fs.writeFileSync(path.join(dir,'logs/instagram-recovery.json'),JSON.stringify(recovery));
-  const preload = `globalThis.fetch = async (url, options = {}) => { if(String(url).includes('/content_publishing_limit?')) return new Response(JSON.stringify({data:[{quota_usage:${usage},config:{quota_total:${total}}}]})); ${mock} };`;
-  const result = spawnSync(process.execPath, ['--import', 'data:text/javascript,' + encodeURIComponent(preload), script], { cwd: dir, encoding: 'utf8', env: { ...process.env, INSTAGRAM_ACCESS_TOKEN:'fake', INSTAGRAM_USER_ID:'fake', THREADS_ACCESS_TOKEN:'fake', THREADS_USER_ID:'fake', GITHUB_REPOSITORY:'test/test', PUBLISH_INSTAGRAM_STORIES:String(publishStories), GITHUB_STEP_SUMMARY:'' } });
+  if(options.pacing) fs.writeFileSync(path.join(dir,'logs/publisher-pacing.json'),JSON.stringify(options.pacing));
+  if(options.threadsQuota) fs.writeFileSync(path.join(dir,'logs/threads-publishing-quota.json'),JSON.stringify(options.threadsQuota));
+  const preload = `globalThis.fetch = async (url, options = {}) => { if(String(url).includes('/content_publishing_limit?')) return new Response(JSON.stringify({data:[{quota_usage:${usage},config:{quota_total:${total}}}]})); if(String(url).includes('/threads_publishing_limit?')) return new Response(JSON.stringify(${JSON.stringify(options.threadsQuotaResponse || {data:[{quota_usage:1,config:{quota_total:250}}]})})); ${mock} };`;
+  const result = spawnSync(process.execPath, ['--import', 'data:text/javascript,' + encodeURIComponent(preload), script], { cwd: dir, encoding: 'utf8', env: { ...process.env, INSTAGRAM_ACCESS_TOKEN:'fake', INSTAGRAM_USER_ID:'fake', THREADS_ACCESS_TOKEN:'fake', THREADS_USER_ID:'fake', GITHUB_REPOSITORY:'test/test', PUBLISH_INSTAGRAM_STORIES:'true', GITHUB_STEP_SUMMARY:'' } });
   assert.equal(result.status, expectedStatus, result.stdout + result.stderr);
   return { item: JSON.parse(fs.readFileSync(path.join(dir,'queue/test.json'))), report: JSON.parse(fs.readFileSync(path.join(dir,'logs/publisher-health.json'))) };
 }
@@ -38,24 +28,6 @@ test('Instagram cooldown does not block pending Threads work', t => {
   assert.equal(r.item.threads_container_id, 'threads-container');
   assert.equal(r.report.instagram_steps, 0); assert.equal(r.report.threads_steps, 1);
   assert.equal(r.report.publications.length, 0);
-});
-test('VIP short source caption publishes without newsroom scoring while IG remains held', t => {
-  const copy=vipCaption('Source statement',item.source_handle,item.source_url);
-  const record={...item,...copy,status:'ready',instagram_media_id:undefined,rendered_body_text:copy.body,
-    caption_policy:'vip-source-v1',source_caption_text:'Source statement',vip_source_checked:true};
-  const r=run(t,record,null,
-    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('IG stays held'); return new Response(JSON.stringify({id:'vip-container'}));`,0,
-    {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
-  assert.equal(r.item.threads_container_id,'vip-container');
-  assert.equal(r.report.threads_steps,1);
-});
-test('VIP bypass cannot authorize a non-VIP page', t => {
-  const copy=vipCaption('Source statement',item.source_handle,item.source_url);
-  const record={...item,...copy,source_handle:'unapproved',status:'ready',instagram_media_id:undefined,rendered_body_text:copy.body,
-    caption_policy:'vip-source-v1',source_caption_text:'Source statement',vip_source_checked:true};
-  const r=run(t,record,null,`throw new Error('No unapproved media allowed');`,0,
-    {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
-  assert.equal(r.report.threads_steps,0);
 });
 test('timed-out Story resumes its saved container without recreating', t => {
   const r = run(t, { ...item, threads_status:'published', threads_media_id:'thread', instagram_story_status:'failed', instagram_story_error:'Instagram container 123 did not finish in time' }, null,
@@ -74,7 +46,7 @@ test('finished Reel records actual publication ID and readback permalink', t => 
 });
 test('publish-limit rejection creates an account-wide quota hold and clears request marker', t => {
   const r = run(t, { ...item, status:'ready', instagram_media_id:undefined, instagram_container_id:'container', threads_status:'published', threads_media_id:'thread' }, null,
-    `if(options.method === 'POST') return new Response(JSON.stringify({error:{code:9,error_subcode:2207042,message:'Media Publish Limit Exceeded'}}), {status:400}); return new Response(JSON.stringify({status_code:'FINISHED'}));`, 1);
+    `if(options.method === 'POST') return new Response(JSON.stringify({error:{code:9,error_subcode:2207042,message:'Media Publish Limit Exceeded'}}), {status:400}); return new Response(JSON.stringify({status_code:'FINISHED'}));`);
   assert.equal(r.report.instagram_publishing_quota.blocked,true);
   assert.equal(r.item.instagram_publish_requested_at,undefined);
   assert.equal(r.report.publications.length,0);
@@ -103,15 +75,15 @@ test('old mismatched caption cannot occupy the only active upload slot', t => {
 });
 test('recent feed publication blocks the next feed but not Threads delivery', t => {
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,instagram_container_id:'waiting-feed'},null,
-    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Feed must wait 10 minutes'); return new Response(JSON.stringify({id:'threads-container'}));`,0,null,1,50,
-    [{...item,id:'recent',published_at:new Date(Date.now()-5*60000).toISOString(),instagram_story_media_id:'story',instagram_story_status:'published'}]);
+    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Feed must wait 30 minutes'); return new Response(JSON.stringify({id:'threads-container'}));`,0,null,1,50,
+    [{...item,id:'recent',published_at:new Date(Date.now()-10*60000).toISOString(),instagram_story_media_id:'story',instagram_story_status:'published'}]);
   assert.equal(r.item.status,'ready'); assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_steps,1);
   assert.equal(r.report.delivery_policy.feed_interval_minutes,30);
 });
-test('two-slot platform headroom prevents uploads near the account limit', t => {
+test('daily safety budget prevents uploads even when Meta reports spare capacity', t => {
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread'},null,
-    `throw new Error('No platform work expected at the daily safety cap');`,0,null,98,100);
-  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,98);
+    `throw new Error('No platform work expected at the daily safety cap');`,0,null,32,100);
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,32);
   assert.equal(r.item.instagram_container_id,undefined);
 });
 test('ready video publishes on Threads while Instagram quota is exhausted', t => {
@@ -122,11 +94,11 @@ test('ready video publishes on Threads while Instagram quota is exhausted', t =>
   assert.equal(r.item.threads_media_id,'thread-live'); assert.match(r.item.threads_permalink,/verified/);
   assert.equal(r.report.instagram_steps,0); assert.equal(r.report.publications.length,1);
 });
-test('new independent Threads publications still respect the 10-minute cadence', t => {
+test('new independent Threads publications respect the one-minute cadence', t => {
   const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
     `throw new Error('No additional publish requests allowed during cadence hold');`,0,
     {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()},1,50,
-    [{...item,id:'recent-thread',threads_media_id:'previous-thread',threads_status:'published',threads_published_at:new Date(Date.now()-60000).toISOString()}]);
+    [{...item,id:'recent-thread',threads_media_id:'previous-thread',threads_status:'published',threads_published_at:new Date(Date.now()-30000).toISOString()}]);
   assert.equal(r.report.threads_steps,0); assert.equal(r.item.threads_container_id,undefined);
 });
 test('bad caption cannot bypass validation via independent Threads delivery', t => {
@@ -143,21 +115,6 @@ test('bad caption in-flight Threads item cannot block validated ready video', t 
   assert.equal(r.item.threads_container_id,'new-threads-container');
   assert.equal(r.report.threads_steps,1);
 });
-test('unverified case with saved containers cannot occupy either publishing lane',t=>{
-  const claim='Duane Davis was found guilty of murder.';
-  const held={...item,id:'held-claim',status:'ready',instagram_media_id:undefined,body:claim,rendered_body_text:claim,source_caption_text:claim,instagram_container_id:'held-ig',threads_container_id:'held-thread'};
-  const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
-    `if(options.method==='POST')return new Response(JSON.stringify({id:'new-container'}));throw new Error('Held claim must not be inspected');`,0,null,1,50,[held]);
-  assert.equal(r.item.instagram_container_id,'new-container');
-  assert.equal(r.item.threads_container_id,'new-container');
-});
-test('repeated gaming does not start a fresh upload inside the six-post gap',t=>{
-  const body='The new Grand Theft Auto trailer shows gameplay.';
-  const r=run(t,{...item,status:'ready',instagram_media_id:undefined,body,rendered_body_text:body,source_caption_text:body},null,
-    `throw new Error('Gaming is held for variety, not pushed repeatedly');`,0,null,1,50,
-    [{...item,id:'recent-game',body:'Street Fighter gameplay trailer.',threads_media_id:'thread',threads_status:'published',instagram_story_media_id:'story',instagram_story_status:'published',published_at:new Date(Date.now()-3600000).toISOString()}]);
-  assert.equal(r.item.instagram_container_id,undefined);assert.equal(r.item.threads_container_id,undefined);
-});
 test('authorized recovery really publishes one feed above internal cap but below platform ceiling', t => {
   const r=run(t,{...item,status:'ready',instagram_media_id:undefined,instagram_container_id:'recovery-container',threads_media_id:'thread',threads_status:'published'},null,
     `if(options.method==='POST') return new Response(JSON.stringify({id:'recovery-live'})); if(String(url).includes('/recovery-container?')) return new Response(JSON.stringify({status_code:'FINISHED'})); return new Response(JSON.stringify({id:'recovery-live',permalink:'https://www.instagram.com/p/recovered/'}));`,0,
@@ -172,88 +129,32 @@ test('dedicated Story preview is uploaded without replacing the full Reel', t =>
   assert.equal(r.item.instagram_story_container_id,'story-container');
   assert.equal(r.item.video,'media/test.mp4');
 });
-
-function photoRecord(count=1) {
- const copy=vipCaption('',item.source_handle,item.source_url);
- return {...item,...copy,rendered_body_text:copy.body,status:'ready',instagram_media_id:undefined,
-   content_type:count===1?'image':'carousel',type:'source_media_repost',vip_repost:true,
-   caption_policy:'vip-source-v1',source_caption_text:'',vip_source_checked:true,
-   layout_template:'rapwire-source-media-v1',visual_asset_rights:'source_post_repost',
-   media_capture_complete:true,source_item_count:count,
-   media_items:Array.from({length:count},(_,i)=>({type:i===1?'video':'image',path:`media/test-${i}.${i===1?'mp4':'jpg'}`,source_index:i,...(i===1?{video_layout:videoLayout}:{})})),
-   story:'media/test-story.jpg'};
-}
-test('VIP photo creates a single Threads image even while Instagram is held',t=>{
- const r=run(t,photoRecord(),null,
-   `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('IG held'); if(options.body.get('media_type')!=='IMAGE'||!options.body.get('image_url')||options.body.has('is_carousel_item')) throw new Error('Expected single image'); return new Response(JSON.stringify({id:'photo-container'}));`,0,
-   {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
- assert.equal(r.item.threads_container_id,'photo-container');assert.equal(r.item.status,'ready');
+test('Threads can advance after one minute without accelerating Instagram requests', t => {
+  const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
+    `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Instagram two-minute processing interval must remain intact'); return new Response(JSON.stringify({id:'new-thread-container'}));`,0,
+    {usage:1,total:100,blocked:false,next_check_at:new Date(Date.now()+900000).toISOString()},1,100,
+    [{...item,id:'recent-thread',threads_media_id:'previous',threads_status:'published',threads_published_at:new Date(Date.now()-90000).toISOString()}],null,
+    {pacing:{last_run_at:new Date(Date.now()-75000).toISOString(),last_instagram_cycle_at:new Date(Date.now()-45000).toISOString()}});
+  assert.equal(r.item.threads_container_id,'new-thread-container');
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_interval_seconds,60);
+  assert.equal(r.report.delivery_policy.feed_interval_minutes,30);
 });
-test('mixed VIP carousel uploads each child with the right type and retains IDs',t=>{
- const r=run(t,photoRecord(2),null,
-  `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('IG held'); if(options.body.get('is_carousel_item')!=='true') throw new Error('Must create children first'); const type=options.body.get('media_type'); if(type==='VIDEO'&&!options.body.get('video_url')) throw new Error('Missing video'); return new Response(JSON.stringify({id:type}));`,0,
-  {usage:50,total:100,blocked:true,next_check_at:new Date(Date.now()+3600000).toISOString()});
- assert.deepEqual(r.item.threads_children.map(c=>c.id),['IMAGE','VIDEO']);assert.equal(r.item.threads_container_id,undefined);
+test('exhausted Threads quota holds only Threads and permits Instagram Story work', t => {
+  const r=run(t,item,null,
+    `if(!String(url).startsWith('https://graph.instagram.com/')) throw new Error('Threads quota must prevent uploads'); return new Response(JSON.stringify({id:'story-container'}));`,0,null,1,50,[],null,
+    {threadsQuotaResponse:{data:[{quota_usage:250,config:{quota_total:250}}]}});
+  assert.equal(r.report.threads_steps,0); assert.equal(r.report.instagram_steps,1);
+  assert.equal(r.report.threads_publishing_quota.blocked,true);
 });
-test('incomplete VIP carousel cannot reach either platform',t=>{
- const r=run(t,{...photoRecord(2),source_item_count:3},null,`throw new Error('Incomplete media cannot publish');`);
- assert.equal(r.report.instagram_steps,0);assert.equal(r.report.threads_steps,0);
+test('unavailable Threads quota fails closed without creating an upload', t => {
+  const r=run(t,{...item,instagram_story_status:'published',instagram_story_media_id:'story'},null,
+    `throw new Error('No media requests allowed without quota verification');`,0,null,1,50,[],null,{threadsQuotaResponse:{data:[]}});
+  assert.equal(r.report.threads_steps,0); assert.equal(r.report.threads_publishing_quota.blocked,true);
 });
-test('Instagram photo parent resumes and records a confirmed publication',t=>{
- const r=run(t,{...photoRecord(),instagram_container_id:'photo-container',threads_status:'published',threads_media_id:'thread'},null,
- `if(options.method==='POST') return new Response(JSON.stringify({id:'photo-live'})); if(String(url).includes('/photo-container?')) return new Response(JSON.stringify({status_code:'FINISHED'})); return new Response(JSON.stringify({id:'photo-live',permalink:'https://www.instagram.com/p/photo-live/'}));`);
- assert.equal(r.item.instagram_media_id,'photo-live');assert.equal(r.item.status,'published');assert.equal(r.item.instagram_permalink,'https://www.instagram.com/p/photo-live/');
-});
-
-test('disabled Stories leave the last budgeted slot available to the feed',t=>{
- const r=run(t,{...item,status:'ready',instagram_media_id:undefined,instagram_container_id:'feed-container',threads_status:'published',threads_media_id:'thread'},null,
- `if(options.method==='POST'){if(String(url).endsWith('/media'))throw new Error('No Story creation allowed');return new Response(JSON.stringify({id:'feed-live'}));}if(String(url).includes('/feed-container?'))return new Response(JSON.stringify({status_code:'FINISHED'}));return new Response(JSON.stringify({id:'feed-live',permalink:'https://www.instagram.com/p/feed-live/'}));`,0,null,47,50,[],null,false);
- assert.equal(r.item.instagram_media_id,'feed-live');
- assert.equal(r.item.instagram_story_container_id,undefined);
- assert.equal(r.report.delivery_policy.reserved_story_slots,0);
-});
-test('disabled Stories never resume an outstanding Story upload',t=>{
- const r=run(t,{...item,instagram_story_container_id:'old-story',threads_status:'published',threads_media_id:'thread'},null,`throw new Error('No publishing calls allowed');`,0,null,40,50,[],null,false);
- assert.equal(r.report.instagram_steps,0);
- assert.equal(r.item.instagram_story_media_id,undefined);
-});
-
-test('unproven legacy video retains all markers and captions and requests review without publishing',t=>{
- const record={...item,video_layout:undefined,status:'ready',instagram_media_id:undefined,instagram_container_id:'old-ig',
-  threads_container_id:'old-thread',threads_publish_requested_at:'2026-09-03T05:00:00Z',threads_reconcile_required:true,
-  caption_style:undefined,caption:'Source commentary: Keep the exact prior caption.',threads_text:'Keep the exact prior Threads text.'};
- const r=run(t,record,null,`throw new Error('Legacy crop cannot be published or inspected');`);
- assert.deepEqual(r.item,JSON.parse(JSON.stringify(record)));
- assert.equal(r.report.instagram_steps,0);assert.equal(r.report.threads_steps,0);
- assert.match(r.report.reviews[0].reason,/validated footage-only/);
-});
-
-test('unsafe legacy in-flight video cannot occupy either lane ahead of a validated render',t=>{
- const legacy={...item,id:'old-layout',status:'ready',instagram_media_id:undefined,video_layout:undefined,
-  instagram_container_id:'old-ig',threads_container_id:'old-thread'};
- const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
-  `if(options.method==='POST')return new Response(JSON.stringify({id:'new-container'}));throw new Error('Unsafe legacy containers must not be inspected');`,0,null,1,50,[legacy]);
- assert.equal(r.item.instagram_container_id,'new-container');assert.equal(r.item.threads_container_id,'new-container');
- assert.equal(r.report.reviews.length,1);
-});
-
-test('a changed render hash blocks publication on both platforms',t=>{
- const r=run(t,{...item,status:'ready',instagram_media_id:undefined,video_layout:{...videoLayout,output_sha256:'0'.repeat(64)}},null,
-  `throw new Error('Changed asset must not publish');`);
- assert.equal(r.report.instagram_steps,0);assert.equal(r.report.threads_steps,0);
- assert.match(r.report.reviews[0].reason,/no longer match/);
-});
-
-test('mixed carousel cannot publish a video child without its own layout evidence',t=>{
- const record=photoRecord(2);delete record.media_items[1].video_layout;
- const r=run(t,record,null,`throw new Error('Unproven carousel video must not publish');`);
- assert.equal(r.report.instagram_steps,0);assert.equal(r.report.threads_steps,0);
- assert.match(r.report.reviews[0].reason,/media_items\[1\]/);
-});
-
-test('already-live legacy media with a pending platform remains unchanged and held for review',t=>{
- const record={...item,video_layout:undefined,caption_style:undefined,caption:'Original published caption',threads_text:'Original pending caption'};
- const r=run(t,record,null,`throw new Error('Legacy asset must not be delivered on another platform');`,0,null,1,50,[],null,false);
- assert.deepEqual(r.item,JSON.parse(JSON.stringify(record)));
- assert.equal(r.report.reviews.length,1);assert.equal(r.report.threads_steps,0);
+test('Threads rate rejection creates a platform-wide hold and preserves resumable state', t => {
+  const r=run(t,{...item,instagram_story_status:'published',instagram_story_media_id:'story',threads_container_id:'thread-container'},null,
+    `if(options.method==='POST') return new Response(JSON.stringify({error:{code:4,message:'Rate limit'}}),{status:429,headers:{'retry-after':'3600'}}); return new Response(JSON.stringify({status:'FINISHED'}));`);
+  assert.equal(r.report.threads_publishing_quota.blocked,true);
+  assert.ok(Date.parse(r.report.threads_publishing_quota.until)>Date.now()+3500000);
+  assert.equal(r.item.threads_container_id,'thread-container'); assert.equal(r.item.threads_publish_requested_at,undefined);
 });

@@ -2,17 +2,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import {randomUUID} from 'node:crypto';
 import { capture, launch } from "./instagram-browser-mirror.mjs";
 import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-caption.mjs";
-import { mediaFiles, isMediaRepost } from "./repost-media-policy.mjs";
-import { isVip, rememberVip, vipCandidates, deferVip, vipCaption } from './vip-policy.mjs';
-import {candidateScore} from './growth-feedback.mjs';
-import {priorityArtistsIn} from './artist-priority.mjs';
-import {editorialTopic,editorialSeries} from './audience-policy.mjs';
-import {normalizeSources,dueSources,dailySourceDeficits,sourceCanQueueToday} from './source-policy.mjs';
-import {selectionAllowed,recentPosts,editorialRank,reportingGate,storyFingerprint} from './editorial-policy.mjs';
-import {capturedVideoLayout,capturedMediaItems,verifyVideoLayoutFiles,videoRepairAllowed,mediaRepairAllowed,mixedVideoLayoutReview} from './video-layout-policy.mjs';
 
 const execFileAsync = promisify(execFile);
 
@@ -21,7 +12,17 @@ const ledgerPath = path.join(root, "monitor", "repost-ledger.json");
 const lockPath = path.join(root, "monitor", "repost-monitor.lock");
 const queueDir = path.join(root, "queue");
 const mediaDir = path.join(root, "media");
-const sources = normalizeSources(JSON.parse(await fs.readFile('monitor/sources.json','utf8')));
+const hotArtistsPath = path.join(root, "monitor", "hot-artists.json");
+
+const sources = [
+  { handle: "trapmatictv", credit: false, includePosts: true, includeReels: true },
+  { handle: "raplisted_", credit: false, includePosts: true, includeReels: true },
+  { handle: "akademiks", credit: true, includePosts: true, includeReels: true },
+  { handle: "traploreross", credit: true, includePosts: true, includeReels: true },
+  { handle: "hiphop_firstnewsmusic", credit: true, includePosts: true, includeReels: true },
+  { handle: "larp.lor.d", credit: true, includePosts: true, includeReels: true },
+  { handle: "records", credit: false, includePosts: true, includeReels: true }
+];
 const maxQueuePerRun = 1;
 const candidatesPerSourceToScore = 4;
 
@@ -73,17 +74,10 @@ async function discoverFromProfile(context, source) {
   try {
     await page.goto(`https://www.instagram.com/${source.handle}/`, { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(3500);
-    if (await page.getByRole('link', { name: 'Log In', exact: true }).count()
-        || await page.getByText('Continue as rapwire247', { exact: true }).count()) {
-      throw new Error('Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored.');
-    }
     const hrefs = await page.locator('a[href*="/reel/"], a[href*="/p/"]').evaluateAll((links) =>
       links.map((link) => link.href).filter(Boolean)
     );
     const unique = [...new Set(hrefs)]
-      // Profile pages also include recommended posts. Never attribute a link
-      // from another account to the monitored artist.
-      .filter((url) => new URL(url).pathname.split('/').filter(Boolean)[0]?.toLowerCase()===source.handle)
       .filter((url) => source.includeReels && /\/reel\//.test(url) || source.includePosts && /\/p\//.test(url))
       .map((url, profilePosition) => ({ source, url, shortcode: shortcodeFromUrl(url), profilePosition }))
       .filter((item) => item.shortcode);
@@ -102,44 +96,17 @@ function viewCountFromText(value) {
   return Math.round(number * multiplier);
 }
 
-const CURRENT_NEWS_WINDOW_MS = 48 * 60 * 60 * 1000;
-const EVERGREEN_MARKERS = /\b(?:meme|memes|throwback|from the vault|on this day|years? ago|classic|archive)\b/i;
-
-function sourceAgeMs(candidate, now = Date.now()) {
-  const publishedAt = Date.parse(candidate.sourcePublishedAt || '');
-  return Number.isFinite(publishedAt) ? now - publishedAt : Number.POSITIVE_INFINITY;
-}
-
-function editorialStoryType(caption, sourcePublishedAt) {
-  return EVERGREEN_MARKERS.test(String(caption || '')) && sourceAgeMs({sourcePublishedAt}) > CURRENT_NEWS_WINDOW_MS
-    ? 'evergreen_meme' : 'current';
-}
-
-function isFreshCurrentCandidate(candidate) {
-  const age = sourceAgeMs(candidate);
-  return candidate.storyType !== 'evergreen_meme' && age >= -60 * 60 * 1000 && age <= CURRENT_NEWS_WINDOW_MS;
-}
-
-function isEligibleEvergreenCandidate(candidate) {
-  return candidate.storyType === 'evergreen_meme' && EVERGREEN_MARKERS.test(String(candidate.visibleCaption || ''));
-}
-
 async function readPostMetadata(context, url) {
   const page = await context.newPage();
   try {
     await page.goto(url, { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(2500);
     const get = property => page.locator(`meta[property="${property}"]`).getAttribute("content", { timeout: 5000 }).catch(() => "");
-    const [canonicalUrl, title, description, articlePublishedAt, timePublishedAt] = await Promise.all([
-      get("og:url"), get("og:title"), get("og:description"),
-      get("article:published_time"),
-      page.locator('time[datetime]').first().getAttribute('datetime', { timeout: 5000 }).catch(() => "")
-    ]);
+    const [canonicalUrl, title, description] = await Promise.all([get("og:url"),get("og:title"),get("og:description")]);
     return {
       caption: sourceCaption({ requestedUrl:url, canonicalUrl, title, description }),
       isVideo: await page.locator("video:visible").count() === 1,
-      viewCount: viewCountFromText(description),
-      sourcePublishedAt: articlePublishedAt || timePublishedAt || null
+      viewCount: viewCountFromText(description)
     };
   } finally {
     await page.close();
@@ -160,18 +127,7 @@ async function acquireLock() {
   try {
     const existing = JSON.parse(await fs.readFile(lockPath, "utf8"));
     let alive = false;
-    try {
-      process.kill(existing.pid, 0);
-      // PIDs can be reused after a crash.  A bare kill(0) used to make an
-      // unrelated process look like the collector forever, silently blocking
-      // every later scheduled run.  Only honour a lock owned by this monitor.
-      const { stdout } = await execFileAsync("/bin/ps", ["-p", String(existing.pid), "-o", "command="]);
-      alive = stdout.includes("instagram-repost-monitor.mjs");
-    } catch (error) {
-      // EPERM can only occur for a live process we cannot inspect; preserve
-      // the conservative old behaviour in that unusual case.
-      if (error.code === "EPERM") alive = true;
-    }
+    try { process.kill(existing.pid, 0); alive = true; } catch (error) { if (error.code === "EPERM") alive = true; }
     if (alive) {
       console.log(JSON.stringify({ status: "locked", lock: existing }));
       process.exit(0);
@@ -194,47 +150,32 @@ async function releaseLock() {
 }
 
 async function captionFields(evidence, source) {
-  const layout=evidence.content_type==='video'||(!evidence.items&&evidence.duration)
-    ? {video_layout:capturedVideoLayout(evidence)}:{};
   const registry = await readJson(path.join(root, "monitor", "artist-handles.json"), []);
-  if (isVip(source)) {
-    const text = vipCaption(evidence.source_caption_text, source, evidence.source_url,registry);
-    return {...text, rendered_body_text:text.body, caption_policy:'vip-source-v1',
-      caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text,
-      caption_checked_at:evidence.captured_at, vip_source_checked:true,
-      media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration,...layout};
-  }
   const text = buildVideoCaption(evidence.source_caption_text, source, registry);
-  return { ...text, rendered_body_text:text.body, caption_policy:"exact-source-v1", caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text, caption_checked_at:evidence.captured_at, media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration,...layout };
+  return { ...text, rendered_body_text:text.body, threads_text:text.caption, caption_policy:"exact-source-v1", caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text, caption_checked_at:evidence.captured_at, media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration };
 }
 
 async function queueCapture(ledger, candidate, queueNumber) {
   const shortcode = candidate.shortcode;
-  const evidence = await capture(candidate.url, { headless: true, vip: isVip(candidate.source.handle),sourceHandle:candidate.source.handle });
-  // Keep the exact canonical URL used for caption binding on both platforms.
-  candidate.url = evidence.source_url;
+  const evidence = await capture(candidate.url, { headless: true });
   const sourceVideo = path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`);
-  const multiMedia = evidence.items && evidence.content_type !== "video";
+  await fs.access(sourceVideo);
   const fields = await captionFields(evidence, candidate.source.handle);
   const headlineSeed = fields.body;
   const id = `${String(queueNumber).padStart(3, "0")}-${slugify(headlineSeed)}`;
   const mediaPath = path.join(mediaDir, `${id}.mp4`);
-  if (!multiMedia) await fs.copyFile(sourceVideo, mediaPath);
+  await fs.copyFile(sourceVideo, mediaPath);
 
   const { body, caption } = fields;
   const queueItem = {
     id,
     status: "ready",
-    publish_priority: candidate.priorityArtists?.length ? 125 : isVip(candidate.source.handle) ? 100 : 50,
-    vip_repost: isVip(candidate.source.handle),
+    publish_priority: 50,
     date: new Date().toISOString().slice(0, 10),
     timezone: "America/Detroit",
     content_type: "video",
     type: "source_video_repost",
-    // Reposts are news by default.  Only explicitly identified evergreen memes
-    // may use the archive lane, and they are kept behind current reporting.
-    story_type: candidate.storyType || "current",
-    editorial_series: editorialSeries(fields.body),
+    story_type: "throwback",
     layout_template: "rapwire-video-grid-safe-v1",
     editorial_lane: "rap_culture",
     headline: cleanText(headlineSeed).slice(0, 90) || "RapWire Video Repost",
@@ -246,12 +187,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
     source_handle: candidate.source.handle,
     source_url: candidate.url,
     source_urls: [candidate.url],
-    source_published_at: candidate.sourcePublishedAt || null,
-    source_discovered_at: candidate.firstSeenAt || new Date().toISOString(),
     source_view_count_at_selection: Number(candidate.viewCount || 0),
-    selection_score: candidate.selectionScore ?? null,
-    priority_artists: candidate.priorityArtists || [],
-    discussion_topic: editorialTopic(fields.body),
     visual_asset_type: "source_video",
     visual_asset_rights: "source_post_repost",
     source_video_used: true,
@@ -265,26 +201,6 @@ async function queueCapture(ledger, candidate, queueNumber) {
     threads_status: "pending"
   };
   Object.assign(queueItem, fields);
-  queueItem.story_fingerprint=storyFingerprint(body);
-  queueItem.editorial_review_required=reportingGate(queueItem).reasons;
-  if (multiMedia) {
-    const destinations=[];
-    for (const [index,media] of evidence.items.entries()) {
-      const destination=path.join(mediaDir,`${id}-${index+1}.${media.type==='video'?'mp4':'jpg'}`);
-      await fs.copyFile(media.path,destination);
-      destinations.push(path.relative(root,destination));
-    }
-    const story=path.join(mediaDir,`${id}-story.jpg`);
-    await fs.copyFile(evidence.story,story);
-    delete queueItem.video;
-    delete queueItem.source_video_used;
-    Object.assign(queueItem, {type:'source_media_repost',content_type:evidence.content_type,
-      layout_template:'rapwire-source-media-v1',visual_asset_type:'source_media',
-      media_items:capturedMediaItems(evidence,destinations),media_capture_complete:evidence.complete,source_item_count:evidence.item_count,
-      story:path.relative(root,story),story_is_preview:true});
-  }
-  const layoutCheck=await verifyVideoLayoutFiles(queueItem,root);
-  if(!layoutCheck.allowed)throw new Error(layoutCheck.issues.join('; '));
   await writeJson(path.join(queueDir, `${id}.json`), queueItem);
   ledger.queued_shortcodes[shortcode] = {
     queued_at: new Date().toISOString(),
@@ -302,12 +218,12 @@ async function commitAndPush(createdIds) {
     const name = path.join("queue", `${id}.json`);
     const item = await readJson(name, {});
     paths.push(name);
-    paths.push(...mediaFiles(item));
+    if (item.video) paths.push(item.video);
   }
   const { stdout: changed } = await execFileAsync("git", ["status", "--porcelain", "--", ...paths]);
   if (changed.trim()) {
   await execFileAsync("git", ["add", "--", ...paths]);
-  await execFileAsync("git", ["commit", "--only", "-m", createdIds.length ? `Queue ${createdIds.length} RapWire repost${createdIds.length === 1 ? "" : "s"}` : "Save RapWire collector health", "--", ...paths]).catch((error) => {
+  await execFileAsync("git", ["commit", "--only", "-m", createdIds.length ? `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}` : "Save RapWire collector health", "--", ...paths]).catch((error) => {
     if (!/nothing to commit/i.test(error.stdout || error.stderr || "")) throw error;
   });
   }
@@ -324,6 +240,7 @@ try {
     queued_shortcodes: {},
     runs: []
   });
+  const hotArtists = await readJson(hotArtistsPath, []);
 
   const run = {
     started_at: new Date().toISOString(),
@@ -332,27 +249,23 @@ try {
     errors: []
   };
 
-  // Reconcile the durable queue before selecting: a crash after saving an item
-  // but before updating the ledger must not cause a duplicate capture.
   for (const name of (await fs.readdir(queueDir)).filter(name => name.endsWith(".json"))) {
     const item = await readJson(path.join(queueDir, name), {});
     const code = shortcodeFromUrl(item.source_url || "");
-    if (code && (item.content_type === "video" || isMediaRepost(item))) ledger.queued_shortcodes[code] ||= { queue_id: item.id, source_url: item.source_url, source_handle: item.source_handle, video: item.video };
+    if (code && item.content_type === "video") ledger.queued_shortcodes[code] ||= { queue_id: item.id, source_url: item.source_url, source_handle: item.source_handle, video: item.video };
   }
 
-  // Resume interrupted queue delivery even if this cycle finds no new video.
   const unsent = [];
   for (const name of (await fs.readdir(queueDir)).filter(name => name.endsWith(".json"))) {
     const item = await readJson(path.join(queueDir, name), {});
-    if (item.status !== "ready" || (item.content_type !== "video" && !isMediaRepost(item)) || name !== `${item.id}.json` || !sources.some(source => source.handle === item.source_handle)) continue;
-    const { stdout } = await execFileAsync("git", ["status", "--porcelain", "--", path.join("queue", name), ...mediaFiles(item)]);
+    if (item.status !== "ready" || item.content_type !== "video" || name !== `${item.id}.json` || !sources.some(source => source.handle === item.source_handle)) continue;
+    const { stdout } = await execFileAsync("git", ["status", "--porcelain", "--", path.join("queue", name), item.video]);
     if (stdout.trim()) unsent.push(item.id);
   }
   if (unsent.length) {
     await writeJson(ledgerPath, ledger);
     await commitAndPush(unsent);
   } else {
-    // A prior local commit may not yet have reached GitHub.
     const { stdout } = await execFileAsync("git", ["status", "--porcelain", "--untracked-files=no"]);
     if (!stdout.trim()) {
       await execFileAsync("git", ["pull", "--rebase", "origin", "main"]);
@@ -360,48 +273,30 @@ try {
     }
   }
 
-  // Repair the pending backlog, never captions/media on already-live posts.
   let repairAttempts = 0;
   for (const name of (await fs.readdir(queueDir)).sort()) {
     if (!name.endsWith(".json")) continue;
     const itemPath = path.join(queueDir, name);
     const item = await readJson(itemPath, {});
-    if (!mediaRepairAllowed(item)
+    if (item.status !== "ready" || item.content_type !== "video" || captionIsBound(item)
       || !sources.some(source => source.handle === item.source_handle)
+      || item.instagram_media_id || item.instagram_publish_requested_at || item.instagram_reconcile_required
       || Date.parse(item.caption_retry_at || "") > Date.now()) continue;
-    const layoutCheck=await verifyVideoLayoutFiles(item,root);
-    const mixedReview=mixedVideoLayoutReview(item,layoutCheck);
-    if(mixedReview) {
-      if(JSON.stringify(item.video_layout_review_required)!==JSON.stringify(mixedReview)) {
-        item.video_layout_review_required=mixedReview;
-        await writeJson(itemPath,item);run.queued.push(item.id);
-        await commitAndPush([item.id]);
-      }
-      run.errors.push({source_url:item.source_url,stage:'video_layout_review',error:mixedReview.reason,video_indices:mixedReview.video_indices});
-      continue;
-    }
-    if(layoutCheck.allowed&&item.video_layout_review_required) {
-      delete item.video_layout_review_required;
-      await writeJson(itemPath,item);run.queued.push(item.id);
-      await commitAndPush([item.id]);
-    }
-    if(!videoRepairAllowed(item))continue;
-    const needsCaptionRepair=!captionIsBound(item);
-    if(!needsCaptionRepair&&layoutCheck.allowed)continue;
     if (repairAttempts++ >= 3) break;
     try {
-      const evidence = await capture(item.source_url, { headless: true, vip: isVip(item.source_handle),sourceHandle:item.source_handle });
-      // A layout-only repair must not rewrite the already-bound source copy.
-      const fields = needsCaptionRepair?await captionFields(evidence,item.source_handle)
-        : {video_layout:capturedVideoLayout(evidence),media_capture_evidence:evidence.media_match_method,source_video_duration:evidence.duration};
-      const shortcode = shortcodeFromUrl(evidence.source_url);
-      const destination = path.join(mediaDir, `${item.id}-footage-only-${randomUUID()}.mp4`);
+      const evidence = await capture(item.source_url, { headless: true });
+      const fields = await captionFields(evidence, item.source_handle);
+      const shortcode = shortcodeFromUrl(item.source_url);
+      const destination = path.join(mediaDir, `${item.id}-caption-matched.mp4`);
       await fs.copyFile(path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`), destination);
-      const repaired={...item,...fields,source_url:evidence.source_url,video:path.relative(root,destination),logo_position:'bottom-left'};
-      delete repaired.video_url;
-      const renderedCheck=await verifyVideoLayoutFiles(repaired,root);
-      if(!renderedCheck.allowed)throw new Error(renderedCheck.issues.join('; '));
-      Object.assign(item,repaired);delete item.video_url;
+      item.video = path.relative(root, destination);
+      delete item.video_url;
+      item.logo_position = "bottom-left";
+      if (item.instagram_container_id) {
+        item.superseded_unpublished_container_ids = [...(item.superseded_unpublished_container_ids || []), item.instagram_container_id];
+        for (const field of ["instagram_container_id", "instagram_container_created_at", "instagram_container_checked_at", "instagram_container_status", "instagram_retry_at"]) delete item[field];
+      }
+      Object.assign(item, fields);
       delete item.caption_review_error; delete item.caption_retry_at;
       await writeJson(itemPath, item);
       run.queued.push(item.id);
@@ -416,49 +311,28 @@ try {
     }
   }
 
-  // Repairs must not stop VIP discovery: save new links even when this run's
-  // capture slot has already been consumed by a repair.
-  run.mode = repairAttempts ? "caption_repair_and_vip_discovery" : "discovery";
-  {
+  run.mode = repairAttempts ? "caption_repair" : "discovery";
+  if (!repairAttempts) {
   const discovered = [];
   let rankedPool = [];
-  const records=await Promise.all((await fs.readdir(queueDir)).filter(x=>x.endsWith('.json')).map(x=>readJson(path.join(queueDir,x),{})));
-  const recent=recentPosts(records);
-  ledger.source_checks ||= {};
-  const selectedSources=dueSources(sources,ledger);
   await withFreshBrowser(async (context) => {
-    for (const source of selectedSources) {
-      if (repairAttempts && !isVip(source.handle)) continue;
+    for (const source of sources) {
       try {
         discovered.push(...await discoverFromProfile(context, source));
-        ledger.source_checks[source.handle]={checked_at:new Date().toISOString()};
       } catch (error) {
-        ledger.source_checks[source.handle]={checked_at:new Date().toISOString(),retry_at:new Date(Date.now()+15*60000).toISOString(),error:error.message};
         run.errors.push({ source_handle: source.handle, stage: "discover", error: error.message });
       }
     }
-    // Score only the current visible window from each approved page. This keeps
-    // reposts timely while choosing the videos already pulling the strongest
-    // audience, rather than blindly reposting every new upload.
-    const selectedForScoring = selectedSources.flatMap((source) => discovered
+    const selectedForScoring = sources.flatMap((source) => discovered
       .filter((candidate) => candidate.source.handle === source.handle && !ledger.queued_shortcodes[candidate.shortcode])
       .slice(0, candidatesPerSourceToScore));
     rankedPool = selectedForScoring;
     for (const candidate of selectedForScoring) {
       try {
         const metadata = await readPostMetadata(context, candidate.url);
-        const prior=ledger.seen_shortcodes[candidate.shortcode]||{};
-        const priorViews=Number(prior.view_count)||0;
-        const checkedAt=Date.parse(prior.view_count_checked_at||prior.seen_at||'');
-        const elapsedHours=(Date.now()-checkedAt)/3600000;
         candidate.visibleCaption = metadata.caption;
         candidate.isVideo = metadata.isVideo;
         candidate.viewCount = metadata.viewCount;
-        candidate.priorityArtists=priorityArtistsIn(metadata.caption);
-        candidate.sourcePublishedAt=metadata.sourcePublishedAt;
-        candidate.storyType=editorialStoryType(metadata.caption, metadata.sourcePublishedAt);
-        candidate.viewVelocity=priorViews>0&&elapsedHours>=.1&&metadata.viewCount>=priorViews
-          ? (metadata.viewCount-priorViews)/elapsedHours : 0;
       } catch (error) {
         run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "score", error: error.message });
       }
@@ -470,58 +344,37 @@ try {
       seen_at: ledger.seen_shortcodes[item.shortcode]?.seen_at || new Date().toISOString(),
       source_handle: item.source.handle,
       source_url: item.url,
-      view_count: item.viewCount || ledger.seen_shortcodes[item.shortcode]?.view_count || 0,
-      view_count_checked_at: item.viewCount ? new Date().toISOString() : ledger.seen_shortcodes[item.shortcode]?.view_count_checked_at || null
+      view_count: item.viewCount || ledger.seen_shortcodes[item.shortcode]?.view_count || 0
     };
   }
-  // Every discovered VIP post is durable, including photos/carousels and failed
-  // captures. It cannot disappear just because it falls out of the profile grid.
-  rememberVip(ledger, discovered);
-  await writeJson(ledgerPath, ledger);
-  const feedback=await readJson(path.join(root,'logs','growth-feedback.json'),{});
-  for(const candidate of rankedPool) candidate.selectionScore=candidateScore(candidate,feedback.summary||{})
-    + editorialRank({body:candidate.visibleCaption,source_handle:candidate.source.handle},recent)/10;
-  const freshNews = rankedPool.filter(candidate=>isFreshCurrentCandidate(candidate));
-  // Archive material never competes with a fresh current-news clip.  It can
-  // appear only when the fresh window is empty and it is clearly a meme or a
-  // deliberate throwback, not merely an old video with a high view count.
-  const eligiblePool = freshNews.length ? freshNews : rankedPool.filter(candidate=>isEligibleEvergreenCandidate(candidate));
-  const normalCandidates = eligiblePool
-    .filter(candidate=>selectionAllowed(candidate,recent))
-    .sort((left, right) => right.selectionScore - left.selectionScore
-      || left.profilePosition - right.profilePosition
-      || left.source.handle.localeCompare(right.source.handle));
-  // Guaranteed artist slots lead the queue only until their daily quota is
-  // reserved. This gives @darnellwilliams two distinct Reel slots a day without
-  // allowing one account to take over the ordinary news rotation.
-  const priorityHandles=new Set(dailySourceDeficits(sources,records).map(entry=>entry.source.handle));
-  const allVipCandidates=vipCandidates(ledger, sources).filter(candidate=>sourceCanQueueToday(candidate.source,records));
-  const dailyArtistPool=allVipCandidates.filter(candidate=>priorityHandles.has(candidate.source.handle));
-  const remainingVipPool=allVipCandidates.filter(candidate=>!priorityHandles.has(candidate.source.handle)).slice(0,4);
-  // Keep VIP discoveries durable without letting one source occupy the whole feed.
-  const repeated=recent.length>=2&&recent[0].source_handle===recent[1].source_handle;
-  const rankedCandidates = (dailyArtistPool.length
-    ? [...dailyArtistPool,...remainingVipPool,...normalCandidates]
-    : repeated&&normalCandidates.length ? [...normalCandidates,...remainingVipPool] : [...remainingVipPool,...normalCandidates])
-    .filter(candidate=>sourceCanQueueToday(candidate.source,records));
+  
+  // VIRAL-FIRST & ARTIST PRIORITY SCORING
+  const rankedCandidates = rankedPool
+    .sort((left, right) => {
+      const escapeRegex = value => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const leftHot = hotArtists.some(artist => new RegExp(`\\b${escapeRegex(artist)}\\b`, "i").test(left.visibleCaption || ""));
+      const rightHot = hotArtists.some(artist => new RegExp(`\\b${escapeRegex(artist)}\\b`, "i").test(right.visibleCaption || ""));
+      if (leftHot !== rightHot) return rightHot ? 1 : -1;
+      return Number(right.viewCount || 0) - Number(left.viewCount || 0)
+        || left.profilePosition - right.profilePosition
+        || left.source.handle.localeCompare(right.source.handle);
+    });
+
   let queueNumber = await nextQueueNumber();
   for (const candidate of rankedCandidates) {
     if (run.queued.length >= maxQueuePerRun) break;
     if (ledger.queued_shortcodes[candidate.shortcode]) continue;
-    if (!isVip(candidate.source.handle) && (!candidate.isVideo || !candidate.visibleCaption)) continue;
+    if (!candidate.isVideo || !candidate.visibleCaption) continue;
     try {
       const id = await queueCapture(ledger, candidate, queueNumber);
       run.queued.push(id);
       queueNumber += 1;
     } catch (error) {
-      deferVip(ledger, candidate, error);
       run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "queue", error: error.message });
     }
   }
 
   }
-  rememberVip(ledger, []);
-  run.vip_pending = Object.keys(ledger.vip_pending || {}).length;
   run.finished_at = new Date().toISOString();
   ledger.runs = [...(ledger.runs || []), run].slice(-250);
   await writeJson(ledgerPath, ledger);

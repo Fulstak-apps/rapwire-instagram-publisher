@@ -787,4 +787,7 @@ if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP
 const threadsSummary = `\nThreads: one-minute checks, at most one confirmed post per minute; quota ${threadsQuota.usage ?? "unknown"}/${threadsQuota.total ?? "unknown"}. ${threadsQuota.blocked ? `Held: ${threadsQuota.reason}. Next check ${threadsQuota.next_check_at}.` : "Processing and runner availability can delay delivery."}\n`;
 console.log(threadsSummary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, threadsSummary);
-if (report.failures.length) process.exitCode = 1;
+// Delivery errors are persisted on the affected queue item with a retry time.  Do not
+// fail the whole scheduled job for a recoverable platform error: a red run used to
+// make the watchdog treat normal rate-limit recovery as a stopped publisher.
+if (report.failures.length && process.env.PUBLISH_STRICT === "true") process.exitCode = 1;

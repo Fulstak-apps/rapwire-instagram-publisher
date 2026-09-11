@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T11:14:59.708Z",
+  "checked_at": "2026-09-11T11:19:54.744Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T11:24:49.001Z",
+  "threads_next_eligible_at": "2026-09-11T11:34:54.743Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T10:44:30.288Z",
-    "threads_at": "2026-09-11T11:09:49.001Z",
-    "threads_video_at": "2026-09-11T10:44:37.314Z",
+    "threads_at": "2026-09-11T11:19:54.743Z",
+    "threads_video_at": "2026-09-11T11:19:54.743Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "526-durk-cant-get-a-fair-trial-judge-always-rules-against-against-hi.json",
+      "id": "526-durk-cant-get-a-fair-trial-judge-always-rules-against-against-hi",
+      "platform": "threads_video_fallback",
+      "status": "published",
+      "media_id": "18115996163081644"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -1,7 +1,7 @@
 {
   "overdue": false,
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "523-the-jurors-sent-the-just-two-notes-this-morning-asking-for-clari",
@@ -18,8 +18,8 @@
     "569-ye-s-graduation-turns-19-today-released-on-september-11-2007-the",
     "571-jay-z-bringing-out-justin-timberlake-in-paris-for-holy-grail-is-"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-11T15:22:19.017Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-11T15:27:26.502Z",
   "deferred": []
 }

@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T05:42:00.099Z",
+  "checked_at": "2026-09-11T05:46:43.259Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T05:31:21.247Z",
+    "checked_at": "2026-09-11T05:46:37.717Z",
     "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T05:46:21.247Z",
+    "next_check_at": "2026-09-11T06:01:37.717Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 24,
-    "instagram_remaining": 74,
+    "instagram_usage": 25,
+    "instagram_remaining": 73,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T06:11:40.060Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -43,16 +43,7 @@
     "threads_video_at": "2026-09-11T05:26:29.978Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "551-ceddy-nash-calls-out-akademiks-for-posting-lul-pab-murder-locati.json",
-      "id": "551-ceddy-nash-calls-out-akademiks-for-posting-lul-pab-murder-locati",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18148914463540100",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

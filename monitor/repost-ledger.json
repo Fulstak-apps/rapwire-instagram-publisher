@@ -5584,6 +5584,13 @@
       "source_url": "https://www.instagram.com/complexmusic/p/DdIK9MlEaai/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdIPx81EY-u": {
+      "seen_at": "2026-09-11T02:44:20.703Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdIPx81EY-u/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -7901,29 +7908,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdE-dXKqh4F/",
       "queue_id": "548-kid-cudi-just-randomly-spawned-in-during-speed-s-stream-at-the-a",
       "video": "media/548-kid-cudi-just-randomly-spawned-in-during-speed-s-stream-at-the-a.mp4"
+    },
+    "DdIFYZKxJQA": {
+      "queued_at": "2026-09-11T02:46:12.639Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DdIFYZKxJQA/",
+      "queue_id": "549-lucki-names-his-chicago-rapper-mt-rushmore-he-also-reacted-to-hi",
+      "video": "media/549-lucki-names-his-chicago-rapper-mt-rushmore-he-also-reacted-to-hi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T15:58:30.241Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "complexmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/complexmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T15:58:36.287Z"
-    },
     {
       "started_at": "2026-09-09T16:03:39.487Z",
       "candidates": 0,
@@ -15967,6 +15961,17 @@
       "mode": "discovery",
       "vip_pending": 31,
       "finished_at": "2026-09-11T02:36:37.483Z"
+    },
+    {
+      "started_at": "2026-09-11T02:41:52.705Z",
+      "candidates": 58,
+      "queued": [
+        "549-lucki-names-his-chicago-rapper-mt-rushmore-he-also-reacted-to-hi"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 31,
+      "finished_at": "2026-09-11T02:46:12.639Z"
     }
   ],
   "vip_pending": {
@@ -16375,16 +16380,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T02:27:33.806Z"
+      "checked_at": "2026-09-11T02:42:12.380Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T02:27:29.592Z"
+      "checked_at": "2026-09-11T02:42:08.240Z"
     },
     "records": {
-      "checked_at": "2026-09-11T02:27:25.528Z"
+      "checked_at": "2026-09-11T02:42:04.093Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T02:27:21.412Z"
+      "checked_at": "2026-09-11T02:41:59.943Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T02:05:19.550Z"
@@ -16396,7 +16401,7 @@
       "checked_at": "2026-09-11T02:27:37.845Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-11T01:35:12.291Z"
+      "checked_at": "2026-09-11T02:42:16.667Z"
     },
     "xxl": {
       "checked_at": "2026-09-11T01:44:57.910Z"
@@ -16408,7 +16413,7 @@
       "checked_at": "2026-09-11T02:27:41.856Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-11T01:44:53.998Z"
+      "checked_at": "2026-09-11T02:42:20.778Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-11T01:56:11.446Z"

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T03:49:42.659Z",
+  "checked_at": "2026-09-11T03:50:19.252Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 21,
-    "instagram_remaining": 77,
+    "instagram_usage": 22,
+    "instagram_remaining": 76,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T04:19:35.957Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,23 +43,7 @@
     "threads_video_at": "2026-09-11T03:49:42.256Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "548-kid-cudi-just-randomly-spawned-in-during-speed-s-stream-at-the-a.json",
-      "id": "548-kid-cudi-just-randomly-spawned-in-during-speed-s-stream-at-the-a",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18082721123338644",
-      "content_type": "video"
-    },
-    {
-      "file": "550-69-clip-would-have-saved-lil-durk-lildurk-ross-and-ceddy-disagre.json",
-      "id": "550-69-clip-would-have-saved-lil-durk-lildurk-ross-and-ceddy-disagre",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18113245861817606"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

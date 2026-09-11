@@ -5738,6 +5738,27 @@
       "source_url": "https://www.instagram.com/xxl/p/DdJqJLmEUC1/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdJvx-Vua2s": {
+      "seen_at": "2026-09-11T16:11:11.920Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdJvx-Vua2s/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdJynDpImi_": {
+      "seen_at": "2026-09-11T16:11:11.921Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdJynDpImi_/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdJruaqI3Ym": {
+      "seen_at": "2026-09-11T16:11:11.921Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdJruaqI3Ym/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -8203,18 +8224,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DdIz5guAFTM/",
       "queue_id": "573-yachty-back-doing-his-pod-and-this-episode-w-karrahboo-got-heate",
       "video": "media/573-yachty-back-doing-his-pod-and-this-episode-w-karrahboo-got-heate.mp4"
+    },
+    "DdJruaqI3Ym": {
+      "queued_at": "2026-09-11T16:17:07.666Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdJruaqI3Ym/",
+      "queue_id": "574-playing-migos-in-a-kids-movie-is-crazy-migos-were-one-of-the-mos",
+      "video": "media/574-playing-migos-in-a-kids-movie-is-crazy-migos-were-one-of-the-mos.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T21:14:44.453Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T21:15:14.817Z"
-    },
     {
       "started_at": "2026-09-09T21:20:18.678Z",
       "candidates": 0,
@@ -16866,6 +16885,42 @@
       "mode": "discovery",
       "vip_pending": 22,
       "finished_at": "2026-09-11T15:57:41.699Z"
+    },
+    {
+      "started_at": "2026-09-11T16:08:20.199Z",
+      "candidates": 59,
+      "queued": [
+        "574-playing-migos-in-a-kids-movie-is-crazy-migos-were-one-of-the-mos"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdJvx-Vua2s/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdJvx-Vua2s-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdJvIqSh_76/",
+          "stage": "queue",
+          "error": "Post identity changed during capture"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/DdIAW9Sjgw7/",
+          "stage": "queue",
+          "error": "Crop review required: source branding is not isolated in a removable top header"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdIFzeVDZ2A/",
+          "stage": "queue",
+          "error": "Five complete RGB samples are required"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 23,
+      "finished_at": "2026-09-11T16:17:07.666Z"
     }
   ],
   "vip_pending": {
@@ -17113,13 +17168,13 @@
       "first_seen_at": "2026-09-10T23:38:52.761Z",
       "profile_position": 2,
       "state": "retry_pending",
-      "attempts": 16,
+      "attempts": 17,
       "source_published_at": "2026-09-10T23:22:15.000Z",
       "visible_caption": "CZARFACE is back with more of that grimy boom-bap, sharp lyricism, and comic-book-inspired chaos. CZARFACE Meets Frankie Pulitzer brings @czarface_eso and @frankiepulitzer together for a hard-hitting collision of underground energy. 🦂🔥",
       "story_type": "current",
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIAW9Sjgw7-7-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T14:47:54.242Z",
-      "retry_at": "2026-09-11T15:47:54.242Z"
+      "last_error": "Crop review required: source branding is not isolated in a removable top header",
+      "last_attempt_at": "2026-09-11T16:16:06.648Z",
+      "retry_at": "2026-09-11T17:16:06.648Z"
     },
     "DdIFzeVDZ2A": {
       "source_handle": "akademiks",
@@ -17128,13 +17183,13 @@
       "first_seen_at": "2026-09-11T00:33:15.582Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 16,
+      "attempts": 17,
       "source_published_at": "2026-09-11T00:09:47.000Z",
       "visible_caption": "LeBron cosigns 2 Chainz’s new single 🔥🔥",
       "story_type": "current",
-      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdIFzeVDZ2A-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T14:48:50.751Z",
-      "retry_at": "2026-09-11T15:48:50.751Z"
+      "last_error": "Five complete RGB samples are required",
+      "last_attempt_at": "2026-09-11T16:16:27.756Z",
+      "retry_at": "2026-09-11T17:16:27.756Z"
     },
     "DdJvIqSh_76": {
       "source_handle": "akademiks",
@@ -17143,33 +17198,48 @@
       "first_seen_at": "2026-09-11T15:34:06.115Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 3,
+      "attempts": 4,
       "last_error": "Post identity changed during capture",
-      "last_attempt_at": "2026-09-11T15:56:17.898Z",
-      "retry_at": "2026-09-11T16:04:17.898Z"
+      "last_attempt_at": "2026-09-11T16:15:35.694Z",
+      "retry_at": "2026-09-11T16:31:35.694Z"
+    },
+    "DdJvx-Vua2s": {
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdJvx-Vua2s/",
+      "shortcode": "DdJvx-Vua2s",
+      "first_seen_at": "2026-09-11T16:11:11.921Z",
+      "profile_position": 0,
+      "state": "retry_pending",
+      "attempts": 1,
+      "source_published_at": "2026-09-11T16:01:02.000Z",
+      "visible_caption": "Longer convo with yachty and karrahboo",
+      "story_type": "current",
+      "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdJvx-Vua2s-1-capture-diagnostic.json",
+      "last_attempt_at": "2026-09-11T16:15:26.522Z",
+      "retry_at": "2026-09-11T16:17:26.522Z"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T15:54:10.648Z"
+      "checked_at": "2026-09-11T16:08:52.053Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T15:54:06.549Z"
+      "checked_at": "2026-09-11T16:08:47.990Z"
     },
     "records": {
-      "checked_at": "2026-09-11T15:54:02.366Z"
+      "checked_at": "2026-09-11T16:08:43.936Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T15:53:58.294Z"
+      "checked_at": "2026-09-11T16:08:39.907Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T15:54:18.737Z"
     },
     "raplisted_": {
-      "checked_at": "2026-09-11T14:55:24.658Z"
+      "checked_at": "2026-09-11T16:08:56.290Z"
     },
     "freshouttheculture": {
-      "checked_at": "2026-09-11T15:12:58.738Z"
+      "checked_at": "2026-09-11T16:09:00.538Z"
     },
     "complexmusic": {
       "checked_at": "2026-09-11T15:32:01.225Z"

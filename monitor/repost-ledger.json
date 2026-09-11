@@ -8062,34 +8062,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-09T19:43:34.681Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T19:44:17.622Z"
-    },
-    {
       "started_at": "2026-09-09T19:49:21.376Z",
       "candidates": 0,
       "queued": [],
@@ -16504,6 +16476,46 @@
       "mode": "discovery",
       "vip_pending": 22,
       "finished_at": "2026-09-11T12:29:02.400Z"
+    },
+    {
+      "started_at": "2026-09-11T12:34:05.678Z",
+      "candidates": 62,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc32-qLsTq5/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc32-qLsTq5-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json"
+        }
+      ],
+      "mode": "discovery",
+      "vip_pending": 22,
+      "finished_at": "2026-09-11T12:46:30.709Z"
     }
   ],
   "vip_pending": {
@@ -16526,10 +16538,10 @@
       "first_seen_at": "2026-09-03T06:22:41.175Z",
       "profile_position": 11,
       "state": "retry_pending",
-      "attempts": 115,
+      "attempts": 116,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dcww5JhjqDI-2-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T11:18:01.891Z",
-      "retry_at": "2026-09-11T12:18:01.891Z"
+      "last_attempt_at": "2026-09-11T12:43:01.108Z",
+      "retry_at": "2026-09-11T13:43:01.108Z"
     },
     "Dc1oLsTgfLu": {
       "source_handle": "akademiks",
@@ -16562,10 +16574,10 @@
       "first_seen_at": "2026-09-04T01:28:48.855Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 114,
+      "attempts": 115,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc2MKfkNwc4-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T11:01:54.545Z",
-      "retry_at": "2026-09-11T12:01:54.545Z"
+      "last_attempt_at": "2026-09-11T12:42:00.349Z",
+      "retry_at": "2026-09-11T13:42:00.349Z"
     },
     "Dc30JSSjmsc": {
       "source_handle": "akademiks",
@@ -16586,10 +16598,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 0,
       "state": "retry_pending",
-      "attempts": 109,
+      "attempts": 110,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc32-qLsTq5-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T10:57:26.203Z",
-      "retry_at": "2026-09-11T11:57:26.203Z"
+      "last_attempt_at": "2026-09-11T12:37:31.383Z",
+      "retry_at": "2026-09-11T13:37:31.383Z"
     },
     "Dc322YeFQyh": {
       "source_handle": "akademiks",
@@ -16598,10 +16610,10 @@
       "first_seen_at": "2026-09-04T16:56:31.576Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 109,
+      "attempts": 110,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dc322YeFQyh-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T10:58:47.888Z",
-      "retry_at": "2026-09-11T11:58:47.888Z"
+      "last_attempt_at": "2026-09-11T12:38:53.387Z",
+      "retry_at": "2026-09-11T13:38:53.387Z"
     },
     "Dc6e8SjEY1u": {
       "source_handle": "records",
@@ -16721,10 +16733,10 @@
       "first_seen_at": "2026-09-10T09:24:00.848Z",
       "profile_position": 1,
       "state": "retry_pending",
-      "attempts": 60,
+      "attempts": 61,
       "last_error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdFdEA5NXaZ-1-capture-diagnostic.json",
-      "last_attempt_at": "2026-09-11T12:29:02.400Z",
-      "retry_at": "2026-09-11T13:29:02.400Z",
+      "last_attempt_at": "2026-09-11T12:46:30.709Z",
+      "retry_at": "2026-09-11T13:46:30.709Z",
       "source_published_at": "2026-09-09T23:35:42.000Z",
       "visible_caption": "No verdict in Lil Durk’s trial today as the jury wanted digitized evidence and they wouldn’t get it until tomorrow",
       "story_type": "current"
@@ -16792,16 +16804,16 @@
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T12:19:52.070Z"
+      "checked_at": "2026-09-11T12:34:24.635Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T12:19:47.991Z"
+      "checked_at": "2026-09-11T12:34:20.607Z"
     },
     "records": {
-      "checked_at": "2026-09-11T12:19:43.833Z"
+      "checked_at": "2026-09-11T12:34:16.489Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T12:19:39.762Z"
+      "checked_at": "2026-09-11T12:34:12.286Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T11:46:46.446Z"
@@ -16816,7 +16828,7 @@
       "checked_at": "2026-09-11T12:20:00.345Z"
     },
     "xxl": {
-      "checked_at": "2026-09-11T11:26:57.801Z"
+      "checked_at": "2026-09-11T12:34:32.727Z"
     },
     "hiphopdx": {
       "checked_at": "2026-09-11T11:27:01.831Z"
@@ -16825,7 +16837,7 @@
       "checked_at": "2026-09-11T12:19:56.135Z"
     },
     "igndotcom": {
-      "checked_at": "2026-09-11T11:11:52.931Z"
+      "checked_at": "2026-09-11T12:34:28.694Z"
     },
     "hiphop_firstnewsmusic": {
       "checked_at": "2026-09-11T11:46:42.425Z"

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T09:59:21.751Z",
+  "checked_at": "2026-09-11T10:04:02.095Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 31,
-    "instagram_remaining": 67,
+    "instagram_usage": 32,
+    "instagram_remaining": 66,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T10:29:21.484Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
@@ -43,16 +43,7 @@
     "threads_video_at": "2026-09-11T09:31:06.772Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "509-jhene-aiko-s-coming-back-strong-with-all-of-these-rap-features-c.json",
-      "id": "509-jhene-aiko-s-coming-back-strong-with-all-of-these-rap-features-c",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17989077926855709",
-      "content_type": "carousel"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {
@@ -63,8 +54,22 @@
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
     },
     {
+      "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
+      "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
       "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
       "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
+      "platform": "video_layout",
+      "status": "review_required",
+      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
+    },
+    {
+      "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
+      "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
@@ -79,20 +84,6 @@
     {
       "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
       "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec.json",
-      "id": "196-bendadonnn-facetimed-ice-spice-pretending-to-be-a-49ers-wide-rec",
-      "platform": "video_layout",
-      "status": "review_required",
-      "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"
-    },
-    {
-      "file": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-.json",
-      "id": "200-bendadonnn-asked-out-rubi-rose-in-a-fake-49ers-uniform-after-he-",
       "platform": "video_layout",
       "status": "review_required",
       "reason": "video: recapture or review required; validated footage-only crop and source/output hashes are missing or invalid"

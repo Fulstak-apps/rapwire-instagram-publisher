@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-09-11T14:15:33.917Z",
+  "checked_at": "2026-09-11T14:16:35.316Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-11T14:01:20.854Z",
+    "checked_at": "2026-09-11T14:16:34.693Z",
     "usage": 38,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-11T14:16:20.854Z",
+    "next_check_at": "2026-09-11T14:31:34.693Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,15 +43,7 @@
     "threads_video_at": "2026-09-11T14:15:33.916Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "548-kid-cudi-just-randomly-spawned-in-during-speed-s-stream-at-the-a.json",
-      "id": "548-kid-cudi-just-randomly-spawned-in-during-speed-s-stream-at-the-a",
-      "platform": "threads_video_fallback",
-      "status": "published",
-      "media_id": "18007380053968715"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

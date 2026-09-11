@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T16:43:01.829Z",
+  "checked_at": "2026-09-11T16:48:17.705Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -23,11 +23,11 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T16:47:55.939Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T16:48:03.387Z",
+  "threads_next_eligible_at": "2026-09-11T17:03:17.170Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T16:17:55.939Z",
-    "threads_at": "2026-09-11T16:33:03.387Z",
+    "threads_at": "2026-09-11T16:48:17.170Z",
     "threads_video_at": "2026-09-11T16:33:03.387Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m.json",
+      "id": "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18480867655106470"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

@@ -5619,6 +5619,20 @@
       "source_url": "https://www.instagram.com/akademiks/p/DdImTFXOkYM/",
       "view_count": 0,
       "view_count_checked_at": null
+    },
+    "DdInoXyllgo": {
+      "seen_at": "2026-09-11T05:11:21.829Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdInoXyllgo/",
+      "view_count": 0,
+      "view_count_checked_at": null
+    },
+    "DdImCytlvew": {
+      "seen_at": "2026-09-11T05:11:21.829Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdImCytlvew/",
+      "view_count": 0,
+      "view_count_checked_at": null
     }
   },
   "queued_shortcodes": {
@@ -8017,29 +8031,15 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdH_kb6t8XN/",
       "queue_id": "560-ynw-melly-s-mother-shares-an-emotional-message-as-he-approaches-",
       "video": "media/560-ynw-melly-s-mother-shares-an-emotional-message-as-he-approaches-.mp4"
+    },
+    "DdImTFXOkYM": {
+      "queued_at": "2026-09-11T05:11:32.228Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdImTFXOkYM/",
+      "queue_id": "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T17:05:54.155Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T17:06:00.743Z"
-    },
     {
       "started_at": "2026-09-09T17:11:04.253Z",
       "candidates": 0,
@@ -15877,6 +15877,17 @@
       "mode": "discovery",
       "vip_pending": 22,
       "finished_at": "2026-09-11T05:03:55.045Z"
+    },
+    {
+      "started_at": "2026-09-11T05:09:02.809Z",
+      "candidates": 58,
+      "queued": [
+        "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "vip_pending": 21,
+      "finished_at": "2026-09-11T05:11:32.228Z"
     }
   ],
   "vip_pending": {
@@ -16146,32 +16157,20 @@
       "last_error": "Five complete RGB samples are required",
       "last_attempt_at": "2026-09-11T04:28:00.960Z",
       "retry_at": "2026-09-11T05:28:00.960Z"
-    },
-    "DdImTFXOkYM": {
-      "source_handle": "akademiks",
-      "source_url": "https://www.instagram.com/akademiks/p/DdImTFXOkYM/",
-      "shortcode": "DdImTFXOkYM",
-      "first_seen_at": "2026-09-11T05:01:49.243Z",
-      "profile_position": 0,
-      "state": "pending",
-      "attempts": 0,
-      "source_published_at": "2026-09-11T04:53:46.000Z",
-      "visible_caption": "FBI Houston Spokesperson Connor Hagen tells TMZ ... 6 people were arrested by the FBI and their partner agencies this morning in Louisiana and Texas ... including the rappers.\n\nNo word yet on the charges Ben10, OG 3Three, and the other 4 people are facing. The FBI is referring all questions about specific charges to the U.S. Attorney’s Office for the Southern District of Texas.",
-      "story_type": "current"
     }
   },
   "source_checks": {
     "akademiks": {
-      "checked_at": "2026-09-11T04:59:50.980Z"
+      "checked_at": "2026-09-11T05:09:22.591Z"
     },
     "traploreross": {
-      "checked_at": "2026-09-11T04:59:46.813Z"
+      "checked_at": "2026-09-11T05:09:18.398Z"
     },
     "records": {
-      "checked_at": "2026-09-11T04:59:42.683Z"
+      "checked_at": "2026-09-11T05:09:14.300Z"
     },
     "darnellwilliams": {
-      "checked_at": "2026-09-11T04:59:38.606Z"
+      "checked_at": "2026-09-11T05:09:10.251Z"
     },
     "trapmatictv": {
       "checked_at": "2026-09-11T04:45:42.093Z"
@@ -16183,7 +16182,7 @@
       "checked_at": "2026-09-11T04:59:59.032Z"
     },
     "complexmusic": {
-      "checked_at": "2026-09-11T04:20:45.671Z"
+      "checked_at": "2026-09-11T05:09:30.881Z"
     },
     "xxl": {
       "checked_at": "2026-09-11T04:35:28.201Z"
@@ -16192,7 +16191,7 @@
       "checked_at": "2026-09-11T04:35:32.240Z"
     },
     "rockstargames": {
-      "checked_at": "2026-09-11T04:08:28.545Z"
+      "checked_at": "2026-09-11T05:09:26.794Z"
     },
     "igndotcom": {
       "checked_at": "2026-09-11T04:20:49.843Z"

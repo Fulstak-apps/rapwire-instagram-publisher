@@ -6152,6 +6152,18 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKfAcZv2fv/",
       "view_count": 0
+    },
+    "DdKgQgBPoe6": {
+      "seen_at": "2026-09-11T22:53:10.537Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKgQgBPoe6/",
+      "view_count": 0
+    },
+    "DdKfqBUvTce": {
+      "seen_at": "2026-09-11T22:53:10.538Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKfqBUvTce/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -8729,49 +8741,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdKede4okeD/",
       "queue_id": "590-this-guy-was-acting-like-michael-jackson-until-the-speaker-tried",
       "video": "media/590-this-guy-was-acting-like-michael-jackson-until-the-speaker-tried.mp4"
+    },
+    "DdKgQgBPoe6": {
+      "queued_at": "2026-09-11T22:55:29.505Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKgQgBPoe6/",
+      "queue_id": "591-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
+      "video": "media/591-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T23:17:47.879Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T23:17:55.521Z"
-    },
     {
       "started_at": "2026-09-09T23:22:58.433Z",
       "candidates": 0,
@@ -17309,6 +17288,16 @@
       "errors": [],
       "mode": "discovery",
       "finished_at": "2026-09-11T22:31:29.768Z"
+    },
+    {
+      "started_at": "2026-09-11T22:50:59.172Z",
+      "candidates": 84,
+      "queued": [
+        "591-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "finished_at": "2026-09-11T22:55:29.505Z"
     }
   ],
   "vip_pending": {

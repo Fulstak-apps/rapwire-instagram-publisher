@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T14:57:11.322Z",
+  "checked_at": "2026-09-11T15:02:11.082Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -23,11 +23,11 @@
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T15:02:00.981Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,15 +43,7 @@
     "threads_video_at": "2026-09-11T14:57:10.857Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "571-jay-z-bringing-out-justin-timberlake-in-paris-for-holy-grail-is-.json",
-      "id": "571-jay-z-bringing-out-justin-timberlake-in-paris-for-holy-grail-is-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17911493472463770"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

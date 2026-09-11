@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T11:40:05.028Z",
+  "checked_at": "2026-09-11T11:45:08.451Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -35,15 +35,23 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_next_eligible_at": "2026-09-11T11:34:54.743Z",
+  "threads_next_eligible_at": "2026-09-11T12:00:07.660Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
     "instagram_feed_at": "2026-09-11T11:24:52.323Z",
-    "threads_at": "2026-09-11T11:19:54.743Z",
+    "threads_at": "2026-09-11T11:45:07.660Z",
     "threads_video_at": "2026-09-11T11:19:54.743Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "543-thank-you-judge-fitzgerald.json",
+      "id": "543-thank-you-judge-fitzgerald",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17904799155331744"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

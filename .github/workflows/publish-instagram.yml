@@ -27,7 +27,9 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 0
+          # Publishing only needs the current queue/log state. A shallow checkout
+          # avoids cloning the growing media/history repository on every 5-minute run.
+          fetch-depth: 1
           ref: main
 
       - uses: actions/setup-node@v6

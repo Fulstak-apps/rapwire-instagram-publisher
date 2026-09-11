@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-11T02:28:24.278Z",
+  "checked_at": "2026-09-11T02:29:31.261Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -18,16 +18,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 98,
-    "instagram_usage": 19,
-    "instagram_remaining": 79,
+    "instagram_usage": 20,
+    "instagram_remaining": 78,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
     "next_feed_eligible_at": "2026-09-11T02:58:16.272Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "facebook_configured": false,
   "instagram_recovery": {
@@ -43,23 +43,7 @@
     "threads_video_at": "2026-09-11T02:28:24.277Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [
-    {
-      "file": "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo.json",
-      "id": "502-instagram-now-lets-you-add-posts-you-re-tagged-in-directly-to-yo",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18008244356966956",
-      "content_type": "carousel"
-    },
-    {
-      "file": "512-otf-dede-had-a-major-w-in-court-close-to-being-granted-a-mistria.json",
-      "id": "512-otf-dede-had-a-major-w-in-court-close-to-being-granted-a-mistria",
-      "platform": "threads_video_fallback",
-      "status": "published",
-      "media_id": "17908117206310832"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "reviews": [
     {

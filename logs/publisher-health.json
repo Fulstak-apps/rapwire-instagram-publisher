@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-11T09:15:42.827Z",
+  "checked_at": "2026-09-11T09:18:53.748Z",
   "instagram_cooldown_until": null,
   "threads_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-11T09:08:29.206Z",
-    "usage": 30,
+    "usage": 31,
     "total": 100,
     "blocked": false,
     "next_check_at": "2026-09-11T09:23:29.206Z",
@@ -22,7 +22,7 @@
     "instagram_remaining": 68,
     "reserved_story_slots": 0,
     "pending_story_count": 0,
-    "next_feed_eligible_at": "2026-09-11T09:13:17.437Z",
+    "next_feed_eligible_at": "2026-09-11T09:48:53.440Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -38,12 +38,21 @@
   "threads_next_eligible_at": "2026-09-11T08:48:17.023Z",
   "facebook_next_eligible_at": "2026-09-06T01:48:16.542Z",
   "last_confirmed": {
-    "instagram_feed_at": "2026-09-11T08:43:17.437Z",
+    "instagram_feed_at": "2026-09-11T09:18:53.440Z",
     "threads_at": "2026-09-11T08:33:17.023Z",
     "threads_video_at": "2026-09-11T08:33:17.023Z",
     "facebook_at": "2026-09-06T01:18:16.542Z"
   },
-  "publications": [],
+  "publications": [
+    {
+      "file": "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti.json",
+      "id": "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17980787472086487",
+      "content_type": "carousel"
+    }
+  ],
   "failures": [],
   "reviews": [
     {

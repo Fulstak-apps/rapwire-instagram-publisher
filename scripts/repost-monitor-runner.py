@@ -7,7 +7,10 @@ import subprocess
 import sys
 from pathlib import Path
 
-LIMIT_SECONDS = 240
+# A full authenticated Reel download plus H.264 render can exceed four minutes
+# on a large source.  Ten minutes prevents the watchdog from killing valid
+# work mid-render; stale-lock cleanup still protects the next scheduled pass.
+LIMIT_SECONDS = 600
 
 process = subprocess.Popen(
     ["npm", "run", "repost:monitor"],

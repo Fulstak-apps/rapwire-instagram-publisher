@@ -23,6 +23,9 @@ cat > "$plist_path" <<PLIST
   </array>
   <key>StartInterval</key>
   <integer>300</integer>
+  <!-- A browser capture must never hold the collector lock indefinitely. -->
+  <key>TimeOut</key>
+  <integer>240</integer>
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>

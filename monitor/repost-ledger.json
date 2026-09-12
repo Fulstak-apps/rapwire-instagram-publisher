@@ -6314,6 +6314,18 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKyhMHx4DB/",
       "view_count": 0
+    },
+    "DdK1dVSxCWs": {
+      "seen_at": "2026-09-12T01:59:17.775Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdK1dVSxCWs/",
+      "view_count": 0
+    },
+    "DdK12s0DsxO": {
+      "seen_at": "2026-09-12T01:59:17.776Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdK12s0DsxO/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -8975,18 +8987,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdKvcCVJvSt/",
       "queue_id": "614-lil-durk-lildurk-is-not-free-feds-want-2nd-murder-trial-in-20-da",
       "video": "media/614-lil-durk-lildurk-is-not-free-feds-want-2nd-murder-trial-in-20-da.mp4"
+    },
+    "DdK1dVSxCWs": {
+      "queued_at": "2026-09-12T02:01:00.127Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdK1dVSxCWs/",
+      "queue_id": "615-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
+      "video": "media/615-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-10T00:20:24.138Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-10T00:20:53.058Z"
-    },
     {
       "started_at": "2026-09-10T00:25:56.543Z",
       "candidates": 0,
@@ -17422,6 +17432,29 @@
       ],
       "mode": "discovery",
       "finished_at": "2026-09-12T01:51:42.975Z"
+    },
+    {
+      "started_at": "2026-09-12T01:57:11.782Z",
+      "candidates": 84,
+      "queued": [
+        "615-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdKxTJMNEhf/",
+          "stage": "score",
+          "error": "Exact source caption missing, generic or truncated; needs review"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdKyKrpNmXk/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "finished_at": "2026-09-12T02:01:00.127Z"
     }
   ],
   "vip_pending": {

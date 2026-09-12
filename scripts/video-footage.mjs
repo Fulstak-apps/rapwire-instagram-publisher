@@ -175,10 +175,28 @@ export async function analyzeFootage(input,{sourceHandle,directory,width,height,
     await fs.writeFile(path.join(directory,'crop-observations.json'),JSON.stringify({bands,sample_times:times},null,2)+'\n');
     throw new Error(`Crop review required: ${bands.reason}`);
   }
-  // Swift compiles/cache-loads Apple's local OCR tool; never calls a paid model.
-  const {stdout}=await exec('/usr/bin/swift',[path.join(scriptDir,'inspect-video-frame.swift'),...images],{maxBuffer:8*1024*1024,timeout:180000});
-  const observations=JSON.parse(stdout);
-  await fs.writeFile(path.join(directory,'crop-observations.json'),JSON.stringify({bands,observations,sample_times:times},null,2)+'\n');
+  // Swift compiles/cache-loads Apple's local OCR tool; never calls a paid
+  // model.  Some macOS Vision versions intermittently fail while compiling a
+  // compute operation.  A transient local OCR failure must not halt the whole
+  // publisher: when a measured static panel exists, use that proven panel
+  // boundary and a conservative logo size.  We do not guess at a crop when
+  // panel analysis itself is ambiguous.
+  let observations;
+  let ocrFallbackError = '';
+  try {
+    const {stdout}=await exec('/usr/bin/swift',[path.join(scriptDir,'inspect-video-frame.swift'),...images],{maxBuffer:8*1024*1024,timeout:180000});
+    observations=JSON.parse(stdout);
+  } catch (error) {
+    ocrFallbackError=String(error?.stderr || error?.message || error);
+    observations=[];
+  }
+  await fs.writeFile(path.join(directory,'crop-observations.json'),JSON.stringify({bands,observations,sample_times:times,ocr_fallback_error:ocrFallbackError||undefined},null,2)+'\n');
+  if (ocrFallbackError) {
+    const plan=chooseSoloFootageCrop({bands,sampleWidth,sampleHeight,sourceWidth:width,sourceHeight:height,observations:[{}, {}, {}, {}, {}]});
+    const analysis={...plan,sample_times:times,logo_size:100,ocr_status:'unavailable-proven-panel-fallback-v1',ocr_error:ocrFallbackError};
+    await fs.writeFile(path.join(directory,'crop-analysis.json'),JSON.stringify({bands,...analysis},null,2)+'\n');
+    return analysis;
+  }
   let plan;
   try {
     plan=chooseFootageCrop({bands,sampleWidth,sampleHeight,sourceWidth:width,sourceHeight:height,observations,sourceHandle});

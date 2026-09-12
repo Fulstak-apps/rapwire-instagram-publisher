@@ -81,6 +81,31 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
       if (buffered.end >= buffered.duration - 0.25) { fullyBuffered = true; break; }
       await page.waitForTimeout(2500);
     }
+    // Headless Chromium occasionally keeps an Instagram Reel in a very small
+    // initial buffer even though `play()` resolved.  That used to leave the
+    // collector with only the first few byte ranges, then every candidate was
+    // rejected as incomplete.  Seek through the *same visible video* to make
+    // Instagram request the remaining authenticated ranges before judging the
+    // capture.  This is bounded and never changes the selected post.
+    if (!fullyBuffered) {
+      const duration = Number(sourceEvidence.duration);
+      for (let step = 1; step <= 8; step += 1) {
+        const time = Math.min(duration - 0.15, duration * (step / 9));
+        await video.evaluate(async (element, target) => {
+          element.muted = true;
+          element.currentTime = target;
+          await new Promise(resolve => {
+            const finish = () => { element.removeEventListener('seeked', finish); resolve(); };
+            element.addEventListener('seeked', finish, { once: true });
+            setTimeout(finish, 1800);
+          });
+          await element.play().catch(() => {});
+        }, time);
+        await page.waitForTimeout(900);
+      }
+      const buffered = await video.evaluate(element => ({ end: element.buffered.length ? element.buffered.end(element.buffered.length - 1) : 0, duration: element.duration }));
+      fullyBuffered = buffered.end >= buffered.duration - 0.25;
+    }
     // Let response.body() handlers finish after the last buffered segment.
     await page.waitForTimeout(1500);
     if (!candidates.length) throw new Error("No authenticated video response was captured from Instagram.");

@@ -187,6 +187,10 @@ async function queueCapture(ledger, candidate, queueNumber) {
     source_handle: candidate.source.handle,
     source_url: candidate.url,
     source_urls: [candidate.url],
+    // Instagram does not consistently expose a machine-readable publish date.
+    // This timestamp gives a newly captured Reel the short current-news window
+    // enforced by expire-stale-queue.py instead of pausing it immediately.
+    source_discovered_at: evidence.captured_at || new Date().toISOString(),
     source_view_count_at_selection: Number(candidate.viewCount || 0),
     visual_asset_type: "source_video",
     visual_asset_rights: "source_post_repost",

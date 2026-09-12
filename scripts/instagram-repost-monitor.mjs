@@ -166,6 +166,9 @@ async function captionFields(evidence, source) {
 async function queueCapture(ledger, candidate, queueNumber) {
   const shortcode = candidate.shortcode;
   const evidence = await capture(candidate.url, { headless: true });
+  // Clean sparse checkouts may not contain an empty media directory.  Always
+  // create it at the handoff boundary so a successful capture reaches GitHub.
+  await fs.mkdir(mediaDir, { recursive: true });
   const sourceVideo = path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`);
   await fs.access(sourceVideo);
   const fields = await captionFields(evidence, candidate.source.handle);

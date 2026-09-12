@@ -231,8 +231,21 @@ async function commitAndPush(createdIds) {
     if (!/nothing to commit/i.test(error.stdout || error.stderr || "")) throw error;
   });
   }
-  await execFileAsync("git", ["pull", "--rebase", "origin", "main"]);
-  await execFileAsync("git", ["push", "origin", "HEAD:main"]);
+  // The GitHub publisher also writes queue state. Retry ordinary races so a
+  // newly captured Reel cannot be stranded behind an unrelated log commit.
+  let lastError;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    try {
+      await execFileAsync("git", ["pull", "--rebase", "origin", "main"]);
+      await execFileAsync("git", ["push", "origin", "HEAD:main"]);
+      return;
+    } catch (error) {
+      lastError = error;
+      if (/CONFLICT|cannot pull with rebase: You have unstaged changes/i.test(`${error.stdout || ""}\n${error.stderr || ""}`)) break;
+      await new Promise(resolve => setTimeout(resolve, attempt * 1500));
+    }
+  }
+  throw lastError;
 }
 
 await acquireLock();

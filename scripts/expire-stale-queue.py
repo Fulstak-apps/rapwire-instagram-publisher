@@ -64,7 +64,11 @@ for path in QUEUE.glob("*.json"):
         # every authenticated Reel. A just-discovered, fully captured video is
         # safe for one short delivery window; older timestamp-less VIP backlog
         # remains paused rather than being mistaken for breaking news.
-        discovered = parse_source_date(item.get("source_discovered_at"))
+        # `caption_checked_at` is written by the same authenticated capture
+        # that verifies a Reel's matching video and caption. Keep it as a
+        # fallback so a collector write cannot make a fresh item look stale
+        # merely because the optional discovery field was absent.
+        discovered = parse_source_date(item.get("source_discovered_at") or item.get("caption_checked_at"))
         if discovered and item.get("media_capture_evidence") and (now - discovered).total_seconds() <= 2 * 3600:
             continue
         item["status"] = "paused"

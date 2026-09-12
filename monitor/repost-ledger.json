@@ -6338,6 +6338,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/DdK3LNVOKqR/",
       "view_count": 0
+    },
+    "DdK4lMUxYX4": {
+      "seen_at": "2026-09-12T02:19:37.792Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdK4lMUxYX4/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -9013,18 +9019,16 @@
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdK3x45R97I/",
       "queue_id": "616-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
       "video": "media/616-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
+    },
+    "DdK4lMUxYX4": {
+      "queued_at": "2026-09-12T02:22:21.117Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdK4lMUxYX4/",
+      "queue_id": "617-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
+      "video": "media/617-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-10T00:31:28.753Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-10T00:31:57.239Z"
-    },
     {
       "started_at": "2026-09-10T00:37:00.595Z",
       "candidates": 0,
@@ -17488,6 +17492,29 @@
       ],
       "mode": "discovery",
       "finished_at": "2026-09-12T02:11:52.424Z"
+    },
+    {
+      "started_at": "2026-09-12T02:17:14.332Z",
+      "candidates": 84,
+      "queued": [
+        "617-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdKxTJMNEhf/",
+          "stage": "score",
+          "error": "Exact source caption missing, generic or truncated; needs review"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdKyKrpNmXk/",
+          "stage": "queue",
+          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
+        }
+      ],
+      "mode": "discovery",
+      "finished_at": "2026-09-12T02:22:21.117Z"
     }
   ],
   "vip_pending": {

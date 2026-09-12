@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-12T17:46:41.686Z",
+  "checked_at": "2026-09-12T17:51:44.771Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-12T17:41:38.483Z",
@@ -24,8 +24,8 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,21 +44,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-12T17:40:31.754Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.json",
-      "id": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
-      "platform": "threads",
-      "status": "failed",
-      "error": "threads: ERROR; retry after 2026-09-12T18:16:41.037Z: UNKNOWN"
-    },
-    {
-      "file": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.json",
-      "id": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "instagram: ERROR; retry after 2026-09-12T18:16:41.335Z: ERROR"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

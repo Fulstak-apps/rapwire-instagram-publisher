@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
-import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
+import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, THREADS_PUBLISH_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 const instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -117,14 +117,14 @@ const requestTimeoutMs = 90_000;
 const signature = "@Rapwire247";
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
 
-async function refreshQuota() {
-  if (!instagramCycleDue) return;
+async function refreshQuota(force = false) {
+  if (!force && !instagramCycleDue) return;
   const recoveryItem = queueRecords.find(({item}) => item.id === recoveryAuthorization.item_id)?.item;
   const recoveryNeedsCheck = recoveryAuthorization.mode === 'one-feed-and-story'
     && Date.parse(recoveryAuthorization.expires_at || '') > Date.now()
     && recoveryItem && !recoveryItem.instagram_story_media_id && quota.blocked === false
     && Date.now() - Date.parse(quota.checked_at || '') >= 5 * 60000;
-  if (Date.parse(cooldown.until || "") > Date.now() || (Date.parse(quota.next_check_at || "") > Date.now() && !recoveryNeedsCheck)) return;
+  if (Date.parse(cooldown.until || "") > Date.now() || (!force && Date.parse(quota.next_check_at || "") > Date.now() && !recoveryNeedsCheck)) return;
   try {
     const url = new URL(`${instagramBase}/${instagramUserId}/content_publishing_limit`);
     url.searchParams.set("fields", "quota_usage,config"); url.searchParams.set("access_token", instagramToken);
@@ -242,6 +242,9 @@ async function save(itemPath, item) {
 
 async function instagramPost(endpoint, fields, recoveryItem = null, recoveryLane = null) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
+    // Meta quota is read immediately before every Instagram write. The saved
+    // state still protects us if the API is temporarily unavailable.
+    await refreshQuota(true);
     assertInstagramAvailable();
     const liveRecovery = recoveryItem ? recoveryPolicy([recoveryItem], {
       quota, authorization: recoveryAuthorization, lastFeedPublishedAt: pacing.last_feed_published_at
@@ -588,8 +591,9 @@ const threadsInFlightId = queueRecords.find(({item}) => ['ready','published'].in
 
 async function deliverThreads(item, itemPath, file) {
   const isVideoItem = item.content_type === 'video';
+  const resumingThreadsContainer = threadsInFlightId === item.id;
   if (!threadsAvailable() || threadsSteps >= 1 || item.threads_media_id || item.threads_reconcile_required
-    || Date.now() - lastThreadsTime < THREADS_INTERVAL_MS
+    || (!resumingThreadsContainer && Date.now() - lastThreadsTime < THREADS_PUBLISH_INTERVAL_MS)
     || (threadsInFlightId && item.id !== threadsInFlightId)
     || item.rap_relevance_checked !== true || (isVideoItem && !captionIsBound(item))
     || Date.parse(item.threads_retry_at || '') > Date.now()
@@ -775,10 +779,10 @@ const report = {
   delivery_policy: { ...deliveryPolicy, next_feed_eligible_at: pacing.last_feed_published_at ? new Date(Date.parse(pacing.last_feed_published_at) + FEED_INTERVAL_MS).toISOString() : deliveryPolicy.next_feed_eligible_at },
   instagram_steps: instagramSteps, threads_steps: threadsSteps, facebook_steps: facebookSteps,
   instagram_recovery: recovery,
-  threads_interval_seconds: THREADS_INTERVAL_MS / 1000,
+  threads_interval_seconds: THREADS_PUBLISH_INTERVAL_MS / 1000,
   threads_publishing_quota: threadsQuota,
   instagram_processing_interval_seconds: 120,
-  threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + THREADS_INTERVAL_MS).toISOString() : null,
+  threads_next_eligible_at: lastThreadsTime ? new Date(lastThreadsTime + THREADS_PUBLISH_INTERVAL_MS).toISOString() : null,
   publications: runEvents.filter(event => event.status === "published"),
   failures: runEvents.filter(event => ["failed", "verification_failed"].includes(event.status)),
   note: "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
@@ -791,7 +795,7 @@ if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP
 const policySummary = `\nFeed cadence: at least 30 minutes between confirmed posts. Instagram budget: ${deliveryPolicy.instagram_daily_cap} feed/Story publications per rolling 24 hours; ${deliveryPolicy.instagram_remaining} available at start of run, ${deliveryPolicy.reserved_story_slots} reserved for outstanding Stories. Next feed no earlier than: ${report.delivery_policy.next_feed_eligible_at || "when capacity permits"}. Quota and processing may delay publication further.\n`;
 console.log(policySummary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, policySummary);
-const threadsSummary = `\nThreads: one-minute checks, at most one confirmed post per minute; quota ${threadsQuota.usage ?? "unknown"}/${threadsQuota.total ?? "unknown"}. ${threadsQuota.blocked ? `Held: ${threadsQuota.reason}. Next check ${threadsQuota.next_check_at}.` : "Processing and runner availability can delay delivery."}\n`;
+const threadsSummary = `\nThreads: 30-minute publishing cadence, with separate retry checks for in-flight uploads; quota ${threadsQuota.usage ?? "unknown"}/${threadsQuota.total ?? "unknown"}. ${threadsQuota.blocked ? `Held: ${threadsQuota.reason}. Next check ${threadsQuota.next_check_at}.` : "Processing and runner availability can delay delivery."}\n`;
 console.log(threadsSummary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, threadsSummary);
 // Delivery errors are persisted on the affected queue item with a retry time.  Do not

@@ -12,13 +12,13 @@ test('persisted feed timestamp survives missing queue history', () => {
 });
 test('reserve both the new Story and unfinished older Stories before starting another feed', () => {
   const pending={...feed,instagram_story_media_id:undefined,instagram_story_status:'pending'};
-  assert.equal(publicationPolicy([pending],{now,quota:{usage:38,total:100}}).feed_allowed,false);
-  assert.equal(publicationPolicy([pending],{now,quota:{usage:37,total:100}}).feed_allowed,true);
+  assert.equal(publicationPolicy([pending],{now,quota:{usage:46,total:100}}).feed_allowed,false);
+  assert.equal(publicationPolicy([pending],{now,quota:{usage:45,total:100}}).feed_allowed,true);
 });
 test('one remaining slot can finish a Story but cannot start another video/Story pair', () => {
-  const p=publicationPolicy([],{now,quota:{usage:39,total:100}});
+  const p=publicationPolicy([],{now,quota:{usage:47,total:100}});
   assert.equal(p.story_allowed,true); assert.equal(p.feed_allowed,false);
-  assert.equal(publicationPolicy([],{now,quota:{usage:40,total:100}}).story_allowed,false);
+  assert.equal(publicationPolicy([],{now,quota:{usage:48,total:100}}).story_allowed,false);
 });
 test('lower platform limits reduce our budget; duplicate IDs are counted once', () => {
   const p=publicationPolicy([feed,feed],{now,quota:{usage:1,total:100,effective_total:20}});

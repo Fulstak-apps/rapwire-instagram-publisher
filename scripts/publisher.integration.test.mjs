@@ -82,8 +82,8 @@ test('recent feed publication blocks the next feed but not Threads delivery', t 
 });
 test('daily safety budget prevents uploads even when Meta reports spare capacity', t => {
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread'},null,
-    `throw new Error('No platform work expected at the daily safety cap');`,0,null,40,100);
-  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,40);
+    `throw new Error('No platform work expected at the daily safety cap');`,0,null,48,100);
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,48);
   assert.equal(r.item.instagram_container_id,undefined);
 });
 test('ready video publishes on Threads while Instagram quota is exhausted', t => {
@@ -129,14 +129,14 @@ test('dedicated Story preview is uploaded without replacing the full Reel', t =>
   assert.equal(r.item.instagram_story_container_id,'story-container');
   assert.equal(r.item.video,'media/test.mp4');
 });
-test('Threads can advance after one minute without accelerating Instagram requests', t => {
+test('Threads waits for the same 30-minute publishing cadence as Instagram', t => {
   const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
     `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Instagram two-minute processing interval must remain intact'); return new Response(JSON.stringify({id:'new-thread-container'}));`,0,
     {usage:1,total:100,blocked:false,next_check_at:new Date(Date.now()+900000).toISOString()},1,100,
     [{...item,id:'recent-thread',threads_media_id:'previous',threads_status:'published',threads_published_at:new Date(Date.now()-90000).toISOString()}],null,
     {pacing:{last_run_at:new Date(Date.now()-75000).toISOString(),last_instagram_cycle_at:new Date(Date.now()-45000).toISOString()}});
-  assert.equal(r.item.threads_container_id,'new-thread-container');
-  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_interval_seconds,60);
+  assert.equal(r.item.threads_container_id,undefined);
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_interval_seconds,1800);
   assert.equal(r.report.delivery_policy.feed_interval_minutes,30);
 });
 test('exhausted Threads quota holds only Threads and permits Instagram Story work', t => {

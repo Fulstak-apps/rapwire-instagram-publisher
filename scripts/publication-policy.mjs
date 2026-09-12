@@ -1,10 +1,13 @@
 export const FEED_INTERVAL_MS = 30 * 60_000;
+// Threads checks can still resume a pending upload quickly, but new public
+// Threads posts follow the same 30-minute rhythm as Instagram.
+export const THREADS_PUBLISH_INTERVAL_MS = FEED_INTERVAL_MS;
 export const THREADS_INTERVAL_MS = 60_000;
 export const FACEBOOK_INTERVAL_MS = 10 * 60_000; // Fast pace as requested
 // Meta is currently reporting a 100-post rolling allowance. Keep a substantial
 // safety buffer while avoiding the old 32-post ceiling that could leave an
 // otherwise healthy publisher idle for half a day.
-export const DAILY_INSTAGRAM_CAP = 40;
+export const DAILY_INSTAGRAM_CAP = 48;
 
 // A time-limited, explicitly requested recovery pair is not a general cap reset.
 // Keep two unused platform slots and require a fresh successful quota read.

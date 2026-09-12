@@ -23,21 +23,17 @@ concurrency:
 jobs:
   monitor-and-publish:
     runs-on: ubuntu-latest
-    # Media files are required for Instagram's binary upload. Keep the
-    # shallow clone, but allow enough time to fetch the media tree.
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
         with:
-          # A shallow checkout avoids cloning the growing history repository.
-          # The media tree must remain available: Instagram uploads the actual
-          # video bytes from these paths (Threads text does not).
+          # Publishing uses immutable raw-GitHub media URLs, so the runner only
+          # needs queue, scripts, and state. Keeping media out makes each cycle fast.
           fetch-depth: 1
           sparse-checkout: |
             .github
             scripts
             queue
-            media
             logs
             monitor
           ref: main

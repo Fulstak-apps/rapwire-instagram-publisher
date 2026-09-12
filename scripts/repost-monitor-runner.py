@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Bound one collector pass so a browser hang can never retain its lock."""
 import os
+import json
 import signal
 import subprocess
 import sys
+from pathlib import Path
 
 LIMIT_SECONDS = 240
 
@@ -24,5 +26,16 @@ except subprocess.TimeoutExpired:
     except subprocess.TimeoutExpired:
         os.killpg(process.pid, signal.SIGKILL)
         process.wait()
+    # The child can be killed before its JavaScript finally block runs.  A
+    # stale lock must never turn every later scheduled pass into a no-op.
+    lock = Path('monitor/repost-monitor.lock')
+    try:
+        pid = int(json.loads(lock.read_text()).get('pid', 0))
+        try:
+            os.kill(pid, 0)
+        except ProcessLookupError:
+            lock.unlink(missing_ok=True)
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        pass
     print(f"RapWire collector exceeded {LIMIT_SECONDS}s and was restarted.", file=sys.stderr)
     raise SystemExit(124)

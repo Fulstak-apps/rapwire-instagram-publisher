@@ -154,6 +154,42 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
           // Ignore incomplete or duplicate streaming groups.
         }
       }
+      // When Chromium exposes only a few media byte ranges, request the exact
+      // visible video's `currentSrc` from inside the signed-in page.  This is
+      // still the same authenticated browser session and is accepted only
+      // after the resulting file passes the visible post's duration and
+      // dimensions checks.  It avoids treating an unrelated CDN response as
+      // a Reel while keeping a partial range from starving the queue.
+      if (matchedVideos.length < 1) {
+        try {
+          const encoded = await video.evaluate(async element => {
+            const response = await fetch(element.currentSrc, { credentials: 'include' });
+            if (!response.ok) throw new Error(`direct media fetch returned ${response.status}`);
+            const bytes = new Uint8Array(await response.arrayBuffer());
+            let output = '';
+            const chunkSize = 0x8000;
+            for (let offset = 0; offset < bytes.length; offset += chunkSize) {
+              output += String.fromCharCode(...bytes.subarray(offset, offset + chunkSize));
+            }
+            return btoa(output);
+          });
+          const directPath = path.join(tempDir, 'direct-visible-source.bin');
+          await fs.writeFile(directPath, Buffer.from(encoded, 'base64'));
+          const { stdout } = await execFileAsync('ffprobe', ['-v', 'error', '-show_entries', 'stream=codec_type,width,height:format=duration', '-of', 'json', directPath]);
+          const probe = JSON.parse(stdout);
+          const directVideo = probe.streams?.find(stream => stream.codec_type === 'video');
+          const hasAudio = probe.streams?.some(stream => stream.codec_type === 'audio');
+          if (directVideo && hasAudio && directVideo.width === sourceEvidence.width && directVideo.height === sourceEvidence.height
+            && Math.abs(Number(probe.format?.duration) - sourceEvidence.duration) <= 1) {
+            matchedVideos.push({ path: directPath, hasAudio, direct: true });
+            diagnostics.push({ result: 'direct-visible-source', ...probe });
+          } else {
+            diagnostics.push({ result: 'direct-visible-source-rejected', ...probe });
+          }
+        } catch (error) {
+          diagnostics.push({ result: 'direct-visible-source-failed', error: String(error?.message || error) });
+        }
+      }
       // Instagram will occasionally serve the exact same visible Reel through
       // more than one CDN URL while it is buffering.  They are distinct
       // network responses but not distinct pieces of content.  The old

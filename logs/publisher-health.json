@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-09-12T19:43:04.197Z",
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "checked_at": "2026-09-12T19:47:49.887Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-12T19:37:43.230Z",
     "usage": 5,
@@ -44,14 +44,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-12T17:40:31.754Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
-      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"There was a problem uploading your video file. Please try again.\",\"type\":\"OAuthException\",\"code\":390,\"error_subcode\":1363030,\"is_transient\":true,\"error_user_title\":\"Video Upload Time Out\",\"error_user_msg\":\"Your video upload timed out before it could be completed. This is probably because of a slow network connection or because the video you're trying to upload is too large. Please try again.\",\"fbtrace_id\":\"AxPFCJ6wULAW1ZfUniYe3b2\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -3,7 +3,10 @@ export const FEED_INTERVAL_MS = 30 * 60_000;
 // Threads posts follow the same 30-minute rhythm as Instagram.
 export const THREADS_PUBLISH_INTERVAL_MS = FEED_INTERVAL_MS;
 export const THREADS_INTERVAL_MS = 60_000;
-export const FACEBOOK_INTERVAL_MS = 10 * 60_000; // Fast pace as requested
+// Facebook Page delivery is independently paced. It is not governed by the
+// Instagram Content Publishing quota, so it can publish the ready video lane
+// more frequently without holding up either Instagram or Threads.
+export const FACEBOOK_INTERVAL_MS = 5 * 60_000;
 // Meta is currently reporting a 100-post rolling allowance. Keep a substantial
 // safety buffer while avoiding the old 32-post ceiling that could leave an
 // otherwise healthy publisher idle for half a day.

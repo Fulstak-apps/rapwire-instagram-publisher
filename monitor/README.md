@@ -8,6 +8,7 @@ Lead accounts:
 - @trapmatictv
 - @raplisted_
 - @larp.lor.d
+- @ceddynash
 
 Research-only news sources, used by the AI newsroom only when making factual explainer posts:
 - @complexmusic
@@ -24,7 +25,7 @@ Important: this repository does not contain Instagram login credentials. Browser
 
 Cheap repost contract:
 1. Every minute, scripts may attempt up to three repost-video publications without waking Codex and without running the AI newsroom.
-2. Source videos from @trapmatictv, @raplisted_, @akademiks, @traploreross, @hiphop_firstnewsmusic, @larp.lor.d, and @records.
+2. Source videos from @trapmatictv, @raplisted_, @akademiks, @traploreross, @hiphop_firstnewsmusic, @ceddynash, @larp.lor.d, and @records.
 3. Mirror every eligible @trapmatictv video/repost and every eligible @raplisted_ video. For @akademiks and @traploreross, use their own Posts/Reels only unless the user changes the rule.
 4. Download the playable video with audio and publish it as video, not as a screenshot carousel.
 5. Preserve the regular source size, use full 1080px width whenever practical, and never shrink footage into a narrow card.

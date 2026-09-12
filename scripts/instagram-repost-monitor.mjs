@@ -20,6 +20,7 @@ const sources = [
   { handle: "akademiks", credit: true, includePosts: true, includeReels: true },
   { handle: "traploreross", credit: true, includePosts: true, includeReels: true },
   { handle: "hiphop_firstnewsmusic", credit: true, includePosts: true, includeReels: true },
+  { handle: "ceddynash", credit: true, includePosts: true, includeReels: true },
   { handle: "larp.lor.d", credit: true, includePosts: true, includeReels: true },
   { handle: "records", credit: false, includePosts: true, includeReels: true }
 ];

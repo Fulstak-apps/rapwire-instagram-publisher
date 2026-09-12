@@ -1,5 +1,9 @@
 export const shortcode = value => String(value || '').match(/\/(?:reel|p)\/([\w-]+)/)?.[1] || '';
 export const genericCaption = value => /a new hip.hop video is|keeping the (?:hip.hop )?video feed moving|clean repost coverage|on Instagram:|newsroom schedule/i.test(String(value || ''));
+// These biographical "is what happens" essays have repeatedly been copied
+// from source pages and do not describe the specific video.  Treat them as
+// unusable source copy rather than restyling and publishing the same premise.
+export const staleBoilerplateCaption = value => /\bis what happens when\b|\binstead of letting (?:it|their environment) define\b/i.test(String(value || ''));
 
 export function sourceCaption({ requestedUrl, canonicalUrl, title = '', description = '', heading = '' }) {
   if (!shortcode(requestedUrl) || shortcode(requestedUrl) !== shortcode(canonicalUrl)) throw new Error('Caption source does not match requested video shortcode');
@@ -10,12 +14,12 @@ export function sourceCaption({ requestedUrl, canonicalUrl, title = '', descript
     raw = titleMatch?.[1] || descriptionMatch?.[1] || '';
   }
   raw = raw.replace(/\r/g, '').trim();
-  if (raw.length < 15 || genericCaption(raw) || /(?:…|\.{3})\s*$/.test(raw)) throw new Error('Exact source caption missing, generic or truncated; needs review');
+  if (raw.length < 15 || genericCaption(raw) || staleBoilerplateCaption(raw) || /(?:…|\.{3})\s*$/.test(raw)) throw new Error('Exact source caption is generic, boilerplate, or truncated; needs review');
   return raw;
 }
 
 export function buildVideoCaption(raw, source, registry = []) {
-  if (!raw || genericCaption(raw)) throw new Error('No video-specific caption available');
+  if (!raw || genericCaption(raw) || staleBoilerplateCaption(raw)) throw new Error('No specific, non-boilerplate video caption available');
   let text = raw.replace(/https?:\/\/\S+/g, '').replace(/#(\w+)/g, (_, name) => /^(explore|explorepage|viral|viralvideo|fyp|trending)$/i.test(name) ? '' : name).replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu, '').replace(/\s+/g, ' ').trim();
   if (/\bAI\b/i.test(text)) throw new Error('Caption needs editorial review under the no-AI-caption rule');
   const verified = registry.filter(person => Date.now() - Date.parse(person.verified_at || '') < 30 * 86400000 && /^https:\/\/www\.instagram\.com\//.test(person.verified_url || ''));
@@ -50,5 +54,5 @@ export function buildVideoCaption(raw, source, registry = []) {
 export function captionIsBound(item) {
   return item.caption_policy === 'exact-source-v1' && item.caption_source_shortcode === shortcode(item.source_url)
     && Boolean(item.caption_source_shortcode) && typeof item.source_caption_text === 'string'
-    && item.source_caption_text.length >= 15 && !genericCaption(item.body);
+    && item.source_caption_text.length >= 15 && !genericCaption(item.body) && !staleBoilerplateCaption(item.body);
 }

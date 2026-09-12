@@ -8,6 +8,7 @@ test('extracts only exact-post caption, not profile wrapper', () => {
 });
 test('generic and truncated captions are rejected, never padded', () => {
   assert.throws(()=>buildVideoCaption('A new hip-hop video is moving through the feed.', 'akademiks'), /specific/);
+  assert.throws(()=>buildVideoCaption('Lil Durk is what happens when a kid grows up without his father.', 'akademiks'), /non-boilerplate/);
   assert.throws(()=>sourceCaption({requestedUrl:url,canonicalUrl:url,title:'Page on Instagram: "This sentence was cut off…"'}), /truncated/);
 });
 test('only explicitly verified people get handles', () => {

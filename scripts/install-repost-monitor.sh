@@ -19,13 +19,10 @@ cat > "$plist_path" <<PLIST
   <array>
     <string>/bin/zsh</string>
     <string>-lc</string>
-    <string>export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"; cd "$repo_dir" &amp;&amp; npm run repost:monitor</string>
+    <string>export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"; cd "$repo_dir" &amp;&amp; /opt/homebrew/bin/python3 scripts/repost-monitor-runner.py</string>
   </array>
   <key>StartInterval</key>
   <integer>300</integer>
-  <!-- A browser capture must never hold the collector lock indefinitely. -->
-  <key>TimeOut</key>
-  <integer>240</integer>
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>

@@ -251,7 +251,11 @@ async function commitAndPush(createdIds) {
   }
   const { stdout: changed } = await execFileAsync("git", ["status", "--porcelain", "--", ...paths]);
   if (changed.trim()) {
-  await execFileAsync("git", ["add", "--", ...paths]);
+  // The local collector intentionally uses sparse checkout for speed, while
+  // captured MP4s live outside that sparse set.  `--sparse` is required here;
+  // without it Git accepts the queue JSON but rejects the media asset, leaving
+  // every otherwise-ready video stranded off the remote publisher queue.
+  await execFileAsync("git", ["add", "--sparse", "--", ...paths]);
   await execFileAsync("git", ["commit", "--only", "-m", createdIds.length ? `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}` : "Save RapWire collector health", "--", ...paths]).catch((error) => {
     if (!/nothing to commit/i.test(error.stdout || error.stderr || "")) throw error;
   });

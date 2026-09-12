@@ -26,6 +26,10 @@ const sources = [
 ];
 const maxQueuePerRun = 1;
 const candidatesPerSourceToScore = 4;
+// A source can fail because Instagram temporarily withholds its media ranges.
+// Bound failed capture work so one bad batch cannot monopolize the launcher;
+// the next five-minute pass gets a fresh browser and can retry other items.
+const maxCaptureAttemptsPerRun = 3;
 
 async function readJson(file, fallback) {
   try {
@@ -379,11 +383,14 @@ try {
     });
 
   let queueNumber = await nextQueueNumber();
+  let captureAttempts = 0;
   for (const candidate of rankedCandidates) {
     if (run.queued.length >= maxQueuePerRun) break;
+    if (captureAttempts >= maxCaptureAttemptsPerRun) break;
     if (ledger.queued_shortcodes[candidate.shortcode]) continue;
     if (!candidate.isVideo || !candidate.visibleCaption) continue;
     try {
+      captureAttempts += 1;
       const id = await queueCapture(ledger, candidate, queueNumber);
       run.queued.push(id);
       queueNumber += 1;

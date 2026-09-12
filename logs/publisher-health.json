@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-12T18:06:50.649Z",
+  "checked_at": "2026-09-12T18:11:55.761Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-12T17:56:46.917Z",
-    "usage": 7,
+    "checked_at": "2026-09-12T18:11:55.162Z",
+    "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-12T18:11:46.917Z",
+    "next_check_at": "2026-09-12T18:26:55.162Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -17,8 +17,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 7,
-    "instagram_remaining": 41,
+    "instagram_usage": 6,
+    "instagram_remaining": 42,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-12T17:40:40.323Z",
     "feed_allowed": true,
@@ -44,6 +44,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-12T17:40:31.754Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.json",
+      "id": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 11-Sep-26 13:00:00 PDT. The current time is Saturday, 12-Sep-26 11:11:55 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ACYzZ8m58MyIRlgMP_zXF8d\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

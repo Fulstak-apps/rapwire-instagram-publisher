@@ -25,7 +25,10 @@ const sources = [
   { handle: "records", credit: false, includePosts: true, includeReels: true }
 ];
 const maxQueuePerRun = 1;
-const candidatesPerSourceToScore = 4;
+// Score the two freshest visible items per source.  More than that delays the
+// actual capture behind dozens of metadata page loads and makes a single pass
+// needlessly likely to exceed its watchdog window.
+const candidatesPerSourceToScore = 2;
 // A source can fail because Instagram temporarily withholds its media ranges.
 // Bound failed capture work so one bad batch cannot monopolize the launcher;
 // the next five-minute pass gets a fresh browser and can retry other items.

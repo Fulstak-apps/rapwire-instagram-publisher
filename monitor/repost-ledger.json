@@ -6572,6 +6572,30 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdMNL0tDsF0/",
       "view_count": 0
+    },
+    "DdMXhv1jiOV": {
+      "seen_at": "2026-09-12T16:03:10.627Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdMXhv1jiOV/",
+      "view_count": 0
+    },
+    "DdMXX8aDiYH": {
+      "seen_at": "2026-09-12T16:03:10.630Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DdMXX8aDiYH/",
+      "view_count": 0
+    },
+    "DdMS2xRxq3_": {
+      "seen_at": "2026-09-12T16:03:10.630Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdMS2xRxq3_/",
+      "view_count": 0
+    },
+    "DdMO07Bx4oq": {
+      "seen_at": "2026-09-12T16:03:10.630Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdMO07Bx4oq/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -9268,29 +9292,16 @@
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdLGIkoOX0D/",
       "queue_id": "630-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
       "video": "media/630-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
+    },
+    "DdMS2xRxq3_": {
+      "queued_at": "2026-09-12T16:05:31.950Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdMS2xRxq3_/",
+      "queue_id": "631-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
+      "video": "media/631-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-10T02:25:14.489Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/freshouttheculture/\nCall log:\n  - navigating to \"https://www.instagram.com/freshouttheculture/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-10T02:25:22.103Z"
-    },
     {
       "started_at": "2026-09-10T02:30:25.560Z",
       "candidates": 0,
@@ -19129,6 +19140,34 @@
       },
       "mode": "discovery",
       "finished_at": "2026-09-12T14:46:36.598Z"
+    },
+    {
+      "started_at": "2026-09-12T16:02:00.501Z",
+      "candidates": 96,
+      "queued": [
+        "631-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdL0L4cgqtq/",
+          "stage": "score",
+          "error": "Exact source caption missing, generic or truncated; needs review"
+        },
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/DdK2xgEM3AY/",
+          "stage": "score",
+          "error": "Exact source caption missing, generic or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 3,
+        "available": 1,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-12T16:05:31.950Z"
     }
   ],
   "vip_pending": {

@@ -14,16 +14,24 @@ records.sort((a, b) => Number(live(b.item)) - Number(live(a.item))
   || a.name.localeCompare(b.name, 'en', { numeric: true }));
 for (const { name, item } of records) {
   const shortcode = (item.content_type === 'video' || item.type === 'source_media_repost') ? String(item.source_url || '').match(/\/(?:p|reel)\/([\w-]+)/)?.[1] : null;
+  const isVideo = Boolean(shortcode);
   const fingerprint=storyFingerprint(item.body);
-  const prior = seenIds.get(item.id) || (shortcode && seenVideos.get(shortcode)) || (fingerprint&&seenStories.get(fingerprint));
+  // Video filenames and generated IDs often share the same headline.  Those are
+  // not duplicates unless they resolve to the exact same Instagram shortcode.
+  // Text/editorial records still use ID/body fingerprints for deduplication.
+  const prior = isVideo
+    ? (shortcode && seenVideos.get(shortcode))
+    : (seenIds.get(item.id) || (fingerprint && seenStories.get(fingerprint)));
   const started=['instagram','threads'].some(prefix=>item[prefix+'_media_id']||item[prefix+'_container_id']||item[prefix+'_publish_requested_at']||item[prefix+'_children']?.some(Boolean));
   if (prior && item.status === 'ready' && !started) {
     item.status = 'paused'; item.pause_reason = `Duplicate of ${prior}; preserved but not republished`;
     await fs.writeFile(path.join(dir, name), JSON.stringify(item, null, 2) + '\n');
     console.log(`Duplicate held: ${name} -> ${prior}`);
   } else if (['ready', 'published'].includes(item.status)) {
-    seenIds.set(item.id, name);
-    if (shortcode) seenVideos.set(shortcode, name);
-    if (fingerprint) seenStories.set(fingerprint,name);
+    if (isVideo) seenVideos.set(shortcode, name);
+    else {
+      seenIds.set(item.id, name);
+      if (fingerprint) seenStories.set(fingerprint,name);
+    }
   }
 }

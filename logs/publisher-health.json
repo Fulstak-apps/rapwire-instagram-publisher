@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-12T21:20:29.882Z",
+  "checked_at": "2026-09-12T21:24:01.550Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-12T21:20:23.746Z",
@@ -17,15 +17,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 5,
-    "instagram_remaining": 43,
+    "instagram_usage": 6,
+    "instagram_remaining": 42,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-12T21:50:29.623Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -34,40 +34,16 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-12T21:06:12.529Z",
-    "usage": 7,
+    "checked_at": "2026-09-12T21:24:01.161Z",
+    "usage": 6,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-12T21:21:12.529Z",
+    "next_check_at": "2026-09-12T21:39:01.161Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-12T21:50:23.243Z",
-  "publications": [
-    {
-      "file": "635-i-mean-i-told-yall.json",
-      "id": "635-i-mean-i-told-yall",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18105998584929351"
-    },
-    {
-      "file": "635-i-mean-i-told-yall.json",
-      "id": "635-i-mean-i-told-yall",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17928498093165593",
-      "content_type": "video"
-    }
-  ],
-  "failures": [
-    {
-      "file": "queue/635-i-mean-i-told-yall.json",
-      "id": "635-i-mean-i-told-yall",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 12-Sep-26 14:20:17 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AOwElHoeybAto-VbLnHNh6b\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

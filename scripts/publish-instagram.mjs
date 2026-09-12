@@ -79,6 +79,24 @@ const queueRecords = await Promise.all(queueNames.map(async (name) => ({
   item: JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8"))
 })));
 
+// Never send the same editorial copy repeatedly.  Source accounts sometimes
+// repost an identical statement under different shortcodes; publishing that
+// text three times in a row makes the feed look stalled and spammy.  Compare
+// only the body (without the Rap Wire footer) and retain the newest item.
+const captionFingerprint = (value) => String(value || "")
+  .replace(/\s*Rap\s*Wire 24\/7[\s\S]*$/i, "")
+  .replace(/\s+/g, " ")
+  .trim()
+  .toLowerCase();
+const publishedCaptionFingerprints = new Set(queueRecords
+  .map(({item}) => item)
+  .filter(item => item.status === "published" && (item.instagram_media_id || item.threads_media_id))
+  .sort((a, b) => (Date.parse(b.published_at || b.threads_published_at || "") || 0)
+    - (Date.parse(a.published_at || a.threads_published_at || "") || 0))
+  .slice(0, 12)
+  .map(item => captionFingerprint(item.body))
+  .filter(Boolean));
+
 const files = queueRecords
   .sort((left, right) => {
     const readyDelta = Number(right.item.status === "ready") - Number(left.item.status === "ready");
@@ -561,6 +579,7 @@ const uploadSlots = instagramAvailable() && !preferStory && (deliveryPolicy.feed
   ? Math.max(0, 1 - processingCount) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
   .filter(({ item }) => item.status === "ready" && item.content_type === "video"
+    && !publishedCaptionFingerprints.has(captionFingerprint(item.body))
     && (deliveryPolicy.feed_allowed || (recovery.feed_allowed && item.id === recovery.item_id))
     && !item.instagram_container_id && String(item.video || "").endsWith(".mp4")
     && !item.instagram_reconcile_required && !(Date.parse(item.instagram_retry_at || "") > Date.now())
@@ -658,6 +677,10 @@ for (const file of files) {
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
+    if (publishedCaptionFingerprints.has(captionFingerprint(item.body))) {
+      await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "duplicate_recent_caption" });
+      continue;
+    }
     const normalizedCaption = signedCaption(item.caption, item);
     const normalizedThreadsText = signedCaption(item.threads_text || item.caption, item);
     if (item.caption !== normalizedCaption || item.threads_text !== normalizedThreadsText) {

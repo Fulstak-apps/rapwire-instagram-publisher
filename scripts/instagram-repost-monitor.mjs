@@ -165,7 +165,17 @@ async function captionFields(evidence, source) {
 
 async function queueCapture(ledger, candidate, queueNumber) {
   const shortcode = candidate.shortcode;
-  const evidence = await capture(candidate.url, { headless: true });
+  const cachedEvidencePath = path.join(root, "work", "instagram-mirror", `${shortcode}.json`);
+  const cachedVideoPath = path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`);
+  // A completed render may have failed only at the final queue handoff (for
+  // example after a sparse checkout omitted media/). Reuse that validated
+  // artifact rather than downloading and rendering the same Reel again.
+  let evidence = await readJson(cachedEvidencePath, null);
+  if (!evidence || !evidence.source_url || !String(evidence.source_url).includes(shortcode)) evidence = null;
+  if (evidence) {
+    try { await fs.access(cachedVideoPath); } catch { evidence = null; }
+  }
+  if (!evidence) evidence = await capture(candidate.url, { headless: true });
   // Clean sparse checkouts may not contain an empty media directory.  Always
   // create it at the handoff boundary so a successful capture reaches GitHub.
   await fs.mkdir(mediaDir, { recursive: true });

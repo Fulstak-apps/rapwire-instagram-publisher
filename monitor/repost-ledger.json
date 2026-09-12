@@ -9329,49 +9329,16 @@
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdMS2xRxq3_/",
       "queue_id": "631-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
       "video": "media/631-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
+    },
+    "DdMO07Bx4oq": {
+      "queued_at": "2026-09-12T16:43:32.396Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdMO07Bx4oq/",
+      "queue_id": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
+      "video": "media/632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-10T02:35:34.953Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/darnellwilliams/\nCall log:\n  - navigating to \"https://www.instagram.com/darnellwilliams/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphopdx/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphopdx/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-10T02:35:44.093Z"
-    },
     {
       "started_at": "2026-09-10T02:40:47.243Z",
       "candidates": 0,
@@ -19210,6 +19177,34 @@
       },
       "mode": "discovery",
       "finished_at": "2026-09-12T16:33:12.974Z"
+    },
+    {
+      "started_at": "2026-09-12T16:38:19.296Z",
+      "candidates": 96,
+      "queued": [
+        "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdMZ9iRumcu/",
+          "stage": "score",
+          "error": "Exact source caption missing, generic or truncated; needs review"
+        },
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/DdK2xgEM3AY/",
+          "stage": "score",
+          "error": "Exact source caption missing, generic or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 3,
+        "available": 2,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-12T16:43:32.396Z"
     }
   ],
   "vip_pending": {

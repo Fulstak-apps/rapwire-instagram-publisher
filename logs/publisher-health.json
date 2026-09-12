@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-12T23:24:27.312Z",
+  "checked_at": "2026-09-12T23:29:52.638Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-12T23:14:48.145Z",
+    "checked_at": "2026-09-12T23:29:51.887Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-12T23:29:48.145Z",
+    "next_check_at": "2026-09-12T23:44:51.887Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -21,7 +21,7 @@
     "instagram_remaining": 41,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-12T23:27:20.764Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 0,
@@ -34,16 +34,24 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-12T23:09:43.143Z",
+    "checked_at": "2026-09-12T23:29:52.203Z",
     "usage": 7,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-12T23:24:43.143Z",
+    "next_check_at": "2026-09-12T23:44:52.203Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-12T23:27:05.161Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
+      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 12-Sep-26 16:29:52 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AyTphd9cDWcVxkN695W-7Xy\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

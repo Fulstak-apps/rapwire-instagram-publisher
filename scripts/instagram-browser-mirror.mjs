@@ -163,15 +163,21 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
       if (matchedVideos.length < 1) {
         try {
           const encoded = await video.evaluate(async element => {
-            const response = await fetch(element.currentSrc, { credentials: 'include' });
-            if (!response.ok) throw new Error(`direct media fetch returned ${response.status}`);
-            const bytes = new Uint8Array(await response.arrayBuffer());
-            let output = '';
-            const chunkSize = 0x8000;
-            for (let offset = 0; offset < bytes.length; offset += chunkSize) {
-              output += String.fromCharCode(...bytes.subarray(offset, offset + chunkSize));
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), 45000);
+            try {
+              const response = await fetch(element.currentSrc, { credentials: 'include', signal: controller.signal });
+              if (!response.ok) throw new Error(`direct media fetch returned ${response.status}`);
+              const bytes = new Uint8Array(await response.arrayBuffer());
+              let output = '';
+              const chunkSize = 0x8000;
+              for (let offset = 0; offset < bytes.length; offset += chunkSize) {
+                output += String.fromCharCode(...bytes.subarray(offset, offset + chunkSize));
+              }
+              return btoa(output);
+            } finally {
+              clearTimeout(timeout);
             }
-            return btoa(output);
           });
           const directPath = path.join(tempDir, 'direct-visible-source.bin');
           await fs.writeFile(directPath, Buffer.from(encoded, 'base64'));

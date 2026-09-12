@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-12T22:57:21.121Z",
+  "checked_at": "2026-09-12T22:59:39.401Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-12T22:57:05.908Z",
@@ -17,15 +17,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 6,
-    "instagram_remaining": 42,
+    "instagram_usage": 7,
+    "instagram_remaining": 41,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-12T23:27:20.764Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,23 +43,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-12T23:27:05.161Z",
-  "publications": [
-    {
-      "file": "639-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up.json",
-      "id": "639-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18145167535569781"
-    },
-    {
-      "file": "639-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up.json",
-      "id": "639-rampage-jackson-is-what-happens-when-a-kid-from-memphis-grows-up",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18072956774549310",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

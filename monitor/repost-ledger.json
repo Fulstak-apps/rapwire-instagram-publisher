@@ -9489,41 +9489,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-10T07:40:10.886Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-10T07:40:36.461Z"
-    },
-    {
       "started_at": "2026-09-10T07:45:41.276Z",
       "candidates": 0,
       "queued": [],
@@ -19246,6 +19211,19 @@
       },
       "mode": "discovery",
       "finished_at": "2026-09-12T22:57:14.415Z"
+    },
+    {
+      "started_at": "2026-09-12T23:02:17.639Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 3,
+        "available": 3,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-12T23:02:21.566Z"
     }
   ],
   "vip_pending": {

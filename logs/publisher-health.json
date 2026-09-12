@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-12T14:10:49.669Z",
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "checked_at": "2026-09-12T14:14:56.355Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-12T14:09:34.555Z",
-    "usage": 10,
+    "checked_at": "2026-09-12T14:14:49.754Z",
+    "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-12T14:24:34.555Z",
+    "next_check_at": "2026-09-12T14:29:49.754Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -20,11 +20,11 @@
     "instagram_usage": 10,
     "instagram_remaining": 38,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-12T02:54:38.175Z",
+    "next_feed_eligible_at": "2026-09-12T14:44:56.092Z",
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -35,15 +35,31 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-12T14:06:51.853Z",
-    "usage": 15,
+    "usage": 16,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-12T14:21:51.853Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-12T02:54:29.671Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-12T14:44:49.353Z",
+  "publications": [
+    {
+      "file": "629-ceddy-nash-the-only-hood-lawyer-he-called-it-years-ago.json",
+      "id": "629-ceddy-nash-the-only-hood-lawyer-he-called-it-years-ago",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18427912954195123"
+    },
+    {
+      "file": "629-ceddy-nash-the-only-hood-lawyer-he-called-it-years-ago.json",
+      "id": "629-ceddy-nash-the-only-hood-lawyer-he-called-it-years-ago",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18440637829127240",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

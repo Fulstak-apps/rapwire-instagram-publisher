@@ -25,6 +25,10 @@ const sources = [
   { handle: "records", credit: false, includePosts: true, includeReels: true }
 ];
 const maxQueuePerRun = 1;
+// Keep several already-validated source videos ahead of the publisher.  An
+// Instagram container in progress is counted as reserved inventory, so the
+// collector does not duplicate it while Meta processes the upload.
+const targetReadyVideoBuffer = 3;
 // Score the freshest visible item per source.  More than that delays the
 // actual capture behind dozens of metadata page loads and makes a single pass
 // needlessly likely to exceed its watchdog window.
@@ -293,6 +297,16 @@ try {
     if (code && item.content_type === "video") ledger.queued_shortcodes[code] ||= { queue_id: item.id, source_url: item.source_url, source_handle: item.source_handle, video: item.video };
   }
 
+  const queueSnapshot = await Promise.all((await fs.readdir(queueDir))
+    .filter(name => name.endsWith('.json'))
+    .map(name => readJson(path.join(queueDir, name), {})));
+  const bufferedVideos = queueSnapshot.filter(item => item.status === 'ready'
+    && item.content_type === 'video'
+    && sources.some(source => source.handle === item.source_handle)
+    && !item.instagram_media_id).length;
+  const bufferNeeded = Math.max(0, targetReadyVideoBuffer - bufferedVideos);
+  run.video_buffer = { target: targetReadyVideoBuffer, available: bufferedVideos, needed: bufferNeeded };
+
   const unsent = [];
   for (const name of (await fs.readdir(queueDir)).filter(name => name.endsWith(".json"))) {
     const item = await readJson(path.join(queueDir, name), {});
@@ -350,7 +364,7 @@ try {
   }
 
   run.mode = repairAttempts ? "caption_repair" : "discovery";
-  if (!repairAttempts) {
+  if (!repairAttempts && bufferNeeded > 0) {
   const discovered = [];
   let rankedPool = [];
   await withFreshBrowser(async (context) => {
@@ -401,7 +415,7 @@ try {
   let queueNumber = await nextQueueNumber();
   let captureAttempts = 0;
   for (const candidate of rankedCandidates) {
-    if (run.queued.length >= maxQueuePerRun) break;
+    if (run.queued.length >= Math.min(maxQueuePerRun, bufferNeeded)) break;
     if (captureAttempts >= maxCaptureAttemptsPerRun) break;
     if (ledger.queued_shortcodes[candidate.shortcode]) continue;
     if (!candidate.isVideo || !candidate.visibleCaption) continue;

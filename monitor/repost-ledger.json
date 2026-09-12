@@ -6230,6 +6230,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdKs3FmjoYD/",
       "view_count": 0
+    },
+    "DdKuuDVP_Sh": {
+      "seen_at": "2026-09-12T00:51:45.071Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKuuDVP_Sh/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -8863,29 +8869,16 @@
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKsVYcPfmm/",
       "queue_id": "608-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
       "video": "media/608-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
+    },
+    "DdKuuDVP_Sh": {
+      "queued_at": "2026-09-12T00:52:10.121Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdKuuDVP_Sh/",
+      "queue_id": "611-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
+      "video": "media/611-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-09T23:59:16.428Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/hiphop_firstnewsmusic/\nCall log:\n  - navigating to \"https://www.instagram.com/hiphop_firstnewsmusic/\", waiting until \"domcontentloaded\"\n"
-        },
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"domcontentloaded\"\n"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-09T23:59:21.675Z"
-    },
     {
       "started_at": "2026-09-10T00:04:24.616Z",
       "candidates": 0,
@@ -17250,6 +17243,16 @@
       "errors": [],
       "mode": "discovery",
       "finished_at": "2026-09-12T00:44:30.774Z"
+    },
+    {
+      "started_at": "2026-09-12T00:49:42.118Z",
+      "candidates": 84,
+      "queued": [
+        "611-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his"
+      ],
+      "errors": [],
+      "mode": "discovery",
+      "finished_at": "2026-09-12T00:52:10.122Z"
     }
   ],
   "vip_pending": {

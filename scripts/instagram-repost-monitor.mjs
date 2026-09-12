@@ -32,11 +32,18 @@ const targetReadyVideoBuffer = 3;
 // Score the freshest visible item per source.  More than that delays the
 // actual capture behind dozens of metadata page loads and makes a single pass
 // needlessly likely to exceed its watchdog window.
-const candidatesPerSourceToScore = 1;
+// Keep a small fallback set from every approved source.  A single Reel can
+// legitimately refuse an authenticated media fetch (especially long press
+// conferences), and it must not be able to empty the publishing pipeline.
+const candidatesPerSourceToScore = 2;
 // A source can fail because Instagram temporarily withholds its media ranges.
 // Bound failed capture work so one bad batch cannot monopolize the launcher;
 // the next five-minute pass gets a fresh browser and can retry other items.
-const maxCaptureAttemptsPerRun = 1;
+// Try a few independent candidates before yielding.  This is intentionally
+// lower than the number of scored candidates so collection remains bounded,
+// while a bad stream can fail over to a different ready-to-publish video in
+// the same run.
+const maxCaptureAttemptsPerRun = 3;
 
 async function readJson(file, fallback) {
   try {

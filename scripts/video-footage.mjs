@@ -81,6 +81,15 @@ export function chooseFootageCrop({bands, sampleWidth, sampleHeight, sourceWidth
   if (bands.ambiguous) throw new Error(`Crop review required: ${bands.reason}`);
   if (!Array.isArray(observations) || observations.length < 5 || observations.some(o=>!Array.isArray(o.text)||!Array.isArray(o.faces))) throw new Error('Crop review required: missing local text/face inspection');
   const text=observations.flatMap(o=>o.text).filter(o=>o.confidence>=0.45);
+  // A repostable Reel must be footage, not a screen recording of somebody
+  // else's app/player page. Those have no clean crop because engagement and
+  // subscription UI are baked into the source. Hold them before render rather
+  // than publishing a tiny video surrounded by description/likes controls.
+  const uiWords = text.map(item => item.text).join(' ').toLowerCase();
+  const uiSignals = ['description', 'subscrib', 'views', 'likes', 'patreon', 'join this channel', 'youtube.com', 'youtube.co', 'watch later'];
+  if (uiSignals.filter(signal => uiWords.includes(signal)).length >= 2) {
+    throw new Error('Crop review required: source is an embedded player or app-interface recording, not clean footage');
+  }
   const sourceMarks=text.filter(o=>sourceBrandLine(o,sourceHandle));
   const bandRect={x:bands.x/sampleWidth,y:bands.y/sampleHeight,width:bands.width/sampleWidth,height:bands.height/sampleHeight};
   const substantiveTopPanel=bandRect.y>0.035;

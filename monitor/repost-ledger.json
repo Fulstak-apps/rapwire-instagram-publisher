@@ -9433,18 +9433,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdMwNwsS07B/",
       "queue_id": "635-i-mean-i-told-yall",
       "video": "media/635-i-mean-i-told-yall.mp4"
+    },
+    "DdMpWy-vYP6": {
+      "queued_at": "2026-09-12T21:20:16.830Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdMpWy-vYP6/",
+      "queue_id": "636-blueface-is-what-happens-when-a-teenager-walks-into-a-studio-to-",
+      "video": "media/636-blueface-is-what-happens-when-a-teenager-walks-into-a-studio-to-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-10T02:56:23.842Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "mode": "discovery",
-      "vip_pending": 16,
-      "finished_at": "2026-09-10T02:56:38.822Z"
-    },
     {
       "started_at": "2026-09-10T06:46:36.355Z",
       "candidates": 0,
@@ -19260,6 +19258,28 @@
       },
       "mode": "discovery",
       "finished_at": "2026-09-12T21:16:17.268Z"
+    },
+    {
+      "started_at": "2026-09-12T21:16:33.863Z",
+      "candidates": 96,
+      "queued": [
+        "636-blueface-is-what-happens-when-a-teenager-walks-into-a-studio-to-"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdMcc73uXBX/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdMcc73uXBX-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 3,
+        "available": 1,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-12T21:20:16.830Z"
     }
   ],
   "vip_pending": {

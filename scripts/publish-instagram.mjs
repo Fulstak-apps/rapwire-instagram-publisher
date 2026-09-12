@@ -325,6 +325,9 @@ async function facebookPost(item, itemPath) {
   
   const lastFB = Date.parse(pacing.last_facebook_published_at || '') || 0;
   if (Date.now() - lastFB < FACEBOOK_INTERVAL_MS) return false;
+  // Keep an expired/invalid Page credential from being hammered every five
+  // minutes. This hold is Facebook-only; Instagram and Threads continue.
+  if (Date.parse(pacing.facebook_retry_at || '') > Date.now()) return false;
 
   try {
     if (item.content_type !== "video" || !item.video) return;
@@ -348,6 +351,7 @@ async function facebookPost(item, itemPath) {
     item.facebook_media_id = payload.id;
     item.facebook_published_at = new Date().toISOString();
     pacing.last_facebook_published_at = item.facebook_published_at;
+    delete pacing.facebook_retry_at;
     
     await save(itemPath, item);
     await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_facebook_published_at: item.facebook_published_at }) + "\n");
@@ -356,6 +360,10 @@ async function facebookPost(item, itemPath) {
     return true;
   } catch (error) {
     item.facebook_error = error.message;
+    if (/access token|oauth|190|session has expired|invalid.*token/i.test(error.message)) {
+      pacing.facebook_retry_at = new Date(Date.now() + 30 * 60_000).toISOString();
+      await fs.writeFile(pacingPath, JSON.stringify({ ...pacing }) + "\n");
+    }
     await save(itemPath, item);
     await logAttempt({ file: itemPath, id: item.id, platform: "facebook", status: "failed", error: error.message });
     console.error(`Facebook failed for ${item.id}: ${error.message}`);

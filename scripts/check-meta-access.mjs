@@ -4,6 +4,9 @@ const checks = [
   ['threads identity', 'https://graph.threads.net/v1.0/me?fields=id,username', process.env.THREADS_ACCESS_TOKEN],
   ['threads token', 'https://graph.threads.net/debug_token', process.env.THREADS_ACCESS_TOKEN, true],
 ];
+if (process.env.FACEBOOK_PAGE_ACCESS_TOKEN && process.env.FACEBOOK_PAGE_ID) {
+  checks.push(['facebook page', `https://graph.facebook.com/v26.0/${encodeURIComponent(process.env.FACEBOOK_PAGE_ID)}?fields=id,name`, process.env.FACEBOOK_PAGE_ACCESS_TOKEN]);
+}
 for (const [label, endpoint, token, debug] of checks) {
   if (!token) { console.log(`${label}: missing credential`); continue; }
   try {

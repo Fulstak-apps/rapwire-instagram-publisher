@@ -133,5 +133,6 @@
   "threads_replay_container_status": "FINISHED",
   "threads_replay_publish_requested_at": "2026-09-11T08:33:10.525Z",
   "threads_replay_media_id": "17886202842617866",
-  "threads_replay_published_at": "2026-09-11T08:33:17.023Z"
+  "threads_replay_published_at": "2026-09-11T08:33:17.023Z",
+  "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 11-Sep-26 13:00:00 PDT. The current time is Saturday, 12-Sep-26 10:10:46 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AkYMb1gtjMrAw7y0Km1LN7q\"}}"
 }

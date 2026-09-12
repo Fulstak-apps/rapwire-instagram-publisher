@@ -155,7 +155,9 @@ export function chooseLogoSize(crop,sourceWidth,sourceHeight,observations) {
 }
 
 export function footageFilter(crop, logoIndex=1,logoSize=170) {
-  return `[0:v]crop=${crop.width}:${crop.height}:${crop.x}:${crop.y},setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,gblur=sigma=28[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[${logoIndex}:v]scale=${logoSize}:${logoSize}[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v]`;
+  // boxblur is visually sufficient for unavoidable side fill but dramatically
+  // faster than gblur on long vertical Reels, keeping publication latency low.
+  return `[0:v]crop=${crop.width}:${crop.height}:${crop.x}:${crop.y},setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,boxblur=12:1[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[${logoIndex}:v]scale=${logoSize}:${logoSize}[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v]`;
 }
 
 export async function analyzeFootage(input,{sourceHandle,directory,width,height,duration}) {

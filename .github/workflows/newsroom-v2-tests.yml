@@ -1,0 +1,44 @@
+name: RapWire Newsroom v2 tests
+
+on:
+  pull_request:
+    paths:
+      - "scripts/newsroom_engine.py"
+      - "scripts/local-rapwire-v2.py"
+      - "scripts/local-rapwire-autonomous-v2.py"
+      - "scripts/run-local-newsroom.sh"
+      - "scripts/install-local-newsroom.sh"
+      - "scripts/test_local_rapwire_newsroom*.py"
+      - ".github/workflows/newsroom-v2-tests.yml"
+  push:
+    branches:
+      - "rapwire/newsroom-v2"
+    paths:
+      - "scripts/newsroom_engine.py"
+      - "scripts/local-rapwire-v2.py"
+      - "scripts/local-rapwire-autonomous-v2.py"
+      - "scripts/run-local-newsroom.sh"
+      - "scripts/install-local-newsroom.sh"
+      - "scripts/test_local_rapwire_newsroom*.py"
+      - ".github/workflows/newsroom-v2-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  newsroom-ranking:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Compile newsroom entrypoints
+        run: >-
+          python -m py_compile
+          scripts/newsroom_engine.py
+          scripts/local-rapwire-v2.py
+          scripts/local-rapwire-autonomous-v2.py
+      - name: Run deterministic newsroom tests
+        run: python -m unittest discover -s scripts -p 'test_local_rapwire_newsroom*.py' -v

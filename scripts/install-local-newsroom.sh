@@ -10,15 +10,15 @@ command -v git >/dev/null || { echo "git is required."; exit 1; }
 [[ -d "$RAPWIRE_REPO_DIR/.git" ]] || { echo "Repository not found: $RAPWIRE_REPO_DIR"; exit 1; }
 cd "$RAPWIRE_REPO_DIR"
 ollama pull "${OLLAMA_MODEL:-qwen3:4b}"
-chmod +x scripts/local-rapwire-autonomous.py scripts/run-local-newsroom.sh
+chmod +x scripts/local-rapwire-autonomous.py scripts/local-rapwire-autonomous-v2.py scripts/run-local-newsroom.sh
 mkdir -p "$HOME/Library/LaunchAgents"
 cp launchd/com.rapwire247.newsroom.plist "$PLIST"
 
 launchctl bootout "gui/$(id -u)" "$PLIST" 2>/dev/null || true
 launchctl bootstrap "gui/$(id -u)" "$PLIST"
 launchctl enable "gui/$(id -u)/com.rapwire247.newsroom"
-python3 scripts/local-rapwire-autonomous.py --health
+python3 scripts/local-rapwire-autonomous-v2.py --health
 
-echo "RapWire autonomous newsroom installed."
+echo "RapWire autonomous Newsroom v2 installed."
 echo "Runs every 5 minutes while this Mac user session is active."
 echo "Logs: /tmp/rapwire247-newsroom.out.log and /tmp/rapwire247-newsroom.err.log"

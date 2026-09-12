@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-12T16:35:24.785Z",
+  "checked_at": "2026-09-12T16:41:11.178Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-12T16:35:17.478Z",
@@ -17,15 +17,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 7,
-    "instagram_remaining": 41,
+    "instagram_usage": 8,
+    "instagram_remaining": 40,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-12T17:05:24.506Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -34,32 +34,16 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-12T16:25:59.246Z",
-    "usage": 12,
+    "checked_at": "2026-09-12T16:41:11.000Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-12T16:40:59.246Z",
+    "next_check_at": "2026-09-12T16:56:11.000Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-12T17:05:16.933Z",
-  "publications": [
-    {
-      "file": "630-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.json",
-      "id": "630-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17957712174235286"
-    },
-    {
-      "file": "630-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.json",
-      "id": "630-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17937739614362972",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

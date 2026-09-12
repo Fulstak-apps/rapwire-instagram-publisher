@@ -32,7 +32,7 @@ const candidatesPerSourceToScore = 2;
 // A source can fail because Instagram temporarily withholds its media ranges.
 // Bound failed capture work so one bad batch cannot monopolize the launcher;
 // the next five-minute pass gets a fresh browser and can retry other items.
-const maxCaptureAttemptsPerRun = 3;
+const maxCaptureAttemptsPerRun = 2;
 
 async function readJson(file, fallback) {
   try {

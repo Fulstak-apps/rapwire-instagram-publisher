@@ -77,7 +77,7 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
     // Give normal autoplay a short head start, then use the bounded seeking
     // pass below.  Waiting for a long Reel to buffer in real time made one
     // failed candidate consume an entire monitor interval.
-    const bufferDeadline = Date.now() + Math.min(20000, (sourceEvidence.duration + 5) * 1000);
+    const bufferDeadline = Date.now() + Math.min(6000, (sourceEvidence.duration + 2) * 1000);
     let fullyBuffered = false;
     while (Date.now() < bufferDeadline) {
       const buffered = await video.evaluate(element => ({ end: element.buffered.length ? element.buffered.end(element.buffered.length - 1) : 0, duration:element.duration }));
@@ -92,8 +92,8 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
     // capture.  This is bounded and never changes the selected post.
     if (!fullyBuffered) {
       const duration = Number(sourceEvidence.duration);
-      for (let step = 1; step <= 8; step += 1) {
-        const time = Math.min(duration - 0.15, duration * (step / 9));
+      for (let step = 1; step <= 4; step += 1) {
+        const time = Math.min(duration - 0.15, duration * (step / 5));
         await video.evaluate(async (element, target) => {
           element.muted = true;
           element.currentTime = target;

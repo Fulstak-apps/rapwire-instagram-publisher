@@ -1,5 +1,10 @@
 name: Check Meta access
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  # Catch revoked or expired credentials before the next scheduled post. A
+  # failed scheduled workflow also sends GitHub's configured failure notice.
+  schedule:
+    - cron: '17 15 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
-      - run: node scripts/check-meta-access.mjs
+      - run: node scripts/check-meta-access.mjs --require-valid
         env:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}

@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-09-12T18:22:03.160Z",
-  "instagram_cooldown_until": null,
+  "checked_at": "2026-09-12T18:23:30.632Z",
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-12T18:17:00.607Z",
     "usage": 6,
@@ -24,8 +24,8 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,21 +44,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-12T17:40:31.754Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.json",
-      "id": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
-      "platform": "threads",
-      "status": "failed",
-      "error": "threads: ERROR; retry after 2026-09-12T19:22:01.534Z: UNKNOWN"
-    },
-    {
-      "file": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.json",
-      "id": "632-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "instagram: ERROR; retry after 2026-09-12T19:22:02.302Z: ERROR"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

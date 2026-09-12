@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-12T02:24:38.501Z",
+  "checked_at": "2026-09-12T02:27:35.685Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-12T02:12:30.330Z",
+    "checked_at": "2026-09-12T02:27:34.683Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-12T02:27:30.330Z",
+    "next_check_at": "2026-09-12T02:42:34.683Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -17,15 +17,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 40,
-    "instagram_usage": 28,
-    "instagram_remaining": 12,
+    "instagram_usage": 29,
+    "instagram_remaining": 11,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-12T02:54:38.175Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -34,32 +34,16 @@
   },
   "threads_interval_seconds": 60,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-12T02:12:30.726Z",
-    "usage": 49,
+    "checked_at": "2026-09-12T02:27:35.315Z",
+    "usage": 48,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-12T02:27:30.726Z",
+    "next_check_at": "2026-09-12T02:42:35.315Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-12T02:25:29.671Z",
-  "publications": [
-    {
-      "file": "616-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.json",
-      "id": "616-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18077880782367749"
-    },
-    {
-      "file": "616-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his.json",
-      "id": "616-lil-durk-lildurk-is-what-happens-when-a-kid-grows-up-without-his",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18131330725659879",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

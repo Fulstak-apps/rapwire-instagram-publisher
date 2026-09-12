@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-09-12T02:32:43.350Z",
-  "instagram_cooldown_until": null,
+  "checked_at": "2026-09-12T02:34:36.723Z",
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-12T02:27:34.683Z",
     "usage": 29,
@@ -16,9 +16,9 @@
   },
   "delivery_policy": {
     "feed_interval_minutes": 30,
-    "instagram_daily_cap": 40,
+    "instagram_daily_cap": 48,
     "instagram_usage": 29,
-    "instagram_remaining": 11,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-12T02:54:38.175Z",
     "feed_allowed": false,
@@ -32,7 +32,7 @@
     "feed_allowed": false,
     "story_allowed": false
   },
-  "threads_interval_seconds": 60,
+  "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-12T02:27:35.315Z",
     "usage": 48,
@@ -42,7 +42,7 @@
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-12T02:25:29.671Z",
+  "threads_next_eligible_at": "2026-09-12T02:54:29.671Z",
   "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-12T21:54:00.147Z",
+  "checked_at": "2026-09-12T21:59:14.088Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-12T21:53:58.833Z",
+    "checked_at": "2026-09-12T21:59:08.711Z",
     "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-12T22:08:58.833Z",
+    "next_check_at": "2026-09-12T22:14:08.711Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -20,7 +20,7 @@
     "instagram_usage": 6,
     "instagram_remaining": 42,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-12T21:50:29.623Z",
+    "next_feed_eligible_at": "2026-09-12T22:29:13.770Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -34,24 +34,32 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-12T21:43:00.609Z",
-    "usage": 5,
+    "checked_at": "2026-09-12T21:59:02.506Z",
+    "usage": 6,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-12T21:58:00.609Z",
+    "next_check_at": "2026-09-12T22:14:02.506Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-12T21:50:23.243Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-09-12T22:29:07.580Z",
+  "publications": [
     {
-      "file": "queue/636-blueface-is-what-happens-when-a-teenager-walks-into-a-studio-to-.json",
+      "file": "636-blueface-is-what-happens-when-a-teenager-walks-into-a-studio-to-.json",
       "id": "636-blueface-is-what-happens-when-a-teenager-walks-into-a-studio-to-",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 12-Sep-26 14:53:59 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AWEQw5CqTry-lid5nx_Uk_t\"}}"
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18495316465098563"
+    },
+    {
+      "file": "636-blueface-is-what-happens-when-a-teenager-walks-into-a-studio-to-.json",
+      "id": "636-blueface-is-what-happens-when-a-teenager-walks-into-a-studio-to-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18093899012537503",
+      "content_type": "video"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

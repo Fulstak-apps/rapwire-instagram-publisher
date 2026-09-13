@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-13T10:18:18.587Z",
+  "checked_at": "2026-09-13T11:39:47.467Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-13T10:18:16.407Z",
+    "checked_at": "2026-09-13T11:39:46.548Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-13T10:33:16.407Z",
+    "next_check_at": "2026-09-13T11:54:46.548Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -24,8 +24,8 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -34,11 +34,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-13T10:18:16.162Z",
+    "checked_at": "2026-09-13T11:39:47.086Z",
     "usage": 7,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-13T10:33:16.162Z",
+    "next_check_at": "2026-09-13T11:54:47.086Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
@@ -46,11 +46,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "queue/641-travis-scott-travisscott-went-to-buy-yeezus-and-came-home-with-a.json",
-      "id": "641-travis-scott-travisscott-went-to-buy-yeezus-and-came-home-with-a",
+      "file": "queue/347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
+      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
       "platform": "facebook",
       "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Sunday, 13-Sep-26 03:18:17 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AOx-YncjxZMOGoGLQmsArFP\"}}"
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Sunday, 13-Sep-26 04:39:47 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AKOrqyUN_6kaGS4Mw68qtoR\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

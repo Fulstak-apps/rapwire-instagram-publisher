@@ -1,6 +1,6 @@
 {
   "id": "640-new-york-yns-run-into-lil-durk-lildurk-s-wife-india-and-show-the",
-  "status": "ready",
+  "status": "published",
   "publish_priority": 50,
   "date": "2026-09-13",
   "timezone": "America/Detroit",
@@ -32,7 +32,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "published",
   "artist_handles": [
     "lildurk"
   ],
@@ -44,8 +44,24 @@
   "source_video_duration": 12.885622,
   "threads_container_id": "18098619194179906",
   "threads_container_created_at": "2026-09-13T01:27:19.959Z",
-  "threads_container_checked_at": "2026-09-13T01:27:19.959Z",
+  "threads_container_checked_at": "2026-09-13T01:30:50.531Z",
   "instagram_container_id": "18113299223078478",
   "instagram_container_created_at": "2026-09-13T01:28:39.697Z",
-  "instagram_container_checked_at": "2026-09-13T01:28:39.697Z"
+  "instagram_container_checked_at": "2026-09-13T01:30:59.838Z",
+  "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 12-Sep-26 18:30:50 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AKqK9obapPXwQ1uQZGSkCO5\"}}",
+  "threads_container_status": "FINISHED",
+  "threads_publish_requested_at": "2026-09-13T01:30:50.531Z",
+  "threads_media_id": "17895463284398308",
+  "threads_published_at": "2026-09-13T01:30:59.217Z",
+  "threads_verified_at": "2026-09-13T01:30:59.837Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DdNYRuBjDQj",
+  "instagram_container_status": "FINISHED",
+  "instagram_publish_requested_at": "2026-09-13T01:30:59.838Z",
+  "instagram_media_id": "17924337288424351",
+  "instagram_published_at": "2026-09-13T01:30:59.838Z",
+  "published_at": "2026-09-13T01:31:08.581Z",
+  "instagram_verified_at": "2026-09-13T01:31:08.835Z",
+  "instagram_permalink": "https://www.instagram.com/reel/DdNYbS1EqIX/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
 }

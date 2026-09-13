@@ -101,7 +101,10 @@ async function discoverFromProfile(context, source) {
   try {
     page.setDefaultNavigationTimeout(12_000);
     page.setDefaultTimeout(12_000);
-    await page.goto(`https://www.instagram.com/${source.handle}/`, { waitUntil: "domcontentloaded" });
+    // Instagram keeps analytics/background requests open long after the page
+    // itself is usable. Waiting for DOMContentLoaded causes false timeouts;
+    // commit plus the explicit settle delay below is sufficient for anchors.
+    await page.goto(`https://www.instagram.com/${source.handle}/`, { waitUntil: "commit" });
     await page.waitForTimeout(3500);
     const hrefs = await page.locator('a[href*="/reel/"], a[href*="/p/"]').evaluateAll((links) =>
       links.map((link) => link.href).filter(Boolean)
@@ -130,7 +133,7 @@ async function readPostMetadata(context, url) {
   try {
     page.setDefaultNavigationTimeout(12_000);
     page.setDefaultTimeout(12_000);
-    await page.goto(url, { waitUntil: "domcontentloaded" });
+    await page.goto(url, { waitUntil: "commit" });
     await page.waitForTimeout(2500);
     const get = property => page.locator(`meta[property="${property}"]`).getAttribute("content", { timeout: 5000 }).catch(() => "");
     const [canonicalUrl, title, description] = await Promise.all([get("og:url"),get("og:title"),get("og:description")]);

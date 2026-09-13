@@ -139,10 +139,13 @@ async function readPostMetadata(context, url) {
     await page.goto(url, { waitUntil: "commit" });
     await page.locator('meta[property="og:url"]').waitFor({ state: "attached", timeout: 12_000 }).catch(() => {});
     const get = property => page.locator(`meta[property="${property}"]`).getAttribute("content", { timeout: 5000 }).catch(() => "");
-    const [canonicalUrl, title, description] = await Promise.all([get("og:url"),get("og:title"),get("og:description")]);
+    const [canonicalUrl, title, description, ogVideo] = await Promise.all([get("og:url"),get("og:title"),get("og:description"),get("og:video")]);
     return {
       caption: sourceCaption({ requestedUrl:url, canonicalUrl, title, description }),
-      isVideo: await page.locator("video:visible").count() === 1,
+      // A normal Instagram post URL can contain a video too.  On headless
+      // pages the media element often is not created until after scrolling,
+      // so URL/OG metadata are the reliable early signal for capture.
+      isVideo: /\/reel\//.test(url) || Boolean(ogVideo) || await page.locator("video").count() > 0,
       viewCount: viewCountFromText(description)
     };
   } finally {
@@ -463,7 +466,7 @@ try {
     if (run.queued.length >= Math.min(maxQueuePerRun, bufferNeeded)) break;
     if (captureAttempts >= maxCaptureAttemptsPerRun) break;
     if (ledger.queued_shortcodes[candidate.shortcode]) continue;
-    if (!candidate.isVideo || !candidate.visibleCaption) continue;
+    if (!candidate.isVideo) continue;
     try {
       captureAttempts += 1;
       const id = await queueCapture(ledger, candidate, queueNumber);

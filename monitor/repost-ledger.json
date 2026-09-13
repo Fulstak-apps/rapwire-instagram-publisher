@@ -9957,50 +9957,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-10T10:43:13.989Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "trapmatictv",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdFd1DmtT6J/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdFWky3gSeB/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 33,
-      "finished_at": "2026-09-10T10:43:46.566Z"
-    },
-    {
       "started_at": "2026-09-10T10:48:50.168Z",
       "candidates": 0,
       "queued": [],
@@ -19598,6 +19554,71 @@
       },
       "mode": "discovery",
       "finished_at": "2026-09-13T22:25:11.956Z"
+    },
+    {
+      "started_at": "2026-09-13T22:30:19.892Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        },
+        {
+          "source_handle": "trapmatictv",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.instagram.com/trapmatictv/\nCall log:\n  - navigating to \"https://www.instagram.com/trapmatictv/\", waiting until \"commit\"\n"
+        },
+        {
+          "source_handle": "raplisted_",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.instagram.com/raplisted_/\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"commit\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.instagram.com/akademiks/\nCall log:\n  - navigating to \"https://www.instagram.com/akademiks/\", waiting until \"commit\"\n"
+        },
+        {
+          "source_handle": "traploreross",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.instagram.com/traploreross/\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"commit\"\n"
+        },
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "stage": "discover",
+          "error": "Navigation hard-timeout after 22000ms: https://www.instagram.com/hiphop_firstnewsmusic/"
+        },
+        {
+          "source_handle": "complexmusic",
+          "stage": "discover",
+          "error": "Navigation hard-timeout after 22000ms: https://www.instagram.com/complexmusic/"
+        },
+        {
+          "source_handle": "ceddynash",
+          "stage": "discover",
+          "error": "Navigation hard-timeout after 22000ms: https://www.instagram.com/ceddynash/"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.instagram.com/larp.lor.d/\nCall log:\n  - navigating to \"https://www.instagram.com/larp.lor.d/\", waiting until \"commit\"\n"
+        },
+        {
+          "source_handle": "records",
+          "stage": "discover",
+          "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.instagram.com/records/\nCall log:\n  - navigating to \"https://www.instagram.com/records/\", waiting until \"commit\"\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 12,
+        "available": 0,
+        "needed": 12
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-13T22:39:52.370Z"
     }
   ],
   "vip_pending": {

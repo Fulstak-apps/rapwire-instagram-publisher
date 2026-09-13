@@ -35,7 +35,11 @@ const targetReadyVideoBuffer = 3;
 // Keep a small fallback set from every approved source.  A single Reel can
 // legitimately refuse an authenticated media fetch (especially long press
 // conferences), and it must not be able to empty the publishing pipeline.
-const candidatesPerSourceToScore = 2;
+// Four candidates per source gives the collector enough real fallback when a
+// Reel has a non-specific caption, an embedded-player layout, or an expired
+// CDN stream.  This is still bounded (eight approved sources) and avoids an
+// empty publishing queue being held hostage by the newest bad Reel.
+const candidatesPerSourceToScore = 4;
 // A source can fail because Instagram temporarily withholds its media ranges.
 // Bound failed capture work so one bad batch cannot monopolize the launcher;
 // the next five-minute pass gets a fresh browser and can retry other items.
@@ -43,7 +47,7 @@ const candidatesPerSourceToScore = 2;
 // lower than the number of scored candidates so collection remains bounded,
 // while a bad stream can fail over to a different ready-to-publish video in
 // the same run.
-const maxCaptureAttemptsPerRun = 3;
+const maxCaptureAttemptsPerRun = 8;
 
 async function readJson(file, fallback) {
   try {
@@ -270,15 +274,20 @@ async function commitAndPush(createdIds) {
   // The GitHub publisher also writes queue state. Retry ordinary races so a
   // newly captured Reel cannot be stranded behind an unrelated log commit.
   let lastError;
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
+  // GitHub Actions writes publication-state commits while this local process
+  // writes new source videos.  Treat a moving main ref as normal contention,
+  // not as a failed collection pass.  Rebase against the newest remote ref
+  // before every retry so captured media cannot be stranded locally.
+  for (let attempt = 1; attempt <= 8; attempt += 1) {
     try {
-      await execFileAsync("git", ["pull", "--rebase", "origin", "main"]);
+      await execFileAsync("git", ["fetch", "origin", "main"]);
+      await execFileAsync("git", ["rebase", "origin/main"]);
       await execFileAsync("git", ["push", "origin", "HEAD:main"]);
       return;
     } catch (error) {
       lastError = error;
       if (/CONFLICT|cannot pull with rebase: You have unstaged changes/i.test(`${error.stdout || ""}\n${error.stderr || ""}`)) break;
-      await new Promise(resolve => setTimeout(resolve, attempt * 1500));
+      await new Promise(resolve => setTimeout(resolve, Math.min(15000, attempt * 2000)));
     }
   }
   throw lastError;

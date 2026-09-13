@@ -102,11 +102,14 @@ async function discoverFromProfile(context, source) {
     page.setDefaultNavigationTimeout(12_000);
     page.setDefaultTimeout(12_000);
     // Instagram keeps analytics/background requests open long after the page
-    // itself is usable. Waiting for DOMContentLoaded causes false timeouts;
-    // commit plus the explicit settle delay below is sufficient for anchors.
+    // itself is usable. Waiting for DOMContentLoaded causes false timeouts.
+    // Instead wait for the actual thing this collector needs: a post/reel
+    // anchor. A fixed short sleep was racing Instagram's client rendering and
+    // produced a deceptively "successful" zero-candidate pass.
     await page.goto(`https://www.instagram.com/${source.handle}/`, { waitUntil: "commit" });
-    await page.waitForTimeout(3500);
-    const hrefs = await page.locator('a[href*="/reel/"], a[href*="/p/"]').evaluateAll((links) =>
+    const postLinks = page.locator('a[href*="/reel/"], a[href*="/p/"]');
+    await postLinks.first().waitFor({ state: "attached", timeout: 20_000 }).catch(() => {});
+    const hrefs = await postLinks.evaluateAll((links) =>
       links.map((link) => link.href).filter(Boolean)
     );
     const unique = [...new Set(hrefs)]
@@ -134,7 +137,7 @@ async function readPostMetadata(context, url) {
     page.setDefaultNavigationTimeout(12_000);
     page.setDefaultTimeout(12_000);
     await page.goto(url, { waitUntil: "commit" });
-    await page.waitForTimeout(2500);
+    await page.locator('meta[property="og:url"]').waitFor({ state: "attached", timeout: 12_000 }).catch(() => {});
     const get = property => page.locator(`meta[property="${property}"]`).getAttribute("content", { timeout: 5000 }).catch(() => "");
     const [canonicalUrl, title, description] = await Promise.all([get("og:url"),get("og:title"),get("og:description")]);
     return {

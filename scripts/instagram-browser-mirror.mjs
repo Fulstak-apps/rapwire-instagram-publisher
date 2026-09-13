@@ -16,6 +16,32 @@ const chromePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
 const profileDir = path.join(os.homedir(), "Library", "Application Support", "RapWire", "InstagramMirrorProfile");
 const outputDir = path.resolve("work", "instagram-mirror");
 
+// Chrome leaves these three symlinks behind when a prior headless collector is
+// forcibly stopped.  That used to turn one killed browser into hours of
+// ProcessSingleton failures.  Only clear a lock that names *this Mac* and a
+// PID that the OS confirms is dead; an active or foreign profile is never
+// touched.
+async function clearProvenStaleProfileSingleton() {
+  const lock = path.join(profileDir, "SingletonLock");
+  let target = "";
+  try { target = await fs.readlink(lock); } catch { return false; }
+  const match = target.match(new RegExp(`^${os.hostname().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}-([0-9]+)$`));
+  if (!match) return false;
+  const pid = Number(match[1]);
+  if (!Number.isInteger(pid) || pid <= 1) return false;
+  try {
+    process.kill(pid, 0);
+    return false;
+  } catch (error) {
+    if (error.code !== "ESRCH") return false;
+  }
+  await Promise.all(["SingletonCookie", "SingletonLock", "SingletonSocket"].map(name =>
+    fs.rm(path.join(profileDir, name), { force:true }).catch(() => {})
+  ));
+  console.warn(`Cleared stale Chrome profile singleton left by dead pid ${pid}.`);
+  return true;
+}
+
 async function launch(headless = false) {
   await fs.mkdir(profileDir, { recursive: true });
   let lastError;
@@ -30,6 +56,7 @@ async function launch(headless = false) {
     } catch (error) {
       lastError = error;
       if (!/ProcessSingleton|SingletonLock|profile directory/i.test(error.message || "")) throw error;
+      await clearProvenStaleProfileSingleton();
       await new Promise((resolve) => setTimeout(resolve, 2500 + attempt * 1000));
     }
   }

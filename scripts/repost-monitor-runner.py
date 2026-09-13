@@ -7,10 +7,9 @@ import subprocess
 import sys
 from pathlib import Path
 
-# A full authenticated Reel download plus H.264 render can exceed four minutes
-# on a large source.  Ten minutes prevents the watchdog from killing valid
-# work mid-render; stale-lock cleanup still protects the next scheduled pass.
-LIMIT_SECONDS = 600
+# The local scheduler runs every five minutes. Finish or recover before the
+# next slot so one slow authenticated Reel cannot monopolize two cycles.
+LIMIT_SECONDS = 270
 
 def terminate_orphaned_rapwire_browser():
     """A killed Playwright parent can leave its dedicated Chrome profile alive.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Supplement Narro with fresh Google News RSS results so RapWire isn't trapped in one feed."""
+"""Create fresh editorial candidates from free Google News RSS."""
 import html
 import importlib.util
 import json

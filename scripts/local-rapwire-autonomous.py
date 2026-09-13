@@ -33,7 +33,9 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE = Path(os.environ.get("RAPWIRE_DRAFT_DIR", str(ROOT / "queue")))
 LOG_DIR = Path(os.environ.get("RAPWIRE_LOCAL_LOG_DIR", str(ROOT / "logs")))
-FEED_URL = os.environ.get("NARRO_RSS_URL", "https://rss.narro.info/e4f36406-0664-4e77-b672-7e0682966a9f")
+# Narro is retired. This free feed is only used by manual/editorial runs;
+# the normal five-minute local loop is the approved video collector.
+FEED_URL = os.environ.get("RAPWIRE_NEWS_RSS_URL", "https://news.google.com/rss/search?q=hip-hop+rap+music+news+when%3A1d&hl=en-US&gl=US&ceid=US:en")
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://127.0.0.1:11434").rstrip("/")
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen3:4b")
 MAX_SOURCE_AGE_HOURS = max(6, int(os.environ.get("MAX_SOURCE_AGE_HOURS", "36")))

@@ -21,12 +21,18 @@ export RAPWIRE_AUTONOMOUS="${RAPWIRE_AUTONOMOUS:-1}"
 export RAPWIRE_QA_THRESHOLD="${RAPWIRE_QA_THRESHOLD:-88}"
 export RAPWIRE_AUTONOMOUS_SCORE="${RAPWIRE_AUTONOMOUS_SCORE:-92}"
 
-"$PYTHON_BIN" scripts/local-rapwire-autonomous.py "$@"
-
-# Health and dry-run modes are strictly read-only.
+# Health and dry-run modes remain strictly read-only.
 for argument in "$@"; do
-  [[ "$argument" == "--health" || "$argument" == "--dry-run" ]] && exit 0
+  if [[ "$argument" == "--health" || "$argument" == "--dry-run" ]]; then
+    "$PYTHON_BIN" scripts/local-rapwire-autonomous.py "$argument"
+    exit $?
+  fi
 done
+
+# Narro has been retired.  The local runner is now dedicated to the approved
+# Instagram-video collector; verified editorial-news batches are handled by
+# the separate Google News / local-editor flow, not this five-minute loop.
+"$PYTHON_BIN" scripts/repost-monitor-runner.py
 
 # This is a local, no-Codex-credit recovery check. The local newsroom has just
 # completed its Ollama cycle; the watchdog only uses deterministic queue and

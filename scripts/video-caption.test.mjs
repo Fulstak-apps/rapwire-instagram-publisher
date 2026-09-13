@@ -14,12 +14,13 @@ test('generic and truncated captions are rejected, never padded', () => {
 test('only explicitly verified people get handles', () => {
   const result = buildVideoCaption('Lil Durk discusses his new album with fans.', 'akademiks', [{name:'Lil Durk',handle:'lildurk',verified_at:new Date().toISOString(),verified_url:'https://www.instagram.com/lildurk/'}]);
   assert.match(result.body,/Lil Durk @lildurk/);
-  assert.equal(result.caption.endsWith('@Rapwire247\n@akademiks'), true);
+  assert.equal(result.caption.endsWith('@rapwire247'), true);
+  assert.doesNotMatch(result.caption, /@akademiks/);
   assert.doesNotMatch(buildVideoCaption('New footage shared by @someblog shows a recording session.', 'akademiks').body, /@someblog/);
 });
-test('owned-page reposts omit a public source footer', () => {
+test('all reposts omit public source footers', () => {
   const result = buildVideoCaption('Lil Durk discusses his new album with fans.', null);
-  assert.equal(result.caption.endsWith('@Rapwire247'), true);
+  assert.equal(result.caption.endsWith('@rapwire247'), true);
   assert.doesNotMatch(result.caption, /@null/);
 });
 test('caption evidence must use same shortcode', () => {

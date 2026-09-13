@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {signedCaption,refreshCaptionStyle} from './caption-style.mjs';
 import {captionIsBound} from './video-caption.mjs';
 
-test('new style has source tag, news and only the account handle as footer',()=>{
+test('new style removes every source tag and keeps only the account handle',()=>{
  const item={source_handle:'akademiks'};
  const result=signedCaption('Reposted from @akademiks.\n\nNew album announced.\n\nRap Wire 24/7\n@Rapwire247\n@akademiks',item);
  assert.equal(result,'New album announced.\n\n@rapwire247');

@@ -216,13 +216,19 @@ await refreshThreadsQuota();
 
 function signedCaption(value, item = {}) {
   const source = String(item.source_handle || "").replace(/^@/, "");
-  const sourceLine = /^[A-Za-z0-9_.]+$/.test(source) ? `\n@${source}` : "";
-  return String(value || "")
+  const sourcePattern = /^[A-Za-z0-9_.]+$/.test(source)
+    ? new RegExp(`^@${source.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`, "i")
+    : /$^/;
+  const body = String(value || "")
     .trim()
     .replace(/(?:\n\n)?Rap\s*Wire 24\/7\.?\s*\n@Rapwire247(?:\s*\n@[A-Za-z0-9_.]+)?\s*$/i, "")
     .replace(/(?:\n\n)?RapWire 24\/7\.?\s*$/i, "")
     .replace(/(?:\n\n)?@Rapwire247\s*$/i, "")
-    .trim() + `\n\nRap Wire 24/7\n${signature}${sourceLine}`;
+    .split("\n")
+    .filter(line => !sourcePattern.test(line.trim()) && line.trim().toLowerCase() !== "@rapwire247")
+    .join("\n")
+    .trim();
+  return `${body}\n\n${signature}`;
 }
 
 function slideUrl(item, index) {

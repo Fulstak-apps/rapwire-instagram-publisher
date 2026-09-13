@@ -396,12 +396,18 @@ try {
   const discovered = [];
   let rankedPool = [];
   await withFreshBrowser(async (context) => {
-    for (const source of sources) {
-      try {
-        discovered.push(...await discoverFromProfile(context, source));
-      } catch (error) {
-        run.errors.push({ source_handle: source.handle, stage: "discover", error: error.message });
-      }
+    // Load a few profiles concurrently.  Sequential discovery could spend
+    // over two minutes before scoring any video, even when every source was
+    // healthy. Four tabs is deliberately modest to avoid hammering Instagram.
+    for (let offset = 0; offset < sources.length; offset += 4) {
+      const batch = await Promise.all(sources.slice(offset, offset + 4).map(async source => {
+        try { return await discoverFromProfile(context, source); }
+        catch (error) {
+          run.errors.push({ source_handle: source.handle, stage: "discover", error: error.message });
+          return [];
+        }
+      }));
+      discovered.push(...batch.flat());
     }
     const selectedForScoring = sources.flatMap((source) => discovered
       .filter((candidate) => candidate.source.handle === source.handle && !ledger.queued_shortcodes[candidate.shortcode])

@@ -9903,55 +9903,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-10T10:20:39.724Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "igndotcom",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/reel/DdE2ydVKicI/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdEqShjjiQJ/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFkLYYDr86/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFam2zjkUx/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 33,
-      "finished_at": "2026-09-10T10:21:14.371Z"
-    },
-    {
       "started_at": "2026-09-10T10:26:17.806Z",
       "candidates": 0,
       "queued": [],
@@ -19610,6 +19561,40 @@
       },
       "mode": "discovery",
       "finished_at": "2026-09-13T21:10:10.400Z"
+    },
+    {
+      "started_at": "2026-09-13T21:46:31.399Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "stage": "discover",
+          "error": "page.goto: Timeout 22000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/raplisted_/\", waiting until \"commit\"\n"
+        },
+        {
+          "source_handle": "akademiks",
+          "stage": "discover",
+          "error": "Navigation hard-timeout after 22000ms: https://www.instagram.com/akademiks/"
+        },
+        {
+          "source_handle": "traploreross",
+          "stage": "discover",
+          "error": "page.goto: Timeout 22000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/\", waiting until \"commit\"\n"
+        },
+        {
+          "source_handle": "complexmusic",
+          "stage": "discover",
+          "error": "page.goto: Timeout 22000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/complexmusic/\", waiting until \"commit\"\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 3,
+        "available": 0,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-13T21:53:54.813Z"
     }
   ],
   "vip_pending": {

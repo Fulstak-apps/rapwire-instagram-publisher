@@ -163,6 +163,36 @@ export function chooseLogoSize(crop,sourceWidth,sourceHeight,observations) {
   throw new Error('Crop review required: bottom-left logo would cover meaningful source text or a face');
 }
 
+// Some genuine Reels fill the frame from edge to edge, so they have no
+// measurable static header/footer panel at all.  Holding those indefinitely
+// empties the publisher even when local OCR sees neither account branding nor
+// app UI.  In that narrow case keep the original frame exactly intact and use
+// the smallest consistent RapWire bug.  A detected source mark still routes to
+// review; this is only the no-brand, no-UI fallback.
+function fullFrameFallback({sourceWidth, sourceHeight, observations, sourceHandle}) {
+  const text = observations.flatMap(item => item.text || []).filter(item => item.confidence >= 0.45);
+  const words = text.map(item => item.text).join(' ').toLowerCase();
+  const uiSignals = ['description', 'subscrib', 'views', 'likes', 'patreon', 'join this channel', 'youtube.com', 'youtube.co', 'watch later'];
+  if (uiSignals.filter(signal => words.includes(signal)).length >= 2) {
+    throw new Error('Crop review required: source is an embedded player or app-interface recording, not clean footage');
+  }
+  if (text.some(item => sourceBrandLine(item, sourceHandle))) {
+    throw new Error('Crop review required: source branding is visible without a proven removable header');
+  }
+  const crop = {x:0, y:0, width:Math.floor(sourceWidth/2)*2, height:Math.floor(sourceHeight/2)*2};
+  let logoSize;
+  try { logoSize = chooseLogoSize(crop, sourceWidth, sourceHeight, observations); }
+  catch { logoSize = 56; }
+  return {
+    crop,
+    method:'full-frame-no-detectable-header-fallback-v1',
+    source_header_removed:false,
+    inspected_frames:observations.length,
+    removed_text:[],
+    logo_size:logoSize
+  };
+}
+
 export function footageFilter(crop, logoIndex=1,logoSize=170) {
   // boxblur is visually sufficient for unavoidable side fill but dramatically
   // faster than gblur on long vertical Reels, keeping publication latency low.
@@ -182,10 +212,6 @@ export async function analyzeFootage(input,{sourceHandle,directory,width,height,
     images.push(image);
   }
   const bands=inspectBands(frames,sampleWidth,sampleHeight);
-  if(bands.ambiguous) {
-    await fs.writeFile(path.join(directory,'crop-observations.json'),JSON.stringify({bands,sample_times:times},null,2)+'\n');
-    throw new Error(`Crop review required: ${bands.reason}`);
-  }
   // Swift compiles/cache-loads Apple's local OCR tool; never calls a paid
   // model.  Some macOS Vision versions intermittently fail while compiling a
   // compute operation.  A transient local OCR failure must not halt the whole
@@ -202,6 +228,17 @@ export async function analyzeFootage(input,{sourceHandle,directory,width,height,
     observations=[];
   }
   await fs.writeFile(path.join(directory,'crop-observations.json'),JSON.stringify({bands,observations,sample_times:times,ocr_fallback_error:ocrFallbackError||undefined},null,2)+'\n');
+  // Do not blindly crop a source with unproven geometry.  But a true
+  // edge-to-edge clip with no detected account/UI material can retain its
+  // complete original frame and remain publishable.
+  if (bands.ambiguous && !ocrFallbackError) {
+    const analysis=fullFrameFallback({sourceWidth:width,sourceHeight:height,observations,sourceHandle});
+    await fs.writeFile(path.join(directory,'crop-analysis.json'),JSON.stringify({bands,...analysis},null,2)+'\n');
+    return analysis;
+  }
+  if (bands.ambiguous) {
+    throw new Error(`Crop review required: ${bands.reason}`);
+  }
   if (ocrFallbackError) {
     const plan=chooseSoloFootageCrop({bands,sampleWidth,sampleHeight,sourceWidth:width,sourceHeight:height,observations:[{}, {}, {}, {}, {}]});
     const analysis={...plan,sample_times:times,logo_size:100,ocr_status:'unavailable-proven-panel-fallback-v1',ocr_error:ocrFallbackError};
@@ -222,7 +259,7 @@ export async function analyzeFootage(input,{sourceHandle,directory,width,height,
     }
   }
   const analysis={...plan,sample_times:times};
-  analysis.logo_size=chooseLogoSize(analysis.crop,width,height,observations);
+  analysis.logo_size ??= chooseLogoSize(analysis.crop,width,height,observations);
   await fs.writeFile(path.join(directory,'crop-analysis.json'),JSON.stringify({bands,observations,...analysis},null,2)+'\n');
   return analysis;
 }

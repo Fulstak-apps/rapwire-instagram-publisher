@@ -6764,6 +6764,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DdNTb7qtHMH/",
       "view_count": 0
+    },
+    "DdNiQuMPmku": {
+      "seen_at": "2026-09-13T04:13:17.063Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdNiQuMPmku/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -9519,70 +9525,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-10T08:31:42.433Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "rockstargames",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "complexmusic",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFPMn_Dwvf/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFHmhOjzz6/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFEjVmD0jF/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/reel/DdFCZjivPS0/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 26,
-      "finished_at": "2026-09-10T08:32:27.898Z"
-    },
     {
       "started_at": "2026-09-10T08:37:31.921Z",
       "candidates": 0,
@@ -19216,6 +19158,48 @@
       },
       "mode": "discovery",
       "finished_at": "2026-09-13T01:26:53.661Z"
+    },
+    {
+      "started_at": "2026-09-13T04:09:52.664Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "stage": "discover",
+          "error": "page.goto: Timeout 12000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/ceddynash/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "stage": "discover",
+          "error": "page.goto: Timeout 12000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/larp.lor.d/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdNiQuMPmku/",
+          "stage": "score",
+          "error": "page.goto: Timeout 12000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/reel/DdNiQuMPmku/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdNGyprPqhQ/",
+          "stage": "score",
+          "error": "page.goto: Timeout 12000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/reel/DdNGyprPqhQ/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdKupCLJHAn/",
+          "stage": "score",
+          "error": "page.goto: Timeout 12000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/reel/DdKupCLJHAn/\", waiting until \"domcontentloaded\"\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 3,
+        "available": 0,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-13T04:13:17.067Z"
     }
   ],
   "vip_pending": {

@@ -28,6 +28,20 @@ const cooldownPath = path.join(logsDir, "instagram-cooldown.json");
 const quotaPath = path.join(logsDir, "instagram-publishing-quota.json");
 const threadsQuotaPath = path.join(logsDir, "threads-publishing-quota.json");
 
+async function verifyInstagramIdentity() {
+  const url = new URL(`${instagramBase}/me`);
+  url.searchParams.set("fields", "id,username");
+  url.searchParams.set("access_token", instagramToken);
+  const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
+  const payload = await response.json();
+  if (!response.ok || payload.error) throw new Error(`Instagram identity check failed: ${JSON.stringify(payload)}`);
+  if (String(payload.id) !== String(instagramUserId) || String(payload.username || "").toLowerCase() !== "rapwire247") {
+    throw new Error(`Instagram credentials target @${payload.username || "unknown"} (${payload.id || "unknown"}), not configured @rapwire247 (${instagramUserId})`);
+  }
+}
+
+if (instagramToken !== "fake") await verifyInstagramIdentity();
+
 let threadsQuota = JSON.parse(await fs.readFile(threadsQuotaPath, "utf8").catch(error => {
   if (error.code === "ENOENT") return "{}";
   throw error;

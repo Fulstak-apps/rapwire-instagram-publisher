@@ -40,7 +40,9 @@ WATCHDOG_DISPATCH=$(node -e 'const fs=require("fs");try{console.log(JSON.parse(f
 # Only publish durable content changes. Operational logs stay local and must never
 # create a Git commit by themselves.
 if [[ -n "$(git status --porcelain -- queue media 2>/dev/null)" ]]; then
-  git add -- queue media
+  # The local runtime uses sparse checkout. Captured video assets are outside
+  # its normal cone, so stage them explicitly or a valid post is stranded.
+  git add --sparse -- queue media
   git diff --cached --quiet && exit 0
   git commit -m "RapWire autonomous newsroom queue"
   git fetch origin main

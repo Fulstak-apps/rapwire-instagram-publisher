@@ -190,7 +190,16 @@ def rap_relevant(title: str, description: str, handle: str) -> bool:
 
 def fetch_feed() -> list[Candidate]:
     req = urllib.request.Request(FEED_URL, headers={"User-Agent":"RapWire24-Autonomous/2.0"})
-    with urllib.request.urlopen(req, timeout=30) as r: raw = r.read()
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r: raw = r.read()
+    except urllib.error.HTTPError as error:
+        # A paid or revoked editorial feed must never crash the launchd loop.
+        # Return an empty source set so the caller records a quiet cycle and
+        # the independent video collector/publisher lanes keep running.
+        if error.code in {401, 402, 403}:
+            log("source_feed_unavailable", {"url": FEED_URL, "status": error.code})
+            return []
+        raise
     root = ET.fromstring(raw)
     now = datetime.now(timezone.utc)
     cutoff = now.timestamp() - MAX_SOURCE_AGE_HOURS*3600

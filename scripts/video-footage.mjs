@@ -221,7 +221,10 @@ export async function analyzeFootage(input,{sourceHandle,directory,width,height,
   let observations;
   let ocrFallbackError = '';
   try {
-    const {stdout}=await exec('/usr/bin/swift',[path.join(scriptDir,'inspect-video-frame.swift'),...images],{maxBuffer:8*1024*1024,timeout:180000});
+    // Vision OCR normally returns in a few seconds.  A three-minute allowance
+    // let one stalled frame inspector consume the entire collector watchdog.
+    // Fall back or move to the next source after 45 seconds instead.
+    const {stdout}=await exec('/usr/bin/swift',[path.join(scriptDir,'inspect-video-frame.swift'),...images],{maxBuffer:8*1024*1024,timeout:45000});
     observations=JSON.parse(stdout);
   } catch (error) {
     ocrFallbackError=String(error?.stderr || error?.message || error);

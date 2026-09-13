@@ -1,6 +1,6 @@
 {
   "id": "654-bloodhound-q50-breaking",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 1000,
   "date": "2026-09-13",
   "timezone": "America/Detroit",
@@ -14,8 +14,12 @@
   "rendered_body_text": "Breaking: BloodHound Q50 has died, according to information confirmed by the RapWire 24/7 newsroom. Details about the shooting, including the location, possible suspects and motive, have not been independently confirmed; we will update this story when official information becomes available.",
   "caption": "Breaking: BloodHound Q50 has died, according to information confirmed by the RapWire 24/7 newsroom. Details about the shooting, including the location, possible suspects and motive, have not been independently confirmed; we will update this story when official information becomes available.\n\n@Rapwire247",
   "threads_text": "Breaking: BloodHound Q50 has died, according to information confirmed by the RapWire 24/7 newsroom. More confirmed details as they become available. @Rapwire247",
-  "source_urls": ["https://www.instagram.com/"],
-  "visual_asset_source_urls": ["https://www.instagram.com/"],
+  "source_urls": [
+    "https://www.instagram.com/"
+  ],
+  "visual_asset_source_urls": [
+    "https://www.instagram.com/"
+  ],
   "visual_asset_rights": "owned",
   "source_image_url": "https://www.instagram.com/",
   "source_image_role": "original editorial illustration",
@@ -34,7 +38,11 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "slides": ["media/654-q50-breaking-1.png", "media/654-q50-breaking-2.png"],
+  "slides": [
+    "media/654-q50-breaking-1.png",
+    "media/654-q50-breaking-2.png"
+  ],
   "carousel_page_count": 2,
-  "artist_handles": []
+  "artist_handles": [],
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

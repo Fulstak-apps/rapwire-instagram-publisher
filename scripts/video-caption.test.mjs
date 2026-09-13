@@ -17,6 +17,11 @@ test('only explicitly verified people get handles', () => {
   assert.equal(result.caption.endsWith('@Rapwire247\n@akademiks'), true);
   assert.doesNotMatch(buildVideoCaption('New footage shared by @someblog shows a recording session.', 'akademiks').body, /@someblog/);
 });
+test('owned-page reposts omit a public source footer', () => {
+  const result = buildVideoCaption('Lil Durk discusses his new album with fans.', null);
+  assert.equal(result.caption.endsWith('@Rapwire247'), true);
+  assert.doesNotMatch(result.caption, /@null/);
+});
 test('caption evidence must use same shortcode', () => {
   const record = {caption_policy:'exact-source-v1',caption_source_shortcode:'other',source_url:url,source_caption_text:'A complete description of a studio recording.',body:'A complete description of a studio recording.'};
   assert.equal(captionIsBound(record),false);

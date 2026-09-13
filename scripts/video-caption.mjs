@@ -34,7 +34,10 @@ export function buildVideoCaption(raw, source, registry = []) {
     }
   }
   text = text.replace(/@[A-Za-z0-9_.]+/g, handle => verified.some(p => `@${p.handle}`.toLowerCase() === handle.toLowerCase()) ? handle : '').replace(/\s+/g, ' ').trim();
-  const footer = `\n\nRap Wire 24/7\n@Rapwire247\n@${source}`;
+  // Internal provenance is stored with the queue item. Only third-party
+  // sources receive a visible footer credit; user-owned sister pages should
+  // not be surfaced on the public post.
+  const footer = `\n\nRap Wire 24/7\n@Rapwire247${source ? `\n@${source}` : ''}`;
   const legal = /\b(trial|court|murder|attacking|arrest|testif|testimony|fbi|wire|cross.examination|judge|lies|lied|lying|snitch|suspect|charged|plead|lawsuit|witness|prosecutor)\w*\b/i.test(text);
   const prefix = '';
   const caveat = legal ? ' Allegations are not findings of guilt.' : '';

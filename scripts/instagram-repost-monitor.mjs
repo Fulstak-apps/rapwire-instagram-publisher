@@ -204,7 +204,9 @@ async function releaseLock() {
 
 async function captionFields(evidence, source) {
   const registry = await readJson(path.join(root, "monitor", "artist-handles.json"), []);
-  const text = buildVideoCaption(evidence.source_caption_text, source, registry);
+  const sourceRecord = sources.find(item => item.handle === source);
+  const visibleCredit = sourceRecord?.credit === false ? null : source;
+  const text = buildVideoCaption(evidence.source_caption_text, visibleCredit, registry);
   return { ...text, rendered_body_text:text.body, threads_text:text.caption, caption_policy:"exact-source-v1", caption_source_shortcode:evidence.shortcode, source_caption_text:evidence.source_caption_text, caption_checked_at:evidence.captured_at, media_capture_evidence:evidence.media_match_method, source_video_duration:evidence.duration };
 }
 

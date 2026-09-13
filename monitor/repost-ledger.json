@@ -6776,6 +6776,42 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/DdNZexhyK6R/",
       "view_count": 0
+    },
+    "DdNsifADfBJ": {
+      "seen_at": "2026-09-13T04:45:06.327Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdNsifADfBJ/",
+      "view_count": 0
+    },
+    "DdNXTNrxjYZ": {
+      "seen_at": "2026-09-13T04:45:06.328Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdNXTNrxjYZ/",
+      "view_count": 0
+    },
+    "DdNDmukSafG": {
+      "seen_at": "2026-09-13T04:45:06.328Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/respectmusictv/reel/DdNDmukSafG/",
+      "view_count": 0
+    },
+    "DdNoionuBr-": {
+      "seen_at": "2026-09-13T04:45:06.328Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdNoionuBr-/",
+      "view_count": 0
+    },
+    "DdNdqW9Rf8t": {
+      "seen_at": "2026-09-13T04:45:06.328Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdNdqW9Rf8t/",
+      "view_count": 0
+    },
+    "DdNZoLuRh5y": {
+      "seen_at": "2026-09-13T04:45:06.328Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdNZoLuRh5y/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -9531,50 +9567,6 @@
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-10T08:54:59.671Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "complexmusic",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/reel/DdE-dXKqh4F/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdE8S7EmlL2/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/reel/DdE2ydVKicI/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdEqShjjiQJ/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 26,
-      "finished_at": "2026-09-10T08:55:30.198Z"
-    },
     {
       "started_at": "2026-09-10T09:00:33.989Z",
       "candidates": 0,
@@ -19164,6 +19156,68 @@
       },
       "mode": "discovery",
       "finished_at": "2026-09-13T04:25:17.300Z"
+    },
+    {
+      "started_at": "2026-09-13T04:41:50.115Z",
+      "candidates": 96,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdKupCLJHAn/",
+          "stage": "score",
+          "error": "page.goto: Timeout 12000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/traploreross/reel/DdKupCLJHAn/\", waiting until \"commit\"\n"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdNdqW9Rf8t/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdNoionuBr-/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdNZoLuRh5y/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/DdNXTNrxjYZ/",
+          "stage": "queue",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/\", waiting until \"domcontentloaded\"\n"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/traploreross/reel/DdNiQuMPmku/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdNiQuMPmku-capture-diagnostic.json"
+        },
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/respectmusictv/reel/DdNDmukSafG/",
+          "stage": "queue",
+          "error": "Five complete RGB samples are required"
+        },
+        {
+          "source_handle": "records",
+          "source_url": "https://www.instagram.com/records/reel/DdM69BbOxyC/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdM69BbOxyC-source.mp4 -loop 1 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/assets/rapwire247-logo.png -filter_complex [0:v]crop=720:722:0:486,setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,boxblur=12:1[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[1:v]scale=132:132[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v] -map [v] -map 0:a:0 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest -movflags +faststart /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdM69BbOxyC.mp4\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 3,
+        "available": 0,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-13T04:51:57.935Z"
     }
   ],
   "vip_pending": {

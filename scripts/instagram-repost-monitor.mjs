@@ -407,15 +407,20 @@ try {
       .filter((candidate) => candidate.source.handle === source.handle && !ledger.queued_shortcodes[candidate.shortcode])
       .slice(0, candidatesPerSourceToScore));
     rankedPool = selectedForScoring;
-    for (const candidate of selectedForScoring) {
-      try {
-        const metadata = await readPostMetadata(context, candidate.url);
-        candidate.visibleCaption = metadata.caption;
-        candidate.isVideo = metadata.isVideo;
-        candidate.viewCount = metadata.viewCount;
-      } catch (error) {
-        run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "score", error: error.message });
-      }
+    // Score a small batch of independent posts at once.  Sequential page
+    // navigation made 24 metadata reads consume most of the collector's
+    // watchdog window before a single video could be captured.
+    for (let offset = 0; offset < selectedForScoring.length; offset += 4) {
+      await Promise.all(selectedForScoring.slice(offset, offset + 4).map(async candidate => {
+        try {
+          const metadata = await readPostMetadata(context, candidate.url);
+          candidate.visibleCaption = metadata.caption;
+          candidate.isVideo = metadata.isVideo;
+          candidate.viewCount = metadata.viewCount;
+        } catch (error) {
+          run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "score", error: error.message });
+        }
+      }));
     }
   });
   run.candidates = discovered.length;

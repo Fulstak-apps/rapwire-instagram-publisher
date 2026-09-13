@@ -96,6 +96,19 @@ async function nextQueueNumber() {
   return Math.max(116, ...numbers) + 1;
 }
 
+// Playwright's navigation timeout can occasionally remain unsettled when
+// Instagram drops a headless page mid-navigation.  A real timer guarantees a
+// collector pass always resolves and its finally block releases the lock.
+async function gotoBounded(page, url, timeout = 22_000) {
+  let timer;
+  try {
+    return await Promise.race([
+      page.goto(url, { waitUntil: "commit", timeout }),
+      new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`Navigation hard-timeout after ${timeout}ms: ${url}`)), timeout + 500); })
+    ]);
+  } finally { clearTimeout(timer); }
+}
+
 async function discoverFromProfile(context, source) {
   const page = await context.newPage();
   try {
@@ -106,7 +119,7 @@ async function discoverFromProfile(context, source) {
     // Instead wait for the actual thing this collector needs: a post/reel
     // anchor. A fixed short sleep was racing Instagram's client rendering and
     // produced a deceptively "successful" zero-candidate pass.
-    await page.goto(`https://www.instagram.com/${source.handle}/`, { waitUntil: "commit" });
+    await gotoBounded(page, `https://www.instagram.com/${source.handle}/`);
     const postLinks = page.locator('a[href*="/reel/"], a[href*="/p/"]');
     await postLinks.first().waitFor({ state: "attached", timeout: 20_000 }).catch(() => {});
     const hrefs = await postLinks.evaluateAll((links) =>
@@ -136,7 +149,7 @@ async function readPostMetadata(context, url) {
   try {
     page.setDefaultNavigationTimeout(12_000);
     page.setDefaultTimeout(12_000);
-    await page.goto(url, { waitUntil: "commit" });
+    await gotoBounded(page, url);
     await page.locator('meta[property="og:url"]').waitFor({ state: "attached", timeout: 12_000 }).catch(() => {});
     const get = property => page.locator(`meta[property="${property}"]`).getAttribute("content", { timeout: 5000 }).catch(() => "");
     const [canonicalUrl, title, description, ogVideo] = await Promise.all([get("og:url"),get("og:title"),get("og:description"),get("og:video")]);

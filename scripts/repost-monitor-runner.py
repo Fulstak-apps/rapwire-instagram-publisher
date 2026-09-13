@@ -12,6 +12,29 @@ from pathlib import Path
 # work mid-render; stale-lock cleanup still protects the next scheduled pass.
 LIMIT_SECONDS = 600
 
+def terminate_orphaned_rapwire_browser():
+    """A killed Playwright parent can leave its dedicated Chrome profile alive.
+
+    Scope this strictly to the RapWire automation profile; never touch the
+    user's ordinary Chrome windows. A surviving profile owner otherwise turns
+    every following collector pass into a ProcessSingleton failure.
+    """
+    marker = "user-data-dir=/Users/dw/Library/Application Support/RapWire/InstagramMirrorProfile"
+    try:
+        output = subprocess.check_output(["pgrep", "-f", marker], text=True, stderr=subprocess.DEVNULL)
+        pids = [int(value) for value in output.split() if value.isdigit() and int(value) != os.getpid()]
+    except subprocess.CalledProcessError:
+        return
+    for pid in pids:
+        try: os.kill(pid, signal.SIGTERM)
+        except ProcessLookupError: pass
+    if pids:
+        import time
+        time.sleep(3)
+        for pid in pids:
+            try: os.kill(pid, signal.SIGKILL)
+            except ProcessLookupError: pass
+
 def clear_stale_monitor_lock():
     """Remove only a monitor lock whose recorded process is definitely dead."""
     lock = Path('monitor/repost-monitor.lock')
@@ -47,6 +70,7 @@ except subprocess.TimeoutExpired:
     except subprocess.TimeoutExpired:
         os.killpg(process.pid, signal.SIGKILL)
         process.wait()
+    terminate_orphaned_rapwire_browser()
     # The child can be killed before its JavaScript finally block runs.  A
     # stale lock must never turn every later scheduled pass into a no-op.
     lock = Path('monitor/repost-monitor.lock')

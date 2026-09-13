@@ -5,7 +5,7 @@ import { captionIsBound } from "./video-caption.mjs";
 import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, THREADS_PUBLISH_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
-const instagramUserId = process.env.INSTAGRAM_USER_ID;
+let instagramUserId = process.env.INSTAGRAM_USER_ID;
 const threadsToken = process.env.THREADS_ACCESS_TOKEN;
 const threadsUserId = process.env.THREADS_USER_ID;
 const facebookToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
@@ -35,9 +35,12 @@ async function verifyInstagramIdentity() {
   const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
   const payload = await response.json();
   if (!response.ok || payload.error) throw new Error(`Instagram identity check failed: ${JSON.stringify(payload)}`);
-  if (String(payload.id) !== String(instagramUserId) || String(payload.username || "").toLowerCase() !== "rapwire247") {
-    throw new Error(`Instagram credentials target @${payload.username || "unknown"} (${payload.id || "unknown"}), not configured @rapwire247 (${instagramUserId})`);
-  }
+  if (String(payload.username || "").toLowerCase() !== "rapwire247")
+    throw new Error(`Instagram token targets @${payload.username || "unknown"}, not @rapwire247`);
+  // Instagram Login returns the token's current scoped account ID. It can
+  // differ from an older Business/Graph ID saved in GitHub. Always publish
+  // through the ID proven by this token instead of trusting stale config.
+  instagramUserId = String(payload.id);
 }
 
 if (instagramToken !== "fake") await verifyInstagramIdentity();

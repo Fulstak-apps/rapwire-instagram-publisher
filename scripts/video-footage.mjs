@@ -272,9 +272,14 @@ export async function renderFootageOnly({input,destination,sourceHandle,width,he
   let analysis;
   try { analysis=await analyzeFootage(input,{sourceHandle,directory,width,height,duration}); }
   catch(error) {
+    // A conservative full-frame render is better than an empty feed or a
+    // guessed crop.  Keep the source untouched when crop proof is ambiguous;
+    // the compact bug is retained at bottom-left and the reason is recorded.
+    // Capture/authentication failures still fail normally.
+    if (!/^Crop review required:/.test(String(error.message || ''))) throw error;
     await fs.mkdir(directory,{recursive:true});
-    await fs.writeFile(path.join(directory,'review-required.json'),JSON.stringify({sourceHandle,input,error:error.message,checked_at:new Date().toISOString()},null,2)+'\n');
-    throw error;
+    analysis={crop:{x:0,y:0,width:Math.floor(width/2)*2,height:Math.floor(height/2)*2},sample_times:sampleTimes(duration),logo_size:56,method:'full-frame-crop-safety-fallback-v1',crop_review_error:error.message};
+    await fs.writeFile(path.join(directory,'crop-analysis.json'),JSON.stringify(analysis,null,2)+'\n');
   }
   await exec('ffmpeg',['-v','error','-y','-i',input,'-loop','1','-i',path.resolve('assets/rapwire247-logo.png'),'-filter_complex',footageFilter(analysis.crop,1,analysis.logo_size),'-map','[v]','-map','0:a:0','-c:v','libx264','-pix_fmt','yuv420p','-c:a','aac','-shortest','-movflags','+faststart',destination],{timeout:300000,maxBuffer:8*1024*1024});
   const {stdout}=await exec('ffprobe',['-v','error','-show_entries','stream=codec_name,codec_type,width,height,duration:format=duration','-of','json',destination]);

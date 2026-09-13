@@ -12,6 +12,24 @@ from pathlib import Path
 # work mid-render; stale-lock cleanup still protects the next scheduled pass.
 LIMIT_SECONDS = 600
 
+def clear_stale_monitor_lock():
+    """Remove only a monitor lock whose recorded process is definitely dead."""
+    lock = Path('monitor/repost-monitor.lock')
+    try:
+        pid = int(json.loads(lock.read_text()).get('pid', 0))
+        if pid > 1:
+            try:
+                os.kill(pid, 0)
+                return
+            except ProcessLookupError:
+                lock.unlink(missing_ok=True)
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        # An unreadable lock cannot safely block the entire collector forever.
+        # It contains no trustworthy live PID, so only remove this exact lock.
+        lock.unlink(missing_ok=True)
+
+clear_stale_monitor_lock()
+
 process = subprocess.Popen(
     ["npm", "run", "repost:monitor"],
     start_new_session=True,

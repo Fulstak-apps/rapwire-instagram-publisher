@@ -5,4 +5,5 @@ logs/*.out.log
 logs/*.err.log
 logs/local-newsroom.jsonl
 monitor/repost-monitor.lock
+monitor/newsroom.flock
 review/local-editor/

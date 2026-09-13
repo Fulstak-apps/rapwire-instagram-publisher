@@ -52,7 +52,11 @@ const candidatesPerSourceToScore = 3;
 // independent fallbacks fit inside the runner's ten-minute hard cap; eight
 // could repeatedly time out before the ledger was saved, leaving the queue
 // empty forever. The next five-minute pass continues from the remaining pool.
-const maxCaptureAttemptsPerRun = 4;
+// The launchd worker runs every five minutes and is hard-bounded to 270s.
+// One complete capture/render per pass keeps the worker inside that window;
+// attempting four serial video transcodes caused the watchdog to kill the
+// pass before its ledger/queue updates were persisted.
+const maxCaptureAttemptsPerRun = 1;
 
 async function readJson(file, fallback) {
   try {

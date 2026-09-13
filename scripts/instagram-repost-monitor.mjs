@@ -39,7 +39,7 @@ const targetReadyVideoBuffer = 3;
 // Reel has a non-specific caption, an embedded-player layout, or an expired
 // CDN stream.  This is still bounded (eight approved sources) and avoids an
 // empty publishing queue being held hostage by the newest bad Reel.
-const candidatesPerSourceToScore = 4;
+const candidatesPerSourceToScore = 3;
 // A source can fail because Instagram temporarily withholds its media ranges.
 // Bound failed capture work so one bad batch cannot monopolize the launcher;
 // the next five-minute pass gets a fresh browser and can retry other items.
@@ -99,6 +99,8 @@ async function nextQueueNumber() {
 async function discoverFromProfile(context, source) {
   const page = await context.newPage();
   try {
+    page.setDefaultNavigationTimeout(12_000);
+    page.setDefaultTimeout(12_000);
     await page.goto(`https://www.instagram.com/${source.handle}/`, { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(3500);
     const hrefs = await page.locator('a[href*="/reel/"], a[href*="/p/"]').evaluateAll((links) =>
@@ -126,6 +128,8 @@ function viewCountFromText(value) {
 async function readPostMetadata(context, url) {
   const page = await context.newPage();
   try {
+    page.setDefaultNavigationTimeout(12_000);
+    page.setDefaultTimeout(12_000);
     await page.goto(url, { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(2500);
     const get = property => page.locator(`meta[property="${property}"]`).getAttribute("content", { timeout: 5000 }).catch(() => "");

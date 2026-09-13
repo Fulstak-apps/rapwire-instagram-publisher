@@ -47,7 +47,11 @@ const candidatesPerSourceToScore = 4;
 // lower than the number of scored candidates so collection remains bounded,
 // while a bad stream can fail over to a different ready-to-publish video in
 // the same run.
-const maxCaptureAttemptsPerRun = 8;
+// A failed authenticated fetch plus local crop review can take minutes. Four
+// independent fallbacks fit inside the runner's ten-minute hard cap; eight
+// could repeatedly time out before the ledger was saved, leaving the queue
+// empty forever. The next five-minute pass continues from the remaining pool.
+const maxCaptureAttemptsPerRun = 4;
 
 async function readJson(file, fallback) {
   try {

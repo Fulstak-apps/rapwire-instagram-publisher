@@ -29,7 +29,10 @@ const maxQueuePerRun = 1;
 // Keep several already-validated source videos ahead of the publisher.  An
 // Instagram container in progress is counted as reserved inventory, so the
 // collector does not duplicate it while Meta processes the upload.
-const targetReadyVideoBuffer = 3;
+// Keep six hours of inventory at the 30-minute publishing cadence. This gives
+// temporary Instagram profile/navigation failures time to recover without
+// starving the public publisher.
+const targetReadyVideoBuffer = 12;
 // Score the freshest visible item per source.  More than that delays the
 // actual capture behind dozens of metadata page loads and makes a single pass
 // needlessly likely to exceed its watchdog window.
@@ -293,6 +296,23 @@ async function queueCapture(ledger, candidate, queueNumber) {
   return id;
 }
 
+async function cachedCandidates(ledger) {
+  const directory = path.join(root, "work", "instagram-mirror");
+  const names = await fs.readdir(directory).catch(() => []);
+  const candidates = [];
+  for (const name of names.filter(value => value.endsWith(".json") && !value.endsWith("-capture-diagnostic.json"))) {
+    const evidence = await readJson(path.join(directory, name), null);
+    const shortcode = evidence?.shortcode || name.replace(/\.json$/, "");
+    if (!evidence?.source_url || !shortcode || ledger.queued_shortcodes[shortcode]) continue;
+    const source = sources.find(item => evidence.source_url.includes(`instagram.com/${item.handle}/`));
+    if (!source || !evidence.source_caption_text || evidence.video_layout?.status !== "validated") continue;
+    try { await fs.access(path.join(directory, `${shortcode}.mp4`)); } catch { continue; }
+    candidates.push({source,shortcode,url:evidence.source_url,visibleCaption:evidence.source_caption_text,isVideo:true,
+      viewCount:0,capturedAt:Date.parse(evidence.captured_at || "") || 0});
+  }
+  return candidates.sort((left,right) => right.capturedAt - left.capturedAt);
+}
+
 async function commitAndPush(createdIds) {
   const paths = ["monitor/repost-ledger.json"];
   for (const id of createdIds) {
@@ -426,6 +446,22 @@ try {
 
   run.mode = repairAttempts ? "caption_repair" : "discovery";
   if (!repairAttempts && bufferNeeded > 0) {
+  // First consume a completed, validated local render that never reached the
+  // queue. This is a fast reserve path: it does no browser navigation and can
+  // keep publication moving while Instagram profile pages are slow.
+  const reserve = await cachedCandidates(ledger);
+  for (const candidate of reserve.slice(0, 12)) {
+    try {
+      const id = await queueCapture(ledger, candidate, await nextQueueNumber());
+      run.queued.push(id);
+      run.mode = "cached_reserve";
+      break;
+    } catch (error) {
+      run.errors.push({source_handle:candidate.source.handle,source_url:candidate.url,stage:"cached_reserve",error:error.message});
+    }
+  }
+
+  if (!run.queued.length) {
   const discovered = [];
   let rankedPool = [];
   await withFreshBrowser(async (context) => {
@@ -499,6 +535,8 @@ try {
     } catch (error) {
       run.errors.push({ source_handle: candidate.source.handle, source_url: candidate.url, stage: "queue", error: error.message });
     }
+  }
+
   }
 
   }

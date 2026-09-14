@@ -645,6 +645,7 @@ const uploadCandidates = files.map(name => queueRecords.find(record => record.na
     && contentPromiseIsKept(item) && item.source_policy_checked === true && item.rap_relevance_checked === true
     && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"))
   .slice(0, uploadSlots);
+console.log(`Instagram selection: slots=${uploadSlots} processing=${processingCount} cycle_due=${instagramCycleDue} feed_allowed=${deliveryPolicy.feed_allowed} available=${instagramAvailable()} ready_videos=${queueRecords.filter(({ item }) => item.status === "ready" && item.content_type === "video").length} candidates=${uploadCandidates.length}`);
 
 await Promise.all(uploadCandidates.map(async ({ name, item }) => {
   try {

@@ -156,6 +156,9 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
       .map((parts) => ({ parts: parts.sort((a, b) => a.rangeStart - b.rangeStart), bytes: parts.reduce((sum, part) => sum + part.body.length, 0) }))
       .sort((a, b) => b.bytes - a.bytes);
     const tempDir = await fs.mkdtemp(path.join(outputDir, `${shortcode}-`));
+    const original = path.join(outputDir, `${shortcode}-source.mp4`);
+    const reviewDir = destination.replace(/\.mp4$/i, '-crop-review');
+    let outputValidated = false;
     let videoInput = "";
     let audioInput = "";
     try {
@@ -248,7 +251,6 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
       if (!videoInput) throw new Error("Captured Instagram fragments did not contain a complete video stream.");
       // Keep the exact unbranded audio/video locally so a later layout repair
       // never crops an already-branded render or needs to recapture the post.
-      const original = path.join(outputDir, `${shortcode}-source.mp4`);
       await execFileAsync("ffmpeg", ["-v", "error", "-y", "-i", videoInput, "-i", audioInput,
         "-map", "0:v:0", "-map", "1:a:0", "-c", "copy", "-movflags", "+faststart", original]);
       const sourceHandle = options.sourceHandle || new URL(reelUrl).pathname.split('/').filter(Boolean)[0];
@@ -276,7 +278,20 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
       for (const stream of [encodedVideo,encodedAudio]) {
         if (!Number.isFinite(Number(stream?.duration)) || Math.abs(Number(stream.duration) - sourceEvidence.duration) > 1) throw new Error('Decoded video/audio duration is incomplete; refusing a partial capture');
       }
+      outputValidated = true;
     } finally {
+      // FFmpeg can leave a tiny/partial destination (and a large source or
+      // crop-review directory) when the disk fills or a process is killed.
+      // Keeping those artifacts made the next pass fail with ENOSPC again.
+      // Remove only this shortcode's unvalidated intermediates; validated
+      // renders remain available for the cache/reserve path.
+      if (!outputValidated) {
+        await Promise.all([
+          fs.rm(destination, { force: true }).catch(() => {}),
+          fs.rm(original, { force: true }).catch(() => {}),
+          fs.rm(reviewDir, { recursive: true, force: true }).catch(() => {})
+        ]);
+      }
       await fs.rm(tempDir, { recursive: true, force: true });
     }
     return sourceEvidence;

@@ -5,11 +5,34 @@ import json
 import signal
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 # The local scheduler runs every five minutes. Leave a small handoff buffer,
 # but allow the rotated four-source pass to finish before watchdog recovery.
 LIMIT_SECONDS = 290
+GIT_TEMP_MAX_AGE_SECONDS = 15 * 60
+
+def cleanup_stale_git_temporary_objects():
+    """Remove only abandoned objects left by an interrupted `git fetch`.
+
+    A killed fetch can leave a tmp_pack file almost as large as the repository.
+    The next video transcode then fails with ENOSPC even though the queue and
+    browser are healthy. This runs before the child starts (so no local Git
+    command is active) and touches only Git's explicitly temporary pack files.
+    """
+    pack_dir = Path('.git/objects/pack')
+    cutoff = time.time() - GIT_TEMP_MAX_AGE_SECONDS
+    for path in pack_dir.glob('tmp_pack_*'):
+        try:
+            if path.is_file() and path.stat().st_mtime < cutoff:
+                path.unlink()
+        except FileNotFoundError:
+            pass
+        except OSError:
+            # A concurrent fetch or a read-only checkout should not prevent the
+            # collector from attempting its normal bounded pass.
+            pass
 
 def terminate_orphaned_rapwire_browser():
     """A killed Playwright parent can leave its dedicated Chrome profile alive.
@@ -35,21 +58,43 @@ def terminate_orphaned_rapwire_browser():
             except ProcessLookupError: pass
 
 def clear_stale_monitor_lock():
-    """Remove only a monitor lock whose recorded process is definitely dead."""
+    """Remove a dead or orphaned monitor lock, never a live monitor lock.
+
+    PID reuse is possible after a killed Node process.  The old check treated
+    any live PID as the collector, so a recycled PID could make every later
+    pass report ``locked`` forever.  Verify the command line as well as PID
+    liveness before allowing that lock to block the scheduler.
+    """
     lock = Path('monitor/repost-monitor.lock')
+
+    def owner_is_monitor(pid):
+        try:
+            command = subprocess.check_output(
+                ["ps", "-p", str(pid), "-o", "command="],
+                text=True,
+                stderr=subprocess.DEVNULL,
+                timeout=5,
+            ).strip()
+        except (OSError, subprocess.SubprocessError):
+            return False
+        return "repost-monitor-runner.py" in command or "instagram-repost-monitor.mjs" in command
+
     try:
         pid = int(json.loads(lock.read_text()).get('pid', 0))
         if pid > 1:
             try:
                 os.kill(pid, 0)
-                return
+                if owner_is_monitor(pid):
+                    return
             except ProcessLookupError:
-                lock.unlink(missing_ok=True)
+                pass
+            lock.unlink(missing_ok=True)
     except (OSError, ValueError, TypeError, json.JSONDecodeError):
         # An unreadable lock cannot safely block the entire collector forever.
         # It contains no trustworthy live PID, so only remove this exact lock.
         lock.unlink(missing_ok=True)
 
+cleanup_stale_git_temporary_objects()
 clear_stale_monitor_lock()
 
 process = subprocess.Popen(
@@ -77,7 +122,15 @@ except subprocess.TimeoutExpired:
         pid = int(json.loads(lock.read_text()).get('pid', 0))
         try:
             os.kill(pid, 0)
-        except ProcessLookupError:
+            command = subprocess.check_output(
+                ["ps", "-p", str(pid), "-o", "command="],
+                text=True,
+                stderr=subprocess.DEVNULL,
+                timeout=5,
+            ).strip()
+            if "repost-monitor-runner.py" not in command and "instagram-repost-monitor.mjs" not in command:
+                lock.unlink(missing_ok=True)
+        except (ProcessLookupError, OSError, subprocess.SubprocessError):
             lock.unlink(missing_ok=True)
     except (OSError, ValueError, TypeError, json.JSONDecodeError):
         pass

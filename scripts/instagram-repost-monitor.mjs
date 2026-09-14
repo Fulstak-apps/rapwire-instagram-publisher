@@ -85,11 +85,11 @@ const targetReadyVideoBuffer = 12;
 // Reel has a non-specific caption, an embedded-player layout, or an expired
 // CDN stream.  This is still bounded (eight approved sources) and avoids an
 // empty publishing queue being held hostage by the newest bad Reel.
-// Score the newest candidate from each source per five-minute pass. With nine
-// profiles, scoring three each could consume the entire watchdog window when
-// Instagram navigation was slow and leave the queue empty. Later passes rotate
-// naturally through anything still unseen.
-const candidatesPerSourceToScore = 1;
+// Score a small fallback set from each source per five-minute pass. Scoring
+// three candidates concurrently lets the collector skip a generic caption or
+// a Reel whose CDN stream is unavailable instead of retrying the same newest
+// item forever. The browser work is still bounded by the four-profile batch.
+const candidatesPerSourceToScore = 3;
 // A source can fail because Instagram temporarily withholds its media ranges.
 // Bound failed capture work so one bad batch cannot monopolize the launcher;
 // the next five-minute pass gets a fresh browser and can retry other items.

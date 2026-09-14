@@ -6,7 +6,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  # The report is persisted so the next watchdog run and daily summary can
+  # see the last decision.  A failed report push is non-blocking below.
+  contents: write
   actions: write
 
 concurrency:
@@ -52,6 +54,31 @@ jobs:
             exit 0
           fi
           timeout 45s gh workflow run publish-instagram.yml --ref main
+
+      - name: Persist watchdog report
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain -- logs/publisher-watchdog.json)" ]; then
+            echo "No watchdog report changes."
+            exit 0
+          fi
+          git config user.name "RapWire 24/7"
+          git config user.email "actions@users.noreply.github.com"
+          git add logs/publisher-watchdog.json
+          git commit -m "Save RapWire watchdog report"
+          # The publisher and watchdog can both move main.  Retry this
+          # observability commit without ever blocking the redispatch decision.
+          for attempt in 1 2 3; do
+            if timeout 45s git pull --rebase origin main && timeout 45s git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort >/dev/null 2>&1 || true
+            if [ "$attempt" != "3" ]; then sleep "$((attempt * 5))"; fi
+          done
+          echo "Watchdog report could not be persisted this cycle; next cycle will retry." >&2
 
       - name: Upload watchdog report
         if: always()

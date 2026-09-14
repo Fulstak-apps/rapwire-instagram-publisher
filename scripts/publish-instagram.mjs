@@ -41,6 +41,48 @@ const cooldownPath = path.join(logsDir, "instagram-cooldown.json");
 const quotaPath = path.join(logsDir, "instagram-publishing-quota.json");
 const threadsQuotaPath = path.join(logsDir, "threads-publishing-quota.json");
 
+// Invalid legacy queue records are intentionally retained for auditability,
+// but logging the same deterministic skip every five minutes made the JSONL
+// file grow without bound and eventually competed with video transcodes for
+// disk space. Suppress repeated skip/defer events for a short window while
+// keeping all failures and successful publications fully recorded.
+const noisyAttemptStatuses = new Set(["skipped", "deferred"]);
+const recentAttemptKeys = new Set();
+const attemptDedupeWindowMs = 6 * 60 * 60_000;
+const attemptKey = event => `${event.id || event.file || ""}|${event.platform || ""}|${event.status || ""}|${event.reason || ""}`;
+async function loadRecentAttemptKeys() {
+  try {
+    const text = await fs.readFile(attemptsLog, "utf8");
+    for (const line of text.split("\n").slice(-20_000)) {
+      try {
+        const event = JSON.parse(line);
+        if (!noisyAttemptStatuses.has(event.status)) continue;
+        if (Date.now() - (Date.parse(event.timestamp || "") || 0) <= attemptDedupeWindowMs) recentAttemptKeys.add(attemptKey(event));
+      } catch {
+        // Keep one malformed historical line from stopping publication.
+      }
+    }
+  } catch (error) {
+    if (error.code !== "ENOENT") console.error(`Could not read prior attempt log: ${error.message}`);
+  }
+}
+await loadRecentAttemptKeys();
+
+async function compactAttemptLogIfNeeded() {
+  try {
+    const stat = await fs.stat(attemptsLog);
+    if (stat.size <= 20 * 1024 * 1024) return;
+    const text = await fs.readFile(attemptsLog, "utf8");
+    const lines = text.split("\n").filter(Boolean).slice(-10_000);
+    const temporary = `${attemptsLog}.${process.pid}.tmp`;
+    await fs.writeFile(temporary, `${lines.join("\n")}\n`);
+    await fs.rename(temporary, attemptsLog);
+    console.log(`Compacted publication attempt log to ${lines.length} recent events.`);
+  } catch (error) {
+    if (error.code !== "ENOENT") console.error(`Could not compact publication attempt log: ${error.message}`);
+  }
+}
+
 async function verifyInstagramIdentity() {
   const url = new URL(`${instagramBase}/me`);
   url.searchParams.set("fields", "id,username");
@@ -221,6 +263,11 @@ async function refreshQuota(force = false) {
 await refreshQuota();
 
 async function logAttempt(event) {
+  if (noisyAttemptStatuses.has(event.status)) {
+    const key = attemptKey(event);
+    if (recentAttemptKeys.has(key)) return;
+    recentAttemptKeys.add(key);
+  }
   runEvents.push(event);
   await fs.mkdir(logsDir, { recursive: true });
   await fs.appendFile(attemptsLog, `${JSON.stringify({ timestamp: new Date().toISOString(), ...event })}\n`);
@@ -897,6 +944,8 @@ for (const file of files) {
 
   await deliverThreads(item, itemPath, file);
 }
+
+await compactAttemptLogIfNeeded();
 
 const report = {
   checked_at: new Date().toISOString(),

@@ -16,6 +16,7 @@ import html
 import json
 import os
 import re
+import sys
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -148,9 +149,21 @@ def fetch_feed() -> list[Candidate]:
         FEED_URL,
         headers={"User-Agent": "RapWire24-LocalEditor/1.0"},
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        raw = response.read()
-    root = ET.fromstring(raw)
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            raw = response.read()
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, OSError) as error:
+        # The local editor is an optional Ollama review lane.  A provider
+        # outage (for example Narro returning HTTP 402) must not surface as a
+        # launchd failure or interfere with the independent video publisher.
+        code = getattr(error, "code", "network")
+        print(f"RapWire local editor: source feed unavailable ({code}); continuing without a review draft.", file=sys.stderr)
+        return []
+    try:
+        root = ET.fromstring(raw)
+    except ET.ParseError as error:
+        print(f"RapWire local editor: source feed was not valid RSS ({error}); continuing without a review draft.", file=sys.stderr)
+        return []
     now = datetime.now(timezone.utc)
     cutoff = now.timestamp() - MAX_SOURCE_AGE_HOURS * 3600
     found: list[Candidate] = []

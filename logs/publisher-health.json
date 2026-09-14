@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-14T08:34:25.428Z",
+  "checked_at": "2026-09-14T08:39:39.372Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-14T08:34:23.784Z",
-    "usage": 6,
+    "checked_at": "2026-09-14T08:39:31.337Z",
+    "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-14T08:49:23.784Z",
+    "next_check_at": "2026-09-14T08:54:31.337Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -20,7 +20,7 @@
     "instagram_usage": 6,
     "instagram_remaining": 42,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-14T08:34:22.931Z",
+    "next_feed_eligible_at": "2026-09-14T09:09:39.098Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,15 +35,31 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-14T08:29:17.631Z",
-    "usage": 6,
+    "usage": 7,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-14T08:44:17.631Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-14T08:34:15.484Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-14T09:09:30.977Z",
+  "publications": [
+    {
+      "file": "659-druski-went-crazy-to-ran-to-atlanta-with-future-future-in-the-cl.json",
+      "id": "659-druski-went-crazy-to-ran-to-atlanta-with-future-future-in-the-cl",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17865946371662386"
+    },
+    {
+      "file": "659-druski-went-crazy-to-ran-to-atlanta-with-future-future-in-the-cl.json",
+      "id": "659-druski-went-crazy-to-ran-to-atlanta-with-future-future-in-the-cl",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18135758755626625",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -4,10 +4,17 @@ set -euo pipefail
 # Stage only durable queue/health state so a noisy attempt log cannot create a
 # huge commit, exhaust disk, or make later publisher runs spend their budget in
 # Git operations.
-if [ -z "$(git status --porcelain -- queue logs ':!logs/publish-attempts.jsonl')" ]; then exit 0; fi
+state_paths=(queue)
+for state_file in logs/*.json; do
+  [ -f "$state_file" ] && state_paths+=("$state_file")
+done
+if [ -z "$(git status --porcelain -- "${state_paths[@]}")" ]; then exit 0; fi
 git config user.name "RapWire 24/7"
 git config user.email "actions@users.noreply.github.com"
-git add -- queue logs ':!logs/publish-attempts.jsonl'
+git add -- queue
+for state_file in logs/*.json; do
+  [ -f "$state_file" ] && git add -- "$state_file"
+done
 git commit -m "Log RapWire publication"
 for attempt in 1 2 3; do
   # A transient GitHub/network failure must not trigger the safety hold that

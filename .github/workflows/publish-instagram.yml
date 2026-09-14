@@ -9,8 +9,6 @@ on:
       - "logs/**"
       - "monitor/**"
   workflow_dispatch:
-  schedule:
-    - cron: "*/5 * * * *"
 
 permissions:
   contents: write

@@ -42,7 +42,13 @@ jobs:
         if: steps.health.outputs.dispatch == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run publish-instagram.yml --ref main
+        run: |
+          active=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow publish-instagram.yml --limit 20 --json status --jq '[.[] | select(.status == "in_progress" or .status == "queued" or .status == "pending" or .status == "waiting")] | length')
+          if [ "$active" != "0" ]; then
+            echo "Publisher already has an active run; watchdog will check again next cycle."
+            exit 0
+          fi
+          gh workflow run publish-instagram.yml --ref main
 
       - name: Upload watchdog report
         if: always()

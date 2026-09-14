@@ -69,7 +69,11 @@ for path in QUEUE.glob("*.json"):
         # fallback so a collector write cannot make a fresh item look stale
         # merely because the optional discovery field was absent.
         discovered = parse_source_date(item.get("source_discovered_at") or item.get("caption_checked_at"))
-        if discovered and item.get("media_capture_evidence") and (now - discovered).total_seconds() <= 2 * 3600:
+        # Authenticated Instagram Reels frequently omit a machine-readable
+        # post date. The collector's capture timestamp is authoritative for
+        # these verified videos; keep them for the same 48-hour window as a
+        # dated source instead of pausing them after a two-hour queue delay.
+        if discovered and item.get("media_capture_evidence") and (now - discovered).total_seconds() <= MAX_AGE_HOURS * 3600:
             continue
         item["status"] = "paused"
         item["stale_reason"] = "Unparseable source publication date; held to prevent stale news from publishing."

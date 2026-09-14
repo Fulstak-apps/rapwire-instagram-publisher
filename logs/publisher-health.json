@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-14T22:57:01.142Z",
+  "checked_at": "2026-09-14T23:02:20.331Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-14T22:56:59.759Z",
-    "usage": 9,
+    "checked_at": "2026-09-14T23:02:13.870Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-14T23:11:59.759Z",
+    "next_check_at": "2026-09-14T23:17:13.870Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 9,
     "instagram_remaining": 39,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-14T22:56:54.062Z",
+    "next_feed_eligible_at": "2026-09-14T23:32:20.209Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-14T22:56:59.661Z",
-    "usage": 9,
+    "usage": 10,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-14T23:11:59.661Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-14T22:56:49.021Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-14T23:32:12.721Z",
+  "publications": [
+    {
+      "file": "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-.json",
+      "id": "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18120979270917137"
+    },
+    {
+      "file": "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-.json",
+      "id": "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18197007991342117",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

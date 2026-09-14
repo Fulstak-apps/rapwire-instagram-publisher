@@ -7,9 +7,9 @@ import subprocess
 import sys
 from pathlib import Path
 
-# The local scheduler runs every five minutes. Finish or recover before the
-# next slot so one slow authenticated Reel cannot monopolize two cycles.
-LIMIT_SECONDS = 270
+# The local scheduler runs every five minutes. Leave a small handoff buffer,
+# but allow the rotated four-source pass to finish before watchdog recovery.
+LIMIT_SECONDS = 290
 
 def terminate_orphaned_rapwire_browser():
     """A killed Playwright parent can leave its dedicated Chrome profile alive.

@@ -59,7 +59,7 @@ const candidatesPerSourceToScore = 1;
 // independent fallbacks fit inside the runner's ten-minute hard cap; eight
 // could repeatedly time out before the ledger was saved, leaving the queue
 // empty forever. The next five-minute pass continues from the remaining pool.
-// The launchd worker runs every five minutes and is hard-bounded to 270s.
+// The launchd worker runs every five minutes and is hard-bounded to 290s.
 // One complete capture/render per pass keeps the worker inside that window;
 // attempting four serial video transcodes caused the watchdog to kill the
 // pass before its ledger/queue updates were persisted.

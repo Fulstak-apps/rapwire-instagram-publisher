@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-14T08:29:18.019Z",
+  "checked_at": "2026-09-14T08:34:25.428Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-14T08:24:17.619Z",
+    "checked_at": "2026-09-14T08:34:23.784Z",
     "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-14T08:39:17.619Z",
+    "next_check_at": "2026-09-14T08:49:23.784Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -21,11 +21,11 @@
     "instagram_remaining": 42,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-14T08:34:22.931Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,14 +44,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-14T08:34:15.484Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/659-druski-went-crazy-to-ran-to-atlanta-with-future-future-in-the-cl.json",
-      "id": "659-druski-went-crazy-to-ran-to-atlanta-with-future-future-in-the-cl",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 01:29:17 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AlYqWzbkagN5oYE3fUpv4xN\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

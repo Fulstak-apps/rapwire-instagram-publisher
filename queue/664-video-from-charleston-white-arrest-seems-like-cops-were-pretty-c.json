@@ -1,6 +1,6 @@
 {
   "id": "664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-09-14",
   "timezone": "America/Detroit",
@@ -39,5 +39,6 @@
   "source_caption_text": "Video from Charleston white arrest. Seems like cops were pretty cool w him",
   "caption_checked_at": "2026-09-14T11:06:58.019Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 84.1
+  "source_video_duration": 84.1,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

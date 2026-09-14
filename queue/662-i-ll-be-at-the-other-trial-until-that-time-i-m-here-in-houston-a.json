@@ -1,6 +1,6 @@
 {
   "id": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-09-14",
   "timezone": "America/Detroit",
@@ -39,5 +39,6 @@
   "source_caption_text": "I'll be at the other trial, until that time? I'm here in Houston at home.",
   "caption_checked_at": "2026-09-14T10:24:53.957Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 60.13333333333333
+  "source_video_duration": 60.13333333333333,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-09-14T20:10:57.275Z",
-  "instagram_cooldown_until": null,
+  "checked_at": "2026-09-14T20:12:37.222Z",
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-14T20:10:50.512Z",
     "usage": 8,
@@ -18,15 +18,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 7,
-    "instagram_remaining": 41,
+    "instagram_usage": 8,
+    "instagram_remaining": 40,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-14T20:40:57.061Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,31 +45,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-14T20:40:49.730Z",
-  "publications": [
-    {
-      "file": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a.json",
-      "id": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18058437566716830"
-    },
-    {
-      "file": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a.json",
-      "id": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18170536432393130",
-      "content_type": "video"
-    }
-  ],
-  "failures": [
-    {
-      "file": "queue/662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a.json",
-      "id": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 13:10:42 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ApCaaT7oUj_Ra9_H9uU05Ic\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

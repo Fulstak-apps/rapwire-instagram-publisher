@@ -4,14 +4,13 @@ set -euo pipefail
 # Stage only durable queue/health state so a noisy attempt log cannot create a
 # huge commit, exhaust disk, or make later publisher runs spend their budget in
 # Git operations.
-state_paths=(queue)
-for state_file in logs/*.json; do
-  [ -f "$state_file" ] && state_paths+=("$state_file")
-done
-if [ -z "$(git status --porcelain -- "${state_paths[@]}")" ]; then exit 0; fi
+# Include tracked deletions in logs (for example, a stale publication hold),
+# while Git's normal status intentionally omits the ignored JSONL telemetry.
+if [ -z "$(git status --porcelain -- queue logs)" ]; then exit 0; fi
 git config user.name "RapWire 24/7"
 git config user.email "actions@users.noreply.github.com"
 git add -- queue
+git add -u -- logs
 for state_file in logs/*.json; do
   [ -f "$state_file" ] && git add -- "$state_file"
 done

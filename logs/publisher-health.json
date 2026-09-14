@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-14T07:23:42.942Z",
+  "checked_at": "2026-09-14T07:28:52.992Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-14T07:23:42.022Z",
-    "usage": 4,
+    "checked_at": "2026-09-14T07:28:46.464Z",
+    "usage": 5,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-14T07:38:42.022Z",
+    "next_check_at": "2026-09-14T07:43:46.464Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -20,7 +20,7 @@
     "instagram_usage": 4,
     "instagram_remaining": 44,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-14T07:22:08.472Z",
+    "next_feed_eligible_at": "2026-09-14T07:58:52.775Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,15 +35,39 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-14T07:23:41.806Z",
-    "usage": 4,
+    "usage": 5,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-14T07:38:41.806Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-14T07:22:00.737Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-14T07:58:46.070Z",
+  "publications": [
+    {
+      "file": "657-full-video-shooting-of-bloodhound-q50-shooting.json",
+      "id": "657-full-video-shooting-of-bloodhound-q50-shooting",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18011366519958072"
+    },
+    {
+      "file": "657-full-video-shooting-of-bloodhound-q50-shooting.json",
+      "id": "657-full-video-shooting-of-bloodhound-q50-shooting",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18141242356508591",
+      "content_type": "video"
+    }
+  ],
+  "failures": [
+    {
+      "file": "queue/657-full-video-shooting-of-bloodhound-q50-shooting.json",
+      "id": "657-full-video-shooting-of-bloodhound-q50-shooting",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 00:28:40 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AWxszXDfpeQlyNGXiMFws4v\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

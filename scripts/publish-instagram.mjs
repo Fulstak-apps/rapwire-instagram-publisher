@@ -23,6 +23,19 @@ const threadsBase = "https://graph.threads.net/v1.0";
 const facebookBase = "https://graph.facebook.com/v26.0";
 const queueDir = "queue";
 const logsDir = "logs";
+
+// Normalize collector media_items into the publisher's ordered slide format.
+function carouselSlides(item) {
+  if (Array.isArray(item.slides) && item.slides.length) return item.slides.filter(value => typeof value === "string" && value.trim());
+  return (Array.isArray(item.media_items) ? item.media_items : [])
+    .filter(media => media && media.type === "image" && typeof media.path === "string" && media.path.trim())
+    .map(media => media.path);
+}
+function normalizeCarousel(item) {
+  const slides = carouselSlides(item);
+  if ((!Array.isArray(item.slides) || !item.slides.length) && slides.length) item.slides = slides;
+  return item;
+}
 const attemptsLog = path.join(logsDir, "publish-attempts.jsonl");
 const cooldownPath = path.join(logsDir, "instagram-cooldown.json");
 const quotaPath = path.join(logsDir, "instagram-publishing-quota.json");
@@ -93,7 +106,7 @@ function assertInstagramAvailable() {
 const queueNames = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
 const queueRecords = await Promise.all(queueNames.map(async (name) => ({
   name,
-  item: JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8"))
+  item: normalizeCarousel(JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8")))
 })));
 
 // Never send the same editorial copy repeatedly.  Source accounts sometimes
@@ -250,7 +263,7 @@ function signedCaption(value, item = {}) {
 
 function slideUrl(item, index) {
   const remote = Array.isArray(item.media_urls) ? item.media_urls[index] : "";
-  return remote && /^https?:\/\//i.test(remote) ? remote : mediaUrl(item.slides[index]);
+  return remote && /^https?:\/\//i.test(remote) ? remote : mediaUrl(carouselSlides(item)[index]);
 }
 
 function storyUrl(item) {
@@ -266,7 +279,7 @@ function videoUrl(item) {
 function hasPublishableVisual(item) {
   if (item.visual_asset_type === "original_graphic" && item.visual_asset_rights === "owned") return true;
   if (item.visual_asset_type === "source_photo" && item.visual_asset_rights === "source_post_repost") {
-    return Boolean(item.story || item.slides?.length);
+    return Boolean(item.story || carouselSlides(item).length);
   }
   if (item.photo_recency_checked !== true) return false;
   if (!["event_specific", "same_campaign", "current_subject_portrait"].includes(item.photo_event_relevance)) return false;
@@ -678,7 +691,7 @@ async function deliverThreads(item, itemPath, file) {
 
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
-  const item = JSON.parse(await fs.readFile(itemPath, "utf8"));
+  const item = normalizeCarousel(JSON.parse(await fs.readFile(itemPath, "utf8")));
   const wasReady = item.status === "ready";
   const legacyRightLogo = /^(124|125|126|127|128|129)-/.test(item.id || "") && item.logo_position !== "bottom-left";
   if (item.content_type === "video" && legacyRightLogo) {
@@ -686,9 +699,9 @@ for (const file of files) {
     continue;
   }
   const isVideoItem = item.content_type === "video";
-  if (!isVideoItem && (!Array.isArray(item.slides) || item.slides.length < 2 || item.slides.length > 10)) {
-    console.error(`Skipped ${file}: RapWire carousels require 2-10 complete, readable slides`);
-    await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "invalid_carousel_slide_count" });
+  if (!isVideoItem && (carouselSlides(item).length < 1 || carouselSlides(item).length > 10)) {
+    console.error(`Skipped ${file}: image posts require 1-10 complete, readable images`);
+    await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "invalid_image_slide_count" });
     continue;
   }
   if (isVideoItem && (!item.video || !String(item.video).endsWith(".mp4"))) {

@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-14T06:49:01.437Z",
+  "checked_at": "2026-09-14T06:52:08.722Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-14T06:49:00.327Z",
-    "usage": 3,
+    "checked_at": "2026-09-14T06:52:01.142Z",
+    "usage": 4,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-14T07:04:00.327Z",
+    "next_check_at": "2026-09-14T07:07:01.142Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -20,7 +20,7 @@
     "instagram_usage": 3,
     "instagram_remaining": 45,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-13T22:10:37.406Z",
+    "next_feed_eligible_at": "2026-09-14T07:22:08.472Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -35,15 +35,31 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-14T06:49:00.107Z",
-    "usage": 3,
+    "usage": 4,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-14T07:04:00.107Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-13T22:10:30.721Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-14T07:22:00.737Z",
+  "publications": [
+    {
+      "file": "656-q50-knew-sum-wasn-t-right-smh.json",
+      "id": "656-q50-knew-sum-wasn-t-right-smh",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18389743453167065"
+    },
+    {
+      "file": "656-q50-knew-sum-wasn-t-right-smh.json",
+      "id": "656-q50-knew-sum-wasn-t-right-smh",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17897664978602354",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

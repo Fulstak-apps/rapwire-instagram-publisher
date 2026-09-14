@@ -486,8 +486,17 @@ async function publishInstagramReel(item, itemPath) {
 }
 
 async function publishInstagramFeed(item) {
+  const slides = carouselSlides(item);
+  if (slides.length === 1) {
+    const image = await instagramPost("media", {
+      image_url: slideUrl(item, 0),
+      caption: signedCaption(item.caption, item)
+    });
+    await waitForInstagramContainer(image.id);
+    return instagramPost("media_publish", { creation_id: image.id });
+  }
   const childIds = [];
-  for (let index = 0; index < item.slides.length; index += 1) {
+  for (let index = 0; index < slides.length; index += 1) {
     const child = await instagramPost("media", { image_url: slideUrl(item, index), is_carousel_item: "true" });
     await waitForInstagramContainer(child.id);
     childIds.push(child.id);
@@ -520,8 +529,18 @@ async function publishInstagramStory(item, itemPath) {
 }
 
 async function publishThreadsCarousel(item) {
+  const slides = carouselSlides(item);
+  if (slides.length === 1) {
+    const image = await threadsPost("threads", {
+      media_type: "IMAGE",
+      image_url: slideUrl(item, 0),
+      text: signedCaption(item.threads_text || item.caption, item)
+    });
+    await waitForThreadsContainer(image.id);
+    return threadsPost("threads_publish", { creation_id: image.id });
+  }
   const children = [];
-  for (let index = 0; index < item.slides.length; index += 1) {
+  for (let index = 0; index < slides.length; index += 1) {
     const child = await threadsPost("threads", {
       media_type: "IMAGE",
       image_url: slideUrl(item, index),

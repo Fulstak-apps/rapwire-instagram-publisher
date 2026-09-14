@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-14T16:56:57.231Z",
+  "checked_at": "2026-09-14T18:39:08.053Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-14T16:56:45.636Z",
+    "checked_at": "2026-09-14T18:39:05.864Z",
     "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-14T17:11:45.636Z",
+    "next_check_at": "2026-09-14T18:54:05.864Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -17,8 +17,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 5,
-    "instagram_remaining": 43,
+    "instagram_usage": 6,
+    "instagram_remaining": 42,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-14T17:26:56.930Z",
     "feed_allowed": true,
@@ -34,32 +34,24 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-14T16:50:47.842Z",
+    "checked_at": "2026-09-14T18:39:05.531Z",
     "usage": 6,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-14T17:05:47.842Z",
+    "next_check_at": "2026-09-14T18:54:05.531Z",
     "reason": "Capacity available"
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-14T17:26:44.861Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "660-that-ain-t-cuz-first-blitz-he-had-control-of-that-switch-for-rea.json",
-      "id": "660-that-ain-t-cuz-first-blitz-he-had-control-of-that-switch-for-rea",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17935634868373332"
-    },
-    {
-      "file": "660-that-ain-t-cuz-first-blitz-he-had-control-of-that-switch-for-rea.json",
-      "id": "660-that-ain-t-cuz-first-blitz-he-had-control-of-that-switch-for-rea",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18165278362477839",
-      "content_type": "video"
+      "file": "queue/661-in-rihanna-s-old-video-she-said-this-was-the-most-unpretty-cover.json",
+      "id": "661-in-rihanna-s-old-video-she-said-this-was-the-most-unpretty-cover",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 11:39:06 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AZo6EuAcxj_5eMCEX-WHds7\"}}"
     }
   ],
-  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

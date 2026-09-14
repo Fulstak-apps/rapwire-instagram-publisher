@@ -462,14 +462,23 @@ try {
   }
 
   if (!run.queued.length) {
-  const discovered = [];
-  let rankedPool = [];
-  await withFreshBrowser(async (context) => {
+    const discovered = [];
+    let rankedPool = [];
+  // Rotate small source groups across five-minute passes. Scanning all nine
+  // profiles before capture repeatedly consumed the entire 270-second worker
+  // budget and left only a truncated render. Every source is still visited
+  // within three passes, while each pass retains time for a complete MP4.
+    const sourceBatchSize = 4;
+    const sourceBatchCount = Math.ceil(sources.length / sourceBatchSize);
+    const sourceBatchIndex = Math.floor(Date.now() / 300000) % sourceBatchCount;
+    const discoverySources = sources.slice(sourceBatchIndex * sourceBatchSize, (sourceBatchIndex + 1) * sourceBatchSize);
+    run.source_batch = { index: sourceBatchIndex, count: sourceBatchCount, handles: discoverySources.map((source) => source.handle) };
+    await withFreshBrowser(async (context) => {
     // Load a few profiles concurrently.  Sequential discovery could spend
     // over two minutes before scoring any video, even when every source was
     // healthy. Four tabs is deliberately modest to avoid hammering Instagram.
-    for (let offset = 0; offset < sources.length; offset += 4) {
-      const batch = await Promise.all(sources.slice(offset, offset + 4).map(async source => {
+    for (let offset = 0; offset < discoverySources.length; offset += 4) {
+      const batch = await Promise.all(discoverySources.slice(offset, offset + 4).map(async source => {
         try { return await discoverFromProfile(context, source); }
         catch (error) {
           run.errors.push({ source_handle: source.handle, stage: "discover", error: error.message });
@@ -478,7 +487,7 @@ try {
       }));
       discovered.push(...batch.flat());
     }
-    const selectedForScoring = sources.flatMap((source) => discovered
+    const selectedForScoring = discoverySources.flatMap((source) => discovered
       .filter((candidate) => candidate.source.handle === source.handle && !ledger.queued_shortcodes[candidate.shortcode])
       .slice(0, candidatesPerSourceToScore));
     rankedPool = selectedForScoring;
@@ -543,7 +552,15 @@ try {
   run.finished_at = new Date().toISOString();
   ledger.runs = [...(ledger.runs || []), run].slice(-250);
   await writeJson(ledgerPath, ledger);
-  await commitAndPush(run.queued);
+  try {
+    await commitAndPush(run.queued);
+  } catch (error) {
+    // A health-only pass must not be marked failed merely because GitHub is
+    // temporarily unreachable. Newly queued media still fails hard so the
+    // supervisor retries until those manifests are safely pushed.
+    if (run.queued.length) throw error;
+    run.errors.push({ stage: "health_sync", error: error.message });
+  }
   console.log(JSON.stringify(run, null, 2));
 } finally {
   await releaseLock();

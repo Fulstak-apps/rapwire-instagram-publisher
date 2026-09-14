@@ -74,11 +74,27 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add queue
           git commit -m "Save validated RapWire queue"
-          timeout 60s git pull --rebase origin main
-          timeout 60s git push
+          # The local Chrome collector may push a newly captured item while
+          # this runner is validating the queue. Rebase/push races are normal;
+          # retry them instead of turning one race into a red run and a stalled
+          # publication lane.
+          for attempt in 1 2 3 4 5; do
+            if timeout 60s git pull --rebase origin main && timeout 60s git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort >/dev/null 2>&1 || true
+            if [ "$attempt" = "5" ]; then
+              echo "Queue state push failed after five bounded retries." >&2
+              exit 1
+            fi
+            sleep "$((attempt * 5))"
+          done
 
       - name: Wait for public media propagation
-        run: sleep 10
+        # Raw GitHub can take longer than ten seconds to serve a just-pushed
+        # MP4. Give Meta a little propagation headroom without consuming the
+        # whole 15-minute job budget.
+        run: sleep 20
 
       - uses: actions/setup-node@v6
         with:

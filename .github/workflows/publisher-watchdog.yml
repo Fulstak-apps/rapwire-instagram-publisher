@@ -34,6 +34,9 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Test watchdog decision logic
+        run: node --test scripts/publisher-watchdog.test.mjs
+
       - name: Evaluate publisher health
         id: health
         run: node scripts/publisher-watchdog.mjs
@@ -43,12 +46,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          active=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow publish-instagram.yml --limit 20 --json status --jq '[.[] | select(.status == "in_progress" or .status == "queued" or .status == "pending" or .status == "waiting")] | length')
+          active=$(timeout 45s gh run list --repo "$GITHUB_REPOSITORY" --workflow publish-instagram.yml --limit 20 --json status --jq '[.[] | select(.status == "in_progress" or .status == "queued" or .status == "pending" or .status == "waiting")] | length')
           if [ "$active" != "0" ]; then
             echo "Publisher already has an active run; watchdog will check again next cycle."
             exit 0
           fi
-          gh workflow run publish-instagram.yml --ref main
+          timeout 45s gh workflow run publish-instagram.yml --ref main
 
       - name: Upload watchdog report
         if: always()

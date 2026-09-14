@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-09-14T06:52:08.722Z",
-  "instagram_cooldown_until": null,
+  "checked_at": "2026-09-14T06:53:17.474Z",
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-14T06:52:01.142Z",
     "usage": 4,
@@ -17,15 +17,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 3,
-    "instagram_remaining": 45,
+    "instagram_usage": 4,
+    "instagram_remaining": 44,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-14T07:22:08.472Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,23 +43,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-14T07:22:00.737Z",
-  "publications": [
-    {
-      "file": "656-q50-knew-sum-wasn-t-right-smh.json",
-      "id": "656-q50-knew-sum-wasn-t-right-smh",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18389743453167065"
-    },
-    {
-      "file": "656-q50-knew-sum-wasn-t-right-smh.json",
-      "id": "656-q50-knew-sum-wasn-t-right-smh",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17897664978602354",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

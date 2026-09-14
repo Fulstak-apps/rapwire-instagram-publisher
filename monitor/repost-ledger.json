@@ -10099,43 +10099,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdQBM36xcMx/",
       "queue_id": "657-full-video-shooting-of-bloodhound-q50-shooting",
       "video": "media/657-full-video-shooting-of-bloodhound-q50-shooting.mp4"
+    },
+    "DdPwySxoJyR": {
+      "queued_at": "2026-09-14T07:09:27.744Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdPwySxoJyR/",
+      "queue_id": "658-rihanna-playing-with-her-kid-just-feels-like-pure-happiness-riha",
+      "video": "media/658-rihanna-playing-with-her-kid-just-feels-like-pure-happiness-riha.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-10T11:47:27.533Z",
-      "candidates": 19,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdFd1DmtT6J/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdFWky3gSeB/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc1oLsTgfLu/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "complexmusic",
-          "source_url": "https://www.instagram.com/complexmusic/p/DdF7fQAkTiX/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 33,
-      "finished_at": "2026-09-10T11:49:02.612Z"
-    },
     {
       "started_at": "2026-09-10T11:59:11.823Z",
       "candidates": 0,
@@ -19706,6 +19679,44 @@
         ]
       },
       "finished_at": "2026-09-14T07:02:02.045Z"
+    },
+    {
+      "started_at": "2026-09-14T07:07:06.386Z",
+      "candidates": 48,
+      "queued": [
+        "658-rihanna-playing-with-her-kid-just-feels-like-pure-happiness-riha"
+      ],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdPr31cP8pV/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 12,
+        "available": 1,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 3,
+        "handles": [
+          "hiphop_firstnewsmusic",
+          "complexmusic",
+          "ceddynash",
+          "larp.lor.d"
+        ]
+      },
+      "finished_at": "2026-09-14T07:09:27.744Z"
     }
   ],
   "vip_pending": {

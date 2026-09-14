@@ -10103,65 +10103,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-10T11:41:41.389Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "raplisted_",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dc322YeFQyh/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dc2MKfkNwc4/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/Dcww5JhjqDI/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dczyy4st5wl/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 33,
-      "finished_at": "2026-09-10T11:42:23.851Z"
-    },
-    {
       "started_at": "2026-09-10T11:47:27.533Z",
       "candidates": 19,
       "queued": [],
@@ -19729,6 +19670,42 @@
         ]
       },
       "finished_at": "2026-09-14T06:56:06.441Z"
+    },
+    {
+      "started_at": "2026-09-14T07:01:21.140Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/vladtv/reel/DdP3FHKiEux/",
+          "stage": "queue",
+          "error": "page.waitForTimeout: Page crashed"
+        }
+      ],
+      "video_buffer": {
+        "target": 12,
+        "available": 1,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 3,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-14T07:02:02.045Z"
     }
   ],
   "vip_pending": {

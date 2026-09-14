@@ -18,7 +18,9 @@ permissions:
 
 concurrency:
   group: rapwire-instagram-publisher
-  cancel-in-progress: false
+  # A wedged validation/save step must not block every later publishing cycle.
+  # Queue state is resumable, so the next run can safely continue containers.
+  cancel-in-progress: true
 
 jobs:
   monitor-and-publish:
@@ -74,8 +76,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add queue
           git commit -m "Save validated RapWire queue"
-          git pull --rebase origin main
-          git push
+          timeout 60s git pull --rebase origin main
+          timeout 60s git push
 
       - name: Wait for public media propagation
         run: sleep 10

@@ -1,0 +1,44 @@
+name: RapWire publisher recovery
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rapwire-instagram-publisher-recovery
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            scripts
+            queue
+            logs
+          ref: main
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      - name: Publish resumable queue item
+        env:
+          RAPWIRE_BRAND: "24/7"
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          PUBLISH_INSTAGRAM_STORIES: "false"
+          MAX_FEED_POSTS_PER_RUN: "1"
+        run: node scripts/publish-instagram.mjs
+      - name: Save publication state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/save-publication-state.sh

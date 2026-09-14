@@ -314,6 +314,11 @@ async function cachedCandidates(ledger) {
 }
 
 async function commitAndPush(createdIds) {
+  // Health-only passes are local telemetry. Committing the ledger every five
+  // minutes makes this checkout diverge from the publication commits written
+  // by GitHub Actions, eventually preventing new videos from reaching main.
+  // Only sync when a real queue item and media asset were created.
+  if (!createdIds.length) return;
   const paths = ["monitor/repost-ledger.json"];
   for (const id of createdIds) {
     const name = path.join("queue", `${id}.json`);

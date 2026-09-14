@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-14T14:33:19.310Z",
+  "checked_at": "2026-09-14T14:38:19.072Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-14T14:28:15.417Z",
@@ -44,14 +44,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-14T09:09:30.977Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
-      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 07:33:19 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ALHpCz8fIn4ePevmO0xjh-u\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

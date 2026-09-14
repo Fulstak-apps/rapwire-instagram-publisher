@@ -13,9 +13,15 @@ if [ -f "$hold" ]; then
     exit 1
   fi
 fi
-previous=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/publish-instagram.yml/runs?status=completed&per_page=1" --jq '.workflow_runs[0].id // empty')
+if ! previous=$(timeout 45s gh api "repos/$GITHUB_REPOSITORY/actions/workflows/publish-instagram.yml/runs?status=completed&per_page=1" --jq '.workflow_runs[0].id // empty'); then
+  echo "Unable to inspect prior publication state within 45 seconds; retrying on the next publisher run." >&2
+  exit 1
+fi
 if [ -z "$previous" ]; then exit 0; fi
-jobs=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$previous/jobs")
+if ! jobs=$(timeout 45s gh api "repos/$GITHUB_REPOSITORY/actions/runs/$previous/jobs"); then
+  echo "Unable to inspect jobs for prior publisher run $previous within 45 seconds; retrying later." >&2
+  exit 1
+fi
 save_result=$(jq -r '[.jobs[].steps[]? | select(.name == "Save publication log") | .conclusion][0] // "missing"' <<< "$jobs")
 publish_result=$(jq -r '[.jobs[].steps[]? | select(.name == "Publish queued post to Instagram and Threads") | .conclusion][0] // "skipped"' <<< "$jobs")
 if [[ "$publish_result" == "success" && "$save_result" != "success" ]]; then

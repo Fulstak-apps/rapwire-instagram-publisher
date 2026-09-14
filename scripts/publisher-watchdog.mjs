@@ -7,35 +7,56 @@ const readJson = async (file, fallback) => JSON.parse(await fs.readFile(file, 'u
 }));
 
 const retryable = (item, now) => item.status === 'ready'
-  && !item.instagram_media_id && !item.instagram_container_id && !item.instagram_reconcile_required
+  && !item.instagram_media_id && !item.instagram_reconcile_required
   && !item.instagram_publish_requested_at
   && !(Date.parse(item.instagram_retry_at || '') > now);
+
+const processingDue = (item, now) => item.status === 'ready'
+  && item.instagram_container_id && !item.instagram_media_id
+  && !item.instagram_reconcile_required && !item.instagram_publish_requested_at
+  && !(Date.parse(item.instagram_retry_at || '') > now)
+  && now - (Date.parse(item.instagram_container_checked_at || item.instagram_container_created_at || '') || 0) >= 120_000;
 
 export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
   const nextAt = Date.parse(health.delivery_policy?.next_feed_eligible_at || '');
   const cooldown = Date.parse(health.instagram_cooldown_until || '');
   const quotaBlocked = Boolean(health.instagram_publishing_quota?.blocked);
   const ready = items.filter(item => retryable(item, now));
-  const overdue = Number.isFinite(nextAt) && now > nextAt + 15 * 60_000;
+  const lastChecked = Date.parse(health.checked_at || '');
+  const healthStale = !Number.isFinite(lastChecked) || now - lastChecked > 10 * 60_000;
+  const overdue = (Number.isFinite(nextAt) && now > nextAt + 15 * 60_000)
+    || (!Number.isFinite(nextAt) && healthStale && ready.length > 0);
   const blocked = quotaBlocked || (Number.isFinite(cooldown) && cooldown > now);
   const lastThreadsVideo = Math.max(0, ...items.map(item => item.content_type === 'video'
     ? Math.max(Date.parse(item.threads_published_at || '') || 0, Date.parse(item.threads_replay_published_at || '') || 0)
     : 0));
-  const threadsCooldown = Date.parse(health.threads_cooldown_until || '');
+  const threadsCooldown = Math.max(
+    Date.parse(health.threads_cooldown_until || '') || 0,
+    Date.parse(health.threads_publishing_quota?.until || '') || 0
+  );
   const replayableVideo = items.some(item => item.status === 'published' && item.content_type === 'video'
     && item.threads_media_id && !item.threads_replay_media_id && item.threads_status !== 'review_required');
   const threadsVideoOverdue = replayableVideo && (!lastThreadsVideo || now - lastThreadsVideo >= 30 * 60_000);
-  const threadsBlocked = Number.isFinite(threadsCooldown) && threadsCooldown > now;
-  const instagramDispatch = overdue && !blocked && ready.length > 0;
-  const threadsDispatch = threadsVideoOverdue && !threadsBlocked;
+  const threadsPending = items.some(item => ['ready', 'published'].includes(item.status)
+    && item.content_type === 'video' && !item.threads_media_id && !item.threads_reconcile_required
+    && item.threads_status !== 'review_required'
+    && !(Date.parse(item.threads_retry_at || '') > now));
+  const threadsBlocked = Boolean(health.threads_publishing_quota?.blocked)
+    || (Number.isFinite(threadsCooldown) && threadsCooldown > now);
+  const threadsDue = !lastThreadsVideo || now - lastThreadsVideo >= 30 * 60_000;
+  const instagramDispatch = !blocked && (overdue || (healthStale && ready.some(item => processingDue(item, now))));
+  const threadsDispatch = threadsDue && !threadsBlocked && (threadsVideoOverdue || threadsPending);
   return {
     overdue,
+    health_stale: healthStale,
+    processing: items.filter(item => processingDue(item, now)).map(item => item.id),
     blocked,
+    threads_pending: threadsPending,
     threads_video_overdue: threadsVideoOverdue,
     threads_blocked: threadsBlocked,
     ready: ready.map(item => item.id),
     dispatch: instagramDispatch || threadsDispatch,
-    reason: threadsDispatch ? 'missed_threads_video_window' : blocked ? 'platform_cooldown_or_quota' : overdue ? (ready.length ? 'missed_feed_window' : 'no_eligible_item') : 'within_pacing_window'
+    reason: threadsDispatch ? 'missed_threads_video_window' : blocked ? 'platform_cooldown_or_quota' : instagramDispatch ? (overdue ? 'missed_feed_window' : 'stalled_container') : 'within_pacing_window'
   };
 }
 

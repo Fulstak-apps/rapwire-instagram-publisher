@@ -68,6 +68,23 @@ let cooldown = JSON.parse(await fs.readFile(cooldownPath, "utf8").catch(error =>
   throw error;
 }));
 
+// `blocked` used to be set for every quota-read failure, including ordinary
+// network timeouts and transient Meta 5xx responses. That stale boolean could
+// pause Instagram for an hour even though capacity was available. Keep an
+// explicit validity bit so a failed read defers only the affected platform for
+// a short retry window, while a confirmed publishing-limit response remains a
+// real hold.
+const isDefinitiveInstagramQuotaBlock = reason => /2207042|publishing (?:capacity|quota).*exhausted|quota exhausted/i.test(String(reason || ""));
+const isDefinitiveThreadsQuotaBlock = reason => /publishing (?:capacity|quota).*exhausted|quota exhausted|threads limited until|rate or publishing limit/i.test(String(reason || ""));
+if (typeof quota.blocked !== "boolean") quota.blocked = false;
+if (typeof threadsQuota.blocked !== "boolean") threadsQuota.blocked = false;
+if (quota.blocked === true && !isDefinitiveInstagramQuotaBlock(quota.reason)) {
+  quota = { ...quota, blocked: false, valid: false, next_check_at: null, reason: "Cleared a non-definitive legacy quota hold; retrying capacity check" };
+}
+if (threadsQuota.blocked === true && !isDefinitiveThreadsQuotaBlock(threadsQuota.reason)) {
+  threadsQuota = { ...threadsQuota, blocked: false, valid: false, next_check_at: null, reason: "Cleared a non-definitive legacy quota hold; retrying capacity check" };
+}
+
 if (Date.parse(cooldown.until || "") > Date.now()) {
   console.log(`Instagram rate-limit cooldown until ${cooldown.until}; saved uploads retained.`);
 }
@@ -77,11 +94,14 @@ let instagramSteps = 0;
 let threadsSteps = 0;
 let instagramLane = "";
 let facebookSteps = 0;
-const instagramAvailable = () => instagramCycleDue && !(Date.parse(cooldown.until || "") > Date.now()) && quota.blocked !== true;
+const instagramAvailable = () => instagramCycleDue
+  && !(Date.parse(cooldown.until || "") > Date.now())
+  && quota.blocked !== true
+  && quota.valid !== false;
 
 async function checkInstagramRateLimit(response, payload) {
   if (payload.error?.code === 9 && payload.error?.error_subcode === 2207042) {
-    quota = { ...quota, blocked: true, observed_rejection_at_usage: quota.usage, detected_at: new Date().toISOString(), next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: "Instagram publishing quota exhausted (9/2207042)" };
+    quota = { ...quota, valid: true, blocked: true, observed_rejection_at_usage: quota.usage, detected_at: new Date().toISOString(), next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: "Instagram publishing quota exhausted (9/2207042)" };
     await fs.mkdir(logsDir, { recursive: true });
     await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
     throw Object.assign(new Error(`Instagram publishing quota exhausted; next capacity check ${quota.next_check_at}`), { definitiveRejection: true });
@@ -101,6 +121,7 @@ async function checkInstagramRateLimit(response, payload) {
 function assertInstagramAvailable() {
   if (Date.parse(cooldown.until || "") > Date.now()) throw new Error(`Instagram cooling down until ${cooldown.until}`);
   if (quota.blocked) throw new Error(`Instagram publishing quota is blocked; capacity check ${quota.next_check_at}`);
+  if (quota.valid === false) throw new Error(`Instagram publishing quota check unavailable; retry at ${quota.next_check_at || "the next scheduler cycle"}`);
 }
 
 const queueNames = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
@@ -184,9 +205,15 @@ async function refreshQuota(force = false) {
     if (!response.ok || payload.error || !Number.isFinite(usage) || !Number.isFinite(total) || total <= 0) throw new Error(`Quota check unavailable: ${JSON.stringify(payload)}`);
     const rejectedAtUsage = quota.observed_rejection_at_usage ?? (/9\/2207042/.test(quota.reason || "") ? quota.usage : undefined);
     const effectiveTotal = rejectedAtUsage > 0 && Date.now() - Date.parse(quota.detected_at || "") < 86400000 ? Math.min(total, rejectedAtUsage) : total;
-    quota = { ...quota, checked_at: new Date().toISOString(), usage, total, effective_total: effectiveTotal, observed_rejection_at_usage: rejectedAtUsage, blocked: usage >= effectiveTotal, next_check_at: new Date(Date.now() + (usage >= effectiveTotal ? 3600000 : 15 * 60000)).toISOString(), reason: usage >= effectiveTotal ? "Publishing capacity exhausted; honoring actual publish rejection" : "Capacity available" };
+    quota = { ...quota, valid: true, checked_at: new Date().toISOString(), usage, total, effective_total: effectiveTotal, observed_rejection_at_usage: rejectedAtUsage, blocked: usage >= effectiveTotal, next_check_at: new Date(Date.now() + (usage >= effectiveTotal ? 3600000 : 15 * 60000)).toISOString(), reason: usage >= effectiveTotal ? "Publishing capacity exhausted; honoring actual publish rejection" : "Capacity available" };
   } catch (error) {
-    quota = { ...quota, blocked: true, next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: error.message };
+    const definitive = isDefinitiveInstagramQuotaBlock(quota.reason)
+      || (quota.blocked === true && /publishing (?:capacity|quota)|2207042/i.test(error.message));
+    if (definitive) {
+      quota = { ...quota, valid: true, blocked: true, next_check_at: quota.next_check_at || new Date(Date.now() + 3600000).toISOString(), reason: quota.reason || error.message };
+    } else {
+      quota = { ...quota, valid: false, blocked: false, next_check_at: new Date(Date.now() + 5 * 60000).toISOString(), reason: `Temporary quota check failure: ${error.message}` };
+    }
     console.error(error.message);
   }
   await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
@@ -202,7 +229,9 @@ async function logAttempt(event) {
 const localThreadsUsage = new Set(queueRecords.map(({ item }) => item)
   .filter(item => item.threads_media_id && Date.parse(item.threads_published_at || "") > Date.now() - 86400000)
   .map(item => item.threads_media_id)).size;
-const threadsAvailable = () => threadsQuota.blocked === false && !(Date.parse(threadsQuota.until || "") > Date.now())
+const threadsAvailable = () => threadsQuota.blocked === false
+  && threadsQuota.valid !== false
+  && !(Date.parse(threadsQuota.until || "") > Date.now())
   && Number.isFinite(threadsQuota.total) && Number.isFinite(threadsQuota.usage)
   && Math.max(localThreadsUsage, threadsQuota.usage) < threadsQuota.total;
 
@@ -211,7 +240,7 @@ async function checkThreadsRateLimit(response, payload) {
   const retry = response.headers.get("retry-after");
   const serverDelay = Number.isFinite(Number(retry)) ? Math.max(0, Number(retry) * 1000) : Math.max(0, Date.parse(retry) - Date.now()) || 0;
   const until = new Date(Date.now() + Math.max(serverDelay, 30 * 60000)).toISOString();
-  threadsQuota = { ...threadsQuota, blocked: true, until, next_check_at: until, reason: "Threads rate or publishing limit; retaining saved uploads" };
+  threadsQuota = { ...threadsQuota, valid: true, blocked: true, until, next_check_at: until, reason: "Threads rate or publishing limit; retaining saved uploads" };
   await fs.writeFile(threadsQuotaPath, JSON.stringify(threadsQuota, null, 2) + "\n");
   throw Object.assign(new Error(`Threads limited until ${until}`), { definitiveRejection: true });
 }
@@ -231,12 +260,19 @@ async function refreshThreadsQuota() {
     if (!response.ok || payload.error || !Number.isFinite(usage) || !Number.isFinite(total) || total <= 0) throw new Error(`Threads quota unavailable: ${JSON.stringify(payload)}`);
     const blocked = Math.max(localThreadsUsage, usage) >= total;
     threadsQuota = {
-      checked_at: new Date().toISOString(), usage, total, blocked,
+      ...threadsQuota,
+      valid: true, checked_at: new Date().toISOString(), usage, total, blocked,
       next_check_at: new Date(Date.now() + (blocked ? 60 : 15) * 60000).toISOString(),
       reason: blocked ? "Threads publishing quota exhausted" : "Capacity available"
     };
   } catch (error) {
-    threadsQuota = { ...threadsQuota, blocked: true, next_check_at: threadsQuota.until || new Date(Date.now() + 15 * 60000).toISOString(), reason: error.message };
+    const definitive = isDefinitiveThreadsQuotaBlock(threadsQuota.reason)
+      || (threadsQuota.blocked === true && /publishing (?:capacity|quota)|rate|limit/i.test(error.message));
+    if (definitive) {
+      threadsQuota = { ...threadsQuota, valid: true, blocked: true, next_check_at: threadsQuota.next_check_at || threadsQuota.until || new Date(Date.now() + 60 * 60000).toISOString(), reason: threadsQuota.reason || error.message };
+    } else {
+      threadsQuota = { ...threadsQuota, valid: false, blocked: false, next_check_at: new Date(Date.now() + 5 * 60000).toISOString(), reason: `Temporary quota check failure: ${error.message}` };
+    }
     console.error(error.message);
     await logAttempt({ platform: "threads", status: "failed", error: error.message });
   }

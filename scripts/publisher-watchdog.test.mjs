@@ -36,3 +36,28 @@ test('watchdog restores the Threads video lane without waiting for Instagram', (
   assert.equal(outcome.dispatch, true);
   assert.equal(outcome.reason, 'missed_threads_video_window');
 });
+
+test('watchdog recovers when the health snapshot is missing but a ready item exists', () => {
+  const outcome = assessWatchdog({now:NOW, health:{}, items:[item]});
+  assert.equal(outcome.dispatch, true);
+  assert.equal(outcome.health_stale, true);
+});
+
+test('watchdog resumes a saved processing container after a dead publisher run', () => {
+  const outcome = assessWatchdog({now:NOW, health:{checked_at:new Date(NOW-11*60_000).toISOString()}, items:[{
+    ...item,
+    instagram_container_id:'container',
+    instagram_container_created_at:new Date(NOW-5*60_000).toISOString()
+  }]});
+  assert.equal(outcome.dispatch, true);
+  assert.deepEqual(outcome.processing, [item.id]);
+  assert.equal(outcome.reason, 'stalled_container');
+});
+
+test('watchdog dispatches a pending Threads video even when Instagram is within cadence', () => {
+  const outcome = assessWatchdog({now:NOW, health:{checked_at:new Date(NOW-2*60_000).toISOString()}, items:[{
+    ...item, content_type:'video', threads_status:'pending'
+  }]});
+  assert.equal(outcome.dispatch, true);
+  assert.equal(outcome.threads_pending, true);
+});

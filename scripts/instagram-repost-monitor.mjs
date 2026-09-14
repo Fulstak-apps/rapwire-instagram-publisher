@@ -6,6 +6,8 @@ import { capture, launch } from "./instagram-browser-mirror.mjs";
 import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-caption.mjs";
 
 const execFileAsync = promisify(execFile);
+const gitTimeoutMs = 60_000;
+const git = (...args) => execFileAsync("git", args, { timeout: gitTimeoutMs, killSignal: "SIGTERM" });
 
 const root = path.resolve(".");
 const ledgerPath = path.join(root, "monitor", "repost-ledger.json");
@@ -14,17 +16,57 @@ const queueDir = path.join(root, "queue");
 const mediaDir = path.join(root, "media");
 const hotArtistsPath = path.join(root, "monitor", "hot-artists.json");
 
-const sources = [
-  { handle: "trapmatictv", credit: false, includePosts: true, includeReels: true },
-  { handle: "raplisted_", credit: false, includePosts: true, includeReels: true },
-  { handle: "akademiks", credit: true, includePosts: true, includeReels: true },
-  { handle: "traploreross", credit: true, includePosts: true, includeReels: true },
-  { handle: "hiphop_firstnewsmusic", credit: true, includePosts: true, includeReels: true },
-  { handle: "complexmusic", credit: true, includePosts: true, includeReels: true },
-  { handle: "ceddynash", credit: true, includePosts: true, includeReels: true },
-  { handle: "larp.lor.d", credit: true, includePosts: true, includeReels: true },
-  { handle: "records", credit: false, includePosts: true, includeReels: true }
+// Keep the source registry in monitor/sources.json as the single source of
+// truth.  The old collector had a second hard-coded list here, so adding a
+// source in the registry silently did nothing until this file was edited too.
+// That drift was especially costly for fallback inventory: an enabled source
+// could never refill the queue.  A small fallback list keeps the collector
+// usable if a sparse checkout is missing the registry, while the registry
+// remains authoritative whenever it is present.
+const fallbackSourceRows = [
+  { handle: "trapmatictv", scope: "hiphop", credit: false },
+  { handle: "raplisted_", scope: "hiphop", credit: false },
+  { handle: "akademiks", scope: "hiphop" },
+  { handle: "traploreross", scope: "hiphop" },
+  { handle: "freshouttheculture", scope: "hiphop" },
+  { handle: "records", scope: "hiphop", credit: false },
+  { handle: "darnellwilliams", scope: "hiphop", credit: false, include_posts: false },
+  { handle: "complexmusic", scope: "hiphop" },
+  { handle: "xxl", scope: "hiphop" },
+  { handle: "hiphopdx", scope: "hiphop" },
+  { handle: "hiphop_firstnewsmusic", scope: "hiphop" },
+  { handle: "ceddynash", scope: "hiphop" },
+  { handle: "larp.lor.d", scope: "hiphop" },
+  { handle: "rockstargames", scope: "gaming" },
+  { handle: "igndotcom", scope: "gaming" }
 ];
+const ownedSourceHandles = new Set(["trapmatictv", "raplisted_", "records", "darnellwilliams"]);
+const sourceConfig = await readJson(path.join(root, "monitor", "sources.json"), { sources: [] });
+const configuredRows = Array.isArray(sourceConfig.sources) ? sourceConfig.sources : [];
+const sourceRows = configuredRows.length ? configuredRows : fallbackSourceRows;
+const configuredHandles = new Set(sourceRows.map(row => String(row.handle || "").replace(/^@/, "").toLowerCase()).filter(Boolean));
+if (configuredRows.length) {
+  for (const row of fallbackSourceRows) {
+    const handle = String(row.handle || "").replace(/^@/, "").toLowerCase();
+    if (handle && !configuredHandles.has(handle)) sourceRows.push(row);
+  }
+}
+const sources = sourceRows
+  .filter(row => row && row.enabled !== false)
+  .map(row => {
+    const handle = String(row.handle || "").replace(/^@/, "").toLowerCase();
+    return {
+      handle,
+      scope: String(row.scope || "hiphop").toLowerCase(),
+      credit: row.credit !== false && !ownedSourceHandles.has(handle),
+      includePosts: row.include_posts !== false && row.includePosts !== false,
+      includeReels: row.include_reels !== false && row.includeReels !== false,
+      fastTrack: Boolean(row.fast_track || row.fastTrack),
+      dailyMinimum: Number(row.daily_minimum || row.dailyMinimum || 0) || 0,
+      dailyMaximum: Number(row.daily_maximum || row.dailyMaximum || 0) || 0
+    };
+  })
+  .filter(row => row.handle);
 const maxQueuePerRun = 1;
 // Keep several already-validated source videos ahead of the publisher.  An
 // Instagram container in progress is counted as reserved inventory, so the
@@ -313,6 +355,79 @@ async function cachedCandidates(ledger) {
   return candidates.sort((left,right) => right.capturedAt - left.capturedAt);
 }
 
+function mergeLedger(remote, local) {
+  const remoteValue = remote && typeof remote === "object" ? remote : {};
+  const localValue = local && typeof local === "object" ? local : {};
+  const mergeMap = (left, right) => ({
+    ...(left && typeof left === "object" ? left : {}),
+    ...(right && typeof right === "object" ? right : {})
+  });
+  const runs = [...(Array.isArray(remoteValue.runs) ? remoteValue.runs : []), ...(Array.isArray(localValue.runs) ? localValue.runs : [])]
+    .filter(Boolean)
+    .sort((left, right) => String(left.started_at || "").localeCompare(String(right.started_at || "")))
+    .slice(-250);
+  return {
+    ...remoteValue,
+    ...localValue,
+    version: Math.max(Number(remoteValue.version) || 1, Number(localValue.version) || 1),
+    sources: [...new Set([...(remoteValue.sources || []), ...(localValue.sources || []), ...sources.map(source => source.handle)])],
+    seen_shortcodes: mergeMap(remoteValue.seen_shortcodes, localValue.seen_shortcodes),
+    queued_shortcodes: mergeMap(remoteValue.queued_shortcodes, localValue.queued_shortcodes),
+    runs
+  };
+}
+
+// A health-only collector pass still needs to consume publication commits from
+// GitHub. Leaving the generated ledger dirty made the old code skip pull/rebase
+// forever, so the local checkout could keep treating already-published items as
+// ready and eventually starve. Temporarily move the local ledger out of Git,
+// sync the branch with bounded commands, merge the two JSON ledgers, then put it
+// back. The backup is restored if any sync step fails.
+async function syncRemotePreservingLedger() {
+  let localLedger = null;
+  let stashRef = null;
+  try {
+    localLedger = await readJson(ledgerPath, null);
+    const { stdout: ledgerChanges } = await git("status", "--porcelain", "--", "monitor/repost-ledger.json");
+    if (ledgerChanges.trim()) {
+      await git("stash", "push", "--include-untracked", "--message", `rapwire-ledger-sync-${process.pid}`, "--", "monitor/repost-ledger.json");
+      // No other collector can mutate the stash while this process owns the
+      // monitor lock, so the newly-created top entry is our exact snapshot.
+      stashRef = "stash@{0}";
+    }
+    let lastError;
+    for (let attempt = 1; attempt <= 8; attempt += 1) {
+      try {
+        await git("fetch", "origin", "main");
+        await git("rebase", "origin/main");
+        await git("push", "origin", "HEAD:main");
+        lastError = null;
+        break;
+      } catch (error) {
+        lastError = error;
+        await git("rebase", "--abort").catch(() => {});
+        if (attempt < 8) await new Promise(resolve => setTimeout(resolve, Math.min(15_000, attempt * 2_000)));
+      }
+    }
+    if (lastError) throw lastError;
+    const remoteLedger = JSON.parse((await git("show", "origin/main:monitor/repost-ledger.json")).stdout || "{}");
+    if (stashRef) {
+      await git("stash", "drop", stashRef);
+      stashRef = null;
+    }
+    await writeJson(ledgerPath, mergeLedger(remoteLedger, localLedger));
+  } catch (error) {
+    await git("rebase", "--abort").catch(() => {});
+    // The in-memory copy is safer than popping a stash into a possibly changed
+    // remote ledger. Restore it as a merged dirty file; the next pass can retry
+    // synchronization without losing discovered shortcodes or run history.
+    const currentLedger = await readJson(ledgerPath, {});
+    await writeJson(ledgerPath, mergeLedger(currentLedger, localLedger));
+    if (stashRef) await git("stash", "drop", stashRef).catch(() => {});
+    throw error;
+  }
+}
+
 async function commitAndPush(createdIds) {
   // Health-only passes are local telemetry. Committing the ledger every five
   // minutes makes this checkout diverge from the publication commits written
@@ -326,14 +441,14 @@ async function commitAndPush(createdIds) {
     paths.push(name);
     if (item.video) paths.push(item.video);
   }
-  const { stdout: changed } = await execFileAsync("git", ["status", "--porcelain", "--", ...paths]);
+  const { stdout: changed } = await git("status", "--porcelain", "--", ...paths);
   if (changed.trim()) {
   // The local collector intentionally uses sparse checkout for speed, while
   // captured MP4s live outside that sparse set.  `--sparse` is required here;
   // without it Git accepts the queue JSON but rejects the media asset, leaving
   // every otherwise-ready video stranded off the remote publisher queue.
-  await execFileAsync("git", ["add", "--sparse", "--", ...paths]);
-  await execFileAsync("git", ["commit", "--only", "-m", createdIds.length ? `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}` : "Save RapWire collector health", "--", ...paths]).catch((error) => {
+  await git("add", "--sparse", "--", ...paths);
+  await git("commit", "--only", "-m", createdIds.length ? `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}` : "Save RapWire collector health", "--", ...paths).catch((error) => {
     if (!/nothing to commit/i.test(error.stdout || error.stderr || "")) throw error;
   });
   }
@@ -346,13 +461,16 @@ async function commitAndPush(createdIds) {
   // before every retry so captured media cannot be stranded locally.
   for (let attempt = 1; attempt <= 8; attempt += 1) {
     try {
-      await execFileAsync("git", ["fetch", "origin", "main"]);
-      await execFileAsync("git", ["rebase", "origin/main"]);
-      await execFileAsync("git", ["push", "origin", "HEAD:main"]);
+      await git("fetch", "origin", "main");
+      await git("rebase", "origin/main");
+      await git("push", "origin", "HEAD:main");
       return;
     } catch (error) {
       lastError = error;
-      if (/CONFLICT|cannot pull with rebase: You have unstaged changes/i.test(`${error.stdout || ""}\n${error.stderr || ""}`)) break;
+      // Never leave the shared checkout inside a conflicted rebase. The next
+      // launch must be able to acquire the same lock and retry from a clean
+      // Git state, even when the publisher committed queue state concurrently.
+      await git("rebase", "--abort").catch(() => {});
       await new Promise(resolve => setTimeout(resolve, Math.min(15000, attempt * 2000)));
     }
   }
@@ -397,18 +515,14 @@ try {
   for (const name of (await fs.readdir(queueDir)).filter(name => name.endsWith(".json"))) {
     const item = await readJson(path.join(queueDir, name), {});
     if (item.status !== "ready" || item.content_type !== "video" || name !== `${item.id}.json` || !sources.some(source => source.handle === item.source_handle)) continue;
-    const { stdout } = await execFileAsync("git", ["status", "--porcelain", "--", path.join("queue", name), item.video]);
+    const { stdout } = await git("status", "--porcelain", "--", path.join("queue", name), item.video);
     if (stdout.trim()) unsent.push(item.id);
   }
   if (unsent.length) {
     await writeJson(ledgerPath, ledger);
     await commitAndPush(unsent);
   } else {
-    const { stdout } = await execFileAsync("git", ["status", "--porcelain", "--untracked-files=no"]);
-    if (!stdout.trim()) {
-      await execFileAsync("git", ["pull", "--rebase", "origin", "main"]);
-      await execFileAsync("git", ["push", "origin", "HEAD:main"]);
-    }
+    await syncRemotePreservingLedger();
   }
 
   let repairAttempts = 0;

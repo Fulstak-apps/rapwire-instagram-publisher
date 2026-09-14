@@ -24,8 +24,9 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
   const ready = items.filter(item => retryable(item, now));
   const lastChecked = Date.parse(health.checked_at || '');
   const healthStale = !Number.isFinite(lastChecked) || now - lastChecked > 10 * 60_000;
+  const processing = items.filter(item => processingDue(item, now));
   const overdue = (Number.isFinite(nextAt) && now > nextAt + 15 * 60_000)
-    || (!Number.isFinite(nextAt) && healthStale && ready.length > 0);
+    || (!Number.isFinite(nextAt) && healthStale && ready.some(item => !item.instagram_container_id));
   const blocked = quotaBlocked || (Number.isFinite(cooldown) && cooldown > now);
   const lastThreadsVideo = Math.max(0, ...items.map(item => item.content_type === 'video'
     ? Math.max(Date.parse(item.threads_published_at || '') || 0, Date.parse(item.threads_replay_published_at || '') || 0)
@@ -44,19 +45,19 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
   const threadsBlocked = Boolean(health.threads_publishing_quota?.blocked)
     || (Number.isFinite(threadsCooldown) && threadsCooldown > now);
   const threadsDue = !lastThreadsVideo || now - lastThreadsVideo >= 30 * 60_000;
-  const instagramDispatch = !blocked && (overdue || (healthStale && ready.some(item => processingDue(item, now))));
+  const instagramDispatch = !blocked && ((overdue && ready.length > 0) || (healthStale && processing.length > 0));
   const threadsDispatch = threadsDue && !threadsBlocked && (threadsVideoOverdue || threadsPending);
   return {
     overdue,
     health_stale: healthStale,
-    processing: items.filter(item => processingDue(item, now)).map(item => item.id),
+    processing: processing.map(item => item.id),
     blocked,
     threads_pending: threadsPending,
     threads_video_overdue: threadsVideoOverdue,
     threads_blocked: threadsBlocked,
     ready: ready.map(item => item.id),
     dispatch: instagramDispatch || threadsDispatch,
-    reason: threadsDispatch ? 'missed_threads_video_window' : blocked ? 'platform_cooldown_or_quota' : instagramDispatch ? (overdue ? 'missed_feed_window' : 'stalled_container') : 'within_pacing_window'
+    reason: threadsDispatch ? 'missed_threads_video_window' : blocked ? 'platform_cooldown_or_quota' : instagramDispatch ? (processing.length ? 'stalled_container' : 'missed_feed_window') : 'within_pacing_window'
   };
 }
 

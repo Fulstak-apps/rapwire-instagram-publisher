@@ -78,10 +78,10 @@ const isDefinitiveInstagramQuotaBlock = reason => /2207042|publishing (?:capacit
 const isDefinitiveThreadsQuotaBlock = reason => /publishing (?:capacity|quota).*exhausted|quota exhausted|threads limited until|rate or publishing limit/i.test(String(reason || ""));
 if (typeof quota.blocked !== "boolean") quota.blocked = false;
 if (typeof threadsQuota.blocked !== "boolean") threadsQuota.blocked = false;
-if (quota.blocked === true && !isDefinitiveInstagramQuotaBlock(quota.reason)) {
+if (quota.blocked === true && quota.reason && !isDefinitiveInstagramQuotaBlock(quota.reason)) {
   quota = { ...quota, blocked: false, valid: false, next_check_at: null, reason: "Cleared a non-definitive legacy quota hold; retrying capacity check" };
 }
-if (threadsQuota.blocked === true && !isDefinitiveThreadsQuotaBlock(threadsQuota.reason)) {
+if (threadsQuota.blocked === true && threadsQuota.reason && !isDefinitiveThreadsQuotaBlock(threadsQuota.reason)) {
   threadsQuota = { ...threadsQuota, blocked: false, valid: false, next_check_at: null, reason: "Cleared a non-definitive legacy quota hold; retrying capacity check" };
 }
 
@@ -271,7 +271,10 @@ async function refreshThreadsQuota() {
     if (definitive) {
       threadsQuota = { ...threadsQuota, valid: true, blocked: true, next_check_at: threadsQuota.next_check_at || threadsQuota.until || new Date(Date.now() + 60 * 60000).toISOString(), reason: threadsQuota.reason || error.message };
     } else {
-      threadsQuota = { ...threadsQuota, valid: false, blocked: false, next_check_at: new Date(Date.now() + 5 * 60000).toISOString(), reason: `Temporary quota check failure: ${error.message}` };
+      // Keep the hold visible to the watchdog, but mark it non-definitive so
+      // the next bounded check can clear it. This pauses Threads only; the
+      // Instagram lane remains independent.
+      threadsQuota = { ...threadsQuota, valid: false, blocked: true, next_check_at: new Date(Date.now() + 5 * 60000).toISOString(), reason: `Temporary quota check failure: ${error.message}` };
     }
     console.error(error.message);
     await logAttempt({ platform: "threads", status: "failed", error: error.message });

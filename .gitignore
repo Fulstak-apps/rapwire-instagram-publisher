@@ -3,6 +3,10 @@ work/
 scripts/__pycache__/
 logs/*.out.log
 logs/*.err.log
+# High-volume per-attempt telemetry is local/ephemeral. Persist the compact
+# health snapshot and queue records in Git, but never make every five-minute
+# run commit an ever-growing JSONL history to the repository.
+logs/publish-attempts.jsonl
 logs/local-newsroom.jsonl
 monitor/repost-monitor.lock
 monitor/newsroom.flock

@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
-if [ -z "$(git status --porcelain -- queue logs)" ]; then exit 0; fi
+# publish-attempts.jsonl is intentionally local telemetry (see .gitignore).
+# Stage only durable queue/health state so a noisy attempt log cannot create a
+# huge commit, exhaust disk, or make later publisher runs spend their budget in
+# Git operations.
+if [ -z "$(git status --porcelain -- queue logs ':!logs/publish-attempts.jsonl')" ]; then exit 0; fi
 git config user.name "RapWire 24/7"
 git config user.email "actions@users.noreply.github.com"
-git add -- queue logs
+git add -- queue logs ':!logs/publish-attempts.jsonl'
 git commit -m "Log RapWire publication"
 for attempt in 1 2 3; do
   # A transient GitHub/network failure must not trigger the safety hold that

@@ -25,7 +25,12 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
   const lastChecked = Date.parse(health.checked_at || '');
   const healthStale = !Number.isFinite(lastChecked) || now - lastChecked > 10 * 60_000;
   const processing = items.filter(item => processingDue(item, now));
-  const overdue = (Number.isFinite(nextAt) && now > nextAt + 15 * 60_000)
+  // The local dispatcher wakes every five minutes, so a fifteen-minute grace
+  // period allowed a missed feed to drift for 45 minutes (and looked like a
+  // stopped publisher). Dispatch as soon as the due time is crossed with a
+  // small two-minute buffer for clock skew; the workflow's active-run check
+  // prevents duplicate dispatches.
+  const overdue = (Number.isFinite(nextAt) && now > nextAt + 2 * 60_000)
     || (!Number.isFinite(nextAt) && healthStale && ready.some(item => !item.instagram_container_id));
   const blocked = quotaBlocked || (Number.isFinite(cooldown) && cooldown > now);
   const lastThreadsVideo = Math.max(0, ...items.map(item => item.content_type === 'video'

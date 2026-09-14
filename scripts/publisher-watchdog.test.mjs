@@ -18,6 +18,12 @@ test('watchdog dispatches one safe retry after a missed eligible window', () => 
   assert.equal(outcome.reason, 'missed_feed_window');
 });
 
+test('watchdog does not wait a second grace window once feed is due', () => {
+  const outcome = assessWatchdog({now:NOW, health:{delivery_policy:{next_feed_eligible_at:new Date(NOW-3*60_000).toISOString()}},items:[item]});
+  assert.equal(outcome.dispatch, true);
+  assert.equal(outcome.reason, 'missed_feed_window');
+});
+
 test('watchdog does not bypass Meta cooldowns or quotas', () => {
   const health={delivery_policy:{next_feed_eligible_at:new Date(NOW-16*60_000).toISOString()},instagram_publishing_quota:{blocked:true}};
   assert.equal(assessWatchdog({now:NOW,health,items:[item]}).dispatch, false);

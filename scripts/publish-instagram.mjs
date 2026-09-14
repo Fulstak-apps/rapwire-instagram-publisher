@@ -14,9 +14,17 @@ const publishInstagramStories = process.env.PUBLISH_INSTAGRAM_STORIES === "true"
 const repository = process.env.GITHUB_REPOSITORY;
 const refName = process.env.GITHUB_REF_NAME || "main";
 
-if (!instagramToken || !instagramUserId || !threadsToken || !threadsUserId || !repository) {
-  throw new Error("Missing Instagram/Threads credentials or GITHUB_REPOSITORY; RapWire requires both platforms");
-}
+if (!repository) throw new Error("Missing GITHUB_REPOSITORY; the publisher cannot build public media URLs");
+
+// Keep the two Meta lanes independent. A revoked Instagram token must not
+// prevent a saved Threads video (or a Facebook delivery) from being retried,
+// and a Threads credential problem must not strand Instagram. The old startup
+// guard threw when either pair was absent, so one broken platform stopped the
+// entire loop before it could write a health report.
+let instagramAuthAvailable = Boolean(instagramToken && instagramUserId);
+let threadsAuthAvailable = Boolean(threadsToken && threadsUserId);
+let instagramAuthError = instagramAuthAvailable ? "" : "Instagram credential or user ID is missing";
+let threadsAuthError = threadsAuthAvailable ? "" : "Threads credential or user ID is missing";
 
 const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
@@ -40,6 +48,21 @@ const attemptsLog = path.join(logsDir, "publish-attempts.jsonl");
 const cooldownPath = path.join(logsDir, "instagram-cooldown.json");
 const quotaPath = path.join(logsDir, "instagram-publishing-quota.json");
 const threadsQuotaPath = path.join(logsDir, "threads-publishing-quota.json");
+const stateReadErrors = [];
+const queueReadErrors = [];
+
+// A truncated state file must not take down the whole publisher. Return a
+// safe empty value, record the exact file/reason in the health report, and let
+// the normal bounded retry path rewrite it on this run.
+async function readStateJson(file, fallback, label) {
+  try {
+    return JSON.parse(await fs.readFile(file, "utf8"));
+  } catch (error) {
+    if (error.code === "ENOENT") return fallback;
+    stateReadErrors.push({ file, id: label, platform: "publisher", status: "failed", reason: "invalid_state_json", error: error.message });
+    return fallback;
+  }
+}
 
 // Invalid legacy queue records are intentionally retained for auditability,
 // but logging the same deterministic skip every five minutes made the JSONL
@@ -98,17 +121,23 @@ async function verifyInstagramIdentity() {
   instagramUserId = String(payload.id);
 }
 
-if (instagramToken !== "fake") await verifyInstagramIdentity();
+if (instagramToken && instagramUserId && instagramToken !== "fake") {
+  try {
+    await verifyInstagramIdentity();
+    instagramAuthAvailable = true;
+    instagramAuthError = "";
+  } catch (error) {
+    instagramAuthAvailable = false;
+    instagramAuthError = error.message;
+    // Treat identity failures as an Instagram-only hold. The publisher still
+    // evaluates Threads/Facebook and persists this reason in its health file.
+    console.error(`Instagram authentication unavailable; Threads lane remains active: ${error.message}`);
+  }
+}
 
-let threadsQuota = JSON.parse(await fs.readFile(threadsQuotaPath, "utf8").catch(error => {
-  if (error.code === "ENOENT") return "{}";
-  throw error;
-}));
-let quota = JSON.parse(await fs.readFile(quotaPath, "utf8").catch(error => { if (error.code === "ENOENT") return "{}"; throw error; }));
-let cooldown = JSON.parse(await fs.readFile(cooldownPath, "utf8").catch(error => {
-  if (error.code === "ENOENT") return "{}";
-  throw error;
-}));
+let threadsQuota = await readStateJson(threadsQuotaPath, {}, "threads-quota");
+let quota = await readStateJson(quotaPath, {}, "instagram-quota");
+let cooldown = await readStateJson(cooldownPath, {}, "instagram-cooldown");
 
 // `blocked` used to be set for every quota-read failure, including ordinary
 // network timeouts and transient Meta 5xx responses. That stale boolean could
@@ -137,11 +166,17 @@ let threadsSteps = 0;
 let instagramLane = "";
 let facebookSteps = 0;
 const instagramAvailable = () => instagramCycleDue
+  && instagramAuthAvailable
   && !(Date.parse(cooldown.until || "") > Date.now())
   && quota.blocked !== true
   && quota.valid !== false;
 
 async function checkInstagramRateLimit(response, payload) {
+  if (payload.error?.code === 190 || /(?:error validating access token|session has expired|session has been invalidated)/i.test(String(payload.error?.message || ""))) {
+    instagramAuthAvailable = false;
+    instagramAuthError = `Instagram authentication failed: ${payload.error?.message || "Meta rejected the access token"}`;
+    throw Object.assign(new Error(instagramAuthError), { authFailure: true });
+  }
   if (payload.error?.code === 9 && payload.error?.error_subcode === 2207042) {
     quota = { ...quota, valid: true, blocked: true, observed_rejection_at_usage: quota.usage, detected_at: new Date().toISOString(), next_check_at: new Date(Date.now() + 3600000).toISOString(), reason: "Instagram publishing quota exhausted (9/2207042)" };
     await fs.mkdir(logsDir, { recursive: true });
@@ -166,11 +201,18 @@ function assertInstagramAvailable() {
   if (quota.valid === false) throw new Error(`Instagram publishing quota check unavailable; retry at ${quota.next_check_at || "the next scheduler cycle"}`);
 }
 
-const queueNames = (await fs.readdir(queueDir)).filter((name) => name.endsWith(".json")).sort();
-const queueRecords = await Promise.all(queueNames.map(async (name) => ({
-  name,
-  item: normalizeCarousel(JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8")))
-})));
+const queueNames = (await fs.readdir(queueDir).catch(error => {
+  if (error.code !== "ENOENT") queueReadErrors.push({ file: queueDir, id: "queue", platform: "publisher", status: "failed", reason: "queue_read_failed", error: error.message });
+  return [];
+})).filter((name) => name.endsWith(".json")).sort();
+const queueRecords = (await Promise.all(queueNames.map(async (name) => {
+  try {
+    return { name, item: normalizeCarousel(JSON.parse(await fs.readFile(path.join(queueDir, name), "utf8"))) };
+  } catch (error) {
+    queueReadErrors.push({ file: name, id: name.replace(/\.json$/i, ""), platform: "publisher", status: "failed", reason: "invalid_queue_json", error: error.message });
+    return null;
+  }
+}))).filter(Boolean);
 
 // Never send the same editorial copy repeatedly.  Source accounts sometimes
 // repost an identical statement under different shortcodes; publishing that
@@ -201,14 +243,8 @@ const files = queueRecords
 
 const maxFeedPostsPerRun = 1;
 const pacingPath = path.join(logsDir, "publisher-pacing.json");
-const recoveryAuthorization = JSON.parse(await fs.readFile(path.join(logsDir, 'instagram-recovery.json'), 'utf8').catch(error => {
-  if (error.code === 'ENOENT') return '{}';
-  throw error;
-}));
-const pacing = JSON.parse(await fs.readFile(pacingPath, "utf8").catch(error => {
-  if (error.code === "ENOENT") return "{}";
-  throw error;
-}));
+const recoveryAuthorization = await readStateJson(path.join(logsDir, 'instagram-recovery.json'), {}, "instagram-recovery");
+const pacing = await readStateJson(pacingPath, {}, "publisher-pacing");
 
 const runStartedAt = new Date().toISOString();
 if (Date.now() - Date.parse(pacing.last_run_at || "") < THREADS_INTERVAL_MS) {
@@ -230,6 +266,11 @@ const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${reposito
 
 async function refreshQuota(force = false) {
   if (!force && !instagramCycleDue) return;
+  if (!instagramAuthAvailable) {
+    quota = { ...quota, valid: false, blocked: false, next_check_at: new Date(Date.now() + 5 * 60000).toISOString(), reason: instagramAuthError || "Instagram credential or user ID is missing" };
+    await fs.writeFile(quotaPath, JSON.stringify(quota, null, 2) + "\n");
+    return;
+  }
   const recoveryItem = queueRecords.find(({item}) => item.id === recoveryAuthorization.item_id)?.item;
   const recoveryNeedsCheck = recoveryAuthorization.mode === 'one-feed-and-story'
     && Date.parse(recoveryAuthorization.expires_at || '') > Date.now()
@@ -273,16 +314,26 @@ async function logAttempt(event) {
   await fs.appendFile(attemptsLog, `${JSON.stringify({ timestamp: new Date().toISOString(), ...event })}\n`);
 }
 
+// Keep malformed queue/state files visible without allowing one bad record to
+// abort the rest of the delivery pass.
+for (const event of [...stateReadErrors, ...queueReadErrors]) await logAttempt(event);
+
 const localThreadsUsage = new Set(queueRecords.map(({ item }) => item)
   .filter(item => item.threads_media_id && Date.parse(item.threads_published_at || "") > Date.now() - 86400000)
   .map(item => item.threads_media_id)).size;
-const threadsAvailable = () => threadsQuota.blocked === false
+const threadsAvailable = () => threadsAuthAvailable
+  && threadsQuota.blocked === false
   && threadsQuota.valid !== false
   && !(Date.parse(threadsQuota.until || "") > Date.now())
   && Number.isFinite(threadsQuota.total) && Number.isFinite(threadsQuota.usage)
   && Math.max(localThreadsUsage, threadsQuota.usage) < threadsQuota.total;
 
 async function checkThreadsRateLimit(response, payload) {
+  if (payload.error?.code === 190 || /(?:error validating access token|session has expired|session has been invalidated)/i.test(String(payload.error?.message || ""))) {
+    threadsAuthAvailable = false;
+    threadsAuthError = `Threads authentication failed: ${payload.error?.message || "Meta rejected the access token"}`;
+    throw Object.assign(new Error(threadsAuthError), { authFailure: true });
+  }
   if (response.status !== 429 && ![4, 9, 17, 32, 613].includes(payload.error?.code)) return;
   const retry = response.headers.get("retry-after");
   const serverDelay = Number.isFinite(Number(retry)) ? Math.max(0, Number(retry) * 1000) : Math.max(0, Date.parse(retry) - Date.now()) || 0;
@@ -294,6 +345,11 @@ async function checkThreadsRateLimit(response, payload) {
 
 async function refreshThreadsQuota() {
   if (Date.parse(threadsQuota.next_check_at || "") > Date.now() || Date.parse(threadsQuota.until || "") > Date.now()) return;
+  if (!threadsAuthAvailable) {
+    threadsQuota = { ...threadsQuota, valid: false, blocked: true, next_check_at: new Date(Date.now() + 5 * 60000).toISOString(), reason: threadsAuthError || "Threads credential or user ID is missing" };
+    await fs.writeFile(threadsQuotaPath, JSON.stringify(threadsQuota, null, 2) + "\n");
+    return;
+  }
   try {
     const url = new URL(`${threadsBase}/${threadsUserId}/threads_publishing_limit`);
     url.searchParams.set("fields", "quota_usage,config");
@@ -949,6 +1005,8 @@ await compactAttemptLogIfNeeded();
 
 const report = {
   checked_at: new Date().toISOString(),
+  instagram_auth: { available: instagramAuthAvailable, error: instagramAuthAvailable ? null : instagramAuthError },
+  threads_auth: { available: threadsAuthAvailable, error: threadsAuthAvailable ? null : threadsAuthError },
   instagram_cooldown_until: instagramAvailable() ? null : cooldown.until,
   instagram_publishing_quota: quota,
   delivery_policy: { ...deliveryPolicy, next_feed_eligible_at: pacing.last_feed_published_at ? new Date(Date.parse(pacing.last_feed_published_at) + FEED_INTERVAL_MS).toISOString() : deliveryPolicy.next_feed_eligible_at },
@@ -973,6 +1031,11 @@ if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP
 const threadsSummary = `\nThreads: 30-minute publishing cadence, with separate retry checks for in-flight uploads; quota ${threadsQuota.usage ?? "unknown"}/${threadsQuota.total ?? "unknown"}. ${threadsQuota.blocked ? `Held: ${threadsQuota.reason}. Next check ${threadsQuota.next_check_at}.` : "Processing and runner availability can delay delivery."}\n`;
 console.log(threadsSummary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, threadsSummary);
+if (!instagramAuthAvailable || !threadsAuthAvailable) {
+  const authSummary = `\nPlatform credentials: Instagram ${instagramAuthAvailable ? "available" : `offline (${instagramAuthError})`}; Threads ${threadsAuthAvailable ? "available" : `offline (${threadsAuthError})`}. The other platform remains independent and will continue on its next cycle.\n`;
+  console.warn(authSummary);
+  if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, authSummary);
+}
 // Delivery errors are persisted on the affected queue item with a retry time.  Do not
 // fail the whole scheduled job for a recoverable platform error: a red run used to
 // make the watchdog treat normal rate-limit recovery as a stopped publisher.

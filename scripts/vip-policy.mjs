@@ -93,7 +93,17 @@ export function vipCaption(raw, source, url, registry = []) {
     && !/@darnellwilliams\b/i.test(body)) body = `${body}\n\nDarnell Williams @darnellwilliams`;
   const caption = [body,captionVoicePrompt(body,url)].filter(Boolean).join('\n\n');
   const threads = composeThreads(caption, {source, seed:url || text, artistMentions:artistCopy.artist_mentions});
-  return {body, caption, threads_text:threads, threads_topic_tag:threadsTopicTag(body,{artistMentions:artistCopy.artist_mentions}), artist_handles:artistCopy.artist_handles,artist_mentions:artistCopy.artist_mentions};
+  return {
+    body,
+    caption,
+    threads_text:threads,
+    threads_topic_tag:threadsTopicTag(body,{artistMentions:artistCopy.artist_mentions}),
+    artist_handles:artistCopy.artist_handles,
+    artist_mentions:artistCopy.artist_mentions,
+    // Keep the source handle in the private queue record so a later migration
+    // can reject a media/caption pair that was relabeled to another account.
+    caption_source_handle:String(source).replace(/^@/,'').toLowerCase()
+  };
 }
 
 // Accept only the exact prior format while older queued items migrate.

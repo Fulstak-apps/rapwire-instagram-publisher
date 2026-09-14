@@ -5,7 +5,7 @@ export const genericCaption = value => /a new hip.hop video is|keeping the (?:hi
 // unusable source copy rather than restyling and publishing the same premise.
 export const staleBoilerplateCaption = value => /\bis what happens when\b|\binstead of letting (?:it|their environment) define\b/i.test(String(value || ''));
 
-export function sourceCaption({ requestedUrl, canonicalUrl, title = '', description = '', heading = '' }) {
+export function sourceCaption({ requestedUrl, canonicalUrl, title = '', description = '', heading = '', allowSparse = false }) {
   if (!shortcode(requestedUrl) || shortcode(requestedUrl) !== shortcode(canonicalUrl)) throw new Error('Caption source does not match requested video shortcode');
   let raw = heading.trim();
   if (!raw) {
@@ -14,6 +14,14 @@ export function sourceCaption({ requestedUrl, canonicalUrl, title = '', descript
     raw = titleMatch?.[1] || descriptionMatch?.[1] || '';
   }
   raw = raw.replace(/\r/g, '').trim();
+  // VIP pages can expose a deliberately sparse caption. Keep exact-post
+  // identity strict, but do not invent copy for an emoji/short statement.
+  // An ellipsis means the wrapper is visibly truncated, so return an empty
+  // value and let the VIP policy decide whether to publish it.
+  if (allowSparse) {
+    if (/(?:…|\.{3})\s*$/.test(raw)) return '';
+    return raw;
+  }
   if (raw.length < 15 || genericCaption(raw) || staleBoilerplateCaption(raw) || /(?:…|\.{3})\s*$/.test(raw)) throw new Error('Exact source caption is generic, boilerplate, or truncated; needs review');
   return raw;
 }
@@ -54,6 +62,19 @@ export function buildVideoCaption(raw, source, registry = []) {
 }
 
 export function captionIsBound(item) {
+  if (item.caption_policy === 'vip-source-v1') {
+    const sourceHandle = String(item.source_handle || '').replace(/^@/, '').toLowerCase();
+    const recordedHandle = String(item.caption_source_handle || '').replace(/^@/, '').toLowerCase();
+    return Boolean(sourceHandle) && (!recordedHandle || recordedHandle === sourceHandle)
+      && item.vip_source_checked === true
+      && item.caption_source_shortcode === shortcode(item.source_url)
+      && Boolean(item.caption_source_shortcode)
+      && (typeof item.source_caption_text === 'undefined' || typeof item.source_caption_text === 'string')
+      && typeof item.body === 'string' && typeof item.rendered_body_text === 'string'
+      && item.rendered_body_text === item.body
+      && !genericCaption(item.body) && !staleBoilerplateCaption(item.body)
+      && !/\bAI\b/i.test(item.body);
+  }
   return item.caption_policy === 'exact-source-v1' && item.caption_source_shortcode === shortcode(item.source_url)
     && Boolean(item.caption_source_shortcode) && typeof item.source_caption_text === 'string'
     && item.source_caption_text.length >= 15 && !genericCaption(item.body) && !staleBoilerplateCaption(item.body);

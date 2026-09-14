@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-14T22:26:54.176Z",
+  "checked_at": "2026-09-14T22:31:42.517Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 8,
-    "instagram_remaining": 40,
+    "instagram_usage": 9,
+    "instagram_remaining": 39,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-14T22:56:54.062Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-14T22:56:49.021Z",
-  "publications": [
-    {
-      "file": "664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c.json",
-      "id": "664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18124111369856448"
-    },
-    {
-      "file": "664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c.json",
-      "id": "664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18091467155171718",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

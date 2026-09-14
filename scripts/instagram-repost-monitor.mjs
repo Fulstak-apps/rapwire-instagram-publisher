@@ -7,7 +7,11 @@ import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-captio
 
 const execFileAsync = promisify(execFile);
 const gitTimeoutMs = 60_000;
-const git = (...args) => execFileAsync("git", args, { timeout: gitTimeoutMs, killSignal: "SIGTERM" });
+// The merged source ledger is intentionally bounded by run count, but its
+// shortcode history can still exceed Node's 1 MiB child-process default. A
+// maxBuffer failure here used to look like a Git outage and killed every
+// collector pass. Keep the bound finite while allowing the actual ledger.
+const git = (...args) => execFileAsync("git", args, { timeout: gitTimeoutMs, killSignal: "SIGTERM", maxBuffer: 32 * 1024 * 1024 });
 
 const root = path.resolve(".");
 const ledgerPath = path.join(root, "monitor", "repost-ledger.json");
@@ -392,10 +396,11 @@ async function syncRemotePreservingLedger() {
     // real queue capture. Stash them together before rebasing so a legacy
     // checkout that still tracks the high-volume attempt log cannot block Git
     // with "unstaged changes" or a modify/delete conflict.
-    const syncPaths = ["monitor/repost-ledger.json", "logs/publish-attempts.jsonl"];
-    const { stdout: collectorStateChanges } = await git("status", "--porcelain", "--", ...syncPaths);
+    const stashPaths = ["monitor/repost-ledger.json"];
+    try { await fs.access(path.join(root, "logs", "publish-attempts.jsonl")); stashPaths.push("logs/publish-attempts.jsonl"); } catch {}
+    const { stdout: collectorStateChanges } = await git("status", "--porcelain", "--", ...stashPaths);
     if (collectorStateChanges.trim()) {
-      await git("stash", "push", "--include-untracked", "--message", `rapwire-collector-state-sync-${process.pid}`, "--", ...syncPaths);
+      await git("stash", "push", "--include-untracked", "--message", `rapwire-collector-state-sync-${process.pid}`, "--", ...stashPaths);
       // No other collector can mutate the stash while this process owns the
       // monitor lock, so the newly-created top entry is our exact snapshot.
       stashRef = "stash@{0}";

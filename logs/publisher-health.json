@@ -1,12 +1,20 @@
 {
-  "checked_at": "2026-09-14T20:43:06.180Z",
+  "checked_at": "2026-09-14T22:11:31.893Z",
+  "instagram_auth": {
+    "available": true,
+    "error": null
+  },
+  "threads_auth": {
+    "available": true,
+    "error": null
+  },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-14T20:43:04.327Z",
+    "checked_at": "2026-09-14T22:11:31.191Z",
     "usage": 8,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-14T20:58:04.327Z",
+    "next_check_at": "2026-09-14T22:26:31.191Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -22,11 +30,11 @@
     "instagram_remaining": 40,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-14T20:40:57.061Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -35,24 +43,24 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-14T20:43:04.047Z",
+    "checked_at": "2026-09-14T22:11:31.586Z",
     "usage": 8,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-14T20:58:04.047Z",
+    "next_check_at": "2026-09-14T22:26:31.586Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-14T20:40:49.730Z",
+  "threads_next_eligible_at": "2026-09-14T22:20:41.573Z",
   "publications": [],
   "failures": [
     {
-      "file": "queue/663-calls-donald-trump-and-california-federal-justice-system.json",
-      "id": "663-calls-donald-trump-and-california-federal-justice-system",
+      "file": "queue/664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c.json",
+      "id": "664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c",
       "platform": "facebook",
       "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 13:43:05 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"APg9MsyW3Mrp7Kty3RJbgyw\"}}"
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 15:11:31 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A8STiimzVfWUhFfiMGXroHv\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

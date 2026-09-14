@@ -31,5 +31,5 @@ done
 # the separate Google News / local-editor flow, not this five-minute loop.
 "$PYTHON_BIN" scripts/repost-monitor-runner.py
 
-# The collector owns queue commits. Publishing is left to the one scheduled
-# GitHub publisher, just as SportsWire does—no overlapping local dispatches.
+# The collector owns queue commits. The versioned launchd dispatcher triggers
+# the GitHub publisher separately; this worker never dispatches it itself.

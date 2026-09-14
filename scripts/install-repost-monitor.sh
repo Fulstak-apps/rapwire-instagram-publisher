@@ -23,6 +23,8 @@ cat > "$plist_path" <<PLIST
   </array>
   <key>StartInterval</key>
   <integer>300</integer>
+  <key>ThrottleInterval</key>
+  <integer>60</integer>
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>

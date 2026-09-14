@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-14T23:02:20.331Z",
+  "checked_at": "2026-09-14T23:07:04.817Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 9,
-    "instagram_remaining": 39,
+    "instagram_usage": 10,
+    "instagram_remaining": 38,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-14T23:32:20.209Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-14T23:32:12.721Z",
-  "publications": [
-    {
-      "file": "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-.json",
-      "id": "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18120979270917137"
-    },
-    {
-      "file": "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-.json",
-      "id": "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18197007991342117",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,23 +1,25 @@
 {
-  "overdue": false,
+  "overdue": true,
+  "health_stale": true,
+  "processing": [
+    "663-calls-donald-trump-and-california-federal-justice-system"
+  ],
   "blocked": false,
-  "threads_video_overdue": false,
+  "threads_pending": true,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "523-the-jurors-sent-the-just-two-notes-this-morning-asking-for-clari",
-    "531-rolling-loud-india-has-been-announced-for-december-12-13-2026-th",
-    "534-the-wait-continues-in-lil-durk-lildurk-s-trial-with-another-day-",
-    "541-lebron-cosigns-2-chainz-s-new-single",
-    "542-big30-goes-off-on-people-for-asking-him-for-money-chains-while-h",
-    "543-thank-you-judge-fitzgerald",
-    "544-memo600-shares-his-dms-with-otf-jam",
-    "558-tory-lanez-is-repping-toronto-in-a-major-way-his-toronto-hasty-m",
-    "561-fbi-houston-spokesperson-connor-hagen-tells-tmz-6-people-were-ar",
-    "569-ye-s-graduation-turns-19-today-released-on-september-11-2007-the",
-    "572-ye-s-chicago-homecoming-brought-in-29-8-million-across-just-two-"
+    "663-calls-donald-trump-and-california-federal-justice-system",
+    "664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c",
+    "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-",
+    "666-usher-s-performance-is-going-crazy-online-people-are-really-sayi",
+    "667-coming-out-of-the-courtroom-as-the-news-breaks-lil-durk-lildurk-",
+    "668-i-had-to-ask-the-people-closest-to-lildurk-a-question-what-s-you",
+    "669-was-this-hernandez-govan",
+    "670-tesla-owners-is-this-true"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-11T18:34:29.649Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-14T21:59:12.717Z",
   "deferred": []
 }

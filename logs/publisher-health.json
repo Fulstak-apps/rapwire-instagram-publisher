@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-14T19:10:35.241Z",
+  "checked_at": "2026-09-14T19:15:39.129Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-14T19:00:28.581Z",
+    "checked_at": "2026-09-14T19:15:37.119Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-14T19:15:28.581Z",
+    "next_check_at": "2026-09-14T19:30:37.119Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -21,11 +21,11 @@
     "instagram_remaining": 41,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-14T19:14:25.194Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,14 +44,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-14T19:14:18.199Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a.json",
-      "id": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 12:10:34 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AfYDC-p5sVZBfTs6KYKLLwx\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

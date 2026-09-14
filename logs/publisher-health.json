@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-14T22:11:31.893Z",
+  "checked_at": "2026-09-14T22:12:59.510Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-14T22:11:31.191Z",
     "usage": 8,
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-14T22:20:41.573Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c.json",
-      "id": "664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 15:11:31 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A8STiimzVfWUhFfiMGXroHv\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,18 +1,19 @@
 {
-  "checked_at": "2026-09-14T19:15:39.129Z",
+  "checked_at": "2026-09-14T20:10:57.275Z",
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-14T19:15:37.119Z",
-    "usage": 7,
+    "checked_at": "2026-09-14T20:10:50.512Z",
+    "usage": 8,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-14T19:30:37.119Z",
+    "next_check_at": "2026-09-14T20:25:50.512Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
     "effective_total": 100,
     "observed_rejection_at_usage": 50,
-    "auth_recovered_at": "2026-09-06T19:17:37.997Z"
+    "auth_recovered_at": "2026-09-06T19:17:37.997Z",
+    "valid": true
   },
   "delivery_policy": {
     "feed_interval_minutes": 30,
@@ -20,7 +21,7 @@
     "instagram_usage": 7,
     "instagram_remaining": 41,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-14T19:14:25.194Z",
+    "next_feed_eligible_at": "2026-09-14T20:40:57.061Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -34,16 +35,41 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-14T19:10:34.569Z",
-    "usage": 7,
+    "checked_at": "2026-09-14T20:10:42.058Z",
+    "usage": 8,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-14T19:25:34.569Z",
-    "reason": "Capacity available"
+    "next_check_at": "2026-09-14T20:25:42.058Z",
+    "reason": "Capacity available",
+    "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-14T19:14:18.199Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-14T20:40:49.730Z",
+  "publications": [
+    {
+      "file": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a.json",
+      "id": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18058437566716830"
+    },
+    {
+      "file": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a.json",
+      "id": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18170536432393130",
+      "content_type": "video"
+    }
+  ],
+  "failures": [
+    {
+      "file": "queue/662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a.json",
+      "id": "662-i-ll-be-at-the-other-trial-until-that-time-i-m-here-in-houston-a",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 13:10:42 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ApCaaT7oUj_Ra9_H9uU05Ic\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

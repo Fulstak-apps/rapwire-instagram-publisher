@@ -63,9 +63,24 @@ async function main() {
   const token=process.env.THREADS_ACCESS_TOKEN,userId=process.env.THREADS_USER_ID;
   if(!token||!userId) {console.log('Threads replies: credentials unavailable');return;}
   const statePath='logs/threads-replies.json';
-  const state=JSON.parse(await fs.readFile(statePath,'utf8').catch(error=>{if(error.code==='ENOENT')return '{}';throw error;}));
+  let state;
+  try {
+    state=JSON.parse(await fs.readFile(statePath,'utf8').catch(error=>{if(error.code==='ENOENT')return '{}';throw error;}));
+    if(!state || typeof state!=='object' || Array.isArray(state)) throw new Error('reply state is not an object');
+  } catch(error) {
+    state={status:'blocked',last_error:`Invalid reply state: ${error.message}`};
+    console.error(`Threads replies: ${state.last_error}`);
+  }
   const save=async()=>{await fs.mkdir('logs',{recursive:true});await fs.writeFile(statePath+'.tmp',JSON.stringify(state,null,2)+'\n');await fs.rename(statePath+'.tmp',statePath);};
-  const records=await Promise.all((await fs.readdir('queue')).filter(x=>x.endsWith('.json')).map(async name=>JSON.parse(await fs.readFile('queue/'+name,'utf8'))));
+  const records=[];
+  for(const name of (await fs.readdir('queue')).filter(x=>x.endsWith('.json'))) {
+    try {
+      const record=JSON.parse(await fs.readFile('queue/'+name,'utf8'));
+      if(!record || typeof record!=='object' || Array.isArray(record)) throw new Error('queue record is not an object');
+      records.push(record);
+    }
+    catch(error) { console.error(`Threads replies: skipping unreadable queue item ${name}: ${error.message}`); }
+  }
   try {
     const status=await engage({api:metaClient('https://graph.threads.net/v1.0',token),userId,records,state,save});
     console.log('Threads replies: '+status);

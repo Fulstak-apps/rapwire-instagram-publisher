@@ -1,10 +1,20 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const readJson = async (file, fallback) => JSON.parse(await fs.readFile(file, 'utf8').catch(error => {
-  if (error.code === 'ENOENT') return JSON.stringify(fallback);
-  throw error;
-}));
+const readJson = async (file, fallback) => {
+  try {
+    const value = JSON.parse(await fs.readFile(file, 'utf8'));
+    if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('JSON value is not an object');
+    return value;
+  } catch (error) {
+    if (error.code === 'ENOENT') return fallback;
+    // Health and queue snapshots are written atomically, but a crash or
+    // interrupted sync can still leave a bad file. Watchdog must fail soft so
+    // it can redispatch from the remaining valid records on the next pass.
+    console.error(`Watchdog could not read ${file}: ${error.message}`);
+    return fallback;
+  }
+};
 
 const retryable = (item, now) => item.status === 'ready'
   && !item.instagram_media_id && !item.instagram_reconcile_required

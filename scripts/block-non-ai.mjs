@@ -6,7 +6,16 @@ const dir = "queue";
 for (const file of await fs.readdir(dir)) {
   if (!file.endsWith(".json")) continue;
   const filePath = path.join(dir, file);
-  const item = JSON.parse(await fs.readFile(filePath, "utf8"));
+  let item;
+  try {
+    item = JSON.parse(await fs.readFile(filePath, "utf8"));
+    if (!item || typeof item !== "object" || Array.isArray(item)) throw new Error("queue record is not an object");
+  } catch (error) {
+    // Do not let one truncated queue record abort validation for every other
+    // item. The next collector/publisher pass will retry this exact file.
+    console.error(`Skipping unreadable queue item ${file}: ${error.message}`);
+    continue;
+  }
   if (item.status === "ready" && validMediaRepost(item)) continue;
   const approvedVideo = item.content_type === "video"
     && item.layout_template === "rapwire-video-grid-safe-v1"

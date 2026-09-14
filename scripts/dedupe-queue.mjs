@@ -2,7 +2,19 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {storyFingerprint} from './editorial-policy.mjs';
 const dir = 'queue';
-const records = await Promise.all((await fs.readdir(dir)).filter(x => x.endsWith('.json')).map(async name => ({ name, item: JSON.parse(await fs.readFile(path.join(dir, name), 'utf8')) })));
+const records = [];
+for (const name of (await fs.readdir(dir)).filter(x => x.endsWith('.json'))) {
+  try {
+    const item = JSON.parse(await fs.readFile(path.join(dir, name), 'utf8'));
+    if (!item || typeof item !== 'object' || Array.isArray(item)) throw new Error('queue record is not an object');
+    records.push({name, item});
+  } catch (error) {
+    // A partially-written collector file must not stop the entire publisher.
+    // The publisher itself will report the item as unreadable and the next
+    // collector pass can replace it; leave the file untouched for recovery.
+    console.error(`Skipping unreadable queue item ${name}: ${error.message}`);
+  }
+}
 const seenIds = new Map();
 const seenVideos = new Map();
 const seenStories = new Map();

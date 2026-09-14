@@ -56,7 +56,9 @@ const queueReadErrors = [];
 // the normal bounded retry path rewrite it on this run.
 async function readStateJson(file, fallback, label) {
   try {
-    return JSON.parse(await fs.readFile(file, "utf8"));
+    const value = JSON.parse(await fs.readFile(file, "utf8"));
+    if (!value || typeof value !== "object" || Array.isArray(value)) throw new Error("JSON value is not an object");
+    return value;
   } catch (error) {
     if (error.code === "ENOENT") return fallback;
     stateReadErrors.push({ file, id: label, platform: "publisher", status: "failed", reason: "invalid_state_json", error: error.message });

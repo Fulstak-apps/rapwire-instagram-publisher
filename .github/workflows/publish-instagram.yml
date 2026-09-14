@@ -16,9 +16,12 @@ permissions:
 
 concurrency:
   group: rapwire-instagram-publisher
-  # A wedged validation/save step must not block every later publishing cycle.
-  # Queue state is resumable, so the next run can safely continue containers.
-  cancel-in-progress: true
+  # Never cancel a run after Meta has accepted a container. Cancellation in
+  # the handoff between media_publish and the state-save step can leave a real
+  # Instagram/Threads post with no durable media ID, forcing the next run into
+  # a safety hold. A queued run is cheap; an uncertain publication is not.
+  # The watchdog already counts queued/pending runs and avoids duplicates.
+  cancel-in-progress: false
 
 jobs:
   monitor-and-publish:

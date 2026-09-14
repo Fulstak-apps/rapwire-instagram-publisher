@@ -388,9 +388,14 @@ async function syncRemotePreservingLedger() {
   let stashRef = null;
   try {
     localLedger = await readJson(ledgerPath, null);
-    const { stdout: ledgerChanges } = await git("status", "--porcelain", "--", "monitor/repost-ledger.json");
-    if (ledgerChanges.trim()) {
-      await git("stash", "push", "--include-untracked", "--message", `rapwire-ledger-sync-${process.pid}`, "--", "monitor/repost-ledger.json");
+    // These are the only tracked files the local collector mutates outside a
+    // real queue capture. Stash them together before rebasing so a legacy
+    // checkout that still tracks the high-volume attempt log cannot block Git
+    // with "unstaged changes" or a modify/delete conflict.
+    const syncPaths = ["monitor/repost-ledger.json", "logs/publish-attempts.jsonl"];
+    const { stdout: collectorStateChanges } = await git("status", "--porcelain", "--", ...syncPaths);
+    if (collectorStateChanges.trim()) {
+      await git("stash", "push", "--include-untracked", "--message", `rapwire-collector-state-sync-${process.pid}`, "--", ...syncPaths);
       // No other collector can mutate the stash while this process owns the
       // monitor lock, so the newly-created top entry is our exact snapshot.
       stashRef = "stash@{0}";

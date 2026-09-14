@@ -750,7 +750,8 @@ function contentPromiseIsKept(item) {
 const rollingDayStart = Date.now() - 24 * 60 * 60 * 1000;
 let instagramPublicationsInRollingDay = 0;
 for (const file of files) {
-  const item = JSON.parse(await fs.readFile(path.join(queueDir, file), "utf8"));
+  const item = queueRecords.find(record => record.name === file)?.item;
+  if (!item) continue;
   if (item.instagram_media_id && Date.parse(item.published_at || item.instagram_published_at || "") >= rollingDayStart) instagramPublicationsInRollingDay += 1;
   if (item.instagram_story_media_id && Date.parse(item.instagram_story_published_at || "") >= rollingDayStart) instagramPublicationsInRollingDay += 1;
 }
@@ -853,7 +854,9 @@ async function deliverThreads(item, itemPath, file) {
 
 for (const file of files) {
   const itemPath = path.join(queueDir, file);
-  const item = normalizeCarousel(JSON.parse(await fs.readFile(itemPath, "utf8")));
+  const record = queueRecords.find(candidate => candidate.name === file);
+  if (!record) continue;
+  const item = normalizeCarousel(record.item);
   const wasReady = item.status === "ready";
   const legacyRightLogo = /^(124|125|126|127|128|129)-/.test(item.id || "") && item.logo_position !== "bottom-left";
   if (item.content_type === "video" && legacyRightLogo) {

@@ -10089,60 +10089,6 @@
   },
   "runs": [
     {
-      "started_at": "2026-09-10T11:06:53.702Z",
-      "candidates": 12,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "darnellwilliams",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "records",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "hiphopdx",
-          "stage": "discover",
-          "error": "Instagram collector session is logged out. Sign into @rapwire247 in the dedicated InstagramMirrorProfile Chrome window; new video capture cannot continue until login is restored."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFHmhOjzz6/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFEjVmD0jF/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/reel/DdFCZjivPS0/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        },
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/reel/DdE-dXKqh4F/",
-          "stage": "queue",
-          "error": "Dedicated mirror profile is not signed into @rapwire247. Run npm run mirror:login first."
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 33,
-      "finished_at": "2026-09-10T11:08:07.405Z"
-    },
-    {
       "started_at": "2026-09-10T11:13:12.162Z",
       "candidates": 12,
       "queued": [],
@@ -19751,6 +19697,38 @@
       },
       "mode": "discovery",
       "finished_at": "2026-09-14T05:13:38.309Z"
+    },
+    {
+      "started_at": "2026-09-14T05:18:51.755Z",
+      "candidates": 108,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdPr31cP8pV/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdP_zEoNIUJ/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdP_zEoNIUJ-source.mp4 -loop 1 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime/assets/rapwire247-logo.png -filter_complex [0:v]crop=480:588:0:266,setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,boxblur=12:1[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[1:v]scale=100:100[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v] -map [v] -map 0:a:0 -c:v libx264 -preset veryfast -pix_fmt yuv420p -c:a aac -shortest -movflags +faststart /Users/dw/Library/Application Support/RapWire/publisher-runtime/work/instagram-mirror/DdP_zEoNIUJ.mp4\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 12,
+        "available": 0,
+        "needed": 12
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-14T05:23:26.445Z"
     }
   ],
   "vip_pending": {

@@ -14,7 +14,7 @@ export function validVideoLayout(layout) {
     && [crop.x,crop.y,crop.width,crop.height].every(value=>value%2===0)
     && crop.x+crop.width<=layout.source_width && crop.y+crop.height<=layout.source_height
     && layout.output_width===1080 && layout.output_height===1350
-    && layout.caption_overlay===false && layout.logo_position==='bottom-left'
+    && layout.caption_overlay===false && ['bottom-left','bottom-right','top-right','top-left'].includes(layout.logo_position)
     && sha256.test(layout.source_sha256||'') && sha256.test(layout.output_sha256||''));
 }
 

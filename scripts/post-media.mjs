@@ -59,9 +59,9 @@ export async function walkPost({read, saveItem, next, advance, maxItems=20}) {
 export async function renderPhoto(input,destination,story=false) {
   const height=story?1920:1350;
   // Reserve a footer for the logo: never cover words in source screenshots.
-  const mediaHeight=height-210;
+  const mediaHeight=height-260;
   await exec('ffmpeg',['-y','-i',input,'-i',path.resolve('assets/rapwire247-logo.png'),
-    '-filter_complex',`[0:v]scale=1040:${mediaHeight}:force_original_aspect_ratio=decrease,pad=1080:${height}:(ow-iw)/2:(${mediaHeight}-ih)/2+20:color=0x101014[base];[1:v]scale=150:150[logo];[base][logo]overlay=34:H-h-30[out]`,
+    '-filter_complex',`[0:v]scale=1040:${mediaHeight}:force_original_aspect_ratio=decrease,pad=1080:${height}:(ow-iw)/2:(${mediaHeight}-ih)/2+20:color=0x101014[base];[1:v]scale=220:220[logo];[base][logo]overlay=34:H-h-30[out]`,
     '-map','[out]','-frames:v','1','-q:v','2',destination]);
   const {stdout}=await exec('ffprobe',['-v','error','-show_entries','stream=width,height','-of','json',destination]);
   const info=JSON.parse(stdout).streams?.[0];

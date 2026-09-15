@@ -25,7 +25,7 @@ test('layout policy fails closed on missing proof, invalid crop geometry, overla
     {...layout,crop:{x:-2,y:0,width:100,height:100}}, {...layout,crop:{x:0,y:1000,width:1080,height:1000}},
     {...layout,crop:{x:0,y:0,width:Infinity,height:100}}, {...layout,crop:{x:.5,y:0,width:100,height:100}},
     {...layout,crop:{x:1,y:0,width:100,height:100}}, {...layout,crop:{x:0,y:0,width:101,height:100}},
-    {...layout,output_height:1920}, {...layout,caption_overlay:true}, {...layout,logo_position:'top-right'},
+    {...layout,output_height:1920}, {...layout,caption_overlay:true}, {...layout,logo_position:'center'},
     {...layout,source_sha256:''}, {...layout,output_sha256:'not-a-sha256'}])assert.equal(validVideoLayout(value),false);
 });
 

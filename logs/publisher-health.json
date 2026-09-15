@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T04:38:25.258Z",
+  "checked_at": "2026-09-15T04:48:36.336Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T04:38:23.602Z",
-    "usage": 18,
+    "checked_at": "2026-09-15T04:48:31.194Z",
+    "usage": 19,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T04:53:23.602Z",
+    "next_check_at": "2026-09-15T05:03:31.194Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 18,
     "instagram_remaining": 30,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-15T04:25:07.651Z",
+    "next_feed_eligible_at": "2026-09-15T05:18:36.139Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-15T04:38:23.501Z",
-    "usage": 18,
+    "usage": 19,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-15T04:53:23.501Z",
@@ -52,8 +52,32 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T04:20:04.258Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-15T05:18:30.520Z",
+  "publications": [
+    {
+      "file": "674-a-classic-drink-for-a-classic-song-crafts-a-jeffery-morgenthaler.json",
+      "id": "674-a-classic-drink-for-a-classic-song-crafts-a-jeffery-morgenthaler",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18115848004981501"
+    },
+    {
+      "file": "674-a-classic-drink-for-a-classic-song-crafts-a-jeffery-morgenthaler.json",
+      "id": "674-a-classic-drink-for-a-classic-song-crafts-a-jeffery-morgenthaler",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18342328798281917",
+      "content_type": "video"
+    }
+  ],
+  "failures": [
+    {
+      "file": "queue/674-a-classic-drink-for-a-classic-song-crafts-a-jeffery-morgenthaler.json",
+      "id": "674-a-classic-drink-for-a-classic-song-crafts-a-jeffery-morgenthaler",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 21:48:24 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AnxH6i745YjtOGuk3apq94c\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

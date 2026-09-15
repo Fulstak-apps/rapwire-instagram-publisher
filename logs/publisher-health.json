@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T20:49:31.152Z",
+  "checked_at": "2026-09-15T20:54:28.000Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T21:19:30.779Z",
-  "publications": [
-    {
-      "file": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl.json",
-      "id": "203-kevin-hart-s-longtime-friend-and-personal-trainer-ron-boss-everl",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17956355202015265"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

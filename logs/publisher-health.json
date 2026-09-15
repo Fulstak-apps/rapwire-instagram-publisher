@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T22:45:51.056Z",
+  "checked_at": "2026-09-15T22:50:43.312Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T22:35:30.635Z",
+    "checked_at": "2026-09-15T22:50:42.611Z",
     "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T22:50:30.635Z",
+    "next_check_at": "2026-09-15T23:05:42.611Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-15T22:35:30.950Z",
+    "checked_at": "2026-09-15T22:50:43.030Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-15T22:50:30.950Z",
+    "next_check_at": "2026-09-15T23:05:43.030Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T23:05:37.009Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
+      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 15:50:43 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A8GuK_Q9HgVkNZ8Ebb9LWU0\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

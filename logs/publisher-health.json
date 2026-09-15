@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T15:25:39.338Z",
+  "checked_at": "2026-09-15T15:30:55.357Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T15:25:38.213Z",
-    "usage": 20,
+    "checked_at": "2026-09-15T15:30:49.265Z",
+    "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T15:40:38.213Z",
+    "next_check_at": "2026-09-15T15:45:49.265Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 20,
     "instagram_remaining": 28,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-15T15:25:30.371Z",
+    "next_feed_eligible_at": "2026-09-15T16:00:55.181Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-15T15:25:38.108Z",
-    "usage": 20,
+    "usage": 21,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-15T15:40:38.108Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T15:25:22.739Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-15T16:00:48.785Z",
+  "publications": [
+    {
+      "file": "680-vince-staples-speaks-his-truth-and-that-s-makes-him-great-wants-.json",
+      "id": "680-vince-staples-speaks-his-truth-and-that-s-makes-him-great-wants-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18107199251602194"
+    },
+    {
+      "file": "680-vince-staples-speaks-his-truth-and-that-s-makes-him-great-wants-.json",
+      "id": "680-vince-staples-speaks-his-truth-and-that-s-makes-him-great-wants-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18461308828138525",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

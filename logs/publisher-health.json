@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T21:55:05.557Z",
+  "checked_at": "2026-09-15T22:00:14.618Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T21:40:07.665Z",
-    "usage": 23,
+    "checked_at": "2026-09-15T22:00:08.019Z",
+    "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T21:55:07.665Z",
+    "next_check_at": "2026-09-15T22:15:08.019Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,8 +26,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 23,
-    "instagram_remaining": 25,
+    "instagram_usage": 22,
+    "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-15T21:55:02.795Z",
     "feed_allowed": true,
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-15T21:50:05.090Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-15T22:05:05.090Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T21:54:52.410Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-15T22:30:14.335Z",
+  "publications": [
+    {
+      "file": "575-doodie-lo-challenge-accepted-10-000-going-to-families-on-both-si.json",
+      "id": "575-doodie-lo-challenge-accepted-10-000-going-to-families-on-both-si",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18091539362173583"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

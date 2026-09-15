@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T16:41:45.041Z",
+  "checked_at": "2026-09-15T16:46:42.610Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 22,
-    "instagram_remaining": 26,
+    "instagram_usage": 23,
+    "instagram_remaining": 25,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-15T17:11:44.916Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,31 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T17:11:39.091Z",
-  "publications": [
-    {
-      "file": "682-as-a-gangsta-can-u-call-the-cops-if-the-opps-got-cornered-in-a-s.json",
-      "id": "682-as-a-gangsta-can-u-call-the-cops-if-the-opps-got-cornered-in-a-s",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18138613789614626"
-    },
-    {
-      "file": "682-as-a-gangsta-can-u-call-the-cops-if-the-opps-got-cornered-in-a-s.json",
-      "id": "682-as-a-gangsta-can-u-call-the-cops-if-the-opps-got-cornered-in-a-s",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18102895532246291",
-      "content_type": "video"
-    }
-  ],
-  "failures": [
-    {
-      "file": "queue/682-as-a-gangsta-can-u-call-the-cops-if-the-opps-got-cornered-in-a-s.json",
-      "id": "682-as-a-gangsta-can-u-call-the-cops-if-the-opps-got-cornered-in-a-s",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 09:41:33 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AxMe_LDFMV4E6-Ql2WNc75C\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

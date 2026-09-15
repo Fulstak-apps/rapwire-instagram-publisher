@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T15:10:29.107Z",
+  "checked_at": "2026-09-15T15:15:35.216Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T15:25:22.739Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/680-vince-staples-speaks-his-truth-and-that-s-makes-him-great-wants-.json",
-      "id": "680-vince-staples-speaks-his-truth-and-that-s-makes-him-great-wants-",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 08:10:28 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"APRbbuzMTyAVa8hHEYTxii2\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

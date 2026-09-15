@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T00:53:19.620Z",
+  "checked_at": "2026-09-15T00:58:20.339Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 12,
-    "instagram_remaining": 36,
+    "instagram_usage": 13,
+    "instagram_remaining": 35,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-15T01:23:19.469Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-15T00:43:01.503Z",
+    "checked_at": "2026-09-15T00:58:20.302Z",
     "usage": 13,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-15T00:58:01.503Z",
+    "next_check_at": "2026-09-15T01:13:20.302Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T01:23:13.189Z",
-  "publications": [
-    {
-      "file": "668-i-had-to-ask-the-people-closest-to-lildurk-a-question-what-s-you.json",
-      "id": "668-i-had-to-ask-the-people-closest-to-lildurk-a-question-what-s-you",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18120381860297686"
-    },
-    {
-      "file": "668-i-had-to-ask-the-people-closest-to-lildurk-a-question-what-s-you.json",
-      "id": "668-i-had-to-ask-the-people-closest-to-lildurk-a-question-what-s-you",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17946815223273160",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,20 +1,18 @@
 {
-  "overdue": true,
-  "health_stale": true,
+  "overdue": false,
+  "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite",
-    "677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h",
-    "678-hyperx-is-known-for-peripherals-but-they-re-expanding-into-pcs-t",
     "679-sosa-brought-rio-out-at-his-detroit-show-tonight",
-    "680-vince-staples-speaks-his-truth-and-that-s-makes-him-great-wants-"
+    "680-vince-staples-speaks-his-truth-and-that-s-makes-him-great-wants-",
+    "681-one-of-the-individuals-being-linked-online-to-the-fatal-shooting"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-15T09:53:04.270Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-15T14:30:44.135Z",
   "deferred": []
 }

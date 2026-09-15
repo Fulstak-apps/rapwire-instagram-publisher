@@ -150,17 +150,35 @@ export function chooseSoloFootageCrop({bands, sampleWidth, sampleHeight, sourceW
     caption_panel_removed:true,inspected_frames:observations.length,removed_text:[]};
 }
 
-export function chooseLogoSize(crop,sourceWidth,sourceHeight,observations) {
+export function chooseLogoPlacement(crop,sourceWidth,sourceHeight,observations) {
   const scale=Math.min(1080/crop.width,1350/crop.height);
   const offsetX=(1080-crop.width*scale)/2, offsetY=(1350-crop.height*scale)/2;
   const sourceRect={x:crop.x/sourceWidth,y:crop.y/sourceHeight,width:crop.width/sourceWidth,height:crop.height/sourceHeight};
   const boxes=observations.flatMap(o=>[...o.faces,...o.text.filter(t=>t.confidence>=.45).map(t=>t.box)])
     .filter(box=>!outside(box,sourceRect)).map(box=>({x:(box.x*sourceWidth-crop.x)*scale+offsetX,y:(box.y*sourceHeight-crop.y)*scale+offsetY,width:box.width*sourceWidth*scale,height:box.height*sourceHeight*scale}));
-  for(const size of [170,132,100]) {
-    const logo={x:34,y:1350-size-34,width:size,height:size};
-    if(boxes.every(box=>outside(box,logo))) return size;
+  // Keep the mark prominent, but never cover subtitles/captions/faces. Try
+  // the preferred lower-left position first, then move to another clear
+  // corner before shrinking. This avoids the old tiny-logo behavior and keeps
+  // the logo out of source-written captions when they occupy the footer.
+  const corners = position => (size => ({
+    size,
+    position,
+    x: position.endsWith('right') ? 1080-size-34 : 34,
+    y: position.startsWith('top') ? 34 : 1350-size-34,
+    width:size,
+    height:size
+  }));
+  for(const size of [220,190,160,132]) {
+    for(const position of ['bottom-left','bottom-right','top-right','top-left']) {
+      const logo=corners(position)(size);
+      if(boxes.every(box=>outside(box,logo))) return logo;
+    }
   }
-  throw new Error('Crop review required: bottom-left logo would cover meaningful source text or a face');
+  throw new Error('Crop review required: no logo corner fits without covering meaningful source text or a face');
+}
+
+export function chooseLogoSize(crop,sourceWidth,sourceHeight,observations) {
+  return chooseLogoPlacement(crop,sourceWidth,sourceHeight,observations).size;
 }
 
 // Some genuine Reels fill the frame from edge to edge, so they have no
@@ -181,22 +199,25 @@ function fullFrameFallback({sourceWidth, sourceHeight, observations, sourceHandl
   }
   const crop = {x:0, y:0, width:Math.floor(sourceWidth/2)*2, height:Math.floor(sourceHeight/2)*2};
   let logoSize;
-  try { logoSize = chooseLogoSize(crop, sourceWidth, sourceHeight, observations); }
-  catch { logoSize = 56; }
+  try { logoSize = chooseLogoPlacement(crop, sourceWidth, sourceHeight, observations); }
+  catch { logoSize = {size:132,x:34,y:1350-132-34,position:'bottom-left'}; }
   return {
     crop,
     method:'full-frame-no-detectable-header-fallback-v1',
     source_header_removed:false,
     inspected_frames:observations.length,
     removed_text:[],
-    logo_size:logoSize
+    logo_size:logoSize.size,logo_position:logoSize.position,logo_x:logoSize.x,logo_y:logoSize.y
   };
 }
 
-export function footageFilter(crop, logoIndex=1,logoSize=170) {
+export function footageFilter(crop, logoIndex=1,logoPlacement=170) {
   // boxblur is visually sufficient for unavoidable side fill but dramatically
   // faster than gblur on long vertical Reels, keeping publication latency low.
-  return `[0:v]crop=${crop.width}:${crop.height}:${crop.x}:${crop.y},setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,boxblur=12:1[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[${logoIndex}:v]scale=${logoSize}:${logoSize}[bug];[framed][bug]overlay=x=34:y=H-h-34:shortest=1[v]`;
+  const placement = typeof logoPlacement === 'number'
+    ? {size:logoPlacement, x:34, yExpr:'H-h-34'}
+    : {size:logoPlacement.size, x:logoPlacement.x, yExpr:String(logoPlacement.y)};
+  return `[0:v]crop=${crop.width}:${crop.height}:${crop.x}:${crop.y},setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,boxblur=12:1[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[${logoIndex}:v]scale=${placement.size}:${placement.size}[bug];[framed][bug]overlay=x=${placement.x}:y=${placement.yExpr}:shortest=1[v]`;
 }
 
 export async function analyzeFootage(input,{sourceHandle,directory,width,height,duration}) {
@@ -262,7 +283,8 @@ export async function analyzeFootage(input,{sourceHandle,directory,width,height,
     }
   }
   const analysis={...plan,sample_times:times};
-  analysis.logo_size ??= chooseLogoSize(analysis.crop,width,height,observations);
+  if (!analysis.logo_placement) analysis.logo_placement=chooseLogoPlacement(analysis.crop,width,height,observations);
+  analysis.logo_size ??= analysis.logo_placement.size;
   await fs.writeFile(path.join(directory,'crop-analysis.json'),JSON.stringify({bands,observations,...analysis},null,2)+'\n');
   return analysis;
 }
@@ -278,10 +300,10 @@ export async function renderFootageOnly({input,destination,sourceHandle,width,he
     // Capture/authentication failures still fail normally.
     if (!/^Crop review required:/.test(String(error.message || ''))) throw error;
     await fs.mkdir(directory,{recursive:true});
-    analysis={crop:{x:0,y:0,width:Math.floor(width/2)*2,height:Math.floor(height/2)*2},sample_times:sampleTimes(duration),logo_size:56,method:'full-frame-crop-safety-fallback-v1',crop_review_error:error.message};
+    analysis={crop:{x:0,y:0,width:Math.floor(width/2)*2,height:Math.floor(height/2)*2},sample_times:sampleTimes(duration),logo_size:132,logo_placement:{size:132,x:34,y:1350-132-34,position:'bottom-left'},method:'full-frame-crop-safety-fallback-v1',crop_review_error:error.message};
     await fs.writeFile(path.join(directory,'crop-analysis.json'),JSON.stringify(analysis,null,2)+'\n');
   }
-  await exec('ffmpeg',['-v','error','-y','-i',input,'-loop','1','-i',path.resolve('assets/rapwire247-logo.png'),'-filter_complex',footageFilter(analysis.crop,1,analysis.logo_size),'-map','[v]','-map','0:a:0','-c:v','libx264','-preset','veryfast','-pix_fmt','yuv420p','-c:a','aac','-shortest','-movflags','+faststart',destination],{timeout:180000,maxBuffer:8*1024*1024});
+  await exec('ffmpeg',['-v','error','-y','-i',input,'-loop','1','-i',path.resolve('assets/rapwire247-logo.png'),'-filter_complex',footageFilter(analysis.crop,1,analysis.logo_placement||analysis.logo_size),'-map','[v]','-map','0:a:0','-c:v','libx264','-preset','veryfast','-pix_fmt','yuv420p','-c:a','aac','-shortest','-movflags','+faststart',destination],{timeout:180000,maxBuffer:8*1024*1024});
   const {stdout}=await exec('ffprobe',['-v','error','-show_entries','stream=codec_name,codec_type,width,height,duration:format=duration','-of','json',destination]);
   const probe=JSON.parse(stdout), video=probe.streams?.find(s=>s.codec_type==='video'), audio=probe.streams?.find(s=>s.codec_type==='audio');
   if(video?.codec_name!=='h264'||video.width!==1080||video.height!==1350||audio?.codec_name!=='aac'||[probe.format,video,audio].some(s=>!Number.isFinite(Number(s?.duration))||Math.abs(Number(s.duration)-duration)>1)) throw new Error('Footage-only output failed complete H.264/AAC duration/dimension validation');
@@ -291,5 +313,5 @@ export async function renderFootageOnly({input,destination,sourceHandle,width,he
   const hash=async file=>{const digest=createHash('sha256');for await(const chunk of createReadStream(file))digest.update(chunk);return digest.digest('hex');};
   return {version:VIDEO_LAYOUT_VERSION,status:'validated',source_width:width,source_height:height,output_width:1080,output_height:1350,
     crop:analysis.crop,analysis,source_sha256:await hash(input),output_sha256:await hash(destination),source_path:input,
-    caption_overlay:false,logo_position:'bottom-left',checked_at:new Date().toISOString()};
+    caption_overlay:false,logo_position:analysis.logo_placement?.position||'bottom-left',logo_size:analysis.logo_placement?.size||analysis.logo_size,checked_at:new Date().toISOString()};
 }

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {sampleTimes,inspectBands,chooseFootageCrop,chooseSoloFootageCrop,chooseLogoSize,footageFilter,sourceHeaderClearance} from './video-footage.mjs';
+import {sampleTimes,inspectBands,chooseFootageCrop,chooseSoloFootageCrop,chooseLogoSize,chooseLogoPlacement,footageFilter,sourceHeaderClearance} from './video-footage.mjs';
 
 const width=100,height=160;
 function frames({top=50,bottom=150,background=0,movingHeader=false}={}) {
@@ -119,12 +119,14 @@ test('complete evenly spread samples and OCR are required',()=>{
   assert.throws(()=>inspectBands(frames().slice(0,3),width,height),/Five complete/);
   assert.throws(()=>choose(inspectBands(frames(),width,height),[]),/missing local/);
 });
-test('bottom-left logo shrinks to preserve subtitles, or holds if none fits',()=>{
+test('logo stays prominent and moves corners to preserve subtitles',()=>{
   const crop={x:0,y:0,width:1080,height:1350};
   const obs=Array.from({length:5},()=>({faces:[],text:[{confidence:1,box:{x:.04,y:1150/1350,width:.15,height:20/1350}}]}));
-  assert.equal(chooseLogoSize(crop,1080,1350,obs),132);
+  assert.equal(chooseLogoSize(crop,1080,1350,obs),220);
   obs[0].text[0].box.y=1220/1350;
-  assert.throws(()=>chooseLogoSize(crop,1080,1350,obs),/logo would cover/);
+  const placement=chooseLogoPlacement(crop,1080,1350,obs);
+  assert.equal(placement.size,220);
+  assert.equal(placement.position,'bottom-right');
 });
 test('canonical URL path is not a source-handle identity',()=>{
   assert.throws(()=>chooseFootageCrop({bands:{x:0,y:0,width,height},sampleWidth:width,sampleHeight:height,sourceWidth:720,sourceHeight:1152,observations:observations(),sourceHandle:'p'}),/source handle is missing/);

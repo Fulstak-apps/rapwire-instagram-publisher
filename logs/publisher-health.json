@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T14:20:07.822Z",
+  "checked_at": "2026-09-15T14:25:00.440Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 18,
-    "instagram_remaining": 30,
+    "instagram_usage": 19,
+    "instagram_remaining": 29,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-15T14:50:07.720Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-15T14:09:48.064Z",
+    "checked_at": "2026-09-15T14:25:00.381Z",
     "usage": 19,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-15T14:24:48.064Z",
+    "next_check_at": "2026-09-15T14:40:00.381Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T14:49:58.741Z",
-  "publications": [
-    {
-      "file": "678-hyperx-is-known-for-peripherals-but-they-re-expanding-into-pcs-t.json",
-      "id": "678-hyperx-is-known-for-peripherals-but-they-re-expanding-into-pcs-t",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18144157207605683"
-    },
-    {
-      "file": "678-hyperx-is-known-for-peripherals-but-they-re-expanding-into-pcs-t.json",
-      "id": "678-hyperx-is-known-for-peripherals-but-they-re-expanding-into-pcs-t",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18216337936344267",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T02:39:20.130Z",
+  "checked_at": "2026-09-15T02:44:22.691Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T02:39:11.927Z",
-    "usage": 15,
+    "checked_at": "2026-09-15T02:44:15.251Z",
+    "usage": 16,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T02:54:11.927Z",
+    "next_check_at": "2026-09-15T02:59:15.251Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 15,
     "instagram_remaining": 33,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-15T02:34:20.084Z",
+    "next_feed_eligible_at": "2026-09-15T03:14:22.523Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,11 +57,20 @@
     {
       "file": "671-the-sound-of-la-runs-deep-and-for-warren-g-it-starts-with-the-lo.json",
       "id": "671-the-sound-of-la-runs-deep-and-for-warren-g-it-starts-with-the-lo",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18157786942505262"
+      "media_id": "18125336408503114",
+      "content_type": "video"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/671-the-sound-of-la-runs-deep-and-for-warren-g-it-starts-with-the-lo.json",
+      "id": "671-the-sound-of-la-runs-deep-and-for-warren-g-it-starts-with-the-lo",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 19:44:14 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AFvA7qw7Os8ClTp8MH2JK91\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

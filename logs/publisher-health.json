@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T13:39:28.880Z",
+  "checked_at": "2026-09-15T13:44:42.786Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T13:39:27.383Z",
-    "usage": 17,
+    "checked_at": "2026-09-15T13:44:35.309Z",
+    "usage": 18,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T13:54:27.384Z",
+    "next_check_at": "2026-09-15T13:59:35.309Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 17,
     "instagram_remaining": 31,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-15T12:46:18.925Z",
+    "next_feed_eligible_at": "2026-09-15T14:14:42.599Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-15T13:39:27.250Z",
-    "usage": 17,
+    "usage": 18,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-15T13:54:27.250Z",
@@ -52,16 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T12:46:09.978Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-09-15T14:14:34.608Z",
+  "publications": [
     {
-      "file": "queue/677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h.json",
+      "file": "677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h.json",
       "id": "677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 06:39:27 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ANFvqvVIx66by1tw8DGgsj8\"}}"
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17992424066841005"
+    },
+    {
+      "file": "677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h.json",
+      "id": "677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18061670274003537",
+      "content_type": "video"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

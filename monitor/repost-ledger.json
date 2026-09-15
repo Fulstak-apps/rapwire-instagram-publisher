@@ -8070,6 +8070,12 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/p/DdSZEaeEaNa/",
       "view_count": 0
+    },
+    "DdSbiTXCC3F": {
+      "seen_at": "2026-09-15T00:41:00.599Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DdSbiTXCC3F/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -10995,87 +11001,16 @@
       "source_url": "https://www.instagram.com/uproxx/p/DdRXrYiDrR-/",
       "queue_id": "676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite",
       "video": "media/676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite.mp4"
+    },
+    "DdKHPXuKWFs": {
+      "queued_at": "2026-09-15T00:53:58.607Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/DdKHPXuKWFs/",
+      "queue_id": "677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h",
+      "video": "media/677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-10T16:56:58.327Z",
-      "candidates": 62,
-      "queued": [
-        "507-breaking-lil-durk-lildurk-s-lawyers-have-filed-an-emergency-moti"
-      ],
-      "errors": [
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFkLYYDr86/",
-          "stage": "queue",
-          "error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
-          "stage": "queue",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
-          "stage": "queue",
-          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 37,
-      "finished_at": "2026-09-10T17:03:57.888Z"
-    },
-    {
-      "started_at": "2026-09-10T17:09:04.222Z",
-      "candidates": 62,
-      "queued": [
-        "508-lil-uzi-vert-and-mgk-really-didn-t-care-about-getting-kicked-out"
-      ],
-      "errors": [
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFkLYYDr86/",
-          "stage": "queue",
-          "error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 37,
-      "finished_at": "2026-09-10T17:13:29.684Z"
-    },
-    {
-      "started_at": "2026-09-10T17:18:38.822Z",
-      "candidates": 60,
-      "queued": [
-        "509-jhene-aiko-s-coming-back-strong-with-all-of-these-rap-features-c"
-      ],
-      "errors": [
-        {
-          "source_handle": "records",
-          "source_url": "https://www.instagram.com/records/p/DdFkLYYDr86/",
-          "stage": "queue",
-          "error": "Complete 12-item carousel saved; exceeds Instagram API limit of 10 and needs split delivery"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/DdFdEA5NXaZ/",
-          "stage": "queue",
-          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
-        },
-        {
-          "source_handle": "complexmusic",
-          "source_url": "https://www.instagram.com/complexmusic/p/DdHKYMBEQMo/",
-          "stage": "queue",
-          "error": "No unambiguous matching audio stream; refusing silent or unrelated audio"
-        }
-      ],
-      "mode": "discovery",
-      "vip_pending": 36,
-      "finished_at": "2026-09-10T17:25:37.060Z"
-    },
     {
       "started_at": "2026-09-10T17:30:42.420Z",
       "candidates": 51,
@@ -20315,6 +20250,115 @@
         ]
       },
       "finished_at": "2026-09-15T00:35:26.679Z"
+    },
+    {
+      "started_at": "2026-09-15T00:40:32.530Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdSX1lrNnfN/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdSZnpFDafB/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 12,
+        "available": 9,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-15T00:41:12.031Z"
+    },
+    {
+      "started_at": "2026-09-15T00:46:13.398Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdSWkMqPwYx/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdSVIUmv-I1/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdSXWNMP93r/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 12,
+        "available": 9,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-15T00:47:25.139Z"
+    },
+    {
+      "started_at": "2026-09-15T00:52:25.878Z",
+      "candidates": 48,
+      "queued": [
+        "677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 12,
+        "available": 9,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-15T00:53:58.607Z"
     }
   ],
   "vip_pending": {

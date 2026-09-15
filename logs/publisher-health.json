@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T14:50:13.953Z",
+  "checked_at": "2026-09-15T14:55:30.644Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T14:50:12.892Z",
-    "usage": 19,
+    "checked_at": "2026-09-15T14:55:23.894Z",
+    "usage": 20,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T15:05:12.892Z",
+    "next_check_at": "2026-09-15T15:10:23.895Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 19,
     "instagram_remaining": 29,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-15T14:50:07.720Z",
+    "next_feed_eligible_at": "2026-09-15T15:25:30.371Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-15T14:40:06.217Z",
-    "usage": 19,
+    "checked_at": "2026-09-15T14:55:16.835Z",
+    "usage": 20,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-15T14:55:06.217Z",
+    "next_check_at": "2026-09-15T15:10:16.835Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T14:49:58.741Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-15T15:25:22.739Z",
+  "publications": [
+    {
+      "file": "679-sosa-brought-rio-out-at-his-detroit-show-tonight.json",
+      "id": "679-sosa-brought-rio-out-at-his-detroit-show-tonight",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18171422626456692"
+    },
+    {
+      "file": "679-sosa-brought-rio-out-at-his-detroit-show-tonight.json",
+      "id": "679-sosa-brought-rio-out-at-his-detroit-show-tonight",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17978794236095879",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

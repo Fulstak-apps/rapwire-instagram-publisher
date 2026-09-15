@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T15:40:54.740Z",
+  "checked_at": "2026-09-15T15:46:00.809Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T15:30:49.265Z",
+    "checked_at": "2026-09-15T15:46:00.747Z",
     "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T15:45:49.265Z",
+    "next_check_at": "2026-09-15T16:01:00.747Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T16:00:48.785Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/681-one-of-the-individuals-being-linked-online-to-the-fatal-shooting.json",
-      "id": "681-one-of-the-individuals-being-linked-online-to-the-fatal-shooting",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 08:40:54 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ApkzfywElHV8Qv1r8ND76XX\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

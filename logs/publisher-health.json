@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T01:23:29.220Z",
+  "checked_at": "2026-09-15T01:28:42.702Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T01:23:27.479Z",
-    "usage": 13,
+    "checked_at": "2026-09-15T01:28:35.482Z",
+    "usage": 14,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T01:38:27.479Z",
+    "next_check_at": "2026-09-15T01:43:35.482Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 13,
     "instagram_remaining": 35,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-15T01:23:19.469Z",
+    "next_feed_eligible_at": "2026-09-15T01:58:42.592Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-15T01:18:58.966Z",
-    "usage": 13,
+    "usage": 14,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-15T01:33:58.966Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T01:23:13.189Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-15T01:58:34.553Z",
+  "publications": [
+    {
+      "file": "669-was-this-hernandez-govan.json",
+      "id": "669-was-this-hernandez-govan",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18190048489394857"
+    },
+    {
+      "file": "669-was-this-hernandez-govan.json",
+      "id": "669-was-this-hernandez-govan",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18474258022116826",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

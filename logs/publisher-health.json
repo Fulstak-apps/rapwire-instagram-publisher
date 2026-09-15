@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T20:14:08.636Z",
+  "checked_at": "2026-09-15T20:19:02.049Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T20:00:01.235Z",
-    "usage": 23,
+    "checked_at": "2026-09-15T20:19:01.221Z",
+    "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T20:15:01.235Z",
+    "next_check_at": "2026-09-15T20:34:01.221Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 23,
-    "instagram_remaining": 25,
+    "instagram_usage": 22,
+    "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-15T20:13:51.408Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-15T20:00:01.607Z",
-    "usage": 27,
+    "checked_at": "2026-09-15T20:19:02.001Z",
+    "usage": 26,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-15T20:15:01.607Z",
+    "next_check_at": "2026-09-15T20:34:02.001Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T20:44:07.945Z",
-  "publications": [
-    {
-      "file": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma.json",
-      "id": "201-1-day-away-the-greatest-show-on-earth-comes-home-ye-andretroutma",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18124425628867214"
-    }
-  ],
-  "failures": [
-    {
-      "file": "queue/347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
-      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 13:14:00 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AWQG9jddoDTA0kyjCQj-qd3\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,21 +1,20 @@
 {
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "675-denzel-kenny-elite-music-the-duo-dropped-their-album-ii-and-beli",
     "676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite",
     "677-you-can-t-tell-the-story-of-hip-hop-without-the-talk-box-shows-h",
     "678-hyperx-is-known-for-peripherals-but-they-re-expanding-into-pcs-t",
     "679-sosa-brought-rio-out-at-his-detroit-show-tonight",
     "680-vince-staples-speaks-his-truth-and-that-s-makes-him-great-wants-"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-15T05:01:15.401Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-15T09:53:04.270Z",
   "deferred": []
 }

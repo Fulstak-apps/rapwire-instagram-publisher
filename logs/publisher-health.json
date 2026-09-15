@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T17:52:24.347Z",
+  "checked_at": "2026-09-15T17:57:20.866Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T18:22:24.080Z",
-  "publications": [
-    {
-      "file": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a.json",
-      "id": "171-traploreross-durk-had-3-flights-at-3-different-airports-booked-a",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18161330272494233"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

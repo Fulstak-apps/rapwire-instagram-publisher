@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T17:12:10.854Z",
+  "checked_at": "2026-09-15T17:17:13.520Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T17:12:09.592Z",
-    "usage": 22,
+    "checked_at": "2026-09-15T17:17:06.217Z",
+    "usage": 23,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T17:27:09.592Z",
+    "next_check_at": "2026-09-15T17:32:06.217Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 22,
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-15T17:11:44.916Z",
+    "next_feed_eligible_at": "2026-09-15T17:47:13.127Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-15T17:12:09.507Z",
-    "usage": 22,
+    "usage": 23,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-15T17:27:09.507Z",
@@ -52,16 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T17:11:39.091Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-09-15T17:47:04.710Z",
+  "publications": [
     {
-      "file": "queue/683-tyler-perry-kept-it-real-on-the-jennifer-hudson-show-he-said-he-.json",
+      "file": "683-tyler-perry-kept-it-real-on-the-jennifer-hudson-show-he-said-he-.json",
       "id": "683-tyler-perry-kept-it-real-on-the-jennifer-hudson-show-he-said-he-",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 10:12:10 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AXwJucNKItJKDIXcS0qaI3b\"}}"
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18110736011465646"
+    },
+    {
+      "file": "683-tyler-perry-kept-it-real-on-the-jennifer-hudson-show-he-said-he-.json",
+      "id": "683-tyler-perry-kept-it-real-on-the-jennifer-hudson-show-he-said-he-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18115289260978109",
+      "content_type": "video"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

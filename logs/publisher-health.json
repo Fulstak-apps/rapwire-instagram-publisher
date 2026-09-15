@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T18:58:09.541Z",
+  "checked_at": "2026-09-15T19:03:17.285Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-15T18:58:08.612Z",
-    "usage": 24,
+    "usage": 25,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-15T19:13:08.612Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T18:57:53.769Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-15T19:33:16.991Z",
+  "publications": [
+    {
+      "file": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup.json",
+      "id": "197-the-new-street-fighter-trailer-uses-an-unreleased-tupac-song-tup",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18142253014574182"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

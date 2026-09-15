@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T04:10:11.085Z",
+  "checked_at": "2026-09-15T04:15:12.316Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T04:20:04.258Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/674-a-classic-drink-for-a-classic-song-crafts-a-jeffery-morgenthaler.json",
+      "id": "674-a-classic-drink-for-a-classic-song-crafts-a-jeffery-morgenthaler",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 21:15:12 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AgTjPIKVJnsVFWwMW9sKwcR\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

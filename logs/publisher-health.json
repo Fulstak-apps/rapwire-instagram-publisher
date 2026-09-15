@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T00:07:46.525Z",
+  "checked_at": "2026-09-15T00:13:10.000Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T00:07:45.052Z",
-    "usage": 11,
+    "checked_at": "2026-09-15T00:13:02.721Z",
+    "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T00:22:45.052Z",
+    "next_check_at": "2026-09-15T00:28:02.721Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 11,
     "instagram_remaining": 37,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-15T00:07:35.099Z",
+    "next_feed_eligible_at": "2026-09-15T00:43:09.887Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,41 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-14T23:57:37.551Z",
-    "usage": 11,
+    "checked_at": "2026-09-15T00:12:54.586Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-15T00:12:37.551Z",
+    "next_check_at": "2026-09-15T00:27:54.586Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T00:07:28.363Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-15T00:43:01.828Z",
+  "publications": [
+    {
+      "file": "667-coming-out-of-the-courtroom-as-the-news-breaks-lil-durk-lildurk-.json",
+      "id": "667-coming-out-of-the-courtroom-as-the-news-breaks-lil-durk-lildurk-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18088099331241193"
+    },
+    {
+      "file": "667-coming-out-of-the-courtroom-as-the-news-breaks-lil-durk-lildurk-.json",
+      "id": "667-coming-out-of-the-courtroom-as-the-news-breaks-lil-durk-lildurk-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17991405669043305",
+      "content_type": "video"
+    }
+  ],
+  "failures": [
+    {
+      "file": "queue/667-coming-out-of-the-courtroom-as-the-news-breaks-lil-durk-lildurk-.json",
+      "id": "667-coming-out-of-the-courtroom-as-the-news-breaks-lil-durk-lildurk-",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 17:12:54 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AXs5kxu7PYJowlCLxFDHIx8\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

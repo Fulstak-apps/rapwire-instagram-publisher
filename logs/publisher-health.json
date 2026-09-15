@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T05:34:08.495Z",
+  "checked_at": "2026-09-15T09:53:42.522Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T05:23:49.679Z",
-    "usage": 20,
+    "checked_at": "2026-09-15T09:53:40.958Z",
+    "usage": 16,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T05:38:49.679Z",
+    "next_check_at": "2026-09-15T10:08:40.958Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 20,
-    "instagram_remaining": 28,
+    "instagram_usage": 16,
+    "instagram_remaining": 32,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-15T05:53:54.727Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-15T05:23:43.321Z",
-    "usage": 20,
+    "checked_at": "2026-09-15T09:53:40.883Z",
+    "usage": 16,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-15T05:38:43.321Z",
+    "next_check_at": "2026-09-15T10:08:40.883Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T05:53:49.275Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite.json",
+      "id": "676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 02:53:41 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AclSfOmptolBJvzR3FBXn-M\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

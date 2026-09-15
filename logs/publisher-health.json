@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T09:53:42.522Z",
+  "checked_at": "2026-09-15T12:16:19.154Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-15T09:53:40.958Z",
-    "usage": 16,
+    "checked_at": "2026-09-15T12:16:11.591Z",
+    "usage": 17,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-15T10:08:40.958Z",
+    "next_check_at": "2026-09-15T12:31:11.591Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 16,
     "instagram_remaining": 32,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-15T05:53:54.727Z",
+    "next_feed_eligible_at": "2026-09-15T12:46:18.925Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,24 +43,40 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-15T09:53:40.883Z",
-    "usage": 16,
+    "checked_at": "2026-09-15T12:15:59.707Z",
+    "usage": 17,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-15T10:08:40.883Z",
+    "next_check_at": "2026-09-15T12:30:59.707Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-15T05:53:49.275Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-15T12:46:09.978Z",
+  "publications": [
+    {
+      "file": "676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite.json",
+      "id": "676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18162417463486869"
+    },
+    {
+      "file": "676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite.json",
+      "id": "676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18016643633930114",
+      "content_type": "video"
+    }
+  ],
   "failures": [
     {
       "file": "queue/676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite.json",
       "id": "676-is-this-ja-z-s-best-album-at-the-premiere-of-s-ja-z-in-8-credite",
       "platform": "facebook",
       "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 02:53:41 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AclSfOmptolBJvzR3FBXn-M\"}}"
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Tuesday, 15-Sep-26 05:16:00 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AM0jQwIs_9TNEyxOhQYKI4R\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

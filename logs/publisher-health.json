@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-15T01:08:15.973Z",
+  "checked_at": "2026-09-15T01:13:18.906Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-15T01:23:13.189Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/669-was-this-hernandez-govan.json",
+      "id": "669-was-this-hernandez-govan",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Monday, 14-Sep-26 18:13:18 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A5pofehF0ZnKSeUz4ax8OyW\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

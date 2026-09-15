@@ -1,25 +1,23 @@
 {
-  "overdue": true,
-  "health_stale": true,
-  "processing": [
-    "663-calls-donald-trump-and-california-federal-justice-system"
-  ],
+  "overdue": false,
+  "health_stale": false,
+  "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "663-calls-donald-trump-and-california-federal-justice-system",
-    "664-video-from-charleston-white-arrest-seems-like-cops-were-pretty-c",
-    "665-ne-yo-says-people-tell-him-he-should-be-as-big-as-beyonc-or-jay-",
-    "666-usher-s-performance-is-going-crazy-online-people-are-really-sayi",
-    "667-coming-out-of-the-courtroom-as-the-news-breaks-lil-durk-lildurk-",
     "668-i-had-to-ask-the-people-closest-to-lildurk-a-question-what-s-you",
     "669-was-this-hernandez-govan",
-    "670-tesla-owners-is-this-true"
+    "670-tesla-owners-is-this-true",
+    "671-the-sound-of-la-runs-deep-and-for-warren-g-it-starts-with-the-lo",
+    "672-victor-victor-brought-out-that-classic-a-boogie-in-their-new-son",
+    "673-you-here-for-an-e-40-and-larry-june-collab-album-larry-june-is-g",
+    "674-a-classic-drink-for-a-classic-song-crafts-a-jeffery-morgenthaler",
+    "675-denzel-kenny-elite-music-the-duo-dropped-their-album-ii-and-beli"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-14T21:59:12.717Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-15T00:19:21.711Z",
   "deferred": []
 }

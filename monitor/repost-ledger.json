@@ -12216,38 +12216,16 @@
       "source_url": "https://www.instagram.com/vladtv/reel/DdU3tuljKGm/",
       "queue_id": "692-do-you-agree-with-lil-durk-lildurk-being-found-not-guilty",
       "video": "media/692-do-you-agree-with-lil-durk-lildurk-being-found-not-guilty.mp4"
+    },
+    "DdU49IgRxJP": {
+      "queued_at": "2026-09-16T14:16:28.567Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdU49IgRxJP/",
+      "queue_id": "693-otf-dede-and-browneyez-update-part-2",
+      "video": "media/693-otf-dede-and-browneyez-update-part-2.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-14T07:14:38.898Z",
-      "candidates": 12,
-      "queued": [
-        "659-druski-went-crazy-to-ran-to-atlanta-with-future-future-in-the-cl"
-      ],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 2,
-        "needed": 10
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 3,
-        "handles": [
-          "records"
-        ]
-      },
-      "finished_at": "2026-09-14T07:15:51.269Z"
-    },
     {
       "started_at": "2026-09-14T16:41:00.389Z",
       "candidates": 12,
@@ -20615,6 +20593,30 @@
         ]
       },
       "finished_at": "2026-09-16T11:25:48.831Z"
+    },
+    {
+      "started_at": "2026-09-16T14:14:33.420Z",
+      "candidates": 36,
+      "queued": [
+        "693-otf-dede-and-browneyez-update-part-2"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 12,
+        "available": 2,
+        "needed": 10
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-16T14:16:28.567Z"
     }
   ],
   "vip_pending": {

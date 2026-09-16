@@ -78,7 +78,10 @@ const maxQueuePerRun = 1;
 // Keep six hours of inventory at the 30-minute publishing cadence. This gives
 // temporary Instagram profile/navigation failures time to recover without
 // starving the public publisher.
-const targetReadyVideoBuffer = 12;
+// The Instagram cadence is 30 minutes. Keep 24 verified video items locally
+// available so a 12-hour source-collection interruption does not drain the
+// public queue. Collection remains bounded to one new capture per pass.
+const targetReadyVideoBuffer = 24;
 // Score the freshest visible item per source.  More than that delays the
 // actual capture behind dozens of metadata page loads and makes a single pass
 // needlessly likely to exceed its watchdog window.

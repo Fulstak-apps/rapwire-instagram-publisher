@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T22:17:42.485Z",
+  "checked_at": "2026-09-16T22:22:45.353Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T22:37:43.287Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/706-he-winning-right-now-to-this-day-with-that-song-for-sound-check-.json",
-      "id": "706-he-winning-right-now-to-this-day-with-that-song-for-sound-check-",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 15:17:42 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"Aerm0vPFV3l6hklY08UQyjT\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

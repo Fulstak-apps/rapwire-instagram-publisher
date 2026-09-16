@@ -303,7 +303,17 @@ export async function renderFootageOnly({input,destination,sourceHandle,width,he
     analysis={crop:{x:0,y:0,width:Math.floor(width/2)*2,height:Math.floor(height/2)*2},sample_times:sampleTimes(duration),logo_size:132,logo_placement:{size:132,x:34,y:1350-132-34,position:'bottom-left'},method:'full-frame-crop-safety-fallback-v1',crop_review_error:error.message};
     await fs.writeFile(path.join(directory,'crop-analysis.json'),JSON.stringify(analysis,null,2)+'\n');
   }
-  await exec('ffmpeg',['-v','error','-y','-i',input,'-loop','1','-i',path.resolve('assets/rapwire247-logo.png'),'-filter_complex',footageFilter(analysis.crop,1,analysis.logo_placement||analysis.logo_size),'-map','[v]','-map','0:a:0','-c:v','libx264','-preset','veryfast','-pix_fmt','yuv420p','-c:a','aac','-shortest','-movflags','+faststart',destination],{timeout:180000,maxBuffer:8*1024*1024});
+  try {
+    // Reel captures can run alongside the SportsWire worker on this Mac.
+    // `veryfast` plus an 180-second hard stop was marginal for 2–3 minute
+    // clips, causing a valid capture to be discarded just before queueing.
+    // Superfast keeps the same H.264/AAC, dimensions, crop proof and logo
+    // safeguards while making the render reliably fit inside one monitor run.
+    await exec('ffmpeg',['-v','error','-y','-i',input,'-loop','1','-i',path.resolve('assets/rapwire247-logo.png'),'-filter_complex',footageFilter(analysis.crop,1,analysis.logo_placement||analysis.logo_size),'-map','[v]','-map','0:a:0','-c:v','libx264','-preset','superfast','-crf','20','-pix_fmt','yuv420p','-c:a','aac','-shortest','-movflags','+faststart',destination],{timeout:270000,maxBuffer:8*1024*1024});
+  } catch (error) {
+    const detail = String(error?.stderr || error?.message || error).trim();
+    throw new Error(`Video render failed (${error?.code || error?.signal || 'unknown'}): ${detail.slice(-1600)}`);
+  }
   const {stdout}=await exec('ffprobe',['-v','error','-show_entries','stream=codec_name,codec_type,width,height,duration:format=duration','-of','json',destination]);
   const probe=JSON.parse(stdout), video=probe.streams?.find(s=>s.codec_type==='video'), audio=probe.streams?.find(s=>s.codec_type==='audio');
   if(video?.codec_name!=='h264'||video.width!==1080||video.height!==1350||audio?.codec_name!=='aac'||[probe.format,video,audio].some(s=>!Number.isFinite(Number(s?.duration))||Math.abs(Number(s.duration)-duration)>1)) throw new Error('Footage-only output failed complete H.264/AAC duration/dimension validation');

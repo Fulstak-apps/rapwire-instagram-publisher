@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T17:59:20.901Z",
+  "checked_at": "2026-09-16T18:04:03.906Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 14,
-    "instagram_remaining": 34,
+    "instagram_usage": 15,
+    "instagram_remaining": 33,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-16T18:29:20.687Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T18:29:10.951Z",
-  "publications": [
-    {
-      "file": "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by.json",
-      "id": "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18092723558142083"
-    },
-    {
-      "file": "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by.json",
-      "id": "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18122439187845178",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

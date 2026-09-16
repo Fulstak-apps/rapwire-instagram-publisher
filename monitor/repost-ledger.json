@@ -12196,83 +12196,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdU5lSlxe3K/",
       "queue_id": "690-otf-dede-and-browneyez-update-part-4",
       "video": "media/690-otf-dede-and-browneyez-update-part-4.mp4"
+    },
+    "DdUT7Oqiv6P": {
+      "queued_at": "2026-09-16T11:15:56.942Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/DdUT7Oqiv6P/",
+      "queue_id": "691-this-is-legends-only-in-the-latest-episode-of-sound-check-has-to",
+      "video": "media/691-this-is-legends-only-in-the-latest-episode-of-sound-check-has-to.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-14T06:53:12.806Z",
-      "candidates": 48,
-      "queued": [
-        "657-full-video-shooting-of-bloodhound-q50-shooting"
-      ],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdPr31cP8pV/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 1,
-        "needed": 11
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 3,
-        "handles": [
-          "hiphop_firstnewsmusic",
-          "complexmusic",
-          "ceddynash",
-          "larp.lor.d"
-        ]
-      },
-      "finished_at": "2026-09-14T06:56:06.441Z"
-    },
-    {
-      "started_at": "2026-09-14T07:01:21.140Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdP3FHKiEux/",
-          "stage": "queue",
-          "error": "page.waitForTimeout: Page crashed"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 1,
-        "needed": 11
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 3,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-14T07:02:02.045Z"
-    },
     {
       "started_at": "2026-09-14T07:07:06.386Z",
       "candidates": 48,
@@ -20609,6 +20542,79 @@
         ]
       },
       "finished_at": "2026-09-16T11:02:50.966Z"
+    },
+    {
+      "started_at": "2026-09-16T11:07:53.352Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdVLQcyxpyu/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdU9Bt5PXTh/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdVO5szRfZX/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 12,
+        "available": 1,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-16T11:08:53.376Z"
+    },
+    {
+      "started_at": "2026-09-16T11:13:54.425Z",
+      "candidates": 48,
+      "queued": [
+        "691-this-is-legends-only-in-the-latest-episode-of-sound-check-has-to"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 12,
+        "available": 1,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-16T11:15:56.942Z"
     }
   ],
   "vip_pending": {

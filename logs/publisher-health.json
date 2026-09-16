@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T23:13:19.952Z",
+  "checked_at": "2026-09-16T23:18:23.582Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-16T23:03:14.718Z",
+    "checked_at": "2026-09-16T23:18:23.083Z",
     "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-16T23:18:14.718Z",
+    "next_check_at": "2026-09-16T23:33:23.083Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "instagram_remaining": 27,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-16T23:18:09.501Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 0,
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-16T23:03:14.994Z",
+    "checked_at": "2026-09-16T23:18:23.423Z",
     "usage": 21,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-16T23:18:14.994Z",
+    "next_check_at": "2026-09-16T23:33:23.423Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T23:13:12.921Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o.json",
+      "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 16:18:23 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AP5va8u_TZwcPof-owkY3ta\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

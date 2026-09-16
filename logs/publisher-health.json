@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T21:32:34.895Z",
+  "checked_at": "2026-09-16T21:37:20.235Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 18,
-    "instagram_remaining": 30,
+    "instagram_usage": 19,
+    "instagram_remaining": 29,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-16T22:02:34.381Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T22:02:24.914Z",
-  "publications": [
-    {
-      "file": "704-taking-it-back-to-the-blog-era-caught-s-set-at-a-celebration-of-.json",
-      "id": "704-taking-it-back-to-the-blog-era-caught-s-set-at-a-celebration-of-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18089941958439226"
-    },
-    {
-      "file": "704-taking-it-back-to-the-blog-era-caught-s-set-at-a-celebration-of-.json",
-      "id": "704-taking-it-back-to-the-blog-era-caught-s-set-at-a-celebration-of-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18016665623944332",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T22:43:14.703Z",
+  "checked_at": "2026-09-16T22:48:09.772Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-16T22:43:04.780Z",
-    "usage": 20,
+    "checked_at": "2026-09-16T22:48:03.515Z",
+    "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-16T22:58:04.780Z",
+    "next_check_at": "2026-09-16T23:03:03.515Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 20,
     "instagram_remaining": 28,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-16T22:42:44.277Z",
+    "next_feed_eligible_at": "2026-09-16T23:18:09.501Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-16T22:32:59.480Z",
-    "usage": 22,
+    "checked_at": "2026-09-16T22:48:03.031Z",
+    "usage": 21,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-16T22:47:59.480Z",
+    "next_check_at": "2026-09-16T23:03:03.031Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,11 +57,20 @@
     {
       "file": "706-he-winning-right-now-to-this-day-with-that-song-for-sound-check-.json",
       "id": "706-he-winning-right-now-to-this-day-with-that-song-for-sound-check-",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18166504786479037"
+      "media_id": "18037397516832386",
+      "content_type": "video"
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/706-he-winning-right-now-to-this-day-with-that-song-for-sound-check-.json",
+      "id": "706-he-winning-right-now-to-this-day-with-that-song-for-sound-check-",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 15:48:03 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A0S_r9Xg_5HEzgpR-c0vT82\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T20:16:25.948Z",
+  "checked_at": "2026-09-16T20:21:48.476Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-16T20:16:24.172Z",
-    "usage": 17,
+    "checked_at": "2026-09-16T20:21:40.414Z",
+    "usage": 18,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-16T20:31:24.172Z",
+    "next_check_at": "2026-09-16T20:36:40.414Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 17,
     "instagram_remaining": 31,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-16T20:16:12.645Z",
+    "next_feed_eligible_at": "2026-09-16T20:51:48.327Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-16T20:16:24.030Z",
-    "usage": 20,
+    "usage": 21,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-16T20:31:24.030Z",
@@ -52,16 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-16T20:16:05.252Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-09-16T20:51:39.472Z",
+  "publications": [
     {
-      "file": "queue/702-kai-cenat-froze-instantly-when-drake-champagnepapi-opened-up-his.json",
+      "file": "702-kai-cenat-froze-instantly-when-drake-champagnepapi-opened-up-his.json",
       "id": "702-kai-cenat-froze-instantly-when-drake-champagnepapi-opened-up-his",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 13:16:25 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A5AvUQunMLXCkFUqQwpKjy3\"}}"
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18111640277039922"
+    },
+    {
+      "file": "702-kai-cenat-froze-instantly-when-drake-champagnepapi-opened-up-his.json",
+      "id": "702-kai-cenat-froze-instantly-when-drake-champagnepapi-opened-up-his",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17881019076522938",
+      "content_type": "video"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

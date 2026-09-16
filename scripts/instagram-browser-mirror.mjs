@@ -185,32 +185,38 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
         }
       }
       // When Chromium exposes only a few media byte ranges, request the exact
-      // visible video's `currentSrc` from inside the signed-in page.  This is
-      // still the same authenticated browser session and is accepted only
+      // visible video's `currentSrc` through the signed-in browser context.
+      // This is still the same authenticated browser session and is accepted only
       // after the resulting file passes the visible post's duration and
       // dimensions checks.  It avoids treating an unrelated CDN response as
       // a Reel while keeping a partial range from starving the queue.
       if (matchedVideos.length < 1) {
         try {
-          const encoded = await video.evaluate(async element => {
-            const controller = new AbortController();
-            const timeout = setTimeout(() => controller.abort(), 45000);
-            try {
-              const response = await fetch(element.currentSrc, { credentials: 'include', signal: controller.signal });
-              if (!response.ok) throw new Error(`direct media fetch returned ${response.status}`);
-              const bytes = new Uint8Array(await response.arrayBuffer());
-              let output = '';
-              const chunkSize = 0x8000;
-              for (let offset = 0; offset < bytes.length; offset += chunkSize) {
-                output += String.fromCharCode(...bytes.subarray(offset, offset + chunkSize));
-              }
-              return btoa(output);
-            } finally {
-              clearTimeout(timeout);
-            }
+          // Do not use window.fetch here: Instagram's CDN often rejects the
+          // page-origin CORS request even though the exact video is playing.
+          // Playwright's request context shares the signed-in browser session
+          // and avoids copying media through base64/renderer memory. Restrict
+          // the URL to Meta media hosts and cap the response before buffering.
+          const mediaUrl = await video.evaluate(element => element.currentSrc);
+          const parsedMediaUrl = new URL(mediaUrl);
+          if (parsedMediaUrl.protocol !== 'https:' || !/(^|\.)(cdninstagram\.com|fbcdn\.net)$/i.test(parsedMediaUrl.hostname)) {
+            throw new Error(`unexpected direct media host: ${parsedMediaUrl.hostname}`);
+          }
+          const response = await page.request.get(mediaUrl, {
+            timeout: 45_000,
+            headers: { referer: reelUrl, origin: 'https://www.instagram.com', accept: 'video/*,application/octet-stream;q=0.9,*/*;q=0.8' }
           });
+          if (!response.ok()) throw new Error(`direct media request returned ${response.status()}`);
+          const finalMediaUrl = new URL(response.url());
+          if (finalMediaUrl.protocol !== 'https:' || !/(^|\.)(cdninstagram\.com|fbcdn\.net)$/i.test(finalMediaUrl.hostname)) {
+            throw new Error(`direct media redirect reached unexpected host: ${finalMediaUrl.hostname}`);
+          }
+          const declaredLength = Number(response.headers()['content-length'] || 0);
+          if (declaredLength > 512 * 1024 * 1024) throw new Error(`direct media response exceeds 512 MiB (${declaredLength} bytes)`);
+          const mediaBytes = await response.body();
+          if (!mediaBytes.length || mediaBytes.length > 512 * 1024 * 1024) throw new Error(`direct media response has invalid size (${mediaBytes.length} bytes)`);
           const directPath = path.join(tempDir, 'direct-visible-source.bin');
-          await fs.writeFile(directPath, Buffer.from(encoded, 'base64'));
+          await fs.writeFile(directPath, mediaBytes);
           const { stdout } = await execFileAsync('ffprobe', ['-v', 'error', '-show_entries', 'stream=codec_type,width,height:format=duration', '-of', 'json', directPath]);
           const probe = JSON.parse(stdout);
           const directVideo = probe.streams?.find(stream => stream.codec_type === 'video');

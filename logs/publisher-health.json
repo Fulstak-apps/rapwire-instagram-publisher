@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T15:09:55.386Z",
+  "checked_at": "2026-09-16T15:15:01.694Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-16T14:59:53.717Z",
+    "checked_at": "2026-09-16T15:15:01.629Z",
     "usage": 14,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-16T15:14:53.717Z",
+    "next_check_at": "2026-09-16T15:30:01.629Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T15:29:53.082Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/694-yall-watched-last-night.json",
-      "id": "694-yall-watched-last-night",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 08:09:55 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AfDAs9qqXT9kB8521VZ3eUj\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

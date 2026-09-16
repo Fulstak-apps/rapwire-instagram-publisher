@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T18:44:29.514Z",
+  "checked_at": "2026-09-16T18:49:35.405Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-16T18:34:28.696Z",
+    "checked_at": "2026-09-16T18:49:35.356Z",
     "usage": 16,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-16T18:49:28.696Z",
+    "next_check_at": "2026-09-16T19:04:35.356Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T19:04:28.149Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/700-drake-champagnepapi-brought-his-goth-baddie-girlfriend-pinkchyu-.json",
-      "id": "700-drake-champagnepapi-brought-his-goth-baddie-girlfriend-pinkchyu-",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 11:44:29 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AqoY_TJdipFbkjiNQg8_7Lp\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

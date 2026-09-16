@@ -9173,6 +9173,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/p/DdV56C3DosU/",
       "view_count": 0
+    },
+    "DdWGKeTkXGC": {
+      "seen_at": "2026-09-16T11:23:06.935Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdWGKeTkXGC/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -12203,47 +12209,16 @@
       "source_url": "https://www.instagram.com/uproxx/reel/DdUT7Oqiv6P/",
       "queue_id": "691-this-is-legends-only-in-the-latest-episode-of-sound-check-has-to",
       "video": "media/691-this-is-legends-only-in-the-latest-episode-of-sound-check-has-to.mp4"
+    },
+    "DdU3tuljKGm": {
+      "queued_at": "2026-09-16T11:25:48.831Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/vladtv/reel/DdU3tuljKGm/",
+      "queue_id": "692-do-you-agree-with-lil-durk-lildurk-being-found-not-guilty",
+      "video": "media/692-do-you-agree-with-lil-durk-lildurk-being-found-not-guilty.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-14T07:07:06.386Z",
-      "candidates": 48,
-      "queued": [
-        "658-rihanna-playing-with-her-kid-just-feels-like-pure-happiness-riha"
-      ],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/DdHNfesu6WU/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdPr31cP8pV/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 1,
-        "needed": 11
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 3,
-        "handles": [
-          "hiphop_firstnewsmusic",
-          "complexmusic",
-          "ceddynash",
-          "larp.lor.d"
-        ]
-      },
-      "finished_at": "2026-09-14T07:09:27.744Z"
-    },
     {
       "started_at": "2026-09-14T07:14:38.898Z",
       "candidates": 12,
@@ -20615,6 +20590,31 @@
         ]
       },
       "finished_at": "2026-09-16T11:15:56.942Z"
+    },
+    {
+      "started_at": "2026-09-16T11:21:53.107Z",
+      "candidates": 48,
+      "queued": [
+        "692-do-you-agree-with-lil-durk-lildurk-being-found-not-guilty"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 12,
+        "available": 1,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-16T11:25:48.831Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T19:10:08.507Z",
+  "checked_at": "2026-09-16T19:14:51.579Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 16,
-    "instagram_remaining": 32,
+    "instagram_usage": 17,
+    "instagram_remaining": 31,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-16T19:40:08.291Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-16T18:59:42.117Z",
-    "usage": 22,
+    "checked_at": "2026-09-16T19:14:51.397Z",
+    "usage": 21,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-16T19:14:42.117Z",
+    "next_check_at": "2026-09-16T19:29:51.397Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T19:39:58.968Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "700-drake-champagnepapi-brought-his-goth-baddie-girlfriend-pinkchyu-.json",
-      "id": "700-drake-champagnepapi-brought-his-goth-baddie-girlfriend-pinkchyu-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18137549710721085"
-    },
-    {
-      "file": "700-drake-champagnepapi-brought-his-goth-baddie-girlfriend-pinkchyu-.json",
-      "id": "700-drake-champagnepapi-brought-his-goth-baddie-girlfriend-pinkchyu-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17905671234329968",
-      "content_type": "video"
+      "file": "queue/701-yeat-yeat-n-the-boy-havent-missed-yet.json",
+      "id": "701-yeat-yeat-n-the-boy-havent-missed-yet",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 12:14:51 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"Ay4A36R9fzP04jexRIL1wHG\"}}"
     }
   ],
-  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

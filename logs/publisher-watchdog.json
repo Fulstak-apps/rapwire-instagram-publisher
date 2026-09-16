@@ -1,14 +1,14 @@
 {
-  "overdue": true,
+  "overdue": false,
   "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": false,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-16T06:40:38.035Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-16T12:01:30.620Z",
   "deferred": []
 }

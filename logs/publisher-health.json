@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T17:43:52.273Z",
+  "checked_at": "2026-09-16T17:48:52.547Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T17:53:41.300Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by.json",
-      "id": "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 10:43:52 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AO-NlNNqI2igmWqIFa-K3eu\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

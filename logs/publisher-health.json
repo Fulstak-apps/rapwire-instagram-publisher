@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T17:13:28.713Z",
+  "checked_at": "2026-09-16T17:18:38.559Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-16T17:01:19.297Z",
-    "usage": 14,
+    "checked_at": "2026-09-16T17:18:37.107Z",
+    "usage": 13,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-16T17:16:19.297Z",
+    "next_check_at": "2026-09-16T17:33:37.107Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 14,
-    "instagram_remaining": 34,
+    "instagram_usage": 13,
+    "instagram_remaining": 35,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-16T17:16:20.162Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T17:16:13.984Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/697-petty-nash-not-ceddy-nash-when-that-prosecutor-did-his-final-clo.json",
-      "id": "697-petty-nash-not-ceddy-nash-when-that-prosecutor-did-his-final-clo",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 10:13:28 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A7MBFbBBlVhL6_I4mhXGIND\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

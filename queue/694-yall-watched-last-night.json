@@ -39,5 +39,6 @@
   "source_caption_text": "Yall watched last night",
   "caption_checked_at": "2026-09-16T14:24:36.814Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 119.9769600867385
+  "source_video_duration": 119.9769600867385,
+  "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 08:09:55 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AfDAs9qqXT9kB8521VZ3eUj\"}}"
 }

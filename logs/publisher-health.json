@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T14:59:59.880Z",
+  "checked_at": "2026-09-16T15:04:55.734Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 34,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-16T15:29:59.715Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T15:29:53.082Z",
-  "publications": [
-    {
-      "file": "693-otf-dede-and-browneyez-update-part-2.json",
-      "id": "693-otf-dede-and-browneyez-update-part-2",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18413108287083049"
-    },
-    {
-      "file": "693-otf-dede-and-browneyez-update-part-2.json",
-      "id": "693-otf-dede-and-browneyez-update-part-2",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18220865566339175",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -197,37 +197,63 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
           // Playwright's request context shares the signed-in browser session
           // and avoids copying media through base64/renderer memory. Restrict
           // the URL to Meta media hosts and cap the response before buffering.
-          const mediaUrl = await video.evaluate(element => element.currentSrc);
-          const parsedMediaUrl = new URL(mediaUrl);
-          if (parsedMediaUrl.protocol !== 'https:' || !/(^|\.)(cdninstagram\.com|fbcdn\.net)$/i.test(parsedMediaUrl.hostname)) {
-            throw new Error(`unexpected direct media host: ${parsedMediaUrl.hostname}`);
+          const visibleSrc = await video.evaluate(element => element.currentSrc || element.src || element.querySelector('source')?.src || '');
+          const directUrls = [];
+          if (visibleSrc) directUrls.push(visibleSrc);
+          // MediaSource-backed Reels expose a blob: currentSrc. In that case,
+          // retry the observed CDN object URLs with only Instagram's range
+          // selectors removed; the signed query string and post identity stay
+          // intact. Try video-sized groups first and bound attempts to four.
+          for (const group of [...groups.values()].sort((a,b) =>
+            Number(b.some(part => String(part.type).startsWith('video/'))) - Number(a.some(part => String(part.type).startsWith('video/')))
+            || b.reduce((sum,part)=>sum+part.body.length,0)-a.reduce((sum,part)=>sum+part.body.length,0))) {
+            if (directUrls.length >= 5) break;
+            const cleanUrl = new URL(group[0].url);
+            cleanUrl.searchParams.delete('bytestart');
+            cleanUrl.searchParams.delete('byteend');
+            if (cleanUrl.protocol === 'https:' && /(^|\.)(cdninstagram\.com|fbcdn\.net)$/i.test(cleanUrl.hostname)
+              && !directUrls.includes(cleanUrl.href)) directUrls.push(cleanUrl.href);
           }
-          const response = await page.request.get(mediaUrl, {
-            timeout: 45_000,
-            headers: { referer: reelUrl, origin: 'https://www.instagram.com', accept: 'video/*,application/octet-stream;q=0.9,*/*;q=0.8' }
-          });
-          if (!response.ok()) throw new Error(`direct media request returned ${response.status()}`);
-          const finalMediaUrl = new URL(response.url());
-          if (finalMediaUrl.protocol !== 'https:' || !/(^|\.)(cdninstagram\.com|fbcdn\.net)$/i.test(finalMediaUrl.hostname)) {
-            throw new Error(`direct media redirect reached unexpected host: ${finalMediaUrl.hostname}`);
+          let directIndex = 0;
+          for (const mediaUrl of directUrls) {
+            const directIndexForFile = directIndex++;
+            try {
+              const parsedMediaUrl = new URL(mediaUrl);
+              if (parsedMediaUrl.protocol !== 'https:' || !/(^|\.)(cdninstagram\.com|fbcdn\.net)$/i.test(parsedMediaUrl.hostname)) {
+                diagnostics.push({result:'direct-media-rejected-host',host:parsedMediaUrl.hostname});
+                continue;
+              }
+              const response = await page.request.get(mediaUrl, {
+                timeout: 45_000,
+                headers: { referer: reelUrl, origin: 'https://www.instagram.com', accept: 'video/*,application/octet-stream;q=0.9,*/*;q=0.8' }
+              });
+              if (!response.ok()) throw new Error(`request returned ${response.status()}`);
+              const finalMediaUrl = new URL(response.url());
+              if (finalMediaUrl.protocol !== 'https:' || !/(^|\.)(cdninstagram\.com|fbcdn\.net)$/i.test(finalMediaUrl.hostname)) {
+                throw new Error(`redirect reached unexpected host ${finalMediaUrl.hostname}`);
+              }
+              const declaredLength = Number(response.headers()['content-length'] || 0);
+              if (declaredLength > 512 * 1024 * 1024) throw new Error(`response exceeds 512 MiB (${declaredLength} bytes)`);
+              const mediaBytes = await response.body();
+              if (!mediaBytes.length || mediaBytes.length > 512 * 1024 * 1024) throw new Error(`response has invalid size (${mediaBytes.length} bytes)`);
+              const directPath = path.join(tempDir, `direct-visible-source-${directIndexForFile}.bin`);
+              await fs.writeFile(directPath, mediaBytes);
+              const { stdout } = await execFileAsync('ffprobe', ['-v', 'error', '-show_entries', 'stream=codec_type,width,height:format=duration', '-of', 'json', directPath]);
+              const probe = JSON.parse(stdout);
+              const directVideo = probe.streams?.find(stream => stream.codec_type === 'video');
+              const hasAudio = probe.streams?.some(stream => stream.codec_type === 'audio');
+              if (directVideo && hasAudio && directVideo.width === sourceEvidence.width && directVideo.height === sourceEvidence.height
+                && Math.abs(Number(probe.format?.duration) - sourceEvidence.duration) <= 1) {
+                matchedVideos.push({ path: directPath, hasAudio, direct: true });
+                diagnostics.push({ result: 'direct-visible-source', ...probe });
+                break;
+              }
+              diagnostics.push({ result: 'direct-visible-source-rejected', ...probe });
+            } catch (error) {
+              diagnostics.push({ result: 'direct-visible-source-failed', attempt:directIndexForFile, error:String(error?.message||error) });
+            }
           }
-          const declaredLength = Number(response.headers()['content-length'] || 0);
-          if (declaredLength > 512 * 1024 * 1024) throw new Error(`direct media response exceeds 512 MiB (${declaredLength} bytes)`);
-          const mediaBytes = await response.body();
-          if (!mediaBytes.length || mediaBytes.length > 512 * 1024 * 1024) throw new Error(`direct media response has invalid size (${mediaBytes.length} bytes)`);
-          const directPath = path.join(tempDir, 'direct-visible-source.bin');
-          await fs.writeFile(directPath, mediaBytes);
-          const { stdout } = await execFileAsync('ffprobe', ['-v', 'error', '-show_entries', 'stream=codec_type,width,height:format=duration', '-of', 'json', directPath]);
-          const probe = JSON.parse(stdout);
-          const directVideo = probe.streams?.find(stream => stream.codec_type === 'video');
-          const hasAudio = probe.streams?.some(stream => stream.codec_type === 'audio');
-          if (directVideo && hasAudio && directVideo.width === sourceEvidence.width && directVideo.height === sourceEvidence.height
-            && Math.abs(Number(probe.format?.duration) - sourceEvidence.duration) <= 1) {
-            matchedVideos.push({ path: directPath, hasAudio, direct: true });
-            diagnostics.push({ result: 'direct-visible-source', ...probe });
-          } else {
-            diagnostics.push({ result: 'direct-visible-source-rejected', ...probe });
-          }
+          if (!directUrls.length) diagnostics.push({result:'direct-visible-source-failed',error:'No visible currentSrc or observed Meta CDN URL was available'});
         } catch (error) {
           diagnostics.push({ result: 'direct-visible-source-failed', error: String(error?.message || error) });
         }

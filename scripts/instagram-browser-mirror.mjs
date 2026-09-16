@@ -242,13 +242,20 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
               const probe = JSON.parse(stdout);
               const directVideo = probe.streams?.find(stream => stream.codec_type === 'video');
               const hasAudio = probe.streams?.some(stream => stream.codec_type === 'audio');
-              if (directVideo && hasAudio && directVideo.width === sourceEvidence.width && directVideo.height === sourceEvidence.height
-                && Math.abs(Number(probe.format?.duration) - sourceEvidence.duration) <= 1) {
+              const exactDuration = Number.isFinite(Number(probe.format?.duration))
+                && Math.abs(Number(probe.format.duration) - sourceEvidence.duration) <= 1;
+              if (directVideo && directVideo.width === sourceEvidence.width && directVideo.height === sourceEvidence.height && exactDuration) {
+                // Meta commonly exposes the Reel's video and audio as separate
+                // objects. Accept the exact video rendition, then pair it only
+                // with an audio-only object whose duration matches this post.
                 matchedVideos.push({ path: directPath, hasAudio, direct: true });
-                diagnostics.push({ result: 'direct-visible-source', ...probe });
-                break;
+                diagnostics.push({ result: hasAudio ? 'direct-visible-source-av' : 'direct-visible-source-video', ...probe });
+              } else if (!directVideo && probe.streams?.some(stream => stream.codec_type === 'audio') && exactDuration) {
+                matchedAudio.push(directPath);
+                diagnostics.push({ result: 'direct-visible-source-audio', ...probe });
+              } else {
+                diagnostics.push({ result: 'direct-visible-source-rejected', ...probe });
               }
-              diagnostics.push({ result: 'direct-visible-source-rejected', ...probe });
             } catch (error) {
               diagnostics.push({ result: 'direct-visible-source-failed', attempt:directIndexForFile, error:String(error?.message||error) });
             }
@@ -279,7 +286,7 @@ async function captureVideo(page, video, candidates, reelUrl, options, destinati
       // CDN audio responses without silently accepting a partial stream.
       audioInput = preferredVideo.hasAudio ? videoInput : (await Promise.all(matchedAudio.map(async candidate => ({ path:candidate, bytes:await fileSize(candidate) }))))
         .sort((a,b) => b.bytes - a.bytes)[0]?.path || "";
-      if (!audioInput) throw new Error("No unambiguous matching audio stream; refusing silent or unrelated audio");
+      if (!audioInput) throw new Error("No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio");
       if (!videoInput) throw new Error("Captured Instagram fragments did not contain a complete video stream.");
       // Keep the exact unbranded audio/video locally so a later layout repair
       // never crops an already-branded render or needs to recapture the post.

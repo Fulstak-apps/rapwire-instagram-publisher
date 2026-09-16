@@ -1,6 +1,6 @@
 {
   "id": "691-this-is-legends-only-in-the-latest-episode-of-sound-check-has-to",
-  "status": "ready",
+  "status": "published",
   "publish_priority": 50,
   "date": "2026-09-16",
   "timezone": "America/Detroit",
@@ -32,7 +32,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "published",
   "artist_handles": [
     "kendricklamar"
   ],
@@ -45,8 +45,23 @@
   "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 04:34:30 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ACZnVnvjrJFSOSy9CSJNfsJ\"}}",
   "instagram_container_id": "18113674121078478",
   "instagram_container_created_at": "2026-09-16T11:44:39.919Z",
-  "instagram_container_checked_at": "2026-09-16T11:44:39.919Z",
+  "instagram_container_checked_at": "2026-09-16T11:50:12.397Z",
   "threads_container_id": "18099518576179906",
   "threads_container_created_at": "2026-09-16T11:44:39.921Z",
-  "threads_container_checked_at": "2026-09-16T11:44:39.921Z"
+  "threads_container_checked_at": "2026-09-16T11:50:05.099Z",
+  "threads_container_status": "FINISHED",
+  "threads_publish_requested_at": "2026-09-16T11:50:05.099Z",
+  "threads_media_id": "18114137612515019",
+  "threads_published_at": "2026-09-16T11:50:11.891Z",
+  "threads_verified_at": "2026-09-16T11:50:12.395Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DdWNUKpDALF",
+  "instagram_container_status": "FINISHED",
+  "instagram_publish_requested_at": "2026-09-16T11:50:12.397Z",
+  "instagram_media_id": "18118532456484082",
+  "instagram_published_at": "2026-09-16T11:50:12.397Z",
+  "published_at": "2026-09-16T11:50:18.909Z",
+  "instagram_verified_at": "2026-09-16T11:50:19.010Z",
+  "instagram_permalink": "https://www.instagram.com/reel/DdWNXqPkUk2/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
 }

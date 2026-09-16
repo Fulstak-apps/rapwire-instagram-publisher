@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T07:29:03.103Z",
+  "checked_at": "2026-09-16T08:55:56.346Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-16T07:29:02.460Z",
+    "checked_at": "2026-09-16T08:55:55.341Z",
     "usage": 14,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-16T07:44:02.460Z",
+    "next_check_at": "2026-09-16T09:10:55.341Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-16T07:29:02.960Z",
+    "checked_at": "2026-09-16T08:55:56.134Z",
     "usage": 21,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-16T07:44:02.960Z",
+    "next_check_at": "2026-09-16T09:10:56.134Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -60,7 +60,7 @@
       "id": "347-travis-scott-travisscott-recording-kid-cudi-performing-pursuit-o",
       "platform": "facebook",
       "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 00:29:03 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AEc95EJJH6oxvAPFQ-vSlXw\"}}"
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 01:55:56 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AG4KWJ-QUGWUJTbdV8qqR80\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

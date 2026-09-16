@@ -75,12 +75,10 @@ const maxQueuePerRun = 1;
 // Keep several already-validated source videos ahead of the publisher.  An
 // Instagram container in progress is counted as reserved inventory, so the
 // collector does not duplicate it while Meta processes the upload.
-// Keep six hours of inventory at the 30-minute publishing cadence. This gives
-// temporary Instagram profile/navigation failures time to recover without
-// starving the public publisher.
-// The Instagram cadence is 30 minutes. Keep 24 verified video items locally
-// available so a 12-hour source-collection interruption does not drain the
-// public queue. Collection remains bounded to one new capture per pass.
+// Keep twelve hours of inventory at the 30-minute Instagram cadence, enough
+// to bridge the longest reported source-collection outage. Items count only
+// after full capture/render validation. Collection remains bounded to one new
+// capture per pass to avoid browser contention and incomplete media.
 const targetReadyVideoBuffer = 24;
 // Score the freshest visible item per source.  More than that delays the
 // actual capture behind dozens of metadata page loads and makes a single pass

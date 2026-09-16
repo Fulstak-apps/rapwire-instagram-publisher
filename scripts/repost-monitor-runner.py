@@ -8,9 +8,13 @@ import sys
 import time
 from pathlib import Path
 
-# The local scheduler runs every five minutes. Leave a small handoff buffer,
-# but allow the rotated four-source pass to finish before watchdog recovery.
-LIMIT_SECONDS = 290
+# The local scheduler runs every five minutes, but a valid long Reel can take
+# nearly five minutes to discover, download, inspect, render, and push when the
+# CPU is also serving another publisher. 290 seconds killed that successful
+# capture between rendering and committing it, so the remote queue stayed empty.
+# The monitor's own lock makes overlapping five-minute ticks exit safely; give
+# one pass enough time to finish while still bounding a genuinely stuck browser.
+LIMIT_SECONDS = 570
 GIT_TEMP_MAX_AGE_SECONDS = 15 * 60
 
 def cleanup_stale_git_temporary_objects():

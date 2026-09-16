@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T15:35:29.483Z",
+  "checked_at": "2026-09-16T15:40:23.851Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 34,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-16T16:05:29.326Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-16T15:25:14.931Z",
-    "usage": 22,
+    "checked_at": "2026-09-16T15:40:23.528Z",
+    "usage": 21,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-16T15:40:14.931Z",
+    "next_check_at": "2026-09-16T15:55:23.528Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-16T16:05:23.033Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "694-yall-watched-last-night.json",
-      "id": "694-yall-watched-last-night",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18142888603565840"
-    },
-    {
-      "file": "694-yall-watched-last-night.json",
-      "id": "694-yall-watched-last-night",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18045886622810782",
-      "content_type": "video"
+      "file": "queue/695-sheeesh-the-boy-really-dropped-150-racks-on-iron-man-suits-for-h.json",
+      "id": "695-sheeesh-the-boy-really-dropped-150-racks-on-iron-man-suits-for-h",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Wednesday, 16-Sep-26 08:40:23 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AwdNXZjp4hmiWQ6Bu6expVi\"}}"
     }
   ],
-  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

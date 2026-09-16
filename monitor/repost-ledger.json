@@ -9436,6 +9436,18 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/reel/DdWv7ahEZvf/",
       "view_count": 0
+    },
+    "DdWsE2eRO4X": {
+      "seen_at": "2026-09-16T17:00:41.991Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdWsE2eRO4X/",
+      "view_count": 0
+    },
+    "DdWquy8jhc-": {
+      "seen_at": "2026-09-16T17:00:41.993Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdWquy8jhc-/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -12557,39 +12569,16 @@
       "source_url": "https://www.instagram.com/uproxx/reel/DdT73jVubzD/",
       "queue_id": "704-taking-it-back-to-the-blog-era-caught-s-set-at-a-celebration-of-",
       "video": "media/704-taking-it-back-to-the-blog-era-caught-s-set-at-a-celebration-of-.mp4"
+    },
+    "DdWsE2eRO4X": {
+      "queued_at": "2026-09-16T17:03:27.653Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdWsE2eRO4X/",
+      "queue_id": "705-ceddy-nash-is-a-gatekeeper-who-doesn-t-put-anybody-on",
+      "video": "media/705-ceddy-nash-is-a-gatekeeper-who-doesn-t-put-anybody-on.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-15T18:51:04.014Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/reel/DdUT7Oqiv6P/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdUT7Oqiv6P-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-15T18:52:00.736Z"
-    },
     {
       "started_at": "2026-09-15T18:51:04.014Z",
       "candidates": 48,
@@ -20860,6 +20849,30 @@
         ]
       },
       "finished_at": "2026-09-16T16:54:00.191Z"
+    },
+    {
+      "started_at": "2026-09-16T16:59:53.817Z",
+      "candidates": 36,
+      "queued": [
+        "705-ceddy-nash-is-a-gatekeeper-who-doesn-t-put-anybody-on"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 8,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-16T17:03:27.653Z"
     }
   ],
   "vip_pending": {

@@ -12517,39 +12517,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdWhMl9oTCw/",
       "queue_id": "700-drake-champagnepapi-brought-his-goth-baddie-girlfriend-pinkchyu-",
       "video": "media/700-drake-champagnepapi-brought-his-goth-baddie-girlfriend-pinkchyu-.mp4"
+    },
+    "DdWkW38u8jc": {
+      "queued_at": "2026-09-16T16:21:50.924Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdWkW38u8jc/",
+      "queue_id": "701-yeat-yeat-n-the-boy-havent-missed-yet",
+      "video": "media/701-yeat-yeat-n-the-boy-havent-missed-yet.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-15T18:33:24.054Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/reel/DdUT7Oqiv6P/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdUT7Oqiv6P-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-15T18:34:20.711Z"
-    },
     {
       "started_at": "2026-09-15T18:33:24.054Z",
       "candidates": 48,
@@ -20831,6 +20808,31 @@
         ]
       },
       "finished_at": "2026-09-16T16:14:44.657Z"
+    },
+    {
+      "started_at": "2026-09-16T16:20:01.581Z",
+      "candidates": 48,
+      "queued": [
+        "701-yeat-yeat-n-the-boy-havent-missed-yet"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 5,
+        "needed": 19
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-16T16:21:50.924Z"
     }
   ],
   "vip_pending": {

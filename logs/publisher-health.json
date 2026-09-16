@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T20:51:52.936Z",
+  "checked_at": "2026-09-16T20:57:02.270Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-16T20:51:51.073Z",
-    "usage": 18,
+    "checked_at": "2026-09-16T20:56:56.408Z",
+    "usage": 19,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-16T21:06:51.073Z",
+    "next_check_at": "2026-09-16T21:11:56.408Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 18,
     "instagram_remaining": 30,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-16T20:51:48.327Z",
+    "next_feed_eligible_at": "2026-09-16T21:27:02.156Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-16T20:46:42.835Z",
-    "usage": 21,
+    "usage": 22,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-16T21:01:42.835Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-16T20:51:39.472Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-16T21:26:55.249Z",
+  "publications": [
+    {
+      "file": "703-lil-durk-lildurk-s-mom-blames-herself-for-durk-going-to-prison-a.json",
+      "id": "703-lil-durk-lildurk-s-mom-blames-herself-for-durk-going-to-prison-a",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17995461756010575"
+    },
+    {
+      "file": "703-lil-durk-lildurk-s-mom-blames-herself-for-durk-going-to-prison-a.json",
+      "id": "703-lil-durk-lildurk-s-mom-blames-herself-for-durk-going-to-prison-a",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18104094371523762",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

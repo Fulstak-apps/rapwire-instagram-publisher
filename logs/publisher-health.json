@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T17:53:59.609Z",
+  "checked_at": "2026-09-16T17:59:20.901Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-16T17:53:57.919Z",
-    "usage": 14,
+    "checked_at": "2026-09-16T17:59:12.087Z",
+    "usage": 15,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-16T18:08:57.919Z",
+    "next_check_at": "2026-09-16T18:14:12.087Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 14,
     "instagram_remaining": 34,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-16T17:53:50.873Z",
+    "next_feed_eligible_at": "2026-09-16T18:29:20.687Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-16T17:43:52.057Z",
+    "checked_at": "2026-09-16T17:59:02.605Z",
     "usage": 21,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-16T17:58:52.057Z",
+    "next_check_at": "2026-09-16T18:14:02.605Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-16T17:53:41.300Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-16T18:29:10.951Z",
+  "publications": [
+    {
+      "file": "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by.json",
+      "id": "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18092723558142083"
+    },
+    {
+      "file": "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by.json",
+      "id": "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18122439187845178",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

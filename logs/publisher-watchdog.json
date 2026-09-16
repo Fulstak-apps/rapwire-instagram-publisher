@@ -1,14 +1,21 @@
 {
   "overdue": false,
-  "health_stale": true,
+  "health_stale": false,
   "processing": [],
   "blocked": false,
-  "threads_pending": false,
+  "threads_pending": true,
   "threads_video_overdue": false,
   "threads_blocked": false,
-  "ready": [],
+  "ready": [
+    "696-otf-dede-and-browneyez-update-part-1",
+    "697-petty-nash-not-ceddy-nash-when-that-prosecutor-did-his-final-clo",
+    "698-drake-champagnepapi-kicked-off-his-fear-of-missing-out-stream-by",
+    "699-a-yn-from-chiraq-tried-robbing-man-from-the-gas-station-but-he-f",
+    "700-drake-champagnepapi-brought-his-goth-baddie-girlfriend-pinkchyu-",
+    "701-yeat-yeat-n-the-boy-havent-missed-yet"
+  ],
   "dispatch": false,
   "reason": "within_pacing_window",
-  "checked_at": "2026-09-16T12:01:30.620Z",
+  "checked_at": "2026-09-16T16:35:00.283Z",
   "deferred": []
 }

@@ -410,7 +410,10 @@ async function syncRemotePreservingLedger() {
     for (let attempt = 1; attempt <= 8; attempt += 1) {
       try {
         await git("fetch", "origin", "main");
-        await git("rebase", "origin/main");
+        // Publication commits can legitimately finalize a queue record while
+        // this collector is preparing the same item.  Prefer the remote
+        // record during rebase so a published item cannot deadlock collection.
+        await git("rebase", "-X", "theirs", "origin/main");
         await git("push", "origin", "HEAD:main");
         lastError = null;
         break;

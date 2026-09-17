@@ -476,7 +476,7 @@ async function commitAndPush(createdIds) {
   for (let attempt = 1; attempt <= 8; attempt += 1) {
     try {
       await git("fetch", "origin", "main");
-      await git("rebase", "origin/main");
+      await git("rebase", "-X", "theirs", "origin/main");
       await git("push", "origin", "HEAD:main");
       return;
     } catch (error) {

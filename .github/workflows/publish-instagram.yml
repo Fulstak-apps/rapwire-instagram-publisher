@@ -116,6 +116,10 @@ jobs:
           MAX_FEED_POSTS_PER_RUN: "1"
         run: node scripts/publish-instagram.mjs
 
+      - name: Remove confirmed published media from repository
+        if: ${{ always() }}
+        run: python scripts/cleanup-published-media.py
+
       - name: Save publication log
         if: ${{ always() }}
         run: bash scripts/save-publication-state.sh

@@ -29,6 +29,7 @@ let threadsAuthError = threadsAuthAvailable ? "" : "Threads credential or user I
 const instagramBase = "https://graph.instagram.com";
 const threadsBase = "https://graph.threads.net/v1.0";
 const facebookBase = "https://graph.facebook.com/v26.0";
+const root = path.resolve(".");
 const queueDir = "queue";
 const logsDir = "logs";
 
@@ -265,6 +266,32 @@ const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, mil
 const requestTimeoutMs = 90_000;
 const signature = "@Rapwire247";
 const mediaUrl = (relativePath) => `https://raw.githubusercontent.com/${repository}/${refName}/${relativePath}`;
+
+// Source media is needed until every required feed delivery has been confirmed.
+// Once Instagram and Threads both have durable media IDs, the raw GitHub asset
+// is no longer needed and can be removed safely. Queue metadata and publication
+// IDs remain so reconciliation, dedupe, and reporting continue to work. Cleanup
+// is best-effort: a deletion failure must never turn a successful post into a
+// failed run or block the next item.
+async function cleanupPublishedMedia(item, itemPath) {
+  if (item.media_cleanup_at || item.status !== 'published'
+    || !item.instagram_media_id || !item.threads_media_id || !item.video) return false;
+  const mediaPath = path.resolve(root, item.video);
+  try {
+    await fs.rm(mediaPath, { force: true });
+    item.media_cleanup_at = new Date().toISOString();
+    item.media_cleanup_status = 'deleted_after_confirmed_publication';
+    await save(itemPath, item);
+    console.log(`Deleted published media ${item.video}`);
+    return true;
+  } catch (error) {
+    item.media_cleanup_status = 'pending';
+    item.media_cleanup_error = error.message;
+    await save(itemPath, item).catch(() => {});
+    console.warn(`Media cleanup deferred for ${item.id}: ${error.message}`);
+    return false;
+  }
+}
 
 async function refreshQuota(force = false) {
   if (!force && !instagramCycleDue) return;
@@ -1004,6 +1031,7 @@ for (const file of files) {
   }
 
   await deliverThreads(item, itemPath, file);
+  await cleanupPublishedMedia(item, itemPath);
 }
 
 await compactAttemptLogIfNeeded();

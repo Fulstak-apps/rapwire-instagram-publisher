@@ -124,5 +124,7 @@
   "threads_replay_publish_requested_at": "2026-09-11T10:44:30.577Z",
   "threads_replay_media_id": "18104002253248275",
   "threads_replay_published_at": "2026-09-11T10:44:37.314Z",
-  "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 11-Sep-26 13:00:00 PDT. The current time is Saturday, 12-Sep-26 10:36:38 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A44Go68Mn5b-s62UFMjFmDt\"}}"
+  "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Friday, 11-Sep-26 13:00:00 PDT. The current time is Saturday, 12-Sep-26 10:36:38 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A44Go68Mn5b-s62UFMjFmDt\"}}",
+  "media_cleanup_at": "2026-09-17T04:01:14.828Z",
+  "media_cleanup_status": "deleted_after_confirmed_publication"
 }

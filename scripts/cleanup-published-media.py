@@ -2,8 +2,9 @@
 """Remove repository media only after both feed publications are confirmed."""
 import json
 import pathlib
-import re
+import shutil
 import subprocess
+import time
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 QUEUE = ROOT / "queue"
@@ -39,11 +40,22 @@ result = subprocess.run(
 if result.returncode != 0:
     raise SystemExit(result.stderr.strip() or "git rm failed")
 
-# Remove materialized copies too; sparse checkouts normally have none.
+# Move materialized copies to the user's macOS Trash when available. The
+# GitHub runner has no user Trash, so it simply has no local copy to move.
+trash = pathlib.Path.home() / ".Trash"
+trash.mkdir(parents=True, exist_ok=True)
 removed = 0
+trashed = 0
 for value in paths:
     path = ROOT / value
     if path.is_file():
-        path.unlink()
+        destination = trash / path.name
+        if destination.exists():
+            destination = trash / f"{path.stem}-{int(time.time())}{path.suffix}"
+        try:
+            shutil.move(str(path), str(destination))
+            trashed += 1
+        except OSError:
+            path.unlink()
         removed += 1
-print(f"Published media cleanup: untracked {len(paths)} confirmed asset(s); removed {removed} local file(s).")
+print(f"Published media cleanup: untracked {len(paths)} confirmed asset(s); moved {trashed} local file(s) to Trash; removed {removed - trashed} fallback file(s).")

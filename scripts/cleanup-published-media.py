@@ -31,7 +31,7 @@ if not paths:
     raise SystemExit(0)
 
 result = subprocess.run(
-    ["git", "rm", "--cached", "--ignore-unmatch", "--", *sorted(paths)],
+    ["git", "rm", "--cached", "--sparse", "--ignore-unmatch", "--", *sorted(paths)],
     cwd=ROOT,
     text=True,
     capture_output=True,

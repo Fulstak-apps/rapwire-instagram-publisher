@@ -114,6 +114,7 @@ jobs:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           PUBLISH_INSTAGRAM_STORIES: "false"
           MAX_FEED_POSTS_PER_RUN: "1"
+          RAPWIRE_SKIP_PACING_GUARD: "1"
         run: node scripts/publish-instagram.mjs
 
       - name: Remove confirmed published media from repository

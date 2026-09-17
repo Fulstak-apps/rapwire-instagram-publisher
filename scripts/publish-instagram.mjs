@@ -250,7 +250,7 @@ const recoveryAuthorization = await readStateJson(path.join(logsDir, 'instagram-
 const pacing = await readStateJson(pacingPath, {}, "publisher-pacing");
 
 const runStartedAt = new Date().toISOString();
-if (Date.now() - Date.parse(pacing.last_run_at || "") < THREADS_INTERVAL_MS) {
+if (process.env.RAPWIRE_SKIP_PACING_GUARD !== "1" && Date.now() - Date.parse(pacing.last_run_at || "") < THREADS_INTERVAL_MS) {
   console.log("One-minute scheduler interval has not elapsed; no platform requests made.");
   process.exit(0);
 }

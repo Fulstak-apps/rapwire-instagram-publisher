@@ -10390,6 +10390,24 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/reel/Ddb5VSzs93z/",
       "view_count": 0
+    },
+    "Ddb7FeVjsGN": {
+      "seen_at": "2026-09-18T17:05:12.036Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Ddb7FeVjsGN/",
+      "view_count": 0
+    },
+    "Ddb6n4vEZoK": {
+      "seen_at": "2026-09-18T17:11:13.511Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Ddb6n4vEZoK/",
+      "view_count": 0
+    },
+    "Ddb7tFmAcCg": {
+      "seen_at": "2026-09-18T17:22:05.260Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Ddb7tFmAcCg/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -13713,142 +13731,16 @@
       "source_url": "https://www.instagram.com/xxl/reel/Ddb5VSzs93z/",
       "queue_id": "733-jeweler-alex-moss-shows-of-drake-champagnepapi-s-new-pink-ovo-wo",
       "video": "media/733-jeweler-alex-moss-shows-of-drake-champagnepapi-s-new-pink-ovo-wo.mp4"
+    },
+    "Ddb7tFmAcCg": {
+      "queued_at": "2026-09-18T17:22:31.324Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Ddb7tFmAcCg/",
+      "queue_id": "734-fridayy-drops-the-visuals-to-haiku-off-his-new-album-tension",
+      "video": "media/734-fridayy-drops-the-visuals-to-haiku-off-his-new-album-tension.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-15T23:52:28.658Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/reel/DdUT7Oqiv6P/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdUT7Oqiv6P-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-15T23:53:24.539Z"
-    },
-    {
-      "started_at": "2026-09-15T23:52:28.658Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/reel/DdUT7Oqiv6P/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdUT7Oqiv6P-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-15T23:53:24.539Z"
-    },
-    {
-      "started_at": "2026-09-15T23:58:25.654Z",
-      "candidates": 36,
-      "queued": [
-        "686-bacc-to-the-gym-where-i-need-to-be"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-15T23:59:40.730Z"
-    },
-    {
-      "started_at": "2026-09-15T23:58:25.654Z",
-      "candidates": 36,
-      "queued": [
-        "686-bacc-to-the-gym-where-i-need-to-be"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-15T23:59:40.730Z"
-    },
-    {
-      "started_at": "2026-09-16T00:04:53.611Z",
-      "candidates": 48,
-      "queued": [
-        "687-bloodhound-q50-pressing-n3on-to-say-free-jaaybo-on-stream"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 12,
-        "available": 1,
-        "needed": 11
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-16T00:05:41.226Z"
-    },
     {
       "started_at": "2026-09-16T00:04:53.611Z",
       "candidates": 48,
@@ -21937,6 +21829,134 @@
         ]
       },
       "finished_at": "2026-09-18T16:53:52.689Z"
+    },
+    {
+      "started_at": "2026-09-18T16:59:08.957Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 8,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-18T16:59:27.715Z"
+    },
+    {
+      "started_at": "2026-09-18T17:04:28.906Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdZ6EgpA4yb/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
+          "stage": "queue",
+          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
+        }
+      ],
+      "video_buffer": {
+        "target": 24,
+        "available": 8,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-18T17:05:37.127Z"
+    },
+    {
+      "started_at": "2026-09-18T17:10:38.113Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 8,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-18T17:11:13.516Z"
+    },
+    {
+      "started_at": "2026-09-18T17:16:14.472Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 8,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-18T17:16:31.178Z"
+    },
+    {
+      "started_at": "2026-09-18T17:21:32.488Z",
+      "candidates": 48,
+      "queued": [
+        "734-fridayy-drops-the-visuals-to-haiku-off-his-new-album-tension"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 8,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-18T17:22:31.324Z"
     }
   ],
   "vip_pending": {

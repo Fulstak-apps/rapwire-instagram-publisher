@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T07:57:00.227Z",
+  "checked_at": "2026-09-18T08:01:52.098Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 10,
-    "instagram_remaining": 38,
+    "instagram_usage": 11,
+    "instagram_remaining": 37,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T08:26:59.991Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,24 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T08:21:59.915Z",
-  "publications": [
-    {
-      "file": "717-rihanna-was-glowing-while-spending-a-wholesome-night-with-her-fr.json",
-      "id": "717-rihanna-was-glowing-while-spending-a-wholesome-night-with-her-fr",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18112989080012450",
-      "content_type": "video"
-    }
-  ],
-  "failures": [
-    {
-      "file": "queue/717-rihanna-was-glowing-while-spending-a-wholesome-night-with-her-fr.json",
-      "id": "717-rihanna-was-glowing-while-spending-a-wholesome-night-with-her-fr",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 00:56:53 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AtKHaO4Q6juBEgZ88FEpAKR\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

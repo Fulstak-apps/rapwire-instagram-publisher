@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T21:56:41.206Z",
+  "checked_at": "2026-09-18T22:16:52.803Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T21:51:35.619Z",
+    "checked_at": "2026-09-18T22:16:51.778Z",
     "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T22:06:35.619Z",
+    "next_check_at": "2026-09-18T22:31:51.778Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-18T21:56:41.138Z",
+    "checked_at": "2026-09-18T22:16:52.123Z",
     "usage": 26,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-18T22:11:41.138Z",
+    "next_check_at": "2026-09-18T22:31:52.123Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T22:16:41.342Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/734-fridayy-drops-the-visuals-to-haiku-off-his-new-album-tension.json",
+      "id": "734-fridayy-drops-the-visuals-to-haiku-off-his-new-album-tension",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 15:16:52 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AIzqHtUyDObp_SbYLT6F3c3\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

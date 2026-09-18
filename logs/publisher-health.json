@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T19:20:15.163Z",
+  "checked_at": "2026-09-18T19:25:17.914Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T19:20:13.831Z",
-    "usage": 21,
+    "checked_at": "2026-09-18T19:25:12.283Z",
+    "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T19:35:13.831Z",
+    "next_check_at": "2026-09-18T19:40:12.283Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 21,
     "instagram_remaining": 27,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-18T19:15:08.888Z",
+    "next_feed_eligible_at": "2026-09-18T19:55:17.704Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-18T19:09:49.582Z",
-    "usage": 21,
+    "checked_at": "2026-09-18T19:25:05.103Z",
+    "usage": 22,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-18T19:24:49.582Z",
+    "next_check_at": "2026-09-18T19:40:05.103Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T19:15:02.390Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-18T19:55:11.457Z",
+  "publications": [
+    {
+      "file": "729-gas-station-security-guards-where-bioodhound-q50-was-sh-t-reveal.json",
+      "id": "729-gas-station-security-guards-where-bioodhound-q50-was-sh-t-reveal",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18141582553582751"
+    },
+    {
+      "file": "729-gas-station-security-guards-where-bioodhound-q50-was-sh-t-reveal.json",
+      "id": "729-gas-station-security-guards-where-bioodhound-q50-was-sh-t-reveal",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18125272531859523",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

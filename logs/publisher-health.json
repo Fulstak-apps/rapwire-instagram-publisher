@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T09:32:52.548Z",
+  "checked_at": "2026-09-18T09:38:02.797Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T09:22:41.213Z",
+    "checked_at": "2026-09-18T09:37:55.521Z",
     "usage": 13,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T09:37:41.213Z",
+    "next_check_at": "2026-09-18T09:52:55.521Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 35,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T09:37:36.544Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-18T09:27:51.643Z",
-    "usage": 13,
+    "usage": 14,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-18T09:42:51.643Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T09:32:37.849Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-18T10:08:02.615Z",
+  "publications": [
+    {
+      "file": "720-denzel-curry-took-the-sound-check-challenge-with-having-recently.json",
+      "id": "720-denzel-curry-took-the-sound-check-challenge-with-having-recently",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18344780002280545"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

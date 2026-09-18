@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T16:18:21.268Z",
+  "checked_at": "2026-09-18T16:23:02.966Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 16,
-    "instagram_remaining": 32,
+    "instagram_usage": 17,
+    "instagram_remaining": 31,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T16:48:21.135Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-18T16:03:03.832Z",
+    "checked_at": "2026-09-18T16:23:02.902Z",
     "usage": 17,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-18T16:18:03.832Z",
+    "next_check_at": "2026-09-18T16:38:02.902Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T16:48:12.078Z",
-  "publications": [
-    {
-      "file": "724-cam-newton-needs-to-be-called-out-over-this-part-1.json",
-      "id": "724-cam-newton-needs-to-be-called-out-over-this-part-1",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18144020890584514"
-    },
-    {
-      "file": "724-cam-newton-needs-to-be-called-out-over-this-part-1.json",
-      "id": "724-cam-newton-needs-to-be-called-out-over-this-part-1",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18097455140333439",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

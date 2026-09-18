@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T20:30:45.172Z",
+  "checked_at": "2026-09-18T20:35:59.166Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T20:20:40.119Z",
+    "checked_at": "2026-09-18T20:35:52.485Z",
     "usage": 23,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T20:35:40.119Z",
+    "next_check_at": "2026-09-18T20:50:52.485Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 25,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T20:30:49.311Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-18T20:25:42.280Z",
-    "usage": 23,
+    "usage": 24,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-18T20:40:42.280Z",
@@ -52,16 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T20:30:40.689Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-09-18T21:05:58.838Z",
+  "publications": [
     {
-      "file": "queue/731-is-back-with-a-heater-the-regime-out-now.json",
+      "file": "731-is-back-with-a-heater-the-regime-out-now.json",
       "id": "731-is-back-with-a-heater-the-regime-out-now",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 13:30:44 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AEjj82Qq48hgMr26cfSJytD\"}}"
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18038655722640792"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

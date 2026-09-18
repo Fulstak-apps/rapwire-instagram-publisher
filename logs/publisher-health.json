@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T22:57:18.271Z",
+  "checked_at": "2026-09-18T23:02:30.405Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T22:57:11.391Z",
-    "usage": 27,
+    "checked_at": "2026-09-18T23:02:23.007Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T23:12:11.391Z",
+    "next_check_at": "2026-09-18T23:17:23.007Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-18T22:57:06.370Z",
+    "next_feed_eligible_at": "2026-09-18T23:32:30.213Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-18T22:47:20.996Z",
+    "checked_at": "2026-09-18T23:02:22.633Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-18T23:02:20.996Z",
+    "next_check_at": "2026-09-18T23:17:22.633Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "735-hiphop-journalist-ceddynash-breaks-the-news-of-the-passing-of-yo.json",
       "id": "735-hiphop-journalist-ceddynash-breaks-the-news-of-the-passing-of-yo",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18333144556277287"
+      "media_id": "18124650272479823",
+      "content_type": "video"
     }
   ],
   "failures": [],

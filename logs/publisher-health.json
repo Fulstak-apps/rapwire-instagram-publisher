@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T02:53:36.175Z",
+  "checked_at": "2026-09-18T02:58:37.007Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T03:00:08.441Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/709-i-m-excited-to-announce-i-m-finally-shooting-with-someone-everyo.json",
-      "id": "709-i-m-excited-to-announce-i-m-finally-shooting-with-someone-everyo",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Thursday, 17-Sep-26 19:53:36 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A4T17vfg8MEmPSEUWSyaAeR\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

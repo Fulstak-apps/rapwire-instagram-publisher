@@ -10108,6 +10108,24 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/DdXzEqMOvw4/",
       "view_count": 0
+    },
+    "DdadSWHxj9a": {
+      "seen_at": "2026-09-18T03:29:42.392Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdadSWHxj9a/",
+      "view_count": 0
+    },
+    "DdaeQmJkUoy": {
+      "seen_at": "2026-09-18T03:35:28.584Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdaeQmJkUoy/",
+      "view_count": 0
+    },
+    "Ddad_OalQHJ": {
+      "seen_at": "2026-09-18T03:35:28.586Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexpop/p/Ddad_OalQHJ/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -13305,87 +13323,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdXwff2RHnN/",
       "queue_id": "715-cam-newton-needs-to-be-called-out-over-this-part-3",
       "video": "media/715-cam-newton-needs-to-be-called-out-over-this-part-3.mp4"
+    },
+    "DdY8an8EQ4Q": {
+      "queued_at": "2026-09-18T03:35:50.255Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/p/DdY8an8EQ4Q/",
+      "queue_id": "716-come-for-the-cars-stay-for-the-music-grand-theft-auto-vi-drops-i",
+      "video": "media/716-come-for-the-cars-stay-for-the-music-grand-theft-auto-vi-drops-i.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-15T19:21:02.204Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdSYquaiGHM/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdSYquaiGHM-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-15T19:22:15.359Z"
-    },
-    {
-      "started_at": "2026-09-15T19:27:16.388Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdTuxUORcCy/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdSu_PFOuzj/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdUEAaWRtZS/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-15T19:28:02.638Z"
-    },
     {
       "started_at": "2026-09-15T19:27:16.388Z",
       "candidates": 41,
@@ -21535,6 +21482,79 @@
         ]
       },
       "finished_at": "2026-09-18T03:23:31.485Z"
+    },
+    {
+      "started_at": "2026-09-18T03:29:11.371Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdaYoleRQcA/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdabItOx9m3/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdadSWHxj9a/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 24,
+        "available": 6,
+        "needed": 18
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-18T03:29:54.446Z"
+    },
+    {
+      "started_at": "2026-09-18T03:34:55.335Z",
+      "candidates": 48,
+      "queued": [
+        "716-come-for-the-cars-stay-for-the-music-grand-theft-auto-vi-drops-i"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 6,
+        "needed": 18
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-18T03:35:50.255Z"
     }
   ],
   "vip_pending": {

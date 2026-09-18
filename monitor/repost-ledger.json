@@ -10774,6 +10774,36 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/reel/Ddcn4l5t8bb/",
       "view_count": 0
+    },
+    "DdcnDBRRAAY": {
+      "seen_at": "2026-09-18T23:39:51.727Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdcnDBRRAAY/",
+      "view_count": 0
+    },
+    "DdcmeQ3xwjy": {
+      "seen_at": "2026-09-18T23:39:51.727Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdcmeQ3xwjy/",
+      "view_count": 0
+    },
+    "DdcljMsxhkp": {
+      "seen_at": "2026-09-18T23:39:51.727Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdcljMsxhkp/",
+      "view_count": 0
+    },
+    "DdcjyNYRWsG": {
+      "seen_at": "2026-09-18T23:39:51.727Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdcjyNYRWsG/",
+      "view_count": 0
+    },
+    "DdcmA41F50d": {
+      "seen_at": "2026-09-18T23:39:51.727Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdcmA41F50d/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -14195,34 +14225,16 @@
       "source_url": "https://www.instagram.com/xxl/reel/Ddcn4l5t8bb/",
       "queue_id": "747-lizzo-getting-glammed-up",
       "video": "media/747-lizzo-getting-glammed-up.mp4"
+    },
+    "DdcnDBRRAAY": {
+      "queued_at": "2026-09-18T23:41:13.805Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdcnDBRRAAY/",
+      "queue_id": "748-trap-lore-ross-got-heated-with-this-answer",
+      "video": "media/748-trap-lore-ross-got-heated-with-this-answer.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-16T03:03:00.266Z",
-      "candidates": 48,
-      "queued": [
-        "689-new-drake-champagnepapi-tour-2027"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-16T03:04:04.531Z"
-    },
     {
       "started_at": "2026-09-16T03:09:15.679Z",
       "candidates": 36,
@@ -22447,6 +22459,30 @@
         ]
       },
       "finished_at": "2026-09-18T23:34:19.671Z"
+    },
+    {
+      "started_at": "2026-09-18T23:39:28.615Z",
+      "candidates": 36,
+      "queued": [
+        "748-trap-lore-ross-got-heated-with-this-answer"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 12,
+        "needed": 12
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-18T23:41:13.805Z"
     }
   ],
   "vip_pending": {

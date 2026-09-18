@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T16:48:24.147Z",
+  "checked_at": "2026-09-18T16:53:35.345Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T16:48:22.533Z",
-    "usage": 17,
+    "checked_at": "2026-09-18T16:53:29.115Z",
+    "usage": 18,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T17:03:22.533Z",
+    "next_check_at": "2026-09-18T17:08:29.115Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 17,
     "instagram_remaining": 31,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-18T16:48:21.135Z",
+    "next_feed_eligible_at": "2026-09-18T17:23:35.213Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-18T16:38:16.518Z",
-    "usage": 17,
+    "checked_at": "2026-09-18T16:53:23.194Z",
+    "usage": 18,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-18T16:53:16.518Z",
+    "next_check_at": "2026-09-18T17:08:23.194Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T16:48:12.078Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-18T17:23:28.603Z",
+  "publications": [
+    {
+      "file": "725-ceddy-nash-is-a-gatekeeper-who-doesn-t-put-anybody-on-final-part.json",
+      "id": "725-ceddy-nash-is-a-gatekeeper-who-doesn-t-put-anybody-on-final-part",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18157844848441575"
+    },
+    {
+      "file": "725-ceddy-nash-is-a-gatekeeper-who-doesn-t-put-anybody-on-final-part.json",
+      "id": "725-ceddy-nash-is-a-gatekeeper-who-doesn-t-put-anybody-on-final-part",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18485809624108053",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

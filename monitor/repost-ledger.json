@@ -10714,6 +10714,48 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/reel/DdcertLAnKb/",
       "view_count": 0
+    },
+    "DdchoOxDjAI": {
+      "seen_at": "2026-09-18T22:50:58.409Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexshop/p/DdchoOxDjAI/",
+      "view_count": 0
+    },
+    "Ddcc1BDD1ee": {
+      "seen_at": "2026-09-18T22:50:58.409Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Ddcc1BDD1ee/",
+      "view_count": 0
+    },
+    "DdcZ5mzipH4": {
+      "seen_at": "2026-09-18T22:50:58.409Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DdcZ5mzipH4/",
+      "view_count": 0
+    },
+    "DdcgPMAGdZg": {
+      "seen_at": "2026-09-18T22:50:58.409Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdcgPMAGdZg/",
+      "view_count": 0
+    },
+    "DdcdXFBJQxb": {
+      "seen_at": "2026-09-18T22:50:58.409Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/reel/DdcdXFBJQxb/",
+      "view_count": 0
+    },
+    "DdcMprvotkr": {
+      "seen_at": "2026-09-18T22:50:58.409Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdcMprvotkr/",
+      "view_count": 0
+    },
+    "DdcN1zCIJKk": {
+      "seen_at": "2026-09-18T22:50:58.409Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdcN1zCIJKk/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -14107,38 +14149,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DdcertLAnKb/",
       "queue_id": "743-1-of-the-hardest-songs-i-ve-heard-from-a-white-boy",
       "video": "media/743-1-of-the-hardest-songs-i-ve-heard-from-a-white-boy.mp4"
+    },
+    "DdcMprvotkr": {
+      "queued_at": "2026-09-18T22:51:56.958Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdcMprvotkr/",
+      "queue_id": "744-jayda-wayda-told-ddg-she-doesn-t-plan-on-having-any-more-kids-af",
+      "video": "media/744-jayda-wayda-told-ddg-she-doesn-t-plan-on-having-any-more-kids-af.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-16T02:39:38.996Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdU5lSlxe3K/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdU5lSlxe3K-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-16T02:40:26.080Z"
-    },
     {
       "started_at": "2026-09-16T02:45:26.877Z",
       "candidates": 41,
@@ -22366,6 +22386,31 @@
         ]
       },
       "finished_at": "2026-09-18T22:44:49.048Z"
+    },
+    {
+      "started_at": "2026-09-18T22:50:09.306Z",
+      "candidates": 48,
+      "queued": [
+        "744-jayda-wayda-told-ddg-she-doesn-t-plan-on-having-any-more-kids-af"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 9,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-18T22:51:56.958Z"
     }
   ],
   "vip_pending": {

@@ -10210,6 +10210,30 @@
       "source_handle": "hiphopdx",
       "source_url": "https://www.instagram.com/uproxx/reel/DdbjGBZRcFT/",
       "view_count": 0
+    },
+    "DdZexBUF_vO": {
+      "seen_at": "2026-09-18T14:38:18.221Z",
+      "source_handle": "rockstargames",
+      "source_url": "https://www.instagram.com/rockstargames/p/DdZexBUF_vO/",
+      "view_count": 0
+    },
+    "DdbhWb1l6m_": {
+      "seen_at": "2026-09-18T14:38:18.222Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdbhWb1l6m_/",
+      "view_count": 0
+    },
+    "DdbXJz6BRlK": {
+      "seen_at": "2026-09-18T14:38:18.222Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/DdbXJz6BRlK/",
+      "view_count": 0
+    },
+    "DdbTy8ost66": {
+      "seen_at": "2026-09-18T14:38:18.222Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/DdbTy8ost66/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -13484,39 +13508,16 @@
       "source_url": "https://www.instagram.com/uproxx/reel/DdbjGBZRcFT/",
       "queue_id": "726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-",
       "video": "media/726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-.mp4"
+    },
+    "DdbXJz6BRlK": {
+      "queued_at": "2026-09-18T14:39:05.867Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/DdbXJz6BRlK/",
+      "queue_id": "727-fancy-a-spin-tiffany-just-don-t-expect-the-scenic-route-stay-tun",
+      "video": "media/727-fancy-a-spin-tiffany-just-don-t-expect-the-scenic-route-stay-tun.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-15T22:42:47.664Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdUy8S0G0EX/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-15T22:43:23.498Z"
-    },
     {
       "started_at": "2026-09-15T22:42:47.664Z",
       "candidates": 48,
@@ -21750,6 +21751,30 @@
         ]
       },
       "finished_at": "2026-09-18T14:32:16.212Z"
+    },
+    {
+      "started_at": "2026-09-18T14:37:59.552Z",
+      "candidates": 36,
+      "queued": [
+        "727-fancy-a-spin-tiffany-just-don-t-expect-the-scenic-route-stay-tun"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 5,
+        "needed": 19
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-18T14:39:05.867Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T04:24:30.351Z",
+  "checked_at": "2026-09-18T04:29:36.680Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T04:49:37.795Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/712-thought-nobody-could-match-him-in-a-rap-battle-until-he-met-the-.json",
-      "id": "712-thought-nobody-could-match-him-in-a-rap-battle-until-he-met-the-",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Thursday, 17-Sep-26 21:24:30 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ASuCm8HDqTyunN4dmzTzp0q\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

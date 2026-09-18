@@ -12595,38 +12595,22 @@
       "source_url": "https://www.instagram.com/uproxx/reel/DdWx7DbRift/",
       "queue_id": "706-he-winning-right-now-to-this-day-with-that-song-for-sound-check-",
       "video": "media/706-he-winning-right-now-to-this-day-with-that-song-for-sound-check-.mp4"
+    },
+    "DdUFYlSRIpf": {
+      "queue_id": "707-lil-durk-lildurk-still-is-in-big-trouble-part-4-of-4",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdUFYlSRIpf/",
+      "source_handle": "ceddynash",
+      "video": "media/707-lil-durk-lildurk-still-is-in-big-trouble-part-4-of-4.mp4"
+    },
+    "DdXye7LRHki": {
+      "queued_at": "2026-09-18T02:25:49.643Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdXye7LRHki/",
+      "queue_id": "708-that-ain-t-why-martin-luther-king-died",
+      "video": "media/708-that-ain-t-why-martin-luther-king-died.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-15T18:57:01.761Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdUL_QWRc2Z/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdUL_QWRc2Z-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-15T18:57:51.631Z"
-    },
     {
       "started_at": "2026-09-15T18:57:01.761Z",
       "candidates": 36,
@@ -20887,6 +20871,21 @@
         ]
       },
       "finished_at": "2026-09-16T17:12:43.182Z"
+    },
+    {
+      "started_at": "2026-09-18T02:24:34.719Z",
+      "candidates": 0,
+      "queued": [
+        "708-that-ain-t-why-martin-luther-king-died"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 0,
+        "needed": 24
+      },
+      "mode": "cached_reserve",
+      "finished_at": "2026-09-18T02:25:49.643Z"
     }
   ],
   "vip_pending": {

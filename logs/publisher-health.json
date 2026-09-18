@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T18:45:09.024Z",
+  "checked_at": "2026-09-18T18:49:36.457Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 20,
-    "instagram_remaining": 28,
+    "instagram_usage": 21,
+    "instagram_remaining": 27,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T19:15:08.888Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T19:15:02.390Z",
-  "publications": [
-    {
-      "file": "728-yo-gotti-brother-has-died-from-overdose-in-memphis-today-he-was-.json",
-      "id": "728-yo-gotti-brother-has-died-from-overdose-in-memphis-today-he-was-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18020808887714963"
-    },
-    {
-      "file": "728-yo-gotti-brother-has-died-from-overdose-in-memphis-today-he-was-.json",
-      "id": "728-yo-gotti-brother-has-died-from-overdose-in-memphis-today-he-was-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18117812614985324",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

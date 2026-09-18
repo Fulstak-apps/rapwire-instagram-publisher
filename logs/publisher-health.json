@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T21:26:20.855Z",
+  "checked_at": "2026-09-18T21:31:26.791Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T21:16:14.767Z",
+    "checked_at": "2026-09-18T21:31:26.633Z",
     "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T21:31:14.767Z",
+    "next_check_at": "2026-09-18T21:46:26.633Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T21:41:27.313Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/733-jeweler-alex-moss-shows-of-drake-champagnepapi-s-new-pink-ovo-wo.json",
+      "id": "733-jeweler-alex-moss-shows-of-drake-champagnepapi-s-new-pink-ovo-wo",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 14:31:26 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AeaJgoR-RfOMZqOzj2Y-ygs\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

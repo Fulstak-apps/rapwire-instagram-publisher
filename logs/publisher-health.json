@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T08:22:05.558Z",
+  "checked_at": "2026-09-18T08:27:14.352Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T08:11:56.128Z",
+    "checked_at": "2026-09-18T08:27:07.238Z",
     "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T08:26:56.128Z",
+    "next_check_at": "2026-09-18T08:42:07.238Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 37,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T08:26:59.991Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-18T08:11:56.331Z",
-    "usage": 11,
+    "checked_at": "2026-09-18T08:27:07.171Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-18T08:26:56.331Z",
+    "next_check_at": "2026-09-18T08:42:07.171Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T08:21:59.915Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-18T08:57:14.065Z",
+  "publications": [
+    {
+      "file": "718-one-night-decades-of-west-coast-hip-hop-history-this-past-weeken.json",
+      "id": "718-one-night-decades-of-west-coast-hip-hop-history-this-past-weeken",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17920622259226073"
+    }
+  ],
+  "failures": [
+    {
+      "file": "queue/718-one-night-decades-of-west-coast-hip-hop-history-this-past-weeken.json",
+      "id": "718-one-night-decades-of-west-coast-hip-hop-history-this-past-weeken",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 01:27:07 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AutXcxPSAv0CPaEqyK4QTuH\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

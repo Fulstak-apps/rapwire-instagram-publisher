@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T07:26:30.701Z",
+  "checked_at": "2026-09-18T07:31:33.836Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T07:46:37.003Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/717-rihanna-was-glowing-while-spending-a-wholesome-night-with-her-fr.json",
-      "id": "717-rihanna-was-glowing-while-spending-a-wholesome-night-with-her-fr",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 00:26:30 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A0WEclKD-T0dziLt3u1dCIs\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

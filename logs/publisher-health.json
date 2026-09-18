@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T04:49:49.259Z",
+  "checked_at": "2026-09-18T04:55:03.656Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T04:49:47.791Z",
-    "usage": 5,
+    "checked_at": "2026-09-18T04:54:56.788Z",
+    "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T05:04:47.791Z",
+    "next_check_at": "2026-09-18T05:09:56.788Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 5,
     "instagram_remaining": 43,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-18T04:49:45.837Z",
+    "next_feed_eligible_at": "2026-09-18T05:25:03.539Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-18T04:49:47.633Z",
-    "usage": 5,
+    "usage": 6,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-18T05:04:47.633Z",
@@ -52,8 +52,32 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T04:49:37.795Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-18T05:24:56.021Z",
+  "publications": [
+    {
+      "file": "712-thought-nobody-could-match-him-in-a-rap-battle-until-he-met-the-.json",
+      "id": "712-thought-nobody-could-match-him-in-a-rap-battle-until-he-met-the-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18031906601893492"
+    },
+    {
+      "file": "712-thought-nobody-could-match-him-in-a-rap-battle-until-he-met-the-.json",
+      "id": "712-thought-nobody-could-match-him-in-a-rap-battle-until-he-met-the-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18631889686020909",
+      "content_type": "video"
+    }
+  ],
+  "failures": [
+    {
+      "file": "queue/712-thought-nobody-could-match-him-in-a-rap-battle-until-he-met-the-.json",
+      "id": "712-thought-nobody-could-match-him-in-a-rap-battle-until-he-met-the-",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Thursday, 17-Sep-26 21:54:49 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AjyzvMimsCL5nDEkztnVjXj\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

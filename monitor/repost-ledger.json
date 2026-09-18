@@ -10492,6 +10492,30 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/p/DdcHfM_mcBg/",
       "view_count": 0
+    },
+    "DdcIlZTFOtJ": {
+      "seen_at": "2026-09-18T19:00:34.604Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdcIlZTFOtJ/",
+      "view_count": 0
+    },
+    "DdcIt3hIKrP": {
+      "seen_at": "2026-09-18T19:00:34.604Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdcIt3hIKrP/",
+      "view_count": 0
+    },
+    "DdcH80JvpK_": {
+      "seen_at": "2026-09-18T19:06:25.636Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdcH80JvpK_/",
+      "view_count": 0
+    },
+    "DdcJCSTKmAz": {
+      "seen_at": "2026-09-18T19:12:03.840Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/DdcJCSTKmAz/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -13836,97 +13860,16 @@
       "source_url": "https://www.instagram.com/xxl/p/DdcHfM_mcBg/",
       "queue_id": "736-colin-kaepernick-speaks-on-his-fallout-with-jay-z-over-hov-s-nfl",
       "video": "media/736-colin-kaepernick-speaks-on-his-fallout-with-jay-z-over-hov-s-nfl.mp4"
+    },
+    "DdcJCSTKmAz": {
+      "queued_at": "2026-09-18T19:12:59.079Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/DdcJCSTKmAz/",
+      "queue_id": "737-if-you-had-to-pick-one-song-that-represents-the-sound-of-la-what",
+      "video": "media/737-if-you-had-to-pick-one-song-that-represents-the-sound-of-la-what.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-16T00:53:47.133Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/reel/DdUT7Oqiv6P/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdUT7Oqiv6P-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 1,
-        "needed": 11
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-16T00:54:47.404Z"
-    },
-    {
-      "started_at": "2026-09-16T00:59:48.693Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdU5lSlxe3K/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdU5lSlxe3K-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 1,
-        "needed": 11
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-16T01:00:43.393Z"
-    },
-    {
-      "started_at": "2026-09-16T00:59:48.693Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdU5lSlxe3K/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdU5lSlxe3K-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 1,
-        "needed": 11
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-16T01:00:43.393Z"
-    },
     {
       "started_at": "2026-09-16T01:05:44.264Z",
       "candidates": 41,
@@ -22077,6 +22020,115 @@
         ]
       },
       "finished_at": "2026-09-18T18:54:56.018Z"
+    },
+    {
+      "started_at": "2026-09-18T19:00:09.532Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdZ6EgpA4yb/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
+          "stage": "queue",
+          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
+        }
+      ],
+      "video_buffer": {
+        "target": 24,
+        "available": 8,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-18T19:00:59.299Z"
+    },
+    {
+      "started_at": "2026-09-18T19:06:00.137Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdbyISzxGJk/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddb5qOAxuEJ/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdcH80JvpK_/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 24,
+        "available": 8,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-18T19:06:37.112Z"
+    },
+    {
+      "started_at": "2026-09-18T19:11:40.423Z",
+      "candidates": 48,
+      "queued": [
+        "737-if-you-had-to-pick-one-song-that-represents-the-sound-of-la-what"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 8,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-18T19:12:59.079Z"
     }
   ],
   "vip_pending": {

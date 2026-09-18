@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T03:23:51.569Z",
+  "checked_at": "2026-09-18T03:28:58.866Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T03:38:45.444Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/710-resident-evil-red-carpet-premiere-featuring-guest-host-valkyrae-.json",
-      "id": "710-resident-evil-red-carpet-premiere-featuring-guest-host-valkyrae-",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Thursday, 17-Sep-26 20:23:51 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ArQxZwUAYCqrOJst4x5yak_\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

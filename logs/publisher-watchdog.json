@@ -4,20 +4,21 @@
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "732-xxl-s-pass-or-play-is-back-this-isn-t-a-competition-just-putting",
-    "733-jeweler-alex-moss-shows-of-drake-champagnepapi-s-new-pink-ovo-wo",
-    "734-fridayy-drops-the-visuals-to-haiku-off-his-new-album-tension",
     "735-hiphop-journalist-ceddynash-breaks-the-news-of-the-passing-of-yo",
     "736-colin-kaepernick-speaks-on-his-fallout-with-jay-z-over-hov-s-nfl",
     "737-if-you-had-to-pick-one-song-that-represents-the-sound-of-la-what",
     "738-unless-you-ve-been-living-under-a-rock-you-ve-heard-of-tencent-t",
-    "739-az-chike-opens-up-to-about-being-in-rooms-with-kendrick-lamar-ke"
+    "739-az-chike-opens-up-to-about-being-in-rooms-with-kendrick-lamar-ke",
+    "740-fbi-are-officially-investigating-youngboy-and-nba-his-crew-might",
+    "741-video-of-bloodhound-lil-jeff-bragging-about-having-10-bodies-res",
+    "742-lil-durk-lildurk-going-for-bond-part-1",
+    "743-1-of-the-hardest-songs-i-ve-heard-from-a-white-boy"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-18T20:53:22.358Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-18T22:52:03.347Z",
   "deferred": []
 }

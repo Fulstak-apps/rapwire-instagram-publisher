@@ -12,6 +12,27 @@ const gitTimeoutMs = 60_000;
 // maxBuffer failure here used to look like a Git outage and killed every
 // collector pass. Keep the bound finite while allowing the actual ledger.
 const git = (...args) => execFileAsync("git", args, { timeout: gitTimeoutMs, killSignal: "SIGTERM", maxBuffer: 32 * 1024 * 1024 });
+const maxGitHubMediaBytes = 95 * 1024 * 1024;
+
+// GitHub rejects blobs over 100 MB.  Enforce a lower local ceiling before an
+// item becomes a queue commit, so one high-bitrate source Reel can never
+// strand the collector behind an unpushable commit.
+async function constrainMediaForGitHub(mediaPath) {
+  const initial = await fs.stat(mediaPath);
+  if (initial.size <= maxGitHubMediaBytes) return;
+  const tempPath = `${mediaPath}.github-safe.mp4`;
+  for (const crf of [27, 31]) {
+    await fs.rm(tempPath, { force: true });
+    await execFileAsync("ffmpeg", ["-y", "-i", mediaPath, "-map", "0:v:0", "-map", "0:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", String(crf), "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", tempPath], { timeout: 10 * 60_000, maxBuffer: 4 * 1024 * 1024 });
+    const compressed = await fs.stat(tempPath);
+    if (compressed.size <= maxGitHubMediaBytes) {
+      await fs.rename(tempPath, mediaPath);
+      return;
+    }
+  }
+  await fs.rm(tempPath, { force: true });
+  throw new Error(`Video remains too large for GitHub after compression: ${Math.ceil(initial.size / 1024 / 1024)} MB`);
+}
 
 const root = path.resolve(".");
 const ledgerPath = path.join(root, "monitor", "repost-ledger.json");
@@ -292,6 +313,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
   const id = `${String(queueNumber).padStart(3, "0")}-${slugify(headlineSeed)}`;
   const mediaPath = path.join(mediaDir, `${id}.mp4`);
   await fs.copyFile(sourceVideo, mediaPath);
+  await constrainMediaForGitHub(mediaPath);
 
   const { body, caption } = fields;
   const queueItem = {

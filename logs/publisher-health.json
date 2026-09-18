@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T02:27:59.567Z",
+  "checked_at": "2026-09-18T02:30:15.777Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T02:27:58.071Z",
-    "usage": 1,
+    "checked_at": "2026-09-18T02:30:09.301Z",
+    "usage": 2,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T02:42:58.071Z",
+    "next_check_at": "2026-09-18T02:45:09.301Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 1,
     "instagram_remaining": 47,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-17T16:05:59.642Z",
+    "next_feed_eligible_at": "2026-09-18T03:00:15.616Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-18T02:13:07.229Z",
-    "usage": 1,
+    "checked_at": "2026-09-18T02:30:02.354Z",
+    "usage": 2,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-18T02:28:07.229Z",
+    "next_check_at": "2026-09-18T02:45:02.354Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-17T16:05:49.487Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-18T03:00:08.441Z",
+  "publications": [
+    {
+      "file": "708-that-ain-t-why-martin-luther-king-died.json",
+      "id": "708-that-ain-t-why-martin-luther-king-died",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17861704695691989"
+    },
+    {
+      "file": "708-that-ain-t-why-martin-luther-king-died.json",
+      "id": "708-that-ain-t-why-martin-luther-king-died",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18018347831875702",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T07:46:44.916Z",
+  "checked_at": "2026-09-18T07:52:00.234Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T07:41:38.538Z",
+    "checked_at": "2026-09-18T07:51:53.298Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T07:56:38.538Z",
+    "next_check_at": "2026-09-18T08:06:53.298Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 38,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T07:51:41.399Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-18T07:41:39.043Z",
-    "usage": 10,
+    "usage": 11,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-18T07:56:39.043Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T07:46:37.003Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-18T08:21:59.915Z",
+  "publications": [
+    {
+      "file": "717-rihanna-was-glowing-while-spending-a-wholesome-night-with-her-fr.json",
+      "id": "717-rihanna-was-glowing-while-spending-a-wholesome-night-with-her-fr",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18070696163574169"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T21:16:25.734Z",
+  "checked_at": "2026-09-18T21:21:18.573Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 24,
-    "instagram_remaining": 24,
+    "instagram_usage": 25,
+    "instagram_remaining": 23,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T21:46:25.379Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T21:41:27.313Z",
-  "publications": [
-    {
-      "file": "732-xxl-s-pass-or-play-is-back-this-isn-t-a-competition-just-putting.json",
-      "id": "732-xxl-s-pass-or-play-is-back-this-isn-t-a-competition-just-putting",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18147345748477291",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

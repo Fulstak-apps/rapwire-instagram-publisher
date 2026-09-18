@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T07:11:20.908Z",
+  "checked_at": "2026-09-18T07:16:37.234Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T07:01:11.584Z",
+    "checked_at": "2026-09-18T07:16:29.262Z",
     "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T07:16:11.584Z",
+    "next_check_at": "2026-09-18T07:31:29.262Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 39,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T07:11:24.839Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-18T07:11:20.256Z",
-    "usage": 9,
+    "usage": 10,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-18T07:26:20.256Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T07:11:17.942Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-18T07:46:37.003Z",
+  "publications": [
+    {
+      "file": "716-come-for-the-cars-stay-for-the-music-grand-theft-auto-vi-drops-i.json",
+      "id": "716-come-for-the-cars-stay-for-the-music-grand-theft-auto-vi-drops-i",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18133025185563056"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

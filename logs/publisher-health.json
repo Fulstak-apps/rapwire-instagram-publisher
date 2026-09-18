@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T05:30:21.529Z",
+  "checked_at": "2026-09-18T05:35:13.451Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 6,
-    "instagram_remaining": 42,
+    "instagram_usage": 7,
+    "instagram_remaining": 41,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T06:00:21.381Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T06:00:14.652Z",
-  "publications": [
-    {
-      "file": "713-cam-newton-needs-to-be-called-out-over-this-part-4.json",
-      "id": "713-cam-newton-needs-to-be-called-out-over-this-part-4",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17971407651135162"
-    },
-    {
-      "file": "713-cam-newton-needs-to-be-called-out-over-this-part-4.json",
-      "id": "713-cam-newton-needs-to-be-called-out-over-this-part-4",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18116021242972180",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

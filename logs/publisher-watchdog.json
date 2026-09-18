@@ -1,22 +1,22 @@
 {
-  "overdue": true,
+  "overdue": false,
   "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "722-shot-entirely-in-first-person-bad-day-at-the-office-follows-amne",
-    "723-cam-newton-needs-to-be-called-out-over-this-part-2",
-    "724-cam-newton-needs-to-be-called-out-over-this-part-1",
-    "725-ceddy-nash-is-a-gatekeeper-who-doesn-t-put-anybody-on-final-part",
-    "726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-",
-    "727-fancy-a-spin-tiffany-just-don-t-expect-the-scenic-route-stay-tun",
-    "728-yo-gotti-brother-has-died-from-overdose-in-memphis-today-he-was-"
+    "728-yo-gotti-brother-has-died-from-overdose-in-memphis-today-he-was-",
+    "729-gas-station-security-guards-where-bioodhound-q50-was-sh-t-reveal",
+    "730-rap-is-a-young-man-s-game-fact-or-fiction-e-40-sounds-off-it-s-m",
+    "731-is-back-with-a-heater-the-regime-out-now",
+    "732-xxl-s-pass-or-play-is-back-this-isn-t-a-competition-just-putting",
+    "733-jeweler-alex-moss-shows-of-drake-champagnepapi-s-new-pink-ovo-wo",
+    "734-fridayy-drops-the-visuals-to-haiku-off-his-new-album-tension"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-18T15:01:19.771Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-18T18:12:57.491Z",
   "deferred": []
 }

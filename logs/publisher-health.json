@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T23:02:30.405Z",
+  "checked_at": "2026-09-18T23:07:18.749Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T23:32:30.213Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T23:27:18.063Z",
-  "publications": [
-    {
-      "file": "735-hiphop-journalist-ceddynash-breaks-the-news-of-the-passing-of-yo.json",
-      "id": "735-hiphop-journalist-ceddynash-breaks-the-news-of-the-passing-of-yo",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18124650272479823",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

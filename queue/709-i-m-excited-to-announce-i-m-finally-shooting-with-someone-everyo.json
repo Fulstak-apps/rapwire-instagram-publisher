@@ -1,6 +1,6 @@
 {
   "id": "709-i-m-excited-to-announce-i-m-finally-shooting-with-someone-everyo",
-  "status": "ready",
+  "status": "published",
   "publish_priority": 50,
   "date": "2026-09-18",
   "timezone": "America/Detroit",
@@ -32,7 +32,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "published",
   "artist_handles": [
     "champagnepapi"
   ],
@@ -45,8 +45,25 @@
   "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Thursday, 17-Sep-26 19:53:36 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A4T17vfg8MEmPSEUWSyaAeR\"}}",
   "instagram_container_id": "18113850836078478",
   "instagram_container_created_at": "2026-09-18T03:03:40.302Z",
-  "instagram_container_checked_at": "2026-09-18T03:03:40.302Z",
+  "instagram_container_checked_at": "2026-09-18T03:08:45.784Z",
   "threads_container_id": "18099920963179906",
   "threads_container_created_at": "2026-09-18T03:03:40.305Z",
-  "threads_container_checked_at": "2026-09-18T03:03:40.305Z"
+  "threads_container_checked_at": "2026-09-18T03:08:39.677Z",
+  "threads_container_status": "FINISHED",
+  "threads_publish_requested_at": "2026-09-18T03:08:39.677Z",
+  "threads_media_id": "17861328384693201",
+  "threads_published_at": "2026-09-18T03:08:45.444Z",
+  "threads_verified_at": "2026-09-18T03:08:45.783Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DdabRylAT96",
+  "instagram_container_status": "FINISHED",
+  "instagram_publish_requested_at": "2026-09-18T03:08:45.784Z",
+  "instagram_media_id": "18100860308572852",
+  "instagram_published_at": "2026-09-18T03:08:45.784Z",
+  "published_at": "2026-09-18T03:08:51.087Z",
+  "instagram_verified_at": "2026-09-18T03:08:51.202Z",
+  "instagram_permalink": "https://www.instagram.com/reel/DdabRqdCB6q/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "media_cleanup_at": "2026-09-18T03:08:51.205Z",
+  "media_cleanup_status": "deleted_after_confirmed_publication"
 }

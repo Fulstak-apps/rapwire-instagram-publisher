@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T20:25:42.348Z",
+  "checked_at": "2026-09-18T20:30:45.172Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T20:30:40.689Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/731-is-back-with-a-heater-the-regime-out-now.json",
+      "id": "731-is-back-with-a-heater-the-regime-out-now",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 13:30:44 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AEjj82Qq48hgMr26cfSJytD\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T14:51:56.441Z",
+  "checked_at": "2026-09-18T14:57:01.383Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T14:57:02.240Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/722-shot-entirely-in-first-person-bad-day-at-the-office-follows-amne.json",
+      "id": "722-shot-entirely-in-first-person-bad-day-at-the-office-follows-amne",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 07:57:01 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ABB-pbXlgomp3MRBw8JJjBv\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

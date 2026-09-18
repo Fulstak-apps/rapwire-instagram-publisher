@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T20:56:02.132Z",
+  "checked_at": "2026-09-18T21:01:05.776Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T21:05:58.838Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/732-xxl-s-pass-or-play-is-back-this-isn-t-a-competition-just-putting.json",
+      "id": "732-xxl-s-pass-or-play-is-back-this-isn-t-a-competition-just-putting",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 14:01:05 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AE77XJZYg8b6FwCuux7yiMQ\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

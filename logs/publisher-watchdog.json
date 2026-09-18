@@ -1,25 +1,20 @@
 {
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "715-cam-newton-needs-to-be-called-out-over-this-part-3",
-    "716-come-for-the-cars-stay-for-the-music-grand-theft-auto-vi-drops-i",
-    "717-rihanna-was-glowing-while-spending-a-wholesome-night-with-her-fr",
-    "718-one-night-decades-of-west-coast-hip-hop-history-this-past-weeken",
-    "719-drake-champagnepapi-popped-out-with-his-goth-baddie-pinkchyu-in-",
-    "720-denzel-curry-took-the-sound-check-challenge-with-having-recently",
     "721-takes-back-to-the-1970s-records-that-shaped-west-coast-hip-hop-i",
     "722-shot-entirely-in-first-person-bad-day-at-the-office-follows-amne",
     "723-cam-newton-needs-to-be-called-out-over-this-part-2",
-    "724-cam-newton-needs-to-be-called-out-over-this-part-1"
+    "724-cam-newton-needs-to-be-called-out-over-this-part-1",
+    "725-ceddy-nash-is-a-gatekeeper-who-doesn-t-put-anybody-on-final-part"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-18T06:15:57.893Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-18T11:18:28.877Z",
   "deferred": []
 }

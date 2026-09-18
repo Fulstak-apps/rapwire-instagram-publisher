@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T03:39:06.233Z",
+  "checked_at": "2026-09-18T03:44:18.438Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T03:39:04.795Z",
-    "usage": 3,
+    "checked_at": "2026-09-18T03:44:12.363Z",
+    "usage": 4,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T03:54:04.795Z",
+    "next_check_at": "2026-09-18T03:59:12.363Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 3,
     "instagram_remaining": 45,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-18T03:38:51.087Z",
+    "next_feed_eligible_at": "2026-09-18T04:14:18.297Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-18T03:34:00.486Z",
-    "usage": 3,
+    "usage": 4,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-18T03:49:00.486Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T03:38:45.444Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-18T04:14:11.625Z",
+  "publications": [
+    {
+      "file": "710-resident-evil-red-carpet-premiere-featuring-guest-host-valkyrae-.json",
+      "id": "710-resident-evil-red-carpet-premiere-featuring-guest-host-valkyrae-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17903445966582736"
+    },
+    {
+      "file": "710-resident-evil-red-carpet-premiere-featuring-guest-host-valkyrae-.json",
+      "id": "710-resident-evil-red-carpet-premiere-featuring-guest-host-valkyrae-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17950421295269371",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T16:12:55.498Z",
+  "checked_at": "2026-09-18T16:18:21.268Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T16:12:54.319Z",
-    "usage": 16,
+    "checked_at": "2026-09-18T16:18:12.847Z",
+    "usage": 17,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T16:27:54.319Z",
+    "next_check_at": "2026-09-18T16:33:12.847Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 16,
     "instagram_remaining": 32,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-18T16:12:39.177Z",
+    "next_feed_eligible_at": "2026-09-18T16:48:21.135Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-18T16:03:03.832Z",
-    "usage": 16,
+    "usage": 17,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-18T16:18:03.832Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T16:12:32.831Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-18T16:48:12.078Z",
+  "publications": [
+    {
+      "file": "724-cam-newton-needs-to-be-called-out-over-this-part-1.json",
+      "id": "724-cam-newton-needs-to-be-called-out-over-this-part-1",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18144020890584514"
+    },
+    {
+      "file": "724-cam-newton-needs-to-be-called-out-over-this-part-1.json",
+      "id": "724-cam-newton-needs-to-be-called-out-over-this-part-1",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18097455140333439",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

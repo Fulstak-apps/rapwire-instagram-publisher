@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T22:21:52.687Z",
+  "checked_at": "2026-09-18T22:27:06.520Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T22:21:45.918Z",
-    "usage": 26,
+    "checked_at": "2026-09-18T22:26:58.203Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T22:36:45.918Z",
+    "next_check_at": "2026-09-18T22:41:58.203Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 26,
     "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-18T22:21:42.710Z",
+    "next_feed_eligible_at": "2026-09-18T22:57:06.370Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "734-fridayy-drops-the-visuals-to-haiku-off-his-new-album-tension.json",
       "id": "734-fridayy-drops-the-visuals-to-haiku-off-his-new-album-tension",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18078390083362536"
+      "media_id": "18051718580596834",
+      "content_type": "video"
     }
   ],
   "failures": [],

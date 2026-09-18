@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T08:32:15.596Z",
+  "checked_at": "2026-09-18T08:37:14.915Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 11,
-    "instagram_remaining": 37,
+    "instagram_usage": 12,
+    "instagram_remaining": 36,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T09:02:15.476Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T08:57:14.065Z",
-  "publications": [
-    {
-      "file": "718-one-night-decades-of-west-coast-hip-hop-history-this-past-weeken.json",
-      "id": "718-one-night-decades-of-west-coast-hip-hop-history-this-past-weeken",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18623630113060801",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

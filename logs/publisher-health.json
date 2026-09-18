@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T06:25:45.134Z",
+  "checked_at": "2026-09-18T06:30:52.194Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T06:35:37.540Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/715-cam-newton-needs-to-be-called-out-over-this-part-3.json",
-      "id": "715-cam-newton-needs-to-be-called-out-over-this-part-3",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Thursday, 17-Sep-26 23:25:45 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AIWjoGUGgDMl1mwA3NxAzz_\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

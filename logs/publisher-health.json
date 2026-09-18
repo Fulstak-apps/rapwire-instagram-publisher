@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T18:09:25.422Z",
+  "checked_at": "2026-09-18T18:14:17.500Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 19,
-    "instagram_remaining": 29,
+    "instagram_usage": 20,
+    "instagram_remaining": 28,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-18T18:39:25.314Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-18T18:34:26.825Z",
-  "publications": [
-    {
-      "file": "727-fancy-a-spin-tiffany-just-don-t-expect-the-scenic-route-stay-tun.json",
-      "id": "727-fancy-a-spin-tiffany-just-don-t-expect-the-scenic-route-stay-tun",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17980257452904402",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

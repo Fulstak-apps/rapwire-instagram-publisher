@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T17:23:43.317Z",
+  "checked_at": "2026-09-18T17:29:10.712Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-18T17:23:42.514Z",
-    "usage": 18,
+    "checked_at": "2026-09-18T17:29:03.220Z",
+    "usage": 19,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-18T17:38:42.514Z",
+    "next_check_at": "2026-09-18T17:44:03.220Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 18,
     "instagram_remaining": 30,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-18T17:23:35.213Z",
+    "next_feed_eligible_at": "2026-09-18T17:59:10.581Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-18T17:23:42.437Z",
-    "usage": 18,
+    "usage": 19,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-18T17:38:42.437Z",
@@ -52,8 +52,32 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-18T17:23:28.603Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-18T17:59:02.565Z",
+  "publications": [
+    {
+      "file": "726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-.json",
+      "id": "726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18073105820720529"
+    },
+    {
+      "file": "726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-.json",
+      "id": "726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17969830758380245",
+      "content_type": "video"
+    }
+  ],
+  "failures": [
+    {
+      "file": "queue/726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-.json",
+      "id": "726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 10:28:56 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ALa1UfhEShe-Loe14FfxC5W\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

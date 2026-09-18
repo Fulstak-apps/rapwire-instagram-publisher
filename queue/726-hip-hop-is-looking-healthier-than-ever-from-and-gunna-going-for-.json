@@ -1,6 +1,6 @@
 {
   "id": "726-hip-hop-is-looking-healthier-than-ever-from-and-gunna-going-for-",
-  "status": "ready",
+  "status": "published",
   "publish_priority": 50,
   "date": "2026-09-18",
   "timezone": "America/Detroit",
@@ -32,7 +32,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "published",
   "artist_handles": [
     "gunna"
   ],
@@ -42,11 +42,28 @@
   "caption_checked_at": "2026-09-18T14:32:15.787Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 89.5,
-  "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 09:58:28 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AK-YotEgbydJscfBlGLdJ8g\"}}",
+  "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 10:28:56 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ALa1UfhEShe-Loe14FfxC5W\"}}",
   "instagram_container_id": "18113923118078478",
   "instagram_container_created_at": "2026-09-18T17:23:42.858Z",
-  "instagram_container_checked_at": "2026-09-18T17:23:42.858Z",
+  "instagram_container_checked_at": "2026-09-18T17:29:02.938Z",
   "threads_container_id": "18100087346179906",
   "threads_container_created_at": "2026-09-18T17:23:42.861Z",
-  "threads_container_checked_at": "2026-09-18T17:23:42.861Z"
+  "threads_container_checked_at": "2026-09-18T17:28:56.979Z",
+  "threads_container_status": "FINISHED",
+  "threads_publish_requested_at": "2026-09-18T17:28:56.979Z",
+  "threads_media_id": "18073105820720529",
+  "threads_published_at": "2026-09-18T17:29:02.565Z",
+  "threads_verified_at": "2026-09-18T17:29:02.935Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/Ddb9tdxgJ7H",
+  "instagram_container_status": "FINISHED",
+  "instagram_publish_requested_at": "2026-09-18T17:29:02.938Z",
+  "instagram_media_id": "17969830758380245",
+  "instagram_published_at": "2026-09-18T17:29:02.938Z",
+  "published_at": "2026-09-18T17:29:10.581Z",
+  "instagram_verified_at": "2026-09-18T17:29:10.672Z",
+  "instagram_permalink": "https://www.instagram.com/reel/Ddb9vjlgWU2/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "media_cleanup_at": "2026-09-18T17:29:10.674Z",
+  "media_cleanup_status": "deleted_after_confirmed_publication"
 }

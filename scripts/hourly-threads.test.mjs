@@ -2,6 +2,13 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {CONVERSATION_INTERVAL,HOUR,hourlyText,publishHourlyThread,selectPrompt} from './hourly-threads.mjs';
 const NOW=Date.parse('2026-09-03T18:00:00Z');
+test('current music discussions use the actual caption and do not repeat the story',()=>{
+  const item={id:'story',threads_media_id:'123',published_at:new Date(NOW-1000).toISOString(),body:'Drake discusses his new album with fans.',source_caption_text:'Drake discusses his new album with fans.',caption_policy:'exact-source-v1',caption_source_shortcode:'abc',source_url:'https://www.instagram.com/p/abc/'};
+  const selected=selectPrompt({},NOW,[item]);
+  assert.match(selected.prompt,/Drake discusses/);
+  assert.equal(selected.source_id,'story');
+  assert.notEqual(selectPrompt({posts:[{source_id:'story'}]},NOW,[item]).source_id,'story');
+});
 function fixture(state={}) {const saved=[],posts=[];const api={get:async endpoint=>{if(endpoint==='/me')return {id:'account',username:'rapwire247'};if(endpoint==='/container')return {status:'FINISHED'};if(endpoint==='/published')return {id:'published',permalink:'https://www.threads.net/@rapwire247/post/x',text:state.pending.text};throw new Error(`Unexpected GET ${endpoint}`);},post:async(endpoint,params)=>{posts.push({endpoint,params});if(endpoint==='/account/threads')return {id:'container'};if(endpoint==='/account/threads_publish')return {id:'published'};throw new Error(`Unexpected POST ${endpoint}`);}};return {state,saved,posts,api,save:async()=>saved.push(structuredClone(state))};}
 test('hourly text ends with the account handle',()=>assert.match(hourlyText('A clean question?'),/@rapwire247$/));
 test('prompt rotation avoids a prompt used inside the repeat window',()=>{const first=selectPrompt({},NOW);const next=selectPrompt({next_prompt_index:0,posts:[{prompt:first.prompt,published_at:new Date(NOW-HOUR).toISOString()}]},NOW);assert.notEqual(first.prompt,next.prompt);});

@@ -5,6 +5,7 @@ import {pathToFileURL} from 'node:url';
 import {advanceContainer} from './container-state.mjs';
 import {errorDelay,metaClient} from './meta-client.mjs';
 import {threadsTopicTag} from './audience-policy.mjs';
+import {captionIsBound} from './video-caption.mjs';
 
 export const HOUR=60*60_000;
 // Conversation prompts are supplemental. Keep them sparse so they do not
@@ -12,6 +13,16 @@ export const HOUR=60*60_000;
 export const CONVERSATION_INTERVAL=6*60*60_000;
 const REPEAT_WINDOW=30*24*HOUR;
 export const PROMPTS=[
+  'Illmatic or It Was Written: which Nas album are you actually playing more? Pick three tracks that make your case.',
+  'OutKast: ATLiens or Aquemini? Which one belongs higher on an all-time rap list?',
+  'Build a top ten rap albums list with only ONE album per artist. Who gets left out?',
+  'Lil Wayne on mixtapes or Lil Wayne on albums? Name the tape or album that settles it for you.',
+  'Kendrick Lamar: good kid, m.A.A.d city or To Pimp a Butterfly? Storytelling versus ambition—what wins for you?',
+  'Drake: Take Care or Nothing Was the Same? No sales numbers. Which tracklist holds up better?',
+  'Missy Elliott, Busta Rhymes, Ludacris: who has the strongest music-video catalog? Name the video.',
+  'Three 6 Mafia or UGK: whose influence do you hear more in today’s rap? Name a record, not just a rapper.',
+  'A diss track can win the internet and still be the weaker song. Ether or Takeover—which do you replay?',
+  'Pick one producer for a ten-song Future album: Metro Boomin, Zaytoven, or Southside. Why?',
   'Be real: what “classic” rap album gets overrated the most—and why?',
   'Who got the strongest three-album run in rap? Make your case.',
   'When y’all talk top 5, what matters most: catalog, pen, influence, or longevity?',
@@ -57,17 +68,34 @@ export const PROMPTS=[
 ];
 
 export const hourlyText=prompt=>`${prompt}\n\n@rapwire247`;
-export function selectPrompt(state,now=Date.now()) {
+export function selectPrompt(state,now=Date.now(),items=[]) {
   const recent=new Set((state.posts||[]).filter(post=>Date.parse(post.published_at||'')>now-REPEAT_WINDOW).map(post=>post.prompt));
+  const covered=new Set((state.posts||[]).map(post=>post.source_id).filter(Boolean));
+  // Discuss a recent, caption-bound publication. Do not turn an old upload
+  // into breaking news or invent a release, beef, verdict, or quotation.
+  for (const item of [...items].sort((a,b)=>Date.parse(b.published_at||0)-Date.parse(a.published_at||0))) {
+    const at=Date.parse(item.published_at||'');
+    if (!item.id || covered.has(item.id) || !Number.isFinite(at) || now-at<0 || now-at>24*HOUR || !item.threads_media_id || !captionIsBound(item)) continue;
+    const body=item.body.trim();
+    if (body.length>320 || /\b(trial|murder|arrest|charged|court|died|death|alleg|shoot|victim)\w*/i.test(body)) continue;
+    let question;
+    if (/\b(album|mixtape|tracklist|EP)\b/i.test(body)) question='Which track makes your case for—or against—this project?';
+    else if (/\b(diss|beef)\b/i.test(body)) question='What exact bar or record changed the score for you?';
+    else if (/\b(live|concert|performance|tour)\b/i.test(body)) question='Does this performance change where you rank them live? What stood out?';
+    else if (/\b(song|single|verse|freestyle)\b/i.test(body)) question='What stands out more here: the writing, the delivery, or the beat?';
+    else continue;
+    const prompt=`${body}\n\n${question}`;
+    if (!recent.has(prompt)) return {prompt,index:Number(state.next_prompt_index||0),source_id:item.id};
+  }
   const start=Number(state.next_prompt_index||0)%PROMPTS.length;
   for(let offset=0;offset<PROMPTS.length;offset+=1) {
     const index=(start+offset)%PROMPTS.length;
     if(!recent.has(PROMPTS[index])) return {prompt:PROMPTS[index],index};
   }
-  return {prompt:PROMPTS[start],index:start};
+  return null;
 }
 
-export async function publishHourlyThread({api,userId,state,save,now=Date.now(),expectedUsername='rapwire247'}) {
+export async function publishHourlyThread({api,userId,state,save,now=Date.now(),expectedUsername='rapwire247',items=[]}) {
   state.posts ||= [];
   // A stale numeric-ID mismatch was fixed by resolving the token's verified
   // username. Do not keep an hour-long cooldown created by that retired check.
@@ -90,21 +118,22 @@ export async function publishHourlyThread({api,userId,state,save,now=Date.now(),
   } else resolvedUserId=String(state.resolved_user_id||userId);
   if(!state.pending && (Date.parse(state.last_published_at||'')||0)+CONVERSATION_INTERVAL>now) return 'interval_limit';
   if(!state.pending) {
-    const selected=selectPrompt(state,now);
-    state.pending={prompt:selected.prompt,text:hourlyText(selected.prompt),topic_tag:threadsTopicTag(selected.prompt),prompt_index:selected.index};
+    const selected=selectPrompt(state,now,items);
+    if (!selected) return 'no_fresh_prompt';
+    state.pending={prompt:selected.prompt,text:hourlyText(selected.prompt),topic_tag:threadsTopicTag(selected.prompt),prompt_index:selected.index,source_id:selected.source_id};
     await save();
   }
   const pending=state.pending;
   const result=await advanceContainer({item:pending,prefix:'threads',now,save,
     create:()=>api.post(`/${resolvedUserId}/threads`,{media_type:'TEXT',text:pending.text,topic_tag:pending.topic_tag}),
     inspect:id=>api.get(`/${id}`,{fields:'status,error_message'}),
-    publish:id=>api.post(`/${userId}/threads_publish`,{creation_id:id})
+    publish:id=>api.post(`/${resolvedUserId}/threads_publish`,{creation_id:id})
   });
   if(!result) return 'processing';
   const live=await api.get(`/${result.id}`,{fields:'id,permalink,text'});
   if(String(live.id)!==String(result.id)||live.text!==pending.text) throw new Error('Hourly Threads readback did not match the saved post');
   const publishedAt=pending.threads_published_at||new Date(now).toISOString();
-  state.posts.push({id:result.id,prompt:pending.prompt,text:pending.text,published_at:publishedAt,permalink:live.permalink||null});
+  state.posts.push({id:result.id,prompt:pending.prompt,text:pending.text,source_id:pending.source_id,published_at:publishedAt,permalink:live.permalink||null});
   state.posts=state.posts.filter(post=>Date.parse(post.published_at||'')>now-60*24*HOUR);
   state.last_published_at=publishedAt; state.next_prompt_index=(Number(pending.prompt_index)+1)%PROMPTS.length;
   delete state.pending; delete state.retry_at; delete state.last_error;
@@ -118,7 +147,12 @@ async function main() {
   if(!token||!userId) {console.log('Hourly Threads: credentials unavailable');return;}
   const file=statePath(); const state=JSON.parse(await fs.readFile(file,'utf8').catch(error=>{if(error.code==='ENOENT')return '{}';throw error;}));
   const save=async()=>{await fs.mkdir(path.dirname(file),{recursive:true});const temp=`${file}.${process.pid}.tmp`;await fs.writeFile(temp,JSON.stringify(state,null,2)+'\n');await fs.rename(temp,file);};
-  try {console.log(`Hourly Threads: ${await publishHourlyThread({api:metaClient('https://graph.threads.net/v1.0',token),userId,state,save,expectedUsername:process.env.RAPWIRE_THREADS_EXPECTED_USERNAME||'rapwire247'})}`);}
+  const items=[];
+  for (const name of await fs.readdir('queue').catch(()=>[])) {
+    if (!name.endsWith('.json')) continue;
+    try { items.push(JSON.parse(await fs.readFile(path.join('queue',name),'utf8'))); } catch {}
+  }
+  try {console.log(`Hourly Threads: ${await publishHourlyThread({api:metaClient('https://graph.threads.net/v1.0',token),userId,state,save,items,expectedUsername:process.env.RAPWIRE_THREADS_EXPECTED_USERNAME||'rapwire247'})}`);}
   catch(error) {state.status=state.pending?.threads_reconcile_required?'reconciliation_required':'blocked';state.last_error=String(error.message).replaceAll(token,'[redacted]').slice(0,800);state.last_error_at=new Date().toISOString();state.retry_at=new Date(Date.now()+errorDelay(error)).toISOString();await save();console.log(`Hourly Threads: ${state.status}; ${state.last_error}`);}
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href) await main();

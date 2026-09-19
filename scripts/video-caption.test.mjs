@@ -2,6 +2,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { sourceCaption, buildVideoCaption, captionIsBound } from './video-caption.mjs';
 const url = 'https://www.instagram.com/akademiks/reel/abc123/';
+test('bare verified screen names become clickable names and ordinary future stays untagged',()=>{
+  const registry=[{name:'Drake',handle:'champagnepapi',verified_at:new Date().toISOString(),verified_url:'https://www.instagram.com/champagnepapi/'},{name:'Future',handle:'future',case_sensitive:true,verified_at:new Date().toISOString(),verified_url:'https://www.instagram.com/future/'}];
+  const result=buildVideoCaption('champagnepapi discusses the future of his music.',null,registry);
+  assert.match(result.caption,/Drake @champagnepapi/);
+  assert.doesNotMatch(result.caption,/@future/);
+});
+test('empty source-bound captions cannot publish',()=>assert.equal(captionIsBound({body:'',caption_policy:'vip-source-v1'}),false));
 test('extracts only exact-post caption, not profile wrapper', () => {
   assert.equal(sourceCaption({ requestedUrl:url,canonicalUrl:url,title:'Akademiks on Instagram: "Lil Durk discusses his new album."' }), 'Lil Durk discusses his new album.');
   assert.throws(()=>sourceCaption({ requestedUrl:url,canonicalUrl:url.replace('abc123','other'), title:'Akademiks on Instagram: "Lil Durk discusses his new album."' }), /match/);

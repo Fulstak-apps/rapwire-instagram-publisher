@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T01:23:45.719Z",
+  "checked_at": "2026-09-19T01:28:38.416Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 31,
-    "instagram_remaining": 17,
+    "instagram_usage": 32,
+    "instagram_remaining": 16,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-19T01:53:45.490Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T01:48:42.922Z",
-  "publications": [
-    {
-      "file": "739-az-chike-opens-up-to-about-being-in-rooms-with-kendrick-lamar-ke.json",
-      "id": "739-az-chike-opens-up-to-about-being-in-rooms-with-kendrick-lamar-ke",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17873523222581840",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

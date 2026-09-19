@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T05:59:37.527Z",
+  "checked_at": "2026-09-19T06:04:44.875Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T05:49:26.407Z",
+    "checked_at": "2026-09-19T06:04:38.186Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T06:04:26.407Z",
+    "next_check_at": "2026-09-19T06:19:38.186Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 15,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-19T06:04:26.238Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-19T05:54:33.647Z",
-    "usage": 33,
+    "usage": 34,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-19T06:09:33.647Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-19T05:59:23.003Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-19T06:34:44.385Z",
+  "publications": [
+    {
+      "file": "747-lizzo-getting-glammed-up.json",
+      "id": "747-lizzo-getting-glammed-up",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18122866108911623"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T02:49:26.877Z",
+  "checked_at": "2026-09-19T02:54:30.105Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T02:59:24.954Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/742-lil-durk-lildurk-going-for-bond-part-1.json",
-      "id": "742-lil-durk-lildurk-going-for-bond-part-1",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 19:49:26 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AJzE3_bRwQgt7JnCMAT_In-\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T21:27:41.429Z",
+  "checked_at": "2026-09-19T21:32:51.520Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T21:27:39.751Z",
-    "usage": 27,
+    "checked_at": "2026-09-19T21:32:42.265Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T21:42:39.751Z",
+    "next_check_at": "2026-09-19T21:47:42.265Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-19T21:27:26.288Z",
+    "next_feed_eligible_at": "2026-09-19T22:02:51.363Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-19T21:22:29.523Z",
-    "usage": 27,
+    "usage": 28,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-19T21:37:29.523Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-19T21:27:19.194Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-19T22:02:41.236Z",
+  "publications": [
+    {
+      "file": "750-lizzo-getting-glammed-up.json",
+      "id": "750-lizzo-getting-glammed-up",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18110265092172104"
+    },
+    {
+      "file": "750-lizzo-getting-glammed-up.json",
+      "id": "750-lizzo-getting-glammed-up",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18095982320304106",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

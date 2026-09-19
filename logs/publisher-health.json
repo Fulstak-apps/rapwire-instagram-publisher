@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T13:14:54.805Z",
+  "checked_at": "2026-09-19T14:34:05.043Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T13:14:53.415Z",
+    "checked_at": "2026-09-19T14:33:57.632Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T13:29:53.415Z",
+    "next_check_at": "2026-09-19T14:48:57.632Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,10 +26,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-19T12:56:02.114Z",
+    "next_feed_eligible_at": "2026-09-19T15:04:04.854Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,24 +43,40 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T13:14:53.305Z",
+    "checked_at": "2026-09-19T14:33:50.489Z",
     "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T13:29:53.305Z",
+    "next_check_at": "2026-09-19T14:48:50.489Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-19T12:50:57.225Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-19T15:03:57.126Z",
+  "publications": [
+    {
+      "file": "751-lil-durk-lildurk-going-for-bond-part-3.json",
+      "id": "751-lil-durk-lildurk-going-for-bond-part-3",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17982800649080501"
+    },
+    {
+      "file": "751-lil-durk-lildurk-going-for-bond-part-3.json",
+      "id": "751-lil-durk-lildurk-going-for-bond-part-3",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18131827156659698",
+      "content_type": "video"
+    }
+  ],
   "failures": [
     {
       "file": "queue/751-lil-durk-lildurk-going-for-bond-part-3.json",
       "id": "751-lil-durk-lildurk-going-for-bond-part-3",
       "platform": "facebook",
       "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 19-Sep-26 06:14:54 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AhDk4NhwlX6Acb5ajX1-jU0\"}}"
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 19-Sep-26 07:33:50 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AB_3XxrmWvuTaq8dakTrGfb\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

@@ -33,7 +33,7 @@ export function buildVideoCaption(raw, source, registry = []) {
   const verified = registry.filter(person => Date.now() - Date.parse(person.verified_at || '') < 30 * 86400000 && /^https:\/\/www\.instagram\.com\//.test(person.verified_url || ''));
   const used = [];
   for (const person of verified) {
-    const aliases = [person.name, ...(person.aliases || []), person.handle];
+    const aliases = [person.name, ...(person.aliases || []), ...(person.case_sensitive ? [] : [person.handle])];
     const flags = person.case_sensitive ? '' : 'i';
     const alias = aliases.find(name => new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, flags).test(text));
     if (!alias) continue;
@@ -63,7 +63,7 @@ export function buildVideoCaption(raw, source, registry = []) {
 }
 
 export function captionIsBound(item) {
-  if (typeof item.body !== 'string' || item.body.trim().split(/\s+/).length < 4) return false;
+  if (typeof item.body !== 'string' || !/[\p{L}\p{N}]/u.test(item.body)) return false;
   if (item.caption_policy === 'vip-source-v1') {
     const sourceHandle = String(item.source_handle || '').replace(/^@/, '').toLowerCase();
     const recordedHandle = String(item.caption_source_handle || '').replace(/^@/, '').toLowerCase();

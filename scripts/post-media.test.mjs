@@ -22,7 +22,7 @@ test('capture never silently truncates at its item bound',async()=>{
  await assert.rejects(walkPost({read:async()=>({src:String(position)}),saveItem:async m=>m,next:async()=>true,advance:async()=>position++,maxItems:2}),/exceeds capture bound/);
 });
 const source_url='https://www.instagram.com/p/Exact/';
-const copy=vipCaption('', 'akademiks', source_url);
+const copy=vipCaption('A studio session with the artist.', 'akademiks', source_url);
 const photo={...copy,rendered_body_text:copy.body,source_url,source_handle:'akademiks',caption_policy:'vip-source-v1',caption_source_shortcode:'Exact',vip_source_checked:true,
  type:'source_media_repost',vip_repost:true,layout_template:'rapwire-source-media-v1',visual_asset_rights:'source_post_repost',media_capture_complete:true,source_item_count:1,content_type:'image',media_items:[{type:'image',path:'media/a.jpg',source_index:0}]};
 test('one complete VIP photo is publishable without fake duplicate slides',()=>assert.equal(validMediaRepost(photo),true));

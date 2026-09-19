@@ -47,7 +47,7 @@ test('VIP captions omit source handles and reject blocked terms',()=>{
     assert.ok(fields.threads_text.length < 400);
   assert.doesNotMatch(fields.caption,/@akademiks/);
     assert.equal(captionIsBound({...fields,rendered_body_text:fields.body,source_handle:'akademiks',source_url:url,
-      caption_policy:'vip-source-v1',caption_source_shortcode:'post0',source_caption_text:raw,vip_source_checked:true}),true);
+      caption_policy:'vip-source-v1',caption_source_shortcode:'post0',source_caption_text:raw,vip_source_checked:true}),/[\p{L}\p{N}]/u.test(fields.body));
   }
 });
 

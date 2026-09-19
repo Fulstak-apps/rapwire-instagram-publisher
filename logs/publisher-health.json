@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T02:29:25.383Z",
+  "checked_at": "2026-09-19T02:34:25.780Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T02:29:17.148Z",
+    "checked_at": "2026-09-19T02:34:19.222Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T02:44:17.148Z",
+    "next_check_at": "2026-09-19T02:49:19.222Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 33,
     "instagram_remaining": 15,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-19T02:29:03.381Z",
+    "next_feed_eligible_at": "2026-09-19T03:04:25.570Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T02:19:13.410Z",
-    "usage": 34,
+    "checked_at": "2026-09-19T02:34:18.721Z",
+    "usage": 33,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T02:34:13.410Z",
+    "next_check_at": "2026-09-19T02:49:18.721Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "741-video-of-bloodhound-lil-jeff-bragging-about-having-10-bodies-res.json",
       "id": "741-video-of-bloodhound-lil-jeff-bragging-about-having-10-bodies-res",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18104916698079171"
+      "media_id": "18157569514507001",
+      "content_type": "video"
     }
   ],
   "failures": [],

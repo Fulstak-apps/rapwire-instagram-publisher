@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T16:54:07.857Z",
+  "checked_at": "2026-09-19T16:59:21.193Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T16:54:06.642Z",
-    "usage": 28,
+    "checked_at": "2026-09-19T16:59:17.102Z",
+    "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T17:09:06.642Z",
+    "next_check_at": "2026-09-19T17:14:17.102Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 28,
     "instagram_remaining": 20,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-19T16:51:15.939Z",
+    "next_feed_eligible_at": "2026-09-19T17:29:21.062Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-19T16:54:06.536Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-19T17:09:06.536Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-19T16:51:09.342Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-19T17:29:16.485Z",
+  "publications": [
+    {
+      "file": "755-yo-gotti-older-street-brother-grip-died-today-2-conflicting-repo.json",
+      "id": "755-yo-gotti-older-street-brother-grip-died-today-2-conflicting-repo",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18109169333519468"
+    },
+    {
+      "file": "755-yo-gotti-older-street-brother-grip-died-today-2-conflicting-repo.json",
+      "id": "755-yo-gotti-older-street-brother-grip-died-today-2-conflicting-repo",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18483003682109785",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

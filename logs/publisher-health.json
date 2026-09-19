@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T23:54:34.915Z",
+  "checked_at": "2026-09-19T23:59:17.338Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-20T00:24:34.793Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-20T00:24:25.873Z",
-  "publications": [
-    {
-      "file": "764-king-von-quando-rondo-s-story-is-one-of-the-most-tragic-chapters.json",
-      "id": "764-king-von-quando-rondo-s-story-is-one-of-the-most-tragic-chapters",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17952696294027401"
-    },
-    {
-      "file": "764-king-von-quando-rondo-s-story-is-one-of-the-most-tragic-chapters.json",
-      "id": "764-king-von-quando-rondo-s-story-is-one-of-the-most-tragic-chapters",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18116549692955108",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

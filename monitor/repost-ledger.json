@@ -10828,6 +10828,12 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/reel/DdcqTfgMY8k/",
       "view_count": 0
+    },
+    "Ddcs4ULFwo5": {
+      "seen_at": "2026-09-19T00:19:30.906Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Ddcs4ULFwo5/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -14270,39 +14276,16 @@
       "source_url": "https://www.instagram.com/xxl/reel/DdcqTfgMY8k/",
       "queue_id": "750-lizzo-getting-glammed-up",
       "video": "media/750-lizzo-getting-glammed-up.mp4"
+    },
+    "DdcljMsxhkp": {
+      "queued_at": "2026-09-19T00:22:22.802Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdcljMsxhkp/",
+      "queue_id": "751-lil-durk-lildurk-going-for-bond-part-3",
+      "video": "media/751-lil-durk-lildurk-going-for-bond-part-3.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-16T03:20:56.814Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdSYquaiGHM/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdSYquaiGHM-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-16T03:21:45.913Z"
-    },
     {
       "started_at": "2026-09-16T03:26:46.947Z",
       "candidates": 41,
@@ -22505,6 +22488,30 @@
         ]
       },
       "finished_at": "2026-09-19T00:13:42.743Z"
+    },
+    {
+      "started_at": "2026-09-19T00:18:51.829Z",
+      "candidates": 36,
+      "queued": [
+        "751-lil-durk-lildurk-going-for-bond-part-3"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 13,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-19T00:22:22.802Z"
     }
   ],
   "vip_pending": {

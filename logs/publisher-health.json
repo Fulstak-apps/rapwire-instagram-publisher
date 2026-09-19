@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T19:54:58.463Z",
+  "checked_at": "2026-09-19T20:00:12.932Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T19:54:56.800Z",
-    "usage": 28,
+    "checked_at": "2026-09-19T20:00:03.091Z",
+    "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T20:09:56.800Z",
+    "next_check_at": "2026-09-19T20:15:03.091Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 28,
     "instagram_remaining": 20,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-19T19:54:42.980Z",
+    "next_feed_eligible_at": "2026-09-19T20:30:12.784Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-19T19:54:56.462Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-19T20:09:56.462Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-19T19:54:35.072Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-19T20:30:01.090Z",
+  "publications": [
+    {
+      "file": "759-rocky-brought-his-son-riot-out-on-stage-tonight-and-even-put-him.json",
+      "id": "759-rocky-brought-his-son-riot-out-on-stage-tonight-and-even-put-him",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18118450523317213"
+    },
+    {
+      "file": "759-rocky-brought-his-son-riot-out-on-stage-tonight-and-even-put-him.json",
+      "id": "759-rocky-brought-his-son-riot-out-on-stage-tonight-and-even-put-him",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17975868948102539",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

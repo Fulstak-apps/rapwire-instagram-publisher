@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T02:44:23.101Z",
+  "checked_at": "2026-09-19T02:49:26.877Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T02:34:19.222Z",
+    "checked_at": "2026-09-19T02:49:26.279Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T02:49:19.222Z",
+    "next_check_at": "2026-09-19T03:04:26.279Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T02:34:18.721Z",
+    "checked_at": "2026-09-19T02:49:26.756Z",
     "usage": 33,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T02:49:18.721Z",
+    "next_check_at": "2026-09-19T03:04:26.756Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T02:59:24.954Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/742-lil-durk-lildurk-going-for-bond-part-1.json",
+      "id": "742-lil-durk-lildurk-going-for-bond-part-1",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 19:49:26 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AJzE3_bRwQgt7JnCMAT_In-\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

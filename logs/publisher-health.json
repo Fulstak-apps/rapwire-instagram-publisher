@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T15:34:32.719Z",
+  "checked_at": "2026-09-19T15:39:33.252Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T15:24:22.551Z",
+    "checked_at": "2026-09-19T15:39:31.776Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T15:39:22.551Z",
+    "next_check_at": "2026-09-19T15:54:31.776Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-19T15:39:26.474Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T15:39:18.413Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "queue/753-are-the-feds-looking-for-revenge-in-lil-durk-lildurk-s-second-tr.json",
-      "id": "753-are-the-feds-looking-for-revenge-in-lil-durk-lildurk-s-second-tr",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 19-Sep-26 08:34:32 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A0N_Nd3pSyIq-QROkEzVJjX\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

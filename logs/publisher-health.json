@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T00:43:21.606Z",
+  "checked_at": "2026-09-19T00:44:04.773Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-19T00:43:11.678Z",
     "usage": 30,
@@ -33,8 +33,8 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T01:13:21.320Z",
-  "publications": [
-    {
-      "file": "738-unless-you-ve-been-living-under-a-rock-you-ve-heard-of-tencent-t.json",
-      "id": "738-unless-you-ve-been-living-under-a-rock-you-ve-heard-of-tencent-t",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18066397622777548"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

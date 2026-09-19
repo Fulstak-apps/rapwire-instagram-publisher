@@ -10888,6 +10888,24 @@
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/vladtv/reel/DdcrnUClRQ2/",
       "view_count": 0
+    },
+    "DdcylnqRZ6a": {
+      "seen_at": "2026-09-19T01:13:18.229Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DdcylnqRZ6a/",
+      "view_count": 0
+    },
+    "Ddcxka2txVe": {
+      "seen_at": "2026-09-19T01:13:18.233Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/Ddcxka2txVe/",
+      "view_count": 0
+    },
+    "DdctImoI5ro": {
+      "seen_at": "2026-09-19T01:13:18.233Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdctImoI5ro/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -14351,39 +14369,16 @@
       "source_url": "https://www.instagram.com/vladtv/reel/DdcrnUClRQ2/",
       "queue_id": "753-are-the-feds-looking-for-revenge-in-lil-durk-lildurk-s-second-tr",
       "video": "media/753-are-the-feds-looking-for-revenge-in-lil-durk-lildurk-s-second-tr.mp4"
+    },
+    "DdctImoI5ro": {
+      "queued_at": "2026-09-19T01:14:02.604Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdctImoI5ro/",
+      "queue_id": "754-a-ap-rocky-surprised-the-crowd-in-copenhagen-by-bringing-rihanna",
+      "video": "media/754-a-ap-rocky-surprised-the-crowd-in-copenhagen-by-bringing-rihanna.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-16T03:44:09.250Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdSYquaiGHM/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdSYquaiGHM-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-16T03:45:04.753Z"
-    },
     {
       "started_at": "2026-09-16T03:50:05.768Z",
       "candidates": 48,
@@ -22556,6 +22551,31 @@
         ]
       },
       "finished_at": "2026-09-19T01:06:33.377Z"
+    },
+    {
+      "started_at": "2026-09-19T01:12:22.658Z",
+      "candidates": 48,
+      "queued": [
+        "754-a-ap-rocky-surprised-the-crowd-in-copenhagen-by-bringing-rihanna"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 15,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-19T01:14:02.604Z"
     }
   ],
   "vip_pending": {

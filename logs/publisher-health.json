@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T18:10:07.570Z",
+  "checked_at": "2026-09-19T18:15:04.061Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-19T18:40:07.258Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T18:39:59.409Z",
-  "publications": [
-    {
-      "file": "757-in-how-to-rob-a-bank-a-crew-of-social-media-savvy-bank-robbers-w.json",
-      "id": "757-in-how-to-rob-a-bank-a-crew-of-social-media-savvy-bank-robbers-w",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17931505821144272"
-    },
-    {
-      "file": "757-in-how-to-rob-a-bank-a-crew-of-social-media-savvy-bank-robbers-w.json",
-      "id": "757-in-how-to-rob-a-bank-a-crew-of-social-media-savvy-bank-robbers-w",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18112300448103713",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

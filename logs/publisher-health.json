@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T05:19:14.257Z",
+  "checked_at": "2026-09-19T05:24:12.426Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T05:09:05.651Z",
+    "checked_at": "2026-09-19T05:24:11.782Z",
     "usage": 33,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T05:24:05.651Z",
+    "next_check_at": "2026-09-19T05:39:11.782Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T05:24:11.883Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/746-throwback-to-king-von-writing-an-emotional-letter-to-his-girlfri.json",
+      "id": "746-throwback-to-king-von-writing-an-emotional-letter-to-his-girlfri",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 22:24:11 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A93N9YJWD2DzlZnrS7TZHIz\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

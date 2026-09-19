@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T15:09:26.588Z",
+  "checked_at": "2026-09-19T15:14:15.732Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-19T15:39:26.474Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T15:39:18.413Z",
-  "publications": [
-    {
-      "file": "752-lil-durk-lildurk-going-for-bond-part-2.json",
-      "id": "752-lil-durk-lildurk-going-for-bond-part-2",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18068490419786101"
-    },
-    {
-      "file": "752-lil-durk-lildurk-going-for-bond-part-2.json",
-      "id": "752-lil-durk-lildurk-going-for-bond-part-2",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18222478141327209",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -6,20 +6,28 @@ import re
 import shutil
 import subprocess
 import time
+import uuid
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 QUEUE = ROOT / "queue"
 
 paths = set()
 published_shortcodes = set()
+protected_paths = set()
+protected_shortcodes = set()
 for queue_file in QUEUE.glob("*.json"):
     try:
         item = json.loads(queue_file.read_text())
     except (OSError, json.JSONDecodeError):
-        continue
+        raise SystemExit(f"Cleanup stopped: unreadable queue record {queue_file.name}")
     if not (item.get("status") == "published"
             and item.get("instagram_media_id")
             and item.get("threads_media_id")):
+        protected_paths.update(item.get(field) for field in ("video", "story_video", "story") if isinstance(item.get(field), str))
+        pending_match = re.search(r"/(?:reel|p)/([A-Za-z0-9_-]+)", str(item.get("source_url", "")))
+        if pending_match:
+            protected_shortcodes.add(pending_match.group(1))
         continue
     match = re.search(r"/(?:reel|p)/([A-Za-z0-9_-]+)", str(item.get("source_url", "")))
     if match:
@@ -32,18 +40,19 @@ for queue_file in QUEUE.glob("*.json"):
         if path.parts[0] == "media" and len(path.parts) == 2:
             paths.add(path.as_posix())
 
+paths -= protected_paths
+published_shortcodes -= protected_shortcodes
 if not paths:
     print("Published media cleanup: no confirmed media to remove.")
     raise SystemExit(0)
 
-result = subprocess.run(
-    ["git", "rm", "--cached", "--sparse", "--ignore-unmatch", "--", *sorted(paths)],
-    cwd=ROOT,
-    text=True,
-    capture_output=True,
-)
-if result.returncode != 0:
-    raise SystemExit(result.stderr.strip() or "git rm failed")
+if "--local-only" not in sys.argv:
+    result = subprocess.run(
+        ["git", "rm", "--cached", "--sparse", "--ignore-unmatch", "--", *sorted(paths)],
+        cwd=ROOT, text=True, capture_output=True,
+    )
+    if result.returncode != 0:
+        raise SystemExit(result.stderr.strip() or "git rm failed")
 
 # Include local capture/render sidecars for already-published source posts.
 mirror_dir = ROOT / "work" / "instagram-mirror"
@@ -60,14 +69,20 @@ removed = 0
 trashed = 0
 for value in paths:
     path = ROOT / value
+    if "--local-only" in sys.argv and value.startswith("media/"):
+        # Do not dirty the working tree; cloud cleanup first untracks the file.
+        tracked = subprocess.run(["git", "ls-files", "--error-unmatch", "--", value], cwd=ROOT, capture_output=True)
+        if tracked.returncode == 0:
+            continue
     if path.exists():
         destination = trash / path.name
         if destination.exists():
-            destination = trash / f"{path.stem}-{int(time.time())}{path.suffix}"
+            destination = trash / f"{path.stem}-{uuid.uuid4().hex}{path.suffix}"
         try:
             shutil.move(str(path), str(destination))
             trashed += 1
-        except OSError:
-            path.unlink()
+        except OSError as error:
+            print(f"Trash failed; keeping {path}: {error}")
+            continue
         removed += 1
-print(f"Published media cleanup: untracked {len(paths)} confirmed asset(s); moved {trashed} local file(s) to Trash; removed {removed - trashed} fallback file(s).")
+print(f"Published media cleanup: moved {trashed} local file(s) to Trash; no permanent deletion.")

@@ -6,6 +6,8 @@ import signal
 import subprocess
 import sys
 import time
+import fcntl
+import shutil
 from pathlib import Path
 
 # The local scheduler runs every five minutes, but a valid long Reel can take
@@ -98,7 +100,20 @@ def clear_stale_monitor_lock():
         # It contains no trustworthy live PID, so only remove this exact lock.
         lock.unlink(missing_ok=True)
 
-cleanup_stale_git_temporary_objects()
+# Serialize the whole supervisor, including cleanup and stale-lock inspection.
+Path("monitor").mkdir(exist_ok=True)
+supervisor_lock = open("monitor/repost-supervisor.lock", "a")
+try:
+    fcntl.flock(supervisor_lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+except BlockingIOError:
+    raise SystemExit(0)
+subprocess.run([sys.executable, "scripts/cleanup-published-media.py", "--local-only"], timeout=60, check=False)
+free_bytes = shutil.disk_usage(".").free
+Path("logs").mkdir(exist_ok=True)
+Path("logs/collector-storage.json").write_text(json.dumps({"checked_at": time.time(), "free_bytes": free_bytes, "low": free_bytes < 5 * 1024**3}))
+if free_bytes < 5 * 1024**3:
+    print("RapWire storage warning: less than 5 GB free. Trash does not reclaim space; empty Trash manually after review.", file=sys.stderr)
+# Never delete arbitrary Git temporary files: another process may own them.
 clear_stale_monitor_lock()
 
 process = subprocess.Popen(

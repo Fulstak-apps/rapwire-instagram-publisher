@@ -63,6 +63,10 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
   const instagramDispatch = !blocked && ((overdue && ready.length > 0) || (healthStale && processing.length > 0));
   const threadsDispatch = threadsDue && !threadsBlocked && (threadsVideoOverdue || threadsPending);
   return {
+    reserve_count: ready.length,
+    reserve_hours: ready.length / 2,
+    reserve_low: ready.length < 24,
+    queue_empty: ready.length === 0,
     overdue,
     health_stale: healthStale,
     processing: processing.map(item => item.id),
@@ -72,7 +76,7 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
     threads_blocked: threadsBlocked,
     ready: ready.map(item => item.id),
     dispatch: instagramDispatch || threadsDispatch,
-    reason: threadsDispatch ? 'missed_threads_video_window' : blocked ? 'platform_cooldown_or_quota' : instagramDispatch ? (processing.length ? 'stalled_container' : 'missed_feed_window') : 'within_pacing_window'
+    reason: threadsDispatch ? 'missed_threads_video_window' : blocked ? 'platform_cooldown_or_quota' : instagramDispatch ? (processing.length ? 'stalled_container' : 'missed_feed_window') : ready.length === 0 ? 'queue_empty' : 'within_pacing_window'
   };
 }
 
@@ -96,6 +100,7 @@ async function main() {
   await fs.mkdir('logs', {recursive: true});
   await fs.writeFile('logs/publisher-watchdog.json', `${JSON.stringify(result, null, 2)}\n`);
   console.log(JSON.stringify(result));
+  if (decision.reserve_low) process.stdout.write(`::warning title=RapWire reserve::Only ${decision.reserve_count} retry-eligible items (${decision.reserve_hours} hours maximum); collector refill required.\n`);
   if (decision.dispatch) process.stdout.write('::notice title=RapWire watchdog::Missed feed window detected; retry publisher requested.\n');
   if (decision.dispatch && process.env.GITHUB_OUTPUT) await fs.appendFile(process.env.GITHUB_OUTPUT, 'dispatch=true\n');
 }

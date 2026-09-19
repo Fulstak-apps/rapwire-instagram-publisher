@@ -14,6 +14,29 @@ const gitTimeoutMs = 60_000;
 const git = (...args) => execFileAsync("git", args, { timeout: gitTimeoutMs, killSignal: "SIGTERM", maxBuffer: 32 * 1024 * 1024 });
 const maxGitHubMediaBytes = 95 * 1024 * 1024;
 
+// Resolve only publication-state conflicts. During rebase stage 2 is upstream.
+// Preserve the complete upstream record, including pending reconciliation;
+// never guess how to merge code or an unrelated conflict.
+async function rebasePublicationState() {
+  try { await git("rebase", "origin/main"); }
+  catch (error) {
+    for (let step = 0; step < 20; step++) {
+      const files = (await git("diff", "--name-only", "--diff-filter=U")).stdout.trim().split("\n").filter(Boolean);
+      if (!files.length) throw error;
+      for (const file of files) {
+        if (!/^queue\/[^/]+\.json$/.test(file)) throw error;
+        const upstream = JSON.parse((await git("show", `:2:${file}`)).stdout);
+        if (!Object.keys(upstream).some(key => /(?:media_id|publish_requested_at|reconcile_required)$/.test(key) && upstream[key])) throw error;
+        await fs.writeFile(file, `${JSON.stringify(upstream, null, 2)}\n`);
+        await git("add", "--", file);
+      }
+      try { await git("-c", "core.editor=true", "rebase", "--continue"); return; }
+      catch (nextError) { error = nextError; }
+    }
+    throw error;
+  }
+}
+
 // GitHub rejects blobs over 100 MB.  Enforce a lower local ceiling before an
 // item becomes a queue commit, so one high-bitrate source Reel can never
 // strand the collector behind an unpushable commit.
@@ -23,7 +46,7 @@ async function constrainMediaForGitHub(mediaPath) {
   const tempPath = `${mediaPath}.github-safe.mp4`;
   for (const crf of [27, 31]) {
     await fs.rm(tempPath, { force: true });
-    await execFileAsync("ffmpeg", ["-y", "-i", mediaPath, "-map", "0:v:0", "-map", "0:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", String(crf), "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", tempPath], { timeout: 10 * 60_000, maxBuffer: 4 * 1024 * 1024 });
+    await execFileAsync("ffmpeg", ["-y", "-i", mediaPath, "-map", "0:v:0", "-map", "0:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", String(crf), "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", tempPath], { timeout: 90_000, killSignal: "SIGKILL", maxBuffer: 4 * 1024 * 1024 });
     const compressed = await fs.stat(tempPath);
     if (compressed.size <= maxGitHubMediaBytes) {
       await fs.rename(tempPath, mediaPath);
@@ -100,7 +123,7 @@ const maxQueuePerRun = 1;
 // to bridge the longest reported source-collection outage. Items count only
 // after full capture/render validation. Collection remains bounded to one new
 // capture per pass to avoid browser contention and incomplete media.
-const targetReadyVideoBuffer = 24;
+const targetReadyVideoBuffer = 48;
 // Score the freshest visible item per source.  More than that delays the
 // actual capture behind dozens of metadata page loads and makes a single pass
 // needlessly likely to exceed its watchdog window.
@@ -435,7 +458,7 @@ async function syncRemotePreservingLedger() {
         // Publication commits can legitimately finalize a queue record while
         // this collector is preparing the same item.  Prefer the remote
         // record during rebase so a published item cannot deadlock collection.
-        await git("rebase", "-X", "theirs", "origin/main");
+        await rebasePublicationState();
         await git("push", "origin", "HEAD:main");
         lastError = null;
         break;
@@ -475,7 +498,10 @@ async function commitAndPush(createdIds) {
     const name = path.join("queue", `${id}.json`);
     const item = await readJson(name, {});
     paths.push(name);
-    if (item.video) paths.push(item.video);
+    if (item.video) {
+      await constrainMediaForGitHub(path.resolve(root, item.video));
+      paths.push(item.video);
+    }
   }
   const { stdout: changed } = await git("status", "--porcelain", "--", ...paths);
   if (changed.trim()) {
@@ -498,7 +524,7 @@ async function commitAndPush(createdIds) {
   for (let attempt = 1; attempt <= 8; attempt += 1) {
     try {
       await git("fetch", "origin", "main");
-      await git("rebase", "-X", "theirs", "origin/main");
+      await rebasePublicationState();
       await git("push", "origin", "HEAD:main");
       return;
     } catch (error) {
@@ -577,6 +603,7 @@ try {
       const shortcode = shortcodeFromUrl(item.source_url);
       const destination = path.join(mediaDir, `${item.id}-caption-matched.mp4`);
       await fs.copyFile(path.join(root, "work", "instagram-mirror", `${shortcode}.mp4`), destination);
+      await constrainMediaForGitHub(destination);
       item.video = path.relative(root, destination);
       delete item.video_url;
       item.logo_position = "bottom-left";

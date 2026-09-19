@@ -1,6 +1,6 @@
 {
   "id": "752-lil-durk-lildurk-going-for-bond-part-2",
-  "status": "ready",
+  "status": "published",
   "publish_priority": 50,
   "date": "2026-09-19",
   "timezone": "America/Detroit",
@@ -32,7 +32,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "published",
   "artist_handles": [
     "lildurk"
   ],
@@ -44,9 +44,26 @@
   "source_video_duration": 135.951428,
   "instagram_container_id": "18114022277078478",
   "instagram_container_created_at": "2026-09-19T15:04:15.626Z",
-  "instagram_container_checked_at": "2026-09-19T15:04:15.626Z",
+  "instagram_container_checked_at": "2026-09-19T15:09:18.618Z",
   "facebook_error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 19-Sep-26 08:04:15 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AyM53KAw3aet6Lx2C0Oqi4L\"}}",
   "threads_container_id": "18100302905179906",
   "threads_container_created_at": "2026-09-19T15:04:15.803Z",
-  "threads_container_checked_at": "2026-09-19T15:04:15.803Z"
+  "threads_container_checked_at": "2026-09-19T15:09:12.740Z",
+  "threads_container_status": "FINISHED",
+  "threads_publish_requested_at": "2026-09-19T15:09:12.740Z",
+  "threads_media_id": "18068490419786101",
+  "threads_published_at": "2026-09-19T15:09:18.413Z",
+  "threads_verified_at": "2026-09-19T15:09:18.617Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DdeSiksisfN",
+  "instagram_container_status": "FINISHED",
+  "instagram_publish_requested_at": "2026-09-19T15:09:18.618Z",
+  "instagram_media_id": "18222478141327209",
+  "instagram_published_at": "2026-09-19T15:09:18.618Z",
+  "published_at": "2026-09-19T15:09:26.474Z",
+  "instagram_verified_at": "2026-09-19T15:09:26.531Z",
+  "instagram_permalink": "https://www.instagram.com/reel/DdeSihMAowh/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "media_cleanup_at": "2026-09-19T15:09:26.533Z",
+  "media_cleanup_status": "deleted_after_confirmed_publication"
 }

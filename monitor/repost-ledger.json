@@ -10906,6 +10906,18 @@
       "source_handle": "hiphop_firstnewsmusic",
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdctImoI5ro/",
       "view_count": 0
+    },
+    "Ddcyz37RVYZ": {
+      "seen_at": "2026-09-19T01:19:46.385Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Ddcyz37RVYZ/",
+      "view_count": 0
+    },
+    "DdczvwXF3MA": {
+      "seen_at": "2026-09-19T01:19:46.387Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdczvwXF3MA/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -14376,39 +14388,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdctImoI5ro/",
       "queue_id": "754-a-ap-rocky-surprised-the-crowd-in-copenhagen-by-bringing-rihanna",
       "video": "media/754-a-ap-rocky-surprised-the-crowd-in-copenhagen-by-bringing-rihanna.mp4"
+    },
+    "Ddcyz37RVYZ": {
+      "queued_at": "2026-09-19T01:22:08.718Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Ddcyz37RVYZ/",
+      "queue_id": "755-yo-gotti-older-street-brother-grip-died-today-2-conflicting-repo",
+      "video": "media/755-yo-gotti-older-street-brother-grip-died-today-2-conflicting-repo.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-16T03:50:05.768Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/reel/DdUT7Oqiv6P/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdUT7Oqiv6P-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 12,
-        "available": 0,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-16T03:51:03.636Z"
-    },
     {
       "started_at": "2026-09-16T03:50:05.768Z",
       "candidates": 48,
@@ -22576,6 +22565,30 @@
         ]
       },
       "finished_at": "2026-09-19T01:14:02.604Z"
+    },
+    {
+      "started_at": "2026-09-19T01:19:22.802Z",
+      "candidates": 36,
+      "queued": [
+        "755-yo-gotti-older-street-brother-grip-died-today-2-conflicting-repo"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 24,
+        "available": 16,
+        "needed": 8
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-19T01:22:08.718Z"
     }
   ],
   "vip_pending": {

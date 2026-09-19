@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T14:59:06.380Z",
+  "checked_at": "2026-09-19T15:04:16.527Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T14:49:03.405Z",
+    "checked_at": "2026-09-19T15:04:15.095Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T15:04:03.405Z",
+    "next_check_at": "2026-09-19T15:19:15.095Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-19T15:04:04.854Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T14:49:03.633Z",
+    "checked_at": "2026-09-19T15:04:14.924Z",
     "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T15:04:03.633Z",
+    "next_check_at": "2026-09-19T15:19:14.924Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T15:03:57.126Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/752-lil-durk-lildurk-going-for-bond-part-2.json",
+      "id": "752-lil-durk-lildurk-going-for-bond-part-2",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 19-Sep-26 08:04:15 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AyM53KAw3aet6Lx2C0Oqi4L\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

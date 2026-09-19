@@ -1,14 +1,12 @@
 {
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "746-throwback-to-king-von-writing-an-emotional-letter-to-his-girlfri",
-    "747-lizzo-getting-glammed-up",
     "748-trap-lore-ross-got-heated-with-this-answer",
     "749-lil-durk-lildurk-going-for-bond-part-4",
     "750-lizzo-getting-glammed-up",
@@ -21,8 +19,8 @@
     "757-in-how-to-rob-a-bank-a-crew-of-social-media-savvy-bank-robbers-w",
     "758-my-lips-ain-t-even-that-big"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-19T05:04:39.274Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-19T09:24:10.558Z",
   "deferred": []
 }

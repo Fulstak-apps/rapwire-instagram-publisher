@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T05:24:12.426Z",
+  "checked_at": "2026-09-19T05:29:23.421Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T05:14:08.043Z",
+    "checked_at": "2026-09-19T05:29:14.795Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T05:29:08.043Z",
+    "next_check_at": "2026-09-19T05:44:14.795Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 15,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-19T05:29:14.363Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-19T05:24:11.782Z",
-    "usage": 33,
+    "usage": 34,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-19T05:39:11.782Z",
@@ -52,16 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-19T05:24:11.883Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-09-19T05:59:23.003Z",
+  "publications": [
     {
-      "file": "queue/746-throwback-to-king-von-writing-an-emotional-letter-to-his-girlfri.json",
+      "file": "746-throwback-to-king-von-writing-an-emotional-letter-to-his-girlfri.json",
       "id": "746-throwback-to-king-von-writing-an-emotional-letter-to-his-girlfri",
-      "platform": "facebook",
-      "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 22:24:11 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A93N9YJWD2DzlZnrS7TZHIz\"}}"
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17893813587416701"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

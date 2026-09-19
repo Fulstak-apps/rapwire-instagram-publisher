@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T06:04:44.875Z",
+  "checked_at": "2026-09-19T06:09:53.186Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T06:04:38.186Z",
+    "checked_at": "2026-09-19T06:09:47.057Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T06:19:38.186Z",
+    "next_check_at": "2026-09-19T06:24:47.057Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 33,
     "instagram_remaining": 15,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-19T06:04:26.238Z",
+    "next_feed_eligible_at": "2026-09-19T06:39:53.081Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T05:54:33.647Z",
-    "usage": 34,
+    "checked_at": "2026-09-19T06:09:46.899Z",
+    "usage": 33,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T06:09:33.647Z",
+    "next_check_at": "2026-09-19T06:24:46.899Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "747-lizzo-getting-glammed-up.json",
       "id": "747-lizzo-getting-glammed-up",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18122866108911623"
+      "media_id": "18115589485777586",
+      "content_type": "video"
     }
   ],
   "failures": [],

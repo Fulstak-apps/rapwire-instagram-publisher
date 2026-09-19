@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T18:04:49.886Z",
+  "checked_at": "2026-09-19T18:10:07.570Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T18:04:48.869Z",
+    "checked_at": "2026-09-19T18:10:01.252Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T18:19:48.869Z",
+    "next_check_at": "2026-09-19T18:25:01.252Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 29,
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-19T18:04:45.802Z",
+    "next_feed_eligible_at": "2026-09-19T18:40:07.258Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T17:54:46.604Z",
+    "checked_at": "2026-09-19T18:09:53.479Z",
     "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T18:09:46.604Z",
+    "next_check_at": "2026-09-19T18:24:53.479Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-19T18:04:38.021Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-19T18:39:59.409Z",
+  "publications": [
+    {
+      "file": "757-in-how-to-rob-a-bank-a-crew-of-social-media-savvy-bank-robbers-w.json",
+      "id": "757-in-how-to-rob-a-bank-a-crew-of-social-media-savvy-bank-robbers-w",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17931505821144272"
+    },
+    {
+      "file": "757-in-how-to-rob-a-bank-a-crew-of-social-media-savvy-bank-robbers-w.json",
+      "id": "757-in-how-to-rob-a-bank-a-crew-of-social-media-savvy-bank-robbers-w",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18112300448103713",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

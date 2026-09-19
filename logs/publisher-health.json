@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T01:59:03.549Z",
+  "checked_at": "2026-09-19T02:03:59.175Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 32,
-    "instagram_remaining": 16,
+    "instagram_usage": 33,
+    "instagram_remaining": 15,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-19T02:29:03.381Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,26 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T01:48:56.515Z",
+    "checked_at": "2026-09-19T02:03:59.105Z",
     "usage": 33,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T02:03:56.515Z",
+    "next_check_at": "2026-09-19T02:18:59.105Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T02:24:03.421Z",
-  "publications": [
-    {
-      "file": "740-fbi-are-officially-investigating-youngboy-and-nba-his-crew-might.json",
-      "id": "740-fbi-are-officially-investigating-youngboy-and-nba-his-crew-might",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18073886237441818",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

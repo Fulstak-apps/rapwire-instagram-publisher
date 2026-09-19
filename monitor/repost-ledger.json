@@ -11428,6 +11428,12 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/reel/Dde99-dAvXT/",
       "view_count": 0
+    },
+    "DdfAtJ0l13_": {
+      "seen_at": "2026-09-19T21:52:31.899Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdfAtJ0l13_/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -14996,31 +15002,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/Dde99-dAvXT/",
       "queue_id": "768-meek-mills-is-fried-yall-this-nigga-has-now-resorted-to-some-afr",
       "video": "media/768-meek-mills-is-fried-yall-this-nigga-has-now-resorted-to-some-afr.mp4"
+    },
+    "DdezD-LPuuf": {
+      "queued_at": "2026-09-19T21:53:34.803Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/DdezD-LPuuf/",
+      "queue_id": "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-",
+      "video": "media/769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-18T21:55:36.314Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 8,
-        "needed": 16
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-18T21:55:53.771Z"
-    },
     {
       "started_at": "2026-09-18T21:55:36.314Z",
       "candidates": 36,
@@ -22926,6 +22917,31 @@
         ]
       },
       "finished_at": "2026-09-19T21:46:26.802Z"
+    },
+    {
+      "started_at": "2026-09-19T21:52:03.394Z",
+      "candidates": 48,
+      "queued": [
+        "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 8,
+        "needed": 40
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-19T21:53:34.803Z"
     }
   ],
   "vip_pending": {

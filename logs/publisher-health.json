@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T09:24:47.555Z",
+  "checked_at": "2026-09-19T11:45:51.595Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T09:24:46.391Z",
+    "checked_at": "2026-09-19T11:45:45.876Z",
     "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T09:39:46.391Z",
+    "next_check_at": "2026-09-19T12:00:45.876Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,10 +26,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 28,
-    "instagram_remaining": 20,
+    "instagram_usage": 27,
+    "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-19T06:39:53.081Z",
+    "next_feed_eligible_at": "2026-09-19T12:15:51.444Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,24 +43,40 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T09:24:46.252Z",
+    "checked_at": "2026-09-19T11:45:39.276Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T09:39:46.252Z",
+    "next_check_at": "2026-09-19T12:00:39.276Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-19T06:34:44.385Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-19T12:15:45.528Z",
+  "publications": [
+    {
+      "file": "748-trap-lore-ross-got-heated-with-this-answer.json",
+      "id": "748-trap-lore-ross-got-heated-with-this-answer",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18114617822061236"
+    },
+    {
+      "file": "748-trap-lore-ross-got-heated-with-this-answer.json",
+      "id": "748-trap-lore-ross-got-heated-with-this-answer",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18089847896690190",
+      "content_type": "video"
+    }
+  ],
   "failures": [
     {
       "file": "queue/748-trap-lore-ross-got-heated-with-this-answer.json",
       "id": "748-trap-lore-ross-got-heated-with-this-answer",
       "platform": "facebook",
       "status": "failed",
-      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 19-Sep-26 02:24:46 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AfEkSEvQZPhCvSZj5yC-BS0\"}}"
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Saturday, 19-Sep-26 04:45:39 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AzFkfQnN0j4VTuPahpAifwA\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

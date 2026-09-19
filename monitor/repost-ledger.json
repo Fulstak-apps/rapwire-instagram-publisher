@@ -11434,6 +11434,12 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/p/DdfAtJ0l13_/",
       "view_count": 0
+    },
+    "DdfBcY3SYxc": {
+      "seen_at": "2026-09-19T22:04:58.390Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdfBcY3SYxc/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15009,53 +15015,16 @@
       "source_url": "https://www.instagram.com/uproxx/reel/DdezD-LPuuf/",
       "queue_id": "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-",
       "video": "media/769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-.mp4"
+    },
+    "DdfBcY3SYxc": {
+      "queued_at": "2026-09-19T22:06:31.488Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdfBcY3SYxc/",
+      "queue_id": "770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s",
+      "video": "media/770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-18T21:55:36.314Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 8,
-        "needed": 16
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-18T21:55:53.771Z"
-    },
-    {
-      "started_at": "2026-09-18T22:16:18.860Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 7,
-        "needed": 17
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-18T22:17:34.839Z"
-    },
     {
       "started_at": "2026-09-18T22:16:18.860Z",
       "candidates": 36,
@@ -22942,6 +22911,53 @@
         ]
       },
       "finished_at": "2026-09-19T21:53:34.803Z"
+    },
+    {
+      "started_at": "2026-09-19T21:59:08.948Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 9,
+        "needed": 39
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-19T21:59:28.517Z"
+    },
+    {
+      "started_at": "2026-09-19T22:04:33.281Z",
+      "candidates": 48,
+      "queued": [
+        "770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 9,
+        "needed": 39
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-19T22:06:31.488Z"
     }
   ],
   "vip_pending": {

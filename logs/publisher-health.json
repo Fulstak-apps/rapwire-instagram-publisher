@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T06:20:04.834Z",
+  "checked_at": "2026-09-19T06:24:50.254Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-19T06:09:47.057Z",
+    "checked_at": "2026-09-19T06:24:49.784Z",
     "usage": 33,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-19T06:24:47.057Z",
+    "next_check_at": "2026-09-19T06:39:49.784Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T06:09:46.899Z",
+    "checked_at": "2026-09-19T06:24:50.086Z",
     "usage": 33,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T06:24:46.899Z",
+    "next_check_at": "2026-09-19T06:39:50.086Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T06:34:44.385Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "queue/748-trap-lore-ross-got-heated-with-this-answer.json",
+      "id": "748-trap-lore-ross-got-heated-with-this-answer",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 23:24:50 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A4GYGdOTP8LPR9_gBMMXAf4\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

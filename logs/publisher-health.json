@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T03:45:17.455Z",
+  "checked_at": "2026-09-19T03:50:05.910Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,10 +30,10 @@
     "instagram_remaining": 15,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-19T04:15:17.296Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,26 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-19T03:34:54.398Z",
-    "usage": 34,
+    "checked_at": "2026-09-19T03:50:05.688Z",
+    "usage": 33,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-19T03:49:54.398Z",
+    "next_check_at": "2026-09-19T04:05:05.688Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-19T04:10:09.413Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "743-1-of-the-hardest-songs-i-ve-heard-from-a-white-boy.json",
-      "id": "743-1-of-the-hardest-songs-i-ve-heard-from-a-white-boy",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18082702097687375",
-      "content_type": "video"
+      "file": "queue/744-jayda-wayda-told-ddg-she-doesn-t-plan-on-having-any-more-kids-af.json",
+      "id": "744-jayda-wayda-told-ddg-she-doesn-t-plan-on-having-any-more-kids-af",
+      "platform": "facebook",
+      "status": "failed",
+      "error": "Facebook failed: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 13:00:00 PDT. The current time is Friday, 18-Sep-26 20:50:05 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"Awg8eJ2YSWbpkxMuP-0YIP8\"}}"
     }
   ],
-  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

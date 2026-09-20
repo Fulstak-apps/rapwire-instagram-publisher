@@ -1,27 +1,28 @@
 {
-  "reserve_count": 8,
-  "reserve_hours": 4,
+  "reserve_count": 9,
+  "reserve_hours": 4.5,
   "reserve_low": true,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "763-bloodhound-lil-jeff-lil-scoom-are-looking-down-to-see-everybody-",
-    "764-king-von-quando-rondo-s-story-is-one-of-the-most-tragic-chapters",
     "765-what-does-the-drop-a-snowfall-saga-need-to-get-right-about-la-cu",
     "766-boosie-says-gucci-mane-need-to-stop-rapping",
     "767-cardi-told-fans-and-journalists-she-s-officially-working-on-her-",
     "768-meek-mills-is-fried-yall-this-nigga-has-now-resorted-to-some-afr",
     "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-",
-    "770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s"
+    "770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s",
+    "771-jay-z-broke-down-his-perspective-on-the-beef-between-biggie-and-",
+    "772-when-speed-facetimed-drake-champagnepapi-and-told-him-he-has-a-s",
+    "773-rich-homie-quan-girlfriend-at-the-time-spoke-on-how-she-was-only"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-19T22:50:30.125Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-20T00:26:50.955Z",
   "deferred": []
 }

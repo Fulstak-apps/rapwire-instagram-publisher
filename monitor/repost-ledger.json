@@ -11752,6 +11752,12 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddg7xcsRjAz/",
       "view_count": 0
+    },
+    "Ddg9u84jta3": {
+      "seen_at": "2026-09-20T16:07:31.246Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Ddg9u84jta3/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15467,45 +15473,16 @@
       "source_url": "https://www.instagram.com/raplisted_/p/Ddg7qo0Dgvp/",
       "queue_id": "789-ski-maskthe-slump-god-was-arrested-following-a-traffic-stop-by-t",
       "video": "media/789-ski-maskthe-slump-god-was-arrested-following-a-traffic-stop-by-t.mp4"
+    },
+    "DdfBZBnzyqu": {
+      "queued_at": "2026-09-20T16:08:25.179Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdfBZBnzyqu/",
+      "queue_id": "790-yeat-yeat-performing-earned-it-in-the-middle-of-central-park-loo",
+      "video": "media/790-yeat-yeat-performing-earned-it-in-the-middle-of-central-park-loo.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T12:04:03.914Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdcsxRONhH0/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T12:04:55.689Z"
-    },
     {
       "started_at": "2026-09-19T12:09:56.509Z",
       "candidates": 41,
@@ -23520,6 +23497,31 @@
         ]
       },
       "finished_at": "2026-09-20T16:01:58.900Z"
+    },
+    {
+      "started_at": "2026-09-20T16:07:10.578Z",
+      "candidates": 41,
+      "queued": [
+        "790-yeat-yeat-performing-earned-it-in-the-middle-of-central-park-loo"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 11,
+        "needed": 37
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-20T16:08:25.179Z"
     }
   ],
   "vip_pending": {

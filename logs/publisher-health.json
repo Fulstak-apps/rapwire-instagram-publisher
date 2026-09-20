@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T15:00:50.668Z",
+  "checked_at": "2026-09-20T15:05:55.976Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-20T15:00:45.051Z",
-    "usage": 26,
+    "checked_at": "2026-09-20T15:05:49.907Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-20T15:15:45.051Z",
+    "next_check_at": "2026-09-20T15:20:49.907Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 26,
     "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-20T14:55:43.984Z",
+    "next_feed_eligible_at": "2026-09-20T15:35:55.806Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-20T14:50:38.412Z",
+    "checked_at": "2026-09-20T15:05:49.522Z",
     "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-20T15:05:38.412Z",
+    "next_check_at": "2026-09-20T15:20:49.522Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "777-ed-sheeran-opens-solo-concert-with-comments-about-gaza-says-what.json",
       "id": "777-ed-sheeran-opens-solo-concert-with-comments-about-gaza-says-what",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17922745455424624"
+      "media_id": "18397587859203801",
+      "content_type": "video"
     }
   ],
   "failures": [],

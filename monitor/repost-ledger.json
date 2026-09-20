@@ -15822,45 +15822,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Ddhhxl0oDoR/",
       "queue_id": "808-when-quavo-offset-reunited-at-the-bet-awards-to-honor-takeoff",
       "video": "media/808-when-quavo-offset-reunited-at-the-bet-awards-to-honor-takeoff.mp4"
+    },
+    "DddzDn2x2fJ": {
+      "queued_at": "2026-09-20T22:28:26.739Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/DddzDn2x2fJ/",
+      "queue_id": "809-nothing-could-ve-prepared-me-for-hearing-this-for-the-first-time",
+      "video": "media/809-nothing-could-ve-prepared-me-for-hearing-this-for-the-first-time.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T15:01:25.548Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdcsxRONhH0/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T15:02:16.139Z"
-    },
     {
       "started_at": "2026-09-19T15:01:25.548Z",
       "candidates": 48,
@@ -23653,6 +23624,31 @@
         ]
       },
       "finished_at": "2026-09-20T22:21:59.868Z"
+    },
+    {
+      "started_at": "2026-09-20T22:27:20.888Z",
+      "candidates": 41,
+      "queued": [
+        "809-nothing-could-ve-prepared-me-for-hearing-this-for-the-first-time"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 21,
+        "needed": 27
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-20T22:28:26.739Z"
     }
   ],
   "vip_pending": {

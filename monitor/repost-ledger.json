@@ -12010,6 +12010,12 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhvXHDPRly/",
       "view_count": 0
+    },
+    "DdhxOU8oCJ8": {
+      "seen_at": "2026-09-20T23:41:45.344Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdhxOU8oCJ8/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15893,56 +15899,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdbYBmLRIfs/",
       "queue_id": "813-how-you-start-the-morning-properly-major-by-young-dolph-featurin",
       "video": "media/813-how-you-start-the-morning-properly-major-by-young-dolph-featurin.mp4"
+    },
+    "DdhxOU8oCJ8": {
+      "queued_at": "2026-09-20T23:42:23.669Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdhxOU8oCJ8/",
+      "queue_id": "814-rakai-and-ray-tried-working-regular-9-5-jobs-by-cleaning-houses-",
+      "video": "media/814-rakai-and-ray-tried-working-regular-9-5-jobs-by-cleaning-houses-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T15:13:35.689Z",
-      "candidates": 48,
-      "queued": [
-        "761-andrew-tate-claimed-that-anyone-hyped-for-gta-6-is-a-loser-unles"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T15:14:37.127Z"
-    },
-    {
-      "started_at": "2026-09-19T15:19:51.378Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T15:20:09.191Z"
-    },
     {
       "started_at": "2026-09-19T15:19:51.378Z",
       "candidates": 36,
@@ -23628,6 +23594,53 @@
         ]
       },
       "finished_at": "2026-09-20T23:29:47.473Z"
+    },
+    {
+      "started_at": "2026-09-20T23:35:02.819Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-20T23:35:27.765Z"
+    },
+    {
+      "started_at": "2026-09-20T23:40:32.517Z",
+      "candidates": 48,
+      "queued": [
+        "814-rakai-and-ray-tried-working-regular-9-5-jobs-by-cleaning-houses-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-20T23:42:23.669Z"
     }
   ],
   "vip_pending": {

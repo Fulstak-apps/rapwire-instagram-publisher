@@ -10777,7 +10777,7 @@
     },
     "DdcnDBRRAAY": {
       "seen_at": "2026-09-18T23:39:51.727Z",
-      "source_handle": "ceddynash",
+      "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/ceddynash/reel/DdcnDBRRAAY/",
       "view_count": 0
     },
@@ -11883,6 +11883,12 @@
       "seen_at": "2026-09-20T19:57:06.431Z",
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/DdhUGxHl8Cb/",
+      "view_count": 0
+    },
+    "DdhRCtiu4qV": {
+      "seen_at": "2026-09-20T20:04:11.890Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdhRCtiu4qV/",
       "view_count": 0
     }
   },
@@ -15662,31 +15668,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdhXGzWsD2v/",
       "queue_id": "798-contrary-to-people-who-don-t-know-here-s-who-the-jurors-thought-",
       "video": "media/798-contrary-to-people-who-don-t-know-here-s-who-the-jurors-thought-.mp4"
+    },
+    "DdhRCtiu4qV": {
+      "queued_at": "2026-09-20T20:04:51.969Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdhRCtiu4qV/",
+      "queue_id": "799-there-no-way-the-song-actually-worked-lil-durk-lildurk-whose-rea",
+      "video": "media/799-there-no-way-the-song-actually-worked-lil-durk-lildurk-whose-rea.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T12:39:33.021Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T12:39:52.252Z"
-    },
     {
       "started_at": "2026-09-19T12:39:33.021Z",
       "candidates": 36,
@@ -23520,6 +23511,31 @@
         ]
       },
       "finished_at": "2026-09-20T19:58:05.030Z"
+    },
+    {
+      "started_at": "2026-09-20T20:03:23.073Z",
+      "candidates": 48,
+      "queued": [
+        "799-there-no-way-the-song-actually-worked-lil-durk-lildurk-whose-rea"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 15,
+        "needed": 33
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-20T20:04:51.969Z"
     }
   ],
   "vip_pending": {

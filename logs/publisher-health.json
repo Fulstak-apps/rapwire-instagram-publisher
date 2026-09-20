@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T02:46:36.409Z",
+  "checked_at": "2026-09-20T02:51:47.132Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-20T02:46:35.373Z",
-    "usage": 26,
+    "checked_at": "2026-09-20T02:51:39.785Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-20T03:01:35.373Z",
+    "next_check_at": "2026-09-20T03:06:39.785Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 26,
     "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-20T02:41:40.601Z",
+    "next_feed_eligible_at": "2026-09-20T03:21:46.990Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-20T02:31:46.398Z",
-    "usage": 26,
+    "checked_at": "2026-09-20T02:51:33.091Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-20T02:46:46.398Z",
+    "next_check_at": "2026-09-20T03:06:33.091Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-20T02:41:35.323Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-20T03:21:38.562Z",
+  "publications": [
+    {
+      "file": "768-meek-mills-is-fried-yall-this-nigga-has-now-resorted-to-some-afr.json",
+      "id": "768-meek-mills-is-fried-yall-this-nigga-has-now-resorted-to-some-afr",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18064543499784283"
+    },
+    {
+      "file": "768-meek-mills-is-fried-yall-this-nigga-has-now-resorted-to-some-afr.json",
+      "id": "768-meek-mills-is-fried-yall-this-nigga-has-now-resorted-to-some-afr",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18353388448223810",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -15303,31 +15303,16 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/DdfvWm7R8bX/",
       "queue_id": "781-n3on-is-an-american-livestreamer-and-internet-personality-known-",
       "video": "media/781-n3on-is-an-american-livestreamer-and-internet-personality-known-.mp4"
+    },
+    "DdfQS8-uydh": {
+      "queued_at": "2026-09-20T05:48:26.900Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdfQS8-uydh/",
+      "queue_id": "782-j-cole-really-wearing-a-cowboy-hat-for-his-texas-show-he-had-it-",
+      "video": "media/782-j-cole-really-wearing-a-cowboy-hat-for-his-texas-show-he-had-it-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T06:15:00.079Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 12,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T06:15:17.548Z"
-    },
     {
       "started_at": "2026-09-19T06:15:00.079Z",
       "candidates": 36,
@@ -23465,6 +23450,31 @@
         ]
       },
       "finished_at": "2026-09-20T05:42:31.363Z"
+    },
+    {
+      "started_at": "2026-09-20T05:47:44.429Z",
+      "candidates": 41,
+      "queued": [
+        "782-j-cole-really-wearing-a-cowboy-hat-for-his-texas-show-he-had-it-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 9,
+        "needed": 39
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-20T05:48:26.900Z"
     }
   ],
   "vip_pending": {

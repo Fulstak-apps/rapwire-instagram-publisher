@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T03:57:14.362Z",
+  "checked_at": "2026-09-20T04:02:27.780Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-20T03:57:12.735Z",
-    "usage": 26,
+    "checked_at": "2026-09-20T04:02:21.499Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-20T04:12:12.735Z",
+    "next_check_at": "2026-09-20T04:17:21.499Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,10 +26,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 26,
+    "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-20T03:57:05.321Z",
+    "next_feed_eligible_at": "2026-09-20T04:32:27.660Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-20T03:52:08.632Z",
-    "usage": 26,
+    "usage": 27,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-20T04:07:08.632Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-20T03:56:58.718Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-20T04:32:20.923Z",
+  "publications": [
+    {
+      "file": "770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s.json",
+      "id": "770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17957811036236626"
+    },
+    {
+      "file": "770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s.json",
+      "id": "770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18014568716748714",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

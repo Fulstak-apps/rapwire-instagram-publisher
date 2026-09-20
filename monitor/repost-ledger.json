@@ -11776,6 +11776,12 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/p/Ddg_X44FNk0/",
       "view_count": 0
+    },
+    "DdhCWLxDtHC": {
+      "seen_at": "2026-09-20T16:42:48.106Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdhCWLxDtHC/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15505,53 +15511,16 @@
       "source_url": "https://www.instagram.com/xxl/p/Ddg_X44FNk0/",
       "queue_id": "791-drake-champagnepapi-wins-1-million-on-stake-after-betting-650-00",
       "video": "media/791-drake-champagnepapi-wins-1-million-on-stake-after-betting-650-00.mp4"
+    },
+    "DdhCWLxDtHC": {
+      "queued_at": "2026-09-20T16:43:20.160Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdhCWLxDtHC/",
+      "queue_id": "792-this-was-the-last-music-video-chicago-rapper-bloodhoundliljeff-w",
+      "video": "media/792-this-was-the-last-music-video-chicago-rapper-bloodhoundliljeff-w.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T12:15:36.710Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T12:15:57.075Z"
-    },
-    {
-      "started_at": "2026-09-19T12:15:36.710Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T12:15:57.075Z"
-    },
     {
       "started_at": "2026-09-19T12:15:36.710Z",
       "candidates": 36,
@@ -23455,6 +23424,53 @@
         ]
       },
       "finished_at": "2026-09-20T16:31:46.390Z"
+    },
+    {
+      "started_at": "2026-09-20T16:36:57.690Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 12,
+        "needed": 36
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-20T16:37:16.527Z"
+    },
+    {
+      "started_at": "2026-09-20T16:42:21.734Z",
+      "candidates": 48,
+      "queued": [
+        "792-this-was-the-last-music-video-chicago-rapper-bloodhoundliljeff-w"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 12,
+        "needed": 36
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-20T16:43:20.160Z"
     }
   ],
   "vip_pending": {

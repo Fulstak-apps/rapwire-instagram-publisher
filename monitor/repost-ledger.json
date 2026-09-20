@@ -15873,57 +15873,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdboGa_RSUD/",
       "queue_id": "811-generational-generosity-fr-lifestyle-by-rich-gang-featuring-youn",
       "video": "media/811-generational-generosity-fr-lifestyle-by-rich-gang-featuring-youn.mp4"
+    },
+    "DdhOXFVme2a": {
+      "queued_at": "2026-09-20T22:54:02.778Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdhOXFVme2a/",
+      "queue_id": "812-nine-vicious-addressed-ken-carson-kencarson-and-apollored1-s-9-b",
+      "video": "media/812-nine-vicious-addressed-ken-carson-kencarson-and-apollored1-s-9-b.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T15:07:17.388Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddKsn7u08Y/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLV93u8gM/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLuXyuIkK/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-19T15:08:34.782Z"
-    },
     {
       "started_at": "2026-09-19T15:07:17.388Z",
       "candidates": 41,
@@ -23684,6 +23643,31 @@
         ]
       },
       "finished_at": "2026-09-20T22:47:39.437Z"
+    },
+    {
+      "started_at": "2026-09-20T22:52:54.830Z",
+      "candidates": 48,
+      "queued": [
+        "812-nine-vicious-addressed-ken-carson-kencarson-and-apollored1-s-9-b"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-20T22:54:02.778Z"
     }
   ],
   "vip_pending": {

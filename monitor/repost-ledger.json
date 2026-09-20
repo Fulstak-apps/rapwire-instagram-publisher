@@ -15563,57 +15563,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdhEqA4I_of/",
       "queue_id": "795-a-fan-started-clapping-cardi-b-s-booty-but-she-checked-them-out-",
       "video": "media/795-a-fan-started-clapping-cardi-b-s-booty-but-she-checked-them-out-.mp4"
+    },
+    "DdeQnRaRAp6": {
+      "queued_at": "2026-09-20T17:30:42.166Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/DdeQnRaRAp6/",
+      "queue_id": "796-jaden-smith-really-knew-how-to-make-an-entrance-with-icon-jaden-",
+      "video": "media/796-jaden-smith-really-knew-how-to-make-an-entrance-with-icon-jaden-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T12:26:53.692Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLuXyuIkK/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddKsn7u08Y/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLV93u8gM/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-19T12:27:31.113Z"
-    },
     {
       "started_at": "2026-09-19T12:26:53.692Z",
       "candidates": 41,
@@ -23452,6 +23411,31 @@
         ]
       },
       "finished_at": "2026-09-20T17:24:36.414Z"
+    },
+    {
+      "started_at": "2026-09-20T17:29:49.448Z",
+      "candidates": 41,
+      "queued": [
+        "796-jaden-smith-really-knew-how-to-make-an-entrance-with-icon-jaden-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 15,
+        "needed": 33
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-20T17:30:42.166Z"
     }
   ],
   "vip_pending": {

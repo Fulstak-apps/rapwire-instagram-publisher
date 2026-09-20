@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T16:52:05.342Z",
+  "checked_at": "2026-09-20T16:56:55.863Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 27,
+    "instagram_remaining": 21,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-20T17:22:05.152Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-20T16:41:47.417Z",
+    "checked_at": "2026-09-20T16:56:55.793Z",
     "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-20T16:56:47.417Z",
+    "next_check_at": "2026-09-20T17:11:55.793Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-20T17:21:57.677Z",
-  "publications": [
-    {
-      "file": "780-why-they-expose-ed-sheeran-for-using-a-teleprompter-for-his-apol.json",
-      "id": "780-why-they-expose-ed-sheeran-for-using-a-teleprompter-for-his-apol",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18379542652226361"
-    },
-    {
-      "file": "780-why-they-expose-ed-sheeran-for-using-a-teleprompter-for-his-apol.json",
-      "id": "780-why-they-expose-ed-sheeran-for-using-a-teleprompter-for-his-apol",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17905654467329828",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

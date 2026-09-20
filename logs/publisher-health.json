@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T14:25:44.095Z",
+  "checked_at": "2026-09-20T14:30:26.953Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 27,
+    "instagram_remaining": 21,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-20T14:55:43.984Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-20T14:55:27.301Z",
-  "publications": [
-    {
-      "file": "776-macklemore-leaving-ed-sheeran-tour-has-affected-ticket-sales.json",
-      "id": "776-macklemore-leaving-ed-sheeran-tour-has-affected-ticket-sales",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18102223841619555"
-    },
-    {
-      "file": "776-macklemore-leaving-ed-sheeran-tour-has-affected-ticket-sales.json",
-      "id": "776-macklemore-leaving-ed-sheeran-tour-has-affected-ticket-sales",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18103881701196077",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

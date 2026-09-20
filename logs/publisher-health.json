@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T02:06:27.580Z",
+  "checked_at": "2026-09-20T02:11:40.725Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-20T02:06:25.985Z",
-    "usage": 26,
+    "checked_at": "2026-09-20T02:11:36.504Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-20T02:21:25.985Z",
+    "next_check_at": "2026-09-20T02:26:36.504Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,10 +26,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 26,
+    "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-20T02:06:24.711Z",
+    "next_feed_eligible_at": "2026-09-20T02:41:40.601Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-20T02:01:32.976Z",
-    "usage": 26,
+    "usage": 27,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-20T02:16:32.976Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-20T02:06:17.048Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-20T02:41:35.323Z",
+  "publications": [
+    {
+      "file": "767-cardi-told-fans-and-journalists-she-s-officially-working-on-her-.json",
+      "id": "767-cardi-told-fans-and-journalists-she-s-officially-working-on-her-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18038889881640410"
+    },
+    {
+      "file": "767-cardi-told-fans-and-journalists-she-s-officially-working-on-her-.json",
+      "id": "767-cardi-told-fans-and-journalists-she-s-officially-working-on-her-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18060679718546791",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

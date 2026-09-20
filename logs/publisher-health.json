@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T03:21:50.282Z",
+  "checked_at": "2026-09-20T03:27:05.487Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-20T03:21:48.898Z",
-    "usage": 26,
+    "checked_at": "2026-09-20T03:26:59.318Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-20T03:36:48.898Z",
+    "next_check_at": "2026-09-20T03:41:59.318Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 26,
     "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-20T03:21:46.990Z",
+    "next_feed_eligible_at": "2026-09-20T03:57:05.321Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-20T03:21:48.644Z",
-    "usage": 26,
+    "usage": 27,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-20T03:36:48.644Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-20T03:21:38.562Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-20T03:56:58.718Z",
+  "publications": [
+    {
+      "file": "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-.json",
+      "id": "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18029738954899391"
+    },
+    {
+      "file": "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-.json",
+      "id": "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18038505353828844",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

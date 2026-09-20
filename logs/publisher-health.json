@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T01:36:25.019Z",
+  "checked_at": "2026-09-20T01:41:12.326Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 27,
+    "instagram_remaining": 21,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-20T02:06:24.711Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-20T02:06:17.048Z",
-  "publications": [
-    {
-      "file": "766-boosie-says-gucci-mane-need-to-stop-rapping.json",
-      "id": "766-boosie-says-gucci-mane-need-to-stop-rapping",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18101682194347093"
-    },
-    {
-      "file": "766-boosie-says-gucci-mane-need-to-stop-rapping.json",
-      "id": "766-boosie-says-gucci-mane-need-to-stop-rapping",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18063871514788688",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

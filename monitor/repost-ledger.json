@@ -11926,6 +11926,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/DdhfG2Avaqv/",
       "view_count": 0
+    },
+    "DdhhArdvxef": {
+      "seen_at": "2026-09-20T21:27:03.916Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhhArdvxef/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15753,81 +15759,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdhfG2Avaqv/",
       "queue_id": "805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-",
       "video": "media/805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-.mp4"
+    },
+    "DdhhArdvxef": {
+      "queued_at": "2026-09-20T21:27:43.596Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhhArdvxef/",
+      "queue_id": "806-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
+      "video": "media/806-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T14:42:47.191Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdcsxRONhH0/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T14:43:38.351Z"
-    },
-    {
-      "started_at": "2026-09-19T14:42:47.191Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdcsxRONhH0/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T14:43:38.351Z"
-    },
     {
       "started_at": "2026-09-19T14:42:47.191Z",
       "candidates": 48,
@@ -23679,6 +23620,68 @@
         ]
       },
       "finished_at": "2026-09-20T21:07:29.888Z"
+    },
+    {
+      "started_at": "2026-09-20T21:12:44.781Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x7814c25180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x781510c000] [enc:mjpeg @ 0x7815014540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x7814c7c000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x7814c7c000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x7814c7c000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x781510c000] [enc:mjpeg @ 0x7815014540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x781510c000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x781510c000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x7815060300] Nothing was written into output file, because at least one of its streams received no packets.\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-20T21:14:01.353Z"
+    },
+    {
+      "started_at": "2026-09-20T21:26:40.634Z",
+      "candidates": 41,
+      "queued": [
+        "806-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddc5RMhRb-L/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-20T21:27:43.596Z"
     }
   ],
   "vip_pending": {

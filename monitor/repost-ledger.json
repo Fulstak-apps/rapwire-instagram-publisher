@@ -15675,31 +15675,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdhRCtiu4qV/",
       "queue_id": "799-there-no-way-the-song-actually-worked-lil-durk-lildurk-whose-rea",
       "video": "media/799-there-no-way-the-song-actually-worked-lil-durk-lildurk-whose-rea.mp4"
+    },
+    "DdhRRXAMzRh": {
+      "queued_at": "2026-09-20T20:11:26.916Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhRRXAMzRh/",
+      "queue_id": "800-ye-spoke-on-graduation-back-in-2007-calling-it-a-time-capsule-of",
+      "video": "media/800-ye-spoke-on-graduation-back-in-2007-calling-it-a-time-capsule-of.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T12:39:33.021Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T12:39:52.252Z"
-    },
     {
       "started_at": "2026-09-19T14:30:53.973Z",
       "candidates": 48,
@@ -23536,6 +23521,31 @@
         ]
       },
       "finished_at": "2026-09-20T20:04:51.969Z"
+    },
+    {
+      "started_at": "2026-09-20T20:10:03.559Z",
+      "candidates": 48,
+      "queued": [
+        "800-ye-spoke-on-graduation-back-in-2007-calling-it-a-time-capsule-of"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 16,
+        "needed": 32
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-20T20:11:26.916Z"
     }
   ],
   "vip_pending": {

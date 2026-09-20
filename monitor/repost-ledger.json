@@ -15815,59 +15815,16 @@
       "source_url": "https://www.instagram.com/records/p/DdhWfDQjyxy/",
       "queue_id": "807-has-been-dropping-heat-lately-and-dsd-is-another-one-with-visual",
       "video": "media/807-has-been-dropping-heat-lately-and-dsd-is-another-one-with-visual.mp4"
+    },
+    "Ddhhxl0oDoR": {
+      "queued_at": "2026-09-20T22:21:59.868Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Ddhhxl0oDoR/",
+      "queue_id": "808-when-quavo-offset-reunited-at-the-bet-awards-to-honor-takeoff",
+      "video": "media/808-when-quavo-offset-reunited-at-the-bet-awards-to-honor-takeoff.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T14:54:18.314Z",
-      "candidates": 48,
-      "queued": [
-        "760-j-cole-s-been-in-his-producer-bag-for-a-long-time-but-he-s-going"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T14:55:52.035Z"
-    },
-    {
-      "started_at": "2026-09-19T14:54:18.314Z",
-      "candidates": 48,
-      "queued": [
-        "760-j-cole-s-been-in-his-producer-bag-for-a-long-time-but-he-s-going"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T14:55:52.035Z"
-    },
     {
       "started_at": "2026-09-19T15:01:25.548Z",
       "candidates": 48,
@@ -23649,6 +23606,53 @@
         ]
       },
       "finished_at": "2026-09-20T22:09:59.841Z"
+    },
+    {
+      "started_at": "2026-09-20T22:15:13.572Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 21,
+        "needed": 27
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-20T22:15:33.001Z"
+    },
+    {
+      "started_at": "2026-09-20T22:20:39.478Z",
+      "candidates": 48,
+      "queued": [
+        "808-when-quavo-offset-reunited-at-the-bet-awards-to-honor-takeoff"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-20T22:21:59.868Z"
     }
   ],
   "vip_pending": {

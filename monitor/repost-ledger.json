@@ -15460,81 +15460,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdgnjxBvxCH/",
       "queue_id": "788-lil-baby-really-snapped-on-rags2riches-2-lil-baby-s-verse-on-rag",
       "video": "media/788-lil-baby-really-snapped-on-rags2riches-2-lil-baby-s-verse-on-rag.mp4"
+    },
+    "Ddg7qo0Dgvp": {
+      "queued_at": "2026-09-20T16:01:58.900Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Ddg7qo0Dgvp/",
+      "queue_id": "789-ski-maskthe-slump-god-was-arrested-following-a-traffic-stop-by-t",
+      "video": "media/789-ski-maskthe-slump-god-was-arrested-following-a-traffic-stop-by-t.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T12:04:03.914Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdcsxRONhH0/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T12:04:55.689Z"
-    },
-    {
-      "started_at": "2026-09-19T12:04:03.914Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdcsxRONhH0/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T12:04:55.689Z"
-    },
     {
       "started_at": "2026-09-19T12:04:03.914Z",
       "candidates": 48,
@@ -23538,6 +23473,53 @@
         ]
       },
       "finished_at": "2026-09-20T15:49:55.512Z"
+    },
+    {
+      "started_at": "2026-09-20T15:55:21.402Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 10,
+        "needed": 38
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-20T15:55:43.228Z"
+    },
+    {
+      "started_at": "2026-09-20T16:00:48.094Z",
+      "candidates": 48,
+      "queued": [
+        "789-ski-maskthe-slump-god-was-arrested-following-a-traffic-stop-by-t"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 10,
+        "needed": 38
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-20T16:01:58.900Z"
     }
   ],
   "vip_pending": {

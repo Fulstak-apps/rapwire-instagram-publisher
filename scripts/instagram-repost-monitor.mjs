@@ -4,6 +4,7 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { capture, launch } from "./instagram-browser-mirror.mjs";
 import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-caption.mjs";
+import { failedCandidates } from "./candidate-backoff.mjs";
 
 const execFileAsync = promisify(execFile);
 const gitTimeoutMs = 60_000;
@@ -631,7 +632,8 @@ try {
   // First consume a completed, validated local render that never reached the
   // queue. This is a fast reserve path: it does no browser navigation and can
   // keep publication moving while Instagram profile pages are slow.
-  const reserve = await cachedCandidates(ledger);
+  const deferredCandidates = failedCandidates(ledger.runs);
+  const reserve = (await cachedCandidates(ledger)).filter(candidate => !deferredCandidates.has(candidate.shortcode));
   for (const candidate of reserve.slice(0, 12)) {
     try {
       const id = await queueCapture(ledger, candidate, await nextQueueNumber());
@@ -670,7 +672,7 @@ try {
       discovered.push(...batch.flat());
     }
     const selectedForScoring = discoverySources.flatMap((source) => discovered
-      .filter((candidate) => candidate.source.handle === source.handle && !ledger.queued_shortcodes[candidate.shortcode])
+      .filter((candidate) => candidate.source.handle === source.handle && !ledger.queued_shortcodes[candidate.shortcode] && !deferredCandidates.has(candidate.shortcode))
       .slice(0, candidatesPerSourceToScore));
     rankedPool = selectedForScoring;
     // Score a small batch of independent posts at once.  Sequential page

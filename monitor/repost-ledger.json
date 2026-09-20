@@ -11644,6 +11644,36 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Ddf1MF2jcIb/",
       "view_count": 0
+    },
+    "DdgdBTzj91-": {
+      "seen_at": "2026-09-20T12:07:37.861Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/p/DdgdBTzj91-/",
+      "view_count": 0
+    },
+    "DdgT4ZWlqY9": {
+      "seen_at": "2026-09-20T14:22:18.135Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdgT4ZWlqY9/",
+      "view_count": 0
+    },
+    "DdgRlKZFufj": {
+      "seen_at": "2026-09-20T14:22:18.135Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdgRlKZFufj/",
+      "view_count": 0
+    },
+    "DdgPhCxlvTW": {
+      "seen_at": "2026-09-20T14:22:18.135Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdgPhCxlvTW/",
+      "view_count": 0
+    },
+    "Ddf51f4oyd8": {
+      "seen_at": "2026-09-20T14:22:18.135Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/zoowayne1738/reel/Ddf51f4oyd8/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15317,55 +15347,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/reel/DdfYL_XtzSS/",
       "queue_id": "783-nevaeh-had-to-rush-in-and-get-the-baby-after-another-sw-tted-sit",
       "video": "media/783-nevaeh-had-to-rush-in-and-get-the-baby-after-another-sw-tted-sit.mp4"
+    },
+    "DdgT4ZWlqY9": {
+      "queued_at": "2026-09-20T14:22:42.893Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdgT4ZWlqY9/",
+      "queue_id": "784-after-a-mugshot-of-rapper-skimasktheslumpgod-surfaced-online-yes",
+      "video": "media/784-after-a-mugshot-of-rapper-skimasktheslumpgod-surfaced-online-yes.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T06:31:58.065Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 11,
-        "needed": 13
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T06:32:27.609Z"
-    },
-    {
-      "started_at": "2026-09-19T06:31:58.065Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 11,
-        "needed": 13
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T06:32:27.609Z"
-    },
     {
       "started_at": "2026-09-19T06:31:58.065Z",
       "candidates": 48,
@@ -23351,6 +23342,98 @@
         ]
       },
       "finished_at": "2026-09-20T06:41:49.041Z"
+    },
+    {
+      "started_at": "2026-09-20T11:33:39.455Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde8n8iPigo/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdeqWArPGGz/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde1PlovwO1/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 9,
+        "needed": 39
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-20T12:08:07.996Z"
+    },
+    {
+      "started_at": "2026-09-20T14:21:36.261Z",
+      "candidates": 48,
+      "queued": [
+        "784-after-a-mugshot-of-rapper-skimasktheslumpgod-surfaced-online-yes"
+      ],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdfSW-xtRHP/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 9,
+        "needed": 39
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-20T14:22:42.893Z"
     }
   ],
   "vip_pending": {

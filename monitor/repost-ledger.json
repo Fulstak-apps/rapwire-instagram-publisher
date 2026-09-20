@@ -11794,6 +11794,12 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/reel/DdhDfyXxxB-/",
       "view_count": 0
+    },
+    "DdhE223Ed4u": {
+      "seen_at": "2026-09-20T17:12:10.906Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/p/DdhE223Ed4u/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15537,45 +15543,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Ddehx7APA6-/",
       "queue_id": "793-stronger-was-way-ahead-of-its-time-when-kanye-dropped-it-in-2007",
       "video": "media/793-stronger-was-way-ahead-of-its-time-when-kanye-dropped-it-in-2007.mp4"
+    },
+    "DdhE223Ed4u": {
+      "queued_at": "2026-09-20T17:12:34.718Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/p/DdhE223Ed4u/",
+      "queue_id": "794-new-migos-on-the-way-says-a-new-migos-album-could-be-coming-as-s",
+      "video": "media/794-new-migos-on-the-way-says-a-new-migos-album-could-be-coming-as-s.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T12:20:57.874Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdcsxRONhH0/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T12:21:52.915Z"
-    },
     {
       "started_at": "2026-09-19T12:20:57.874Z",
       "candidates": 48,
@@ -23474,6 +23451,31 @@
         ]
       },
       "finished_at": "2026-09-20T17:05:54.958Z"
+    },
+    {
+      "started_at": "2026-09-20T17:11:09.041Z",
+      "candidates": 48,
+      "queued": [
+        "794-new-migos-on-the-way-says-a-new-migos-album-could-be-coming-as-s"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 13,
+        "needed": 35
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-20T17:12:34.718Z"
     }
   ],
   "vip_pending": {

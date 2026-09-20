@@ -11902,6 +11902,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/DdhacKROAG6/",
       "view_count": 0
+    },
+    "DdhcGHAjyr_": {
+      "seen_at": "2026-09-20T20:28:30.113Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdhcGHAjyr_/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15701,34 +15707,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdhacKROAG6/",
       "queue_id": "801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his",
       "video": "media/801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his.mp4"
+    },
+    "DdhcGHAjyr_": {
+      "queued_at": "2026-09-20T20:29:08.027Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdhcGHAjyr_/",
+      "queue_id": "802-tee-grizzley-teegrizzley-took-over-a-college-campus-as-rolling-l",
+      "video": "media/802-tee-grizzley-teegrizzley-took-over-a-college-campus-as-rolling-l.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T14:30:53.973Z",
-      "candidates": 48,
-      "queued": [
-        "759-rocky-brought-his-son-riot-out-on-stage-tonight-and-even-put-him"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T14:32:06.791Z"
-    },
     {
       "started_at": "2026-09-19T14:30:53.973Z",
       "candidates": 48,
@@ -23562,6 +23550,31 @@
         ]
       },
       "finished_at": "2026-09-20T20:22:55.512Z"
+    },
+    {
+      "started_at": "2026-09-20T20:28:05.651Z",
+      "candidates": 41,
+      "queued": [
+        "802-tee-grizzley-teegrizzley-took-over-a-college-campus-as-rolling-l"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 18,
+        "needed": 30
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-20T20:29:08.027Z"
     }
   ],
   "vip_pending": {

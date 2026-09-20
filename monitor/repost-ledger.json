@@ -15570,105 +15570,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdeQnRaRAp6/",
       "queue_id": "796-jaden-smith-really-knew-how-to-make-an-entrance-with-icon-jaden-",
       "video": "media/796-jaden-smith-really-knew-how-to-make-an-entrance-with-icon-jaden-.mp4"
+    },
+    "DdXkz-FjV6Z": {
+      "queued_at": "2026-09-20T17:44:45.281Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/vladtv/reel/DdXkz-FjV6Z/",
+      "queue_id": "797-was-this-facetime-call-the-strongest-evidence-against-lil-durk-l",
+      "video": "media/797-was-this-facetime-call-the-strongest-evidence-against-lil-durk-l.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T12:26:53.692Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLuXyuIkK/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddKsn7u08Y/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLV93u8gM/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-19T12:27:31.113Z"
-    },
-    {
-      "started_at": "2026-09-19T12:26:53.692Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLuXyuIkK/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddKsn7u08Y/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLV93u8gM/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-19T12:27:31.113Z"
-    },
     {
       "started_at": "2026-09-19T12:32:32.042Z",
       "candidates": 48,
@@ -23436,6 +23347,53 @@
         ]
       },
       "finished_at": "2026-09-20T17:30:42.166Z"
+    },
+    {
+      "started_at": "2026-09-20T17:36:04.629Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 15,
+        "needed": 33
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-20T17:36:33.902Z"
+    },
+    {
+      "started_at": "2026-09-20T17:41:38.611Z",
+      "candidates": 48,
+      "queued": [
+        "797-was-this-facetime-call-the-strongest-evidence-against-lil-durk-l"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 15,
+        "needed": 33
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-20T17:44:45.281Z"
     }
   ],
   "vip_pending": {

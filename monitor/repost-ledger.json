@@ -11890,6 +11890,18 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/DdhRCtiu4qV/",
       "view_count": 0
+    },
+    "Ddha5I2l66n": {
+      "seen_at": "2026-09-20T20:17:05.121Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Ddha5I2l66n/",
+      "view_count": 0
+    },
+    "DdhacKROAG6": {
+      "seen_at": "2026-09-20T20:22:34.740Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdhacKROAG6/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15682,59 +15694,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhRRXAMzRh/",
       "queue_id": "800-ye-spoke-on-graduation-back-in-2007-calling-it-a-time-capsule-of",
       "video": "media/800-ye-spoke-on-graduation-back-in-2007-calling-it-a-time-capsule-of.mp4"
+    },
+    "DdhacKROAG6": {
+      "queued_at": "2026-09-20T20:22:55.512Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdhacKROAG6/",
+      "queue_id": "801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his",
+      "video": "media/801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T14:30:53.973Z",
-      "candidates": 48,
-      "queued": [
-        "759-rocky-brought-his-son-riot-out-on-stage-tonight-and-even-put-him"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T14:32:06.791Z"
-    },
-    {
-      "started_at": "2026-09-19T14:30:53.973Z",
-      "candidates": 48,
-      "queued": [
-        "759-rocky-brought-his-son-riot-out-on-stage-tonight-and-even-put-him"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T14:32:06.791Z"
-    },
     {
       "started_at": "2026-09-19T14:30:53.973Z",
       "candidates": 48,
@@ -23546,6 +23515,53 @@
         ]
       },
       "finished_at": "2026-09-20T20:11:26.916Z"
+    },
+    {
+      "started_at": "2026-09-20T20:16:47.333Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 17,
+        "needed": 31
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-20T20:17:05.122Z"
+    },
+    {
+      "started_at": "2026-09-20T20:22:09.832Z",
+      "candidates": 48,
+      "queued": [
+        "801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 17,
+        "needed": 31
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-20T20:22:55.512Z"
     }
   ],
   "vip_pending": {

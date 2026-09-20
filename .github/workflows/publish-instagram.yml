@@ -48,6 +48,9 @@ jobs:
       - name: Test resumable publisher
         run: node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs scripts/media-ranges.test.mjs scripts/publication-policy.test.mjs
 
+      - name: Test X mirror isolation and backfill
+        run: node --test scripts/x-threads-mirror.test.mjs
+
       - name: Check prior publication state
         env:
           GH_TOKEN: ${{ github.token }}
@@ -120,6 +123,15 @@ jobs:
       - name: Remove confirmed published media from repository
         if: ${{ always() }}
         run: python scripts/cleanup-published-media.py
+
+      - name: Mirror RapWikip to Threads only
+        if: ${{ success() && vars.RAPWIRE_X_MIRROR_ENABLED == 'true' }}
+        timeout-minutes: 3
+        env:
+          RAPWIRE_X_MIRROR_ENABLED: "true"
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: node scripts/x-threads-mirror.mjs
 
       - name: Save publication log
         if: ${{ always() }}

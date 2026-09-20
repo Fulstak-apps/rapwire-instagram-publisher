@@ -11914,6 +11914,18 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/floridadefenseteam/reel/DdheTqEpQPl/",
       "view_count": 0
+    },
+    "DdhfVgyPqC_": {
+      "seen_at": "2026-09-20T21:07:09.423Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhfVgyPqC_/",
+      "view_count": 0
+    },
+    "DdhfG2Avaqv": {
+      "seen_at": "2026-09-20T21:07:09.424Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdhfG2Avaqv/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15734,45 +15746,16 @@
       "source_url": "https://www.instagram.com/floridadefenseteam/reel/DdheTqEpQPl/",
       "queue_id": "804-one-of-the-jurors-from-lil-durk-lildurk-s-trial-finally-gave-som",
       "video": "media/804-one-of-the-jurors-from-lil-durk-lildurk-s-trial-finally-gave-som.mp4"
+    },
+    "DdhfG2Avaqv": {
+      "queued_at": "2026-09-20T21:07:29.888Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdhfG2Avaqv/",
+      "queue_id": "805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-",
+      "video": "media/805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T14:42:47.191Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdcsxRONhH0/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 24,
-        "available": 9,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T14:43:38.351Z"
-    },
     {
       "started_at": "2026-09-19T14:42:47.191Z",
       "candidates": 48,
@@ -23652,6 +23635,50 @@
         ]
       },
       "finished_at": "2026-09-20T21:01:08.165Z"
+    },
+    {
+      "started_at": "2026-09-20T21:06:43.233Z",
+      "candidates": 41,
+      "queued": [
+        "805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddKsn7u08Y/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddJzzKu_tF/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhfVgyPqC_/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-20T21:07:29.888Z"
     }
   ],
   "vip_pending": {

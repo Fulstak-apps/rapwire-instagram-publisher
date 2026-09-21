@@ -16520,38 +16520,16 @@
       "source_url": "https://www.instagram.com/raplisted_/p/Ddj8_14jmQ-/",
       "queue_id": "840-fans-go-crazy-after-swae-lee-makes-a-stop-at-a-college-for-the-r",
       "video": "media/840-fans-go-crazy-after-swae-lee-makes-a-stop-at-a-college-for-the-r.mp4"
+    },
+    "Ddj-BwNmZmY": {
+      "queued_at": "2026-09-21T20:31:41.880Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Ddj-BwNmZmY/",
+      "queue_id": "841-quavo-says-a-new-migos-album-is-on-the-way-and-could-arrive-arou",
+      "video": "media/841-quavo-says-a-new-migos-album-is-on-the-way-and-could-arrive-arou.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T02:35:54.467Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T02:36:35.807Z"
-    },
     {
       "started_at": "2026-09-20T02:41:40.427Z",
       "candidates": 48,
@@ -23640,6 +23618,31 @@
         ]
       },
       "finished_at": "2026-09-21T20:25:14.491Z"
+    },
+    {
+      "started_at": "2026-09-21T20:30:29.491Z",
+      "candidates": 48,
+      "queued": [
+        "841-quavo-says-a-new-migos-album-is-on-the-way-and-could-arrive-arou"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 27,
+        "needed": 21
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T20:31:41.880Z"
     }
   ],
   "vip_pending": {

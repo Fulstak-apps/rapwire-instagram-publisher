@@ -16313,74 +16313,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdjoTmTorg1/",
       "queue_id": "831-8-years-ago-today-kanye-west-sent-a-warning-to-drake-champagnepa",
       "video": "media/831-8-years-ago-today-kanye-west-sent-a-warning-to-drake-champagnepa.mp4"
+    },
+    "Ddi8BDkxIzU": {
+      "queued_at": "2026-09-21T17:28:04.614Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/Ddi8BDkxIzU/",
+      "queue_id": "832-when-she-says-raindrops-is-her-favorite-sound-to-fall-asleep-to-",
+      "video": "media/832-when-she-says-raindrops-is-her-favorite-sound-to-fall-asleep-to-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T23:31:08.814Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T23:31:37.851Z"
-    },
-    {
-      "started_at": "2026-09-19T23:36:41.917Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T23:36:59.868Z"
-    },
     {
       "started_at": "2026-09-19T23:42:04.601Z",
       "candidates": 48,
@@ -23678,6 +23620,54 @@
         ]
       },
       "finished_at": "2026-09-21T17:16:05.874Z"
+    },
+    {
+      "started_at": "2026-09-21T17:21:41.528Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 22,
+        "needed": 26
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T17:22:01.694Z"
+    },
+    {
+      "started_at": "2026-09-21T17:27:06.347Z",
+      "candidates": 41,
+      "queued": [
+        "832-when-she-says-raindrops-is-her-favorite-sound-to-fall-asleep-to-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 22,
+        "needed": 26
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T17:28:04.614Z"
     }
   ],
   "vip_pending": {

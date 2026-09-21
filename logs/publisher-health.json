@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T21:56:03.829Z",
+  "checked_at": "2026-09-21T22:00:56.934Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-21T22:26:03.682Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,26 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T21:45:51.494Z",
+    "checked_at": "2026-09-21T22:00:56.893Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T22:00:51.494Z",
+    "next_check_at": "2026-09-21T22:15:56.893Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-21T22:20:54.555Z",
-  "publications": [
-    {
-      "file": "816-feliciathegoat-really-has-the-best-taste-in-cars-the-rapper-was-.json",
-      "id": "816-feliciathegoat-really-has-the-best-taste-in-cars-the-rapper-was-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18165234991482790",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

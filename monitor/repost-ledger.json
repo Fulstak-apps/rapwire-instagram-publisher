@@ -12346,6 +12346,24 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/DdjuhlYl_Ci/",
       "view_count": 0
+    },
+    "DdjyHToCb9L": {
+      "seen_at": "2026-09-21T18:34:08.619Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdjyHToCb9L/",
+      "view_count": 0
+    },
+    "DdjyOHnFd2o": {
+      "seen_at": "2026-09-21T18:34:08.619Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/p/DdjyOHnFd2o/",
+      "view_count": 0
+    },
+    "Ddj0qClFiPj": {
+      "seen_at": "2026-09-21T18:52:33.496Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Ddj0qClFiPj/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16383,166 +16401,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Ddjphunxjel/",
       "queue_id": "835-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du",
       "video": "media/835-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du.mp4"
+    },
+    "DdjooAPxff4": {
+      "queued_at": "2026-09-21T19:01:44.971Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdjooAPxff4/",
+      "queue_id": "836-fat-joe-and-this-n-word-debate-who-can-and-can-t-say-what",
+      "video": "media/836-fat-joe-and-this-n-word-debate-who-can-and-can-t-say-what.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T00:28:15.067Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde1PlovwO1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde8n8iPigo/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdeqWArPGGz/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T00:28:52.127Z"
-    },
-    {
-      "started_at": "2026-09-20T00:33:56.494Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T00:34:27.551Z"
-    },
-    {
-      "started_at": "2026-09-20T00:39:31.952Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T00:39:49.260Z"
-    },
-    {
-      "started_at": "2026-09-20T00:44:55.464Z",
-      "candidates": 48,
-      "queued": [
-        "774-why-they-tryna-play-w-cardi"
-      ],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdfSW-xtRHP/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T00:45:53.785Z"
-    },
     {
       "started_at": "2026-09-20T01:32:05.917Z",
       "candidates": 48,
@@ -23639,6 +23507,119 @@
         ]
       },
       "finished_at": "2026-09-21T18:21:49.489Z"
+    },
+    {
+      "started_at": "2026-09-21T18:28:21.226Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 25,
+        "needed": 23
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T18:28:43.540Z"
+    },
+    {
+      "started_at": "2026-09-21T18:33:48.866Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T18:34:08.620Z"
+    },
+    {
+      "started_at": "2026-09-21T18:52:12.235Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x78bc819180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x78bc8c8000] [enc:mjpeg @ 0x78bc804540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x78bd4c4000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x78bd4c4000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x78bd4c4000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x78bc8c8000] [enc:mjpeg @ 0x78bc804540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x78bc8c8000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x78bc8c8000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x78bc81c300] Nothing was written into output file, because at least one of its streams received no packets.\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T18:53:01.973Z"
+    },
+    {
+      "started_at": "2026-09-21T18:58:14.361Z",
+      "candidates": 36,
+      "queued": [
+        "836-fat-joe-and-this-n-word-debate-who-can-and-can-t-say-what"
+      ],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/art.life.lovee/p/DdhtUDZR6kw/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        },
+        {
+          "source_handle": "igndotcom",
+          "source_url": "https://www.instagram.com/igndotcom/p/DdjuhlYl_Ci/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T19:01:44.971Z"
     }
   ],
   "vip_pending": {

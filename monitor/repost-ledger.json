@@ -12460,6 +12460,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/DdkBdzYoR4c/",
       "view_count": 0
+    },
+    "DdkCA3lTV0A": {
+      "seen_at": "2026-09-21T20:55:22.469Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/DdkCA3lTV0A/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16546,74 +16552,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdkBdzYoR4c/",
       "queue_id": "842-clavicular-s-best-friend-drago-now-faces-serious-legal-trouble-a",
       "video": "media/842-clavicular-s-best-friend-drago-now-faces-serious-legal-trouble-a.mp4"
+    },
+    "DdkCA3lTV0A": {
+      "queued_at": "2026-09-21T20:59:35.646Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/DdkCA3lTV0A/",
+      "queue_id": "843-swae-lee-had-some-serious-music-choices-to-make-took-the-sound-c",
+      "video": "media/843-swae-lee-had-some-serious-music-choices-to-make-took-the-sound-c.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T02:53:01.036Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T02:53:35.495Z"
-    },
-    {
-      "started_at": "2026-09-20T02:58:40.482Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T02:58:58.452Z"
-    },
     {
       "started_at": "2026-09-20T03:04:05.154Z",
       "candidates": 48,
@@ -23607,6 +23555,61 @@
         ]
       },
       "finished_at": "2026-09-21T20:43:22.115Z"
+    },
+    {
+      "started_at": "2026-09-21T20:48:40.576Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 29,
+        "needed": 19
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T20:48:59.913Z"
+    },
+    {
+      "started_at": "2026-09-21T20:54:09.738Z",
+      "candidates": 48,
+      "queued": [
+        "843-swae-lee-had-some-serious-music-choices-to-make-took-the-sound-c"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 28,
+        "needed": 20
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T20:59:35.646Z"
     }
   ],
   "vip_pending": {

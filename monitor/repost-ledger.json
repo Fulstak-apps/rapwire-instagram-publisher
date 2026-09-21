@@ -12028,6 +12028,12 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/p/Ddhwzepl4G0/",
       "view_count": 0
+    },
+    "Ddh1MuGm1zj": {
+      "seen_at": "2026-09-21T00:14:01.698Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexstyle/p/Ddh1MuGm1zj/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15925,55 +15931,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DdfSihqtuzI/",
       "queue_id": "815-colin-kaepernick-calls-out-jigga",
       "video": "media/815-colin-kaepernick-calls-out-jigga.mp4"
+    },
+    "Ddh1MuGm1zj": {
+      "queued_at": "2026-09-21T00:14:30.428Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexstyle/p/Ddh1MuGm1zj/",
+      "queue_id": "816-feliciathegoat-really-has-the-best-taste-in-cars-the-rapper-was-",
+      "video": "media/816-feliciathegoat-really-has-the-best-taste-in-cars-the-rapper-was-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T15:30:57.429Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T15:31:21.084Z"
-    },
-    {
-      "started_at": "2026-09-19T15:30:57.429Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 24,
-        "available": 10,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T15:31:21.084Z"
-    },
     {
       "started_at": "2026-09-19T15:36:22.136Z",
       "candidates": 36,
@@ -23627,6 +23594,54 @@
         ]
       },
       "finished_at": "2026-09-21T00:02:33.139Z"
+    },
+    {
+      "started_at": "2026-09-21T00:08:11.978Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 26,
+        "needed": 22
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T00:08:28.215Z"
+    },
+    {
+      "started_at": "2026-09-21T00:13:33.215Z",
+      "candidates": 48,
+      "queued": [
+        "816-feliciathegoat-really-has-the-best-taste-in-cars-the-rapper-was-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 25,
+        "needed": 23
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T00:14:30.428Z"
     }
   ],
   "vip_pending": {

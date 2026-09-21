@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T07:05:25.809Z",
+  "checked_at": "2026-09-21T07:10:29.814Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T07:05:18.457Z",
-    "usage": 27,
+    "checked_at": "2026-09-21T07:10:24.170Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T07:20:18.457Z",
+    "next_check_at": "2026-09-21T07:25:24.170Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-21T07:05:12.025Z",
+    "next_feed_eligible_at": "2026-09-21T07:40:29.667Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "802-tee-grizzley-teegrizzley-took-over-a-college-campus-as-rolling-l.json",
       "id": "802-tee-grizzley-teegrizzley-took-over-a-college-campus-as-rolling-l",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18089079341233980"
+      "media_id": "17911941714530206",
+      "content_type": "video"
     }
   ],
   "failures": [],

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T14:45:58.705Z",
+  "checked_at": "2026-09-21T14:51:16.452Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T14:45:57.377Z",
-    "usage": 28,
+    "checked_at": "2026-09-21T14:51:09.681Z",
+    "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T15:00:57.377Z",
+    "next_check_at": "2026-09-21T15:06:09.681Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 28,
     "instagram_remaining": 20,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-21T14:00:25.987Z",
+    "next_feed_eligible_at": "2026-09-21T15:21:16.330Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-21T14:45:57.293Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-21T15:00:57.293Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-21T13:40:21.857Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-21T15:21:09.121Z",
+  "publications": [
+    {
+      "file": "805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-.json",
+      "id": "805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18627051433014243"
+    },
+    {
+      "file": "805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-.json",
+      "id": "805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18133966729659389",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

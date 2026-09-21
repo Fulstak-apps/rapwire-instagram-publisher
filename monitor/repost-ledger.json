@@ -12418,6 +12418,36 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/Ddj9ez4PLjD/",
       "view_count": 0
+    },
+    "Ddj5BoOPO4O": {
+      "seen_at": "2026-09-21T20:13:23.656Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/Ddj5BoOPO4O/",
+      "view_count": 0
+    },
+    "Ddj-BwNmZmY": {
+      "seen_at": "2026-09-21T20:13:23.658Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Ddj-BwNmZmY/",
+      "view_count": 0
+    },
+    "Ddj6jVGGRKF": {
+      "seen_at": "2026-09-21T20:13:23.658Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Ddj6jVGGRKF/",
+      "view_count": 0
+    },
+    "Ddj_zIwDVmq": {
+      "seen_at": "2026-09-21T20:19:09.437Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Ddj_zIwDVmq/",
+      "view_count": 0
+    },
+    "Ddj6yzdDTHJ": {
+      "seen_at": "2026-09-21T20:19:09.437Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Ddj6yzdDTHJ/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16483,143 +16513,16 @@
       "source_url": "https://www.instagram.com/records/reel/Ddj9ez4PLjD/",
       "queue_id": "839-pharrell-spotted-tyler-the-creator-feliciathegoat-cruising-in-hi",
       "video": "media/839-pharrell-spotted-tyler-the-creator-feliciathegoat-cruising-in-hi.mp4"
+    },
+    "Ddj8_14jmQ-": {
+      "queued_at": "2026-09-21T20:25:14.491Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Ddj8_14jmQ-/",
+      "queue_id": "840-fans-go-crazy-after-swae-lee-makes-a-stop-at-a-college-for-the-r",
+      "video": "media/840-fans-go-crazy-after-swae-lee-makes-a-stop-at-a-college-for-the-r.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T02:09:02.093Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdeqWArPGGz/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde1PlovwO1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde8n8iPigo/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T02:09:40.132Z"
-    },
-    {
-      "started_at": "2026-09-20T02:14:45.694Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T02:15:22.823Z"
-    },
-    {
-      "started_at": "2026-09-20T02:20:28.283Z",
-      "candidates": 48,
-      "queued": [
-        "777-ed-sheeran-opens-solo-concert-with-comments-about-gaza-says-what"
-      ],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdfSW-xtRHP/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T02:22:26.224Z"
-    },
     {
       "started_at": "2026-09-20T02:35:54.467Z",
       "candidates": 36,
@@ -23660,6 +23563,83 @@
         ]
       },
       "finished_at": "2026-09-21T20:07:40.708Z"
+    },
+    {
+      "started_at": "2026-09-21T20:12:52.581Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x74b2c45180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x74b308c000] [enc:mjpeg @ 0x74b3014540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x74b2d24000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x74b2d24000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x74b2d24000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x74b308c000] [enc:mjpeg @ 0x74b3014540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x74b308c000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x74b308c000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x74b3040300] Nothing was written into output file, because at least one of its streams received no packets.\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 26,
+        "needed": 22
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T20:13:45.361Z"
+    },
+    {
+      "started_at": "2026-09-21T20:18:50.994Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 26,
+        "needed": 22
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T20:19:09.439Z"
+    },
+    {
+      "started_at": "2026-09-21T20:24:15.244Z",
+      "candidates": 48,
+      "queued": [
+        "840-fans-go-crazy-after-swae-lee-makes-a-stop-at-a-college-for-the-r"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 26,
+        "needed": 22
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T20:25:14.491Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T23:31:58.013Z",
+  "checked_at": "2026-09-21T23:37:12.299Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T23:21:49.809Z",
+    "checked_at": "2026-09-21T23:37:05.647Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T23:36:49.809Z",
+    "next_check_at": "2026-09-21T23:52:05.647Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-21T23:31:49.558Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-22T00:07:11.940Z",
+  "publications": [
+    {
+      "file": "819-peysoh-brought-out-colorado-springs-artist-lil-nate-while-on-tou.json",
+      "id": "819-peysoh-brought-out-colorado-springs-artist-lil-nate-while-on-tou",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17915010933263872"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

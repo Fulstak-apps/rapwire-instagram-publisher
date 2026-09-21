@@ -16204,84 +16204,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Ddjcs9_x7n7/",
       "queue_id": "824-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du",
       "video": "media/824-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du.mp4"
+    },
+    "Ddjb3FYxFCI": {
+      "queued_at": "2026-09-21T15:41:12.916Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Ddjb3FYxFCI/",
+      "queue_id": "825-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du",
+      "video": "media/825-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T21:44:31.596Z",
-      "candidates": 48,
-      "queued": [
-        "768-meek-mills-is-fried-yall-this-nigga-has-now-resorted-to-some-afr"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 7,
-        "needed": 41
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T21:46:26.802Z"
-    },
-    {
-      "started_at": "2026-09-19T21:52:03.394Z",
-      "candidates": 48,
-      "queued": [
-        "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T21:53:34.803Z"
-    },
-    {
-      "started_at": "2026-09-19T21:52:03.394Z",
-      "candidates": 48,
-      "queued": [
-        "769-two-decades-of-an-iconic-song-s-kick-push-released-20-years-ago-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T21:53:34.803Z"
-    },
     {
       "started_at": "2026-09-19T21:59:08.948Z",
       "candidates": 36,
@@ -23597,6 +23529,108 @@
         ]
       },
       "finished_at": "2026-09-21T15:21:00.129Z"
+    },
+    {
+      "started_at": "2026-09-21T15:27:26.026Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhrG5Bv9IY/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhvXHDPRly/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhqO0RvO9R/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 19,
+        "needed": 29
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T15:28:09.344Z"
+    },
+    {
+      "started_at": "2026-09-21T15:33:14.678Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x7928c31180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x7928ce0000] [enc:mjpeg @ 0x7928c1c540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x79290cc000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x79290cc000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x79290cc000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x7928ce0000] [enc:mjpeg @ 0x7928c1c540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x7928ce0000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x7928ce0000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x7928c34300] Nothing was written into output file, because at least one of its streams received no packets.\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 18,
+        "needed": 30
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T15:34:16.022Z"
+    },
+    {
+      "started_at": "2026-09-21T15:39:21.754Z",
+      "candidates": 36,
+      "queued": [
+        "825-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 18,
+        "needed": 30
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T15:41:12.916Z"
     }
   ],
   "vip_pending": {

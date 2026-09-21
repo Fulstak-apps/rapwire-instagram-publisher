@@ -12304,6 +12304,12 @@
       "source_handle": "hiphop_firstnewsmusic",
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdjoTmTorg1/",
       "view_count": 0
+    },
+    "Ddjs3oiiB9a": {
+      "seen_at": "2026-09-21T17:40:29.064Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Ddjs3oiiB9a/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16320,95 +16326,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Ddi8BDkxIzU/",
       "queue_id": "832-when-she-says-raindrops-is-her-favorite-sound-to-fall-asleep-to-",
       "video": "media/832-when-she-says-raindrops-is-her-favorite-sound-to-fall-asleep-to-.mp4"
+    },
+    "Ddjs3oiiB9a": {
+      "queued_at": "2026-09-21T17:40:51.355Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Ddjs3oiiB9a/",
+      "queue_id": "833-breaking-new-footage-has-surfaced-from-bloodhound-q50-s-tesla-re",
+      "video": "media/833-breaking-new-footage-has-surfaced-from-bloodhound-q50-s-tesla-re.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T23:42:04.601Z",
-      "candidates": 48,
-      "queued": [
-        "772-when-speed-facetimed-drake-champagnepapi-and-told-him-he-has-a-s"
-      ],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T23:43:10.703Z"
-    },
-    {
-      "started_at": "2026-09-19T23:48:27.650Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde1PlovwO1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdeqWArPGGz/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde8n8iPigo/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-19T23:49:04.926Z"
-    },
     {
       "started_at": "2026-09-19T23:54:09.504Z",
       "candidates": 48,
@@ -23668,6 +23595,61 @@
         ]
       },
       "finished_at": "2026-09-21T17:28:04.614Z"
+    },
+    {
+      "started_at": "2026-09-21T17:33:28.434Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x74ee805180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x74ef4f0000] [enc:mjpeg @ 0x74eec09810] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x74ef518000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x74ef518000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x74ef518000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x74ef4f0000] [enc:mjpeg @ 0x74eec09810] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x74ef4f0000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x74ef4f0000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x74eec0c780] Nothing was written into output file, because at least one of its streams received no packets.\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 23,
+        "needed": 25
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T17:35:03.618Z"
+    },
+    {
+      "started_at": "2026-09-21T17:40:08.652Z",
+      "candidates": 48,
+      "queued": [
+        "833-breaking-new-footage-has-surfaced-from-bloodhound-q50-s-tesla-re"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 23,
+        "needed": 25
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T17:40:51.355Z"
     }
   ],
   "vip_pending": {

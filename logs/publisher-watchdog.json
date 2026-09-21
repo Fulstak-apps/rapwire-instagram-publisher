@@ -1,19 +1,16 @@
 {
-  "reserve_count": 22,
-  "reserve_hours": 11,
+  "reserve_count": 19,
+  "reserve_hours": 9.5,
   "reserve_low": true,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his",
-    "802-tee-grizzley-teegrizzley-took-over-a-college-campus-as-rolling-l",
-    "803-ty-dolla-sign-brought-up-fetty-wap-to-perform-credits-fettywap",
     "804-one-of-the-jurors-from-lil-durk-lildurk-s-trial-finally-gave-som",
     "805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-",
     "806-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
@@ -36,6 +33,6 @@
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-21T06:29:13.374Z",
+  "checked_at": "2026-09-21T13:09:29.751Z",
   "deferred": []
 }

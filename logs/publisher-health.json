@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T20:40:01.914Z",
+  "checked_at": "2026-09-21T20:45:12.876Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T20:39:54.425Z",
-    "usage": 29,
+    "checked_at": "2026-09-21T20:45:04.599Z",
+    "usage": 30,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T20:54:54.425Z",
+    "next_check_at": "2026-09-21T21:00:04.599Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 29,
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-21T20:34:51.215Z",
+    "next_feed_eligible_at": "2026-09-21T21:15:12.703Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T20:29:54.476Z",
+    "checked_at": "2026-09-21T20:45:04.345Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T20:44:54.476Z",
+    "next_check_at": "2026-09-21T21:00:04.345Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "814-rakai-and-ray-tried-working-regular-9-5-jobs-by-cleaning-houses-.json",
       "id": "814-rakai-and-ray-tried-working-regular-9-5-jobs-by-cleaning-houses-",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18124452599493920"
+      "media_id": "17984396064118630",
+      "content_type": "video"
     }
   ],
   "failures": [],

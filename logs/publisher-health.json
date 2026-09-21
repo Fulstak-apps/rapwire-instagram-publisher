@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T22:26:28.717Z",
+  "checked_at": "2026-09-21T22:31:59.324Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T22:26:22.190Z",
-    "usage": 29,
+    "checked_at": "2026-09-21T22:31:51.710Z",
+    "usage": 30,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T22:41:22.190Z",
+    "next_check_at": "2026-09-21T22:46:51.710Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 29,
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-21T22:26:03.682Z",
+    "next_feed_eligible_at": "2026-09-21T23:01:59.133Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T22:16:06.912Z",
+    "checked_at": "2026-09-21T22:31:51.415Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T22:31:06.912Z",
+    "next_check_at": "2026-09-21T22:46:51.415Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "817-trap-lore-ross-on-being-mobbed-outside-lil-durk-lildurk-trial-al.json",
       "id": "817-trap-lore-ross-on-being-mobbed-outside-lil-durk-lildurk-trial-al",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18149396485476311"
+      "media_id": "17899659528667359",
+      "content_type": "video"
     }
   ],
   "failures": [],

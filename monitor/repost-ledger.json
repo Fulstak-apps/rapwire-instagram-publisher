@@ -12070,6 +12070,18 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/p/Ddh-X3nkU5T/",
       "view_count": 0
+    },
+    "DdiA7OdDDdA": {
+      "seen_at": "2026-09-21T01:53:55.307Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdiA7OdDDdA/",
+      "view_count": 0
+    },
+    "Ddh_Xa6m3_L": {
+      "seen_at": "2026-09-21T01:53:55.308Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexsports/p/Ddh_Xa6m3_L/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16009,80 +16021,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdNiQuMPmku/",
       "queue_id": "821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa",
       "video": "media/821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa.mp4"
+    },
+    "DdNGyprPqhQ": {
+      "queued_at": "2026-09-21T02:07:44.660Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdNGyprPqhQ/",
+      "queue_id": "822-lil-durk-lildurk-could-still-lose-everything-in-upcoming-civil-t",
+      "video": "media/822-lil-durk-lildurk-could-still-lose-everything-in-upcoming-civil-t.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T16:48:12.282Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-19T16:52:44.417Z"
-    },
-    {
-      "started_at": "2026-09-19T16:58:08.154Z",
-      "candidates": 36,
-      "queued": [
-        "762-drew-findling-disrespect-ain-t-going-to-be-tolerated"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T17:00:59.572Z"
-    },
-    {
-      "started_at": "2026-09-19T16:58:08.154Z",
-      "candidates": 36,
-      "queued": [
-        "762-drew-findling-disrespect-ain-t-going-to-be-tolerated"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T17:00:59.572Z"
-    },
     {
       "started_at": "2026-09-19T17:06:41.231Z",
       "candidates": 41,
@@ -23635,6 +23583,76 @@
         ]
       },
       "finished_at": "2026-09-21T01:47:45.290Z"
+    },
+    {
+      "started_at": "2026-09-21T01:53:29.227Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 29,
+        "needed": 19
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T01:53:55.309Z"
+    },
+    {
+      "started_at": "2026-09-21T01:59:00.191Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 28,
+        "needed": 20
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T01:59:42.898Z"
+    },
+    {
+      "started_at": "2026-09-21T02:04:47.174Z",
+      "candidates": 48,
+      "queued": [
+        "822-lil-durk-lildurk-could-still-lose-everything-in-upcoming-civil-t"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 28,
+        "needed": 20
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T02:07:44.660Z"
     }
   ],
   "vip_pending": {

@@ -16224,56 +16224,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdjSeuOOa7a/",
       "queue_id": "826-never-forget-when-gucci-mane-got-mad-because-keyshia-ka-oir-want",
       "video": "media/826-never-forget-when-gucci-mane-got-mad-because-keyshia-ka-oir-want.mp4"
+    },
+    "DdjYiqPx48w": {
+      "queued_at": "2026-09-21T16:01:28.251Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdjYiqPx48w/",
+      "queue_id": "827-og3three-paperwork-is-fake-as-hell-youtube-did-this",
+      "video": "media/827-og3three-paperwork-is-fake-as-hell-youtube-did-this.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T21:59:08.948Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T21:59:28.517Z"
-    },
-    {
-      "started_at": "2026-09-19T22:04:33.281Z",
-      "candidates": 48,
-      "queued": [
-        "770-thf-members-pull-up-to-051-drilla-s-hospital-and-go-live-after-s"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T22:06:31.488Z"
-    },
     {
       "started_at": "2026-09-19T22:04:33.281Z",
       "candidates": 48,
@@ -23666,6 +23626,60 @@
         ]
       },
       "finished_at": "2026-09-21T15:48:23.099Z"
+    },
+    {
+      "started_at": "2026-09-21T15:53:38.034Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T15:54:15.361Z"
+    },
+    {
+      "started_at": "2026-09-21T15:59:20.947Z",
+      "candidates": 36,
+      "queued": [
+        "827-og3three-paperwork-is-fake-as-hell-youtube-did-this"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T16:01:28.251Z"
     }
   ],
   "vip_pending": {

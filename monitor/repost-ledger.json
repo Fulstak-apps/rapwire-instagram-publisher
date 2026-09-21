@@ -12388,6 +12388,36 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DdjzmIvAkHW/",
       "view_count": 0
+    },
+    "Ddj8UfYSUaQ": {
+      "seen_at": "2026-09-21T20:01:44.216Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Ddj8UfYSUaQ/",
+      "view_count": 0
+    },
+    "Ddj8_14jmQ-": {
+      "seen_at": "2026-09-21T20:01:44.217Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Ddj8_14jmQ-/",
+      "view_count": 0
+    },
+    "Ddj-WiovLLG": {
+      "seen_at": "2026-09-21T20:07:17.792Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddj-WiovLLG/",
+      "view_count": 0
+    },
+    "Ddj87KTP9IV": {
+      "seen_at": "2026-09-21T20:07:17.793Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddj87KTP9IV/",
+      "view_count": 0
+    },
+    "Ddj9ez4PLjD": {
+      "seen_at": "2026-09-21T20:07:17.793Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Ddj9ez4PLjD/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16446,112 +16476,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Ddj3JUZImPX/",
       "queue_id": "838-ynwmelly-s-last-performance-before-he-turned-himself-in-ynw",
       "video": "media/838-ynwmelly-s-last-performance-before-he-turned-himself-in-ynw.mp4"
+    },
+    "Ddj9ez4PLjD": {
+      "queued_at": "2026-09-21T20:07:40.708Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Ddj9ez4PLjD/",
+      "queue_id": "839-pharrell-spotted-tyler-the-creator-feliciathegoat-cruising-in-hi",
+      "video": "media/839-pharrell-spotted-tyler-the-creator-feliciathegoat-cruising-in-hi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T01:50:47.998Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T01:51:33.583Z"
-    },
-    {
-      "started_at": "2026-09-20T01:56:43.840Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T01:57:05.630Z"
-    },
-    {
-      "started_at": "2026-09-20T02:02:09.831Z",
-      "candidates": 48,
-      "queued": [
-        "776-macklemore-leaving-ed-sheeran-tour-has-affected-ticket-sales"
-      ],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T02:03:26.805Z"
-    },
     {
       "started_at": "2026-09-20T02:09:02.093Z",
       "candidates": 41,
@@ -23635,6 +23569,97 @@
         ]
       },
       "finished_at": "2026-09-21T19:21:34.549Z"
+    },
+    {
+      "started_at": "2026-09-21T19:27:22.403Z",
+      "candidates": 17,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 26,
+        "needed": 22
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T19:37:18.556Z"
+    },
+    {
+      "started_at": "2026-09-21T20:01:07.391Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Ddi9F8DxOwW/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 26,
+        "needed": 22
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T20:01:44.218Z"
+    },
+    {
+      "started_at": "2026-09-21T20:06:49.125Z",
+      "candidates": 41,
+      "queued": [
+        "839-pharrell-spotted-tyler-the-creator-feliciathegoat-cruising-in-hi"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddj87KTP9IV/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddj-WiovLLG/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 26,
+        "needed": 22
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T20:07:40.708Z"
     }
   ],
   "vip_pending": {

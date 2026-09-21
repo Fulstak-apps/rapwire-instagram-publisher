@@ -12538,6 +12538,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/drillmusic00/p/DdkLuIkiMG5/",
       "view_count": 0
+    },
+    "DdkMtNTPKcS": {
+      "seen_at": "2026-09-21T22:29:49.368Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdkMtNTPKcS/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16652,34 +16658,16 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/p/DdkBSgWkl5r/",
       "queue_id": "846-ralfy-the-plug-hooks-quavo-up-with-some-stinc-team-merch-and-qua",
       "video": "media/846-ralfy-the-plug-hooks-quavo-up-with-some-stinc-team-merch-and-qua.mp4"
+    },
+    "DdkMtNTPKcS": {
+      "queued_at": "2026-09-21T22:30:22.659Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdkMtNTPKcS/",
+      "queue_id": "847-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
+      "video": "media/847-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T04:23:24.145Z",
-      "candidates": 48,
-      "queued": [
-        "778-n3on-seen-celebrating-with-ufc-star-armantsarukyan-his-team-afte"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 7,
-        "needed": 41
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T04:24:08.174Z"
-    },
     {
       "started_at": "2026-09-20T04:29:19.342Z",
       "candidates": 41,
@@ -23539,6 +23527,38 @@
         ]
       },
       "finished_at": "2026-09-21T22:24:03.228Z"
+    },
+    {
+      "started_at": "2026-09-21T22:29:23.670Z",
+      "candidates": 41,
+      "queued": [
+        "847-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhxHl6PCFd/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 30,
+        "needed": 18
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T22:30:22.659Z"
     }
   ],
   "vip_pending": {

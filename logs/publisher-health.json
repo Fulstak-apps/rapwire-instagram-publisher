@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T03:33:19.575Z",
+  "checked_at": "2026-09-21T03:38:23.670Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T03:33:11.002Z",
-    "usage": 26,
+    "checked_at": "2026-09-21T03:38:14.862Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T03:48:11.002Z",
+    "next_check_at": "2026-09-21T03:53:14.862Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 26,
     "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-21T03:32:56.168Z",
+    "next_feed_eligible_at": "2026-09-21T04:08:23.555Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "796-jaden-smith-really-knew-how-to-make-an-entrance-with-icon-jaden-.json",
       "id": "796-jaden-smith-really-knew-how-to-make-an-entrance-with-icon-jaden-",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18125982178867555"
+      "media_id": "18123252508857427",
+      "content_type": "video"
     }
   ],
   "failures": [],

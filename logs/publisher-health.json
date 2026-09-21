@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T15:26:34.996Z",
+  "checked_at": "2026-09-21T15:31:35.524Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 28,
-    "instagram_remaining": 20,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-21T15:56:34.837Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T15:16:19.217Z",
+    "checked_at": "2026-09-21T15:31:35.461Z",
     "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T15:31:19.217Z",
+    "next_check_at": "2026-09-21T15:46:35.461Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-21T15:56:29.993Z",
-  "publications": [
-    {
-      "file": "806-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different.json",
-      "id": "806-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17866996572662741"
-    },
-    {
-      "file": "806-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different.json",
-      "id": "806-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17931797058142350",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T19:05:59.737Z",
+  "checked_at": "2026-09-21T19:10:36.202Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-21T19:35:59.328Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T18:55:27.274Z",
-    "usage": 31,
+    "checked_at": "2026-09-21T19:10:36.126Z",
+    "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T19:10:27.274Z",
+    "next_check_at": "2026-09-21T19:25:36.126Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-21T19:35:47.272Z",
-  "publications": [
-    {
-      "file": "812-nine-vicious-addressed-ken-carson-kencarson-and-apollored1-s-9-b.json",
-      "id": "812-nine-vicious-addressed-ken-carson-kencarson-and-apollored1-s-9-b",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18108491321135281"
-    },
-    {
-      "file": "812-nine-vicious-addressed-ken-carson-kencarson-and-apollored1-s-9-b.json",
-      "id": "812-nine-vicious-addressed-ken-carson-kencarson-and-apollored1-s-9-b",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18104810732245018",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

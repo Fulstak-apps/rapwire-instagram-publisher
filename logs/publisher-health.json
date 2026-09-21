@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T09:45:34.015Z",
+  "checked_at": "2026-09-21T13:10:22.083Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T09:45:27.276Z",
+    "checked_at": "2026-09-21T13:10:14.880Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T10:00:27.276Z",
+    "next_check_at": "2026-09-21T13:25:14.880Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,8 +26,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 28,
-    "instagram_remaining": 20,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-21T10:15:33.395Z",
     "feed_allowed": true,
@@ -43,24 +43,23 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T09:45:27.154Z",
-    "usage": 29,
+    "checked_at": "2026-09-21T13:10:14.772Z",
+    "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T10:00:27.154Z",
+    "next_check_at": "2026-09-21T13:25:14.772Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-21T08:12:16.320Z",
+  "threads_next_eligible_at": "2026-09-21T13:40:21.857Z",
   "publications": [
     {
-      "file": "803-ty-dolla-sign-brought-up-fetty-wap-to-perform-credits-fettywap.json",
-      "id": "803-ty-dolla-sign-brought-up-fetty-wap-to-perform-credits-fettywap",
-      "platform": "instagram",
+      "file": "804-one-of-the-jurors-from-lil-durk-lildurk-s-trial-finally-gave-som.json",
+      "id": "804-one-of-the-jurors-from-lil-durk-lildurk-s-trial-finally-gave-som",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18106468666924313",
-      "content_type": "video"
+      "media_id": "17939161230365102"
     }
   ],
   "failures": [],

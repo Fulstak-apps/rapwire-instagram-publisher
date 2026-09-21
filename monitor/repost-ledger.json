@@ -12448,6 +12448,18 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/Ddj6yzdDTHJ/",
       "view_count": 0
+    },
+    "DdkBSgWkl5r": {
+      "seen_at": "2026-09-21T20:42:49.342Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/p/DdkBSgWkl5r/",
+      "view_count": 0
+    },
+    "DdkBdzYoR4c": {
+      "seen_at": "2026-09-21T20:42:49.342Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdkBdzYoR4c/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16527,111 +16539,16 @@
       "source_url": "https://www.instagram.com/xxl/p/Ddj-BwNmZmY/",
       "queue_id": "841-quavo-says-a-new-migos-album-is-on-the-way-and-could-arrive-arou",
       "video": "media/841-quavo-says-a-new-migos-album-is-on-the-way-and-could-arrive-arou.mp4"
+    },
+    "DdkBdzYoR4c": {
+      "queued_at": "2026-09-21T20:43:22.115Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdkBdzYoR4c/",
+      "queue_id": "842-clavicular-s-best-friend-drago-now-faces-serious-legal-trouble-a",
+      "video": "media/842-clavicular-s-best-friend-drago-now-faces-serious-legal-trouble-a.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T02:41:40.427Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdfSW-xtRHP/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "queue",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T02:42:05.504Z"
-    },
-    {
-      "started_at": "2026-09-20T02:47:10.713Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde1PlovwO1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdeqWArPGGz/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde8n8iPigo/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T02:47:55.884Z"
-    },
     {
       "started_at": "2026-09-20T02:53:01.036Z",
       "candidates": 48,
@@ -23643,6 +23560,53 @@
         ]
       },
       "finished_at": "2026-09-21T20:31:41.880Z"
+    },
+    {
+      "started_at": "2026-09-21T20:36:55.598Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 28,
+        "needed": 20
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T20:37:14.606Z"
+    },
+    {
+      "started_at": "2026-09-21T20:42:21.967Z",
+      "candidates": 48,
+      "queued": [
+        "842-clavicular-s-best-friend-drago-now-faces-serious-legal-trouble-a"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 28,
+        "needed": 20
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T20:43:22.115Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T23:47:23.893Z",
+  "checked_at": "2026-09-21T23:52:13.138Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-22T00:17:23.735Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,26 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T23:37:05.647Z",
+    "checked_at": "2026-09-21T23:52:13.061Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T23:52:05.647Z",
+    "next_check_at": "2026-09-22T00:07:13.061Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T00:07:11.940Z",
-  "publications": [
-    {
-      "file": "819-peysoh-brought-out-colorado-springs-artist-lil-nate-while-on-tou.json",
-      "id": "819-peysoh-brought-out-colorado-springs-artist-lil-nate-while-on-tou",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18156104953510640",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

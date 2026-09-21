@@ -12370,6 +12370,24 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/Ddj2gC9KoMs/",
       "view_count": 0
+    },
+    "Ddj1RDBz1q-": {
+      "seen_at": "2026-09-21T19:20:38.551Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Ddj1RDBz1q-/",
+      "view_count": 0
+    },
+    "Ddj3JUZImPX": {
+      "seen_at": "2026-09-21T19:20:38.552Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Ddj3JUZImPX/",
+      "view_count": 0
+    },
+    "DdjzmIvAkHW": {
+      "seen_at": "2026-09-21T19:20:38.552Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdjzmIvAkHW/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16421,76 +16439,16 @@
       "source_url": "https://www.instagram.com/records/reel/Ddj2gC9KoMs/",
       "queue_id": "837-travis-scott-travisscott-and-owen-wilson-share-the-screen-in-rol",
       "video": "media/837-travis-scott-travisscott-and-owen-wilson-share-the-screen-in-rol.mp4"
+    },
+    "Ddj3JUZImPX": {
+      "queued_at": "2026-09-21T19:21:34.549Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Ddj3JUZImPX/",
+      "queue_id": "838-ynwmelly-s-last-performance-before-he-turned-himself-in-ynw",
+      "video": "media/838-ynwmelly-s-last-performance-before-he-turned-himself-in-ynw.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T01:37:47.428Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T01:38:04.516Z"
-    },
-    {
-      "started_at": "2026-09-20T01:43:08.889Z",
-      "candidates": 48,
-      "queued": [
-        "775-ed-sheeran-is-alone-on-his-tour-and-says-he-supports-free-speech"
-      ],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T01:45:07.096Z"
-    },
     {
       "started_at": "2026-09-20T01:50:47.998Z",
       "candidates": 48,
@@ -23622,6 +23580,61 @@
         ]
       },
       "finished_at": "2026-09-21T19:08:52.772Z"
+    },
+    {
+      "started_at": "2026-09-21T19:14:26.305Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 25,
+        "needed": 23
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T19:14:45.918Z"
+    },
+    {
+      "started_at": "2026-09-21T19:20:07.150Z",
+      "candidates": 48,
+      "queued": [
+        "838-ynwmelly-s-last-performance-before-he-turned-himself-in-ynw"
+      ],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdjzmIvAkHW/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 25,
+        "needed": 23
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T19:21:34.549Z"
     }
   ],
   "vip_pending": {

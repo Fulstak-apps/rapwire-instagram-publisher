@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T00:41:32.305Z",
+  "checked_at": "2026-09-21T00:46:20.432Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 25,
-    "instagram_remaining": 23,
+    "instagram_usage": 26,
+    "instagram_remaining": 22,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-21T01:11:32.156Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-21T01:06:26.530Z",
-  "publications": [
-    {
-      "file": "791-drake-champagnepapi-wins-1-million-on-stake-after-betting-650-00.json",
-      "id": "791-drake-champagnepapi-wins-1-million-on-stake-after-betting-650-00",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18627101740035311",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

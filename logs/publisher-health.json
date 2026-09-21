@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T04:49:02.397Z",
+  "checked_at": "2026-09-21T04:54:00.033Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 27,
+    "instagram_remaining": 21,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-21T05:19:02.203Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-21T05:14:04.573Z",
-  "publications": [
-    {
-      "file": "798-contrary-to-people-who-don-t-know-here-s-who-the-jurors-thought-.json",
-      "id": "798-contrary-to-people-who-don-t-know-here-s-who-the-jurors-thought-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17920890657429652",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

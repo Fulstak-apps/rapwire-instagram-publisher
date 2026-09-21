@@ -10777,7 +10777,7 @@
     },
     "DdcnDBRRAAY": {
       "seen_at": "2026-09-18T23:39:51.727Z",
-      "source_handle": "ceddynash",
+      "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/ceddynash/reel/DdcnDBRRAAY/",
       "view_count": 0
     },
@@ -12255,6 +12255,24 @@
       "seen_at": "2026-09-21T16:08:49.353Z",
       "source_handle": "records",
       "source_url": "https://www.instagram.com/onthatnotetv/reel/DdjfVq2umtx/",
+      "view_count": 0
+    },
+    "DdjkPCHFyva": {
+      "seen_at": "2026-09-21T16:16:10.863Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdjkPCHFyva/",
+      "view_count": 0
+    },
+    "DdjjuqyoWRS": {
+      "seen_at": "2026-09-21T16:21:42.108Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdjjuqyoWRS/",
+      "view_count": 0
+    },
+    "DdjiakDuv_E": {
+      "seen_at": "2026-09-21T16:21:42.114Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdjiakDuv_E/",
       "view_count": 0
     }
   },
@@ -16244,61 +16262,16 @@
       "source_url": "https://www.instagram.com/onthatnotetv/reel/DdjfVq2umtx/",
       "queue_id": "828-ye-and-jay-z-watch-the-throne-living-so-italian-new-snippet-gree",
       "video": "media/828-ye-and-jay-z-watch-the-throne-living-so-italian-new-snippet-gree.mp4"
+    },
+    "DdjjuqyoWRS": {
+      "queued_at": "2026-09-21T16:22:10.951Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdjjuqyoWRS/",
+      "queue_id": "829-little-kid-tells-quando-rondo-you-ain-t-have-to-do-that-to-king-",
+      "video": "media/829-little-kid-tells-quando-rondo-you-ain-t-have-to-do-that-to-king-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T22:12:16.781Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdevEuKI6R-/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T22:13:38.109Z"
-    },
-    {
-      "started_at": "2026-09-19T22:18:42.159Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T22:19:17.230Z"
-    },
     {
       "started_at": "2026-09-19T22:24:22.354Z",
       "candidates": 48,
@@ -23706,6 +23679,53 @@
         ]
       },
       "finished_at": "2026-09-21T16:10:04.182Z"
+    },
+    {
+      "started_at": "2026-09-21T16:15:29.030Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 21,
+        "needed": 27
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T16:16:10.864Z"
+    },
+    {
+      "started_at": "2026-09-21T16:21:15.899Z",
+      "candidates": 48,
+      "queued": [
+        "829-little-kid-tells-quando-rondo-you-ain-t-have-to-do-that-to-king-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 21,
+        "needed": 27
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T16:22:10.951Z"
     }
   ],
   "vip_pending": {

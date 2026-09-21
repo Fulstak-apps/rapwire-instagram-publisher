@@ -12064,6 +12064,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/trapmatictv/p/Ddh-O_HjRBh/",
       "view_count": 0
+    },
+    "Ddh-X3nkU5T": {
+      "seen_at": "2026-09-21T01:32:57.829Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Ddh-X3nkU5T/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -15996,90 +16002,16 @@
       "source_url": "https://www.instagram.com/vladtv/reel/DdP3FHKiEux/",
       "queue_id": "820-what-really-happened-in-q50s-m-rder",
       "video": "media/820-what-really-happened-in-q50s-m-rder.mp4"
+    },
+    "DdNiQuMPmku": {
+      "queued_at": "2026-09-21T01:47:45.290Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/DdNiQuMPmku/",
+      "queue_id": "821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa",
+      "video": "media/821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T16:18:55.898Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdeZ-TnREaU/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T16:19:42.811Z"
-    },
-    {
-      "started_at": "2026-09-19T16:18:55.898Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdeZ-TnREaU/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-19T16:19:42.811Z"
-    },
-    {
-      "started_at": "2026-09-19T16:48:12.282Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-19T16:52:44.417Z"
-    },
     {
       "started_at": "2026-09-19T16:48:12.282Z",
       "candidates": 0,
@@ -23633,6 +23565,76 @@
         ]
       },
       "finished_at": "2026-09-21T01:27:01.363Z"
+    },
+    {
+      "started_at": "2026-09-21T01:32:37.549Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 28,
+        "needed": 20
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T01:32:57.831Z"
+    },
+    {
+      "started_at": "2026-09-21T01:38:02.217Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 28,
+        "needed": 20
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T01:38:21.318Z"
+    },
+    {
+      "started_at": "2026-09-21T01:43:29.403Z",
+      "candidates": 48,
+      "queued": [
+        "821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 28,
+        "needed": 20
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T01:47:45.290Z"
     }
   ],
   "vip_pending": {

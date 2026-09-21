@@ -10777,7 +10777,7 @@
     },
     "DdcnDBRRAAY": {
       "seen_at": "2026-09-18T23:39:51.727Z",
-      "source_handle": "ceddynash",
+      "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/ceddynash/reel/DdcnDBRRAAY/",
       "view_count": 0
     },
@@ -12051,6 +12051,12 @@
       "seen_at": "2026-09-21T00:56:09.484Z",
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/Ddh6uHsxJ2i/",
+      "view_count": 0
+    },
+    "Ddh6Vz5CYla": {
+      "seen_at": "2026-09-21T01:02:06.168Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/p/Ddh6Vz5CYla/",
       "view_count": 0
     }
   },
@@ -15970,39 +15976,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Ddh6uHsxJ2i/",
       "queue_id": "818-jayden-daniels-arm-injury-from-today-compared-to-his-significant",
       "video": "media/818-jayden-daniels-arm-injury-from-today-compared-to-his-significant.mp4"
+    },
+    "Ddh6Vz5CYla": {
+      "queued_at": "2026-09-21T01:02:25.628Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/p/Ddh6Vz5CYla/",
+      "queue_id": "819-peysoh-brought-out-colorado-springs-artist-lil-nate-while-on-tou",
+      "video": "media/819-peysoh-brought-out-colorado-springs-artist-lil-nate-while-on-tou.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T15:59:29.897Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-19T16:00:58.583Z"
-    },
     {
       "started_at": "2026-09-19T16:06:05.903Z",
       "candidates": 41,
@@ -23656,6 +23639,31 @@
         ]
       },
       "finished_at": "2026-09-21T00:56:28.300Z"
+    },
+    {
+      "started_at": "2026-09-21T01:01:38.513Z",
+      "candidates": 48,
+      "queued": [
+        "819-peysoh-brought-out-colorado-springs-artist-lil-nate-while-on-tou"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 27,
+        "needed": 21
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T01:02:25.628Z"
     }
   ],
   "vip_pending": {

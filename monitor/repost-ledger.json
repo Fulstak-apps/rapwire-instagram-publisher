@@ -12568,6 +12568,42 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/p/DdkQKbzmTVW/",
       "view_count": 0
+    },
+    "DdkXvtvOiv0": {
+      "seen_at": "2026-09-21T23:33:51.046Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DdkXvtvOiv0/",
+      "view_count": 0
+    },
+    "DdkU0snj0_F": {
+      "seen_at": "2026-09-21T23:33:51.047Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexstyle/p/DdkU0snj0_F/",
+      "view_count": 0
+    },
+    "DdkTzixmEZX": {
+      "seen_at": "2026-09-21T23:33:51.047Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdkTzixmEZX/",
+      "view_count": 0
+    },
+    "DdkUZdjjcDQ": {
+      "seen_at": "2026-09-21T23:39:39.109Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdkUZdjjcDQ/",
+      "view_count": 0
+    },
+    "DdkXSzuDK8d": {
+      "seen_at": "2026-09-21T23:50:49.866Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdkXSzuDK8d/",
+      "view_count": 0
+    },
+    "DdkYWuORYsu": {
+      "seen_at": "2026-09-21T23:56:13.608Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdkYWuORYsu/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16696,133 +16732,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdkGY0JPASm/",
       "queue_id": "848-drake-champagnepapi-getting-kawhi-leonard-to-join-a-music-video-",
       "video": "media/848-drake-champagnepapi-getting-kawhi-leonard-to-join-a-music-video-.mp4"
+    },
+    "DdkYWuORYsu": {
+      "queued_at": "2026-09-21T23:57:36.728Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdkYWuORYsu/",
+      "queue_id": "849-you-wanted-promo-that-bad-pay-for-it-here-s-one-for-free-next-ti",
+      "video": "media/849-you-wanted-promo-that-bad-pay-for-it-here-s-one-for-free-next-ti.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T05:36:12.093Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T05:36:32.820Z"
-    },
-    {
-      "started_at": "2026-09-20T05:41:38.256Z",
-      "candidates": 48,
-      "queued": [
-        "781-n3on-is-an-american-livestreamer-and-internet-personality-known-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T05:42:31.363Z"
-    },
-    {
-      "started_at": "2026-09-20T05:47:44.429Z",
-      "candidates": 41,
-      "queued": [
-        "782-j-cole-really-wearing-a-cowboy-hat-for-his-texas-show-he-had-it-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T05:48:26.900Z"
-    },
-    {
-      "started_at": "2026-09-20T05:53:41.438Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T05:54:11.978Z"
-    },
-    {
-      "started_at": "2026-09-20T05:59:15.912Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "igndotcom",
-          "source_url": "https://www.instagram.com/igndotcom/p/DdeocdBlxf5/",
-          "stage": "score",
-          "error": "page.goto: Timeout 22000ms exceeded.\nCall log:\n  - navigating to \"https://www.instagram.com/igndotcom/p/DdeocdBlxf5/\", waiting until \"commit\"\n"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T06:00:03.819Z"
-    },
     {
       "started_at": "2026-09-20T06:05:07.838Z",
       "candidates": 41,
@@ -23584,6 +23503,128 @@
         ]
       },
       "finished_at": "2026-09-21T23:28:18.972Z"
+    },
+    {
+      "started_at": "2026-09-21T23:33:30.209Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x7a0ac3d180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x7a0ad0c000] [enc:mjpeg @ 0x7a0a804540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x7a0b040000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x7a0b040000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x7a0b040000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x7a0ad0c000] [enc:mjpeg @ 0x7a0a804540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x7a0ad0c000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x7a0ad0c000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x7a0ac40300] Nothing was written into output file, because at least one of its streams received no packets.\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 30,
+        "needed": 18
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T23:34:15.839Z"
+    },
+    {
+      "started_at": "2026-09-21T23:39:20.863Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 30,
+        "needed": 18
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T23:39:39.111Z"
+    },
+    {
+      "started_at": "2026-09-21T23:44:43.845Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 30,
+        "needed": 18
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-21T23:45:18.372Z"
+    },
+    {
+      "started_at": "2026-09-21T23:50:22.544Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 30,
+        "needed": 18
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T23:50:49.868Z"
+    },
+    {
+      "started_at": "2026-09-21T23:55:54.686Z",
+      "candidates": 36,
+      "queued": [
+        "849-you-wanted-promo-that-bad-pay-for-it-here-s-one-for-free-next-ti"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 29,
+        "needed": 19
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-21T23:57:36.728Z"
     }
   ],
   "vip_pending": {

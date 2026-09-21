@@ -12364,6 +12364,12 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/p/Ddj0qClFiPj/",
       "view_count": 0
+    },
+    "Ddj2gC9KoMs": {
+      "seen_at": "2026-09-21T19:07:51.313Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Ddj2gC9KoMs/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16408,45 +16414,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdjooAPxff4/",
       "queue_id": "836-fat-joe-and-this-n-word-debate-who-can-and-can-t-say-what",
       "video": "media/836-fat-joe-and-this-n-word-debate-who-can-and-can-t-say-what.mp4"
+    },
+    "Ddj2gC9KoMs": {
+      "queued_at": "2026-09-21T19:08:52.772Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Ddj2gC9KoMs/",
+      "queue_id": "837-travis-scott-travisscott-and-owen-wilson-share-the-screen-in-rol",
+      "video": "media/837-travis-scott-travisscott-and-owen-wilson-share-the-screen-in-rol.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T01:32:05.917Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T01:32:42.893Z"
-    },
     {
       "started_at": "2026-09-20T01:37:47.428Z",
       "candidates": 36,
@@ -23620,6 +23597,31 @@
         ]
       },
       "finished_at": "2026-09-21T19:01:44.971Z"
+    },
+    {
+      "started_at": "2026-09-21T19:07:31.163Z",
+      "candidates": 41,
+      "queued": [
+        "837-travis-scott-travisscott-and-owen-wilson-share-the-screen-in-rol"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 25,
+        "needed": 23
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T19:08:52.772Z"
     }
   ],
   "vip_pending": {

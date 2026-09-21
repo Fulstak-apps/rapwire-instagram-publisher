@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T06:29:53.833Z",
+  "checked_at": "2026-09-21T06:35:12.177Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T06:29:47.642Z",
+    "checked_at": "2026-09-21T06:35:05.613Z",
     "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T06:44:47.642Z",
+    "next_check_at": "2026-09-21T06:50:05.613Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-21T06:29:44.243Z",
+    "next_feed_eligible_at": "2026-09-21T07:05:12.025Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T06:14:55.222Z",
-    "usage": 28,
+    "checked_at": "2026-09-21T06:35:05.341Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T06:29:55.222Z",
+    "next_check_at": "2026-09-21T06:50:05.341Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his.json",
       "id": "801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18116561720057178"
+      "media_id": "17976396357126864",
+      "content_type": "video"
     }
   ],
   "failures": [],

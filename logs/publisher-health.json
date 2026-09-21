@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T02:27:33.330Z",
+  "checked_at": "2026-09-21T02:32:27.635Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 27,
+    "instagram_remaining": 21,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-21T02:57:33.178Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-21T02:52:29.618Z",
-  "publications": [
-    {
-      "file": "794-new-migos-on-the-way-says-a-new-migos-album-could-be-coming-as-s.json",
-      "id": "794-new-migos-on-the-way-says-a-new-migos-album-could-be-coming-as-s",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17888834097614193",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

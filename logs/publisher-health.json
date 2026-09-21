@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T00:01:00.821Z",
+  "checked_at": "2026-09-21T00:06:04.331Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T00:00:53.774Z",
-    "usage": 25,
+    "checked_at": "2026-09-21T00:05:54.887Z",
+    "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T00:15:53.774Z",
+    "next_check_at": "2026-09-21T00:20:54.887Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 25,
+    "instagram_remaining": 23,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-20T23:55:49.736Z",
+    "next_feed_eligible_at": "2026-09-21T00:36:04.150Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "790-yeat-yeat-performing-earned-it-in-the-middle-of-central-park-loo.json",
       "id": "790-yeat-yeat-performing-earned-it-in-the-middle-of-central-park-loo",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18172107730410503"
+      "media_id": "18342185578269270",
+      "content_type": "video"
     }
   ],
   "failures": [],

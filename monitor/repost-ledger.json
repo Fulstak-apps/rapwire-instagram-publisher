@@ -12292,6 +12292,18 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddjph5eRLEz/",
       "view_count": 0
+    },
+    "DdjqtIXlFvx": {
+      "seen_at": "2026-09-21T17:14:33.551Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdjqtIXlFvx/",
+      "view_count": 0
+    },
+    "DdjoTmTorg1": {
+      "seen_at": "2026-09-21T17:14:33.553Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdjoTmTorg1/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16294,63 +16306,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdjQ7GQvyOC/",
       "queue_id": "830-the-only-bad-thing-about-this-song-is-that-it-ends-juice-wrld-s-",
       "video": "media/830-the-only-bad-thing-about-this-song-is-that-it-ends-juice-wrld-s-.mp4"
+    },
+    "DdjoTmTorg1": {
+      "queued_at": "2026-09-21T17:16:05.874Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdjoTmTorg1/",
+      "queue_id": "831-8-years-ago-today-kanye-west-sent-a-warning-to-drake-champagnepa",
+      "video": "media/831-8-years-ago-today-kanye-west-sent-a-warning-to-drake-champagnepa.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T23:25:28.753Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdeqWArPGGz/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde1PlovwO1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde8n8iPigo/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-19T23:26:04.655Z"
-    },
     {
       "started_at": "2026-09-19T23:31:08.814Z",
       "candidates": 48,
@@ -23688,6 +23653,31 @@
         ]
       },
       "finished_at": "2026-09-21T17:08:49.786Z"
+    },
+    {
+      "started_at": "2026-09-21T17:14:11.264Z",
+      "candidates": 48,
+      "queued": [
+        "831-8-years-ago-today-kanye-west-sent-a-warning-to-drake-champagnepa"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 22,
+        "needed": 26
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T17:16:05.874Z"
     }
   ],
   "vip_pending": {

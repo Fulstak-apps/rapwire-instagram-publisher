@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T00:31:14.190Z",
+  "checked_at": "2026-09-21T00:36:28.350Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T00:21:04.289Z",
-    "usage": 26,
+    "checked_at": "2026-09-21T00:36:20.850Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T00:36:04.289Z",
+    "next_check_at": "2026-09-21T00:51:20.850Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 25,
+    "instagram_remaining": 23,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-21T00:36:04.150Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-21T00:26:07.784Z",
-    "usage": 26,
+    "usage": 27,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-21T00:41:07.784Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-21T00:31:00.636Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-21T01:06:26.530Z",
+  "publications": [
+    {
+      "file": "791-drake-champagnepapi-wins-1-million-on-stake-after-betting-650-00.json",
+      "id": "791-drake-champagnepapi-wins-1-million-on-stake-after-betting-650-00",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18379262602224073"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -12310,6 +12310,18 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/p/Ddjs3oiiB9a/",
       "view_count": 0
+    },
+    "DdjuMAZE6tb": {
+      "seen_at": "2026-09-21T17:52:36.926Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DdjuMAZE6tb/",
+      "view_count": 0
+    },
+    "Ddjr5EsE8Cw": {
+      "seen_at": "2026-09-21T17:52:36.927Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexstyle/p/Ddjr5EsE8Cw/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16333,74 +16345,16 @@
       "source_url": "https://www.instagram.com/raplisted_/p/Ddjs3oiiB9a/",
       "queue_id": "833-breaking-new-footage-has-surfaced-from-bloodhound-q50-s-tesla-re",
       "video": "media/833-breaking-new-footage-has-surfaced-from-bloodhound-q50-s-tesla-re.mp4"
+    },
+    "DdjqtIXlFvx": {
+      "queued_at": "2026-09-21T17:53:02.271Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdjqtIXlFvx/",
+      "queue_id": "834-cardi-b-smacked-a-fan-s-hand-away-after-they-touched-her-butt-wh",
+      "video": "media/834-cardi-b-smacked-a-fan-s-hand-away-after-they-touched-her-butt-wh.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-19T23:54:09.504Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-19T23:54:39.572Z"
-    },
-    {
-      "started_at": "2026-09-19T23:59:43.973Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T00:00:02.573Z"
-    },
     {
       "started_at": "2026-09-20T00:05:07.144Z",
       "candidates": 41,
@@ -23650,6 +23604,61 @@
         ]
       },
       "finished_at": "2026-09-21T17:40:51.355Z"
+    },
+    {
+      "started_at": "2026-09-21T17:46:02.164Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DdflCwmD6fS/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-21T17:46:37.301Z"
+    },
+    {
+      "started_at": "2026-09-21T17:52:15.313Z",
+      "candidates": 48,
+      "queued": [
+        "834-cardi-b-smacked-a-fan-s-hand-away-after-they-touched-her-butt-wh"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-21T17:53:02.272Z"
     }
   ],
   "vip_pending": {

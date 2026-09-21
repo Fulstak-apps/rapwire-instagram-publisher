@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T02:22:30.405Z",
+  "checked_at": "2026-09-21T02:27:33.330Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-21T02:22:22.409Z",
-    "usage": 26,
+    "checked_at": "2026-09-21T02:27:26.109Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-21T02:37:22.409Z",
+    "next_check_at": "2026-09-21T02:42:26.109Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 26,
+    "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-21T02:22:08.819Z",
+    "next_feed_eligible_at": "2026-09-21T02:57:33.178Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-21T02:12:22.481Z",
+    "checked_at": "2026-09-21T02:27:25.911Z",
     "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-21T02:27:22.481Z",
+    "next_check_at": "2026-09-21T02:42:25.911Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "794-new-migos-on-the-way-says-a-new-migos-album-could-be-coming-as-s.json",
       "id": "794-new-migos-on-the-way-says-a-new-migos-album-could-be-coming-as-s",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18063573485782889"
+      "media_id": "17888834097614193",
+      "content_type": "video"
     }
   ],
   "failures": [],

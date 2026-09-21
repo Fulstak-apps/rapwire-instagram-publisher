@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-21T06:35:12.177Z",
+  "checked_at": "2026-09-21T06:40:02.233Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,10 +30,10 @@
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-21T07:05:12.025Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-21T06:59:53.423Z",
-  "publications": [
-    {
-      "file": "801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his.json",
-      "id": "801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17976396357126864",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

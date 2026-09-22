@@ -12952,6 +12952,18 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/DdmQHJtF9SW/",
       "view_count": 0
+    },
+    "DdmTJXqvQEG": {
+      "seen_at": "2026-09-22T17:46:17.888Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdmTJXqvQEG/",
+      "view_count": 0
+    },
+    "DdmST9JG5za": {
+      "seen_at": "2026-09-22T17:46:17.890Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdmST9JG5za/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17220,88 +17232,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Ddl8bMQPIwQ/",
       "queue_id": "868-still-one-of-the-funniest-interviews-ever-some-interviews-are-fu",
       "video": "media/868-still-one-of-the-funniest-interviews-ever-some-interviews-are-fu.mp4"
+    },
+    "DdmST9JG5za": {
+      "queued_at": "2026-09-22T17:46:54.126Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdmST9JG5za/",
+      "queue_id": "869-after-years-of-teasing-and-anticipation-j-cole-announced-his-new",
+      "video": "media/869-after-years-of-teasing-and-anticipation-j-cole-announced-his-new.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-21T00:50:19.406Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-21T00:50:43.871Z"
-    },
-    {
-      "started_at": "2026-09-21T00:55:49.892Z",
-      "candidates": 36,
-      "queued": [
-        "818-jayden-daniels-arm-injury-from-today-compared-to-his-significant"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-21T00:56:28.300Z"
-    },
-    {
-      "started_at": "2026-09-21T01:01:38.513Z",
-      "candidates": 48,
-      "queued": [
-        "819-peysoh-brought-out-colorado-springs-artist-lil-nate-while-on-tou"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 27,
-        "needed": 21
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-21T01:02:25.628Z"
-    },
     {
       "started_at": "2026-09-21T01:07:37.434Z",
       "candidates": 41,
@@ -24033,6 +23973,83 @@
         ]
       },
       "finished_at": "2026-09-22T17:27:11.323Z"
+    },
+    {
+      "started_at": "2026-09-22T17:35:02.045Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T17:35:21.974Z"
+    },
+    {
+      "started_at": "2026-09-22T17:40:26.994Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T17:40:51.656Z"
+    },
+    {
+      "started_at": "2026-09-22T17:45:56.690Z",
+      "candidates": 41,
+      "queued": [
+        "869-after-years-of-teasing-and-anticipation-j-cole-announced-his-new"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdmTJXqvQEG/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T17:46:54.126Z"
     }
   ],
   "vip_pending": {

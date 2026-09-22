@@ -16765,32 +16765,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdkajgPI8PH/",
       "queue_id": "851-juice-wrld-whose-real-name-was-jarad-higgins-passed-away-on-dece",
       "video": "media/851-juice-wrld-whose-real-name-was-jarad-higgins-passed-away-on-dece.mp4"
+    },
+    "DdkKDOYPWqC": {
+      "queued_at": "2026-09-22T00:27:43.654Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdkKDOYPWqC/",
+      "queue_id": "852-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
+      "video": "media/852-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T06:30:10.644Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T06:30:33.680Z"
-    },
     {
       "started_at": "2026-09-20T06:35:38.943Z",
       "candidates": 36,
@@ -23648,6 +23632,31 @@
         ]
       },
       "finished_at": "2026-09-22T00:21:39.444Z"
+    },
+    {
+      "started_at": "2026-09-22T00:26:59.159Z",
+      "candidates": 41,
+      "queued": [
+        "852-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T00:27:43.654Z"
     }
   ],
   "vip_pending": {

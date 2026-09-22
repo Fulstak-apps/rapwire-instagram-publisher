@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T22:25:27.236Z",
+  "checked_at": "2026-09-22T22:30:33.752Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-22T22:25:26.490Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-22T22:40:26.490Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-22T22:25:11.202Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-22T23:00:33.529Z",
+  "publications": [
+    {
+      "file": "846-ralfy-the-plug-hooks-quavo-up-with-some-stinc-team-merch-and-qua.json",
+      "id": "846-ralfy-the-plug-hooks-quavo-up-with-some-stinc-team-merch-and-qua",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17909352477497147"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

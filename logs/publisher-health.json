@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T00:07:20.867Z",
+  "checked_at": "2026-09-22T00:12:36.268Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-22T00:07:20.058Z",
-    "usage": 29,
+    "usage": 30,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-22T00:22:20.058Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-22T00:07:11.940Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-22T00:42:35.843Z",
+  "publications": [
+    {
+      "file": "820-what-really-happened-in-q50s-m-rder.json",
+      "id": "820-what-really-happened-in-q50s-m-rder",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18105187742621597"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

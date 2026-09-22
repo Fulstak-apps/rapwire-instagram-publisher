@@ -16903,82 +16903,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/DdkoUGVvo9d/",
       "queue_id": "857-clavicular-charged-for-r-of-a-m-r-he-s-facing-20-years-first-cou",
       "video": "media/857-clavicular-charged-for-r-of-a-m-r-he-s-facing-20-years-first-cou.mp4"
+    },
+    "DdklwOAt4ib": {
+      "queued_at": "2026-09-22T02:45:03.360Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdklwOAt4ib/",
+      "queue_id": "858-ralo-is-opening-a-supermarket",
+      "video": "media/858-ralo-is-opening-a-supermarket.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T16:00:48.094Z",
-      "candidates": 48,
-      "queued": [
-        "789-ski-maskthe-slump-god-was-arrested-following-a-traffic-stop-by-t"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T16:01:58.900Z"
-    },
-    {
-      "started_at": "2026-09-20T16:07:10.578Z",
-      "candidates": 41,
-      "queued": [
-        "790-yeat-yeat-performing-earned-it-in-the-middle-of-central-park-loo"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 11,
-        "needed": 37
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T16:08:25.179Z"
-    },
-    {
-      "started_at": "2026-09-20T16:13:51.403Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 12,
-        "needed": 36
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T16:14:15.928Z"
-    },
     {
       "started_at": "2026-09-20T16:19:21.946Z",
       "candidates": 36,
@@ -23687,6 +23621,83 @@
         ]
       },
       "finished_at": "2026-09-22T02:26:30.564Z"
+    },
+    {
+      "started_at": "2026-09-22T02:31:52.504Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x7cca805180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x7ccb060000] [enc:mjpeg @ 0x7ccac09810] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x7ccb088000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x7ccb088000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x7ccb088000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x7ccb060000] [enc:mjpeg @ 0x7ccac09810] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x7ccb060000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x7ccb060000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x7ccac0c780] Nothing was written into output file, because at least one of its streams received no packets.\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T02:32:41.949Z"
+    },
+    {
+      "started_at": "2026-09-22T02:37:46.641Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T02:38:10.840Z"
+    },
+    {
+      "started_at": "2026-09-22T02:43:15.339Z",
+      "candidates": 48,
+      "queued": [
+        "858-ralo-is-opening-a-supermarket"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T02:45:03.360Z"
     }
   ],
   "vip_pending": {

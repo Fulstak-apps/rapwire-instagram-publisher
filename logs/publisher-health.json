@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T23:31:18.787Z",
+  "checked_at": "2026-09-22T23:36:21.675Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-23T00:01:18.635Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T23:35:58.548Z",
-  "publications": [
-    {
-      "file": "848-drake-champagnepapi-getting-kawhi-leonard-to-join-a-music-video-.json",
-      "id": "848-drake-champagnepapi-getting-kawhi-leonard-to-join-a-music-video-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18094454732640820",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T03:39:47.256Z",
+  "checked_at": "2026-09-22T03:44:50.314Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-22T03:39:46.278Z",
-    "usage": 29,
+    "usage": 30,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-22T03:54:46.278Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-22T03:39:26.736Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-22T04:14:50.121Z",
+  "publications": [
+    {
+      "file": "826-never-forget-when-gucci-mane-got-mad-because-keyshia-ka-oir-want.json",
+      "id": "826-never-forget-when-gucci-mane-got-mad-because-keyshia-ka-oir-want",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18365671252208211"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

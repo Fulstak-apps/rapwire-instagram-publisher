@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T04:25:43.888Z",
+  "checked_at": "2026-09-22T04:30:18.935Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-22T04:25:43.354Z",
-    "usage": 29,
+    "checked_at": "2026-09-22T04:30:13.736Z",
+    "usage": 30,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-22T04:40:43.354Z",
+    "next_check_at": "2026-09-22T04:45:13.736Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 29,
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-22T04:24:51.595Z",
+    "next_feed_eligible_at": "2026-09-22T05:00:18.789Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T04:50:09.765Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "827-og3three-paperwork-is-fake-as-hell-youtube-did-this.json",
+      "id": "827-og3three-paperwork-is-fake-as-hell-youtube-did-this",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18129885385680397",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

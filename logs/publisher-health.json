@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T00:42:49.742Z",
+  "checked_at": "2026-09-22T00:47:55.445Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-22T00:37:42.389Z",
-    "usage": 29,
+    "usage": 30,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-22T00:52:42.389Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-22T00:42:35.843Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-22T01:17:54.718Z",
+  "publications": [
+    {
+      "file": "821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa.json",
+      "id": "821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17873374785583851"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

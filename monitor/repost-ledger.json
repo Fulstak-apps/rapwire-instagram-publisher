@@ -12994,6 +12994,18 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/p/DdmVAaSuG1R/",
       "view_count": 0
+    },
+    "DdmV-BGPJBA": {
+      "seen_at": "2026-09-22T18:10:08.415Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdmV-BGPJBA/",
+      "view_count": 0
+    },
+    "DdmTnOkm9dg": {
+      "seen_at": "2026-09-22T18:10:08.416Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdmTnOkm9dg/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17276,34 +17288,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/reel/DdmSrPwzf2n/",
       "queue_id": "870-blueface-is-making-it-clear-that-he-s-not-just-showing-up-on-the",
       "video": "media/870-blueface-is-making-it-clear-that-he-s-not-just-showing-up-on-the.mp4"
+    },
+    "DdlyPk_v9KL": {
+      "queued_at": "2026-09-22T18:10:35.650Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/DdlyPk_v9KL/",
+      "queue_id": "871-this-was-the-beginning-of-a-whole-new-don-toliver-dontoliver-era",
+      "video": "media/871-this-was-the-beginning-of-a-whole-new-don-toliver-dontoliver-era.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-21T01:24:24.716Z",
-      "candidates": 48,
-      "queued": [
-        "820-what-really-happened-in-q50s-m-rder"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 27,
-        "needed": 21
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-21T01:27:01.363Z"
-    },
     {
       "started_at": "2026-09-21T01:32:37.549Z",
       "candidates": 48,
@@ -24070,6 +24064,38 @@
         ]
       },
       "finished_at": "2026-09-22T18:04:28.892Z"
+    },
+    {
+      "started_at": "2026-09-22T18:09:48.933Z",
+      "candidates": 41,
+      "queued": [
+        "871-this-was-the-beginning-of-a-whole-new-don-toliver-dontoliver-era"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdmV-BGPJBA/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T18:10:35.650Z"
     }
   ],
   "vip_pending": {

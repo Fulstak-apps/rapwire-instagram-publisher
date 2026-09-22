@@ -12730,6 +12730,12 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/p/Ddk03mXllPC/",
       "view_count": 0
+    },
+    "Ddk3hWdBxNB": {
+      "seen_at": "2026-09-22T05:03:14.639Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/Ddk3hWdBxNB/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16942,135 +16948,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
       "queue_id": "860-lewis-hamilton-and-kim-kardashian-stepped-out-together-at-the-gr",
       "video": "media/860-lewis-hamilton-and-kim-kardashian-stepped-out-together-at-the-gr.mp4"
+    },
+    "Ddk3hWdBxNB": {
+      "queued_at": "2026-09-22T05:03:57.480Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/Ddk3hWdBxNB/",
+      "queue_id": "861-blueface-gets-swatted-again-this-is-now-the-3rd-time-within-the-",
+      "video": "media/861-blueface-gets-swatted-again-this-is-now-the-3rd-time-within-the-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T19:50:45.763Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
-          "stage": "queue",
-          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x7774c45180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x777508c000] [enc:mjpeg @ 0x7775014540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x7774d24000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x7774d24000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x7774d24000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x777508c000] [enc:mjpeg @ 0x7775014540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x777508c000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x777508c000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x7775040300] Nothing was written into output file, because at least one of its streams received no packets.\n"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 15,
-        "needed": 33
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T19:51:41.458Z"
-    },
-    {
-      "started_at": "2026-09-20T19:56:47.204Z",
-      "candidates": 36,
-      "queued": [
-        "798-contrary-to-people-who-don-t-know-here-s-who-the-jurors-thought-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 15,
-        "needed": 33
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T19:58:05.030Z"
-    },
-    {
-      "started_at": "2026-09-20T20:03:23.073Z",
-      "candidates": 48,
-      "queued": [
-        "799-there-no-way-the-song-actually-worked-lil-durk-lildurk-whose-rea"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 15,
-        "needed": 33
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T20:04:51.969Z"
-    },
-    {
-      "started_at": "2026-09-20T20:10:03.559Z",
-      "candidates": 48,
-      "queued": [
-        "800-ye-spoke-on-graduation-back-in-2007-calling-it-a-time-capsule-of"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 16,
-        "needed": 32
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T20:11:26.916Z"
-    },
-    {
-      "started_at": "2026-09-20T20:16:47.333Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 17,
-        "needed": 31
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T20:17:05.122Z"
-    },
     {
       "started_at": "2026-09-20T20:22:09.832Z",
       "candidates": 48,
@@ -23786,6 +23673,135 @@
         ]
       },
       "finished_at": "2026-09-22T04:34:26.990Z"
+    },
+    {
+      "started_at": "2026-09-22T04:39:41.036Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T04:40:11.782Z"
+    },
+    {
+      "started_at": "2026-09-22T04:45:16.747Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T04:45:37.120Z"
+    },
+    {
+      "started_at": "2026-09-22T04:50:42.889Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T04:51:24.435Z"
+    },
+    {
+      "started_at": "2026-09-22T04:56:29.150Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T04:57:18.180Z"
+    },
+    {
+      "started_at": "2026-09-22T05:02:23.855Z",
+      "candidates": 48,
+      "queued": [
+        "861-blueface-gets-swatted-again-this-is-now-the-3rd-time-within-the-"
+      ],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/drillmusic00/p/DdkLuIkiMG5/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T05:03:57.480Z"
     }
   ],
   "vip_pending": {

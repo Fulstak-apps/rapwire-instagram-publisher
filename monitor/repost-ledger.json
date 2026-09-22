@@ -12910,6 +12910,36 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/p/DdmHaXYFLNi/",
       "view_count": 0
+    },
+    "DdmFBkAEeNc": {
+      "seen_at": "2026-09-22T16:33:52.339Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/p/DdmFBkAEeNc/",
+      "view_count": 0
+    },
+    "DdmJIjclyh7": {
+      "seen_at": "2026-09-22T16:39:16.050Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdmJIjclyh7/",
+      "view_count": 0
+    },
+    "DdmLejfFHtZ": {
+      "seen_at": "2026-09-22T16:50:24.277Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdmLejfFHtZ/",
+      "view_count": 0
+    },
+    "DdmNzX6FKeh": {
+      "seen_at": "2026-09-22T17:01:18.077Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdmNzX6FKeh/",
+      "view_count": 0
+    },
+    "DdmOL8-jgzj": {
+      "seen_at": "2026-09-22T17:01:18.079Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DdmOL8-jgzj/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17164,241 +17194,16 @@
       "source_url": "https://www.instagram.com/jeremy_hecht/reel/DdkNx8Vhl9s/",
       "queue_id": "866-did-az-chike-deliver-on-the-wait-for-his-project-what-did-you-th",
       "video": "media/866-did-az-chike-deliver-on-the-wait-for-his-project-what-did-you-th.mp4"
+    },
+    "DdmDChgJiOB": {
+      "queued_at": "2026-09-22T17:07:55.118Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/DdmDChgJiOB/",
+      "queue_id": "867-rolling-loud-the-movie-is-officially-hitting-theaters-on-october",
+      "video": "media/867-rolling-loud-the-movie-is-officially-hitting-theaters-on-october.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T23:35:02.819Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T23:35:27.765Z"
-    },
-    {
-      "started_at": "2026-09-20T23:40:32.517Z",
-      "candidates": 48,
-      "queued": [
-        "814-rakai-and-ray-tried-working-regular-9-5-jobs-by-cleaning-houses-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T23:42:23.669Z"
-    },
-    {
-      "started_at": "2026-09-20T23:47:42.324Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhxHl6PCFd/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T23:48:07.519Z"
-    },
-    {
-      "started_at": "2026-09-20T23:53:16.048Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
-          "stage": "queue",
-          "error": "Caption source does not match requested video shortcode"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T23:54:45.928Z"
-    },
-    {
-      "started_at": "2026-09-20T23:59:57.697Z",
-      "candidates": 48,
-      "queued": [
-        "815-colin-kaepernick-calls-out-jigga"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-21T00:02:33.139Z"
-    },
-    {
-      "started_at": "2026-09-21T00:08:11.978Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-21T00:08:28.215Z"
-    },
-    {
-      "started_at": "2026-09-21T00:13:33.215Z",
-      "candidates": 48,
-      "queued": [
-        "816-feliciathegoat-really-has-the-best-taste-in-cars-the-rapper-was-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-21T00:14:30.428Z"
-    },
-    {
-      "started_at": "2026-09-21T00:19:42.411Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddh2TAyxG3e/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-21T00:20:04.837Z"
-    },
-    {
-      "started_at": "2026-09-21T00:25:09.041Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-21T00:25:21.774Z"
-    },
     {
       "started_at": "2026-09-21T00:30:26.497Z",
       "candidates": 48,
@@ -23970,6 +23775,245 @@
         ]
       },
       "finished_at": "2026-09-22T16:16:31.553Z"
+    },
+    {
+      "started_at": "2026-09-22T16:22:10.323Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DdmBqVfDtc9/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T16:22:35.151Z"
+    },
+    {
+      "started_at": "2026-09-22T16:27:39.944Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdjS_1ZxQWZ/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdjVKi2RwOc/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddjg-ZzRrBa/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T16:28:22.531Z"
+    },
+    {
+      "started_at": "2026-09-22T16:33:28.287Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T16:33:52.342Z"
+    },
+    {
+      "started_at": "2026-09-22T16:38:57.496Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T16:39:16.051Z"
+    },
+    {
+      "started_at": "2026-09-22T16:44:21.732Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T16:44:58.548Z"
+    },
+    {
+      "started_at": "2026-09-22T16:50:04.085Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T16:50:24.278Z"
+    },
+    {
+      "started_at": "2026-09-22T16:55:29.721Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T16:55:47.934Z"
+    },
+    {
+      "started_at": "2026-09-22T17:00:52.660Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 31,
+        "needed": 17
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T17:01:18.080Z"
+    },
+    {
+      "started_at": "2026-09-22T17:06:23.887Z",
+      "candidates": 41,
+      "queued": [
+        "867-rolling-loud-the-movie-is-officially-hitting-theaters-on-october"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 31,
+        "needed": 17
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T17:07:55.118Z"
     }
   ],
   "vip_pending": {

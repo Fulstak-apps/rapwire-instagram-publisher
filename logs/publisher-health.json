@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T02:28:53.329Z",
+  "checked_at": "2026-09-22T02:34:02.914Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-22T02:23:50.592Z",
-    "usage": 29,
+    "usage": 30,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-22T02:38:50.592Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-22T02:28:37.822Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-22T03:04:02.695Z",
+  "publications": [
+    {
+      "file": "824-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du.json",
+      "id": "824-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18102614375360579"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

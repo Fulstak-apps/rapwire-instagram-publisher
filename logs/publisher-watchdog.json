@@ -1,6 +1,6 @@
 {
-  "reserve_count": 29,
-  "reserve_hours": 14.5,
+  "reserve_count": 32,
+  "reserve_hours": 16,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": false,
@@ -8,13 +8,9 @@
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "817-trap-lore-ross-on-being-mobbed-outside-lil-durk-lildurk-trial-al",
-    "818-jayden-daniels-arm-injury-from-today-compared-to-his-significant",
-    "819-peysoh-brought-out-colorado-springs-artist-lil-nate-while-on-tou",
-    "820-what-really-happened-in-q50s-m-rder",
     "821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa",
     "822-lil-durk-lildurk-could-still-lose-everything-in-upcoming-civil-t",
     "823-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du",
@@ -39,10 +35,17 @@
     "842-clavicular-s-best-friend-drago-now-faces-serious-legal-trouble-a",
     "843-swae-lee-had-some-serious-music-choices-to-make-took-the-sound-c",
     "844-new-character-unlocked-new-york-s-daey-daye-from-dtf-drops-his-b",
-    "845-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different"
+    "845-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
+    "846-ralfy-the-plug-hooks-quavo-up-with-some-stinc-team-merch-and-qua",
+    "847-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
+    "848-drake-champagnepapi-getting-kawhi-leonard-to-join-a-music-video-",
+    "849-you-wanted-promo-that-bad-pay-for-it-here-s-one-for-free-next-ti",
+    "850-they-saying-the-feds-hit-o-block-this-morning",
+    "851-juice-wrld-whose-real-name-was-jarad-higgins-passed-away-on-dece",
+    "852-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-21T22:10:40.974Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-22T00:47:51.264Z",
   "deferred": []
 }

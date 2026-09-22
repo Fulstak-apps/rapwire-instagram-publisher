@@ -13006,6 +13006,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdmTnOkm9dg/",
       "view_count": 0
+    },
+    "DdmVnpMzUpV": {
+      "seen_at": "2026-09-22T18:21:50.385Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DdmVnpMzUpV/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17295,54 +17301,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdlyPk_v9KL/",
       "queue_id": "871-this-was-the-beginning-of-a-whole-new-don-toliver-dontoliver-era",
       "video": "media/871-this-was-the-beginning-of-a-whole-new-don-toliver-dontoliver-era.mp4"
+    },
+    "DdmVnpMzUpV": {
+      "queued_at": "2026-09-22T18:22:41.616Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DdmVnpMzUpV/",
+      "queue_id": "872-look-mama-might-just-be-their-biggest-song-yet-texas-artists-are",
+      "video": "media/872-look-mama-might-just-be-their-biggest-song-yet-texas-artists-are.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-21T01:32:37.549Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 28,
-        "needed": 20
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-21T01:32:57.831Z"
-    },
-    {
-      "started_at": "2026-09-21T01:38:02.217Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 28,
-        "needed": 20
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-21T01:38:21.318Z"
-    },
     {
       "started_at": "2026-09-21T01:43:29.403Z",
       "candidates": 48,
@@ -24096,6 +24064,53 @@
         ]
       },
       "finished_at": "2026-09-22T18:10:35.650Z"
+    },
+    {
+      "started_at": "2026-09-22T18:15:54.143Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T18:16:13.282Z"
+    },
+    {
+      "started_at": "2026-09-22T18:21:20.303Z",
+      "candidates": 48,
+      "queued": [
+        "872-look-mama-might-just-be-their-biggest-song-yet-texas-artists-are"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T18:22:41.616Z"
     }
   ],
   "vip_pending": {

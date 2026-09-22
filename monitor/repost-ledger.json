@@ -12634,6 +12634,24 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/trapmatictv/reel/Ddke6Rwto2Q/",
       "view_count": 0
+    },
+    "DdkeGt-kWmv": {
+      "seen_at": "2026-09-22T01:13:01.742Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdkeGt-kWmv/",
+      "view_count": 0
+    },
+    "DdkiQ3fx9Ci": {
+      "seen_at": "2026-09-22T01:18:48.093Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdkiQ3fx9Ci/",
+      "view_count": 0
+    },
+    "DdkiKBLjY36": {
+      "seen_at": "2026-09-22T01:18:48.093Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdkiKBLjY36/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16797,111 +16815,16 @@
       "source_url": "https://www.instagram.com/drillmusic00/reel/DdkLxr4iNaK/",
       "queue_id": "853-chiefkeef-gloryboyz-show-off-their-chains-which-chain-is-your-al",
       "video": "media/853-chiefkeef-gloryboyz-show-off-their-chains-which-chain-is-your-al.mp4"
+    },
+    "DdkiQ3fx9Ci": {
+      "queued_at": "2026-09-22T01:19:52.850Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdkiQ3fx9Ci/",
+      "queue_id": "854-clavicular-whose-real-name-is-braden-peters-20-has-been-charged-",
+      "video": "media/854-clavicular-whose-real-name-is-braden-peters-20-has-been-charged-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T14:39:46.851Z",
-      "candidates": 36,
-      "queued": [
-        "785-man-shit-shouldn-t-have-ever-happened"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T14:40:27.145Z"
-    },
-    {
-      "started_at": "2026-09-20T14:45:41.175Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddc5RMhRb-L/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddJzzKu_tF/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddKsn7u08Y/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T14:46:18.664Z"
-    },
-    {
-      "started_at": "2026-09-20T14:51:22.855Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Ddg0WCjjhua/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T14:51:58.470Z"
-    },
     {
       "started_at": "2026-09-20T14:57:02.754Z",
       "candidates": 36,
@@ -23617,6 +23540,83 @@
         ]
       },
       "finished_at": "2026-09-22T01:01:34.654Z"
+    },
+    {
+      "started_at": "2026-09-22T01:06:47.837Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T01:07:20.403Z"
+    },
+    {
+      "started_at": "2026-09-22T01:12:25.421Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x757682d180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x757747c000] [enc:mjpeg @ 0x7577404540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x757690c000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x757690c000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x757690c000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x757747c000] [enc:mjpeg @ 0x7577404540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x757747c000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x757747c000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x7577430300] Nothing was written into output file, because at least one of its streams received no packets.\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T01:13:20.684Z"
+    },
+    {
+      "started_at": "2026-09-22T01:18:26.974Z",
+      "candidates": 36,
+      "queued": [
+        "854-clavicular-whose-real-name-is-braden-peters-20-has-been-charged-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T01:19:52.850Z"
     }
   ],
   "vip_pending": {

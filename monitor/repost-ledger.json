@@ -12892,6 +12892,12 @@
       "source_handle": "hiphopdx",
       "source_url": "https://www.instagram.com/jeremy_hecht/reel/DdkNx8Vhl9s/",
       "view_count": 0
+    },
+    "DdmHYyAIM9B": {
+      "seen_at": "2026-09-22T16:02:29.932Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdmHYyAIM9B/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17132,31 +17138,16 @@
       "source_url": "https://www.instagram.com/uproxx/reel/DdmDqMxOp4p/",
       "queue_id": "864-these-verses-still-make-us-laugh-asked-for-the-funniest-ways-rap",
       "video": "media/864-these-verses-still-make-us-laugh-asked-for-the-funniest-ways-rap.mp4"
+    },
+    "DdmHYyAIM9B": {
+      "queued_at": "2026-09-22T16:03:32.569Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdmHYyAIM9B/",
+      "queue_id": "865-chiefkeef-was-spotted-at-a-gas-station-with-heavily-armed-securi",
+      "video": "media/865-chiefkeef-was-spotted-at-a-gas-station-with-heavily-armed-securi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T23:16:44.363Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T23:17:05.562Z"
-    },
     {
       "started_at": "2026-09-20T23:22:13.457Z",
       "candidates": 48,
@@ -23917,6 +23908,38 @@
         ]
       },
       "finished_at": "2026-09-22T15:56:09.756Z"
+    },
+    {
+      "started_at": "2026-09-22T16:01:58.769Z",
+      "candidates": 48,
+      "queued": [
+        "865-chiefkeef-was-spotted-at-a-gas-station-with-heavily-armed-securi"
+      ],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Ddk8PZVjrXd/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 31,
+        "needed": 17
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T16:03:32.569Z"
     }
   ],
   "vip_pending": {

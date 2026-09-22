@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T21:39:54.087Z",
+  "checked_at": "2026-09-22T21:45:03.423Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-22T21:39:53.572Z",
-    "usage": 27,
+    "checked_at": "2026-09-22T21:44:57.417Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-22T21:54:53.572Z",
+    "next_check_at": "2026-09-22T21:59:57.417Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-22T21:39:46.112Z",
+    "next_feed_eligible_at": "2026-09-22T22:15:03.292Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T21:49:57.223Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "844-new-character-unlocked-new-york-s-daey-daye-from-dtf-drops-his-b.json",
+      "id": "844-new-character-unlocked-new-york-s-daey-daye-from-dtf-drops-his-b",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18129581266772473",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

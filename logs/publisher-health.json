@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T17:08:05.033Z",
+  "checked_at": "2026-09-22T17:12:56.879Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T17:38:04.861Z",
-  "publications": [
-    {
-      "file": "837-travis-scott-travisscott-and-owen-wilson-share-the-screen-in-rol.json",
-      "id": "837-travis-scott-travisscott-and-owen-wilson-share-the-screen-in-rol",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18463380004137099"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

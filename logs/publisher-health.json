@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T23:41:19.014Z",
+  "checked_at": "2026-09-22T23:42:12.735Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-22T23:31:09.597Z",
     "usage": 28,
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T00:11:18.760Z",
-  "publications": [
-    {
-      "file": "849-you-wanted-promo-that-bad-pay-for-it-here-s-one-for-free-next-ti.json",
-      "id": "849-you-wanted-promo-that-bad-pay-for-it-here-s-one-for-free-next-ti",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18098180501363265"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T17:42:34.422Z",
+  "checked_at": "2026-09-22T17:47:42.235Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-22T17:42:33.669Z",
-    "usage": 27,
+    "usage": 28,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-22T17:57:33.669Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-22T17:38:04.861Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-22T18:17:41.757Z",
+  "publications": [
+    {
+      "file": "838-ynwmelly-s-last-performance-before-he-turned-himself-in-ynw.json",
+      "id": "838-ynwmelly-s-last-performance-before-he-turned-himself-in-ynw",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18033603302663633"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

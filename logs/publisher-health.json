@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T19:34:03.199Z",
+  "checked_at": "2026-09-22T19:38:54.446Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T20:04:02.385Z",
-  "publications": [
-    {
-      "file": "841-quavo-says-a-new-migos-album-is-on-the-way-and-could-arrive-arou.json",
-      "id": "841-quavo-says-a-new-migos-album-is-on-the-way-and-could-arrive-arou",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17896443699398753"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

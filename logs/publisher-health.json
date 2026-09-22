@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T01:23:12.812Z",
+  "checked_at": "2026-09-22T01:28:09.171Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-22T01:13:01.349Z",
-    "usage": 30,
+    "checked_at": "2026-09-22T01:28:08.679Z",
+    "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-22T01:28:01.349Z",
+    "next_check_at": "2026-09-22T01:43:08.679Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 30,
-    "instagram_remaining": 18,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-22T01:28:06.655Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T01:53:12.540Z",
-  "publications": [
-    {
-      "file": "822-lil-durk-lildurk-could-still-lose-everything-in-upcoming-civil-t.json",
-      "id": "822-lil-durk-lildurk-could-still-lose-everything-in-upcoming-civil-t",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18146170771567788"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

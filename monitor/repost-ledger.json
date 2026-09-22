@@ -12652,6 +12652,24 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/DdkiKBLjY36/",
       "view_count": 0
+    },
+    "Ddkkfo4R8da": {
+      "seen_at": "2026-09-22T01:48:55.642Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddkkfo4R8da/",
+      "view_count": 0
+    },
+    "DdklmYXmy6z": {
+      "seen_at": "2026-09-22T01:54:19.918Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/p/DdklmYXmy6z/",
+      "view_count": 0
+    },
+    "Ddkk2eyk2bh": {
+      "seen_at": "2026-09-22T02:00:21.387Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Ddkk2eyk2bh/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16829,79 +16847,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/reel/Ddke6Rwto2Q/",
       "queue_id": "855-parkway-gardens-had-quite-the-surprise-this-morning-as-federal-a",
       "video": "media/855-parkway-gardens-had-quite-the-surprise-this-morning-as-federal-a.mp4"
+    },
+    "Ddkk2eyk2bh": {
+      "queued_at": "2026-09-22T02:01:45.854Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Ddkk2eyk2bh/",
+      "queue_id": "856-hyperx-is-known-for-peripherals-but-they-re-expanding-into-pcs-t",
+      "video": "media/856-hyperx-is-known-for-peripherals-but-they-re-expanding-into-pcs-t.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T15:19:38.222Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T15:19:56.766Z"
-    },
-    {
-      "started_at": "2026-09-20T15:25:00.751Z",
-      "candidates": 41,
-      "queued": [
-        "786-2-years-ago-today-future-future-dropped-mixtape-pluto-what-are-y"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T15:26:10.733Z"
-    },
-    {
-      "started_at": "2026-09-20T15:31:30.038Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T15:32:08.893Z"
-    },
     {
       "started_at": "2026-09-20T15:37:13.254Z",
       "candidates": 36,
@@ -23594,6 +23549,90 @@
         ]
       },
       "finished_at": "2026-09-22T01:43:12.133Z"
+    },
+    {
+      "started_at": "2026-09-22T01:48:26.378Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddkkfo4R8da/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T01:48:55.643Z"
+    },
+    {
+      "started_at": "2026-09-22T01:54:00.245Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphop_firstnewsmusic",
+          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x7c2d031180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x7c2d0a8000] [enc:mjpeg @ 0x7c2cc20540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x7c2cd0c000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x7c2cd0c000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x7c2cd0c000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x7c2d0a8000] [enc:mjpeg @ 0x7c2cc20540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x7c2d0a8000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x7c2d0a8000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x7c2d034300] Nothing was written into output file, because at least one of its streams received no packets.\n"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T01:54:38.465Z"
+    },
+    {
+      "started_at": "2026-09-22T01:59:44.259Z",
+      "candidates": 36,
+      "queued": [
+        "856-hyperx-is-known-for-peripherals-but-they-re-expanding-into-pcs-t"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T02:01:45.854Z"
     }
   ],
   "vip_pending": {

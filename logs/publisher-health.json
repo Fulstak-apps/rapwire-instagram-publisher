@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T03:34:38.150Z",
+  "checked_at": "2026-09-22T03:39:47.256Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-22T03:24:25.928Z",
-    "usage": 30,
+    "checked_at": "2026-09-22T03:39:46.278Z",
+    "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-22T03:39:25.928Z",
+    "next_check_at": "2026-09-22T03:54:46.278Z",
     "reason": "Capacity available",
     "valid": true
   },

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T21:14:37.842Z",
+  "checked_at": "2026-09-22T21:19:57.414Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-22T21:04:30.996Z",
+    "checked_at": "2026-09-22T21:19:51.948Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-22T21:19:30.996Z",
+    "next_check_at": "2026-09-22T21:34:51.948Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-22T21:14:22.642Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-22T21:49:57.223Z",
+  "publications": [
+    {
+      "file": "844-new-character-unlocked-new-york-s-daey-daye-from-dtf-drops-his-b.json",
+      "id": "844-new-character-unlocked-new-york-s-daey-daye-from-dtf-drops-his-b",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18031207838672933"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

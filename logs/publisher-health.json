@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T22:50:41.551Z",
+  "checked_at": "2026-09-22T22:55:55.529Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-22T22:50:41.124Z",
-    "usage": 27,
+    "checked_at": "2026-09-22T22:55:46.071Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-22T23:05:41.124Z",
+    "next_check_at": "2026-09-22T23:10:46.071Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-22T22:50:29.631Z",
+    "next_feed_eligible_at": "2026-09-22T23:25:55.393Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,26 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-22T22:40:35.275Z",
+    "checked_at": "2026-09-22T22:55:45.817Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-22T22:55:35.275Z",
+    "next_check_at": "2026-09-22T23:10:45.817Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T23:00:33.529Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "846-ralfy-the-plug-hooks-quavo-up-with-some-stinc-team-merch-and-qua.json",
+      "id": "846-ralfy-the-plug-hooks-quavo-up-with-some-stinc-team-merch-and-qua",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18117687317069503",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

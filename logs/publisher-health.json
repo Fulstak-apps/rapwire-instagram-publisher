@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T16:42:46.765Z",
+  "checked_at": "2026-09-22T16:47:49.028Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T17:02:43.412Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "835-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du.json",
+      "id": "835-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "instagram: previous publish outcome uncertain; reconcile saved container before any retry"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

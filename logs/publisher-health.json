@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T15:57:23.180Z",
+  "checked_at": "2026-09-22T16:02:20.399Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-22T15:57:15.254Z",
+    "checked_at": "2026-09-22T16:02:10.379Z",
     "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-22T16:12:15.254Z",
+    "next_check_at": "2026-09-22T16:17:10.379Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-22T15:56:51.760Z",
+    "next_feed_eligible_at": "2026-09-22T16:32:20.154Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "834-cardi-b-smacked-a-fan-s-hand-away-after-they-touched-her-butt-wh.json",
       "id": "834-cardi-b-smacked-a-fan-s-hand-away-after-they-touched-her-butt-wh",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18131215555748322"
+      "media_id": "17958814185230408",
+      "content_type": "video"
     }
   ],
   "failures": [],

@@ -12964,6 +12964,36 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdmST9JG5za/",
       "view_count": 0
+    },
+    "DdmRw8yEWVJ": {
+      "seen_at": "2026-09-22T17:52:40.739Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdmRw8yEWVJ/",
+      "view_count": 0
+    },
+    "DdmQBoNkXTv": {
+      "seen_at": "2026-09-22T17:52:40.740Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdmQBoNkXTv/",
+      "view_count": 0
+    },
+    "DdmSzI2CT0e": {
+      "seen_at": "2026-09-22T17:52:40.740Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdmSzI2CT0e/",
+      "view_count": 0
+    },
+    "DdmSrPwzf2n": {
+      "seen_at": "2026-09-22T18:03:38.472Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DdmSrPwzf2n/",
+      "view_count": 0
+    },
+    "DdmVAaSuG1R": {
+      "seen_at": "2026-09-22T18:03:38.472Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DdmVAaSuG1R/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17239,96 +17269,16 @@
       "source_url": "https://www.instagram.com/records/p/DdmST9JG5za/",
       "queue_id": "869-after-years-of-teasing-and-anticipation-j-cole-announced-his-new",
       "video": "media/869-after-years-of-teasing-and-anticipation-j-cole-announced-his-new.mp4"
+    },
+    "DdmSrPwzf2n": {
+      "queued_at": "2026-09-22T18:04:28.892Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DdmSrPwzf2n/",
+      "queue_id": "870-blueface-is-making-it-clear-that-he-s-not-just-showing-up-on-the",
+      "video": "media/870-blueface-is-making-it-clear-that-he-s-not-just-showing-up-on-the.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-21T01:07:37.434Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdeqWArPGGz/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde1PlovwO1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dde8n8iPigo/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 28,
-        "needed": 20
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-21T01:08:22.420Z"
-    },
-    {
-      "started_at": "2026-09-21T01:13:26.922Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 28,
-        "needed": 20
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-21T01:13:51.315Z"
-    },
-    {
-      "started_at": "2026-09-21T01:18:56.950Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 28,
-        "needed": 20
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-21T01:19:18.490Z"
-    },
     {
       "started_at": "2026-09-21T01:24:24.716Z",
       "candidates": 48,
@@ -24050,6 +24000,76 @@
         ]
       },
       "finished_at": "2026-09-22T17:46:54.126Z"
+    },
+    {
+      "started_at": "2026-09-22T17:52:08.732Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T17:52:40.742Z"
+    },
+    {
+      "started_at": "2026-09-22T17:57:45.885Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T17:58:04.905Z"
+    },
+    {
+      "started_at": "2026-09-22T18:03:10.138Z",
+      "candidates": 48,
+      "queued": [
+        "870-blueface-is-making-it-clear-that-he-s-not-just-showing-up-on-the"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T18:04:28.892Z"
     }
   ],
   "vip_pending": {

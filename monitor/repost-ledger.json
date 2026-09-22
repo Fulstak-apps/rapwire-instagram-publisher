@@ -16910,86 +16910,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DdklwOAt4ib/",
       "queue_id": "858-ralo-is-opening-a-supermarket",
       "video": "media/858-ralo-is-opening-a-supermarket.mp4"
+    },
+    "Ddklg5xjQDq": {
+      "queued_at": "2026-09-22T03:03:04.368Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Ddklg5xjQDq/",
+      "queue_id": "859-x-two-names-already-making-noise-are-taking-it-to-another-level-",
+      "video": "media/859-x-two-names-already-making-noise-are-taking-it-to-another-level-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T16:19:21.946Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 12,
-        "needed": 36
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T16:19:43.471Z"
-    },
-    {
-      "started_at": "2026-09-20T16:24:48.792Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 11,
-        "needed": 37
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T16:25:52.766Z"
-    },
-    {
-      "started_at": "2026-09-20T16:30:58.146Z",
-      "candidates": 48,
-      "queued": [
-        "791-drake-champagnepapi-wins-1-million-on-stake-after-betting-650-00"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 11,
-        "needed": 37
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T16:31:46.390Z"
-    },
     {
       "started_at": "2026-09-20T16:36:57.690Z",
       "candidates": 36,
@@ -23698,6 +23628,83 @@
         ]
       },
       "finished_at": "2026-09-22T02:45:03.360Z"
+    },
+    {
+      "started_at": "2026-09-22T02:50:34.510Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T02:50:56.658Z"
+    },
+    {
+      "started_at": "2026-09-22T02:56:01.596Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T02:56:42.361Z"
+    },
+    {
+      "started_at": "2026-09-22T03:01:48.546Z",
+      "candidates": 48,
+      "queued": [
+        "859-x-two-names-already-making-noise-are-taking-it-to-another-level-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T03:03:04.368Z"
     }
   ],
   "vip_pending": {

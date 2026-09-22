@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T22:20:29.780Z",
+  "checked_at": "2026-09-22T22:25:27.236Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-22T22:50:29.631Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,26 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-22T22:10:11.635Z",
+    "checked_at": "2026-09-22T22:25:26.490Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-22T22:25:11.635Z",
+    "next_check_at": "2026-09-22T22:40:26.490Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T22:25:11.202Z",
-  "publications": [
-    {
-      "file": "845-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different.json",
-      "id": "845-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18353610499220316",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

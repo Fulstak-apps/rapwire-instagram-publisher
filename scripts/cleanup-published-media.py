@@ -61,10 +61,13 @@ if mirror_dir.is_dir():
         if any(candidate.name == code or candidate.name.startswith(f"{code}-") or candidate.name.startswith(f"{code}.") for code in published_shortcodes):
             paths.add(str(candidate.relative_to(ROOT)))
 
-# Move materialized copies to the user's macOS Trash when available. The
-# GitHub runner has no user Trash, so it simply has no local copy to move.
+# Remove materialized copies only after both feed publications have durable IDs.
+# ``--purge`` reclaims disk immediately; the default keeps the previous
+# recoverable macOS Trash behaviour for an operator-initiated review run.
+purge = "--purge" in sys.argv
 trash = pathlib.Path.home() / ".Trash"
-trash.mkdir(parents=True, exist_ok=True)
+if not purge:
+    trash.mkdir(parents=True, exist_ok=True)
 removed = 0
 trashed = 0
 for value in paths:
@@ -75,14 +78,21 @@ for value in paths:
         if tracked.returncode == 0:
             continue
     if path.exists():
-        destination = trash / path.name
-        if destination.exists():
-            destination = trash / f"{path.stem}-{uuid.uuid4().hex}{path.suffix}"
         try:
-            shutil.move(str(path), str(destination))
+            if purge:
+                if path.is_dir():
+                    shutil.rmtree(path)
+                else:
+                    path.unlink()
+            else:
+                destination = trash / path.name
+                if destination.exists():
+                    destination = trash / f"{path.stem}-{uuid.uuid4().hex}{path.suffix}"
+                shutil.move(str(path), str(destination))
             trashed += 1
         except OSError as error:
             print(f"Trash failed; keeping {path}: {error}")
             continue
         removed += 1
-print(f"Published media cleanup: moved {trashed} local file(s) to Trash; no permanent deletion.")
+action = "permanently deleted" if purge else "moved to Trash"
+print(f"Published media cleanup: {action} {trashed} confirmed local file(s).")

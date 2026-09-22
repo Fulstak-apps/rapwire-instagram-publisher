@@ -12940,6 +12940,18 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/p/DdmOL8-jgzj/",
       "view_count": 0
+    },
+    "DdmNph-lGRd": {
+      "seen_at": "2026-09-22T17:13:53.751Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdmNph-lGRd/",
+      "view_count": 0
+    },
+    "DdmQHJtF9SW": {
+      "seen_at": "2026-09-22T17:19:17.108Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdmQHJtF9SW/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17201,79 +17213,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdmDChgJiOB/",
       "queue_id": "867-rolling-loud-the-movie-is-officially-hitting-theaters-on-october",
       "video": "media/867-rolling-loud-the-movie-is-officially-hitting-theaters-on-october.mp4"
+    },
+    "Ddl8bMQPIwQ": {
+      "queued_at": "2026-09-22T17:27:11.322Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/Ddl8bMQPIwQ/",
+      "queue_id": "868-still-one-of-the-funniest-interviews-ever-some-interviews-are-fu",
+      "video": "media/868-still-one-of-the-funniest-interviews-ever-some-interviews-are-fu.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-21T00:30:26.497Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-21T00:31:03.035Z"
-    },
-    {
-      "started_at": "2026-09-21T00:36:08.014Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-21T00:36:33.912Z"
-    },
-    {
-      "started_at": "2026-09-21T00:41:38.155Z",
-      "candidates": 48,
-      "queued": [
-        "817-trap-lore-ross-on-being-mobbed-outside-lil-durk-lildurk-trial-al"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-21T00:44:45.845Z"
-    },
     {
       "started_at": "2026-09-21T00:50:19.406Z",
       "candidates": 48,
@@ -24014,6 +23963,76 @@
         ]
       },
       "finished_at": "2026-09-22T17:07:55.118Z"
+    },
+    {
+      "started_at": "2026-09-22T17:13:32.354Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T17:13:53.754Z"
+    },
+    {
+      "started_at": "2026-09-22T17:18:58.916Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T17:19:17.109Z"
+    },
+    {
+      "started_at": "2026-09-22T17:26:04.195Z",
+      "candidates": 41,
+      "queued": [
+        "868-still-one-of-the-funniest-interviews-ever-some-interviews-are-fu"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T17:27:11.323Z"
     }
   ],
   "vip_pending": {

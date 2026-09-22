@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T01:18:08.105Z",
+  "checked_at": "2026-09-22T01:23:12.812Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-22T01:08:01.239Z",
+    "checked_at": "2026-09-22T01:23:06.146Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-22T01:23:01.239Z",
+    "next_check_at": "2026-09-22T01:38:06.146Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-22T01:17:54.718Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-22T01:53:12.540Z",
+  "publications": [
+    {
+      "file": "822-lil-durk-lildurk-could-still-lose-everything-in-upcoming-civil-t.json",
+      "id": "822-lil-durk-lildurk-could-still-lose-everything-in-upcoming-civil-t",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18146170771567788"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

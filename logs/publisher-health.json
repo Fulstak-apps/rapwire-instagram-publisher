@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T19:13:43.135Z",
+  "checked_at": "2026-09-22T19:18:52.052Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-22T19:13:42.305Z",
-    "usage": 26,
+    "checked_at": "2026-09-22T19:18:44.128Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-22T19:28:42.306Z",
+    "next_check_at": "2026-09-22T19:33:44.128Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 26,
     "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-22T19:13:21.987Z",
+    "next_feed_eligible_at": "2026-09-22T19:48:51.863Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T19:28:31.471Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "840-fans-go-crazy-after-swae-lee-makes-a-stop-at-a-college-for-the-r.json",
+      "id": "840-fans-go-crazy-after-swae-lee-makes-a-stop-at-a-college-for-the-r",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18026029775696262",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

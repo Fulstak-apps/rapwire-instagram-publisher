@@ -17308,34 +17308,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/reel/DdmVnpMzUpV/",
       "queue_id": "872-look-mama-might-just-be-their-biggest-song-yet-texas-artists-are",
       "video": "media/872-look-mama-might-just-be-their-biggest-song-yet-texas-artists-are.mp4"
+    },
+    "DdlnsCQPcQ7": {
+      "queued_at": "2026-09-22T18:28:52.719Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/DdlnsCQPcQ7/",
+      "queue_id": "873-that-one-song-that-can-take-you-straight-back-to-2018-when-you-h",
+      "video": "media/873-that-one-song-that-can-take-you-straight-back-to-2018-when-you-h.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-21T01:43:29.403Z",
-      "candidates": 48,
-      "queued": [
-        "821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 28,
-        "needed": 20
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-21T01:47:45.290Z"
-    },
     {
       "started_at": "2026-09-21T01:53:29.227Z",
       "candidates": 48,
@@ -24111,6 +24093,31 @@
         ]
       },
       "finished_at": "2026-09-22T18:22:41.616Z"
+    },
+    {
+      "started_at": "2026-09-22T18:28:00.686Z",
+      "candidates": 41,
+      "queued": [
+        "873-that-one-song-that-can-take-you-straight-back-to-2018-when-you-h"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 35,
+        "needed": 13
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T18:28:52.719Z"
     }
   ],
   "vip_pending": {

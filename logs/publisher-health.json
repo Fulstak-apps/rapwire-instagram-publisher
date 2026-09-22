@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T15:26:52.045Z",
+  "checked_at": "2026-09-22T15:31:51.385Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,10 +30,10 @@
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-22T15:56:51.760Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T15:51:47.109Z",
-  "publications": [
-    {
-      "file": "833-breaking-new-footage-has-surfaced-from-bloodhound-q50-s-tesla-re.json",
-      "id": "833-breaking-new-footage-has-surfaced-from-bloodhound-q50-s-tesla-re",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18189659923404876",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

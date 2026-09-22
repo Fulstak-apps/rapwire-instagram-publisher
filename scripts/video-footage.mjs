@@ -229,7 +229,7 @@ export async function analyzeFootage(input,{sourceHandle,directory,width,height,
     const {stdout}=await exec('ffmpeg',['-v','error','-ss',String(time),'-i',input,'-frames:v','1','-vf',`scale=${sampleWidth}:${sampleHeight}`,'-f','rawvideo','-pix_fmt','rgb24','pipe:1'],{encoding:'buffer',maxBuffer:8*1024*1024,timeout:30000});
     frames.push(stdout);
     const image=path.join(directory,`source-${i+1}.png`);
-    await exec('ffmpeg',['-v','error','-y','-ss',String(time),'-i',input,'-frames:v','1',image],{timeout:30000});
+    await exec('ffmpeg',['-v','error','-y','-ss',String(time),'-i',input,'-frames:v','1','-pix_fmt','yuvj420p',image],{timeout:30000});
     images.push(image);
   }
   const bands=inspectBands(frames,sampleWidth,sampleHeight);
@@ -318,8 +318,8 @@ export async function renderFootageOnly({input,destination,sourceHandle,width,he
   const probe=JSON.parse(stdout), video=probe.streams?.find(s=>s.codec_type==='video'), audio=probe.streams?.find(s=>s.codec_type==='audio');
   if(video?.codec_name!=='h264'||video.width!==1080||video.height!==1350||audio?.codec_name!=='aac'||[probe.format,video,audio].some(s=>!Number.isFinite(Number(s?.duration))||Math.abs(Number(s.duration)-duration)>1)) throw new Error('Footage-only output failed complete H.264/AAC duration/dimension validation');
   // Save comparable output samples and a center-grid preview for spot checks.
-  for (const [i,time] of analysis.sample_times.entries()) await exec('ffmpeg',['-v','error','-y','-ss',String(time),'-i',destination,'-frames:v','1',path.join(directory,`output-${i+1}.jpg`)],{timeout:30000});
-  await exec('ffmpeg',['-v','error','-y','-ss',String(analysis.sample_times[2]),'-i',destination,'-vf','crop=1080:1080:0:135','-frames:v','1',path.join(directory,'center-grid.jpg')],{timeout:30000});
+  for (const [i,time] of analysis.sample_times.entries()) await exec('ffmpeg',['-v','error','-y','-ss',String(time),'-i',destination,'-frames:v','1','-pix_fmt','yuvj420p',path.join(directory,`output-${i+1}.jpg`)],{timeout:30000});
+  await exec('ffmpeg',['-v','error','-y','-ss',String(analysis.sample_times[2]),'-i',destination,'-vf','crop=1080:1080:0:135','-frames:v','1','-pix_fmt','yuvj420p',path.join(directory,'center-grid.jpg')],{timeout:30000});
   const hash=async file=>{const digest=createHash('sha256');for await(const chunk of createReadStream(file))digest.update(chunk);return digest.digest('hex');};
   return {version:VIDEO_LAYOUT_VERSION,status:'validated',source_width:width,source_height:height,output_width:1080,output_height:1350,
     crop:analysis.crop,analysis,source_sha256:await hash(input),output_sha256:await hash(destination),source_path:input,

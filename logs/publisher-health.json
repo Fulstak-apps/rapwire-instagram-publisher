@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T00:52:48.645Z",
+  "checked_at": "2026-09-22T00:58:06.767Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-22T00:52:48.018Z",
-    "usage": 29,
+    "checked_at": "2026-09-22T00:57:56.863Z",
+    "usage": 30,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-22T01:07:48.018Z",
+    "next_check_at": "2026-09-22T01:12:56.863Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 29,
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-22T00:52:44.035Z",
+    "next_feed_eligible_at": "2026-09-22T01:28:06.655Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T01:17:54.718Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa.json",
+      "id": "821-lil-durk-lildurk-still-charged-w-chicago-murder-and-double-jeopa",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17988824454059021",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

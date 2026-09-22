@@ -12736,6 +12736,18 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Ddk3hWdBxNB/",
       "view_count": 0
+    },
+    "Ddk8PZVjrXd": {
+      "seen_at": "2026-09-22T05:20:52.633Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Ddk8PZVjrXd/",
+      "view_count": 0
+    },
+    "DdlDkHXN9cA": {
+      "seen_at": "2026-09-22T06:22:05.766Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/DdlDkHXN9cA/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -16955,447 +16967,16 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Ddk3hWdBxNB/",
       "queue_id": "861-blueface-gets-swatted-again-this-is-now-the-3rd-time-within-the-",
       "video": "media/861-blueface-gets-swatted-again-this-is-now-the-3rd-time-within-the-.mp4"
+    },
+    "DdlDkHXN9cA": {
+      "queued_at": "2026-09-22T06:22:51.814Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/DdlDkHXN9cA/",
+      "queue_id": "862-n3on-and-nina-drama-hand-out-free-popeyes-meals-to-homeless-peop",
+      "video": "media/862-n3on-and-nina-drama-hand-out-free-popeyes-meals-to-homeless-peop.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-20T20:22:09.832Z",
-      "candidates": 48,
-      "queued": [
-        "801-dj-akademiks-believes-that-bloodhound-q50-s-opps-will-dig-up-his"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 17,
-        "needed": 31
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T20:22:55.512Z"
-    },
-    {
-      "started_at": "2026-09-20T20:28:05.651Z",
-      "candidates": 41,
-      "queued": [
-        "802-tee-grizzley-teegrizzley-took-over-a-college-campus-as-rolling-l"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 18,
-        "needed": 30
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T20:29:08.027Z"
-    },
-    {
-      "started_at": "2026-09-20T20:34:26.466Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
-          "stage": "queue",
-          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x77b6c51180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x77b6d20000] [enc:mjpeg @ 0x77b6c1c540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x77b7088000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x77b7088000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x77b7088000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x77b6d20000] [enc:mjpeg @ 0x77b6c1c540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x77b6d20000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x77b6d20000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x77b6c54300] Nothing was written into output file, because at least one of its streams received no packets.\n"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 18,
-        "needed": 30
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T20:35:12.682Z"
-    },
-    {
-      "started_at": "2026-09-20T20:40:17.338Z",
-      "candidates": 48,
-      "queued": [
-        "803-ty-dolla-sign-brought-up-fetty-wap-to-perform-credits-fettywap"
-      ],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdfSW-xtRHP/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 18,
-        "needed": 30
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-20T20:41:31.934Z"
-    },
-    {
-      "started_at": "2026-09-20T20:47:02.512Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLuXyuIkK/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdeeX6VRrOQ/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddLV93u8gM/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 19,
-        "needed": 29
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T20:47:49.199Z"
-    },
-    {
-      "started_at": "2026-09-20T20:52:53.625Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Ddg0WCjjhua/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 19,
-        "needed": 29
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T20:53:30.880Z"
-    },
-    {
-      "started_at": "2026-09-20T20:58:35.586Z",
-      "candidates": 36,
-      "queued": [
-        "804-one-of-the-jurors-from-lil-durk-lildurk-s-trial-finally-gave-som"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 19,
-        "needed": 29
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T21:01:08.165Z"
-    },
-    {
-      "started_at": "2026-09-20T21:06:43.233Z",
-      "candidates": 41,
-      "queued": [
-        "805-the-fan-that-met-ye-and-bianca-in-the-chick-fil-a-line-revealed-"
-      ],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddKsn7u08Y/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DddJzzKu_tF/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdhfVgyPqC_/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T21:07:29.888Z"
-    },
-    {
-      "started_at": "2026-09-20T21:12:44.781Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
-          "stage": "queue",
-          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x7814c25180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x781510c000] [enc:mjpeg @ 0x7815014540] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x7814c7c000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x7814c7c000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x7814c7c000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x781510c000] [enc:mjpeg @ 0x7815014540] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x781510c000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x781510c000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x7815060300] Nothing was written into output file, because at least one of its streams received no packets.\n"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T21:14:01.353Z"
-    },
-    {
-      "started_at": "2026-09-20T21:26:40.634Z",
-      "candidates": 41,
-      "queued": [
-        "806-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different"
-      ],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddc5RMhRb-L/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T21:27:43.596Z"
-    },
-    {
-      "started_at": "2026-09-20T21:32:55.224Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdeWhdljt1f/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 21,
-        "needed": 27
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T21:34:14.732Z"
-    },
-    {
-      "started_at": "2026-09-20T21:39:19.036Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 21,
-        "needed": 27
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-20T21:39:51.946Z"
-    },
-    {
-      "started_at": "2026-09-20T21:44:58.771Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 21,
-        "needed": 27
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-20T21:46:08.871Z"
-    },
-    {
-      "started_at": "2026-09-20T21:51:14.876Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdhPkaxorTg/",
-          "stage": "queue",
-          "error": "Command failed: ffmpeg -v error -y -ss 12.80399903 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg.mp4 -frames:v 1 /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/DdhPkaxorTg-crop-review/output-5.jpg\n[mjpeg @ 0x750cc19180] Non full-range YUV is non-standard, set strict_std_compliance to at most unofficial to use it.\n[vost#0:0/mjpeg @ 0x750d400000] [enc:mjpeg @ 0x750cc09810] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0x750d0ec000] Error sending frames to consumers: Invalid argument\n[vf#0:0 @ 0x750d0ec000] Task finished with error code: -22 (Invalid argument)\n[vf#0:0 @ 0x750d0ec000] Terminating thread with return code -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x750d400000] [enc:mjpeg @ 0x750cc09810] Could not open encoder before EOF\n[vost#0:0/mjpeg @ 0x750d400000] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/mjpeg @ 0x750d400000] Terminating thread with return code -22 (Invalid argument)\n[out#0/image2 @ 0x750cc0c780] Nothing was written into output file, because at least one of its streams received no packets.\n"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-20T21:52:40.296Z"
-    },
     {
       "started_at": "2026-09-20T21:57:44.397Z",
       "candidates": 36,
@@ -23802,6 +23383,340 @@
         ]
       },
       "finished_at": "2026-09-22T05:03:57.480Z"
+    },
+    {
+      "started_at": "2026-09-22T05:09:20.406Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T05:09:55.234Z"
+    },
+    {
+      "started_at": "2026-09-22T05:15:00.803Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T05:15:27.236Z"
+    },
+    {
+      "started_at": "2026-09-22T05:20:31.658Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/vladtv/reel/DdaJLL7gNuR/",
+          "stage": "queue",
+          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T05:21:18.401Z"
+    },
+    {
+      "started_at": "2026-09-22T05:26:23.218Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T05:26:43.266Z"
+    },
+    {
+      "started_at": "2026-09-22T05:31:48.565Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T05:32:09.466Z"
+    },
+    {
+      "started_at": "2026-09-22T05:37:14.384Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T05:37:32.948Z"
+    },
+    {
+      "started_at": "2026-09-22T05:42:37.867Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 33,
+        "needed": 15
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T05:42:58.275Z"
+    },
+    {
+      "started_at": "2026-09-22T05:48:03.380Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T05:48:22.716Z"
+    },
+    {
+      "started_at": "2026-09-22T05:53:29.881Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T05:54:03.055Z"
+    },
+    {
+      "started_at": "2026-09-22T05:59:08.140Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T05:59:51.452Z"
+    },
+    {
+      "started_at": "2026-09-22T06:04:56.824Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-22T06:05:30.404Z"
+    },
+    {
+      "started_at": "2026-09-22T06:10:35.170Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T06:11:14.082Z"
+    },
+    {
+      "started_at": "2026-09-22T06:16:18.917Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-22T06:16:40.645Z"
+    },
+    {
+      "started_at": "2026-09-22T06:21:45.787Z",
+      "candidates": 48,
+      "queued": [
+        "862-n3on-and-nina-drama-hand-out-free-popeyes-meals-to-homeless-peop"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 32,
+        "needed": 16
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-22T06:22:51.814Z"
     }
   ],
   "vip_pending": {

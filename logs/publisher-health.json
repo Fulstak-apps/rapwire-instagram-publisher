@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-22T16:37:37.041Z",
+  "checked_at": "2026-09-22T16:42:46.765Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-22T16:37:34.700Z",
+    "checked_at": "2026-09-22T16:42:45.962Z",
     "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-22T16:52:34.700Z",
+    "next_check_at": "2026-09-22T16:57:45.962Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,8 +26,8 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 26,
+    "instagram_remaining": 22,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-22T16:32:20.154Z",
     "feed_allowed": true,
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-22T17:02:43.412Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "835-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du.json",
-      "id": "835-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "media_publish failed: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"A3XbaIKWqG8sZAQJu9HEKMO\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

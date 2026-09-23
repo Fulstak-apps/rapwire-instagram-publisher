@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T15:51:46.599Z",
+  "checked_at": "2026-09-23T16:06:57.865Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,13 +8,13 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-23T15:37:40.449Z",
+    "checked_at": "2026-09-23T16:06:52.948Z",
     "usage": 30,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-23T15:52:40.449Z",
+    "next_check_at": "2026-09-23T16:21:52.948Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-23T15:52:33.057Z",
-    "feed_allowed": false,
+    "next_feed_eligible_at": "2026-09-23T16:36:57.721Z",
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-23T15:48:03.363Z",
-    "usage": 31,
+    "usage": 32,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-23T16:03:03.363Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-23T15:52:39.171Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-23T16:30:27.480Z",
+  "publications": [
+    {
+      "file": "669-rapwire-news-carousel-2026-09-23-0800.json",
+      "id": "669-rapwire-news-carousel-2026-09-23-0800",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17945004195341225"
+    },
+    {
+      "file": "669-rapwire-news-carousel-2026-09-23-0800.json",
+      "id": "669-rapwire-news-carousel-2026-09-23-0800",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18476350645114423",
+      "content_type": "carousel"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

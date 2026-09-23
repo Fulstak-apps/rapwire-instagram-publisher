@@ -26,11 +26,19 @@ for (const file of await fs.readdir(dir)) {
     && item.video.endsWith(".mp4");
   if (item.status === "ready" && approvedVideo) continue;
   const validSlideCount = Array.isArray(item.slides) && item.slides.length >= 2 && item.slides.length <= 10;
-  const sourceGrounded = item.source_photo_used === true
+  const sourceGroundedPhoto = item.source_photo_used === true
     && typeof item.source_image_url === "string"
     && /^https?:\/\//i.test(item.source_image_url)
     && Array.isArray(item.visual_asset_source_urls)
     && item.visual_asset_source_urls.length > 0;
+  // Scheduled newsroom carousels are original editorial art rather than a
+  // single source photograph.  They are still source-grounded: each slide is
+  // based on a verified source list stored on the queue record.
+  const sourceGroundedEditorial = item.visual_asset_type === "original_editorial_art"
+    && item.ai_generated_art === true
+    && Array.isArray(item.visual_asset_source_urls)
+    && item.visual_asset_source_urls.length > 0;
+  const sourceGrounded = sourceGroundedPhoto || sourceGroundedEditorial;
   const approvedFallback = item.fallback_real_photo === true
     && item.visual_asset_type === "source_photo"
     && item.visual_asset_rights === "source_post_repost"

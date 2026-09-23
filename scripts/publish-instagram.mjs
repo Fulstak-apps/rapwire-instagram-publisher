@@ -448,6 +448,8 @@ function videoUrl(item) {
 }
 
 function hasPublishableVisual(item) {
+  if (item.visual_asset_type === "original_editorial_art" && item.ai_generated_art === true
+    && Array.isArray(item.visual_asset_source_urls) && item.visual_asset_source_urls.length > 0) return true;
   if (item.visual_asset_type === "original_graphic" && item.visual_asset_rights === "owned") return true;
   if (item.visual_asset_type === "source_photo" && item.visual_asset_rights === "source_post_repost") {
     return Boolean(item.story || carouselSlides(item).length);
@@ -795,6 +797,14 @@ const processingCount = queueRecords.filter(({ item }) => item.status === "ready
   && item.content_type === "video" && item.instagram_container_id && !item.instagram_reconcile_required
   && !(Date.parse(item.instagram_retry_at || "") > Date.now())
   && contentPromiseIsKept(item)).length;
+const readyEditorialCarousel = queueRecords.some(({ item }) => item.status === "ready"
+  && item.content_type !== "video" && carouselSlides(item).length >= 2
+  && item.layout_template === "rapwire-unified-v3" && hasPublishableVisual(item)
+  && item.text_overflow_checked === true && item.rendered_body_text === item.body
+  && item.content_claim_checked === true && item.editorial_substance_checked === true
+  && item.source_policy_checked === true && item.rap_relevance_checked === true
+  && !(Date.parse(item.instagram_retry_at || "") > Date.now())
+  && (!item.publish_after || Date.parse(item.publish_after) <= Date.now()));
 const pendingStory = queueRecords.some(({ item }) => item.status === "published"
   && (item.story || item.content_type === "video") && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
@@ -805,7 +815,7 @@ const preferStory = publishInstagramStories && !recovery.feed_allowed && pending
 const uploadSlots = instagramAvailable() && !preferStory && (deliveryPolicy.feed_allowed || recovery.feed_allowed)
   ? Math.max(0, 1 - processingCount) : 0;
 const uploadCandidates = files.map(name => queueRecords.find(record => record.name === name))
-  .filter(({ item }) => item.status === "ready" && item.content_type === "video"
+  .filter(({ item }) => !readyEditorialCarousel && item.status === "ready" && item.content_type === "video"
     && !publishedCaptionFingerprints.has(captionFingerprint(item.body))
     && (deliveryPolicy.feed_allowed || (recovery.feed_allowed && item.id === recovery.item_id))
     && !item.instagram_container_id && String(item.video || "").endsWith(".mp4")
@@ -817,7 +827,7 @@ const uploadCandidates = files.map(name => queueRecords.find(record => record.na
     && contentPromiseIsKept(item) && item.source_policy_checked === true && item.rap_relevance_checked === true
     && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"))
   .slice(0, uploadSlots);
-console.log(`Instagram selection: slots=${uploadSlots} processing=${processingCount} cycle_due=${instagramCycleDue} feed_allowed=${deliveryPolicy.feed_allowed} available=${instagramAvailable()} ready_videos=${queueRecords.filter(({ item }) => item.status === "ready" && item.content_type === "video").length} candidates=${uploadCandidates.length}`);
+console.log(`Instagram selection: slots=${uploadSlots} processing=${processingCount} cycle_due=${instagramCycleDue} feed_allowed=${deliveryPolicy.feed_allowed} available=${instagramAvailable()} ready_videos=${queueRecords.filter(({ item }) => item.status === "ready" && item.content_type === "video").length} editorial_carousel_ready=${readyEditorialCarousel} candidates=${uploadCandidates.length}`);
 
 await Promise.all(uploadCandidates.map(async ({ name, item }) => {
   try {

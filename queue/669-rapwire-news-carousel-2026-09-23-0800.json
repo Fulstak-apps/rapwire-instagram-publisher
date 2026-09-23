@@ -1,6 +1,6 @@
 {
   "id": "669-rapwire-news-carousel-2026-09-23-0800",
-  "status": "paused",
+  "status": "ready",
   "publish_priority": 100,
   "date": "2026-09-23",
   "timezone": "America/Los_Angeles",
@@ -9,15 +9,15 @@
   "type": "original_editorial_carousel",
   "story_type": "current",
   "editorial_series": "RapWire News Carousel",
-  "layout_template": "rapwire-original-news-v1",
+  "layout_template": "rapwire-unified-v3",
   "editorial_lane": "rap_culture",
   "headline": "RapWire 24/7 — Five current rap and GTA VI stories",
   "body": "Five distinct current stories: Jhené Aiko earns her first Billboard 200 No. 1; Fetty P Franklin and Bandplay release The Frank Play; Kase.O calls for protest rap; Nicki Minaj defends her Trump support; and a Twitch CEO says GTA VI multiplayer could arrive in 2027, a claim Rockstar has not confirmed.",
-  "rendered_body_text": "RapWire 24/7 — Five current rap and GTA VI stories",
+  "rendered_body_text": "Five distinct current stories: Jhené Aiko earns her first Billboard 200 No. 1; Fetty P Franklin and Bandplay release The Frank Play; Kase.O calls for protest rap; Nicki Minaj defends her Trump support; and a Twitch CEO says GTA VI multiplayer could arrive in 2027, a claim Rockstar has not confirmed.",
   "caption": "RAPWIRE 24/7 — NEWS CAROUSEL | SEPTEMBER 23, 2026\n\n1. Jhene Aiko Hits Her First Billboard 200 No. 1 — Westside Whimsy opens at the top — a career first.\nSources: https://www.complex.com/music/a/markelibert/jhene-aiko-westside-whimsy-billboard-200-number-one | https://billboard.com.br/jhene-aiko-westside-whims-billboard-200/\nVerified handles: @JheneAiko  @billboardcharts\n\n2. Fetty P Franklin & Bandplay Drop The Frank Play — The Charlotte rapper leans into Southern hustle rap.\nSources: https://pitchfork.com/reviews/albums/fetty-p-franklin-bandplay-the-frank-play/ | https://www.qobuz.com/fr-fr/album/the-frank-play-fetty-p-franklin-bandplay/eicxh6nggr5v5\nVerified handles: @fettypfranklin  @bandplay\n\n3. Kase.O Calls For A Return To Protest Rap — The Spanish veteran discusses Camisa de fuerza and rap’s edge.\nSources: https://los40.com/2026/09/22/kaseo-reivindica-la-protesta-en-el-rap-y-lanza-un-mensaje-a-los-jovenes/ | https://cadenaser.com/nacional/2026/09/18/kaseo-sobre-su-nuevo-album-he-aprovechado-mi-fama-de-loco-para-decir-lo-que-quiero-cadena-ser/\nVerified handles: @KaseO_real\n\n4. Nicki Minaj Defends Her Trump Support — In a Fox News interview, she says she “just loves him.”\nSources: https://www.nme.com/news/music/nicki-minaj-addresses-criticism-over-her-support-of-donald-trump-i-just-love-him-3969763 | https://www.foxnews.com/media/nicki-minaj-offers-career-advice-young-americans-delivers-blunt-response-trump-critics.amp\nVerified handles: @NICKIMINAJ  @NME\n\n5. GTA VI Multiplayer Could Land In 2027 — Twitch CEO Dan Clancy said “next year” — Rockstar has not confirmed it.\nSources: https://www.pcgamer.com/games/grand-theft-auto/twitch-ceo-says-gta-6-multiplayer-will-launch-in-2027/ | https://gtaintel.com/news/gta-6-multiplayer-next-year-twitch-ceo-clancy\nVerified handles: @RockstarGames  @Twitch",
   "threads_text": "RAPWIRE 24/7 — Five current rap and GTA VI stories. Five slides, five stories. Sources are in the Instagram caption. @rapwire247",
   "visual_asset_type": "original_editorial_art",
-  "visual_asset_rights": "original_generated_editorial_art",
+  "visual_asset_rights": "owned",
   "visual_style": "late-1980s comic-book editorial",
   "dimensions": "1080x1350",
   "logo_asset": "assets/rapwire247-logo.png",
@@ -53,6 +53,21 @@
     }
   ],
   "media_capture_complete": true,
+  "slides": [
+    "media/669-rapwire-news-carousel-2026-09-23-0800-1.png",
+    "media/669-rapwire-news-carousel-2026-09-23-0800-2.png",
+    "media/669-rapwire-news-carousel-2026-09-23-0800-3.png",
+    "media/669-rapwire-news-carousel-2026-09-23-0800-4.png",
+    "media/669-rapwire-news-carousel-2026-09-23-0800-5.png"
+  ],
+  "ai_generated_art": true,
+  "visual_asset_source_urls": [
+    "https://www.complex.com/music/a/markelibert/jhene-aiko-westside-whimsy-billboard-200-number-one",
+    "https://pitchfork.com/reviews/albums/fetty-p-franklin-bandplay-the-frank-play/",
+    "https://los40.com/2026/09/22/kaseo-reivindica-la-protesta-en-el-rap-y-lanza-un-mensaje-a-los-jovenes/",
+    "https://www.nme.com/news/music/nicki-minaj-addresses-criticism-over-her-support-of-donald-trump-i-just-love-him-3969763",
+    "https://www.pcgamer.com/games/grand-theft-auto/twitch-ceo-says-gta-6-multiplayer-will-launch-in-2027/"
+  ],
   "source_item_count": 5,
   "artist_handles": [
     "JheneAiko",

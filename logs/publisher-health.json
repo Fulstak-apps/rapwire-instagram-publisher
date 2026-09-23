@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T04:19:06.401Z",
+  "checked_at": "2026-09-23T04:24:13.316Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-23T04:19:05.560Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-23T04:34:05.560Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-23T04:18:58.168Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-23T04:54:13.064Z",
+  "publications": [
+    {
+      "file": "858-ralo-is-opening-a-supermarket.json",
+      "id": "858-ralo-is-opening-a-supermarket",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17963187878983582"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

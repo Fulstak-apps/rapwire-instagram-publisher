@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T02:33:00.800Z",
+  "checked_at": "2026-09-23T02:38:11.416Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-23T02:33:00.255Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-23T02:48:00.255Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-23T02:32:46.004Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-23T03:08:11.031Z",
+  "publications": [
+    {
+      "file": "855-parkway-gardens-had-quite-the-surprise-this-morning-as-federal-a.json",
+      "id": "855-parkway-gardens-had-quite-the-surprise-this-morning-as-federal-a",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18037406159837105"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,6 +1,6 @@
 {
-  "reserve_count": 35,
-  "reserve_hours": 17.5,
+  "reserve_count": 40,
+  "reserve_hours": 20,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": false,
@@ -8,13 +8,10 @@
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
     "847-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
-    "849-you-wanted-promo-that-bad-pay-for-it-here-s-one-for-free-next-ti",
-    "850-they-saying-the-feds-hit-o-block-this-morning",
-    "851-juice-wrld-whose-real-name-was-jarad-higgins-passed-away-on-dece",
     "852-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
     "853-chiefkeef-gloryboyz-show-off-their-chains-which-chain-is-your-al",
     "854-clavicular-whose-real-name-is-braden-peters-20-has-been-charged-",
@@ -45,10 +42,18 @@
     "879-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba",
     "880-keeef-moving-heavy-at-a-detroit-gas-station",
     "881-i-got-kicked-out-of-the-overflow-room-at-lil-durk-lildurk-s-tria",
-    "882-finally-return-and-just-dropped-official-visuals-for-their-brand"
+    "882-finally-return-and-just-dropped-official-visuals-for-their-brand",
+    "883-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba",
+    "884-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba",
+    "885-ceddy-knew-the-federal-agents-in-the-room-i-didn-t-know-the-back",
+    "886-ceddy-nash-thought-the-prosecutor-s-closing-could-split-the-juro",
+    "887-sauce-walka-reacts-to-ppl-claiming-his-baby-moms-was-selling-cat",
+    "888-blueface-flexes-him-making-150k-per-week-off-kick-and-says-no-on",
+    "889-are-the-feds-hunting-anybody-who-ll-testify-at-lil-durk-lildurk-",
+    "890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-22T23:40:36.463Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-23T01:46:08.032Z",
   "deferred": []
 }

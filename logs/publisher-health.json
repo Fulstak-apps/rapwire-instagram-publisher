@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T02:22:59.339Z",
+  "checked_at": "2026-09-23T02:28:01.112Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-23T02:22:58.438Z",
-    "usage": 27,
+    "checked_at": "2026-09-23T02:27:56.210Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-23T02:37:58.438Z",
+    "next_check_at": "2026-09-23T02:42:56.210Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-23T02:22:41.816Z",
+    "next_feed_eligible_at": "2026-09-23T02:58:00.948Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T02:32:46.004Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "854-clavicular-whose-real-name-is-braden-peters-20-has-been-charged-.json",
+      "id": "854-clavicular-whose-real-name-is-braden-peters-20-has-been-charged-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18121708750906154",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T17:16:34.723Z",
+  "checked_at": "2026-09-23T17:21:44.880Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-23T17:16:33.831Z",
-    "usage": 30,
+    "checked_at": "2026-09-23T17:21:36.013Z",
+    "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-23T17:31:33.831Z",
+    "next_check_at": "2026-09-23T17:36:36.013Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-23T17:16:18.190Z",
+    "next_feed_eligible_at": "2026-09-23T17:51:44.720Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T17:41:36.357Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "867-rolling-loud-the-movie-is-officially-hitting-theaters-on-october.json",
+      "id": "867-rolling-loud-the-movie-is-officially-hitting-theaters-on-october",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18006882704994751",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

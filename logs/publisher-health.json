@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T17:06:28.306Z",
+  "checked_at": "2026-09-23T17:11:36.622Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-23T16:56:26.095Z",
+    "checked_at": "2026-09-23T17:11:31.825Z",
     "usage": 31,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-23T17:11:26.095Z",
+    "next_check_at": "2026-09-23T17:26:31.825Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-23T17:06:12.888Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-23T17:41:36.357Z",
+  "publications": [
+    {
+      "file": "868-still-one-of-the-funniest-interviews-ever-some-interviews-are-fu.json",
+      "id": "868-still-one-of-the-funniest-interviews-ever-some-interviews-are-fu",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18093518948399044"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -18156,31 +18156,16 @@
       "source_url": "https://www.instagram.com/raplisted_/p/DdoPYuCDn0L/",
       "queue_id": "904-chicago-rapper-lilmari-was-sh-t-k-lled-in-chicago-he-went-viral-",
       "video": "media/904-chicago-rapper-lilmari-was-sh-t-k-lled-in-chicago-he-went-viral-.mp4"
+    },
+    "DdoGr0Zh8--": {
+      "queued_at": "2026-09-23T16:50:38.274Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/DdoGr0Zh8--/",
+      "queue_id": "905-she-had-no-business-going-this-hard-being-the-lone-female-featur",
+      "video": "media/905-she-had-no-business-going-this-hard-being-the-lone-female-featur.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T22:18:44.814Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-22T22:19:17.733Z"
-    },
     {
       "started_at": "2026-09-22T22:18:44.814Z",
       "candidates": 36,
@@ -24719,6 +24704,31 @@
         ]
       },
       "finished_at": "2026-09-23T16:44:04.621Z"
+    },
+    {
+      "started_at": "2026-09-23T16:49:25.239Z",
+      "candidates": 41,
+      "queued": [
+        "905-she-had-no-business-going-this-hard-being-the-lone-female-featur"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-23T16:50:38.274Z"
     }
   ],
   "vip_pending": {

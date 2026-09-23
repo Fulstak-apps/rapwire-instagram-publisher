@@ -13348,6 +13348,12 @@
       "source_handle": "traploreross",
       "source_url": "https://www.instagram.com/vladtv/reel/Ddm-GoUiUfz/",
       "view_count": 0
+    },
+    "DdnD0vUBc47": {
+      "seen_at": "2026-09-23T01:15:51.984Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/lawyerforworkers/reel/DdnD0vUBc47/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17763,82 +17769,16 @@
       "source_url": "https://www.instagram.com/vladtv/reel/Ddm-GoUiUfz/",
       "queue_id": "889-are-the-feds-hunting-anybody-who-ll-testify-at-lil-durk-lildurk-",
       "video": "media/889-are-the-feds-hunting-anybody-who-ll-testify-at-lil-durk-lildurk-.mp4"
+    },
+    "DdnD0vUBc47": {
+      "queued_at": "2026-09-23T01:16:16.905Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/lawyerforworkers/reel/DdnD0vUBc47/",
+      "queue_id": "890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur",
+      "video": "media/890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T16:09:03.413Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddj87KTP9IV/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddj-WiovLLG/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddkkfo4R8da/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 31,
-        "needed": 17
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-22T16:09:40.747Z"
-    },
-    {
-      "started_at": "2026-09-22T16:14:45.870Z",
-      "candidates": 48,
-      "queued": [
-        "866-did-az-chike-deliver-on-the-wait-for-his-project-what-did-you-th"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 31,
-        "needed": 17
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-22T16:16:31.553Z"
-    },
     {
       "started_at": "2026-09-22T16:14:45.870Z",
       "candidates": 48,
@@ -24099,6 +24039,53 @@
         ]
       },
       "finished_at": "2026-09-23T01:04:14.566Z"
+    },
+    {
+      "started_at": "2026-09-23T01:09:50.657Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-23T01:10:14.127Z"
+    },
+    {
+      "started_at": "2026-09-23T01:15:19.163Z",
+      "candidates": 36,
+      "queued": [
+        "890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-23T01:16:16.905Z"
     }
   ],
   "vip_pending": {

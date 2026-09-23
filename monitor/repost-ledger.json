@@ -13894,6 +13894,24 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/DdpJuiYPcvE/",
       "view_count": 0
+    },
+    "DdpMTZDTKIC": {
+      "seen_at": "2026-09-23T20:49:09.917Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpMTZDTKIC/",
+      "view_count": 0
+    },
+    "DdpLA2fPHWW": {
+      "seen_at": "2026-09-23T20:49:09.919Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpLA2fPHWW/",
+      "view_count": 0
+    },
+    "DdpM0qPvoBL": {
+      "seen_at": "2026-09-23T20:49:09.919Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdpM0qPvoBL/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18505,99 +18523,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdpJuiYPcvE/",
       "queue_id": "917-j-cole-gives-fans-more-insight-into-the-creative-process-behind-",
       "video": "media/917-j-cole-gives-fans-more-insight-into-the-creative-process-behind-.mp4"
+    },
+    "DdpM0qPvoBL": {
+      "queued_at": "2026-09-23T20:49:31.419Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdpM0qPvoBL/",
+      "queue_id": "918-never-forget-when-chief-keef-turned-his-bathroom-into-both-a-gam",
+      "video": "media/918-never-forget-when-chief-keef-turned-his-bathroom-into-both-a-gam.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T23:11:04.851Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-22T23:11:29.590Z"
-    },
-    {
-      "started_at": "2026-09-22T23:11:04.851Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-22T23:11:29.590Z"
-    },
-    {
-      "started_at": "2026-09-22T23:16:34.497Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-22T23:17:14.591Z"
-    },
-    {
-      "started_at": "2026-09-22T23:16:34.497Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-22T23:17:14.591Z"
-    },
     {
       "started_at": "2026-09-22T23:16:34.497Z",
       "candidates": 36,
@@ -25042,6 +24977,132 @@
         ]
       },
       "finished_at": "2026-09-23T20:26:21.598Z"
+    },
+    {
+      "started_at": "2026-09-23T20:31:42.565Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-23T20:32:11.491Z"
+    },
+    {
+      "started_at": "2026-09-23T20:37:17.011Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/DdnkA0xRRCB/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdnkA0xRRCB-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-23T20:38:02.677Z"
+    },
+    {
+      "started_at": "2026-09-23T20:43:08.566Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        },
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-23T20:43:42.609Z"
+    },
+    {
+      "started_at": "2026-09-23T20:48:49.286Z",
+      "candidates": 41,
+      "queued": [
+        "918-never-forget-when-chief-keef-turned-his-bathroom-into-both-a-gam"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpLA2fPHWW/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpMTZDTKIC/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-23T20:49:31.420Z"
     }
   ],
   "vip_pending": {

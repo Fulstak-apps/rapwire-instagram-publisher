@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T18:17:49.510Z",
+  "checked_at": "2026-09-23T18:22:24.799Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-23T18:12:12.170Z",
-    "usage": 31,
+    "usage": 32,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-23T18:27:12.170Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-23T18:17:03.883Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-23T18:52:24.540Z",
+  "publications": [
+    {
+      "file": "870-blueface-is-making-it-clear-that-he-s-not-just-showing-up-on-the.json",
+      "id": "870-blueface-is-making-it-clear-that-he-s-not-just-showing-up-on-the",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18115348283285393"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

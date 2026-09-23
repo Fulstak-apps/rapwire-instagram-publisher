@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T21:59:49.515Z",
+  "checked_at": "2026-09-23T22:05:02.679Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-23T21:59:43.306Z",
-    "usage": 30,
+    "checked_at": "2026-09-23T22:04:53.398Z",
+    "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-23T22:14:43.306Z",
+    "next_check_at": "2026-09-23T22:19:53.398Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-23T21:59:37.631Z",
+    "next_feed_eligible_at": "2026-09-23T22:35:02.510Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,11 +55,12 @@
   "threads_next_eligible_at": "2026-09-23T22:29:49.295Z",
   "publications": [
     {
-      "file": "875-ye-insisted-on-personally-unveiling-the-new-dr-donda-west-way-st.json",
-      "id": "875-ye-insisted-on-personally-unveiling-the-new-dr-donda-west-way-st",
-      "platform": "threads",
+      "file": "874-this-cyberpunk-edgerunners-shotgun-replica-has-a-smoking-barrel-.json",
+      "id": "874-this-cyberpunk-edgerunners-shotgun-replica-has-a-smoking-barrel-",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18104534762259221"
+      "media_id": "18104102702253668",
+      "content_type": "video"
     }
   ],
   "failures": [],

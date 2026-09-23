@@ -13624,6 +13624,18 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/DdosJAQDFht/",
       "view_count": 0
+    },
+    "DdotEHQjpiD": {
+      "seen_at": "2026-09-23T16:43:44.137Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DdotEHQjpiD/",
+      "view_count": 0
+    },
+    "Ddou4jCALwV": {
+      "seen_at": "2026-09-23T16:43:44.137Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Ddou4jCALwV/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18137,31 +18149,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Ddonj4yRNbs/",
       "queue_id": "903-nba-og-3three-federal-update-part-2",
       "video": "media/903-nba-og-3three-federal-update-part-2.mp4"
+    },
+    "DdoPYuCDn0L": {
+      "queued_at": "2026-09-23T16:44:04.621Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DdoPYuCDn0L/",
+      "queue_id": "904-chicago-rapper-lilmari-was-sh-t-k-lled-in-chicago-he-went-viral-",
+      "video": "media/904-chicago-rapper-lilmari-was-sh-t-k-lled-in-chicago-he-went-viral-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T22:18:44.814Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-22T22:19:17.733Z"
-    },
     {
       "started_at": "2026-09-22T22:18:44.814Z",
       "candidates": 36,
@@ -24697,6 +24694,31 @@
         ]
       },
       "finished_at": "2026-09-23T16:37:14.997Z"
+    },
+    {
+      "started_at": "2026-09-23T16:43:01.183Z",
+      "candidates": 48,
+      "queued": [
+        "904-chicago-rapper-lilmari-was-sh-t-k-lled-in-chicago-he-went-viral-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 40,
+        "needed": 8
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-23T16:44:04.621Z"
     }
   ],
   "vip_pending": {

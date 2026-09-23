@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T00:06:36.203Z",
+  "checked_at": "2026-09-23T00:11:34.977Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-23T00:36:36.044Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,26 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-22T23:56:22.254Z",
+    "checked_at": "2026-09-23T00:11:34.428Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-23T00:11:22.254Z",
+    "next_check_at": "2026-09-23T00:26:34.428Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T00:11:18.760Z",
-  "publications": [
-    {
-      "file": "849-you-wanted-promo-that-bad-pay-for-it-here-s-one-for-free-next-ti.json",
-      "id": "849-you-wanted-promo-that-bad-pay-for-it-here-s-one-for-free-next-ti",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18096682028090378",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

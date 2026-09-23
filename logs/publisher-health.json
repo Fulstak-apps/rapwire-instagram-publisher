@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T08:01:16.273Z",
+  "checked_at": "2026-09-23T08:06:08.799Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T08:31:15.921Z",
-  "publications": [
-    {
-      "file": "863-ceddy-nash-is-not-a-real-he-ain-t-no-real.json",
-      "id": "863-ceddy-nash-is-not-a-real-he-ain-t-no-real",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17949744861278809"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

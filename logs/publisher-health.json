@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T03:43:43.791Z",
+  "checked_at": "2026-09-23T03:48:59.211Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-23T03:33:41.431Z",
+    "checked_at": "2026-09-23T03:48:50.458Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-23T03:48:41.431Z",
+    "next_check_at": "2026-09-23T04:03:50.458Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-23T03:43:31.623Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-23T04:18:58.168Z",
+  "publications": [
+    {
+      "file": "857-clavicular-charged-for-r-of-a-m-r-he-s-facing-20-years-first-cou.json",
+      "id": "857-clavicular-charged-for-r-of-a-m-r-he-s-facing-20-years-first-cou",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18463508491138760"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

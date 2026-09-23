@@ -1,6 +1,6 @@
 {
   "id": "835-the-lil-durk-lildurk-juror-interview-with-ceddy-nash-hurt-lil-du",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-09-21",
   "timezone": "America/Detroit",
@@ -58,5 +58,6 @@
   "instagram_publish_requested_at": "2026-09-22T16:37:34.441Z",
   "instagram_error": "instagram: previous publish outcome uncertain; reconcile saved container before any retry",
   "instagram_retry_at": "2026-09-22T16:57:48.683Z",
-  "instagram_reconcile_required": true
+  "instagram_reconcile_required": true,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

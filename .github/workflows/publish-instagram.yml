@@ -1,6 +1,12 @@
 name: RapWire 24/7 monitor and publisher
 
 on:
+  # Queue/media commits are deliberately ignored below to avoid an upload for
+  # every collector write.  This small heartbeat makes those queued items
+  # eligible without relying on a local machine staying awake; the publisher
+  # still enforces its independent 30-minute platform cadence.
+  schedule:
+    - cron: "*/10 * * * *"
   push:
     branches: [main]
     paths-ignore:

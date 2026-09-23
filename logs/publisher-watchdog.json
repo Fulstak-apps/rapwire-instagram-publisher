@@ -3,17 +3,17 @@
   "reserve_hours": 17,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
-  "processing": [],
+  "overdue": true,
+  "health_stale": true,
+  "processing": [
+    "863-ceddy-nash-is-not-a-real-he-ain-t-no-real"
+  ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "852-ddg-and-bendadonnn-are-what-happens-when-two-kids-from-different",
-    "861-blueface-gets-swatted-again-this-is-now-the-3rd-time-within-the-",
-    "862-n3on-and-nina-drama-hand-out-free-popeyes-meals-to-homeless-peop",
     "863-ceddy-nash-is-not-a-real-he-ain-t-no-real",
     "864-these-verses-still-make-us-laugh-asked-for-the-funniest-ways-rap",
     "865-chiefkeef-was-spotted-at-a-gas-station-with-heavily-armed-securi",
@@ -44,10 +44,12 @@
     "890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur",
     "891-mozzy-fan-going-viral-on-tiktok-after-he-goes-bar-for-bar-with-t",
     "892-i-hope-to-god-i-m-wrong-ceddy-nash-predicts-how-bond-could-play-",
-    "893-bruh-yall-believe-fat-joe"
+    "893-bruh-yall-believe-fat-joe",
+    "894-ella-celebrates-choosin-texas-as-the-longest-running-no-1-song-o",
+    "895-ye-back-at-his-childhood-home-he-was-at-the-unveiling-of-the-new"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-23T06:43:01.871Z",
+  "checked_at": "2026-09-23T12:11:48.239Z",
   "deferred": []
 }

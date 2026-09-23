@@ -13774,6 +13774,24 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Ddo-8l4Mk9L/",
       "view_count": 0
+    },
+    "Ddo82uevmU7": {
+      "seen_at": "2026-09-23T19:08:01.190Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddo82uevmU7/",
+      "view_count": 0
+    },
+    "DdpALYzmVb-": {
+      "seen_at": "2026-09-23T19:13:31.325Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdpALYzmVb-/",
+      "view_count": 0
+    },
+    "DdpAAHVobJQ": {
+      "seen_at": "2026-09-23T19:13:31.326Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdpAAHVobJQ/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18343,55 +18361,16 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Ddo-8l4Mk9L/",
       "queue_id": "911-lilpump-whose-real-name-is-gazzy-fabio-garcia-is-an-american-rap",
       "video": "media/911-lilpump-whose-real-name-is-gazzy-fabio-garcia-is-an-american-rap.mp4"
+    },
+    "DdpAAHVobJQ": {
+      "queued_at": "2026-09-23T19:13:51.640Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdpAAHVobJQ/",
+      "queue_id": "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas",
+      "video": "media/912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T22:53:33.281Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-22T22:54:10.897Z"
-    },
-    {
-      "started_at": "2026-09-22T22:53:33.281Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-22T22:54:10.897Z"
-    },
     {
       "started_at": "2026-09-22T22:53:33.281Z",
       "candidates": 48,
@@ -24856,6 +24835,61 @@
         ]
       },
       "finished_at": "2026-09-23T19:02:33.127Z"
+    },
+    {
+      "started_at": "2026-09-23T19:07:46.240Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddo82uevmU7/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 43,
+        "needed": 5
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-23T19:08:01.193Z"
+    },
+    {
+      "started_at": "2026-09-23T19:13:06.354Z",
+      "candidates": 48,
+      "queued": [
+        "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 43,
+        "needed": 5
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-23T19:13:51.640Z"
     }
   ],
   "vip_pending": {

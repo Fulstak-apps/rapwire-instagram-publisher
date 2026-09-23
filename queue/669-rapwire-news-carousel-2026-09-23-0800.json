@@ -1,6 +1,6 @@
 {
   "id": "669-rapwire-news-carousel-2026-09-23-0800",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 100,
   "date": "2026-09-23",
   "timezone": "America/Los_Angeles",
@@ -78,5 +78,6 @@
   "threads_status": "pending",
   "source_published_at": "2026-09-23T15:00:00Z",
   "source_discovered_at": "2026-09-23T15:00:00Z",
-  "metadata_reconciled_at": "2026-09-23T15:24:00Z"
+  "metadata_reconciled_at": "2026-09-23T15:24:00Z",
+  "pause_reason": "Visual blocked: RapWire requires source-grounded AI art or an approved credited real-photo fallback, plus a complete readable 2-10 slide carousel"
 }

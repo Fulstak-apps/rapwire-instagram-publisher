@@ -14002,6 +14002,24 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/DdpXqEeIQ_y/",
       "view_count": 0
+    },
+    "DdpXGHFDmwi": {
+      "seen_at": "2026-09-23T22:31:28.991Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DdpXGHFDmwi/",
+      "view_count": 0
+    },
+    "DdpWrkQmceH": {
+      "seen_at": "2026-09-23T22:31:28.992Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdpWrkQmceH/",
+      "view_count": 0
+    },
+    "DdpYUfVGfrQ": {
+      "seen_at": "2026-09-23T22:42:22.997Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdpYUfVGfrQ/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18634,78 +18652,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdpXqEeIQ_y/",
       "queue_id": "920-former-lawyer-sentenced-to-20-years-in-prison-after-trying-to-sh",
       "video": "media/920-former-lawyer-sentenced-to-20-years-in-prison-after-trying-to-sh.mp4"
+    },
+    "DdpVU7yiBun": {
+      "queued_at": "2026-09-23T22:42:45.993Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/drillmusic00/p/DdpVU7yiBun/",
+      "queue_id": "921-screwlyg-opens-up-about-grief-while-remembering-his-late-friends",
+      "video": "media/921-screwlyg-opens-up-about-grief-while-remembering-his-late-friends.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T00:07:01.178Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 39,
-        "needed": 9
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T00:07:17.329Z"
-    },
-    {
-      "started_at": "2026-09-23T00:07:01.178Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 39,
-        "needed": 9
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T00:07:17.329Z"
-    },
-    {
-      "started_at": "2026-09-23T00:12:23.069Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 38,
-        "needed": 10
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T00:13:13.599Z"
-    },
     {
       "started_at": "2026-09-23T00:12:23.069Z",
       "candidates": 48,
@@ -25258,6 +25214,76 @@
         ]
       },
       "finished_at": "2026-09-23T22:25:36.696Z"
+    },
+    {
+      "started_at": "2026-09-23T22:30:59.120Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-23T22:31:28.995Z"
+    },
+    {
+      "started_at": "2026-09-23T22:36:34.355Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-23T22:36:56.391Z"
+    },
+    {
+      "started_at": "2026-09-23T22:42:01.845Z",
+      "candidates": 48,
+      "queued": [
+        "921-screwlyg-opens-up-about-grief-while-remembering-his-late-friends"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-23T22:42:45.993Z"
     }
   ],
   "vip_pending": {

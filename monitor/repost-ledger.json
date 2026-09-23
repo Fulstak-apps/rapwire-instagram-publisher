@@ -18163,31 +18163,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdoGr0Zh8--/",
       "queue_id": "905-she-had-no-business-going-this-hard-being-the-lone-female-featur",
       "video": "media/905-she-had-no-business-going-this-hard-being-the-lone-female-featur.mp4"
+    },
+    "DdolwV1xGKx": {
+      "queued_at": "2026-09-23T16:59:02.631Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdolwV1xGKx/",
+      "queue_id": "906-nba-og-3three-federal-update-part-1",
+      "video": "media/906-nba-og-3three-federal-update-part-1.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T22:18:44.814Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-22T22:19:17.733Z"
-    },
     {
       "started_at": "2026-09-22T22:18:44.814Z",
       "candidates": 36,
@@ -24729,6 +24714,30 @@
         ]
       },
       "finished_at": "2026-09-23T16:50:38.274Z"
+    },
+    {
+      "started_at": "2026-09-23T16:55:55.267Z",
+      "candidates": 36,
+      "queued": [
+        "906-nba-og-3three-federal-update-part-1"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-23T16:59:02.631Z"
     }
   ],
   "vip_pending": {

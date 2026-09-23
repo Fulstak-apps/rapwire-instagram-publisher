@@ -13588,6 +13588,30 @@
       "source_handle": "hiphopdx",
       "source_url": "https://www.instagram.com/uproxx/p/DdolsU1Dk1z/",
       "view_count": 0
+    },
+    "DdooFP_x3Sd": {
+      "seen_at": "2026-09-23T16:00:00.956Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdooFP_x3Sd/",
+      "view_count": 0
+    },
+    "Ddonj4yRNbs": {
+      "seen_at": "2026-09-23T16:00:00.957Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Ddonj4yRNbs/",
+      "view_count": 0
+    },
+    "DdolwV1xGKx": {
+      "seen_at": "2026-09-23T16:00:00.957Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdolwV1xGKx/",
+      "view_count": 0
+    },
+    "DdonD7FF-pv": {
+      "seen_at": "2026-09-23T16:00:00.957Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdonD7FF-pv/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18073,39 +18097,16 @@
       "source_url": "https://www.instagram.com/uproxx/p/DdolsU1Dk1z/",
       "queue_id": "899-speedin-bullet-2-heaven-was-ahead-of-its-time-in-this-clip-from-",
       "video": "media/899-speedin-bullet-2-heaven-was-ahead-of-its-time-in-this-clip-from-.mp4"
+    },
+    "DdooFP_x3Sd": {
+      "queued_at": "2026-09-23T16:01:58.489Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdooFP_x3Sd/",
+      "queue_id": "900-nba-og-3three-federal-update-part-3",
+      "video": "media/900-nba-og-3three-federal-update-part-3.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T22:06:32.034Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddkm34gxC96/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-22T22:06:49.352Z"
-    },
     {
       "started_at": "2026-09-22T22:06:32.034Z",
       "candidates": 41,
@@ -24651,6 +24652,30 @@
         ]
       },
       "finished_at": "2026-09-23T15:54:08.827Z"
+    },
+    {
+      "started_at": "2026-09-23T15:59:27.740Z",
+      "candidates": 36,
+      "queued": [
+        "900-nba-og-3three-federal-update-part-3"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 36,
+        "needed": 12
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-23T16:01:58.489Z"
     }
   ],
   "vip_pending": {

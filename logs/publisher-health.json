@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T02:58:13.853Z",
+  "checked_at": "2026-09-23T03:03:26.415Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-23T02:58:13.321Z",
-    "usage": 27,
+    "checked_at": "2026-09-23T03:03:19.831Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-23T03:13:13.321Z",
+    "next_check_at": "2026-09-23T03:18:19.831Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-23T02:58:00.948Z",
+    "next_feed_eligible_at": "2026-09-23T03:33:26.258Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,26 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-23T02:48:10.152Z",
+    "checked_at": "2026-09-23T03:03:19.560Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-23T03:03:10.152Z",
+    "next_check_at": "2026-09-23T03:18:19.560Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T03:08:11.031Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "855-parkway-gardens-had-quite-the-surprise-this-morning-as-federal-a.json",
+      "id": "855-parkway-gardens-had-quite-the-surprise-this-morning-as-federal-a",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18133950280632768",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

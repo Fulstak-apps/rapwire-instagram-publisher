@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T14:50:15.666Z",
+  "checked_at": "2026-09-23T14:55:13.364Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-23T15:20:08.523Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T15:20:15.129Z",
-  "publications": [
-    {
-      "file": "864-these-verses-still-make-us-laugh-asked-for-the-funniest-ways-rap.json",
-      "id": "864-these-verses-still-make-us-laugh-asked-for-the-funniest-ways-rap",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18153358237533060",
-      "content_type": "video"
-    },
-    {
-      "file": "865-chiefkeef-was-spotted-at-a-gas-station-with-heavily-armed-securi.json",
-      "id": "865-chiefkeef-was-spotted-at-a-gas-station-with-heavily-armed-securi",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17989298982061785"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

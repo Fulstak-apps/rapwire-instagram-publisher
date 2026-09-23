@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T00:52:01.104Z",
+  "checked_at": "2026-09-23T00:57:34.900Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-23T00:41:54.128Z",
+    "checked_at": "2026-09-23T00:57:34.474Z",
     "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-23T00:56:54.128Z",
+    "next_check_at": "2026-09-23T01:12:34.474Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-23T00:41:53.960Z",
-    "usage": 29,
+    "checked_at": "2026-09-23T00:57:34.825Z",
+    "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-23T00:56:53.960Z",
+    "next_check_at": "2026-09-23T01:12:34.825Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T01:22:00.835Z",
-  "publications": [
-    {
-      "file": "851-juice-wrld-whose-real-name-was-jarad-higgins-passed-away-on-dece.json",
-      "id": "851-juice-wrld-whose-real-name-was-jarad-higgins-passed-away-on-dece",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18102796547106995"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

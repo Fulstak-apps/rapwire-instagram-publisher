@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T00:11:34.977Z",
+  "checked_at": "2026-09-23T00:16:41.139Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-23T00:11:34.428Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-23T00:26:34.428Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-23T00:11:18.760Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-23T00:46:40.840Z",
+  "publications": [
+    {
+      "file": "850-they-saying-the-feds-hit-o-block-this-morning.json",
+      "id": "850-they-saying-the-feds-hit-o-block-this-morning",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18331255618275819"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

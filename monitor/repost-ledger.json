@@ -13324,6 +13324,12 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/DdnAD1cjBDo/",
       "view_count": 0
+    },
+    "DdnATrjt81Q": {
+      "seen_at": "2026-09-23T00:25:23.604Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdnATrjt81Q/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17718,41 +17724,16 @@
       "source_url": "https://www.instagram.com/lawyerforworkers/reel/Ddm5WafBJqL/",
       "queue_id": "886-ceddy-nash-thought-the-prosecutor-s-closing-could-split-the-juro",
       "video": "media/886-ceddy-nash-thought-the-prosecutor-s-closing-could-split-the-juro.mp4"
+    },
+    "DdnATrjt81Q": {
+      "queued_at": "2026-09-23T00:26:36.041Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdnATrjt81Q/",
+      "queue_id": "887-sauce-walka-reacts-to-ppl-claiming-his-baby-moms-was-selling-cat",
+      "video": "media/887-sauce-walka-reacts-to-ppl-claiming-his-baby-moms-was-selling-cat.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T16:01:58.769Z",
-      "candidates": 48,
-      "queued": [
-        "865-chiefkeef-was-spotted-at-a-gas-station-with-heavily-armed-securi"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Ddk8PZVjrXd/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 31,
-        "needed": 17
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-22T16:03:32.569Z"
-    },
     {
       "started_at": "2026-09-22T16:01:58.769Z",
       "candidates": 48,
@@ -24161,6 +24142,31 @@
         ]
       },
       "finished_at": "2026-09-23T00:19:25.017Z"
+    },
+    {
+      "started_at": "2026-09-23T00:24:43.251Z",
+      "candidates": 48,
+      "queued": [
+        "887-sauce-walka-reacts-to-ppl-claiming-his-baby-moms-was-selling-cat"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 39,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-23T00:26:36.041Z"
     }
   ],
   "vip_pending": {

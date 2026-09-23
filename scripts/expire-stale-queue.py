@@ -60,6 +60,16 @@ for path in QUEUE.glob("*.json"):
     source_date = item.get("source_published_at") or item.get("source_post_date")
     published = parse_source_date(source_date)
     if not published:
+        # Editorial carousels represent several independently sourced stories,
+        # so a single source-post date is not applicable. Their verified batch
+        # timestamp is the freshness signal for the same 48-hour window.
+        verification = item.get("news_verification") or {}
+        verified_batch = parse_source_date(verification.get("checked_at"))
+        if (item.get("type") == "original_editorial_carousel"
+                and verification.get("status") == "verified"
+                and verified_batch
+                and (now - verified_batch).total_seconds() <= MAX_AGE_HOURS * 3600):
+            continue
         # Instagram does not expose a machine-readable publication time for
         # every authenticated Reel. A just-discovered, fully captured video is
         # safe for one short delivery window; older timestamp-less VIP backlog

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T07:16:05.866Z",
+  "checked_at": "2026-09-23T07:21:18.626Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-23T07:05:58.502Z",
-    "usage": 29,
+    "checked_at": "2026-09-23T07:21:10.739Z",
+    "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-23T07:20:58.502Z",
+    "next_check_at": "2026-09-23T07:36:10.739Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-23T07:13:43.270Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-23T07:51:18.098Z",
+  "publications": [
+    {
+      "file": "862-n3on-and-nina-drama-hand-out-free-popeyes-meals-to-homeless-peop.json",
+      "id": "862-n3on-and-nina-drama-hand-out-free-popeyes-meals-to-homeless-peop",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18342432151286016"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

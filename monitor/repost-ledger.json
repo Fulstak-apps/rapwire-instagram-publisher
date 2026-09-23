@@ -18170,31 +18170,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdolwV1xGKx/",
       "queue_id": "906-nba-og-3three-federal-update-part-1",
       "video": "media/906-nba-og-3three-federal-update-part-1.mp4"
+    },
+    "Ddn8A7lG38c": {
+      "queued_at": "2026-09-23T17:06:39.698Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/p/Ddn8A7lG38c/",
+      "queue_id": "907-peysoh-the-homies-got-stranded-in-oregon-after-running-out-of-ga",
+      "video": "media/907-peysoh-the-homies-got-stranded-in-oregon-after-running-out-of-ga.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T22:18:44.814Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-22T22:19:17.733Z"
-    },
     {
       "started_at": "2026-09-22T22:24:23.835Z",
       "candidates": 48,
@@ -24738,6 +24723,38 @@
         ]
       },
       "finished_at": "2026-09-23T16:59:02.631Z"
+    },
+    {
+      "started_at": "2026-09-23T17:04:33.092Z",
+      "candidates": 48,
+      "queued": [
+        "907-peysoh-the-homies-got-stranded-in-oregon-after-running-out-of-ga"
+      ],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/p/DdmzABMiLP5/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 42,
+        "needed": 6
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-23T17:06:39.698Z"
     }
   ],
   "vip_pending": {

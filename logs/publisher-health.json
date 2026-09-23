@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T01:27:26.549Z",
+  "checked_at": "2026-09-23T01:32:22.282Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-23T01:17:11.474Z",
+    "checked_at": "2026-09-23T01:32:21.677Z",
     "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-23T01:32:11.474Z",
+    "next_check_at": "2026-09-23T01:47:21.677Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-23T01:17:11.083Z",
-    "usage": 29,
+    "checked_at": "2026-09-23T01:32:22.236Z",
+    "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-23T01:32:11.083Z",
+    "next_check_at": "2026-09-23T01:47:22.236Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T01:57:26.258Z",
-  "publications": [
-    {
-      "file": "853-chiefkeef-gloryboyz-show-off-their-chains-which-chain-is-your-al.json",
-      "id": "853-chiefkeef-gloryboyz-show-off-their-chains-which-chain-is-your-al",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18113416418026983"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

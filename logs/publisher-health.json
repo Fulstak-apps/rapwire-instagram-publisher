@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T04:14:07.379Z",
+  "checked_at": "2026-09-23T04:19:06.401Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-23T04:44:07.239Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,26 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-23T04:03:56.751Z",
+    "checked_at": "2026-09-23T04:19:05.560Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-23T04:18:56.751Z",
+    "next_check_at": "2026-09-23T04:34:05.560Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T04:18:58.168Z",
-  "publications": [
-    {
-      "file": "857-clavicular-charged-for-r-of-a-m-r-he-s-facing-20-years-first-cou.json",
-      "id": "857-clavicular-charged-for-r-of-a-m-r-he-s-facing-20-years-first-cou",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18031460843911499",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

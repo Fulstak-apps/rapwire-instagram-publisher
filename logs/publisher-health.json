@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T16:41:11.965Z",
+  "checked_at": "2026-09-23T16:46:18.336Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-23T16:41:11.048Z",
-    "usage": 30,
+    "checked_at": "2026-09-23T16:46:12.781Z",
+    "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-23T16:56:11.048Z",
+    "next_check_at": "2026-09-23T17:01:12.781Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-23T16:36:57.721Z",
+    "next_feed_eligible_at": "2026-09-23T17:16:18.190Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-23T17:06:12.888Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "866-did-az-chike-deliver-on-the-wait-for-his-project-what-did-you-th.json",
+      "id": "866-did-az-chike-deliver-on-the-wait-for-his-project-what-did-you-th",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18425161591149535",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

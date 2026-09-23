@@ -1,6 +1,6 @@
 {
-  "reserve_count": 44,
-  "reserve_hours": 22,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": false,
@@ -8,13 +8,9 @@
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "871-this-was-the-beginning-of-a-whole-new-don-toliver-dontoliver-era",
-    "872-look-mama-might-just-be-their-biggest-song-yet-texas-artists-are",
-    "873-that-one-song-that-can-take-you-straight-back-to-2018-when-you-h",
-    "874-this-cyberpunk-edgerunners-shotgun-replica-has-a-smoking-barrel-",
     "875-ye-insisted-on-personally-unveiling-the-new-dr-donda-west-way-st",
     "876-kanyewest-ye-attended-the-ceremony-on-chicago-s-south-side-honor",
     "877-never-forget-when-drake-joined-druski-s-instagram-live-and-left-",
@@ -54,10 +50,17 @@
     "911-lilpump-whose-real-name-is-gazzy-fabio-garcia-is-an-american-rap",
     "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas",
     "913-doodie-lo-linked-up-with-glo-gang",
-    "914-youngthug-is-using-his-own-experiences-to-encourage-the-next-gen"
+    "914-youngthug-is-using-his-own-experiences-to-encourage-the-next-gen",
+    "915-blueface-reveals-he-s-currently-making-over-136k-per-week-from-s",
+    "916-chelley-took-the-ultimate-music-test-love-songs-host-had-to-make",
+    "917-j-cole-gives-fans-more-insight-into-the-creative-process-behind-",
+    "918-never-forget-when-chief-keef-turned-his-bathroom-into-both-a-gam",
+    "919-king-von-s-close-friend-memo600-says-von-got-emotional-and-regre",
+    "920-former-lawyer-sentenced-to-20-years-in-prison-after-trying-to-sh",
+    "rapwire-carousel-2026-09-23"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-23T19:53:20.238Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-23T22:31:09.998Z",
   "deferred": []
 }

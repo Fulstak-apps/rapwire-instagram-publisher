@@ -13294,6 +13294,30 @@
       "source_handle": "freshouttheculture",
       "source_url": "https://www.instagram.com/freshouttheculture/p/Ddm6y4NEkfN/",
       "view_count": 0
+    },
+    "Ddm5u3FEZxO": {
+      "seen_at": "2026-09-22T23:54:32.030Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Ddm5u3FEZxO/",
+      "view_count": 0
+    },
+    "Ddmy7nbBMck": {
+      "seen_at": "2026-09-22T23:54:32.032Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexstyle/reel/Ddmy7nbBMck/",
+      "view_count": 0
+    },
+    "Ddm8thSB69o": {
+      "seen_at": "2026-09-23T00:00:15.796Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/lawyerforworkers/reel/Ddm8thSB69o/",
+      "view_count": 0
+    },
+    "Ddm5WafBJqL": {
+      "seen_at": "2026-09-23T00:00:15.796Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/lawyerforworkers/reel/Ddm5WafBJqL/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -17674,88 +17698,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/p/Ddm6y4NEkfN/",
       "queue_id": "884-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba",
       "video": "media/884-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba.mp4"
+    },
+    "Ddm8thSB69o": {
+      "queued_at": "2026-09-23T00:01:40.164Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/lawyerforworkers/reel/Ddm8thSB69o/",
+      "queue_id": "885-ceddy-knew-the-federal-agents-in-the-room-i-didn-t-know-the-back",
+      "video": "media/885-ceddy-knew-the-federal-agents-in-the-room-i-didn-t-know-the-back.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T15:46:59.888Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdkolvQRPYq/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddkn5_lRXtg/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddkm34gxC96/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 30,
-        "needed": 18
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-22T15:47:54.767Z"
-    },
-    {
-      "started_at": "2026-09-22T15:53:01.936Z",
-      "candidates": 48,
-      "queued": [
-        "864-these-verses-still-make-us-laugh-asked-for-the-funniest-ways-rap"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 30,
-        "needed": 18
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-22T15:56:09.756Z"
-    },
     {
       "started_at": "2026-09-22T15:53:01.936Z",
       "candidates": 48,
@@ -24154,6 +24106,53 @@
         ]
       },
       "finished_at": "2026-09-22T23:48:48.624Z"
+    },
+    {
+      "started_at": "2026-09-22T23:54:02.408Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 38,
+        "needed": 10
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-22T23:54:32.034Z"
+    },
+    {
+      "started_at": "2026-09-22T23:59:37.981Z",
+      "candidates": 36,
+      "queued": [
+        "885-ceddy-knew-the-federal-agents-in-the-room-i-didn-t-know-the-back"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 38,
+        "needed": 10
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-23T00:01:40.164Z"
     }
   ],
   "vip_pending": {

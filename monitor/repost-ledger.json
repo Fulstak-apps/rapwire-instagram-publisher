@@ -13792,6 +13792,30 @@
       "source_handle": "hiphop_firstnewsmusic",
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdpAAHVobJQ/",
       "view_count": 0
+    },
+    "DdpClYNDNs5": {
+      "seen_at": "2026-09-23T19:19:22.028Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DdpClYNDNs5/",
+      "view_count": 0
+    },
+    "DdpCbfqAWZK": {
+      "seen_at": "2026-09-23T19:24:54.234Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdpCbfqAWZK/",
+      "view_count": 0
+    },
+    "DdpBwLFGZWb": {
+      "seen_at": "2026-09-23T19:24:54.238Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdpBwLFGZWb/",
+      "view_count": 0
+    },
+    "DdpBDuDzeAV": {
+      "seen_at": "2026-09-23T19:24:54.238Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdpBDuDzeAV/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18368,55 +18392,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdpAAHVobJQ/",
       "queue_id": "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas",
       "video": "media/912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas.mp4"
+    },
+    "DdpCbfqAWZK": {
+      "queued_at": "2026-09-23T19:25:15.644Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdpCbfqAWZK/",
+      "queue_id": "913-doodie-lo-linked-up-with-glo-gang",
+      "video": "media/913-doodie-lo-linked-up-with-glo-gang.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T22:53:33.281Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-22T22:54:10.897Z"
-    },
-    {
-      "started_at": "2026-09-22T22:53:33.281Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-22T22:54:10.897Z"
-    },
     {
       "started_at": "2026-09-22T22:59:15.732Z",
       "candidates": 36,
@@ -24890,6 +24875,53 @@
         ]
       },
       "finished_at": "2026-09-23T19:13:51.640Z"
+    },
+    {
+      "started_at": "2026-09-23T19:19:03.330Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 43,
+        "needed": 5
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-23T19:19:22.029Z"
+    },
+    {
+      "started_at": "2026-09-23T19:24:27.289Z",
+      "candidates": 48,
+      "queued": [
+        "913-doodie-lo-linked-up-with-glo-gang"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 43,
+        "needed": 5
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-23T19:25:15.645Z"
     }
   ],
   "vip_pending": {

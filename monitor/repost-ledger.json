@@ -18130,39 +18130,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdoZ2wKxG2o/",
       "queue_id": "902-lebron-james-listening-to-gunna-gunna-is-all-of-us-fr-lebron-jam",
       "video": "media/902-lebron-james-listening-to-gunna-gunna-is-all-of-us-fr-lebron-jam.mp4"
+    },
+    "Ddonj4yRNbs": {
+      "queued_at": "2026-09-23T16:37:14.997Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Ddonj4yRNbs/",
+      "queue_id": "903-nba-og-3three-federal-update-part-2",
+      "video": "media/903-nba-og-3three-federal-update-part-2.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-22T22:11:55.835Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/jeremy_hecht/reel/DdmwHcDhi-d/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 36,
-        "needed": 12
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-22T22:13:37.291Z"
-    },
     {
       "started_at": "2026-09-22T22:18:44.814Z",
       "candidates": 36,
@@ -24696,6 +24673,30 @@
         ]
       },
       "finished_at": "2026-09-23T16:30:32.459Z"
+    },
+    {
+      "started_at": "2026-09-23T16:35:45.883Z",
+      "candidates": 36,
+      "queued": [
+        "903-nba-og-3three-federal-update-part-2"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 39,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-23T16:37:14.997Z"
     }
   ],
   "vip_pending": {

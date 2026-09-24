@@ -1,21 +1,18 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 49,
+  "reserve_hours": 24.5,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": true,
-  "health_stale": false,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "883-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba",
     "884-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba",
-    "885-ceddy-knew-the-federal-agents-in-the-room-i-didn-t-know-the-back",
-    "886-ceddy-nash-thought-the-prosecutor-s-closing-could-split-the-juro",
-    "887-sauce-walka-reacts-to-ppl-claiming-his-baby-moms-was-selling-cat",
     "888-blueface-flexes-him-making-150k-per-week-off-kick-and-says-no-on",
     "889-are-the-feds-hunting-anybody-who-ll-testify-at-lil-durk-lildurk-",
     "890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur",
@@ -58,10 +55,14 @@
     "927-when-will-lil-durk-lildurk-s-second-trial-happen-allegations-are",
     "928-j-prince-jr-wasnt-charged-og3three-ben10-bond-hearing-allegation",
     "929-nba-ben10-bond-hearing-update",
-    "930-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb"
+    "930-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb",
+    "931-rapper-42dugg-is-making-a-serious-statement-about-his-sneaker-co",
+    "932-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb",
+    "933-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb",
+    "rapwire-carousel-2026-09-23-1700"
   ],
   "dispatch": true,
-  "reason": "missed_feed_window",
-  "checked_at": "2026-09-24T05:27:23.652Z",
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-24T10:18:47.861Z",
   "deferred": []
 }

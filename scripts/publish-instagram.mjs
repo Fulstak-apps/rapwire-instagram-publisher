@@ -3,6 +3,7 @@ import path from "node:path";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
 import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, THREADS_PUBLISH_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
+import { fitInstagramCaption } from "./instagram-caption.mjs";
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 let instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -432,6 +433,10 @@ function signedCaption(value, item = {}) {
   return `${body}\n\n${signature}`;
 }
 
+function instagramCaption(value, item = {}) {
+  return fitInstagramCaption(signedCaption(value, item));
+}
+
 function slideUrl(item, index) {
   const remote = Array.isArray(item.media_urls) ? item.media_urls[index] : "";
   return remote && /^https?:\/\//i.test(remote) ? remote : mediaUrl(carouselSlides(item)[index]);
@@ -638,7 +643,7 @@ async function prepareInstagramReel(item, itemPath) {
     const reel = await instagramPost("media", {
       media_type: "REELS",
       video_url: videoUrl(item),
-      caption: signedCaption(item.caption, item),
+      caption: instagramCaption(item.caption, item),
       share_to_feed: "true"
     });
     item.instagram_container_id = reel.id;
@@ -651,7 +656,7 @@ async function prepareInstagramReel(item, itemPath) {
 async function publishInstagramReel(item, itemPath) {
   assertInstagramAvailable();
   return advanceContainer({ item, prefix: "instagram",
-    create: () => instagramPost("media", { media_type: "REELS", video_url: videoUrl(item), caption: signedCaption(item.caption, item), share_to_feed: "true" }),
+    create: () => instagramPost("media", { media_type: "REELS", video_url: videoUrl(item), caption: instagramCaption(item.caption, item), share_to_feed: "true" }),
     inspect: id => inspectContainer("instagram", id),
     publish: id => instagramPost("media_publish", { creation_id: id }, item, "feed"),
     save: () => save(itemPath, item)
@@ -663,7 +668,7 @@ async function publishInstagramFeed(item) {
   if (slides.length === 1) {
     const image = await instagramPost("media", {
       image_url: slideUrl(item, 0),
-      caption: signedCaption(item.caption, item)
+      caption: instagramCaption(item.caption, item)
     });
     await waitForInstagramContainer(image.id);
     return instagramPost("media_publish", { creation_id: image.id });
@@ -677,7 +682,7 @@ async function publishInstagramFeed(item) {
   const carousel = await instagramPost("media", {
     media_type: "CAROUSEL",
     children: childIds.join(","),
-    caption: signedCaption(item.caption, item)
+    caption: instagramCaption(item.caption, item)
   });
   await waitForInstagramContainer(carousel.id);
   return instagramPost("media_publish", { creation_id: carousel.id });

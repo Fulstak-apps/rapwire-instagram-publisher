@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T10:23:54.617Z",
+  "checked_at": "2026-09-24T10:26:16.977Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T10:23:53.175Z",
+    "checked_at": "2026-09-24T10:26:10.238Z",
     "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T10:38:53.175Z",
+    "next_check_at": "2026-09-24T10:41:10.238Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-24T10:19:23.736Z",
-    "usage": 27,
+    "usage": 28,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-24T10:34:23.736Z",
@@ -52,16 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-24T08:09:05.957Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-09-24T10:56:16.678Z",
+  "publications": [
     {
-      "file": "rapwire-carousel-2026-09-23-1700.json",
-      "id": "rapwire-carousel-2026-09-23-1700",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"The caption was too long.\",\"type\":\"OAuthException\",\"code\":36004,\"error_subcode\":2207010,\"is_transient\":false,\"error_user_title\":\"Caption Too Long\",\"error_user_msg\":\"The submitted caption was 2,270 characters long. The maximum number of characters permitted for a caption is 2,200. Please submit media with a shorter caption.\",\"fbtrace_id\":\"AWtgGsmJt7TktmbnhjVVB8R\"}}"
+      "file": "890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur.json",
+      "id": "890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18069067415775128"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

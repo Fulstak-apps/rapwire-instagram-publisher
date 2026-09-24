@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T15:59:27.354Z",
+  "checked_at": "2026-09-24T16:08:46.270Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T15:52:58.954Z",
+    "checked_at": "2026-09-24T16:08:42.570Z",
     "usage": 24,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T16:07:58.954Z",
+    "next_check_at": "2026-09-24T16:23:42.570Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 24,
     "instagram_remaining": 24,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-24T15:48:29.949Z",
+    "next_feed_eligible_at": "2026-09-24T16:38:46.117Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-24T15:38:35.864Z",
-    "usage": 28,
+    "checked_at": "2026-09-24T16:02:22.697Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-24T15:53:35.864Z",
+    "next_check_at": "2026-09-24T16:17:22.697Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,19 +57,12 @@
     {
       "file": "rapwire-carousel-2026-09-24-0800.json",
       "id": "rapwire-carousel-2026-09-24-0800",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18071247104753822"
-    }
-  ],
-  "failures": [
-    {
-      "file": "rapwire-carousel-2026-09-23-1700.json",
-      "id": "rapwire-carousel-2026-09-23-1700",
       "platform": "instagram",
-      "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"The caption was too long.\",\"type\":\"OAuthException\",\"code\":36004,\"error_subcode\":2207010,\"is_transient\":false,\"error_user_title\":\"Caption Too Long\",\"error_user_msg\":\"The submitted caption was 2,270 characters long. The maximum number of characters permitted for a caption is 2,200. Please submit media with a shorter caption.\",\"fbtrace_id\":\"A93zi4cxTeCkngQYM860HIV\"}}"
+      "status": "published",
+      "media_id": "17869910460640733",
+      "content_type": "carousel"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

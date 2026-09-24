@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T06:41:09.768Z",
+  "checked_at": "2026-09-24T06:51:41.192Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T06:31:04.114Z",
-    "usage": 27,
+    "checked_at": "2026-09-24T06:51:35.230Z",
+    "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T06:46:04.114Z",
+    "next_check_at": "2026-09-24T07:06:35.230Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 26,
+    "instagram_remaining": 22,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-24T06:46:06.744Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-24T06:31:04.433Z",
+    "checked_at": "2026-09-24T06:46:13.778Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-24T06:46:04.433Z",
+    "next_check_at": "2026-09-24T07:01:13.778Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-24T06:40:54.399Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-09-24T07:21:40.935Z",
+  "publications": [
+    {
+      "file": "888-blueface-flexes-him-making-150k-per-week-off-kick-and-says-no-on.json",
+      "id": "888-blueface-flexes-him-making-150k-per-week-off-kick-and-says-no-on",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17934858249381668"
+    }
+  ],
+  "failures": [
+    {
+      "file": "rapwire-carousel-2026-09-23-1700.json",
+      "id": "rapwire-carousel-2026-09-23-1700",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "media failed: {\"error\":{\"message\":\"The caption was too long.\",\"type\":\"OAuthException\",\"code\":36004,\"error_subcode\":2207010,\"is_transient\":false,\"error_user_title\":\"Caption Too Long\",\"error_user_msg\":\"The submitted caption was 2,270 characters long. The maximum number of characters permitted for a caption is 2,200. Please submit media with a shorter caption.\",\"fbtrace_id\":\"AZa9ysE6U6Pdot-IP59h0i8\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

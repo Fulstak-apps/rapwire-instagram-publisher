@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T16:39:20.503Z",
+  "checked_at": "2026-09-24T16:44:21.598Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T16:39:14.508Z",
-    "usage": 24,
+    "checked_at": "2026-09-24T16:44:15.453Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T16:54:14.508Z",
+    "next_check_at": "2026-09-24T16:59:15.453Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 24,
     "instagram_remaining": 24,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-24T16:38:46.117Z",
+    "next_feed_eligible_at": "2026-09-24T17:14:21.424Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,11 +55,12 @@
   "threads_next_eligible_at": "2026-09-24T17:09:20.220Z",
   "publications": [
     {
-      "file": "893-bruh-yall-believe-fat-joe.json",
-      "id": "893-bruh-yall-believe-fat-joe",
-      "platform": "threads",
+      "file": "890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur.json",
+      "id": "890-what-does-the-los-angeles-murder-have-to-do-with-lil-durk-lildur",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17946214137337557"
+      "media_id": "18233023804325101",
+      "content_type": "video"
     }
   ],
   "failures": [],

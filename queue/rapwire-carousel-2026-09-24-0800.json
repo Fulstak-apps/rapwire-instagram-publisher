@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-09-24-0800",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 100,
   "created_at": "2026-09-24T08:00:00-07:00",
   "publish_after": "2026-09-24T15:23:00Z",
@@ -69,5 +69,6 @@
   "publish_blocked": false,
   "source_published_at": "2026-09-24T08:00:00-07:00",
   "source_guid": "rapwire-carousel-2026-09-24-0800",
-  "story_fingerprint": "rapwire-carousel-2026-09-24-0800-five-distinct-stories"
+  "story_fingerprint": "rapwire-carousel-2026-09-24-0800-five-distinct-stories",
+  "pause_reason": "Visual blocked: RapWire requires source-grounded AI art or an approved credited real-photo fallback, plus a complete readable 2-10 slide carousel"
 }

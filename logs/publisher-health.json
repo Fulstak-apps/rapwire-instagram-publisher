@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T03:59:28.289Z",
+  "checked_at": "2026-09-24T04:04:53.917Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T03:59:27.275Z",
-    "usage": 27,
+    "checked_at": "2026-09-24T04:04:31.074Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T04:14:27.275Z",
+    "next_check_at": "2026-09-24T04:19:31.074Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-24T03:49:08.522Z",
+    "next_feed_eligible_at": "2026-09-24T04:34:42.494Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-24T03:59:27.141Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-24T04:14:27.141Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-24T03:59:16.846Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-24T04:34:53.622Z",
+  "publications": [
+    {
+      "file": "881-i-got-kicked-out-of-the-overflow-room-at-lil-durk-lildurk-s-tria.json",
+      "id": "881-i-got-kicked-out-of-the-overflow-room-at-lil-durk-lildurk-s-tria",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17982687012120564",
+      "content_type": "video"
+    },
+    {
+      "file": "882-finally-return-and-just-dropped-official-visuals-for-their-brand.json",
+      "id": "882-finally-return-and-just-dropped-official-visuals-for-their-brand",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18117925003989061"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

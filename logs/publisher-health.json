@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T02:33:46.241Z",
+  "checked_at": "2026-09-24T02:38:38.496Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-24T03:03:46.097Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-24T02:43:55.498Z",
-  "publications": [
-    {
-      "file": "879-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba.json",
-      "id": "879-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18115007681518446",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

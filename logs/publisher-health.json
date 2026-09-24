@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T05:30:30.969Z",
+  "checked_at": "2026-09-24T05:33:14.754Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 27,
+    "instagram_remaining": 21,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-24T06:00:30.832Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-24T05:55:49.522Z",
-  "publications": [
-    {
-      "file": "885-ceddy-knew-the-federal-agents-in-the-room-i-didn-t-know-the-back.json",
-      "id": "885-ceddy-knew-the-federal-agents-in-the-room-i-didn-t-know-the-back",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17874129165583243",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

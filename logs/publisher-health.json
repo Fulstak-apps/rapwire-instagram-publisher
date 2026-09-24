@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T17:45:01.335Z",
+  "checked_at": "2026-09-24T17:50:29.660Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T17:34:58.456Z",
+    "checked_at": "2026-09-24T17:50:17.657Z",
     "usage": 24,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T17:49:58.456Z",
+    "next_check_at": "2026-09-24T18:05:17.657Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 24,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-24T17:49:50.393Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-24T17:34:58.919Z",
+    "checked_at": "2026-09-24T17:50:17.545Z",
     "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-24T17:49:58.919Z",
+    "next_check_at": "2026-09-24T18:05:17.545Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-24T17:44:48.198Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-24T18:20:29.362Z",
+  "publications": [
+    {
+      "file": "895-ye-back-at-his-childhood-home-he-was-at-the-unveiling-of-the-new.json",
+      "id": "895-ye-back-at-his-childhood-home-he-was-at-the-unveiling-of-the-new",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18114500324040861"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

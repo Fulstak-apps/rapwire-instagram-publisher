@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T04:04:53.917Z",
+  "checked_at": "2026-09-24T04:09:32.629Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-24T04:34:42.494Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-24T04:34:53.622Z",
-  "publications": [
-    {
-      "file": "881-i-got-kicked-out-of-the-overflow-room-at-lil-durk-lildurk-s-tria.json",
-      "id": "881-i-got-kicked-out-of-the-overflow-room-at-lil-durk-lildurk-s-tria",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17982687012120564",
-      "content_type": "video"
-    },
-    {
-      "file": "882-finally-return-and-just-dropped-official-visuals-for-their-brand.json",
-      "id": "882-finally-return-and-just-dropped-official-visuals-for-their-brand",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18117925003989061"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

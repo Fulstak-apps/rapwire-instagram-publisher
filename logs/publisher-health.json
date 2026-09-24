@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T00:47:34.363Z",
+  "checked_at": "2026-09-24T00:48:15.971Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T00:47:34.054Z",
+    "checked_at": "2026-09-24T00:48:15.435Z",
     "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T01:02:34.054Z",
+    "next_check_at": "2026-09-24T01:03:15.436Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-24T00:37:24.019Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-24T00:32:35.328Z",
+    "checked_at": "2026-09-24T00:48:15.285Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-24T00:47:35.328Z",
+    "next_check_at": "2026-09-24T01:03:15.285Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-24T01:13:10.736Z",
-  "publications": [
-    {
-      "file": "rapwire-carousel-2026-09-23-1700.json",
-      "id": "rapwire-carousel-2026-09-23-1700",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17959511622225163"
-    }
-  ],
-  "failures": [
-    {
-      "file": "rapwire-carousel-2026-09-23-1700.json",
-      "id": "rapwire-carousel-2026-09-23-1700",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"The caption was too long.\",\"type\":\"OAuthException\",\"code\":36004,\"error_subcode\":2207010,\"is_transient\":false,\"error_user_title\":\"Caption Too Long\",\"error_user_msg\":\"The submitted caption was 2,270 characters long. The maximum number of characters permitted for a caption is 2,200. Please submit media with a shorter caption.\",\"fbtrace_id\":\"A6MJXCyHBM3Q4HATI3y9D9k\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T22:43:08.838Z",
+  "checked_at": "2026-09-24T23:55:01.233Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T22:43:07.804Z",
-    "usage": 23,
+    "checked_at": "2026-09-24T23:54:45.419Z",
+    "usage": 24,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T22:58:07.805Z",
+    "next_check_at": "2026-09-25T00:09:45.419Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 23,
     "instagram_remaining": 25,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-24T22:35:07.494Z",
+    "next_feed_eligible_at": "2026-09-25T00:24:52.034Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-24T22:43:07.679Z",
-    "usage": 26,
+    "checked_at": "2026-09-24T23:54:45.124Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-24T22:58:07.679Z",
+    "next_check_at": "2026-09-25T00:09:45.124Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-24T22:35:14.084Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T00:25:00.317Z",
+  "publications": [
+    {
+      "file": "899-speedin-bullet-2-heaven-was-ahead-of-its-time-in-this-clip-from-.json",
+      "id": "899-speedin-bullet-2-heaven-was-ahead-of-its-time-in-this-clip-from-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18130401598742570",
+      "content_type": "video"
+    },
+    {
+      "file": "902-lebron-james-listening-to-gunna-gunna-is-all-of-us-fr-lebron-jam.json",
+      "id": "902-lebron-james-listening-to-gunna-gunna-is-all-of-us-fr-lebron-jam",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18032404010891074"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

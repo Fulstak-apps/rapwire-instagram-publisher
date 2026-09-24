@@ -14248,6 +14248,12 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/DdqEu71RCDp/",
       "view_count": 0
+    },
+    "DdqApQYugKR": {
+      "seen_at": "2026-09-24T06:26:22.424Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdqApQYugKR/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18957,296 +18963,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/DdpeYP6jbG4/",
       "queue_id": "931-rapper-42dugg-is-making-a-serious-statement-about-his-sneaker-co",
       "video": "media/931-rapper-42dugg-is-making-a-serious-statement-about-his-sneaker-co.mp4"
+    },
+    "DdqEu71RCDp": {
+      "queued_at": "2026-09-24T06:40:00.593Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdqEu71RCDp/",
+      "queue_id": "932-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb",
+      "video": "media/932-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T03:24:22.832Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 40,
-        "needed": 8
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T03:24:47.056Z"
-    },
-    {
-      "started_at": "2026-09-23T03:29:51.762Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdnUQO-uK96/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 40,
-        "needed": 8
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T03:30:10.465Z"
-    },
-    {
-      "started_at": "2026-09-23T03:29:51.762Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdnUQO-uK96/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 40,
-        "needed": 8
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T03:30:10.465Z"
-    },
-    {
-      "started_at": "2026-09-23T03:35:14.877Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 40,
-        "needed": 8
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-23T03:35:34.613Z"
-    },
-    {
-      "started_at": "2026-09-23T03:35:14.877Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 40,
-        "needed": 8
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-23T03:35:34.613Z"
-    },
-    {
-      "started_at": "2026-09-23T03:40:40.787Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DdmkfNcEqS-/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Ddl6hlBOqBP/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 40,
-        "needed": 8
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T03:41:18.742Z"
-    },
-    {
-      "started_at": "2026-09-23T03:40:40.787Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DdmkfNcEqS-/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Ddl6hlBOqBP/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 40,
-        "needed": 8
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T03:41:18.742Z"
-    },
-    {
-      "started_at": "2026-09-23T03:46:23.564Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 39,
-        "needed": 9
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T03:46:38.944Z"
-    },
-    {
-      "started_at": "2026-09-23T03:46:23.564Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 39,
-        "needed": 9
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T03:46:38.944Z"
-    },
-    {
-      "started_at": "2026-09-23T03:51:47.136Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "raplisted_",
-          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
-          "stage": "cached_reserve",
-          "error": "Caption needs editorial review under the no-AI-caption rule"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 39,
-        "needed": 9
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T03:52:33.864Z"
-    },
     {
       "started_at": "2026-09-23T03:51:47.136Z",
       "candidates": 48,
@@ -25158,6 +24884,192 @@
         ]
       },
       "finished_at": "2026-09-24T05:44:05.807Z"
+    },
+    {
+      "started_at": "2026-09-24T05:49:33.887Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-24T05:49:37.199Z"
+    },
+    {
+      "started_at": "2026-09-24T05:54:43.674Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-24T05:54:47.618Z"
+    },
+    {
+      "started_at": "2026-09-24T05:59:54.583Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-24T05:59:57.435Z"
+    },
+    {
+      "started_at": "2026-09-24T06:05:02.831Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-24T06:05:05.636Z"
+    },
+    {
+      "started_at": "2026-09-24T06:10:10.801Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-24T06:10:13.841Z"
+    },
+    {
+      "started_at": "2026-09-24T06:15:19.480Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-24T06:15:22.233Z"
+    },
+    {
+      "started_at": "2026-09-24T06:20:27.443Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-24T06:20:30.011Z"
+    },
+    {
+      "started_at": "2026-09-24T06:25:37.370Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdqApQYugKR/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpg-0ePDmF/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpiIDIvHPH/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-24T06:26:40.967Z"
+    },
+    {
+      "started_at": "2026-09-24T06:31:46.029Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-24T06:32:13.419Z"
+    },
+    {
+      "started_at": "2026-09-24T06:37:18.810Z",
+      "candidates": 36,
+      "queued": [
+        "932-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-24T06:40:00.593Z"
     }
   ],
   "vip_pending": {

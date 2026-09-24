@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T03:54:41.498Z",
+  "checked_at": "2026-09-24T03:59:28.289Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T03:54:41.133Z",
+    "checked_at": "2026-09-24T03:59:27.275Z",
     "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T04:09:41.134Z",
+    "next_check_at": "2026-09-24T04:14:27.275Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-24T03:44:20.060Z",
-    "usage": 29,
+    "checked_at": "2026-09-24T03:59:27.141Z",
+    "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-24T03:59:20.060Z",
+    "next_check_at": "2026-09-24T04:14:27.141Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-24T03:59:16.846Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "rapwire-carousel-2026-09-23-1700.json",
-      "id": "rapwire-carousel-2026-09-23-1700",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "media failed: {\"error\":{\"message\":\"The caption was too long.\",\"type\":\"OAuthException\",\"code\":36004,\"error_subcode\":2207010,\"is_transient\":false,\"error_user_title\":\"Caption Too Long\",\"error_user_msg\":\"The submitted caption was 2,270 characters long. The maximum number of characters permitted for a caption is 2,200. Please submit media with a shorter caption.\",\"fbtrace_id\":\"Aah_Ht6nqM6WrRrIbaexR_M\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

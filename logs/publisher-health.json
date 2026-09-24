@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T15:13:17.472Z",
+  "checked_at": "2026-09-24T15:18:36.118Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T15:13:16.799Z",
-    "usage": 24,
+    "checked_at": "2026-09-24T15:18:22.133Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T15:28:16.799Z",
+    "next_check_at": "2026-09-24T15:33:22.133Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 24,
     "instagram_remaining": 24,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-24T11:01:25.201Z",
+    "next_feed_eligible_at": "2026-09-24T15:48:29.949Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-24T15:06:14.988Z",
-    "usage": 27,
+    "usage": 28,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-24T15:21:14.988Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-24T11:39:27.906Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-24T15:48:35.875Z",
+  "publications": [
+    {
+      "file": "889-are-the-feds-hunting-anybody-who-ll-testify-at-lil-durk-lildurk-.json",
+      "id": "889-are-the-feds-hunting-anybody-who-ll-testify-at-lil-durk-lildurk-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18171211576455394",
+      "content_type": "video"
+    },
+    {
+      "file": "892-i-hope-to-god-i-m-wrong-ceddy-nash-predicts-how-bond-could-play-.json",
+      "id": "892-i-hope-to-god-i-m-wrong-ceddy-nash-predicts-how-bond-could-play-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18129272128606951"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

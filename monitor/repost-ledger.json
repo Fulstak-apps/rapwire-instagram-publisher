@@ -14038,6 +14038,30 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/Ddpd9VHIsSZ/",
       "view_count": 0
+    },
+    "DdpiIDIvHPH": {
+      "seen_at": "2026-09-24T00:09:24.507Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpiIDIvHPH/",
+      "view_count": 0
+    },
+    "Ddpg-0ePDmF": {
+      "seen_at": "2026-09-24T00:09:24.508Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpg-0ePDmF/",
+      "view_count": 0
+    },
+    "Ddpf1iZv7Qn": {
+      "seen_at": "2026-09-24T00:09:24.508Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpf1iZv7Qn/",
+      "view_count": 0
+    },
+    "DdpfYZYPHVg": {
+      "seen_at": "2026-09-24T00:09:24.508Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpfYZYPHVg/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18684,34 +18708,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Ddpd9VHIsSZ/",
       "queue_id": "922-when-diddy-gave-meek-mill-his-props-called-him-daddy-you-deserve",
       "video": "media/922-when-diddy-gave-meek-mill-his-props-called-him-daddy-you-deserve.mp4"
+    },
+    "DdpRuydTpPw": {
+      "queued_at": "2026-09-24T00:10:33.694Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/onthatnotetv/reel/DdpRuydTpPw/",
+      "queue_id": "923-ye-x-the-rizzler-soon-greenscreen",
+      "video": "media/923-ye-x-the-rizzler-soon-greenscreen.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T00:24:43.251Z",
-      "candidates": 48,
-      "queued": [
-        "887-sauce-walka-reacts-to-ppl-claiming-his-baby-moms-was-selling-cat"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 39,
-        "needed": 9
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T00:26:36.041Z"
-    },
     {
       "started_at": "2026-09-23T00:24:43.251Z",
       "candidates": 48,
@@ -25322,6 +25328,50 @@
         ]
       },
       "finished_at": "2026-09-24T00:02:49.597Z"
+    },
+    {
+      "started_at": "2026-09-24T00:08:13.570Z",
+      "candidates": 41,
+      "queued": [
+        "923-ye-x-the-rizzler-soon-greenscreen"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpf1iZv7Qn/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpg-0ePDmF/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpiIDIvHPH/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-24T00:10:33.694Z"
     }
   ],
   "vip_pending": {

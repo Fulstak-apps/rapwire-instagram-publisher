@@ -84,6 +84,7 @@ const fallbackSourceRows = [
   { handle: "xxl", scope: "hiphop" },
   { handle: "hiphopdx", scope: "hiphop" },
   { handle: "hiphop_firstnewsmusic", scope: "hiphop" },
+  { handle: "6ixbuzztv", scope: "hiphop" },
   { handle: "ceddynash", scope: "hiphop" },
   { handle: "larp.lor.d", scope: "hiphop" },
   { handle: "rockstargames", scope: "gaming" },

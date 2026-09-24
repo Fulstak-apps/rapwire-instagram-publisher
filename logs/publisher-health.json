@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T20:13:11.524Z",
+  "checked_at": "2026-09-24T20:18:27.125Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T20:13:10.272Z",
-    "usage": 24,
+    "checked_at": "2026-09-24T20:18:07.616Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T20:28:10.272Z",
+    "next_check_at": "2026-09-24T20:33:07.616Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 24,
     "instagram_remaining": 24,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-24T20:11:30.300Z",
+    "next_feed_eligible_at": "2026-09-24T20:48:17.071Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-24T20:06:50.085Z",
-    "usage": 27,
+    "usage": 28,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-24T20:21:50.085Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-24T20:11:37.380Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-24T20:48:25.662Z",
+  "publications": [
+    {
+      "file": "895-ye-back-at-his-childhood-home-he-was-at-the-unveiling-of-the-new.json",
+      "id": "895-ye-back-at-his-childhood-home-he-was-at-the-unveiling-of-the-new",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18017412419942296",
+      "content_type": "video"
+    },
+    {
+      "file": "898-throwback-a-rare-moment-of-chicago-rappers-bloodhoundq50-bloodho.json",
+      "id": "898-throwback-a-rare-moment-of-chicago-rappers-bloodhoundq50-bloodho",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18128224486841151"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

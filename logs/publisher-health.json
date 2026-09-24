@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T04:44:59.697Z",
+  "checked_at": "2026-09-24T04:50:03.189Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T04:44:52.296Z",
+    "checked_at": "2026-09-24T04:49:56.038Z",
     "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T04:59:52.296Z",
+    "next_check_at": "2026-09-24T05:04:56.038Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-24T04:34:42.494Z",
+    "next_feed_eligible_at": "2026-09-24T05:20:03.041Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,11 +55,12 @@
   "threads_next_eligible_at": "2026-09-24T05:14:59.336Z",
   "publications": [
     {
-      "file": "885-ceddy-knew-the-federal-agents-in-the-room-i-didn-t-know-the-back.json",
-      "id": "885-ceddy-knew-the-federal-agents-in-the-room-i-didn-t-know-the-back",
-      "platform": "threads",
+      "file": "882-finally-return-and-just-dropped-official-visuals-for-their-brand.json",
+      "id": "882-finally-return-and-just-dropped-official-visuals-for-their-brand",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18116347588951127"
+      "media_id": "18118387433516002",
+      "content_type": "video"
     }
   ],
   "failures": [],

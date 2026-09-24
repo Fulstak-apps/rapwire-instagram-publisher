@@ -14020,6 +14020,24 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DdpYUfVGfrQ/",
       "view_count": 0
+    },
+    "DdpeYP6jbG4": {
+      "seen_at": "2026-09-24T00:02:27.506Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdpeYP6jbG4/",
+      "view_count": 0
+    },
+    "DdpbwWnty0G": {
+      "seen_at": "2026-09-24T00:02:27.506Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DdpbwWnty0G/",
+      "view_count": 0
+    },
+    "Ddpd9VHIsSZ": {
+      "seen_at": "2026-09-24T00:02:27.506Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Ddpd9VHIsSZ/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18659,80 +18677,16 @@
       "source_url": "https://www.instagram.com/drillmusic00/p/DdpVU7yiBun/",
       "queue_id": "921-screwlyg-opens-up-about-grief-while-remembering-his-late-friends",
       "video": "media/921-screwlyg-opens-up-about-grief-while-remembering-his-late-friends.mp4"
+    },
+    "Ddpd9VHIsSZ": {
+      "queued_at": "2026-09-24T00:02:49.597Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Ddpd9VHIsSZ/",
+      "queue_id": "922-when-diddy-gave-meek-mill-his-props-called-him-daddy-you-deserve",
+      "video": "media/922-when-diddy-gave-meek-mill-his-props-called-him-daddy-you-deserve.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T00:12:23.069Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 38,
-        "needed": 10
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T00:13:13.599Z"
-    },
-    {
-      "started_at": "2026-09-23T00:18:21.570Z",
-      "candidates": 36,
-      "queued": [
-        "886-ceddy-nash-thought-the-prosecutor-s-closing-could-split-the-juro"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 38,
-        "needed": 10
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-23T00:19:25.017Z"
-    },
-    {
-      "started_at": "2026-09-23T00:18:21.570Z",
-      "candidates": 36,
-      "queued": [
-        "886-ceddy-nash-thought-the-prosecutor-s-closing-could-split-the-juro"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 38,
-        "needed": 10
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-23T00:19:25.017Z"
-    },
     {
       "started_at": "2026-09-23T00:24:43.251Z",
       "candidates": 48,
@@ -25284,6 +25238,90 @@
         ]
       },
       "finished_at": "2026-09-23T22:42:45.993Z"
+    },
+    {
+      "started_at": "2026-09-23T22:49:36.547Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-23T22:50:20.084Z"
+    },
+    {
+      "started_at": "2026-09-23T22:55:25.235Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/DdnkA0xRRCB/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdnkA0xRRCB-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-23T22:56:32.715Z"
+    },
+    {
+      "started_at": "2026-09-24T00:01:54.237Z",
+      "candidates": 48,
+      "queued": [
+        "922-when-diddy-gave-meek-mill-his-props-called-him-daddy-you-deserve"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-24T00:02:49.597Z"
     }
   ],
   "vip_pending": {

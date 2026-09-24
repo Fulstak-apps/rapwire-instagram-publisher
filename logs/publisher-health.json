@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T17:14:48.563Z",
+  "checked_at": "2026-09-24T17:19:50.523Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T17:14:40.879Z",
-    "usage": 24,
+    "checked_at": "2026-09-24T17:19:43.972Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T17:29:40.879Z",
+    "next_check_at": "2026-09-24T17:34:43.972Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 24,
     "instagram_remaining": 24,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-24T17:14:21.424Z",
+    "next_feed_eligible_at": "2026-09-24T17:49:50.393Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-24T17:04:33.190Z",
-    "usage": 28,
+    "checked_at": "2026-09-24T17:19:43.728Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-24T17:19:33.190Z",
+    "next_check_at": "2026-09-24T17:34:43.728Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -55,11 +55,12 @@
   "threads_next_eligible_at": "2026-09-24T17:44:48.198Z",
   "publications": [
     {
-      "file": "894-ella-celebrates-choosin-texas-as-the-longest-running-no-1-song-o.json",
-      "id": "894-ella-celebrates-choosin-texas-as-the-longest-running-no-1-song-o",
-      "platform": "threads",
+      "file": "891-mozzy-fan-going-viral-on-tiktok-after-he-goes-bar-for-bar-with-t.json",
+      "id": "891-mozzy-fan-going-viral-on-tiktok-after-he-goes-bar-for-bar-with-t",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17982332661082316"
+      "media_id": "18095753033399941",
+      "content_type": "video"
     }
   ],
   "failures": [],

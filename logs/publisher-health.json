@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T00:07:31.193Z",
+  "checked_at": "2026-09-24T00:12:21.025Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-24T00:37:24.019Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-24T00:37:30.852Z",
-  "publications": [
-    {
-      "file": "876-kanyewest-ye-attended-the-ceremony-on-chicago-s-south-side-honor.json",
-      "id": "876-kanyewest-ye-attended-the-ceremony-on-chicago-s-south-side-honor",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18128517388775478",
-      "content_type": "video"
-    },
-    {
-      "file": "877-never-forget-when-drake-joined-druski-s-instagram-live-and-left-.json",
-      "id": "877-never-forget-when-drake-joined-druski-s-instagram-live-and-left-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17968119740961978"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

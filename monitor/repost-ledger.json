@@ -14254,6 +14254,42 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdqApQYugKR/",
       "view_count": 0
+    },
+    "DdrD04axzmE": {
+      "seen_at": "2026-09-24T15:38:52.242Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdrD04axzmE/",
+      "view_count": 0
+    },
+    "DdrC-bQxrKf": {
+      "seen_at": "2026-09-24T15:38:52.242Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdrC-bQxrKf/",
+      "view_count": 0
+    },
+    "DdrKpB8jAUA": {
+      "seen_at": "2026-09-24T15:38:52.243Z",
+      "source_handle": "rockstargames",
+      "source_url": "https://www.instagram.com/rockstargames/p/DdrKpB8jAUA/",
+      "view_count": 0
+    },
+    "Ddpla0jDKB-": {
+      "seen_at": "2026-09-24T15:38:52.243Z",
+      "source_handle": "rockstargames",
+      "source_url": "https://www.instagram.com/rockstargames/p/Ddpla0jDKB-/",
+      "view_count": 0
+    },
+    "DdrLwaBEk88": {
+      "seen_at": "2026-09-24T15:38:52.243Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/DdrLwaBEk88/",
+      "view_count": 0
+    },
+    "DdrDRH1jZAJ": {
+      "seen_at": "2026-09-24T15:38:52.243Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/DdrDRH1jZAJ/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18984,39 +19020,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdqBrkzRE4V/",
       "queue_id": "934-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb",
       "video": "media/934-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb.mp4"
+    },
+    "DdrD04axzmE": {
+      "queued_at": "2026-09-24T15:42:31.794Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdrD04axzmE/",
+      "queue_id": "935-allstar-jr-plea-deal-might-be-great-but-he-could-be-the-charges-",
+      "video": "media/935-allstar-jr-plea-deal-might-be-great-but-he-could-be-the-charges-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T04:26:49.756Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddkm34gxC96/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 38,
-        "needed": 10
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T04:27:09.867Z"
-    },
     {
       "started_at": "2026-09-23T04:32:15.301Z",
       "candidates": 48,
@@ -24912,6 +24925,30 @@
         ]
       },
       "finished_at": "2026-09-24T10:42:40.915Z"
+    },
+    {
+      "started_at": "2026-09-24T15:38:23.975Z",
+      "candidates": 36,
+      "queued": [
+        "935-allstar-jr-plea-deal-might-be-great-but-he-could-be-the-charges-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-24T15:42:31.794Z"
     }
   ],
   "vip_pending": {

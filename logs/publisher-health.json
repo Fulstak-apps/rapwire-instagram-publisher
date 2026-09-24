@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T02:48:48.302Z",
+  "checked_at": "2026-09-24T02:53:56.728Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-24T02:43:46.134Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-24T02:58:46.134Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-24T02:43:55.498Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-24T03:23:55.977Z",
+  "publications": [
+    {
+      "file": "880-keeef-moving-heavy-at-a-detroit-gas-station.json",
+      "id": "880-keeef-moving-heavy-at-a-detroit-gas-station",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18012767366977693"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

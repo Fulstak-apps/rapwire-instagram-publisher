@@ -14062,6 +14062,18 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpfYZYPHVg/",
       "view_count": 0
+    },
+    "Ddpk2tZDOtN": {
+      "seen_at": "2026-09-24T00:17:58.344Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Ddpk2tZDOtN/",
+      "view_count": 0
+    },
+    "Ddpd_1-Cc-V": {
+      "seen_at": "2026-09-24T00:17:58.348Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Ddpd_1-Cc-V/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -18715,34 +18727,16 @@
       "source_url": "https://www.instagram.com/onthatnotetv/reel/DdpRuydTpPw/",
       "queue_id": "923-ye-x-the-rizzler-soon-greenscreen",
       "video": "media/923-ye-x-the-rizzler-soon-greenscreen.mp4"
+    },
+    "Ddpd_1-Cc-V": {
+      "queued_at": "2026-09-24T00:19:41.222Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Ddpd_1-Cc-V/",
+      "queue_id": "924-brad-bird-best-known-for-the-incredibles-and-the-iron-giant-has-",
+      "video": "media/924-brad-bird-best-known-for-the-incredibles-and-the-iron-giant-has-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T00:24:43.251Z",
-      "candidates": 48,
-      "queued": [
-        "887-sauce-walka-reacts-to-ppl-claiming-his-baby-moms-was-selling-cat"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 39,
-        "needed": 9
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T00:26:36.041Z"
-    },
     {
       "started_at": "2026-09-23T00:31:53.579Z",
       "candidates": 48,
@@ -25372,6 +25366,30 @@
         ]
       },
       "finished_at": "2026-09-24T00:10:33.694Z"
+    },
+    {
+      "started_at": "2026-09-24T00:16:04.574Z",
+      "candidates": 36,
+      "queued": [
+        "924-brad-bird-best-known-for-the-incredibles-and-the-iron-giant-has-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-24T00:19:41.228Z"
     }
   ],
   "vip_pending": {

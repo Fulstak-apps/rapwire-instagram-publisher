@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-24T19:00:55.490Z",
+  "checked_at": "2026-09-24T19:06:17.405Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-24T19:00:53.920Z",
-    "usage": 24,
+    "checked_at": "2026-09-24T19:06:04.627Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-24T19:15:53.920Z",
+    "next_check_at": "2026-09-24T19:21:04.627Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 24,
     "instagram_remaining": 24,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-24T19:00:48.585Z",
+    "next_feed_eligible_at": "2026-09-24T19:36:10.536Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-24T18:50:49.269Z",
+    "checked_at": "2026-09-24T19:06:04.322Z",
     "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-24T19:05:49.269Z",
+    "next_check_at": "2026-09-24T19:21:04.322Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-24T19:00:40.642Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-24T19:36:17.125Z",
+  "publications": [
+    {
+      "file": "893-bruh-yall-believe-fat-joe.json",
+      "id": "893-bruh-yall-believe-fat-joe",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17984750046089796",
+      "content_type": "video"
+    },
+    {
+      "file": "896-chiefkeef-was-reportedly-caught-on-surveillance-at-a-local-detro.json",
+      "id": "896-chiefkeef-was-reportedly-caught-on-surveillance-at-a-local-detro",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17915533476451818"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T00:20:08.888Z",
+  "checked_at": "2026-09-25T00:38:20.197Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T00:09:50.778Z",
-    "usage": 23,
+    "checked_at": "2026-09-25T00:38:14.684Z",
+    "usage": 24,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T00:24:50.778Z",
+    "next_check_at": "2026-09-25T00:53:14.684Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 23,
     "instagram_remaining": 25,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-25T00:24:52.034Z",
-    "feed_allowed": false,
+    "next_feed_eligible_at": "2026-09-25T01:08:20.072Z",
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-25T00:09:51.103Z",
-    "usage": 26,
+    "checked_at": "2026-09-25T00:25:01.064Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-25T00:24:51.103Z",
+    "next_check_at": "2026-09-25T00:40:01.064Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-25T00:25:00.317Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T01:01:41.468Z",
+  "publications": [
+    {
+      "file": "rapwire-carousel-2026-09-24-1700.json",
+      "id": "rapwire-carousel-2026-09-24-1700",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17901361854665939"
+    },
+    {
+      "file": "rapwire-carousel-2026-09-24-1700.json",
+      "id": "rapwire-carousel-2026-09-24-1700",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18032657150665306",
+      "content_type": "carousel"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

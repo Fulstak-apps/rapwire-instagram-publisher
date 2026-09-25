@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T23:45:49.897Z",
+  "checked_at": "2026-09-25T23:51:17.015Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-26T00:15:43.500Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-26T00:15:49.510Z",
-  "publications": [
-    {
-      "file": "925-i-got-that-dis-how-im-startin-off-my-fall-winter-scary-sight-for.json",
-      "id": "925-i-got-that-dis-how-im-startin-off-my-fall-winter-scary-sight-for",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18010648685764333",
-      "content_type": "video"
-    },
-    {
-      "file": "929-nba-ben10-bond-hearing-update.json",
-      "id": "929-nba-ben10-bond-hearing-update",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18176470444437839"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

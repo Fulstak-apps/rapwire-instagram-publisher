@@ -15094,6 +15094,30 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexstyle/p/Ddsg5l9icY4/",
       "view_count": 0
+    },
+    "DdsyS0HFfPY": {
+      "seen_at": "2026-09-25T06:20:50.767Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdsyS0HFfPY/",
+      "view_count": 0
+    },
+    "DdsyHVhAHow": {
+      "seen_at": "2026-09-25T06:20:50.767Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdsyHVhAHow/",
+      "view_count": 0
+    },
+    "Ddsygfiv8yZ": {
+      "seen_at": "2026-09-25T06:20:50.767Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Ddsygfiv8yZ/",
+      "view_count": 0
+    },
+    "Ddsume2vtvV": {
+      "seen_at": "2026-09-25T06:20:50.767Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Ddsume2vtvV/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -19971,253 +19995,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdsOcaSOZjz/",
       "queue_id": "955-his-laugh-hasn-t-changed-one-bit-via-druski-s-been-making-people",
       "video": "media/955-his-laugh-hasn-t-changed-one-bit-via-druski-s-been-making-people.mp4"
+    },
+    "Ddsygfiv8yZ": {
+      "queued_at": "2026-09-25T06:22:01.612Z",
+      "source_handle": "traploreross",
+      "source_url": "https://www.instagram.com/traploreross/reel/Ddsygfiv8yZ/",
+      "queue_id": "956-jam-followed-me-and-then-memo-600-clapped-back-i-need-that-jam-i",
+      "video": "media/956-jam-followed-me-and-then-memo-600-clapped-back-i-need-that-jam-i.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T19:30:29.249Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 44,
-        "needed": 4
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T19:30:59.109Z"
-    },
-    {
-      "started_at": "2026-09-23T19:36:05.269Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdnkA0xRRCB/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdnkA0xRRCB-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 44,
-        "needed": 4
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-23T19:36:51.299Z"
-    },
-    {
-      "started_at": "2026-09-23T19:41:56.983Z",
-      "candidates": 48,
-      "queued": [
-        "914-youngthug-is-using-his-own-experiences-to-encourage-the-next-gen"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 44,
-        "needed": 4
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T19:43:20.778Z"
-    },
-    {
-      "started_at": "2026-09-23T19:49:02.504Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpD7EcTXps/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpFDIyzgs5/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpGAT0PjXu/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 44,
-        "needed": 4
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T19:50:02.569Z"
-    },
-    {
-      "started_at": "2026-09-23T19:55:07.885Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 44,
-        "needed": 4
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-23T19:55:30.613Z"
-    },
-    {
-      "started_at": "2026-09-23T20:00:35.958Z",
-      "candidates": 48,
-      "queued": [
-        "915-blueface-reveals-he-s-currently-making-over-136k-per-week-from-s"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 44,
-        "needed": 4
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T20:01:40.876Z"
-    },
-    {
-      "started_at": "2026-09-23T20:06:59.547Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpHRfhz1gT/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 45,
-        "needed": 3
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T20:07:13.839Z"
-    },
-    {
-      "started_at": "2026-09-23T20:12:19.253Z",
-      "candidates": 48,
-      "queued": [
-        "916-chelley-took-the-ultimate-music-test-love-songs-host-had-to-make"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 45,
-        "needed": 3
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T20:14:08.642Z"
-    },
-    {
-      "started_at": "2026-09-23T20:19:58.421Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 46,
-        "needed": 2
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T20:20:17.969Z"
-    },
     {
       "started_at": "2026-09-23T20:25:23.924Z",
       "candidates": 41,
@@ -24918,6 +24705,175 @@
         ]
       },
       "finished_at": "2026-09-25T05:30:18.729Z"
+    },
+    {
+      "started_at": "2026-09-25T05:35:34.528Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T05:35:37.360Z"
+    },
+    {
+      "started_at": "2026-09-25T05:40:45.492Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T05:40:50.423Z"
+    },
+    {
+      "started_at": "2026-09-25T05:45:58.531Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T05:46:02.128Z"
+    },
+    {
+      "started_at": "2026-09-25T05:51:08.331Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T05:51:12.518Z"
+    },
+    {
+      "started_at": "2026-09-25T05:56:18.240Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T05:56:21.346Z"
+    },
+    {
+      "started_at": "2026-09-25T06:01:28.267Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T06:01:31.669Z"
+    },
+    {
+      "started_at": "2026-09-25T06:06:37.396Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/culturelogy/p/DdrBszkDl-4/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-25T06:07:10.207Z"
+    },
+    {
+      "started_at": "2026-09-25T06:12:17.257Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DdrTsU2Ebiy/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-25T06:13:00.243Z"
+    },
+    {
+      "started_at": "2026-09-25T06:20:11.796Z",
+      "candidates": 48,
+      "queued": [
+        "956-jam-followed-me-and-then-memo-600-clapped-back-i-need-that-jam-i"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-25T06:22:01.612Z"
     }
   ],
   "vip_pending": {

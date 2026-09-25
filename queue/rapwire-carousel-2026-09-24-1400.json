@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-09-24-1400",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 100,
   "ai_generated_art": true,
   "created_at": "2026-09-24T14:00:00-07:00",
@@ -78,8 +78,9 @@
     "caption_avoids_ai_term": true,
     "passed": true
   },
-  "publish_blocked": false,
+  "publish_blocked": true,
   "source_published_at": "2026-09-24T14:00:00-07:00",
   "source_guid": "rapwire-carousel-2026-09-24-1400",
-  "story_fingerprint": "rapwire-carousel-2026-09-24-1400-five-distinct-stories"
+  "story_fingerprint": "rapwire-carousel-2026-09-24-1400-five-distinct-stories",
+  "superseded_by": "rapwire-carousel-2026-09-24-1700"
 }

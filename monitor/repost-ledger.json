@@ -19764,39 +19764,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Ddr2rGKI3pS/",
       "queue_id": "946-he-actually-fooled-everyone-with-this-jolly-ahh-song-a-federal-j",
       "video": "media/946-he-actually-fooled-everyone-with-this-jolly-ahh-song-a-federal-j.mp4"
+    },
+    "DdsAF2uDjVz": {
+      "queued_at": "2026-09-25T00:47:39.069Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdsAF2uDjVz/",
+      "queue_id": "947-ddg-is-dropping-his-new-album-hit-a-thon-at-midnight-the-project",
+      "video": "media/947-ddg-is-dropping-his-new-album-hit-a-thon-at-midnight-the-project.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T14:44:05.218Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/DdmpMZqG_YE/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 34,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T14:45:06.054Z"
-    },
     {
       "started_at": "2026-09-23T14:44:05.218Z",
       "candidates": 48,
@@ -25240,6 +25217,50 @@
         ]
       },
       "finished_at": "2026-09-25T00:41:19.872Z"
+    },
+    {
+      "started_at": "2026-09-25T00:46:44.783Z",
+      "candidates": 41,
+      "queued": [
+        "947-ddg-is-dropping-his-new-album-hit-a-thon-at-midnight-the-project"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpkhp9vOo5/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpsc1Cx1P0/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpuOyYRpx3/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-25T00:47:39.069Z"
     }
   ],
   "vip_pending": {

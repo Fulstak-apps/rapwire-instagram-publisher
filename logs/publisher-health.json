@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T14:31:49.462Z",
+  "checked_at": "2026-09-25T14:36:34.334Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 27,
+    "instagram_remaining": 21,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-25T15:01:39.040Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-25T15:01:49.119Z",
-  "publications": [
-    {
-      "file": "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas.json",
-      "id": "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17953423245032304",
-      "content_type": "video"
-    },
-    {
-      "file": "915-blueface-reveals-he-s-currently-making-over-136k-per-week-from-s.json",
-      "id": "915-blueface-reveals-he-s-currently-making-over-136k-per-week-from-s",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17949733800050169"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

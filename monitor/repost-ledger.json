@@ -19914,80 +19914,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/Ddr4lo6gr0P/",
       "queue_id": "952-according-to-ceddy-nash-who-was-present-at-nba-ben10-s-court-hea",
       "video": "media/952-according-to-ceddy-nash-who-was-present-at-nba-ben10-s-court-hea.mp4"
+    },
+    "Ddrepc-onmV": {
+      "queued_at": "2026-09-25T04:23:03.368Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Ddrepc-onmV/",
+      "queue_id": "953-nba-star-tyrese-haliburton-says-he-still-flies-southwest-and-buy",
+      "video": "media/953-nba-star-tyrese-haliburton-says-he-still-flies-southwest-and-buy.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T18:03:37.926Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 42,
-        "needed": 6
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T18:04:00.238Z"
-    },
-    {
-      "started_at": "2026-09-23T18:09:05.536Z",
-      "candidates": 41,
-      "queued": [
-        "909-a-fan-showed-up-a-full-day-early-for-j-cole-s-new-sneaker-so-col"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 42,
-        "needed": 6
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T18:09:40.093Z"
-    },
-    {
-      "started_at": "2026-09-23T18:14:55.815Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 43,
-        "needed": 5
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T18:15:24.180Z"
-    },
     {
       "started_at": "2026-09-23T18:20:30.232Z",
       "candidates": 48,
@@ -24969,6 +24905,57 @@
         ]
       },
       "finished_at": "2026-09-25T04:05:34.774Z"
+    },
+    {
+      "started_at": "2026-09-25T04:10:55.678Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T04:11:03.051Z"
+    },
+    {
+      "started_at": "2026-09-25T04:16:11.363Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T04:16:14.618Z"
+    },
+    {
+      "started_at": "2026-09-25T04:21:22.495Z",
+      "candidates": 48,
+      "queued": [
+        "953-nba-star-tyrese-haliburton-says-he-still-flies-southwest-and-buy"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-25T04:23:03.368Z"
     }
   ],
   "vip_pending": {

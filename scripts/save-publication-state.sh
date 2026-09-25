@@ -20,6 +20,12 @@ for attempt in 1 2 3; do
   # pauses all later publishing.  Keep conflicts fail-safe, but actually use
   # all retries instead of exiting immediately because `set -e` saw pull fail.
   if timeout 60s git pull --rebase origin main && timeout 60s git push origin HEAD:main; then exit 0; fi
+  # Queue records can be updated at the same moment by a collector/carousel
+  # run. Merge non-overlapping durable fields instead of retrying the exact
+  # same conflicted rebase until the workflow fails.
+  if git diff --name-only --diff-filter=U | grep -q '^queue/.*\.json$'; then
+    if node scripts/resolve-publication-rebase-conflicts.mjs && timeout 60s git push origin HEAD:main; then exit 0; fi
+  fi
   git rebase --abort >/dev/null 2>&1 || true
   sleep "$((attempt * 5))"
 done

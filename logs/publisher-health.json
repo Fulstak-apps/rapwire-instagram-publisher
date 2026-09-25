@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T02:21:19.477Z",
+  "checked_at": "2026-09-25T02:26:24.292Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T02:21:11.373Z",
-    "usage": 24,
+    "checked_at": "2026-09-25T02:26:17.936Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T02:36:11.373Z",
+    "next_check_at": "2026-09-25T02:41:17.936Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 24,
     "instagram_remaining": 24,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-25T02:21:01.409Z",
+    "next_feed_eligible_at": "2026-09-25T02:56:24.171Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-25T02:11:06.557Z",
-    "usage": 28,
+    "checked_at": "2026-09-25T02:26:17.679Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-25T02:26:06.557Z",
+    "next_check_at": "2026-09-25T02:41:17.679Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -55,11 +55,12 @@
   "threads_next_eligible_at": "2026-09-25T02:51:19.186Z",
   "publications": [
     {
-      "file": "905-she-had-no-business-going-this-hard-being-the-lone-female-featur.json",
-      "id": "905-she-had-no-business-going-this-hard-being-the-lone-female-featur",
-      "platform": "threads",
+      "file": "902-lebron-james-listening-to-gunna-gunna-is-all-of-us-fr-lebron-jam.json",
+      "id": "902-lebron-james-listening-to-gunna-gunna-is-all-of-us-fr-lebron-jam",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17945299980338007"
+      "media_id": "18129533116706270",
+      "content_type": "video"
     }
   ],
   "failures": [],

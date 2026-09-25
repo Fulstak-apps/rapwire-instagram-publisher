@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T02:56:38.510Z",
+  "checked_at": "2026-09-25T03:01:49.449Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T02:56:33.037Z",
-    "usage": 24,
+    "checked_at": "2026-09-25T03:01:39.860Z",
+    "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T03:11:33.037Z",
+    "next_check_at": "2026-09-25T03:16:39.860Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 24,
     "instagram_remaining": 24,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-25T02:56:24.171Z",
+    "next_feed_eligible_at": "2026-09-25T03:31:49.287Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,11 +55,12 @@
   "threads_next_eligible_at": "2026-09-25T03:26:38.234Z",
   "publications": [
     {
-      "file": "906-nba-og-3three-federal-update-part-1.json",
-      "id": "906-nba-og-3three-federal-update-part-1",
-      "platform": "threads",
+      "file": "903-nba-og-3three-federal-update-part-2.json",
+      "id": "903-nba-og-3three-federal-update-part-2",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18108957065139852"
+      "media_id": "17908897998498222",
+      "content_type": "video"
     }
   ],
   "failures": [],

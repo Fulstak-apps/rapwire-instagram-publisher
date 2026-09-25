@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T01:05:25.492Z",
+  "checked_at": "2026-09-25T01:10:40.790Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T00:55:16.621Z",
+    "checked_at": "2026-09-25T01:10:33.277Z",
     "usage": 23,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T01:10:16.621Z",
+    "next_check_at": "2026-09-25T01:25:33.277Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 25,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-25T01:08:20.072Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-25T00:55:17.040Z",
-    "usage": 26,
+    "checked_at": "2026-09-25T01:10:33.212Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-25T01:10:17.040Z",
+    "next_check_at": "2026-09-25T01:25:33.212Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-25T01:01:41.468Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T01:40:40.545Z",
+  "publications": [
+    {
+      "file": "903-nba-og-3three-federal-update-part-2.json",
+      "id": "903-nba-og-3three-federal-update-part-2",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18013838732752775"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

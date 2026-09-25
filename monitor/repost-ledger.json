@@ -15388,6 +15388,18 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/clipsbyslime/reel/DdssDyjxR5h/",
       "view_count": 0
+    },
+    "DduPQdLvnD2": {
+      "seen_at": "2026-09-25T19:47:51.535Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DduPQdLvnD2/",
+      "view_count": 0
+    },
+    "DduNd8qGmhB": {
+      "seen_at": "2026-09-25T19:47:51.535Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DduNd8qGmhB/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -20335,48 +20347,16 @@
       "source_url": "https://www.instagram.com/records/p/DduGd9sGtmm/",
       "queue_id": "965-skepta-s-new-innocent-smile-visual-with-suggs-and-chase-status-i",
       "video": "media/965-skepta-s-new-innocent-smile-visual-with-suggs-and-chase-status-i.mp4"
+    },
+    "Ddt9N_4iJZY": {
+      "queued_at": "2026-09-25T19:48:28.322Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Ddt9N_4iJZY/",
+      "queue_id": "966-ny-flavaaa-and-his-son-were-listening-to-lil-durk-lildurk-s-all-",
+      "video": "media/966-ny-flavaaa-and-his-son-were-listening-to-lil-durk-lildurk-s-all-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-24T02:22:38.256Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T02:22:41.922Z"
-    },
-    {
-      "started_at": "2026-09-24T02:27:46.869Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T02:27:49.745Z"
-    },
-    {
-      "started_at": "2026-09-24T02:32:56.744Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T02:33:00.737Z"
-    },
     {
       "started_at": "2026-09-24T02:38:06.997Z",
       "candidates": 0,
@@ -25327,6 +25307,70 @@
         ]
       },
       "finished_at": "2026-09-25T18:29:40.717Z"
+    },
+    {
+      "started_at": "2026-09-25T19:32:35.524Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T19:32:41.581Z"
+    },
+    {
+      "started_at": "2026-09-25T19:42:15.374Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T19:42:18.626Z"
+    },
+    {
+      "started_at": "2026-09-25T19:47:24.579Z",
+      "candidates": 41,
+      "queued": [
+        "966-ny-flavaaa-and-his-son-were-listening-to-lil-durk-lildurk-s-all-"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddtx_fDx_QU/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DduPQdLvnD2/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-25T19:48:28.322Z"
     }
   ],
   "vip_pending": {

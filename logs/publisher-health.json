@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T04:02:32.550Z",
+  "checked_at": "2026-09-25T04:07:40.656Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T03:52:14.783Z",
-    "usage": 25,
+    "checked_at": "2026-09-25T04:07:32.901Z",
+    "usage": 24,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T04:07:14.783Z",
+    "next_check_at": "2026-09-25T04:22:32.901Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 25,
-    "instagram_remaining": 23,
+    "instagram_usage": 24,
+    "instagram_remaining": 24,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-25T04:07:08.190Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-25T03:57:17.314Z",
-    "usage": 27,
+    "usage": 28,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-25T04:12:17.314Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-25T04:02:04.245Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T04:37:40.420Z",
+  "publications": [
+    {
+      "file": "908-aspen-kartier-and-lady-bl-remember-their-last-memory-of-bloodhou.json",
+      "id": "908-aspen-kartier-and-lady-bl-remember-their-last-memory-of-bloodhou",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17920999884226096"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

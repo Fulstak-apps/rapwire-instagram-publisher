@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T06:31:02.748Z",
+  "checked_at": "2026-09-25T06:36:10.422Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T06:30:56.049Z",
-    "usage": 25,
+    "checked_at": "2026-09-25T06:36:03.807Z",
+    "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T06:45:56.049Z",
+    "next_check_at": "2026-09-25T06:51:03.807Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 25,
     "instagram_remaining": 23,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-25T06:28:43.081Z",
+    "next_feed_eligible_at": "2026-09-25T07:06:10.246Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,11 +55,12 @@
   "threads_next_eligible_at": "2026-09-25T07:01:02.563Z",
   "publications": [
     {
-      "file": "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas.json",
-      "id": "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas",
-      "platform": "threads",
+      "file": "909-a-fan-showed-up-a-full-day-early-for-j-cole-s-new-sneaker-so-col.json",
+      "id": "909-a-fan-showed-up-a-full-day-early-for-j-cole-s-new-sneaker-so-col",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18368314867211042"
+      "media_id": "18078225200380215",
+      "content_type": "video"
     }
   ],
   "failures": [],

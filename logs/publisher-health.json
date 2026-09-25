@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T03:37:08.342Z",
+  "checked_at": "2026-09-25T03:42:05.228Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 24,
-    "instagram_remaining": 24,
+    "instagram_usage": 25,
+    "instagram_remaining": 23,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-25T04:07:08.190Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,26 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-25T03:26:55.420Z",
-    "usage": 28,
+    "checked_at": "2026-09-25T03:42:05.139Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-25T03:41:55.420Z",
+    "next_check_at": "2026-09-25T03:57:05.139Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-25T04:02:04.245Z",
-  "publications": [
-    {
-      "file": "904-chicago-rapper-lilmari-was-sh-t-k-lled-in-chicago-he-went-viral-.json",
-      "id": "904-chicago-rapper-lilmari-was-sh-t-k-lled-in-chicago-he-went-viral-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18409123309083720",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

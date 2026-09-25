@@ -15568,6 +15568,18 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/DduYIQrl78C/",
       "view_count": 0
+    },
+    "DdueEkMDwGa": {
+      "seen_at": "2026-09-25T22:09:42.964Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdueEkMDwGa/",
+      "view_count": 0
+    },
+    "Ddue_vIF1zw": {
+      "seen_at": "2026-09-25T22:15:28.430Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Ddue_vIF1zw/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -20543,59 +20555,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DduIrvZsjYW/",
       "queue_id": "969-jonesboro-ark-kait-a-judge-ordered-a-jonesboro-man-to-have-no-in",
       "video": "media/969-jonesboro-ark-kait-a-judge-ordered-a-jonesboro-man-to-have-no-in.mp4"
+    },
+    "DduLE0QJNL_": {
+      "queued_at": "2026-09-25T22:16:33.178Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/reedinthestreet/reel/DduLE0QJNL_/",
+      "queue_id": "970-hit-the-streets-again-to-see-how-friendly-canadians-really-are-t",
+      "video": "media/970-hit-the-streets-again-to-see-how-friendly-canadians-really-are-t.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-24T04:51:34.010Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T04:51:37.205Z"
-    },
-    {
-      "started_at": "2026-09-24T04:56:42.643Z",
-      "candidates": 36,
-      "queued": [
-        "930-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-24T04:59:48.619Z"
-    },
-    {
-      "started_at": "2026-09-24T05:05:42.565Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T05:05:46.501Z"
-    },
     {
       "started_at": "2026-09-24T05:10:53.119Z",
       "candidates": 0,
@@ -25593,6 +25562,92 @@
         ]
       },
       "finished_at": "2026-09-25T21:58:49.679Z"
+    },
+    {
+      "started_at": "2026-09-25T22:04:05.861Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T22:04:09.113Z"
+    },
+    {
+      "started_at": "2026-09-25T22:09:14.996Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddrs2zFP8OY/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddr2d-UPOWh/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdrYT_mBBjx/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-25T22:09:56.222Z"
+    },
+    {
+      "started_at": "2026-09-25T22:15:02.822Z",
+      "candidates": 48,
+      "queued": [
+        "970-hit-the-streets-again-to-see-how-friendly-canadians-really-are-t"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-25T22:16:33.179Z"
     }
   ],
   "vip_pending": {

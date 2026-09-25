@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T13:56:11.674Z",
+  "checked_at": "2026-09-25T14:01:02.359Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 25,
-    "instagram_remaining": 23,
+    "instagram_usage": 26,
+    "instagram_remaining": 22,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-25T14:26:04.586Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-25T14:26:11.429Z",
-  "publications": [
-    {
-      "file": "911-lilpump-whose-real-name-is-gazzy-fabio-garcia-is-an-american-rap.json",
-      "id": "911-lilpump-whose-real-name-is-gazzy-fabio-garcia-is-an-american-rap",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17884934526686782",
-      "content_type": "video"
-    },
-    {
-      "file": "914-youngthug-is-using-his-own-experiences-to-encourage-the-next-gen.json",
-      "id": "914-youngthug-is-using-his-own-experiences-to-encourage-the-next-gen",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18129512884769863"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,20 +1,16 @@
 {
-  "reserve_count": 47,
-  "reserve_hours": 23.5,
+  "reserve_count": 46,
+  "reserve_hours": 23,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
-  "health_stale": true,
+  "overdue": false,
+  "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "910-why-j-prince-jr-is-not-going-to-be-arrested-is-this-allegations-",
-    "911-lilpump-whose-real-name-is-gazzy-fabio-garcia-is-an-american-rap",
-    "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas",
-    "913-doodie-lo-linked-up-with-glo-gang",
     "914-youngthug-is-using-his-own-experiences-to-encourage-the-next-gen",
     "915-blueface-reveals-he-s-currently-making-over-136k-per-week-from-s",
     "916-chelley-took-the-ultimate-music-test-love-songs-host-had-to-make",
@@ -57,10 +53,13 @@
     "953-nba-star-tyrese-haliburton-says-he-still-flies-southwest-and-buy",
     "954-zeddy-will-is-expanding-his-creative-universe-with-zeddy-a-new-s",
     "955-his-laugh-hasn-t-changed-one-bit-via-druski-s-been-making-people",
-    "956-jam-followed-me-and-then-memo-600-clapped-back-i-need-that-jam-i"
+    "956-jam-followed-me-and-then-memo-600-clapped-back-i-need-that-jam-i",
+    "957-otf-jam-threatens-memo-600-from-jail-for-dissing-him-in-big-bank",
+    "958-nicolas-cage-is-the-legendary-american-football-coach-john-madde",
+    "959-beauty-is-in-the-eye-of-the-beholder-and-these-beholders-didn-t-"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-25T10:15:18.227Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-25T15:17:04.743Z",
   "deferred": []
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T04:12:39.101Z",
+  "checked_at": "2026-09-25T04:17:47.690Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 24,
-    "instagram_remaining": 24,
+    "instagram_usage": 25,
+    "instagram_remaining": 23,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-25T04:42:38.951Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-25T04:37:40.420Z",
-  "publications": [
-    {
-      "file": "905-she-had-no-business-going-this-hard-being-the-lone-female-featur.json",
-      "id": "905-she-had-no-business-going-this-hard-being-the-lone-female-featur",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18076635926526132",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T21:19:13.751Z",
+  "checked_at": "2026-09-25T21:24:30.160Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T21:19:12.191Z",
-    "usage": 27,
+    "checked_at": "2026-09-25T21:24:11.025Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T21:34:12.191Z",
+    "next_check_at": "2026-09-25T21:39:11.025Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-25T21:18:58.984Z",
+    "next_feed_eligible_at": "2026-09-25T21:54:21.139Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-25T21:09:03.634Z",
-    "usage": 26,
+    "checked_at": "2026-09-25T21:24:10.745Z",
+    "usage": 27,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-25T21:24:03.634Z",
+    "next_check_at": "2026-09-25T21:39:10.745Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-25T21:19:05.833Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T21:54:29.613Z",
+  "publications": [
+    {
+      "file": "921-screwlyg-opens-up-about-grief-while-remembering-his-late-friends.json",
+      "id": "921-screwlyg-opens-up-about-grief-while-remembering-his-late-friends",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18168441325407788",
+      "content_type": "video"
+    },
+    {
+      "file": "925-i-got-that-dis-how-im-startin-off-my-fall-winter-scary-sight-for.json",
+      "id": "925-i-got-that-dis-how-im-startin-off-my-fall-winter-scary-sight-for",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18123587204511540"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

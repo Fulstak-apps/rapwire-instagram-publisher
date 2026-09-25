@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T21:59:49.955Z",
+  "checked_at": "2026-09-25T22:04:33.931Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-25T22:29:40.735Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-25T22:29:49.153Z",
-  "publications": [
-    {
-      "file": "922-when-diddy-gave-meek-mill-his-props-called-him-daddy-you-deserve.json",
-      "id": "922-when-diddy-gave-meek-mill-his-props-called-him-daddy-you-deserve",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18031669700904298",
-      "content_type": "video"
-    },
-    {
-      "file": "926-we-asked-nfl-players-for-their-go-to-pregame-songs-from-jahmyr-g.json",
-      "id": "926-we-asked-nfl-players-for-their-go-to-pregame-songs-from-jahmyr-g",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17948282037279884"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

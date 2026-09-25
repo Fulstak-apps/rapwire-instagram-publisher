@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T17:23:46.320Z",
+  "checked_at": "2026-09-25T17:29:04.814Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-25T17:18:42.859Z",
-    "usage": 27,
+    "usage": 28,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-25T17:33:42.859Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-25T17:23:31.800Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T17:59:04.553Z",
+  "publications": [
+    {
+      "file": "920-former-lawyer-sentenced-to-20-years-in-prison-after-trying-to-sh.json",
+      "id": "920-former-lawyer-sentenced-to-20-years-in-prison-after-trying-to-sh",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18100952573131638"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T14:26:23.473Z",
+  "checked_at": "2026-09-25T14:31:49.462Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T14:26:22.538Z",
-    "usage": 26,
+    "checked_at": "2026-09-25T14:31:28.734Z",
+    "usage": 27,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T14:41:22.538Z",
+    "next_check_at": "2026-09-25T14:46:28.734Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 26,
     "instagram_remaining": 22,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-25T14:26:04.586Z",
+    "next_feed_eligible_at": "2026-09-25T15:01:39.040Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-25T14:26:22.434Z",
-    "usage": 26,
+    "usage": 27,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-25T14:41:22.434Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-25T14:26:11.429Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T15:01:49.119Z",
+  "publications": [
+    {
+      "file": "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas.json",
+      "id": "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17953423245032304",
+      "content_type": "video"
+    },
+    {
+      "file": "915-blueface-reveals-he-s-currently-making-over-136k-per-week-from-s.json",
+      "id": "915-blueface-reveals-he-s-currently-making-over-136k-per-week-from-s",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17949733800050169"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

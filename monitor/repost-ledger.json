@@ -19964,111 +19964,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdsSkDjO8Ap/",
       "queue_id": "954-zeddy-will-is-expanding-his-creative-universe-with-zeddy-a-new-s",
       "video": "media/954-zeddy-will-is-expanding-his-creative-universe-with-zeddy-a-new-s.mp4"
+    },
+    "DdsOcaSOZjz": {
+      "queued_at": "2026-09-25T05:30:18.729Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdsOcaSOZjz/",
+      "queue_id": "955-his-laugh-hasn-t-changed-one-bit-via-druski-s-been-making-people",
+      "video": "media/955-his-laugh-hasn-t-changed-one-bit-via-druski-s-been-making-people.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T19:07:46.240Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddo82uevmU7/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 43,
-        "needed": 5
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T19:08:01.193Z"
-    },
-    {
-      "started_at": "2026-09-23T19:13:06.354Z",
-      "candidates": 48,
-      "queued": [
-        "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 43,
-        "needed": 5
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T19:13:51.640Z"
-    },
-    {
-      "started_at": "2026-09-23T19:19:03.330Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 43,
-        "needed": 5
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-23T19:19:22.029Z"
-    },
-    {
-      "started_at": "2026-09-23T19:24:27.289Z",
-      "candidates": 48,
-      "queued": [
-        "913-doodie-lo-linked-up-with-glo-gang"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 43,
-        "needed": 5
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T19:25:15.645Z"
-    },
     {
       "started_at": "2026-09-23T19:30:29.249Z",
       "candidates": 48,
@@ -24949,6 +24854,70 @@
         ]
       },
       "finished_at": "2026-09-25T05:08:18.745Z"
+    },
+    {
+      "started_at": "2026-09-25T05:13:49.970Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T05:13:53.790Z"
+    },
+    {
+      "started_at": "2026-09-25T05:19:01.346Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T05:19:04.949Z"
+    },
+    {
+      "started_at": "2026-09-25T05:24:11.630Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T05:24:15.809Z"
+    },
+    {
+      "started_at": "2026-09-25T05:29:24.784Z",
+      "candidates": 41,
+      "queued": [
+        "955-his-laugh-hasn-t-changed-one-bit-via-druski-s-been-making-people"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-25T05:30:18.729Z"
     }
   ],
   "vip_pending": {

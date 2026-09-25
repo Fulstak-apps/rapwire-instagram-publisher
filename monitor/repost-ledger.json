@@ -15178,6 +15178,18 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/DdtfP0xm8tH/",
       "view_count": 0
+    },
+    "DdtoELbkTpX": {
+      "seen_at": "2026-09-25T14:12:16.171Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/DdtoELbkTpX/",
+      "view_count": 0
+    },
+    "DdrR6L6DAGP": {
+      "seen_at": "2026-09-25T14:18:32.150Z",
+      "source_handle": "rockstargames",
+      "source_url": "https://www.instagram.com/rockstargames/p/DdrR6L6DAGP/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -20069,67 +20081,16 @@
       "source_url": "https://www.instagram.com/traploreross/reel/Ddsume2vtvV/",
       "queue_id": "957-otf-jam-threatens-memo-600-from-jail-for-dissing-him-in-big-bank",
       "video": "media/957-otf-jam-threatens-memo-600-from-jail-for-dissing-him-in-big-bank.mp4"
+    },
+    "DdsQhmFAWuz": {
+      "queued_at": "2026-09-25T14:21:20.334Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/DdsQhmFAWuz/",
+      "queue_id": "958-nicolas-cage-is-the-legendary-american-football-coach-john-madde",
+      "video": "media/958-nicolas-cage-is-the-legendary-american-football-coach-john-madde.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T21:11:35.737Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 46,
-        "needed": 2
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T21:12:11.086Z"
-    },
-    {
-      "started_at": "2026-09-23T21:17:25.666Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "igndotcom",
-          "source_url": "https://www.instagram.com/igndotcom/p/DdpClYNDNs5/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        },
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdoiDtIR7IM/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 46,
-        "needed": 2
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-23T21:18:26.659Z"
-    },
     {
       "started_at": "2026-09-23T21:23:33.296Z",
       "candidates": 48,
@@ -24930,6 +24891,74 @@
         ]
       },
       "finished_at": "2026-09-25T14:05:45.937Z"
+    },
+    {
+      "started_at": "2026-09-25T14:11:50.048Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/jeremy_hecht/reel/DdmwHcDhi-d/",
+          "stage": "queue",
+          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-25T14:12:43.503Z"
+    },
+    {
+      "started_at": "2026-09-25T14:17:50.154Z",
+      "candidates": 48,
+      "queued": [
+        "958-nicolas-cage-is-the-legendary-american-football-coach-john-madde"
+      ],
+      "errors": [
+        {
+          "source_handle": "6ixbuzztv",
+          "source_url": "https://www.instagram.com/6ixbuzztv/p/DdrzR3uHEES/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        },
+        {
+          "source_handle": "igndotcom",
+          "source_url": "https://www.instagram.com/igndotcom/reel/DdtNaLGgoh6/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-25T14:21:20.334Z"
     }
   ],
   "vip_pending": {

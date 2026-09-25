@@ -1,19 +1,16 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "907-peysoh-the-homies-got-stranded-in-oregon-after-running-out-of-ga",
-    "908-aspen-kartier-and-lady-bl-remember-their-last-memory-of-bloodhou",
-    "909-a-fan-showed-up-a-full-day-early-for-j-cole-s-new-sneaker-so-col",
     "910-why-j-prince-jr-is-not-going-to-be-arrested-is-this-allegations-",
     "911-lilpump-whose-real-name-is-gazzy-fabio-garcia-is-an-american-rap",
     "912-cardi-b-stepped-out-for-vogue-world-milano-serving-pure-high-fas",
@@ -58,10 +55,12 @@
     "951-j-cole-s-the-fall-off-tour-came-full-circle-in-north-carolina-st",
     "952-according-to-ceddy-nash-who-was-present-at-nba-ben10-s-court-hea",
     "953-nba-star-tyrese-haliburton-says-he-still-flies-southwest-and-buy",
-    "954-zeddy-will-is-expanding-his-creative-universe-with-zeddy-a-new-s"
+    "954-zeddy-will-is-expanding-his-creative-universe-with-zeddy-a-new-s",
+    "955-his-laugh-hasn-t-changed-one-bit-via-druski-s-been-making-people",
+    "956-jam-followed-me-and-then-memo-600-clapped-back-i-need-that-jam-i"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-25T05:18:31.662Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-25T10:15:18.227Z",
   "deferred": []
 }

@@ -1,18 +1,16 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "884-while-fans-are-discussing-the-possibility-of-a-migos-tour-comeba",
-    "899-speedin-bullet-2-heaven-was-ahead-of-its-time-in-this-clip-from-",
     "900-nba-og-3three-federal-update-part-3",
     "901-check-out-this-extended-exclusive-clip-from-director-renny-harli",
     "902-lebron-james-listening-to-gunna-gunna-is-all-of-us-fr-lebron-jam",
@@ -58,10 +56,11 @@
     "942-boosie-wanna-know-why-kewon-white-is-doing-interviews-admitting-",
     "943-mo3-convicted-k-ller-says-he-is-the-one-who-sh-t-boosie",
     "944-willow-smith-opened-up-to-kid-cudi-about-feeling-like-she-wasn-t",
-    "rapwire-carousel-2026-09-24-1400"
+    "945-nearly-half-of-the-un-general-assembly-walked-out-as-netanyahu-t",
+    "rapwire-carousel-2026-09-24-1700"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-24T22:19:24.809Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-25T00:35:51.255Z",
   "deferred": []
 }

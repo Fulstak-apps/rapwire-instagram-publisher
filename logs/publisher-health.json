@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T16:48:34.949Z",
+  "checked_at": "2026-09-25T16:53:32.358Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-25T16:48:34.384Z",
-    "usage": 27,
+    "usage": 28,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-25T17:03:34.384Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-25T16:48:13.570Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T17:23:31.800Z",
+  "publications": [
+    {
+      "file": "919-king-von-s-close-friend-memo600-says-von-got-emotional-and-regre.json",
+      "id": "919-king-von-s-close-friend-memo600-says-von-got-emotional-and-regre",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18184752565415674"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

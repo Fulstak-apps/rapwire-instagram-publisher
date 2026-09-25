@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T21:24:30.160Z",
+  "checked_at": "2026-09-25T21:29:14.175Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-25T21:54:21.139Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-25T21:54:29.613Z",
-  "publications": [
-    {
-      "file": "921-screwlyg-opens-up-about-grief-while-remembering-his-late-friends.json",
-      "id": "921-screwlyg-opens-up-about-grief-while-remembering-his-late-friends",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18168441325407788",
-      "content_type": "video"
-    },
-    {
-      "file": "925-i-got-that-dis-how-im-startin-off-my-fall-winter-scary-sight-for.json",
-      "id": "925-i-got-that-dis-how-im-startin-off-my-fall-winter-scary-sight-for",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18123587204511540"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

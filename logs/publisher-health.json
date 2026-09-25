@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T04:37:49.588Z",
+  "checked_at": "2026-09-25T04:42:59.090Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T04:27:43.661Z",
+    "checked_at": "2026-09-25T04:42:51.093Z",
     "usage": 25,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T04:42:43.661Z",
+    "next_check_at": "2026-09-25T04:57:51.093Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 23,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-25T04:42:38.951Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-25T04:27:43.990Z",
-    "usage": 27,
+    "checked_at": "2026-09-25T04:42:50.885Z",
+    "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-25T04:42:43.990Z",
+    "next_check_at": "2026-09-25T04:57:50.885Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-25T04:37:40.420Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T05:12:58.832Z",
+  "publications": [
+    {
+      "file": "909-a-fan-showed-up-a-full-day-early-for-j-cole-s-new-sneaker-so-col.json",
+      "id": "909-a-fan-showed-up-a-full-day-early-for-j-cole-s-new-sneaker-so-col",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18137832865616623"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

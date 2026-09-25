@@ -15340,6 +15340,54 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/p/DduEOA7CfBA/",
       "view_count": 0
+    },
+    "DduFnTVv22R": {
+      "seen_at": "2026-09-25T18:29:08.428Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DduFnTVv22R/",
+      "view_count": 0
+    },
+    "Ddt6OtnRamJ": {
+      "seen_at": "2026-09-25T18:29:08.429Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddt6OtnRamJ/",
+      "view_count": 0
+    },
+    "DdtzRDCR0cM": {
+      "seen_at": "2026-09-25T18:29:08.429Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdtzRDCR0cM/",
+      "view_count": 0
+    },
+    "Ddtx_fDx_QU": {
+      "seen_at": "2026-09-25T18:29:08.429Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddtx_fDx_QU/",
+      "view_count": 0
+    },
+    "DduGd9sGtmm": {
+      "seen_at": "2026-09-25T18:29:08.429Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DduGd9sGtmm/",
+      "view_count": 0
+    },
+    "Ddt9N_4iJZY": {
+      "seen_at": "2026-09-25T18:29:08.429Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Ddt9N_4iJZY/",
+      "view_count": 0
+    },
+    "Ddt2iHKljaF": {
+      "seen_at": "2026-09-25T18:29:08.429Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Ddt2iHKljaF/",
+      "view_count": 0
+    },
+    "DdssDyjxR5h": {
+      "seen_at": "2026-09-25T18:29:08.429Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/clipsbyslime/reel/DdssDyjxR5h/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -20280,22 +20328,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdqCWQlRbA5/",
       "queue_id": "964-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb",
       "video": "media/964-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb.mp4"
+    },
+    "DduGd9sGtmm": {
+      "queued_at": "2026-09-25T18:29:40.717Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DduGd9sGtmm/",
+      "queue_id": "965-skepta-s-new-innocent-smile-visual-with-suggs-and-chase-status-i",
+      "video": "media/965-skepta-s-new-innocent-smile-visual-with-suggs-and-chase-status-i.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-24T02:17:29.631Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T02:17:32.860Z"
-    },
     {
       "started_at": "2026-09-24T02:22:38.256Z",
       "candidates": 0,
@@ -25241,6 +25283,50 @@
         ]
       },
       "finished_at": "2026-09-25T18:22:36.436Z"
+    },
+    {
+      "started_at": "2026-09-25T18:28:16.527Z",
+      "candidates": 41,
+      "queued": [
+        "965-skepta-s-new-innocent-smile-visual-with-suggs-and-chase-status-i"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdtzRDCR0cM/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DduFnTVv22R/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddt6OtnRamJ/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-25T18:29:40.717Z"
     }
   ],
   "vip_pending": {

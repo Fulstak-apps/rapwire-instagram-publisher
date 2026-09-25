@@ -15226,6 +15226,30 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/p/DdtrmLTkatj/",
       "view_count": 0
+    },
+    "DdtuWMRESgJ": {
+      "seen_at": "2026-09-25T15:14:26.179Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdtuWMRESgJ/",
+      "view_count": 0
+    },
+    "DdtuJeukaW7": {
+      "seen_at": "2026-09-25T15:14:26.180Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/p/DdtuJeukaW7/",
+      "view_count": 0
+    },
+    "DdtwGQqIv3o": {
+      "seen_at": "2026-09-25T15:20:41.124Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/p/DdtwGQqIv3o/",
+      "view_count": 0
+    },
+    "DdtyVlNgc5d": {
+      "seen_at": "2026-09-25T15:32:47.915Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DdtyVlNgc5d/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -20131,174 +20155,16 @@
       "source_url": "https://www.instagram.com/igndotcom/reel/DdsPbPrgmOL/",
       "queue_id": "959-beauty-is-in-the-eye-of-the-beholder-and-these-beholders-didn-t-",
       "video": "media/959-beauty-is-in-the-eye-of-the-beholder-and-these-beholders-didn-t-.mp4"
+    },
+    "DdsPAWYj5mp": {
+      "queued_at": "2026-09-25T15:38:50.459Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/DdsPAWYj5mp/",
+      "queue_id": "960-gta-6-s-collector-s-set-is-all-about-macca-the-gator-a-mascot-fr",
+      "video": "media/960-gta-6-s-collector-s-set-is-all-about-macca-the-gator-a-mascot-fr.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-23T22:00:12.858Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 46,
-        "needed": 2
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T22:00:32.556Z"
-    },
-    {
-      "started_at": "2026-09-23T22:05:37.873Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpV4a3PwJ8/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpUiMgvvDX/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 46,
-        "needed": 2
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-23T22:06:15.866Z"
-    },
-    {
-      "started_at": "2026-09-23T22:11:22.832Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 45,
-        "needed": 3
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T22:12:02.411Z"
-    },
-    {
-      "started_at": "2026-09-23T22:17:08.205Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdnkA0xRRCB/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect DdnkA0xRRCB-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 45,
-        "needed": 3
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-23T22:18:26.835Z"
-    },
-    {
-      "started_at": "2026-09-23T22:23:32.371Z",
-      "candidates": 48,
-      "queued": [
-        "920-former-lawyer-sentenced-to-20-years-in-prison-after-trying-to-sh"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 45,
-        "needed": 3
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-23T22:25:36.696Z"
-    },
-    {
-      "started_at": "2026-09-23T22:30:59.120Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 46,
-        "needed": 2
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-23T22:31:28.995Z"
-    },
     {
       "started_at": "2026-09-23T22:36:34.355Z",
       "candidates": 36,
@@ -25034,6 +24900,210 @@
         ]
       },
       "finished_at": "2026-09-25T15:02:16.999Z"
+    },
+    {
+      "started_at": "2026-09-25T15:07:53.836Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpuOyYRpx3/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpy809xVqa/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdqApQYugKR/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-25T15:08:34.832Z"
+    },
+    {
+      "started_at": "2026-09-25T15:13:41.355Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DdtuJeukaW7/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-25T15:14:38.995Z"
+    },
+    {
+      "started_at": "2026-09-25T15:19:47.941Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-25T15:21:02.883Z"
+    },
+    {
+      "started_at": "2026-09-25T15:26:08.687Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpg-0ePDmF/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpkhp9vOo5/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpsc1Cx1P0/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/Ddtq_BcD1AD/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-25T15:27:00.039Z"
+    },
+    {
+      "started_at": "2026-09-25T15:32:07.484Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-25T15:32:47.918Z"
+    },
+    {
+      "started_at": "2026-09-25T15:37:53.169Z",
+      "candidates": 48,
+      "queued": [
+        "960-gta-6-s-collector-s-set-is-all-about-macca-the-gator-a-mascot-fr"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-25T15:38:50.459Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-25T21:54:31.758Z",
+  "checked_at": "2026-09-25T21:59:49.955Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-25T21:54:30.610Z",
-    "usage": 27,
+    "checked_at": "2026-09-25T21:59:32.667Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-25T22:09:30.610Z",
+    "next_check_at": "2026-09-25T22:14:32.667Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-25T21:54:21.139Z",
+    "next_feed_eligible_at": "2026-09-25T22:29:40.735Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-25T21:54:30.492Z",
-    "usage": 26,
+    "usage": 27,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-25T22:09:30.492Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-25T21:54:29.613Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-25T22:29:49.153Z",
+  "publications": [
+    {
+      "file": "922-when-diddy-gave-meek-mill-his-props-called-him-daddy-you-deserve.json",
+      "id": "922-when-diddy-gave-meek-mill-his-props-called-him-daddy-you-deserve",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18031669700904298",
+      "content_type": "video"
+    },
+    {
+      "file": "926-we-asked-nfl-players-for-their-go-to-pregame-songs-from-jahmyr-g.json",
+      "id": "926-we-asked-nfl-players-for-their-go-to-pregame-songs-from-jahmyr-g",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17948282037279884"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -15592,6 +15592,36 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/Ddug_roO7BI/",
       "view_count": 0
+    },
+    "DdukIubDvRl": {
+      "seen_at": "2026-09-25T23:20:56.489Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdukIubDvRl/",
+      "view_count": 0
+    },
+    "Ddumes5judD": {
+      "seen_at": "2026-09-25T23:27:00.548Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Ddumes5judD/",
+      "view_count": 0
+    },
+    "DduhMICogGD": {
+      "seen_at": "2026-09-25T23:38:27.826Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/p/DduhMICogGD/",
+      "view_count": 0
+    },
+    "Dduje4WRxOg": {
+      "seen_at": "2026-09-25T23:38:27.827Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dduje4WRxOg/",
+      "view_count": 0
+    },
+    "Ddul3JjF5U6": {
+      "seen_at": "2026-09-25T23:38:27.827Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Ddul3JjF5U6/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -20581,209 +20611,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Ddug_roO7BI/",
       "queue_id": "971-nocap-is-dropping-his-new-album-heaven-on-mars-october-2nd-next-",
       "video": "media/971-nocap-is-dropping-his-new-album-heaven-on-mars-october-2nd-next-.mp4"
+    },
+    "Dduje4WRxOg": {
+      "queued_at": "2026-09-25T23:39:55.891Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dduje4WRxOg/",
+      "queue_id": "972-nba-ben10-s-lawyer-files-emergency-motion-for-release-nba-ben10-",
+      "video": "media/972-nba-ben10-s-lawyer-files-emergency-motion-for-release-nba-ben10-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-24T05:36:49.484Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdqHNwcxF5V/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-24T05:37:34.315Z"
-    },
-    {
-      "started_at": "2026-09-24T05:42:40.264Z",
-      "candidates": 48,
-      "queued": [
-        "931-rapper-42dugg-is-making-a-serious-statement-about-his-sneaker-co"
-      ],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-24T05:44:05.807Z"
-    },
-    {
-      "started_at": "2026-09-24T05:49:33.887Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T05:49:37.199Z"
-    },
-    {
-      "started_at": "2026-09-24T05:54:43.674Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T05:54:47.618Z"
-    },
-    {
-      "started_at": "2026-09-24T05:59:54.583Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T05:59:57.435Z"
-    },
-    {
-      "started_at": "2026-09-24T06:05:02.831Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T06:05:05.636Z"
-    },
-    {
-      "started_at": "2026-09-24T06:10:10.801Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T06:10:13.841Z"
-    },
-    {
-      "started_at": "2026-09-24T06:15:19.480Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T06:15:22.233Z"
-    },
-    {
-      "started_at": "2026-09-24T06:20:27.443Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T06:20:30.011Z"
-    },
-    {
-      "started_at": "2026-09-24T06:25:37.370Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdqApQYugKR/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddpg-0ePDmF/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdpiIDIvHPH/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-24T06:26:40.967Z"
-    },
     {
       "started_at": "2026-09-24T06:31:46.029Z",
       "candidates": 48,
@@ -25679,6 +25516,205 @@
         ]
       },
       "finished_at": "2026-09-25T22:44:15.170Z"
+    },
+    {
+      "started_at": "2026-09-25T22:49:37.338Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T22:49:40.222Z"
+    },
+    {
+      "started_at": "2026-09-25T22:54:45.662Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T22:54:48.681Z"
+    },
+    {
+      "started_at": "2026-09-25T22:59:53.991Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T22:59:56.812Z"
+    },
+    {
+      "started_at": "2026-09-25T23:05:02.570Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T23:05:05.903Z"
+    },
+    {
+      "started_at": "2026-09-25T23:10:11.016Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T23:10:14.156Z"
+    },
+    {
+      "started_at": "2026-09-25T23:15:20.436Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T23:15:23.692Z"
+    },
+    {
+      "started_at": "2026-09-25T23:20:31.159Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/DdukIubDvRl/",
+          "stage": "queue",
+          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-25T23:21:10.301Z"
+    },
+    {
+      "started_at": "2026-09-25T23:26:16.541Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdqApQYugKR/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-25T23:27:13.579Z"
+    },
+    {
+      "started_at": "2026-09-25T23:32:19.113Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DdrBU_TEcvU/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-25T23:32:57.837Z"
+    },
+    {
+      "started_at": "2026-09-25T23:38:03.391Z",
+      "candidates": 48,
+      "queued": [
+        "972-nba-ben10-s-lawyer-files-emergency-motion-for-release-nba-ben10-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-25T23:39:55.892Z"
     }
   ],
   "vip_pending": {

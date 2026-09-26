@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26T02:07:23.345Z",
+  "checked_at": "2026-09-26T02:12:11.007Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-26T02:37:13.360Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-26T01:57:10.053Z",
+    "checked_at": "2026-09-26T02:12:10.918Z",
     "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-26T02:12:10.053Z",
+    "next_check_at": "2026-09-26T02:27:10.918Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-26T02:37:22.870Z",
-  "publications": [
-    {
-      "file": "929-nba-ben10-bond-hearing-update.json",
-      "id": "929-nba-ben10-bond-hearing-update",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18125435281856158",
-      "content_type": "video"
-    },
-    {
-      "file": "933-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb.json",
-      "id": "933-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18472295692114193"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

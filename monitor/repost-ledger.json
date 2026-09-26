@@ -20687,48 +20687,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/DduXCjjEn-Z/",
       "queue_id": "975-chiefkeef-was-recently-back-at-his-grandmother-s-house-in-chicag",
       "video": "media/975-chiefkeef-was-recently-back-at-his-grandmother-s-house-in-chicag.mp4"
+    },
+    "DduWLRqSynv": {
+      "queued_at": "2026-09-26T01:42:28.627Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/DduWLRqSynv/",
+      "queue_id": "976-video-resurfaces-of-bloodhoundq50-not-caring-droppin-his-loc-whi",
+      "video": "media/976-video-resurfaces-of-bloodhoundq50-not-caring-droppin-his-loc-whi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-24T16:04:01.500Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T16:04:04.588Z"
-    },
-    {
-      "started_at": "2026-09-24T16:09:11.081Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T16:09:14.656Z"
-    },
-    {
-      "started_at": "2026-09-24T16:14:20.212Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T16:14:23.734Z"
-    },
     {
       "started_at": "2026-09-24T16:19:29.400Z",
       "candidates": 0,
@@ -25922,6 +25890,57 @@
         ]
       },
       "finished_at": "2026-09-26T01:25:21.232Z"
+    },
+    {
+      "started_at": "2026-09-26T01:30:36.372Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-26T01:30:40.044Z"
+    },
+    {
+      "started_at": "2026-09-26T01:35:48.807Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-26T01:35:52.636Z"
+    },
+    {
+      "started_at": "2026-09-26T01:41:04.465Z",
+      "candidates": 48,
+      "queued": [
+        "976-video-resurfaces-of-bloodhoundq50-not-caring-droppin-his-loc-whi"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-26T01:42:28.627Z"
     }
   ],
   "vip_pending": {

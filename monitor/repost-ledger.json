@@ -15622,6 +15622,24 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/Ddul3JjF5U6/",
       "view_count": 0
+    },
+    "Ddumh9qxGzR": {
+      "seen_at": "2026-09-26T00:02:03.772Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/jbreesh_/reel/Ddumh9qxGzR/",
+      "view_count": 0
+    },
+    "DduiUupjiKL": {
+      "seen_at": "2026-09-26T00:02:03.773Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DduiUupjiKL/",
+      "view_count": 0
+    },
+    "DdurzT7jbvB": {
+      "seen_at": "2026-09-26T00:02:03.773Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdurzT7jbvB/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -20618,95 +20636,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dduje4WRxOg/",
       "queue_id": "972-nba-ben10-s-lawyer-files-emergency-motion-for-release-nba-ben10-",
       "video": "media/972-nba-ben10-s-lawyer-files-emergency-motion-for-release-nba-ben10-.mp4"
+    },
+    "DdtkM8EPwA1": {
+      "queued_at": "2026-09-26T00:09:30.984Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/DdtkM8EPwA1/",
+      "queue_id": "973-that-hug-maynn-lil-yachty-surprising-trippie-redd-during-his-rol",
+      "video": "media/973-that-hug-maynn-lil-yachty-surprising-trippie-redd-during-his-rol.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-24T06:31:46.029Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-24T06:32:13.419Z"
-    },
-    {
-      "started_at": "2026-09-24T06:37:18.810Z",
-      "candidates": 36,
-      "queued": [
-        "932-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-24T06:40:00.593Z"
-    },
-    {
-      "started_at": "2026-09-24T06:45:31.355Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T06:45:34.289Z"
-    },
-    {
-      "started_at": "2026-09-24T06:50:40.096Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T06:50:42.900Z"
-    },
-    {
-      "started_at": "2026-09-24T06:55:54.120Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T06:56:00.058Z"
-    },
     {
       "started_at": "2026-09-24T07:01:10.648Z",
       "candidates": 0,
@@ -25715,6 +25654,117 @@
         ]
       },
       "finished_at": "2026-09-25T23:39:55.892Z"
+    },
+    {
+      "started_at": "2026-09-25T23:45:22.804Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T23:45:25.502Z"
+    },
+    {
+      "started_at": "2026-09-25T23:50:31.308Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-25T23:50:33.968Z"
+    },
+    {
+      "started_at": "2026-09-25T23:55:39.941Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-25T23:56:32.775Z"
+    },
+    {
+      "started_at": "2026-09-26T00:01:38.875Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/jbreesh_/reel/Ddumh9qxGzR/",
+          "stage": "queue",
+          "error": "Source caption lacks usable video context"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-26T00:02:59.106Z"
+    },
+    {
+      "started_at": "2026-09-26T00:08:15.583Z",
+      "candidates": 41,
+      "queued": [
+        "973-that-hug-maynn-lil-yachty-surprising-trippie-redd-during-his-rol"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-26T00:09:30.985Z"
     }
   ],
   "vip_pending": {

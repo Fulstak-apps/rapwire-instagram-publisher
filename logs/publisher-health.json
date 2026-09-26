@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26T01:32:02.619Z",
+  "checked_at": "2026-09-26T01:36:54.115Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-26T02:01:54.606Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-26T02:02:02.263Z",
-  "publications": [
-    {
-      "file": "928-j-prince-jr-wasnt-charged-og3three-ben10-bond-hearing-allegation.json",
-      "id": "928-j-prince-jr-wasnt-charged-og3three-ben10-bond-hearing-allegation",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18127864267772799",
-      "content_type": "video"
-    },
-    {
-      "file": "932-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb.json",
-      "id": "932-the-shooting-at-confessions-what-happened-with-allstar-jr-and-nb",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17963734328981419"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

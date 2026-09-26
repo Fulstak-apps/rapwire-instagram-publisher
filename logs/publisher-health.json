@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26T21:47:28.043Z",
+  "checked_at": "2026-09-26T21:52:26.840Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 28,
-    "instagram_remaining": 20,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-26T22:17:27.257Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-26T21:37:30.257Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-26T21:52:30.257Z",
@@ -52,15 +52,14 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-26T21:47:01.894Z",
+  "threads_next_eligible_at": "2026-09-26T22:22:26.075Z",
   "publications": [
     {
-      "file": "949-toronto-man-says-it-s-a-rule-to-never-let-your-woman-take-the-tt.json",
-      "id": "949-toronto-man-says-it-s-a-rule-to-never-let-your-woman-take-the-tt",
-      "platform": "instagram",
+      "file": "954-zeddy-will-is-expanding-his-creative-universe-with-zeddy-a-new-s.json",
+      "id": "954-zeddy-will-is-expanding-his-creative-universe-with-zeddy-a-new-s",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18436827748183379",
-      "content_type": "video"
+      "media_id": "18127875451873464"
     }
   ],
   "failures": [],

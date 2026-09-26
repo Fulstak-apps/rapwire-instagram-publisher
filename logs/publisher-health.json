@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26T16:22:11.225Z",
+  "checked_at": "2026-09-26T16:24:34.044Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-26T16:52:03.508Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-26T16:52:11.015Z",
-  "publications": [
-    {
-      "file": "941-kim-kardashian-popped-up-at-target-today-acting-like-a-full-sale.json",
-      "id": "941-kim-kardashian-popped-up-at-target-today-acting-like-a-full-sale",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18225534871335779",
-      "content_type": "video"
-    },
-    {
-      "file": "945-nearly-half-of-the-un-general-assembly-walked-out-as-netanyahu-t.json",
-      "id": "945-nearly-half-of-the-un-general-assembly-walked-out-as-netanyahu-t",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17974311416938199"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

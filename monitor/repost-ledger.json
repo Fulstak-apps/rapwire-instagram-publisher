@@ -15935,6 +15935,18 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/reel/DdwZeWYg9-k/",
       "view_count": 0
+    },
+    "Ddwa5oOG9Y0": {
+      "seen_at": "2026-09-26T16:13:34.476Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Ddwa5oOG9Y0/",
+      "view_count": 0
+    },
+    "DdwZTXgEbsf": {
+      "seen_at": "2026-09-26T16:13:34.479Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/p/DdwZTXgEbsf/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -21029,22 +21041,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdwajcuBK2N/",
       "queue_id": "986-polo-g-gets-emotional-talking-about-juice-wrld-polo-g-and-juice-",
       "video": "media/986-polo-g-gets-emotional-talking-about-juice-wrld-polo-g-and-juice-.mp4"
+    },
+    "DdwZTXgEbsf": {
+      "queued_at": "2026-09-26T16:13:58.830Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/p/DdwZTXgEbsf/",
+      "queue_id": "987-quavo-s-feature-list-for-qr-melife-is-full-of-big-hitters-the-al",
+      "video": "media/987-quavo-s-feature-list-for-qr-melife-is-full-of-big-hitters-the-al.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-25T17:03:14.798Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-25T17:03:18.886Z"
-    },
     {
       "started_at": "2026-09-25T17:03:14.798Z",
       "candidates": 0,
@@ -26839,6 +26845,44 @@
         ]
       },
       "finished_at": "2026-09-26T16:06:13.986Z"
+    },
+    {
+      "started_at": "2026-09-26T16:11:52.835Z",
+      "candidates": 48,
+      "queued": [
+        "987-quavo-s-feature-list-for-qr-melife-is-full-of-big-hitters-the-al"
+      ],
+      "errors": [
+        {
+          "source_handle": "complexmusic",
+          "source_url": "https://www.instagram.com/complexcon/p/DczNm3XSzUj/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        },
+        {
+          "source_handle": "xxl",
+          "source_url": "https://www.instagram.com/xxl/p/DdrWKrblNul/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-26T16:13:58.831Z"
     }
   ],
   "vip_pending": {

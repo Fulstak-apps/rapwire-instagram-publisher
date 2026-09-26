@@ -20991,22 +20991,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdvoqG7Ocb7/",
       "queue_id": "984-bloodhound-member-poohman-was-shot-killed-after-leaving-q50-s-fu",
       "video": "media/984-bloodhound-member-poohman-was-shot-killed-after-leaving-q50-s-fu.mp4"
+    },
+    "DdmwHcDhi-d": {
+      "queued_at": "2026-09-26T15:51:49.526Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/jeremy_hecht/reel/DdmwHcDhi-d/",
+      "queue_id": "985-outkast-vs-ovrkast-the-case-being-taken-to-federal-court-in-geor",
+      "video": "media/985-outkast-vs-ovrkast-the-case-being-taken-to-federal-court-in-geor.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-25T16:52:55.331Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-25T16:53:00.964Z"
-    },
     {
       "started_at": "2026-09-25T16:58:06.494Z",
       "candidates": 0,
@@ -26753,6 +26747,31 @@
         ]
       },
       "finished_at": "2026-09-26T15:44:45.408Z"
+    },
+    {
+      "started_at": "2026-09-26T15:49:57.107Z",
+      "candidates": 48,
+      "queued": [
+        "985-outkast-vs-ovrkast-the-case-being-taken-to-federal-court-in-geor"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 45,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-26T15:51:49.526Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26T15:11:23.710Z",
+  "checked_at": "2026-09-26T15:16:09.980Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-26T15:41:16.765Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-26T15:41:23.186Z",
-  "publications": [
-    {
-      "file": "939-8-years-ago-today-kawhi-gave-us-the-laugh-6.json",
-      "id": "939-8-years-ago-today-kawhi-gave-us-the-laugh-6",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18026728415883021",
-      "content_type": "video"
-    },
-    {
-      "file": "943-mo3-convicted-k-ller-says-he-is-the-one-who-sh-t-boosie.json",
-      "id": "943-mo3-convicted-k-ller-says-he-is-the-one-who-sh-t-boosie",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18097909061544528"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

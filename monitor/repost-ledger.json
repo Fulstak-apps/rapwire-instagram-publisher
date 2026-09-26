@@ -15947,6 +15947,18 @@
       "source_handle": "hiphopdx",
       "source_url": "https://www.instagram.com/uproxx/p/DdwZTXgEbsf/",
       "view_count": 0
+    },
+    "DdwdIUVvpqF": {
+      "seen_at": "2026-09-26T16:25:36.158Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdwdIUVvpqF/",
+      "view_count": 0
+    },
+    "DdwZWsBxngY": {
+      "seen_at": "2026-09-26T16:25:36.159Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdwZWsBxngY/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -21048,35 +21060,16 @@
       "source_url": "https://www.instagram.com/uproxx/p/DdwZTXgEbsf/",
       "queue_id": "987-quavo-s-feature-list-for-qr-melife-is-full-of-big-hitters-the-al",
       "video": "media/987-quavo-s-feature-list-for-qr-melife-is-full-of-big-hitters-the-al.mp4"
+    },
+    "DdwRfQiOoox": {
+      "queued_at": "2026-09-26T16:26:02.534Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdwRfQiOoox/",
+      "queue_id": "988-i-i-and-tiny-s-family-series-which-gives-viewers-a-look-at-their",
+      "video": "media/988-i-i-and-tiny-s-family-series-which-gives-viewers-a-look-at-their.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-25T17:03:14.798Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-25T17:03:18.886Z"
-    },
-    {
-      "started_at": "2026-09-25T17:08:23.845Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-25T17:08:27.167Z"
-    },
     {
       "started_at": "2026-09-25T17:08:23.845Z",
       "candidates": 0,
@@ -26883,6 +26876,80 @@
         ]
       },
       "finished_at": "2026-09-26T16:13:58.831Z"
+    },
+    {
+      "started_at": "2026-09-26T16:19:11.194Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-26T16:20:03.261Z"
+    },
+    {
+      "started_at": "2026-09-26T16:25:10.150Z",
+      "candidates": 41,
+      "queued": [
+        "988-i-i-and-tiny-s-family-series-which-gives-viewers-a-look-at-their"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddrs2zFP8OY/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdwZWsBxngY/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdwdIUVvpqF/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-26T16:26:02.534Z"
     }
   ],
   "vip_pending": {

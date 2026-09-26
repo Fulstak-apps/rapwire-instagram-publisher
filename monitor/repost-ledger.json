@@ -15869,6 +15869,18 @@
       "source_handle": "hiphop_firstnewsmusic",
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdwQGFuSx1x/",
       "view_count": 0
+    },
+    "DdwST4LT8EY": {
+      "seen_at": "2026-09-26T15:01:08.655Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/DdwST4LT8EY/",
+      "view_count": 0
+    },
+    "DdwSMjAgbSR": {
+      "seen_at": "2026-09-26T15:01:08.656Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdwSMjAgbSR/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -20928,22 +20940,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdwQGFuSx1x/",
       "queue_id": "981-ye-shouted-out-chris-brown-after-cb-invited-him-to-come-out-righ",
       "video": "media/981-ye-shouted-out-chris-brown-after-cb-invited-him-to-come-out-righ.mp4"
+    },
+    "DdwSMjAgbSR": {
+      "queued_at": "2026-09-26T15:01:36.357Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdwSMjAgbSR/",
+      "queue_id": "982-ppl-kayaking-to-a-train-station-in-new-york-during-the-nor-easte",
+      "video": "media/982-ppl-kayaking-to-a-train-station-in-new-york-during-the-nor-easte.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-25T16:30:32.467Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-25T16:30:35.326Z"
-    },
     {
       "started_at": "2026-09-25T16:35:48.095Z",
       "candidates": 0,
@@ -26557,6 +26563,31 @@
         ]
       },
       "finished_at": "2026-09-26T14:54:41.219Z"
+    },
+    {
+      "started_at": "2026-09-26T15:00:29.856Z",
+      "candidates": 48,
+      "queued": [
+        "982-ppl-kayaking-to-a-train-station-in-new-york-during-the-nor-easte"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 43,
+        "needed": 5
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-26T15:01:36.357Z"
     }
   ],
   "vip_pending": {

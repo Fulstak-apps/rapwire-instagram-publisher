@@ -15664,6 +15664,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdutsEFjiYV/",
       "view_count": 0
+    },
+    "DduzmB7F0-g": {
+      "seen_at": "2026-09-26T01:18:22.410Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DduzmB7F0-g/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -20674,48 +20680,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdtIXTDRVry/",
       "queue_id": "974-uzi-really-heard-the-word-shells-fifty-times-and-decided-to-drop",
       "video": "media/974-uzi-really-heard-the-word-shells-fifty-times-and-decided-to-drop.mp4"
+    },
+    "DduXCjjEn-Z": {
+      "queued_at": "2026-09-26T01:25:21.232Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DduXCjjEn-Z/",
+      "queue_id": "975-chiefkeef-was-recently-back-at-his-grandmother-s-house-in-chicag",
+      "video": "media/975-chiefkeef-was-recently-back-at-his-grandmother-s-house-in-chicag.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-24T15:48:05.552Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T15:48:08.338Z"
-    },
-    {
-      "started_at": "2026-09-24T15:53:13.554Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T15:53:15.968Z"
-    },
-    {
-      "started_at": "2026-09-24T15:58:46.415Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-24T15:58:55.127Z"
-    },
     {
       "started_at": "2026-09-24T16:04:01.500Z",
       "candidates": 0,
@@ -25870,6 +25844,84 @@
         ]
       },
       "finished_at": "2026-09-26T01:06:45.704Z"
+    },
+    {
+      "started_at": "2026-09-26T01:12:09.394Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-26T01:12:39.566Z"
+    },
+    {
+      "started_at": "2026-09-26T01:17:46.995Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-26T01:18:36.802Z"
+    },
+    {
+      "started_at": "2026-09-26T01:23:42.481Z",
+      "candidates": 48,
+      "queued": [
+        "975-chiefkeef-was-recently-back-at-his-grandmother-s-house-in-chicag"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-26T01:25:21.232Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26T21:17:03.799Z",
+  "checked_at": "2026-09-26T21:21:55.588Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-26T21:06:46.685Z",
+    "checked_at": "2026-09-26T21:21:55.498Z",
     "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-26T21:21:46.685Z",
+    "next_check_at": "2026-09-26T21:36:55.498Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-26T21:47:01.894Z",
-  "publications": [
-    {
-      "file": "953-nba-star-tyrese-haliburton-says-he-still-flies-southwest-and-buy.json",
-      "id": "953-nba-star-tyrese-haliburton-says-he-still-flies-southwest-and-buy",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18076812566711539"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

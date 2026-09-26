@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-09-26-0800",
-  "status": "ready",
+  "status": "paused",
   "ai_generated_art": true,
   "created_at": "2026-09-26T08:11:34-07:00",
   "publish_after": "2026-09-26T15:00:00Z",
@@ -55,7 +55,22 @@
   "text_overflow_checked": true,
   "grid_safe_checked": true,
   "qa_passed": true,
-  "qa": {"dimensions": "1080x1350", "slide_count": 5, "distinct_stories": 5, "two_sources_per_story": true, "official_logo_used": true, "logo_transparent_and_unboxed": true, "legacy_graphics_used": false, "caption_numbered_1_to_5": true, "caption_avoids_ai_term": true, "passed": true},
+  "qa": {
+    "dimensions": "1080x1350",
+    "slide_count": 5,
+    "distinct_stories": 5,
+    "two_sources_per_story": true,
+    "official_logo_used": true,
+    "logo_transparent_and_unboxed": true,
+    "legacy_graphics_used": false,
+    "caption_numbered_1_to_5": true,
+    "caption_avoids_ai_term": true,
+    "passed": true
+  },
   "publish_blocked": false,
-  "news_verification": {"status": "verified", "checked_at": "2026-09-26T15:11:34Z"}
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-09-26T15:11:34Z"
+  },
+  "pause_reason": "Visual blocked: RapWire requires source-grounded AI art or an approved credited real-photo fallback, plus a complete readable 2-10 slide carousel"
 }

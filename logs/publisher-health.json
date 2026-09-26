@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26T05:10:40.436Z",
+  "checked_at": "2026-09-26T05:15:35.018Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-26T05:40:40.125Z",
-  "publications": [
-    {
-      "file": "938-druski-opens-up-about-how-a-call-from-drake-champagnepapi-change.json",
-      "id": "938-druski-opens-up-about-how-a-call-from-drake-champagnepapi-change",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17886598035684926"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

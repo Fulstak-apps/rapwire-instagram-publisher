@@ -1,17 +1,18 @@
 {
-  "reserve_count": 46,
-  "reserve_hours": 23,
+  "reserve_count": 45,
+  "reserve_hours": 22.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
-  "processing": [],
+  "overdue": true,
+  "health_stale": true,
+  "processing": [
+    "936-og3three-should-take-it-to-trial-allegations-are-not-findings-of"
+  ],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "935-allstar-jr-plea-deal-might-be-great-but-he-could-be-the-charges-",
     "936-og3three-should-take-it-to-trial-allegations-are-not-findings-of",
     "937-explore-a-sinister-look-at-a-man-s-journey-into-a-monster-in-cla",
     "938-druski-opens-up-about-how-a-call-from-drake-champagnepapi-change",
@@ -58,8 +59,8 @@
     "979-otf-jam-calls-out-wack-100-king-yella-and-memo-600-again",
     "980-nah-21-savage-21savage-was-definitely-making-sure-the-mic-worked"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-09-26T05:28:19.031Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-09-26T10:03:35.838Z",
   "deferred": []
 }

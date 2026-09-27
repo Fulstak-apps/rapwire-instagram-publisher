@@ -16349,6 +16349,18 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/Ddw-hzll9tf/",
       "view_count": 0
+    },
+    "DdxxfsCuIG4": {
+      "seen_at": "2026-09-27T04:46:48.128Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DdxxfsCuIG4/",
+      "view_count": 0
+    },
+    "Ddxwoq0uD4d": {
+      "seen_at": "2026-09-27T04:46:48.128Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddxwoq0uD4d/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -21506,48 +21518,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Ddxp1nLRTs_/",
       "queue_id": "995-mood-going-dark-next-week",
       "video": "media/995-mood-going-dark-next-week.mp4"
+    },
+    "DdxKSWgR_Qs": {
+      "queued_at": "2026-09-27T04:59:27.450Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdxKSWgR_Qs/",
+      "queue_id": "996-og3three-still-showing-love-even-while-incarcerated-og3three-is-",
+      "video": "media/996-og3three-still-showing-love-even-while-incarcerated-og3three-is-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -26609,6 +26589,109 @@
         ]
       },
       "finished_at": "2026-09-27T04:40:52.723Z"
+    },
+    {
+      "started_at": "2026-09-27T04:46:04.963Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdxlcInR6Ou/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddxwoq0uD4d/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdxxfsCuIG4/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 35,
+        "needed": 13
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-27T04:47:00.987Z"
+    },
+    {
+      "started_at": "2026-09-27T04:52:11.453Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DdtuJeukaW7/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 35,
+        "needed": 13
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T04:53:10.903Z"
+    },
+    {
+      "started_at": "2026-09-27T04:58:18.026Z",
+      "candidates": 48,
+      "queued": [
+        "996-og3three-still-showing-love-even-while-incarcerated-og3three-is-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 35,
+        "needed": 13
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T04:59:27.450Z"
     }
   ],
   "vip_pending": {

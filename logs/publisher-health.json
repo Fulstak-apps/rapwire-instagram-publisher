@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T18:55:38.983Z",
+  "checked_at": "2026-09-27T19:00:22.021Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-27T19:25:38.795Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-27T19:25:28.051Z",
-  "publications": [
-    {
-      "file": "1010-bro-who-tf-uzi-got-beef-w-why-he-moving-like-dis-bro-on-bad-timi.json",
-      "id": "1010-bro-who-tf-uzi-got-beef-w-why-he-moving-like-dis-bro-on-bad-timi",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17878088238554681"
-    },
-    {
-      "file": "1010-bro-who-tf-uzi-got-beef-w-why-he-moving-like-dis-bro-on-bad-timi.json",
-      "id": "1010-bro-who-tf-uzi-got-beef-w-why-he-moving-like-dis-bro-on-bad-timi",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18029475203685264",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

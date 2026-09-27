@@ -16613,6 +16613,18 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzSpt4vH0-/",
       "view_count": 0
+    },
+    "DdzTXi-IIIp": {
+      "seen_at": "2026-09-27T19:18:27.550Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/reel/DdzTXi-IIIp/",
+      "view_count": 0
+    },
+    "DdzR6hmsjCf": {
+      "seen_at": "2026-09-27T19:18:27.550Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdzR6hmsjCf/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -21966,22 +21978,16 @@
       "source_url": "https://www.instagram.com/xxl/reel/DdzRrOgscQ6/",
       "queue_id": "1023-surveillance-was-everywhere-in-the-affluent-chicago-area-where-f",
       "video": "media/1023-surveillance-was-everywhere-in-the-affluent-chicago-area-where-f.mp4"
+    },
+    "DdzTXi-IIIp": {
+      "queued_at": "2026-09-27T19:18:52.122Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/reel/DdzTXi-IIIp/",
+      "queue_id": "1024-guelph-hoco-was-looking-like-a-civil-war-6-via",
+      "video": "media/1024-guelph-hoco-was-looking-like-a-civil-war-6-via.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
     {
       "started_at": "2026-09-26T18:18:54.717Z",
       "candidates": 0,
@@ -28167,6 +28173,31 @@
         ]
       },
       "finished_at": "2026-09-27T19:12:36.239Z"
+    },
+    {
+      "started_at": "2026-09-27T19:18:01.970Z",
+      "candidates": 48,
+      "queued": [
+        "1024-guelph-hoco-was-looking-like-a-civil-war-6-via"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T19:18:52.122Z"
     }
   ],
   "vip_pending": {

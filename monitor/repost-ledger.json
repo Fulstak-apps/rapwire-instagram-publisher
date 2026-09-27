@@ -21572,48 +21572,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DdxPxFBg64t/",
       "queue_id": "1001-they-said-fans-starving-while-kendrick-lamar-kendricklamar-in-th",
       "video": "media/1001-they-said-fans-starving-while-kendrick-lamar-kendricklamar-in-th.mp4"
+    },
+    "DdwxZK3O0FH": {
+      "queued_at": "2026-09-27T07:03:00.657Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdwxZK3O0FH/",
+      "queue_id": "1002-memo600-says-king-von-never-signed-a-contract-with-otf-despite-m",
+      "video": "media/1002-memo600-says-king-von-never-signed-a-contract-with-otf-despite-m.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -27001,6 +26969,77 @@
         ]
       },
       "finished_at": "2026-09-27T06:45:36.443Z"
+    },
+    {
+      "started_at": "2026-09-27T06:51:05.751Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 37,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T06:51:26.048Z"
+    },
+    {
+      "started_at": "2026-09-27T06:56:33.015Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 37,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T06:56:58.631Z"
+    },
+    {
+      "started_at": "2026-09-27T07:02:04.908Z",
+      "candidates": 48,
+      "queued": [
+        "1002-memo600-says-king-von-never-signed-a-contract-with-otf-despite-m"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 37,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T07:03:00.657Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T18:04:11.925Z",
+  "checked_at": "2026-09-27T18:09:21.773Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-27T18:04:10.747Z",
-    "usage": 30,
+    "usage": 31,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-27T18:19:10.747Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-27T18:03:54.071Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-27T18:39:21.498Z",
+  "publications": [
+    {
+      "file": "1009-baby-rocki-is-already-showing-her-fashion-side-not-interested-in.json",
+      "id": "1009-baby-rocki-is-already-showing-her-fashion-side-not-interested-in",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18019068746932948"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

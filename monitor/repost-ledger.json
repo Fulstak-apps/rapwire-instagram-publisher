@@ -16649,6 +16649,24 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/trapmatictv/p/DdzfCxSEiD_/",
       "view_count": 0
+    },
+    "DdzfQkqv3VK": {
+      "seen_at": "2026-09-27T21:09:48.699Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdzfQkqv3VK/",
+      "view_count": 0
+    },
+    "DdzcYmID93P": {
+      "seen_at": "2026-09-27T21:09:48.699Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdzcYmID93P/",
+      "view_count": 0
+    },
+    "DdzXCMMjxWf": {
+      "seen_at": "2026-09-27T21:09:48.699Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdzXCMMjxWf/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -22037,74 +22055,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdzOEaku-XN/",
       "queue_id": "1028-nahh-but-this-b-hard-tho-lil-durk-lildurk-freedurk",
       "video": "media/1028-nahh-but-this-b-hard-tho-lil-durk-lildurk-freedurk.mp4"
+    },
+    "DdzfQkqv3VK": {
+      "queued_at": "2026-09-27T21:10:07.915Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DdzfQkqv3VK/",
+      "queue_id": "1029-ye-and-kim-brought-north-flowers-after-she-headlined-her-first-s",
+      "video": "media/1029-ye-and-kim-brought-north-flowers-after-she-headlined-her-first-s.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
     {
       "started_at": "2026-09-26T18:18:54.717Z",
       "candidates": 0,
@@ -28332,6 +28292,110 @@
         ]
       },
       "finished_at": "2026-09-27T20:42:05.035Z"
+    },
+    {
+      "started_at": "2026-09-27T20:47:39.981Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-27T20:47:43.260Z"
+    },
+    {
+      "started_at": "2026-09-27T20:52:50.595Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-27T20:52:53.639Z"
+    },
+    {
+      "started_at": "2026-09-27T20:58:00.602Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T20:58:29.399Z"
+    },
+    {
+      "started_at": "2026-09-27T21:03:35.898Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/DdzPlOTm7gE/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T21:04:12.608Z"
+    },
+    {
+      "started_at": "2026-09-27T21:09:20.560Z",
+      "candidates": 41,
+      "queued": [
+        "1029-ye-and-kim-brought-north-flowers-after-she-headlined-her-first-s"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-27T21:10:07.915Z"
     }
   ],
   "vip_pending": {

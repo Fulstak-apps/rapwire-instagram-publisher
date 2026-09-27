@@ -21847,22 +21847,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DdzGyuQhnui/",
       "queue_id": "1018-king-von-revealed-it-was-never-a-money-thing-for-him-king-von-bo",
       "video": "media/1018-king-von-revealed-it-was-never-a-money-thing-for-him-king-von-bo.mp4"
+    },
+    "DdybL9IImUC": {
+      "queued_at": "2026-09-27T17:32:24.032Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdybL9IImUC/",
+      "queue_id": "1019-cardi-b-stepped-out-ready-for-another-day-of-milan-fashion-week-",
+      "video": "media/1019-cardi-b-stepped-out-ready-for-another-day-of-milan-fashion-week-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -27911,6 +27905,31 @@
         ]
       },
       "finished_at": "2026-09-27T17:26:13.118Z"
+    },
+    {
+      "started_at": "2026-09-27T17:31:31.810Z",
+      "candidates": 48,
+      "queued": [
+        "1019-cardi-b-stepped-out-ready-for-another-day-of-milan-fashion-week-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T17:32:24.032Z"
     }
   ],
   "vip_pending": {

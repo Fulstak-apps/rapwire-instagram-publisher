@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T04:59:23.384Z",
+  "checked_at": "2026-09-27T05:04:20.828Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-27T04:49:11.265Z",
+    "checked_at": "2026-09-27T05:04:20.746Z",
     "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-27T05:04:11.265Z",
+    "next_check_at": "2026-09-27T05:19:20.746Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-27T05:29:23.127Z",
-  "publications": [
-    {
-      "file": "966-ny-flavaaa-and-his-son-were-listening-to-lil-durk-lildurk-s-all-.json",
-      "id": "966-ny-flavaaa-and-his-son-were-listening-to-lil-durk-lildurk-s-all-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17947660443318373"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T00:44:22.874Z",
+  "checked_at": "2026-09-27T00:49:29.002Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 28,
-    "instagram_remaining": 20,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-27T01:14:21.955Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-27T00:44:12.454Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-27T00:59:12.454Z",
@@ -52,15 +52,14 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-27T00:44:06.179Z",
+  "threads_next_eligible_at": "2026-09-27T01:19:28.376Z",
   "publications": [
     {
-      "file": "954-zeddy-will-is-expanding-his-creative-universe-with-zeddy-a-new-s.json",
-      "id": "954-zeddy-will-is-expanding-his-creative-universe-with-zeddy-a-new-s",
-      "platform": "instagram",
+      "file": "959-beauty-is-in-the-eye-of-the-beholder-and-these-beholders-didn-t-.json",
+      "id": "959-beauty-is-in-the-eye-of-the-beholder-and-these-beholders-didn-t-",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18201707929329805",
-      "content_type": "video"
+      "media_id": "18397888330200381"
     }
   ],
   "failures": [],

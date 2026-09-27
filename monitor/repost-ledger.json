@@ -21725,22 +21725,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DdybyZngtsn/",
       "queue_id": "1010-bro-who-tf-uzi-got-beef-w-why-he-moving-like-dis-bro-on-bad-timi",
       "video": "media/1010-bro-who-tf-uzi-got-beef-w-why-he-moving-like-dis-bro-on-bad-timi.mp4"
+    },
+    "DdyquIWIwzG": {
+      "queued_at": "2026-09-27T15:33:33.196Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdyquIWIwzG/",
+      "queue_id": "1011-rihanna-was-seen-putting-a-little-wig-on-her-daughter-rocki-pure",
+      "video": "media/1011-rihanna-was-seen-putting-a-little-wig-on-her-daughter-rocki-pure.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -27469,6 +27463,31 @@
         ]
       },
       "finished_at": "2026-09-27T15:25:09.799Z"
+    },
+    {
+      "started_at": "2026-09-27T15:30:32.455Z",
+      "candidates": 48,
+      "queued": [
+        "1011-rihanna-was-seen-putting-a-little-wig-on-her-daughter-rocki-pure"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 42,
+        "needed": 6
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T15:33:33.196Z"
     }
   ],
   "vip_pending": {

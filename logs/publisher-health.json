@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T04:18:57.696Z",
+  "checked_at": "2026-09-27T04:24:01.764Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 28,
-    "instagram_remaining": 20,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-27T04:48:56.888Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-27T04:18:48.819Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-27T04:33:48.819Z",
@@ -52,15 +52,14 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-27T04:18:41.037Z",
+  "threads_next_eligible_at": "2026-09-27T04:54:01.293Z",
   "publications": [
     {
-      "file": "960-gta-6-s-collector-s-set-is-all-about-macca-the-gator-a-mascot-fr.json",
-      "id": "960-gta-6-s-collector-s-set-is-all-about-macca-the-gator-a-mascot-fr",
-      "platform": "instagram",
+      "file": "965-skepta-s-new-innocent-smile-visual-with-suggs-and-chase-status-i.json",
+      "id": "965-skepta-s-new-innocent-smile-visual-with-suggs-and-chase-status-i",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18066748523600914",
-      "content_type": "video"
+      "media_id": "18094855004217844"
     }
   ],
   "failures": [],

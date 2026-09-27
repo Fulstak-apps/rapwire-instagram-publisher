@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T16:53:23.095Z",
+  "checked_at": "2026-09-27T16:58:32.565Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-27T16:43:49.011Z",
+    "checked_at": "2026-09-27T16:58:25.531Z",
     "usage": 30,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-27T16:58:49.011Z",
+    "next_check_at": "2026-09-27T17:13:25.531Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-27T16:58:07.135Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-27T16:43:49.400Z",
-    "usage": 30,
+    "usage": 31,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-27T16:58:49.400Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-27T16:53:11.740Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-27T17:28:32.384Z",
+  "publications": [
+    {
+      "file": "1007-there-s-something-about-droppin-jewels-that-still-hits-every-tim.json",
+      "id": "1007-there-s-something-about-droppin-jewels-that-still-hits-every-tim",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18255693421307729"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

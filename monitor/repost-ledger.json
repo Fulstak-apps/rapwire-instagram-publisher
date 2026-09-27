@@ -21600,22 +21600,16 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/DdxlceVshfD/",
       "queue_id": "1005-cr-p-mac-goes-viral-after-he-was-seen-turnin-up-at-a-rave-cr-p-m",
       "video": "media/1005-cr-p-mac-goes-viral-after-he-was-seen-turnin-up-at-a-rave-cr-p-m.mp4"
+    },
+    "DdwrnzOml09": {
+      "queued_at": "2026-09-27T07:49:08.108Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DdwrnzOml09/",
+      "queue_id": "1006-keeping-the-solo-run-going-made-in-paris-out-now",
+      "video": "media/1006-keeping-the-solo-run-going-made-in-paris-out-now.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -27144,6 +27138,31 @@
         ]
       },
       "finished_at": "2026-09-27T07:43:11.679Z"
+    },
+    {
+      "started_at": "2026-09-27T07:48:27.221Z",
+      "candidates": 41,
+      "queued": [
+        "1006-keeping-the-solo-run-going-made-in-paris-out-now"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 40,
+        "needed": 8
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-27T07:49:08.108Z"
     }
   ],
   "vip_pending": {

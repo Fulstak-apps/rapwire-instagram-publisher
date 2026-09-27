@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T18:14:19.564Z",
+  "checked_at": "2026-09-27T18:19:31.115Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-27T18:14:19.027Z",
+    "checked_at": "2026-09-27T18:19:23.297Z",
     "usage": 30,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-27T18:29:19.027Z",
+    "next_check_at": "2026-09-27T18:34:23.297Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-27T18:10:12.855Z",
+    "next_feed_eligible_at": "2026-09-27T18:49:30.902Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,26 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-27T18:04:10.747Z",
+    "checked_at": "2026-09-27T18:19:22.937Z",
     "usage": 31,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-27T18:19:10.747Z",
+    "next_check_at": "2026-09-27T18:34:22.937Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-27T18:39:21.498Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1009-baby-rocki-is-already-showing-her-fashion-side-not-interested-in.json",
+      "id": "1009-baby-rocki-is-already-showing-her-fashion-side-not-interested-in",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18044014193819216",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

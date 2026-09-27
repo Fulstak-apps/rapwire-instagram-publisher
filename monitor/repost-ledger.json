@@ -16499,6 +16499,18 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/Ddy-xi4hS4F/",
       "view_count": 0
+    },
+    "DdzFIFYml7B": {
+      "seen_at": "2026-09-27T16:53:27.554Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdzFIFYml7B/",
+      "view_count": 0
+    },
+    "DdzDEtrkdI7": {
+      "seen_at": "2026-09-27T16:53:27.555Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdzDEtrkdI7/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -21789,35 +21801,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdyfRu4I0-S/",
       "queue_id": "1014-amber-rose-opened-up-about-why-dating-has-been-difficult-for-her",
       "video": "media/1014-amber-rose-opened-up-about-why-dating-has-been-difficult-for-her.mp4"
+    },
+    "DdyfT3dIjd4": {
+      "queued_at": "2026-09-27T16:54:21.249Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdyfT3dIjd4/",
+      "queue_id": "1015-chris-brown-brought-a-fan-on-stage-during-his-performance-and-th",
+      "video": "media/1015-chris-brown-brought-a-fan-on-stage-during-his-performance-and-th.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -27726,6 +27719,80 @@
         ]
       },
       "finished_at": "2026-09-27T16:34:50.834Z"
+    },
+    {
+      "started_at": "2026-09-27T16:40:21.485Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DdxNzqnACeg/",
+          "stage": "queue",
+          "error": "Command failed: ffmpeg -y -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/media/1015-is-this-the-hardest-performance-in-hip-hop-history-minutes-after.mp4 -map 0:v:0 -map 0:a? -c:v libx264 -preset veryfast -crf 27 -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/media/1015-is-this-the-hardest-performance-in-hip-hop-history-minutes-after.mp4.github-safe.mp4\nffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers\n  built with Apple clang version 17.0.0 (clang-1700.6.3.2)\n  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\nInput #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/dw/Library/Application Support/RapWire/publisher-runtime-live/media/1015-is-this-the-hardest-performance-in-hip-hop-history-minutes-after.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf62.3.100\n  Duration: 00:03:12.80, start: 0.000000, bitrate: 7320 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1350 [SAR 1:1 DAR 4:5], 7183 kb/s, SAR 422550:422543 DAR 338040:422543, 30 fps, 30 tbr, 15360 tbn (default)\n    Metadata:\n      handler_name    : VideoHandler\n      vendor_id       : [0][0][0][0]\n      encoder         : Lavc62.11.100 libx264\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)\n    Metadata:\n      handler_name    : SoundHandler\n      vendor_id       : [0][0][0][0]\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))\n  Stream #0:1 -> #0:1 (aac (native) -> aac (native))\nPress [q] to stop, [?] for help\n[libx264 @ 0x791ec59180] using SAR=1/1\n[libx264 @ 0x791ec59180] using cpu capabilities: ARMv8 NEON DotProd\n[libx264 @ 0x791ec59180] profile High, level 4.0, 4:2:0, 8-bit\n[libx264 @ 0x791ec59180] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=27.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00\nOutput #0, mp4, to '/Users/dw/Library/Application Support/RapWire/publisher-runtime-live/media/1015-is-this-the-hardest-performance-in-hip-hop-history-minutes-after.mp4.github-safe.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf62.3.100\n  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1350 [SAR 422550:422543 DAR 338040:422543], q=2-31, 30 fps, 15360 tbn (default)\n    Metadata:\n      encoder         : Lavc62.11.100 libx264\n      handler_name    : VideoHandler\n      vendor_id       : [0][0][0][0]\n    Side data:\n      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A\n  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)\n    Metadata:\n      encoder         : Lavc62.11.100 aac\n      handler_name    : SoundHandler\n      vendor_id       : [0][0][0][0]\nframe=   12 fps=0.0 q=33.0 size=       0KiB time=00:00:00.33 bitrate=   1.2kbits/s speed=0.528x elapsed=0:00:00.63    \rframe=   46 fps= 38 q=33.0 size=     256KiB time=00:00:01.46 bitrate=1430.1kbits/s speed=1.22x elapsed=0:00:01.20    \rframe=   77 fps= 42 q=33.0 size=     256KiB time=00:00:02.50 bitrate= 839.0kbits/s speed=1.35x elapsed=0:00:01.85    \rframe=  106 fps= 42 q=33.0 size=     512KiB time=00:00:03.46 bitrate=1210.0kbits/s speed=1.39x elapsed=0:00:02.50    \rframe=  108 fps= 36 q=33.0 size=     512KiB time=00:00:03.53 bitrate=1187.2kbits/s speed=1.17x elapsed=0:00:03.01    \rframe=  116 fps= 33 q=33.0 size=     512KiB time=00:00:03.80 bitrate=1103.9kbits/s speed=1.08x elapsed=0:00:03.52    \rframe=  141 fps= 35 q=33.0 size=     512KiB time=00:00:04.63 bitrate= 905.3kbits/s speed=1.14x elapsed=0:00:04.06    \rframe=  165 fps= 36 q=33.0 size=     768KiB time=00:00:05.43 bitrate=1158.0kbits/s speed=1.18x elapsed=0:00:04.58    \rframe=  203 fps= 39 q=33.0 size=    1280KiB time=00:00:06.70 bitrate=1565.1kbits/s speed= 1.3x elapsed=0:00:05.13    \rframe=  222 fps= 39 q=33.0 size=    1536KiB time=00:00:07.33 bitrate=1715.9kbits/s speed=1.28x elapsed=0:00:05.71    \rframe=  239 fps= 38 q=33.0 size=    1536KiB time=00:00:07.90 bitrate=1592.8kbits/s speed=1.25x elapsed=0:00:06.29    \rframe=  257 fps= 37 q=33.0 size=    1792KiB time=00:00:08.50 bitrate=1727.1kbits/s speed=1.23x elapsed=0:00:06.88    \rframe=  277 fps= 37 q=33.0 size=    1792KiB time=00:00:09.16 bitrate=1601.5kbits/s speed=1.24x elapsed=0:00:07.41    \rframe=  283 fps= 35 q=33.0 size=    1792KiB time=00:00:09.36 bitrate=1567.3kbits/s speed=1.17x elapsed=0:00:08.03    \rframe=  285 fps= 33 q=33.0 size=    1792KiB time=00:00:09.43 bitrate=1556.2kbits/s speed= 1.1x elapsed=0:00:08.58    \rframe=  299 fps= 33 q=33.0 size=    2048KiB time=00:00:09.90 bitrate=1694.7kbits/s speed=1.08x elapsed=0:00:09.15    \rframe=  335 fps= 35 q=33.0 size=    2304KiB time=00:00:11.10 bitrate=1700.4kbits/s speed=1.14x elapsed=0:00:09.70    \rframe=  359 fps= 35 q=33.0 size=    2560KiB time=00:00:11.90 bitrate=1762.3kbits/s speed=1.16x elapsed=0:00:10.28    \rframe=  377 fps= 35 q=33.0 size=    2560KiB time=00:00:12.50 bitrate=1677.8kbits/s speed=1.15x elapsed=0:00:10.83    \rframe=  391 fps= 34 q=33.0 size=    2560KiB time=00:00:12.96 bitrate=1617.4kbits/s speed=1.13x elapsed=0:00:11.46    \rframe=  403 fps= 34 q=33.0 size=    2816KiB time=00:00:13.36 bitrate=1725.9kbits/s speed=1.11x elapsed=0:00:11.99    \rframe=  414 fps= 33 q=33.0 size=    2816KiB time=00:00:13.73 bitrate=1679.8kbits/s speed= 1.1x elapsed=0:00:12.53    \rframe=  433 fps= 33 q=33.0 size=    3072KiB time=00:00:14.36 bitrate=1751.7kbits/s speed= 1.1x elapsed=0:00:13.05    \rframe=  444 fps= 33 q=33.0 size=    3328KiB time=00:00:14.73 bitrate=1850.5kbits/s speed=1.08x elapsed=0:00:13.59    \rframe=  462 fps= 33 q=33.0 size=    3328KiB time=00:00:15.33 bitrate=1778.0kbits/s speed=1.08x elapsed=0:00:14.17    \rframe=  473 fps= 32 q=33.0 size=    3584KiB time=00:00:15.70 bitrate=1870.1kbits/s speed=1.07x elapsed=0:00:14.69    \rframe=  485 fps= 32 q=33.0 size=    3584KiB time=00:00:16.10 bitrate=1823.6kbits/s speed=1.05x elapsed=0:00:15.30    \rframe=  498 fps= 31 q=33.0 size=    3840KiB time=00:00:16.53 bitrate=1902.7kbits/s speed=1.04x elapsed=0:00:15.87    \rframe=  507 fps= 31 q=33.0 size=    3840KiB time=00:00:16.83 bitrate=1868.8kbits/s speed=1.03x elapsed=0:00:16.40    \rframe=  521 fps= 31 q=33.0 size=    4096KiB time=00:00:17.30 bitrate=1939.6kbits/s speed=1.02x elapsed=0:00:16.90    \rframe=  533 fps= 31 q=33.0 size=    4096KiB time=00:00:17.70 bitrate=1895.8kbits/s speed=1.01x elapsed=0:00:17.46    \rframe=  549 fps= 30 q=33.0 size=    4352KiB time=00:00:18.23 bitrate=1955.3kbits/s speed=1.01x elapsed=0:00:18.03    \rframe=  568 fps= 30 q=33.0 size=    4608KiB time=00:00:18.86 bitrate=2000.8kbits/s speed=1.01x elapsed=0:00:18.63    \rframe=  580 fps= 30 q=33.0 size=    4608KiB time=00:00:19.26 bitrate=1959.3kbits/s speed=0.999x elapsed=0:00:19.29    \rframe=  594 fps= 30 q=33.0 size=    4864KiB time=00:00:19.80 bitrate=2012.4kbits/s speed=0.997x elapsed=0:00:19.86    \rframe=  606 fps= 30 q=33.0 size=    5120KiB time=00:00:20.13 bitrate=2083.3kbits/s speed=0.989x elapsed=0:00:20.36    \rframe=  614 fps= 29 q=33.0 size=    5120KiB time=00:00:20.40 bitrate=2056.1kbits/s speed=0.978x elapsed=0:00:20.86    \rframe=  626 fps= 29 q=33.0 size=    5120KiB time=00:00:20.80 bitrate=2016.5kbits/s speed=0.973x elapsed=0:00:21.36    \rframe=  639 fps= 29 q=33.0 size=    5376KiB time=00:00:21.23 bitrate=2074.1kbits/s speed=0.97x elapsed=0:00:21.89    \rframe=  658 fps= 29 q=33.0 size=    5376KiB time=00:00:21.86 bitrate=2014.1kbits/s speed=0.972x elapsed=0:00:22.48    \rframe=  675 fps= 29 q=33.0 size=    5632KiB time=00:00:22.43 bitrate=2056.7kbits/s speed=0.974x elapsed=0:00:23.04    \rframe=  700 fps= 30 q=33.0 size=    5888KiB time=00:00:23.26 bitrate=2073.1kbits/s speed=0.981x elapsed=0:00:23.72    \rframe=  719 fps= 30 q=33.0 size=    6144KiB time=00:00:23.90 bitrate=2105.9kbits/s speed=0.985x elapsed=0:00:24.25    \rframe=  750 fps= 30 q=33.0 size=    6400KiB time=00:00:24.93 bitrate=2102.8kbits/s speed=   1x elapsed=0:00:24.83    \rframe=  780 fps= 31 q=33.0 size=    6656KiB time=00:00:25.93 bitrate=2102.6kbits/s speed=1.02x elapsed=0:00:25.35    \rframe=  811 fps= 31 q=33.0 size=    6912KiB time=00:00:26.96 bitrate=2099.8kbits/s speed=1.04x elapsed=0:00:25.94    \rframe=  846 fps= 32 q=33.0 size=    7168KiB time=00:00:28.13 bitrate=2087.2kbits/s speed=1.06x elapsed=0:00:26.51    \rframe=  874 fps= 32 q=33.0 size=    7424KiB time=00:00:29.06 bitrate=2092.4kbits/s speed=1.07x elapsed=0:00:27.05    \rframe=  902 fps= 33 q=33.0 size=    7680KiB time=00:00:30.00 bitrate=2097.2kbits/s speed=1.09x elapsed=0:00:27.62    \rframe=  925 fps= 33 q=33.0 size=    7936KiB time=00:00:30.76 bitrate=2113.1kbits/s speed=1.09x elapsed=0:00:28.20    \rframe=  957 fps= 33 q=33.0 size=    8448KiB time=00:00:31.83 bitrate=2174.0kbits/s speed=1.11x elapsed=0:00:28.77    \rframe=  984 fps= 34 q=33.0 size=    8704KiB time=00:00:32.73 bitrate=2178.3kbits/s speed=1.12x elapsed=0:00:29.30    \rframe= 1010 fps= 34 q=33.0 size=    8960KiB time=00:00:33.60 bitrate=2184.5kbits/s speed=1.12x elapsed=0:00:29.88    \rframe= 1038 fps= 34 q=33.0 size=    9216KiB time=00:00:34.53 bitrate=2186.2kbits/s speed=1.13x elapsed=0:00:30.47    \rframe= 1074 fps= 35 q=33.0 size=    9472KiB time=00:00:35.73 bitrate=2171.5kbits/s speed=1.15x elapsed=0:00:31.04    \rframe= 1103 fps= 35 q=33.0 size=    9728KiB time=00:00:36.70 bitrate=2171.4kbits/s speed=1.16x elapsed=0:00:31.62    \rframe= 1133 fps= 35 q=33.0 size=    9984KiB time=00:00:37.70 bitrate=2169.5kbits/s speed=1.17x elapsed=0:00:32.19    \rframe= 1165 fps= 36 q=33.0 size=   10240KiB time=00:00:38.76 bitrate=2163.9kbits/s speed=1.18x elapsed=0:00:32.77    \rframe= 1199 fps= 36 q=33.0 size=   10496KiB time=00:00:39.90 bitrate=2155.0kbits/s speed= 1.2x elapsed=0:00:33.31    \rframe= 1225 fps= 36 q=33.0 size=   10752KiB time=00:00:40.76 bitrate=2160.6kbits/s speed= 1.2x elapsed=0:00:33.89    \rframe= 1252 fps= 36 q=33.0 size=   11008KiB time=00:00:41.66 bitrate=2164.3kbits/s speed=1.21x elapsed=0:00:34.47    \rframe= 1286 fps= 37 q=33.0 size=   11264KiB time=00:00:42.80 bitrate=2156.0kbits/s speed=1.22x elapsed=0:00:35.05    \rframe= 1314 fps= 37 q=33.0 size=   11520KiB time=00:00:43.73 bitrate=2157.9kbits/s speed=1.23x elapsed=0:00:35.62    \rframe= 1343 fps= 37 q=33.0 size=   11776KiB time=00:00:44.70 bitrate=2158.2kbits/s speed=1.24x elapsed=0:00:36.16    \rframe= 1370 fps= 37 q=33.0 size=   12032KiB time=00:00:45.60 bitrate=2161.5kbits/s speed=1.24x elapsed=0:00:36.69    \rframe= 1388 fps= 37 q=33.0 size=   12288KiB time=00:00:46.20 bitrate=2178.9kbits/s speed=1.24x elapsed=0:00:37.28    \rframe= 1412 fps= 37 q=33.0 size=   12544KiB time=00:00:47.00 bitrate=2186.4kbits/s speed=1.24x elapsed=0:00:37.87    \rframe= 1440 fps= 37 q=33.0 size=   12800KiB time=00:00:47.93 bitrate=2187.6kbits/s speed=1.25x elapsed=0:00:38.44    \rframe= 1466 fps= 38 q=33.0 size=   13056KiB time=00:00:48.80 bitrate=2191.7kbits/s speed=1.25x elapsed=0:00:39.02    \rframe= 1492 fps= 38 q=33.0 size=   13312KiB time=00:00:49.66 bitrate=2195.7kbits/s speed=1.26x elapsed=0:00:39.56    \rframe= 1523 fps= 38 q=33.0 size=   13824KiB time=00:00:50.70 bitrate=2233.7kbits/s speed=1.27x elapsed=0:00:40.07    \rframe= 1543 fps= 38 q=33.0 size=   14080KiB time=00:00:51.36 bitrate=2245.5kbits/s speed=1.26x elapsed=0:00:40.64    \rframe= 1566 fps= 38 q=33.0 size=   14592KiB time=00:00:52.13 bitrate=2292.9kbits/s speed=1.26x elapsed=0:00:41.21    \rframe= 1588 fps= 38 q=33.0 size=   14848KiB time=00:00:52.86 bitrate=2300.8kbits/s speed=1.26x elapsed=0:00:41.79    \rframe= 1616 fps= 38 q=33.0 size=   15360KiB time=00:00:53.80 bitrate=2338.8kbits/s speed=1.27x elapsed=0:00:42.36    \rframe= 1642 fps= 38 q=33.0 size=   15616KiB time=00:00:54.66 bitrate=2340.1kbits/s speed=1.27x elapsed=0:00:42.94    \rframe= 1675 fps= 38 q=33.0 size=   15872KiB time=00:00:55.76 bitrate=2331.6kbits/s speed=1.28x elapsed=0:00:43.52    \rframe= 1706 fps= 39 q=33.0 size=   16384KiB time=00:00:56.80 bitrate=2363.0kbits/s speed=1.29x elapsed=0:00:44.09    \rframe= 1738 fps= 39 q=33.0 size=   16640KiB time=00:00:57.86 bitrate=2355.7kbits/s speed= 1.3x elapsed=0:00:44.67    \rframe= 1769 fps= 39 q=33.0 size=   16896KiB time=00:00:58.90 bitrate=2350.0kbits/s speed= 1.3x elapsed=0:00:45.24    \rframe= 1793 fps= 39 q=33.0 size=   17152KiB time=00:00:59.70 bitrate=2353.6kbits/s speed= 1.3x elapsed=0:00:45.81    \rframe= 1819 fps= 39 q=33.0 size=   17408KiB time=00:01:00.56 bitrate=2354.5kbits/s speed=1.31x elapsed=0:00:46.36    \rframe= 1850 fps= 39 q=33.0 size=   17664KiB time=00:01:01.60 bitrate=2349.1kbits/s speed=1.31x elapsed=0:00:46.89    \rframe= 1879 fps= 40 q=33.0 size=   18176KiB time=00:01:02.56 bitrate=2379.8kbits/s speed=1.32x elapsed=0:00:47.46    \rframe= 1913 fps= 40 q=33.0 size=   18432KiB time=00:01:03.70 bitrate=2370.4kbits/s speed=1.33x elapsed=0:00:48.05    \rframe= 1945 fps= 40 q=33.0 size=   18688KiB time=00:01:04.76 bitrate=2363.8kbits/s speed=1.33x elapsed=0:00:48.63    \rframe= 1974 fps= 40 q=33.0 size=   18944KiB time=00:01:05.73 bitrate=2360.9kbits/s speed=1.34x elapsed=0:00:49.20    \rframe= 2005 fps= 40 q=33.0 size=   19200KiB time=00:01:06.76 bitrate=2355.8kbits/s speed=1.34x elapsed=0:00:49.77    \rframe= 2034 fps= 40 q=33.0 size=   19456KiB time=00:01:07.73 bitrate=2353.1kbits/s speed=1.35x elapsed=0:00:50.34    \rframe= 2057 fps= 40 q=33.0 size=   19712KiB time=00:01:08.50 bitrate=2357.4kbits/s speed=1.35x elapsed=0:00:50.91    \rframe= 2086 fps= 41 q=33.0 size=   19968KiB time=00:01:09.46 bitrate=2354.8kbits/s speed=1.35x elapsed=0:00:51.48    \rframe= 2110 fps= 41 q=33.0 size=   20224KiB time=00:01:10.26 bitrate=2357.8kbits/s speed=1.35x elapsed=0:00:52.00    \rframe= 2140 fps= 41 q=33.0 size=   20736KiB time=00:01:11.26 bitrate=2383.6kbits/s speed=1.36x elapsed=0:00:52.56    \rframe= 2183 fps= 41 q=33.0 size=   20992KiB time=00:01:12.70 bitrate=2365.4kbits/s speed=1.37x elapsed=0:00:53.06    \rframe= 2228 fps= 42 q=33.0 size=   21504KiB time=00:01:14.20 bitrate=2374.1kbits/s speed=1.38x elapsed=0:00:53.63    \rframe= 2266 fps= 42 q=33.0 size=   21760KiB time=00:01:15.46 bitrate=2362.1kbits/s speed=1.39x elapsed=0:00:54.16    \rframe= 2294 fps= 42 q=33.0 size=   22016KiB time=00:01:16.40 bitrate=2360.7kbits/s speed= 1.4x elapsed=0:00:54.76    \rframe= 2340 fps= 42 q=33.0 size=   22528KiB time=00:01:17.93 bitrate=2368.0kbits/s speed=1.41x elapsed=0:00:55.33    \rframe= 2386 fps= 43 q=33.0 size=   22784KiB time=00:01:19.46 bitrate=2348.7kbits/s speed=1.42x elapsed=0:00:55.92    \rframe= 2419 fps= 43 q=33.0 size=   23296KiB time=00:01:20.56 bitrate=2368.7kbits/s speed=1.43x elapsed=0:00:56.46    \rframe= 2474 fps= 43 q=33.0 size=   23808KiB time=00:01:22.40 bitrate=2366.9kbits/s speed=1.45x elapsed=0:00:57.01    \rframe= 2523 fps= 44 q=33.0 size=   24064KiB time=00:01:24.03 bitrate=2345.9kbits/s speed=1.46x elapsed=0:00:57.54    \rframe= 2562 fps= 44 q=33.0 size=   24320KiB time=00:01:25.33 bitrate=2334.7kbits/s speed=1.47x elapsed=0:00:58.05    \rframe= 2604 fps= 44 q=33.0 size=   24832KiB time=00:01:26.73 bitrate=2345.4kbits/s speed=1.48x elapsed=0:00:58.61    \rframe= 2654 fps= 45 q=33.0 size=   25088KiB time=00:01:28.40 bitrate=2324.9kbits/s speed=1.49x elapsed=0:00:59.15    \rframe= 2688 fps= 45 q=33.0 size=   25344KiB time=00:01:29.53 bitrate=2318.9kbits/s speed= 1.5x elapsed=0:00:59.68    \rframe= 2738 fps= 45 q=33.0 size=   25856KiB time=00:01:31.20 bitrate=2322.5kbits/s speed=1.51x elapsed=0:01:00.26    \rframe= 2801 fps= 46 q=33.0 size=   26368KiB time=00:01:33.30 bitrate=2315.2kbits/s speed=1.53x elapsed=0:01:00.79    \rframe= 2821 fps= 46 q=33.0 size=   26368KiB time=00:01:33.96 bitrate=2298.8kbits/s speed=1.53x elapsed=0:01:01.37    \rframe= 2863 fps= 46 q=33.0 size=   26880KiB time=00:01:35.36 bitrate=2309.0kbits/s speed=1.54x elapsed=0:01:01.91    \rframe= 2898 fps= 46 q=33.0 size=   27136KiB time=00:01:36.53 bitrate=2302.8kbits/s speed=1.55x elapsed=0:01:02.46    \rframe= 2936 fps= 47 q=33.0 size=   27648KiB time=00:01:37.80 bitrate=2315.9kbits/s speed=1.55x elapsed=0:01:03.02    \rframe= 2968 fps= 47 q=33.0 size=   28160KiB time=00:01:38.86 bitrate=2333.3kbits/s speed=1.56x elapsed=0:01:03.53    \rframe= 3008 fps= 47 q=33.0 size=   28928KiB time=00:01:40.20 bitrate=2365.1kbits/s speed=1.56x elapsed=0:01:04.11    \rframe= 3029 fps= 47 q=33.0 size=   29184KiB time=00:01:40.90 bitrate=2369.4kbits/s speed=1.56x elapsed=0:01:04.71    \rframe= 3060 fps= 47 q=33.0 size=   29696KiB time=00:01:41.93 bitrate=2386.6kbits/s speed=1.56x elapsed=0:01:05.21    \rframe= 3100 fps= 47 q=33.0 size=   30464KiB time=00:01:43.26 bitrate=2416.7kbits/s speed=1.57x elapsed=0:01:05.78    \rframe= 3135 fps= 47 q=33.0 size=   31232KiB time=00:01:44.43 bitrate=2449.9kbits/s speed=1.58x elapsed=0:01:06.30    \rframe= 3168 fps= 47 q=33.0 size=   31744KiB time=00:01:45.53 bitrate=2464.1kbits/s speed=1.58x elapsed=0:01:06.86    \rframe= 3206 fps= 48 q=33.0 size=   32512KiB time=00:01:46.80 bitrate=2493.8kbits/s speed=1.58x elapsed=0:01:07.44    \rframe= 3261 fps= 48 q=33.0 size=   33024KiB time=00:01:48.63 bitrate=2490.3kbits/s speed= 1.6x elapsed=0:01:07.98    \rframe= 3316 fps= 48 q=33.0 size=   33536KiB time=00:01:50.46 bitrate=2487.0kbits/s speed=1.61x elapsed=0:01:08.48    \rframe= 3371 fps= 49 q=33.0 size=   33792KiB time=00:01:52.30 bitrate=2465.0kbits/s speed=1.63x elapsed=0:01:09.00    \rframe= 3421 fps= 49 q=33.0 size=   34304KiB time=00:01:53.96 bitrate=2465.8kbits/s speed=1.64x elapsed=0:01:09.53    \rframe= 3457 fps= 49 q=33.0 size=   34560KiB time=00:01:55.16 bitrate=2458.3kbits/s speed=1.64x elapsed=0:01:10.11    \rframe= 3505 fps= 50 q=33.0 size=   35072KiB time=00:01:56.76 bitrate=2460.5kbits/s speed=1.65x elapsed=0:01:10.68    \rframe= 3554 fps= 50 q=33.0 size=   35584KiB time=00:01:58.40 bitrate=2462.0kbits/s speed=1.66x elapsed=0:01:11.23    \rframe= 3587 fps= 50 q=33.0 size=   35840KiB time=00:01:59.50 bitrate=2456.9kbits/s speed=1.66x elapsed=0:01:11.80    \rframe= 3628 fps= 50 q=33.0 size=   36096KiB time=00:02:00.86 bitrate=2446.5kbits/s speed=1.67x elapsed=0:01:12.32    \rframe= 3670 fps= 50 q=33.0 size=   36608KiB time=00:02:02.26 bitrate=2452.8kbits/s speed=1.68x elapsed=0:01:12.89    \rframe= 3715 fps= 51 q=33.0 size=   36864KiB time=00:02:03.76 bitrate=2440.0kbits/s speed=1.69x elapsed=0:01:13.41    \rframe= 3762 fps= 51 q=33.0 size=   37376KiB time=00:02:05.33 bitrate=2443.0kbits/s speed=1.69x elapsed=0:01:13.97    \rframe= 3792 fps= 51 q=33.0 size=   37632KiB time=00:02:06.33 bitrate=2440.2kbits/s speed= 1.7x elapsed=0:01:14.50    \rframe= 3851 fps= 51 q=33.0 size=   38144KiB time=00:02:08.30 bitrate=2435.5kbits/s speed=1.71x elapsed=0:01:15.07    \rframe= 3909 fps= 52 q=33.0 size=   38656KiB time=00:02:10.23 bitrate=2431.6kbits/s speed=1.72x elapsed=0:01:15.65    \rframe= 3941 fps= 52 q=33.0 size=   38912KiB time=00:02:11.30 bitrate=2427.8kbits/s speed=1.72x elapsed=0:01:16.21    \rframe= 3981 fps= 52 q=33.0 size=   39424KiB time=00:02:12.63 bitrate=2435.0kbits/s speed=1.73x elapsed=0:01:16.74    \rframe= 4011 fps= 52 q=33.0 size=   39680KiB time=00:02:13.63 bitrate=2432.5kbits/s speed=1.73x elapsed=0:01:17.26    \rframe= 4046 fps= 52 q=33.0 size=   40192KiB time=00:02:14.80 bitrate=2442.5kbits/s speed=1.73x elapsed=0:01:17.81    \rframe= 4090 fps= 52 q=33.0 size=   40704KiB time=00:02:16.26 bitrate=2447.0kbits/s speed=1.74x elapsed=0:01:18.33    \rframe= 4138 fps= 52 q=33.0 size=   41472KiB time=00:02:17.86 bitrate=2464.3kbits/s speed=1.75x elapsed=0:01:18.84    \rframe= 4192 fps= 53 q=33.0 size=   41728KiB time=00:02:19.66 bitrate=2447.5kbits/s speed=1.76x elapsed=0:01:19.40    \rframe= 4212 fps= 53 q=33.0 size=   41984KiB time=00:02:20.33 bitrate=2450.8kbits/s speed=1.75x elapsed=0:01:19.98    \rframe= 4264 fps= 53 q=33.0 size=   42496KiB time=00:02:22.06 bitrate=2450.5kbits/s speed=1.76x elapsed=0:01:20.53    \rframe= 4294 fps= 53 q=33.0 size=   43008KiB time=00:02:23.06 bitrate=2462.6kbits/s speed=1.76x elapsed=0:01:21.10    \rframe= 4322 fps= 53 q=33.0 size=   43264KiB time=00:02:24.00 bitrate=2461.2kbits/s speed=1.76x elapsed=0:01:21.68    \rframe= 4370 fps= 53 q=33.0 size=   43776KiB time=00:02:25.60 bitrate=2463.0kbits/s speed=1.77x elapsed=0:01:22.18    \rframe= 4405 fps= 53 q=33.0 size=   44032KiB time=00:02:26.76 bitrate=2457.7kbits/s speed=1.77x elapsed=0:01:22.77    \rframe= 4455 fps= 53 q=33.0 size=   44544KiB time=00:02:28.43 bitrate=2458.4kbits/s speed=1.78x elapsed=0:01:23.34    \rframe= 4491 fps= 54 q=33.0 size=   44800KiB time=00:02:29.63 bitrate=2452.7kbits/s speed=1.78x elapsed=0:01:23.93    \rframe= 4540 fps= 54 q=33.0 size=   45312KiB time=00:02:31.26 bitrate=2453.9kbits/s speed=1.79x elapsed=0:01:24.50    \rframe= 4569 fps= 54 q=33.0 size=   45824KiB time=00:02:32.23 bitrate=2465.9kbits/s speed=1.79x elapsed=0:01:25.00    \rframe= 4606 fps= 54 q=33.0 size=   46080KiB time=00:02:33.46 bitrate=2459.7kbits/s speed=1.79x elapsed=0:01:25.58    \rframe= 4653 fps= 54 q=33.0 size=   46592KiB time=00:02:35.03 bitrate=2461.9kbits/s speed= 1.8x elapsed=0:01:26.11    \rframe= 4702 fps= 54 q=33.0 size=   47104KiB time=00:02:36.66 bitrate=2463.0kbits/s speed=1.81x elapsed=0:01:26.67    \rframe= 4730 fps= 54 q=33.0 size=   47360KiB time=00:02:37.60 bitrate=2461.8kbits/s speed=1.81x elapsed=0:01:27.24    \rframe= 4766 fps= 54 q=33.0 size=   47872KiB time=00:02:38.80 bitrate=2469.6kbits/s speed=1.81x elapsed=0:01:27.82    \rframe= 4795 fps= 54 q=33.0 size=   48128KiB time=00:02:39.76 bitrate=2467.8kbits/s speed=1.81x elapsed=0:01:28.38    \rframe= 4825 fps= 54 q=33.0 size=   48384KiB time=00:02:40.76 bitrate=2465.4kbits/s speed=1.81x elapsed=0:01:28.95    \rframe= 4862 fps= 54 q=33.0 size=   48640KiB time=00:02:42.00 bitrate=2459.6kbits/s speed=1.81x elapsed=0:01:29.52    \r"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T16:47:30.394Z"
+    },
+    {
+      "started_at": "2026-09-27T16:52:39.283Z",
+      "candidates": 48,
+      "queued": [
+        "1015-chris-brown-brought-a-fan-on-stage-during-his-performance-and-th"
+      ],
+      "errors": [
+        {
+          "source_handle": "complexmusic",
+          "source_url": "https://www.instagram.com/complexmusic/p/DduCYWXFuGC/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DdtuJeukaW7/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        },
+        {
+          "source_handle": "xxl",
+          "source_url": "https://www.instagram.com/xxl/p/DdrWKrblNul/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T16:54:21.249Z"
     }
   ],
   "vip_pending": {

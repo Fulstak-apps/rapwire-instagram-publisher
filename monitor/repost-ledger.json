@@ -21586,48 +21586,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdxEcCiPrsr/",
       "queue_id": "1003-kendrick-showed-love-to-eastside-k-boy-on-his-birthday-the-compt",
       "video": "media/1003-kendrick-showed-love-to-eastside-k-boy-on-his-birthday-the-compt.mp4"
+    },
+    "DdwQRIrvmNg": {
+      "queued_at": "2026-09-27T07:26:04.579Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/DdwQRIrvmNg/",
+      "queue_id": "1004-he-knew-exactly-what-he-was-doing-young-dolph-s-talking-to-my-sc",
+      "video": "media/1004-he-knew-exactly-what-he-was-doing-young-dolph-s-talking-to-my-sc.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -27059,6 +27027,84 @@
         ]
       },
       "finished_at": "2026-09-27T07:08:55.809Z"
+    },
+    {
+      "started_at": "2026-09-27T07:14:06.059Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 39,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T07:14:24.464Z"
+    },
+    {
+      "started_at": "2026-09-27T07:19:32.160Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 39,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T07:20:09.398Z"
+    },
+    {
+      "started_at": "2026-09-27T07:25:16.553Z",
+      "candidates": 41,
+      "queued": [
+        "1004-he-knew-exactly-what-he-was-doing-young-dolph-s-talking-to-my-sc"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 39,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-27T07:26:04.579Z"
     }
   ],
   "vip_pending": {

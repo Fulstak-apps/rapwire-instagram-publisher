@@ -22205,35 +22205,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdyyGOdoeA3/",
       "queue_id": "1034-born-in-new-orleans-in-1982-grew-up-in-one-of-the-toughest-neigh",
       "video": "media/1034-born-in-new-orleans-in-1982-grew-up-in-one-of-the-toughest-neigh.mp4"
+    },
+    "DdzfCxSEiD_": {
+      "queued_at": "2026-09-27T23:05:38.735Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdzfCxSEiD_/",
+      "queue_id": "1035-from-worcester-ma-to-new-hampshire-brought-both-sides-of-his-art",
+      "video": "media/1035-from-worcester-ma-to-new-hampshire-brought-both-sides-of-his-art.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
     {
       "started_at": "2026-09-26T18:18:54.717Z",
       "candidates": 0,
@@ -28770,6 +28751,61 @@
         ]
       },
       "finished_at": "2026-09-27T22:53:25.626Z"
+    },
+    {
+      "started_at": "2026-09-27T22:58:38.683Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T22:59:17.780Z"
+    },
+    {
+      "started_at": "2026-09-27T23:04:25.260Z",
+      "candidates": 48,
+      "queued": [
+        "1035-from-worcester-ma-to-new-hampshire-brought-both-sides-of-his-art"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T23:05:38.735Z"
     }
   ],
   "vip_pending": {

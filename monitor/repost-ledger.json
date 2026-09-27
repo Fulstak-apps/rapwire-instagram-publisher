@@ -16517,6 +16517,18 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzBuJvRp5A/",
       "view_count": 0
+    },
+    "DdzIOoBlJQq": {
+      "seen_at": "2026-09-27T17:25:29.033Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdzIOoBlJQq/",
+      "view_count": 0
+    },
+    "DdzGyuQhnui": {
+      "seen_at": "2026-09-27T17:25:29.033Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdzGyuQhnui/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -21828,22 +21840,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DdxNzqnACeg/",
       "queue_id": "1017-is-this-the-hardest-performance-in-hip-hop-history-minutes-after",
       "video": "media/1017-is-this-the-hardest-performance-in-hip-hop-history-minutes-after.mp4"
+    },
+    "DdzGyuQhnui": {
+      "queued_at": "2026-09-27T17:26:13.118Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdzGyuQhnui/",
+      "queue_id": "1018-king-von-revealed-it-was-never-a-money-thing-for-him-king-von-bo",
+      "video": "media/1018-king-von-revealed-it-was-never-a-money-thing-for-him-king-von-bo.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -27880,6 +27886,31 @@
       },
       "mode": "cached_reserve",
       "finished_at": "2026-09-27T17:18:59.347Z"
+    },
+    {
+      "started_at": "2026-09-27T17:24:35.806Z",
+      "candidates": 48,
+      "queued": [
+        "1018-king-von-revealed-it-was-never-a-money-thing-for-him-king-von-bo"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T17:26:13.118Z"
     }
   ],
   "vip_pending": {

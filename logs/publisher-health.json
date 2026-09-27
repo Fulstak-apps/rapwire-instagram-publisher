@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T02:00:08.870Z",
+  "checked_at": "2026-09-27T02:05:03.367Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-27T02:30:07.825Z",
-  "publications": [
-    {
-      "file": "961-ynw-melly-s-attorney-drew-findling-calls-his-case-a-total-injust.json",
-      "id": "961-ynw-melly-s-attorney-drew-findling-calls-his-case-a-total-injust",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17913528276465951"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

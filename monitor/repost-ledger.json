@@ -16757,6 +16757,24 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/DdzqPKiOWQl/",
       "view_count": 0
+    },
+    "DdztXYEl4Kd": {
+      "seen_at": "2026-09-27T22:53:00.399Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdztXYEl4Kd/",
+      "view_count": 0
+    },
+    "DdzrCVXl1UU": {
+      "seen_at": "2026-09-27T22:53:00.400Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DdzrCVXl1UU/",
+      "view_count": 0
+    },
+    "DdyyGOdoeA3": {
+      "seen_at": "2026-09-27T22:53:00.401Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdyyGOdoeA3/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -22180,35 +22198,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/DdziOY2kkSn/",
       "queue_id": "1033-rakai-walked-away-when-tota-tried-asking-him-how-he-felt-about-r",
       "video": "media/1033-rakai-walked-away-when-tota-tried-asking-him-how-he-felt-about-r.mp4"
+    },
+    "DdyyGOdoeA3": {
+      "queued_at": "2026-09-27T22:53:25.626Z",
+      "source_handle": "hiphop_firstnewsmusic",
+      "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdyyGOdoeA3/",
+      "queue_id": "1034-born-in-new-orleans-in-1982-grew-up-in-one-of-the-toughest-neigh",
+      "video": "media/1034-born-in-new-orleans-in-1982-grew-up-in-one-of-the-toughest-neigh.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
     {
       "started_at": "2026-09-26T18:18:54.717Z",
       "candidates": 0,
@@ -28716,6 +28715,61 @@
         ]
       },
       "finished_at": "2026-09-27T22:41:42.470Z"
+    },
+    {
+      "started_at": "2026-09-27T22:46:56.149Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-27T22:47:26.909Z"
+    },
+    {
+      "started_at": "2026-09-27T22:52:33.571Z",
+      "candidates": 48,
+      "queued": [
+        "1034-born-in-new-orleans-in-1982-grew-up-in-one-of-the-toughest-neigh"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T22:53:25.626Z"
     }
   ],
   "vip_pending": {

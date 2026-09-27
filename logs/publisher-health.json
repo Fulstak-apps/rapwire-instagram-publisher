@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T15:12:20.404Z",
+  "checked_at": "2026-09-27T15:17:05.284Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-27T15:42:20.203Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-27T15:42:10.324Z",
-  "publications": [
-    {
-      "file": "1004-he-knew-exactly-what-he-was-doing-young-dolph-s-talking-to-my-sc.json",
-      "id": "1004-he-knew-exactly-what-he-was-doing-young-dolph-s-talking-to-my-sc",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18128244472691688"
-    },
-    {
-      "file": "1004-he-knew-exactly-what-he-was-doing-young-dolph-s-talking-to-my-sc.json",
-      "id": "1004-he-knew-exactly-what-he-was-doing-young-dolph-s-talking-to-my-sc",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18112893749114825",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -21565,48 +21565,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DdxSnnVt_bm/",
       "queue_id": "1000-bro-why-yall-get-sauce-started-yall-kno-he-ain-t-finna-stop-smh-",
       "video": "media/1000-bro-why-yall-get-sauce-started-yall-kno-he-ain-t-finna-stop-smh-.mp4"
+    },
+    "DdxPxFBg64t": {
+      "queued_at": "2026-09-27T06:45:36.443Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdxPxFBg64t/",
+      "queue_id": "1001-they-said-fans-starving-while-kendrick-lamar-kendricklamar-in-th",
+      "video": "media/1001-they-said-fans-starving-while-kendrick-lamar-kendricklamar-in-th.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -26955,6 +26923,84 @@
         ]
       },
       "finished_at": "2026-09-27T06:27:11.398Z"
+    },
+    {
+      "started_at": "2026-09-27T06:33:22.436Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 37,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T06:33:43.324Z"
+    },
+    {
+      "started_at": "2026-09-27T06:38:51.262Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 37,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T06:39:33.061Z"
+    },
+    {
+      "started_at": "2026-09-27T06:44:40.092Z",
+      "candidates": 48,
+      "queued": [
+        "1001-they-said-fans-starving-while-kendrick-lamar-kendricklamar-in-th"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 37,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T06:45:36.443Z"
     }
   ],
   "vip_pending": {

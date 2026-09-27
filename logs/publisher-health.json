@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T15:47:57.598Z",
+  "checked_at": "2026-09-27T15:52:33.603Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-27T16:17:57.317Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-27T16:17:48.656Z",
-  "publications": [
-    {
-      "file": "1005-cr-p-mac-goes-viral-after-he-was-seen-turnin-up-at-a-rave-cr-p-m.json",
-      "id": "1005-cr-p-mac-goes-viral-after-he-was-seen-turnin-up-at-a-rave-cr-p-m",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17955976629249769"
-    },
-    {
-      "file": "1005-cr-p-mac-goes-viral-after-he-was-seen-turnin-up-at-a-rave-cr-p-m.json",
-      "id": "1005-cr-p-mac-goes-viral-after-he-was-seen-turnin-up-at-a-rave-cr-p-m",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18103878256990226",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

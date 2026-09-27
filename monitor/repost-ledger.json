@@ -16361,6 +16361,12 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddxwoq0uD4d/",
       "view_count": 0
+    },
+    "DdxyGC5jQay": {
+      "seen_at": "2026-09-27T05:05:35.641Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdxyGC5jQay/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -21525,22 +21531,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdxKSWgR_Qs/",
       "queue_id": "996-og3three-still-showing-love-even-while-incarcerated-og3three-is-",
       "video": "media/996-og3three-still-showing-love-even-while-incarcerated-og3three-is-.mp4"
+    },
+    "DdxHrcBhPCi": {
+      "queued_at": "2026-09-27T05:07:37.967Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdxHrcBhPCi/",
+      "queue_id": "997-chris-brown-brought-a-fan-on-stage-during-his-performance-and-th",
+      "video": "media/997-chris-brown-brought-a-fan-on-stage-during-his-performance-and-th.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -26692,6 +26692,31 @@
         ]
       },
       "finished_at": "2026-09-27T04:59:27.450Z"
+    },
+    {
+      "started_at": "2026-09-27T05:04:45.208Z",
+      "candidates": 48,
+      "queued": [
+        "997-chris-brown-brought-a-fan-on-stage-during-his-performance-and-th"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 35,
+        "needed": 13
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T05:07:37.967Z"
     }
   ],
   "vip_pending": {

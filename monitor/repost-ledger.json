@@ -16667,6 +16667,18 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/DdzXCMMjxWf/",
       "view_count": 0
+    },
+    "DdzjQ-uIp18": {
+      "seen_at": "2026-09-27T21:15:48.483Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/p/DdzjQ-uIp18/",
+      "view_count": 0
+    },
+    "DdziN9NsmDh": {
+      "seen_at": "2026-09-27T21:15:48.483Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdziN9NsmDh/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -22062,22 +22074,16 @@
       "source_url": "https://www.instagram.com/records/reel/DdzfQkqv3VK/",
       "queue_id": "1029-ye-and-kim-brought-north-flowers-after-she-headlined-her-first-s",
       "video": "media/1029-ye-and-kim-brought-north-flowers-after-she-headlined-her-first-s.mp4"
+    },
+    "DdziN9NsmDh": {
+      "queued_at": "2026-09-27T21:17:00.227Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DdziN9NsmDh/",
+      "queue_id": "1030-me-too-i-m-single-like-nocap-but-here-s-the-rules",
+      "video": "media/1030-me-too-i-m-single-like-nocap-but-here-s-the-rules.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
     {
       "started_at": "2026-09-26T18:18:54.717Z",
       "candidates": 0,
@@ -28396,6 +28402,38 @@
         ]
       },
       "finished_at": "2026-09-27T21:10:07.915Z"
+    },
+    {
+      "started_at": "2026-09-27T21:15:23.710Z",
+      "candidates": 48,
+      "queued": [
+        "1030-me-too-i-m-single-like-nocap-but-here-s-the-rules"
+      ],
+      "errors": [
+        {
+          "source_handle": "raplisted_",
+          "source_url": "https://www.instagram.com/raplisted_/reel/Dde8APsopaI/",
+          "stage": "cached_reserve",
+          "error": "Caption needs editorial review under the no-AI-caption rule"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T21:17:00.228Z"
     }
   ],
   "vip_pending": {

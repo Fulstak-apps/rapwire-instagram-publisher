@@ -16637,6 +16637,12 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/DdzY65VMCXJ/",
       "view_count": 0
+    },
+    "DdzdJnKhFp9": {
+      "seen_at": "2026-09-27T20:24:38.630Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdzdJnKhFp9/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -22011,61 +22017,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DdzY65VMCXJ/",
       "queue_id": "1026-the-recovered-snapchat-files-are-raising-serious-questions-about",
       "video": "media/1026-the-recovered-snapchat-files-are-raising-serious-questions-about.mp4"
+    },
+    "DdzdJnKhFp9": {
+      "queued_at": "2026-09-27T20:24:58.779Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DdzdJnKhFp9/",
+      "queue_id": "1027-when-a-reporter-questioned-lil-durk-lildurk-on-his-beef-with-nba",
+      "video": "media/1027-when-a-reporter-questioned-lil-durk-lildurk-on-his-beef-with-nba.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
     {
       "started_at": "2026-09-26T18:18:54.717Z",
       "candidates": 0,
@@ -28248,6 +28209,87 @@
         ]
       },
       "finished_at": "2026-09-27T20:01:22.813Z"
+    },
+    {
+      "started_at": "2026-09-27T20:07:21.589Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-27T20:07:24.469Z"
+    },
+    {
+      "started_at": "2026-09-27T20:12:31.137Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-27T20:12:34.236Z"
+    },
+    {
+      "started_at": "2026-09-27T20:17:40.745Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/DdzR6hmsjCf/",
+          "stage": "queue",
+          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T20:18:47.777Z"
+    },
+    {
+      "started_at": "2026-09-27T20:23:55.175Z",
+      "candidates": 48,
+      "queued": [
+        "1027-when-a-reporter-questioned-lil-durk-lildurk-on-his-beef-with-nba"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T20:24:58.779Z"
     }
   ],
   "vip_pending": {

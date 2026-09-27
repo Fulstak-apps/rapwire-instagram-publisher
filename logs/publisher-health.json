@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T05:34:29.586Z",
+  "checked_at": "2026-09-27T05:39:31.670Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 28,
-    "instagram_remaining": 20,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-27T06:04:28.769Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,24 +43,23 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-27T05:19:29.597Z",
-    "usage": 28,
+    "checked_at": "2026-09-27T05:39:23.765Z",
+    "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-27T05:34:29.597Z",
+    "next_check_at": "2026-09-27T05:54:23.765Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-27T05:29:23.127Z",
+  "threads_next_eligible_at": "2026-09-27T06:09:31.480Z",
   "publications": [
     {
-      "file": "962-ynwmelly-defense-attorney-drew-findling-is-speaking-out-about-th.json",
-      "id": "962-ynwmelly-defense-attorney-drew-findling-is-speaking-out-about-th",
-      "platform": "instagram",
+      "file": "967-i-m-crying-bro-lured-the-cop-away-from-the-bike-just-so-he-could.json",
+      "id": "967-i-m-crying-bro-lured-the-cop-away-from-the-bike-just-so-he-could",
+      "platform": "threads",
       "status": "published",
-      "media_id": "17932374006142790",
-      "content_type": "video"
+      "media_id": "18177042625435379"
     }
   ],
   "failures": [],

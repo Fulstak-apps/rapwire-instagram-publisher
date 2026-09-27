@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
@@ -279,11 +280,14 @@ async function cleanupPublishedMedia(item, itemPath) {
     || !item.instagram_media_id || !item.threads_media_id || !item.video) return false;
   const mediaPath = path.resolve(root, item.video);
   try {
-    await fs.rm(mediaPath, { force: true });
+    const trash = path.join(os.homedir(), ".Trash");
+    await fs.mkdir(trash, { recursive: true });
+    const archivedName = `RapWire-${Date.now()}-${path.basename(mediaPath)}`;
+    await fs.rename(mediaPath, path.join(trash, archivedName));
     item.media_cleanup_at = new Date().toISOString();
-    item.media_cleanup_status = 'deleted_after_confirmed_publication';
+    item.media_cleanup_status = 'moved_to_trash_after_confirmed_publication';
     await save(itemPath, item);
-    console.log(`Deleted published media ${item.video}`);
+    console.log(`Moved published media to Trash: ${item.video}`);
     return true;
   } catch (error) {
     item.media_cleanup_status = 'pending';

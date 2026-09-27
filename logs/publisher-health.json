@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T08:31:22.328Z",
+  "checked_at": "2026-09-27T08:36:21.179Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 32,
-    "instagram_remaining": 16,
+    "instagram_usage": 33,
+    "instagram_remaining": 15,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-27T09:01:22.189Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-27T08:26:06.524Z",
-    "usage": 32,
+    "usage": 33,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-27T08:41:06.524Z",
@@ -52,15 +52,14 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-27T08:31:03.326Z",
+  "threads_next_eligible_at": "2026-09-27T09:06:20.972Z",
   "publications": [
     {
       "file": "1003-kendrick-showed-love-to-eastside-k-boy-on-his-birthday-the-compt.json",
       "id": "1003-kendrick-showed-love-to-eastside-k-boy-on-his-birthday-the-compt",
-      "platform": "instagram",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18150538114536730",
-      "content_type": "video"
+      "media_id": "17915905866454329"
     }
   ],
   "failures": [],

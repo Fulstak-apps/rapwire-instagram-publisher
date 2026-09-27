@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-27T07:55:55.477Z",
+  "checked_at": "2026-09-27T08:01:03.525Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 31,
-    "instagram_remaining": 17,
+    "instagram_usage": 32,
+    "instagram_remaining": 16,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-27T08:25:55.337Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-27T07:55:47.295Z",
-    "usage": 31,
+    "usage": 32,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-27T08:10:47.295Z",
@@ -52,15 +52,14 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-27T07:55:37.576Z",
+  "threads_next_eligible_at": "2026-09-27T08:31:03.326Z",
   "publications": [
     {
       "file": "1002-memo600-says-king-von-never-signed-a-contract-with-otf-despite-m.json",
       "id": "1002-memo600-says-king-von-never-signed-a-contract-with-otf-despite-m",
-      "platform": "instagram",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18370247359213380",
-      "content_type": "video"
+      "media_id": "18106942172219756"
     }
   ],
   "failures": [],

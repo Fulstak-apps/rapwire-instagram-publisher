@@ -21593,48 +21593,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/DdwQRIrvmNg/",
       "queue_id": "1004-he-knew-exactly-what-he-was-doing-young-dolph-s-talking-to-my-sc",
       "video": "media/1004-he-knew-exactly-what-he-was-doing-young-dolph-s-talking-to-my-sc.mp4"
+    },
+    "DdxlceVshfD": {
+      "queued_at": "2026-09-27T07:43:11.679Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/DdxlceVshfD/",
+      "queue_id": "1005-cr-p-mac-goes-viral-after-he-was-seen-turnin-up-at-a-rave-cr-p-m",
+      "video": "media/1005-cr-p-mac-goes-viral-after-he-was-seen-turnin-up-at-a-rave-cr-p-m.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -27105,6 +27073,77 @@
         ]
       },
       "finished_at": "2026-09-27T07:26:04.579Z"
+    },
+    {
+      "started_at": "2026-09-27T07:31:25.224Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 39,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T07:31:44.270Z"
+    },
+    {
+      "started_at": "2026-09-27T07:36:51.247Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 39,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T07:37:17.542Z"
+    },
+    {
+      "started_at": "2026-09-27T07:42:24.893Z",
+      "candidates": 48,
+      "queued": [
+        "1005-cr-p-mac-goes-viral-after-he-was-seen-turnin-up-at-a-rave-cr-p-m"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 39,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T07:43:11.679Z"
     }
   ],
   "vip_pending": {

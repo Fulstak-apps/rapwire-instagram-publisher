@@ -21614,48 +21614,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Ddv07_RuAyW/",
       "queue_id": "1007-there-s-something-about-droppin-jewels-that-still-hits-every-tim",
       "video": "media/1007-there-s-something-about-droppin-jewels-that-still-hits-every-tim.mp4"
+    },
+    "DdxPPqvgrH4": {
+      "queued_at": "2026-09-27T08:24:40.907Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DdxPPqvgrH4/",
+      "queue_id": "1008-sauce-walka-finna-host-the-first-punch-a-thon-he-got-open-auditi",
+      "video": "media/1008-sauce-walka-finna-host-the-first-punch-a-thon-he-got-open-auditi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
-    {
-      "started_at": "2026-09-26T18:13:44.220Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:13:48.189Z"
-    },
     {
       "started_at": "2026-09-26T18:13:44.220Z",
       "candidates": 0,
@@ -27209,6 +27177,77 @@
         ]
       },
       "finished_at": "2026-09-27T08:06:42.957Z"
+    },
+    {
+      "started_at": "2026-09-27T08:12:19.983Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-27T08:12:42.467Z"
+    },
+    {
+      "started_at": "2026-09-27T08:17:48.729Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-27T08:18:14.653Z"
+    },
+    {
+      "started_at": "2026-09-27T08:23:22.772Z",
+      "candidates": 48,
+      "queued": [
+        "1008-sauce-walka-finna-host-the-first-punch-a-thon-he-got-open-auditi"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-27T08:24:40.907Z"
     }
   ],
   "vip_pending": {

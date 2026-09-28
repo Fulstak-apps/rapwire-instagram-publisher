@@ -24,10 +24,18 @@ for queue_file in QUEUE.glob("*.json"):
     if not (item.get("status") == "published"
             and item.get("instagram_media_id")
             and item.get("threads_media_id")):
-        protected_paths.update(item.get(field) for field in ("video", "story_video", "story") if isinstance(item.get(field), str))
-        pending_match = re.search(r"/(?:reel|p)/([A-Za-z0-9_-]+)", str(item.get("source_url", "")))
-        if pending_match:
-            protected_shortcodes.add(pending_match.group(1))
+        # Keep only assets that can be published or reconciled on the next
+        # run.  A paused/review record is deliberately non-publishable and
+        # its capture can always be re-fetched if an editor reopens it.  The
+        # old blanket protection kept every historical review capture forever,
+        # eventually filling the collector disk and preventing new videos
+        # from being rendered.
+        active_statuses = {"ready", "processing", "media_refresh_required"}
+        if item.get("status") in active_statuses:
+            protected_paths.update(item.get(field) for field in ("video", "story_video", "story") if isinstance(item.get(field), str))
+            pending_match = re.search(r"/(?:reel|p)/([A-Za-z0-9_-]+)", str(item.get("source_url", "")))
+            if pending_match:
+                protected_shortcodes.add(pending_match.group(1))
         continue
     match = re.search(r"/(?:reel|p)/([A-Za-z0-9_-]+)", str(item.get("source_url", "")))
     if match:
@@ -42,11 +50,8 @@ for queue_file in QUEUE.glob("*.json"):
 
 paths -= protected_paths
 published_shortcodes -= protected_shortcodes
-if not paths:
-    print("Published media cleanup: no confirmed media to remove.")
-    raise SystemExit(0)
 
-if "--local-only" not in sys.argv:
+if paths and "--local-only" not in sys.argv:
     result = subprocess.run(
         ["git", "rm", "--cached", "--sparse", "--ignore-unmatch", "--", *sorted(paths)],
         cwd=ROOT, text=True, capture_output=True,
@@ -60,6 +65,31 @@ if mirror_dir.is_dir():
     for candidate in mirror_dir.iterdir():
         if any(candidate.name == code or candidate.name.startswith(f"{code}-") or candidate.name.startswith(f"{code}.") for code in published_shortcodes):
             paths.add(str(candidate.relative_to(ROOT)))
+
+    # Captures that never reached the queue (or were held for review) used to
+    # be permanent. They are cache entries, not the source of record: the
+    # authenticated collector can fetch them again if needed. Once they have
+    # been idle for a day and are not backing an active item, send them to
+    # Trash. This prevents abandoned downloads from silently filling the disk
+    # and stopping the next collector/render pass.
+    stale_before = time.time() - 24 * 60 * 60
+    for candidate in mirror_dir.iterdir():
+        if not candidate.is_file() or candidate.stat().st_mtime >= stale_before:
+            continue
+        name = candidate.name
+        if name.endswith("-source.mp4"):
+            code = name[:-len("-source.mp4")]
+        elif name.endswith("-capture-diagnostic.json"):
+            code = name[:-len("-capture-diagnostic.json")]
+        else:
+            code = candidate.stem
+        if code and code in protected_shortcodes:
+            continue
+        paths.add(str(candidate.relative_to(ROOT)))
+
+if not paths:
+    print("Published media cleanup: no confirmed or stale cache files to remove.")
+    raise SystemExit(0)
 
 # Remove materialized copies only after both feed publications have durable IDs.
 # ``--purge`` reclaims disk immediately; the default keeps the previous

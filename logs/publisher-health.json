@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T22:28:08.831Z",
+  "checked_at": "2026-09-28T22:33:18.557Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-28T22:18:01.162Z",
-    "usage": 30,
+    "checked_at": "2026-09-28T22:33:11.601Z",
+    "usage": 31,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-28T22:33:01.162Z",
+    "next_check_at": "2026-09-28T22:48:11.601Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T22:27:56.547Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T23:03:17.769Z",
+  "publications": [
+    {
+      "file": "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an.json",
+      "id": "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18125656948879130"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

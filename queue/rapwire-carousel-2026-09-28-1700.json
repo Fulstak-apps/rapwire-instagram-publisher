@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-09-28-1700",
-  "status": "ready",
+  "status": "paused",
   "ai_generated_art": true,
   "created_at": "2026-09-28T17:00:00-07:00",
   "publish_after": "2026-09-29T00:00:00Z",
@@ -128,5 +128,6 @@
   },
   "threads_status": "pending",
   "threads_media_id": null,
-  "instagram_media_id": null
+  "instagram_media_id": null,
+  "pause_reason": "Carousel contract blocked: generic carousel framing is not allowed"
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T05:38:31.847Z",
+  "checked_at": "2026-09-28T05:43:39.637Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-28T05:33:26.034Z",
-    "usage": 30,
+    "usage": 31,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-28T05:48:26.034Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T05:38:18.570Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T06:13:39.399Z",
+  "publications": [
+    {
+      "file": "1027-when-a-reporter-questioned-lil-durk-lildurk-on-his-beef-with-nba.json",
+      "id": "1027-when-a-reporter-questioned-lil-durk-lildurk-on-his-beef-with-nba",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18094873787531980"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

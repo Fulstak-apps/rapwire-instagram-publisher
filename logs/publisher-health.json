@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T20:06:29.944Z",
+  "checked_at": "2026-09-28T20:11:38.639Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-28T20:01:18.666Z",
-    "usage": 30,
+    "usage": 31,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-28T20:16:18.666Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T20:06:07.871Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T20:41:38.040Z",
+  "publications": [
+    {
+      "file": "1040-rayasianboy-is-speaking-out-amid-the-ongoing-situation-involving.json",
+      "id": "1040-rayasianboy-is-speaking-out-amid-the-ongoing-situation-involving",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18430361368144972"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

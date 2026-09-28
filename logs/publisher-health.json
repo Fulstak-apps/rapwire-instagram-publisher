@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T22:49:09.550Z",
+  "checked_at": "2026-09-28T22:54:04.152Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 28,
-    "instagram_remaining": 20,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-28T23:19:09.405Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T23:03:17.769Z",
-  "publications": [
-    {
-      "file": "1043-shoreline-mafia-joins-on-tour-and-had-the-crowd-going-crazy-in-f.json",
-      "id": "1043-shoreline-mafia-joins-on-tour-and-had-the-crowd-going-crazy-in-f",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18490921363105090",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

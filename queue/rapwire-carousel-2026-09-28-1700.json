@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-09-28-1700",
-  "status": "paused",
+  "status": "ready",
   "ai_generated_art": true,
   "created_at": "2026-09-28T17:00:00-07:00",
   "publish_after": "2026-09-29T00:00:00Z",
@@ -62,49 +62,39 @@
   "media_urls": [],
   "slide_editorial_copy": [
     {
+      "slide": 1,
       "headline": "DRAKE'S FOMO\nFILM ARRIVES",
       "deck": "The Toronto star premiered a “not-so-short film”\nwith new visuals, songs and a 2027 tour tease.",
-      "sources": [
-        "https://pitchfork.com/story/drake-premieres-short-film-fomo-fear-of-missing-out/",
-        "https://ca.rollingstone.com/music/drake-fear-of-missing-out-not-so-short-film/"
-      ],
-      "caption": "1) Drake turned his cryptic FOMO rollout into a “not-so-short film,” premiered in Toronto on Sept. 15. The visual project folds together new music and a surreal summer story, and he also teased a 2027 tour. It matters because Drake is still treating the music-video format as a headline event. @champagnepapi"
+      "text_on_art": true,
+      "top_banner": false
     },
     {
+      "slide": 2,
       "headline": "SWAE LEE\nADDS EUROPE DATES",
       "deck": "The SAME DIFFERENCE headline run gets nine more\nEuropean shows for its second leg this fall.",
-      "sources": [
-        "https://www.broadwayworld.com/bwwmusic/article/Swae-Lee-to-Announce-Second-Leg-of-SAME-DIFFERENCE-European-Tour-20260923",
-        "https://www.rttnews.com/list/rap-music.aspx"
-      ],
-      "caption": "2) Swae Lee added nine European dates to the second leg of his SAME DIFFERENCE headline tour, with tickets going on sale Sept. 25. The new run extends his solo era across more cities this fall and gives fans a larger live window into the project. @swaelee"
+      "text_on_art": true,
+      "top_banner": false
     },
     {
+      "slide": 3,
       "headline": "JHENÉ AIKO\nREACHES NO. 1",
       "deck": "Westside Whimsy gives Aiko her first Billboard 200\ntop spot, with Kendrick Lamar on “So Good.”",
-      "sources": [
-        "https://www.complex.com/music/a/markelibert/jhene-aiko-westside-whimsy-billboard-200-number-one",
-        "https://currently.att.yahoo.com/att/kendrick-lamar-scores-another-no-183000097.html"
-      ],
-      "caption": "3) Jhené Aiko earned the first Billboard 200 No. 1 album of her career with Westside Whimsy, nearly 13 years after her chart debut. The Los Angeles-centered project includes Kendrick Lamar on “So Good,” which also opened a new chart chapter for the collaboration. @jheneaiko @kendricklamar"
+      "text_on_art": true,
+      "top_banner": false
     },
     {
+      "slide": 4,
       "headline": "00PIUM TAKES\nCOMPLEXCON",
       "deck": "Playboi Carti’s 10th-anniversary takeover brings\nOpium energy to Los Angeles on Oct. 3–4.",
-      "sources": [
-        "https://www.complexcon.com/",
-        "https://www.complex.com/music/a/antonio-johri/complexcon-2026-music-guide"
-      ],
-      "caption": "4) Playboi Carti and 00pium are taking over the music side of ComplexCon’s 10th anniversary in Los Angeles on Oct. 3–4. Carti is an artistic director, Ken Carson headlines Saturday, and Carti closes Sunday at Crypto.com Arena. @playboicarti @kencarson"
+      "text_on_art": true,
+      "top_banner": false
     },
     {
+      "slide": 5,
       "headline": "DANNY BROWN\nGOES FULL ATROCITY",
       "deck": "The Detroit MC will perform his 2016 classic front-to-back\nand release a 10th-anniversary edition this fall.",
-      "sources": [
-        "https://pitchfork.com/story/danny-brown-to-tour-atrocity-exhibition-for-10th-anniversary/",
-        "https://www.spinmagazine.com/2026/09/danny-brown-atrocity-exhibition-reissue-shows/"
-      ],
-      "caption": "5) Danny Brown announced four Atrocity Exhibition 10th-anniversary shows in Los Angeles, Chicago, New York and Austin, where he will perform the 2016 album front-to-back for the first time. A special-edition vinyl and CD reissue with new artwork and instrumental versions is also due this fall. @DannyBrown"
+      "text_on_art": true,
+      "top_banner": false
     }
   ],
   "brand_logo": {
@@ -138,6 +128,5 @@
   },
   "threads_status": "pending",
   "threads_media_id": null,
-  "instagram_media_id": null,
-  "pause_reason": "Carousel contract blocked: generic carousel framing is not allowed; slide copy 1 has an invalid slide number; slide 1 must confirm headline and blurb were rendered on artwork; slide 1 must confirm no top banner was used; slide copy 2 has an invalid slide number; slide 2 must confirm headline and blurb were rendered on artwork; slide 2 must confirm no top banner was used; slide copy 3 has an invalid slide number; slide 3 must confirm headline and blurb were rendered on artwork; slide 3 must confirm no top banner was used; slide copy 4 has an invalid slide number; slide 4 must confirm headline and blurb were rendered on artwork; slide 4 must confirm no top banner was used; slide copy 5 has an invalid slide number; slide 5 must confirm headline and blurb were rendered on artwork; slide 5 must confirm no top banner was used"
+  "instagram_media_id": null
 }

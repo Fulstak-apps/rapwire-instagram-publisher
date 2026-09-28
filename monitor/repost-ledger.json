@@ -17237,6 +17237,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/Dd135qyOkol/",
       "view_count": 0
+    },
+    "Dd17w54TrKC": {
+      "seen_at": "2026-09-28T19:30:21.043Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd17w54TrKC/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -22807,32 +22813,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Dd135qyOkol/",
       "queue_id": "1054-lil-baby-was-spotted-riding-a-motorcycle-by-himself-in-miami-whi",
       "video": "media/1054-lil-baby-was-spotted-riding-a-motorcycle-by-himself-in-miami-whi.mp4"
+    },
+    "Dd1TmteuU-E": {
+      "queued_at": "2026-09-28T19:31:11.574Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dd1TmteuU-E/",
+      "queue_id": "1055-cardi-b-s-mom-kept-her-old-room-exactly-the-same-in-case-she-eve",
+      "video": "media/1055-cardi-b-s-mom-kept-her-old-room-exactly-the-same-in-case-she-eve.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T06:55:09.197Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 34,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T06:55:35.296Z"
-    },
     {
       "started_at": "2026-09-28T06:55:09.197Z",
       "candidates": 48,
@@ -30512,6 +30502,38 @@
         ]
       },
       "finished_at": "2026-09-28T19:24:05.882Z"
+    },
+    {
+      "started_at": "2026-09-28T19:29:27.349Z",
+      "candidates": 41,
+      "queued": [
+        "1055-cardi-b-s-mom-kept-her-old-room-exactly-the-same-in-case-she-eve"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd17w54TrKC/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-28T19:31:11.574Z"
     }
   ],
   "vip_pending": {

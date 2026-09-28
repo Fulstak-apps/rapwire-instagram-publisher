@@ -5,6 +5,7 @@ import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
 import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, THREADS_PUBLISH_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
 import { fitInstagramCaption } from "./instagram-caption.mjs";
+import { carouselEditorialIssues } from "./carousel-editorial-contract.mjs";
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 let instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -812,6 +813,7 @@ const readyEditorialCarousel = queueRecords.some(({ item }) => item.status === "
   && item.text_overflow_checked === true && item.rendered_body_text === item.body
   && item.content_claim_checked === true && item.editorial_substance_checked === true
   && item.source_policy_checked === true && item.rap_relevance_checked === true
+  && carouselEditorialIssues(item).length === 0
   && !(Date.parse(item.instagram_retry_at || "") > Date.now())
   && (!item.publish_after || Date.parse(item.publish_after) <= Date.now()));
 const pendingStory = queueRecords.some(({ item }) => item.status === "published"
@@ -912,6 +914,15 @@ for (const file of files) {
     continue;
   }
   const isVideoItem = item.content_type === "video";
+  const carouselIssues = isVideoItem ? [] : carouselEditorialIssues(item);
+  if (item.status === "ready" && carouselIssues.length) {
+    item.status = "paused";
+    item.pause_reason = `Carousel contract blocked: ${carouselIssues.join("; ")}`;
+    await save(itemPath, item);
+    await logAttempt({ file, id: item.id, platform: "publisher", status: "skipped", reason: "carousel_editorial_contract", error: carouselIssues.join("; ") });
+    console.error(`Skipped ${file}: ${item.pause_reason}`);
+    continue;
+  }
   if (!isVideoItem && (carouselSlides(item).length < 1 || carouselSlides(item).length > 10)) {
     console.error(`Skipped ${file}: image posts require 1-10 complete, readable images`);
     await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "invalid_image_slide_count" });

@@ -1,6 +1,7 @@
 import {validMediaRepost} from "./repost-media-policy.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
+import {carouselEditorialIssues} from "./carousel-editorial-contract.mjs";
 
 const dir = "queue";
 for (const file of await fs.readdir(dir)) {
@@ -17,6 +18,14 @@ for (const file of await fs.readdir(dir)) {
     continue;
   }
   if (item.status === "ready" && validMediaRepost(item)) continue;
+  const editorialIssues = carouselEditorialIssues(item);
+  if (item.status === "ready" && editorialIssues.length) {
+    item.status = "paused";
+    item.pause_reason = `Carousel contract blocked: ${editorialIssues.join("; ")}`;
+    await fs.writeFile(filePath, `${JSON.stringify(item, null, 2)}\n`);
+    console.log(`Blocked incomplete editorial carousel: ${file}`);
+    continue;
+  }
   const approvedVideo = item.content_type === "video"
     && item.layout_template === "rapwire-video-grid-safe-v1"
     && item.visual_asset_type === "source_video"

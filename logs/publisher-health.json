@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T05:43:39.637Z",
+  "checked_at": "2026-09-28T05:48:35.647Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-28T05:33:25.857Z",
-    "usage": 30,
+    "checked_at": "2026-09-28T05:48:35.094Z",
+    "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-28T05:48:25.857Z",
+    "next_check_at": "2026-09-28T06:03:35.094Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 30,
-    "instagram_remaining": 18,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-28T05:48:25.876Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-28T05:33:26.034Z",
-    "usage": 31,
+    "checked_at": "2026-09-28T05:48:35.038Z",
+    "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-28T05:48:26.034Z",
+    "next_check_at": "2026-09-28T06:03:35.038Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T06:13:39.399Z",
-  "publications": [
-    {
-      "file": "1027-when-a-reporter-questioned-lil-durk-lildurk-on-his-beef-with-nba.json",
-      "id": "1027-when-a-reporter-questioned-lil-durk-lildurk-on-his-beef-with-nba",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18094873787531980"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

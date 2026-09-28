@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T00:30:28.506Z",
+  "checked_at": "2026-09-28T00:35:15.125Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-28T01:00:28.367Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,26 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-28T00:20:13.704Z",
+    "checked_at": "2026-09-28T00:35:15.050Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-28T00:35:13.704Z",
+    "next_check_at": "2026-09-28T00:50:15.050Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T00:55:27.329Z",
-  "publications": [
-    {
-      "file": "1019-cardi-b-stepped-out-ready-for-another-day-of-milan-fashion-week-.json",
-      "id": "1019-cardi-b-stepped-out-ready-for-another-day-of-milan-fashion-week-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18155414107520416",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

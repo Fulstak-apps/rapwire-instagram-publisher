@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T20:47:00.457Z",
+  "checked_at": "2026-09-28T20:51:58.759Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-28T20:36:44.782Z",
-    "usage": 29,
+    "checked_at": "2026-09-28T20:51:57.730Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-28T20:51:44.782Z",
+    "next_check_at": "2026-09-28T21:06:57.730Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-28T20:51:47.371Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T21:17:00.227Z",
-  "publications": [
-    {
-      "file": "1041-ralfy-the-plug-just-restocked-the-drakeo-the-ruler-skateboards-l.json",
-      "id": "1041-ralfy-the-plug-just-restocked-the-drakeo-the-ruler-skateboards-l",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18128676313658259"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

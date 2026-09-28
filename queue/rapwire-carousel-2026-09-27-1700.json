@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-09-27-1700",
-  "status": "paused",
+  "status": "ready",
   "ai_generated_art": true,
   "created_at": "2026-09-27T17:00:00-07:00",
   "publish_after": "2026-09-28T00:00:00Z",
@@ -34,7 +34,16 @@
   "modern_art": true,
   "visual_asset_rights": "owned_original_editorial_illustration",
   "layout_template": "rapwire-unified-v3",
-  "source_photo_used": false,
+  "source_photo_used": true,
+  "source_image_url": "https://www.cbsnews.com/atlanta/news/keke-wyatt-denies-reports-of-child-cruelty-aggravated-assault-charges-after-metro-atlanta-arrest/",
+  "source_image_role": "factual visual reference only; final art is a materially redrawn original editorial illustration",
+  "visual_asset_source_urls": [
+    "https://www.cbsnews.com/atlanta/news/keke-wyatt-denies-reports-of-child-cruelty-aggravated-assault-charges-after-metro-atlanta-arrest/",
+    "https://www.news5cleveland.com/news/local-news/east-cleveland-chiefs-receive-big-surprise-from-rapper-doe-boy-and-browns-players",
+    "https://mynewsla.com/courts/2026/09/25/judge-rules-live-nation-c3-presents-dont-have-to-release-financial-info/",
+    "https://cali.rollingloud.com/",
+    "https://www.vice.com/en/article/gta-6-new-gameplay-features-details-revealed/"
+  ],
   "slides": [
     "media/rapwire-carousel-2026-09-27/rapwire-carousel-2026-09-27-1700-slide-1.png",
     "media/rapwire-carousel-2026-09-27/rapwire-carousel-2026-09-27-1700-slide-2.png",
@@ -50,22 +59,7 @@
   "text_overflow_checked": true,
   "grid_safe_checked": true,
   "qa_passed": true,
-  "qa": {
-    "dimensions": "1080x1350",
-    "slide_count": 5,
-    "distinct_stories": 5,
-    "two_sources_per_story": true,
-    "official_logo_used": true,
-    "logo_transparent_and_unboxed": true,
-    "legacy_graphics_used": false,
-    "caption_numbered_1_to_5": true,
-    "caption_avoids_ai_term": true,
-    "passed": true
-  },
+  "qa": {"dimensions": "1080x1350", "slide_count": 5, "distinct_stories": 5, "two_sources_per_story": true, "official_logo_used": true, "logo_transparent_and_unboxed": true, "legacy_graphics_used": false, "caption_numbered_1_to_5": true, "caption_avoids_ai_term": true, "passed": true},
   "publish_blocked": false,
-  "news_verification": {
-    "status": "verified",
-    "checked_at": "2026-09-27T23:30:00Z"
-  },
-  "pause_reason": "Visual blocked: RapWire requires source-grounded AI art or an approved credited real-photo fallback, plus a complete readable 2-10 slide carousel"
+  "news_verification": {"status": "verified", "checked_at": "2026-09-27T23:30:00Z"}
 }

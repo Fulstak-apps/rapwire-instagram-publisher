@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-09-28-1700",
-  "status": "ready",
+  "status": "paused",
   "ai_generated_art": true,
   "created_at": "2026-09-28T17:00:00-07:00",
   "publish_after": "2026-09-29T00:00:00Z",
@@ -138,5 +138,6 @@
   },
   "threads_status": "pending",
   "threads_media_id": null,
-  "instagram_media_id": null
+  "instagram_media_id": null,
+  "pause_reason": "Carousel contract blocked: generic carousel framing is not allowed; slide copy 1 has an invalid slide number; slide 1 must confirm headline and blurb were rendered on artwork; slide 1 must confirm no top banner was used; slide copy 2 has an invalid slide number; slide 2 must confirm headline and blurb were rendered on artwork; slide 2 must confirm no top banner was used; slide copy 3 has an invalid slide number; slide 3 must confirm headline and blurb were rendered on artwork; slide 3 must confirm no top banner was used; slide copy 4 has an invalid slide number; slide 4 must confirm headline and blurb were rendered on artwork; slide 4 must confirm no top banner was used; slide copy 5 has an invalid slide number; slide 5 must confirm headline and blurb were rendered on artwork; slide 5 must confirm no top banner was used"
 }

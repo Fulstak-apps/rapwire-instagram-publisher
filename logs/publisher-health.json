@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T17:07:51.182Z",
+  "checked_at": "2026-09-28T17:13:04.831Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-28T16:57:45.080Z",
+    "checked_at": "2026-09-28T17:12:57.033Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-28T17:12:45.080Z",
+    "next_check_at": "2026-09-28T17:27:57.033Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T17:07:33.952Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T17:43:04.532Z",
+  "publications": [
+    {
+      "file": "1035-from-worcester-ma-to-new-hampshire-brought-both-sides-of-his-art.json",
+      "id": "1035-from-worcester-ma-to-new-hampshire-brought-both-sides-of-his-art",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18173140960454087"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

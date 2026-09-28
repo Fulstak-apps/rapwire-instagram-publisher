@@ -29,6 +29,14 @@ export function sourceCaption({ requestedUrl, canonicalUrl, title = '', descript
 export function buildVideoCaption(raw, source, registry = []) {
   if (!raw || genericCaption(raw) || staleBoilerplateCaption(raw)) throw new Error('No specific, non-boilerplate video caption available');
   let text = raw.replace(/https?:\/\/\S+/g, '').replace(/#(\w+)/g, (_, name) => /^(explore|explorepage|viral|viralvideo|fyp|trending)$/i.test(name) ? '' : name).replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu, '').replace(/\s+/g, ' ').trim();
+  // Preserve the event, not pasted encyclopedia copy or a source-page credit.
+  // This only removes sentences that identify themselves as generic biography
+  // or a "Via" attribution; the post-specific lead remains untouched.
+  const sourceAttribution = /^(?:via|source|credit)\s*:/i;
+  const genericBiography = /\b(?:widely regarded|pulitzer[ -]?prize|multi[ -]?grammy|one of the most (?:influential|acclaimed)|known for (?:his|her) prolific output|quickly rose to (?:massive )?mainstream fame|highly successful American (?:rapper|singer)|is a (?:pulitzer|multi[ -]?grammy|highly successful))/i;
+  const sentences = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
+  const eventSentences = sentences.filter(sentence => !sourceAttribution.test(sentence.trim()) && !genericBiography.test(sentence));
+  if (eventSentences.length) text = eventSentences.join(' ').replace(/\s+/g, ' ').trim();
   if (/\bAI\b/i.test(text)) throw new Error('Caption needs editorial review under the no-AI-caption rule');
   const verified = registry.filter(person => Date.now() - Date.parse(person.verified_at || '') < 30 * 86400000 && /^https:\/\/www\.instagram\.com\//.test(person.verified_url || ''));
   const used = [];

@@ -30,6 +30,12 @@ test('all reposts omit public source footers', () => {
   assert.equal(result.caption.endsWith('@rapwire247'), true);
   assert.doesNotMatch(result.caption, /@null/);
 });
+test('keeps the event and strips pasted biography/source filler', () => {
+  const registry = [{name:'Kendrick Lamar',handle:'kendricklamar',verified_at:new Date().toISOString(),verified_url:'https://www.instagram.com/kendricklamar/'}];
+  const result = buildVideoCaption('Kendrick Lamar made a rare appearance to wish Eastside K-Boy a happy birthday. Kendrick Lamar is a Pulitzer Prize-winning, multi-Grammy-winning rapper widely regarded as one of the most influential artists of his generation. Via: a source page.', null, registry);
+  assert.match(result.caption, /Kendrick Lamar @kendricklamar made a rare appearance/);
+  assert.doesNotMatch(result.caption, /Pulitzer|Via:|widely regarded/i);
+});
 test('caption evidence must use same shortcode', () => {
   const record = {caption_policy:'exact-source-v1',caption_source_shortcode:'other',source_url:url,source_caption_text:'A complete description of a studio recording.',body:'A complete description of a studio recording.'};
   assert.equal(captionIsBound(record),false);

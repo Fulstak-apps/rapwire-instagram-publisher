@@ -23,8 +23,8 @@
   "headline": "RapWire 24/7: five distinct stories — Sept. 27, 2026 5 PM",
   "body": "A five-slide verified news carousel covers Keke Wyatt's Georgia arrest and charge dispute, Doe Boy's East Cleveland youth-football equipment drive, a Drakeo the Ruler estate discovery ruling, Rolling Loud's 2027 California return, and new GTA VI money-system preview details. Each slide is source-grounded, visually original, and paired with a concise Instagram explanation.",
   "rendered_body_text": "A five-slide verified news carousel covers Keke Wyatt's Georgia arrest and charge dispute, Doe Boy's East Cleveland youth-football equipment drive, a Drakeo the Ruler estate discovery ruling, Rolling Loud's 2027 California return, and new GTA VI money-system preview details. Each slide is source-grounded, visually original, and paired with a concise Instagram explanation.",
-  "caption": "outputs/rapwire-carousel-2026-09-27-1700-caption.md",
-  "threads_text": "RapWire 24/7: Keke Wyatt's charge dispute; Doe Boy equips East Cleveland youth; Drakeo estate discovery ruling; Rolling Loud returns to California; and new GTA VI money details.",
+  "caption": "outputs/rapwire-carousel-2026-09-27-1700-caption.md\n\n@Rapwire247",
+  "threads_text": "RapWire 24/7: Keke Wyatt's charge dispute; Doe Boy equips East Cleveland youth; Drakeo estate discovery ruling; Rolling Loud returns to California; and new GTA VI money details.\n\n@Rapwire247",
   "content_type": "carousel",
   "type": "original_editorial_carousel",
   "category": "hip-hop",
@@ -59,7 +59,21 @@
   "text_overflow_checked": true,
   "grid_safe_checked": true,
   "qa_passed": true,
-  "qa": {"dimensions": "1080x1350", "slide_count": 5, "distinct_stories": 5, "two_sources_per_story": true, "official_logo_used": true, "logo_transparent_and_unboxed": true, "legacy_graphics_used": false, "caption_numbered_1_to_5": true, "caption_avoids_ai_term": true, "passed": true},
+  "qa": {
+    "dimensions": "1080x1350",
+    "slide_count": 5,
+    "distinct_stories": 5,
+    "two_sources_per_story": true,
+    "official_logo_used": true,
+    "logo_transparent_and_unboxed": true,
+    "legacy_graphics_used": false,
+    "caption_numbered_1_to_5": true,
+    "caption_avoids_ai_term": true,
+    "passed": true
+  },
   "publish_blocked": false,
-  "news_verification": {"status": "verified", "checked_at": "2026-09-27T23:30:00Z"}
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-09-27T23:30:00Z"
+  }
 }

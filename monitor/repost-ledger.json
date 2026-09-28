@@ -22280,48 +22280,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DdymLGOovo1/",
       "queue_id": "1037-chris-brown-and-snoop-dogg-were-spotted-vibing-to-the-next-episo",
       "video": "media/1037-chris-brown-and-snoop-dogg-were-spotted-vibing-to-the-next-episo.mp4"
+    },
+    "DdyVdzClsiZ": {
+      "queued_at": "2026-09-28T00:04:34.346Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DdyVdzClsiZ/",
+      "queue_id": "1038-reggie-has-reportedly-dropped-a-video-explaining-why-he-feels-le",
+      "video": "media/1038-reggie-has-reportedly-dropped-a-video-explaining-why-he-feels-le.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
     {
       "started_at": "2026-09-26T18:18:54.717Z",
       "candidates": 0,
@@ -28954,6 +28922,57 @@
         ]
       },
       "finished_at": "2026-09-27T23:35:53.550Z"
+    },
+    {
+      "started_at": "2026-09-27T23:42:50.458Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-27T23:42:53.657Z"
+    },
+    {
+      "started_at": "2026-09-27T23:48:01.633Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-09-27T23:48:05.769Z"
+    },
+    {
+      "started_at": "2026-09-28T00:03:25.748Z",
+      "candidates": 48,
+      "queued": [
+        "1038-reggie-has-reportedly-dropped-a-video-explaining-why-he-feels-le"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-28T00:04:34.346Z"
     }
   ],
   "vip_pending": {

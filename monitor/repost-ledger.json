@@ -16829,6 +16829,30 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexstyle/p/DdzujE2G9kN/",
       "view_count": 0
+    },
+    "Ddz1jM3G5lK": {
+      "seen_at": "2026-09-28T00:10:39.494Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexstyle/p/Ddz1jM3G5lK/",
+      "view_count": 0
+    },
+    "Ddz0t2qj_Wq": {
+      "seen_at": "2026-09-28T00:10:39.494Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/p/Ddz0t2qj_Wq/",
+      "view_count": 0
+    },
+    "Ddzza--Gxra": {
+      "seen_at": "2026-09-28T00:10:39.494Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexstyle/p/Ddzza--Gxra/",
+      "view_count": 0
+    },
+    "Ddz36zpiJvr": {
+      "seen_at": "2026-09-28T00:22:06.606Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Ddz36zpiJvr/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -22287,48 +22311,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/DdyVdzClsiZ/",
       "queue_id": "1038-reggie-has-reportedly-dropped-a-video-explaining-why-he-feels-le",
       "video": "media/1038-reggie-has-reportedly-dropped-a-video-explaining-why-he-feels-le.mp4"
+    },
+    "Ddz36zpiJvr": {
+      "queued_at": "2026-09-28T00:22:57.277Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Ddz36zpiJvr/",
+      "queue_id": "1039-reggie-breaks-down-and-says-he-was-m-lested-by-his-own-brother-h",
+      "video": "media/1039-reggie-breaks-down-and-says-he-was-m-lested-by-his-own-brother-h.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
-    {
-      "started_at": "2026-09-26T18:18:54.717Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-09-26T18:18:58.288Z"
-    },
     {
       "started_at": "2026-09-26T18:18:54.717Z",
       "candidates": 0,
@@ -28973,6 +28965,91 @@
         ]
       },
       "finished_at": "2026-09-28T00:04:34.346Z"
+    },
+    {
+      "started_at": "2026-09-28T00:09:58.108Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DdtuJeukaW7/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-28T00:10:55.556Z"
+    },
+    {
+      "started_at": "2026-09-28T00:16:02.594Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-28T00:16:40.210Z"
+    },
+    {
+      "started_at": "2026-09-28T00:21:46.912Z",
+      "candidates": 48,
+      "queued": [
+        "1039-reggie-breaks-down-and-says-he-was-m-lested-by-his-own-brother-h"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-28T00:22:57.277Z"
     }
   ],
   "vip_pending": {

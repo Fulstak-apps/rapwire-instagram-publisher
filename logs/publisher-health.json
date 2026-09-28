@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T21:52:43.132Z",
+  "checked_at": "2026-09-28T21:57:57.363Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-28T21:47:37.003Z",
-    "usage": 30,
+    "usage": 31,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-28T22:02:37.003Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T21:52:31.962Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T22:27:56.547Z",
+  "publications": [
+    {
+      "file": "1043-shoreline-mafia-joins-on-tour-and-had-the-crowd-going-crazy-in-f.json",
+      "id": "1043-shoreline-mafia-joins-on-tour-and-had-the-crowd-going-crazy-in-f",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18102480236459617"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

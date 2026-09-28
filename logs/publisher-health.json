@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T01:46:09.023Z",
+  "checked_at": "2026-09-28T01:51:03.109Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-28T02:16:08.833Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T02:05:58.456Z",
-  "publications": [
-    {
-      "file": "1020-imagine-doing-this-to-lil-baby-back-in-2017-lil-baby-was-still-e.json",
-      "id": "1020-imagine-doing-this-to-lil-baby-back-in-2017-lil-baby-was-still-e",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17959269963234517",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

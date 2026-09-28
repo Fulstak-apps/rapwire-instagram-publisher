@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T19:30:53.346Z",
+  "checked_at": "2026-09-28T19:36:08.254Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-28T19:30:52.778Z",
-    "usage": 30,
+    "usage": 31,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-28T19:45:52.778Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T19:30:31.737Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T20:06:07.871Z",
+  "publications": [
+    {
+      "file": "1039-reggie-breaks-down-and-says-he-was-m-lested-by-his-own-brother-h.json",
+      "id": "1039-reggie-breaks-down-and-says-he-was-m-lested-by-his-own-brother-h",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18114724166102301"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T03:52:27.624Z",
+  "checked_at": "2026-09-28T03:57:35.194Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-28T03:42:16.614Z",
+    "checked_at": "2026-09-28T03:57:25.297Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-28T03:57:16.614Z",
+    "next_check_at": "2026-09-28T04:12:25.297Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T03:52:11.197Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T04:27:34.732Z",
+  "publications": [
+    {
+      "file": "1024-guelph-hoco-was-looking-like-a-civil-war-6-via.json",
+      "id": "1024-guelph-hoco-was-looking-like-a-civil-war-6-via",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17911248216494770"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

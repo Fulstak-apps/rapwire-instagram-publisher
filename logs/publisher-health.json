@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T21:18:01.308Z",
+  "checked_at": "2026-09-28T21:22:33.822Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-09-28T21:12:15.233Z",
     "usage": 29,
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-28T21:17:19.788Z",
-    "usage": 30,
+    "usage": 31,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-28T21:32:19.788Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T21:17:00.227Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T21:52:31.962Z",
+  "publications": [
+    {
+      "file": "1042-drake-champagnepapi-and-karol-g-at-her-show-tonight-in-houston.json",
+      "id": "1042-drake-champagnepapi-and-karol-g-at-her-show-tonight-in-houston",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18092658410161822"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

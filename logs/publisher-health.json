@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T00:21:21.527Z",
+  "checked_at": "2026-09-28T00:25:27.637Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,13 +8,13 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-28T00:10:07.385Z",
+    "checked_at": "2026-09-28T00:25:17.782Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-28T00:25:07.385Z",
+    "next_check_at": "2026-09-28T00:40:17.782Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -33,7 +33,7 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-28T00:20:13.704Z",
-    "usage": 29,
+    "usage": 30,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-28T00:35:13.704Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T00:20:21.602Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T00:55:27.329Z",
+  "publications": [
+    {
+      "file": "1019-cardi-b-stepped-out-ready-for-another-day-of-milan-fashion-week-.json",
+      "id": "1019-cardi-b-stepped-out-ready-for-another-day-of-milan-fashion-week-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18116910760778412"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

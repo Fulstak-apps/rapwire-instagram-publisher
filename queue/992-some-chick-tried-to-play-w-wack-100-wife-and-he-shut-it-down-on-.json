@@ -1,6 +1,6 @@
 {
   "id": "992-some-chick-tried-to-play-w-wack-100-wife-and-he-shut-it-down-on-",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-09-27",
   "timezone": "America/Detroit",
@@ -39,5 +39,6 @@
   "source_caption_text": "Some chick tried to play w wack 100 wife and he shut it down on Blueface stream",
   "caption_checked_at": "2026-09-26T17:49:02.801Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 193.46666666666667
+  "source_video_duration": 193.46666666666667,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

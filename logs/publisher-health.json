@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T19:36:08.254Z",
+  "checked_at": "2026-09-28T19:41:02.589Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-28T19:25:47.959Z",
-    "usage": 29,
+    "checked_at": "2026-09-28T19:41:01.708Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-28T19:40:47.959Z",
+    "next_check_at": "2026-09-28T19:56:01.708Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 29,
-    "instagram_remaining": 19,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-28T19:40:44.575Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T20:06:07.871Z",
-  "publications": [
-    {
-      "file": "1039-reggie-breaks-down-and-says-he-was-m-lested-by-his-own-brother-h.json",
-      "id": "1039-reggie-breaks-down-and-says-he-was-m-lested-by-his-own-brother-h",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18114724166102301"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

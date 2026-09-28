@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T19:46:15.217Z",
+  "checked_at": "2026-09-28T19:51:10.196Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 28,
-    "instagram_remaining": 20,
+    "instagram_usage": 29,
+    "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-28T20:16:15.015Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T20:06:07.871Z",
-  "publications": [
-    {
-      "file": "1038-reggie-has-reportedly-dropped-a-video-explaining-why-he-feels-le.json",
-      "id": "1038-reggie-has-reportedly-dropped-a-video-explaining-why-he-feels-le",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18124203484855130",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

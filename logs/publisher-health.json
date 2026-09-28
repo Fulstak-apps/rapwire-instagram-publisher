@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T03:22:11.502Z",
+  "checked_at": "2026-09-28T03:27:14.422Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-28T03:11:56.810Z",
+    "checked_at": "2026-09-28T03:27:13.671Z",
     "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-28T03:26:56.810Z",
+    "next_check_at": "2026-09-28T03:42:13.672Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "instagram_remaining": 19,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-28T03:26:55.427Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-28T03:11:57.192Z",
+    "checked_at": "2026-09-28T03:27:13.499Z",
     "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-28T03:26:57.192Z",
+    "next_check_at": "2026-09-28T03:42:13.499Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T03:52:11.197Z",
-  "publications": [
-    {
-      "file": "1023-surveillance-was-everywhere-in-the-affluent-chicago-area-where-f.json",
-      "id": "1023-surveillance-was-everywhere-in-the-affluent-chicago-area-where-f",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17880883989691816"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

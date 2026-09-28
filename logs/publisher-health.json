@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T17:18:02.092Z",
+  "checked_at": "2026-09-28T17:23:18.619Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-28T17:18:01.638Z",
-    "usage": 28,
+    "checked_at": "2026-09-28T17:23:11.035Z",
+    "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-28T17:33:01.638Z",
+    "next_check_at": "2026-09-28T17:38:11.035Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 28,
     "instagram_remaining": 20,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-28T17:17:39.677Z",
+    "next_feed_eligible_at": "2026-09-28T17:53:18.361Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T17:43:04.532Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1034-born-in-new-orleans-in-1982-grew-up-in-one-of-the-toughest-neigh.json",
+      "id": "1034-born-in-new-orleans-in-1982-grew-up-in-one-of-the-toughest-neigh",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18115740302099021",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

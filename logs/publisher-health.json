@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T11:57:22.280Z",
+  "checked_at": "2026-09-28T13:38:27.679Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-28T11:57:20.776Z",
-    "usage": 27,
+    "checked_at": "2026-09-28T13:38:07.333Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-28T12:12:20.776Z",
+    "next_check_at": "2026-09-28T13:53:07.333Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-28T07:34:36.388Z",
+    "next_feed_eligible_at": "2026-09-28T14:08:16.881Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-28T11:57:20.702Z",
-    "usage": 28,
+    "checked_at": "2026-09-28T13:38:06.989Z",
+    "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-28T12:12:20.702Z",
+    "next_check_at": "2026-09-28T13:53:06.989Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T08:01:55.300Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T14:08:27.104Z",
+  "publications": [
+    {
+      "file": "1030-me-too-i-m-single-like-nocap-but-here-s-the-rules.json",
+      "id": "1030-me-too-i-m-single-like-nocap-but-here-s-the-rules",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18126219670804506",
+      "content_type": "video"
+    },
+    {
+      "file": "1031-rihanna-was-spotted-relaxing-and-vibing-with-her-daughter-pure-s.json",
+      "id": "1031-rihanna-was-spotted-relaxing-and-vibing-with-her-daughter-pure-s",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18086212016299337"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

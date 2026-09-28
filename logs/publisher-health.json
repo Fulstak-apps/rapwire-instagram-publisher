@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T22:33:18.557Z",
+  "checked_at": "2026-09-28T22:38:17.114Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-28T23:03:17.769Z",
-  "publications": [
-    {
-      "file": "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an.json",
-      "id": "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18125656948879130"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

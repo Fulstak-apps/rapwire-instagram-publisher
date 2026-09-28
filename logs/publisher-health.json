@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T17:44:23.576Z",
+  "checked_at": "2026-09-28T17:49:42.752Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-28T17:44:22.961Z",
-    "usage": 29,
+    "usage": 30,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-28T17:59:22.961Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-28T17:43:04.532Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-28T18:19:42.438Z",
+  "publications": [
+    {
+      "file": "1036-following-reggie-s-announcement-that-he-s-officially-stepping-aw.json",
+      "id": "1036-following-reggie-s-announcement-that-he-s-officially-stepping-aw",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18343721593284919"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

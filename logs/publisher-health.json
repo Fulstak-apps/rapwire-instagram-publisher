@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T03:39:40.727Z",
+  "checked_at": "2026-09-29T03:44:52.892Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T03:39:39.651Z",
-    "usage": 27,
+    "checked_at": "2026-09-29T03:44:43.440Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T03:54:39.651Z",
+    "next_check_at": "2026-09-29T03:59:43.440Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-29T03:39:31.207Z",
+    "next_feed_eligible_at": "2026-09-29T04:14:52.653Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,26 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-29T03:29:41.590Z",
+    "checked_at": "2026-09-29T03:44:42.744Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-29T03:44:41.590Z",
+    "next_check_at": "2026-09-29T03:59:42.744Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T03:49:34.032Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1048-10-years-complexcon-returns-october-3-4-link-in-bio-to-purchase-.json",
+      "id": "1048-10-years-complexcon-returns-october-3-4-link-in-bio-to-purchase-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17903964051349379",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

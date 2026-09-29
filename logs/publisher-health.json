@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T17:35:15.719Z",
+  "checked_at": "2026-09-29T17:45:35.580Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -56,11 +56,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-.json",
-      "id": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
+      "file": "rapwire-carousel-2026-09-28-1700.json",
+      "id": "rapwire-carousel-2026-09-28-1700",
       "platform": "threads",
       "status": "failed",
-      "error": "threads: ERROR; retry after 2026-09-29T21:35:15.002Z: UNKNOWN"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"Aa0yF_VAFPackP0eei0D_FK\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

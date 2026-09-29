@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T03:49:48.315Z",
+  "checked_at": "2026-09-29T03:54:59.297Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-29T03:44:42.744Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-29T03:59:42.744Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-29T03:49:34.032Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-29T04:24:59.000Z",
+  "publications": [
+    {
+      "file": "1051-drake-champagnepapi-s-reaction-to-karol-g-dancing-on-him-during-.json",
+      "id": "1051-drake-champagnepapi-s-reaction-to-karol-g-dancing-on-him-during-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18107914169188260"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

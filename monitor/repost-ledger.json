@@ -18101,6 +18101,18 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd42GSyP4p7/",
       "view_count": 0
+    },
+    "Dd46N-PDWii": {
+      "seen_at": "2026-09-29T23:20:59.932Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd46N-PDWii/",
+      "view_count": 0
+    },
+    "Dd46JMQjoQg": {
+      "seen_at": "2026-09-29T23:20:59.932Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Dd46JMQjoQg/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -23825,55 +23837,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Dd3hRYXPOnP/",
       "queue_id": "1076-never-forget-when-rick-ross-tried-to-moonwalk-rick-ross-moonwalk",
       "video": "media/1076-never-forget-when-rick-ross-tried-to-moonwalk-rick-ross-moonwalk.mp4"
+    },
+    "Dd46JMQjoQg": {
+      "queued_at": "2026-09-29T23:21:18.182Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Dd46JMQjoQg/",
+      "queue_id": "1077-when-playboi-carti-playboicarti-was-seen-working-on-a-cure-for-c",
+      "video": "media/1077-when-playboi-carti-playboicarti-was-seen-working-on-a-cure-for-c.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T13:46:39.978Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 33,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T14:05:17.440Z"
-    },
-    {
-      "started_at": "2026-09-28T13:46:39.978Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 33,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T14:05:17.440Z"
-    },
     {
       "started_at": "2026-09-28T13:46:39.978Z",
       "candidates": 0,
@@ -31539,6 +31512,61 @@
         ]
       },
       "finished_at": "2026-09-29T23:09:38.618Z"
+    },
+    {
+      "started_at": "2026-09-29T23:14:55.868Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DdrTsU2Ebiy/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 12,
+        "needed": 36
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-29T23:15:27.915Z"
+    },
+    {
+      "started_at": "2026-09-29T23:20:35.186Z",
+      "candidates": 48,
+      "queued": [
+        "1077-when-playboi-carti-playboicarti-was-seen-working-on-a-cure-for-c"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 12,
+        "needed": 36
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-29T23:21:18.183Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T16:24:20.427Z",
+  "checked_at": "2026-09-29T16:29:27.183Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T16:19:17.622Z",
+    "checked_at": "2026-09-29T16:29:26.097Z",
     "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T16:34:17.622Z",
+    "next_check_at": "2026-09-29T16:44:26.097Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -33,7 +33,7 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T16:09:19.746Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-.json",
+      "id": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
+      "platform": "threads",
+      "status": "failed",
+      "error": "threads: ERROR; retry after 2026-09-29T20:29:26.782Z: UNKNOWN"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

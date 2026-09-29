@@ -1,6 +1,6 @@
 {
   "id": "995-mood-going-dark-next-week",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-09-27",
   "timezone": "America/Detroit",
@@ -39,5 +39,6 @@
   "source_caption_text": "#mood going dark next week",
   "caption_checked_at": "2026-09-27T04:40:51.444Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 6.385487
+  "source_video_duration": 6.385487,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

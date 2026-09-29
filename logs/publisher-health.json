@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T17:51:16.340Z",
+  "checked_at": "2026-09-29T17:56:28.179Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-29T17:51:15.719Z",
-    "usage": 22,
+    "usage": 23,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-29T18:06:15.719Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-29T17:18:26.099Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-29T18:26:27.869Z",
+  "publications": [
+    {
+      "file": "836-fat-joe-and-this-n-word-debate-who-can-and-can-t-say-what.json",
+      "id": "836-fat-joe-and-this-n-word-debate-who-can-and-can-t-say-what",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18139188514622496"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

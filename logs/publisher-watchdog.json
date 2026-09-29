@@ -1,23 +1,23 @@
 {
-  "reserve_count": 4,
-  "reserve_hours": 2,
+  "reserve_count": 2,
+  "reserve_hours": 1,
   "reserve_low": true,
   "queue_empty": false,
   "overdue": true,
-  "health_stale": true,
-  "processing": [],
+  "health_stale": false,
+  "processing": [
+    "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-"
+  ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1054-lil-baby-was-spotted-riding-a-motorcycle-by-himself-in-miami-whi",
-    "1055-cardi-b-s-mom-kept-her-old-room-exactly-the-same-in-case-she-eve",
-    "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr",
-    "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-"
+    "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
+    "rapwire-carousel-2026-09-29-0800"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-29T09:04:43.773Z",
+  "checked_at": "2026-09-29T15:40:56.096Z",
   "deferred": []
 }

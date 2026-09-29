@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T22:51:04.271Z",
+  "checked_at": "2026-09-29T22:55:56.521Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-29T23:21:04.101Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T23:20:56.279Z",
-  "publications": [
-    {
-      "file": "1064-wiz-khalifa-says-see-you-again-with-charlie-puth-set-him-up-for-.json",
-      "id": "1064-wiz-khalifa-says-see-you-again-with-charlie-puth-set-him-up-for-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18130047598664322"
-    },
-    {
-      "file": "1064-wiz-khalifa-says-see-you-again-with-charlie-puth-set-him-up-for-.json",
-      "id": "1064-wiz-khalifa-says-see-you-again-with-charlie-puth-set-him-up-for-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18151562152565082",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

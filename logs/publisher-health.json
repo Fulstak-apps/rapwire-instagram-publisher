@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T18:55:28.655Z",
+  "checked_at": "2026-09-29T18:56:10.064Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T18:51:00.828Z",
+    "checked_at": "2026-09-29T18:56:08.710Z",
     "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T19:06:00.828Z",
+    "next_check_at": "2026-09-29T19:11:08.710Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -33,7 +33,7 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-29T18:40:51.162Z",
+    "checked_at": "2026-09-29T18:56:08.526Z",
     "usage": 22,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-29T18:55:51.162Z",
+    "next_check_at": "2026-09-29T19:11:08.526Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T18:26:27.869Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "rapwire-carousel-2026-09-28-1700.json",
-      "id": "rapwire-carousel-2026-09-28-1700",
-      "platform": "threads",
-      "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"AGOcUYR300Up4AlCqo26RJY\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

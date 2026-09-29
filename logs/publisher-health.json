@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T14:22:50.175Z",
+  "checked_at": "2026-09-29T14:27:53.684Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T06:46:46.072Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-.json",
+      "id": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
+      "platform": "threads",
+      "status": "failed",
+      "error": "threads: ERROR; retry after 2026-09-29T15:27:53.310Z: UNKNOWN"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -17981,6 +17981,12 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/flippers.world/p/Dd4eJ_VAWl3/",
       "view_count": 0
+    },
+    "Dd4ohL2vwPK": {
+      "seen_at": "2026-09-29T21:06:37.998Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd4ohL2vwPK/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -23642,45 +23648,16 @@
       "source_url": "https://www.instagram.com/6ixbuzztv/p/Dd2HuVekoGl/",
       "queue_id": "1067-donald-trump-says-canada-is-one-of-the-worst-countries-to-deal-w",
       "video": "media/1067-donald-trump-says-canada-is-one-of-the-worst-countries-to-deal-w.mp4"
+    },
+    "Dd37aDkRS2S": {
+      "queued_at": "2026-09-29T21:07:34.626Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/Dd37aDkRS2S/",
+      "queue_id": "1068-lil-baby-slid-on-this-fr-central-cee-centralcee-and-lil-baby-bri",
+      "video": "media/1068-lil-baby-slid-on-this-fr-central-cee-centralcee-and-lil-baby-bri.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T07:25:15.254Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzRTU7P95-/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzSpt4vH0-/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 33,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-28T07:25:39.232Z"
-    },
     {
       "started_at": "2026-09-28T07:25:15.254Z",
       "candidates": 41,
@@ -31462,6 +31439,38 @@
         ]
       },
       "finished_at": "2026-09-29T21:00:46.895Z"
+    },
+    {
+      "started_at": "2026-09-29T21:06:10.052Z",
+      "candidates": 41,
+      "queued": [
+        "1068-lil-baby-slid-on-this-fr-central-cee-centralcee-and-lil-baby-bri"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd4ohL2vwPK/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 7,
+        "needed": 41
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-29T21:07:34.626Z"
     }
   ],
   "vip_pending": {

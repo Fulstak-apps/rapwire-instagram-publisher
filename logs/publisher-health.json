@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T01:25:06.073Z",
+  "checked_at": "2026-09-29T01:28:12.863Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-29T01:49:38.653Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,34 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-29T01:07:58.766Z",
+    "checked_at": "2026-09-29T01:28:12.303Z",
     "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-29T01:22:58.766Z",
+    "next_check_at": "2026-09-29T01:43:12.303Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T01:18:34.429Z",
-  "publications": [
-    {
-      "file": "rapwire-carousel-2026-09-28-1700.json",
-      "id": "rapwire-carousel-2026-09-28-1700",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18147285472562846",
-      "content_type": "carousel"
-    }
-  ],
-  "failures": [
-    {
-      "file": "rapwire-carousel-2026-09-28-1700.json",
-      "id": "rapwire-carousel-2026-09-28-1700",
-      "platform": "threads",
-      "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"AsgNvP5jGgbGTCEMo4YFUkv\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

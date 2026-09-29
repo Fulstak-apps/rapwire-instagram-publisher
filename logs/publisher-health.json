@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T19:49:52.119Z",
+  "checked_at": "2026-09-29T19:54:39.276Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-29T20:19:51.958Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T20:19:42.639Z",
-  "publications": [
-    {
-      "file": "1059-this-must-be-why-there-s-always-soo-much-traffic-6-via.json",
-      "id": "1059-this-must-be-why-there-s-always-soo-much-traffic-6-via",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18466047643137963"
-    },
-    {
-      "file": "1059-this-must-be-why-there-s-always-soo-much-traffic-6-via.json",
-      "id": "1059-this-must-be-why-there-s-always-soo-much-traffic-6-via",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17976522588132521",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

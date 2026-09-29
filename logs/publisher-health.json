@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T14:27:53.684Z",
+  "checked_at": "2026-09-29T14:39:27.784Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T14:17:51.042Z",
+    "checked_at": "2026-09-29T14:32:56.545Z",
     "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T14:32:51.042Z",
+    "next_check_at": "2026-09-29T14:47:56.545Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -43,25 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-29T14:17:50.820Z",
-    "usage": 25,
+    "checked_at": "2026-09-29T14:32:56.823Z",
+    "usage": 26,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-29T14:32:50.820Z",
+    "next_check_at": "2026-09-29T14:47:56.823Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-29T06:46:46.072Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-09-29T15:09:27.461Z",
+  "publications": [
     {
-      "file": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-.json",
-      "id": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
+      "file": "rapwire-carousel-2026-09-26-0800.json",
+      "id": "rapwire-carousel-2026-09-26-0800",
       "platform": "threads",
-      "status": "failed",
-      "error": "threads: ERROR; retry after 2026-09-29T15:27:53.310Z: UNKNOWN"
+      "status": "published",
+      "media_id": "18098743262071413"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

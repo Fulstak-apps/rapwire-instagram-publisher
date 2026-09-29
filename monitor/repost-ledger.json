@@ -18113,6 +18113,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/p/Dd46JMQjoQg/",
       "view_count": 0
+    },
+    "Dd46AQTjoMj": {
+      "seen_at": "2026-09-29T23:26:49.881Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dd46AQTjoMj/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -23844,32 +23850,16 @@
       "source_url": "https://www.instagram.com/raplisted_/p/Dd46JMQjoQg/",
       "queue_id": "1077-when-playboi-carti-playboicarti-was-seen-working-on-a-cure-for-c",
       "video": "media/1077-when-playboi-carti-playboicarti-was-seen-working-on-a-cure-for-c.mp4"
+    },
+    "Dd4R_88KlSK": {
+      "queued_at": "2026-09-29T23:27:11.645Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dd4R_88KlSK/",
+      "queue_id": "1078-dj-pauly-d-proposed-to-his-girlfriend-nikki-hall-in-the-middle-o",
+      "video": "media/1078-dj-pauly-d-proposed-to-his-girlfriend-nikki-hall-in-the-middle-o.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T13:46:39.978Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 33,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T14:05:17.440Z"
-    },
     {
       "started_at": "2026-09-28T13:46:39.978Z",
       "candidates": 0,
@@ -31567,6 +31557,31 @@
         ]
       },
       "finished_at": "2026-09-29T23:21:18.183Z"
+    },
+    {
+      "started_at": "2026-09-29T23:26:30.682Z",
+      "candidates": 41,
+      "queued": [
+        "1078-dj-pauly-d-proposed-to-his-girlfriend-nikki-hall-in-the-middle-o"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 13,
+        "needed": 35
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-29T23:27:11.645Z"
     }
   ],
   "vip_pending": {

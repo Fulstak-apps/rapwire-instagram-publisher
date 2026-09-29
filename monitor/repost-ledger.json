@@ -17963,6 +17963,24 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dd4ja_tAmq4/",
       "view_count": 0
+    },
+    "Dd4mFjcmyYV": {
+      "seen_at": "2026-09-29T20:50:47.407Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/reel/Dd4mFjcmyYV/",
+      "view_count": 0
+    },
+    "Dd4k9-ugV_a": {
+      "seen_at": "2026-09-29T20:50:47.409Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/reel/Dd4k9-ugV_a/",
+      "view_count": 0
+    },
+    "Dd4eJ_VAWl3": {
+      "seen_at": "2026-09-29T20:50:47.409Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/flippers.world/p/Dd4eJ_VAWl3/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -23610,39 +23628,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Dd4nxxdBlJz/",
       "queue_id": "1065-2-chainz-unboxed-his-1-billion-streams-plaque-for-f-kin-problems",
       "video": "media/1065-2-chainz-unboxed-his-1-billion-streams-plaque-for-f-kin-problems.mp4"
+    },
+    "Dd2Gv4lvGGl": {
+      "queued_at": "2026-09-29T20:52:22.001Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/Dd2Gv4lvGGl/",
+      "queue_id": "1066-shyne-had-major-music-decisions-to-make-took-on-the-sound-check-",
+      "video": "media/1066-shyne-had-major-music-decisions-to-make-took-on-the-sound-check-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T07:17:22.323Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 33,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T07:18:07.398Z"
-    },
     {
       "started_at": "2026-09-28T07:25:15.254Z",
       "candidates": 41,
@@ -31446,6 +31441,31 @@
         ]
       },
       "finished_at": "2026-09-29T20:42:49.537Z"
+    },
+    {
+      "started_at": "2026-09-29T20:50:07.125Z",
+      "candidates": 48,
+      "queued": [
+        "1066-shyne-had-major-music-decisions-to-make-took-on-the-sound-check-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 5,
+        "needed": 43
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-29T20:52:22.002Z"
     }
   ],
   "vip_pending": {

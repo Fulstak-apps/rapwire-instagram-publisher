@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T22:10:23.224Z",
+  "checked_at": "2026-09-29T22:15:39.631Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T22:10:21.895Z",
+    "checked_at": "2026-09-29T22:15:34.250Z",
     "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T22:25:21.895Z",
+    "next_check_at": "2026-09-29T22:30:34.250Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 22,
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-29T22:06:17.763Z",
+    "next_feed_eligible_at": "2026-09-29T22:45:39.390Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-29T22:00:18.374Z",
-    "usage": 21,
+    "checked_at": "2026-09-29T22:15:27.377Z",
+    "usage": 22,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-29T22:15:18.374Z",
+    "next_check_at": "2026-09-29T22:30:27.377Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-29T22:06:10.473Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-29T22:45:33.305Z",
+  "publications": [
+    {
+      "file": "1063-the-leafs-are-back-this-week-and-there-s-plenty-more-to-get-exci.json",
+      "id": "1063-the-leafs-are-back-this-week-and-there-s-plenty-more-to-get-exci",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18636534241015405"
+    },
+    {
+      "file": "1063-the-leafs-are-back-this-week-and-there-s-plenty-more-to-get-exci.json",
+      "id": "1063-the-leafs-are-back-this-week-and-there-s-plenty-more-to-get-exci",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18489782584110601",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

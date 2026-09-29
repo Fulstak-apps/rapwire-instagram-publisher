@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T17:56:28.179Z",
+  "checked_at": "2026-09-29T18:01:21.780Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T18:26:27.869Z",
-  "publications": [
-    {
-      "file": "836-fat-joe-and-this-n-word-debate-who-can-and-can-t-say-what.json",
-      "id": "836-fat-joe-and-this-n-word-debate-who-can-and-can-t-say-what",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18139188514622496"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

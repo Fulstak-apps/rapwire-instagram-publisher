@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T00:42:51.849Z",
+  "checked_at": "2026-09-29T00:48:35.617Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-29T01:12:50.950Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-29T00:37:43.841Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-29T00:52:43.841Z",
@@ -52,15 +52,14 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-29T00:39:00.630Z",
+  "threads_next_eligible_at": "2026-09-29T01:18:34.429Z",
   "publications": [
     {
-      "file": "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an.json",
-      "id": "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an",
-      "platform": "instagram",
+      "file": "1046-travis-scott-travisscott-made-sure-two-factor-authentication-was.json",
+      "id": "1046-travis-scott-travisscott-made-sure-two-factor-authentication-was",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18011181188764084",
-      "content_type": "video"
+      "media_id": "18425279617146042"
     }
   ],
   "failures": [],

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T21:00:55.989Z",
+  "checked_at": "2026-09-29T21:05:40.505Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-29T21:30:55.727Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T21:30:44.659Z",
-  "publications": [
-    {
-      "file": "1061-sauce-walka-talks-about-go-yayo.json",
-      "id": "1061-sauce-walka-talks-about-go-yayo",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17909659812307905"
-    },
-    {
-      "file": "1061-sauce-walka-talks-about-go-yayo.json",
-      "id": "1061-sauce-walka-talks-about-go-yayo",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18138982753537336",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

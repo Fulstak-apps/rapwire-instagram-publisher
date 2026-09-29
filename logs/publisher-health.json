@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T05:41:17.779Z",
+  "checked_at": "2026-09-29T05:46:18.377Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T05:31:02.899Z",
+    "checked_at": "2026-09-29T05:46:17.985Z",
     "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T05:46:02.899Z",
+    "next_check_at": "2026-09-29T06:01:17.985Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-29T05:31:02.321Z",
-    "usage": 29,
+    "checked_at": "2026-09-29T05:46:18.296Z",
+    "usage": 28,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-29T05:46:02.321Z",
+    "next_check_at": "2026-09-29T06:01:18.296Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T06:11:17.481Z",
-  "publications": [
-    {
-      "file": "1054-lil-baby-was-spotted-riding-a-motorcycle-by-himself-in-miami-whi.json",
-      "id": "1054-lil-baby-was-spotted-riding-a-motorcycle-by-himself-in-miami-whi",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17987841060103185"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

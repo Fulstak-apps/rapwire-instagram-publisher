@@ -32,7 +32,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "failed",
+  "threads_status": "pending",
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "Dd1_nltBYPz",
@@ -40,10 +40,12 @@
   "caption_checked_at": "2026-09-28T20:06:06.442Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
   "source_video_duration": 35.833333333333336,
-  "threads_container_created_at": "2026-09-29T06:48:01.219Z",
+  "threads_container_created_at": "2026-09-29T09:05:24.135Z",
   "threads_container_status": "ERROR",
   "threads_container_failures": 1,
   "threads_previous_container_id": "18102618020179906",
   "threads_retry_at": "2026-09-29T07:23:02.539Z",
-  "threads_error": "threads: ERROR; retry after 2026-09-29T07:23:02.121Z: UNKNOWN"
+  "threads_error": "threads: ERROR; retry after 2026-09-29T07:23:02.121Z: UNKNOWN",
+  "threads_container_id": "18102638633179906",
+  "threads_container_checked_at": "2026-09-29T09:05:24.135Z"
 }

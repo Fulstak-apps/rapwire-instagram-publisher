@@ -67,6 +67,21 @@ test('confirmed EXPIRED container gets a delayed replacement, never immediate re
   f.tick(30 * 60000); await f.step(); assert.equal(f.calls.create, 2);
 });
 
+test('three failed containers quarantine one item instead of blocking the feed', async () => {
+  const f = fixture();
+  f.options.inspect = async () => ({ status_code: 'ERROR' });
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    await f.step();
+    f.tick();
+    await assert.rejects(f.step(), /ERROR/);
+    if (attempt < 2) {
+      f.tick(4 * 60 * 60_000);
+    }
+  }
+  assert.equal(f.item.status, 'media_refresh_required');
+  assert.equal(f.item.instagram_container_id, undefined);
+});
+
 test('already PUBLISHED container requires reconciliation, not recreation', async () => {
   const f = fixture(); await f.step(); f.tick();
   f.options.inspect = async () => ({ status_code: 'PUBLISHED' });

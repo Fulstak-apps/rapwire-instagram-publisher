@@ -7,7 +7,7 @@ const good = {
   headline: "Rap news roundup",
   body: "Five artists and stories are covered with clear context.",
   caption: "1) First story has a complete explanation without links.\n\n2) Second story has a complete explanation without links.\n\n3) Third story has a complete explanation without links.\n\n4) Fourth story has a complete explanation without links.\n\n5) Fifth story has a complete explanation without links.",
-  slide_editorial_copy: Array.from({length: 5}, (_, index) => ({slide: index + 1, headline: `Story ${index + 1}`, deck: "A short, readable explanation appears directly on the illustrated scene.", text_on_art: true, top_banner: false})),
+  slide_editorial_copy: Array.from({length: 5}, (_, index) => ({slide: index + 1, headline: `Story ${index + 1}`, deck: "A short, readable explanation appears directly on the illustrated scene.", text_on_art: true, top_banner: false, headline_font_size_px: 104, deck_font_size_px: 42})),
   brand_logo: {asset: "assets/rapwire247-logo.png", position: "bottom-left", transparent_background: true, backing_shape: "none"},
   carousel_visual_contract: "rapwire-editorial-carousel-v1",
   carousel_visual_qc: true
@@ -15,6 +15,12 @@ const good = {
 
 test("accepts a complete five-story RapWire editorial carousel", () => {
   assert.deepEqual(carouselEditorialIssues(good), []);
+});
+
+test("rejects small title or missing readable on-art blurb sizing", () => {
+  const issues = carouselEditorialIssues({...good, slide_editorial_copy: good.slide_editorial_copy.map((slide, index) => index === 0 ? {...slide, headline_font_size_px: 72, deck_font_size_px: 28} : slide)});
+  assert.match(issues.join(" "), /headline must be at least 96px/);
+  assert.match(issues.join(" "), /on-art blurb must be at least 40px/);
 });
 
 test("rejects a caption file path, links, and missing on-art copy proof", () => {

@@ -511,7 +511,13 @@ async function commitAndPush(createdIds) {
   // captured MP4s live outside that sparse set.  `--sparse` is required here;
   // without it Git accepts the queue JSON but rejects the media asset, leaving
   // every otherwise-ready video stranded off the remote publisher queue.
-  await git("add", "--sparse", "--", ...paths);
+  // `media/` is intentionally ignored so an accidental capture never bloats
+  // the repository. These paths have just passed the collector's MP4 and
+  // caption checks, though, and are the deliberate exception: force-add only
+  // this exact queue record and its validated asset. Without `-f`, Git staged
+  // the JSON but rejected the video, leaving the reserve stranded locally and
+  // the remote publisher with an empty queue.
+  await git("add", "--sparse", "-f", "--", ...paths);
   await git("commit", "--only", "-m", createdIds.length ? `Queue ${createdIds.length} RapWire repost video${createdIds.length === 1 ? "" : "s"}` : "Save RapWire collector health", "--", ...paths).catch((error) => {
     if (!/nothing to commit/i.test(error.stdout || error.stderr || "")) throw error;
   });

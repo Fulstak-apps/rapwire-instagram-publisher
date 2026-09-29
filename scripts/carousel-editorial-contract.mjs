@@ -32,6 +32,8 @@ export function carouselEditorialIssues(item = {}) {
       if (String(slide?.deck || "").trim().length < 28) issues.push(`slide ${offset + 1} needs a short on-art story blurb`);
       if (slide?.text_on_art !== true) issues.push(`slide ${offset + 1} must confirm headline and blurb were rendered on artwork`);
       if (slide?.top_banner !== false) issues.push(`slide ${offset + 1} must confirm no top banner was used`);
+      if (Number(slide?.headline_font_size_px) < 96) issues.push(`slide ${offset + 1} headline must be at least 96px`);
+      if (Number(slide?.deck_font_size_px) < 40) issues.push(`slide ${offset + 1} on-art blurb must be at least 40px`);
     });
   }
   const logo = item.brand_logo;

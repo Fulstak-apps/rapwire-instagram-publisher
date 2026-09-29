@@ -30,6 +30,16 @@ export async function advanceContainer({ item, prefix, create, inspect, publish,
     item[key('previous_container_id')] = item[key('container_id')];
     delete item[key('container_id')];
     delete item[key('container_checked_at')];
+    // A source-specific processing error must never reserve the only feed
+    // lane for hours. After three distinct containers fail, quarantine this
+    // item for a fresh capture and immediately let the next ready video use
+    // the lane. The collector can later repair it without starving the feed.
+    if (failures >= 3) {
+      item.status = 'media_refresh_required';
+      item[key('retry_at')] = new Date(now + 6 * 60 * 60_000).toISOString();
+      await save();
+      throw new Error(`${prefix}: ${status}; media refresh required after ${failures} failed containers`);
+    }
     item[key('retry_at')] = new Date(now + Math.min(240, 30 * 2 ** (failures - 1)) * 60_000).toISOString();
     await save();
     throw new Error(`${prefix}: ${status}; retry after ${item[key('retry_at')]}: ${result.error_message || result.status || ''}`);

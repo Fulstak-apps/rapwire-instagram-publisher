@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T06:11:33.255Z",
+  "checked_at": "2026-09-29T06:16:46.437Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-09-29T06:02:32.946Z",
-    "usage": 28,
+    "usage": 29,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-09-29T06:17:32.946Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-29T06:11:17.481Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-29T06:46:46.072Z",
+  "publications": [
+    {
+      "file": "1055-cardi-b-s-mom-kept-her-old-room-exactly-the-same-in-case-she-eve.json",
+      "id": "1055-cardi-b-s-mom-kept-her-old-room-exactly-the-same-in-case-she-eve",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18094647260542488"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

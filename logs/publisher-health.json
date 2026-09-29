@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T15:28:51.615Z",
+  "checked_at": "2026-09-29T15:34:55.719Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-29T15:23:36.322Z",
     "usage": 27,
@@ -33,7 +33,7 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -56,18 +56,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr.json",
-      "id": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "instagram: ERROR; retry after 2026-09-29T16:28:50.990Z: ERROR"
-    },
-    {
-      "file": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-.json",
-      "id": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
+      "file": "rapwire-carousel-2026-09-28-1700.json",
+      "id": "rapwire-carousel-2026-09-28-1700",
       "platform": "threads",
       "status": "failed",
-      "error": "threads: ERROR; retry after 2026-09-29T17:28:51.164Z: UNKNOWN"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"AMqMXJbUMDsf0FAn6VMjJ1g\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

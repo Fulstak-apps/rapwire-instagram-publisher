@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T04:25:19.492Z",
+  "checked_at": "2026-09-29T04:30:28.947Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-29T04:15:13.444Z",
-    "usage": 28,
+    "checked_at": "2026-09-29T04:30:19.136Z",
+    "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-29T04:30:13.444Z",
+    "next_check_at": "2026-09-29T04:45:19.136Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-29T04:24:59.000Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-29T05:00:28.636Z",
+  "publications": [
+    {
+      "file": "1052-lebron-james-has-officially-arrived-in-philadelphia-the-king-sho.json",
+      "id": "1052-lebron-james-has-officially-arrived-in-philadelphia-the-king-sho",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18125977519702598"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

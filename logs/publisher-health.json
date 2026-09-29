@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T06:53:02.628Z",
+  "checked_at": "2026-09-29T06:53:39.710Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-09-29T06:41:59.091Z",
     "usage": 28,
@@ -54,14 +54,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T06:46:46.072Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr.json",
-      "id": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr",
-      "platform": "threads",
-      "status": "failed",
-      "error": "threads: ERROR; retry after 2026-09-29T07:23:02.121Z: UNKNOWN"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

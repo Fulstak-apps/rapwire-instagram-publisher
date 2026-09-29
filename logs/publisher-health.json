@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T14:39:27.784Z",
+  "checked_at": "2026-09-29T14:43:43.381Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T15:09:27.461Z",
-  "publications": [
-    {
-      "file": "rapwire-carousel-2026-09-26-0800.json",
-      "id": "rapwire-carousel-2026-09-26-0800",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18098743262071413"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

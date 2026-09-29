@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T00:37:43.956Z",
+  "checked_at": "2026-09-29T00:42:51.849Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T00:37:43.473Z",
-    "usage": 27,
+    "checked_at": "2026-09-29T00:42:44.047Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T00:52:43.473Z",
+    "next_check_at": "2026-09-29T00:57:44.047Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-29T00:38:51.862Z",
-    "feed_allowed": false,
+    "next_feed_eligible_at": "2026-09-29T01:12:50.950Z",
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T00:39:00.630Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an.json",
+      "id": "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18011181188764084",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T22:15:39.631Z",
+  "checked_at": "2026-09-29T22:20:30.502Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-29T22:45:39.390Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T22:45:33.305Z",
-  "publications": [
-    {
-      "file": "1063-the-leafs-are-back-this-week-and-there-s-plenty-more-to-get-exci.json",
-      "id": "1063-the-leafs-are-back-this-week-and-there-s-plenty-more-to-get-exci",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18636534241015405"
-    },
-    {
-      "file": "1063-the-leafs-are-back-this-week-and-there-s-plenty-more-to-get-exci.json",
-      "id": "1063-the-leafs-are-back-this-week-and-there-s-plenty-more-to-get-exci",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18489782584110601",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

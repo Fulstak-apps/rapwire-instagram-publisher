@@ -1,23 +1,22 @@
 {
-  "reserve_count": 2,
-  "reserve_hours": 1,
+  "reserve_count": 3,
+  "reserve_hours": 1.5,
   "reserve_low": true,
   "queue_empty": false,
-  "overdue": true,
+  "overdue": false,
   "health_stale": false,
-  "processing": [
-    "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-"
-  ],
+  "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
-    "rapwire-carousel-2026-09-29-0800"
+    "1060-kim-kardashian-was-asked-to-sign-a-bright-red-crocodile-birkin-w",
+    "1061-sauce-walka-talks-about-go-yayo",
+    "1062-trump-says-people-are-entering-canada-from-other-countries-total"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-09-29T15:40:56.096Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-09-29T20:13:00.170Z",
   "deferred": []
 }

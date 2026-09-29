@@ -18041,6 +18041,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/p/Dd4kkEbOndO/",
       "view_count": 0
+    },
+    "Dd2HDE_zUwf": {
+      "seen_at": "2026-09-29T22:08:28.787Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd2HDE_zUwf/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -23730,32 +23736,16 @@
       "source_url": "https://www.instagram.com/jbookoutmusic/reel/Dd4iB_2Jrtc/",
       "queue_id": "1071-racks-sum-green-sum-blue-drake-champagnepapi-houston-newmusic",
       "video": "media/1071-racks-sum-green-sum-blue-drake-champagnepapi-houston-newmusic.mp4"
+    },
+    "Dd4bE0Mi56h": {
+      "queued_at": "2026-09-29T22:08:58.293Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dd4bE0Mi56h/",
+      "queue_id": "1072-we-ll-never-see-all-these-artists-on-the-same-song-ever-again-mo",
+      "video": "media/1072-we-ll-never-see-all-these-artists-on-the-same-song-ever-again-mo.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T07:30:48.695Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 33,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T07:31:18.248Z"
-    },
     {
       "started_at": "2026-09-28T07:30:48.695Z",
       "candidates": 48,
@@ -31528,6 +31518,50 @@
         ]
       },
       "finished_at": "2026-09-29T22:01:48.169Z"
+    },
+    {
+      "started_at": "2026-09-29T22:08:01.381Z",
+      "candidates": 41,
+      "queued": [
+        "1072-we-ll-never-see-all-these-artists-on-the-same-song-ever-again-mo"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd2HDE_zUwf/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd2IFvEvhOa/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd2hhGlK5qz/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 9,
+        "needed": 39
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-29T22:08:58.293Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T09:05:24.893Z",
+  "checked_at": "2026-09-29T11:17:56.608Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T09:05:23.515Z",
-    "usage": 27,
+    "checked_at": "2026-09-29T11:17:46.528Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T09:20:23.515Z",
+    "next_check_at": "2026-09-29T11:32:46.528Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-29T07:12:06.499Z",
+    "next_feed_eligible_at": "2026-09-29T11:47:56.141Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,34 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-29T09:05:23.263Z",
+    "checked_at": "2026-09-29T11:17:46.161Z",
     "usage": 26,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-29T09:20:23.263Z",
+    "next_check_at": "2026-09-29T11:32:46.161Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T06:46:46.072Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "1054-lil-baby-was-spotted-riding-a-motorcycle-by-himself-in-miami-whi.json",
+      "id": "1054-lil-baby-was-spotted-riding-a-motorcycle-by-himself-in-miami-whi",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18489692563105964",
+      "content_type": "video"
+    }
+  ],
+  "failures": [
+    {
+      "file": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr.json",
+      "id": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr",
+      "platform": "threads",
+      "status": "failed",
+      "error": "threads: ERROR; retry after 2026-09-29T12:17:56.276Z: UNKNOWN"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

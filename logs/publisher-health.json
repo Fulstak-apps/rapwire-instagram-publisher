@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T14:48:10.703Z",
+  "checked_at": "2026-09-29T14:53:12.174Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,6 +54,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T15:09:27.461Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr.json",
+      "id": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "instagram: ERROR; retry after 2026-09-29T15:23:11.842Z: ERROR"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T06:42:06.760Z",
+  "checked_at": "2026-09-29T06:48:02.626Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-29T07:12:06.499Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T06:46:46.072Z",
-  "publications": [
-    {
-      "file": "1053-the-eye-contact-after-the-question-e-40-s-uh-huh-featuring-yv-is.json",
-      "id": "1053-the-eye-contact-after-the-question-e-40-s-uh-huh-featuring-yv-is",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18032430617893339",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

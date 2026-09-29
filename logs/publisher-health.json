@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T14:17:58.761Z",
+  "checked_at": "2026-09-29T14:22:50.175Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-29T14:47:58.385Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,24 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T06:46:46.072Z",
-  "publications": [
-    {
-      "file": "1055-cardi-b-s-mom-kept-her-old-room-exactly-the-same-in-case-she-eve.json",
-      "id": "1055-cardi-b-s-mom-kept-her-old-room-exactly-the-same-in-case-she-eve",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18090662606212101",
-      "content_type": "video"
-    }
-  ],
-  "failures": [
-    {
-      "file": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr.json",
-      "id": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr",
-      "platform": "threads",
-      "status": "failed",
-      "error": "threads: ERROR; retry after 2026-09-29T16:17:58.471Z: UNKNOWN"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

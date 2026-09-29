@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T17:20:06.897Z",
+  "checked_at": "2026-09-29T17:25:08.367Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -54,6 +54,21 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-29T17:18:26.099Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr.json",
+      "id": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr",
+      "platform": "threads",
+      "status": "failed",
+      "error": "threads: ERROR; retry after 2026-09-29T21:25:07.821Z: UNKNOWN"
+    },
+    {
+      "file": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-.json",
+      "id": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "instagram: ERROR; retry after 2026-09-29T19:25:08.114Z: ERROR"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

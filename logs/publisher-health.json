@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T15:34:55.719Z",
+  "checked_at": "2026-09-29T15:39:20.074Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,13 +8,13 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T15:23:36.322Z",
-    "usage": 27,
+    "checked_at": "2026-09-29T15:35:38.988Z",
+    "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T15:38:36.322Z",
+    "next_check_at": "2026-09-29T15:50:38.988Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -33,7 +33,7 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,25 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-29T15:18:35.123Z",
+    "checked_at": "2026-09-29T15:35:38.639Z",
     "usage": 25,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-29T15:33:35.123Z",
+    "next_check_at": "2026-09-29T15:50:38.639Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-29T15:09:27.461Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-09-29T16:09:19.746Z",
+  "publications": [
     {
-      "file": "rapwire-carousel-2026-09-28-1700.json",
-      "id": "rapwire-carousel-2026-09-28-1700",
+      "file": "rapwire-carousel-2026-09-25-0800.json",
+      "id": "rapwire-carousel-2026-09-25-0800",
       "platform": "threads",
-      "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"AMqMXJbUMDsf0FAn6VMjJ1g\"}}"
+      "status": "published",
+      "media_id": "18043733183627975"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

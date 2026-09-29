@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T16:29:27.183Z",
+  "checked_at": "2026-09-29T16:38:56.062Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -56,11 +56,18 @@
   "publications": [],
   "failures": [
     {
-      "file": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-.json",
-      "id": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
+      "file": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr.json",
+      "id": "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "instagram: ERROR; retry after 2026-09-29T18:34:32.802Z: ERROR"
+    },
+    {
+      "file": "rapwire-carousel-2026-09-28-1700.json",
+      "id": "rapwire-carousel-2026-09-28-1700",
       "platform": "threads",
       "status": "failed",
-      "error": "threads: ERROR; retry after 2026-09-29T20:29:26.782Z: UNKNOWN"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"AbiIsUa_P_RNJQO7STYdpho\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

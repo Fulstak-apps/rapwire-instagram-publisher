@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-29T18:45:54.345Z",
+  "checked_at": "2026-09-29T18:55:28.655Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-29T18:35:51.358Z",
+    "checked_at": "2026-09-29T18:51:00.828Z",
     "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-29T18:50:51.358Z",
+    "next_check_at": "2026-09-29T19:06:00.828Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -56,11 +56,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-.json",
-      "id": "1057-rihanna-pulled-up-to-the-mati-res-f-cales-show-in-paris-serving-",
+      "file": "rapwire-carousel-2026-09-28-1700.json",
+      "id": "rapwire-carousel-2026-09-28-1700",
       "platform": "threads",
       "status": "failed",
-      "error": "threads: ERROR; retry after 2026-09-29T22:45:53.848Z: UNKNOWN"
+      "error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"AGOcUYR300Up4AlCqo26RJY\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

@@ -18119,6 +18119,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/p/Dd46AQTjoMj/",
       "view_count": 0
+    },
+    "Dd47md2Au8t": {
+      "seen_at": "2026-09-29T23:32:49.545Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/Dd47md2Au8t/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -23857,32 +23863,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dd4R_88KlSK/",
       "queue_id": "1078-dj-pauly-d-proposed-to-his-girlfriend-nikki-hall-in-the-middle-o",
       "video": "media/1078-dj-pauly-d-proposed-to-his-girlfriend-nikki-hall-in-the-middle-o.mp4"
+    },
+    "Dd47md2Au8t": {
+      "queued_at": "2026-09-29T23:33:32.832Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/Dd47md2Au8t/",
+      "queue_id": "1079-judeline-and-her-mom-are-both-21-savage-21savage-fans",
+      "video": "media/1079-judeline-and-her-mom-are-both-21-savage-21savage-fans.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T13:46:39.978Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 33,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T14:05:17.440Z"
-    },
     {
       "started_at": "2026-09-28T14:45:50.985Z",
       "candidates": 41,
@@ -31582,6 +31572,31 @@
         ]
       },
       "finished_at": "2026-09-29T23:27:11.645Z"
+    },
+    {
+      "started_at": "2026-09-29T23:32:30.179Z",
+      "candidates": 48,
+      "queued": [
+        "1079-judeline-and-her-mom-are-both-21-savage-21savage-fans"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 13,
+        "needed": 35
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-29T23:33:32.832Z"
     }
   ],
   "vip_pending": {

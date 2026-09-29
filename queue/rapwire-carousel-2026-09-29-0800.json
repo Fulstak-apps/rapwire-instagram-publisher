@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-09-29-0800",
-  "status": "ready",
+  "status": "paused",
   "ai_generated_art": true,
   "created_at": "2026-09-29T08:00:00-07:00",
   "publish_after": "2026-09-29T15:00:00Z",
@@ -35,13 +35,48 @@
     "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-the-goodtime-state-vice-city-collection-now-while-supplies-last"
   ],
   "slide_editorial_copy": [
-    {"slide": 1, "headline": "MEEK MILL FLIPS THE LEAK", "deck": "After two tracks surfaced online, Philly’s MC posted official videos for “Philly Heathens” and “Am I Wrong?”", "text_on_art": true, "top_banner": false},
-    {"slide": 2, "headline": "2 CHAINZ LINKS WITH CASH COBAIN & YOUNG NUDY", "deck": "“Reign,” produced with Statik Selektah, puts three different rap lanes on one 3:05 single.", "text_on_art": true, "top_banner": false},
-    {"slide": 3, "headline": "EMINEM’S ENCORE 4 REPORTEDLY SCRAPPED", "deck": "The rumored 2027 Air Jordan 4 return is now off the calendar, with no new date confirmed.", "text_on_art": true, "top_banner": false},
-    {"slide": 4, "headline": "GTA VI VOICE CAST TOLD: STAY QUIET", "deck": "A report says Rockstar reminded performers to honor their NDAs after Stephen Root confirmed his role.", "text_on_art": true, "top_banner": false},
-    {"slide": 5, "headline": "GTA VI’S $400 BOX COMES WITHOUT THE GAME", "deck": "Rockstar’s Vice City Collection is merch only—and Ubisoft just turned the omission into a punchline.", "text_on_art": true, "top_banner": false}
+    {
+      "slide": 1,
+      "headline": "MEEK MILL FLIPS THE LEAK",
+      "deck": "After two tracks surfaced online, Philly’s MC posted official videos for “Philly Heathens” and “Am I Wrong?”",
+      "text_on_art": true,
+      "top_banner": false
+    },
+    {
+      "slide": 2,
+      "headline": "2 CHAINZ LINKS WITH CASH COBAIN & YOUNG NUDY",
+      "deck": "“Reign,” produced with Statik Selektah, puts three different rap lanes on one 3:05 single.",
+      "text_on_art": true,
+      "top_banner": false
+    },
+    {
+      "slide": 3,
+      "headline": "EMINEM’S ENCORE 4 REPORTEDLY SCRAPPED",
+      "deck": "The rumored 2027 Air Jordan 4 return is now off the calendar, with no new date confirmed.",
+      "text_on_art": true,
+      "top_banner": false
+    },
+    {
+      "slide": 4,
+      "headline": "GTA VI VOICE CAST TOLD: STAY QUIET",
+      "deck": "A report says Rockstar reminded performers to honor their NDAs after Stephen Root confirmed his role.",
+      "text_on_art": true,
+      "top_banner": false
+    },
+    {
+      "slide": 5,
+      "headline": "GTA VI’S $400 BOX COMES WITHOUT THE GAME",
+      "deck": "Rockstar’s Vice City Collection is merch only—and Ubisoft just turned the omission into a punchline.",
+      "text_on_art": true,
+      "top_banner": false
+    }
   ],
-  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "brand_logo": {
+    "asset": "assets/rapwire247-logo.png",
+    "position": "bottom-left",
+    "transparent_background": true,
+    "backing_shape": "none"
+  },
   "slides": [
     "media/rapwire-carousel-2026-09-29-0800/rapwire-carousel-2026-09-29-0800-slide-1.png",
     "media/rapwire-carousel-2026-09-29-0800/rapwire-carousel-2026-09-29-0800-slide-2.png",
@@ -57,7 +92,22 @@
   "text_overflow_checked": true,
   "grid_safe_checked": true,
   "qa_passed": true,
-  "qa": {"dimensions":"1080x1350","slide_count":5,"distinct_stories":5,"two_sources_per_story":true,"official_logo_used":true,"logo_transparent_and_unboxed":true,"legacy_graphics_used":false,"caption_numbered_1_to_5":true,"caption_avoids_ai_term":true,"passed":true},
+  "qa": {
+    "dimensions": "1080x1350",
+    "slide_count": 5,
+    "distinct_stories": 5,
+    "two_sources_per_story": true,
+    "official_logo_used": true,
+    "logo_transparent_and_unboxed": true,
+    "legacy_graphics_used": false,
+    "caption_numbered_1_to_5": true,
+    "caption_avoids_ai_term": true,
+    "passed": true
+  },
   "publish_blocked": false,
-  "news_verification": {"status":"verified","checked_at":"2026-09-29T08:00:00-07:00"}
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-09-29T08:00:00-07:00"
+  },
+  "pause_reason": "Carousel contract blocked: generic carousel framing is not allowed"
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T21:51:36.298Z",
+  "checked_at": "2026-09-30T21:56:17.423Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 31,
-    "instagram_remaining": 17,
+    "instagram_usage": 32,
+    "instagram_remaining": 16,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-30T22:21:36.042Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-30T22:21:26.529Z",
-  "publications": [
-    {
-      "file": "1094-newly-surfaced-footage-is-reportedly-showing-sean-diddy-combs-in.json",
-      "id": "1094-newly-surfaced-footage-is-reportedly-showing-sean-diddy-combs-in",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18062674076541309"
-    },
-    {
-      "file": "1094-newly-surfaced-footage-is-reportedly-showing-sean-diddy-combs-in.json",
-      "id": "1094-newly-surfaced-footage-is-reportedly-showing-sean-diddy-combs-in",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18131944036678263",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

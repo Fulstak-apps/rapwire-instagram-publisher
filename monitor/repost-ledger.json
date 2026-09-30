@@ -18203,6 +18203,18 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/Dd5IfZ5l3cQ/",
       "view_count": 0
+    },
+    "Dd5JIhvo4Jy": {
+      "seen_at": "2026-09-30T01:40:08.730Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/p/Dd5JIhvo4Jy/",
+      "view_count": 0
+    },
+    "Dd5KE-rFNYc": {
+      "seen_at": "2026-09-30T01:40:08.733Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd5KE-rFNYc/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -24018,105 +24030,16 @@
       "source_url": "https://www.instagram.com/jm.edia/reel/Dd3Dnh9RwT2/",
       "queue_id": "1089-i-wonder-live-in-chicago-night-1-presented-by-ye-yeezy-chicago-y",
       "video": "media/1089-i-wonder-live-in-chicago-night-1-presented-by-ye-yeezy-chicago-y.mp4"
+    },
+    "Dd5KE-rFNYc": {
+      "queued_at": "2026-09-30T01:40:50.095Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd5KE-rFNYc/",
+      "queue_id": "1090-we-got-to-go-hands-on-with-monster-hunter-outlanders-which-faith",
+      "video": "media/1090-we-got-to-go-hands-on-with-monster-hunter-outlanders-which-faith.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T15:05:07.332Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzwHQgv8Iw/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddz5jhmPYLU/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddz-cJKRvJH/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 31,
-        "needed": 17
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-28T15:05:51.105Z"
-    },
-    {
-      "started_at": "2026-09-28T15:05:07.332Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzwHQgv8Iw/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddz5jhmPYLU/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddz-cJKRvJH/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 31,
-        "needed": 17
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-28T15:05:51.105Z"
-    },
     {
       "started_at": "2026-09-28T15:05:07.332Z",
       "candidates": 41,
@@ -31591,6 +31514,54 @@
         ]
       },
       "finished_at": "2026-09-30T01:28:28.704Z"
+    },
+    {
+      "started_at": "2026-09-30T01:33:57.851Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 21,
+        "needed": 27
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-30T01:34:28.626Z"
+    },
+    {
+      "started_at": "2026-09-30T01:39:37.061Z",
+      "candidates": 48,
+      "queued": [
+        "1090-we-got-to-go-hands-on-with-monster-hunter-outlanders-which-faith"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 21,
+        "needed": 27
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-30T01:40:50.095Z"
     }
   ],
   "vip_pending": {

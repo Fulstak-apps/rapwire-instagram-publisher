@@ -18581,6 +18581,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/lethalshooter/reel/Dd6-vAXv6hG/",
       "view_count": 0
+    },
+    "Dd6_-XBAPR5": {
+      "seen_at": "2026-09-30T18:55:51.754Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dd6_-XBAPR5/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -24550,59 +24556,16 @@
       "source_url": "https://www.instagram.com/lethalshooter/reel/Dd6-vAXv6hG/",
       "queue_id": "1111-dame-dash-understands-it-now-shooter-passer-trainer-nba-nyc-leth",
       "video": "media/1111-dame-dash-understands-it-now-shooter-passer-trainer-nba-nyc-leth.mp4"
+    },
+    "Dd6_-XBAPR5": {
+      "queued_at": "2026-09-30T18:56:20.321Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dd6_-XBAPR5/",
+      "queue_id": "1112-tory-stays-putting-on-for-toronto-via",
+      "video": "media/1112-tory-stays-putting-on-for-toronto-via.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T17:24:38.656Z",
-      "candidates": 48,
-      "queued": [
-        "1049-detroit-lions-superstar-wr-amonrastbrown-has-opened-up-about-wha"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T17:25:45.871Z"
-    },
-    {
-      "started_at": "2026-09-28T17:24:38.656Z",
-      "candidates": 48,
-      "queued": [
-        "1049-detroit-lions-superstar-wr-amonrastbrown-has-opened-up-about-wha"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T17:25:45.871Z"
-    },
     {
       "started_at": "2026-09-28T17:24:38.656Z",
       "candidates": 48,
@@ -31475,6 +31438,54 @@
         ]
       },
       "finished_at": "2026-09-30T18:41:11.040Z"
+    },
+    {
+      "started_at": "2026-09-30T18:49:38.891Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 23,
+        "needed": 25
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-09-30T18:50:17.787Z"
+    },
+    {
+      "started_at": "2026-09-30T18:55:24.978Z",
+      "candidates": 48,
+      "queued": [
+        "1112-tory-stays-putting-on-for-toronto-via"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 23,
+        "needed": 25
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-30T18:56:20.321Z"
     }
   ],
   "vip_pending": {

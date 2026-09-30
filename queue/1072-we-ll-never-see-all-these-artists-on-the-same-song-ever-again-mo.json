@@ -1,6 +1,6 @@
 {
   "id": "1072-we-ll-never-see-all-these-artists-on-the-same-song-ever-again-mo",
-  "status": "ready",
+  "status": "published",
   "publish_priority": 50,
   "date": "2026-09-29",
   "timezone": "America/Detroit",
@@ -32,7 +32,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "published",
   "artist_handles": [
     "kendricklamar",
     "champagnepapi"
@@ -45,8 +45,25 @@
   "source_video_duration": 27.305214,
   "instagram_container_id": "18115180544078478",
   "instagram_container_created_at": "2026-09-30T03:40:06.408Z",
-  "instagram_container_checked_at": "2026-09-30T03:40:06.408Z",
+  "instagram_container_checked_at": "2026-09-30T03:45:18.003Z",
   "threads_container_id": "18102820772179906",
   "threads_container_created_at": "2026-09-30T03:40:06.412Z",
-  "threads_container_checked_at": "2026-09-30T03:40:06.412Z"
+  "threads_container_checked_at": "2026-09-30T03:45:08.368Z",
+  "threads_container_status": "FINISHED",
+  "threads_publish_requested_at": "2026-09-30T03:45:08.368Z",
+  "threads_media_id": "18122419369713114",
+  "threads_published_at": "2026-09-30T03:45:17.767Z",
+  "threads_verified_at": "2026-09-30T03:45:18.002Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/Dd5Y_DID-a3",
+  "instagram_container_status": "FINISHED",
+  "instagram_publish_requested_at": "2026-09-30T03:45:18.003Z",
+  "instagram_media_id": "17911154253521142",
+  "instagram_published_at": "2026-09-30T03:45:18.003Z",
+  "published_at": "2026-09-30T03:45:27.855Z",
+  "instagram_verified_at": "2026-09-30T03:45:27.929Z",
+  "instagram_permalink": "https://www.instagram.com/reel/Dd5ZBQfnzGk/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "media_cleanup_status": "pending",
+  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/1072-we-ll-never-see-all-these-artists-on-the-same-song-ever-again-mo.mp4' -> '/home/runner/.Trash/RapWire-1790739927932-1072-we-ll-never-see-all-these-artists-on-the-same-song-ever-again-mo.mp4'"
 }

@@ -18161,6 +18161,18 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/andreitudor_ro/reel/Dd47X9vtcin/",
       "view_count": 0
+    },
+    "Dd4_pUjEcBA": {
+      "seen_at": "2026-09-30T00:14:02.249Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dd4_pUjEcBA/",
+      "view_count": 0
+    },
+    "Dd4vy2py1gH": {
+      "seen_at": "2026-09-30T00:14:02.249Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/jeremy_hecht/reel/Dd4vy2py1gH/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -23927,39 +23939,16 @@
       "source_url": "https://www.instagram.com/andreitudor_ro/reel/Dd47X9vtcin/",
       "queue_id": "1082-then-now-tupac-s-bmw-30-years-later-tupac-2pac-lasvegas-bmw-rip-",
       "video": "media/1082-then-now-tupac-s-bmw-30-years-later-tupac-2pac-lasvegas-bmw-rip-.mp4"
+    },
+    "Dd4vy2py1gH": {
+      "queued_at": "2026-09-30T00:15:04.591Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/jeremy_hecht/reel/Dd4vy2py1gH/",
+      "queue_id": "1083-tyler-the-creator-just-hopped-on-song-girls-for-a-remix-that-cur",
+      "video": "media/1083-tyler-the-creator-just-hopped-on-song-girls-for-a-remix-that-cur.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T14:51:36.797Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Dd1aaHHkRJS/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 32,
-        "needed": 16
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T14:52:16.472Z"
-    },
     {
       "started_at": "2026-09-28T14:51:36.797Z",
       "candidates": 48,
@@ -31531,6 +31520,31 @@
         ]
       },
       "finished_at": "2026-09-30T00:08:27.785Z"
+    },
+    {
+      "started_at": "2026-09-30T00:13:42.752Z",
+      "candidates": 48,
+      "queued": [
+        "1083-tyler-the-creator-just-hopped-on-song-girls-for-a-remix-that-cur"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 16,
+        "needed": 32
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 4,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-30T00:15:04.591Z"
     }
   ],
   "vip_pending": {

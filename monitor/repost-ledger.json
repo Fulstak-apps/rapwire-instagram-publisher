@@ -18863,6 +18863,24 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd7f12jRMBt/",
       "view_count": 0
+    },
+    "Dd7i_LSF8EM": {
+      "seen_at": "2026-09-30T23:52:57.533Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Dd7i_LSF8EM/",
+      "view_count": 0
+    },
+    "Dd7a8OlByk1": {
+      "seen_at": "2026-09-30T23:58:35.260Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dd7a8OlByk1/",
+      "view_count": 0
+    },
+    "Dd7cWr7ADzB": {
+      "seen_at": "2026-09-30T23:58:35.267Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dd7cWr7ADzB/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -24916,59 +24934,16 @@
       "source_url": "https://www.instagram.com/6ixbuzztv/p/Dd7boZTj7Ox/",
       "queue_id": "1123-people-believe-twitch-streamer-reggie-is-mentally-unwell-which-i",
       "video": "media/1123-people-believe-twitch-streamer-reggie-is-mentally-unwell-which-i.mp4"
+    },
+    "Dd7a8OlByk1": {
+      "queued_at": "2026-09-30T23:59:05.801Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dd7a8OlByk1/",
+      "queue_id": "1124-tatiana-chanell-reposts-a-video-of-reggie-alleging-that-kai-cena",
+      "video": "media/1124-tatiana-chanell-reposts-a-video-of-reggie-alleging-that-kai-cena.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T18:01:24.267Z",
-      "candidates": 48,
-      "queued": [
-        "1051-drake-champagnepapi-s-reaction-to-karol-g-dancing-on-him-during-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T18:02:14.887Z"
-    },
-    {
-      "started_at": "2026-09-28T18:01:24.267Z",
-      "candidates": 48,
-      "queued": [
-        "1051-drake-champagnepapi-s-reaction-to-karol-g-dancing-on-him-during-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T18:02:14.887Z"
-    },
     {
       "started_at": "2026-09-28T18:01:24.267Z",
       "candidates": 48,
@@ -31849,6 +31824,51 @@
         ]
       },
       "finished_at": "2026-09-30T23:47:16.411Z"
+    },
+    {
+      "started_at": "2026-09-30T23:52:42.252Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 27,
+        "needed": 21
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-30T23:52:57.536Z"
+    },
+    {
+      "started_at": "2026-09-30T23:58:05.319Z",
+      "candidates": 48,
+      "queued": [
+        "1124-tatiana-chanell-reposts-a-video-of-reggie-alleging-that-kai-cena"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 27,
+        "needed": 21
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-30T23:59:05.801Z"
     }
   ],
   "vip_pending": {

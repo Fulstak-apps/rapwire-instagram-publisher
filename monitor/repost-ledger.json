@@ -23991,59 +23991,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dd4OJDkCmxE/",
       "queue_id": "1086-drake-really-called-out-his-producer-for-wearing-a-garmin-watch-",
       "video": "media/1086-drake-really-called-out-his-producer-for-wearing-a-garmin-watch-.mp4"
+    },
+    "Dd3poFkRHAj": {
+      "queued_at": "2026-09-30T01:02:24.306Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dd3poFkRHAj/",
+      "queue_id": "1087-you-think-you-guys-can-buy-our-artifacts-like-how-we-buy-your-ar",
+      "video": "media/1087-you-think-you-guys-can-buy-our-artifacts-like-how-we-buy-your-ar.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T14:57:23.129Z",
-      "candidates": 48,
-      "queued": [
-        "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 31,
-        "needed": 17
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T14:58:53.273Z"
-    },
-    {
-      "started_at": "2026-09-28T14:57:23.129Z",
-      "candidates": 48,
-      "queued": [
-        "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 31,
-        "needed": 17
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T14:58:53.273Z"
-    },
     {
       "started_at": "2026-09-28T14:57:23.129Z",
       "candidates": 48,
@@ -31580,6 +31537,54 @@
         ]
       },
       "finished_at": "2026-09-30T00:50:41.720Z"
+    },
+    {
+      "started_at": "2026-09-30T00:55:59.128Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 19,
+        "needed": 29
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-30T00:56:23.948Z"
+    },
+    {
+      "started_at": "2026-09-30T01:01:34.834Z",
+      "candidates": 48,
+      "queued": [
+        "1087-you-think-you-guys-can-buy-our-artifacts-like-how-we-buy-your-ar"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 19,
+        "needed": 29
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-30T01:02:24.306Z"
     }
   ],
   "vip_pending": {

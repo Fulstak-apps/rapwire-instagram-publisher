@@ -18671,6 +18671,24 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/Dd7Je5Nulgv/",
       "view_count": 0
+    },
+    "Dd7Im1ElwAi": {
+      "seen_at": "2026-09-30T20:24:00.190Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dd7Im1ElwAi/",
+      "view_count": 0
+    },
+    "Dd7KBNbmeIk": {
+      "seen_at": "2026-09-30T20:24:00.193Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Dd7KBNbmeIk/",
+      "view_count": 0
+    },
+    "Dd7Lwj1sfW7": {
+      "seen_at": "2026-09-30T20:29:44.571Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd7Lwj1sfW7/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -24675,92 +24693,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Dd7Je5Nulgv/",
       "queue_id": "1116-footage-of-bloodhound-poohman-getting-fatally-shot-right-after-q",
       "video": "media/1116-footage-of-bloodhound-poohman-getting-fatally-shot-right-after-q.mp4"
+    },
+    "Dd7Lwj1sfW7": {
+      "queued_at": "2026-09-30T20:30:52.790Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd7Lwj1sfW7/",
+      "queue_id": "1117-why-arguing-is-for-poor-people",
+      "video": "media/1117-why-arguing-is-for-poor-people.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T17:38:47.867Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T17:39:12.359Z"
-    },
-    {
-      "started_at": "2026-09-28T17:44:19.183Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/thatdailyslapp/p/Dd0z10Cmyrk/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dd0z10Cmyrk-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T17:44:55.865Z"
-    },
-    {
-      "started_at": "2026-09-28T17:44:19.183Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/thatdailyslapp/p/Dd0z10Cmyrk/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dd0z10Cmyrk-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T17:44:55.865Z"
-    },
     {
       "started_at": "2026-09-28T17:44:19.183Z",
       "candidates": 48,
@@ -31619,6 +31561,77 @@
         ]
       },
       "finished_at": "2026-09-30T20:12:45.597Z"
+    },
+    {
+      "started_at": "2026-09-30T20:18:04.668Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 25,
+        "needed": 23
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-30T20:18:29.038Z"
+    },
+    {
+      "started_at": "2026-09-30T20:23:37.986Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 25,
+        "needed": 23
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-30T20:24:00.196Z"
+    },
+    {
+      "started_at": "2026-09-30T20:29:07.001Z",
+      "candidates": 36,
+      "queued": [
+        "1117-why-arguing-is-for-poor-people"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 25,
+        "needed": 23
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-09-30T20:30:52.790Z"
     }
   ],
   "vip_pending": {

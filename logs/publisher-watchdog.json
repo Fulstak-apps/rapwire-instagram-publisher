@@ -1,19 +1,16 @@
 {
-  "reserve_count": 17,
-  "reserve_hours": 8.5,
+  "reserve_count": 16,
+  "reserve_hours": 8,
   "reserve_low": true,
   "queue_empty": false,
   "overdue": false,
-  "health_stale": true,
+  "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "1081-wayne-shows-off-his-fiance",
-    "1082-then-now-tupac-s-bmw-30-years-later-tupac-2pac-lasvegas-bmw-rip-",
-    "1083-tyler-the-creator-just-hopped-on-song-girls-for-a-remix-that-cur",
     "1084-drake-champagnepapi-confirms-that-multiple-tracks-from-his-fomo-",
     "1085-they-got-a-video-of-diddy-w-a-cellphone-in-prison",
     "1086-drake-really-called-out-his-producer-for-wearing-a-garmin-watch-",
@@ -27,10 +24,12 @@
     "1094-newly-surfaced-footage-is-reportedly-showing-sean-diddy-combs-in",
     "1095-quavo-says-him-and-offset-are-healing-he-recently-spoke-to-on-ab",
     "1096-after-months-of-shutting-down-engagement-rumors-and-keeping-thei",
-    "1097-shoreline-mafia-rocked-out-had-the-crowd-going-crazy-during-thei"
+    "1097-shoreline-mafia-rocked-out-had-the-crowd-going-crazy-during-thei",
+    "1098-we-re-celebrating-ign-s-30th-anniversary-with-a-bundle-of-ign-fa",
+    "1099-rapper-bloodhoundlilspeedy-recently-shared-a-heartbreaking-memor"
   ],
   "dispatch": false,
   "reason": "within_pacing_window",
-  "checked_at": "2026-09-30T08:44:25.466Z",
+  "checked_at": "2026-09-30T15:20:21.044Z",
   "deferred": []
 }

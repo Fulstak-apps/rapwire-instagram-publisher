@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T17:02:47.972Z",
+  "checked_at": "2026-09-30T17:07:50.819Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-30T17:02:40.241Z",
-    "usage": 28,
+    "checked_at": "2026-09-30T17:07:43.430Z",
+    "usage": 29,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-30T17:17:40.241Z",
+    "next_check_at": "2026-09-30T17:22:43.430Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 28,
     "instagram_remaining": 20,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-30T16:57:39.373Z",
+    "next_feed_eligible_at": "2026-09-30T17:37:50.548Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "1086-drake-really-called-out-his-producer-for-wearing-a-garmin-watch-.json",
       "id": "1086-drake-really-called-out-his-producer-for-wearing-a-garmin-watch-",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18017217830945430"
+      "media_id": "17909876835499036",
+      "content_type": "video"
     }
   ],
   "failures": [],

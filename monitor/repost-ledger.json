@@ -18527,6 +18527,24 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/onthatnotetv/reel/Dd61oJrTF-K/",
       "view_count": 0
+    },
+    "Dd63pUQxFP2": {
+      "seen_at": "2026-09-30T17:54:52.741Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/reel/Dd63pUQxFP2/",
+      "view_count": 0
+    },
+    "Dd61vfAFGZu": {
+      "seen_at": "2026-09-30T17:54:52.743Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Dd61vfAFGZu/",
+      "view_count": 0
+    },
+    "Dd65X8Pi0uy": {
+      "seen_at": "2026-09-30T17:54:52.743Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/Dd65X8Pi0uy/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -24468,39 +24486,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dd64dnCCIG6/",
       "queue_id": "1107-diplo-brought-an-unreleased-x-track-into-plaqueboymax-s-stream-g",
       "video": "media/1107-diplo-brought-an-unreleased-x-track-into-plaqueboymax-s-stream-g.mp4"
+    },
+    "Dd65X8Pi0uy": {
+      "queued_at": "2026-09-30T17:56:18.071Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/Dd65X8Pi0uy/",
+      "queue_id": "1108-these-are-some-seriously-tough-choices-took-the-sound-check-chal",
+      "video": "media/1108-these-are-some-seriously-tough-choices-took-the-sound-check-chal.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T17:18:45.344Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T17:19:30.874Z"
-    },
     {
       "started_at": "2026-09-28T17:18:45.344Z",
       "candidates": 48,
@@ -31413,6 +31408,31 @@
         ]
       },
       "finished_at": "2026-09-30T17:48:50.290Z"
+    },
+    {
+      "started_at": "2026-09-30T17:54:26.044Z",
+      "candidates": 48,
+      "queued": [
+        "1108-these-are-some-seriously-tough-choices-took-the-sound-check-chal"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-30T17:56:18.072Z"
     }
   ],
   "vip_pending": {

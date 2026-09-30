@@ -18497,6 +18497,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/trapmatictv/p/Dd6xj_TlC1t/",
       "view_count": 0
+    },
+    "Dd60mVhDvNr": {
+      "seen_at": "2026-09-30T17:15:58.599Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/Dd60mVhDvNr/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -24424,114 +24430,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Dd6fnsdRojs/",
       "queue_id": "1105-four-years-ago-today-kid-cudi-released-his-album-entergalactic-a",
       "video": "media/1105-four-years-ago-today-kid-cudi-released-his-album-entergalactic-a.mp4"
+    },
+    "Dd6P4-YPW6u": {
+      "queued_at": "2026-09-30T17:22:13.514Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/Dd6P4-YPW6u/",
+      "queue_id": "1106-famous-dex-really-knew-how-to-turn-up-a-crowd-famous-dex-s-live-",
+      "video": "media/1106-famous-dex-really-knew-how-to-turn-up-a-crowd-famous-dex-s-live-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T17:04:53.799Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/thatdailyslapp/p/Dd0z10Cmyrk/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dd0z10Cmyrk-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T17:05:49.213Z"
-    },
-    {
-      "started_at": "2026-09-28T17:10:58.944Z",
-      "candidates": 48,
-      "queued": [
-        "1048-10-years-complexcon-returns-october-3-4-link-in-bio-to-purchase-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T17:13:03.855Z"
-    },
-    {
-      "started_at": "2026-09-28T17:10:58.944Z",
-      "candidates": 48,
-      "queued": [
-        "1048-10-years-complexcon-returns-october-3-4-link-in-bio-to-purchase-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T17:13:03.855Z"
-    },
-    {
-      "started_at": "2026-09-28T17:10:58.944Z",
-      "candidates": 48,
-      "queued": [
-        "1048-10-years-complexcon-returns-october-3-4-link-in-bio-to-purchase-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T17:13:03.855Z"
-    },
     {
       "started_at": "2026-09-28T17:10:58.944Z",
       "candidates": 48,
@@ -31369,6 +31277,111 @@
         ]
       },
       "finished_at": "2026-09-30T16:58:38.275Z"
+    },
+    {
+      "started_at": "2026-09-30T17:04:23.214Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/Dd1aaHHkRJS/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-30T17:05:03.009Z"
+    },
+    {
+      "started_at": "2026-09-30T17:10:12.514Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-30T17:10:26.771Z"
+    },
+    {
+      "started_at": "2026-09-30T17:15:34.024Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/p/Dd2cKaADS7Z/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 19,
+        "needed": 29
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-30T17:16:10.177Z"
+    },
+    {
+      "started_at": "2026-09-30T17:21:17.718Z",
+      "candidates": 41,
+      "queued": [
+        "1106-famous-dex-really-knew-how-to-turn-up-a-crowd-famous-dex-s-live-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 19,
+        "needed": 29
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-30T17:22:13.514Z"
     }
   ],
   "vip_pending": {

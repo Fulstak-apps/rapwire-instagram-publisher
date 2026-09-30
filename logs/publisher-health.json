@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T04:56:21.784Z",
+  "checked_at": "2026-09-30T05:01:06.339Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 25,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-30T05:26:21.590Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-30T04:45:52.744Z",
+    "checked_at": "2026-09-30T05:01:06.198Z",
     "usage": 24,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-30T05:00:52.744Z",
+    "next_check_at": "2026-09-30T05:16:06.198Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-30T05:26:09.239Z",
-  "publications": [
-    {
-      "file": "1074-ohgeesy-brings-out-his-mom-during-bands-at-sold-out-seattle-show.json",
-      "id": "1074-ohgeesy-brings-out-his-mom-during-bands-at-sold-out-seattle-show",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18111090098272750"
-    },
-    {
-      "file": "1074-ohgeesy-brings-out-his-mom-during-bands-at-sold-out-seattle-show.json",
-      "id": "1074-ohgeesy-brings-out-his-mom-during-bands-at-sold-out-seattle-show",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18094501865670065",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

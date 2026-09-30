@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T05:31:42.684Z",
+  "checked_at": "2026-09-30T05:36:30.949Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 25,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-30T06:01:42.492Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-30T06:01:34.761Z",
-  "publications": [
-    {
-      "file": "1075-go-yayo-ready-for-the-punchathon.json",
-      "id": "1075-go-yayo-ready-for-the-punchathon",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17912416599528009"
-    },
-    {
-      "file": "1075-go-yayo-ready-for-the-punchathon.json",
-      "id": "1075-go-yayo-ready-for-the-punchathon",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18107308601525564",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

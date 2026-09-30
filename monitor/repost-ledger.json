@@ -18287,6 +18287,12 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/p/Dd5UpmVEQ4O/",
       "view_count": 0
+    },
+    "Dd5WOS6l9eG": {
+      "seen_at": "2026-09-30T03:39:18.453Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Dd5WOS6l9eG/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -24144,97 +24150,16 @@
       "source_url": "https://www.instagram.com/complexmusic/p/Dd5XaMbkUO8/",
       "queue_id": "1095-quavo-says-him-and-offset-are-healing-he-recently-spoke-to-on-ab",
       "video": "media/1095-quavo-says-him-and-offset-are-healing-he-recently-spoke-to-on-ab.mp4"
+    },
+    "Dd4M-irFBg1": {
+      "queued_at": "2026-09-30T03:45:04.559Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd4M-irFBg1/",
+      "queue_id": "1096-after-months-of-shutting-down-engagement-rumors-and-keeping-thei",
+      "video": "media/1096-after-months-of-shutting-down-engagement-rumors-and-keeping-thei.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T15:25:14.979Z",
-      "candidates": 41,
-      "queued": [
-        "1045-bro-was-most-proud-of-his-2-75-apr-via-yung-miami-was-feeling-al"
-      ],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzRTU7P95-/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzSpt4vH0-/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddzuw2WTH5Y/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 30,
-        "needed": 18
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-28T15:29:25.363Z"
-    },
-    {
-      "started_at": "2026-09-28T15:25:14.979Z",
-      "candidates": 41,
-      "queued": [
-        "1045-bro-was-most-proud-of-his-2-75-apr-via-yung-miami-was-feeling-al"
-      ],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzRTU7P95-/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/DdzSpt4vH0-/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Ddzuw2WTH5Y/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 30,
-        "needed": 18
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-28T15:29:25.363Z"
-    },
     {
       "started_at": "2026-09-28T15:25:14.979Z",
       "candidates": 41,
@@ -31560,6 +31485,54 @@
         ]
       },
       "finished_at": "2026-09-30T03:33:27.575Z"
+    },
+    {
+      "started_at": "2026-09-30T03:38:48.970Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 4,
+        "handles": [
+          "6ixbuzztv",
+          "ceddynash",
+          "rockstargames",
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-09-30T03:39:18.458Z"
+    },
+    {
+      "started_at": "2026-09-30T03:44:25.298Z",
+      "candidates": 48,
+      "queued": [
+        "1096-after-months-of-shutting-down-engagement-rumors-and-keeping-thei"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 4,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-09-30T03:45:04.559Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T20:40:43.750Z",
+  "checked_at": "2026-09-30T20:45:23.691Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 31,
-    "instagram_remaining": 17,
+    "instagram_usage": 32,
+    "instagram_remaining": 16,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-30T21:10:43.496Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-30T20:30:14.121Z",
+    "checked_at": "2026-09-30T20:45:23.546Z",
     "usage": 32,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-30T20:45:14.121Z",
+    "next_check_at": "2026-09-30T21:00:23.546Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-30T21:10:35.261Z",
-  "publications": [
-    {
-      "file": "1092-n3on-just-surprised-former-nba-player-delonte-west-who-has-been-.json",
-      "id": "1092-n3on-just-surprised-former-nba-player-delonte-west-who-has-been-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18172023871397454"
-    },
-    {
-      "file": "1092-n3on-just-surprised-former-nba-player-delonte-west-who-has-been-.json",
-      "id": "1092-n3on-just-surprised-former-nba-player-delonte-west-who-has-been-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18101094905326168",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

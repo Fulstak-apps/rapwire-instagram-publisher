@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T18:13:34.827Z",
+  "checked_at": "2026-09-30T18:18:57.041Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-30T18:13:33.189Z",
-    "usage": 30,
+    "checked_at": "2026-09-30T18:18:48.687Z",
+    "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-30T18:28:33.189Z",
+    "next_check_at": "2026-09-30T18:33:48.687Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-30T18:13:17.581Z",
+    "next_feed_eligible_at": "2026-09-30T18:48:56.746Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-30T17:58:56.206Z",
-    "usage": 30,
+    "checked_at": "2026-09-30T18:18:41.310Z",
+    "usage": 31,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-30T18:13:56.206Z",
+    "next_check_at": "2026-09-30T18:33:41.310Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-30T18:08:28.549Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-30T18:48:47.943Z",
+  "publications": [
+    {
+      "file": "1088-drake-champagnepapi-was-not-letting-kai-cenat-forget-about-that-.json",
+      "id": "1088-drake-champagnepapi-was-not-letting-kai-cenat-forget-about-that-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17949373254299188"
+    },
+    {
+      "file": "1088-drake-champagnepapi-was-not-letting-kai-cenat-forget-about-that-.json",
+      "id": "1088-drake-champagnepapi-was-not-letting-kai-cenat-forget-about-that-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18104615951368914",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -23998,34 +23998,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/Dd3poFkRHAj/",
       "queue_id": "1087-you-think-you-guys-can-buy-our-artifacts-like-how-we-buy-your-ar",
       "video": "media/1087-you-think-you-guys-can-buy-our-artifacts-like-how-we-buy-your-ar.mp4"
+    },
+    "Dd3-99HuTAX": {
+      "queued_at": "2026-09-30T01:08:47.158Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dd3-99HuTAX/",
+      "queue_id": "1088-drake-champagnepapi-was-not-letting-kai-cenat-forget-about-that-",
+      "video": "media/1088-drake-champagnepapi-was-not-letting-kai-cenat-forget-about-that-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T14:57:23.129Z",
-      "candidates": 48,
-      "queued": [
-        "1044-strawberry-orange-energy-boost-fresh-orange-flavor-strawberry-an"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 31,
-        "needed": 17
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T14:58:53.273Z"
-    },
     {
       "started_at": "2026-09-28T14:57:23.129Z",
       "candidates": 48,
@@ -31585,6 +31567,31 @@
         ]
       },
       "finished_at": "2026-09-30T01:02:24.306Z"
+    },
+    {
+      "started_at": "2026-09-30T01:07:49.018Z",
+      "candidates": 41,
+      "queued": [
+        "1088-drake-champagnepapi-was-not-letting-kai-cenat-forget-about-that-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 20,
+        "needed": 28
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 4,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-30T01:08:47.158Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T02:29:23.486Z",
+  "checked_at": "2026-09-30T02:34:28.623Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-30T02:29:15.397Z",
+    "checked_at": "2026-09-30T02:34:18.869Z",
     "usage": 23,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-30T02:44:15.397Z",
+    "next_check_at": "2026-09-30T02:49:18.869Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 23,
     "instagram_remaining": 25,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-30T02:24:17.279Z",
+    "next_feed_eligible_at": "2026-09-30T03:04:28.311Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "1070-bron-bron-leaving-the-76ers-facility-in-style.json",
       "id": "1070-bron-bron-leaving-the-76ers-facility-in-style",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18130051096830407"
+      "media_id": "18110699972158904",
+      "content_type": "video"
     }
   ],
   "failures": [],

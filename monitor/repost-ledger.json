@@ -18731,6 +18731,24 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dd7TPwSmc1H/",
       "view_count": 0
+    },
+    "Dd7SZC7D3-P": {
+      "seen_at": "2026-09-30T21:35:16.961Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dd7SZC7D3-P/",
+      "view_count": 0
+    },
+    "Dd7SDe3ItuL": {
+      "seen_at": "2026-09-30T21:41:22.209Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/reel/Dd7SDe3ItuL/",
+      "view_count": 0
+    },
+    "Dd7TXBORjZA": {
+      "seen_at": "2026-09-30T21:41:22.209Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd7TXBORjZA/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -24756,69 +24774,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/Dd7QueKBmkq/",
       "queue_id": "1119-ab-couldn-t-process-what-happened-when-a-man-with-no-legs-came-u",
       "video": "media/1119-ab-couldn-t-process-what-happened-when-a-man-with-no-legs-came-u.mp4"
+    },
+    "Dd7SDe3ItuL": {
+      "queued_at": "2026-09-30T21:41:58.749Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/reel/Dd7SDe3ItuL/",
+      "queue_id": "1120-this-is-nuts-hopefully-whatever-crash-they-got-into-didn-t-invol",
+      "video": "media/1120-this-is-nuts-hopefully-whatever-crash-they-got-into-didn-t-invol.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T17:55:30.208Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T17:56:15.748Z"
-    },
-    {
-      "started_at": "2026-09-28T17:55:30.208Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T17:56:15.748Z"
-    },
     {
       "started_at": "2026-09-28T17:55:30.208Z",
       "candidates": 48,
@@ -31701,6 +31666,61 @@
         ]
       },
       "finished_at": "2026-09-30T21:29:38.207Z"
+    },
+    {
+      "started_at": "2026-09-30T21:34:56.643Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/Dd18jHCjyO1/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 26,
+        "needed": 22
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-30T21:35:29.353Z"
+    },
+    {
+      "started_at": "2026-09-30T21:40:37.117Z",
+      "candidates": 36,
+      "queued": [
+        "1120-this-is-nuts-hopefully-whatever-crash-they-got-into-didn-t-invol"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 26,
+        "needed": 22
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-09-30T21:41:58.749Z"
     }
   ],
   "vip_pending": {

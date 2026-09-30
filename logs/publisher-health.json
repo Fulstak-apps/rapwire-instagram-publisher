@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T16:27:39.647Z",
+  "checked_at": "2026-09-30T16:32:17.613Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 27,
-    "instagram_remaining": 21,
+    "instagram_usage": 28,
+    "instagram_remaining": 20,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-09-30T16:57:39.373Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-09-30T16:57:30.618Z",
-  "publications": [
-    {
-      "file": "1085-they-got-a-video-of-diddy-w-a-cellphone-in-prison.json",
-      "id": "1085-they-got-a-video-of-diddy-w-a-cellphone-in-prison",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18094644170136013"
-    },
-    {
-      "file": "1085-they-got-a-video-of-diddy-w-a-cellphone-in-prison.json",
-      "id": "1085-they-got-a-video-of-diddy-w-a-cellphone-in-prison",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18131139457689435",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

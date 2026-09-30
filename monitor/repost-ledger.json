@@ -18629,6 +18629,24 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/p/Dd7CRbqDnGQ/",
       "view_count": 0
+    },
+    "Dd7C4y9j9-Z": {
+      "seen_at": "2026-09-30T19:32:09.232Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexshop/p/Dd7C4y9j9-Z/",
+      "view_count": 0
+    },
+    "Dd7EPrSGSyb": {
+      "seen_at": "2026-09-30T19:32:09.233Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Dd7EPrSGSyb/",
+      "view_count": 0
+    },
+    "Dd7DjfSo-vZ": {
+      "seen_at": "2026-09-30T19:38:06.965Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/reel/Dd7DjfSo-vZ/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -24619,59 +24637,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Dd6H-GzvojM/",
       "queue_id": "1114-me-and-the-homies-when-tory-lanez-starts-performing-luv-in-2075-",
       "video": "media/1114-me-and-the-homies-when-tory-lanez-starts-performing-luv-in-2075-.mp4"
+    },
+    "Dd7DjfSo-vZ": {
+      "queued_at": "2026-09-30T19:38:33.685Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/reel/Dd7DjfSo-vZ/",
+      "queue_id": "1115-tory-still-showing-love-to-the-city-from-prison-via",
+      "video": "media/1115-tory-still-showing-love-to-the-city-from-prison-via.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T17:32:13.067Z",
-      "candidates": 48,
-      "queued": [
-        "1050-what-s-the-greatest-snoop-dogg-song-of-all-time-we-asked-celebs-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T17:33:18.465Z"
-    },
-    {
-      "started_at": "2026-09-28T17:32:13.067Z",
-      "candidates": 48,
-      "queued": [
-        "1050-what-s-the-greatest-snoop-dogg-song-of-all-time-we-asked-celebs-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T17:33:18.465Z"
-    },
     {
       "started_at": "2026-09-28T17:32:13.067Z",
       "candidates": 48,
@@ -31550,6 +31525,61 @@
         ]
       },
       "finished_at": "2026-09-30T19:26:16.234Z"
+    },
+    {
+      "started_at": "2026-09-30T19:31:45.960Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/Ddw7rGdj2JM/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 25,
+        "needed": 23
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-09-30T19:32:21.279Z"
+    },
+    {
+      "started_at": "2026-09-30T19:37:29.178Z",
+      "candidates": 36,
+      "queued": [
+        "1115-tory-still-showing-love-to-the-city-from-prison-via"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 24,
+        "needed": 24
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-09-30T19:38:33.685Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T12:07:55.435Z",
+  "checked_at": "2026-09-30T14:38:02.344Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-30T12:07:53.845Z",
+    "checked_at": "2026-09-30T14:37:55.990Z",
     "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-30T12:22:53.845Z",
+    "next_check_at": "2026-09-30T14:52:55.990Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,10 +26,10 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 26,
-    "instagram_remaining": 22,
+    "instagram_usage": 25,
+    "instagram_remaining": 23,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-30T10:19:19.859Z",
+    "next_feed_eligible_at": "2026-09-30T15:08:02.038Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-30T12:07:53.639Z",
-    "usage": 28,
+    "checked_at": "2026-09-30T14:37:48.742Z",
+    "usage": 29,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-30T12:22:53.639Z",
+    "next_check_at": "2026-09-30T14:52:48.742Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-30T10:19:08.381Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-30T15:07:55.425Z",
+  "publications": [
+    {
+      "file": "1082-then-now-tupac-s-bmw-30-years-later-tupac-2pac-lasvegas-bmw-rip-.json",
+      "id": "1082-then-now-tupac-s-bmw-30-years-later-tupac-2pac-lasvegas-bmw-rip-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18342036250248565"
+    },
+    {
+      "file": "1082-then-now-tupac-s-bmw-30-years-later-tupac-2pac-lasvegas-bmw-rip-.json",
+      "id": "1082-then-now-tupac-s-bmw-30-years-later-tupac-2pac-lasvegas-bmw-rip-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18127203602504215",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

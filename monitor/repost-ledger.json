@@ -24563,34 +24563,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/Dd6_-XBAPR5/",
       "queue_id": "1112-tory-stays-putting-on-for-toronto-via",
       "video": "media/1112-tory-stays-putting-on-for-toronto-via.mp4"
+    },
+    "Dd68aSumqKk": {
+      "queued_at": "2026-09-30T19:02:50.940Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/Dd68aSumqKk/",
+      "queue_id": "1113-tory-lanez-is-showing-love-to-all-the-artists-from-toronto-with-",
+      "video": "media/1113-tory-lanez-is-showing-love-to-all-the-artists-from-toronto-with-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T17:24:38.656Z",
-      "candidates": 48,
-      "queued": [
-        "1049-detroit-lions-superstar-wr-amonrastbrown-has-opened-up-about-wha"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 25,
-        "needed": 23
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T17:25:45.871Z"
-    },
     {
       "started_at": "2026-09-28T17:24:38.656Z",
       "candidates": 48,
@@ -31486,6 +31468,31 @@
         ]
       },
       "finished_at": "2026-09-30T18:56:20.321Z"
+    },
+    {
+      "started_at": "2026-09-30T19:01:48.981Z",
+      "candidates": 41,
+      "queued": [
+        "1113-tory-lanez-is-showing-love-to-all-the-artists-from-toronto-with-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 23,
+        "needed": 25
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-30T19:02:50.940Z"
     }
   ],
   "vip_pending": {

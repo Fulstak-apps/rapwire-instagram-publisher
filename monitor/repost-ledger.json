@@ -24417,39 +24417,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/Dd6xj_TlC1t/",
       "queue_id": "1104-gherbo-is-allegedly-stepping-away-from-the-rap-game-the-chicago-",
       "video": "media/1104-gherbo-is-allegedly-stepping-away-from-the-rap-game-the-chicago-.mp4"
+    },
+    "Dd6fnsdRojs": {
+      "queued_at": "2026-09-30T16:58:38.275Z",
+      "source_handle": "freshouttheculture",
+      "source_url": "https://www.instagram.com/freshouttheculture/reel/Dd6fnsdRojs/",
+      "queue_id": "1105-four-years-ago-today-kid-cudi-released-his-album-entergalactic-a",
+      "video": "media/1105-four-years-ago-today-kid-cudi-released-his-album-entergalactic-a.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T17:04:53.799Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/thatdailyslapp/p/Dd0z10Cmyrk/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dd0z10Cmyrk-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T17:05:49.213Z"
-    },
     {
       "started_at": "2026-09-28T17:04:53.799Z",
       "candidates": 48,
@@ -31367,6 +31344,31 @@
         ]
       },
       "finished_at": "2026-09-30T16:52:01.307Z"
+    },
+    {
+      "started_at": "2026-09-30T16:57:42.851Z",
+      "candidates": 41,
+      "queued": [
+        "1105-four-years-ago-today-kid-cudi-released-his-album-entergalactic-a"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 19,
+        "needed": 29
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-09-30T16:58:38.275Z"
     }
   ],
   "vip_pending": {

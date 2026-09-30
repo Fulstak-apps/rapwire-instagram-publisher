@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T16:22:14.956Z",
+  "checked_at": "2026-09-30T16:27:39.647Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-30T16:22:13.639Z",
-    "usage": 27,
+    "checked_at": "2026-09-30T16:27:31.238Z",
+    "usage": 28,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-30T16:37:13.639Z",
+    "next_check_at": "2026-09-30T16:42:31.238Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 27,
     "instagram_remaining": 21,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-30T16:22:08.025Z",
+    "next_feed_eligible_at": "2026-09-30T16:57:39.373Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-09-30T16:12:03.813Z",
-    "usage": 29,
+    "checked_at": "2026-09-30T16:27:22.224Z",
+    "usage": 30,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-09-30T16:27:03.813Z",
+    "next_check_at": "2026-09-30T16:42:22.224Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-09-30T16:21:55.103Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-09-30T16:57:30.618Z",
+  "publications": [
+    {
+      "file": "1085-they-got-a-video-of-diddy-w-a-cellphone-in-prison.json",
+      "id": "1085-they-got-a-video-of-diddy-w-a-cellphone-in-prison",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18094644170136013"
+    },
+    {
+      "file": "1085-they-got-a-video-of-diddy-w-a-cellphone-in-prison.json",
+      "id": "1085-they-got-a-video-of-diddy-w-a-cellphone-in-prison",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18131139457689435",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

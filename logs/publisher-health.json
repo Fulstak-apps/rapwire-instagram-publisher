@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T03:05:08.387Z",
+  "checked_at": "2026-09-30T03:09:55.319Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-09-30T03:04:57.412Z",
+    "checked_at": "2026-09-30T03:09:48.458Z",
     "usage": 23,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-09-30T03:19:57.412Z",
+    "next_check_at": "2026-09-30T03:24:48.458Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 23,
     "instagram_remaining": 25,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-09-30T03:04:28.311Z",
+    "next_feed_eligible_at": "2026-09-30T03:39:55.120Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "1071-racks-sum-green-sum-blue-drake-champagnepapi-houston-newmusic.json",
       "id": "1071-racks-sum-green-sum-blue-drake-champagnepapi-houston-newmusic",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18070655153743393"
+      "media_id": "18629272111058192",
+      "content_type": "video"
     }
   ],
   "failures": [],

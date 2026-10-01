@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T08:32:36.876Z",
+  "checked_at": "2026-10-01T08:37:41.811Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-01T08:22:27.883Z",
+    "checked_at": "2026-10-01T08:37:35.458Z",
     "usage": 31,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-01T08:37:27.883Z",
+    "next_check_at": "2026-10-01T08:52:35.458Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-01T08:32:16.520Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-01T09:07:41.629Z",
+  "publications": [
+    {
+      "file": "1111-dame-dash-understands-it-now-shooter-passer-trainer-nba-nyc-leth.json",
+      "id": "1111-dame-dash-understands-it-now-shooter-passer-trainer-nba-nyc-leth",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17981484416905121"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

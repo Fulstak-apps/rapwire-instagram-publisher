@@ -18977,6 +18977,24 @@
       "source_handle": "6ixbuzztv",
       "source_url": "https://www.instagram.com/6ixbuzztv/p/Dd7rEn4mJOS/",
       "view_count": 0
+    },
+    "Dd7rX0UkY2D": {
+      "seen_at": "2026-10-01T01:08:15.639Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd7rX0UkY2D/",
+      "view_count": 0
+    },
+    "Dd7qfOBjhmK": {
+      "seen_at": "2026-10-01T01:08:15.639Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd7qfOBjhmK/",
+      "view_count": 0
+    },
+    "Dd7p2idl98f": {
+      "seen_at": "2026-10-01T01:08:15.639Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/Dd7p2idl98f/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25072,39 +25090,16 @@
       "source_url": "https://www.instagram.com/6ixbuzztv/p/Dd7rEn4mJOS/",
       "queue_id": "1129-dillon-brooks-the-phoenix-suns-forward-from-mississauga-ont-is-f",
       "video": "media/1129-dillon-brooks-the-phoenix-suns-forward-from-mississauga-ont-is-f.mp4"
+    },
+    "Dd7rX0UkY2D": {
+      "queued_at": "2026-10-01T01:08:40.958Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd7rX0UkY2D/",
+      "queue_id": "1130-arnold-schwarzenegger-makes-holiday-magic-with-alan-ritchson-in-",
+      "video": "media/1130-arnold-schwarzenegger-makes-holiday-magic-with-alan-ritchson-in-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T18:13:17.879Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdrBU_TEcvU/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-28T18:13:48.690Z"
-    },
     {
       "started_at": "2026-09-28T18:13:17.879Z",
       "candidates": 48,
@@ -31978,6 +31973,28 @@
         ]
       },
       "finished_at": "2026-10-01T01:02:39.825Z"
+    },
+    {
+      "started_at": "2026-10-01T01:08:02.496Z",
+      "candidates": 12,
+      "queued": [
+        "1130-arnold-schwarzenegger-makes-holiday-magic-with-alan-ritchson-in-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 31,
+        "needed": 17
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-01T01:08:40.958Z"
     }
   ],
   "vip_pending": {

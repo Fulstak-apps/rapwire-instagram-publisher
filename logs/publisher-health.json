@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T16:13:23.900Z",
+  "checked_at": "2026-10-01T16:18:33.725Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-01T16:03:13.225Z",
-    "usage": 39,
+    "checked_at": "2026-10-01T16:18:25.494Z",
+    "usage": 40,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-01T16:18:13.226Z",
+    "next_check_at": "2026-10-01T16:33:25.494Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-01T16:13:03.286Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-01T16:48:33.304Z",
+  "publications": [
+    {
+      "file": "1124-tatiana-chanell-reposts-a-video-of-reggie-alleging-that-kai-cena.json",
+      "id": "1124-tatiana-chanell-reposts-a-video-of-reggie-alleging-that-kai-cena",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18093719297656146"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

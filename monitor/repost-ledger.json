@@ -19253,6 +19253,18 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dd8O-PNRhk5/",
       "view_count": 0
+    },
+    "Dd8ZQ1Alhb9": {
+      "seen_at": "2026-10-01T07:51:37.363Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd8ZQ1Alhb9/",
+      "view_count": 0
+    },
+    "Dd8XSxAFitr": {
+      "seen_at": "2026-10-01T07:51:37.364Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd8XSxAFitr/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25537,186 +25549,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd77qhqRiJQ/",
       "queue_id": "1156-kai-cenat-responds-to-reggie-and-calls-out-streamers-for-using-r",
       "video": "media/1156-kai-cenat-responds-to-reggie-and-calls-out-streamers-for-using-r.mp4"
+    },
+    "Dd8ZQ1Alhb9": {
+      "queued_at": "2026-10-01T07:52:00.944Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd8ZQ1Alhb9/",
+      "queue_id": "1157-old-clip-of-reggie-resurfaces-after-all-the-allegations-and-back",
+      "video": "media/1157-old-clip-of-reggie-resurfaces-after-all-the-allegations-and-back.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T22:20:12.517Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dd4Kbl0m8zU/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-29T22:20:53.282Z"
-    },
-    {
-      "started_at": "2026-09-29T22:26:01.403Z",
-      "candidates": 41,
-      "queued": [
-        "1073-polo-g-brought-the-rolling-loud-energy-to-arizona-state-universi"
-      ],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd4z09VPAud/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-29T22:26:48.847Z"
-    },
-    {
-      "started_at": "2026-09-29T22:32:06.594Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Ddw7rGdj2JM/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-29T22:32:46.365Z"
-    },
-    {
-      "started_at": "2026-09-29T22:37:54.952Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-29T22:38:38.621Z"
-    },
-    {
-      "started_at": "2026-09-29T22:43:48.844Z",
-      "candidates": 48,
-      "queued": [
-        "1074-ohgeesy-brings-out-his-mom-during-bands-at-sold-out-seattle-show"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-29T22:45:02.339Z"
-    },
-    {
-      "started_at": "2026-09-29T22:50:40.988Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/DdtuJeukaW7/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 11,
-        "needed": 37
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-29T22:51:20.559Z"
-    },
     {
       "started_at": "2026-09-29T22:56:27.199Z",
       "candidates": 48,
@@ -32356,6 +32198,103 @@
         ]
       },
       "finished_at": "2026-10-01T07:19:26.092Z"
+    },
+    {
+      "started_at": "2026-10-01T07:24:56.969Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-01T07:25:02.534Z"
+    },
+    {
+      "started_at": "2026-10-01T07:30:09.710Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-01T07:30:14.329Z"
+    },
+    {
+      "started_at": "2026-10-01T07:35:23.258Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-01T07:35:27.821Z"
+    },
+    {
+      "started_at": "2026-10-01T07:40:35.572Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-01T07:40:40.195Z"
+    },
+    {
+      "started_at": "2026-10-01T07:45:47.694Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-01T07:46:02.941Z"
+    },
+    {
+      "started_at": "2026-10-01T07:51:10.534Z",
+      "candidates": 48,
+      "queued": [
+        "1157-old-clip-of-reggie-resurfaces-after-all-the-allegations-and-back"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T07:52:00.944Z"
     }
   ],
   "vip_pending": {

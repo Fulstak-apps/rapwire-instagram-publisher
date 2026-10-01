@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T08:47:50.709Z",
+  "checked_at": "2026-10-01T08:52:46.748Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 30,
-    "instagram_remaining": 18,
+    "instagram_usage": 31,
+    "instagram_remaining": 17,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-01T09:17:50.496Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -43,26 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-01T08:37:35.458Z",
+    "checked_at": "2026-10-01T08:52:46.579Z",
     "usage": 31,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-01T08:52:35.458Z",
+    "next_check_at": "2026-10-01T09:07:46.579Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T09:07:41.629Z",
-  "publications": [
-    {
-      "file": "1111-dame-dash-understands-it-now-shooter-passer-trainer-nba-nyc-leth.json",
-      "id": "1111-dame-dash-understands-it-now-shooter-passer-trainer-nba-nyc-leth",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18106344863195246",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

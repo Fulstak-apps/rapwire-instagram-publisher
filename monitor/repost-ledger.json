@@ -19037,6 +19037,12 @@
       "source_handle": "larp.lor.d",
       "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7mob9Pn4m/",
       "view_count": 0
+    },
+    "Dd7zJRrkfZN": {
+      "seen_at": "2026-10-01T02:11:53.839Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dd7zJRrkfZN/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25181,34 +25187,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/Dd7SNRmErWo/",
       "queue_id": "1136-reggie-went-live-on-instagram-and-made-a-series-of-serious-alleg",
       "video": "media/1136-reggie-went-live-on-instagram-and-made-a-series-of-serious-alleg.mp4"
+    },
+    "Dd7zJRrkfZN": {
+      "queued_at": "2026-10-01T02:12:11.907Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dd7zJRrkfZN/",
+      "queue_id": "1137-ken-carson-kencarson-at-the-gears-of-war-e-day-launch-in-la-all-",
+      "video": "media/1137-ken-carson-kencarson-at-the-gears-of-war-e-day-launch-in-la-all-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T18:24:27.470Z",
-      "candidates": 48,
-      "queued": [
-        "1052-lebron-james-has-officially-arrived-in-philadelphia-the-king-sho"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T18:25:06.363Z"
-    },
     {
       "started_at": "2026-09-28T18:24:27.470Z",
       "candidates": 48,
@@ -32097,6 +32085,31 @@
         ]
       },
       "finished_at": "2026-10-01T02:06:00.272Z"
+    },
+    {
+      "started_at": "2026-10-01T02:11:28.342Z",
+      "candidates": 48,
+      "queued": [
+        "1137-ken-carson-kencarson-at-the-gears-of-war-e-day-launch-in-la-all-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 37,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T02:12:11.907Z"
     }
   ],
   "vip_pending": {

@@ -19727,6 +19727,24 @@
       "source_handle": "6ixbuzztv",
       "source_url": "https://www.instagram.com/6ixbuzztv/reel/Dd9d5w5IWxb/",
       "view_count": 0
+    },
+    "Dd97jm0EtzG": {
+      "seen_at": "2026-10-01T22:51:15.210Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/p/Dd97jm0EtzG/",
+      "view_count": 0
+    },
+    "Dd-A3cFhLiZ": {
+      "seen_at": "2026-10-01T22:51:15.213Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dd-A3cFhLiZ/",
+      "view_count": 0
+    },
+    "Dd96HVlIP5h": {
+      "seen_at": "2026-10-01T22:51:15.213Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dd96HVlIP5h/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -26179,157 +26197,16 @@
       "source_url": "https://www.instagram.com/6ixbuzztv/reel/Dd9d5w5IWxb/",
       "queue_id": "1180-early-morning-side-quests-would-you-ever-do-this-if-you-had-the-",
       "video": "media/1180-early-morning-side-quests-would-you-ever-do-this-if-you-had-the-.mp4"
+    },
+    "Dd-A3cFhLiZ": {
+      "queued_at": "2026-10-01T22:51:52.053Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dd-A3cFhLiZ/",
+      "queue_id": "1181-otf-jam-could-testify-again-in-lil-durk-lildurk-s-vicar-trial-be",
+      "video": "media/1181-otf-jam-could-testify-again-in-lil-durk-lildurk-s-vicar-trial-be.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-30T17:10:12.514Z",
-      "candidates": 12,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-30T17:10:26.771Z"
-    },
-    {
-      "started_at": "2026-09-30T17:15:34.024Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dd2cKaADS7Z/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 19,
-        "needed": 29
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-30T17:16:10.177Z"
-    },
-    {
-      "started_at": "2026-09-30T17:21:17.718Z",
-      "candidates": 41,
-      "queued": [
-        "1106-famous-dex-really-knew-how-to-turn-up-a-crowd-famous-dex-s-live-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 19,
-        "needed": 29
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 5,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-30T17:22:13.514Z"
-    },
-    {
-      "started_at": "2026-09-30T17:30:41.762Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 5,
-        "handles": [
-          "6ixbuzztv",
-          "br0adwaychr0niclez",
-          "ceddynash",
-          "rockstargames"
-        ]
-      },
-      "finished_at": "2026-09-30T17:31:34.540Z"
-    },
-    {
-      "started_at": "2026-09-30T17:36:43.271Z",
-      "candidates": 12,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-30T17:36:57.798Z"
-    },
-    {
-      "started_at": "2026-09-30T17:42:06.956Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-30T17:42:31.022Z"
-    },
     {
       "started_at": "2026-09-30T17:47:39.963Z",
       "candidates": 41,
@@ -32315,6 +32192,106 @@
         ]
       },
       "finished_at": "2026-10-01T22:18:28.367Z"
+    },
+    {
+      "started_at": "2026-10-01T22:23:44.547Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-01T22:23:51.480Z"
+    },
+    {
+      "started_at": "2026-10-01T22:28:59.530Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-01T22:29:05.963Z"
+    },
+    {
+      "started_at": "2026-10-01T22:34:13.736Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-01T22:34:19.349Z"
+    },
+    {
+      "started_at": "2026-10-01T22:39:28.712Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-01T22:39:33.807Z"
+    },
+    {
+      "started_at": "2026-10-01T22:44:41.945Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T22:45:24.011Z"
+    },
+    {
+      "started_at": "2026-10-01T22:50:32.406Z",
+      "candidates": 48,
+      "queued": [
+        "1181-otf-jam-could-testify-again-in-lil-durk-lildurk-s-vicar-trial-be"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T22:51:52.053Z"
     }
   ],
   "vip_pending": {

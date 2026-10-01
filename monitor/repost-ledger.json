@@ -19493,6 +19493,18 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd9SQCqxdNZ/",
       "view_count": 0
+    },
+    "Dd9UkhAlKUV": {
+      "seen_at": "2026-10-01T17:04:01.581Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd9UkhAlKUV/",
+      "view_count": 0
+    },
+    "Dd9ZVMAhaR_": {
+      "seen_at": "2026-10-01T17:04:01.584Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dd9ZVMAhaR_/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25882,32 +25894,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd9SQCqxdNZ/",
       "queue_id": "1171-nba-ben10-update-from-the-federal-courthouse-allegations-are-not",
       "video": "media/1171-nba-ben10-update-from-the-federal-courthouse-allegations-are-not.mp4"
+    },
+    "Dd9ZVMAhaR_": {
+      "queued_at": "2026-10-01T17:05:03.246Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dd9ZVMAhaR_/",
+      "queue_id": "1172-kai-cenat-gets-emotional-after-revealing-that-he-saved-reggie-fr",
+      "video": "media/1172-kai-cenat-gets-emotional-after-revealing-that-he-saved-reggie-fr.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-30T07:30:47.126Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 19,
-        "needed": 29
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-30T07:31:09.975Z"
-    },
     {
       "started_at": "2026-09-30T07:36:17.970Z",
       "candidates": 48,
@@ -32441,6 +32437,31 @@
         ]
       },
       "finished_at": "2026-10-01T16:33:09.440Z"
+    },
+    {
+      "started_at": "2026-10-01T17:03:23.615Z",
+      "candidates": 48,
+      "queued": [
+        "1172-kai-cenat-gets-emotional-after-revealing-that-he-saved-reggie-fr"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T17:05:03.246Z"
     }
   ],
   "vip_pending": {

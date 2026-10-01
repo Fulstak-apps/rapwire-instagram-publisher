@@ -19241,6 +19241,12 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/p/Dd8H2_-Efeh/",
       "view_count": 0
+    },
+    "Dd8LolEOOtX": {
+      "seen_at": "2026-10-01T05:46:53.672Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dd8LolEOOtX/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25476,34 +25482,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd7-HeBRdr2/",
       "queue_id": "1149-kai-cenat-says-the-downfall-began-in-march",
       "video": "media/1149-kai-cenat-says-the-downfall-began-in-march.mp4"
+    },
+    "Dd8LolEOOtX": {
+      "queued_at": "2026-10-01T05:47:12.243Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dd8LolEOOtX/",
+      "queue_id": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m",
+      "video": "media/1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T20:19:19.754Z",
-      "candidates": 48,
-      "queued": [
-        "1063-the-leafs-are-back-this-week-and-there-s-plenty-more-to-get-exci"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 3,
-        "needed": 45
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-29T20:20:37.349Z"
-    },
     {
       "started_at": "2026-09-29T20:27:56.183Z",
       "candidates": 41,
@@ -32360,6 +32348,31 @@
         ]
       },
       "finished_at": "2026-10-01T05:40:50.895Z"
+    },
+    {
+      "started_at": "2026-10-01T05:46:24.207Z",
+      "candidates": 48,
+      "queued": [
+        "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T05:47:12.243Z"
     }
   ],
   "vip_pending": {

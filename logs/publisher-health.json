@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T18:04:14.151Z",
+  "checked_at": "2026-10-01T18:09:03.420Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 38,
-    "instagram_remaining": 10,
+    "instagram_usage": 39,
+    "instagram_remaining": 9,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-01T18:34:13.915Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T18:34:05.408Z",
-  "publications": [
-    {
-      "file": "1126-reggie-mom-speaks-out-n-says-everything-he-saying-is-true.json",
-      "id": "1126-reggie-mom-speaks-out-n-says-everything-he-saying-is-true",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17931648627404605"
-    },
-    {
-      "file": "1126-reggie-mom-speaks-out-n-says-everything-he-saying-is-true.json",
-      "id": "1126-reggie-mom-speaks-out-n-says-everything-he-saying-is-true",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18347479198270888",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

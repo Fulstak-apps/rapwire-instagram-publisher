@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T07:37:10.474Z",
+  "checked_at": "2026-10-01T07:41:59.297Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 30,
-    "instagram_remaining": 18,
+    "instagram_usage": 31,
+    "instagram_remaining": 17,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-01T08:07:10.223Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T07:56:50.510Z",
-  "publications": [
-    {
-      "file": "1109-rell-vert-made-an-unreleased-tribute-song-for-bloodhound-q50-cal.json",
-      "id": "1109-rell-vert-made-an-unreleased-tribute-song-for-bloodhound-q50-cal",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17996918172037967",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

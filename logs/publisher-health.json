@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T04:29:48.643Z",
+  "checked_at": "2026-10-01T04:34:55.124Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T04:29:40.393Z",
-    "usage": 30,
+    "checked_at": "2026-10-01T04:34:44.992Z",
+    "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T04:44:40.393Z",
+    "next_check_at": "2026-10-01T04:49:44.992Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-01T04:29:36.703Z",
+    "next_feed_eligible_at": "2026-10-01T05:04:54.926Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-01T04:19:36.029Z",
-    "usage": 32,
+    "checked_at": "2026-10-01T04:34:44.721Z",
+    "usage": 31,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-01T04:34:36.029Z",
+    "next_check_at": "2026-10-01T04:49:44.721Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "1104-gherbo-is-allegedly-stepping-away-from-the-rap-game-the-chicago-.json",
       "id": "1104-gherbo-is-allegedly-stepping-away-from-the-rap-game-the-chicago-",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18103938116275714"
+      "media_id": "18109759544609047",
+      "content_type": "video"
     }
   ],
   "failures": [],

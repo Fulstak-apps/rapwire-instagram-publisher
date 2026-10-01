@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T15:43:03.509Z",
+  "checked_at": "2026-10-01T15:43:47.150Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-10-01T15:32:48.605Z",
     "usage": 39,
@@ -34,7 +34,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T16:13:03.286Z",
-  "publications": [
-    {
-      "file": "1123-people-believe-twitch-streamer-reggie-is-mentally-unwell-which-i.json",
-      "id": "1123-people-believe-twitch-streamer-reggie-is-mentally-unwell-which-i",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17879086194546236"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

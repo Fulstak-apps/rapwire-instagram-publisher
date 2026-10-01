@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T21:56:55.532Z",
+  "checked_at": "2026-10-01T22:02:13.199Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T21:56:54.338Z",
-    "usage": 37,
+    "checked_at": "2026-10-01T22:02:05.917Z",
+    "usage": 38,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T22:11:54.338Z",
+    "next_check_at": "2026-10-01T22:17:05.917Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 37,
     "instagram_remaining": 11,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-01T21:54:32.915Z",
+    "next_feed_eligible_at": "2026-10-01T22:32:13.025Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-01T21:56:54.248Z",
-    "usage": 37,
+    "usage": 38,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-01T22:11:54.248Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-01T21:54:25.224Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-01T22:32:05.423Z",
+  "publications": [
+    {
+      "file": "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation.json",
+      "id": "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18108699392188831"
+    },
+    {
+      "file": "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation.json",
+      "id": "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17948953032312004",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

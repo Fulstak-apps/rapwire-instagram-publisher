@@ -25489,108 +25489,16 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dd8LolEOOtX/",
       "queue_id": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m",
       "video": "media/1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m.mp4"
+    },
+    "Dd79e8IR4Kp": {
+      "queued_at": "2026-10-01T06:05:21.108Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd79e8IR4Kp/",
+      "queue_id": "1151-kai-cenat-shows-he-s-invested-over-3-million-in-reggie-and-clove",
+      "video": "media/1151-kai-cenat-shows-he-s-invested-over-3-million-in-reggie-and-clove.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T20:27:56.183Z",
-      "candidates": 41,
-      "queued": [
-        "1064-wiz-khalifa-says-see-you-again-with-charlie-puth-set-him-up-for-"
-      ],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd2i4xJRuoG/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd216Ocu0Wx/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd3AGJFviTy/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 4,
-        "needed": 44
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-29T20:29:07.152Z"
-    },
-    {
-      "started_at": "2026-09-29T20:35:49.503Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 4,
-        "needed": 44
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-29T20:36:41.751Z"
-    },
-    {
-      "started_at": "2026-09-29T20:41:50.899Z",
-      "candidates": 48,
-      "queued": [
-        "1065-2-chainz-unboxed-his-1-billion-streams-plaque-for-f-kin-problems"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 4,
-        "needed": 44
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-29T20:42:49.537Z"
-    },
     {
       "started_at": "2026-09-29T20:50:07.125Z",
       "candidates": 48,
@@ -32373,6 +32281,77 @@
         ]
       },
       "finished_at": "2026-10-01T05:47:12.243Z"
+    },
+    {
+      "started_at": "2026-10-01T05:52:26.739Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-01T05:52:44.627Z"
+    },
+    {
+      "started_at": "2026-10-01T05:57:53.151Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T05:58:14.603Z"
+    },
+    {
+      "started_at": "2026-10-01T06:03:24.695Z",
+      "candidates": 36,
+      "queued": [
+        "1151-kai-cenat-shows-he-s-invested-over-3-million-in-reggie-and-clove"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T06:05:21.108Z"
     }
   ],
   "vip_pending": {

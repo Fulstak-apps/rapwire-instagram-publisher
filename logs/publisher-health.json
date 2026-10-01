@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T10:18:51.501Z",
+  "checked_at": "2026-10-01T10:23:58.577Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-01T10:08:40.492Z",
-    "usage": 32,
+    "checked_at": "2026-10-01T10:23:52.295Z",
+    "usage": 33,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-01T10:23:40.492Z",
+    "next_check_at": "2026-10-01T10:38:52.295Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-01T10:18:33.858Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-01T10:53:58.324Z",
+  "publications": [
+    {
+      "file": "1114-me-and-the-homies-when-tory-lanez-starts-performing-luv-in-2075-.json",
+      "id": "1114-me-and-the-homies-when-tory-lanez-starts-performing-luv-in-2075-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18115072082037373"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

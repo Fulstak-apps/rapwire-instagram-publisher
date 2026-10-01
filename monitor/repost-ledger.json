@@ -19475,6 +19475,24 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/p/Dd9SjFCjsOT/",
       "view_count": 0
+    },
+    "Dd9Sf-lEQgB": {
+      "seen_at": "2026-10-01T16:22:32.675Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/Dd9Sf-lEQgB/",
+      "view_count": 0
+    },
+    "Dd9UcPjIsHN": {
+      "seen_at": "2026-10-01T16:29:06.794Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/p/Dd9UcPjIsHN/",
+      "view_count": 0
+    },
+    "Dd9SQCqxdNZ": {
+      "seen_at": "2026-10-01T16:29:06.795Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd9SQCqxdNZ/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25857,55 +25875,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/Dd9JRJXguYv/",
       "queue_id": "1170-kaicenat-says-he-s-suing-reggie",
       "video": "media/1170-kaicenat-says-he-s-suing-reggie.mp4"
+    },
+    "Dd9SQCqxdNZ": {
+      "queued_at": "2026-10-01T16:33:09.440Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd9SQCqxdNZ/",
+      "queue_id": "1171-nba-ben10-update-from-the-federal-courthouse-allegations-are-not",
+      "video": "media/1171-nba-ben10-update-from-the-federal-courthouse-allegations-are-not.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-30T07:19:40.166Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-30T07:20:06.692Z"
-    },
-    {
-      "started_at": "2026-09-30T07:25:15.053Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 19,
-        "needed": 29
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-30T07:25:37.617Z"
-    },
     {
       "started_at": "2026-09-30T07:30:47.126Z",
       "candidates": 48,
@@ -32407,6 +32386,61 @@
         ]
       },
       "finished_at": "2026-10-01T16:12:49.299Z"
+    },
+    {
+      "started_at": "2026-10-01T16:22:02.819Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/reel/Dd3-_ekRhhP/",
+          "stage": "queue",
+          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T16:22:57.763Z"
+    },
+    {
+      "started_at": "2026-10-01T16:28:12.056Z",
+      "candidates": 36,
+      "queued": [
+        "1171-nba-ben10-update-from-the-federal-courthouse-allegations-are-not"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T16:33:09.440Z"
     }
   ],
   "vip_pending": {

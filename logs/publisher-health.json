@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T05:05:19.892Z",
+  "checked_at": "2026-10-01T05:10:17.104Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T05:05:10.918Z",
-    "usage": 30,
+    "checked_at": "2026-10-01T05:10:11.407Z",
+    "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T05:20:10.918Z",
+    "next_check_at": "2026-10-01T05:25:11.407Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-01T05:04:54.926Z",
+    "next_feed_eligible_at": "2026-10-01T05:40:16.914Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "1105-four-years-ago-today-kid-cudi-released-his-album-entergalactic-a.json",
       "id": "1105-four-years-ago-today-kid-cudi-released-his-album-entergalactic-a",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18143372422505552"
+      "media_id": "18113653274324969",
+      "content_type": "video"
     }
   ],
   "failures": [],

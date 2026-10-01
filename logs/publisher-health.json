@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T05:40:38.254Z",
+  "checked_at": "2026-10-01T05:45:44.291Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T05:40:29.311Z",
-    "usage": 30,
+    "checked_at": "2026-10-01T05:45:35.216Z",
+    "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T05:55:29.311Z",
+    "next_check_at": "2026-10-01T06:00:35.216Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 31,
-    "instagram_remaining": 17,
+    "instagram_usage": 30,
+    "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-01T05:40:16.914Z",
+    "next_feed_eligible_at": "2026-10-01T06:15:44.095Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,9 +57,10 @@
     {
       "file": "1106-famous-dex-really-knew-how-to-turn-up-a-crowd-famous-dex-s-live-.json",
       "id": "1106-famous-dex-really-knew-how-to-turn-up-a-crowd-famous-dex-s-live-",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17864764851677322"
+      "media_id": "18091204196414979",
+      "content_type": "video"
     }
   ],
   "failures": [],

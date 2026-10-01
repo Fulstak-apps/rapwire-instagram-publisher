@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T08:07:21.492Z",
+  "checked_at": "2026-10-01T08:12:24.193Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T08:07:20.694Z",
-    "usage": 30,
+    "checked_at": "2026-10-01T08:12:17.685Z",
+    "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T08:22:20.694Z",
+    "next_check_at": "2026-10-01T08:27:17.685Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-01T08:07:10.223Z",
+    "next_feed_eligible_at": "2026-10-01T08:42:24.004Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -53,7 +53,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T08:32:16.520Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1110-ye-houston-will-be-insane-greenscreen.json",
+      "id": "1110-ye-houston-will-be-insane-greenscreen",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18285942058292732",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

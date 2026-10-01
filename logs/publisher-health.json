@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T12:45:41.332Z",
+  "checked_at": "2026-10-01T12:50:37.796Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T12:35:29.054Z",
+    "checked_at": "2026-10-01T12:50:37.259Z",
     "usage": 36,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T12:50:29.054Z",
+    "next_check_at": "2026-10-01T13:05:37.259Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "instagram_remaining": 12,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-01T12:50:25.061Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T13:15:41.035Z",
-  "publications": [
-    {
-      "file": "1118-sends-a-message-to-everybody-that-keeps-saying-nba-2k27-is-trash.json",
-      "id": "1118-sends-a-message-to-everybody-that-keeps-saying-nba-2k27-is-trash",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18103907207256677"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

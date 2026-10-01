@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T13:15:58.086Z",
+  "checked_at": "2026-10-01T13:21:08.133Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-01T13:15:57.378Z",
-    "usage": 37,
+    "usage": 38,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-01T13:30:57.378Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-01T13:15:41.035Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-01T13:51:07.572Z",
+  "publications": [
+    {
+      "file": "1119-ab-couldn-t-process-what-happened-when-a-man-with-no-legs-came-u.json",
+      "id": "1119-ab-couldn-t-process-what-happened-when-a-man-with-no-legs-came-u",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18143599153586606"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -25194,84 +25194,16 @@
       "source_url": "https://www.instagram.com/complexmusic/p/Dd7zJRrkfZN/",
       "queue_id": "1137-ken-carson-kencarson-at-the-gears-of-war-e-day-launch-in-la-all-",
       "video": "media/1137-ken-carson-kencarson-at-the-gears-of-war-e-day-launch-in-la-all-.mp4"
+    },
+    "Dd7TJEAg47F": {
+      "queued_at": "2026-10-01T02:30:26.280Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dd7TJEAg47F/",
+      "queue_id": "1138-well-damn-reggie-got-sum-to-say-bout-kaicenat-n-more",
+      "video": "media/1138-well-damn-reggie-got-sum-to-say-bout-kaicenat-n-more.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T18:24:27.470Z",
-      "candidates": 48,
-      "queued": [
-        "1052-lebron-james-has-officially-arrived-in-philadelphia-the-king-sho"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T18:25:06.363Z"
-    },
-    {
-      "started_at": "2026-09-28T18:24:27.470Z",
-      "candidates": 48,
-      "queued": [
-        "1052-lebron-james-has-officially-arrived-in-philadelphia-the-king-sho"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T18:25:06.363Z"
-    },
-    {
-      "started_at": "2026-09-28T18:24:27.470Z",
-      "candidates": 48,
-      "queued": [
-        "1052-lebron-james-has-officially-arrived-in-philadelphia-the-king-sho"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T18:25:06.363Z"
-    },
     {
       "started_at": "2026-09-28T18:24:27.470Z",
       "candidates": 48,
@@ -32110,6 +32042,74 @@
         ]
       },
       "finished_at": "2026-10-01T02:12:11.907Z"
+    },
+    {
+      "started_at": "2026-10-01T02:17:27.062Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 38,
+        "needed": 10
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T02:18:06.679Z"
+    },
+    {
+      "started_at": "2026-10-01T02:23:14.209Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 37,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-01T02:23:35.226Z"
+    },
+    {
+      "started_at": "2026-10-01T02:28:43.575Z",
+      "candidates": 48,
+      "queued": [
+        "1138-well-damn-reggie-got-sum-to-say-bout-kaicenat-n-more"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 37,
+        "needed": 11
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T02:30:26.280Z"
     }
   ],
   "vip_pending": {

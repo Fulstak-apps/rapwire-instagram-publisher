@@ -19451,6 +19451,12 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd9NAI5Rr2L/",
       "view_count": 0
+    },
+    "Dd9OgT4FYfv": {
+      "seen_at": "2026-10-01T15:50:14.777Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dd9OgT4FYfv/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25812,32 +25818,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd9NAI5Rr2L/",
       "queue_id": "1167-yall-going-to-press-the-news-station-to-donate-for-that-baby-in-",
       "video": "media/1167-yall-going-to-press-the-news-station-to-donate-for-that-baby-in-.mp4"
+    },
+    "Dd9OgT4FYfv": {
+      "queued_at": "2026-10-01T15:50:40.848Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/p/Dd9OgT4FYfv/",
+      "queue_id": "1168-why-the-judge-tryna-act-like-she-don-t-know-the-biggest-bauce-ri",
+      "video": "media/1168-why-the-judge-tryna-act-like-she-don-t-know-the-biggest-bauce-ri.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-30T06:57:08.431Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-30T06:57:42.330Z"
-    },
     {
       "started_at": "2026-09-30T07:02:51.623Z",
       "candidates": 48,
@@ -32359,6 +32349,31 @@
         ]
       },
       "finished_at": "2026-10-01T15:37:04.194Z"
+    },
+    {
+      "started_at": "2026-10-01T15:49:43.139Z",
+      "candidates": 48,
+      "queued": [
+        "1168-why-the-judge-tryna-act-like-she-don-t-know-the-biggest-bauce-ri"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 45,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T15:50:40.848Z"
     }
   ],
   "vip_pending": {

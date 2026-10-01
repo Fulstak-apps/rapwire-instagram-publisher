@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T14:06:47.439Z",
+  "checked_at": "2026-10-01T14:11:46.296Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 38,
-    "instagram_remaining": 10,
+    "instagram_usage": 39,
+    "instagram_remaining": 9,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-01T14:36:46.875Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T14:26:43.301Z",
-  "publications": [
-    {
-      "file": "1120-this-is-nuts-hopefully-whatever-crash-they-got-into-didn-t-invol.json",
-      "id": "1120-this-is-nuts-hopefully-whatever-crash-they-got-into-didn-t-invol",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18152018467541861",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

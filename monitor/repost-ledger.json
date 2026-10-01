@@ -19667,6 +19667,12 @@
       "source_handle": "hiphopdx",
       "source_url": "https://www.instagram.com/uproxx/p/Dd9pRrgDx67/",
       "view_count": 0
+    },
+    "Dd9y7dOCoR8": {
+      "seen_at": "2026-10-01T21:07:03.496Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd9y7dOCoR8/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -26098,57 +26104,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dd9ZxANM9Cw/",
       "queue_id": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re",
       "video": "media/1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re.mp4"
+    },
+    "Dd9y7dOCoR8": {
+      "queued_at": "2026-10-01T21:08:04.959Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd9y7dOCoR8/",
+      "queue_id": "1178-the-pip-boy-overseer-s-edition-comes-with-a-brain-implant-chip-t",
+      "video": "media/1178-the-pip-boy-overseer-s-edition-comes-with-a-brain-implant-chip-t.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-30T16:09:34.103Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd5LkOFR99b/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd5S1J2RW3s/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd5L4BMRlab/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 18,
-        "needed": 30
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-30T16:10:16.875Z"
-    },
     {
       "started_at": "2026-09-30T16:15:24.364Z",
       "candidates": 48,
@@ -32337,6 +32302,28 @@
         ]
       },
       "finished_at": "2026-10-01T20:31:00.395Z"
+    },
+    {
+      "started_at": "2026-10-01T21:06:41.570Z",
+      "candidates": 12,
+      "queued": [
+        "1178-the-pip-boy-overseer-s-edition-comes-with-a-brain-implant-chip-t"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-01T21:08:04.959Z"
     }
   ],
   "vip_pending": {

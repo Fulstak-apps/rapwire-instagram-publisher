@@ -19457,6 +19457,18 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/p/Dd9OgT4FYfv/",
       "view_count": 0
+    },
+    "Dd9PTqElFN7": {
+      "seen_at": "2026-10-01T15:56:41.989Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Dd9PTqElFN7/",
+      "view_count": 0
+    },
+    "Dd9MtA5lNWi": {
+      "seen_at": "2026-10-01T15:56:41.994Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Dd9MtA5lNWi/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25825,32 +25837,16 @@
       "source_url": "https://www.instagram.com/akademiks/p/Dd9OgT4FYfv/",
       "queue_id": "1168-why-the-judge-tryna-act-like-she-don-t-know-the-biggest-bauce-ri",
       "video": "media/1168-why-the-judge-tryna-act-like-she-don-t-know-the-biggest-bauce-ri.mp4"
+    },
+    "Dd9LIewxO9K": {
+      "queued_at": "2026-10-01T15:57:34.440Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/Dd9LIewxO9K/",
+      "queue_id": "1169-quavo-says-it-s-his-responsibility-that-takeoff-s-legacy-lives-f",
+      "video": "media/1169-quavo-says-it-s-his-responsibility-that-takeoff-s-legacy-lives-f.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-30T07:02:51.623Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-30T07:03:21.166Z"
-    },
     {
       "started_at": "2026-09-30T07:08:30.275Z",
       "candidates": 41,
@@ -32374,6 +32370,31 @@
         ]
       },
       "finished_at": "2026-10-01T15:50:40.848Z"
+    },
+    {
+      "started_at": "2026-10-01T15:56:11.160Z",
+      "candidates": 48,
+      "queued": [
+        "1169-quavo-says-it-s-his-responsibility-that-takeoff-s-legacy-lives-f"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T15:57:34.440Z"
     }
   ],
   "vip_pending": {

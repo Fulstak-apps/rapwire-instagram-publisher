@@ -19001,6 +19001,42 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/p/Dd7tCgEERme/",
       "view_count": 0
+    },
+    "Dd7u0-BRcbo": {
+      "seen_at": "2026-10-01T01:41:23.160Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7u0-BRcbo/",
+      "view_count": 0
+    },
+    "Dd7tzwJv457": {
+      "seen_at": "2026-10-01T01:41:23.163Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7tzwJv457/",
+      "view_count": 0
+    },
+    "Dd7tWyEvvMd": {
+      "seen_at": "2026-10-01T01:41:23.163Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7tWyEvvMd/",
+      "view_count": 0
+    },
+    "Dd7sbI2TLro": {
+      "seen_at": "2026-10-01T01:41:23.163Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7sbI2TLro/",
+      "view_count": 0
+    },
+    "Dd7nfdxPCbA": {
+      "seen_at": "2026-10-01T01:41:23.163Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7nfdxPCbA/",
+      "view_count": 0
+    },
+    "Dd7mob9Pn4m": {
+      "seen_at": "2026-10-01T01:41:23.163Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7mob9Pn4m/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25124,32 +25160,16 @@
       "source_url": "https://www.instagram.com/igndotcom/reel/Dd7qfOBjhmK/",
       "queue_id": "1133-gta-developers-went-full-method-gta-gta6-gaming",
       "video": "media/1133-gta-developers-went-full-method-gta-gta6-gaming.mp4"
+    },
+    "Dd7Wftmv9Ul": {
+      "queued_at": "2026-10-01T01:41:42.810Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/Dd7Wftmv9Ul/",
+      "queue_id": "1134-estelle-shares-her-1-billion-streams-plaque-for-american-boy-wit",
+      "video": "media/1134-estelle-shares-her-1-billion-streams-plaque-for-american-boy-wit.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T18:18:56.173Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T18:19:20.622Z"
-    },
     {
       "started_at": "2026-09-28T18:18:56.173Z",
       "candidates": 48,
@@ -32011,6 +32031,50 @@
         ]
       },
       "finished_at": "2026-10-01T01:35:30.549Z"
+    },
+    {
+      "started_at": "2026-10-01T01:40:55.723Z",
+      "candidates": 41,
+      "queued": [
+        "1134-estelle-shares-her-1-billion-streams-plaque-for-american-boy-wit"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7tzwJv457/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7tWyEvvMd/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7u0-BRcbo/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 35,
+        "needed": 13
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-01T01:41:42.810Z"
     }
   ],
   "vip_pending": {

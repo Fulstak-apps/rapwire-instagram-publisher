@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T15:02:24.423Z",
+  "checked_at": "2026-10-01T15:07:32.925Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-01T15:02:23.353Z",
-    "usage": 39,
+    "usage": 40,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-01T15:17:23.353Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-01T15:02:09.142Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-01T15:37:32.575Z",
+  "publications": [
+    {
+      "file": "1122-kai-cenat-needs-to-go-to-court-to-sue-or-jail-forever-allegation.json",
+      "id": "1122-kai-cenat-needs-to-go-to-court-to-sue-or-jail-forever-allegation",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17992685787013017"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

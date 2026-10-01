@@ -19205,6 +19205,24 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/trapmatictv/p/Dd8CvKYDqyW/",
       "view_count": 0
+    },
+    "Dd8D1_GOKU3": {
+      "seen_at": "2026-10-01T04:38:14.427Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd8D1_GOKU3/",
+      "view_count": 0
+    },
+    "Dd8CbBEx6KC": {
+      "seen_at": "2026-10-01T04:38:14.427Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd8CbBEx6KC/",
+      "view_count": 0
+    },
+    "Dd8B-QrRqeS": {
+      "seen_at": "2026-10-01T04:38:14.427Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd8B-QrRqeS/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25412,112 +25430,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/p/Dd8CvKYDqyW/",
       "queue_id": "1145-kaicenat-says-he-felt-he-had-no-other-option-but-to-take-legal-a",
       "video": "media/1145-kaicenat-says-he-felt-he-had-no-other-option-but-to-take-legal-a.mp4"
+    },
+    "Dd8AjSxxla7": {
+      "queued_at": "2026-10-01T04:50:14.442Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd8AjSxxla7/",
+      "queue_id": "1146-kai-cenat-reveals-that-he-is-suing-reggie",
+      "video": "media/1146-kai-cenat-reveals-that-he-is-suing-reggie.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T18:46:28.617Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dd2E_lwg19X/",
-          "stage": "cached_reserve",
-          "error": "Source caption lacks usable video context"
-        },
-        {
-          "source_handle": "hiphop_firstnewsmusic",
-          "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/Dd3bEQDoxS0/",
-          "stage": "queue",
-          "error": "Video render failed (255): Command failed: ffmpeg -v error -y -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/Dd3bEQDoxS0-source.mp4 -loop 1 -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/assets/rapwire247-logo.png -filter_complex [0:v]crop=720:1280:0:0,setsar=1,split=2[base][front];[base]scale=1080:1350:force_original_aspect_ratio=increase,crop=1080:1350,boxblur=12:1[blurred];[front]scale=1080:1350:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2[fit];[blurred][fit]overlay=(W-w)/2:(H-h)/2[framed];[1:v]scale=132:132[bug];[framed][bug]overlay=x=34:y=1184:shortest=1[v] -map [v] -map 0:a:0 -c:v libx264 -preset superfast -crf 20 -pix_fmt yuv420p -c:a aac -shortest -movflags +faststart /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/work/instagram-mirror/Dd3bEQDoxS0.mp4"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 3,
-        "needed": 45
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-29T18:55:58.839Z"
-    },
-    {
-      "started_at": "2026-09-29T19:01:35.881Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dd4P_aQlP9q/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        },
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/reel/Dd4KhLlgXFL/",
-          "stage": "queue",
-          "error": "Command failed: ffmpeg -y -i /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/media/1059-sauce-walka-talks-about-go-yayo.mp4 -map 0:v:0 -map 0:a? -c:v libx264 -preset veryfast -crf 27 -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart /Users/dw/Library/Application Support/RapWire/publisher-runtime-live/media/1059-sauce-walka-talks-about-go-yayo.mp4.github-safe.mp4\nffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers\n  built with Apple clang version 17.0.0 (clang-1700.6.3.2)\n  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\n  libavutil      60.  8.100 / 60.  8.100\n  libavcodec     62. 11.100 / 62. 11.100\n  libavformat    62.  3.100 / 62.  3.100\n  libavdevice    62.  1.100 / 62.  1.100\n  libavfilter    11.  4.100 / 11.  4.100\n  libswscale      9.  1.100 /  9.  1.100\n  libswresample   6.  1.100 /  6.  1.100\nInput #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/dw/Library/Application Support/RapWire/publisher-runtime-live/media/1059-sauce-walka-talks-about-go-yayo.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf62.3.100\n  Duration: 00:03:07.97, start: 0.000000, bitrate: 4835 kb/s\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1350 [SAR 4095:4096 DAR 819:1024], 4698 kb/s, SAR 59821:59832 DAR 59821:74790, 30 fps, 30 tbr, 15360 tbn (default)\n    Metadata:\n      handler_name    : VideoHandler\n      vendor_id       : [0][0][0][0]\n      encoder         : Lavc62.11.100 libx264\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)\n    Metadata:\n      handler_name    : SoundHandler\n      vendor_id       : [0][0][0][0]\nStream mapping:\n  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))\n  Stream #0:1 -> #0:1 (aac (native) -> aac (native))\nPress [q] to stop, [?] for help\n[libx264 @ 0x7bab421180] using SAR=4095/4096\n[libx264 @ 0x7bab421180] using cpu capabilities: ARMv8 NEON DotProd\n[libx264 @ 0x7bab421180] profile High, level 4.0, 4:2:0, 8-bit\n[libx264 @ 0x7bab421180] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=27.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00\nOutput #0, mp4, to '/Users/dw/Library/Application Support/RapWire/publisher-runtime-live/media/1059-sauce-walka-talks-about-go-yayo.mp4.github-safe.mp4':\n  Metadata:\n    major_brand     : isom\n    minor_version   : 512\n    compatible_brands: isomiso2avc1mp41\n    encoder         : Lavf62.3.100\n  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1350 [SAR 59821:59832 DAR 59821:74790], q=2-31, 30 fps, 15360 tbn (default)\n    Metadata:\n      encoder         : Lavc62.11.100 libx264\n      handler_name    : VideoHandler\n      vendor_id       : [0][0][0][0]\n    Side data:\n      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A\n  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)\n    Metadata:\n      encoder         : Lavc62.11.100 aac\n      handler_name    : SoundHandler\n      vendor_id       : [0][0][0][0]\nframe=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.65    \rframe=    4 fps=3.1 q=33.0 size=       0KiB time=00:00:00.06 bitrate=   5.8kbits/s speed=0.0513x elapsed=0:00:01.29    \rframe=   20 fps= 10 q=33.0 size=       0KiB time=00:00:00.60 bitrate=   0.6kbits/s speed=0.308x elapsed=0:00:01.94    \rframe=   40 fps= 15 q=33.0 size=       0KiB time=00:00:01.26 bitrate=   0.3kbits/s speed=0.488x elapsed=0:00:02.59    \rframe=   62 fps= 19 q=33.0 size=     256KiB time=00:00:02.00 bitrate=1048.8kbits/s speed=0.616x elapsed=0:00:03.24    \rframe=   88 fps= 23 q=33.0 size=     256KiB time=00:00:02.86 bitrate= 731.7kbits/s speed=0.737x elapsed=0:00:03.88    \rframe=  108 fps= 24 q=33.0 size=     512KiB time=00:00:03.53 bitrate=1187.2kbits/s speed=0.782x elapsed=0:00:04.51    \rframe=  196 fps= 38 q=33.0 size=    1024KiB time=00:00:06.46 bitrate=1297.3kbits/s speed=1.26x elapsed=0:00:05.15    \rframe=  358 fps= 62 q=33.0 size=    1792KiB time=00:00:11.86 bitrate=1237.1kbits/s speed=2.06x elapsed=0:00:05.74    \rframe=  506 fps= 80 q=33.0 size=    2816KiB time=00:00:16.80 bitrate=1373.2kbits/s speed=2.65x elapsed=0:00:06.33    \rframe=  572 fps=7.4 q=33.0 size=    3072KiB time=00:00:19.00 bitrate=1324.5kbits/s speed=0.246x elapsed=0:01:17.35    \rframe=  708 fps=9.1 q=33.0 size=    3584KiB time=00:00:23.53 bitrate=1247.6kbits/s speed=0.302x elapsed=0:01:18.00    \rframe=  884 fps= 11 q=33.0 size=    4352KiB time=00:00:29.40 bitrate=1212.7kbits/s speed=0.374x elapsed=0:01:18.63    \rframe=  988 fps= 12 q=33.0 size=    5120KiB time=00:00:32.86 bitrate=1276.2kbits/s speed=0.415x elapsed=0:01:19.17    \rframe= 1154 fps= 14 q=33.0 size=    6144KiB time=00:00:38.40 bitrate=1310.7kbits/s speed=0.481x elapsed=0:01:19.82    \rframe= 1264 fps= 16 q=33.0 size=    6656KiB time=00:00:42.06 bitrate=1296.2kbits/s speed=0.523x elapsed=0:01:20.39    \rframe= 1348 fps= 17 q=33.0 size=    7168KiB time=00:00:44.86 bitrate=1308.8kbits/s speed=0.555x elapsed=0:01:20.90    \rframe= 1440 fps= 18 q=33.0 size=    7680KiB time=00:00:47.93 bitrate=1312.6kbits/s speed=0.588x elapsed=0:01:21.55    \rframe= 1488 fps= 18 q=33.0 size=    8192KiB time=00:00:49.53 bitrate=1354.8kbits/s speed=0.603x elapsed=0:01:22.10    \rframe= 1504 fps= 18 q=33.0 size=    8192KiB time=00:00:50.06 bitrate=1340.4kbits/s speed=0.606x elapsed=0:01:22.62    \rframe= 1516 fps= 18 q=33.0 size=    8192KiB time=00:00:50.46 bitrate=1329.8kbits/s speed=0.607x elapsed=0:01:23.14    \rframe= 1524 fps= 18 q=33.0 size=    8192KiB time=00:00:50.73 bitrate=1322.8kbits/s speed=0.605x elapsed=0:01:23.80    \rframe= 1540 fps= 18 q=33.0 size=    8192KiB time=00:00:51.26 bitrate=1309.0kbits/s speed=0.607x elapsed=0:01:24.45    \rframe= 1562 fps= 18 q=33.0 size=    8448KiB time=00:00:52.00 bitrate=1330.9kbits/s speed=0.611x elapsed=0:01:25.09    \rframe= 1577 fps= 18 q=33.0 size=    8448KiB time=00:00:52.50 bitrate=1318.2kbits/s speed=0.613x elapsed=0:01:25.61    \rframe= 1590 fps= 18 q=33.0 size=    8704KiB time=00:00:52.93 bitrate=1347.0kbits/s speed=0.614x elapsed=0:01:26.16    \rframe= 1608 fps= 19 q=33.0 size=    8704KiB time=00:00:53.53 bitrate=1331.9kbits/s speed=0.618x elapsed=0:01:26.67    \rframe= 1624 fps= 19 q=33.0 size=    8704KiB time=00:00:54.06 bitrate=1318.8kbits/s speed=0.62x elapsed=0:01:27.22    \rframe= 1642 fps= 19 q=33.0 size=    8960KiB time=00:00:54.66 bitrate=1342.7kbits/s speed=0.622x elapsed=0:01:27.87    \rframe= 1668 fps= 19 q=33.0 size=    8960KiB time=00:00:55.53 bitrate=1321.7kbits/s speed=0.628x elapsed=0:01:28.49    \rframe= 1696 fps= 19 q=33.0 size=    9216KiB time=00:00:56.46 bitrate=1337.0kbits/s speed=0.634x elapsed=0:01:29.13    \rframe= 1726 fps= 19 q=33.0 size=    9472KiB time=00:00:57.46 bitrate=1350.3kbits/s speed=0.64x elapsed=0:01:29.78    \r"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 3,
-        "needed": 45
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-29T19:07:48.777Z"
-    },
-    {
-      "started_at": "2026-09-29T19:19:22.358Z",
-      "candidates": 48,
-      "queued": [
-        "1059-this-must-be-why-there-s-always-soo-much-traffic-6-via"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 2,
-        "needed": 46
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-29T19:20:54.136Z"
-    },
     {
       "started_at": "2026-09-29T19:26:55.525Z",
       "candidates": 41,
@@ -32367,6 +32289,96 @@
         ]
       },
       "finished_at": "2026-10-01T04:32:32.858Z"
+    },
+    {
+      "started_at": "2026-10-01T04:37:54.166Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd8CbBEx6KC/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd8B-QrRqeS/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd8D1_GOKU3/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 42,
+        "needed": 6
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-01T04:38:14.428Z"
+    },
+    {
+      "started_at": "2026-10-01T04:43:21.794Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T04:43:41.817Z"
+    },
+    {
+      "started_at": "2026-10-01T04:48:48.949Z",
+      "candidates": 36,
+      "queued": [
+        "1146-kai-cenat-reveals-that-he-is-suing-reggie"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T04:50:14.442Z"
     }
   ],
   "vip_pending": {

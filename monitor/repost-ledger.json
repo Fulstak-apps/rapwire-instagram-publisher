@@ -25174,55 +25174,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd7TXBORjZA/",
       "queue_id": "1135-lil-durk-lildurk-next-trial-date-revealed-allegations-are-not-fi",
       "video": "media/1135-lil-durk-lildurk-next-trial-date-revealed-allegations-are-not-fi.mp4"
+    },
+    "Dd7SNRmErWo": {
+      "queued_at": "2026-10-01T02:06:00.272Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd7SNRmErWo/",
+      "queue_id": "1136-reggie-went-live-on-instagram-and-made-a-series-of-serious-alleg",
+      "video": "media/1136-reggie-went-live-on-instagram-and-made-a-series-of-serious-alleg.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T18:18:56.173Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T18:19:20.622Z"
-    },
-    {
-      "started_at": "2026-09-28T18:18:56.173Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T18:19:20.622Z"
-    },
     {
       "started_at": "2026-09-28T18:24:27.470Z",
       "candidates": 48,
@@ -32091,6 +32052,51 @@
         ]
       },
       "finished_at": "2026-10-01T01:54:05.377Z"
+    },
+    {
+      "started_at": "2026-10-01T01:59:28.514Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 36,
+        "needed": 12
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-01T01:59:41.875Z"
+    },
+    {
+      "started_at": "2026-10-01T02:04:49.607Z",
+      "candidates": 48,
+      "queued": [
+        "1136-reggie-went-live-on-instagram-and-made-a-series-of-serious-alleg"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 36,
+        "needed": 12
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T02:06:00.272Z"
     }
   ],
   "vip_pending": {

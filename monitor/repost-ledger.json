@@ -25530,108 +25530,16 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dd762A5smhX/",
       "queue_id": "1155-ab-couldn-t-process-what-just-happened-adrien-broner-also-known-",
       "video": "media/1155-ab-couldn-t-process-what-just-happened-adrien-broner-also-known-.mp4"
+    },
+    "Dd77qhqRiJQ": {
+      "queued_at": "2026-10-01T07:19:26.092Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd77qhqRiJQ/",
+      "queue_id": "1156-kai-cenat-responds-to-reggie-and-calls-out-streamers-for-using-r",
+      "video": "media/1156-kai-cenat-responds-to-reggie-and-calls-out-streamers-for-using-r.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T22:00:37.035Z",
-      "candidates": 48,
-      "queued": [
-        "1071-racks-sum-green-sum-blue-drake-champagnepapi-houston-newmusic"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 8,
-        "needed": 40
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-29T22:01:48.169Z"
-    },
-    {
-      "started_at": "2026-09-29T22:08:01.381Z",
-      "candidates": 41,
-      "queued": [
-        "1072-we-ll-never-see-all-these-artists-on-the-same-song-ever-again-mo"
-      ],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd2HDE_zUwf/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd2IFvEvhOa/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd2hhGlK5qz/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 9,
-        "needed": 39
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-29T22:08:58.293Z"
-    },
-    {
-      "started_at": "2026-09-29T22:14:22.408Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Ddy9ulZEb8o/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 10,
-        "needed": 38
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-29T22:15:05.334Z"
-    },
     {
       "started_at": "2026-09-29T22:20:12.517Z",
       "candidates": 48,
@@ -32370,6 +32278,84 @@
         ]
       },
       "finished_at": "2026-10-01T07:01:07.188Z"
+    },
+    {
+      "started_at": "2026-10-01T07:06:24.753Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-01T07:06:42.002Z"
+    },
+    {
+      "started_at": "2026-10-01T07:11:50.021Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/Dd1aaHHkRJS/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T07:12:25.174Z"
+    },
+    {
+      "started_at": "2026-10-01T07:17:33.623Z",
+      "candidates": 36,
+      "queued": [
+        "1156-kai-cenat-responds-to-reggie-and-calls-out-streamers-for-using-r"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T07:19:26.092Z"
     }
   ],
   "vip_pending": {

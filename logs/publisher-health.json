@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T12:10:16.019Z",
+  "checked_at": "2026-10-01T12:15:15.348Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T12:00:07.372Z",
+    "checked_at": "2026-10-01T12:15:14.724Z",
     "usage": 35,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T12:15:07.372Z",
+    "next_check_at": "2026-10-01T12:30:14.724Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "instagram_remaining": 13,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-01T12:15:02.800Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,25 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-01T12:00:07.708Z",
+    "checked_at": "2026-10-01T12:15:14.574Z",
     "usage": 36,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-01T12:15:07.708Z",
+    "next_check_at": "2026-10-01T12:30:14.574Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T12:40:15.549Z",
-  "publications": [
-    {
-      "file": "1117-why-arguing-is-for-poor-people.json",
-      "id": "1117-why-arguing-is-for-poor-people",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17965849029193131"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

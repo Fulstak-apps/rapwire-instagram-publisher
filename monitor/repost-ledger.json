@@ -25437,57 +25437,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd8AjSxxla7/",
       "queue_id": "1146-kai-cenat-reveals-that-he-is-suing-reggie",
       "video": "media/1146-kai-cenat-reveals-that-he-is-suing-reggie.mp4"
+    },
+    "Dd8AoKIDjjS": {
+      "queued_at": "2026-10-01T04:56:47.321Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd8AoKIDjjS/",
+      "queue_id": "1147-things-got-real-emotional-kaicenat-had-a-heated-moment-while-goi",
+      "video": "media/1147-things-got-real-emotional-kaicenat-had-a-heated-moment-while-goi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T19:26:55.525Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd3LR0bvoDd/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd4PI5wvk3j/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd4cDc1v_f5/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 3,
-        "needed": 45
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-29T19:27:34.606Z"
-    },
     {
       "started_at": "2026-09-29T19:32:42.723Z",
       "candidates": 48,
@@ -32379,6 +32338,31 @@
         ]
       },
       "finished_at": "2026-10-01T04:50:14.442Z"
+    },
+    {
+      "started_at": "2026-10-01T04:55:36.734Z",
+      "candidates": 48,
+      "queued": [
+        "1147-things-got-real-emotional-kaicenat-had-a-heated-moment-while-goi"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 42,
+        "needed": 6
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T04:56:47.321Z"
     }
   ],
   "vip_pending": {

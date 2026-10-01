@@ -25117,32 +25117,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd7f12jRMBt/",
       "queue_id": "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation",
       "video": "media/1132-reggie-is-having-a-kanye-west-moment-with-this-accusation.mp4"
+    },
+    "Dd7qfOBjhmK": {
+      "queued_at": "2026-10-01T01:35:30.549Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd7qfOBjhmK/",
+      "queue_id": "1133-gta-developers-went-full-method-gta-gta6-gaming",
+      "video": "media/1133-gta-developers-went-full-method-gta-gta6-gaming.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T18:18:56.173Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T18:19:20.622Z"
-    },
     {
       "started_at": "2026-09-28T18:18:56.173Z",
       "candidates": 48,
@@ -32005,6 +31989,28 @@
         ]
       },
       "finished_at": "2026-10-01T01:28:19.482Z"
+    },
+    {
+      "started_at": "2026-10-01T01:34:30.331Z",
+      "candidates": 12,
+      "queued": [
+        "1133-gta-developers-went-full-method-gta-gta6-gaming"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 34,
+        "needed": 14
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-01T01:35:30.549Z"
     }
   ],
   "vip_pending": {

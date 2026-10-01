@@ -19199,6 +19199,12 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd8AjSxxla7/",
       "view_count": 0
+    },
+    "Dd8CvKYDqyW": {
+      "seen_at": "2026-10-01T04:31:54.056Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd8CvKYDqyW/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25399,41 +25405,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd8CpORx-1x/",
       "queue_id": "1144-kai-cenat-explains-why-he-s-suing-reggie",
       "video": "media/1144-kai-cenat-explains-why-he-s-suing-reggie.mp4"
+    },
+    "Dd8CvKYDqyW": {
+      "queued_at": "2026-10-01T04:32:32.858Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd8CvKYDqyW/",
+      "queue_id": "1145-kaicenat-says-he-felt-he-had-no-other-option-but-to-take-legal-a",
+      "video": "media/1145-kaicenat-says-he-felt-he-had-no-other-option-but-to-take-legal-a.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T01:00:19.512Z",
-      "candidates": 48,
-      "queued": [
-        "1058-rakai-calls-cap-on-reggie-saying-he-never-got-touched"
-      ],
-      "errors": [
-        {
-          "source_handle": "traploreross",
-          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 20,
-        "needed": 28
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-29T01:01:49.389Z"
-    },
     {
       "started_at": "2026-09-29T18:46:28.617Z",
       "candidates": 48,
@@ -32354,6 +32335,38 @@
         ]
       },
       "finished_at": "2026-10-01T04:25:58.945Z"
+    },
+    {
+      "started_at": "2026-10-01T04:31:27.621Z",
+      "candidates": 48,
+      "queued": [
+        "1145-kaicenat-says-he-felt-he-had-no-other-option-but-to-take-legal-a"
+      ],
+      "errors": [
+        {
+          "source_handle": "traploreross",
+          "source_url": "https://www.instagram.com/vladtv/reel/DdfXkHKiBm1/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 41,
+        "needed": 7
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T04:32:32.858Z"
     }
   ],
   "vip_pending": {

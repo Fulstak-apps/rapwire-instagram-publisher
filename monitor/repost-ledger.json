@@ -25496,121 +25496,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd79e8IR4Kp/",
       "queue_id": "1151-kai-cenat-shows-he-s-invested-over-3-million-in-reggie-and-clove",
       "video": "media/1151-kai-cenat-shows-he-s-invested-over-3-million-in-reggie-and-clove.mp4"
+    },
+    "Dd788e1RnUd": {
+      "queued_at": "2026-10-01T06:29:46.587Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd788e1RnUd/",
+      "queue_id": "1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr",
+      "video": "media/1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T20:50:07.125Z",
-      "candidates": 48,
-      "queued": [
-        "1066-shyne-had-major-music-decisions-to-make-took-on-the-sound-check-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 5,
-        "needed": 43
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-29T20:52:22.002Z"
-    },
-    {
-      "started_at": "2026-09-29T20:59:44.165Z",
-      "candidates": 48,
-      "queued": [
-        "1067-donald-trump-says-canada-is-one-of-the-worst-countries-to-deal-w"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 6,
-        "needed": 42
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-29T21:00:46.895Z"
-    },
-    {
-      "started_at": "2026-09-29T21:06:10.052Z",
-      "candidates": 41,
-      "queued": [
-        "1068-lil-baby-slid-on-this-fr-central-cee-centralcee-and-lil-baby-bri"
-      ],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd4ohL2vwPK/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 7,
-        "needed": 41
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-29T21:07:34.626Z"
-    },
-    {
-      "started_at": "2026-09-29T21:13:34.954Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Dd18jHCjyO1/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 7,
-        "needed": 41
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-29T21:14:44.232Z"
-    },
     {
       "started_at": "2026-09-29T21:19:55.612Z",
       "candidates": 48,
@@ -32352,6 +32247,114 @@
         ]
       },
       "finished_at": "2026-10-01T06:05:21.108Z"
+    },
+    {
+      "started_at": "2026-10-01T06:10:46.080Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "trapmatictv",
+          "source_url": "https://www.instagram.com/trapmatictv/p/Dd7-33yjYe9/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dd7-33yjYe9-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 45,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T06:11:26.687Z"
+    },
+    {
+      "started_at": "2026-10-01T06:16:34.587Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 45,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-01T06:17:06.824Z"
+    },
+    {
+      "started_at": "2026-10-01T06:22:15.273Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 45,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T06:22:36.165Z"
+    },
+    {
+      "started_at": "2026-10-01T06:27:46.916Z",
+      "candidates": 36,
+      "queued": [
+        "1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T06:29:46.587Z"
     }
   ],
   "vip_pending": {

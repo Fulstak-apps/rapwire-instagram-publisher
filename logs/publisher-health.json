@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T00:57:30.360Z",
+  "checked_at": "2026-10-01T01:02:32.017Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T00:57:20.679Z",
-    "usage": 30,
+    "checked_at": "2026-10-01T01:02:25.187Z",
+    "usage": 31,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T01:12:20.679Z",
+    "next_check_at": "2026-10-01T01:17:25.187Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 30,
     "instagram_remaining": 18,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-01T00:52:19.409Z",
+    "next_feed_eligible_at": "2026-10-01T01:32:31.762Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-01T00:47:13.163Z",
+    "checked_at": "2026-10-01T01:02:24.790Z",
     "usage": 31,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-01T01:02:13.163Z",
+    "next_check_at": "2026-10-01T01:17:24.790Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "1098-we-re-celebrating-ign-s-30th-anniversary-with-a-bundle-of-ign-fa.json",
       "id": "1098-we-re-celebrating-ign-s-30th-anniversary-with-a-bundle-of-ign-fa",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18115698575093870"
+      "media_id": "18500487298096562",
+      "content_type": "video"
     }
   ],
   "failures": [],

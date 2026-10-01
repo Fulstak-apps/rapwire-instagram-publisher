@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T23:43:10.194Z",
+  "checked_at": "2026-10-01T23:48:28.867Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T23:43:09.452Z",
+    "checked_at": "2026-10-01T23:48:20.373Z",
     "usage": 39,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T23:58:09.452Z",
+    "next_check_at": "2026-10-02T00:03:20.373Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 39,
     "instagram_remaining": 9,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-01T23:42:50.547Z",
+    "next_feed_eligible_at": "2026-10-02T00:18:28.630Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -43,17 +43,33 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-01T23:33:04.902Z",
+    "checked_at": "2026-10-01T23:48:12.246Z",
     "usage": 39,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-01T23:48:04.902Z",
+    "next_check_at": "2026-10-02T00:03:12.246Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-01T23:42:43.054Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-02T00:18:19.975Z",
+  "publications": [
+    {
+      "file": "1135-lil-durk-lildurk-next-trial-date-revealed-allegations-are-not-fi.json",
+      "id": "1135-lil-durk-lildurk-next-trial-date-revealed-allegations-are-not-fi",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18431373436194727"
+    },
+    {
+      "file": "1135-lil-durk-lildurk-next-trial-date-revealed-allegations-are-not-fi.json",
+      "id": "1135-lil-durk-lildurk-next-trial-date-revealed-allegations-are-not-fi",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17986045034884653",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

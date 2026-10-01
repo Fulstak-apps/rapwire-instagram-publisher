@@ -25167,55 +25167,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dd7Wftmv9Ul/",
       "queue_id": "1134-estelle-shares-her-1-billion-streams-plaque-for-american-boy-wit",
       "video": "media/1134-estelle-shares-her-1-billion-streams-plaque-for-american-boy-wit.mp4"
+    },
+    "Dd7TXBORjZA": {
+      "queued_at": "2026-10-01T01:54:05.377Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/Dd7TXBORjZA/",
+      "queue_id": "1135-lil-durk-lildurk-next-trial-date-revealed-allegations-are-not-fi",
+      "video": "media/1135-lil-durk-lildurk-next-trial-date-revealed-allegations-are-not-fi.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T18:18:56.173Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T18:19:20.622Z"
-    },
-    {
-      "started_at": "2026-09-28T18:18:56.173Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-28T18:19:20.622Z"
-    },
     {
       "started_at": "2026-09-28T18:18:56.173Z",
       "candidates": 48,
@@ -32075,6 +32036,61 @@
         ]
       },
       "finished_at": "2026-10-01T01:41:42.810Z"
+    },
+    {
+      "started_at": "2026-10-01T01:46:56.008Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/Ddw7rGdj2JM/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 35,
+        "needed": 13
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T01:47:35.508Z"
+    },
+    {
+      "started_at": "2026-10-01T01:52:42.386Z",
+      "candidates": 36,
+      "queued": [
+        "1135-lil-durk-lildurk-next-trial-date-revealed-allegations-are-not-fi"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 35,
+        "needed": 13
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T01:54:05.377Z"
     }
   ],
   "vip_pending": {

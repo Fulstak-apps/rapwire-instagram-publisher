@@ -19307,6 +19307,18 @@
       "source_handle": "6ixbuzztv",
       "source_url": "https://www.instagram.com/6ixbuzztv/p/Dd82McwoK0I/",
       "view_count": 0
+    },
+    "Dd89cwLEVla": {
+      "seen_at": "2026-10-01T13:01:23.790Z",
+      "source_handle": "xxl",
+      "source_url": "https://www.instagram.com/xxl/p/Dd89cwLEVla/",
+      "view_count": 0
+    },
+    "Dd7GTsup5Zp": {
+      "seen_at": "2026-10-01T13:23:39.878Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/jm.edia/reel/Dd7GTsup5Zp/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25626,302 +25638,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/Dd81Ws5gBOL/",
       "queue_id": "1161-no-cap-girlfriend-summyah-announces-she-s-pregnant-and-tryna-dec",
       "video": "media/1161-no-cap-girlfriend-summyah-announces-she-s-pregnant-and-tryna-dec.mp4"
+    },
+    "Dd7GTsup5Zp": {
+      "queued_at": "2026-10-01T13:24:07.152Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/jm.edia/reel/Dd7GTsup5Zp/",
+      "queue_id": "1162-overnight-celebrity-ye-and-twista-perform-overnight-celebrity-fo",
+      "video": "media/1162-overnight-celebrity-ye-and-twista-perform-overnight-celebrity-fo.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-30T03:56:06.325Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/DdqHNwcxF5V/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-30T03:56:55.978Z"
-    },
-    {
-      "started_at": "2026-09-30T04:02:06.518Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-30T04:02:35.589Z"
-    },
-    {
-      "started_at": "2026-09-30T04:07:44.140Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd5Z1PEx4gN/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd5azj1ROGJ/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-30T04:08:08.202Z"
-    },
-    {
-      "started_at": "2026-09-30T04:13:16.124Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Dd1aaHHkRJS/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-30T04:13:48.681Z"
-    },
-    {
-      "started_at": "2026-09-30T04:18:55.595Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-30T04:19:27.896Z"
-    },
-    {
-      "started_at": "2026-09-30T04:24:36.270Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dd4Kbl0m8zU/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-30T04:25:19.671Z"
-    },
-    {
-      "started_at": "2026-09-30T04:30:29.978Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Ddy9ulZEb8o/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 23,
-        "needed": 25
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-30T04:31:06.681Z"
-    },
-    {
-      "started_at": "2026-09-30T04:36:15.453Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "6ixbuzztv",
-          "source_url": "https://www.instagram.com/6ixbuzztv/p/Dd5T83iI_0a/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 23,
-        "needed": 25
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-30T04:36:44.480Z"
-    },
-    {
-      "started_at": "2026-09-30T04:41:54.645Z",
-      "candidates": 48,
-      "queued": [
-        "1097-shoreline-mafia-rocked-out-had-the-crowd-going-crazy-during-thei"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 23,
-        "needed": 25
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-30T04:42:51.150Z"
-    },
-    {
-      "started_at": "2026-09-30T04:48:13.243Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd4z09VPAud/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd5eMThufI9/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 4,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-30T04:48:40.058Z"
-    },
     {
       "started_at": "2026-09-30T04:53:48.229Z",
       "candidates": 48,
@@ -32229,6 +31955,249 @@
         ]
       },
       "finished_at": "2026-10-01T12:27:42.367Z"
+    },
+    {
+      "started_at": "2026-10-01T12:32:59.063Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-01T12:33:34.540Z"
+    },
+    {
+      "started_at": "2026-10-01T12:38:42.738Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T12:39:03.996Z"
+    },
+    {
+      "started_at": "2026-10-01T12:44:11.047Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T12:44:49.425Z"
+    },
+    {
+      "started_at": "2026-10-01T12:49:57.211Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T12:50:17.765Z"
+    },
+    {
+      "started_at": "2026-10-01T12:55:25.595Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-01T12:55:41.838Z"
+    },
+    {
+      "started_at": "2026-10-01T13:00:51.931Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/Dd4iCkVD9xf/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-01T13:01:36.154Z"
+    },
+    {
+      "started_at": "2026-10-01T13:06:44.984Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 43,
+        "needed": 5
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-01T13:07:22.126Z"
+    },
+    {
+      "started_at": "2026-10-01T13:12:29.291Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 43,
+        "needed": 5
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-01T13:12:43.576Z"
+    },
+    {
+      "started_at": "2026-10-01T13:17:52.535Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 43,
+        "needed": 5
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T13:18:12.461Z"
+    },
+    {
+      "started_at": "2026-10-01T13:23:20.017Z",
+      "candidates": 41,
+      "queued": [
+        "1162-overnight-celebrity-ye-and-twista-perform-overnight-celebrity-fo"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 43,
+        "needed": 5
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-01T13:24:07.152Z"
     }
   ],
   "vip_pending": {

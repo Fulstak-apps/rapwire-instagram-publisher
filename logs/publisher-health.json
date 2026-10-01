@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T13:21:08.133Z",
+  "checked_at": "2026-10-01T13:26:09.210Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T13:10:53.358Z",
+    "checked_at": "2026-10-01T13:26:08.259Z",
     "usage": 37,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T13:25:53.358Z",
+    "next_check_at": "2026-10-01T13:41:08.259Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "instagram_remaining": 11,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-01T13:25:50.861Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T13:51:07.572Z",
-  "publications": [
-    {
-      "file": "1119-ab-couldn-t-process-what-happened-when-a-man-with-no-legs-came-u.json",
-      "id": "1119-ab-couldn-t-process-what-happened-when-a-man-with-no-legs-came-u",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18143599153586606"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -19157,6 +19157,18 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd77qhqRiJQ/",
       "view_count": 0
+    },
+    "Dd8AoKIDjjS": {
+      "seen_at": "2026-10-01T04:06:33.361Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd8AoKIDjjS/",
+      "view_count": 0
+    },
+    "Dd7-33yjYe9": {
+      "seen_at": "2026-10-01T04:06:33.362Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd7-33yjYe9/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25343,41 +25355,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd7_a30RhOz/",
       "queue_id": "1142-kai-cenat-exposes-people-were-trying-to-kill-reggie-in-alaska",
       "video": "media/1142-kai-cenat-exposes-people-were-trying-to-kill-reggie-in-alaska.mp4"
+    },
+    "Dd78LXdjTdo": {
+      "queued_at": "2026-10-01T04:07:29.726Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd78LXdjTdo/",
+      "queue_id": "1143-kaicenat-is-calling-out-streamers-for-what-he-sees-as-an-unfair-",
+      "video": "media/1143-kaicenat-is-calling-out-streamers-for-what-he-sees-as-an-unfair-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-28T20:01:17.466Z",
-      "candidates": 48,
-      "queued": [
-        "1056-reggie-just-crashed-out-on-someone-who-dissed-him-in-his-instagr"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dd1xbcEzDVq/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 24,
-        "needed": 24
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-28T20:06:17.921Z"
-    },
     {
       "started_at": "2026-09-28T21:18:46.930Z",
       "candidates": 48,
@@ -32287,6 +32274,31 @@
         ]
       },
       "finished_at": "2026-10-01T04:00:35.127Z"
+    },
+    {
+      "started_at": "2026-10-01T04:06:03.911Z",
+      "candidates": 48,
+      "queued": [
+        "1143-kaicenat-is-calling-out-streamers-for-what-he-sees-as-an-unfair-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 39,
+        "needed": 9
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T04:07:29.726Z"
     }
   ],
   "vip_pending": {

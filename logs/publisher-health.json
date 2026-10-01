@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T17:05:56.019Z",
+  "checked_at": "2026-10-01T17:11:13.395Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-01T17:05:54.977Z",
+    "checked_at": "2026-10-01T17:11:07.163Z",
     "usage": 39,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-01T17:20:54.977Z",
+    "next_check_at": "2026-10-01T17:26:07.163Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 39,
     "instagram_remaining": 9,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-01T16:59:26.612Z",
+    "next_feed_eligible_at": "2026-10-01T17:41:13.097Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-01T17:05:54.889Z",
-    "usage": 38,
+    "usage": 39,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-01T17:20:54.889Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-01T16:48:33.304Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-01T17:41:06.687Z",
+  "publications": [
+    {
+      "file": "1125-lil-durk-lildurk-s-trial-set-to-begin-august-30th-2027-lawyers-a.json",
+      "id": "1125-lil-durk-lildurk-s-trial-set-to-begin-august-30th-2027-lawyers-a",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18166637719464267"
+    },
+    {
+      "file": "1125-lil-durk-lildurk-s-trial-set-to-begin-august-30th-2027-lawyers-a.json",
+      "id": "1125-lil-durk-lildurk-s-trial-set-to-begin-august-30th-2027-lawyers-a",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18092435273344822",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -25523,34 +25523,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd78VP1xu3o/",
       "queue_id": "1154-kai-cenat-talks-text-messages-and-proof",
       "video": "media/1154-kai-cenat-talks-text-messages-and-proof.mp4"
+    },
+    "Dd762A5smhX": {
+      "queued_at": "2026-10-01T07:01:07.188Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dd762A5smhX/",
+      "queue_id": "1155-ab-couldn-t-process-what-just-happened-adrien-broner-also-known-",
+      "video": "media/1155-ab-couldn-t-process-what-just-happened-adrien-broner-also-known-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T21:44:45.902Z",
-      "candidates": 48,
-      "queued": [
-        "1070-bron-bron-leaving-the-76ers-facility-in-style"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 7,
-        "needed": 41
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-29T21:45:39.791Z"
-    },
     {
       "started_at": "2026-09-29T22:00:37.035Z",
       "candidates": 48,
@@ -32363,6 +32345,31 @@
         ]
       },
       "finished_at": "2026-10-01T06:54:50.726Z"
+    },
+    {
+      "started_at": "2026-10-01T07:00:21.772Z",
+      "candidates": 48,
+      "queued": [
+        "1155-ab-couldn-t-process-what-just-happened-adrien-broner-also-known-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T07:01:07.188Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T19:56:12.508Z",
+  "checked_at": "2026-10-01T20:06:07.321Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 38,
-    "instagram_remaining": 10,
+    "instagram_usage": 39,
+    "instagram_remaining": 9,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-01T20:26:12.256Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T20:26:01.010Z",
-  "publications": [
-    {
-      "file": "1129-dillon-brooks-the-phoenix-suns-forward-from-mississauga-ont-is-f.json",
-      "id": "1129-dillon-brooks-the-phoenix-suns-forward-from-mississauga-ont-is-f",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18130386514789354"
-    },
-    {
-      "file": "1129-dillon-brooks-the-phoenix-suns-forward-from-mississauga-ont-is-f.json",
-      "id": "1129-dillon-brooks-the-phoenix-suns-forward-from-mississauga-ont-is-f",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18103643825360484",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

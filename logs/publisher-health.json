@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T12:05:13.001Z",
+  "checked_at": "2026-10-01T12:10:16.019Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-01T12:00:07.708Z",
-    "usage": 35,
+    "usage": 36,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-01T12:15:07.708Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-01T12:04:52.714Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-01T12:40:15.549Z",
+  "publications": [
+    {
+      "file": "1117-why-arguing-is-for-poor-people.json",
+      "id": "1117-why-arguing-is-for-poor-people",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17965849029193131"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

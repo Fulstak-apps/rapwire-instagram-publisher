@@ -19247,6 +19247,12 @@
       "source_handle": "trapmatictv",
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dd8LolEOOtX/",
       "view_count": 0
+    },
+    "Dd8O-PNRhk5": {
+      "seen_at": "2026-10-01T06:35:37.102Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dd8O-PNRhk5/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25503,39 +25509,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/Dd788e1RnUd/",
       "queue_id": "1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr",
       "video": "media/1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr.mp4"
+    },
+    "Dd8O-PNRhk5": {
+      "queued_at": "2026-10-01T06:36:15.674Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/Dd8O-PNRhk5/",
+      "queue_id": "1153-kaicenat-gets-emotional-after-revealing-that-he-saved-reggie-fro",
+      "video": "media/1153-kaicenat-gets-emotional-after-revealing-that-he-saved-reggie-fro.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-29T21:19:55.612Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 7,
-        "needed": 41
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 4,
-        "handles": [
-          "6ixbuzztv",
-          "ceddynash",
-          "rockstargames",
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-09-29T21:20:42.468Z"
-    },
     {
       "started_at": "2026-09-29T21:25:50.698Z",
       "candidates": 41,
@@ -32355,6 +32338,31 @@
         ]
       },
       "finished_at": "2026-10-01T06:29:46.587Z"
+    },
+    {
+      "started_at": "2026-10-01T06:35:15.307Z",
+      "candidates": 48,
+      "queued": [
+        "1153-kaicenat-gets-emotional-after-revealing-that-he-saved-reggie-fro"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 45,
+        "needed": 3
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T06:36:15.674Z"
     }
   ],
   "vip_pending": {

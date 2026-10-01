@@ -19433,6 +19433,12 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complexmusic/reel/Dd9LIewxO9K/",
       "view_count": 0
+    },
+    "Dd9L2E-xdhj": {
+      "seen_at": "2026-10-01T15:22:39.795Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dd9L2E-xdhj/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -25780,55 +25786,16 @@
       "source_url": "https://www.instagram.com/complex/reel/Dd9LsatkjDc/",
       "queue_id": "1165-throwback-to-the-time-molly-santana-gave-lil-uzi-vert-liluzivert",
       "video": "media/1165-throwback-to-the-time-molly-santana-gave-lil-uzi-vert-liluzivert.mp4"
+    },
+    "Dd9L2E-xdhj": {
+      "queued_at": "2026-10-01T15:23:20.841Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/Dd9L2E-xdhj/",
+      "queue_id": "1166-it-s-just-trolllin-right",
+      "video": "media/1166-it-s-just-trolllin-right.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-30T06:34:48.727Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 21,
-        "needed": 27
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 4,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-30T06:35:27.489Z"
-    },
-    {
-      "started_at": "2026-09-30T06:40:35.634Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 21,
-        "needed": 27
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 4,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-30T06:40:56.979Z"
-    },
     {
       "started_at": "2026-09-30T06:46:05.024Z",
       "candidates": 41,
@@ -32313,6 +32280,51 @@
         ]
       },
       "finished_at": "2026-10-01T15:09:21.614Z"
+    },
+    {
+      "started_at": "2026-10-01T15:16:40.029Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-01T15:16:57.464Z"
+    },
+    {
+      "started_at": "2026-10-01T15:22:06.238Z",
+      "candidates": 48,
+      "queued": [
+        "1166-it-s-just-trolllin-right"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 44,
+        "needed": 4
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-01T15:23:20.841Z"
     }
   ],
   "vip_pending": {

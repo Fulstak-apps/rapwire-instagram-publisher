@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-01T22:02:13.199Z",
+  "checked_at": "2026-10-01T22:07:03.779Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 37,
-    "instagram_remaining": 11,
+    "instagram_usage": 38,
+    "instagram_remaining": 10,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-01T22:32:13.025Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-01T22:32:05.423Z",
-  "publications": [
-    {
-      "file": "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation.json",
-      "id": "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18108699392188831"
-    },
-    {
-      "file": "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation.json",
-      "id": "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17948953032312004",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

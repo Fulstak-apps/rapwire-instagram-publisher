@@ -20555,6 +20555,12 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/DeAGR52MiJM/",
       "view_count": 0
+    },
+    "DeAjHxzuD8v": {
+      "seen_at": "2026-10-02T22:39:09.693Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DeAjHxzuD8v/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -27154,22 +27160,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DeAgIa2RLcA/",
       "queue_id": "1201-ben10-emergency-bond-hearing-update-part-2-feds-admitted-they-pu",
       "video": "media/1201-ben10-emergency-bond-hearing-update-part-2-feds-admitted-they-pu.mp4"
+    },
+    "DeAgYypuLG6": {
+      "queued_at": "2026-10-02T22:39:51.163Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DeAgYypuLG6/",
+      "queue_id": "1202-king-von-didn-t-have-time-to-drop-this-iconic-snippet-this-would",
+      "video": "media/1202-king-von-didn-t-have-time-to-drop-this-iconic-snippet-this-would.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-01T07:24:56.969Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T07:25:02.534Z"
-    },
     {
       "started_at": "2026-10-01T07:30:09.710Z",
       "candidates": 0,
@@ -32701,6 +32701,31 @@
         ]
       },
       "finished_at": "2026-10-02T22:32:36.266Z"
+    },
+    {
+      "started_at": "2026-10-02T22:38:42.653Z",
+      "candidates": 48,
+      "queued": [
+        "1202-king-von-didn-t-have-time-to-drop-this-iconic-snippet-this-would"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-02T22:39:51.163Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T17:43:07.057Z",
+  "checked_at": "2026-10-02T17:48:32.933Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-02T17:43:05.748Z",
-    "usage": 25,
+    "checked_at": "2026-10-02T17:48:25.273Z",
+    "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-02T17:58:05.748Z",
+    "next_check_at": "2026-10-02T18:03:25.273Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 25,
     "instagram_remaining": 23,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-02T17:41:49.016Z",
+    "next_feed_eligible_at": "2026-10-02T18:18:32.580Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-02T17:37:54.775Z",
-    "usage": 25,
+    "usage": 26,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-02T17:52:54.775Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-02T17:41:42.051Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-02T18:18:23.920Z",
+  "publications": [
+    {
+      "file": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m.json",
+      "id": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17964168501194630"
+    },
+    {
+      "file": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m.json",
+      "id": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18114165557158097",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

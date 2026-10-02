@@ -19847,6 +19847,12 @@
       "source_handle": "igndotcom",
       "source_url": "https://www.instagram.com/igndotcom/p/Dd-LNsHjKht/",
       "view_count": 0
+    },
+    "Dd-TnK8DppJ": {
+      "seen_at": "2026-10-02T01:42:43.046Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd-TnK8DppJ/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -26334,115 +26340,16 @@
       "source_url": "https://www.instagram.com/igndotcom/reel/Dd-SFsTANDX/",
       "queue_id": "1185-check-out-the-latest-trailer-for-ebenezer-and-see-johnny-depp-in",
       "video": "media/1185-check-out-the-latest-trailer-for-ebenezer-and-see-johnny-depp-in.mp4"
+    },
+    "Dd-TnK8DppJ": {
+      "queued_at": "2026-10-02T01:43:34.141Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/reel/Dd-TnK8DppJ/",
+      "queue_id": "1186-fire-emblem-fortune-s-weave-has-lots-to-do-outside-the-arena-and",
+      "video": "media/1186-fire-emblem-fortune-s-weave-has-lots-to-do-outside-the-arena-and.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-09-30T20:42:58.425Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 27,
-        "needed": 21
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 5,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-09-30T20:43:22.546Z"
-    },
-    {
-      "started_at": "2026-09-30T20:48:30.257Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 5,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-09-30T20:48:50.610Z"
-    },
-    {
-      "started_at": "2026-09-30T20:53:58.421Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 5,
-        "handles": [
-          "6ixbuzztv",
-          "br0adwaychr0niclez",
-          "ceddynash",
-          "rockstargames"
-        ]
-      },
-      "finished_at": "2026-09-30T20:54:51.799Z"
-    },
-    {
-      "started_at": "2026-09-30T21:00:02.001Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dd6uQ8flCWH/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 26,
-        "needed": 22
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-09-30T21:00:37.194Z"
-    },
     {
       "started_at": "2026-09-30T21:05:45.794Z",
       "candidates": 41,
@@ -32184,6 +32091,67 @@
         ]
       },
       "finished_at": "2026-10-02T01:21:11.726Z"
+    },
+    {
+      "started_at": "2026-10-02T01:26:48.070Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T01:26:53.918Z"
+    },
+    {
+      "started_at": "2026-10-02T01:32:03.296Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T01:32:08.812Z"
+    },
+    {
+      "started_at": "2026-10-02T01:37:16.887Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T01:37:21.574Z"
+    },
+    {
+      "started_at": "2026-10-02T01:42:28.961Z",
+      "candidates": 12,
+      "queued": [
+        "1186-fire-emblem-fortune-s-weave-has-lots-to-do-outside-the-arena-and"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-02T01:43:34.141Z"
     }
   ],
   "vip_pending": {

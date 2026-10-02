@@ -1,18 +1,16 @@
 {
-  "reserve_count": 47,
-  "reserve_hours": 23.5,
+  "reserve_count": 48,
+  "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1151-kai-cenat-shows-he-s-invested-over-3-million-in-reggie-and-clove",
-    "1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr",
     "1153-kaicenat-gets-emotional-after-revealing-that-he-saved-reggie-fro",
     "1154-kai-cenat-talks-text-messages-and-proof",
     "1155-ab-couldn-t-process-what-just-happened-adrien-broner-also-known-",
@@ -57,10 +55,13 @@
     "1194-bright-lights-vice-city-a-night-in-vice-city-tips-off-november-1",
     "1195-reggie-s-older-brother-james-mack-says-reggie-is-outrageous-for-",
     "1196-thug-was-in-his-bag-life-when-young-thug-thuggerthugger1-dropped",
-    "1197-iggy-really-came-in-and-did-her-thing-ariana-grande-s-problem-fe"
+    "1197-iggy-really-came-in-and-did-her-thing-ariana-grande-s-problem-fe",
+    "1198-last-remaining-bloodhound-core-member-bh-rell-vert-responds-to-f",
+    "1199-fridayy-takes-it-back-to-the-80s-with-the-visuals-for-his-viral-",
+    "1200-what-s-your-all-time-favorite-festival-moment-hit-the-premiere-r"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-02T17:58:22.007Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-02T21:47:41.844Z",
   "deferred": []
 }

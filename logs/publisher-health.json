@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T21:56:53.548Z",
+  "checked_at": "2026-10-02T22:01:43.584Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 22,
-    "instagram_remaining": 26,
+    "instagram_usage": 23,
+    "instagram_remaining": 25,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-02T22:26:53.300Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-02T22:26:43.799Z",
-  "publications": [
-    {
-      "file": "1153-kaicenat-gets-emotional-after-revealing-that-he-saved-reggie-fro.json",
-      "id": "1153-kaicenat-gets-emotional-after-revealing-that-he-saved-reggie-fro",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18131523316777317"
-    },
-    {
-      "file": "1153-kaicenat-gets-emotional-after-revealing-that-he-saved-reggie-fro.json",
-      "id": "1153-kaicenat-gets-emotional-after-revealing-that-he-saved-reggie-fro",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17897262714395298",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

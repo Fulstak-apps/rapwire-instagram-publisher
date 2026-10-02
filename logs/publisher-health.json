@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T14:59:58.894Z",
+  "checked_at": "2026-10-02T15:05:22.184Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-02T14:59:58.177Z",
-    "usage": 25,
+    "checked_at": "2026-10-02T15:05:14.698Z",
+    "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-02T15:14:58.177Z",
+    "next_check_at": "2026-10-02T15:20:14.698Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 25,
     "instagram_remaining": 23,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-02T14:59:47.365Z",
+    "next_feed_eligible_at": "2026-10-02T15:35:21.877Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-02T14:54:55.446Z",
-    "usage": 25,
+    "usage": 26,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-02T15:09:55.446Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-02T14:59:38.597Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-02T15:35:13.767Z",
+  "publications": [
+    {
+      "file": "1147-things-got-real-emotional-kaicenat-had-a-heated-moment-while-goi.json",
+      "id": "1147-things-got-real-emotional-kaicenat-had-a-heated-moment-while-goi",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18343105087266808"
+    },
+    {
+      "file": "1147-things-got-real-emotional-kaicenat-had-a-heated-moment-while-goi.json",
+      "id": "1147-things-got-real-emotional-kaicenat-had-a-heated-moment-while-goi",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18129264085694972",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

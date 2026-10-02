@@ -26553,72 +26553,16 @@
       "source_url": "https://www.instagram.com/6ixbuzztv/p/Dd-c_ligJhm/",
       "queue_id": "1188-fomo-drops-tonight-which-song-are-you-most-excited-for-on-this-d",
       "video": "media/1188-fomo-drops-tonight-which-song-are-you-most-excited-for-on-this-d.mp4"
+    },
+    "Dd96HVlIP5h": {
+      "queued_at": "2026-10-02T03:28:15.325Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dd96HVlIP5h/",
+      "queue_id": "1189-lil-durk-lildurk-really-wanted-king-von-to-do-well-lil-durk-and-",
+      "video": "media/1189-lil-durk-lildurk-really-wanted-king-von-to-do-well-lil-durk-and-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-01T00:04:25.320Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7iHeXvP1W/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7kFbovSpA/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7fP8tv2Kr/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 28,
-        "needed": 20
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 5,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-10-01T00:05:15.194Z"
-    },
-    {
-      "started_at": "2026-10-01T00:10:27.004Z",
-      "candidates": 0,
-      "queued": [
-        "1125-lil-durk-lildurk-s-trial-set-to-begin-august-30th-2027-lawyers-a"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 28,
-        "needed": 20
-      },
-      "mode": "cached_reserve",
-      "finished_at": "2026-10-01T00:10:53.763Z"
-    },
     {
       "started_at": "2026-10-01T00:16:18.014Z",
       "candidates": 12,
@@ -32349,6 +32293,44 @@
         ]
       },
       "finished_at": "2026-10-02T03:16:17.849Z"
+    },
+    {
+      "started_at": "2026-10-02T03:21:41.807Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T03:21:49.336Z"
+    },
+    {
+      "started_at": "2026-10-02T03:26:57.190Z",
+      "candidates": 48,
+      "queued": [
+        "1189-lil-durk-lildurk-really-wanted-king-von-to-do-well-lil-durk-and-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-02T03:28:15.325Z"
     }
   ],
   "vip_pending": {

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T03:20:49.892Z",
+  "checked_at": "2026-10-02T03:25:41.935Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 39,
-    "instagram_remaining": 9,
+    "instagram_usage": 40,
+    "instagram_remaining": 8,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-02T03:50:49.699Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-02T03:10:35.583Z",
-    "usage": 40,
+    "checked_at": "2026-10-02T03:25:41.740Z",
+    "usage": 39,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-02T03:25:35.583Z",
+    "next_check_at": "2026-10-02T03:40:41.740Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-02T03:50:42.771Z",
-  "publications": [
-    {
-      "file": "1141-keeps-the-momentum-going-with-the-bae-please-remix-featuring-fox.json",
-      "id": "1141-keeps-the-momentum-going-with-the-bae-please-remix-featuring-fox",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17937904401368281"
-    },
-    {
-      "file": "1141-keeps-the-momentum-going-with-the-bae-please-remix-featuring-fox.json",
-      "id": "1141-keeps-the-momentum-going-with-the-bae-please-remix-featuring-fox",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18116120924046552",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

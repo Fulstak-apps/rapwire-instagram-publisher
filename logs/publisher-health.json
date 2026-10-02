@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T02:45:26.019Z",
+  "checked_at": "2026-10-02T02:50:15.959Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 39,
-    "instagram_remaining": 9,
+    "instagram_usage": 40,
+    "instagram_remaining": 8,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-02T03:15:25.717Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-02T03:15:17.391Z",
-  "publications": [
-    {
-      "file": "1140-peezy-might-be-the-first-rapper-in-a-minute-to-really-bring-back.json",
-      "id": "1140-peezy-might-be-the-first-rapper-in-a-minute-to-really-bring-back",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18336248485277629"
-    },
-    {
-      "file": "1140-peezy-might-be-the-first-rapper-in-a-minute-to-really-bring-back.json",
-      "id": "1140-peezy-might-be-the-first-rapper-in-a-minute-to-really-bring-back",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18055412540801346",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

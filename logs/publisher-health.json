@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T16:16:06.613Z",
+  "checked_at": "2026-10-02T16:21:33.999Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-02T16:15:58.136Z",
-    "usage": 25,
+    "checked_at": "2026-10-02T16:21:26.099Z",
+    "usage": 26,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-02T16:30:58.136Z",
+    "next_check_at": "2026-10-02T16:36:26.099Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,12 +29,12 @@
     "instagram_usage": 25,
     "instagram_remaining": 23,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-02T16:14:57.178Z",
+    "next_feed_eligible_at": "2026-10-02T16:51:33.697Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,11 +43,11 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-02T16:05:47.098Z",
-    "usage": 26,
+    "checked_at": "2026-10-02T16:21:25.807Z",
+    "usage": 25,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-02T16:20:47.098Z",
+    "next_check_at": "2026-10-02T16:36:25.807Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,9 +57,10 @@
     {
       "file": "1148-kai-cenat-shows-text-of-him-reaching-out-pt-1.json",
       "id": "1148-kai-cenat-shows-text-of-him-reaching-out-pt-1",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18114981145824604"
+      "media_id": "18628188361014649",
+      "content_type": "video"
     }
   ],
   "failures": [],

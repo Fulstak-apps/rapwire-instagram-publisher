@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T00:53:59.580Z",
+  "checked_at": "2026-10-02T00:59:11.061Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-02T00:53:58.847Z",
-    "usage": 39,
+    "checked_at": "2026-10-02T00:59:05.290Z",
+    "usage": 40,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-02T01:08:58.847Z",
+    "next_check_at": "2026-10-02T01:14:05.290Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 39,
     "instagram_remaining": 9,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-02T00:53:53.426Z",
+    "next_feed_eligible_at": "2026-10-02T01:29:10.835Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-02T00:48:50.298Z",
-    "usage": 39,
+    "usage": 40,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-02T01:03:50.298Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-02T00:53:44.313Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-02T01:29:05.025Z",
+  "publications": [
+    {
+      "file": "1137-ken-carson-kencarson-at-the-gears-of-war-e-day-launch-in-la-all-.json",
+      "id": "1137-ken-carson-kencarson-at-the-gears-of-war-e-day-launch-in-la-all-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18095700002432326"
+    },
+    {
+      "file": "1137-ken-carson-kencarson-at-the-gears-of-war-e-day-launch-in-la-all-.json",
+      "id": "1137-ken-carson-kencarson-at-the-gears-of-war-e-day-launch-in-la-all-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18090744530210484",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

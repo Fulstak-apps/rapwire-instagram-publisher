@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T06:12:58.061Z",
+  "checked_at": "2026-10-02T06:40:24.380Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-02T06:12:50.509Z",
-    "usage": 38,
+    "checked_at": "2026-10-02T06:40:23.978Z",
+    "usage": 37,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-02T06:27:50.509Z",
+    "next_check_at": "2026-10-02T06:55:23.978Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "instagram_remaining": 11,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-02T06:42:57.810Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-02T06:03:58.311Z",
-    "usage": 38,
+    "checked_at": "2026-10-02T06:40:24.197Z",
+    "usage": 37,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-02T06:18:58.311Z",
+    "next_check_at": "2026-10-02T06:55:24.197Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-02T06:42:49.600Z",
-  "publications": [
-    {
-      "file": "1144-kai-cenat-explains-why-he-s-suing-reggie.json",
-      "id": "1144-kai-cenat-explains-why-he-s-suing-reggie",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18098972864297995"
-    },
-    {
-      "file": "1144-kai-cenat-explains-why-he-s-suing-reggie.json",
-      "id": "1144-kai-cenat-explains-why-he-s-suing-reggie",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17949655947288231",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

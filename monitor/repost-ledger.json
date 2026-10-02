@@ -20579,6 +20579,18 @@
       "source_handle": "ceddynash",
       "source_url": "https://www.instagram.com/ceddynash/reel/DeAmvInR3PU/",
       "view_count": 0
+    },
+    "DeAry30NIQw": {
+      "seen_at": "2026-10-02T23:50:29.945Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DeAry30NIQw/",
+      "view_count": 0
+    },
+    "DeApf9GCAoC": {
+      "seen_at": "2026-10-02T23:50:29.945Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/p/DeApf9GCAoC/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -27192,125 +27204,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DeAn80URkjD/",
       "queue_id": "1203-ben10-emergency-bond-hearing-update-part-4-feds-used-ben10-dad-t",
       "video": "media/1203-ben10-emergency-bond-hearing-update-part-4-feds-used-ben10-dad-t.mp4"
+    },
+    "DeARphDOq5T": {
+      "queued_at": "2026-10-02T23:51:09.256Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DeARphDOq5T/",
+      "queue_id": "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-",
+      "video": "media/1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-01T08:07:51.526Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T08:07:56.475Z"
-    },
-    {
-      "started_at": "2026-10-01T08:13:03.859Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T08:13:08.213Z"
-    },
-    {
-      "started_at": "2026-10-01T08:18:16.252Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/Dd7-33yjYe9/",
-          "stage": "queue",
-          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Dd7-33yjYe9-capture-diagnostic.json"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-10-01T08:18:57.938Z"
-    },
-    {
-      "started_at": "2026-10-01T08:24:08.123Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7u0-BRcbo/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 5,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-10-01T08:24:30.707Z"
-    },
-    {
-      "started_at": "2026-10-01T08:29:41.409Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Ddy9ulZEb8o/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 5,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-10-01T08:30:16.845Z"
-    },
     {
       "started_at": "2026-10-01T08:35:25.040Z",
       "candidates": 12,
@@ -32761,6 +32664,83 @@
         ]
       },
       "finished_at": "2026-10-02T23:22:48.184Z"
+    },
+    {
+      "started_at": "2026-10-02T23:29:06.318Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T23:29:14.747Z"
+    },
+    {
+      "started_at": "2026-10-02T23:34:23.428Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T23:34:28.946Z"
+    },
+    {
+      "started_at": "2026-10-02T23:39:36.971Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T23:39:41.824Z"
+    },
+    {
+      "started_at": "2026-10-02T23:44:50.467Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T23:44:55.788Z"
+    },
+    {
+      "started_at": "2026-10-02T23:50:06.224Z",
+      "candidates": 48,
+      "queued": [
+        "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-02T23:51:09.256Z"
     }
   ],
   "vip_pending": {

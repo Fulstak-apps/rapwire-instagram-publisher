@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T20:17:01.996Z",
+  "checked_at": "2026-10-02T20:22:24.527Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-02T20:17:00.756Z",
-    "usage": 23,
+    "checked_at": "2026-10-02T20:22:17.150Z",
+    "usage": 24,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-02T20:32:00.756Z",
+    "next_check_at": "2026-10-02T20:37:17.150Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 23,
     "instagram_remaining": 25,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-02T20:16:51.352Z",
+    "next_feed_eligible_at": "2026-10-02T20:52:24.232Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-02T20:17:00.648Z",
-    "usage": 23,
+    "usage": 24,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-02T20:32:00.648Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-02T20:16:44.385Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-02T20:52:15.994Z",
+  "publications": [
+    {
+      "file": "1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr.json",
+      "id": "1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18114100223092468"
+    },
+    {
+      "file": "1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr.json",
+      "id": "1152-kai-cenat-shows-he-answered-the-call-and-reggie-planned-to-destr",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17985697167077443",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

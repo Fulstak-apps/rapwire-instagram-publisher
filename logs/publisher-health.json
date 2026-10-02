@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T17:48:32.933Z",
+  "checked_at": "2026-10-02T17:53:16.054Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 25,
-    "instagram_remaining": 23,
+    "instagram_usage": 26,
+    "instagram_remaining": 22,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-02T18:18:32.580Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -43,33 +43,17 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-02T17:37:54.775Z",
+    "checked_at": "2026-10-02T17:53:15.927Z",
     "usage": 26,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-02T17:52:54.775Z",
+    "next_check_at": "2026-10-02T18:08:15.927Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-02T18:18:23.920Z",
-  "publications": [
-    {
-      "file": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m.json",
-      "id": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17964168501194630"
-    },
-    {
-      "file": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m.json",
-      "id": "1150-wendyortiz-shows-off-her-boxing-skills-ahead-of-her-headlining-m",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18114165557158097",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

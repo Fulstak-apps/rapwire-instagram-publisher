@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T22:27:01.042Z",
+  "checked_at": "2026-10-02T22:32:19.346Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-02T22:26:59.631Z",
-    "usage": 22,
+    "checked_at": "2026-10-02T22:32:11.828Z",
+    "usage": 23,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-02T22:41:59.631Z",
+    "next_check_at": "2026-10-02T22:47:11.828Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,7 +29,7 @@
     "instagram_usage": 22,
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-02T22:26:53.300Z",
+    "next_feed_eligible_at": "2026-10-02T23:02:19.001Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-02T22:21:55.856Z",
-    "usage": 22,
+    "usage": 23,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-02T22:36:55.856Z",
@@ -52,8 +52,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-02T22:26:43.799Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-02T23:02:10.484Z",
+  "publications": [
+    {
+      "file": "1154-kai-cenat-talks-text-messages-and-proof.json",
+      "id": "1154-kai-cenat-talks-text-messages-and-proof",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18464476813138839"
+    },
+    {
+      "file": "1154-kai-cenat-talks-text-messages-and-proof.json",
+      "id": "1154-kai-cenat-talks-text-messages-and-proof",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18052968905800647",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

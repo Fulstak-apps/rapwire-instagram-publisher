@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T16:21:33.999Z",
+  "checked_at": "2026-10-02T16:26:24.196Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,14 +26,14 @@
   "delivery_policy": {
     "feed_interval_minutes": 30,
     "instagram_daily_cap": 48,
-    "instagram_usage": 25,
-    "instagram_remaining": 23,
+    "instagram_usage": 26,
+    "instagram_remaining": 22,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-02T16:51:33.697Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-02T16:46:06.274Z",
-  "publications": [
-    {
-      "file": "1148-kai-cenat-shows-text-of-him-reaching-out-pt-1.json",
-      "id": "1148-kai-cenat-shows-text-of-him-reaching-out-pt-1",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18628188361014649",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

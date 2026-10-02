@@ -26591,100 +26591,16 @@
       "source_url": "https://www.instagram.com/records/reel/Dd99yYkTfv6/",
       "queue_id": "1190-nah-who-remember-this-never-forget-when-lil-uzi-vert-liluzivert-",
       "video": "media/1190-nah-who-remember-this-never-forget-when-lil-uzi-vert-liluzivert-.mp4"
+    },
+    "Dd-KutODWPY": {
+      "queued_at": "2026-10-02T04:43:48.551Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/Dd-KutODWPY/",
+      "queue_id": "1191-while-the-controversy-surrounding-reggie-has-been-unfolding-ray-",
+      "video": "media/1191-while-the-controversy-surrounding-reggie-has-been-unfolding-ray-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-01T01:26:13.930Z",
-      "candidates": 36,
-      "queued": [
-        "1132-reggie-is-having-a-kanye-west-moment-with-this-accusation"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 33,
-        "needed": 15
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 5,
-        "handles": [
-          "6ixbuzztv",
-          "br0adwaychr0niclez",
-          "ceddynash",
-          "rockstargames"
-        ]
-      },
-      "finished_at": "2026-10-01T01:28:19.482Z"
-    },
-    {
-      "started_at": "2026-10-01T01:34:30.331Z",
-      "candidates": 12,
-      "queued": [
-        "1133-gta-developers-went-full-method-gta-gta6-gaming"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 34,
-        "needed": 14
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-10-01T01:35:30.549Z"
-    },
-    {
-      "started_at": "2026-10-01T01:40:55.723Z",
-      "candidates": 41,
-      "queued": [
-        "1134-estelle-shares-her-1-billion-streams-plaque-for-american-boy-wit"
-      ],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7tzwJv457/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7tWyEvvMd/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd7u0-BRcbo/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 35,
-        "needed": 13
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 5,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-10-01T01:41:42.810Z"
-    },
     {
       "started_at": "2026-10-01T01:46:56.008Z",
       "candidates": 48,
@@ -32300,6 +32216,57 @@
         ]
       },
       "finished_at": "2026-10-02T04:23:31.377Z"
+    },
+    {
+      "started_at": "2026-10-02T04:28:57.594Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T04:29:04.302Z"
+    },
+    {
+      "started_at": "2026-10-02T04:37:45.669Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T04:37:50.913Z"
+    },
+    {
+      "started_at": "2026-10-02T04:42:59.529Z",
+      "candidates": 48,
+      "queued": [
+        "1191-while-the-controversy-surrounding-reggie-has-been-unfolding-ray-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-02T04:43:48.551Z"
     }
   ],
   "vip_pending": {

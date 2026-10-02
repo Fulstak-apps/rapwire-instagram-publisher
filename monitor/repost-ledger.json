@@ -20303,6 +20303,18 @@
       "source_handle": "xxl",
       "source_url": "https://www.instagram.com/xxl/p/Dd__XyhFLnM/",
       "view_count": 0
+    },
+    "DeADYx7OZnM": {
+      "seen_at": "2026-10-02T18:02:33.663Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DeADYx7OZnM/",
+      "view_count": 0
+    },
+    "Dd_-IzxB6c4": {
+      "seen_at": "2026-10-02T18:02:33.666Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/Dd_-IzxB6c4/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -26874,94 +26886,16 @@
       "source_url": "https://www.instagram.com/freshouttheculture/reel/Dd9VawtMNtc/",
       "queue_id": "1197-iggy-really-came-in-and-did-her-thing-ariana-grande-s-problem-fe",
       "video": "media/1197-iggy-really-came-in-and-did-her-thing-ariana-grande-s-problem-fe.mp4"
+    },
+    "DeADYx7OZnM": {
+      "queued_at": "2026-10-02T18:03:49.346Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DeADYx7OZnM/",
+      "queue_id": "1198-last-remaining-bloodhound-core-member-bh-rell-vert-responds-to-f",
+      "video": "media/1198-last-remaining-bloodhound-core-member-bh-rell-vert-responds-to-f.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-01T05:02:10.331Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd8Elx3RdHT/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 43,
-        "needed": 5
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 5,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-10-01T05:02:50.827Z"
-    },
-    {
-      "started_at": "2026-10-01T05:07:59.738Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "complexmusic",
-          "source_url": "https://www.instagram.com/complexmusic/p/Dd8FTwEkXrE/",
-          "stage": "queue",
-          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 43,
-        "needed": 5
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 5,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-10-01T05:08:58.912Z"
-    },
-    {
-      "started_at": "2026-10-01T05:14:07.470Z",
-      "candidates": 36,
-      "queued": [
-        "1148-kai-cenat-shows-text-of-him-reaching-out-pt-1"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 43,
-        "needed": 5
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 5,
-        "handles": [
-          "6ixbuzztv",
-          "br0adwaychr0niclez",
-          "ceddynash",
-          "rockstargames"
-        ]
-      },
-      "finished_at": "2026-10-01T05:16:11.258Z"
-    },
     {
       "started_at": "2026-10-01T05:21:40.538Z",
       "candidates": 48,
@@ -32508,6 +32442,64 @@
         ]
       },
       "finished_at": "2026-10-02T17:42:40.568Z"
+    },
+    {
+      "started_at": "2026-10-02T17:49:06.276Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-02T17:49:28.056Z"
+    },
+    {
+      "started_at": "2026-10-02T17:55:03.275Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-02T17:55:53.607Z"
+    },
+    {
+      "started_at": "2026-10-02T18:01:41.105Z",
+      "candidates": 48,
+      "queued": [
+        "1198-last-remaining-bloodhound-core-member-bh-rell-vert-responds-to-f"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-02T18:03:49.346Z"
     }
   ],
   "vip_pending": {

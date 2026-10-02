@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T00:23:53.653Z",
+  "checked_at": "2026-10-02T00:28:37.797Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,11 +30,11 @@
     "instagram_remaining": 9,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-02T00:53:53.426Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,23 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-02T00:53:44.313Z",
-  "publications": [
-    {
-      "file": "1136-reggie-went-live-on-instagram-and-made-a-series-of-serious-alleg.json",
-      "id": "1136-reggie-went-live-on-instagram-and-made-a-series-of-serious-alleg",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17923725984429429"
-    },
-    {
-      "file": "1136-reggie-went-live-on-instagram-and-made-a-series-of-serious-alleg.json",
-      "id": "1136-reggie-went-live-on-instagram-and-made-a-series-of-serious-alleg",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18116780054092061",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

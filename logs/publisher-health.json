@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T05:06:33.333Z",
+  "checked_at": "2026-10-03T05:11:32.178Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T04:56:20.215Z",
+    "checked_at": "2026-10-03T05:11:30.136Z",
     "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T05:11:20.216Z",
+    "next_check_at": "2026-10-03T05:26:30.136Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-03T05:11:17.554Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -53,15 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-03T05:36:32.943Z",
-  "publications": [
-    {
-      "file": "1165-throwback-to-the-time-molly-santana-gave-lil-uzi-vert-liluzivert.json",
-      "id": "1165-throwback-to-the-time-molly-santana-gave-lil-uzi-vert-liluzivert",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17945554578346839"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

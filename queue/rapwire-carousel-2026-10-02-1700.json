@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-10-02-1700",
-  "status": "ready",
+  "status": "paused",
   "ai_generated_art": true,
   "created_at": "2026-10-02T17:00:00-07:00",
   "publish_after": "2026-10-03T00:18:25Z",
@@ -49,13 +49,58 @@
     "media/rapwire-carousel-2026-10-02-1700/rapwire-carousel-2026-10-02-1700-slide-5.png"
   ],
   "slide_editorial_copy": [
-    {"slide": 1, "headline": "THE GAME\nSUES OVER\nDRILLMATIC", "deck": "100 Entertainment says UMG and Virgin promised a $500,000 Drillmatic promo fund but spent $179,274.79. The Game is seeking at least $500,000, saying the shortfall hurt the album’s launch.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40},
-    {"slide": 2, "headline": "PICK IT UP\nIN COURT", "deck": "Home Team sues Dupri, Jacquees and Mass Appeal over “Pick It Up,” alleging the 2023 track copies its 1992 song. No court has ruled yet.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40},
-    {"slide": 3, "headline": "QOBUZ\nFLAGS AI MUSIC", "deck": "Qobuz labels releases it identifies as AI-generated and says 60% of streams on those tracks are fraudulent. They are 0.38% of all Qobuz streams, making disclosure part of its anti-fraud policy.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40},
-    {"slide": 4, "headline": "MAC MILLER\nARCHIVES OPEN", "deck": "Mac Miller’s estate released The Divine Feminine (10th Anniversary) with “Butterflies,” “Grand” and “Channel 13.” A companion live special keeps the 2016 era active for a new generation.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40},
-    {"slide": 5, "headline": "GTA VI\nTURNS WEATHER WILD", "deck": "Rockstar’s cover story says Leonida spans six regions and 170+ animal species, with localized storms, lasting puddles and hurricanes. Weather and wildlife become part of the play, not just scenery.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40}
+    {
+      "slide": 1,
+      "headline": "THE GAME\nSUES OVER\nDRILLMATIC",
+      "deck": "100 Entertainment says UMG and Virgin promised a $500,000 Drillmatic promo fund but spent $179,274.79. The Game is seeking at least $500,000, saying the shortfall hurt the album’s launch.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    },
+    {
+      "slide": 2,
+      "headline": "PICK IT UP\nIN COURT",
+      "deck": "Home Team sues Dupri, Jacquees and Mass Appeal over “Pick It Up,” alleging the 2023 track copies its 1992 song. No court has ruled yet.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    },
+    {
+      "slide": 3,
+      "headline": "QOBUZ\nFLAGS AI MUSIC",
+      "deck": "Qobuz labels releases it identifies as AI-generated and says 60% of streams on those tracks are fraudulent. They are 0.38% of all Qobuz streams, making disclosure part of its anti-fraud policy.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    },
+    {
+      "slide": 4,
+      "headline": "MAC MILLER\nARCHIVES OPEN",
+      "deck": "Mac Miller’s estate released The Divine Feminine (10th Anniversary) with “Butterflies,” “Grand” and “Channel 13.” A companion live special keeps the 2016 era active for a new generation.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    },
+    {
+      "slide": 5,
+      "headline": "GTA VI\nTURNS WEATHER WILD",
+      "deck": "Rockstar’s cover story says Leonida spans six regions and 170+ animal species, with localized storms, lasting puddles and hurricanes. Weather and wildlife become part of the play, not just scenery.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    }
   ],
-  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "brand_logo": {
+    "asset": "assets/rapwire247-logo.png",
+    "position": "bottom-left",
+    "transparent_background": true,
+    "backing_shape": "none"
+  },
   "carousel_page_count": 5,
   "media_urls": [],
   "facts_verified": true,
@@ -64,7 +109,30 @@
   "text_overflow_checked": true,
   "grid_safe_checked": true,
   "qa_passed": true,
-  "qa": {"dimensions": "1080x1350", "slide_count": 5, "distinct_stories": 5, "two_sources_per_story": true, "official_logo_used": true, "logo_transparent_and_unboxed": true, "headline_font_size_px_min": 104, "deck_font_size_px_min": 40, "headline_and_deck_on_art": true, "no_top_banner": true, "no_subject_face_or_hand_covered": true, "no_generic_art": true, "caption_numbered_1_to_5": true, "caption_has_no_ai_word": true, "caption_ends_only_with_rapwire247": true, "passed": true},
+  "qa": {
+    "dimensions": "1080x1350",
+    "slide_count": 5,
+    "distinct_stories": 5,
+    "two_sources_per_story": true,
+    "official_logo_used": true,
+    "logo_transparent_and_unboxed": true,
+    "headline_font_size_px_min": 104,
+    "deck_font_size_px_min": 40,
+    "headline_and_deck_on_art": true,
+    "no_top_banner": true,
+    "no_subject_face_or_hand_covered": true,
+    "no_generic_art": true,
+    "caption_numbered_1_to_5": true,
+    "caption_has_no_ai_word": true,
+    "caption_ends_only_with_rapwire247": true,
+    "passed": true
+  },
   "publish_blocked": false,
-  "news_verification": {"status": "verified", "checked_at": "2026-10-03T00:18:25Z", "claim_sha256": "see outputs/rapwire-carousel-2026-10-02-1700-checksums.txt", "notes": "Five distinct current stories; each supported by at least two independent sources, with court claims labeled as allegations."}
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-10-03T00:18:25Z",
+    "claim_sha256": "see outputs/rapwire-carousel-2026-10-02-1700-checksums.txt",
+    "notes": "Five distinct current stories; each supported by at least two independent sources, with court claims labeled as allegations."
+  },
+  "pause_reason": "Visual blocked: RapWire requires source-grounded AI art or an approved credited real-photo fallback, plus a complete readable 2-10 slide carousel"
 }

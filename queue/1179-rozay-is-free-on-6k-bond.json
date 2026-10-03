@@ -1,6 +1,6 @@
 {
   "id": "1179-rozay-is-free-on-6k-bond",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-01",
   "timezone": "America/Detroit",
@@ -45,5 +45,6 @@
   "instagram_container_checked_at": "2026-10-03T21:33:21.163Z",
   "instagram_container_status": "FINISHED",
   "instagram_error": "Rolling-day safety cap reached (feed plus Stories); queued for later",
-  "instagram_retry_at": "2026-10-03T21:43:21.550Z"
+  "instagram_retry_at": "2026-10-03T21:43:21.550Z",
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

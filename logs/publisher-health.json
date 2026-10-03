@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T04:26:02.288Z",
+  "checked_at": "2026-10-03T04:31:11.049Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -43,17 +43,25 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-03T04:15:53.176Z",
-    "usage": 22,
+    "checked_at": "2026-10-03T04:31:04.104Z",
+    "usage": 23,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-03T04:30:53.176Z",
+    "next_check_at": "2026-10-03T04:46:04.104Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-03T04:25:42.321Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-03T05:01:10.700Z",
+  "publications": [
+    {
+      "file": "1164-50-cent-reacts-to-his-baby-moms-possibly-being-in-a-threesome-w-.json",
+      "id": "1164-50-cent-reacts-to-his-baby-moms-possibly-being-in-a-threesome-w-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17878843587629834"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

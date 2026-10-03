@@ -10,7 +10,9 @@ import {captionIsBound} from './video-caption.mjs';
 export const HOUR=60*60_000;
 // Conversation prompts are supplemental. Keep them sparse so they do not
 // crowd out the primary video lane or make the account look automated.
-export const CONVERSATION_INTERVAL=6*60*60_000;
+// Three focused conversations per day leave room for video posts and let
+// replies accumulate instead of burying them under a constant question feed.
+export const CONVERSATION_INTERVAL=8*60*60_000;
 const REPEAT_WINDOW=30*24*HOUR;
 export const PROMPTS=[
   'Illmatic or It Was Written: which Nas album are you actually playing more? Pick three tracks that make your case.',

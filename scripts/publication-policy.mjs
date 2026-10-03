@@ -1,6 +1,8 @@
-export const FEED_INTERVAL_MS = 30 * 60_000;
-// Threads checks can still resume a pending upload quickly, but new public
-// Threads posts follow the same 30-minute rhythm as Instagram.
+// Give each Reel enough time to collect watches, saves, and comments before
+// the next one replaces it in followers' feeds. Ten posts is a ceiling, not
+// a target; the six-hour story hold may make a quieter day intentionally.
+export const FEED_INTERVAL_MS = 120 * 60_000;
+// Threads video delivery follows the same editorial rhythm as Instagram.
 export const THREADS_PUBLISH_INTERVAL_MS = FEED_INTERVAL_MS;
 export const THREADS_INTERVAL_MS = 60_000;
 // Facebook Page delivery is independently paced. It is not governed by the
@@ -10,7 +12,7 @@ export const FACEBOOK_INTERVAL_MS = 5 * 60_000;
 // Meta is currently reporting a 100-post rolling allowance. Keep a substantial
 // safety buffer while avoiding the old 32-post ceiling that could leave an
 // otherwise healthy publisher idle for half a day.
-export const DAILY_INSTAGRAM_CAP = 48;
+export const DAILY_INSTAGRAM_CAP = 10;
 
 // A time-limited, explicitly requested recovery pair is not a general cap reset.
 // Keep two unused platform slots and require a fresh successful quota read.

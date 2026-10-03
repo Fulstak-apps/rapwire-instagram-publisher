@@ -4,7 +4,7 @@ on:
   # Queue/media commits are deliberately ignored below to avoid an upload for
   # every collector write.  This small heartbeat makes those queued items
   # eligible without relying on a local machine staying awake; the publisher
-  # still enforces its independent 30-minute platform cadence.
+  # still enforces its independent two-hour editorial cadence.
   schedule:
     - cron: "*/15 * * * *"
   push:
@@ -52,7 +52,7 @@ jobs:
           node-version: "24"
 
       - name: Test resumable publisher
-        run: node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs scripts/media-ranges.test.mjs scripts/publication-policy.test.mjs scripts/carousel-editorial-contract.test.mjs
+        run: node --test scripts/container-state.test.mjs scripts/publisher.integration.test.mjs scripts/video-caption.test.mjs scripts/media-ranges.test.mjs scripts/publication-policy.test.mjs scripts/content-pacing.test.mjs scripts/carousel-editorial-contract.test.mjs
 
       - name: Test X mirror isolation and backfill
         run: node --test scripts/x-threads-mirror.test.mjs

@@ -6,6 +6,7 @@ import { captionIsBound } from "./video-caption.mjs";
 import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, THREADS_PUBLISH_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
 import { fitInstagramCaption } from "./instagram-caption.mjs";
 import { carouselEditorialIssues } from "./carousel-editorial-contract.mjs";
+import { isRecentStoryDuplicate } from "./content-pacing.mjs";
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 let instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -237,6 +238,9 @@ const publishedCaptionFingerprints = new Set(queueRecords
   .slice(0, 12)
   .map(item => captionFingerprint(item.body))
   .filter(Boolean));
+const recentlyPublishedItems = queueRecords
+  .map(({item}) => item)
+  .filter(item => item.status === 'published' && (item.instagram_media_id || item.threads_media_id));
 
 const files = queueRecords
   .sort((left, right) => {
@@ -836,7 +840,8 @@ const uploadCandidates = files.map(name => queueRecords.find(record => record.na
     && item.text_overflow_checked === true && item.rendered_body_text === item.body
     && item.content_claim_checked === true && item.editorial_substance_checked === true
     && contentPromiseIsKept(item) && item.source_policy_checked === true && item.rap_relevance_checked === true
-    && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"))
+    && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left")
+    && !isRecentStoryDuplicate(item, recentlyPublishedItems))
   .slice(0, uploadSlots);
 console.log(`Instagram selection: slots=${uploadSlots} processing=${processingCount} cycle_due=${instagramCycleDue} feed_allowed=${deliveryPolicy.feed_allowed} available=${instagramAvailable()} ready_videos=${queueRecords.filter(({ item }) => item.status === "ready" && item.content_type === "video").length} editorial_carousel_ready=${readyEditorialCarousel} candidates=${uploadCandidates.length}`);
 
@@ -1088,10 +1093,10 @@ await fs.writeFile(pacingPath, JSON.stringify({ ...pacing, last_run_at: runStart
 const summary = `## RapWire delivery result\n\n${report.publications.length} confirmed publication(s).\n\n${quota.blocked ? `Instagram publishing quota blocked: ${quota.usage ?? "unknown"}/${quota.total ?? "unknown"}. Next capacity check ${quota.next_check_at}.\n\n` : ""}${report.instagram_cooldown_until && Date.parse(report.instagram_cooldown_until) > Date.now() ? `Instagram cooldown until ${report.instagram_cooldown_until}.\n\n` : ""}${report.publications.map(x => `- ${x.platform}: ${x.id} — media ID ${x.media_id}`).join("\n")}\n\n${report.failures.map(x => `- FAILURE ${x.platform}: ${x.id}: ${x.error}`).join("\n")}\n\n${report.note}\n`;
 console.log(summary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, summary);
-const policySummary = `\nFeed cadence: at least 30 minutes between confirmed posts. Instagram budget: ${deliveryPolicy.instagram_daily_cap} feed/Story publications per rolling 24 hours; ${deliveryPolicy.instagram_remaining} available at start of run, ${deliveryPolicy.reserved_story_slots} reserved for outstanding Stories. Next feed no earlier than: ${report.delivery_policy.next_feed_eligible_at || "when capacity permits"}. Quota and processing may delay publication further.\n`;
+const policySummary = `\nFeed cadence: at least ${FEED_INTERVAL_MS / 60000} minutes between confirmed posts. Instagram budget: ${deliveryPolicy.instagram_daily_cap} feed/Story publications per rolling 24 hours; ${deliveryPolicy.instagram_remaining} available at start of run, ${deliveryPolicy.reserved_story_slots} reserved for outstanding Stories. Next feed no earlier than: ${report.delivery_policy.next_feed_eligible_at || "when capacity permits"}. Quota and processing may delay publication further.\n`;
 console.log(policySummary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, policySummary);
-const threadsSummary = `\nThreads: 30-minute publishing cadence, with separate retry checks for in-flight uploads; quota ${threadsQuota.usage ?? "unknown"}/${threadsQuota.total ?? "unknown"}. ${threadsQuota.blocked ? `Held: ${threadsQuota.reason}. Next check ${threadsQuota.next_check_at}.` : "Processing and runner availability can delay delivery."}\n`;
+const threadsSummary = `\nThreads: ${THREADS_PUBLISH_INTERVAL_MS / 60000}-minute video publishing cadence, with separate retry checks for in-flight uploads; quota ${threadsQuota.usage ?? "unknown"}/${threadsQuota.total ?? "unknown"}. ${threadsQuota.blocked ? `Held: ${threadsQuota.reason}. Next check ${threadsQuota.next_check_at}.` : "Processing and runner availability can delay delivery."}\n`;
 console.log(threadsSummary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, threadsSummary);
 if (!instagramAuthAvailable || !threadsAuthAvailable) {

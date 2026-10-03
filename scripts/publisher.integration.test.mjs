@@ -78,12 +78,12 @@ test('recent feed publication blocks the next feed but not Threads delivery', t 
     `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Feed must wait 30 minutes'); return new Response(JSON.stringify({id:'threads-container'}));`,0,null,1,50,
     [{...item,id:'recent',published_at:new Date(Date.now()-10*60000).toISOString(),instagram_story_media_id:'story',instagram_story_status:'published'}]);
   assert.equal(r.item.status,'ready'); assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_steps,1);
-  assert.equal(r.report.delivery_policy.feed_interval_minutes,30);
+  assert.equal(r.report.delivery_policy.feed_interval_minutes,120);
 });
 test('daily safety budget prevents uploads even when Meta reports spare capacity', t => {
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread'},null,
-    `throw new Error('No platform work expected at the daily safety cap');`,0,null,48,100);
-  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,48);
+    `throw new Error('No platform work expected at the daily safety cap');`,0,null,10,100);
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,10);
   assert.equal(r.item.instagram_container_id,undefined);
 });
 test('ready video publishes on Threads while Instagram quota is exhausted', t => {
@@ -129,15 +129,15 @@ test('dedicated Story preview is uploaded without replacing the full Reel', t =>
   assert.equal(r.item.instagram_story_container_id,'story-container');
   assert.equal(r.item.video,'media/test.mp4');
 });
-test('Threads waits for the same 30-minute publishing cadence as Instagram', t => {
+test('Threads waits for the same two-hour publishing cadence as Instagram', t => {
   const r=run(t,{...item,status:'ready',instagram_media_id:undefined},null,
     `if(!String(url).startsWith('https://graph.threads.net/')) throw new Error('Instagram two-minute processing interval must remain intact'); return new Response(JSON.stringify({id:'new-thread-container'}));`,0,
     {usage:1,total:100,blocked:false,next_check_at:new Date(Date.now()+900000).toISOString()},1,100,
     [{...item,id:'recent-thread',threads_media_id:'previous',threads_status:'published',threads_published_at:new Date(Date.now()-90000).toISOString()}],null,
     {pacing:{last_run_at:new Date(Date.now()-75000).toISOString(),last_instagram_cycle_at:new Date(Date.now()-45000).toISOString()}});
   assert.equal(r.item.threads_container_id,undefined);
-  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_interval_seconds,1800);
-  assert.equal(r.report.delivery_policy.feed_interval_minutes,30);
+  assert.equal(r.report.instagram_steps,0); assert.equal(r.report.threads_interval_seconds,7200);
+  assert.equal(r.report.delivery_policy.feed_interval_minutes,120);
 });
 test('exhausted Threads quota holds only Threads and permits Instagram Story work', t => {
   const r=run(t,item,null,

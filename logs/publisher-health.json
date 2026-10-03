@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T20:17:24.119Z",
+  "checked_at": "2026-10-03T20:27:56.969Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T20:17:23.936Z",
-    "usage": 20,
+    "checked_at": "2026-10-03T20:27:56.301Z",
+    "usage": 19,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T20:32:23.936Z",
+    "next_check_at": "2026-10-03T20:42:56.301Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,7 +35,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -57,11 +57,18 @@
   "publications": [],
   "failures": [
     {
-      "file": "1178-the-pip-boy-overseer-s-edition-comes-with-a-brain-implant-chip-t.json",
-      "id": "1178-the-pip-boy-overseer-s-edition-comes-with-a-brain-implant-chip-t",
+      "file": "rapwire-carousel-2026-10-03-0800.json",
+      "id": "rapwire-carousel-2026-10-03-0800",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
+    },
+    {
+      "file": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re.json",
+      "id": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re",
+      "platform": "threads",
+      "status": "failed",
+      "error": "threads: previous publish outcome uncertain; reconcile saved container before any retry"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

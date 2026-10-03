@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T02:39:49.178Z",
+  "checked_at": "2026-10-03T02:45:01.355Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T02:29:42.606Z",
+    "checked_at": "2026-10-03T02:45:00.522Z",
     "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T02:44:42.606Z",
+    "next_check_at": "2026-10-03T03:00:00.522Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-03T02:44:37.697Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-03T02:39:48.435Z",
-    "usage": 22,
+    "usage": 23,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-03T02:54:48.435Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-03T02:39:34.138Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-03T03:15:00.226Z",
+  "publications": [
+    {
+      "file": "1161-no-cap-girlfriend-summyah-announces-she-s-pregnant-and-tryna-dec.json",
+      "id": "1161-no-cap-girlfriend-summyah-announces-she-s-pregnant-and-tryna-dec",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18190040002403203"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

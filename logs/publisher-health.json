@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T19:36:54.076Z",
+  "checked_at": "2026-10-03T19:47:42.229Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T19:36:53.909Z",
-    "usage": 21,
+    "checked_at": "2026-10-03T19:47:33.062Z",
+    "usage": 20,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T19:51:53.909Z",
+    "next_check_at": "2026-10-03T20:02:33.062Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -57,11 +57,18 @@
   "publications": [],
   "failures": [
     {
-      "file": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re.json",
-      "id": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re",
+      "file": "rapwire-carousel-2026-10-03-0800.json",
+      "id": "rapwire-carousel-2026-10-03-0800",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
+    },
+    {
+      "file": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re.json",
+      "id": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re",
+      "platform": "threads",
+      "status": "failed",
+      "error": "Threads threads_publish failed: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"Ax6wVuYg-_DRpt8R7Sq3-Yp\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

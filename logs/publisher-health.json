@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T17:25:10.358Z",
+  "checked_at": "2026-10-03T17:36:10.627Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T17:10:10.045Z",
-    "usage": 23,
+    "checked_at": "2026-10-03T17:36:10.502Z",
+    "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T17:25:10.045Z",
+    "next_check_at": "2026-10-03T17:51:10.502Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,15 +27,15 @@
     "feed_interval_minutes": 120,
     "instagram_daily_cap": 10,
     "instagram_usage": 0,
-    "platform_quota_usage": 23,
+    "platform_quota_usage": 22,
     "instagram_remaining": 10,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-03T17:22:20.989Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,25 +44,25 @@
   },
   "threads_interval_seconds": 7200,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-03T17:15:08.894Z",
+    "checked_at": "2026-10-03T17:30:41.127Z",
     "usage": 23,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-03T17:30:08.894Z",
+    "next_check_at": "2026-10-03T17:45:41.127Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-03T19:25:09.968Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
       "file": "rapwire-carousel-2026-10-03-0800.json",
       "id": "rapwire-carousel-2026-10-03-0800",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18373821385211725"
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
     }
   ],
-  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T13:16:42.907Z",
+  "checked_at": "2026-10-03T14:41:51.749Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T13:16:31.630Z",
-    "usage": 25,
+    "checked_at": "2026-10-03T14:41:51.183Z",
+    "usage": 24,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T13:31:31.630Z",
+    "next_check_at": "2026-10-03T14:56:51.183Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -43,24 +43,23 @@
   },
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-03T13:16:31.249Z",
+    "checked_at": "2026-10-03T14:41:44.487Z",
     "usage": 25,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-03T13:31:31.249Z",
+    "next_check_at": "2026-10-03T14:56:44.487Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-03T12:57:54.949Z",
+  "threads_next_eligible_at": "2026-10-03T15:11:50.844Z",
   "publications": [
     {
-      "file": "1169-quavo-says-it-s-his-responsibility-that-takeoff-s-legacy-lives-f.json",
-      "id": "1169-quavo-says-it-s-his-responsibility-that-takeoff-s-legacy-lives-f",
-      "platform": "instagram",
+      "file": "1170-kaicenat-says-he-s-suing-reggie.json",
+      "id": "1170-kaicenat-says-he-s-suing-reggie",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18107496247911196",
-      "content_type": "video"
+      "media_id": "18020819318926642"
     }
   ],
   "failures": [],

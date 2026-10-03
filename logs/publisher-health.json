@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T17:15:09.083Z",
+  "checked_at": "2026-10-03T17:25:10.358Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 7200,
   "threads_publishing_quota": {
     "checked_at": "2026-10-03T17:15:08.894Z",
-    "usage": 22,
+    "usage": 23,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-03T17:30:08.894Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-03T17:17:12.060Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-03T19:25:09.968Z",
+  "publications": [
+    {
+      "file": "rapwire-carousel-2026-10-03-0800.json",
+      "id": "rapwire-carousel-2026-10-03-0800",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18373821385211725"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

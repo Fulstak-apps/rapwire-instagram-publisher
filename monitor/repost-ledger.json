@@ -20951,6 +20951,24 @@
       "source_handle": "akademiks",
       "source_url": "https://www.instagram.com/akademiks/reel/DeCVNF-Azgt/",
       "view_count": 0
+    },
+    "DeCcGBphMj_": {
+      "seen_at": "2026-10-03T16:07:34.749Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DeCcGBphMj_/",
+      "view_count": 0
+    },
+    "DeCb3cCg2PH": {
+      "seen_at": "2026-10-03T16:07:34.750Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DeCb3cCg2PH/",
+      "view_count": 0
+    },
+    "DeCXs25RCbx": {
+      "seen_at": "2026-10-03T16:19:52.421Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/DeCXs25RCbx/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -27669,57 +27687,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DeAmvInR3PU/",
       "queue_id": "1218-ben10-emergency-bond-hearing-update-part-3-feds-admitted-they-ac",
       "video": "media/1218-ben10-emergency-bond-hearing-update-part-3-feds-admitted-they-ac.mp4"
+    },
+    "DeCXs25RCbx": {
+      "queued_at": "2026-10-03T16:20:56.288Z",
+      "source_handle": "hiphopdx",
+      "source_url": "https://www.instagram.com/uproxx/reel/DeCXs25RCbx/",
+      "queue_id": "1219-bling-bling-bling-feliciathegoat-said-he-had-one-of-the-greatest",
+      "video": "media/1219-bling-bling-bling-feliciathegoat-said-he-had-one-of-the-greatest.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-01T18:14:08.685Z",
-      "candidates": 12,
-      "queued": [
-        "1174-october-is-packed-with-releases-of-awesome-new-stuff-including-h"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-10-01T18:15:20.495Z"
-    },
-    {
-      "started_at": "2026-10-01T18:28:46.281Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T18:34:30.223Z"
-    },
-    {
-      "started_at": "2026-10-01T18:39:40.434Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T18:39:48.382Z"
-    },
     {
       "started_at": "2026-10-01T18:50:26.368Z",
       "candidates": 48,
@@ -33025,6 +33002,109 @@
         ]
       },
       "finished_at": "2026-10-03T16:01:08.711Z"
+    },
+    {
+      "started_at": "2026-10-03T16:07:02.957Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "akademiks",
+          "source_url": "https://www.instagram.com/akademiks/reel/DeCb3cCg2PH/",
+          "stage": "queue",
+          "error": "No complete audio stream matched the visible Reel duration; refusing silent or unrelated audio"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-03T16:08:10.447Z"
+    },
+    {
+      "started_at": "2026-10-03T16:13:22.705Z",
+      "candidates": 41,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeAamyIPL0V/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeAbhD4viOU/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeAd4AFPVSW/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-03T16:14:10.413Z"
+    },
+    {
+      "started_at": "2026-10-03T16:19:19.762Z",
+      "candidates": 48,
+      "queued": [
+        "1219-bling-bling-bling-feliciathegoat-said-he-had-one-of-the-greatest"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-03T16:20:56.288Z"
     }
   ],
   "vip_pending": {

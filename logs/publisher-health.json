@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T02:14:37.983Z",
+  "checked_at": "2026-10-03T02:19:34.681Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -30,10 +30,10 @@
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-03T02:44:37.697Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -53,16 +53,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-03T02:39:34.138Z",
-  "publications": [
-    {
-      "file": "1160-kaicenat-calls-out-the-fake-ones-who-he-gave-a-career-to-w-strea.json",
-      "id": "1160-kaicenat-calls-out-the-fake-ones-who-he-gave-a-career-to-w-strea",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18088639589261798",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

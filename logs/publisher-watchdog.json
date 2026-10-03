@@ -1,20 +1,18 @@
 {
-  "reserve_count": 45,
-  "reserve_hours": 22.5,
+  "reserve_count": 48,
+  "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "health_stale": false,
-  "processing": [],
+  "processing": [
+    "1175-are-you-pregnant-the-cutest-little-bump-congrats-rihanna-congrat"
+  ],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1171-nba-ben10-update-from-the-federal-courthouse-allegations-are-not",
-    "1172-kai-cenat-gets-emotional-after-revealing-that-he-saved-reggie-fr",
-    "1173-naaa-ross-left-jail-in-style-yall-want-some-of-the-rigatoni-or-n",
-    "1174-october-is-packed-with-releases-of-awesome-new-stuff-including-h",
     "1175-are-you-pregnant-the-cutest-little-bump-congrats-rihanna-congrat",
     "1176-is-back-with-do-it-one-time-featuring-young-breed-and-dj-nasty-t",
     "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re",
@@ -55,10 +53,17 @@
     "1212-never-forget-when-a-fan-asked-cardi-b-for-20-during-an-instagram",
     "1213-ben10-emergency-bond-hearing-update-part-6-ben10-admits-allstar-",
     "1214-ben10-emergency-bond-hearing-update-part-5-how-the-feds-caught-b",
+    "1215-this-what-otf-jam-thought-he-was-doing-yall",
+    "1216-these-two-will-never-walk-the-streets-of-miami-again",
+    "1217-ross-the-only-rapper-in-history-to-never-break-character",
+    "1218-ben10-emergency-bond-hearing-update-part-3-feds-admitted-they-ac",
+    "1219-bling-bling-bling-feliciathegoat-said-he-had-one-of-the-greatest",
+    "1220-why-shordy-tried-to-play-wit-sauce-walka-and-he-upped-30k-on-her",
+    "1221-playboi-carti-playboicarti-complexcon-booth",
     "rapwire-carousel-2026-10-02-1700"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-03T14:53:27.551Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-03T18:21:03.271Z",
   "deferred": []
 }

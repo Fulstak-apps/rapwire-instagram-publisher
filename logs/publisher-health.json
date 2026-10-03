@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T20:12:25.224Z",
+  "checked_at": "2026-10-03T20:17:24.119Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T20:12:25.046Z",
+    "checked_at": "2026-10-03T20:17:23.936Z",
     "usage": 20,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T20:27:25.046Z",
+    "next_check_at": "2026-10-03T20:32:23.936Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -57,8 +57,8 @@
   "publications": [],
   "failures": [
     {
-      "file": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re.json",
-      "id": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re",
+      "file": "1178-the-pip-boy-overseer-s-edition-comes-with-a-brain-implant-chip-t.json",
+      "id": "1178-the-pip-boy-overseer-s-edition-comes-with-a-brain-implant-chip-t",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"

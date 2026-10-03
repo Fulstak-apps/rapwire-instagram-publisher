@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T01:29:04.768Z",
+  "checked_at": "2026-10-03T01:34:15.020Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T01:18:54.263Z",
+    "checked_at": "2026-10-03T01:34:14.468Z",
     "usage": 22,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T01:33:54.263Z",
+    "next_check_at": "2026-10-03T01:49:14.469Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,10 +30,10 @@
     "instagram_remaining": 26,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-03T01:29:06.516Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-03T01:23:59.014Z",
-    "usage": 22,
+    "usage": 23,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-03T01:38:59.014Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-03T01:28:53.963Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-03T02:04:13.979Z",
+  "publications": [
+    {
+      "file": "1159-his-potential-was-off-the-charts-manyn-pop-smoke-s-verse-on-gatt.json",
+      "id": "1159-his-potential-was-off-the-charts-manyn-pop-smoke-s-verse-on-gatt",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18019683167944122"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

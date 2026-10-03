@@ -1,6 +1,6 @@
 {
   "id": "1178-the-pip-boy-overseer-s-edition-comes-with-a-brain-implant-chip-t",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-01",
   "timezone": "America/Detroit",
@@ -54,5 +54,6 @@
   "instagram_container_checked_at": "2026-10-03T20:52:59.065Z",
   "instagram_container_status": "FINISHED",
   "instagram_error": "Rolling-day safety cap reached (feed plus Stories); queued for later",
-  "instagram_retry_at": "2026-10-03T21:02:59.385Z"
+  "instagram_retry_at": "2026-10-03T21:02:59.385Z",
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

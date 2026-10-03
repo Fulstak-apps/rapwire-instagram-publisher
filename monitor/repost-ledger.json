@@ -21005,6 +21005,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/onthatnotetv/reel/DeCmG4GBM3f/",
       "view_count": 0
+    },
+    "DeCpLBxBaBo": {
+      "seen_at": "2026-10-03T18:40:36.731Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/onthatnotetv/reel/DeCpLBxBaBo/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -27744,167 +27750,16 @@
       "source_url": "https://www.instagram.com/onthatnotetv/reel/DeCmG4GBM3f/",
       "queue_id": "1221-playboi-carti-playboicarti-complexcon-booth",
       "video": "media/1221-playboi-carti-playboicarti-complexcon-booth.mp4"
+    },
+    "DeCpLBxBaBo": {
+      "queued_at": "2026-10-03T18:41:10.930Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/onthatnotetv/reel/DeCpLBxBaBo/",
+      "queue_id": "1222-ken-carson-kencarson-has-his-own-booth-and-toilet-at-complexcon",
+      "video": "media/1222-ken-carson-kencarson-has-his-own-booth-and-toilet-at-complexcon.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-01T21:35:32.219Z",
-      "candidates": 48,
-      "queued": [
-        "1179-rozay-is-free-on-6k-bond"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-10-01T21:36:56.904Z"
-    },
-    {
-      "started_at": "2026-10-01T21:45:22.587Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T21:45:28.174Z"
-    },
-    {
-      "started_at": "2026-10-01T21:50:36.143Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T21:50:41.415Z"
-    },
-    {
-      "started_at": "2026-10-01T21:55:50.603Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T21:55:55.744Z"
-    },
-    {
-      "started_at": "2026-10-01T22:01:03.781Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T22:01:08.879Z"
-    },
-    {
-      "started_at": "2026-10-01T22:06:17.017Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T22:06:22.067Z"
-    },
-    {
-      "started_at": "2026-10-01T22:11:29.977Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "hiphopdx",
-          "source_url": "https://www.instagram.com/uproxx/p/Dd6qW6KEWF6/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 5,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-10-01T22:12:17.133Z"
-    },
-    {
-      "started_at": "2026-10-01T22:17:26.512Z",
-      "candidates": 36,
-      "queued": [
-        "1180-early-morning-side-quests-would-you-ever-do-this-if-you-had-the-"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 5,
-        "handles": [
-          "6ixbuzztv",
-          "br0adwaychr0niclez",
-          "ceddynash",
-          "rockstargames"
-        ]
-      },
-      "finished_at": "2026-10-01T22:18:28.367Z"
-    },
-    {
-      "started_at": "2026-10-01T22:23:44.547Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T22:23:51.480Z"
-    },
     {
       "started_at": "2026-10-01T22:28:59.530Z",
       "candidates": 0,
@@ -33170,6 +33025,178 @@
         ]
       },
       "finished_at": "2026-10-03T17:51:13.133Z"
+    },
+    {
+      "started_at": "2026-10-03T17:56:40.072Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-03T17:56:46.139Z"
+    },
+    {
+      "started_at": "2026-10-03T18:01:55.346Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-03T18:02:04.595Z"
+    },
+    {
+      "started_at": "2026-10-03T18:07:13.742Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-03T18:07:20.910Z"
+    },
+    {
+      "started_at": "2026-10-03T18:12:29.638Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-03T18:12:34.126Z"
+    },
+    {
+      "started_at": "2026-10-03T18:17:44.393Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-03T18:17:57.000Z"
+    },
+    {
+      "started_at": "2026-10-03T18:23:05.631Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-03T18:23:10.807Z"
+    },
+    {
+      "started_at": "2026-10-03T18:28:19.079Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-03T18:29:16.872Z"
+    },
+    {
+      "started_at": "2026-10-03T18:34:30.183Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-03T18:34:51.041Z"
+    },
+    {
+      "started_at": "2026-10-03T18:39:59.366Z",
+      "candidates": 41,
+      "queued": [
+        "1222-ken-carson-kencarson-has-his-own-booth-and-toilet-at-complexcon"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd-l9AFRQZL/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd-nBasuKLc/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd-dIj6R2vV/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-03T18:41:10.930Z"
     }
   ],
   "vip_pending": {

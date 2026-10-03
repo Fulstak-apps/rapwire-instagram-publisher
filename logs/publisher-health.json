@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T19:06:36.849Z",
+  "checked_at": "2026-10-03T19:16:13.957Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T19:06:36.123Z",
+    "checked_at": "2026-10-03T19:16:13.809Z",
     "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T19:21:36.123Z",
+    "next_check_at": "2026-10-03T19:31:13.809Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -55,6 +55,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-03T19:25:09.968Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "rapwire-carousel-2026-10-03-0800.json",
+      "id": "rapwire-carousel-2026-10-03-0800",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

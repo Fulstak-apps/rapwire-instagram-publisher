@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T19:16:13.957Z",
+  "checked_at": "2026-10-03T19:21:45.856Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T19:16:13.809Z",
+    "checked_at": "2026-10-03T19:21:45.688Z",
     "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T19:31:13.809Z",
+    "next_check_at": "2026-10-03T19:36:45.688Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -44,11 +44,11 @@
   },
   "threads_interval_seconds": 7200,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-03T19:01:35.583Z",
+    "checked_at": "2026-10-03T19:21:45.454Z",
     "usage": 22,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-03T19:16:35.583Z",
+    "next_check_at": "2026-10-03T19:36:45.454Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,8 +57,8 @@
   "publications": [],
   "failures": [
     {
-      "file": "rapwire-carousel-2026-10-03-0800.json",
-      "id": "rapwire-carousel-2026-10-03-0800",
+      "file": "1176-is-back-with-do-it-one-time-featuring-young-breed-and-dj-nasty-t.json",
+      "id": "1176-is-back-with-do-it-one-time-featuring-young-breed-and-dj-nasty-t",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"

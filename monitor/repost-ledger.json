@@ -27619,22 +27619,16 @@
       "source_url": "https://www.instagram.com/ceddynash/reel/DeCUmfMRRcJ/",
       "queue_id": "1216-these-two-will-never-walk-the-streets-of-miami-again",
       "video": "media/1216-these-two-will-never-walk-the-streets-of-miami-again.mp4"
+    },
+    "DeCJCnnggQh": {
+      "queued_at": "2026-10-03T15:16:19.965Z",
+      "source_handle": "akademiks",
+      "source_url": "https://www.instagram.com/akademiks/reel/DeCJCnnggQh/",
+      "queue_id": "1217-ross-the-only-rapper-in-history-to-never-break-character",
+      "video": "media/1217-ross-the-only-rapper-in-history-to-never-break-character.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-01T17:11:43.344Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-01T17:11:49.629Z"
-    },
     {
       "started_at": "2026-10-01T17:16:59.507Z",
       "candidates": 36,
@@ -32884,6 +32878,31 @@
         ]
       },
       "finished_at": "2026-10-03T15:09:35.874Z"
+    },
+    {
+      "started_at": "2026-10-03T15:15:23.337Z",
+      "candidates": 48,
+      "queued": [
+        "1217-ross-the-only-rapper-in-history-to-never-break-character"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-03T15:16:19.965Z"
     }
   ],
   "vip_pending": {

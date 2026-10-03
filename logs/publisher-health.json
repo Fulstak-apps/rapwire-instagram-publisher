@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T20:58:00.949Z",
+  "checked_at": "2026-10-03T21:09:29.465Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T20:58:00.831Z",
+    "checked_at": "2026-10-03T21:09:29.331Z",
     "usage": 19,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T21:13:00.831Z",
+    "next_check_at": "2026-10-03T21:24:29.331Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -57,8 +57,8 @@
   "publications": [],
   "failures": [
     {
-      "file": "1179-rozay-is-free-on-6k-bond.json",
-      "id": "1179-rozay-is-free-on-6k-bond",
+      "file": "rapwire-carousel-2026-10-03-0800.json",
+      "id": "rapwire-carousel-2026-10-03-0800",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"

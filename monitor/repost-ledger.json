@@ -27432,100 +27432,16 @@
       "source_url": "https://www.instagram.com/thatdailyslapp/reel/DeAdeHHyhkc/",
       "queue_id": "1209-rell-vert-speaks-out-for-the-first-time-since-bloodhoundq50-s-pa",
       "video": "media/1209-rell-vert-speaks-out-for-the-first-time-since-bloodhoundq50-s-pa.mp4"
+    },
+    "DeAY-3aySHC": {
+      "queued_at": "2026-10-03T03:37:28.567Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/DeAY-3aySHC/",
+      "queue_id": "1210-nevaeh-breaks-down-in-tears-after-seeing-blueface-with-chrisean-",
+      "video": "media/1210-nevaeh-breaks-down-in-tears-after-seeing-blueface-with-chrisean-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-01T12:02:59.922Z",
-      "candidates": 48,
-      "queued": [
-        "1160-kaicenat-calls-out-the-fake-ones-who-he-gave-a-career-to-w-strea"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 43,
-        "needed": 5
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-10-01T12:04:22.593Z"
-    },
-    {
-      "started_at": "2026-10-01T12:09:52.182Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 44,
-        "needed": 4
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 5,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-10-01T12:10:09.030Z"
-    },
-    {
-      "started_at": "2026-10-01T12:15:17.448Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 44,
-        "needed": 4
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 5,
-        "handles": [
-          "6ixbuzztv",
-          "br0adwaychr0niclez",
-          "ceddynash",
-          "rockstargames"
-        ]
-      },
-      "finished_at": "2026-10-01T12:15:56.009Z"
-    },
-    {
-      "started_at": "2026-10-01T12:21:03.657Z",
-      "candidates": 12,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 44,
-        "needed": 4
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-10-01T12:21:18.623Z"
-    },
     {
       "started_at": "2026-10-01T12:26:26.786Z",
       "candidates": 48,
@@ -32696,6 +32612,70 @@
         ]
       },
       "finished_at": "2026-10-03T03:15:12.870Z"
+    },
+    {
+      "started_at": "2026-10-03T03:20:36.637Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-03T03:20:43.339Z"
+    },
+    {
+      "started_at": "2026-10-03T03:25:53.099Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-03T03:26:00.266Z"
+    },
+    {
+      "started_at": "2026-10-03T03:31:08.524Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-03T03:31:17.012Z"
+    },
+    {
+      "started_at": "2026-10-03T03:36:27.047Z",
+      "candidates": 48,
+      "queued": [
+        "1210-nevaeh-breaks-down-in-tears-after-seeing-blueface-with-chrisean-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-03T03:37:28.567Z"
     }
   ],
   "vip_pending": {

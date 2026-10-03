@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T19:47:42.229Z",
+  "checked_at": "2026-10-03T19:52:00.926Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T19:47:33.062Z",
+    "checked_at": "2026-10-03T19:52:00.049Z",
     "usage": 20,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T20:02:33.062Z",
+    "next_check_at": "2026-10-03T20:07:00.049Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "feed_interval_minutes": 120,
     "instagram_daily_cap": 10,
     "instagram_usage": 0,
-    "platform_quota_usage": 21,
+    "platform_quota_usage": 20,
     "instagram_remaining": 10,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-03T17:22:20.989Z",
@@ -44,11 +44,11 @@
   },
   "threads_interval_seconds": 7200,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-03T19:36:53.170Z",
-    "usage": 22,
+    "checked_at": "2026-10-03T19:51:59.807Z",
+    "usage": 21,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-03T19:51:53.170Z",
+    "next_check_at": "2026-10-03T20:06:59.807Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,18 +57,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "rapwire-carousel-2026-10-03-0800.json",
-      "id": "rapwire-carousel-2026-10-03-0800",
+      "file": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re.json",
+      "id": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
-    },
-    {
-      "file": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re.json",
-      "id": "1177-rick-ross-appeared-in-court-and-his-lawyer-asked-the-judge-to-re",
-      "platform": "threads",
-      "status": "failed",
-      "error": "Threads threads_publish failed: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"Ax6wVuYg-_DRpt8R7Sq3-Yp\"}}"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

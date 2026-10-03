@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T18:17:28.011Z",
+  "checked_at": "2026-10-03T18:21:09.259Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T18:17:27.829Z",
+    "checked_at": "2026-10-03T18:21:09.084Z",
     "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T18:32:27.829Z",
+    "next_check_at": "2026-10-03T18:36:09.084Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -44,11 +44,11 @@
   },
   "threads_interval_seconds": 7200,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-03T18:01:01.208Z",
+    "checked_at": "2026-10-03T18:21:08.878Z",
     "usage": 22,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-03T18:16:01.208Z",
+    "next_check_at": "2026-10-03T18:36:08.878Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,8 +57,8 @@
   "publications": [],
   "failures": [
     {
-      "file": "rapwire-carousel-2026-10-03-0800.json",
-      "id": "rapwire-carousel-2026-10-03-0800",
+      "file": "1175-are-you-pregnant-the-cutest-little-bump-congrats-rihanna-congrat.json",
+      "id": "1175-are-you-pregnant-the-cutest-little-bump-congrats-rihanna-congrat",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"

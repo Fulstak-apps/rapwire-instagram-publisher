@@ -81,8 +81,11 @@ test('recent feed publication blocks the next feed but not Threads delivery', t 
   assert.equal(r.report.delivery_policy.feed_interval_minutes,120);
 });
 test('daily safety budget prevents uploads even when Meta reports spare capacity', t => {
+  const now=Date.now();
+  const alreadyPublished=Array.from({length:10},(_,index)=>({...item,id:`published-${index}`,status:'published',instagram_media_id:`ig-${index}`,published_at:new Date(now-index*60000).toISOString(),threads_status:'published',threads_media_id:`thread-${index}`}));
   const r = run(t,{...item,status:'ready',instagram_media_id:undefined,threads_status:'published',threads_media_id:'thread'},null,
-    `throw new Error('No platform work expected at the daily safety cap');`,0,null,10,100);
+    `throw new Error('No platform work expected at the daily safety cap');`,0,null,10,100,alreadyPublished,null,
+    {pacing:{editorial_pacing_version:'engagement-v1',editorial_pacing_started_at:new Date(now-3600000).toISOString()}});
   assert.equal(r.report.instagram_steps,0); assert.equal(r.report.delivery_policy.instagram_daily_cap,10);
   assert.equal(r.item.instagram_container_id,undefined);
 });

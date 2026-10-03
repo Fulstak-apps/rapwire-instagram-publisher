@@ -40,8 +40,12 @@ export function recoveryPolicy(records, { authorization = {}, quota = {}, lastFe
 
 // Cadence is measured from confirmed publication, not scheduler wakeups.
 // Count feed and Stories together and reserve room for outstanding Stories.
-export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, includeStories = true, now = Date.now() } = {}) {
-  const cutoff = now - 86400000;
+export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, policyStartedAt, includeStories = true, now = Date.now() } = {}) {
+  // Meta's API quota is a separate, much larger allowance. Do not let posts
+  // made before this editorial policy existed exhaust the new 10-per-day
+  // pacing budget and create an artificial 24-hour silence after an upgrade.
+  const started = Date.parse(policyStartedAt || '') || 0;
+  const cutoff = Math.max(now - 86400000, started);
   const published = new Set();
   const pendingStories = new Set();
   let lastFeed = Date.parse(lastFeedPublishedAt || '') || 0;
@@ -57,7 +61,7 @@ export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, in
   }
   const platformLimit = Number(quota.effective_total || quota.total);
   const cap = Number.isFinite(platformLimit) && platformLimit > 0 ? Math.min(DAILY_INSTAGRAM_CAP, Math.floor(platformLimit * 0.8)) : DAILY_INSTAGRAM_CAP;
-  const usage = Math.max(published.size, Number(quota.usage) || 0);
+  const usage = published.size;
   const remaining = Math.max(0, cap - usage);
   const nextFeed = lastFeed ? lastFeed + FEED_INTERVAL_MS : 0;
   const neededForFeed = 1 + (includeStories ? 1 : 0) + pendingStories.size;
@@ -65,6 +69,7 @@ export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, in
     feed_interval_minutes: FEED_INTERVAL_MS / 60000,
     instagram_daily_cap: cap,
     instagram_usage: usage,
+    platform_quota_usage: Number(quota.usage) || 0,
     instagram_remaining: remaining,
     reserved_story_slots: pendingStories.size,
     next_feed_eligible_at: nextFeed ? new Date(nextFeed).toISOString() : null,

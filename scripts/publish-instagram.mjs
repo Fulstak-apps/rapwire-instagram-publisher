@@ -257,6 +257,13 @@ const recoveryAuthorization = await readStateJson(path.join(logsDir, 'instagram-
 const pacing = await readStateJson(pacingPath, {}, "publisher-pacing");
 
 const runStartedAt = new Date().toISOString();
+// Version this transition so historical high-frequency output never consumes
+// the fresh editorial budget. The confirmed-feed timestamp still enforces the
+// full two-hour gap before the first new post.
+if (pacing.editorial_pacing_version !== 'engagement-v1') {
+  pacing.editorial_pacing_version = 'engagement-v1';
+  pacing.editorial_pacing_started_at = runStartedAt;
+}
 if (process.env.RAPWIRE_SKIP_PACING_GUARD !== "1" && Date.now() - Date.parse(pacing.last_run_at || "") < THREADS_INTERVAL_MS) {
   console.log("One-minute scheduler interval has not elapsed; no platform requests made.");
   process.exit(0);
@@ -801,7 +808,8 @@ for (const file of files) {
   if (item.instagram_story_media_id && Date.parse(item.instagram_story_published_at || "") >= rollingDayStart) instagramPublicationsInRollingDay += 1;
 }
 const deliveryPolicy = publicationPolicy(queueRecords.map(record => record.item), {
-  quota, lastFeedPublishedAt: pacing.last_feed_published_at, includeStories: publishInstagramStories
+  quota, lastFeedPublishedAt: pacing.last_feed_published_at,
+  policyStartedAt: pacing.editorial_pacing_started_at, includeStories: publishInstagramStories
 });
 const recovery = recoveryPolicy(queueRecords.map(record => record.item), {
   quota, authorization: recoveryAuthorization, lastFeedPublishedAt: pacing.last_feed_published_at

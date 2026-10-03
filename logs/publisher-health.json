@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T23:56:53.353Z",
+  "checked_at": "2026-10-03T23:58:02.303Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-10-03T23:56:53.170Z",
     "usage": 15,
@@ -34,7 +34,7 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,14 +55,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-04T00:10:30.675Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "1183-reggie-mom-speaks-says-she-got-offers-from-a-lawyer-to-instituti.json",
-      "id": "1183-reggie-mom-speaks-says-she-got-offers-from-a-lawyer-to-instituti",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

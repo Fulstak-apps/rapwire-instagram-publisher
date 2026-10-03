@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T18:21:09.259Z",
+  "checked_at": "2026-10-03T18:26:11.845Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-03T18:21:09.084Z",
+    "checked_at": "2026-10-03T18:26:11.085Z",
     "usage": 21,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-03T18:36:09.084Z",
+    "next_check_at": "2026-10-03T18:41:11.085Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -55,14 +55,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-03T19:25:09.968Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "1175-are-you-pregnant-the-cutest-little-bump-congrats-rihanna-congrat.json",
-      "id": "1175-are-you-pregnant-the-cutest-little-bump-congrats-rihanna-congrat",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

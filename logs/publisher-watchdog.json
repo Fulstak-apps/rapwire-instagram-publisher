@@ -1,21 +1,16 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 45,
+  "reserve_hours": 22.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
-  "health_stale": true,
-  "processing": [
-    "1168-why-the-judge-tryna-act-like-she-don-t-know-the-biggest-bauce-ri"
-  ],
+  "overdue": false,
+  "health_stale": false,
+  "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "1168-why-the-judge-tryna-act-like-she-don-t-know-the-biggest-bauce-ri",
-    "1169-quavo-says-it-s-his-responsibility-that-takeoff-s-legacy-lives-f",
-    "1170-kaicenat-says-he-s-suing-reggie",
     "1171-nba-ben10-update-from-the-federal-courthouse-allegations-are-not",
     "1172-kai-cenat-gets-emotional-after-revealing-that-he-saved-reggie-fr",
     "1173-naaa-ross-left-jail-in-style-yall-want-some-of-the-rigatoni-or-n",
@@ -62,8 +57,8 @@
     "1214-ben10-emergency-bond-hearing-update-part-5-how-the-feds-caught-b",
     "rapwire-carousel-2026-10-02-1700"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-03T10:39:23.079Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-10-03T14:53:27.551Z",
   "deferred": []
 }

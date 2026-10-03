@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-10-03-0800",
-  "status": "ready",
+  "status": "paused",
   "ai_generated_art": true,
   "created_at": "2026-10-03T08:19:38-07:00",
   "publish_after": "2026-10-03T15:19:38Z",
@@ -59,13 +59,58 @@
   "checksums": "queue/rapwire-carousel-2026-10-03-0800-checksums.txt",
   "media_urls": [],
   "slide_editorial_copy": [
-    {"slide": 1, "headline": "RICK ROSS\nFACES CHARGES", "deck": "Ross faces felony and misdemeanor battery counts after an ex-partner’s allegations. He pleaded not guilty, posted $5,000 bond and is due in court Oct. 22; the charges remain allegations.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40},
-    {"slide": 2, "headline": "G HERBO\nWALKS IT BACK", "deck": "After saying on Instagram Live that rap was too draining and he was done, Herbo walked the retirement talk back in a follow-up. Acting and podcasting are still in the conversation, but he says he is not quitting.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40},
-    {"slide": 3, "headline": "OUTKAST\nVS. OVRKAST", "deck": "OutKast’s trademark company says Ovrkast broke a rebrand deal over the similar name. Its federal complaint seeks trademark and contract relief; no ruling has been issued.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40},
-    {"slide": 4, "headline": "GTA VI\nGETS MATURE", "deck": "ESRB lists M for Mature 17+ with violence, nudity, strong sexual content, drugs and alcohol, language and mature humor. Australian and New Zealand listings separately specify “sex scenes,” adding a sharper content signal before the Nov. 19 launch.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40},
-    {"slide": 5, "headline": "GTA VI’S\n$400 BOX", "deck": "The $399.99 box includes Macca the Gator, shades, cap, bag, glassware, pins, stickers and a Leonida map poster. It is merch only—GTA VI is sold separately—and ships Nov. 19 while supplies last.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 40}
+    {
+      "slide": 1,
+      "headline": "RICK ROSS\nFACES CHARGES",
+      "deck": "Ross faces felony and misdemeanor battery counts after an ex-partner’s allegations. He pleaded not guilty, posted $5,000 bond and is due in court Oct. 22; the charges remain allegations.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    },
+    {
+      "slide": 2,
+      "headline": "G HERBO\nWALKS IT BACK",
+      "deck": "After saying on Instagram Live that rap was too draining and he was done, Herbo walked the retirement talk back in a follow-up. Acting and podcasting are still in the conversation, but he says he is not quitting.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    },
+    {
+      "slide": 3,
+      "headline": "OUTKAST\nVS. OVRKAST",
+      "deck": "OutKast’s trademark company says Ovrkast broke a rebrand deal over the similar name. Its federal complaint seeks trademark and contract relief; no ruling has been issued.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    },
+    {
+      "slide": 4,
+      "headline": "GTA VI\nGETS MATURE",
+      "deck": "ESRB lists M for Mature 17+ with violence, nudity, strong sexual content, drugs and alcohol, language and mature humor. Australian and New Zealand listings separately specify “sex scenes,” adding a sharper content signal before the Nov. 19 launch.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    },
+    {
+      "slide": 5,
+      "headline": "GTA VI’S\n$400 BOX",
+      "deck": "The $399.99 box includes Macca the Gator, shades, cap, bag, glassware, pins, stickers and a Leonida map poster. It is merch only—GTA VI is sold separately—and ships Nov. 19 while supplies last.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40
+    }
   ],
-  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "brand_logo": {
+    "asset": "assets/rapwire247-logo.png",
+    "position": "bottom-left",
+    "transparent_background": true,
+    "backing_shape": "none"
+  },
   "facts_verified": true,
   "content_claim_checked": true,
   "editorial_substance_checked": true,
@@ -91,5 +136,10 @@
     "passed": true
   },
   "publish_blocked": false,
-  "news_verification": {"status": "verified", "checked_at": "2026-10-03T15:19:38Z", "notes": "Five distinct non-duplicate current stories; each supported by at least two independent sources, with court claims labeled as allegations."}
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-10-03T15:19:38Z",
+    "notes": "Five distinct non-duplicate current stories; each supported by at least two independent sources, with court claims labeled as allegations."
+  },
+  "pause_reason": "Visual blocked: RapWire requires source-grounded AI art or an approved credited real-photo fallback, plus a complete readable 2-10 slide carousel"
 }

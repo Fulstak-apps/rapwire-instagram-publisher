@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T06:12:10.004Z",
+  "checked_at": "2026-10-03T06:17:18.634Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,7 +44,7 @@
   "threads_interval_seconds": 1800,
   "threads_publishing_quota": {
     "checked_at": "2026-10-03T06:07:13.587Z",
-    "usage": 24,
+    "usage": 25,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-03T06:22:13.587Z",
@@ -52,8 +52,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-03T06:12:04.631Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-03T06:47:18.344Z",
+  "publications": [
+    {
+      "file": "1167-yall-going-to-press-the-news-station-to-donate-for-that-baby-in-.json",
+      "id": "1167-yall-going-to-press-the-news-station-to-donate-for-that-baby-in-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17962260951206219"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

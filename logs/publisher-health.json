@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T14:18:39.670Z",
+  "checked_at": "2026-10-04T14:58:26.263Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T14:18:37.705Z",
+    "checked_at": "2026-10-04T14:58:07.999Z",
     "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T14:33:37.705Z",
+    "next_check_at": "2026-10-04T15:13:07.999Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,10 +27,10 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
     "instagram_usage": 4,
-    "platform_quota_usage": 6,
+    "platform_quota_usage": 5,
     "instagram_remaining": 6,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-04T11:45:08.671Z",
+    "next_feed_eligible_at": "2026-10-04T16:28:17.416Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,17 +44,33 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-04T14:18:37.511Z",
+    "checked_at": "2026-10-04T14:58:07.669Z",
     "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-04T14:33:37.511Z",
+    "next_check_at": "2026-10-04T15:13:07.669Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-04T12:10:58.534Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-04T16:28:25.730Z",
+  "publications": [
+    {
+      "file": "1194-bright-lights-vice-city-a-night-in-vice-city-tips-off-november-1.json",
+      "id": "1194-bright-lights-vice-city-a-night-in-vice-city-tips-off-november-1",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18192550096397845",
+      "content_type": "video"
+    },
+    {
+      "file": "1195-reggie-s-older-brother-james-mack-says-reggie-is-outrageous-for-.json",
+      "id": "1195-reggie-s-older-brother-james-mack-says-reggie-is-outrageous-for-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18055171559577105"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

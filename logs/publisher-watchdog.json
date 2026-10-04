@@ -1,17 +1,18 @@
 {
-  "reserve_count": 47,
-  "reserve_hours": 23.5,
+  "reserve_count": 49,
+  "reserve_hours": 24.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "health_stale": false,
-  "processing": [],
+  "processing": [
+    "1201-ben10-emergency-bond-hearing-update-part-2-feds-admitted-they-pu"
+  ],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1200-what-s-your-all-time-favorite-festival-moment-hit-the-premiere-r",
     "1201-ben10-emergency-bond-hearing-update-part-2-feds-admitted-they-pu",
     "1202-king-von-didn-t-have-time-to-drop-this-iconic-snippet-this-would",
     "1203-ben10-emergency-bond-hearing-update-part-4-feds-used-ben10-dad-t",
@@ -57,10 +58,13 @@
     "1243-bobby-shmurda-gave-out-the-n-word-pass-at-asu",
     "1244-man-explains-to-nypd-that-he-don-t-go-no-where-without-his-blick",
     "1245-fans-took-a-trip-to-explore-nba-youngboy-s-abandoned-grave-digge",
+    "1246-bendadonn-was-tased-and-detained-by-police-officers-in-texas-pop",
+    "1247-seven-years-ago-juice-wrld-and-nba-youngboy-joined-forces-on-ban",
+    "1248-fayetteville-artist-pfg-just-dropped-the-visuals-for-his-song-en",
     "rapwire-carousel-2026-10-02-1700"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-04T18:40:25.095Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-04T21:55:18.593Z",
   "deferred": []
 }

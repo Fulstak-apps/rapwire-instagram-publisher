@@ -21215,6 +21215,12 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/DeDK4T5oGJL/",
       "view_count": 0
+    },
+    "DeDRQNBudem": {
+      "seen_at": "2026-10-04T00:08:39.481Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DeDRQNBudem/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -28003,39 +28009,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DeDK4T5oGJL/",
       "queue_id": "1228-footage-of-king-von-and-chief-keef-together-in-the-studio-back-i",
       "video": "media/1228-footage-of-king-von-and-chief-keef-together-in-the-studio-back-i.mp4"
+    },
+    "DeDRQNBudem": {
+      "queued_at": "2026-10-04T00:09:08.765Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DeDRQNBudem/",
+      "queue_id": "1229-we-caught-up-with-nav-at-complexcon-to-talk-music-and-who-he-wan",
+      "video": "media/1229-we-caught-up-with-nav-at-complexcon-to-talk-music-and-who-he-wan.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-02T02:27:32.868Z",
-      "candidates": 36,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "ceddynash",
-          "source_url": "https://www.instagram.com/ceddynash/reel/Dd-T-YWR15L/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 5,
-        "handles": [
-          "6ixbuzztv",
-          "br0adwaychr0niclez",
-          "ceddynash",
-          "rockstargames"
-        ]
-      },
-      "finished_at": "2026-10-02T02:28:11.501Z"
-    },
     {
       "started_at": "2026-10-02T02:33:26.689Z",
       "candidates": 12,
@@ -33504,6 +33487,50 @@
         ]
       },
       "finished_at": "2026-10-04T00:02:51.677Z"
+    },
+    {
+      "started_at": "2026-10-04T00:08:08.896Z",
+      "candidates": 41,
+      "queued": [
+        "1229-we-caught-up-with-nav-at-complexcon-to-talk-music-and-who-he-wan"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd-tmeTvt6r/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd_xyzRR4Mt/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeAamyIPL0V/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-04T00:09:08.765Z"
     }
   ],
   "vip_pending": {

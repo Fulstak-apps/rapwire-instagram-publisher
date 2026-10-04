@@ -28276,82 +28276,16 @@
       "source_url": "https://www.instagram.com/6ixbuzztv/p/DeDb5NWADo8/",
       "queue_id": "1237-lucki-and-playboi-carti-playboicarti-s-teams-seemingly-get-into-",
       "video": "media/1237-lucki-and-playboi-carti-playboicarti-s-teams-seemingly-get-into-.mp4"
+    },
+    "DeDioq4o2n-": {
+      "queued_at": "2026-10-04T03:49:12.903Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DeDioq4o2n-/",
+      "queue_id": "1238-lucki-talking-about-his-love-for-playboicarti-just-last-year-luc",
+      "video": "media/1238-lucki-talking-about-his-love-for-playboicarti-just-last-year-luc.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-02T15:13:02.307Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd-sWjYp1t6/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd-tmeTvt6r/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd_xyzRR4Mt/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU5lKLuD_y3/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 45,
-        "needed": 3
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 5,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-10-02T15:13:42.646Z"
-    },
-    {
-      "started_at": "2026-10-02T15:18:52.552Z",
-      "candidates": 48,
-      "queued": [
-        "1193-ray-j-was-taken-to-the-hospital-after-having-a-medical-scare-dur"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 45,
-        "needed": 3
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 2,
-        "count": 5,
-        "handles": [
-          "complexmusic",
-          "xxl",
-          "hiphopdx",
-          "hiphop_firstnewsmusic"
-        ]
-      },
-      "finished_at": "2026-10-02T15:19:45.517Z"
-    },
     {
       "started_at": "2026-10-02T15:26:01.665Z",
       "candidates": 12,
@@ -33628,6 +33562,51 @@
         ]
       },
       "finished_at": "2026-10-04T03:37:42.116Z"
+    },
+    {
+      "started_at": "2026-10-04T03:42:57.968Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-04T03:43:13.986Z"
+    },
+    {
+      "started_at": "2026-10-04T03:48:21.577Z",
+      "candidates": 48,
+      "queued": [
+        "1238-lucki-talking-about-his-love-for-playboicarti-just-last-year-luc"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-04T03:49:12.903Z"
     }
   ],
   "vip_pending": {

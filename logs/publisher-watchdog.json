@@ -1,20 +1,16 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
-  "health_stale": true,
-  "processing": [
-    "1193-ray-j-was-taken-to-the-hospital-after-having-a-medical-scare-dur"
-  ],
+  "overdue": false,
+  "health_stale": false,
+  "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "1193-ray-j-was-taken-to-the-hospital-after-having-a-medical-scare-dur",
-    "1194-bright-lights-vice-city-a-night-in-vice-city-tips-off-november-1",
     "1195-reggie-s-older-brother-james-mack-says-reggie-is-outrageous-for-",
     "1196-thug-was-in-his-bag-life-when-young-thug-thuggerthugger1-dropped",
     "1197-iggy-really-came-in-and-did-her-thing-ariana-grande-s-problem-fe",
@@ -60,10 +56,11 @@
     "1237-lucki-and-playboi-carti-playboicarti-s-teams-seemingly-get-into-",
     "1238-lucki-talking-about-his-love-for-playboicarti-just-last-year-luc",
     "1239-mississippi-s-very-own-continues-to-make-his-presence-felt-with-",
+    "1240-in-the-new-york-times-podcast-chris-rock-immediately-shut-down-a",
     "rapwire-carousel-2026-10-02-1700"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-04T10:14:22.684Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-10-04T15:22:39.012Z",
   "deferred": []
 }

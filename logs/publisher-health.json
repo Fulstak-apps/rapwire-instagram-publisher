@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T02:09:43.304Z",
+  "checked_at": "2026-10-04T02:13:23.427Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T02:09:43.123Z",
+    "checked_at": "2026-10-04T02:13:23.304Z",
     "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T02:24:43.123Z",
+    "next_check_at": "2026-10-04T02:28:23.304Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -44,11 +44,11 @@
   },
   "threads_interval_seconds": 7200,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-04T01:53:10.656Z",
-    "usage": 16,
+    "checked_at": "2026-10-04T02:13:22.882Z",
+    "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-04T02:08:10.656Z",
+    "next_check_at": "2026-10-04T02:28:22.882Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,8 +57,8 @@
   "publications": [],
   "failures": [
     {
-      "file": "rapwire-carousel-2026-10-03-0800.json",
-      "id": "rapwire-carousel-2026-10-03-0800",
+      "file": "1187-judge-says-rick-ross-will-be-treated-just-like-everyone-else-aft.json",
+      "id": "1187-judge-says-rick-ross-will-be-treated-just-like-everyone-else-aft",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"

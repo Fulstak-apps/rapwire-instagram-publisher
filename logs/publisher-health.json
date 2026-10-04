@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T01:12:40.510Z",
+  "checked_at": "2026-10-04T01:17:47.420Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T01:12:40.340Z",
+    "checked_at": "2026-10-04T01:17:46.150Z",
     "usage": 13,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T01:27:40.340Z",
+    "next_check_at": "2026-10-04T01:32:46.150Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -57,8 +57,8 @@
   "publications": [],
   "failures": [
     {
-      "file": "1185-check-out-the-latest-trailer-for-ebenezer-and-see-johnny-depp-in.json",
-      "id": "1185-check-out-the-latest-trailer-for-ebenezer-and-see-johnny-depp-in",
+      "file": "1186-fire-emblem-fortune-s-weave-has-lots-to-do-outside-the-arena-and.json",
+      "id": "1186-fire-emblem-fortune-s-weave-has-lots-to-do-outside-the-arena-and",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"

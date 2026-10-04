@@ -1,6 +1,6 @@
 {
   "id": "1183-reggie-mom-speaks-says-she-got-offers-from-a-lawyer-to-instituti",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-02",
   "timezone": "America/Detroit",
@@ -45,5 +45,6 @@
   "instagram_container_checked_at": "2026-10-03T23:56:52.896Z",
   "instagram_container_status": "FINISHED",
   "instagram_error": "Rolling-day safety cap reached (feed plus Stories); queued for later",
-  "instagram_retry_at": "2026-10-04T00:06:53.171Z"
+  "instagram_retry_at": "2026-10-04T00:06:53.171Z",
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T07:16:50.881Z",
+  "checked_at": "2026-10-04T07:22:04.607Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-04T07:06:23.562Z",
-    "usage": 10,
+    "checked_at": "2026-10-04T07:21:57.962Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-04T07:21:23.562Z",
+    "next_check_at": "2026-10-04T07:36:57.962Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-04T07:15:39.144Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-04T08:52:04.255Z",
+  "publications": [
+    {
+      "file": "1193-ray-j-was-taken-to-the-hospital-after-having-a-medical-scare-dur.json",
+      "id": "1193-ray-j-was-taken-to-the-hospital-after-having-a-medical-scare-dur",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18119105560844089"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T00:52:30.433Z",
+  "checked_at": "2026-10-04T00:57:32.168Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T00:52:30.261Z",
+    "checked_at": "2026-10-04T00:57:31.194Z",
     "usage": 14,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T01:07:30.261Z",
+    "next_check_at": "2026-10-04T01:12:31.194Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -55,14 +55,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-04T02:17:13.249Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "1185-check-out-the-latest-trailer-for-ebenezer-and-see-johnny-depp-in.json",
-      "id": "1185-check-out-the-latest-trailer-for-ebenezer-and-see-johnny-depp-in",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

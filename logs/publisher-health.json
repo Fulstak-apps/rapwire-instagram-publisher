@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T14:58:26.263Z",
+  "checked_at": "2026-10-04T15:03:09.054Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 4,
-    "platform_quota_usage": 5,
-    "instagram_remaining": 6,
+    "instagram_usage": 5,
+    "platform_quota_usage": 6,
+    "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-04T16:28:17.416Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,23 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-04T16:28:25.730Z",
-  "publications": [
-    {
-      "file": "1194-bright-lights-vice-city-a-night-in-vice-city-tips-off-november-1.json",
-      "id": "1194-bright-lights-vice-city-a-night-in-vice-city-tips-off-november-1",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18192550096397845",
-      "content_type": "video"
-    },
-    {
-      "file": "1195-reggie-s-older-brother-james-mack-says-reggie-is-outrageous-for-.json",
-      "id": "1195-reggie-s-older-brother-james-mack-says-reggie-is-outrageous-for-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18055171559577105"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

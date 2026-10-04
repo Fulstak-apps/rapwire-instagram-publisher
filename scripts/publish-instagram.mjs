@@ -259,7 +259,7 @@ const pacing = await readStateJson(pacingPath, {}, "publisher-pacing");
 const runStartedAt = new Date().toISOString();
 // Version this transition so historical high-frequency output never consumes
 // the fresh editorial budget. The confirmed-feed timestamp still enforces the
-// full two-hour gap before the first new post.
+// full 90-minute gap before the first new post.
 if (pacing.editorial_pacing_version !== 'engagement-v1') {
   pacing.editorial_pacing_version = 'engagement-v1';
   pacing.editorial_pacing_started_at = runStartedAt;

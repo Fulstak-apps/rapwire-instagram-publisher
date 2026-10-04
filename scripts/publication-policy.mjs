@@ -1,7 +1,7 @@
 // Give each Reel enough time to collect watches, saves, and comments before
 // the next one replaces it in followers' feeds. Ten posts is a ceiling, not
 // a target; the six-hour story hold may make a quieter day intentionally.
-export const FEED_INTERVAL_MS = 120 * 60_000;
+export const FEED_INTERVAL_MS = 90 * 60_000;
 // Threads video delivery follows the same editorial rhythm as Instagram.
 export const THREADS_PUBLISH_INTERVAL_MS = FEED_INTERVAL_MS;
 export const THREADS_INTERVAL_MS = 60_000;

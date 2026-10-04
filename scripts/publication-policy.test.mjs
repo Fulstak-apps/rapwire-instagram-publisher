@@ -4,8 +4,8 @@ import { publicationPolicy, recoveryPolicy } from './publication-policy.mjs';
 const now = Date.parse('2026-09-02T15:00:00Z');
 const feed = {status:'published',content_type:'video',instagram_media_id:'feed',published_at:new Date(now-30*60000).toISOString(),instagram_story_status:'published',instagram_story_media_id:'story',instagram_story_published_at:new Date(now-5*60000).toISOString()};
 const publications=(count,at=now)=>Array.from({length:count},(_,index)=>({status:'published',instagram_media_id:`feed-${index}`,published_at:new Date(at-index*60000).toISOString()}));
-test('two-hour boundary uses the feed time, not the more recent Story time', () => {
-  const boundary=now+90*60000;
+test('90-minute boundary uses the feed time, not the more recent Story time', () => {
+  const boundary=now+60*60000;
   assert.equal(publicationPolicy([feed],{now:boundary-1}).feed_allowed,false);
   assert.equal(publicationPolicy([feed],{now:boundary}).feed_allowed,true);
 });
@@ -14,7 +14,7 @@ test('persisted feed timestamp survives missing queue history', () => {
 });
 test('reserve both the new Story and unfinished older Stories before starting another feed', () => {
   const pending={...feed,instagram_story_media_id:undefined,instagram_story_status:'pending'};
-  const due=now+90*60000+1;
+  const due=now+60*60000+1;
   assert.equal(publicationPolicy([...publications(8,now-300*60000),pending],{now:due,quota:{usage:8,total:100}}).feed_allowed,false);
   assert.equal(publicationPolicy([...publications(6,now-300*60000),pending],{now:due,quota:{usage:6,total:100}}).feed_allowed,true);
 });

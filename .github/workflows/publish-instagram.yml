@@ -4,7 +4,7 @@ on:
   # Queue/media commits are deliberately ignored below to avoid an upload for
   # every collector write.  This small heartbeat makes those queued items
   # eligible without relying on a local machine staying awake; the publisher
-  # still enforces its independent two-hour editorial cadence.
+  # still enforces its independent 90-minute editorial cadence.
   schedule:
     - cron: "*/15 * * * *"
   push:

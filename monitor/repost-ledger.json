@@ -21221,6 +21221,48 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/records/reel/DeDRQNBudem/",
       "view_count": 0
+    },
+    "DeDR69Zg9j-": {
+      "seen_at": "2026-10-04T00:15:00.851Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/reel/DeDR69Zg9j-/",
+      "view_count": 0
+    },
+    "DeDQa_Yj6Q_": {
+      "seen_at": "2026-10-04T00:15:00.851Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DeDQa_Yj6Q_/",
+      "view_count": 0
+    },
+    "DeDObPYj5K2": {
+      "seen_at": "2026-10-04T00:15:00.851Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DeDObPYj5K2/",
+      "view_count": 0
+    },
+    "DeDN46DD3aU": {
+      "seen_at": "2026-10-04T00:15:00.851Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/p/DeDN46DD3aU/",
+      "view_count": 0
+    },
+    "DeDK2H5vTgr": {
+      "seen_at": "2026-10-04T00:15:00.851Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DeDK2H5vTgr/",
+      "view_count": 0
+    },
+    "DeDHYL0y3iN": {
+      "seen_at": "2026-10-04T00:15:00.851Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DeDHYL0y3iN/",
+      "view_count": 0
+    },
+    "DeDFU1KRE2W": {
+      "seen_at": "2026-10-04T00:15:00.851Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/reel/DeDFU1KRE2W/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -28016,29 +28058,16 @@
       "source_url": "https://www.instagram.com/records/reel/DeDRQNBudem/",
       "queue_id": "1229-we-caught-up-with-nav-at-complexcon-to-talk-music-and-who-he-wan",
       "video": "media/1229-we-caught-up-with-nav-at-complexcon-to-talk-music-and-who-he-wan.mp4"
+    },
+    "DeDR69Zg9j-": {
+      "queued_at": "2026-10-04T00:15:22.387Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/reel/DeDR69Zg9j-/",
+      "queue_id": "1230-your-favorite-streamer-s-favorite-streamer-is-in-the-building-co",
+      "video": "media/1230-your-favorite-streamer-s-favorite-streamer-is-in-the-building-co.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-02T02:33:26.689Z",
-      "candidates": 12,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-10-02T02:33:43.104Z"
-    },
     {
       "started_at": "2026-10-02T02:38:52.396Z",
       "candidates": 48,
@@ -33531,6 +33560,31 @@
         ]
       },
       "finished_at": "2026-10-04T00:09:08.765Z"
+    },
+    {
+      "started_at": "2026-10-04T00:14:30.322Z",
+      "candidates": 48,
+      "queued": [
+        "1230-your-favorite-streamer-s-favorite-streamer-is-in-the-building-co"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-04T00:15:22.387Z"
     }
   ],
   "vip_pending": {

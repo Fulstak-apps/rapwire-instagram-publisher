@@ -21648,6 +21648,42 @@
       "source_handle": "raplisted_",
       "source_url": "https://www.instagram.com/raplisted_/reel/DeFOpHABUfD/",
       "view_count": 0
+    },
+    "DeFG83qx2-M": {
+      "seen_at": "2026-10-04T18:54:12.158Z",
+      "source_handle": "larp.lor.d",
+      "source_url": "https://www.instagram.com/larp.lor.d/reel/DeFG83qx2-M/",
+      "view_count": 0
+    },
+    "DeFSYRiCGQq": {
+      "seen_at": "2026-10-04T18:54:12.160Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DeFSYRiCGQq/",
+      "view_count": 0
+    },
+    "DeFLbohm0pg": {
+      "seen_at": "2026-10-04T18:54:12.160Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DeFLbohm0pg/",
+      "view_count": 0
+    },
+    "DeFC7ZwB69h": {
+      "seen_at": "2026-10-04T18:54:12.160Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/funnysalesman/reel/DeFC7ZwB69h/",
+      "view_count": 0
+    },
+    "DeFAP2ljiR8": {
+      "seen_at": "2026-10-04T18:54:12.160Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DeFAP2ljiR8/",
+      "view_count": 0
+    },
+    "DeE4m30BYk_": {
+      "seen_at": "2026-10-04T18:54:12.160Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/funnysalesman/reel/DeE4m30BYk_/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -28562,22 +28598,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DeFOpHABUfD/",
       "queue_id": "1246-bendadonn-was-tased-and-detained-by-police-officers-in-texas-pop",
       "video": "media/1246-bendadonn-was-tased-and-detained-by-police-officers-in-texas-pop.mp4"
+    },
+    "DeFSYRiCGQq": {
+      "queued_at": "2026-10-04T18:54:38.942Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/reel/DeFSYRiCGQq/",
+      "queue_id": "1247-seven-years-ago-juice-wrld-and-nba-youngboy-joined-forces-on-ban",
+      "video": "media/1247-seven-years-ago-juice-wrld-and-nba-youngboy-joined-forces-on-ban.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-04T03:14:10.641Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:14:16.288Z"
-    },
     {
       "started_at": "2026-10-04T03:14:10.641Z",
       "candidates": 0,
@@ -33178,6 +33208,50 @@
         ]
       },
       "finished_at": "2026-10-04T18:48:01.270Z"
+    },
+    {
+      "started_at": "2026-10-04T18:53:41.823Z",
+      "candidates": 41,
+      "queued": [
+        "1247-seven-years-ago-juice-wrld-and-nba-youngboy-joined-forces-on-ban"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeDj8o7x8Wf/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeDqOPURMzO/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeFG83qx2-M/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-04T18:54:38.942Z"
     }
   ],
   "vip_pending": {

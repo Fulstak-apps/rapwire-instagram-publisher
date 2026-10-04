@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T01:08:03.772Z",
+  "checked_at": "2026-10-04T01:12:40.510Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T01:08:03.590Z",
+    "checked_at": "2026-10-04T01:12:40.340Z",
     "usage": 13,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T01:23:03.590Z",
+    "next_check_at": "2026-10-04T01:27:40.340Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "feed_interval_minutes": 120,
     "instagram_daily_cap": 10,
     "instagram_usage": 0,
-    "platform_quota_usage": 14,
+    "platform_quota_usage": 13,
     "instagram_remaining": 10,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-03T17:22:20.989Z",
@@ -44,11 +44,11 @@
   },
   "threads_interval_seconds": 7200,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-04T00:52:29.966Z",
-    "usage": 18,
+    "checked_at": "2026-10-04T01:12:40.162Z",
+    "usage": 17,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-04T01:07:29.966Z",
+    "next_check_at": "2026-10-04T01:27:40.162Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,8 +57,8 @@
   "publications": [],
   "failures": [
     {
-      "file": "rapwire-carousel-2026-10-03-0800.json",
-      "id": "rapwire-carousel-2026-10-03-0800",
+      "file": "1185-check-out-the-latest-trailer-for-ebenezer-and-see-johnny-depp-in.json",
+      "id": "1185-check-out-the-latest-trailer-for-ebenezer-and-see-johnny-depp-in",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"

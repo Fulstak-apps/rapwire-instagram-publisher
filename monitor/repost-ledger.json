@@ -21564,6 +21564,12 @@
       "source_handle": "hiphop_firstnewsmusic",
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DeEgP44oPDs/",
       "view_count": 0
+    },
+    "DeC7LinyH1-": {
+      "seen_at": "2026-10-04T15:18:49.562Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/p/DeC7LinyH1-/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -28436,74 +28442,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DeEgP44oPDs/",
       "queue_id": "1240-in-the-new-york-times-podcast-chris-rock-immediately-shut-down-a",
       "video": "media/1240-in-the-new-york-times-podcast-chris-rock-immediately-shut-down-a.mp4"
+    },
+    "DeDwGlNtmHe": {
+      "queued_at": "2026-10-04T15:46:43.136Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DeDwGlNtmHe/",
+      "queue_id": "1241-this-for-the-soul-even-when-you-re-soulless-pay-attention",
+      "video": "media/1241-this-for-the-soul-even-when-you-re-soulless-pay-attention.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-03T20:47:30.908Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-03T20:47:36.662Z"
-    },
-    {
-      "started_at": "2026-10-03T20:52:45.058Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-03T20:52:52.862Z"
-    },
-    {
-      "started_at": "2026-10-03T20:52:45.058Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-03T20:52:52.862Z"
-    },
-    {
-      "started_at": "2026-10-03T20:52:45.058Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-03T20:52:52.862Z"
-    },
-    {
-      "started_at": "2026-10-03T20:58:01.004Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-03T20:58:06.950Z"
-    },
     {
       "started_at": "2026-10-03T20:58:01.004Z",
       "candidates": 0,
@@ -33345,6 +33293,160 @@
         ]
       },
       "finished_at": "2026-10-04T15:12:33.376Z"
+    },
+    {
+      "started_at": "2026-10-04T15:17:53.626Z",
+      "candidates": 36,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "6ixbuzztv",
+          "source_url": "https://www.instagram.com/6ixbuzztv/p/DeC7LinyH1-/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        },
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/Ddr5JE1xcyE/",
+          "stage": "queue",
+          "error": "Captured media cannot be uniquely matched to the visible source video (0 matches); refusing unrelated media; inspect Ddr5JE1xcyE-capture-diagnostic.json"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-04T15:19:32.932Z"
+    },
+    {
+      "started_at": "2026-10-04T15:24:42.841Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-04T15:24:59.911Z"
+    },
+    {
+      "started_at": "2026-10-04T15:30:22.502Z",
+      "candidates": 29,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU0fO8TFPJs/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        },
+        {
+          "source_handle": "freshouttheculture",
+          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-04T15:32:10.830Z"
+    },
+    {
+      "started_at": "2026-10-04T15:37:23.914Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/DeC6kNJj4zi/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-04T15:38:13.599Z"
+    },
+    {
+      "started_at": "2026-10-04T15:43:28.406Z",
+      "candidates": 36,
+      "queued": [
+        "1241-this-for-the-soul-even-when-you-re-soulless-pay-attention"
+      ],
+      "errors": [
+        {
+          "source_handle": "ceddynash",
+          "source_url": "https://www.instagram.com/ceddynash/reel/DeDcn9BRdRt/",
+          "stage": "score",
+          "error": "Caption source does not match requested video shortcode"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 46,
+        "needed": 2
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-04T15:46:43.136Z"
     }
   ],
   "vip_pending": {

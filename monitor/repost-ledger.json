@@ -21684,6 +21684,12 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/funnysalesman/reel/DeE4m30BYk_/",
       "view_count": 0
+    },
+    "DeFZugmj1WS": {
+      "seen_at": "2026-10-04T20:09:08.403Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DeFZugmj1WS/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -28605,267 +28611,16 @@
       "source_url": "https://www.instagram.com/records/reel/DeFSYRiCGQq/",
       "queue_id": "1247-seven-years-ago-juice-wrld-and-nba-youngboy-joined-forces-on-ban",
       "video": "media/1247-seven-years-ago-juice-wrld-and-nba-youngboy-joined-forces-on-ban.mp4"
+    },
+    "DeFZugmj1WS": {
+      "queued_at": "2026-10-04T20:09:37.216Z",
+      "source_handle": "records",
+      "source_url": "https://www.instagram.com/records/p/DeFZugmj1WS/",
+      "queue_id": "1248-fayetteville-artist-pfg-just-dropped-the-visuals-for-his-song-en",
+      "video": "media/1248-fayetteville-artist-pfg-just-dropped-the-visuals-for-his-song-en.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-04T03:14:10.641Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:14:16.288Z"
-    },
-    {
-      "started_at": "2026-10-04T03:14:10.641Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:14:16.288Z"
-    },
-    {
-      "started_at": "2026-10-04T03:14:10.641Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:14:16.288Z"
-    },
-    {
-      "started_at": "2026-10-04T03:14:10.641Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:14:16.288Z"
-    },
-    {
-      "started_at": "2026-10-04T03:19:26.451Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:19:32.395Z"
-    },
-    {
-      "started_at": "2026-10-04T03:19:26.451Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:19:32.395Z"
-    },
-    {
-      "started_at": "2026-10-04T03:19:26.451Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:19:32.395Z"
-    },
-    {
-      "started_at": "2026-10-04T03:19:26.451Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:19:32.395Z"
-    },
-    {
-      "started_at": "2026-10-04T03:19:26.451Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:19:32.395Z"
-    },
-    {
-      "started_at": "2026-10-04T03:19:26.451Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T03:19:32.395Z"
-    },
-    {
-      "started_at": "2026-10-04T03:24:44.394Z",
-      "candidates": 48,
-      "queued": [
-        "1236-moments-before-an-disaster-lucki-was-just-rushed-to-the-hospital"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DeDeoSiNs15/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-10-04T03:25:49.561Z"
-    },
-    {
-      "started_at": "2026-10-04T03:24:44.394Z",
-      "candidates": 48,
-      "queued": [
-        "1236-moments-before-an-disaster-lucki-was-just-rushed-to-the-hospital"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DeDeoSiNs15/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-10-04T03:25:49.561Z"
-    },
-    {
-      "started_at": "2026-10-04T03:24:44.394Z",
-      "candidates": 48,
-      "queued": [
-        "1236-moments-before-an-disaster-lucki-was-just-rushed-to-the-hospital"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DeDeoSiNs15/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-10-04T03:25:49.561Z"
-    },
-    {
-      "started_at": "2026-10-04T03:24:44.394Z",
-      "candidates": 48,
-      "queued": [
-        "1236-moments-before-an-disaster-lucki-was-just-rushed-to-the-hospital"
-      ],
-      "errors": [
-        {
-          "source_handle": "trapmatictv",
-          "source_url": "https://www.instagram.com/trapmatictv/p/DeDeoSiNs15/",
-          "stage": "score",
-          "error": "Caption source does not match requested video shortcode"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-10-04T03:25:49.561Z"
-    },
     {
       "started_at": "2026-10-04T03:24:44.394Z",
       "candidates": 48,
@@ -33252,6 +33007,219 @@
         ]
       },
       "finished_at": "2026-10-04T18:54:38.942Z"
+    },
+    {
+      "started_at": "2026-10-04T19:00:02.076Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:00:09.858Z"
+    },
+    {
+      "started_at": "2026-10-04T19:05:19.044Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:05:25.067Z"
+    },
+    {
+      "started_at": "2026-10-04T19:10:33.874Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:10:40.327Z"
+    },
+    {
+      "started_at": "2026-10-04T19:15:49.189Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:15:55.193Z"
+    },
+    {
+      "started_at": "2026-10-04T19:21:04.560Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:21:10.660Z"
+    },
+    {
+      "started_at": "2026-10-04T19:26:20.785Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:26:26.941Z"
+    },
+    {
+      "started_at": "2026-10-04T19:31:36.527Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:31:42.251Z"
+    },
+    {
+      "started_at": "2026-10-04T19:36:54.398Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:37:05.431Z"
+    },
+    {
+      "started_at": "2026-10-04T19:42:13.802Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:42:20.493Z"
+    },
+    {
+      "started_at": "2026-10-04T19:47:28.944Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:47:36.373Z"
+    },
+    {
+      "started_at": "2026-10-04T19:52:45.238Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:52:51.991Z"
+    },
+    {
+      "started_at": "2026-10-04T19:58:01.249Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T19:58:08.011Z"
+    },
+    {
+      "started_at": "2026-10-04T20:03:17.476Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T20:03:23.593Z"
+    },
+    {
+      "started_at": "2026-10-04T20:08:31.902Z",
+      "candidates": 41,
+      "queued": [
+        "1248-fayetteville-artist-pfg-just-dropped-the-visuals-for-his-song-en"
+      ],
+      "errors": [
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeDOXg7PG0Q/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeDhB2GRdC2/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        },
+        {
+          "source_handle": "larp.lor.d",
+          "source_url": "https://www.instagram.com/larp.lor.d/reel/DeDi0rJRFrh/",
+          "stage": "score",
+          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 1,
+        "count": 5,
+        "handles": [
+          "larp.lor.d",
+          "freshouttheculture",
+          "records",
+          "darnellwilliams"
+        ]
+      },
+      "finished_at": "2026-10-04T20:09:37.217Z"
     }
   ],
   "vip_pending": {

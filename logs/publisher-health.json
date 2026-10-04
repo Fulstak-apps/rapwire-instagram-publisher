@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T05:45:39.757Z",
+  "checked_at": "2026-10-04T05:50:34.375Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,25 +44,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-04T05:35:26.935Z",
-    "usage": 13,
+    "checked_at": "2026-10-04T05:50:34.192Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-04T05:50:26.935Z",
+    "next_check_at": "2026-10-04T06:05:34.192Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-04T07:15:39.144Z",
-  "publications": [
-    {
-      "file": "1192-mac-miller-is-gone-but-never-forgotten-a-10th-anniversary-editio.json",
-      "id": "1192-mac-miller-is-gone-but-never-forgotten-a-10th-anniversary-editio",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18009400985992018"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

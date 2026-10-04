@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T00:12:06.008Z",
+  "checked_at": "2026-10-04T00:17:13.995Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T00:12:05.446Z",
+    "checked_at": "2026-10-04T00:17:13.804Z",
     "usage": 15,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T00:27:05.446Z",
+    "next_check_at": "2026-10-04T00:32:13.804Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 7200,
   "threads_publishing_quota": {
     "checked_at": "2026-10-04T00:12:04.835Z",
-    "usage": 18,
+    "usage": 19,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-04T00:27:04.835Z",
@@ -53,8 +53,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-04T00:10:30.675Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-10-04T02:17:13.249Z",
+  "publications": [
+    {
+      "file": "1184-banks-says-he-understands-how-kaicenat-spent-3-7-million-on-clov.json",
+      "id": "1184-banks-says-he-understands-how-kaicenat-spent-3-7-million-on-clov",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17921877450437502"
+    }
+  ],
+  "failures": [
+    {
+      "file": "1184-banks-says-he-understands-how-kaicenat-spent-3-7-million-on-clov.json",
+      "id": "1184-banks-says-he-understands-how-kaicenat-spent-3-7-million-on-clov",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

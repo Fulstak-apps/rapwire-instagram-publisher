@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T04:07:33.201Z",
+  "checked_at": "2026-10-04T04:09:29.266Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-04T05:37:32.943Z",
-  "publications": [
-    {
-      "file": "1191-while-the-controversy-surrounding-reggie-has-been-unfolding-ray-.json",
-      "id": "1191-while-the-controversy-surrounding-reggie-has-been-unfolding-ray-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18011123951972424"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

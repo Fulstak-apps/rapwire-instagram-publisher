@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T10:15:09.605Z",
+  "checked_at": "2026-10-04T10:40:59.004Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T10:15:02.319Z",
-    "usage": 8,
+    "checked_at": "2026-10-04T10:40:49.799Z",
+    "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T10:30:02.319Z",
+    "next_check_at": "2026-10-04T10:55:49.799Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 3,
+    "instagram_usage": 4,
     "platform_quota_usage": 7,
-    "instagram_remaining": 7,
+    "instagram_remaining": 6,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-04T11:45:08.671Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,24 +44,23 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-04T10:15:02.106Z",
-    "usage": 11,
+    "checked_at": "2026-10-04T10:40:50.055Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-04T10:30:02.106Z",
+    "next_check_at": "2026-10-04T10:55:50.055Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-04T08:52:04.255Z",
+  "threads_next_eligible_at": "2026-10-04T12:10:58.534Z",
   "publications": [
     {
-      "file": "1193-ray-j-was-taken-to-the-hospital-after-having-a-medical-scare-dur.json",
-      "id": "1193-ray-j-was-taken-to-the-hospital-after-having-a-medical-scare-dur",
-      "platform": "instagram",
+      "file": "1194-bright-lights-vice-city-a-night-in-vice-city-tips-off-november-1.json",
+      "id": "1194-bright-lights-vice-city-a-night-in-vice-city-tips-off-november-1",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18118502329748210",
-      "content_type": "video"
+      "media_id": "18359361859219009"
     }
   ],
   "failures": [],

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T23:29:48.795Z",
+  "checked_at": "2026-10-04T23:35:10.875Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T23:29:48.209Z",
-    "usage": 9,
+    "checked_at": "2026-10-04T23:35:02.701Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T23:44:48.209Z",
+    "next_check_at": "2026-10-04T23:50:02.701Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-04T23:27:53.488Z",
+    "next_feed_eligible_at": "2026-10-05T01:05:10.523Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-04T23:29:47.592Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-04T23:44:47.592Z",
@@ -53,8 +53,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-04T23:27:45.483Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-05T01:05:01.835Z",
+  "publications": [
+    {
+      "file": "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-.json",
+      "id": "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18075870236719478"
+    },
+    {
+      "file": "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-.json",
+      "id": "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18110507213135250",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

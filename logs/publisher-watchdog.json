@@ -1,18 +1,18 @@
 {
-  "reserve_count": 50,
-  "reserve_hours": 25,
+  "reserve_count": 48,
+  "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
-  "processing": [],
+  "overdue": true,
+  "health_stale": true,
+  "processing": [
+    "1193-ray-j-was-taken-to-the-hospital-after-having-a-medical-scare-dur"
+  ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1191-while-the-controversy-surrounding-reggie-has-been-unfolding-ray-",
-    "1192-mac-miller-is-gone-but-never-forgotten-a-10th-anniversary-editio",
     "1193-ray-j-was-taken-to-the-hospital-after-having-a-medical-scare-dur",
     "1194-bright-lights-vice-city-a-night-in-vice-city-tips-off-november-1",
     "1195-reggie-s-older-brother-james-mack-says-reggie-is-outrageous-for-",
@@ -59,11 +59,11 @@
     "1236-moments-before-an-disaster-lucki-was-just-rushed-to-the-hospital",
     "1237-lucki-and-playboi-carti-playboicarti-s-teams-seemingly-get-into-",
     "1238-lucki-talking-about-his-love-for-playboicarti-just-last-year-luc",
-    "rapwire-carousel-2026-10-02-1700",
-    "rapwire-carousel-2026-10-03-0800"
+    "1239-mississippi-s-very-own-continues-to-make-his-presence-felt-with-",
+    "rapwire-carousel-2026-10-02-1700"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-04T03:53:06.240Z",
+  "checked_at": "2026-10-04T10:14:22.684Z",
   "deferred": []
 }

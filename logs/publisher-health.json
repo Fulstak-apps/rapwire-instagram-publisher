@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T19:55:10.750Z",
+  "checked_at": "2026-10-04T20:00:26.572Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T19:55:10.130Z",
-    "usage": 7,
+    "checked_at": "2026-10-04T20:00:20.041Z",
+    "usage": 8,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T20:10:10.130Z",
+    "next_check_at": "2026-10-04T20:15:20.041Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 7,
     "instagram_remaining": 3,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-04T19:51:48.913Z",
+    "next_feed_eligible_at": "2026-10-04T21:30:26.223Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -54,7 +54,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-04T21:20:13.993Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1200-what-s-your-all-time-favorite-festival-moment-hit-the-premiere-r.json",
+      "id": "1200-what-s-your-all-time-favorite-festival-moment-hit-the-premiere-r",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18095364362446012",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

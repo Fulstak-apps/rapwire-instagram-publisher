@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T02:53:52.320Z",
+  "checked_at": "2026-10-04T02:58:50.060Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T02:53:52.188Z",
+    "checked_at": "2026-10-04T02:58:49.235Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T03:08:52.188Z",
+    "next_check_at": "2026-10-04T03:13:49.235Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "feed_interval_minutes": 120,
     "instagram_daily_cap": 10,
     "instagram_usage": 0,
-    "platform_quota_usage": 11,
+    "platform_quota_usage": 10,
     "instagram_remaining": 10,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-03T17:22:20.989Z",
@@ -55,14 +55,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-04T04:30:05.602Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "1188-fomo-drops-tonight-which-song-are-you-most-excited-for-on-this-d.json",
-      "id": "1188-fomo-drops-tonight-which-song-are-you-most-excited-for-on-this-d",
-      "platform": "instagram",
-      "status": "failed",
-      "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

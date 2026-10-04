@@ -21263,6 +21263,18 @@
       "source_handle": "complexmusic",
       "source_url": "https://www.instagram.com/complex/reel/DeDFU1KRE2W/",
       "view_count": 0
+    },
+    "DeDWByACTsm": {
+      "seen_at": "2026-10-04T00:38:18.388Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DeDWByACTsm/",
+      "view_count": 0
+    },
+    "DeDUq_KGcbr": {
+      "seen_at": "2026-10-04T00:38:18.390Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DeDUq_KGcbr/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -28072,54 +28084,16 @@
       "source_url": "https://www.instagram.com/trapmatictv/reel/DeDRdavtPUU/",
       "queue_id": "1231-zillionairedoe-just-dropped-proud-of-you-a-motivational-track-ab",
       "video": "media/1231-zillionairedoe-just-dropped-proud-of-you-a-motivational-track-ab.mp4"
+    },
+    "DeDWByACTsm": {
+      "queued_at": "2026-10-04T00:39:12.771Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DeDWByACTsm/",
+      "queue_id": "1232-before-ken-carson-kencarson-hits-the-stage-tonight-we-asked-fans",
+      "video": "media/1232-before-ken-carson-kencarson-hits-the-stage-tonight-we-asked-fans.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-02T02:50:38.139Z",
-      "candidates": 36,
-      "queued": [
-        "1187-judge-says-rick-ross-will-be-treated-just-like-everyone-else-aft"
-      ],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 3,
-        "count": 5,
-        "handles": [
-          "6ixbuzztv",
-          "br0adwaychr0niclez",
-          "ceddynash",
-          "rockstargames"
-        ]
-      },
-      "finished_at": "2026-10-02T02:51:57.865Z"
-    },
-    {
-      "started_at": "2026-10-02T02:57:14.552Z",
-      "candidates": 12,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-10-02T02:57:30.916Z"
-    },
     {
       "started_at": "2026-10-02T03:02:39.474Z",
       "candidates": 48,
@@ -33559,6 +33533,44 @@
         ]
       },
       "finished_at": "2026-10-04T00:27:10.053Z"
+    },
+    {
+      "started_at": "2026-10-04T00:32:28.471Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T00:32:35.986Z"
+    },
+    {
+      "started_at": "2026-10-04T00:37:47.385Z",
+      "candidates": 48,
+      "queued": [
+        "1232-before-ken-carson-kencarson-hits-the-stage-tonight-we-asked-fans"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-04T00:39:12.771Z"
     }
   ],
   "vip_pending": {

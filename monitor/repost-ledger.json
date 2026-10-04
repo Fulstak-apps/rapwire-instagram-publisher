@@ -28269,52 +28269,16 @@
       "source_url": "https://www.instagram.com/raplisted_/reel/DeDjNMnIqGn/",
       "queue_id": "1236-moments-before-an-disaster-lucki-was-just-rushed-to-the-hospital",
       "video": "media/1236-moments-before-an-disaster-lucki-was-just-rushed-to-the-hospital.mp4"
+    },
+    "DeDb5NWADo8": {
+      "queued_at": "2026-10-04T03:37:42.116Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/p/DeDb5NWADo8/",
+      "queue_id": "1237-lucki-and-playboi-carti-playboicarti-s-teams-seemingly-get-into-",
+      "video": "media/1237-lucki-and-playboi-carti-playboicarti-s-teams-seemingly-get-into-.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-02T15:01:57.227Z",
-      "candidates": 12,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 46,
-        "needed": 2
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-10-02T15:02:13.693Z"
-    },
-    {
-      "started_at": "2026-10-02T15:07:22.440Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 46,
-        "needed": 2
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-10-02T15:07:53.301Z"
-    },
     {
       "started_at": "2026-10-02T15:13:02.307Z",
       "candidates": 41,
@@ -33626,6 +33590,44 @@
         ]
       },
       "finished_at": "2026-10-04T03:25:49.561Z"
+    },
+    {
+      "started_at": "2026-10-04T03:31:20.193Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T03:31:28.468Z"
+    },
+    {
+      "started_at": "2026-10-04T03:36:37.339Z",
+      "candidates": 36,
+      "queued": [
+        "1237-lucki-and-playboi-carti-playboicarti-s-teams-seemingly-get-into-"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-04T03:37:42.116Z"
     }
   ],
   "vip_pending": {

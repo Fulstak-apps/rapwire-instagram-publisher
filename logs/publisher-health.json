@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T23:35:10.875Z",
+  "checked_at": "2026-10-04T23:40:01.006Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-05T01:05:10.523Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,23 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-05T01:05:01.835Z",
-  "publications": [
-    {
-      "file": "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-.json",
-      "id": "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18075870236719478"
-    },
-    {
-      "file": "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-.json",
-      "id": "1204-top-3-videos-of-all-time-why-is-he-moving-like-that-rapper-rick-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18110507213135250",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

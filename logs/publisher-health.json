@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T02:49:05.042Z",
+  "checked_at": "2026-10-04T02:53:52.320Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T02:49:04.899Z",
-    "usage": 11,
+    "checked_at": "2026-10-04T02:53:52.188Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T03:04:04.899Z",
+    "next_check_at": "2026-10-04T03:08:52.188Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -44,11 +44,11 @@
   },
   "threads_interval_seconds": 7200,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-04T02:33:33.536Z",
-    "usage": 16,
+    "checked_at": "2026-10-04T02:53:51.436Z",
+    "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-04T02:48:33.536Z",
+    "next_check_at": "2026-10-04T03:08:51.436Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,8 +57,8 @@
   "publications": [],
   "failures": [
     {
-      "file": "rapwire-carousel-2026-10-03-0800.json",
-      "id": "rapwire-carousel-2026-10-03-0800",
+      "file": "1188-fomo-drops-tonight-which-song-are-you-most-excited-for-on-this-d.json",
+      "id": "1188-fomo-drops-tonight-which-song-are-you-most-excited-for-on-this-d",
       "platform": "instagram",
       "status": "failed",
       "error": "Rolling-day safety cap reached (feed plus Stories); queued for later"

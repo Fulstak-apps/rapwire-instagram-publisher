@@ -28530,61 +28530,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DeFKsTRAtE8/",
       "queue_id": "1244-man-explains-to-nypd-that-he-don-t-go-no-where-without-his-blick",
       "video": "media/1244-man-explains-to-nypd-that-he-don-t-go-no-where-without-his-blick.mp4"
+    },
+    "DeFHuO7hIM7": {
+      "queued_at": "2026-10-04T17:59:23.573Z",
+      "source_handle": "raplisted_",
+      "source_url": "https://www.instagram.com/raplisted_/reel/DeFHuO7hIM7/",
+      "queue_id": "1245-fans-took-a-trip-to-explore-nba-youngboy-s-abandoned-grave-digge",
+      "video": "media/1245-fans-took-a-trip-to-explore-nba-youngboy-s-abandoned-grave-digge.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-03T21:31:22.153Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-03T21:31:31.724Z"
-    },
-    {
-      "started_at": "2026-10-03T21:36:41.784Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-03T21:36:48.336Z"
-    },
-    {
-      "started_at": "2026-10-03T21:36:41.784Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-03T21:36:48.336Z"
-    },
-    {
-      "started_at": "2026-10-03T21:36:41.784Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-03T21:36:48.336Z"
-    },
     {
       "started_at": "2026-10-03T21:41:59.279Z",
       "candidates": 0,
@@ -33566,6 +33521,77 @@
         ]
       },
       "finished_at": "2026-10-04T17:35:56.877Z"
+    },
+    {
+      "started_at": "2026-10-04T17:42:03.555Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T17:42:16.115Z"
+    },
+    {
+      "started_at": "2026-10-04T17:47:29.112Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-04T17:47:35.917Z"
+    },
+    {
+      "started_at": "2026-10-04T17:52:44.440Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-04T17:53:03.025Z"
+    },
+    {
+      "started_at": "2026-10-04T17:58:12.681Z",
+      "candidates": 48,
+      "queued": [
+        "1245-fans-took-a-trip-to-explore-nba-youngboy-s-abandoned-grave-digge"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-04T17:59:23.573Z"
     }
   ],
   "vip_pending": {

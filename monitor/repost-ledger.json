@@ -28065,87 +28065,16 @@
       "source_url": "https://www.instagram.com/complex/reel/DeDR69Zg9j-/",
       "queue_id": "1230-your-favorite-streamer-s-favorite-streamer-is-in-the-building-co",
       "video": "media/1230-your-favorite-streamer-s-favorite-streamer-is-in-the-building-co.mp4"
+    },
+    "DeDRdavtPUU": {
+      "queued_at": "2026-10-04T00:27:10.053Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/reel/DeDRdavtPUU/",
+      "queue_id": "1231-zillionairedoe-just-dropped-proud-of-you-a-motivational-track-ab",
+      "video": "media/1231-zillionairedoe-just-dropped-proud-of-you-a-motivational-track-ab.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-02T02:38:52.396Z",
-      "candidates": 48,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "akademiks",
-          "source_url": "https://www.instagram.com/akademiks/p/Dd-WToFjUYI/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 0,
-        "count": 5,
-        "handles": [
-          "trapmatictv",
-          "raplisted_",
-          "akademiks",
-          "traploreross"
-        ]
-      },
-      "finished_at": "2026-10-02T02:39:33.548Z"
-    },
-    {
-      "started_at": "2026-10-02T02:44:42.545Z",
-      "candidates": 41,
-      "queued": [],
-      "errors": [
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd-M3wTP5If/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd-bakzRPiB/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "larp.lor.d",
-          "source_url": "https://www.instagram.com/larp.lor.d/reel/Dd-ME9wviLe/",
-          "stage": "score",
-          "error": "Exact source caption is generic, boilerplate, or truncated; needs review"
-        },
-        {
-          "source_handle": "freshouttheculture",
-          "source_url": "https://www.instagram.com/freshouttheculture/p/DU23wNNDw2l/",
-          "stage": "queue",
-          "error": "Exact post does not have one unambiguous visible video"
-        }
-      ],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 1,
-        "count": 5,
-        "handles": [
-          "larp.lor.d",
-          "freshouttheculture",
-          "records",
-          "darnellwilliams"
-        ]
-      },
-      "finished_at": "2026-10-02T02:45:24.238Z"
-    },
     {
       "started_at": "2026-10-02T02:50:38.139Z",
       "candidates": 36,
@@ -33585,6 +33514,51 @@
         ]
       },
       "finished_at": "2026-10-04T00:15:22.387Z"
+    },
+    {
+      "started_at": "2026-10-04T00:20:42.554Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-04T00:21:03.048Z"
+    },
+    {
+      "started_at": "2026-10-04T00:26:13.061Z",
+      "candidates": 48,
+      "queued": [
+        "1231-zillionairedoe-just-dropped-proud-of-you-a-motivational-track-ab"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-04T00:27:10.053Z"
     }
   ],
   "vip_pending": {

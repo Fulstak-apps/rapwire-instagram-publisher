@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T18:18:24.883Z",
+  "checked_at": "2026-10-04T18:21:49.244Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,13 +8,13 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-04T18:16:36.318Z",
-    "usage": 6,
+    "checked_at": "2026-10-04T18:21:42.914Z",
+    "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-04T18:31:36.318Z",
+    "next_check_at": "2026-10-04T18:36:42.914Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "platform_quota_usage": 6,
     "instagram_remaining": 4,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-04T18:10:21.795Z",
+    "next_feed_eligible_at": "2026-10-04T19:51:48.913Z",
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -54,7 +54,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-04T19:40:26.222Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1199-fridayy-takes-it-back-to-the-80s-with-the-visuals-for-his-viral-.json",
+      "id": "1199-fridayy-takes-it-back-to-the-80s-with-the-visuals-for-his-viral-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17960374848234930",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-10-05-1400",
-  "status": "ready",
+  "status": "published",
   "type": "original_editorial_carousel",
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
@@ -154,5 +154,16 @@
     "confirmed_publications": 0,
     "error": "Feed cadence: at least 90 minutes between confirmed posts. Instagram budget: 10 feed/Story publications per rolling 24 hours; 0 available at start of run, 0 reserved for outstanding Stories. Next feed no earlier than: 2026-10-05T22:02:39.099Z. Threads: 90-minute video publishing cadence, with separate retry checks for in-flight uploads; quota 12/250.",
     "next_retry_after": "2026-10-05T22:02:39.099Z"
-  }
+  },
+  "threads_status": "published",
+  "threads_media_id": "17911667691469831",
+  "threads_published_at": "2026-10-05T22:10:03.714Z",
+  "threads_verified_at": "2026-10-05T22:10:04.342Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DeIP2DmgZIN",
+  "instagram_media_id": "17890792620449454",
+  "published_at": "2026-10-05T22:14:42.444Z",
+  "instagram_verified_at": "2026-10-05T22:14:42.523Z",
+  "instagram_permalink": "https://www.instagram.com/p/DeIQfZdgf50/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
 }

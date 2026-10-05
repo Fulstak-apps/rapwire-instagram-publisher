@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T22:25:26.219Z",
+  "checked_at": "2026-10-05T23:33:49.013Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-05T22:14:37.970Z",
+    "checked_at": "2026-10-05T23:33:48.456Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-05T22:29:37.970Z",
+    "next_check_at": "2026-10-05T23:48:48.456Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -44,11 +44,11 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-05T22:25:26.001Z",
+    "checked_at": "2026-10-05T23:33:48.812Z",
     "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-05T22:40:26.001Z",
+    "next_check_at": "2026-10-05T23:48:48.812Z",
     "reason": "Capacity available",
     "valid": true
   },

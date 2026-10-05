@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T18:26:05.498Z",
+  "checked_at": "2026-10-05T18:31:20.625Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-05T18:21:03.719Z",
-    "usage": 10,
+    "checked_at": "2026-10-05T18:31:10.461Z",
+    "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-05T18:36:03.719Z",
+    "next_check_at": "2026-10-05T18:46:10.461Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -31,10 +31,10 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-05T18:27:43.693Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-05T18:21:04.265Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-05T18:36:04.265Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-05T18:22:14.232Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-05T20:01:19.700Z",
+  "publications": [
+    {
+      "file": "1222-ken-carson-kencarson-has-his-own-booth-and-toilet-at-complexcon.json",
+      "id": "1222-ken-carson-kencarson-has-his-own-booth-and-toilet-at-complexcon",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17930639799413327"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T15:06:19.356Z",
+  "checked_at": "2026-10-05T15:11:57.482Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-05T15:06:18.170Z",
-    "usage": 9,
+    "checked_at": "2026-10-05T15:11:42.961Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-05T15:21:18.170Z",
+    "next_check_at": "2026-10-05T15:26:42.961Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-05T14:13:11.320Z",
+    "next_feed_eligible_at": "2026-10-05T16:41:49.834Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-05T15:06:18.032Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-05T15:21:18.032Z",
@@ -53,8 +53,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-05T14:50:17.650Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-05T16:41:57.109Z",
+  "publications": [
+    {
+      "file": "1217-ross-the-only-rapper-in-history-to-never-break-character.json",
+      "id": "1217-ross-the-only-rapper-in-history-to-never-break-character",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18102476252633053",
+      "content_type": "video"
+    },
+    {
+      "file": "1218-ben10-emergency-bond-hearing-update-part-3-feds-admitted-they-ac.json",
+      "id": "1218-ben10-emergency-bond-hearing-update-part-3-feds-admitted-they-ac",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18107756873620157"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

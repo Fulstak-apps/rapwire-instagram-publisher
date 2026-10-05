@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T06:55:15.361Z",
+  "checked_at": "2026-10-05T07:00:10.320Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-05T08:25:15.069Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -54,16 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-05T07:34:34.504Z",
-  "publications": [
-    {
-      "file": "1215-this-what-otf-jam-thought-he-was-doing-yall.json",
-      "id": "1215-this-what-otf-jam-thought-he-was-doing-yall",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18076626782414963",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

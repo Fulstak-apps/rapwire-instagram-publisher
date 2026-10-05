@@ -22116,6 +22116,60 @@
       "source_handle": "records",
       "source_url": "https://www.instagram.com/onthatnotetv/reel/DeF346Zt3Qq/",
       "view_count": 0
+    },
+    "DeGTFgkG14N": {
+      "seen_at": "2026-10-05T04:06:46.648Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexstyle/p/DeGTFgkG14N/",
+      "view_count": 0
+    },
+    "DeGSuLmJEZJ": {
+      "seen_at": "2026-10-05T04:06:46.651Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DeGSuLmJEZJ/",
+      "view_count": 0
+    },
+    "DeGSPXbFAJe": {
+      "seen_at": "2026-10-05T04:06:46.651Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DeGSPXbFAJe/",
+      "view_count": 0
+    },
+    "DeGRIRLJu81": {
+      "seen_at": "2026-10-05T04:06:46.651Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DeGRIRLJu81/",
+      "view_count": 0
+    },
+    "DeGP9g8lNvl": {
+      "seen_at": "2026-10-05T04:06:46.651Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/p/DeGP9g8lNvl/",
+      "view_count": 0
+    },
+    "DeGPGbDAT-z": {
+      "seen_at": "2026-10-05T04:06:46.651Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complex/reel/DeGPGbDAT-z/",
+      "view_count": 0
+    },
+    "DeGO2BHuB9e": {
+      "seen_at": "2026-10-05T04:06:46.651Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexbets/reel/DeGO2BHuB9e/",
+      "view_count": 0
+    },
+    "DeGO4p8Jv4h": {
+      "seen_at": "2026-10-05T04:06:46.651Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DeGO4p8Jv4h/",
+      "view_count": 0
+    },
+    "DeGMzIYp6lF": {
+      "seen_at": "2026-10-05T04:06:46.651Z",
+      "source_handle": "complexmusic",
+      "source_url": "https://www.instagram.com/complexmusic/reel/DeGMzIYp6lF/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -29114,35 +29168,16 @@
       "source_url": "https://www.instagram.com/onthatnotetv/reel/DeGSddjOrBy/",
       "queue_id": "1258-playboi-carti-s-new-complexcon-stage",
       "video": "media/1258-playboi-carti-s-new-complexcon-stage.mp4"
+    },
+    "DeFSsvrD1RM": {
+      "queued_at": "2026-10-05T04:13:59.951Z",
+      "source_handle": "6ixbuzztv",
+      "source_url": "https://www.instagram.com/6ixbuzztv/p/DeFSsvrD1RM/",
+      "queue_id": "1259-twitch-streamer-bendadonnn-and-his-security-team-were-reportedly",
+      "video": "media/1259-twitch-streamer-bendadonnn-and-his-security-team-were-reportedly.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-04T04:26:14.657Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T04:26:20.777Z"
-    },
-    {
-      "started_at": "2026-10-04T04:26:14.657Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T04:26:20.777Z"
-    },
     {
       "started_at": "2026-10-04T04:26:14.657Z",
       "candidates": 0,
@@ -33810,6 +33845,61 @@
         ]
       },
       "finished_at": "2026-10-05T04:00:46.825Z"
+    },
+    {
+      "started_at": "2026-10-05T04:06:13.200Z",
+      "candidates": 48,
+      "queued": [],
+      "errors": [
+        {
+          "source_handle": "hiphopdx",
+          "source_url": "https://www.instagram.com/uproxx/p/Dd6qW6KEWF6/",
+          "stage": "queue",
+          "error": "Exact post does not have one unambiguous visible video"
+        }
+      ],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 2,
+        "count": 5,
+        "handles": [
+          "complexmusic",
+          "xxl",
+          "hiphopdx",
+          "hiphop_firstnewsmusic"
+        ]
+      },
+      "finished_at": "2026-10-05T04:06:58.566Z"
+    },
+    {
+      "started_at": "2026-10-05T04:12:07.125Z",
+      "candidates": 36,
+      "queued": [
+        "1259-twitch-streamer-bendadonnn-and-his-security-team-were-reportedly"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-05T04:13:59.951Z"
     }
   ],
   "vip_pending": {

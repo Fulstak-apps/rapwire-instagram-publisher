@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T06:50:01.961Z",
+  "checked_at": "2026-10-05T06:55:15.361Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-05T06:50:01.129Z",
-    "usage": 9,
+    "checked_at": "2026-10-05T06:55:08.779Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-05T07:05:01.129Z",
+    "next_check_at": "2026-10-05T07:10:08.779Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,10 +27,10 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
     "instagram_usage": 9,
-    "platform_quota_usage": 10,
+    "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-05T06:49:41.101Z",
+    "next_feed_eligible_at": "2026-10-05T08:25:15.069Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,17 +44,26 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-05T06:39:52.982Z",
+    "checked_at": "2026-10-05T06:55:08.551Z",
     "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-05T06:54:52.982Z",
+    "next_check_at": "2026-10-05T07:10:08.551Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-05T07:34:34.504Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1215-this-what-otf-jam-thought-he-was-doing-yall.json",
+      "id": "1215-this-what-otf-jam-thought-he-was-doing-yall",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18076626782414963",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

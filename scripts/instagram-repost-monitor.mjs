@@ -5,6 +5,7 @@ import { promisify } from "node:util";
 import { capture, launch } from "./instagram-browser-mirror.mjs";
 import { sourceCaption, buildVideoCaption, captionIsBound } from "./video-caption.mjs";
 import { failedCandidates } from "./candidate-backoff.mjs";
+import { rankViralCandidates, publishPriorityFor } from "./viral-selection.mjs";
 
 const execFileAsync = promisify(execFile);
 const gitTimeoutMs = 60_000;
@@ -63,7 +64,7 @@ const ledgerPath = path.join(root, "monitor", "repost-ledger.json");
 const lockPath = path.join(root, "monitor", "repost-monitor.lock");
 const queueDir = path.join(root, "queue");
 const mediaDir = path.join(root, "media");
-const hotArtistsPath = path.join(root, "monitor", "hot-artists.json");
+const growthFeedbackPath = path.join(root, "logs", "growth-feedback.json");
 
 // Keep the source registry in monitor/sources.json as the single source of
 // truth.  The old collector had a second hard-coded list here, so adding a
@@ -121,7 +122,7 @@ const maxQueuePerRun = 1;
 // Keep several already-validated source videos ahead of the publisher.  An
 // Instagram container in progress is counted as reserved inventory, so the
 // collector does not duplicate it while Meta processes the upload.
-// Keep twelve hours of inventory at the 30-minute Instagram cadence, enough
+// Keep twelve hours of inventory at the current 90-minute Instagram cadence, enough
 // to bridge the longest reported source-collection outage. Items count only
 // after full capture/render validation. Collection remains bounded to one new
 // capture per pass to avoid browser contention and incomplete media.
@@ -241,12 +242,20 @@ async function discoverFromProfile(context, source) {
 }
 
 function viewCountFromText(value) {
-  const match = String(value || "").match(/([\d,.]+)\s*([KMB])?\s+views?\b/i);
-  if (!match) return 0;
-  const number = Number(match[1].replace(/,/g, ""));
-  if (!Number.isFinite(number)) return 0;
-  const multiplier = { k: 1_000, m: 1_000_000, b: 1_000_000_000 }[String(match[2] || "").toLowerCase()] || 1;
-  return Math.round(number * multiplier);
+  const counts = [...String(value || "").matchAll(/([\d,.]+)\s*([KMB])?\s+views?\b/gi)].map(match => {
+    const number = Number(match[1].replace(/,/g, ""));
+    if (!Number.isFinite(number)) return 0;
+    const multiplier = { k: 1_000, m: 1_000_000, b: 1_000_000_000 }[String(match[2] || "").toLowerCase()] || 1;
+    return Math.round(number * multiplier);
+  });
+  return Math.max(0, ...counts);
+}
+
+function viewCountFromStructuredText(value) {
+  const counts = [...String(value || "").matchAll(/"(?:video_view_count|play_count|view_count|viewCount|videoViewCount)"\s*:\s*"?(\d+)/g)]
+    .map(match => Number(match[1]))
+    .filter(Number.isFinite);
+  return Math.max(0, ...counts);
 }
 
 async function readPostMetadata(context, url) {
@@ -257,14 +266,18 @@ async function readPostMetadata(context, url) {
     await gotoBounded(page, url);
     await page.locator('meta[property="og:url"]').waitFor({ state: "attached", timeout: 12_000 }).catch(() => {});
     const get = property => page.locator(`meta[property="${property}"]`).getAttribute("content", { timeout: 5000 }).catch(() => "");
-    const [canonicalUrl, title, description, ogVideo] = await Promise.all([get("og:url"),get("og:title"),get("og:description"),get("og:video")]);
+    const [canonicalUrl, title, description, ogVideo, visibleText, structuredText] = await Promise.all([
+      get("og:url"), get("og:title"), get("og:description"), get("og:video"),
+      page.locator("body").innerText({ timeout: 5000 }).catch(() => ""),
+      page.locator('script[type="application/ld+json"], script').allTextContents().then(parts => parts.join("\n")).catch(() => "")
+    ]);
     return {
       caption: sourceCaption({ requestedUrl:url, canonicalUrl, title, description }),
       // A normal Instagram post URL can contain a video too.  On headless
       // pages the media element often is not created until after scrolling,
       // so URL/OG metadata are the reliable early signal for capture.
       isVideo: /\/reel\//.test(url) || Boolean(ogVideo) || await page.locator("video").count() > 0,
-      viewCount: viewCountFromText(description)
+      viewCount: Math.max(viewCountFromText(description), viewCountFromText(visibleText), viewCountFromStructuredText(structuredText))
     };
   } finally {
     await page.close();
@@ -344,7 +357,7 @@ async function queueCapture(ledger, candidate, queueNumber) {
   const queueItem = {
     id,
     status: "ready",
-    publish_priority: 50,
+    publish_priority: publishPriorityFor(candidate),
     date: new Date().toISOString().slice(0, 10),
     timezone: "America/Detroit",
     content_type: "video",
@@ -366,6 +379,9 @@ async function queueCapture(ledger, candidate, queueNumber) {
     // enforced by expire-stale-queue.py instead of pausing it immediately.
     source_discovered_at: evidence.captured_at || new Date().toISOString(),
     source_view_count_at_selection: Number(candidate.viewCount || 0),
+    source_view_velocity_at_selection: Number(candidate.viewVelocity || 0),
+    viral_score_at_selection: Number(candidate.viralScore || 0),
+    selection_reason: Number(candidate.viewCount || 0) > 0 ? "viral_view_ranked" : "freshness_fallback",
     visual_asset_type: "source_video",
     visual_asset_rights: "source_post_repost",
     source_video_used: true,
@@ -556,7 +572,7 @@ try {
     queued_shortcodes: {},
     runs: []
   });
-  const hotArtists = await readJson(hotArtistsPath, []);
+  const growthFeedback = await readJson(growthFeedbackPath, {});
 
   const run = {
     started_at: new Date().toISOString(),
@@ -700,25 +716,34 @@ try {
   });
   run.candidates = discovered.length;
   for (const item of discovered) {
+    const previous = ledger.seen_shortcodes[item.shortcode] || {};
+    const checkedAt = new Date().toISOString();
+    const previousCount = Number(previous.view_count || 0);
+    const nextCount = Number(item.viewCount || 0) || previousCount;
+    const previousAt = Date.parse(previous.view_count_checked_at || previous.seen_at || "");
+    const elapsedHours = previousAt > 0 ? (Date.now() - previousAt) / 3600000 : 0;
+    item.viewVelocity = nextCount > previousCount && elapsedHours > 0 ? (nextCount - previousCount) / elapsedHours : 0;
     ledger.seen_shortcodes[item.shortcode] = {
-      seen_at: ledger.seen_shortcodes[item.shortcode]?.seen_at || new Date().toISOString(),
+      seen_at: previous.seen_at || checkedAt,
       source_handle: item.source.handle,
       source_url: item.url,
-      view_count: item.viewCount || ledger.seen_shortcodes[item.shortcode]?.view_count || 0
+      view_count: nextCount,
+      view_count_checked_at: checkedAt,
+      view_velocity: item.viewVelocity
     };
   }
   
-  // VIRAL-FIRST & ARTIST PRIORITY SCORING
-  const rankedCandidates = rankedPool
-    .sort((left, right) => {
-      const escapeRegex = value => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      const leftHot = hotArtists.some(artist => new RegExp(`\\b${escapeRegex(artist)}\\b`, "i").test(left.visibleCaption || ""));
-      const rightHot = hotArtists.some(artist => new RegExp(`\\b${escapeRegex(artist)}\\b`, "i").test(right.visibleCaption || ""));
-      if (leftHot !== rightHot) return rightHot ? 1 : -1;
-      return Number(right.viewCount || 0) - Number(left.viewCount || 0)
-        || left.profilePosition - right.profilePosition
-        || left.source.handle.localeCompare(right.source.handle);
-    });
+  // Real view counts and current velocity choose the next repost. Priority
+  // artists and measured source performance only resolve close calls, so a
+  // lower-view artist update cannot displace a genuinely viral clip.
+  const rankedCandidates = rankViralCandidates(rankedPool, { feedback: growthFeedback.summary || {}, now: Date.now() });
+  run.viral_ranking = rankedCandidates.slice(0, 8).map(candidate => ({
+    source_handle: candidate.source.handle,
+    shortcode: candidate.shortcode,
+    views: Number(candidate.viewCount || 0),
+    hourly_velocity: Math.round(Number(candidate.viewVelocity || 0)),
+    score: Math.round(Number(candidate.viralScore || 0) * 100) / 100
+  }));
 
   let queueNumber = await nextQueueNumber();
   let captureAttempts = 0;

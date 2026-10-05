@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T02:47:16.137Z",
+  "checked_at": "2026-10-05T02:52:25.725Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-05T02:47:15.597Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-05T03:02:15.597Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-05T02:46:15.066Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-05T04:22:25.313Z",
+  "publications": [
+    {
+      "file": "1209-rell-vert-speaks-out-for-the-first-time-since-bloodhoundq50-s-pa.json",
+      "id": "1209-rell-vert-speaks-out-for-the-first-time-since-bloodhoundq50-s-pa",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18115964575999613"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

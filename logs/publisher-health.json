@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T01:11:06.716Z",
+  "checked_at": "2026-10-05T01:16:15.474Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-05T01:00:55.032Z",
-    "usage": 11,
+    "checked_at": "2026-10-05T01:16:06.151Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-05T01:15:55.032Z",
+    "next_check_at": "2026-10-05T01:31:06.151Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-05T01:05:01.835Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-05T02:46:15.066Z",
+  "publications": [
+    {
+      "file": "1207-quavo-reacts-to-the-viral-hotel-lobby-trend-in-a-new-interview-w.json",
+      "id": "1207-quavo-reacts-to-the-viral-hotel-lobby-trend-in-a-new-interview-w",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18203144803337191"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

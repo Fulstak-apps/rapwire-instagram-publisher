@@ -28923,48 +28923,16 @@
       "source_url": "https://www.instagram.com/akademiks/reel/DeF5YTRgsSY/",
       "queue_id": "1253-cripmac-n-chibu-on-brandrisk-wys-brehs",
       "video": "media/1253-cripmac-n-chibu-on-brandrisk-wys-brehs.mp4"
+    },
+    "DeFAug4Rg7c": {
+      "queued_at": "2026-10-05T01:22:06.522Z",
+      "source_handle": "ceddynash",
+      "source_url": "https://www.instagram.com/ceddynash/reel/DeFAug4Rg7c/",
+      "queue_id": "1254-this-shit-wild-as-hell",
+      "video": "media/1254-this-shit-wild-as-hell.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-04T03:59:57.550Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T04:00:03.455Z"
-    },
-    {
-      "started_at": "2026-10-04T03:59:57.550Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T04:00:03.455Z"
-    },
-    {
-      "started_at": "2026-10-04T03:59:57.550Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T04:00:03.455Z"
-    },
     {
       "started_at": "2026-10-04T03:59:57.550Z",
       "candidates": 0,
@@ -33509,6 +33477,57 @@
         ]
       },
       "finished_at": "2026-10-05T01:02:58.205Z"
+    },
+    {
+      "started_at": "2026-10-05T01:08:48.410Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-05T01:09:00.961Z"
+    },
+    {
+      "started_at": "2026-10-05T01:14:09.391Z",
+      "candidates": 0,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 48,
+        "needed": 0
+      },
+      "mode": "discovery",
+      "finished_at": "2026-10-05T01:14:15.717Z"
+    },
+    {
+      "started_at": "2026-10-05T01:19:26.071Z",
+      "candidates": 36,
+      "queued": [
+        "1254-this-shit-wild-as-hell"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 3,
+        "count": 5,
+        "handles": [
+          "6ixbuzztv",
+          "br0adwaychr0niclez",
+          "ceddynash",
+          "rockstargames"
+        ]
+      },
+      "finished_at": "2026-10-05T01:22:06.522Z"
     }
   ],
   "vip_pending": {

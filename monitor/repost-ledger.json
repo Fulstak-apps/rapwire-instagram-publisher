@@ -22344,6 +22344,18 @@
       "source_handle": "hiphop_firstnewsmusic",
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DeHXc3aINx-/",
       "view_count": 0
+    },
+    "DeHgmR6F7-A": {
+      "seen_at": "2026-10-05T15:31:09.940Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DeHgmR6F7-A/",
+      "view_count": 0
+    },
+    "DeHS3Tpl34E": {
+      "seen_at": "2026-10-05T15:31:09.940Z",
+      "source_handle": "igndotcom",
+      "source_url": "https://www.instagram.com/igndotcom/p/DeHS3Tpl34E/",
+      "view_count": 0
     }
   },
   "queued_shortcodes": {
@@ -29384,35 +29396,16 @@
       "source_url": "https://www.instagram.com/hiphop_firstnewsmusic/reel/DeHXc3aINx-/",
       "queue_id": "1264-ye-pulled-up-to-complexcon-and-took-a-close-look-at-the-vivet-bo",
       "video": "media/1264-ye-pulled-up-to-complexcon-and-took-a-close-look-at-the-vivet-bo.mp4"
+    },
+    "DeHLBd6m2BE": {
+      "queued_at": "2026-10-05T15:37:56.165Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/trapmatictv/p/DeHLBd6m2BE/",
+      "queue_id": "1265-detroit-rapper-skillababy-is-opening-up-about-a-difficult-stretc",
+      "video": "media/1265-detroit-rapper-skillababy-is-opening-up-about-a-difficult-stretc.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-04T05:42:33.760Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T05:42:39.025Z"
-    },
-    {
-      "started_at": "2026-10-04T05:42:33.760Z",
-      "candidates": 0,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 48,
-        "needed": 0
-      },
-      "mode": "discovery",
-      "finished_at": "2026-10-04T05:42:39.025Z"
-    },
     {
       "started_at": "2026-10-04T05:47:47.980Z",
       "candidates": 0,
@@ -34237,6 +34230,51 @@
         ]
       },
       "finished_at": "2026-10-05T15:25:16.471Z"
+    },
+    {
+      "started_at": "2026-10-05T15:30:51.749Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-05T15:31:09.942Z"
+    },
+    {
+      "started_at": "2026-10-05T15:36:19.815Z",
+      "candidates": 36,
+      "queued": [
+        "1265-detroit-rapper-skillababy-is-opening-up-about-a-difficult-stretc"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-05T15:37:56.165Z"
     }
   ],
   "vip_pending": {

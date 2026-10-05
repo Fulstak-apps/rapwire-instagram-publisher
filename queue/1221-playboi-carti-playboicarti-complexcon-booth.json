@@ -1,6 +1,6 @@
 {
   "id": "1221-playboi-carti-playboicarti-complexcon-booth",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-03",
   "timezone": "America/Detroit",
@@ -41,5 +41,6 @@
   "source_caption_text": "PLAYBOI CARTI COMPLEXCON BOOTH",
   "caption_checked_at": "2026-10-03T17:51:12.673Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 29.966666
+  "source_video_duration": 29.966666,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

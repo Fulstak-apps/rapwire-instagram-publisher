@@ -1,6 +1,6 @@
 {
   "id": "1223-free-ice-cream-with-each-purchase-at-booth-n8-west-hall-complexc",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-03",
   "timezone": "America/Detroit",
@@ -36,8 +36,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DeCuYO-vE26",
-  "source_caption_text": "FREE ice cream with each purchase at Booth N8 West Hall🍦\n\nCOMPLEXCON. LOS ANGELES, OCTOBER 3-4.\nGET YOUR TICKETS LINK IN BIO",
+  "source_caption_text": "FREE ice cream with each purchase at Booth N8 West Hall\ud83c\udf66\n\nCOMPLEXCON. LOS ANGELES, OCTOBER 3-4.\nGET YOUR TICKETS LINK IN BIO",
   "caption_checked_at": "2026-10-03T19:14:22.132Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 10.610067
+  "source_video_duration": 10.610067,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

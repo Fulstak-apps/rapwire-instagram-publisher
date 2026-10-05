@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T05:13:53.473Z",
+  "checked_at": "2026-10-05T05:19:41.505Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-05T05:04:37.321Z",
+    "checked_at": "2026-10-05T05:19:33.061Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-05T05:19:37.321Z",
+    "next_check_at": "2026-10-05T05:34:33.061Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "platform_quota_usage": 10,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-05T05:17:59.516Z",
-    "feed_allowed": false,
+    "next_feed_eligible_at": "2026-10-05T06:49:41.101Z",
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -54,7 +54,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-05T05:58:30.668Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1212-never-forget-when-a-fan-asked-cardi-b-for-20-during-an-instagram.json",
+      "id": "1212-never-forget-when-a-fan-asked-cardi-b-for-20-during-an-instagram",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17959436076246991",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

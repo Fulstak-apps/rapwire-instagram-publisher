@@ -3,17 +3,16 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
-  "processing": [],
+  "overdue": true,
+  "health_stale": true,
+  "processing": [
+    "1216-these-two-will-never-walk-the-streets-of-miami-again"
+  ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1213-ben10-emergency-bond-hearing-update-part-6-ben10-admits-allstar-",
-    "1214-ben10-emergency-bond-hearing-update-part-5-how-the-feds-caught-b",
-    "1215-this-what-otf-jam-thought-he-was-doing-yall",
     "1216-these-two-will-never-walk-the-streets-of-miami-again",
     "1217-ross-the-only-rapper-in-history-to-never-break-character",
     "1218-ben10-emergency-bond-hearing-update-part-3-feds-admitted-they-ac",
@@ -58,10 +57,13 @@
     "1257-ye-and-carti-at-complexcon",
     "1258-playboi-carti-s-new-complexcon-stage",
     "1259-twitch-streamer-bendadonnn-and-his-security-team-were-reportedly",
-    "1260-when-juice-wrld-got-off-his-tour-bus-in-front-of-fans-some-of-th"
+    "1260-when-juice-wrld-got-off-his-tour-bus-in-front-of-fans-some-of-th",
+    "1261-lucki-team-and-carti-team-started-stabbing-and-squabbling-at-com",
+    "1262-playboi-carti-s-lucki-s-entourages-get-into-it-at-complexcon-com",
+    "1263-jay-cinco-speaks-on-his-breakup-with-his-fianc-and-the-mother-of"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-05T05:48:44.370Z",
+  "checked_at": "2026-10-05T12:42:22.206Z",
   "deferred": []
 }

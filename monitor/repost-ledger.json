@@ -29268,49 +29268,16 @@
       "source_url": "https://www.instagram.com/730radio/reel/DeDYSQXxVNz/",
       "queue_id": "1262-playboi-carti-s-lucki-s-entourages-get-into-it-at-complexcon-com",
       "video": "media/1262-playboi-carti-s-lucki-s-entourages-get-into-it-at-complexcon-com.mp4"
+    },
+    "DeGXSDus1kU": {
+      "queued_at": "2026-10-05T08:58:08.177Z",
+      "source_handle": "trapmatictv",
+      "source_url": "https://www.instagram.com/thatdailyslapp/reel/DeGXSDus1kU/",
+      "queue_id": "1263-jay-cinco-speaks-on-his-breakup-with-his-fianc-and-the-mother-of",
+      "video": "media/1263-jay-cinco-speaks-on-his-breakup-with-his-fianc-and-the-mother-of.mp4"
     }
   },
   "runs": [
-    {
-      "started_at": "2026-10-04T04:59:08.363Z",
-      "candidates": 12,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-10-04T04:59:24.286Z"
-    },
-    {
-      "started_at": "2026-10-04T04:59:08.363Z",
-      "candidates": 12,
-      "queued": [],
-      "errors": [],
-      "video_buffer": {
-        "target": 48,
-        "available": 47,
-        "needed": 1
-      },
-      "mode": "discovery",
-      "source_batch": {
-        "index": 4,
-        "count": 5,
-        "handles": [
-          "igndotcom"
-        ]
-      },
-      "finished_at": "2026-10-04T04:59:24.286Z"
-    },
     {
       "started_at": "2026-10-04T04:59:08.363Z",
       "candidates": 12,
@@ -34167,6 +34134,51 @@
         ]
       },
       "finished_at": "2026-10-05T07:32:57.681Z"
+    },
+    {
+      "started_at": "2026-10-05T07:38:37.629Z",
+      "candidates": 12,
+      "queued": [],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 4,
+        "count": 5,
+        "handles": [
+          "igndotcom"
+        ]
+      },
+      "finished_at": "2026-10-05T07:38:57.942Z"
+    },
+    {
+      "started_at": "2026-10-05T08:56:44.483Z",
+      "candidates": 48,
+      "queued": [
+        "1263-jay-cinco-speaks-on-his-breakup-with-his-fianc-and-the-mother-of"
+      ],
+      "errors": [],
+      "video_buffer": {
+        "target": 48,
+        "available": 47,
+        "needed": 1
+      },
+      "mode": "discovery",
+      "source_batch": {
+        "index": 0,
+        "count": 5,
+        "handles": [
+          "trapmatictv",
+          "raplisted_",
+          "akademiks",
+          "traploreross"
+        ]
+      },
+      "finished_at": "2026-10-05T08:58:08.177Z"
     }
   ],
   "vip_pending": {

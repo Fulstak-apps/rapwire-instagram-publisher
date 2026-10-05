@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T15:11:57.482Z",
+  "checked_at": "2026-10-05T15:14:21.625Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-05T16:41:49.834Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,23 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-05T16:41:57.109Z",
-  "publications": [
-    {
-      "file": "1217-ross-the-only-rapper-in-history-to-never-break-character.json",
-      "id": "1217-ross-the-only-rapper-in-history-to-never-break-character",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18102476252633053",
-      "content_type": "video"
-    },
-    {
-      "file": "1218-ben10-emergency-bond-hearing-update-part-3-feds-admitted-they-ac.json",
-      "id": "1218-ben10-emergency-bond-hearing-update-part-3-feds-admitted-they-ac",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18107756873620157"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

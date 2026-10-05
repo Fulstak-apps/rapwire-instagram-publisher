@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T23:49:06.980Z",
+  "checked_at": "2026-10-05T23:54:08.804Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-05T23:48:57.384Z",
-    "usage": 9,
+    "checked_at": "2026-10-05T23:53:57.991Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-06T00:03:57.384Z",
+    "next_check_at": "2026-10-06T00:08:57.991Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-05T23:44:42.444Z",
+    "next_feed_eligible_at": "2026-10-06T01:24:08.513Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -58,9 +58,10 @@
     {
       "file": "1228-footage-of-king-von-and-chief-keef-together-in-the-studio-back-i.json",
       "id": "1228-footage-of-king-von-and-chief-keef-together-in-the-studio-back-i",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18194936038403728"
+      "media_id": "18169397746485714",
+      "content_type": "video"
     }
   ],
   "failures": [],

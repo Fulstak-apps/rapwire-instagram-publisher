@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T05:32:59.918Z",
+  "checked_at": "2026-10-06T05:38:02.316Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-06T07:02:59.631Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -54,16 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-06T06:07:23.910Z",
-  "publications": [
-    {
-      "file": "1240-in-the-new-york-times-podcast-chris-rock-immediately-shut-down-a.json",
-      "id": "1240-in-the-new-york-times-podcast-chris-rock-immediately-shut-down-a",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17915869797259962",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

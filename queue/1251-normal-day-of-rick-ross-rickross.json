@@ -1,6 +1,6 @@
 {
   "id": "1251-normal-day-of-rick-ross-rickross",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-04",
   "timezone": "America/Detroit",
@@ -36,8 +36,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DeFfBU2Ilp8",
-  "source_caption_text": "Normal day of Rick Ross😂\n\n#rickross",
+  "source_caption_text": "Normal day of Rick Ross\ud83d\ude02\n\n#rickross",
   "caption_checked_at": "2026-10-04T23:34:19.499Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 71.1
+  "source_video_duration": 71.1,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

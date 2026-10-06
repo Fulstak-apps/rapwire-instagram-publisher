@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T07:06:17.104Z",
+  "checked_at": "2026-10-06T07:11:28.933Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-06T07:06:16.622Z",
-    "usage": 9,
+    "checked_at": "2026-10-06T07:11:23.006Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-06T07:21:16.622Z",
+    "next_check_at": "2026-10-06T07:26:23.006Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-06T07:02:59.631Z",
+    "next_feed_eligible_at": "2026-10-06T08:41:28.723Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -54,7 +54,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-06T07:43:25.563Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1241-this-for-the-soul-even-when-you-re-soulless-pay-attention.json",
+      "id": "1241-this-for-the-soul-even-when-you-re-soulless-pay-attention",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18118615336978809",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

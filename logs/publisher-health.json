@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T03:01:11.805Z",
+  "checked_at": "2026-10-06T03:06:09.848Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-06T04:31:10.774Z",
-  "publications": [
-    {
-      "file": "1235-pusha-t-snapped-on-this-new-song-with-fat-joe-and-dre-set-of-key.json",
-      "id": "1235-pusha-t-snapped-on-this-new-song-with-fat-joe-and-dre-set-of-key",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18559293706072460"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T20:59:25.936Z",
+  "checked_at": "2026-10-06T21:02:04.681Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-06T20:59:24.569Z",
-    "usage": 5,
+    "checked_at": "2026-10-06T21:01:58.991Z",
+    "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-06T21:14:24.569Z",
+    "next_check_at": "2026-10-06T21:16:58.991Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 5,
     "instagram_remaining": 5,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-06T08:41:28.723Z",
+    "next_feed_eligible_at": "2026-10-06T22:32:04.393Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-06T20:48:52.574Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-06T21:03:52.574Z",
@@ -53,8 +53,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-06T20:55:57.858Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-06T22:31:58.236Z",
+  "publications": [
+    {
+      "file": "1249-carti-and-ye-shoot-hoops-at-complexcon.json",
+      "id": "1249-carti-and-ye-shoot-hoops-at-complexcon",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17998407179821714"
+    },
+    {
+      "file": "1249-carti-and-ye-shoot-hoops-at-complexcon.json",
+      "id": "1249-carti-and-ye-shoot-hoops-at-complexcon",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17894343336609667",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

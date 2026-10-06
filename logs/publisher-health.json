@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T22:31:00.822Z",
+  "checked_at": "2026-10-06T22:45:11.627Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-06T22:30:59.935Z",
-    "usage": 5,
+    "checked_at": "2026-10-06T22:45:07.028Z",
+    "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-06T22:45:59.935Z",
+    "next_check_at": "2026-10-06T23:00:07.028Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 5,
     "instagram_remaining": 5,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-06T22:32:04.393Z",
-    "feed_allowed": false,
+    "next_feed_eligible_at": "2026-10-07T00:15:11.322Z",
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-06T22:31:00.600Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-06T22:46:00.600Z",
@@ -53,8 +53,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-06T22:31:58.236Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-07T00:08:47.929Z",
+  "publications": [
+    {
+      "file": "rapwire-carousel-2026-10-06-1400.json",
+      "id": "rapwire-carousel-2026-10-06-1400",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18012511427973942"
+    },
+    {
+      "file": "rapwire-carousel-2026-10-06-1400.json",
+      "id": "rapwire-carousel-2026-10-06-1400",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18137743090555260",
+      "content_type": "carousel"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

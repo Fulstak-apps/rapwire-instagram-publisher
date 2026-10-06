@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-06T16:04:26.192Z",
+  "checked_at": "2026-10-06T16:06:18.426Z",
   "instagram_auth": {
     "available": false,
-    "error": "Instagram identity check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ANBWacX7aNWPW3jeQoGWwDF\"}}"
+    "error": "Instagram identity check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AUFmWYQ09xLqlwAwhWpyqwz\"}}"
   },
   "threads_auth": {
     "available": true,
@@ -35,7 +35,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,

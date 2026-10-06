@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T04:32:09.247Z",
+  "checked_at": "2026-10-06T04:37:25.559Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-06T04:27:04.766Z",
-    "usage": 12,
+    "usage": 13,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-06T04:42:04.766Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-06T04:31:10.774Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-06T06:07:23.910Z",
+  "publications": [
+    {
+      "file": "1240-in-the-new-york-times-podcast-chris-rock-immediately-shut-down-a.json",
+      "id": "1240-in-the-new-york-times-podcast-chris-rock-immediately-shut-down-a",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17971695774149404"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

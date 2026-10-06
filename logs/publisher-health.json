@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T03:51:43.239Z",
+  "checked_at": "2026-10-06T03:56:53.420Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-06T03:51:42.295Z",
-    "usage": 9,
+    "checked_at": "2026-10-06T03:56:46.132Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-06T04:06:42.295Z",
+    "next_check_at": "2026-10-06T04:11:46.132Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,10 +27,10 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
     "instagram_usage": 9,
-    "platform_quota_usage": 10,
+    "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-06T01:24:08.513Z",
+    "next_feed_eligible_at": "2026-10-06T05:26:53.134Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,17 +44,26 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-06T03:41:39.020Z",
+    "checked_at": "2026-10-06T03:56:45.852Z",
     "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-06T03:56:39.020Z",
+    "next_check_at": "2026-10-06T04:11:45.852Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-06T04:31:10.774Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1239-mississippi-s-very-own-continues-to-make-his-presence-felt-with-.json",
+      "id": "1239-mississippi-s-very-own-continues-to-make-his-presence-felt-with-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18019669928937668",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

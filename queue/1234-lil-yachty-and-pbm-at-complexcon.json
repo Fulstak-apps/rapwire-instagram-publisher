@@ -1,6 +1,6 @@
 {
   "id": "1234-lil-yachty-and-pbm-at-complexcon",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-04",
   "timezone": "America/Detroit",
@@ -39,5 +39,6 @@
   "source_caption_text": "LIL YACHTY AND PBM AT COMPLEXCON",
   "caption_checked_at": "2026-10-04T02:14:12.855Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 13.699999
+  "source_video_duration": 13.699999,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

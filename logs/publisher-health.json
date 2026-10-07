@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T05:15:04.581Z",
+  "checked_at": "2026-10-07T05:20:02.213Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-07T05:04:55.439Z",
+    "checked_at": "2026-10-07T05:20:01.567Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-07T05:19:55.439Z",
+    "next_check_at": "2026-10-07T05:35:01.567Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -31,11 +31,11 @@
     "instagram_remaining": 3,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-07T05:19:04.833Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-07T06:45:03.781Z",
-  "publications": [
-    {
-      "file": "1260-when-juice-wrld-got-off-his-tour-bus-in-front-of-fans-some-of-th.json",
-      "id": "1260-when-juice-wrld-got-off-his-tour-bus-in-front-of-fans-some-of-th",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18344881894268176"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

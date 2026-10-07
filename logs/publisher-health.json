@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T00:36:32.652Z",
+  "checked_at": "2026-10-07T00:45:24.011Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 5,
-    "platform_quota_usage": 5,
-    "instagram_remaining": 5,
+    "instagram_usage": 6,
+    "platform_quota_usage": 6,
+    "instagram_remaining": 4,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-07T02:06:32.391Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,26 +44,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-07T00:26:01.369Z",
+    "checked_at": "2026-10-07T00:45:23.801Z",
     "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-07T00:41:01.369Z",
+    "next_check_at": "2026-10-07T01:00:23.801Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-07T01:56:08.621Z",
-  "publications": [
-    {
-      "file": "1253-cripmac-n-chibu-on-brandrisk-wys-brehs.json",
-      "id": "1253-cripmac-n-chibu-on-brandrisk-wys-brehs",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18142939726580048",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T00:09:38.970Z",
+  "checked_at": "2026-10-07T00:26:08.954Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-06T23:59:03.585Z",
+    "checked_at": "2026-10-07T00:26:01.453Z",
     "usage": 5,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-07T00:14:03.585Z",
+    "next_check_at": "2026-10-07T00:41:01.453Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -31,10 +31,10 @@
     "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-07T00:15:11.322Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-06T23:59:04.064Z",
-    "usage": 11,
+    "checked_at": "2026-10-07T00:26:01.369Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-07T00:14:04.064Z",
+    "next_check_at": "2026-10-07T00:41:01.369Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-07T00:08:47.929Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-07T01:56:08.621Z",
+  "publications": [
+    {
+      "file": "1253-cripmac-n-chibu-on-brandrisk-wys-brehs.json",
+      "id": "1253-cripmac-n-chibu-on-brandrisk-wys-brehs",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18341575798261065"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

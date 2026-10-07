@@ -145,5 +145,20 @@
     "caption_ends_only_with_rapwire247": true,
     "passed": true
   },
-  "publish_blocked": false
+  "publish_blocked": false,
+  "last_publish_attempt": {
+    "workflow_run_id": 37642744084,
+    "workflow_url": "https://github.com/Fulstak-apps/rapwire-instagram-publisher/actions/runs/37642744084",
+    "attempted_at": "2026-10-07T15:18:44Z",
+    "status": "cadence_hold",
+    "confirmed_publications": 0,
+    "instagram_media_id": null,
+    "instagram_permalink": null,
+    "threads_media_id": null,
+    "threads_permalink": null,
+    "error": "Instagram feed cadence hold: next feed no earlier than 2026-10-07T16:31:28.679Z; Instagram budget was 2 feed/Story publications available at run start with 0 reserved for outstanding Stories. Threads reported a separate 90-minute video publishing cadence with quota 11/250. No authentication or media-publication error was returned.",
+    "publication_log_save_error": "remote rejected HEAD -> main (Internal Server Error)",
+    "retry_safe": true,
+    "next_action": "Leave this queue item ready for the scheduled heartbeat after 2026-10-07T16:31:28.679Z; verify both platform media IDs and permalinks before claiming publication."
+  }
 }

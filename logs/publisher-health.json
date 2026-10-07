@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T22:47:42.493Z",
+  "checked_at": "2026-10-07T22:58:25.160Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-07T22:42:37.589Z",
+    "checked_at": "2026-10-07T22:58:19.600Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-07T22:57:37.589Z",
+    "next_check_at": "2026-10-07T23:13:19.600Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,11 +30,11 @@
     "platform_quota_usage": 10,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-07T22:52:18.770Z",
-    "feed_allowed": false,
+    "next_feed_eligible_at": "2026-10-08T00:28:24.853Z",
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,17 +44,26 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-07T22:37:35.304Z",
-    "usage": 11,
+    "checked_at": "2026-10-07T22:52:47.443Z",
+    "usage": 10,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-07T22:52:35.304Z",
+    "next_check_at": "2026-10-07T23:07:47.443Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-07T23:01:52.630Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "rapwire-carousel-2026-10-07-1400.json",
+      "id": "rapwire-carousel-2026-10-07-1400",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17962022214207956",
+      "content_type": "carousel"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

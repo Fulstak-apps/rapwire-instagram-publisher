@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-10-07-1400",
-  "status": "paused",
+  "status": "ready",
   "type": "original_editorial_carousel",
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
@@ -47,6 +47,16 @@
   "modern_art": true,
   "source_photo_used": true,
   "source_image_role": "Current artist, interview, official game and reporting references grounded original editorial plates; no source photo or game art was copied.",
+  "visual_asset_source_urls": [
+    "https://www.instagram.com/willsmith/",
+    "https://www.instagram.com/djjazzyjeff/",
+    "https://www.instagram.com/champagnepapi/",
+    "https://www.instagram.com/keshiachante/",
+    "https://www.instagram.com/lildurk/",
+    "https://www.instagram.com/offsetyrn/",
+    "https://www.rockstargames.com/VI",
+    "https://www.ign.com/articles/gta-6-full-rockstar-north-interview"
+  ],
   "layout_template": "rapwire-unified-v3",
   "slides": [
     "media/rapwire-carousel-2026-10-07-1400/rapwire-carousel-2026-10-07-1400-slide-1.png",
@@ -139,6 +149,6 @@
     "passed": true
   },
   "publish_blocked": false,
-  "last_publish_attempt": null,
-  "pause_reason": "Visual blocked: RapWire requires source-grounded AI art or an approved credited real-photo fallback, plus a complete readable 2-10 slide carousel"
+  "pause_reason": null,
+  "last_publish_attempt": null
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T18:11:18.376Z",
+  "checked_at": "2026-10-07T18:16:24.259Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-07T18:01:01.942Z",
+    "checked_at": "2026-10-07T18:16:17.183Z",
     "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-07T18:16:01.942Z",
+    "next_check_at": "2026-10-07T18:31:17.183Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -31,10 +31,10 @@
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-07T18:13:29.939Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-07T18:01:02.449Z",
-    "usage": 10,
+    "checked_at": "2026-10-07T18:16:17.038Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-07T18:16:02.449Z",
+    "next_check_at": "2026-10-07T18:31:17.038Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-07T18:07:56.169Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-07T19:46:23.532Z",
+  "publications": [
+    {
+      "file": "1269-boosie-n-marlon-wayans-ain-t-feeling-dj-vlad.json",
+      "id": "1269-boosie-n-marlon-wayans-ain-t-feeling-dj-vlad",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18413066551084537"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

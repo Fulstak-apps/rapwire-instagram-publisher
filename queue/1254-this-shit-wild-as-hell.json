@@ -1,6 +1,6 @@
 {
   "id": "1254-this-shit-wild-as-hell",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-05",
   "timezone": "America/Detroit",
@@ -39,5 +39,6 @@
   "source_caption_text": "This shit wild as hell",
   "caption_checked_at": "2026-10-05T01:21:38.038Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 137.5
+  "source_video_duration": 137.5,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

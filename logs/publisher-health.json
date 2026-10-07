@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T05:09:58.015Z",
+  "checked_at": "2026-10-07T05:15:04.581Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-07T05:09:54.875Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-07T05:24:54.875Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-07T05:09:01.321Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-07T06:45:03.781Z",
+  "publications": [
+    {
+      "file": "1260-when-juice-wrld-got-off-his-tour-bus-in-front-of-fans-some-of-th.json",
+      "id": "1260-when-juice-wrld-got-off-his-tour-bus-in-front-of-fans-some-of-th",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18344881894268176"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

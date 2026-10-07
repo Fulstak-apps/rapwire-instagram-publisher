@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T18:16:24.259Z",
+  "checked_at": "2026-10-07T18:21:29.032Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-07T18:16:17.183Z",
-    "usage": 9,
+    "checked_at": "2026-10-07T18:21:21.483Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-07T18:31:17.183Z",
+    "next_check_at": "2026-10-07T18:36:21.483Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-07T18:13:29.939Z",
+    "next_feed_eligible_at": "2026-10-07T19:51:28.705Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -58,9 +58,10 @@
     {
       "file": "1269-boosie-n-marlon-wayans-ain-t-feeling-dj-vlad.json",
       "id": "1269-boosie-n-marlon-wayans-ain-t-feeling-dj-vlad",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18413066551084537"
+      "media_id": "18130032181690839",
+      "content_type": "video"
     }
   ],
   "failures": [],

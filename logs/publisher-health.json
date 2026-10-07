@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T00:26:08.954Z",
+  "checked_at": "2026-10-07T00:36:32.652Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-07T00:26:01.453Z",
-    "usage": 5,
+    "checked_at": "2026-10-07T00:36:24.115Z",
+    "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-07T00:41:01.453Z",
+    "next_check_at": "2026-10-07T00:51:24.115Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 5,
     "instagram_remaining": 5,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-07T00:15:11.322Z",
+    "next_feed_eligible_at": "2026-10-07T02:06:32.391Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -58,9 +58,10 @@
     {
       "file": "1253-cripmac-n-chibu-on-brandrisk-wys-brehs.json",
       "id": "1253-cripmac-n-chibu-on-brandrisk-wys-brehs",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18341575798261065"
+      "media_id": "18142939726580048",
+      "content_type": "video"
     }
   ],
   "failures": [],

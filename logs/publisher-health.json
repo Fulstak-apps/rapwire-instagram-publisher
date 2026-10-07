@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T22:58:25.160Z",
+  "checked_at": "2026-10-07T23:02:52.966Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
+    "instagram_usage": 10,
     "platform_quota_usage": 10,
-    "instagram_remaining": 1,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-08T00:28:24.853Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,16 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-07T23:01:52.630Z",
-  "publications": [
-    {
-      "file": "rapwire-carousel-2026-10-07-1400.json",
-      "id": "rapwire-carousel-2026-10-07-1400",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17962022214207956",
-      "content_type": "carousel"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

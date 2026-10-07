@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T03:49:05.133Z",
+  "checked_at": "2026-10-07T03:54:03.187Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 7,
-    "platform_quota_usage": 7,
-    "instagram_remaining": 3,
+    "instagram_usage": 8,
+    "platform_quota_usage": 8,
+    "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-07T05:19:04.833Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,26 +44,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-07T03:34:01.895Z",
+    "checked_at": "2026-10-07T03:54:03.075Z",
     "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-07T03:49:01.895Z",
+    "next_check_at": "2026-10-07T04:09:03.075Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-07T05:09:01.321Z",
-  "publications": [
-    {
-      "file": "1258-playboi-carti-s-new-complexcon-stage.json",
-      "id": "1258-playboi-carti-s-new-complexcon-stage",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18134501635637947",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

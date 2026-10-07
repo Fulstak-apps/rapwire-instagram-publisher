@@ -1,22 +1,18 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 46,
+  "reserve_hours": 23,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
-  "processing": [],
+  "overdue": true,
+  "health_stale": true,
+  "processing": [
+    "1263-jay-cinco-speaks-on-his-breakup-with-his-fianc-and-the-mother-of"
+  ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1256-don-cannon-explains-where-uzi-is-at-with-his-next-album-at-compl",
-    "1257-ye-and-carti-at-complexcon",
-    "1258-playboi-carti-s-new-complexcon-stage",
-    "1259-twitch-streamer-bendadonnn-and-his-security-team-were-reportedly",
-    "1260-when-juice-wrld-got-off-his-tour-bus-in-front-of-fans-some-of-th",
-    "1261-lucki-team-and-carti-team-started-stabbing-and-squabbling-at-com",
     "1262-playboi-carti-s-lucki-s-entourages-get-into-it-at-complexcon-com",
     "1263-jay-cinco-speaks-on-his-breakup-with-his-fianc-and-the-mother-of",
     "1264-ye-pulled-up-to-complexcon-and-took-a-close-look-at-the-vivet-bo",
@@ -58,10 +54,14 @@
     "1300-tory-is-upgrading-his-venues-because-of-the-success-of-his-ny-sh",
     "1301-reggie-allegedly-sold-his-clover-boys-chain-reggie-has-allegedly",
     "1302-escape-halloween-is-known-for-its-electronic-lineup-but-hip-hop-",
-    "1303-blueface-recently-came-back-into-chrisean-s-life-he-s-already-ta"
+    "1303-blueface-recently-came-back-into-chrisean-s-life-he-s-already-ta",
+    "1304-az-chike-clears-up-rumors-about-the-infamous-missing-kendrick-ve",
+    "1305-kodak-reacts-to-kai-cenat-being-in-the-news-lately-and-says-he-s",
+    "1306-a-neighborhood-party-took-an-unexpected-turn-after-police-were-c",
+    "1307-brian-steel-believes-that-every-judge-prosecutor-and-police-offi"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-07T02:27:26.631Z",
+  "checked_at": "2026-10-07T09:00:43.623Z",
   "deferred": []
 }

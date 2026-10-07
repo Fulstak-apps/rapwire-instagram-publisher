@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T21:17:00.763Z",
+  "checked_at": "2026-10-07T21:22:19.095Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-07T21:17:00.097Z",
-    "usage": 9,
+    "checked_at": "2026-10-07T21:22:12.456Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-07T21:32:00.097Z",
+    "next_check_at": "2026-10-07T21:37:12.456Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-07T19:51:28.705Z",
+    "next_feed_eligible_at": "2026-10-07T22:52:18.770Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -54,7 +54,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-07T21:22:39.441Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1274-the-leafs-are-back-in-action-and-it-s-a-huge-week-nashville-vega.json",
+      "id": "1274-the-leafs-are-back-in-action-and-it-s-a-huge-week-nashville-vega",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17870952456644318",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T23:02:52.966Z",
+  "checked_at": "2026-10-07T23:08:05.988Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-07T22:52:47.443Z",
-    "usage": 10,
+    "checked_at": "2026-10-07T23:07:56.530Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-07T23:07:47.443Z",
+    "next_check_at": "2026-10-07T23:22:56.530Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-07T23:01:52.630Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-08T00:38:05.376Z",
+  "publications": [
+    {
+      "file": "1276-talks-comparisons-with-and-the-difficulties-working-in-hip-hop-f.json",
+      "id": "1276-talks-comparisons-with-and-the-difficulties-working-in-hip-hop-f",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18117548698956559"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

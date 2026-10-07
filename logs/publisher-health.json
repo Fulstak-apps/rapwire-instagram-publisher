@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T13:22:21.511Z",
+  "checked_at": "2026-10-07T13:59:31.184Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-07T13:22:15.015Z",
+    "checked_at": "2026-10-07T13:59:30.593Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-07T13:37:15.015Z",
+    "next_check_at": "2026-10-07T14:14:30.593Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 6,
-    "platform_quota_usage": 6,
-    "instagram_remaining": 4,
+    "instagram_usage": 7,
+    "platform_quota_usage": 7,
+    "instagram_remaining": 3,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-07T14:52:21.251Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,33 +44,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-07T13:22:08.061Z",
+    "checked_at": "2026-10-07T13:59:30.950Z",
     "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-07T13:37:08.061Z",
+    "next_check_at": "2026-10-07T14:14:30.950Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-07T14:52:14.130Z",
-  "publications": [
-    {
-      "file": "1264-ye-pulled-up-to-complexcon-and-took-a-close-look-at-the-vivet-bo.json",
-      "id": "1264-ye-pulled-up-to-complexcon-and-took-a-close-look-at-the-vivet-bo",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17963011938209196"
-    },
-    {
-      "file": "1264-ye-pulled-up-to-complexcon-and-took-a-close-look-at-the-vivet-bo.json",
-      "id": "1264-ye-pulled-up-to-complexcon-and-took-a-close-look-at-the-vivet-bo",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18140440558616923",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

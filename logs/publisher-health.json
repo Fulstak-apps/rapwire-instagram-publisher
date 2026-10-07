@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-07T21:26:39.386Z",
+  "checked_at": "2026-10-07T21:31:53.681Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-07T21:16:59.833Z",
-    "usage": 10,
+    "usage": 11,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-07T21:31:59.833Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-07T21:22:39.441Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-07T23:01:52.630Z",
+  "publications": [
+    {
+      "file": "1275-rich-the-kid-is-a-real-one-a-young-kid-was-selling-water-when-ri.json",
+      "id": "1275-rich-the-kid-is-a-real-one-a-young-kid-was-selling-water-when-ri",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18031879220847223"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

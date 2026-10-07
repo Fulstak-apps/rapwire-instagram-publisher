@@ -1,6 +1,6 @@
 {
   "id": "1267-ayo-not-red-handed",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-05",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DeHkwYuFnN5",
-  "source_caption_text": "Ayo not red handed 😭😭 \n\n🎥 @wesaidwhatwesaidshow",
+  "source_caption_text": "Ayo not red handed \ud83d\ude2d\ud83d\ude2d \n\n\ud83c\udfa5 @wesaidwhatwesaidshow",
   "caption_checked_at": "2026-10-05T16:36:17.722Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 39.401405
+  "source_video_duration": 39.401405,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

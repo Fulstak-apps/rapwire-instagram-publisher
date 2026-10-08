@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-10-08-1400",
-  "status": "ready",
+  "status": "published",
   "type": "original_editorial_carousel",
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
@@ -179,5 +179,14 @@
       "error": "Threads uses a separate 90-minute video publishing cadence; no media ID was confirmed."
     },
     "next_action": "Retry via the scheduled publisher heartbeat after the recorded eligibility time; do not duplicate this queue item."
-  }
+  },
+  "threads_status": "failed",
+  "threads_error": "Threads threads failed: {\"error\":{\"message\":\"Invalid parameter\",\"type\":\"OAuthException\",\"code\":100,\"error_subcode\":4279004,\"is_transient\":false,\"error_user_title\":\"Invalid Carousel Children\",\"error_user_msg\":\"The children with IDs 18104885894179906 are invalid, nonexistent, or expired.\",\"fbtrace_id\":\"AhyNJEwoS4w4EA-FV6bdifM\"}}",
+  "threads_retry_at": "2026-10-09T00:02:19.068Z",
+  "instagram_media_id": "17949927819053368",
+  "published_at": "2026-10-08T23:37:49.620Z",
+  "instagram_verified_at": "2026-10-08T23:37:49.697Z",
+  "instagram_permalink": "https://www.instagram.com/p/DeQIRx2GLtp/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
 }

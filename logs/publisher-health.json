@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T23:23:42.873Z",
+  "checked_at": "2026-10-08T23:37:49.904Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-08T23:13:35.780Z",
-    "usage": 9,
+    "checked_at": "2026-10-08T23:37:45.256Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-08T23:28:35.780Z",
+    "next_check_at": "2026-10-08T23:52:45.256Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-08T23:26:14.616Z",
-    "feed_allowed": false,
+    "next_feed_eligible_at": "2026-10-09T01:07:49.620Z",
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,17 +44,34 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-08T23:13:36.313Z",
+    "checked_at": "2026-10-08T23:28:54.250Z",
     "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-08T23:28:36.313Z",
+    "next_check_at": "2026-10-08T23:43:54.250Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-08T23:26:21.516Z",
-  "publications": [],
-  "failures": [],
+  "publications": [
+    {
+      "file": "rapwire-carousel-2026-10-08-1400.json",
+      "id": "rapwire-carousel-2026-10-08-1400",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17949927819053368",
+      "content_type": "carousel"
+    }
+  ],
+  "failures": [
+    {
+      "file": "rapwire-carousel-2026-10-08-1400.json",
+      "id": "rapwire-carousel-2026-10-08-1400",
+      "platform": "threads",
+      "status": "failed",
+      "error": "Threads threads failed: {\"error\":{\"message\":\"Invalid parameter\",\"type\":\"OAuthException\",\"code\":100,\"error_subcode\":4279004,\"is_transient\":false,\"error_user_title\":\"Invalid Carousel Children\",\"error_user_msg\":\"The children with IDs 18104885894179906 are invalid, nonexistent, or expired.\",\"fbtrace_id\":\"AhyNJEwoS4w4EA-FV6bdifM\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T05:37:31.701Z",
+  "checked_at": "2026-10-08T05:42:29.840Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-08T07:07:31.215Z",
-  "publications": [
-    {
-      "file": "1288-8-years-ago-today-juice-wrld-freestyled-over-eminem-beats-for-mo.json",
-      "id": "1288-8-years-ago-today-juice-wrld-freestyled-over-eminem-beats-for-mo",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18226052824326949"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

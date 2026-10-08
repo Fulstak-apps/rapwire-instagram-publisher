@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T15:09:36.137Z",
+  "checked_at": "2026-10-08T15:14:40.037Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-08T16:39:35.110Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-08T15:09:27.922Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-08T15:24:27.922Z",
@@ -53,15 +53,14 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-08T15:05:36.309Z",
+  "threads_next_eligible_at": "2026-10-08T16:44:39.836Z",
   "publications": [
     {
-      "file": "1291-carti-showing-off-his-fit.json",
-      "id": "1291-carti-showing-off-his-fit",
-      "platform": "instagram",
+      "file": "1295-throwback-a-look-back-at-a-moment-from-the-filming-of-back-in-bl.json",
+      "id": "1295-throwback-a-look-back-at-a-moment-from-the-filming-of-back-in-bl",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18106723910193316",
-      "content_type": "video"
+      "media_id": "18028320929693018"
     }
   ],
   "failures": [],

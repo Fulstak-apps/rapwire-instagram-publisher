@@ -155,5 +155,12 @@
     "caption_ends_only_with_rapwire247": true,
     "passed": true
   },
-  "publish_blocked": false
+  "publish_blocked": false,
+  "last_publish_attempt": {
+    "workflow_run_id": "37707044710",
+    "attempted_at": "2026-10-08T00:18:48.084Z",
+    "result": "held",
+    "confirmed_publication_count": 0,
+    "error": "Instagram rolling-day budget had 0 available publications at the start of the run; next feed no earlier than 2026-10-08T00:28:24.853Z. Threads quota was 11/250. No Instagram or Threads media ID was returned."
+  }
 }

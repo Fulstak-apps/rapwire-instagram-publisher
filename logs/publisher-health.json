@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T08:49:51.787Z",
+  "checked_at": "2026-10-08T08:54:48.104Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-08T08:39:44.107Z",
+    "checked_at": "2026-10-08T08:54:47.878Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-08T08:54:44.107Z",
+    "next_check_at": "2026-10-08T09:09:47.878Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,7 +35,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-08T10:19:51.464Z",
-  "publications": [
-    {
-      "file": "1291-carti-showing-off-his-fit.json",
-      "id": "1291-carti-showing-off-his-fit",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18120287021294601"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -162,5 +162,12 @@
     "result": "held",
     "confirmed_publication_count": 0,
     "error": "Instagram rolling-day budget had 0 available publications at the start of the run; next feed no earlier than 2026-10-08T00:28:24.853Z. Threads quota was 11/250. No Instagram or Threads media ID was returned."
-  }
+  },
+  "threads_status": "published",
+  "threads_media_id": "18172195039456205",
+  "threads_published_at": "2026-10-08T00:45:37.869Z",
+  "threads_verified_at": "2026-10-08T00:45:38.338Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DeNrPVwGfyP",
+  "instagram_error": "Instagram status check failed: {\"error\":{\"code\":1,\"message\":\"Please reduce the amount of data you're asking for, then retry your request\"}}",
+  "instagram_retry_at": "2026-10-08T01:00:07.291Z"
 }

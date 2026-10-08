@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T00:33:59.553Z",
+  "checked_at": "2026-10-08T00:50:07.496Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-08T00:33:59.329Z",
-    "usage": 10,
+    "checked_at": "2026-10-08T00:50:03.749Z",
+    "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-08T00:48:59.329Z",
+    "next_check_at": "2026-10-08T01:05:03.749Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 10,
+    "instagram_usage": 9,
     "platform_quota_usage": 10,
-    "instagram_remaining": 0,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-08T00:28:24.853Z",
-    "feed_allowed": false,
-    "story_allowed": false
+    "feed_allowed": true,
+    "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 0,
+  "instagram_steps": 1,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,17 +44,33 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-08T00:23:58.635Z",
+    "checked_at": "2026-10-08T00:39:03.056Z",
     "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-08T00:38:58.635Z",
+    "next_check_at": "2026-10-08T00:54:03.056Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-08T00:38:05.376Z",
-  "publications": [],
-  "failures": [],
+  "threads_next_eligible_at": "2026-10-08T02:15:37.869Z",
+  "publications": [
+    {
+      "file": "rapwire-carousel-2026-10-07-1700.json",
+      "id": "rapwire-carousel-2026-10-07-1700",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18172195039456205"
+    }
+  ],
+  "failures": [
+    {
+      "file": "rapwire-carousel-2026-10-07-1700.json",
+      "id": "rapwire-carousel-2026-10-07-1700",
+      "platform": "instagram",
+      "status": "failed",
+      "error": "Instagram status check failed: {\"error\":{\"code\":1,\"message\":\"Please reduce the amount of data you're asking for, then retry your request\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T18:18:12.414Z",
+  "checked_at": "2026-10-08T18:23:15.925Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 10,
+    "instagram_usage": 9,
     "platform_quota_usage": 10,
-    "instagram_remaining": 0,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-08T18:27:10.818Z",
     "feed_allowed": false,
-    "story_allowed": false
+    "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,

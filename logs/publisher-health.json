@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T04:11:32.449Z",
+  "checked_at": "2026-10-08T04:16:37.941Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-08T04:11:31.478Z",
-    "usage": 9,
+    "checked_at": "2026-10-08T04:16:30.152Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-08T04:26:31.478Z",
+    "next_check_at": "2026-10-08T04:31:30.152Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-08T04:06:56.702Z",
+    "next_feed_eligible_at": "2026-10-08T05:46:37.525Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -44,17 +44,26 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-08T04:01:17.157Z",
+    "checked_at": "2026-10-08T04:16:29.557Z",
     "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-08T04:16:17.157Z",
+    "next_check_at": "2026-10-08T04:31:29.557Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-08T05:31:25.477Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1285-true-love-is-true-love.json",
+      "id": "1285-true-love-is-true-love",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18413388223087322",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

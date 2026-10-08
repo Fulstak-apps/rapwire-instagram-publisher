@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T13:35:36.709Z",
+  "checked_at": "2026-10-08T13:38:25.004Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,25 +44,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-08T13:23:06.416Z",
+    "checked_at": "2026-10-08T13:38:24.767Z",
     "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-08T13:38:06.416Z",
+    "next_check_at": "2026-10-08T13:53:24.767Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-08T15:05:36.309Z",
-  "publications": [
-    {
-      "file": "1294-donald-trump-says-he-doesn-t-mind-if-los-angels-san-diego-are-lo.json",
-      "id": "1294-donald-trump-says-he-doesn-t-mind-if-los-angels-san-diego-are-lo",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18064285184785967"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

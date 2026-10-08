@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T05:32:23.381Z",
+  "checked_at": "2026-10-08T05:37:31.701Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-08T05:32:22.768Z",
-    "usage": 10,
+    "usage": 11,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-08T05:47:22.768Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-08T05:31:25.477Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-08T07:07:31.215Z",
+  "publications": [
+    {
+      "file": "1288-8-years-ago-today-juice-wrld-freestyled-over-eminem-beats-for-mo.json",
+      "id": "1288-8-years-ago-today-juice-wrld-freestyled-over-eminem-beats-for-mo",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18226052824326949"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

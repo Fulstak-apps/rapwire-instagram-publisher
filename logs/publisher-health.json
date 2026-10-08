@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T21:56:22.515Z",
+  "checked_at": "2026-10-08T22:01:11.577Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-08T23:26:14.616Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,23 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-08T23:26:21.516Z",
-  "publications": [
-    {
-      "file": "1298-drake-trolled-ben-and-told-him-he-s-too-old-to-be-put-into-colle.json",
-      "id": "1298-drake-trolled-ben-and-told-him-he-s-too-old-to-be-put-into-colle",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18410911828080178",
-      "content_type": "video"
-    },
-    {
-      "file": "1299-50-cent-speaks-on-lil-meech.json",
-      "id": "1299-50-cent-speaks-on-lil-meech",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18117586669994044"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

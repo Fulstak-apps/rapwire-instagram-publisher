@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T16:47:04.242Z",
+  "checked_at": "2026-10-08T16:52:46.553Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-08T16:47:02.971Z",
+    "checked_at": "2026-10-08T16:52:37.262Z",
     "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-08T17:02:02.971Z",
+    "next_check_at": "2026-10-08T17:07:37.262Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
     "instagram_usage": 9,
-    "platform_quota_usage": 10,
+    "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-08T16:39:35.110Z",
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-08T16:41:56.296Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-08T16:56:56.296Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-08T16:44:39.836Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-08T18:22:45.432Z",
+  "publications": [
+    {
+      "file": "1296-trap-lore-responds-to-criticism-saying-he-glorifies-street-viole.json",
+      "id": "1296-trap-lore-responds-to-criticism-saying-he-glorifies-street-viole",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18218584318342832"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

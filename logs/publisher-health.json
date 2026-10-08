@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T23:44:04.122Z",
+  "checked_at": "2026-10-08T23:49:00.075Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-09T01:14:03.342Z",
-  "publications": [
-    {
-      "file": "1300-tory-is-upgrading-his-venues-because-of-the-success-of-his-ny-sh.json",
-      "id": "1300-tory-is-upgrading-his-venues-because-of-the-success-of-his-ny-sh",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17947429317348192"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

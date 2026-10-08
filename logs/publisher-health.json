@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T00:54:17.454Z",
+  "checked_at": "2026-10-08T00:59:20.343Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-08T00:54:16.484Z",
-    "usage": 9,
+    "checked_at": "2026-10-08T00:59:11.040Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-08T01:09:16.484Z",
+    "next_check_at": "2026-10-08T01:14:11.040Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-08T00:28:24.853Z",
+    "next_feed_eligible_at": "2026-10-08T02:29:20.032Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -54,7 +54,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-08T02:15:37.869Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1279-lucki-shows-his-injury-after-getting-sliced-in-a-recent-altercat.json",
+      "id": "1279-lucki-shows-his-injury-after-getting-sliced-in-a-recent-altercat",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18167886481465431",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

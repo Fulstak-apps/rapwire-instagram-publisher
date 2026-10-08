@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T10:20:52.396Z",
+  "checked_at": "2026-10-08T10:26:01.342Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-08T10:20:51.703Z",
-    "usage": 13,
+    "usage": 14,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-08T10:35:51.703Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-08T10:19:51.464Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-08T11:56:00.916Z",
+  "publications": [
+    {
+      "file": "1292-on-being-pressed-by-durk-fans-and-paid-actors-outside-the-courtr.json",
+      "id": "1292-on-being-pressed-by-durk-fans-and-paid-actors-outside-the-courtr",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17915997138263135"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

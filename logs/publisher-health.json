@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T16:52:46.553Z",
+  "checked_at": "2026-10-08T16:57:11.143Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-08T16:52:37.262Z",
-    "usage": 9,
+    "checked_at": "2026-10-08T16:57:06.758Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-08T17:07:37.262Z",
+    "next_check_at": "2026-10-08T17:12:06.758Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-08T16:39:35.110Z",
+    "next_feed_eligible_at": "2026-10-08T18:27:10.818Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,11 +44,11 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-08T16:41:56.296Z",
+    "checked_at": "2026-10-08T16:57:06.486Z",
     "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-08T16:56:56.296Z",
+    "next_check_at": "2026-10-08T17:12:06.486Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -56,11 +56,12 @@
   "threads_next_eligible_at": "2026-10-08T18:22:45.432Z",
   "publications": [
     {
-      "file": "1296-trap-lore-responds-to-criticism-saying-he-glorifies-street-viole.json",
-      "id": "1296-trap-lore-responds-to-criticism-saying-he-glorifies-street-viole",
-      "platform": "threads",
+      "file": "1292-on-being-pressed-by-durk-fans-and-paid-actors-outside-the-courtr.json",
+      "id": "1292-on-being-pressed-by-durk-fans-and-paid-actors-outside-the-courtr",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18218584318342832"
+      "media_id": "17966848091973699",
+      "content_type": "video"
     }
   ],
   "failures": [],

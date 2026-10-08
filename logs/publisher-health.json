@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T04:01:26.064Z",
+  "checked_at": "2026-10-08T04:06:22.984Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-08T05:31:25.477Z",
-  "publications": [
-    {
-      "file": "1284-1-8-million-on-ye-wrist.json",
-      "id": "1284-1-8-million-on-ye-wrist",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17922747075440885"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

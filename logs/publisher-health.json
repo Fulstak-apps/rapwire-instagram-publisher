@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T23:37:49.904Z",
+  "checked_at": "2026-10-08T23:38:53.016Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-09T01:07:49.620Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -54,24 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-08T23:26:21.516Z",
-  "publications": [
-    {
-      "file": "rapwire-carousel-2026-10-08-1400.json",
-      "id": "rapwire-carousel-2026-10-08-1400",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17949927819053368",
-      "content_type": "carousel"
-    }
-  ],
-  "failures": [
-    {
-      "file": "rapwire-carousel-2026-10-08-1400.json",
-      "id": "rapwire-carousel-2026-10-08-1400",
-      "platform": "threads",
-      "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"Invalid parameter\",\"type\":\"OAuthException\",\"code\":100,\"error_subcode\":4279004,\"is_transient\":false,\"error_user_title\":\"Invalid Carousel Children\",\"error_user_msg\":\"The children with IDs 18104885894179906 are invalid, nonexistent, or expired.\",\"fbtrace_id\":\"AhyNJEwoS4w4EA-FV6bdifM\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

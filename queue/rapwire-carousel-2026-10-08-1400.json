@@ -180,13 +180,16 @@
     },
     "next_action": "Retry via the scheduled publisher heartbeat after the recorded eligibility time; do not duplicate this queue item."
   },
-  "threads_status": "failed",
-  "threads_error": "Threads threads failed: {\"error\":{\"message\":\"Invalid parameter\",\"type\":\"OAuthException\",\"code\":100,\"error_subcode\":4279004,\"is_transient\":false,\"error_user_title\":\"Invalid Carousel Children\",\"error_user_msg\":\"The children with IDs 18104885894179906 are invalid, nonexistent, or expired.\",\"fbtrace_id\":\"AhyNJEwoS4w4EA-FV6bdifM\"}}",
+  "threads_status": "published",
   "threads_retry_at": "2026-10-09T00:02:19.068Z",
   "instagram_media_id": "17949927819053368",
   "published_at": "2026-10-08T23:37:49.620Z",
   "instagram_verified_at": "2026-10-08T23:37:49.697Z",
   "instagram_permalink": "https://www.instagram.com/p/DeQIRx2GLtp/",
   "threads_story_status": "not_supported",
-  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "threads_media_id": "18491701300108942",
+  "threads_published_at": "2026-10-09T12:13:53.961Z",
+  "threads_verified_at": "2026-10-09T12:13:54.145Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DeRezQjGwhm"
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T16:14:01.685Z",
+  "checked_at": "2026-10-09T16:21:34.968Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -55,14 +55,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-09T15:31:12.156Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "rapwire-carousel-2026-09-28-1700.json",
-      "id": "rapwire-carousel-2026-09-28-1700",
-      "platform": "threads",
-      "status": "failed",
-      "error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"Am6yxKKeUgwuPBzWtC-Qb9H\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

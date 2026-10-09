@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T02:56:01.084Z",
+  "checked_at": "2026-10-09T03:00:49.771Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-09T04:26:00.815Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,23 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-09T04:25:53.496Z",
-  "publications": [
-    {
-      "file": "1304-az-chike-clears-up-rumors-about-the-infamous-missing-kendrick-ve.json",
-      "id": "1304-az-chike-clears-up-rumors-about-the-infamous-missing-kendrick-ve",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18089745740690908"
-    },
-    {
-      "file": "1304-az-chike-clears-up-rumors-about-the-infamous-missing-kendrick-ve.json",
-      "id": "1304-az-chike-clears-up-rumors-about-the-infamous-missing-kendrick-ve",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17912378574501518",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

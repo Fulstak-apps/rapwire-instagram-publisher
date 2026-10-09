@@ -3,7 +3,7 @@
   "reserve_hours": 0,
   "reserve_low": true,
   "queue_empty": true,
-  "overdue": true,
+  "overdue": false,
   "health_stale": false,
   "processing": [],
   "blocked": false,
@@ -13,6 +13,6 @@
   "ready": [],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-09T13:09:50.963Z",
+  "checked_at": "2026-10-09T18:46:54.019Z",
   "deferred": []
 }

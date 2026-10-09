@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T22:45:51.836Z",
+  "checked_at": "2026-10-09T22:50:13.869Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-09T22:40:50.716Z",
-    "usage": 10,
+    "usage": 11,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-09T22:55:50.716Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-09T21:42:44.705Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-10T00:20:13.616Z",
+  "publications": [
+    {
+      "file": "1239-mississippi-s-very-own-continues-to-make-his-presence-felt-with-.json",
+      "id": "1239-mississippi-s-very-own-continues-to-make-his-presence-felt-with-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18081004787380974"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

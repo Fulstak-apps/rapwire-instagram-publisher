@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T19:15:11.191Z",
+  "checked_at": "2026-10-09T20:12:45.042Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-09T19:10:05.206Z",
+    "checked_at": "2026-10-09T20:08:11.061Z",
     "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-09T19:25:05.206Z",
+    "next_check_at": "2026-10-09T20:23:11.061Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -31,11 +31,11 @@
     "instagram_remaining": 4,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-09T19:51:32.906Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-09T19:15:10.984Z",
+    "checked_at": "2026-10-09T20:08:11.766Z",
     "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-09T19:30:10.984Z",
+    "next_check_at": "2026-10-09T20:23:11.766Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-09T19:42:57.629Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-09T21:42:44.705Z",
+  "publications": [
+    {
+      "file": "rapwire-carousel-2026-10-09-0800.json",
+      "id": "rapwire-carousel-2026-10-09-0800",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17955855876257647"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

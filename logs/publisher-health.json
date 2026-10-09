@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T02:50:45.311Z",
+  "checked_at": "2026-10-09T02:56:01.084Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-09T02:50:43.757Z",
-    "usage": 9,
+    "checked_at": "2026-10-09T02:55:54.244Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-09T03:05:43.757Z",
+    "next_check_at": "2026-10-09T03:10:54.244Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-09T02:49:53.834Z",
+    "next_feed_eligible_at": "2026-10-09T04:26:00.815Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-09T02:50:43.627Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-09T03:05:43.627Z",
@@ -53,8 +53,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-09T02:49:46.503Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-09T04:25:53.496Z",
+  "publications": [
+    {
+      "file": "1304-az-chike-clears-up-rumors-about-the-infamous-missing-kendrick-ve.json",
+      "id": "1304-az-chike-clears-up-rumors-about-the-infamous-missing-kendrick-ve",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18089745740690908"
+    },
+    {
+      "file": "1304-az-chike-clears-up-rumors-about-the-infamous-missing-kendrick-ve.json",
+      "id": "1304-az-chike-clears-up-rumors-about-the-infamous-missing-kendrick-ve",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17912378574501518",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

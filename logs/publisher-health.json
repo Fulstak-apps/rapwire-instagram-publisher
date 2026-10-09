@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T04:32:04.031Z",
+  "checked_at": "2026-10-09T04:36:49.367Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-09T06:02:03.827Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,23 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-09T06:01:56.770Z",
-  "publications": [
-    {
-      "file": "1307-brian-steel-believes-that-every-judge-prosecutor-and-police-offi.json",
-      "id": "1307-brian-steel-believes-that-every-judge-prosecutor-and-police-offi",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18151091863546470"
-    },
-    {
-      "file": "1307-brian-steel-believes-that-every-judge-prosecutor-and-police-offi.json",
-      "id": "1307-brian-steel-believes-that-every-judge-prosecutor-and-police-offi",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18167843800465539",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

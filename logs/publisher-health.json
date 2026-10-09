@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T14:01:12.394Z",
+  "checked_at": "2026-10-09T14:06:05.917Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-09T15:31:12.156Z",
-  "publications": [
-    {
-      "file": "1190-nah-who-remember-this-never-forget-when-lil-uzi-vert-liluzivert-.json",
-      "id": "1190-nah-who-remember-this-never-forget-when-lil-uzi-vert-liluzivert-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17868083586662433"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

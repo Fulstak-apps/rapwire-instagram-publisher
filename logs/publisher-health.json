@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T18:12:58.019Z",
+  "checked_at": "2026-10-09T18:21:33.120Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-09T18:12:50.319Z",
-    "usage": 6,
+    "checked_at": "2026-10-09T18:21:27.726Z",
+    "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-09T18:27:50.319Z",
+    "next_check_at": "2026-10-09T18:36:27.726Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 6,
     "instagram_remaining": 4,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-09T06:02:03.827Z",
+    "next_feed_eligible_at": "2026-10-09T19:51:32.906Z",
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -56,11 +56,12 @@
   "threads_next_eligible_at": "2026-10-09T19:42:57.629Z",
   "publications": [
     {
-      "file": "1215-this-what-otf-jam-thought-he-was-doing-yall.json",
-      "id": "1215-this-what-otf-jam-thought-he-was-doing-yall",
-      "platform": "threads",
+      "file": "rapwire-carousel-2026-10-09-0800.json",
+      "id": "rapwire-carousel-2026-10-09-0800",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18335036284278541"
+      "media_id": "18112979861034714",
+      "content_type": "carousel"
     }
   ],
   "failures": [],

@@ -1,6 +1,6 @@
 {
   "id": "1305-kodak-reacts-to-kai-cenat-being-in-the-news-lately-and-says-he-s",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-07",
   "timezone": "America/Detroit",
@@ -9,11 +9,11 @@
   "story_type": "throwback",
   "layout_template": "rapwire-video-grid-safe-v1",
   "editorial_lane": "rap_culture",
-  "headline": "Kodak reacts to Kai Cenat being in the news lately and says he’s thinking of streaming.",
-  "body": "Kodak reacts to Kai Cenat being in the news lately and says he’s thinking of streaming.",
-  "rendered_body_text": "Kodak reacts to Kai Cenat being in the news lately and says he’s thinking of streaming.",
-  "caption": "Kodak reacts to Kai Cenat being in the news lately and says he’s thinking of streaming.\n\n@Rapwire247",
-  "threads_text": "Kodak reacts to Kai Cenat being in the news lately and says he’s thinking of streaming.\n\n@Rapwire247",
+  "headline": "Kodak reacts to Kai Cenat being in the news lately and says he\u2019s thinking of streaming.",
+  "body": "Kodak reacts to Kai Cenat being in the news lately and says he\u2019s thinking of streaming.",
+  "rendered_body_text": "Kodak reacts to Kai Cenat being in the news lately and says he\u2019s thinking of streaming.",
+  "caption": "Kodak reacts to Kai Cenat being in the news lately and says he\u2019s thinking of streaming.\n\n@Rapwire247",
+  "threads_text": "Kodak reacts to Kai Cenat being in the news lately and says he\u2019s thinking of streaming.\n\n@Rapwire247",
   "video": "media/1305-kodak-reacts-to-kai-cenat-being-in-the-news-lately-and-says-he-s.mp4",
   "source_handle": "akademiks",
   "source_url": "https://www.instagram.com/akademiks/reel/DeLXuaytaY6/",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DeLXuaytaY6",
-  "source_caption_text": "Kodak reacts to Kai Cenat being in the news lately and says he’s thinking of streaming",
+  "source_caption_text": "Kodak reacts to Kai Cenat being in the news lately and says he\u2019s thinking of streaming",
   "caption_checked_at": "2026-10-07T03:55:32.576Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 45.9
+  "source_video_duration": 45.9,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

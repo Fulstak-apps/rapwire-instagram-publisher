@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T16:21:34.968Z",
+  "checked_at": "2026-10-09T16:26:43.677Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-09T16:08:38.240Z",
+    "checked_at": "2026-10-09T16:26:35.217Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-09T16:23:38.240Z",
+    "next_check_at": "2026-10-09T16:41:35.217Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-09T16:08:38.609Z",
-    "usage": 11,
+    "checked_at": "2026-10-09T16:26:36.076Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-09T16:23:38.609Z",
+    "next_check_at": "2026-10-09T16:41:36.076Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-09T15:31:12.156Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-09T17:56:43.426Z",
+  "publications": [
+    {
+      "file": "1211-ben10-emergency-bond-hearing-update-part-7-feds-in-texas-lied-to.json",
+      "id": "1211-ben10-emergency-bond-hearing-update-part-7-feds-in-texas-lied-to",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18413316532084608"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

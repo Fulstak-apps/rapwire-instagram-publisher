@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-10-10-0800",
-  "status": "ready",
+  "status": "published",
   "type": "original_editorial_carousel",
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
@@ -194,5 +194,16 @@
       "error": "Threads uses a separate 90-minute video publishing cadence; scheduled retry retained."
     },
     "next_action": "Allow the scheduled publisher heartbeat to retry after the recorded Instagram eligibility time; do not duplicate the batch."
-  }
+  },
+  "threads_status": "published",
+  "threads_media_id": "17952638772279132",
+  "threads_published_at": "2026-10-10T17:34:06.761Z",
+  "threads_verified_at": "2026-10-10T17:34:07.005Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DeUoPhqEfEf",
+  "instagram_media_id": "18129877339819266",
+  "published_at": "2026-10-10T17:39:37.677Z",
+  "instagram_verified_at": "2026-10-10T17:39:37.800Z",
+  "instagram_permalink": "https://www.instagram.com/p/DeUo3-4kUIh/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
 }

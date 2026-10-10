@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-10T20:51:26.776Z",
+  "checked_at": "2026-10-10T20:56:16.094Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 4,
-    "platform_quota_usage": 4,
-    "instagram_remaining": 6,
+    "instagram_usage": 5,
+    "platform_quota_usage": 5,
+    "instagram_remaining": 5,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-10T22:21:26.428Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,23 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-10T22:21:18.063Z",
-  "publications": [
-    {
-      "file": "1310-megan-thee-stallion-shared-an-update-on-miso-the-cat-she-found-o.json",
-      "id": "1310-megan-thee-stallion-shared-an-update-on-miso-the-cat-she-found-o",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18403778545201092"
-    },
-    {
-      "file": "1310-megan-thee-stallion-shared-an-update-on-miso-the-cat-she-found-o.json",
-      "id": "1310-megan-thee-stallion-shared-an-update-on-miso-the-cat-she-found-o",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18103528511642993",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

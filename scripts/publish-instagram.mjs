@@ -453,6 +453,19 @@ function instagramCaption(value, item = {}) {
   return fitInstagramCaption(signedCaption(value, item));
 }
 
+// Threads rejects a post over 500 characters.  Keep the RapWire signature
+// intact and shorten at a word boundary before the request is created, so one
+// oversized carousel caption cannot strand an otherwise valid queue item.
+function threadsCaption(value, item = {}) {
+  const caption = signedCaption(value, item);
+  if ([...caption].length <= 500) return caption;
+  const suffix = `\n\n${signature}`;
+  const room = 500 - [...suffix].length - 1;
+  const body = caption.replace(new RegExp(`${suffix.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`), "").trim();
+  const shortened = [...body].slice(0, Math.max(0, room)).join("").replace(/\s+\S*$/, "").trimEnd();
+  return `${shortened}…${suffix}`;
+}
+
 function slideUrl(item, index) {
   const remote = Array.isArray(item.media_urls) ? item.media_urls[index] : "";
   return remote && /^https?:\/\//i.test(remote) ? remote : mediaUrl(carouselSlides(item)[index]);
@@ -728,7 +741,7 @@ async function publishThreadsCarousel(item) {
     const image = await threadsPost("threads", {
       media_type: "IMAGE",
       image_url: slideUrl(item, 0),
-      text: signedCaption(item.threads_text || item.caption, item)
+      text: threadsCaption(item.threads_text || item.caption, item)
     });
     await waitForThreadsContainer(image.id);
     return threadsPost("threads_publish", { creation_id: image.id });
@@ -746,7 +759,7 @@ async function publishThreadsCarousel(item) {
   const carousel = await threadsPost("threads", {
     media_type: "CAROUSEL",
     children: children.join(","),
-    text: signedCaption(item.threads_text || item.caption, item)
+    text: threadsCaption(item.threads_text || item.caption, item)
   });
   await waitForThreadsContainer(carousel.id);
   return threadsPost("threads_publish", { creation_id: carousel.id });
@@ -772,7 +785,7 @@ async function waitForThreadsContainer(containerId) {
 
 async function publishThreadsVideo(item, itemPath) {
   return advanceContainer({ item, prefix: "threads", checkIntervalMs: THREADS_INTERVAL_MS,
-    create: () => threadsPost("threads", { media_type: "VIDEO", video_url: videoUrl(item), text: signedCaption(item.threads_text || item.caption, item) }),
+    create: () => threadsPost("threads", { media_type: "VIDEO", video_url: videoUrl(item), text: threadsCaption(item.threads_text || item.caption, item) }),
     inspect: id => inspectContainer("threads", id),
     publish: id => threadsPost("threads_publish", { creation_id: id }),
     save: () => save(itemPath, item)
@@ -955,7 +968,7 @@ for (const file of files) {
       continue;
     }
     const normalizedCaption = signedCaption(item.caption, item);
-    const normalizedThreadsText = signedCaption(item.threads_text || item.caption, item);
+    const normalizedThreadsText = threadsCaption(item.threads_text || item.caption, item);
     if (item.caption !== normalizedCaption || item.threads_text !== normalizedThreadsText) {
       item.caption = normalizedCaption;
       item.threads_text = normalizedThreadsText;

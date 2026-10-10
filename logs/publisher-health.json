@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-10T05:29:38.907Z",
+  "checked_at": "2026-10-10T05:39:10.658Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-10T05:19:30.054Z",
+    "checked_at": "2026-10-10T05:34:41.838Z",
     "usage": 2,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-10T05:34:30.054Z",
+    "next_check_at": "2026-10-10T05:49:41.838Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,7 +35,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,6 +55,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-10T05:33:49.865Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "rapwire-carousel-2026-09-28-1700.json",
+      "id": "rapwire-carousel-2026-09-28-1700",
+      "platform": "threads",
+      "status": "failed",
+      "error": "Threads threads failed: {\"error\":{\"message\":\"Param text must be at most 500 characters long.\",\"type\":\"THApiException\",\"code\":100,\"fbtrace_id\":\"A7Qk0oRawoMd2tfustSPOpC\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T21:14:44.937Z",
+  "checked_at": "2026-10-11T21:19:49.819Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-11T21:04:34.151Z",
-    "usage": 11,
+    "checked_at": "2026-10-11T21:19:44.030Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-11T21:19:34.151Z",
+    "next_check_at": "2026-10-11T21:34:44.030Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-11T21:13:44.656Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-11T22:49:49.020Z",
+  "publications": [
+    {
+      "file": "1321-tee-grizzley-reacts-to-fans-saying-he-has-the-best-first-day-out.json",
+      "id": "1321-tee-grizzley-reacts-to-fans-saying-he-has-the-best-first-day-out",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17922422598221704"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

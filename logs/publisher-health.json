@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T01:43:39.573Z",
+  "checked_at": "2026-10-11T01:49:07.778Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-11T01:43:31.486Z",
-    "usage": 6,
+    "checked_at": "2026-10-11T01:49:03.057Z",
+    "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-11T01:58:31.486Z",
+    "next_check_at": "2026-10-11T02:04:03.057Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 6,
     "instagram_remaining": 4,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-11T01:41:57.516Z",
+    "next_feed_eligible_at": "2026-10-11T03:19:07.473Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,11 +44,11 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-11T01:33:17.571Z",
+    "checked_at": "2026-10-11T01:49:02.845Z",
     "usage": 10,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-11T01:48:17.571Z",
+    "next_check_at": "2026-10-11T02:04:02.845Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -58,9 +58,10 @@
     {
       "file": "1312-nick-reiner-murdered-his-parents-allegedly-and-wants-to-cover-up.json",
       "id": "1312-nick-reiner-murdered-his-parents-allegedly-and-wants-to-cover-up",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18639750106061294"
+      "media_id": "18145521913606114",
+      "content_type": "video"
     }
   ],
   "failures": [],

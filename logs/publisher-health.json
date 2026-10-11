@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T03:20:10.911Z",
+  "checked_at": "2026-10-11T03:25:10.803Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-11T03:20:02.043Z",
-    "usage": 7,
+    "checked_at": "2026-10-11T03:25:03.734Z",
+    "usage": 8,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-11T03:35:02.043Z",
+    "next_check_at": "2026-10-11T03:40:03.734Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 7,
     "instagram_remaining": 3,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-11T03:19:07.473Z",
+    "next_feed_eligible_at": "2026-10-11T04:55:10.448Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -58,9 +58,10 @@
     {
       "file": "1313-is-a-special-talent-that-you-gotta-hear-asap-lelo-continues-to-p.json",
       "id": "1313-is-a-special-talent-that-you-gotta-hear-asap-lelo-continues-to-p",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "17993774469058299"
+      "media_id": "18108722225232216",
+      "content_type": "video"
     }
   ],
   "failures": [],

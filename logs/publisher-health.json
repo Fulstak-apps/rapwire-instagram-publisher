@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T00:06:55.104Z",
+  "checked_at": "2026-10-11T00:11:57.880Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-11T00:06:47.376Z",
-    "usage": 6,
+    "checked_at": "2026-10-11T00:11:49.092Z",
+    "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-11T00:21:47.376Z",
+    "next_check_at": "2026-10-11T00:26:49.092Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 6,
     "instagram_remaining": 4,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-11T00:03:00.882Z",
+    "next_feed_eligible_at": "2026-10-11T01:41:57.516Z",
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -58,9 +58,10 @@
     {
       "file": "1311-i-need-a-2-or-3-year-old-to-do-this-tiktok.json",
       "id": "1311-i-need-a-2-or-3-year-old-to-do-this-tiktok",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18482934340129660"
+      "media_id": "18035856212658185",
+      "content_type": "video"
     }
   ],
   "failures": [],

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T15:59:30.687Z",
+  "checked_at": "2026-10-11T16:04:39.034Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-11T15:59:29.915Z",
-    "usage": 9,
+    "checked_at": "2026-10-11T16:04:32.602Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-11T16:14:29.915Z",
+    "next_check_at": "2026-10-11T16:19:32.602Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-11T08:07:20.029Z",
+    "next_feed_eligible_at": "2026-10-11T17:34:38.730Z",
     "feed_allowed": true,
     "story_allowed": true
   },
@@ -54,7 +54,16 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-11T16:18:49.573Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1316-don-toliver-speaks-on-working-with-drake-on-solar-eclipse.json",
+      "id": "1316-don-toliver-speaks-on-working-with-drake-on-solar-eclipse",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17993961813044336",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

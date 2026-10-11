@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T03:14:57.825Z",
+  "checked_at": "2026-10-11T03:20:10.911Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-11T03:04:52.024Z",
+    "checked_at": "2026-10-11T03:20:02.043Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-11T03:19:52.024Z",
+    "next_check_at": "2026-10-11T03:35:02.043Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -31,10 +31,10 @@
     "instagram_remaining": 3,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-11T03:19:07.473Z",
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-11T03:04:52.779Z",
-    "usage": 9,
+    "checked_at": "2026-10-11T03:20:01.722Z",
+    "usage": 10,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-11T03:19:52.779Z",
+    "next_check_at": "2026-10-11T03:35:01.722Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-11T03:13:39.255Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-11T04:50:10.097Z",
+  "publications": [
+    {
+      "file": "1313-is-a-special-talent-that-you-gotta-hear-asap-lelo-continues-to-p.json",
+      "id": "1313-is-a-special-talent-that-you-gotta-hear-asap-lelo-continues-to-p",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17993774469058299"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T01:49:07.778Z",
+  "checked_at": "2026-10-11T01:54:03.221Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 6,
-    "platform_quota_usage": 6,
-    "instagram_remaining": 4,
+    "instagram_usage": 7,
+    "platform_quota_usage": 7,
+    "instagram_remaining": 3,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-11T03:19:07.473Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -54,16 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-11T03:13:39.255Z",
-  "publications": [
-    {
-      "file": "1312-nick-reiner-murdered-his-parents-allegedly-and-wants-to-cover-up.json",
-      "id": "1312-nick-reiner-murdered-his-parents-allegedly-and-wants-to-cover-up",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18145521913606114",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

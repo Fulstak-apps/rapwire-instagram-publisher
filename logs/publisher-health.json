@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T22:50:45.275Z",
+  "checked_at": "2026-10-11T22:56:00.155Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-11T22:50:44.479Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-11T23:05:44.479Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-11T22:49:49.020Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-12T00:25:58.900Z",
+  "publications": [
+    {
+      "file": "1322-blueface-reunites-with-his-two-kids-with-jaidyn-alexis-javaughn-.json",
+      "id": "1322-blueface-reunites-with-his-two-kids-with-jaidyn-alexis-javaughn-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18101090096302146"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

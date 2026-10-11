@@ -1,17 +1,16 @@
 {
-  "reserve_count": 33,
-  "reserve_hours": 16.5,
+  "reserve_count": 32,
+  "reserve_hours": 16,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1315-we-made-dababy-choose-between-eminem-vs-2pac-makes-some-insanely",
     "1316-don-toliver-speaks-on-working-with-drake-on-solar-eclipse",
     "1317-gta-vi-is-going-to-have-an-all-timer-soundtrack-has-released-two",
     "1318-boston-richey-got-the-hardest-jewelry-in-the-game-rn",
@@ -47,6 +46,6 @@
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-11T06:26:13.254Z",
+  "checked_at": "2026-10-11T13:10:50.112Z",
   "deferred": []
 }

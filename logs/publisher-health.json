@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T03:25:10.803Z",
+  "checked_at": "2026-10-11T03:30:08.916Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,15 +26,15 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 7,
-    "platform_quota_usage": 7,
-    "instagram_remaining": 3,
+    "instagram_usage": 8,
+    "platform_quota_usage": 8,
+    "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-11T04:55:10.448Z",
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -54,16 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-11T04:50:10.097Z",
-  "publications": [
-    {
-      "file": "1313-is-a-special-talent-that-you-gotta-hear-asap-lelo-continues-to-p.json",
-      "id": "1313-is-a-special-talent-that-you-gotta-hear-asap-lelo-continues-to-p",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18108722225232216",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

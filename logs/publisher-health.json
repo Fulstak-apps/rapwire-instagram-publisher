@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T13:11:36.579Z",
+  "checked_at": "2026-10-11T14:24:33.258Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-11T13:11:29.417Z",
+    "checked_at": "2026-10-11T14:24:32.728Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-11T13:26:29.417Z",
+    "next_check_at": "2026-10-11T14:39:32.728Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,7 +35,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -44,25 +44,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-11T13:11:29.824Z",
+    "checked_at": "2026-10-11T14:24:33.010Z",
     "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-11T13:26:29.824Z",
+    "next_check_at": "2026-10-11T14:39:33.010Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-11T14:41:36.156Z",
-  "publications": [
-    {
-      "file": "1316-don-toliver-speaks-on-working-with-drake-on-solar-eclipse.json",
-      "id": "1316-don-toliver-speaks-on-working-with-drake-on-solar-eclipse",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18116590730469257"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

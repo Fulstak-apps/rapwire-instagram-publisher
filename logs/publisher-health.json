@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T22:45:03.704Z",
+  "checked_at": "2026-10-12T22:47:37.631Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-13T00:15:03.355Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-13T00:21:53.314Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,26 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-12T22:32:30.092Z",
+    "checked_at": "2026-10-12T22:47:37.422Z",
     "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-12T22:47:30.092Z",
+    "next_check_at": "2026-10-12T23:02:37.422Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-12T22:51:41.976Z",
-  "publications": [
-    {
-      "file": "1334-toronto-fc-player-derrick-etienne-jr-got-into-it-with-a-fan-duri.json",
-      "id": "1334-toronto-fc-player-derrick-etienne-jr-got-into-it-with-a-fan-duri",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18157833643540796",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

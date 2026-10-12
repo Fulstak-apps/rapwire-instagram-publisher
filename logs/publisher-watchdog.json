@@ -1,6 +1,6 @@
 {
-  "reserve_count": 38,
-  "reserve_hours": 19,
+  "reserve_count": 39,
+  "reserve_hours": 19.5,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": false,
@@ -8,11 +8,9 @@
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1321-tee-grizzley-reacts-to-fans-saying-he-has-the-best-first-day-out",
-    "1322-blueface-reunites-with-his-two-kids-with-jaidyn-alexis-javaughn-",
     "1323-it-s-been-five-long-years-since-dropped-an-album-but-now-she-s-b",
     "1324-drake-and-timbaland-were-lowkey-competing-for-who-could-make-the",
     "1325-kaicenat-had-the-internet-laughing-after-trolling-reggie-on-stre",
@@ -48,10 +46,13 @@
     "1355-dr-umar-was-done-w-raud-after-he-introduced-him-to-his-white-gir",
     "1356-how-rw5ive-be-talking-like-this-without-cursing-kaicenat",
     "1357-your-week-ahead-in-sports-is-here-two-big-nfl-games-champions-le",
-    "rapwire-carousel-2026-10-11-1700"
+    "1358-breh-why-i-thought-all-dem-security-was-for-tay-600",
+    "1359-chrisean-rock-reveals-she-s-getting-her-blueface-portrait-tattoo",
+    "1360-blueface-shocks-everyone-proposes-to-chrisean-rock-while-in-the-",
+    "1361-blueface-proposes-to-chrisean-rock"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-12T00:44:15.074Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-12T06:33:31.970Z",
   "deferred": []
 }

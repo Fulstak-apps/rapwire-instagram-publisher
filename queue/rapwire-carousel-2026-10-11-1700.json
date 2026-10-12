@@ -140,6 +140,21 @@
   "instagram_permalink": null,
   "threads_media_id": null,
   "threads_permalink": null,
-  "last_publish_attempt": null,
-  "publish_attempts": 0
+  "last_publish_attempt": {
+    "workflow_run_id": "38188120547",
+    "attempted_at": "2026-10-12T00:28:59Z",
+    "confirmed_publications": 0,
+    "instagram": {
+      "status": "cadence_held",
+      "next_feed_eligible_at": "2026-10-12T01:51:53.314Z",
+      "available_feed_budget_at_start": 0
+    },
+    "threads": {
+      "status": "not_attempted_for_this_batch",
+      "reason": "workflow published one unrelated Threads item while this carousel remained queued; no Threads media ID was created"
+    },
+    "error": "No platform error or auth failure; Instagram had 0 feed slots at run start and held the next feed until 2026-10-12T01:51:53.314Z. This carousel received no Instagram or Threads media IDs; safe retry via the existing 15-minute heartbeat.",
+    "retry_safe": true
+  },
+  "publish_attempts": 1
 }

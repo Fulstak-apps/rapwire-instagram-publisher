@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T10:08:34.560Z",
+  "checked_at": "2026-10-12T10:13:25.369Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-12T11:38:34.199Z",
-  "publications": [
-    {
-      "file": "1328-rip-juice-wrld-dedicated-his-new-build-a-bitch-music-video-to-in.json",
-      "id": "1328-rip-juice-wrld-dedicated-his-new-build-a-bitch-music-video-to-in",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17922437544226063"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

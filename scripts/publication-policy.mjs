@@ -47,23 +47,40 @@ export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, po
   const started = Date.parse(policyStartedAt || '') || 0;
   const cutoff = Math.max(now - 86400000, started);
   const published = new Set();
+  const publicationTimes = new Map();
   const pendingStories = new Set();
   let lastFeed = Date.parse(lastFeedPublishedAt || '') || 0;
   for (const item of records) {
     if (item.instagram_media_id) {
       const time = Date.parse(item.published_at || item.instagram_published_at || '') || 0;
       lastFeed = Math.max(lastFeed, time);
-      if (time > cutoff) published.add(item.instagram_media_id);
+      if (time > cutoff) {
+        published.add(item.instagram_media_id);
+        publicationTimes.set(item.instagram_media_id, time);
+      }
       if (includeStories && item.status === 'published' && (item.content_type === 'video' || item.story)
         && !item.instagram_story_media_id && item.instagram_story_status !== 'published') pendingStories.add(item.instagram_media_id);
     }
-    if (item.instagram_story_media_id && Date.parse(item.instagram_story_published_at || '') > cutoff) published.add(item.instagram_story_media_id);
+    if (item.instagram_story_media_id) {
+      const storyTime = Date.parse(item.instagram_story_published_at || '') || 0;
+      if (storyTime > cutoff) {
+        published.add(item.instagram_story_media_id);
+        publicationTimes.set(item.instagram_story_media_id, storyTime);
+      }
+    }
   }
   const platformLimit = Number(quota.effective_total || quota.total);
   const cap = Number.isFinite(platformLimit) && platformLimit > 0 ? Math.min(DAILY_INSTAGRAM_CAP, Math.floor(platformLimit * 0.8)) : DAILY_INSTAGRAM_CAP;
   const usage = published.size;
   const remaining = Math.max(0, cap - usage);
   const nextFeed = lastFeed ? lastFeed + FEED_INTERVAL_MS : 0;
+  // When the editorial rolling-day budget is full, cadence alone is not a
+  // meaningful retry time. Surface the first exact moment a confirmed
+  // publication ages out so the watchdog can distinguish a real outage from
+  // an intentional safety hold.
+  const oldestBudgetPublication = [...publicationTimes.values()].sort((a, b) => a - b)[0] || 0;
+  const nextBudget = remaining > 0 || !oldestBudgetPublication ? 0 : oldestBudgetPublication + 86400000;
+  const nextEligible = Math.max(nextFeed, nextBudget);
   const neededForFeed = 1 + (includeStories ? 1 : 0) + pendingStories.size;
   return {
     feed_interval_minutes: FEED_INTERVAL_MS / 60000,
@@ -72,8 +89,9 @@ export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, po
     platform_quota_usage: Number(quota.usage) || 0,
     instagram_remaining: remaining,
     reserved_story_slots: pendingStories.size,
-    next_feed_eligible_at: nextFeed ? new Date(nextFeed).toISOString() : null,
-    feed_allowed: now >= nextFeed && remaining >= neededForFeed,
+    next_feed_eligible_at: nextEligible ? new Date(nextEligible).toISOString() : null,
+    next_budget_eligible_at: nextBudget ? new Date(nextBudget).toISOString() : null,
+    feed_allowed: now >= nextEligible && remaining >= neededForFeed,
     story_allowed: remaining > 0
   };
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T06:56:38.525Z",
+  "checked_at": "2026-10-12T07:01:15.000Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -35,7 +35,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,15 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-12T08:26:38.197Z",
-  "publications": [
-    {
-      "file": "1326-the-coachella-lineup-could-be-coming-any-day-now-these-are-the-a.json",
-      "id": "1326-the-coachella-lineup-could-be-coming-any-day-now-these-are-the-a",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18032862929900131"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

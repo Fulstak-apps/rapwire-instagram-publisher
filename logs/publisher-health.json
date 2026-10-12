@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T16:33:20.394Z",
+  "checked_at": "2026-10-12T16:38:15.103Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-12T18:03:20.008Z",
-  "publications": [
-    {
-      "file": "1332-brian-steele-says-his-wife-controls-his-finances-he-just-focuses.json",
-      "id": "1332-brian-steele-says-his-wife-controls-his-finances-he-just-focuses",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17911910166521585"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T10:03:25.666Z",
+  "checked_at": "2026-10-12T10:08:34.560Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-12T09:53:15.058Z",
+    "checked_at": "2026-10-12T10:08:26.860Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-12T10:08:15.058Z",
+    "next_check_at": "2026-10-12T10:23:26.860Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-12T09:58:33.010Z",
-    "usage": 13,
+    "usage": 14,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-12T10:13:33.010Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-12T10:02:25.141Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-12T11:38:34.199Z",
+  "publications": [
+    {
+      "file": "1328-rip-juice-wrld-dedicated-his-new-build-a-bitch-music-video-to-in.json",
+      "id": "1328-rip-juice-wrld-dedicated-his-new-build-a-bitch-music-video-to-in",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17922437544226063"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

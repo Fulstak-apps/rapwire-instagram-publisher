@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T13:15:47.156Z",
+  "checked_at": "2026-10-12T13:21:15.877Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-12T13:06:32.879Z",
-    "usage": 15,
+    "usage": 16,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-12T13:21:32.879Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-12T13:14:33.149Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-12T14:51:15.211Z",
+  "publications": [
+    {
+      "file": "1330-lebron-on-the-east-coast-now-he-can-t-duck-the-drake-tracks-at-p.json",
+      "id": "1330-lebron-on-the-east-coast-now-he-can-t-duck-the-drake-tracks-at-p",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18094118297661999"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

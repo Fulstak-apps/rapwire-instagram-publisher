@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T22:57:52.989Z",
+  "checked_at": "2026-10-12T23:02:48.281Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-12T22:44:56.060Z",
+    "checked_at": "2026-10-12T23:02:47.526Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-12T22:59:56.060Z",
+    "next_check_at": "2026-10-12T23:17:47.526Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,25 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-12T22:47:37.422Z",
-    "usage": 16,
+    "checked_at": "2026-10-12T23:02:48.022Z",
+    "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-12T23:02:37.422Z",
+    "next_check_at": "2026-10-12T23:17:48.022Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-13T00:27:52.525Z",
-  "publications": [
-    {
-      "file": "1336-playboi-carti-had-absolutely-no-idea-what-big-boy-was-talking-ab.json",
-      "id": "1336-playboi-carti-had-absolutely-no-idea-what-big-boy-was-talking-ab",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18014939099959990"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

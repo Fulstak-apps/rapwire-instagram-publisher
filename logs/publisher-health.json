@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T08:27:10.193Z",
+  "checked_at": "2026-10-12T08:32:25.509Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,7 +45,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-12T08:27:09.340Z",
-    "usage": 12,
+    "usage": 13,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-12T08:42:09.340Z",
@@ -53,8 +53,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-12T08:26:38.197Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-12T10:02:25.141Z",
+  "publications": [
+    {
+      "file": "1327-french-montana-tells-big-ak-what-hip-hop-is-missing-is-he-right.json",
+      "id": "1327-french-montana-tells-big-ak-what-hip-hop-is-missing-is-he-right",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18115940284822690"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

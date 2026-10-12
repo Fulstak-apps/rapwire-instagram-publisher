@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T18:09:27.829Z",
+  "checked_at": "2026-10-12T18:14:26.755Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,25 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-12T17:59:10.239Z",
-    "usage": 16,
+    "checked_at": "2026-10-12T18:14:26.604Z",
+    "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-12T18:14:10.239Z",
+    "next_check_at": "2026-10-12T18:29:26.604Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-12T19:39:26.994Z",
-  "publications": [
-    {
-      "file": "1333-aaron-the-plumber-ko-s-mom-boyfriend-after-he-put-hands-on-her.json",
-      "id": "1333-aaron-the-plumber-ko-s-mom-boyfriend-after-he-put-hands-on-her",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18136468387733948"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T14:51:55.881Z",
+  "checked_at": "2026-10-12T14:57:10.477Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-12T14:41:47.900Z",
+    "checked_at": "2026-10-12T14:57:02.659Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-12T14:56:47.900Z",
+    "next_check_at": "2026-10-12T15:12:02.659Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -44,17 +44,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-12T14:41:48.153Z",
+    "checked_at": "2026-10-12T14:57:03.114Z",
     "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-12T14:56:48.153Z",
+    "next_check_at": "2026-10-12T15:12:03.114Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-12T14:51:15.211Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-12T16:27:10.018Z",
+  "publications": [
+    {
+      "file": "1331-lil-baby-superbowl-party-shooter-is-a-certified-crash-out.json",
+      "id": "1331-lil-baby-superbowl-party-shooter-is-a-certified-crash-out",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18115736960030771"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

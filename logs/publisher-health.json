@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-12T00:21:53.686Z",
+  "checked_at": "2026-10-12T00:26:48.472Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-12T01:51:53.314Z",
-    "feed_allowed": true,
-    "story_allowed": true
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -54,16 +54,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-12T00:25:58.900Z",
-  "publications": [
-    {
-      "file": "1320-not-somebody-asking-gherbo-son-yosohn-if-he-wants-to-be-a-hood-r.json",
-      "id": "1320-not-somebody-asking-gherbo-son-yosohn-if-he-wants-to-be-a-hood-r",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17906060211576894",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,6 +1,6 @@
 {
   "id": "rapwire-carousel-2026-10-12-1700",
-  "status": "ready",
+  "status": "published",
   "type": "original_editorial_carousel",
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
@@ -130,10 +130,10 @@
   "caption_file": "queue/rapwire-carousel-2026-10-12-1700-caption.txt",
   "checksums_file": "queue/rapwire-carousel-2026-10-12-1700-checksums.txt",
   "render_report_file": "queue/rapwire-carousel-2026-10-12-1700-render-report.json",
-  "instagram_media_id": null,
-  "instagram_permalink": null,
-  "threads_media_id": null,
-  "threads_permalink": null,
+  "instagram_media_id": "17885964927623512",
+  "instagram_permalink": "https://www.instagram.com/p/Deas4qZlMo2/",
+  "threads_media_id": "18105283328158226",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DeathJnFHSl",
   "last_publish_attempt": {
     "workflow_run_id": "38328867041",
     "attempted_at": "2026-10-13T00:46:39Z",
@@ -150,5 +150,12 @@
     "error": "No platform error or auth failure. Instagram had 0 available feed slots at workflow start and held the next feed until 2026-10-13T01:59:05.337Z; Threads was also cadence-limited. Existing 15-minute heartbeat should retry safely.",
     "retry_safe": true
   },
-  "publish_attempts": 1
+  "publish_attempts": 1,
+  "published_at": "2026-10-13T02:10:07.156Z",
+  "instagram_verified_at": "2026-10-13T02:10:07.241Z",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "threads_status": "published",
+  "threads_published_at": "2026-10-13T02:15:39.291Z",
+  "threads_verified_at": "2026-10-13T02:15:39.453Z"
 }

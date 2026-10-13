@@ -1,0 +1,141 @@
+{
+  "dimensions": "1080x1350",
+  "slides": [
+    {
+      "slide": 1,
+      "subject": "Sean Diddy Combs",
+      "headline": "DIDDY TREATED AFTER HEAD INJURY",
+      "deck": "Sean Combs was taken from Fort Dix for medical treatment after a reported head injury and returned before sunrise. His representative said details were still being confirmed; the cause remained unclear.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40,
+      "headline_bbox_y": [
+        64,
+        339
+      ],
+      "deck_bbox_y": [
+        361,
+        891
+      ],
+      "logo": {
+        "asset": "assets/rapwire247-logo.png",
+        "position": "bottom-left",
+        "transparent_background": true,
+        "backing_shape": "none"
+      },
+      "path": "/Users/dw/Documents/Codex/2026-10-12/three-times-daily-at-8-00-3/outputs/rapwire-carousel-2026-10-12-1700/rapwire-carousel-2026-10-12-1700-slide-1.png"
+    },
+    {
+      "slide": 2,
+      "subject": "Gunna",
+      "headline": "GUNNA BECOMES A LABEL BOSS",
+      "deck": "Gunna launched SB THE LABEL with Atlantic Music Group and named Casper Bluff, Nechie and Dracc as its first signings. He paired the move with \u201cpop it,\u201d featuring Coco Gauff, and is building toward Splurge.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 40,
+      "headline_bbox_y": [
+        64,
+        350
+      ],
+      "deck_bbox_y": [
+        372,
+        928
+      ],
+      "logo": {
+        "asset": "assets/rapwire247-logo.png",
+        "position": "bottom-left",
+        "transparent_background": true,
+        "backing_shape": "none"
+      },
+      "path": "/Users/dw/Documents/Codex/2026-10-12/three-times-daily-at-8-00-3/outputs/rapwire-carousel-2026-10-12-1700/rapwire-carousel-2026-10-12-1700-slide-2.png"
+    },
+    {
+      "slide": 3,
+      "subject": "Paul Wall",
+      "headline": "PAUL WALL SHOWS UP",
+      "deck": "Paul Wall learned his mother had died on the way to the Texas State Fair, then performed because she was proud of the booking. He honored her from the Dallas stage before leaving the crowd.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 40,
+      "headline_bbox_y": [
+        64,
+        350
+      ],
+      "deck_bbox_y": [
+        372,
+        870
+      ],
+      "logo": {
+        "asset": "assets/rapwire247-logo.png",
+        "position": "bottom-left",
+        "transparent_background": true,
+        "backing_shape": "none"
+      },
+      "path": "/Users/dw/Documents/Codex/2026-10-12/three-times-daily-at-8-00-3/outputs/rapwire-carousel-2026-10-12-1700/rapwire-carousel-2026-10-12-1700-slide-3.png"
+    },
+    {
+      "slide": 4,
+      "subject": "Shyne",
+      "headline": "SHYNE REVISITS THE MISSED DEAL",
+      "deck": "On Drink Champs, Shyne said Jay-Z planned to sign him after prison until a leaked DJ Khaled recording exposed how much his voice had changed. He is now preparing a 2622 LGND Tour return.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40,
+      "headline_bbox_y": [
+        64,
+        340
+      ],
+      "deck_bbox_y": [
+        362,
+        918
+      ],
+      "logo": {
+        "asset": "assets/rapwire247-logo.png",
+        "position": "bottom-left",
+        "transparent_background": true,
+        "backing_shape": "none"
+      },
+      "path": "/Users/dw/Documents/Codex/2026-10-12/three-times-daily-at-8-00-3/outputs/rapwire-carousel-2026-10-12-1700/rapwire-carousel-2026-10-12-1700-slide-4.png"
+    },
+    {
+      "slide": 5,
+      "subject": "Grand Theft Auto VI / Rockstar Games",
+      "headline": "GTA VI WRITES THE STREET",
+      "deck": "Rockstar says a dedicated Los Angeles team writes GTA VI pedestrian dialogue, with advertising and comedy writers working across New York, Los Angeles and London. The aim is a living Leonida, even between missions.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 40,
+      "headline_bbox_y": [
+        64,
+        350
+      ],
+      "deck_bbox_y": [
+        372,
+        990
+      ],
+      "logo": {
+        "asset": "assets/rapwire247-logo.png",
+        "position": "bottom-left",
+        "transparent_background": true,
+        "backing_shape": "none"
+      },
+      "path": "/Users/dw/Documents/Codex/2026-10-12/three-times-daily-at-8-00-3/outputs/rapwire-carousel-2026-10-12-1700/rapwire-carousel-2026-10-12-1700-slide-5.png"
+    }
+  ],
+  "full_resolution_visual_qc": {
+    "passed": true,
+    "checks": [
+      "headline >= 96px",
+      "deck >= 40px",
+      "no top banner",
+      "no logo backing",
+      "subjects unobstructed",
+      "distinct subject-led art"
+    ]
+  }
+}

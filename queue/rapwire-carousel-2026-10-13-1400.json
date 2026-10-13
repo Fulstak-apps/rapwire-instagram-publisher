@@ -104,7 +104,12 @@
     "https://leonidahub.org/en/news/who-is-cyberleek-what-s-verified-about-the-gta-vi-leaks-and-take-two"
   ],
   "verification_source_count": 11,
-  "news_verification": "Each story was checked against at least two current reputable or primary sources; the GTA VI PC window and Cyberleek build claim are labeled as unconfirmed reports.",
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-10-13T16:20:00Z",
+    "source_count": 11,
+    "note": "Each story was checked against at least two current reputable or primary sources; the GTA VI PC window and Cyberleek build claim are labeled as unconfirmed reports."
+  },
   "facts_verified": true,
   "reporting_confidence": "high",
   "visual_asset_type": "original_editorial_art",

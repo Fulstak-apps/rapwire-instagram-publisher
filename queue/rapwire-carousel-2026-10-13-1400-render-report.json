@@ -1,92 +1,99 @@
-[
-  {
-    "slide": 1,
-    "path": "slides/slide-1.png",
-    "size": [
-      1080,
-      1350
-    ],
-    "headline_font_size_px": 104,
-    "deck_font_size_px": 42,
-    "headline_lines": 3,
-    "deck_lines": 7,
-    "top_banner": false,
-    "logo": {
-      "position": "bottom-left",
-      "width_px": 110,
-      "backing_shape": "none"
-    }
+{
+  "dimensions": {
+    "width": 1080,
+    "height": 1350
   },
-  {
-    "slide": 2,
-    "path": "slides/slide-2.png",
-    "size": [
-      1080,
-      1350
-    ],
-    "headline_font_size_px": 104,
-    "deck_font_size_px": 42,
-    "headline_lines": 2,
-    "deck_lines": 7,
-    "top_banner": false,
-    "logo": {
-      "position": "bottom-left",
-      "width_px": 110,
-      "backing_shape": "none"
+  "full_resolution_visual_qc": true,
+  "slides": [
+    {
+      "slide": 1,
+      "path": "slides/slide-1.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_lines": 3,
+      "deck_lines": 7,
+      "top_banner": false,
+      "logo": {
+        "position": "bottom-left",
+        "width_px": 110,
+        "backing_shape": "none"
+      }
+    },
+    {
+      "slide": 2,
+      "path": "slides/slide-2.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_lines": 2,
+      "deck_lines": 7,
+      "top_banner": false,
+      "logo": {
+        "position": "bottom-left",
+        "width_px": 110,
+        "backing_shape": "none"
+      }
+    },
+    {
+      "slide": 3,
+      "path": "slides/slide-3.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_lines": 3,
+      "deck_lines": 6,
+      "top_banner": false,
+      "logo": {
+        "position": "bottom-left",
+        "width_px": 110,
+        "backing_shape": "none"
+      }
+    },
+    {
+      "slide": 4,
+      "path": "slides/slide-4.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_lines": 2,
+      "deck_lines": 6,
+      "top_banner": false,
+      "logo": {
+        "position": "bottom-left",
+        "width_px": 110,
+        "backing_shape": "none"
+      }
+    },
+    {
+      "slide": 5,
+      "path": "slides/slide-5.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_lines": 3,
+      "deck_lines": 9,
+      "top_banner": false,
+      "logo": {
+        "position": "bottom-left",
+        "width_px": 110,
+        "backing_shape": "none"
+      }
     }
-  },
-  {
-    "slide": 3,
-    "path": "slides/slide-3.png",
-    "size": [
-      1080,
-      1350
-    ],
-    "headline_font_size_px": 104,
-    "deck_font_size_px": 42,
-    "headline_lines": 3,
-    "deck_lines": 6,
-    "top_banner": false,
-    "logo": {
-      "position": "bottom-left",
-      "width_px": 110,
-      "backing_shape": "none"
-    }
-  },
-  {
-    "slide": 4,
-    "path": "slides/slide-4.png",
-    "size": [
-      1080,
-      1350
-    ],
-    "headline_font_size_px": 104,
-    "deck_font_size_px": 42,
-    "headline_lines": 2,
-    "deck_lines": 6,
-    "top_banner": false,
-    "logo": {
-      "position": "bottom-left",
-      "width_px": 110,
-      "backing_shape": "none"
-    }
-  },
-  {
-    "slide": 5,
-    "path": "slides/slide-5.png",
-    "size": [
-      1080,
-      1350
-    ],
-    "headline_font_size_px": 104,
-    "deck_font_size_px": 42,
-    "headline_lines": 3,
-    "deck_lines": 9,
-    "top_banner": false,
-    "logo": {
-      "position": "bottom-left",
-      "width_px": 110,
-      "backing_shape": "none"
-    }
-  }
-]
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-13T14:40:27.425Z",
+  "checked_at": "2026-10-13T14:45:24.126Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-13T16:10:26.936Z",
-  "publications": [
-    {
-      "file": "1350-imagine-showing-up-to-a-wedding-and-snoop-dogg-is-performing-via.json",
-      "id": "1350-imagine-showing-up-to-a-wedding-and-snoop-dogg-is-performing-via",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18099569840346573"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

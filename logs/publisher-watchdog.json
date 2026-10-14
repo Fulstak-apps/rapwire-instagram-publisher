@@ -1,20 +1,18 @@
 {
-  "reserve_count": 47,
-  "reserve_hours": 23.5,
+  "reserve_count": 45,
+  "reserve_hours": 22.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "health_stale": true,
   "processing": [
-    "1362-her-own-friend-killed-her"
+    "1363-woman-going-viral-after-showing-us-this-thoughts-do-yall-think"
   ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1361-blueface-proposes-to-chrisean-rock",
-    "1362-her-own-friend-killed-her",
     "1363-woman-going-viral-after-showing-us-this-thoughts-do-yall-think",
     "1364-nothing-will-ever-recreate-the-feeling-of-hearing-this-miss-the-",
     "1365-42-dugg-slid-on-this-tyler-the-creator-s-lemonhead-featuring-42-",
@@ -63,6 +61,6 @@
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-14T05:29:17.129Z",
+  "checked_at": "2026-10-14T10:26:59.108Z",
   "deferred": []
 }

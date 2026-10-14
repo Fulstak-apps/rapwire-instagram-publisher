@@ -14,14 +14,54 @@
   "headline": "RapWire 24/7: Nick Cannon, AKA, Deezer, Lucky Daye, and GTA VI",
   "body": "RapWire’s verified Oct. 14 morning carousel covers Nick Cannon’s BET late-night order, new testimony in the AKA/Tibz trial, Deezer’s synthetic-music search filter, Lucky Daye’s ALOUD! reset, and Bloomberg’s GTA VI making-of report. Each slide uses original subject-led editorial comic art with readable on-art reporting, no top banner, and the official transparent RapWire mark.",
   "rendered_body_text": "RapWire’s verified Oct. 14 morning carousel covers Nick Cannon’s BET late-night order, new testimony in the AKA/Tibz trial, Deezer’s synthetic-music search filter, Lucky Daye’s ALOUD! reset, and Bloomberg’s GTA VI making-of report. Each slide uses original subject-led editorial comic art with readable on-art reporting, no top banner, and the official transparent RapWire mark.",
-  "caption": "1) @nickcannon is taking Nick Cannon @ Night from its Wondery-born advice format to BET. The network says the series premieres October 20 at 10 p.m. ET and will run weekly for 10 episodes, with viewer questions and guests guiding conversations about love, dating and health. The move gives Cannon another broadcast late-night lane after the podcast built its audience online.\n\n2) New testimony in the Durban High Court trial over the 2023 murders of @akaworldwide and Tebello “Tibz” Motsoane focused on the rapper’s security detail. Witnesses said the bodyguard ran inside when gunshots were heard, while the manager said AKA’s regular guard was unavailable for the trip. Seven men remain on trial and all have pleaded not guilty.\n\n3) Deezer is adding a user-controlled toggle that removes fully synthetic tracks, albums and their associated artists from search results. The feature is planned for worldwide rollout before the end of 2026, building on the platform’s detection and labeling system. Deezer says it has already identified more than 42 million such tracks and believes the option gives listeners more control over what reaches them.\n\n4) @iamluckydaye says a management change pushed him to take more control ahead of ALOUD!, his Warner Records album. The 15-track project arrives October 16 with Pusha T, Leon Thomas, Muni Long and others, following his label shift from RCA. His own framing of the record is about rejecting permission and making room for a freer next chapter.\n\n5) A new deep-dive into GTA VI traces more than eight years of work through the Red Dead Redemption 2 detour, the 2022 leak and major changes inside Rockstar. The project began in 2015 as a broader Project Americas idea before narrowing into Vice City and Leonida, while Rockstar grew to more than 4,700 people across 12 offices. The announced November 19, 2026 console date remains unchanged; the new reporting is about how the game was made, not a new release-date announcement.\n\n@Rapwire247",
+  "caption": "1) @nickcannon is taking Nick Cannon @ Night from its Wondery-born advice format to BET. The network says the series premieres October 20 at 10 p.m. ET and will run weekly for 10 episodes, with viewer questions and guests guiding conversations about love, dating and health. The move gives Cannon another broadcast late-night lane after the podcast built its audience online.\n2) New testimony in the Durban High Court trial over the 2023 murders of @akaworldwide and Tebello “Tibz” Motsoane focused on the rapper’s security detail. Witnesses said the bodyguard ran inside when gunshots were heard, while the manager said AKA’s regular guard was unavailable for the trip. Seven men remain on trial and all have pleaded not guilty.\n3) Deezer is adding a user-controlled toggle that removes fully synthetic tracks, albums and their associated artists from search results. The feature is planned for worldwide rollout before the end of 2026, building on the platform’s detection and labeling system. Deezer says it has already identified more than 42 million such tracks and believes the option gives listeners more control over what reaches them.\n4) @iamluckydaye says a management change pushed him to take more control ahead of ALOUD!, his Warner Records album. The 15-track project arrives October 16 with Pusha T, Leon Thomas, Muni Long and others, following his label shift from RCA. His own framing of the record is about rejecting permission and making room for a freer next chapter.\n5) A new deep-dive into GTA VI traces more than eight years of work through the Red Dead Redemption 2 detour, the 2022 leak and major changes inside Rockstar. The project began in 2015 as a broader Project Americas idea before narrowing into Vice City and Leonida, while Rockstar grew to more than 4,700 people across 12 offices. The announced November 19, 2026 console date remains unchanged; the new reporting is about how the game was made, not a new release-date announcement.\n\n@Rapwire247",
   "threads_text": "Nick Cannon, AKA, Deezer, Lucky Daye and GTA VI lead RapWire’s verified Oct. 14 carousel: BET’s new late-night order, trial testimony, a synthetic-music filter, ALOUD! and Rockstar’s eight-year build report.\n\n@Rapwire247",
   "slide_editorial_copy": [
-    {"slide": 1, "headline": "NICK CANNON\nTAKES BET", "deck": "BET premieres Nick Cannon @ Night on October 20 for a 10-episode weekly run. The advice podcast moves from Wondery to late-night TV.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 100, "deck_font_size_px": 42},
-    {"slide": 2, "headline": "AKA TRIAL\nSECURITY", "deck": "Witnesses said AKA's bodyguard ran inside after gunshots rang out. Seven men remain on trial over the 2023 Durban killings.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 100, "deck_font_size_px": 42},
-    {"slide": 3, "headline": "DEEZER\nADDS A\nFILTER", "deck": "A new Deezer toggle will hide fully synthetic tracks, albums and artists from search. Global rollout is planned before 2027.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 100, "deck_font_size_px": 42},
-    {"slide": 4, "headline": "LUCKY\nDAYE\nALOUD!", "deck": "Lucky Daye says a management change gave him more control before ALOUD!. The Warner Records album arrives October 16 with 15 tracks.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 100, "deck_font_size_px": 42},
-    {"slide": 5, "headline": "GTA VI\nEIGHT-YEAR\nBUILD", "deck": "A new report traces GTA VI's build through the RDR2 detour, the 2022 leak and internal change. Rockstar's November 19 date remains announced.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 100, "deck_font_size_px": 42}
+    {
+      "slide": 1,
+      "headline": "NICK CANNON\nTAKES BET",
+      "deck": "BET premieres Nick Cannon @ Night on October 20 for a 10-episode weekly run. The advice podcast moves from Wondery to late-night TV.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 100,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 2,
+      "headline": "AKA TRIAL\nSECURITY",
+      "deck": "Witnesses said AKA's bodyguard ran inside after gunshots rang out. Seven men remain on trial over the 2023 Durban killings.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 100,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 3,
+      "headline": "DEEZER\nADDS A\nFILTER",
+      "deck": "A new Deezer toggle will hide fully synthetic tracks, albums and artists from search. Global rollout is planned before 2027.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 100,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 4,
+      "headline": "LUCKY\nDAYE\nALOUD!",
+      "deck": "Lucky Daye says a management change gave him more control before ALOUD!. The Warner Records album arrives October 16 with 15 tracks.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 100,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 5,
+      "headline": "GTA VI\nEIGHT-YEAR\nBUILD",
+      "deck": "A new report traces GTA VI's build through the RDR2 detour, the 2022 leak and internal change. Rockstar's November 19 date remains announced.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 100,
+      "deck_font_size_px": 42
+    }
   ],
   "slides": [
     "media/rapwire-carousel-2026-10-14-0800/rapwire-carousel-2026-10-14-0800-slide-1.png",
@@ -63,7 +103,12 @@
     "https://www.bloomberg.com/features/2026-grand-theft-auto-6-making-of/"
   ],
   "verification_source_count": 10,
-  "news_verification": {"status": "verified", "checked_at": "2026-10-14T15:04:18Z", "source_count": 10, "note": "Each story was checked against at least two current reputable or primary sources. The GTA VI story is a development-reporting update distinct from the prior PC-window and leak-threat topics."},
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-10-14T15:04:18Z",
+    "source_count": 10,
+    "note": "Each story was checked against at least two current reputable or primary sources. The GTA VI story is a development-reporting update distinct from the prior PC-window and leak-threat topics."
+  },
   "facts_verified": true,
   "reporting_confidence": "high",
   "visual_asset_type": "original_editorial_art",
@@ -80,7 +125,12 @@
   "source_policy_checked": true,
   "rap_relevance_checked": true,
   "layout_template": "rapwire-unified-v3",
-  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "brand_logo": {
+    "asset": "assets/rapwire247-logo.png",
+    "position": "bottom-left",
+    "transparent_background": true,
+    "backing_shape": "none"
+  },
   "render_report_file": "queue/rapwire-carousel-2026-10-14-0800-render-report.json",
   "checksums_file": "queue/rapwire-carousel-2026-10-14-0800-checksums.txt",
   "instagram_media_id": null,

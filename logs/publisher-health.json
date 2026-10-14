@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-14T04:19:29.174Z",
+  "checked_at": "2026-10-14T04:24:37.801Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-14T04:19:27.920Z",
+    "checked_at": "2026-10-14T04:24:37.080Z",
     "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-14T04:34:27.920Z",
+    "next_check_at": "2026-10-14T04:39:37.080Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-14T04:14:24.867Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-14T04:29:24.867Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-14T04:14:34.364Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-14T05:54:36.691Z",
+  "publications": [
+    {
+      "file": "1360-blueface-shocks-everyone-proposes-to-chrisean-rock-while-in-the-.json",
+      "id": "1360-blueface-shocks-everyone-proposes-to-chrisean-rock-while-in-the-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17976461157158508"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

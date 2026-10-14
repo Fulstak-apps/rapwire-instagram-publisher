@@ -1,22 +1,16 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 46,
+  "reserve_hours": 23,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
-  "processing": [
-    "1354-soulja-boy-announced-he-will-be-running-for-president-in-2028-wh"
-  ],
+  "overdue": true,
+  "health_stale": true,
+  "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1354-soulja-boy-announced-he-will-be-running-for-president-in-2028-wh",
-    "1355-dr-umar-was-done-w-raud-after-he-introduced-him-to-his-white-gir",
-    "1356-how-rw5ive-be-talking-like-this-without-cursing-kaicenat",
-    "1357-your-week-ahead-in-sports-is-here-two-big-nfl-games-champions-le",
     "1358-breh-why-i-thought-all-dem-security-was-for-tay-600",
     "1359-chrisean-rock-reveals-she-s-getting-her-blueface-portrait-tattoo",
     "1360-blueface-shocks-everyone-proposes-to-chrisean-rock-while-in-the-",
@@ -60,10 +54,12 @@
     "1398-after-undergoing-two-rounds-of-laser-tattoo-removal-treatments-l",
     "1399-50-cent-speaks-on-the-drake-kendrick-beef-and-says-drake-didn-t-",
     "1400-convince-me-in-ur-comments-this-ain-t-what-black-love-looks-like",
-    "1401-that-cadence-got-us-making-that-stank-face-immediately"
+    "1401-that-cadence-got-us-making-that-stank-face-immediately",
+    "1402-blueface-baby-mama-takes-a-dump-on-9-5-workers-i-ain-t-dating-no",
+    "1403-watch-soul-take-on-a-new-boss-the-hunt-in-this-brand-new-trailer"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-13T21:57:35.129Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-14T00:49:14.600Z",
   "deferred": []
 }

@@ -1,22 +1,18 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 45,
+  "reserve_hours": 22.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "health_stale": false,
-  "processing": [],
+  "processing": [
+    "1381-bigxthaplug-is-back-with-lite-featuring-belly-gang-kushington-ah"
+  ],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1375-when-speaking-on-the-happy-sad-confused-podcast-affleck-was-aske",
-    "1376-did-just-drop-the-hardest-song-out-of-st-louis-this-year-with-te",
-    "1377-makaveli-really-was-an-entirely-different-frequency-during-an-ep",
-    "1378-bay-area-rapper-calls-out-all-content-creators-for-kash-death-vi",
-    "1379-blueface-s-bm-nevaeh-says-she-would-never-date-a-man-who-works-a",
-    "1380-ddg-celebrated-his-29th-birthday-at-cascade-in-atlanta-oct-9-whe",
     "1381-bigxthaplug-is-back-with-lite-featuring-belly-gang-kushington-ah",
     "1382-this-is-to-all-the-mf-on-my-page-that-don-t-like-the-content-i-c",
     "1383-a-commanding-presence-peerless-credentials-uncompromising-no-we-",
@@ -58,10 +54,13 @@
     "1419-cardi-b-and-her-grandmother-rapping-along-to-cardi-s-iconic-brea",
     "1420-tyga-hosting-a-poker-tournament-and-the-whole-table-got-motion-w",
     "1421-despite-the-retirement-talk-surrounding-his-name-gherbo-has-been",
-    "1422-never-forget-when-eminem-s-daughter-hailie-jade-had-the-receipts"
+    "1422-never-forget-when-eminem-s-daughter-hailie-jade-had-the-receipts",
+    "1423-blueface-gave-fans-a-closer-look-at-his-upgraded-face-tattoos-wi",
+    "1424-blueface-shows-his-loyalty-while-revealing-he-no-longer-responds",
+    "1425-cops-fanning-out-over-young-thug-s-jewelery"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-14T19:27:10.646Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-14T22:27:25.611Z",
   "deferred": []
 }

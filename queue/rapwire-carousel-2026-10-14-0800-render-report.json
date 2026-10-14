@@ -1,0 +1,27 @@
+{
+  "carousel_visual_contract": "rapwire-editorial-carousel-v1",
+  "visual_qc": true,
+  "inspected_at": "2026-10-14T15:04:18Z",
+  "inspection_method": "full-resolution visual inspection of all five 1080x1350 PNG renders",
+  "global_checks": {
+    "dimensions": "1080x1350",
+    "headline_font_size_px": 100,
+    "deck_font_size_px": 42,
+    "top_banner": false,
+    "opaque_backing_panel": false,
+    "logo_asset": "assets/rapwire247-logo.png",
+    "logo_transparent_background": true,
+    "logo_backing_shape": "none",
+    "subjects_fully_inside_canvas": true,
+    "clear_headroom_min_px": 120,
+    "headline_and_deck_readable": true,
+    "generic_art": false
+  },
+  "slides": [
+    {"slide": 1, "headline": "NICK CANNON\nTAKES BET", "deck": "BET premieres Nick Cannon @ Night on October 20 for a 10-episode weekly run. The advice podcast moves from Wondery to late-night TV.", "subject_present": "Nick Cannon", "text_safe_zone_pass": true, "head_face_hands_unobstructed": true, "visual_pass": true},
+    {"slide": 2, "headline": "AKA TRIAL\nSECURITY", "deck": "Witnesses said AKA's bodyguard ran inside after gunshots rang out. Seven men remain on trial over the 2023 Durban killings.", "subject_present": "AKA / Kiernan Forbes and Durban courtroom", "text_safe_zone_pass": true, "head_face_hands_unobstructed": true, "visual_pass": true},
+    {"slide": 3, "headline": "DEEZER\nADDS A\nFILTER", "deck": "A new Deezer toggle will hide fully synthetic tracks, albums and artists from search. Global rollout is planned before 2027.", "subject_present": "Deezer streaming platform and search toggle", "text_safe_zone_pass": true, "head_face_hands_unobstructed": true, "visual_pass": true},
+    {"slide": 4, "headline": "LUCKY\nDAYE\nALOUD!", "deck": "Lucky Daye says a management change gave him more control before ALOUD!. The Warner Records album arrives October 16 with 15 tracks.", "subject_present": "Lucky Daye and recording studio", "text_safe_zone_pass": true, "head_face_hands_unobstructed": true, "visual_pass": true},
+    {"slide": 5, "headline": "GTA VI\nEIGHT-YEAR\nBUILD", "deck": "A new report traces GTA VI's build through the RDR2 detour, the 2022 leak and internal change. Rockstar's November 19 date remains announced.", "subject_present": "GTA VI / Jason and Lucia / Rockstar development floor", "text_safe_zone_pass": true, "head_face_hands_unobstructed": true, "visual_pass": true}
+  ]
+}

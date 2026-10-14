@@ -1,19 +1,18 @@
 {
-  "reserve_count": 46,
-  "reserve_hours": 23,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
-  "health_stale": true,
-  "processing": [],
+  "overdue": false,
+  "health_stale": false,
+  "processing": [
+    "1362-her-own-friend-killed-her"
+  ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1358-breh-why-i-thought-all-dem-security-was-for-tay-600",
-    "1359-chrisean-rock-reveals-she-s-getting-her-blueface-portrait-tattoo",
-    "1360-blueface-shocks-everyone-proposes-to-chrisean-rock-while-in-the-",
     "1361-blueface-proposes-to-chrisean-rock",
     "1362-her-own-friend-killed-her",
     "1363-woman-going-viral-after-showing-us-this-thoughts-do-yall-think",
@@ -56,10 +55,14 @@
     "1400-convince-me-in-ur-comments-this-ain-t-what-black-love-looks-like",
     "1401-that-cadence-got-us-making-that-stank-face-immediately",
     "1402-blueface-baby-mama-takes-a-dump-on-9-5-workers-i-ain-t-dating-no",
-    "1403-watch-soul-take-on-a-new-boss-the-hunt-in-this-brand-new-trailer"
+    "1403-watch-soul-take-on-a-new-boss-the-hunt-in-this-brand-new-trailer",
+    "1404-keefe-d-last-statement",
+    "1405-fif-speaks-on-brian-steele-and-king-slime",
+    "1406-is-blank-face-schoolboy-q-s-best-album-the-10-year-anniversary-s",
+    "1407-blueface-shares-chrisean-rock-s-updated-face-tattoo-where-she-ad"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-14T00:49:14.600Z",
+  "checked_at": "2026-10-14T05:29:17.129Z",
   "deferred": []
 }

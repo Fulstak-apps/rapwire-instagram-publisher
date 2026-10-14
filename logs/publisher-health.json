@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-14T14:10:40.468Z",
+  "checked_at": "2026-10-14T14:15:49.444Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-14T14:10:39.642Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-14T14:25:39.642Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-14T11:57:44.137Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-14T15:45:48.335Z",
+  "publications": [
+    {
+      "file": "1365-42-dugg-slid-on-this-tyler-the-creator-s-lemonhead-featuring-42-.json",
+      "id": "1365-42-dugg-slid-on-this-tyler-the-creator-s-lemonhead-featuring-42-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17913242790470682"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,6 +1,6 @@
 {
   "id": "1401-that-cadence-got-us-making-that-stank-face-immediately",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-13",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "Dechn0_EWxI",
-  "source_caption_text": "That cadence got us making that stank face immediately 😤",
+  "source_caption_text": "That cadence got us making that stank face immediately\u00a0\ud83d\ude24",
   "caption_checked_at": "2026-10-13T20:00:16.420Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 27.7
+  "source_video_duration": 27.7,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

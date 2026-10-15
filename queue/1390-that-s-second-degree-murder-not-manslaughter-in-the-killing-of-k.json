@@ -1,6 +1,6 @@
 {
   "id": "1390-that-s-second-degree-murder-not-manslaughter-in-the-killing-of-k",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-13",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "That's second degree murder not manslaughter in the killing of Kash",
   "caption_checked_at": "2026-10-13T03:03:00.732Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 117.398684
+  "source_video_duration": 117.398684,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

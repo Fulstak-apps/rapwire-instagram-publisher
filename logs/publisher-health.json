@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-15T13:45:31.268Z",
+  "checked_at": "2026-10-15T14:28:34.124Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-15T13:45:29.734Z",
-    "usage": 9,
+    "checked_at": "2026-10-15T14:28:27.910Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-15T14:00:29.734Z",
+    "next_check_at": "2026-10-15T14:43:27.910Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-15T12:42:57.562Z",
+    "next_feed_eligible_at": "2026-10-15T15:58:33.760Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -45,17 +45,33 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-15T13:45:29.629Z",
+    "checked_at": "2026-10-15T14:28:20.591Z",
     "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-15T14:00:29.629Z",
+    "next_check_at": "2026-10-15T14:43:20.591Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-15T12:42:51.337Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-15T15:58:27.130Z",
+  "publications": [
+    {
+      "file": "1394-never-forget-chief-keef-s-brutal-cough-in-war-chief-keef-s-war-i.json",
+      "id": "1394-never-forget-chief-keef-s-brutal-cough-in-war-chief-keef-s-war-i",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17965047147236534"
+    },
+    {
+      "file": "1394-never-forget-chief-keef-s-brutal-cough-in-war-chief-keef-s-war-i.json",
+      "id": "1394-never-forget-chief-keef-s-brutal-cough-in-war-chief-keef-s-war-i",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18023150816717108",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -35,7 +35,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "published",
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "Dec9SeEAgEQ",
@@ -48,7 +48,7 @@
   "instagram_container_checked_at": "2026-10-15T20:52:28.416Z",
   "threads_container_id": "18106456607179906",
   "threads_container_created_at": "2026-10-15T20:52:27.830Z",
-  "threads_container_checked_at": "2026-10-15T20:52:27.830Z",
+  "threads_container_checked_at": "2026-10-15T20:57:28.000Z",
   "instagram_container_status": "FINISHED",
   "instagram_publish_requested_at": "2026-10-15T20:52:28.416Z",
   "instagram_media_id": "18103554524367853",
@@ -57,5 +57,13 @@
   "instagram_verified_at": "2026-10-15T20:52:36.467Z",
   "instagram_permalink": "https://www.instagram.com/reel/Deh2eg4FdXx/",
   "threads_story_status": "not_supported",
-  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "threads_container_status": "FINISHED",
+  "threads_publish_requested_at": "2026-10-15T20:57:28.000Z",
+  "threads_media_id": "18116906177279434",
+  "threads_published_at": "2026-10-15T20:57:33.176Z",
+  "threads_verified_at": "2026-10-15T20:57:33.373Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/Deh3DWPFFho",
+  "media_cleanup_status": "pending",
+  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/1402-blueface-baby-mama-takes-a-dump-on-9-5-workers-i-ain-t-dating-no.mp4' -> '/home/runner/.Trash/RapWire-1792097853374-1402-blueface-baby-mama-takes-a-dump-on-9-5-workers-i-ain-t-dating-no.mp4'"
 }

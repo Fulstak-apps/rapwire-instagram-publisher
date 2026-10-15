@@ -1,0 +1,72 @@
+{
+  "carousel_visual_contract": "rapwire-editorial-carousel-v1",
+  "visual_qc": true,
+  "inspected_at": "2026-10-15T15:15:00Z",
+  "inspection_method": "full-resolution visual inspection of all five 1080x1350 PNG renders",
+  "global_checks": {
+    "dimensions": "1080x1350",
+    "headline_font_size_px": 104,
+    "deck_font_size_px": 42,
+    "top_banner": false,
+    "opaque_backing_panel": false,
+    "logo_asset": "assets/rapwire247-logo.png",
+    "logo_transparent_background": true,
+    "logo_backing_shape": "none",
+    "subjects_fully_inside_canvas": true,
+    "clear_headroom_min_px": 180,
+    "headline_and_deck_readable": true,
+    "generic_art": false
+  },
+  "slides": [
+    {
+      "slide": 1,
+      "headline": "DRAKEO ESTATE\nSETTLES CASE",
+      "deck": "A conditional settlement covers the 2021 festival wrongful-death lawsuit. Other family claims remain.",
+      "subject_present": "Drakeo the Ruler and the estate settlement",
+      "text_safe_zone_pass": true,
+      "head_face_hands_unobstructed": true,
+      "visual_pass": true,
+      "source_art": "original editorial comic illustration generated for this batch"
+    },
+    {
+      "slide": 2,
+      "headline": "MEGAN\nGYMSHARK",
+      "deck": "Megan is Gymshark’s first celebrity ambassador. Her red SoftSense shorts drop October 22.",
+      "subject_present": "Megan Thee Stallion and Gymshark",
+      "text_safe_zone_pass": true,
+      "head_face_hands_unobstructed": true,
+      "visual_pass": true,
+      "source_art": "original editorial comic illustration generated for this batch"
+    },
+    {
+      "slide": 3,
+      "headline": "UMG\nLABEL RESET",
+      "deck": "Restructuring reaches Def Jam, Interscope and Republic as senior leaders exit or shift roles.",
+      "subject_present": "Universal Music Group restructuring",
+      "text_safe_zone_pass": true,
+      "head_face_hands_unobstructed": true,
+      "visual_pass": true,
+      "source_art": "original editorial comic illustration generated for this batch"
+    },
+    {
+      "slide": 4,
+      "headline": "GTA VI NPC\nEMERGENCY",
+      "deck": "Rockstar built a Los Angeles team of writers and producers for NPCs and street dialogue. The scope helped drive delays.",
+      "subject_present": "GTA VI and Rockstar’s NPC-writing operation",
+      "text_safe_zone_pass": true,
+      "head_face_hands_unobstructed": true,
+      "visual_pass": true,
+      "source_art": "original editorial comic illustration generated for this batch"
+    },
+    {
+      "slide": 5,
+      "headline": "GTA VI\nPC Q1 REPORT",
+      "deck": "GamesBeat reports a Q1 2027 PC window from four sources. Rockstar has confirmed consoles for November 19, not PC.",
+      "subject_present": "GTA VI reported PC window",
+      "text_safe_zone_pass": true,
+      "head_face_hands_unobstructed": true,
+      "visual_pass": true,
+      "source_art": "original editorial comic illustration generated for this batch"
+    }
+  ]
+}

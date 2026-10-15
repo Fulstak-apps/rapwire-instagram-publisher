@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-15T05:11:22.797Z",
+  "checked_at": "2026-10-15T05:13:23.695Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,17 +26,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-15T06:41:22.470Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-15T06:05:39.024Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,23 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-15T06:41:16.929Z",
-  "publications": [
-    {
-      "file": "1392-cardi-b-showing-her-humble-side-on-her-34th-birthday-cleaning-he.json",
-      "id": "1392-cardi-b-showing-her-humble-side-on-her-34th-birthday-cleaning-he",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18113768351589492"
-    },
-    {
-      "file": "1392-cardi-b-showing-her-humble-side-on-her-34th-birthday-cleaning-he.json",
-      "id": "1392-cardi-b-showing-her-humble-side-on-her-34th-birthday-cleaning-he",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18391758049160425",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

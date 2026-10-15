@@ -1,6 +1,6 @@
 {
   "id": "1387-colorado-governor-hopeful-crashed-out-in-debate",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-13",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "COLORADO GOVERNOR HOPEFUL CRASHED OUT IN DEBATE",
   "caption_checked_at": "2026-10-13T01:22:29.767Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 178.96666666666667
+  "source_video_duration": 178.96666666666667,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

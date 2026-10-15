@@ -1,19 +1,16 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": true,
-  "health_stale": false,
-  "processing": [
-    "1392-cardi-b-showing-her-humble-side-on-her-34th-birthday-cleaning-he"
-  ],
+  "health_stale": true,
+  "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1392-cardi-b-showing-her-humble-side-on-her-34th-birthday-cleaning-he",
     "1393-we-made-coi-leray-choose-between-future-vs-j-cole-makes-some-tou",
     "1394-never-forget-chief-keef-s-brutal-cough-in-war-chief-keef-s-war-i",
     "1395-future-was-really-in-his-bag-on-this-one-blow-a-bag-by-future-is",
@@ -64,6 +61,6 @@
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-15T05:10:36.227Z",
+  "checked_at": "2026-10-15T09:51:07.840Z",
   "deferred": []
 }

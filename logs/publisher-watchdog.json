@@ -3,21 +3,16 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "health_stale": false,
-  "processing": [],
+  "processing": [
+    "1392-cardi-b-showing-her-humble-side-on-her-34th-birthday-cleaning-he"
+  ],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1385-cardi-b-is-still-helping-clean-her-grandparents-house-back-in-th",
-    "1386-reggie-admits-that-he-posts-and-rants-a-lot-online-during-all-of",
-    "1387-colorado-governor-hopeful-crashed-out-in-debate",
-    "1388-fetty-wap-and-dababy-hopped-on-dj-spinking-s-beat-go-y-all-think",
-    "1389-g-herbo-s-jeweller-has-to-be-top-tier-the-way-his-diamond-bracel",
-    "1390-that-s-second-degree-murder-not-manslaughter-in-the-killing-of-k",
-    "1391-reggie-mentions-ddg-s-deceased-brother-in-a-recent-ig-story",
     "1392-cardi-b-showing-her-humble-side-on-her-34th-birthday-cleaning-he",
     "1393-we-made-coi-leray-choose-between-future-vs-j-cole-makes-some-tou",
     "1394-never-forget-chief-keef-s-brutal-cough-in-war-chief-keef-s-war-i",
@@ -58,10 +53,17 @@
     "1429-hooked-up-ceedy-duce-w-the-dental-work-is-bollywood-the-best-in-",
     "1430-this-video-belongs-in-a-museum-soulja-boy-was-giving-lessons-on-",
     "1431-a-high-five-after-he-caught-a-body-tay-k-celebrated-after-killin",
-    "1432-nick-and-alan-discuss-their-favorite-things-about-enshrouded-com"
+    "1432-nick-and-alan-discuss-their-favorite-things-about-enshrouded-com",
+    "1433-wildwood-director-travis-knight-shares-why-he-finds-so-much-joy-",
+    "1434-the-district-attorney-of-fulton-county-georgia-fani-willis-wante",
+    "1435-kash-sister-was-actually-charged-with-murder-not-manslaughter-al",
+    "1436-nahh-they-shot-a-whole-movie-trailer-for-yeat-x-fortnite",
+    "1437-supa-hot-fire-asked-delonte-west-if-he-slept-with-lebron-james-s",
+    "1438-blueface-confirms-he-and-chrisean-will-be-live-streaming-torys-s",
+    "1439-huge-fire-by-the-dvp-what-do-you-think-started-this-6"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-15T00:40:48.271Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-15T05:10:36.227Z",
   "deferred": []
 }

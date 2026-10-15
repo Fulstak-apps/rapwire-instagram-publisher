@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-15T17:40:03.611Z",
+  "checked_at": "2026-10-15T17:45:13.865Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-15T17:34:59.054Z",
-    "usage": 10,
+    "usage": 11,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-15T17:49:59.054Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-15T17:35:54.364Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-15T19:15:13.424Z",
+  "publications": [
+    {
+      "file": "1397-kodak-really-acted-like-the-cop-wasn-t-even-there-during-the-pac.json",
+      "id": "1397-kodak-really-acted-like-the-cop-wasn-t-even-there-during-the-pac",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17902750917605482"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

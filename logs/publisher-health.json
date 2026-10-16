@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-16T15:58:10.432Z",
+  "checked_at": "2026-10-16T16:03:08.558Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-16T17:28:09.846Z",
-  "publications": [
-    {
-      "file": "1415-how-did-chris-brown-keep-a-straight-face-while-drake-was-hitting.json",
-      "id": "1415-how-did-chris-brown-keep-a-straight-face-while-drake-was-hitting",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17951253789325342"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

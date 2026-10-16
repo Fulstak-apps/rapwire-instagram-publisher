@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-16T06:32:54.210Z",
+  "checked_at": "2026-10-16T10:09:13.431Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-16T06:23:02.293Z",
+    "checked_at": "2026-10-16T10:09:04.606Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-16T06:38:02.293Z",
+    "next_check_at": "2026-10-16T10:24:04.606Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-16T06:32:53.248Z",
-    "usage": 11,
+    "checked_at": "2026-10-16T10:09:05.227Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-16T06:47:53.248Z",
+    "next_check_at": "2026-10-16T10:24:05.227Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-16T06:31:03.856Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-16T11:39:12.854Z",
+  "publications": [
+    {
+      "file": "1409-bayo-is-back-free-tickets-courtesy-of-10-year-anniversary-in-lit.json",
+      "id": "1409-bayo-is-back-free-tickets-courtesy-of-10-year-anniversary-in-lit",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17972580624172223"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

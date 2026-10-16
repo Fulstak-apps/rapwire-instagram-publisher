@@ -1,6 +1,6 @@
 {
   "id": "1427-fif-on-sean-carter",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-14",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Fif on Sean Carter",
   "caption_checked_at": "2026-10-14T23:02:02.160Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 265.76666666666665
+  "source_video_duration": 265.76666666666665,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

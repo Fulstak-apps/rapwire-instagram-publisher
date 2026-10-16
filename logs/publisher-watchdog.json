@@ -1,20 +1,16 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 44,
+  "reserve_hours": 22,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
-  "health_stale": true,
+  "overdue": false,
+  "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1409-bayo-is-back-free-tickets-courtesy-of-10-year-anniversary-in-lit",
-    "1410-yeat-is-officially-coming-to-fortnite-with-a-new-trailer-giving-",
-    "1411-kash-sister-got-away-with-murder-for-manslaughter-allegations-ar",
-    "1412-future-over-zaytoven-keys-will-never-get-old-future-and-zaytoven",
     "1413-did-j-cole-pay-the-biggest-price-in-the-kendrick-vs-drake-beef-t",
     "1414-blueface-goes-viral-after-he-was-seen-with-more-added-face-tatto",
     "1415-how-did-chris-brown-keep-a-straight-face-while-drake-was-hitting",
@@ -62,6 +58,6 @@
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-16T11:37:46.875Z",
+  "checked_at": "2026-10-16T15:30:22.560Z",
   "deferred": []
 }

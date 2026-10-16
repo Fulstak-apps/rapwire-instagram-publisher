@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-16T14:30:00.169Z",
+  "checked_at": "2026-10-16T14:35:10.356Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-16T14:29:59.496Z",
-    "usage": 9,
+    "checked_at": "2026-10-16T14:35:02.615Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-16T14:44:59.496Z",
+    "next_check_at": "2026-10-16T14:50:02.615Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,10 +27,10 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
     "instagram_usage": 9,
-    "platform_quota_usage": 10,
+    "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-16T14:20:26.229Z",
+    "next_feed_eligible_at": "2026-10-16T16:05:10.021Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -45,17 +45,26 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-16T14:19:55.925Z",
-    "usage": 12,
+    "checked_at": "2026-10-16T14:35:02.130Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-16T14:34:55.925Z",
+    "next_check_at": "2026-10-16T14:50:02.130Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-16T15:50:02.313Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1410-yeat-is-officially-coming-to-fortnite-with-a-new-trailer-giving-.json",
+      "id": "1410-yeat-is-officially-coming-to-fortnite-with-a-new-trailer-giving-",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18118433905994846",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

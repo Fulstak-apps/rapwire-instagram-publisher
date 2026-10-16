@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-16T04:55:56.541Z",
+  "checked_at": "2026-10-16T05:01:04.283Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-16T04:55:55.786Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-16T05:10:55.786Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-16T04:55:39.420Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-16T06:31:03.856Z",
+  "publications": [
+    {
+      "file": "1408-nahhh-rod-wave-really-got-grown-men-pouring-their-heart-out-sing.json",
+      "id": "1408-nahhh-rod-wave-really-got-grown-men-pouring-their-heart-out-sing",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17964296124229385"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

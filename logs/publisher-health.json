@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-16T17:31:09.205Z",
+  "checked_at": "2026-10-16T17:36:58.993Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-16T17:21:01.443Z",
+    "checked_at": "2026-10-16T17:36:50.357Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-16T17:36:01.443Z",
+    "next_check_at": "2026-10-16T17:51:50.357Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-16T17:21:01.651Z",
-    "usage": 11,
+    "checked_at": "2026-10-16T17:36:50.693Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-16T17:36:01.651Z",
+    "next_check_at": "2026-10-16T17:51:50.693Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-16T17:28:09.846Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-16T19:06:58.358Z",
+  "publications": [
+    {
+      "file": "1419-cardi-b-and-her-grandmother-rapping-along-to-cardi-s-iconic-brea.json",
+      "id": "1419-cardi-b-and-her-grandmother-rapping-along-to-cardi-s-iconic-brea",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18107764178195192"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

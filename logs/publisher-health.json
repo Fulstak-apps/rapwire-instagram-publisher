@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-16T23:57:12.810Z",
+  "checked_at": "2026-10-17T00:11:21.242Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,13 +8,13 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-16T23:55:37.933Z",
-    "usage": 9,
+    "checked_at": "2026-10-17T00:11:14.589Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-17T00:10:37.933Z",
+    "next_check_at": "2026-10-17T00:26:14.589Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,12 +30,12 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-16T23:19:58.979Z",
+    "next_feed_eligible_at": "2026-10-17T01:41:20.976Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,17 +45,33 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-16T23:55:37.830Z",
-    "usage": 10,
+    "checked_at": "2026-10-17T00:11:06.748Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-17T00:10:37.830Z",
+    "next_check_at": "2026-10-17T00:26:06.748Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-16T23:19:49.400Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-17T01:41:13.945Z",
+  "publications": [
+    {
+      "file": "1431-a-high-five-after-he-caught-a-body-tay-k-celebrated-after-killin.json",
+      "id": "1431-a-high-five-after-he-caught-a-body-tay-k-celebrated-after-killin",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18057390305589634"
+    },
+    {
+      "file": "1431-a-high-five-after-he-caught-a-body-tay-k-celebrated-after-killin.json",
+      "id": "1431-a-high-five-after-he-caught-a-body-tay-k-celebrated-after-killin",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18111745964149322",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

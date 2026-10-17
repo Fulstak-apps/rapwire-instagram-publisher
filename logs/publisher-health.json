@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T14:01:26.075Z",
+  "checked_at": "2026-10-17T14:22:28.112Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-17T14:01:19.194Z",
+    "checked_at": "2026-10-17T14:22:19.473Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-17T14:16:19.194Z",
+    "next_check_at": "2026-10-17T14:37:19.473Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-17T15:31:24.927Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-17T14:35:10.021Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,24 +45,23 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-17T14:01:18.909Z",
+    "checked_at": "2026-10-17T14:22:19.941Z",
     "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-17T14:16:18.909Z",
+    "next_check_at": "2026-10-17T14:37:19.941Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-17T13:03:04.621Z",
+  "threads_next_eligible_at": "2026-10-17T15:52:27.635Z",
   "publications": [
     {
-      "file": "1442-nino-paid-and-warhol-ss-have-been-charged-with-murder-armed-robb.json",
-      "id": "1442-nino-paid-and-warhol-ss-have-been-charged-with-murder-armed-robb",
-      "platform": "instagram",
+      "file": "1443-watch-the-grand-theft-auto-vi-launch-trailer-featuring-the-debut.json",
+      "id": "1443-watch-the-grand-theft-auto-vi-launch-trailer-featuring-the-debut",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18089721830673340",
-      "content_type": "video"
+      "media_id": "18097109279112309"
     }
   ],
   "failures": [],

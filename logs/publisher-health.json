@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T21:52:27.446Z",
+  "checked_at": "2026-10-17T21:57:36.344Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-17T21:52:25.518Z",
-    "usage": 9,
+    "checked_at": "2026-10-17T21:57:31.870Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-17T22:07:25.518Z",
+    "next_check_at": "2026-10-17T22:12:31.870Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-17T21:51:31.221Z",
+    "next_feed_eligible_at": "2026-10-17T23:27:35.960Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -45,17 +45,26 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-17T21:42:20.137Z",
-    "usage": 12,
+    "checked_at": "2026-10-17T21:57:31.693Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-17T21:57:20.137Z",
+    "next_check_at": "2026-10-17T22:12:31.693Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-17T22:16:50.566Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1451-tee-grizzley-drops-the-video-for-finally-made-it-off-his-new-alb.json",
+      "id": "1451-tee-grizzley-drops-the-video-for-finally-made-it-off-his-new-alb",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17898579717396592",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

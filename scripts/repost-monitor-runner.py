@@ -40,6 +40,31 @@ def cleanup_stale_git_temporary_objects():
             # collector from attempting its normal bounded pass.
             pass
 
+def clear_abandoned_git_rebase_marker():
+    """Quarantine only an obviously incomplete rebase marker.
+
+    A hard-killed sync can leave an empty ``rebase-merge`` directory behind.
+    Git then refuses every future sync, even though there is no rebase that can
+    be resumed.  Preserve a complete rebase for manual recovery; only move an
+    incomplete marker (missing Git's required state files) into Trash.
+    """
+    marker = Path('.git/rebase-merge')
+    if not marker.is_dir():
+        return
+    required = ('head-name', 'onto', 'orig-head')
+    if all((marker / name).exists() for name in required):
+        return
+    try:
+        trash = Path.home() / '.Trash'
+        trash.mkdir(exist_ok=True)
+        destination = trash / f'RapWire-incomplete-rebase-{int(time.time())}'
+        shutil.move(str(marker), str(destination))
+        print(f'Quarantined incomplete Git rebase marker at {destination}.', file=sys.stderr)
+    except OSError:
+        # Preserve the marker if it cannot be moved; this must never stop the
+        # collector from attempting its normal, bounded pass.
+        pass
+
 def terminate_orphaned_rapwire_browser():
     """A killed Playwright parent can leave its dedicated Chrome profile alive.
 
@@ -115,6 +140,7 @@ if free_bytes < 5 * 1024**3:
     print("RapWire storage warning: less than 5 GB free. Trash does not reclaim space; empty Trash manually after review.", file=sys.stderr)
 # Never delete arbitrary Git temporary files: another process may own them.
 clear_stale_monitor_lock()
+clear_abandoned_git_rebase_marker()
 
 process = subprocess.Popen(
     ["npm", "run", "repost:monitor"],
@@ -122,6 +148,12 @@ process = subprocess.Popen(
 )
 try:
     process.wait(timeout=LIMIT_SECONDS)
+    if process.returncode:
+        # Playwright can time out after Chrome has spawned, leaving a headless
+        # child attached to this dedicated profile.  Clean only that isolated
+        # automation profile so the next scheduled pass starts fresh.
+        terminate_orphaned_rapwire_browser()
+        clear_stale_monitor_lock()
     raise SystemExit(process.returncode)
 except subprocess.TimeoutExpired:
     # Signal the entire npm/node/browser-capture process group.  The monitor's

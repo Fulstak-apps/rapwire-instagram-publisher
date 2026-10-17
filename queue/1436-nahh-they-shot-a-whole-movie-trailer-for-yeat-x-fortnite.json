@@ -35,7 +35,7 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "published",
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DefpjxHNuI9",
@@ -48,7 +48,7 @@
   "instagram_container_checked_at": "2026-10-17T01:47:01.261Z",
   "threads_container_id": "18106756757179906",
   "threads_container_created_at": "2026-10-17T01:47:00.576Z",
-  "threads_container_checked_at": "2026-10-17T01:47:00.576Z",
+  "threads_container_checked_at": "2026-10-17T01:52:08.693Z",
   "instagram_container_status": "FINISHED",
   "instagram_publish_requested_at": "2026-10-17T01:47:01.261Z",
   "instagram_media_id": "17976745469935931",
@@ -57,5 +57,13 @@
   "instagram_verified_at": "2026-10-17T01:47:07.506Z",
   "instagram_permalink": "https://www.instagram.com/reel/Dek8-pkj0iW/",
   "threads_story_status": "not_supported",
-  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "threads_container_status": "FINISHED",
+  "threads_publish_requested_at": "2026-10-17T01:52:08.693Z",
+  "threads_media_id": "18096311129658634",
+  "threads_published_at": "2026-10-17T01:52:16.112Z",
+  "threads_verified_at": "2026-10-17T01:52:16.409Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/Dek9jwYEiNi",
+  "media_cleanup_status": "pending",
+  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/1436-nahh-they-shot-a-whole-movie-trailer-for-yeat-x-fortnite.mp4' -> '/home/runner/.Trash/RapWire-1792201936410-1436-nahh-they-shot-a-whole-movie-trailer-for-yeat-x-fortnite.mp4'"
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T17:34:45.165Z",
+  "checked_at": "2026-10-17T17:39:45.927Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-17T17:24:06.337Z",
+    "checked_at": "2026-10-17T17:39:43.191Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-17T17:39:06.337Z",
+    "next_check_at": "2026-10-17T17:54:43.191Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,25 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-17T17:24:06.020Z",
-    "usage": 12,
+    "checked_at": "2026-10-17T17:39:43.695Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-17T17:39:06.020Z",
+    "next_check_at": "2026-10-17T17:54:43.695Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-17T19:04:44.747Z",
-  "publications": [
-    {
-      "file": "1445-former-nba-player-delontewest-was-asked-about-the-long-standing-.json",
-      "id": "1445-former-nba-player-delontewest-was-asked-about-the-long-standing-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18131101174827926"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

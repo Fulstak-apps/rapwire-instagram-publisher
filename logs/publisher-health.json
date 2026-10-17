@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T15:47:53.996Z",
+  "checked_at": "2026-10-17T15:52:51.216Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,17 +26,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-17T17:17:53.635Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-17T16:50:51.418Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,26 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-17T15:37:38.240Z",
+    "checked_at": "2026-10-17T15:52:50.229Z",
     "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-17T15:52:38.240Z",
+    "next_check_at": "2026-10-17T16:07:50.229Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-17T15:52:27.635Z",
-  "publications": [
-    {
-      "file": "1443-watch-the-grand-theft-auto-vi-launch-trailer-featuring-the-debut.json",
-      "id": "1443-watch-the-grand-theft-auto-vi-launch-trailer-featuring-the-debut",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18103543955568830",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

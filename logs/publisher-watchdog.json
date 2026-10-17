@@ -1,9 +1,9 @@
 {
-  "reserve_count": 39,
-  "reserve_hours": 19.5,
+  "reserve_count": 38,
+  "reserve_hours": 19,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
+  "overdue": false,
   "health_stale": true,
   "processing": [],
   "blocked": false,
@@ -11,7 +11,6 @@
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1442-nino-paid-and-warhol-ss-have-been-charged-with-murder-armed-robb",
     "1443-watch-the-grand-theft-auto-vi-launch-trailer-featuring-the-debut",
     "1444-cops-were-drooling-over-young-thug-jewelers-when-they-raided-his",
     "1445-former-nba-player-delontewest-was-asked-about-the-long-standing-",
@@ -53,6 +52,6 @@
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-17T11:32:18.312Z",
+  "checked_at": "2026-10-17T14:21:41.922Z",
   "deferred": []
 }

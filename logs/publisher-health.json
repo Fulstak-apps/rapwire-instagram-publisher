@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T22:17:46.873Z",
+  "checked_at": "2026-10-17T22:22:55.092Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-17T22:12:40.059Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-17T22:27:40.059Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-17T22:16:50.566Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-17T23:52:54.767Z",
+  "publications": [
+    {
+      "file": "1452-a-x-collab-calls-for-a-drink-makes-a-missing-dog-margarita-for-y.json",
+      "id": "1452-a-x-collab-calls-for-a-drink-makes-a-missing-dog-margarita-for-y",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18131693882503767"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

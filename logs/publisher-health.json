@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T20:41:42.611Z",
+  "checked_at": "2026-10-17T20:46:51.056Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-17T20:41:41.445Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-17T20:56:41.445Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-17T20:40:52.865Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-17T22:16:50.566Z",
+  "publications": [
+    {
+      "file": "1450-when-your-mom-starts-playing-her-playlist-and-you-thought-she-ha.json",
+      "id": "1450-when-your-mom-starts-playing-her-playlist-and-you-thought-she-ha",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18109534429923116"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

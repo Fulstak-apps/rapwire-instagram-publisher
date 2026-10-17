@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T15:52:51.216Z",
+  "checked_at": "2026-10-17T15:57:58.987Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-17T15:52:50.229Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-17T16:07:50.229Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-17T15:52:27.635Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-17T17:27:58.565Z",
+  "publications": [
+    {
+      "file": "1444-cops-were-drooling-over-young-thug-jewelers-when-they-raided-his.json",
+      "id": "1444-cops-were-drooling-over-young-thug-jewelers-when-they-raided-his",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18111839861158188"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

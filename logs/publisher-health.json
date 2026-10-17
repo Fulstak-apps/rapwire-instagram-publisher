@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T10:16:11.144Z",
+  "checked_at": "2026-10-17T11:33:05.210Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-17T10:16:09.995Z",
+    "checked_at": "2026-10-17T11:32:57.266Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-17T10:31:09.995Z",
+    "next_check_at": "2026-10-17T11:47:57.266Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-17T10:16:10.355Z",
-    "usage": 10,
+    "checked_at": "2026-10-17T11:32:57.756Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-17T10:31:10.355Z",
+    "next_check_at": "2026-10-17T11:47:57.756Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-17T10:09:11.958Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-17T13:03:04.621Z",
+  "publications": [
+    {
+      "file": "1442-nino-paid-and-warhol-ss-have-been-charged-with-murder-armed-robb.json",
+      "id": "1442-nino-paid-and-warhol-ss-have-been-charged-with-murder-armed-robb",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18449823256131890"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

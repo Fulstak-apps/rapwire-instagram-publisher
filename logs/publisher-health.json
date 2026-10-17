@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T07:04:03.756Z",
+  "checked_at": "2026-10-17T07:18:26.159Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,17 +26,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 8,
-    "platform_quota_usage": 8,
-    "instagram_remaining": 2,
+    "instagram_usage": 9,
+    "platform_quota_usage": 9,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-17T08:34:03.392Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,23 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-17T08:33:57.119Z",
-  "publications": [
-    {
-      "file": "1440-the-grand-theft-auto-6-launch-trailer-is-all-about-love-and-mone.json",
-      "id": "1440-the-grand-theft-auto-6-launch-trailer-is-all-about-love-and-mone",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18192777940402243"
-    },
-    {
-      "file": "1440-the-grand-theft-auto-6-launch-trailer-is-all-about-love-and-mone.json",
-      "id": "1440-the-grand-theft-auto-6-launch-trailer-is-all-about-love-and-mone",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18132791584816177",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

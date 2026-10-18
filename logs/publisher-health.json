@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T07:10:14.762Z",
+  "checked_at": "2026-10-18T07:15:10.551Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-18T08:40:14.436Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-18T08:39:19.539Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,16 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-18T08:14:59.852Z",
-  "publications": [
-    {
-      "file": "1457-combine-your-culinary-skills-with-business-know-how-to-take-the-.json",
-      "id": "1457-combine-your-culinary-skills-with-business-know-how-to-take-the-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18077652284719882",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

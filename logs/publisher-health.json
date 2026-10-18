@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T08:15:47.269Z",
+  "checked_at": "2026-10-18T08:20:54.164Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-18T08:10:42.781Z",
-    "usage": 13,
+    "usage": 14,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-18T08:25:42.781Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-18T08:14:59.852Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-18T09:50:53.777Z",
+  "publications": [
+    {
+      "file": "1458-we-made-big-sean-choose-between-lil-wayne-vs-eminem-makes-some-i.json",
+      "id": "1458-we-made-big-sean-choose-between-lil-wayne-vs-eminem-makes-some-i",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17953219425331431"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T17:46:53.818Z",
+  "checked_at": "2026-10-18T17:51:52.535Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,17 +26,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-18T19:16:53.430Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-18T20:21:31.221Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,16 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-18T17:50:56.652Z",
-  "publications": [
-    {
-      "file": "1462-newly-surfaced-bodycam-footage-shows-police-frustrated-as-brian-.json",
-      "id": "1462-newly-surfaced-bodycam-footage-shows-police-frustrated-as-brian-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18166174222496989",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

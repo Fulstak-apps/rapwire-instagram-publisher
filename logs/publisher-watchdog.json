@@ -3,7 +3,7 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
+  "overdue": false,
   "health_stale": false,
   "processing": [],
   "blocked": false,
@@ -11,7 +11,6 @@
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1459-brian-steel-pulled-up-on-young-thug-during-his-rico-arrest-alleg",
     "1460-rapper-casanova-shares-a-throwback-video-featuring-torylanez-and",
     "1461-my-playlist-everyday-nardwuar-asking-rappers-who-are-you-has-giv",
     "1462-newly-surfaced-bodycam-footage-shows-police-frustrated-as-brian-",
@@ -58,10 +57,11 @@
     "1503-he-took-his-ex-to-court-then-she-vanished-the-same-day-imagine-g",
     "1504-ye-and-s-song-all-the-love-surpasses-100-million-streams-greensc",
     "1505-breaking-drakeo-the-ruler-s-family-just-reached-a-major-settleme",
-    "1506-when-future-heard-southside-s-beat-and-immediately-started-frees"
+    "1506-when-future-heard-southside-s-beat-and-immediately-started-frees",
+    "1507-a-young-boy-goes-viral-after-posting-a-video-of-himself-showing-"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-18T13:41:35.273Z",
+  "checked_at": "2026-10-18T16:53:58.147Z",
   "deferred": []
 }

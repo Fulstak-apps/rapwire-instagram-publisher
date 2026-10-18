@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T11:27:47.524Z",
+  "checked_at": "2026-10-18T11:32:56.752Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-18T11:17:38.053Z",
+    "checked_at": "2026-10-18T11:32:49.294Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-18T11:32:38.053Z",
+    "next_check_at": "2026-10-18T11:47:49.294Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-18T11:27:46.482Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-18T11:42:46.482Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-18T11:26:53.097Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-18T13:02:56.344Z",
+  "publications": [
+    {
+      "file": "1460-rapper-casanova-shares-a-throwback-video-featuring-torylanez-and.json",
+      "id": "1460-rapper-casanova-shares-a-throwback-video-featuring-torylanez-and",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17912773809520471"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

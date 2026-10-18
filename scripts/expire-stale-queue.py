@@ -46,6 +46,10 @@ for path in QUEUE.glob("*.json"):
         item = json.loads(path.read_text())
     except Exception:
         continue
+    # A malformed legacy sidecar must not stop freshness cleanup for every
+    # valid queue record. Only object manifests are publishable queue items.
+    if not isinstance(item, dict):
+        continue
     if item.get("status") != "ready":
         continue
     # Legacy collector records labelled every repost a "throwback", which

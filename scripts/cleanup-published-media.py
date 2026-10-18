@@ -21,6 +21,11 @@ for queue_file in QUEUE.glob("*.json"):
         item = json.loads(queue_file.read_text())
     except (OSError, json.JSONDecodeError):
         raise SystemExit(f"Cleanup stopped: unreadable queue record {queue_file.name}")
+    # Ignore non-manifest JSON sidecars rather than allowing one malformed
+    # legacy record to stop the entire publisher cleanup step.
+    if not isinstance(item, dict):
+        print(f"Cleanup skipped non-object queue record {queue_file.name}.")
+        continue
     if not (item.get("status") == "published"
             and item.get("instagram_media_id")
             and item.get("threads_media_id")):

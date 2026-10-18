@@ -1,0 +1,22 @@
+{
+  "canvas": [
+    1080,
+    1350
+  ],
+  "slides": 5,
+  "headline_px": 106,
+  "deck_px": 42,
+  "top_banner": false,
+  "logo_asset": "assets/rapwire247-logo.png",
+  "logo_position": "bottom-left",
+  "logo_backing_shape": "none",
+  "alpha_preserved_on_logo": true,
+  "visual_qc": true,
+  "visual_qc_notes": [
+    "Full-resolution render inspection completed after compositing.",
+    "All five slides show the actual story subject in a separate right-side safe zone.",
+    "Headline and explanatory deck are directly on the illustration with no opaque backing panel.",
+    "No clipped heads, faces, hands, or meaningful in-scene details observed.",
+    "Official transparent RapWire mark is the only logo and has no backing shape."
+  ]
+}

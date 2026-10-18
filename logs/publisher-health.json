@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T05:08:59.500Z",
+  "checked_at": "2026-10-18T05:14:05.875Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-18T06:38:58.929Z",
-  "publications": [
-    {
-      "file": "1456-nightlovell-stepped-outside-the-usual-rap-performance-format-for.json",
-      "id": "1456-nightlovell-stepped-outside-the-usual-rap-performance-format-for",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17937325737126923"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

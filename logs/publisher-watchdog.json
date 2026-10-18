@@ -1,9 +1,9 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
+  "overdue": false,
   "health_stale": false,
   "processing": [],
   "blocked": false,
@@ -11,9 +11,6 @@
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1456-nightlovell-stepped-outside-the-usual-rap-performance-format-for",
-    "1457-combine-your-culinary-skills-with-business-know-how-to-take-the-",
-    "1458-we-made-big-sean-choose-between-lil-wayne-vs-eminem-makes-some-i",
     "1459-brian-steel-pulled-up-on-young-thug-during-his-rico-arrest-alleg",
     "1460-rapper-casanova-shares-a-throwback-video-featuring-torylanez-and",
     "1461-my-playlist-everyday-nardwuar-asking-rappers-who-are-you-has-giv",
@@ -58,10 +55,12 @@
     "1500-happy-birthday-eminem-what-song-of-his-made-you-a-fan",
     "1501-sacramento-s-speaks-on-putting-his-youngins-in-position-through-",
     "1502-amp-ray-ray-is-officially-entering-a-new-chapter-after-parting-w",
-    "1503-he-took-his-ex-to-court-then-she-vanished-the-same-day-imagine-g"
+    "1503-he-took-his-ex-to-court-then-she-vanished-the-same-day-imagine-g",
+    "1504-ye-and-s-song-all-the-love-surpasses-100-million-streams-greensc",
+    "1505-breaking-drakeo-the-ruler-s-family-just-reached-a-major-settleme"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-18T05:51:07.868Z",
+  "checked_at": "2026-10-18T09:56:29.064Z",
   "deferred": []
 }

@@ -1,9 +1,9 @@
 {
-  "reserve_count": 49,
-  "reserve_hours": 24.5,
+  "reserve_count": 48,
+  "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "health_stale": false,
   "processing": [],
   "blocked": false,
@@ -11,9 +11,6 @@
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1453-brian-steele-showed-up-to-the-raid-that-arrested-thug-for-a-rico",
-    "1454-it-s-not-sicko-mode-without-drake-s-verse-wants-to-know-what-s-y",
-    "1455-tesla-showcased-its-new-roadster-and-it-s-insane-6",
     "1456-nightlovell-stepped-outside-the-usual-rap-performance-format-for",
     "1457-combine-your-culinary-skills-with-business-know-how-to-take-the-",
     "1458-we-made-big-sean-choose-between-lil-wayne-vs-eminem-makes-some-i",
@@ -59,10 +56,12 @@
     "1498-never-forget-when-50-cent-started-trolling-with-prop-money-after",
     "1499-my-right-airpod-when-i-m-saying-hi-to-my-grandma-youngboy-never-",
     "1500-happy-birthday-eminem-what-song-of-his-made-you-a-fan",
-    "rapwire-carousel-2026-10-17-1700"
+    "1501-sacramento-s-speaks-on-putting-his-youngins-in-position-through-",
+    "1502-amp-ray-ray-is-officially-entering-a-new-chapter-after-parting-w",
+    "1503-he-took-his-ex-to-court-then-she-vanished-the-same-day-imagine-g"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-18T01:11:21.182Z",
+  "checked_at": "2026-10-18T05:51:07.868Z",
   "deferred": []
 }

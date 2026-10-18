@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T08:46:13.332Z",
+  "checked_at": "2026-10-18T08:51:07.648Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-18T10:16:13.016Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-18T14:01:24.927Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,16 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-18T09:50:53.777Z",
-  "publications": [
-    {
-      "file": "1458-we-made-big-sean-choose-between-lil-wayne-vs-eminem-makes-some-i.json",
-      "id": "1458-we-made-big-sean-choose-between-lil-wayne-vs-eminem-makes-some-i",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18116746628107608",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

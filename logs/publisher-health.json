@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T17:51:52.535Z",
+  "checked_at": "2026-10-18T17:57:00.866Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-18T17:46:47.570Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-18T18:01:47.570Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-18T17:50:56.652Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-18T19:27:00.432Z",
+  "publications": [
+    {
+      "file": "1464-2026-xxl-freshmen-miles-minnick-and-trap-dickey-link-up-to-deliv.json",
+      "id": "1464-2026-xxl-freshmen-miles-minnick-and-trap-dickey-link-up-to-deliv",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17962699044215305"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

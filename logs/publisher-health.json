@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T03:38:10.783Z",
+  "checked_at": "2026-10-18T03:42:56.999Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-18T05:08:10.418Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-18T07:04:03.392Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,16 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-18T05:03:06.541Z",
-  "publications": [
-    {
-      "file": "1454-it-s-not-sicko-mode-without-drake-s-verse-wants-to-know-what-s-y.json",
-      "id": "1454-it-s-not-sicko-mode-without-drake-s-verse-wants-to-know-what-s-y",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18128242156852479",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

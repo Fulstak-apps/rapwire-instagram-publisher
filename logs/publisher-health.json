@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-19T15:41:20.789Z",
+  "checked_at": "2026-10-19T16:11:07.202Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-19T15:41:08.514Z",
-    "usage": 10,
+    "checked_at": "2026-10-19T16:11:04.422Z",
+    "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-19T15:56:08.514Z",
+    "next_check_at": "2026-10-19T16:26:04.422Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -32,11 +32,11 @@
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-19T17:11:14.634Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,33 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-19T15:41:08.288Z",
+    "checked_at": "2026-10-19T16:11:04.840Z",
     "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-19T15:56:08.288Z",
+    "next_check_at": "2026-10-19T16:26:04.840Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-19T17:11:20.086Z",
-  "publications": [
-    {
-      "file": "1482-bro-had-no-business-going-this-crazy-in-20-seconds-daemoney-veez.json",
-      "id": "1482-bro-had-no-business-going-this-crazy-in-20-seconds-daemoney-veez",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18387896116231568",
-      "content_type": "video"
-    },
-    {
-      "file": "1483-footage-captures-officers-becoming-visibly-frustrated-after-defe.json",
-      "id": "1483-footage-captures-officers-becoming-visibly-frustrated-after-defe",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18010839806771516"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

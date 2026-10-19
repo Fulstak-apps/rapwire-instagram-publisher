@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-19T01:36:07.865Z",
+  "checked_at": "2026-10-19T01:41:16.401Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-19T01:25:19.559Z",
-    "usage": 14,
+    "checked_at": "2026-10-19T01:41:10.654Z",
+    "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-19T01:40:19.559Z",
+    "next_check_at": "2026-10-19T01:56:10.654Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-19T01:24:36.373Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-19T03:11:15.680Z",
+  "publications": [
+    {
+      "file": "1472-north-philly-rapper-lilbuckss-getting-vulnerable-might-be-his-be.json",
+      "id": "1472-north-philly-rapper-lilbuckss-getting-vulnerable-might-be-his-be",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18000876008812333"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

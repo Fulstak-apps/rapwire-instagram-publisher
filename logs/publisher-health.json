@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-19T07:13:43.047Z",
+  "checked_at": "2026-10-19T07:18:50.613Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-19T07:13:42.397Z",
-    "usage": 9,
+    "checked_at": "2026-10-19T07:18:44.924Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-19T07:28:42.397Z",
+    "next_check_at": "2026-10-19T07:33:44.924Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,10 +27,10 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
     "instagram_usage": 9,
-    "platform_quota_usage": 10,
+    "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-19T05:55:28.350Z",
+    "next_feed_eligible_at": "2026-10-19T08:48:50.244Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -45,17 +45,26 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-19T07:03:32.878Z",
+    "checked_at": "2026-10-19T07:18:44.682Z",
     "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-19T07:18:32.878Z",
+    "next_check_at": "2026-10-19T07:33:44.682Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-19T08:38:44.835Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1478-how-i-m-gonna-be-pulling-up-when-i-finally-cop-that-new-tesla-im.json",
+      "id": "1478-how-i-m-gonna-be-pulling-up-when-i-finally-cop-that-new-tesla-im",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18127583584843034",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

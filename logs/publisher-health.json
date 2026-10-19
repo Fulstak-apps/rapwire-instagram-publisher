@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-19T18:48:00.397Z",
+  "checked_at": "2026-10-19T18:53:05.105Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-19T18:47:59.506Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-19T19:02:59.506Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-19T18:47:57.139Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-19T20:23:04.795Z",
+  "publications": [
+    {
+      "file": "1493-naa-i-thought-they-nerfed-6ix9ine-how-is-he-still-winning.json",
+      "id": "1493-naa-i-thought-they-nerfed-6ix9ine-how-is-he-still-winning",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18050920385607690"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

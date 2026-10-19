@@ -1,6 +1,6 @@
 {
   "id": "1485-a-correctional-officer-was-spotted-having-a-good-time-with-inmat",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-17",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DemHeUBjI09",
-  "source_caption_text": "A correctional officer was spotted having a good time with inmates, taking pictures, and being lifted and curled like weights 😳",
+  "source_caption_text": "A correctional officer was spotted having a good time with inmates, taking pictures, and being lifted and curled like weights \ud83d\ude33",
   "caption_checked_at": "2026-10-17T17:03:21.482Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 38.266666666666666
+  "source_video_duration": 38.266666666666666,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

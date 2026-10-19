@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-19T22:00:41.272Z",
+  "checked_at": "2026-10-19T22:05:51.083Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-19T21:50:40.049Z",
+    "checked_at": "2026-10-19T22:05:43.495Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-19T22:05:40.049Z",
+    "next_check_at": "2026-10-19T22:20:43.495Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-19T21:50:40.407Z",
-    "usage": 12,
+    "checked_at": "2026-10-19T22:05:44.004Z",
+    "usage": 13,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-19T22:05:40.407Z",
+    "next_check_at": "2026-10-19T22:20:44.004Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-19T21:59:13.317Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-19T23:35:50.227Z",
+  "publications": [
+    {
+      "file": "1499-my-right-airpod-when-i-m-saying-hi-to-my-grandma-youngboy-never-.json",
+      "id": "1499-my-right-airpod-when-i-m-saying-hi-to-my-grandma-youngboy-never-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18115297951830923"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

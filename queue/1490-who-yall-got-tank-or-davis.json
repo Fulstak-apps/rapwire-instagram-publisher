@@ -1,6 +1,6 @@
 {
   "id": "1490-who-yall-got-tank-or-davis",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-17",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Who yall got tank or davis",
   "caption_checked_at": "2026-10-17T18:31:15.815Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 67.73333333333333
+  "source_video_duration": 67.73333333333333,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

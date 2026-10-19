@@ -1,0 +1,58 @@
+{
+  "asset_id": "rapwire-carousel-2026-10-19-0800",
+  "rendered_at": "2026-10-19T16:00:30Z",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "format": "PNG"
+  },
+  "style": "premium late-1980s American comic-book editorial cover",
+  "full_resolution_reviewed": true,
+  "distinct_story_count": 5,
+  "headline_font_size_px_min": 104,
+  "deck_font_size_px_min": 42,
+  "headline_and_deck_on_art": true,
+  "no_top_banner": true,
+  "logo_asset": "assets/rapwire247-logo.png",
+  "logo_position": "bottom-left",
+  "logo_transparent_and_unboxed": true,
+  "subject_heads_faces_hands_uncovered": true,
+  "subjects_actual_and_recognizable": true,
+  "generic_art_rejected": true,
+  "caption_numbered_1_to_5": true,
+  "caption_has_no_ai_word": true,
+  "caption_ends_only_with_rapwire247": true,
+  "slide_checks": [
+    {
+      "slide": 1,
+      "subject": "Rapsody",
+      "safe_zone": "passed",
+      "notes": "Three-line headline stays left of hair; deck sits on console-side negative space."
+    },
+    {
+      "slide": 2,
+      "subject": "Madlib",
+      "safe_zone": "passed",
+      "notes": "Headline/deck remain above and left of hat, face and hands."
+    },
+    {
+      "slide": 3,
+      "subject": "Young Miko",
+      "safe_zone": "passed",
+      "notes": "Copy stays in upper-left arena sky; raised hand, face and microphone remain clear."
+    },
+    {
+      "slide": 4,
+      "subject": "ONEFOUR",
+      "safe_zone": "passed",
+      "notes": "Copy stays on curtain negative space above the group."
+    },
+    {
+      "slide": 5,
+      "subject": "Jason and Lucia",
+      "safe_zone": "passed",
+      "notes": "Copy stays in upper-left neon sky; both protagonists remain fully visible."
+    }
+  ],
+  "passed": true
+}

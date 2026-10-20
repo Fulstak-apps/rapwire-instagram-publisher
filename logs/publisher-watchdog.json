@@ -1,9 +1,9 @@
 {
-  "reserve_count": 42,
-  "reserve_hours": 21,
+  "reserve_count": 44,
+  "reserve_hours": 22,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "health_stale": false,
   "processing": [],
   "blocked": false,
@@ -11,9 +11,6 @@
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1501-sacramento-s-speaks-on-putting-his-youngins-in-position-through-",
-    "1502-amp-ray-ray-is-officially-entering-a-new-chapter-after-parting-w",
-    "1503-he-took-his-ex-to-court-then-she-vanished-the-same-day-imagine-g",
     "1504-ye-and-s-song-all-the-love-surpasses-100-million-streams-greensc",
     "1505-breaking-drakeo-the-ruler-s-family-just-reached-a-major-settleme",
     "1506-when-future-heard-southside-s-beat-and-immediately-started-frees",
@@ -52,10 +49,15 @@
     "1539-bloodhound-q50-s-autopsy-report-reveals-the-rapper-was-shot-five",
     "1540-adin-ross-reveals-plans-for-a-potential-boxing-match-between-blu",
     "1541-cardi-b-knew-she-had-a-hit-when-she-dropped-bodak-yellow-the-res",
-    "1542-rap-life-review-speaking-on-what-drake-has-been-able-to-accompli"
+    "1542-rap-life-review-speaking-on-what-drake-has-been-able-to-accompli",
+    "1543-never-forget-when-nicki-minajs-interviewer-put-her-in-her-place-",
+    "1544-thoughts-on-eminem-kid-rock-new-song-personally-i-thought-it-was",
+    "1545-part-2-france-is-burning-it-started-with-high-school-kids-in-the",
+    "1546-after-the-event-in-edmonton-over-the-weekend-toronto-has-to-be-a",
+    "1547-blueface-is-going-back-to-jail-chrisean-rock-breaks-down-as-cops"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-20T01:34:07.535Z",
+  "checked_at": "2026-10-20T06:30:15.263Z",
   "deferred": []
 }

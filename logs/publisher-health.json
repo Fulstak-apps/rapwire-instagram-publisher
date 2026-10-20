@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T06:39:12.088Z",
+  "checked_at": "2026-10-20T06:44:21.335Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-20T06:30:35.490Z",
-    "usage": 12,
+    "usage": 13,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-20T06:45:35.490Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-20T06:34:47.168Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-20T08:14:20.951Z",
+  "publications": [
+    {
+      "file": "1505-breaking-drakeo-the-ruler-s-family-just-reached-a-major-settleme.json",
+      "id": "1505-breaking-drakeo-the-ruler-s-family-just-reached-a-major-settleme",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18137838680002439"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

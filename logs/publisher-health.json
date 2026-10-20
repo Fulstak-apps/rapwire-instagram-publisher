@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T03:23:32.473Z",
+  "checked_at": "2026-10-20T03:28:37.870Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-20T03:13:22.751Z",
+    "checked_at": "2026-10-20T03:28:31.774Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-20T03:28:22.751Z",
+    "next_check_at": "2026-10-20T03:43:31.774Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-20T03:13:23.195Z",
+    "checked_at": "2026-10-20T03:28:32.115Z",
     "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-20T03:28:23.195Z",
+    "next_check_at": "2026-10-20T03:43:32.115Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-20T03:22:50.502Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-20T04:58:37.384Z",
+  "publications": [
+    {
+      "file": "1502-amp-ray-ray-is-officially-entering-a-new-chapter-after-parting-w.json",
+      "id": "1502-amp-ray-ray-is-officially-entering-a-new-chapter-after-parting-w",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18114630362160179"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

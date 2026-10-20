@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T22:47:19.885Z",
+  "checked_at": "2026-10-20T22:52:15.166Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-21T00:17:19.433Z",
-  "publications": [
-    {
-      "file": "1514-og-denzo-has-been-making-noise-and-the-conversation-surrounding-.json",
-      "id": "1514-og-denzo-has-been-making-noise-and-the-conversation-surrounding-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18387542560228409"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

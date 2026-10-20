@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T22:42:47.737Z",
+  "checked_at": "2026-10-20T22:47:19.885Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,13 +8,13 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-20T22:32:03.958Z",
+    "checked_at": "2026-10-20T22:47:11.880Z",
     "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-20T22:47:03.958Z",
+    "next_check_at": "2026-10-20T23:02:11.880Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-20T22:32:04.723Z",
-    "usage": 11,
+    "checked_at": "2026-10-20T22:47:12.321Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-20T22:47:04.723Z",
+    "next_check_at": "2026-10-20T23:02:12.321Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-20T22:41:15.833Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-21T00:17:19.433Z",
+  "publications": [
+    {
+      "file": "1514-og-denzo-has-been-making-noise-and-the-conversation-surrounding-.json",
+      "id": "1514-og-denzo-has-been-making-noise-and-the-conversation-surrounding-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18387542560228409"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

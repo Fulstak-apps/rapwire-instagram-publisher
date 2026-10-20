@@ -164,7 +164,7 @@
   },
   "qa_passed": true,
   "publish_priority": 100000,
-  "publish_attempts": 0,
+  "publish_attempts": 1,
   "instagram_media_id": null,
   "instagram_permalink": null,
   "threads_media_id": null,
@@ -172,5 +172,25 @@
   "threads_status": "pending",
   "threads_story_status": "not_supported",
   "threads_story_note": "Threads image carousel publishing is supported; a separate Threads Story format is not available through the current publisher.",
-  "retry_safe": true
+  "retry_safe": true,
+  "last_publish_attempt": {
+    "attempted_at": "2026-10-20T15:31:19Z",
+    "workflow_run_id": 39449092144,
+    "status": "cadence_hold",
+    "confirmed_publications": 0,
+    "retry_safe": true,
+    "instagram": {
+      "available": true,
+      "feed_slots_available_at_start": 0,
+      "rolling_day_budget": "10 feed/Story publications",
+      "next_feed_eligible": "2026-10-20T16:16:55.454Z",
+      "message": "Instagram had no feed slots at workflow start; retry after the publisher heartbeat sees a fresh slot."
+    },
+    "threads": {
+      "status": "pending",
+      "quota": "12/250",
+      "message": "Threads remained authenticated but was held by its separate 90-minute publishing cadence; no media ID or permalink was confirmed."
+    },
+    "error": "No authentication or media validation error. Delivery was held by platform pacing/quota."
+  }
 }

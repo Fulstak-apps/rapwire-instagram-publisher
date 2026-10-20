@@ -4,7 +4,7 @@
   "content_type": "carousel",
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
-  "status": "ready",
+  "status": "published",
   "date": "2026-10-19",
   "timezone": "America/Los_Angeles",
   "publish_after": "2026-10-19T21:00:00Z",
@@ -164,8 +164,8 @@
   "qa_passed": true,
   "publish_priority": 100000,
   "publish_attempts": 1,
-  "instagram_media_id": null,
-  "instagram_permalink": null,
+  "instagram_media_id": "17908066923583202",
+  "instagram_permalink": "https://www.instagram.com/p/DeskCNpGTJO/",
   "threads_media_id": null,
   "threads_permalink": null,
   "threads_status": "pending",
@@ -191,5 +191,7 @@
       "message": "Threads remained authenticated but was held by its separate 90-minute publishing cadence; no media ID or permalink was confirmed."
     },
     "error": "No authentication or media validation error. Delivery was held by platform pacing/quota."
-  }
+  },
+  "published_at": "2026-10-20T00:39:07.413Z",
+  "instagram_verified_at": "2026-10-20T00:39:07.482Z"
 }

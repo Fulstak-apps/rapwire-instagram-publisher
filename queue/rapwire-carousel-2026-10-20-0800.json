@@ -4,7 +4,7 @@
   "content_type": "carousel",
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
-  "status": "ready",
+  "status": "published",
   "date": "2026-10-20",
   "timezone": "America/Los_Angeles",
   "publish_after": "2026-10-20T15:00:00Z",
@@ -165,11 +165,11 @@
   "qa_passed": true,
   "publish_priority": 100000,
   "publish_attempts": 1,
-  "instagram_media_id": null,
-  "instagram_permalink": null,
-  "threads_media_id": null,
-  "threads_permalink": null,
-  "threads_status": "pending",
+  "instagram_media_id": "17991028386111648",
+  "instagram_permalink": "https://www.instagram.com/p/DeuQuzKmpFM/",
+  "threads_media_id": "18108519761203878",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DeuQGgqGnEk",
+  "threads_status": "published",
   "threads_story_status": "not_supported",
   "threads_story_note": "Threads image carousel publishing is supported; a separate Threads Story format is not available through the current publisher.",
   "retry_safe": true,
@@ -192,5 +192,9 @@
       "message": "Threads remained authenticated but was held by its separate 90-minute publishing cadence; no media ID or permalink was confirmed."
     },
     "error": "No authentication or media validation error. Delivery was held by platform pacing/quota."
-  }
+  },
+  "threads_published_at": "2026-10-20T16:23:25.250Z",
+  "threads_verified_at": "2026-10-20T16:23:26.258Z",
+  "published_at": "2026-10-20T16:28:55.033Z",
+  "instagram_verified_at": "2026-10-20T16:28:55.157Z"
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T21:06:01.982Z",
+  "checked_at": "2026-10-20T21:11:16.480Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-20T21:00:57.936Z",
-    "usage": 11,
+    "usage": 12,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-20T21:15:57.936Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-20T21:04:42.781Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-20T22:41:15.833Z",
+  "publications": [
+    {
+      "file": "1513-the-whole-world-really-is-the-ville-the-fall-off-world-tour-is-a.json",
+      "id": "1513-the-whole-world-really-is-the-ville-the-fall-off-world-tour-is-a",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18117247448091797"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

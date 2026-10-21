@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T13:16:00.278Z",
+  "checked_at": "2026-10-21T13:20:52.265Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-21T14:45:59.595Z",
-  "publications": [
-    {
-      "file": "1524-more-d4vd-evidence-announced-its-even-worse-than-we-thought.json",
-      "id": "1524-more-d4vd-evidence-announced-its-even-worse-than-we-thought",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18115356628839933"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

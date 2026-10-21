@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T16:49:26.726Z",
+  "checked_at": "2026-10-21T16:59:31.148Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-21T16:49:24.664Z",
+    "checked_at": "2026-10-21T16:59:23.831Z",
     "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-21T17:04:24.664Z",
+    "next_check_at": "2026-10-21T17:14:23.831Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-21T16:49:24.313Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-21T17:04:24.313Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-21T16:22:33.158Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-21T18:29:30.673Z",
+  "publications": [
+    {
+      "file": "1526-cardi-b-s-npr-tiny-desk-concert-is-officially-out-now-the-bronx-.json",
+      "id": "1526-cardi-b-s-npr-tiny-desk-concert-is-officially-out-now-the-bronx-",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18138416269737770"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

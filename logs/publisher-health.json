@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T19:11:32.516Z",
+  "checked_at": "2026-10-21T19:16:43.970Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-21T19:11:31.895Z",
-    "usage": 9,
+    "checked_at": "2026-10-21T19:16:34.949Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-21T19:26:31.895Z",
+    "next_check_at": "2026-10-21T19:31:34.949Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-21T19:10:27.940Z",
+    "next_feed_eligible_at": "2026-10-21T20:46:43.637Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -45,17 +45,26 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-21T19:01:25.550Z",
+    "checked_at": "2026-10-21T19:16:34.586Z",
     "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-21T19:16:25.550Z",
+    "next_check_at": "2026-10-21T19:31:34.586Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-21T20:06:11.500Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1533-baby-is-too-nice-he-s-pushing-his-sound-and-making-waves-that-ha.json",
+      "id": "1533-baby-is-too-nice-he-s-pushing-his-sound-and-making-waves-that-ha",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18037055423848067",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

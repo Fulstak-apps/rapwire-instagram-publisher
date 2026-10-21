@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T17:40:28.330Z",
+  "checked_at": "2026-10-21T17:45:28.420Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-21T19:10:27.940Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-21T18:28:22.361Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,26 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-21T17:30:11.453Z",
+    "checked_at": "2026-10-21T17:45:28.184Z",
     "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-21T17:45:11.453Z",
+    "next_check_at": "2026-10-21T18:00:28.184Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-21T18:29:30.673Z",
-  "publications": [
-    {
-      "file": "1528-21-savage-called-snoop-for-some-costume-tips-via-21-savage-went-.json",
-      "id": "1528-21-savage-called-snoop-for-some-costume-tips-via-21-savage-went-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18081471416345619",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

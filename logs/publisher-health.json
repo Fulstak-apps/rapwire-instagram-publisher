@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T10:03:41.359Z",
+  "checked_at": "2026-10-21T10:08:34.808Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-21T11:33:39.815Z",
-  "publications": [
-    {
-      "file": "1522-when-lil-uzi-vert-found-the-guy-behind-his-music-leaks-in-2016-l.json",
-      "id": "1522-when-lil-uzi-vert-found-the-guy-behind-his-music-leaks-in-2016-l",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17908642644664262"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

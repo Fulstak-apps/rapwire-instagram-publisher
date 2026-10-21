@@ -1,6 +1,6 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": false,
@@ -8,11 +8,9 @@
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1514-og-denzo-has-been-making-noise-and-the-conversation-surrounding-",
-    "1515-a-ap-rocky-wants-to-be-the-next-black-james-bond-he-told-variety",
     "1516-polo-g-really-went-crazy-on-this-polo-g-stunna-4-vegas-and-nle-c",
     "1517-blacc-sam-confirms-that-marathon-burger-will-officially-be-openi",
     "1518-crazy-baby-mama-crossover-episode-blueface-s-bm-nevaeh-links-up-",
@@ -58,10 +56,11 @@
     "1558-france-is-burning-it-started-with-high-school-kids-in-the-paris-",
     "1559-samples-the-monster-by-eminem-rihanna-you-can-hear-the-pain-in-h",
     "1560-ddg-s-mom-said-he-retired-her-9-years-ago-and-she-s-been-living-",
-    "1561-na-bro-planned-this-for-5-years-can-t-knock-the-hustle-tho"
+    "1561-na-bro-planned-this-for-5-years-can-t-knock-the-hustle-tho",
+    "1562-a-new-lil-baby-album-is-a-big-deal-just-announced-the-details-fo"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-20T22:57:29.944Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-21T01:12:01.883Z",
   "deferred": []
 }

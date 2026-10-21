@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T11:29:39.891Z",
+  "checked_at": "2026-10-21T11:34:41.270Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,17 +26,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-21T12:59:39.559Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-21T14:46:55.454Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,16 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-21T11:33:39.815Z",
-  "publications": [
-    {
-      "file": "1520-what-an-honor-named-justin-bieber-the-white-boy-of-the-year-duri.json",
-      "id": "1520-what-an-honor-named-justin-bieber-the-white-boy-of-the-year-duri",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17883584118529029",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

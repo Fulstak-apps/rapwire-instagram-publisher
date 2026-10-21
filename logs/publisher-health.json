@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T14:47:22.785Z",
+  "checked_at": "2026-10-21T14:52:34.004Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-21T14:47:21.432Z",
-    "usage": 9,
+    "checked_at": "2026-10-21T14:52:18.722Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-21T15:02:21.432Z",
+    "next_check_at": "2026-10-21T15:07:18.722Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-21T12:59:39.559Z",
+    "next_feed_eligible_at": "2026-10-21T16:22:25.586Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-21T14:47:21.124Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-21T15:02:21.124Z",
@@ -54,8 +54,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-21T14:45:59.595Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-21T16:22:33.158Z",
+  "publications": [
+    {
+      "file": "1521-a-woman-begged-a-man-not-to-press-charges-and-make-her-a-felon-a.json",
+      "id": "1521-a-woman-begged-a-man-not-to-press-charges-and-make-her-a-felon-a",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17991568005065428",
+      "content_type": "video"
+    },
+    {
+      "file": "1525-yeah-yeah-you-came-back-and-you-failed-uh-playboi-carti-s-2024-c.json",
+      "id": "1525-yeah-yeah-you-came-back-and-you-failed-uh-playboi-carti-s-2024-c",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18120442957923834"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

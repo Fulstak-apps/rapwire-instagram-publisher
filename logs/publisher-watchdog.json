@@ -1,9 +1,9 @@
 {
-  "reserve_count": 47,
-  "reserve_hours": 23.5,
+  "reserve_count": 48,
+  "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "health_stale": false,
   "processing": [],
   "blocked": false,
@@ -11,7 +11,6 @@
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1519-blueface-and-chrisean-go-to-church-for-the-first-time-ever-toget",
     "1520-what-an-honor-named-justin-bieber-the-white-boy-of-the-year-duri",
     "1521-a-woman-begged-a-man-not-to-press-charges-and-make-her-a-felon-a",
     "1522-when-lil-uzi-vert-found-the-guy-behind-his-music-leaks-in-2016-l",
@@ -57,10 +56,12 @@
     "1562-a-new-lil-baby-album-is-a-big-deal-just-announced-the-details-fo",
     "1563-blueface-is-back-home-following-last-night-s-arrest-after-a-swat",
     "1564-blueface-s-bm-nevaeh-had-the-entire-gym-breaking-necks-on-her-ve",
-    "1565-nah-this-ah-ha-into-bodak-yellow-transition-was-too-clean-via-ca"
+    "1565-nah-this-ah-ha-into-bodak-yellow-transition-was-too-clean-via-ca",
+    "1566-rick-ross-son-did-nothing-wrong",
+    "1567-kawhi-leonard-shares-a-video-message-for-toronto-raptors-fans-6"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-21T06:00:35.404Z",
+  "checked_at": "2026-10-21T11:24:22.648Z",
   "deferred": []
 }

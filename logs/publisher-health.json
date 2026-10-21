@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T22:57:07.110Z",
+  "checked_at": "2026-10-21T23:26:34.589Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-21T22:57:03.936Z",
+    "checked_at": "2026-10-21T23:26:27.359Z",
     "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-21T23:12:03.936Z",
+    "next_check_at": "2026-10-21T23:41:27.359Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,11 +26,11 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 8,
+    "platform_quota_usage": 8,
+    "instagram_remaining": 2,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-21T22:31:11.928Z",
+    "next_feed_eligible_at": "2026-10-22T00:56:34.046Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -45,17 +45,33 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-21T22:57:03.700Z",
-    "usage": 13,
+    "checked_at": "2026-10-21T23:26:19.158Z",
+    "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-21T23:12:03.700Z",
+    "next_check_at": "2026-10-21T23:41:19.158Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-21T22:31:04.148Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-22T00:56:26.759Z",
+  "publications": [
+    {
+      "file": "1541-cardi-b-knew-she-had-a-hit-when-she-dropped-bodak-yellow-the-res.json",
+      "id": "1541-cardi-b-knew-she-had-a-hit-when-she-dropped-bodak-yellow-the-res",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17940680385382791"
+    },
+    {
+      "file": "1541-cardi-b-knew-she-had-a-hit-when-she-dropped-bodak-yellow-the-res.json",
+      "id": "1541-cardi-b-knew-she-had-a-hit-when-she-dropped-bodak-yellow-the-res",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18312198934304305",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

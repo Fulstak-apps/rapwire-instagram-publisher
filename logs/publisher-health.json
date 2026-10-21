@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T11:24:30.461Z",
+  "checked_at": "2026-10-21T11:29:39.891Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-21T11:24:29.785Z",
-    "usage": 9,
+    "checked_at": "2026-10-21T11:29:32.490Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-21T11:39:29.785Z",
+    "next_check_at": "2026-10-21T11:44:32.490Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,10 +27,10 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
     "instagram_usage": 9,
-    "platform_quota_usage": 10,
+    "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-21T06:20:04.498Z",
+    "next_feed_eligible_at": "2026-10-21T12:59:39.559Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -45,17 +45,26 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-21T11:14:22.908Z",
-    "usage": 14,
+    "checked_at": "2026-10-21T11:29:31.756Z",
+    "usage": 13,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-21T11:29:22.908Z",
+    "next_check_at": "2026-10-21T11:44:31.756Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-21T11:33:39.815Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1520-what-an-honor-named-justin-bieber-the-white-boy-of-the-year-duri.json",
+      "id": "1520-what-an-honor-named-justin-bieber-the-white-boy-of-the-year-duri",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "17883584118529029",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

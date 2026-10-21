@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T20:55:55.023Z",
+  "checked_at": "2026-10-21T21:01:12.318Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-21T20:55:53.361Z",
-    "usage": 9,
+    "checked_at": "2026-10-21T21:01:05.121Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-21T21:10:53.361Z",
+    "next_check_at": "2026-10-21T21:16:05.121Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-21T20:46:43.637Z",
+    "next_feed_eligible_at": "2026-10-21T22:31:11.928Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-21T20:55:53.135Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-21T21:10:53.135Z",
@@ -54,8 +54,24 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-21T20:06:11.500Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-21T22:31:04.148Z",
+  "publications": [
+    {
+      "file": "1538-nine-vicious-says-he-barely-knows-young-thug-and-has-only-met-hi.json",
+      "id": "1538-nine-vicious-says-he-barely-knows-young-thug-and-has-only-met-hi",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18127621729859041"
+    },
+    {
+      "file": "1538-nine-vicious-says-he-barely-knows-young-thug-and-has-only-met-hi.json",
+      "id": "1538-nine-vicious-says-he-barely-knows-young-thug-and-has-only-met-hi",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18112947950147696",
+      "content_type": "video"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T11:34:41.270Z",
+  "checked_at": "2026-10-21T11:39:46.822Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-21T11:29:31.756Z",
-    "usage": 13,
+    "usage": 14,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-21T11:44:31.756Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-21T11:33:39.815Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-21T13:09:46.235Z",
+  "publications": [
+    {
+      "file": "1523-21-savage-dressed-up-as-snoop-dogg-s-character-rodney-from-the-2.json",
+      "id": "1523-21-savage-dressed-up-as-snoop-dogg-s-character-rodney-from-the-2",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18145456942575257"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

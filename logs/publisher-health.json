@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-21T08:27:34.503Z",
+  "checked_at": "2026-10-21T08:32:26.518Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-21T09:57:33.978Z",
-  "publications": [
-    {
-      "file": "1521-a-woman-begged-a-man-not-to-press-charges-and-make-her-a-felon-a.json",
-      "id": "1521-a-woman-begged-a-man-not-to-press-charges-and-make-her-a-felon-a",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18009775014002402"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

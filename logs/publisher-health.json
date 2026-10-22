@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-22T21:41:15.935Z",
+  "checked_at": "2026-10-22T21:46:21.922Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,13 +8,13 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-22T21:26:02.338Z",
+    "checked_at": "2026-10-22T21:46:13.571Z",
     "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-22T21:41:02.338Z",
+    "next_check_at": "2026-10-22T22:01:13.571Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -35,7 +35,7 @@
     "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-22T21:41:14.874Z",
-    "usage": 9,
+    "usage": 10,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-22T21:56:14.874Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-22T21:40:18.829Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-22T23:16:21.345Z",
+  "publications": [
+    {
+      "file": "1561-na-bro-planned-this-for-5-years-can-t-knock-the-hustle-tho.json",
+      "id": "1561-na-bro-planned-this-for-5-years-can-t-knock-the-hustle-tho",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17899005477398369"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

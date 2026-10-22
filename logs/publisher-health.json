@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-22T02:38:38.047Z",
+  "checked_at": "2026-10-22T02:43:42.038Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-22T02:38:29.095Z",
-    "usage": 9,
+    "checked_at": "2026-10-22T02:43:35.390Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-22T02:53:29.095Z",
+    "next_check_at": "2026-10-22T02:58:35.390Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,13 +30,13 @@
     "platform_quota_usage": 9,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-22T02:38:23.939Z",
+    "next_feed_eligible_at": "2026-10-22T04:13:41.702Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,11 +45,11 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-22T02:28:22.330Z",
+    "checked_at": "2026-10-22T02:43:35.135Z",
     "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-22T02:43:22.330Z",
+    "next_check_at": "2026-10-22T02:58:35.135Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -59,9 +59,10 @@
     {
       "file": "1545-part-2-france-is-burning-it-started-with-high-school-kids-in-the.json",
       "id": "1545-part-2-france-is-burning-it-started-with-high-school-kids-in-the",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18178581721378932"
+      "media_id": "18637286548044595",
+      "content_type": "video"
     }
   ],
   "failures": [],

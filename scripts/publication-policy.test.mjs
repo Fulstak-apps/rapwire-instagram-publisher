@@ -15,17 +15,17 @@ test('persisted feed timestamp survives missing queue history', () => {
 test('reserve both the new Story and unfinished older Stories before starting another feed', () => {
   const pending={...feed,instagram_story_media_id:undefined,instagram_story_status:'pending'};
   const due=now+60*60000+1;
-  assert.equal(publicationPolicy([...publications(8,now-300*60000),pending],{now:due,quota:{usage:8,total:100}}).feed_allowed,false);
-  assert.equal(publicationPolicy([...publications(6,now-300*60000),pending],{now:due,quota:{usage:6,total:100}}).feed_allowed,true);
+  assert.equal(publicationPolicy([...publications(10,now-300*60000),pending],{now:due,quota:{usage:10,total:100}}).feed_allowed,false);
+  assert.equal(publicationPolicy([...publications(8,now-300*60000),pending],{now:due,quota:{usage:8,total:100}}).feed_allowed,true);
 });
 test('one remaining slot can finish a Story but cannot start another video/Story pair', () => {
-  const p=publicationPolicy(publications(9),{now,quota:{usage:9,total:100}});
+  const p=publicationPolicy(publications(11),{now,quota:{usage:11,total:100}});
   assert.equal(p.story_allowed,true); assert.equal(p.feed_allowed,false);
-  assert.equal(publicationPolicy(publications(10),{now,quota:{usage:10,total:100}}).story_allowed,false);
+  assert.equal(publicationPolicy(publications(12),{now,quota:{usage:12,total:100}}).story_allowed,false);
 });
 test('lower platform limits reduce our budget; duplicate IDs are counted once', () => {
   const p=publicationPolicy([feed,feed],{now,quota:{usage:1,total:100,effective_total:20}});
-  assert.equal(p.instagram_usage,2); assert.equal(p.instagram_daily_cap,10);
+  assert.equal(p.instagram_usage,2); assert.equal(p.instagram_daily_cap,12);
 });
 test('published records age out of the rolling budget', () => {
   const old={...feed,published_at:new Date(now-25*3600000).toISOString(),instagram_story_published_at:new Date(now-25*3600000).toISOString()};
@@ -36,7 +36,7 @@ test('Meta API quota use and legacy posts do not consume the new editorial budge
   const p=publicationPolicy([legacy],{now:now+90*60000,quota:{usage:24,total:100},policyStartedAt:new Date(now).toISOString()});
   assert.equal(p.instagram_usage,0);
   assert.equal(p.platform_quota_usage,24);
-  assert.equal(p.instagram_remaining,10);
+  assert.equal(p.instagram_remaining,12);
 });
 const authorization={mode:'one-feed-and-story',item_id:'recovery',authorized_at:new Date(now-60000).toISOString(),expires_at:new Date(now+1800000).toISOString()};
 const quota={usage:43,total:100,effective_total:50,blocked:false,checked_at:new Date(now).toISOString()};

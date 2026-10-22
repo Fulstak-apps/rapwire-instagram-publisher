@@ -1,6 +1,6 @@
 {
   "id": "1549-a-jet-consultant-analyzed-rozay-jet",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-20",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "A jet consultant analyzed rozay jet",
   "caption_checked_at": "2026-10-20T14:47:45.272Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 96
+  "source_video_duration": 96,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

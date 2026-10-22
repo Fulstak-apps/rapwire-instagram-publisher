@@ -3,15 +3,15 @@
   "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "health_stale": false,
+  "overdue": true,
+  "cap_held": true,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1548-blueface-gets-swatted-again-arrested-for-violating-his-probation",
     "1549-a-jet-consultant-analyzed-rozay-jet",
     "1550-is-ja-z-playing-next-year-s-super-bowl-halftime-show-yes-if-the-",
     "1551-this-future-verse-was-straight-flow-state-pop-smoke-quavo-and-fu",
@@ -57,10 +57,11 @@
     "1591-just-over-a-week-after-blueface-proposed-to-chrisean-rock-the-tw",
     "1592-sauron-seeks-to-craft-the-one-ring-that-will-give-him-the-edge-h",
     "1593-three-days-after-walking-out-of-court-a-free-man-tampa-rapper-bi",
-    "1594-was-this-meekmill-freestyle-accurate-swipe"
+    "1594-was-this-meekmill-freestyle-accurate-swipe",
+    "1595-the-man-accused-of-pistol-whipping-rick-ross-son-has-been-releas"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-22T06:02:56.509Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-22T11:37:59.528Z",
   "deferred": []
 }

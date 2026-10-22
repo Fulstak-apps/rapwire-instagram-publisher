@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-22T23:17:22.514Z",
+  "checked_at": "2026-10-22T23:22:30.510Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-22T23:07:11.169Z",
+    "checked_at": "2026-10-22T23:22:20.768Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-22T23:22:11.169Z",
+    "next_check_at": "2026-10-22T23:37:20.768Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -32,10 +32,10 @@
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-22T23:21:24.197Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-22T23:17:21.660Z",
-    "usage": 10,
+    "usage": 11,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-22T23:32:21.660Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-22T23:16:21.345Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-23T00:52:30.135Z",
+  "publications": [
+    {
+      "file": "1562-a-new-lil-baby-album-is-a-big-deal-just-announced-the-details-fo.json",
+      "id": "1562-a-new-lil-baby-album-is-a-big-deal-just-announced-the-details-fo",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18247391785312344"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

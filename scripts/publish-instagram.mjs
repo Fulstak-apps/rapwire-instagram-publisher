@@ -7,6 +7,7 @@ import { publicationPolicy, recoveryPolicy, FEED_INTERVAL_MS, THREADS_INTERVAL_M
 import { fitInstagramCaption } from "./instagram-caption.mjs";
 import { carouselEditorialIssues } from "./carousel-editorial-contract.mjs";
 import { isRecentStoryDuplicate } from "./content-pacing.mjs";
+import { captionLooksLikeFilePath, resolveCaptionFileContents } from "./caption-file-guard.mjs";
 
 const instagramToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 let instagramUserId = process.env.INSTAGRAM_USER_ID;
@@ -963,6 +964,20 @@ for (const file of files) {
   if (item.publish_after && Date.parse(item.publish_after) > Date.now()) continue;
 
   if (item.status === "ready") {
+    // A queue writer once stored a caption FILE PATH instead of the caption
+    // text; a path must never reach the Meta API as caption copy. Resolve it
+    // to the file's contents, or skip the item if the file is unreadable.
+    if (captionLooksLikeFilePath(item.caption)) {
+      try {
+        const { contents } = await resolveCaptionFileContents(item.caption, root);
+        item.caption = contents;
+        await save(itemPath, item);
+      } catch (error) {
+        console.error(`Skipped ${file}: caption file unreadable (${error.message})`);
+        await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "caption_file_unreadable" });
+        continue;
+      }
+    }
     if (publishedCaptionFingerprints.has(captionFingerprint(item.body))) {
       await logAttempt({ file, id: item.id, platform: "instagram", status: "skipped", reason: "duplicate_recent_caption" });
       continue;

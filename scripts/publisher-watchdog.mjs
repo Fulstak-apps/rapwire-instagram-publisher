@@ -43,6 +43,13 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
   const overdue = (Number.isFinite(nextAt) && now > nextAt + 2 * 60_000)
     || (!Number.isFinite(nextAt) && healthStale && ready.some(item => !item.instagram_container_id));
   const blocked = quotaBlocked || (Number.isFinite(cooldown) && cooldown > now);
+  // A zero remaining daily cap with no errors is an intentional pacing hold,
+  // not a missed window. Redispatching every 5 minutes during the hold is
+  // pure CI churn, so treat cap-held as healthy and never dispatch for it.
+  const instagramRemaining = Number(health.delivery_policy?.instagram_remaining);
+  const capHeld = Number.isFinite(instagramRemaining) && instagramRemaining <= 0
+    && !quotaBlocked && (health.failures || []).length === 0
+    && health.instagram_auth?.available !== false;
   const lastThreadsVideo = Math.max(0, ...items.map(item => item.content_type === 'video'
     ? Math.max(Date.parse(item.threads_published_at || '') || 0, Date.parse(item.threads_replay_published_at || '') || 0)
     : 0));
@@ -60,7 +67,7 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
   const threadsBlocked = Boolean(health.threads_publishing_quota?.blocked)
     || (Number.isFinite(threadsCooldown) && threadsCooldown > now);
   const threadsDue = !lastThreadsVideo || now - lastThreadsVideo >= 30 * 60_000;
-  const instagramDispatch = !blocked && ((overdue && ready.length > 0) || (healthStale && processing.length > 0));
+  const instagramDispatch = !blocked && !capHeld && ((overdue && ready.length > 0) || (healthStale && processing.length > 0));
   const threadsDispatch = threadsDue && !threadsBlocked && (threadsVideoOverdue || threadsPending);
   return {
     reserve_count: ready.length,
@@ -68,6 +75,7 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
     reserve_low: ready.length < 24,
     queue_empty: ready.length === 0,
     overdue,
+    cap_held: capHeld,
     health_stale: healthStale,
     processing: processing.map(item => item.id),
     blocked,
@@ -76,7 +84,7 @@ export function assessWatchdog({health = {}, items = [], now = Date.now()}) {
     threads_blocked: threadsBlocked,
     ready: ready.map(item => item.id),
     dispatch: instagramDispatch || threadsDispatch,
-    reason: threadsDispatch ? 'missed_threads_video_window' : blocked ? 'platform_cooldown_or_quota' : instagramDispatch ? (processing.length ? 'stalled_container' : 'missed_feed_window') : ready.length === 0 ? 'queue_empty' : 'within_pacing_window'
+    reason: threadsDispatch ? 'missed_threads_video_window' : blocked ? 'platform_cooldown_or_quota' : capHeld ? 'cap_held' : instagramDispatch ? (processing.length ? 'stalled_container' : 'missed_feed_window') : ready.length === 0 ? 'queue_empty' : 'within_pacing_window'
   };
 }
 

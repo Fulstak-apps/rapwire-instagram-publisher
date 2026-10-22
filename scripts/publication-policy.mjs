@@ -12,7 +12,7 @@ export const FACEBOOK_INTERVAL_MS = 5 * 60_000;
 // Meta is currently reporting a 100-post rolling allowance. Keep a substantial
 // safety buffer while avoiding the old 32-post ceiling that could leave an
 // otherwise healthy publisher idle for half a day.
-export const DAILY_INSTAGRAM_CAP = 10;
+export const DAILY_INSTAGRAM_CAP = 12;
 
 // A time-limited, explicitly requested recovery pair is not a general cap reset.
 // Keep two unused platform slots and require a fresh successful quota read.

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-22T05:57:14.949Z",
+  "checked_at": "2026-10-22T06:02:08.911Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,17 +26,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 10,
-    "instagram_usage": 9,
-    "platform_quota_usage": 9,
-    "instagram_remaining": 1,
+    "instagram_usage": 10,
+    "platform_quota_usage": 10,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-22T07:27:14.551Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-22T11:29:39.559Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,23 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-22T07:27:06.359Z",
-  "publications": [
-    {
-      "file": "1547-blueface-is-going-back-to-jail-chrisean-rock-breaks-down-as-cops.json",
-      "id": "1547-blueface-is-going-back-to-jail-chrisean-rock-breaks-down-as-cops",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17880359583631949"
-    },
-    {
-      "file": "1547-blueface-is-going-back-to-jail-chrisean-rock-breaks-down-as-cops.json",
-      "id": "1547-blueface-is-going-back-to-jail-chrisean-rock-breaks-down-as-cops",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18117635917797965",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

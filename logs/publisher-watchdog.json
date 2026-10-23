@@ -3,7 +3,7 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
+  "overdue": false,
   "cap_held": false,
   "health_stale": false,
   "processing": [],
@@ -12,9 +12,6 @@
   "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "1563-blueface-is-back-home-following-last-night-s-arrest-after-a-swat",
-    "1564-blueface-s-bm-nevaeh-had-the-entire-gym-breaking-necks-on-her-ve",
-    "1565-nah-this-ah-ha-into-bodak-yellow-transition-was-too-clean-via-ca",
     "1566-rick-ross-son-did-nothing-wrong",
     "1567-kawhi-leonard-shares-a-video-message-for-toronto-raptors-fans-6",
     "1568-how-i-genuinely-expect-my-hg-to-describe-me-to-her-fine-ahh-frie",
@@ -59,10 +56,13 @@
     "1607-new-to-love-is-what-you-get-when-you-put-these-legends-in-the-st",
     "1608-toronto-s-bike-lane-removal-protests-continue-as-demonstrators-p",
     "1609-today-s-the-anniversary-of-kendrick-lamar-s-first-masterpiece-dr",
-    "1610-the-man-was-doing-a-one-man-demonstration-on-top-of-a-cop-car-an"
+    "1610-the-man-was-doing-a-one-man-demonstration-on-top-of-a-cop-car-an",
+    "1611-happy-26th-birthday-to-baby-keem-never-forget-when-he-hit-that-f",
+    "1612-homie-wasn-t-tryna-take-no-from-central-cee",
+    "1613-check-out-this-exclusive-clip-from-wildwood-as-prue-launches-a-d"
   ],
-  "dispatch": true,
-  "reason": "missed_feed_window",
-  "checked_at": "2026-10-23T00:59:42.310Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-10-23T05:47:28.670Z",
   "deferred": []
 }

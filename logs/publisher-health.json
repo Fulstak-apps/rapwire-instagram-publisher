@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-23T20:15:27.003Z",
+  "checked_at": "2026-10-23T20:20:43.190Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-23T20:10:24.361Z",
-    "usage": 12,
+    "checked_at": "2026-10-23T20:20:32.612Z",
+    "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-23T20:25:24.361Z",
+    "next_check_at": "2026-10-23T20:35:32.612Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -32,10 +32,10 @@
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-23T20:19:50.081Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-23T20:10:24.773Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-23T20:25:24.773Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-23T20:14:48.249Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-23T21:50:42.289Z",
+  "publications": [
+    {
+      "file": "1580-cardi-s-got-taste-when-was-asked-to-name-the-greatest-album-by-s.json",
+      "id": "1580-cardi-s-got-taste-when-was-asked-to-name-the-greatest-album-by-s",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18122890027935064"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

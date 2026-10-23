@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-23T07:32:51.807Z",
+  "checked_at": "2026-10-23T07:37:40.821Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 10,
-    "platform_quota_usage": 10,
-    "instagram_remaining": 2,
+    "instagram_usage": 11,
+    "platform_quota_usage": 11,
+    "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-23T09:02:51.459Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,16 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-23T08:57:40.027Z",
-  "publications": [
-    {
-      "file": "1567-kawhi-leonard-shares-a-video-message-for-toronto-raptors-fans-6.json",
-      "id": "1567-kawhi-leonard-shares-a-video-message-for-toronto-raptors-fans-6",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18130857979778724",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

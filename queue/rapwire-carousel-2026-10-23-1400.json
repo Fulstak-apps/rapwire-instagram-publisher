@@ -286,7 +286,26 @@
   },
   "qa_passed": true,
   "publish_priority": 100000,
-  "publish_attempts": 0,
+  "publish_attempts": 1,
+  "last_publish_attempt": {
+    "attempted_at": "2026-10-23T21:10:17Z",
+    "workflow_run_id": 40024691893,
+    "status": "cadence_hold",
+    "confirmed_publications": 0,
+    "retry_safe": true,
+    "instagram": {
+      "available": true,
+      "quota_usage": "12/100",
+      "next_feed_eligible": "2026-10-23T21:55:44.297Z",
+      "message": "No authentication or media validation error; Instagram selection reported slots=0 and feed_allowed=false under the 90-minute feed cadence."
+    },
+    "threads": {
+      "available": true,
+      "quota_usage": "15/250",
+      "message": "No authentication or media validation error; Threads was inside its 90-minute cadence window."
+    },
+    "error": "No authentication or media validation error. Delivery was held by platform pacing; the existing scheduled heartbeat should retry after the recorded eligibility time."
+  },
   "retry_safe": true,
   "threads_status": "pending",
   "threads_media_id": null,

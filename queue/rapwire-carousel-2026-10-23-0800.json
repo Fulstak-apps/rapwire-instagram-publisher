@@ -4,7 +4,7 @@
   "content_type": "carousel",
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
-  "status": "ready",
+  "status": "published",
   "date": "2026-10-23",
   "timezone": "America/Los_Angeles",
   "publish_after": "2026-10-23T15:00:00Z",
@@ -179,5 +179,16 @@
       "message": "No authentication or media validation error; Threads was inside its 90-minute cadence window."
     },
     "error": "No authentication or media validation error. Delivery was held by platform pacing; the existing scheduled heartbeat should retry after the recorded eligibility times."
-  }
+  },
+  "threads_status": "published",
+  "threads_media_id": "18185677783419340",
+  "threads_published_at": "2026-10-23T17:04:50.848Z",
+  "threads_verified_at": "2026-10-23T17:04:51.027Z",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/De2DObXIB3m",
+  "instagram_media_id": "18113332427271587",
+  "published_at": "2026-10-23T17:11:22.428Z",
+  "instagram_verified_at": "2026-10-23T17:11:22.551Z",
+  "instagram_permalink": "https://www.instagram.com/p/De2D-WnIA4c/",
+  "threads_story_status": "not_supported",
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
 }

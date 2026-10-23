@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-23T13:52:12.566Z",
+  "checked_at": "2026-10-23T13:57:06.419Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-23T15:22:12.028Z",
-  "publications": [
-    {
-      "file": "1571-who-did-this-to-the-rams.json",
-      "id": "1571-who-did-this-to-the-rams",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18154172362544888"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

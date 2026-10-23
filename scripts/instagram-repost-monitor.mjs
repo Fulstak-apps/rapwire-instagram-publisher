@@ -469,6 +469,20 @@ async function syncRemotePreservingLedger() {
       // monitor lock, so the newly-created top entry is our exact snapshot.
       stashRef = "stash@{0}";
     }
+    // Carousel work and manually recovered queue records can leave other
+    // tracked files dirty. They are not collector inputs for a health-only
+    // pass, but Git refuses to rebase with them present. Quarantine the exact
+    // tracked working-tree state in a named stash instead of allowing it to
+    // stop every scheduled collection pass. Deliberately do not include all
+    // untracked files here: that directory can contain large local MP4s, and
+    // moving them into Git's object database would create a disk spike.
+    const { stdout: remainingTrackedChanges } = await git("status", "--porcelain");
+    if (remainingTrackedChanges.split("\n").some(line => line && !line.startsWith("??"))) {
+      await git("stash", "push", "--message", `rapwire-collector-working-tree-recovery-${process.pid}`);
+      // Leave this recovery stash intact. Applying arbitrary queue edits after
+      // a publication rebase can reintroduce an already-published item; it is
+      // preserved for inspection without blocking the autonomous collector.
+    }
     let lastError;
     for (let attempt = 1; attempt <= 8; attempt += 1) {
       try {

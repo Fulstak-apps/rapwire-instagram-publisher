@@ -3,16 +3,15 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "cap_held": false,
   "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "1562-a-new-lil-baby-album-is-a-big-deal-just-announced-the-details-fo",
     "1563-blueface-is-back-home-following-last-night-s-arrest-after-a-swat",
     "1564-blueface-s-bm-nevaeh-had-the-entire-gym-breaking-necks-on-her-ve",
     "1565-nah-this-ah-ha-into-bodak-yellow-transition-was-too-clean-via-ca",
@@ -59,10 +58,11 @@
     "1606-rapper-chiefkeef-son-is-proving-that-academic-excellence-runs-de",
     "1607-new-to-love-is-what-you-get-when-you-put-these-legends-in-the-st",
     "1608-toronto-s-bike-lane-removal-protests-continue-as-demonstrators-p",
-    "1609-today-s-the-anniversary-of-kendrick-lamar-s-first-masterpiece-dr"
+    "1609-today-s-the-anniversary-of-kendrick-lamar-s-first-masterpiece-dr",
+    "1610-the-man-was-doing-a-one-man-demonstration-on-top-of-a-cop-car-an"
   ],
   "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-22T22:47:25.747Z",
+  "reason": "missed_feed_window",
+  "checked_at": "2026-10-23T00:59:42.310Z",
   "deferred": []
 }

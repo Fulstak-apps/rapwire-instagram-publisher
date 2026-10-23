@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-23T07:17:31.933Z",
+  "checked_at": "2026-10-23T07:27:40.462Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-23T07:07:23.468Z",
+    "checked_at": "2026-10-23T07:27:32.562Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-23T07:22:23.468Z",
+    "next_check_at": "2026-10-23T07:42:32.562Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -32,10 +32,10 @@
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-23T07:21:39.573Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-23T07:12:26.790Z",
-    "usage": 10,
+    "checked_at": "2026-10-23T07:27:32.416Z",
+    "usage": 11,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-23T07:27:26.790Z",
+    "next_check_at": "2026-10-23T07:42:32.416Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-23T07:16:39.956Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-23T08:57:40.027Z",
+  "publications": [
+    {
+      "file": "1567-kawhi-leonard-shares-a-video-message-for-toronto-raptors-fans-6.json",
+      "id": "1567-kawhi-leonard-shares-a-video-message-for-toronto-raptors-fans-6",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18077387159445599"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

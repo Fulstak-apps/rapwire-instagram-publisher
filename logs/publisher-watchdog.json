@@ -4,17 +4,14 @@
   "reserve_low": false,
   "queue_empty": false,
   "overdue": false,
-  "cap_held": false,
+  "cap_held": true,
   "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1566-rick-ross-son-did-nothing-wrong",
-    "1567-kawhi-leonard-shares-a-video-message-for-toronto-raptors-fans-6",
-    "1568-how-i-genuinely-expect-my-hg-to-describe-me-to-her-fine-ahh-frie",
     "1569-kim-kardashian-dressed-up-as-north-west-for-halloween-kimkardash",
     "1570-a-boogie-spotted-at-yummy-dips-is-this-one-of-new-york-s-best-de",
     "1571-who-did-this-to-the-rams",
@@ -59,10 +56,13 @@
     "1610-the-man-was-doing-a-one-man-demonstration-on-top-of-a-cop-car-an",
     "1611-happy-26th-birthday-to-baby-keem-never-forget-when-he-hit-that-f",
     "1612-homie-wasn-t-tryna-take-no-from-central-cee",
-    "1613-check-out-this-exclusive-clip-from-wildwood-as-prue-launches-a-d"
+    "1613-check-out-this-exclusive-clip-from-wildwood-as-prue-launches-a-d",
+    "1614-webbie-on-bad-timing-he-tryna-run-a",
+    "1615-ray-daniels-says-jay-z-is-dropping-his-upcoming-album-right-afte",
+    "1616-got-grillz-the-other-day-and-had-to-get-a-different-set-from"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-23T05:47:28.670Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-23T10:32:31.306Z",
   "deferred": []
 }

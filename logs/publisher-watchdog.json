@@ -1,26 +1,17 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 44,
+  "reserve_hours": 22,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
-  "cap_held": false,
+  "overdue": false,
+  "cap_held": true,
   "health_stale": false,
-  "processing": [
-    "1570-a-boogie-spotted-at-yummy-dips-is-this-one-of-new-york-s-best-de"
-  ],
+  "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1570-a-boogie-spotted-at-yummy-dips-is-this-one-of-new-york-s-best-de",
-    "1571-who-did-this-to-the-rams",
-    "1572-streamer-cuffem-breaks-down-how-gervonta-davis-was-tryna-pull-up",
-    "1573-lebron-james-was-heated-after-savannah-said-she-d-rather-get-the",
-    "1574-ant-jefes-people-were-furious-i-went-to-his-hearing-told-me-to-m",
-    "1575-a-ap-rocky-x-fortnite-dropping-soon",
-    "1576-never-forget-when-16-year-old-nle-choppa-performed-his-breakout-",
     "1577-after-spending-three-years-behind-bars-one-man-finally-received-",
     "1578-ohh-naa-funk-flex-was-on-bad-timing-at-the-knicks-game",
     "1579-this-one-s-wild-let-explain-how-and-are-involved-in-the-year-s-f",
@@ -61,10 +52,13 @@
     "1614-webbie-on-bad-timing-he-tryna-run-a",
     "1615-ray-daniels-says-jay-z-is-dropping-his-upcoming-album-right-afte",
     "1616-got-grillz-the-other-day-and-had-to-get-a-different-set-from",
-    "1617-natalie-nunn-really-pulled-an-uno-reverse-for-halloween-and-dres"
+    "1617-natalie-nunn-really-pulled-an-uno-reverse-for-halloween-and-dres",
+    "1618-something-epic-is-stirring-in-norway-s-fjords-guzu-snupy-and-sti",
+    "1620-get-ready-for-a-fuzzy-green-festive-adventure-with-your-trusty-d",
+    "1621-reggie-has-people-talking-after-throwing-shade-ashing-on-an-old-"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-23T15:24:29.442Z",
+  "checked_at": "2026-10-23T19:21:34.579Z",
   "deferred": []
 }

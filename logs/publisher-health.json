@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-23T23:37:53.163Z",
+  "checked_at": "2026-10-23T23:42:56.514Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-23T23:37:46.444Z",
-    "usage": 11,
+    "checked_at": "2026-10-23T23:42:47.598Z",
+    "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-23T23:52:46.444Z",
+    "next_check_at": "2026-10-23T23:57:47.598Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,13 +30,13 @@
     "platform_quota_usage": 11,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-23T23:34:39.597Z",
+    "next_feed_eligible_at": "2026-10-24T01:12:56.231Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -59,9 +59,10 @@
     {
       "file": "1586-lebron-on-timing-in-new-york-tells-fan-he-ain-t-soft-asf.json",
       "id": "1586-lebron-on-timing-in-new-york-tells-fan-he-ain-t-soft-asf",
-      "platform": "threads",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18138031474731695"
+      "media_id": "18087552110686488",
+      "content_type": "video"
     }
   ],
   "failures": [],

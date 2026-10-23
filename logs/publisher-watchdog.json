@@ -3,16 +3,17 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "cap_held": true,
+  "overdue": true,
+  "cap_held": false,
   "health_stale": false,
-  "processing": [],
+  "processing": [
+    "1570-a-boogie-spotted-at-yummy-dips-is-this-one-of-new-york-s-best-de"
+  ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "1569-kim-kardashian-dressed-up-as-north-west-for-halloween-kimkardash",
     "1570-a-boogie-spotted-at-yummy-dips-is-this-one-of-new-york-s-best-de",
     "1571-who-did-this-to-the-rams",
     "1572-streamer-cuffem-breaks-down-how-gervonta-davis-was-tryna-pull-up",
@@ -59,10 +60,11 @@
     "1613-check-out-this-exclusive-clip-from-wildwood-as-prue-launches-a-d",
     "1614-webbie-on-bad-timing-he-tryna-run-a",
     "1615-ray-daniels-says-jay-z-is-dropping-his-upcoming-album-right-afte",
-    "1616-got-grillz-the-other-day-and-had-to-get-a-different-set-from"
+    "1616-got-grillz-the-other-day-and-had-to-get-a-different-set-from",
+    "1617-natalie-nunn-really-pulled-an-uno-reverse-for-halloween-and-dres"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-23T10:32:31.306Z",
+  "checked_at": "2026-10-23T15:24:29.442Z",
   "deferred": []
 }

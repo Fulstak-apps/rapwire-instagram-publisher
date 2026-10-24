@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T10:50:17.935Z",
+  "checked_at": "2026-10-24T10:55:20.202Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-24T10:40:01.945Z",
+    "checked_at": "2026-10-24T10:55:19.791Z",
     "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-24T10:55:01.945Z",
+    "next_check_at": "2026-10-24T11:10:19.791Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-24T12:20:17.483Z",
-  "publications": [
-    {
-      "file": "1598-dr-umar-gives-advice-to-kai-cenat-to-remove-the-zest-monsters-fr.json",
-      "id": "1598-dr-umar-gives-advice-to-kai-cenat-to-remove-the-zest-monsters-fr",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18347377042248291"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

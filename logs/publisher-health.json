@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T05:57:04.962Z",
+  "checked_at": "2026-10-24T06:02:16.174Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-24T05:46:54.921Z",
-    "usage": 12,
+    "checked_at": "2026-10-24T06:02:08.031Z",
+    "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-24T06:01:54.921Z",
+    "next_check_at": "2026-10-24T06:17:08.031Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,15 +27,15 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
     "instagram_usage": 11,
-    "platform_quota_usage": 12,
+    "platform_quota_usage": 11,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-24T06:01:13.017Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-24T05:57:03.972Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-24T06:12:03.972Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-24T05:56:13.982Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-24T07:32:15.816Z",
+  "publications": [
+    {
+      "file": "1595-the-man-accused-of-pistol-whipping-rick-ross-son-has-been-releas.json",
+      "id": "1595-the-man-accused-of-pistol-whipping-rick-ross-son-has-been-releas",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18109609834935900"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

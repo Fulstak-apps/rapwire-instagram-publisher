@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T17:14:17.631Z",
+  "checked_at": "2026-10-24T17:19:19.332Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-24T17:14:09.853Z",
-    "usage": 11,
+    "checked_at": "2026-10-24T17:19:13.417Z",
+    "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-24T17:29:09.853Z",
+    "next_check_at": "2026-10-24T17:34:13.417Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,16 +27,16 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
     "instagram_usage": 11,
-    "platform_quota_usage": 12,
+    "platform_quota_usage": 11,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-24T17:03:10.262Z",
+    "next_feed_eligible_at": "2026-10-24T18:49:18.922Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,11 +45,11 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-24T17:04:01.338Z",
-    "usage": 16,
+    "checked_at": "2026-10-24T17:19:13.133Z",
+    "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-24T17:19:01.338Z",
+    "next_check_at": "2026-10-24T17:34:13.133Z",
     "reason": "Capacity available",
     "valid": true
   },
@@ -57,11 +57,12 @@
   "threads_next_eligible_at": "2026-10-24T18:44:16.970Z",
   "publications": [
     {
-      "file": "1602-lil-durk-s-father-is-showing-love-to-the-artists-who-stood-by-hi.json",
-      "id": "1602-lil-durk-s-father-is-showing-love-to-the-artists-who-stood-by-hi",
-      "platform": "threads",
+      "file": "1599-blueface-and-chrisean-rock-break-up-less-than-two-weeks-after-ge.json",
+      "id": "1599-blueface-and-chrisean-rock-break-up-less-than-two-weeks-after-ge",
+      "platform": "instagram",
       "status": "published",
-      "media_id": "18221034712352314"
+      "media_id": "18098580713396340",
+      "content_type": "video"
     }
   ],
   "failures": [],

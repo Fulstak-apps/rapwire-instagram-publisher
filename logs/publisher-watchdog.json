@@ -4,15 +4,14 @@
   "reserve_low": false,
   "queue_empty": false,
   "overdue": false,
-  "cap_held": true,
+  "cap_held": false,
   "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
-  "threads_blocked": false,
+  "threads_blocked": true,
   "ready": [
-    "1610-the-man-was-doing-a-one-man-demonstration-on-top-of-a-cop-car-an",
     "1611-happy-26th-birthday-to-baby-keem-never-forget-when-he-hit-that-f",
     "1612-homie-wasn-t-tryna-take-no-from-central-cee",
     "1613-check-out-this-exclusive-clip-from-wildwood-as-prue-launches-a-d",
@@ -59,10 +58,11 @@
     "1655-chrisean-rock-nearly-drops-jr-on-the-escalator-at-target-after-c",
     "1656-throwback-when-poohshiesty-cameraman-solocerti-gave-him-half-a-t",
     "1657-drake-got-surprised-by-a-performance-from-the-backstreet-boys-at",
-    "1658-been-working-fr-alot-more-heat-coming-soon-i-promise-now-turn-me"
+    "1658-been-working-fr-alot-more-heat-coming-soon-i-promise-now-turn-me",
+    "1659-rihanna-was-spotted-at-jay-z-s-concert-in-los-angeles-last-night"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-10-24T21:28:35.087Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-10-24T23:31:03.127Z",
   "deferred": []
 }

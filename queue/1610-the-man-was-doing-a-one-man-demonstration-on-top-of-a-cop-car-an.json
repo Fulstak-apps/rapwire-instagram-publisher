@@ -35,12 +35,14 @@
   "editorial_substance_checked": true,
   "source_policy_checked": true,
   "rap_relevance_checked": true,
-  "threads_status": "pending",
+  "threads_status": "failed",
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "De0FEhEIQUN",
   "source_caption_text": "The man was doing a one man demonstration on top of a cop car and somehow juggling their keys 👀 Pray he gets the help he needs! 🙏🏾💛6️⃣🐝\n\nVia: @zara.pereira_",
   "caption_checked_at": "2026-10-22T23:44:35.943Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 193.36666666666667
+  "source_video_duration": 193.36666666666667,
+  "threads_error": "Threads authentication failed: Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions.",
+  "threads_retry_at": "2026-10-24T22:32:13.811Z"
 }

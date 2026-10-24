@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T19:00:26.540Z",
+  "checked_at": "2026-10-24T19:05:23.789Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 11,
-    "platform_quota_usage": 11,
-    "instagram_remaining": 1,
+    "instagram_usage": 12,
+    "platform_quota_usage": 12,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-24T20:30:26.165Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-24T20:25:44.297Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,16 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-24T20:20:17.322Z",
-  "publications": [
-    {
-      "file": "1606-rapper-chiefkeef-son-is-proving-that-academic-excellence-runs-de.json",
-      "id": "1606-rapper-chiefkeef-son-is-proving-that-academic-excellence-runs-de",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18055608053807086",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

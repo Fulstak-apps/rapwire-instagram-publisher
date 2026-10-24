@@ -1,15 +1,15 @@
 {
-  "reserve_count": 47,
-  "reserve_hours": 23.5,
+  "reserve_count": 48,
+  "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "cap_held": true,
   "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": false,
+  "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
     "1598-dr-umar-gives-advice-to-kai-cenat-to-remove-the-zest-monsters-fr",
@@ -58,10 +58,11 @@
     "1642-ro-ama-was-not-playing-on-this-one-ro-ama-s-e-t-starts-with-him-",
     "1643-never-forget-when-tyler-drove-away-from-diddy-on-halloween-when-",
     "1644-shane-gillis-and-danny-mcbride-made-a-weather-forecast-way-more-",
-    "1645-miley-cyrus-helped-fan-cash-jacobs-shave-her-head-while-she-was-"
+    "1645-miley-cyrus-helped-fan-cash-jacobs-shave-her-head-while-she-was-",
+    "1646-they-gifted-a-new-ferrari-for-his-birthday-shot-by-me-drake-icem"
   ],
-  "dispatch": false,
-  "reason": "cap_held",
-  "checked_at": "2026-10-24T09:26:24.260Z",
+  "dispatch": true,
+  "reason": "missed_threads_video_window",
+  "checked_at": "2026-10-24T13:26:24.422Z",
   "deferred": []
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T22:12:26.328Z",
+  "checked_at": "2026-10-24T22:17:24.333Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 11,
-    "platform_quota_usage": 11,
-    "instagram_remaining": 1,
+    "instagram_usage": 12,
+    "platform_quota_usage": 12,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-24T23:42:26.086Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-24T23:42:56.231Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -49,22 +49,13 @@
     "usage": 15,
     "total": 250,
     "blocked": true,
-    "next_check_at": "2026-10-24T22:17:19.135Z",
+    "next_check_at": "2026-10-24T22:22:23.988Z",
     "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions.",
     "valid": false
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-24T22:01:27.261Z",
-  "publications": [
-    {
-      "file": "1610-the-man-was-doing-a-one-man-demonstration-on-top-of-a-cop-car-an.json",
-      "id": "1610-the-man-was-doing-a-one-man-demonstration-on-top-of-a-cop-car-an",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18102602147057058",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
       "platform": "threads",

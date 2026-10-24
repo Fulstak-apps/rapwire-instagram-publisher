@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T02:44:54.627Z",
+  "checked_at": "2026-10-24T02:50:22.473Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-24T02:34:41.291Z",
-    "usage": 12,
+    "checked_at": "2026-10-24T02:49:55.966Z",
+    "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-24T02:49:41.291Z",
+    "next_check_at": "2026-10-24T03:04:55.966Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,15 +27,15 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
     "instagram_usage": 11,
-    "platform_quota_usage": 12,
+    "platform_quota_usage": 11,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-24T02:48:59.171Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-24T02:34:41.602Z",
-    "usage": 14,
+    "checked_at": "2026-10-24T02:49:55.745Z",
+    "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-10-24T02:49:41.602Z",
+    "next_check_at": "2026-10-24T03:04:55.745Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-24T02:43:59.861Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-24T04:20:21.846Z",
+  "publications": [
+    {
+      "file": "1592-sauron-seeks-to-craft-the-one-ring-that-will-give-him-the-edge-h.json",
+      "id": "1592-sauron-seeks-to-craft-the-one-ring-that-will-give-him-the-edge-h",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18173570569455420"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

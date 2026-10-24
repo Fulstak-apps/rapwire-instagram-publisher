@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T12:21:06.134Z",
+  "checked_at": "2026-10-24T12:26:17.713Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-24T12:10:58.544Z",
+    "checked_at": "2026-10-24T12:26:10.422Z",
     "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-24T12:25:58.544Z",
+    "next_check_at": "2026-10-24T12:41:10.422Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-10-24T12:16:06.902Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-10-24T12:31:06.902Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-10-24T12:20:17.483Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-10-24T13:56:17.274Z",
+  "publications": [
+    {
+      "file": "1599-blueface-and-chrisean-rock-break-up-less-than-two-weeks-after-ge.json",
+      "id": "1599-blueface-and-chrisean-rock-break-up-less-than-two-weeks-after-ge",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17998643601042689"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

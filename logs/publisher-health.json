@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T15:38:26.452Z",
+  "checked_at": "2026-10-24T15:43:13.474Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-24T17:08:25.997Z",
-  "publications": [
-    {
-      "file": "1601-offset-stopped-by-a-local-walmart-to-give-random-women-flowers-a.json",
-      "id": "1601-offset-stopped-by-a-local-walmart-to-give-random-women-flowers-a",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18105181757021845"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

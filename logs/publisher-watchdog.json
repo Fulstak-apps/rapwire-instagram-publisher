@@ -1,21 +1,19 @@
 {
-  "reserve_count": 46,
-  "reserve_hours": 23,
+  "reserve_count": 48,
+  "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": true,
   "cap_held": false,
-  "health_stale": true,
+  "health_stale": false,
   "processing": [
-    "1618-something-epic-is-stirring-in-norway-s-fjords-guzu-snupy-and-sti"
+    "1621-reggie-has-people-talking-after-throwing-shade-ashing-on-an-old-"
   ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": true,
   "ready": [
-    "1618-something-epic-is-stirring-in-norway-s-fjords-guzu-snupy-and-sti",
-    "1620-get-ready-for-a-fuzzy-green-festive-adventure-with-your-trusty-d",
     "1621-reggie-has-people-talking-after-throwing-shade-ashing-on-an-old-",
     "1622-the-part-3-is-the-worst-part-of-this",
     "1623-blueface-is-seemingly-not-wasting-any-time-moving-on-after-his-s",
@@ -59,10 +57,14 @@
     "1661-reggie-gets-disrespectful-burned-tylil-james-prized-possession-l",
     "1662-legendary-here-are-5-takeaways-had-after-seeing-on-night-1-of-hi",
     "1663-never-forget-when-snoop-dogg-and-wiz-khalifa-paid-tribute-to-the",
-    "1664-the-weeknd-previewed-a-brand-new-song-called-hong-kong-in-hong-k"
+    "1664-the-weeknd-previewed-a-brand-new-song-called-hong-kong-in-hong-k",
+    "1665-travis-and-future-pulled-up-to-drake-bday",
+    "1666-during-his-40th-birthday-party-last-night-drake-gave-bow-wow-his",
+    "1667-drake-vibing-at-his-40th-birthday-party-in-new-york-city-at-lady",
+    "1668-what-would-you-have-done-if-you-were-finesse2tymes"
   ],
   "dispatch": true,
   "reason": "stalled_container",
-  "checked_at": "2026-10-25T15:08:32.554Z",
+  "checked_at": "2026-10-25T18:21:58.968Z",
   "deferred": []
 }

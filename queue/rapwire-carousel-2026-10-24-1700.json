@@ -12,7 +12,7 @@
   "headline": "RapWire 24/7: Yeat, Wiz Khalifa, Yung Miami, DaBaby and GTA VI",
   "body": "RapWire's verified Oct. 24 evening carousel covers Yeat's surprise tape, Wiz Khalifa's 10K Projects deal, Yung Miami's on-record denial, DaBaby and DaniLeigh's custody agreement, and GTA VI beer-label filings. Every slide uses original subject-led late-1980s editorial comic art with complete readable reporting, no top banner and the official transparent RapWire mark.",
   "rendered_body_text": "RapWire's verified Oct. 24 evening carousel covers Yeat's surprise tape, Wiz Khalifa's 10K Projects deal, Yung Miami's on-record denial, DaBaby and DaniLeigh's custody agreement, and GTA VI beer-label filings. Every slide uses original subject-led late-1980s editorial comic art with complete readable reporting, no top banner and the official transparent RapWire mark.",
-  "caption": "1) Yeat (@yeat) released the 14-track Luh Leakyz Vol. 1 on Oct. 23, collecting fan-demanded songs recorded across different eras of his catalog. It is his third project of 2026 and extends the futuristic world around his Fortnite collaboration.\n\n2) Wiz Khalifa (@wizkhalifa) signed with 10K Projects, returning to the Warner Music Group family for a new chapter led by the single “The Calm.” The move reunites him with former manager Marsha St. Hubert, now the label’s co-president, while an album is expected but not yet dated.\n\n3) Yung Miami (@YungMiami305) denied in a new Breakfast Club interview that she transported drugs for Sean Combs. She said the allegation was false and addressed the personal and business fallout while promoting her solo era.\n\n4) DaBaby (@dababy) and DaniLeigh reached a 13-page agreement covering custody and monthly support for their five-year-old daughter, Velour. The payment amount and parenting schedule remain private, closing a court fight that began with DaniLeigh’s 2024 paternity filing.\n\n5) Public federal label records now show Pißwasser, Patriot and No Mames Vice City beers tied to the GTA VI world through Florida brewer Tripping Animals. The filings do not confirm a retail launch or a Rockstar partnership, but they point to a real-world marketing activation ahead of the game’s November 19 release.\n\n@Rapwire247",
+  "caption": "1) Yeat (@yeat) released the 14-track Luh Leakyz Vol. 1 on Oct. 23, collecting fan-demanded songs recorded across different eras of his catalog. It is his third project of 2026 and extends the futuristic world around his Fortnite collaboration.\n2) Wiz Khalifa (@wizkhalifa) signed with 10K Projects, returning to the Warner Music Group family for a new chapter led by the single “The Calm.” The move reunites him with former manager Marsha St. Hubert, now the label’s co-president, while an album is expected but not yet dated.\n3) Yung Miami (@YungMiami305) denied in a new Breakfast Club interview that she transported drugs for Sean Combs. She said the allegation was false and addressed the personal and business fallout while promoting her solo era.\n4) DaBaby (@dababy) and DaniLeigh reached a 13-page agreement covering custody and monthly support for their five-year-old daughter, Velour. The payment amount and parenting schedule remain private, closing a court fight that began with DaniLeigh’s 2024 paternity filing.\n5) Public federal label records now show Pißwasser, Patriot and No Mames Vice City beers tied to the GTA VI world through Florida brewer Tripping Animals. The filings do not confirm a retail launch or a Rockstar partnership, but they point to a real-world marketing activation ahead of the game’s November 19 release.\n\n@Rapwire247",
   "caption_file": "queue/rapwire-carousel-2026-10-24-1700-caption.txt",
   "caption_has_no_ai_word": true,
   "caption_numbered_1_to_5": true,
@@ -33,11 +33,51 @@
   ],
   "carousel_page_count": 5,
   "slide_editorial_copy": [
-    {"slide": 1, "headline": "YEAT DROPS\nLUH LEAKYZ", "deck": "The 14-track Luh Leakyz Vol. 1 arrived Oct. 23 with fan-demanded songs from across Yeat’s catalog. It is his third project of 2026 and extends the futuristic world around his Fortnite collaboration.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 108, "deck_font_size_px": 42},
-    {"slide": 2, "headline": "WIZ KHALIFA\nSIGNS WITH 10K", "deck": "Khalifa is returning to the Warner Music Group family through 10K Projects and releasing “The Calm.” The deal reunites him with former manager Marsha St. Hubert, now the label’s co-president.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 108, "deck_font_size_px": 42},
-    {"slide": 3, "headline": "YUNG MIAMI\nANSWERS BACK", "deck": "In a new Breakfast Club interview, Yung Miami denied the claim that she transported drugs for Sean Combs. Her statement addresses a serious allegation while she continues her solo-era public reset.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 108, "deck_font_size_px": 42},
-    {"slide": 4, "headline": "DABABY &\nDANILEIGH\nCUSTODY DEAL", "deck": "The former couple signed a 13-page agreement covering custody and monthly support for their five-year-old daughter, Velour. The amount and parenting schedule remain private after a case that began in 2024.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 108, "deck_font_size_px": 42},
-    {"slide": 5, "headline": "GTA VI\nBEER LABELS SURFACE", "deck": "Federal label filings point to Pißwasser, Patriot and No Mames Vice City beers tied to the game’s Florida world. The discovery is not a confirmed retail launch, but it shows Rockstar’s real-world marketing is expanding.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 108, "deck_font_size_px": 42}
+    {
+      "slide": 1,
+      "headline": "YEAT DROPS\nLUH LEAKYZ",
+      "deck": "The 14-track Luh Leakyz Vol. 1 arrived Oct. 23 with fan-demanded songs from across Yeat’s catalog. It is his third project of 2026 and extends the futuristic world around his Fortnite collaboration.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 2,
+      "headline": "WIZ KHALIFA\nSIGNS WITH 10K",
+      "deck": "Khalifa is returning to the Warner Music Group family through 10K Projects and releasing “The Calm.” The deal reunites him with former manager Marsha St. Hubert, now the label’s co-president.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 3,
+      "headline": "YUNG MIAMI\nANSWERS BACK",
+      "deck": "In a new Breakfast Club interview, Yung Miami denied the claim that she transported drugs for Sean Combs. Her statement addresses a serious allegation while she continues her solo-era public reset.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 4,
+      "headline": "DABABY &\nDANILEIGH\nCUSTODY DEAL",
+      "deck": "The former couple signed a 13-page agreement covering custody and monthly support for their five-year-old daughter, Velour. The amount and parenting schedule remain private after a case that began in 2024.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 5,
+      "headline": "GTA VI\nBEER LABELS SURFACE",
+      "deck": "Federal label filings point to Pißwasser, Patriot and No Mames Vice City beers tied to the game’s Florida world. The discovery is not a confirmed retail launch, but it shows Rockstar’s real-world marketing is expanding.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42
+    }
   ],
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
@@ -66,7 +106,12 @@
     "https://www.gtavice.net/news/exclusive-gta-6-beer-labels-for-piwasser-patriot-and-no-mames-vice-city-discovered-in-official-us-database",
     "https://www.rockstargames.com/VI"
   ],
-  "news_verification": {"status": "verified", "checked_at": "2026-10-25T00:08:00Z", "source_count": 10, "note": "Each story was checked against at least two current reputable or primary sources; legal and unconfirmed-marketing copy preserves the reported status."},
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-10-25T00:08:00Z",
+    "source_count": 10,
+    "note": "Each story was checked against at least two current reputable or primary sources; legal and unconfirmed-marketing copy preserves the reported status."
+  },
   "verification_source_count": 10,
   "facts_verified": true,
   "source_policy_checked": true,
@@ -90,7 +135,12 @@
   "photo_recency_checked": true,
   "photo_subject": "Yeat, Wiz Khalifa, Yung Miami, DaBaby, DaniLeigh and GTA VI real-world beer-label discovery",
   "layout_template": "rapwire-unified-v3",
-  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "brand_logo": {
+    "asset": "assets/rapwire247-logo.png",
+    "position": "bottom-left",
+    "transparent_background": true,
+    "backing_shape": "none"
+  },
   "instagram_media_id": null,
   "instagram_permalink": null,
   "instagram_verified_at": null,
@@ -103,5 +153,6 @@
   "published_at": null,
   "publish_blocked": null,
   "publish_attempts": 0,
-  "retry_safe": true
+  "retry_safe": true,
+  "threads_text": "1) Yeat (@yeat) released the 14-track Luh Leakyz Vol. 1 on Oct. 23, collecting fan-demanded songs recorded across different eras of his catalog. It is his third project of 2026 and extends the futuristic world around his Fortnite collaboration.\n2) Wiz Khalifa (@wizkhalifa) signed with 10K Projects, returning to the Warner Music Group family for a new chapter led by the single “The Calm.” The move reunites him with former manager Marsha St. Hubert, now the label’s co-president,…\n\n@Rapwire247"
 }

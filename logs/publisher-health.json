@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-10-25T06:52:47.614Z",
+  "checked_at": "2026-10-25T06:57:59.189Z",
   "instagram_auth": {
     "available": true,
     "error": null
   },
   "threads_auth": {
     "available": false,
-    "error": "Threads authentication failed: Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions."
+    "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Saturday, 24-Oct-26 23:57:58 PDT."
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -49,8 +49,8 @@
     "usage": 15,
     "total": 250,
     "blocked": true,
-    "next_check_at": "2026-10-25T06:57:47.275Z",
-    "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions.",
+    "next_check_at": "2026-10-25T07:02:58.545Z",
+    "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Saturday, 24-Oct-26 23:57:58 PDT.",
     "valid": false
   },
   "instagram_processing_interval_seconds": 120,
@@ -60,7 +60,7 @@
     {
       "platform": "threads",
       "status": "failed",
-      "error": "Threads authentication failed: Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions."
+      "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Saturday, 24-Oct-26 23:57:58 PDT."
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

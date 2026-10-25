@@ -1,18 +1,19 @@
 {
-  "reserve_count": 46,
-  "reserve_hours": 23,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "cap_held": false,
-  "health_stale": false,
-  "processing": [],
+  "health_stale": true,
+  "processing": [
+    "1617-natalie-nunn-really-pulled-an-uno-reverse-for-halloween-and-dres"
+  ],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": true,
   "ready": [
-    "1616-got-grillz-the-other-day-and-had-to-get-a-different-set-from",
     "1617-natalie-nunn-really-pulled-an-uno-reverse-for-halloween-and-dres",
     "1618-something-epic-is-stirring-in-norway-s-fjords-guzu-snupy-and-sti",
     "1620-get-ready-for-a-fuzzy-green-festive-adventure-with-your-trusty-d",
@@ -57,10 +58,12 @@
     "1659-rihanna-was-spotted-at-jay-z-s-concert-in-los-angeles-last-night",
     "1660-reggie-getting-served-with-lawsuit-from-kai-allegations-are-not-",
     "1661-reggie-gets-disrespectful-burned-tylil-james-prized-possession-l",
-    "1662-legendary-here-are-5-takeaways-had-after-seeing-on-night-1-of-hi"
+    "1662-legendary-here-are-5-takeaways-had-after-seeing-on-night-1-of-hi",
+    "1663-never-forget-when-snoop-dogg-and-wiz-khalifa-paid-tribute-to-the",
+    "1664-the-weeknd-previewed-a-brand-new-song-called-hong-kong-in-hong-k"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-25T06:30:12.982Z",
+  "dispatch": true,
+  "reason": "stalled_container",
+  "checked_at": "2026-10-25T11:54:57.740Z",
   "deferred": []
 }

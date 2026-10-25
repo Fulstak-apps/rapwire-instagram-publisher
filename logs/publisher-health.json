@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-25T21:44:48.714Z",
+  "checked_at": "2026-10-25T21:49:51.415Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-25T21:44:47.767Z",
-    "usage": 11,
+    "checked_at": "2026-10-25T21:49:43.965Z",
+    "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-25T21:59:47.767Z",
+    "next_check_at": "2026-10-25T22:04:43.965Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -30,7 +30,7 @@
     "platform_quota_usage": 11,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
-    "next_feed_eligible_at": "2026-10-25T21:38:23.830Z",
+    "next_feed_eligible_at": "2026-10-25T23:19:50.941Z",
     "next_budget_eligible_at": null,
     "feed_allowed": true,
     "story_allowed": true
@@ -49,13 +49,22 @@
     "usage": 15,
     "total": 250,
     "blocked": true,
-    "next_check_at": "2026-10-25T21:49:47.424Z",
+    "next_check_at": "2026-10-25T21:54:43.319Z",
     "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions.",
     "valid": false
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-24T22:01:27.261Z",
-  "publications": [],
+  "publications": [
+    {
+      "file": "1631-reggie-got-sued-by-kai-cenat.json",
+      "id": "1631-reggie-got-sued-by-kai-cenat",
+      "platform": "instagram",
+      "status": "published",
+      "media_id": "18123212932940052",
+      "content_type": "video"
+    }
+  ],
   "failures": [
     {
       "platform": "threads",

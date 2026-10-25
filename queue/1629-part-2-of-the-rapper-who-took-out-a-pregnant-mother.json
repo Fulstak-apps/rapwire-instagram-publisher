@@ -1,6 +1,6 @@
 {
   "id": "1629-part-2-of-the-rapper-who-took-out-a-pregnant-mother",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-23",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Part 2 of the rapper who took out a pregnant mother",
   "caption_checked_at": "2026-10-23T21:00:33.269Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 177.6
+  "source_video_duration": 177.6,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

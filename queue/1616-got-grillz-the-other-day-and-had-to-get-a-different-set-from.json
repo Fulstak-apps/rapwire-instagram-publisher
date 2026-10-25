@@ -1,6 +1,6 @@
 {
   "id": "1616-got-grillz-the-other-day-and-had-to-get-a-different-set-from",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-23",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "@loeshimmy got grillz the other day and had to get a different set from @plug_geo",
   "caption_checked_at": "2026-10-23T09:27:07.378Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 7.766666
+  "source_video_duration": 7.766666,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

@@ -1,9 +1,9 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 47,
+  "reserve_hours": 23.5,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
+  "overdue": false,
   "cap_held": false,
   "health_stale": false,
   "processing": [],
@@ -12,10 +12,6 @@
   "threads_video_overdue": true,
   "threads_blocked": true,
   "ready": [
-    "1647-someone-casually-gifted-drake-a-new-ferrari-for-his-40th-birthda",
-    "1648-drake-w-a-speech-at-his-40thhhhhhh-bday",
-    "1649-the-backstreet-boys-suprised-drizzy-at-his-40th-bday",
-    "1650-anderson-paak-showing-the-mc-skills-off-paak-released-their-albu",
     "1651-did-tyler-williams-snap-on-this-or-nah-when-tyler-james-williams",
     "1652-drake-gets-gifted-a-ferrari-for-his-bday",
     "1653-jay-z-doing-super-bowl-warm-ups-at-sofi-stadium",
@@ -59,10 +55,13 @@
     "1691-ye-live-at-metlife-potential-date-what-would-you-guys-think-of-y",
     "1692-ceddy-nash-got-trap-lore-ross-a-gold-piece",
     "1693-ohgeesy-brought-out-mike-sherm-last-night-as-he-shut-down-hakkas",
-    "1694-poppin-it-with-a-poptail-recently-joined-elite-company-as-he-ear"
+    "1694-poppin-it-with-a-poptail-recently-joined-elite-company-as-he-ear",
+    "1695-drake-gifts-female-rapper-sexyyred-an-exclusive-custom-pink-ovo-",
+    "1696-the-judge-explaining-chris-brown-sentence-allegations-are-not-fi",
+    "1697-never-forget-when-drake-s-dad-accidentally-gave-out-his-email-to"
   ],
-  "dispatch": true,
-  "reason": "missed_feed_window",
-  "checked_at": "2026-10-26T11:58:49.236Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-10-26T18:15:16.895Z",
   "deferred": []
 }

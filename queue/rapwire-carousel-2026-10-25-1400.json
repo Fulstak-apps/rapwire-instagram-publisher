@@ -12,7 +12,7 @@
   "headline": "RapWire 24/7: Jay-Z, Drake, Nicki Minaj, Ye and FAMU",
   "body": "RapWire’s verified Oct. 25 afternoon carousel covers Jay-Z’s SoFi finale, Drake’s catalog milestone, Nicki Minaj’s Michigan rally appearance, Ye’s Jakarta stadium debut and the FAMU homecoming shooting investigation. Each slide uses original subject-led late-1980s editorial comic art with complete readable reporting, no top banner and the official transparent RapWire mark.",
   "rendered_body_text": "RapWire’s verified Oct. 25 afternoon carousel covers Jay-Z’s SoFi finale, Drake’s catalog milestone, Nicki Minaj’s Michigan rally appearance, Ye’s Jakarta stadium debut and the FAMU homecoming shooting investigation. Each slide uses original subject-led late-1980s editorial comic art with complete readable reporting, no top banner and the official transparent RapWire mark.",
-  "caption": "1) Jay-Z (@jayz) closed his JAŸ-Z30 anniversary run at SoFi Stadium with a West Coast finale featuring Dr. Dre, Snoop Dogg and Too $hort. He also honored Nipsey Hussle and pushed back on online claims about the crowd and the quality of the show. The Inglewood finale capped a year built around Reasonable Doubt and The Blueprint.\n2) Drake (@champagnepapi) turned 40 as Billboard reported that he became the first artist to pass 350 million RIAA-certified units, including 18 Diamond plaques. At his New York birthday celebration, the Backstreet Boys performed and Drake joined them for “I Want It That Way.” The weekend doubled as a personal milestone and a measurable catalog record.\n3) Nicki Minaj (@nickiminaj) appeared with Donald Trump at his Port Huron, Michigan, rally and urged voters to support Republican candidates in the midterms. Her appearance puts one of rap’s biggest stars directly into the 2026 campaign spotlight. It also extends her recent public alignment with Trump into an active election-season event.\n4) Ye (@ye) performed his first concert in Indonesia at Jakarta’s Gelora Bung Karno Stadium, with reports placing the crowd near 78,000. The show was the only Southeast Asian stop on his 2026 tour and marked a major international return after canceled dates elsewhere. After a clip from “Heartless” circulated, Ye said the loud crowd was part of the show.\n5) A shooting near Florida A&M University’s Bragg Memorial Stadium after homecoming injured 12 people, including six children, according to police. Eleven victims suffered gunshot wounds, at least one remained in critical condition, and no arrests had been announced as investigators sought tips. The violence struck one of the HBCU’s biggest campus weekends and left families waiting for answers.\n\n@Rapwire247",
+  "caption": "1) Jay-Z (@jayz) closed his JAŸ-Z30 anniversary run at SoFi Stadium with a West Coast finale featuring Dr. Dre, Snoop Dogg and Too $hort. He also honored Nipsey Hussle and pushed back on online claims about the crowd and the quality of the show. The Inglewood finale capped a year built around Reasonable Doubt and The Blueprint.\n\n2) Drake (@champagnepapi) turned 40 as Billboard reported that he became the first artist to pass 350 million RIAA-certified units, including 18 Diamond plaques. At his New York birthday celebration, the Backstreet Boys performed and Drake joined them for “I Want It That Way.” The weekend doubled as a personal milestone and a measurable catalog record.\n\n3) Nicki Minaj (@nickiminaj) appeared with Donald Trump at his Port Huron, Michigan, rally and urged voters to support Republican candidates in the midterms. Her appearance puts one of rap’s biggest stars directly into the 2026 campaign spotlight. It also extends her recent public alignment with Trump into an active election-season event.\n\n4) Ye (@ye) performed his first concert in Indonesia at Jakarta’s Gelora Bung Karno Stadium, with reports placing the crowd near 78,000. The show was the only Southeast Asian stop on his 2026 tour and marked a major international return after canceled dates elsewhere. After a clip from “Heartless” circulated, Ye said the loud crowd was part of the show.\n\n5) A shooting near Florida A&M University’s Bragg Memorial Stadium after homecoming injured 12 people, including six children, according to police. Eleven victims suffered gunshot wounds, at least one remained in critical condition, and no arrests had been announced as investigators sought tips. The violence struck one of the HBCU’s biggest campus weekends and left families waiting for answers.\n\n@Rapwire247",
   "caption_file": "queue/rapwire-carousel-2026-10-25-1400-caption.txt",
   "caption_has_no_ai_word": true,
   "caption_numbered_1_to_5": true,
@@ -159,5 +159,23 @@
   "threads_permalink": null,
   "publish_blocked": null,
   "publish_attempts": 0,
-  "retry_safe": true
+  "retry_safe": true,
+  "last_publish_attempt": {
+    "at": "2026-10-26T00:16:45.921Z",
+    "workflow_run_id": "40248527526",
+    "status": "cadence_hold_and_threads_checkpoint",
+    "confirmed_publications": 0,
+    "instagram": {
+      "authenticated": true,
+      "feed_slots_at_start": 0,
+      "next_feed_eligibility": "2026-10-26T00:56:08.631Z",
+      "retry_safe": true
+    },
+    "threads": {
+      "authenticated": false,
+      "error": "Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions.",
+      "retry_safe": true
+    },
+    "note": "Workflow completed successfully; no platform media IDs or permalinks were confirmed. Existing publisher heartbeat should retry after the Instagram feed window and after the Threads checkpoint is completed."
+  }
 }

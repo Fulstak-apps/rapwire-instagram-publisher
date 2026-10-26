@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-10-26T13:30:59.122Z",
+  "checked_at": "2026-10-26T13:35:56.432Z",
   "instagram_auth": {
     "available": true,
     "error": null
   },
   "threads_auth": {
     "available": false,
-    "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Monday, 26-Oct-26 06:30:58 PDT."
+    "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Monday, 26-Oct-26 06:35:56 PDT."
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -49,8 +49,8 @@
     "usage": 15,
     "total": 250,
     "blocked": true,
-    "next_check_at": "2026-10-26T13:35:58.772Z",
-    "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Monday, 26-Oct-26 06:30:58 PDT.",
+    "next_check_at": "2026-10-26T13:40:56.144Z",
+    "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Monday, 26-Oct-26 06:35:56 PDT.",
     "valid": false
   },
   "instagram_processing_interval_seconds": 120,
@@ -60,7 +60,7 @@
     {
       "platform": "threads",
       "status": "failed",
-      "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Monday, 26-Oct-26 06:30:58 PDT."
+      "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Monday, 26-Oct-26 06:35:56 PDT."
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

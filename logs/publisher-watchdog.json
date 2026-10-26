@@ -1,9 +1,9 @@
 {
-  "reserve_count": 47,
-  "reserve_hours": 23.5,
+  "reserve_count": 48,
+  "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "cap_held": false,
   "health_stale": false,
   "processing": [],
@@ -12,8 +12,6 @@
   "threads_video_overdue": true,
   "threads_blocked": true,
   "ready": [
-    "1645-miley-cyrus-helped-fan-cash-jacobs-shave-her-head-while-she-was-",
-    "1646-they-gifted-a-new-ferrari-for-his-birthday-shot-by-me-drake-icem",
     "1647-someone-casually-gifted-drake-a-new-ferrari-for-his-40th-birthda",
     "1648-drake-w-a-speech-at-his-40thhhhhhh-bday",
     "1649-the-backstreet-boys-suprised-drizzy-at-his-40th-bday",
@@ -58,10 +56,13 @@
     "1688-blueface-spent-some-quality-time-with-his-kids-pinkface-journey-",
     "1689-lil-wayne-s-son-taps-in-with-matt-ox-for-their-new-collab-m-t-ox",
     "1690-trump-says-he-saw-nicki-minaj-s-beautiful-a-s-before-calling-her",
-    "1691-ye-live-at-metlife-potential-date-what-would-you-guys-think-of-y"
+    "1691-ye-live-at-metlife-potential-date-what-would-you-guys-think-of-y",
+    "1692-ceddy-nash-got-trap-lore-ross-a-gold-piece",
+    "1693-ohgeesy-brought-out-mike-sherm-last-night-as-he-shut-down-hakkas",
+    "1694-poppin-it-with-a-poptail-recently-joined-elite-company-as-he-ear"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-26T05:56:34.859Z",
+  "dispatch": true,
+  "reason": "missed_feed_window",
+  "checked_at": "2026-10-26T11:58:49.236Z",
   "deferred": []
 }

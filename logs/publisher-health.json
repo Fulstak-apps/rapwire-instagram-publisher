@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-10-26T05:50:39.285Z",
+  "checked_at": "2026-10-26T05:55:37.092Z",
   "instagram_auth": {
     "available": true,
     "error": null
   },
   "threads_auth": {
     "available": false,
-    "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Sunday, 25-Oct-26 22:50:32 PDT."
+    "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Sunday, 25-Oct-26 22:55:34 PDT."
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 11,
-    "platform_quota_usage": 11,
-    "instagram_remaining": 1,
+    "instagram_usage": 12,
+    "platform_quota_usage": 12,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-26T07:20:38.913Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-26T06:17:36.266Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -49,27 +49,18 @@
     "usage": 15,
     "total": 250,
     "blocked": true,
-    "next_check_at": "2026-10-26T05:55:32.966Z",
-    "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Sunday, 25-Oct-26 22:50:32 PDT.",
+    "next_check_at": "2026-10-26T06:00:34.589Z",
+    "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Sunday, 25-Oct-26 22:55:34 PDT.",
     "valid": false
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-24T22:01:27.261Z",
-  "publications": [
-    {
-      "file": "1644-shane-gillis-and-danny-mcbride-made-a-weather-forecast-way-more-.json",
-      "id": "1644-shane-gillis-and-danny-mcbride-made-a-weather-forecast-way-more-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18001115406040960",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
       "platform": "threads",
       "status": "failed",
-      "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Sunday, 25-Oct-26 22:50:32 PDT."
+      "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Sunday, 25-Oct-26 22:55:34 PDT."
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

@@ -1,6 +1,6 @@
 {
   "id": "1652-drake-gets-gifted-a-ferrari-for-his-bday",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-24",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "De4SDdjA2Yz",
-  "source_caption_text": "Drake gets gifted a Ferrari for his bday 🐐",
+  "source_caption_text": "Drake gets gifted a Ferrari for his bday \ud83d\udc10",
   "caption_checked_at": "2026-10-24T18:22:01.303Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 29.25569
+  "source_video_duration": 29.25569,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

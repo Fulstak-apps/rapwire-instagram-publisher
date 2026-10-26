@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-26T04:14:36.014Z",
+  "checked_at": "2026-10-26T04:19:36.582Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 11,
-    "platform_quota_usage": 11,
-    "instagram_remaining": 1,
+    "instagram_usage": 12,
+    "platform_quota_usage": 12,
+    "instagram_remaining": 0,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-26T05:44:35.640Z",
-    "next_budget_eligible_at": null,
-    "feed_allowed": true,
-    "story_allowed": true
+    "next_budget_eligible_at": "2026-10-26T04:41:36.171Z",
+    "feed_allowed": false,
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -49,22 +49,13 @@
     "usage": 15,
     "total": 250,
     "blocked": true,
-    "next_check_at": "2026-10-26T04:19:28.774Z",
+    "next_check_at": "2026-10-26T04:24:32.959Z",
     "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions.",
     "valid": false
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-24T22:01:27.261Z",
-  "publications": [
-    {
-      "file": "1642-ro-ama-was-not-playing-on-this-one-ro-ama-s-e-t-starts-with-him-.json",
-      "id": "1642-ro-ama-was-not-playing-on-this-one-ro-ama-s-e-t-starts-with-him-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17929208133184857",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [
     {
       "platform": "threads",

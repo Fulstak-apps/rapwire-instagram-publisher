@@ -1,9 +1,9 @@
 {
-  "reserve_count": 46,
-  "reserve_hours": 23,
+  "reserve_count": 48,
+  "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "cap_held": false,
   "health_stale": false,
   "processing": [],
@@ -12,9 +12,6 @@
   "threads_video_overdue": true,
   "threads_blocked": true,
   "ready": [
-    "1634-thought-it-was-out-now-wit-hiphop-texas-reel-newmusic",
-    "1635-ross-explains-why-he-went-from-owning-25-wingstop-to-1",
-    "1636-chicago-rapper-doodielo-really-couldn-t-let-that-one-slide-the-r",
     "1637-is-pushing-creator-culture-forward-even-more-breaks-down-why-dru",
     "1638-kimchi-recently-dropped-his-first-youtube-video-giving-viewers-a",
     "1639-moneybagg-yo-s-catalog-deserves-a-serious-conversation-from-time",
@@ -57,10 +54,15 @@
     "1676-new-york-giants-win",
     "1677-ray-is-speaking-out-about-the-situation-involving-reggie-pulling",
     "1678-travis-scott-future-and-loe-shimmy-in-nyc-last-night",
-    "1679-drake-security-was-on-timing"
+    "1679-drake-security-was-on-timing",
+    "1680-rodney-hinton-story-part-2",
+    "1681-last-night-at-another-one-of-drake-s-birthday-parties-italian-ar",
+    "1682-tyga-hosted-a-stacked-poker-tournament-with-bringing-together-so",
+    "1683-sexyy-redd-gets-gifted-a-chain-from-her-baby-daddy-drake",
+    "rapwire-carousel-2026-10-25-1400"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-25T23:00:19.190Z",
+  "dispatch": true,
+  "reason": "missed_feed_window",
+  "checked_at": "2026-10-26T01:02:05.244Z",
   "deferred": []
 }

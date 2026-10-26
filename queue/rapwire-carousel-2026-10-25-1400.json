@@ -1,7 +1,7 @@
 {
   "id": "rapwire-carousel-2026-10-25-1400",
   "type": "original_editorial_carousel",
-  "status": "ready",
+  "status": "published",
   "date": "2026-10-25",
   "timezone": "America/Los_Angeles",
   "scheduled_local_time": "2026-10-25 14:00:00 America/Los_Angeles",
@@ -153,8 +153,8 @@
   "threads_story_note": "Carousel delivery requested to Instagram feed and Threads; no Story upload requested.",
   "audio_status": "not_applicable",
   "source_image_url": "https://www.complex.com/music/a/treyalston/jay-z-sofi-stadium-finale-dr-dre-snoop-dogg",
-  "instagram_media_id": null,
-  "instagram_permalink": null,
+  "instagram_media_id": "18099858185082437",
+  "instagram_permalink": "https://www.instagram.com/p/De8DhR9kbM0/",
   "threads_media_id": null,
   "threads_permalink": null,
   "publish_blocked": null,
@@ -177,5 +177,7 @@
       "retry_safe": true
     },
     "note": "Workflow completed successfully; no platform media IDs or permalinks were confirmed. Existing publisher heartbeat should retry after the Instagram feed window and after the Threads checkpoint is completed."
-  }
+  },
+  "published_at": "2026-10-26T01:02:52.757Z",
+  "instagram_verified_at": "2026-10-26T01:02:53.033Z"
 }

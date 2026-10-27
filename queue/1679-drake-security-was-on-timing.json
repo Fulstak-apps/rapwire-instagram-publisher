@@ -1,6 +1,6 @@
 {
   "id": "1679-drake-security-was-on-timing",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-25",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Drake security was on timing",
   "caption_checked_at": "2026-10-25T22:45:45.817Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 16.136416
+  "source_video_duration": 16.136416,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

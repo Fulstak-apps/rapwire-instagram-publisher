@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T15:23:09.470Z",
+  "checked_at": "2026-10-27T15:28:12.309Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-10-27T15:13:00.353Z",
-    "usage": 12,
+    "checked_at": "2026-10-27T15:28:11.844Z",
+    "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-27T15:28:00.353Z",
+    "next_check_at": "2026-10-27T15:43:11.844Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
     "instagram_usage": 11,
-    "platform_quota_usage": 12,
+    "platform_quota_usage": 11,
     "instagram_remaining": 1,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-10-27T15:42:22.048Z",
@@ -49,7 +49,7 @@
     "usage": 15,
     "total": 250,
     "blocked": true,
-    "next_check_at": "2026-10-27T15:28:09.096Z",
+    "next_check_at": "2026-10-27T15:33:11.949Z",
     "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions.",
     "valid": false
   },

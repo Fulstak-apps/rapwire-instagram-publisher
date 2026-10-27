@@ -1,6 +1,6 @@
 {
   "id": "1680-rodney-hinton-story-part-2",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-25",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Rodney Hinton Story Part 2",
   "caption_checked_at": "2026-10-25T23:25:52.394Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 164.9
+  "source_video_duration": 164.9,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

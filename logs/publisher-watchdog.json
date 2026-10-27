@@ -3,16 +3,15 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "cap_held": false,
-  "health_stale": false,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": true,
   "ready": [
-    "1665-travis-and-future-pulled-up-to-drake-bday",
     "1666-during-his-40th-birthday-party-last-night-drake-gave-bow-wow-his",
     "1667-drake-vibing-at-his-40th-birthday-party-in-new-york-city-at-lady",
     "1668-what-would-you-have-done-if-you-were-finesse2tymes",
@@ -59,10 +58,11 @@
     "1709-nevaeh-is-raising-eyebrows-after-not-denying-blueface-claim-on-s",
     "1710-jay-z-picks-jay-z-for-superbowl",
     "1711-don-toliver-brought-new-music-from-nitrous-to-paris-he-kicked-of",
-    "1712-yung-miami-links-up-with-travis-scott-on-her-debut-solo-album-wa"
+    "1712-yung-miami-links-up-with-travis-scott-on-her-debut-solo-album-wa",
+    "1713-would-you-watch-90-minute-videos-on-instagram-instagram-is-testi"
   ],
-  "dispatch": false,
-  "reason": "within_pacing_window",
-  "checked_at": "2026-10-27T06:47:20.307Z",
+  "dispatch": true,
+  "reason": "missed_feed_window",
+  "checked_at": "2026-10-27T12:42:54.716Z",
   "deferred": []
 }

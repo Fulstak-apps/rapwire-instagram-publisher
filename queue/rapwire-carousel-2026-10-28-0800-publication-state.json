@@ -1,0 +1,22 @@
+{
+  "batch_id": "rapwire-carousel-2026-10-28-0800",
+  "workflow_run_id": "40774126191",
+  "workflow_url": "https://github.com/Fulstak-apps/rapwire-instagram-publisher/actions/runs/40774126191",
+  "attempted_at": "2026-10-28T21:42:46.041Z",
+  "status": "ready_retry_safe",
+  "confirmed_publications": 0,
+  "instagram": {
+    "media_id": null,
+    "permalink": null,
+    "authenticated": false,
+    "error": "Instagram identity check failed: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. OAuthException code 190; fbtrace_id ANBQ8iSDcdpRbNarG3BbMeW."
+  },
+  "threads": {
+    "media_id": null,
+    "permalink": null,
+    "authenticated": false,
+    "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT."
+  },
+  "next_retry_check": "2026-10-28T21:47:45.743Z",
+  "note": "Do not claim publication until both platform media IDs and permalinks are confirmed."
+}

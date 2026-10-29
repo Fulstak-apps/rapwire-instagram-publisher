@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-29T19:15:34.536Z",
+  "checked_at": "2026-10-29T19:16:27.152Z",
   "instagram_auth": {
     "available": false,
-    "error": "Instagram identity check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AfmRjSfCy_rQudSno7JtKsC\"}}"
+    "error": "Instagram identity check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AnRd778cQwe-GApYZ-SWlks\"}}"
   },
   "threads_auth": {
     "available": false,
@@ -49,7 +49,7 @@
     "usage": 15,
     "total": 250,
     "blocked": true,
-    "next_check_at": "2026-10-29T19:20:34.262Z",
+    "next_check_at": "2026-10-29T19:21:26.883Z",
     "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: This Threads account needs to complete a checkpoint before it can access this app. To recover access, log in to www.threads.com and follow the instructions.",
     "valid": false
   },

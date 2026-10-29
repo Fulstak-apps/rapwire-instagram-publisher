@@ -1,6 +1,6 @@
 {
   "id": "1717-yella-beezy-was-disturbed-by-mo3-photos-not-a-good-look",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-27",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Yella Beezy was DISTURBED BY MO3 PHOTOS! NOT A GOOD LOOK",
   "caption_checked_at": "2026-10-27T17:55:40.158Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 123.16666666666667
+  "source_video_duration": 123.16666666666667,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

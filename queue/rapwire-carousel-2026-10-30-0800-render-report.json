@@ -1,0 +1,73 @@
+{
+  "batch_id": "rapwire-carousel-2026-10-30-0800",
+  "status": "passed",
+  "inspected_at": "2026-10-30T15:05:15.773Z",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "format": "PNG"
+  },
+  "slides": [
+    {
+      "slide": 1,
+      "file": "slide-1-rick-ross-felony-count.png",
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "subject_unobstructed": true,
+      "logo_backing": false,
+      "actual_subject_present": "Rick Ross"
+    },
+    {
+      "slide": 2,
+      "file": "slide-2-megan-tina-snow-ep.png",
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "subject_unobstructed": true,
+      "logo_backing": false,
+      "actual_subject_present": "Megan Thee Stallion"
+    },
+    {
+      "slide": 3,
+      "file": "slide-3-2-chainz-polo.png",
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "subject_unobstructed": true,
+      "logo_backing": false,
+      "actual_subject_present": "2 Chainz"
+    },
+    {
+      "slide": 4,
+      "file": "slide-4-ll-cool-j-vegas-residency.png",
+      "headline_font_size_px": 100,
+      "deck_font_size_px": 40,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "subject_unobstructed": true,
+      "logo_backing": false,
+      "actual_subject_present": "LL COOL J"
+    },
+    {
+      "slide": 5,
+      "file": "slide-5-gta6-npc-animations.png",
+      "headline_font_size_px": 100,
+      "deck_font_size_px": 40,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "subject_unobstructed": true,
+      "logo_backing": false,
+      "actual_subject_present": "Grand Theft Auto VI world and characters"
+    }
+  ],
+  "summary": "Five full-resolution 1080x1350 PNGs inspected after final render; headline and explanatory deck layers present on every slide; no opaque top banner; official transparent logo unboxed; central subjects remain fully visible and separate from the text safe zone."
+}

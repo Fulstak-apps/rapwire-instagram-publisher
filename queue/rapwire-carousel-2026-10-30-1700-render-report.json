@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "format": "PNG"
+  },
+  "slides": [
+    {
+      "slide": 1,
+      "file": "slide-1.png",
+      "headline_font_size_px": 96,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 5,
+      "deck_lines": 6,
+      "sha256": "0226d8a761b88a18b7b3d402fe06f5bb66b7c2846e711b9d1400d4d83934f297"
+    },
+    {
+      "slide": 2,
+      "file": "slide-2.png",
+      "headline_font_size_px": 96,
+      "deck_font_size_px": 40,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 5,
+      "deck_lines": 6,
+      "sha256": "95fe075da64ae034eaf530bc3c10fbdb52b690a80e55afcee0a27d33b7b51147"
+    },
+    {
+      "slide": 3,
+      "file": "slide-3.png",
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 41,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 3,
+      "deck_lines": 7,
+      "sha256": "50cb6d4280ebd5eb5884f2c6081b3eaf27040fef6b63c0282d9ed4a8fffaff9c"
+    },
+    {
+      "slide": 4,
+      "file": "slide-4.png",
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 40,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 3,
+      "deck_lines": 7,
+      "sha256": "a4b736c439a469db663835a3d97ce1e725be5f0d0c99a372da14635882f3f001"
+    },
+    {
+      "slide": 5,
+      "file": "slide-5.png",
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 40,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 4,
+      "deck_lines": 6,
+      "sha256": "61b7426acfea4214e45b03c5438eea8f0aa37d6bf0550bdcba85fb4db5b2ddcf"
+    }
+  ]
+}

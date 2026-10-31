@@ -1,19 +1,17 @@
 {
-  "reserve_count": 49,
-  "reserve_hours": 24.5,
+  "reserve_count": 50,
+  "reserve_hours": 25,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": true,
   "cap_held": false,
-  "health_stale": false,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": true,
   "ready": [
-    "1764-cole-says-he-originally-made-the-album-thinking-it-would-be-his-",
-    "1765-on-the-altercation-that-got-him-removed-from-the-yella-beezy-tri",
     "1766-rod-wave-on-jigga-headlining-super-bowl",
     "1767-mississippi-artist-performed-his-single-not-yo-babydaddy-directe",
     "1768-future-slid-way-too-effortlessly-on-this-future-really-slid-on-e",
@@ -59,11 +57,14 @@
     "1808-pm-mark-carney-states-canada-is-aiming-to-become-the-european-un",
     "1809-blueface-kept-sl-ing-his-cameraman-with-baby-powder-every-time-c",
     "1810-today-in-hip-hop-2024-after-spending-906-days-in-jail-fighting-a",
+    "1811-why-curry-do-luka-like-dis",
+    "1812-beyond-the-castle-walls-one-final-adventure-awaits-guzu-valter-s",
+    "1813-former-1017-artist-foogiano-disses-gucci-mane-says-he-banned-fro",
     "rapwire-carousel-2026-10-30-0800",
     "rapwire-carousel-2026-10-30-1700"
   ],
   "dispatch": true,
   "reason": "missed_feed_window",
-  "checked_at": "2026-10-31T17:22:55.948Z",
+  "checked_at": "2026-10-31T20:30:05.368Z",
   "deferred": []
 }

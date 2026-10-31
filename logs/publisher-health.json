@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-10-31T03:18:30.029Z",
+  "checked_at": "2026-10-31T03:23:31.722Z",
   "instagram_auth": {
     "available": false,
-    "error": "Instagram identity check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A7e2R562Vd1HK3Btow0fBQF\"}}"
+    "error": "Instagram identity check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Alsd1Lv5v7pAjpjH2VBwH7C\"}}"
   },
   "threads_auth": {
     "available": false,
-    "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Friday, 30-Oct-26 20:18:29 PDT."
+    "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Friday, 30-Oct-26 20:23:31 PDT."
   },
   "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
@@ -14,9 +14,9 @@
     "usage": 12,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-10-31T03:23:29.597Z",
+    "next_check_at": "2026-10-31T03:28:31.081Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
-    "reason": "Instagram identity check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A7e2R562Vd1HK3Btow0fBQF\"}}",
+    "reason": "Instagram identity check failed: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Alsd1Lv5v7pAjpjH2VBwH7C\"}}",
     "detected_at": "2026-09-07T20:38:47.979Z",
     "effective_total": 100,
     "observed_rejection_at_usage": 50,
@@ -49,8 +49,8 @@
     "usage": 15,
     "total": 250,
     "blocked": true,
-    "next_check_at": "2026-10-31T03:23:29.745Z",
-    "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Friday, 30-Oct-26 20:18:29 PDT.",
+    "next_check_at": "2026-10-31T03:28:31.377Z",
+    "reason": "Temporary quota check failure: Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Friday, 30-Oct-26 20:23:31 PDT.",
     "valid": false
   },
   "instagram_processing_interval_seconds": 120,
@@ -60,7 +60,7 @@
     {
       "platform": "threads",
       "status": "failed",
-      "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Friday, 30-Oct-26 20:18:29 PDT."
+      "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Friday, 30-Oct-26 20:23:31 PDT."
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

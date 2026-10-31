@@ -139,8 +139,18 @@
   "instagram_permalink": null,
   "threads_media_id": null,
   "threads_permalink": null,
-  "publish_blocked": null,
-  "publish_attempts": 0,
+  "publish_blocked": "platform_credentials",
+  "publish_attempts": 1,
+  "last_publish_attempt": {
+    "attempted_at": "2026-10-31T21:13:58Z",
+    "workflow_run_id": "41242575141",
+    "status": "credentials_blocked",
+    "confirmed_publications": 0,
+    "instagram_error": "Instagram identity check failed: the session has been invalidated because the user changed their password or Facebook has changed the session for security reasons (OAuthException code 190; fbtrace_id A6iF7znWHXqa9bWPWqJ6sIS).",
+    "threads_error": "Threads authentication failed: the access token session expired on 2026-10-24 17:25:53 PDT; the publisher rejected it on 2026-10-31 14:13:58 PDT.",
+    "retry_safe": true,
+    "note": "No Instagram or Threads media IDs or permalinks were confirmed. Existing publisher heartbeat may retry after both platform credentials are recovered."
+  },
   "retry_safe": true,
   "source_manifest_file": "queue/rapwire-carousel-2026-10-31-0800-source-manifest.json"
 }

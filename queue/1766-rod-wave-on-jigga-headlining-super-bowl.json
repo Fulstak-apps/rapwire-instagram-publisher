@@ -1,6 +1,6 @@
 {
   "id": "1766-rod-wave-on-jigga-headlining-super-bowl",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-29",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Rod wave on jigga. Headlining Super Bowl",
   "caption_checked_at": "2026-10-29T20:05:54.966Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 54.1
+  "source_video_duration": 54.1,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

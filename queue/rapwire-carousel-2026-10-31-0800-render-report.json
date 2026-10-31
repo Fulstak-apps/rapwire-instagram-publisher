@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "format": "PNG"
+  },
+  "slides": [
+    {
+      "slide": 1,
+      "file": "slide-1-rick-ross-charge-dropped.png",
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 3,
+      "deck_lines": 6,
+      "dimensions": "1080x1350",
+      "sha256": "f1abea147b903aba5444cfeaeec20490d7880c7543ae8b7402d08f4b1006d4fa"
+    },
+    {
+      "slide": 2,
+      "file": "slide-2-ll-cool-j-vegas-residency.png",
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 41,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 4,
+      "deck_lines": 5,
+      "dimensions": "1080x1350",
+      "sha256": "b192ac7315d00044038f048e7dbea77e49471540ac3f9b1e44521c5bd9abf971"
+    },
+    {
+      "slide": 3,
+      "file": "slide-3-hype-williams-camerimage-honor.png",
+      "headline_font_size_px": 102,
+      "deck_font_size_px": 40,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 4,
+      "deck_lines": 6,
+      "dimensions": "1080x1350",
+      "sha256": "024033931e861a355d9582736ec8e1c3d0d075762250c2a3e1067ab0ccaae5b1"
+    },
+    {
+      "slide": 4,
+      "file": "slide-4-takeoff-estate-dismissal-request.png",
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 40,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 3,
+      "deck_lines": 6,
+      "dimensions": "1080x1350",
+      "sha256": "cbac25191c58388c028c1c9d44d7886b4096ddf7fe952148fc41bbb33c421705"
+    },
+    {
+      "slide": 5,
+      "file": "slide-5-gta6-criminal-profile.png",
+      "headline_font_size_px": 100,
+      "deck_font_size_px": 40,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "headline_lines": 4,
+      "deck_lines": 6,
+      "dimensions": "1080x1350",
+      "sha256": "6e82e67baf600c069f102f0e9a8370efcc3a9a7ca7e92c9f7272201079eb892d"
+    }
+  ],
+  "checked_at": "2026-10-31T16:10:30Z",
+  "notes": "All five full-resolution PNGs inspected after final render. Headline and deck layers are present at or above contract sizes; no top banner; official transparent logo is unboxed; subjects and meaningful scene details remain unobstructed."
+}

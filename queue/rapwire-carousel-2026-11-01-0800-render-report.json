@@ -1,0 +1,15 @@
+{
+  "batch_id": "rapwire-carousel-2026-11-01-0800",
+  "status": "passed",
+  "inspected_at": "2026-11-01T16:28:00Z",
+  "canvas": {"width": 1080, "height": 1350, "format": "PNG"},
+  "slides": [
+    {"slide": 1, "file": "media/slide-1-2chainz.png", "headline_font_size_px": 104, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "top_banner": false, "logo_backing": false, "subject_visible": "2 Chainz and Statik Selektah", "safe_zone_pass": true},
+    {"slide": 2, "file": "media/slide-2-glorilla-sexyy.png", "headline_font_size_px": 104, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "top_banner": false, "logo_backing": false, "subject_visible": "GloRilla and Sexyy Red", "safe_zone_pass": true},
+    {"slide": 3, "file": "media/slide-3-megan.png", "headline_font_size_px": 104, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "top_banner": false, "logo_backing": false, "subject_visible": "Megan Thee Stallion", "safe_zone_pass": true},
+    {"slide": 4, "file": "media/slide-4-timbaland.png", "headline_font_size_px": 104, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "top_banner": false, "logo_backing": false, "subject_visible": "Timbaland", "safe_zone_pass": true},
+    {"slide": 5, "file": "media/slide-5-gta-union.png", "headline_font_size_px": 104, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "top_banner": false, "logo_backing": false, "subject_visible": "Rockstar Games developers and GTA VI studio environment", "safe_zone_pass": true}
+  ],
+  "visual_qc": true,
+  "summary": "All five full-resolution 1080x1350 PNGs were inspected after final render. Headlines are 104px, decks are 42px, no opaque top bar or backing panel is present, subjects remain visible, and the official transparent logo is unboxed at bottom-left."
+}

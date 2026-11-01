@@ -1,6 +1,6 @@
 {
   "id": "1779-fat-joe-declares-his-pod-w-jada-the-1-podcast-rn-thoughts",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-30",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Fat Joe declares his pod w Jada the #1 podcast rn. Thoughts?",
   "caption_checked_at": "2026-10-30T01:26:50.127Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 95.75
+  "source_video_duration": 95.75,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

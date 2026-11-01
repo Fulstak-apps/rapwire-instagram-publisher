@@ -1,6 +1,6 @@
 {
   "id": "1782-dame-dash-says-jay-better-not-hit-him-up-to-perform-at-the-super",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-10-30",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Dame dash says jay better not hit him up to perform at the superbowl",
   "caption_checked_at": "2026-10-30T03:31:44.138Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 14.466666
+  "source_video_duration": 14.466666,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

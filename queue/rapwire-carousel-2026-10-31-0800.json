@@ -1,7 +1,7 @@
 {
   "id": "rapwire-carousel-2026-10-31-0800",
   "type": "original_editorial_carousel",
-  "status": "ready",
+  "status": "paused",
   "date": "2026-10-31",
   "timezone": "America/Los_Angeles",
   "scheduled_local_time": "2026-10-31 08:00:00 America/Los_Angeles",
@@ -10,9 +10,9 @@
   "category": "Hip-Hop, Culture & Breaking News",
   "content_type": "carousel",
   "headline": "RapWire 24/7: Rick Ross, LL COOL J, Hype Williams, Takeoff and GTA VI",
-  "body": "RapWire’s verified Oct. 31 morning carousel covers a dropped Rick Ross felony count, LL COOL J’s new Vegas residency, Hype Williams’s Camerimage honor, Takeoff’s estate dismissal request and GTA VI’s Criminal Profile system. Every slide uses original subject-led late-1980s editorial comic art with complete readable reporting, no top banner and the official transparent RapWire mark.",
-  "rendered_body_text": "RapWire’s verified Oct. 31 morning carousel covers a dropped Rick Ross felony count, LL COOL J’s new Vegas residency, Hype Williams’s Camerimage honor, Takeoff’s estate dismissal request and GTA VI’s Criminal Profile system. Every slide uses original subject-led late-1980s editorial comic art with complete readable reporting, no top banner and the official transparent RapWire mark.",
-  "caption": "1) Rick Ross (@richforever) no longer faces the felony battery-by-strangulation count prosecutors filed after his October 1 Miami Beach arrest. That charge was dropped for insufficient evidence, but a misdemeanor domestic-violence battery charge remains, and Ross has pleaded not guilty while the case continues.\n2) LL COOL J (@llcoolj) is bringing ROCK THE BELLS: THE RESIDENCY to Dolby Live at Park MGM for 11 shows in May and July 2027. The all-star live experience starts May 15 and turns the history of hip-hop into a new Las Vegas stage run.\n3) Hype Williams is set to receive the ToruńCAMERIMAGE Award for Achievements in Music Video in Poland this November. The honor recognizes a visual language that helped define hip-hop on screen through work with The Notorious B.I.G., Missy Elliott, Jay-Z, Busta Rhymes and more.\n4) Takeoff’s mother and estate asked a Los Angeles judge to dismiss a civil sexual-assault lawsuit, arguing that the plaintiff deleted relevant text messages after filing the case. The request seeks terminating sanctions, but it is not a ruling; a hearing is scheduled for January 21, 2027, and the underlying allegations remain unresolved.\n5) Rockstar says GTA VI’s Criminal Profile can move a player from Professional to Irredeemable, changing how the world reacts and influencing the story. The system is separate from Red Dead Redemption 2’s Honor meter, giving Jason and Lucia’s crimes a more persistent place in the game’s unfolding consequences.\n\n@Rapwire247",
+  "body": "RapWire\u2019s verified Oct. 31 morning carousel covers a dropped Rick Ross felony count, LL COOL J\u2019s new Vegas residency, Hype Williams\u2019s Camerimage honor, Takeoff\u2019s estate dismissal request and GTA VI\u2019s Criminal Profile system. Every slide uses original subject-led late-1980s editorial comic art with complete readable reporting, no top banner and the official transparent RapWire mark.",
+  "rendered_body_text": "RapWire\u2019s verified Oct. 31 morning carousel covers a dropped Rick Ross felony count, LL COOL J\u2019s new Vegas residency, Hype Williams\u2019s Camerimage honor, Takeoff\u2019s estate dismissal request and GTA VI\u2019s Criminal Profile system. Every slide uses original subject-led late-1980s editorial comic art with complete readable reporting, no top banner and the official transparent RapWire mark.",
+  "caption": "1) Rick Ross (@richforever) no longer faces the felony battery-by-strangulation count prosecutors filed after his October 1 Miami Beach arrest. That charge was dropped for insufficient evidence, but a misdemeanor domestic-violence battery charge remains, and Ross has pleaded not guilty while the case continues.\n2) LL COOL J (@llcoolj) is bringing ROCK THE BELLS: THE RESIDENCY to Dolby Live at Park MGM for 11 shows in May and July 2027. The all-star live experience starts May 15 and turns the history of hip-hop into a new Las Vegas stage run.\n3) Hype Williams is set to receive the Toru\u0144CAMERIMAGE Award for Achievements in Music Video in Poland this November. The honor recognizes a visual language that helped define hip-hop on screen through work with The Notorious B.I.G., Missy Elliott, Jay-Z, Busta Rhymes and more.\n4) Takeoff\u2019s mother and estate asked a Los Angeles judge to dismiss a civil sexual-assault lawsuit, arguing that the plaintiff deleted relevant text messages after filing the case. The request seeks terminating sanctions, but it is not a ruling; a hearing is scheduled for January 21, 2027, and the underlying allegations remain unresolved.\n5) Rockstar says GTA VI\u2019s Criminal Profile can move a player from Professional to Irredeemable, changing how the world reacts and influencing the story. The system is separate from Red Dead Redemption 2\u2019s Honor meter, giving Jason and Lucia\u2019s crimes a more persistent place in the game\u2019s unfolding consequences.\n\n@Rapwire247",
   "caption_has_no_ai_word": true,
   "caption_numbered_1_to_5": true,
   "caption_ends_only_with_rapwire247": true,
@@ -46,7 +46,7 @@
     {
       "slide": 3,
       "headline": "HYPE WILLIAMS\nGETS\nCAMERIMAGE\nHONOR",
-      "deck": "The director will receive ToruńCAMERIMAGE’s music-video achievement award in Poland this November. The honor recognizes a visual language shaped by Biggie, Missy Elliott, Jay-Z and more.",
+      "deck": "The director will receive Toru\u0144CAMERIMAGE\u2019s music-video achievement award in Poland this November. The honor recognizes a visual language shaped by Biggie, Missy Elliott, Jay-Z and more.",
       "text_on_art": true,
       "top_banner": false,
       "headline_font_size_px": 102,
@@ -64,7 +64,7 @@
     {
       "slide": 5,
       "headline": "GTA VI\nCRIMINAL PROFILE\nCHANGES THE\nGAME",
-      "deck": "Rockstar says player behavior can move from Professional to Irredeemable, shaping reactions and influencing the story. The system is separate from RDR2’s Honor meter.",
+      "deck": "Rockstar says player behavior can move from Professional to Irredeemable, shaping reactions and influencing the story. The system is separate from RDR2\u2019s Honor meter.",
       "text_on_art": true,
       "top_banner": false,
       "headline_font_size_px": 100,
@@ -152,5 +152,6 @@
     "note": "No Instagram or Threads media IDs or permalinks were confirmed. Existing publisher heartbeat may retry after both platform credentials are recovered."
   },
   "retry_safe": true,
-  "source_manifest_file": "queue/rapwire-carousel-2026-10-31-0800-source-manifest.json"
+  "source_manifest_file": "queue/rapwire-carousel-2026-10-31-0800-source-manifest.json",
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

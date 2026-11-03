@@ -141,8 +141,17 @@
   "instagram_permalink": null,
   "threads_media_id": null,
   "threads_permalink": null,
-  "publish_blocked": null,
-  "publish_attempts": 0,
+  "publish_blocked": "platform_credentials",
+  "publish_attempts": 1,
   "retry_safe": true,
-  "last_publish_attempt": null
+  "last_publish_attempt": {
+    "attempted_at": "2026-11-03T01:14:49Z",
+    "workflow_run_id": "41558388413",
+    "status": "credentials_blocked",
+    "confirmed_publications": 0,
+    "instagram_error": "Instagram identity check failed: the session has been invalidated because the user changed their password or Facebook has changed the session for security reasons (OAuthException code 190; fbtrace_id AdKc-PoCdbwFGgSjp5F2YUJ).",
+    "threads_error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT.",
+    "retry_safe": true,
+    "note": "No Instagram or Threads media IDs or permalinks were confirmed. Existing publisher heartbeat may retry after both platform credentials are recovered."
+  }
 }

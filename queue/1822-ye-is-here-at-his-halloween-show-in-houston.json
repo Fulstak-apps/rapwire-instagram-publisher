@@ -1,6 +1,6 @@
 {
   "id": "1822-ye-is-here-at-his-halloween-show-in-houston",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-01",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DfLnQl9O4e_",
-  "source_caption_text": "YE IS HERE AT HIS HALLOWEEN SHOW IN HOUSTON 🤯🔥",
+  "source_caption_text": "YE IS HERE AT HIS HALLOWEEN SHOW IN HOUSTON \ud83e\udd2f\ud83d\udd25",
   "caption_checked_at": "2026-11-01T02:20:06.468Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 7.452153
+  "source_video_duration": 7.452153,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

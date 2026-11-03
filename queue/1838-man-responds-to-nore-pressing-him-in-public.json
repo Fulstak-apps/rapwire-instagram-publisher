@@ -1,6 +1,6 @@
 {
   "id": "1838-man-responds-to-nore-pressing-him-in-public",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-01",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Man responds to NORE pressing him in public",
   "caption_checked_at": "2026-11-01T18:30:11.759Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 155.9
+  "source_video_duration": 155.9,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

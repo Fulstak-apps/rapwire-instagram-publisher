@@ -1,0 +1,79 @@
+{
+  "batch_id": "rapwire-carousel-2026-11-02-1700",
+  "status": "passed",
+  "inspected_at": "2026-11-03T01:11:26.750Z",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "format": "PNG"
+  },
+  "slides": [
+    {
+      "file": "media/rapwire-carousel-2026-11-02-1700/slide-1-listen-laugh.png",
+      "dimensions": "1080x1350",
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "full_resolution_inspected": true,
+      "sha256": "53fe165cc490489547c82b39f297cbfc5eef4b7ed93aba180b05f7b3e840a3c9"
+    },
+    {
+      "file": "media/rapwire-carousel-2026-11-02-1700/slide-2-vic-mensa.png",
+      "dimensions": "1080x1350",
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "full_resolution_inspected": true,
+      "sha256": "bdbb039772f3adb8b0e88ac9a30de8e19ddbbd7e908ce377752af6f470d85ff6"
+    },
+    {
+      "file": "media/rapwire-carousel-2026-11-02-1700/slide-3-trippie-nda-tour.png",
+      "dimensions": "1080x1350",
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "full_resolution_inspected": true,
+      "sha256": "5ae6dc9f518ad138e0ba038db61de0395096bd26fe9a955884579b9bab3f0e8b"
+    },
+    {
+      "file": "media/rapwire-carousel-2026-11-02-1700/slide-4-weeknd-hong-kong.png",
+      "dimensions": "1080x1350",
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "full_resolution_inspected": true,
+      "sha256": "c497a56d603e14406e73995eb163b0e361f6972e45279d1220a8dfa107710664"
+    },
+    {
+      "file": "media/rapwire-carousel-2026-11-02-1700/slide-5-gta-south-park.png",
+      "dimensions": "1080x1350",
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "top_banner": false,
+      "logo_backing": false,
+      "subject_unobstructed": true,
+      "full_resolution_inspected": true,
+      "sha256": "adcad1ac7550bf8ef78742eca29d56899ea0659dd4ee23657cd82467a5284486"
+    }
+  ],
+  "visual_qc": true,
+  "summary": "All five full-resolution PNGs were inspected after final render. Headlines are 108px and decks are 42px; no opaque top banner or backing panel is present, subjects remain visible, and the official transparent logo is unboxed at bottom-left."
+}

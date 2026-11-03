@@ -1,6 +1,6 @@
 {
   "id": "1818-ngl-she-hit-dis-one",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-01",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DfLb1JHgj4L",
-  "source_caption_text": "😂 ngl she hit dis one",
+  "source_caption_text": "\ud83d\ude02 ngl she hit dis one",
   "caption_checked_at": "2026-11-01T00:32:16.139Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 60.1
+  "source_video_duration": 60.1,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

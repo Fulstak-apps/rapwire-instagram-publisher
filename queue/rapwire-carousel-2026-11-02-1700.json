@@ -1,7 +1,7 @@
 {
   "id": "rapwire-carousel-2026-11-02-1700",
   "type": "original_editorial_carousel",
-  "status": "ready",
+  "status": "paused",
   "date": "2026-11-02",
   "timezone": "America/Los_Angeles",
   "scheduled_local_time": "2026-11-02 17:00:00 America/Los_Angeles",
@@ -10,9 +10,9 @@
   "category": "Hip-Hop, Culture & GTA VI News",
   "content_type": "carousel",
   "headline": "RapWire 24/7: Ice Cube, Vic Mensa, Trippie Redd, The Weeknd and GTA VI",
-  "body": "RapWire’s verified Nov. 2 evening carousel follows Ice Cube and Mike Epps’ Listen & Laugh trailer, Vic Mensa’s producer-led 2027 album, Trippie Redd’s NDA Tour opening, The Weeknd’s Hong Kong release, and fresh GTA VI gameplay shown through South Park. Every slide pairs source-grounded reporting with original late-1980s editorial comic art, readable headline/deck layers, clear subjects, and the official transparent RapWire mark.",
-  "rendered_body_text": "RapWire’s verified Nov. 2 evening carousel follows Ice Cube and Mike Epps’ Listen & Laugh trailer, Vic Mensa’s producer-led 2027 album, Trippie Redd’s NDA Tour opening, The Weeknd’s Hong Kong release, and fresh GTA VI gameplay shown through South Park. Every slide pairs source-grounded reporting with original late-1980s editorial comic art, readable headline/deck layers, clear subjects, and the official transparent RapWire mark.",
-  "caption": "1) Ice Cube (@icecube) and Mike Epps (@mikeepps) just previewed the official Listen & Laugh trailer, with Dr. Dre, Regina King, T.I., The Game and more teased as guests. New episodes are scheduled Fridays at 6 PM ET/3 PM PT, giving the longtime collaborators another platform for music, movies, comedy and culture.\n2) Vic Mensa (@vicmensa) says his planned 2027 album is the first where he is taking himself completely seriously as a producer. The project follows the return of Innanetape to streaming and his UnitedMasters partnership, a setup that keeps the next chapter artist-owned while expanding into music, media and design.\n3) Trippie Redd (@trippieredd) opens The Non-Disclosure Agreement Tour tonight at The Fillmore Minneapolis. K Suave, BalloutDaDon, Gigi Holland and Goldie are listed alongside him, and the North American run is scheduled to continue through Dec. 22; the exact set list and any surprise guests remain unknown.\n4) The Weeknd (@theweeknd) released “Hong Kong,” a city-specific song built from Faye Wong’s 1993 Cantopop classic “Monsoon.” He first performed it at Kai Tak Stadium, and the track’s East and Southeast Asia release turns the Hong Kong stop of his record-setting tour into a musical tribute to the region.\n5) GTA VI’s world just got a strange new preview: an episode of South Park aired real gameplay showing Jason using dog waste as a weapon. Rockstar is thanked in the credits, confirming the footage came from the studio, and the moment spotlights the game’s promise of detailed, reactive world-building ahead of the Nov. 19 launch.\n\n@Rapwire247",
+  "body": "RapWire\u2019s verified Nov. 2 evening carousel follows Ice Cube and Mike Epps\u2019 Listen & Laugh trailer, Vic Mensa\u2019s producer-led 2027 album, Trippie Redd\u2019s NDA Tour opening, The Weeknd\u2019s Hong Kong release, and fresh GTA VI gameplay shown through South Park. Every slide pairs source-grounded reporting with original late-1980s editorial comic art, readable headline/deck layers, clear subjects, and the official transparent RapWire mark.",
+  "rendered_body_text": "RapWire\u2019s verified Nov. 2 evening carousel follows Ice Cube and Mike Epps\u2019 Listen & Laugh trailer, Vic Mensa\u2019s producer-led 2027 album, Trippie Redd\u2019s NDA Tour opening, The Weeknd\u2019s Hong Kong release, and fresh GTA VI gameplay shown through South Park. Every slide pairs source-grounded reporting with original late-1980s editorial comic art, readable headline/deck layers, clear subjects, and the official transparent RapWire mark.",
+  "caption": "1) Ice Cube (@icecube) and Mike Epps (@mikeepps) just previewed the official Listen & Laugh trailer, with Dr. Dre, Regina King, T.I., The Game and more teased as guests. New episodes are scheduled Fridays at 6 PM ET/3 PM PT, giving the longtime collaborators another platform for music, movies, comedy and culture.\n2) Vic Mensa (@vicmensa) says his planned 2027 album is the first where he is taking himself completely seriously as a producer. The project follows the return of Innanetape to streaming and his UnitedMasters partnership, a setup that keeps the next chapter artist-owned while expanding into music, media and design.\n3) Trippie Redd (@trippieredd) opens The Non-Disclosure Agreement Tour tonight at The Fillmore Minneapolis. K Suave, BalloutDaDon, Gigi Holland and Goldie are listed alongside him, and the North American run is scheduled to continue through Dec. 22; the exact set list and any surprise guests remain unknown.\n4) The Weeknd (@theweeknd) released \u201cHong Kong,\u201d a city-specific song built from Faye Wong\u2019s 1993 Cantopop classic \u201cMonsoon.\u201d He first performed it at Kai Tak Stadium, and the track\u2019s East and Southeast Asia release turns the Hong Kong stop of his record-setting tour into a musical tribute to the region.\n5) GTA VI\u2019s world just got a strange new preview: an episode of South Park aired real gameplay showing Jason using dog waste as a weapon. Rockstar is thanked in the credits, confirming the footage came from the studio, and the moment spotlights the game\u2019s promise of detailed, reactive world-building ahead of the Nov. 19 launch.\n\n@Rapwire247",
   "caption_has_no_ai_word": true,
   "caption_numbered_1_to_5": true,
   "caption_ends_only_with_rapwire247": true,
@@ -55,7 +55,7 @@
     {
       "slide": 4,
       "headline": "THE WEEKND\nSENDS A LOVE\nLETTER",
-      "deck": "Hong Kong uses Faye Wong’s 1993 classic “Monsoon” and arrives across East and Southeast Asia. The song extends Abel’s Hong Kong stage debut into a city-specific release.",
+      "deck": "Hong Kong uses Faye Wong\u2019s 1993 classic \u201cMonsoon\u201d and arrives across East and Southeast Asia. The song extends Abel\u2019s Hong Kong stage debut into a city-specific release.",
       "text_on_art": true,
       "top_banner": false,
       "headline_font_size_px": 108,
@@ -153,5 +153,6 @@
     "threads_error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT.",
     "retry_safe": true,
     "note": "No Instagram or Threads media IDs or permalinks were confirmed. Existing publisher heartbeat may retry after both platform credentials are recovered."
-  }
+  },
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

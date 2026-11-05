@@ -1,6 +1,6 @@
 {
   "id": "1878-at-this-point-drake-owns-the-title-of-max-win",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-03",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "At this point Drake owns the title of MAX WIN",
   "caption_checked_at": "2026-11-03T15:28:54.949Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 59.96666666666667
+  "source_video_duration": 59.96666666666667,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

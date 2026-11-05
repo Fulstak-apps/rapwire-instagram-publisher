@@ -1,6 +1,6 @@
 {
   "batch_id": "rapwire-carousel-2026-11-05-1400",
-  "status": "ready",
+  "status": "paused",
   "scheduled_local_time": "2026-11-05 14:00:00 America/Los_Angeles",
   "publish_after": "2026-11-05T22:00:00Z",
   "instagram": {
@@ -23,5 +23,6 @@
     "retry_safe": true
   },
   "publish_blocked": "platform_credentials",
-  "note": "No platform publication is claimed until both confirmed media IDs and permalinks are recorded."
+  "note": "No platform publication is claimed until both confirmed media IDs and permalinks are recorded.",
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

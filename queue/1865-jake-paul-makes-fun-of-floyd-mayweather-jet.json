@@ -1,6 +1,6 @@
 {
   "id": "1865-jake-paul-makes-fun-of-floyd-mayweather-jet",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-03",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Jake Paul makes fun of Floyd mAyweather jet",
   "caption_checked_at": "2026-11-03T00:26:50.071Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 15.399999
+  "source_video_duration": 15.399999,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

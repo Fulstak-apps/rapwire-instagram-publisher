@@ -1,13 +1,21 @@
 {
   "batch_id": "rapwire-carousel-2026-11-05-1700",
-  "status": "pending",
+  "status": "paused",
   "scheduled_local_time": "2026-11-05 17:00:00 America/Los_Angeles",
   "publish_after": "2026-11-06T01:00:00Z",
   "instagram": {"media_id": null, "permalink": null},
   "threads": {"media_id": null, "permalink": null},
-  "publish_attempts": 0,
+  "publish_attempts": 1,
   "retry_safe": true,
-  "publish_blocked": null,
-  "last_publish_attempt": null,
+  "publish_blocked": "platform_credentials",
+  "last_publish_attempt": {
+    "workflow_run_id": "42145121913",
+    "attempted_at": "2026-11-06T01:38:34Z",
+    "status": "platform_credentials",
+    "confirmed_publications": 0,
+    "instagram_error": "Instagram identity check failed: OAuthException code 190; the session was invalidated because the user changed their password or Facebook changed the session for security reasons. fbtrace_id ANPujdD6EwdKjwO4mt8ozi5.",
+    "threads_error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Thursday, 05-Nov-26 17:38:34 PST.",
+    "retry_safe": true
+  },
   "note": "No platform publication is claimed until both confirmed media IDs and permalinks are recorded."
 }

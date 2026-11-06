@@ -10,7 +10,7 @@
   "category": "Hip-Hop, Culture & GTA VI News",
   "content_type": "carousel",
   "headline": "RapWire 24/7: Skepta, Fugees, Snoop, Tay-K and GTA VI",
-  "caption": "1) Skepta’s The Fork and Knife arrived Nov. 6 through Big Smoke Records and Epic, marking his first solo album since 2019’s Ignorance Is Bliss. The 15-song project closes a seven-year gap and gives the grime veteran a full-length return with a fresh guest-heavy frame. @skepta\n\n2) Ms. Lauryn Hill and Wyclef Jean launched Fugees Hopeline with CIRCA, an interactive phone experience that gives callers a first listen to new Fugees music. The project turns the group’s legacy into a living art piece, with Hill’s daughter Selah Marley narrating the experience and the music delivered through a hotline. @laurynhill @wyclef\n\n3) Snoop Dogg has a new animated visual for “Lodi Dodi,” the Doggystyle classic, directed by Toronto-born animator Tristan Zammit, known as Tristious. The clip puts a cartoon Snoop, studio performance and hand-drawn storytelling in conversation with one of the defining songs from his catalog. @SnoopDogg\n\n4) Tay-K announced #MonstersUnderMyBed for Nov. 13, his first full-length project since 2017’s #SantanaWorld. The album was assembled over three years through prison phone sessions, and the rollout includes the SoundCloud-only single “F**K U”; he remains incarcerated while serving concurrent sentences tied to two fatal cases. @tayk47shawty\n\n5) Rockstar says Grand Theft Auto VI digital pre-loading begins Nov. 10 on PS5 and Xbox Series X|S, nine days before the Nov. 19 launch. Current product reporting puts the download at up to 212 GB, making storage a real part of launch prep for Jason and Lucia’s return to Vice City. @RockstarGames @Rapwire247",
+  "caption": "1) Skepta’s The Fork and Knife arrived Nov. 6 through Big Smoke Records and Epic, marking his first solo album since 2019’s Ignorance Is Bliss. The 15-song project closes a seven-year gap and gives the grime veteran a full-length return with a fresh guest-heavy frame. @skepta\n2) Ms. Lauryn Hill and Wyclef Jean launched Fugees Hopeline with CIRCA, an interactive phone experience that gives callers a first listen to new Fugees music. The project turns the group’s legacy into a living art piece, with Hill’s daughter Selah Marley narrating the experience and the music delivered through a hotline. @laurynhill @wyclef\n3) Snoop Dogg has a new animated visual for “Lodi Dodi,” the Doggystyle classic, directed by Toronto-born animator Tristan Zammit, known as Tristious. The clip puts a cartoon Snoop, studio performance and hand-drawn storytelling in conversation with one of the defining songs from his catalog. @SnoopDogg\n4) Tay-K announced #MonstersUnderMyBed for Nov. 13, his first full-length project since 2017’s #SantanaWorld. The album was assembled over three years through prison phone sessions, and the rollout includes the SoundCloud-only single “F**K U”; he remains incarcerated while serving concurrent sentences tied to two fatal cases. @tayk47shawty\n5) Rockstar says Grand Theft Auto VI digital pre-loading begins Nov. 10 on PS5 and Xbox Series X|S, nine days before the Nov. 19 launch. Current product reporting puts the download at up to 212 GB, making storage a real part of launch prep for Jason and Lucia’s return to Vice City. @RockstarGames\n\n@Rapwire247",
   "body": "RapWire’s Nov. 6 afternoon carousel tracks Skepta’s first solo album in seven years, the Fugees Hopeline interactive music project, Snoop Dogg’s animated Lodi Dodi visual, Tay-K’s prison-recorded album announcement, and Rockstar’s GTA VI pre-load/storage update. Each slide pairs current verified reporting with original late-1980s editorial-comic art, readable headline/deck layers, a visible actual subject, and the official transparent RapWire mark.",
   "rendered_body_text": "RapWire’s Nov. 6 afternoon carousel tracks Skepta’s first solo album in seven years, the Fugees Hopeline interactive music project, Snoop Dogg’s animated Lodi Dodi visual, Tay-K’s prison-recorded album announcement, and Rockstar’s GTA VI pre-load/storage update. Each slide pairs current verified reporting with original late-1980s editorial-comic art, readable headline/deck layers, a visible actual subject, and the official transparent RapWire mark.",
   "caption_has_no_ai_word": true,
@@ -25,11 +25,51 @@
     "media/rapwire-carousel-2026-11-06-1400/slide-5.png"
   ],
   "slide_editorial_copy": [
-    {"slide": 1, "headline": "SKEPTA'S FORK & KNIFE LANDS TODAY", "deck": "The grime veteran's first solo album in seven years is out now via Big Smoke / Epic, with a 15-song tracklist.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 42},
-    {"slide": 2, "headline": "FUGEES PHONE HOME", "deck": "Lauryn Hill and Wyclef Jean launch CIRCA's Hopeline, an interactive hotline that gives callers a first listen to new Fugees music.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 42},
-    {"slide": 3, "headline": "SNOOP ANIMATES LODI DODI", "deck": "Tristious directs a new animated video for the Doggystyle classic, turning Snoop's storytelling into a hand-drawn world.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 42},
-    {"slide": 4, "headline": "TAY-K'S PHONE-RECORDED ALBUM", "deck": "#MonstersUnderMyBed is due Nov. 13 after three years of phone sessions; the album pairs with SoundCloud single \"F**K U.\"", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 42},
-    {"slide": 5, "headline": "GTA VI NEEDS 212 GB", "deck": "Rockstar says digital pre-loading begins Nov. 10, nine days before launch, putting storage demand in the spotlight.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 42}
+    {
+      "slide": 1,
+      "headline": "SKEPTA'S FORK & KNIFE LANDS TODAY",
+      "deck": "The grime veteran's first solo album in seven years is out now via Big Smoke / Epic, with a 15-song tracklist.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 2,
+      "headline": "FUGEES PHONE HOME",
+      "deck": "Lauryn Hill and Wyclef Jean launch CIRCA's Hopeline, an interactive hotline that gives callers a first listen to new Fugees music.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 3,
+      "headline": "SNOOP ANIMATES LODI DODI",
+      "deck": "Tristious directs a new animated video for the Doggystyle classic, turning Snoop's storytelling into a hand-drawn world.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 4,
+      "headline": "TAY-K'S PHONE-RECORDED ALBUM",
+      "deck": "#MonstersUnderMyBed is due Nov. 13 after three years of phone sessions; the album pairs with SoundCloud single \"F**K U.\"",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 5,
+      "headline": "GTA VI NEEDS 212 GB",
+      "deck": "Rockstar says digital pre-loading begins Nov. 10, nine days before launch, putting storage demand in the spotlight.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 42
+    }
   ],
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
@@ -67,7 +107,12 @@
     "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
     "https://support.rockstargames.com/articles/7nPqOA2uCbpEQHXx7KVrYd/grand-theft-auto-vi-pre-load-faq?pubDate=20261103"
   ],
-  "news_verification": {"status": "verified", "checked_at": "2026-11-06T22:18:00Z", "source_count": 17, "note": "All five stories were cross-checked against at least two current reputable or primary sources and compared with the Nov. 5 evening slate and prior memory."},
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-11-06T22:18:00Z",
+    "source_count": 17,
+    "note": "All five stories were cross-checked against at least two current reputable or primary sources and compared with the Nov. 5 evening slate and prior memory."
+  },
   "verification_source_count": 17,
   "facts_verified": true,
   "source_policy_checked": true,
@@ -92,7 +137,12 @@
   "photo_recency_checked": true,
   "photo_subject": "Skepta, Ms. Lauryn Hill, Wyclef Jean, Snoop Dogg, Tay-K, Jason and Lucia",
   "layout_template": "rapwire-unified-v3",
-  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "brand_logo": {
+    "asset": "assets/rapwire247-logo.png",
+    "position": "bottom-left",
+    "transparent_background": true,
+    "backing_shape": "none"
+  },
   "threads_text": "Skepta, the Fugees, Snoop Dogg, Tay-K and GTA VI storage prep.\n\n@Rapwire247",
   "threads_story_status": "not_requested",
   "threads_story_note": "Carousel delivery requested to Instagram feed and Threads; no Story upload requested.",

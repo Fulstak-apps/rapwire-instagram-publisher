@@ -151,8 +151,16 @@
   "instagram_permalink": null,
   "threads_media_id": null,
   "threads_permalink": null,
-  "publish_blocked": null,
-  "publish_attempts": 0,
-  "last_publish_attempt": null,
+  "publish_blocked": "platform_credentials",
+  "publish_attempts": 1,
+  "last_publish_attempt": {
+    "workflow_run_id": "42304565480",
+    "attempted_at": "2026-11-06T22:25:48Z",
+    "status": "platform_credentials",
+    "confirmed_publications": 0,
+    "instagram_error": "Instagram identity check failed: OAuthException code 190; the session was invalidated because the user changed their password or Facebook changed the session for security reasons. fbtrace_id Ayrdxz357PN3IcczODKr55v",
+    "threads_error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT. The current time is Friday, 06-Nov-26 14:25:47 PST.",
+    "retry_safe": true
+  },
   "retry_safe": true
 }

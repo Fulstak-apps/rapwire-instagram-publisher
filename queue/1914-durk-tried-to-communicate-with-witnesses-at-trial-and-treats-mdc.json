@@ -1,6 +1,6 @@
 {
   "id": "1914-durk-tried-to-communicate-with-witnesses-at-trial-and-treats-mdc",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-05",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Durk tried to communicate with witnesses at trial and treats MDC like a hotel",
   "caption_checked_at": "2026-11-05T01:40:09.568Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 176
+  "source_video_duration": 176,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

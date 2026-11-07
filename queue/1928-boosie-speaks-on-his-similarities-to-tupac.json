@@ -1,6 +1,6 @@
 {
   "id": "1928-boosie-speaks-on-his-similarities-to-tupac",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-05",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Boosie speaks on his similarities to Tupac",
   "caption_checked_at": "2026-11-05T17:04:50.626Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 239.96666666666667
+  "source_video_duration": 239.96666666666667,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

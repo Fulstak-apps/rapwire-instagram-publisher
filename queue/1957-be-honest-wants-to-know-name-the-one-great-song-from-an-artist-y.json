@@ -1,6 +1,6 @@
 {
   "id": "1957-be-honest-wants-to-know-name-the-one-great-song-from-an-artist-y",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-06",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DfaTT4yNAMz",
-  "source_caption_text": "Be honest 👀\n\n@jeremy_hecht wants to know: name the one great song from an artist you otherwise dislike. Let us know in the comments.",
+  "source_caption_text": "Be honest \ud83d\udc40\n\n@jeremy_hecht wants to know: name the one great song from an artist you otherwise dislike. Let us know in the comments.",
   "caption_checked_at": "2026-11-06T20:45:32.039Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 173.53333333333333
+  "source_video_duration": 173.53333333333333,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

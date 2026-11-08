@@ -1,6 +1,6 @@
 {
   "id": "1947-just-in-feds-drop-new-paperwork-on-lil-durk-about-mdc-and-cellph",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-06",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "JUST IN!\nFEDS DROP NEW PAPERWORK ON LIL DURK ABOUT MDC AND CELLPHONES",
   "caption_checked_at": "2026-11-06T02:04:13.556Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 162.6
+  "source_video_duration": 162.6,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

@@ -1,6 +1,6 @@
 {
   "id": "1960-body-cam-footage-of-nba-youngboy-getting-interrogated-after-gett",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-06",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Body Cam footage of NBA YoungBoy getting interrogated after getting arrested while filming Dirty Stick Music Video",
   "caption_checked_at": "2026-11-06T23:53:52.071Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 181.8
+  "source_video_duration": 181.8,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

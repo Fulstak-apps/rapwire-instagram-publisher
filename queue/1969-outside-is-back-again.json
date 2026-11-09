@@ -1,6 +1,6 @@
 {
   "id": "1969-outside-is-back-again",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-07",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Outside is back again",
   "caption_checked_at": "2026-11-07T05:44:42.592Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 4.599999
+  "source_video_duration": 4.599999,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

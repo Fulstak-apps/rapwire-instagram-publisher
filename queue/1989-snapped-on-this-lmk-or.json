@@ -1,6 +1,6 @@
 {
   "id": "1989-snapped-on-this-lmk-or",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-08",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DfdT8YKJ0-A",
-  "source_caption_text": "@jbookoutmusic snapped on this‼️ Lmk 🔥 or 🗑️⁉️🤔",
+  "source_caption_text": "@jbookoutmusic snapped on this\u203c\ufe0f Lmk \ud83d\udd25 or \ud83d\uddd1\ufe0f\u2049\ufe0f\ud83e\udd14",
   "caption_checked_at": "2026-11-08T00:55:46.241Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 20.766666
+  "source_video_duration": 20.766666,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

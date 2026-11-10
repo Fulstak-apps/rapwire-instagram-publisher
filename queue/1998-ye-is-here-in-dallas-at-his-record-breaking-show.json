@@ -1,6 +1,6 @@
 {
   "id": "1998-ye-is-here-in-dallas-at-his-record-breaking-show",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-08",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DfdyuXautNq",
-  "source_caption_text": "YE IS HERE IN DALLAS AT HIS RECORD BREAKING SHOW ‼️🤯",
+  "source_caption_text": "YE IS HERE IN DALLAS AT HIS RECORD BREAKING SHOW \u203c\ufe0f\ud83e\udd2f",
   "caption_checked_at": "2026-11-08T05:57:13.042Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 24.999999
+  "source_video_duration": 24.999999,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

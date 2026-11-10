@@ -1,6 +1,6 @@
 {
   "id": "1995-ye-performed-carnival-live-in-dallas-but-without-carti",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-08",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "Dfd1QqbuJQ6",
-  "source_caption_text": "YE PERFORMED CARNIVAL LIVE IN DALLAS BUT WITHOUT CARTI 😭😭",
+  "source_caption_text": "YE PERFORMED CARNIVAL LIVE IN DALLAS BUT WITHOUT CARTI \ud83d\ude2d\ud83d\ude2d",
   "caption_checked_at": "2026-11-08T03:53:08.912Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 19.066666
+  "source_video_duration": 19.066666,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

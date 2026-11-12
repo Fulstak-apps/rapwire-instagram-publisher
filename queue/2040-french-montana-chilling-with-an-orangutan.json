@@ -1,6 +1,6 @@
 {
   "id": "2040-french-montana-chilling-with-an-orangutan",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-10",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "French Montana chilling with an orangutan",
   "caption_checked_at": "2026-11-10T03:20:02.891Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 19.781949
+  "source_video_duration": 19.781949,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

@@ -1,6 +1,6 @@
 {
   "id": "2075-yella-beezy-sentenced-to-life-without-the-possibility-of-parole",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-11",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Yella Beezy Sentenced to life without the possibility of parole",
   "caption_checked_at": "2026-11-11T21:47:39.851Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 26.051337
+  "source_video_duration": 26.051337,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

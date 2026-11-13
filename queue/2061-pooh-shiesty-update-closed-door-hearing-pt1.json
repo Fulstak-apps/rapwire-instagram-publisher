@@ -1,6 +1,6 @@
 {
   "id": "2061-pooh-shiesty-update-closed-door-hearing-pt1",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-11",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "POOH SHIESTY UPDATE: CLOSED DOOR HEARING PT1",
   "caption_checked_at": "2026-11-11T04:59:06.396Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 160.1
+  "source_video_duration": 160.1,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

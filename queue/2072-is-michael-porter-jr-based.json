@@ -1,6 +1,6 @@
 {
   "id": "2072-is-michael-porter-jr-based",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-11",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Is Michael porter jr based?",
   "caption_checked_at": "2026-11-11T18:55:36.515Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 12.653423
+  "source_video_duration": 12.653423,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

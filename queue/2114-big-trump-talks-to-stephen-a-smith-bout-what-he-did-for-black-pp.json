@@ -1,6 +1,6 @@
 {
   "id": "2114-big-trump-talks-to-stephen-a-smith-bout-what-he-did-for-black-pp",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-13",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Big trump talks to Stephen a smith bout what he did for black ppl",
   "caption_checked_at": "2026-11-13T17:11:56.886Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 649.5
+  "source_video_duration": 649.5,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

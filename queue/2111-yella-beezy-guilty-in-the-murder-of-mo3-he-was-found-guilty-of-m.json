@@ -1,6 +1,6 @@
 {
   "id": "2111-yella-beezy-guilty-in-the-murder-of-mo3-he-was-found-guilty-of-m",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-13",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Yella beezy guilty in the murder of mo3. He was found guilty of murder on the day mo3 died",
   "caption_checked_at": "2026-11-13T06:32:40.902Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 28.433333333333334
+  "source_video_duration": 28.433333333333334,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

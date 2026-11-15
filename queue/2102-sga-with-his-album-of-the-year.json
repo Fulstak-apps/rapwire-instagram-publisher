@@ -1,6 +1,6 @@
 {
   "id": "2102-sga-with-his-album-of-the-year",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-13",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "SGA with his album of the year",
   "caption_checked_at": "2026-11-13T03:48:52.800Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 69.54166666666667
+  "source_video_duration": 69.54166666666667,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

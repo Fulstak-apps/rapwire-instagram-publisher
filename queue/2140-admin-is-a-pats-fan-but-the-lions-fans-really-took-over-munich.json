@@ -1,6 +1,6 @@
 {
   "id": "2140-admin-is-a-pats-fan-but-the-lions-fans-really-took-over-munich",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-14",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DfuoXmwRmxt",
-  "source_caption_text": "Admin is a Pats fan but the Lions fans really took over Munich 😕😳",
+  "source_caption_text": "Admin is a Pats fan but the Lions fans really took over Munich \ud83d\ude15\ud83d\ude33",
   "caption_checked_at": "2026-11-14T17:27:35.118Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 8.499999
+  "source_video_duration": 8.499999,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

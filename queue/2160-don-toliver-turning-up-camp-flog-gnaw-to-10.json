@@ -1,6 +1,6 @@
 {
   "id": "2160-don-toliver-turning-up-camp-flog-gnaw-to-10",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-15",
   "timezone": "America/Detroit",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "DfwRFgTpPro",
-  "source_caption_text": "Don Toliver turning up Camp Flog Gnaw to 10 💥",
+  "source_caption_text": "Don Toliver turning up Camp Flog Gnaw to 10 \ud83d\udca5",
   "caption_checked_at": "2026-11-15T08:30:38.206Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 30.973967
+  "source_video_duration": 30.973967,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

@@ -1,6 +1,6 @@
 {
   "id": "2153-drake-w-a-message-for-everybody",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-15",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Drake w a message for everybody",
   "caption_checked_at": "2026-11-15T05:48:08.093Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 19.572969
+  "source_video_duration": 19.572969,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

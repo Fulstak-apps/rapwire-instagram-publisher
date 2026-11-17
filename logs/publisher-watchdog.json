@@ -1,25 +1,17 @@
 {
-  "reserve_count": 48,
-  "reserve_hours": 24,
+  "reserve_count": 41,
+  "reserve_hours": 20.5,
   "reserve_low": false,
   "queue_empty": false,
   "overdue": true,
   "cap_held": false,
-  "health_stale": false,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": true,
   "ready": [
-    "2140-admin-is-a-pats-fan-but-the-lions-fans-really-took-over-munich",
-    "2141-akon-says-eminem-treated-making-smack-that-like-a-regular-9-to-5",
-    "2142-i-wonder-what-he-did-to-make-them-deal-with-him-this-rough-6",
-    "2143-jaidynalexis-admits-chriseanrock-shapowing-adam22-was-so-satisfy",
-    "2144-sleepy-hallow-just-dropped-still-sleep-2-a-23-track-project-with",
-    "2145-an-untouchable-pen-released-his-album-heelmatic-on-friday-came-t",
-    "2146-ufc-fighter-merabdvalishvili-is-speaking-out-and-urging-authorit",
-    "2147-adam-22-responds-to-boosie",
     "2148-next-time-u-send-a-hit-bozo-make-sure-the-nigga-ain-t-alive-to-g",
     "2149-chrisean-tried-to-stab-adam22-with-a-dirty-needle",
     "2150-ohgeesy-shuts-down-his-first-ever-headlining-arena-show-in-san-d",
@@ -59,10 +51,11 @@
     "2184-pov-you-buy-the-pre-sale-to-ye-live-in-mexico-city-ye-m-xico-mex",
     "2185-ye-has-been-nominated-for-a-grammy-greenscreen",
     "2186-this-was-too-easy-s-and-were-presented-with-two-michael-jackson-",
-    "2187-these-artists-are-already-huge-but-they-re-to-get-even-bigger-sw"
+    "2187-these-artists-are-already-huge-but-they-re-to-get-even-bigger-sw",
+    "2188-this-shouldn-t-be-possible-the-three-biggest-categories-at-the-2"
   ],
   "dispatch": true,
   "reason": "missed_feed_window",
-  "checked_at": "2026-11-16T17:29:24.503Z",
+  "checked_at": "2026-11-17T00:57:19.361Z",
   "deferred": []
 }

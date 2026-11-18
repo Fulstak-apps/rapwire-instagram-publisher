@@ -1,6 +1,6 @@
 {
   "id": "2180-crowd-goes-crazy-after-steve-lacy-takes-his-jacket-off-during-hi",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-16",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "Crowd goes crazy after Steve Lacy takes his jacket off during his set at Camp Flog Gnaw",
   "caption_checked_at": "2026-11-16T04:55:50.610Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 38.266666666666666
+  "source_video_duration": 38.266666666666666,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

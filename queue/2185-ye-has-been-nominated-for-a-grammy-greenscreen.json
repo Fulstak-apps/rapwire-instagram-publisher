@@ -1,6 +1,6 @@
 {
   "id": "2185-ye-has-been-nominated-for-a-grammy-greenscreen",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-16",
   "timezone": "America/Detroit",
@@ -42,5 +42,6 @@
   "source_caption_text": "YE HAS BEEN NOMINATED FOR A GRAMMY\n\n#greenscreen",
   "caption_checked_at": "2026-11-16T16:30:24.663Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 87.26666666666667
+  "source_video_duration": 87.26666666666667,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

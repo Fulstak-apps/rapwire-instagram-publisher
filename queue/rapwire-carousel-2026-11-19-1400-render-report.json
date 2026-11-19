@@ -1,0 +1,29 @@
+{
+  "batch_id": "rapwire-carousel-2026-11-19-1400",
+  "canvas": {"width": 1080, "height": 1350, "format": "PNG"},
+  "style": "premium late-1980s American comic-book editorial cover",
+  "visual_qc": {
+    "full_resolution_inspected": true,
+    "slides_inspected": 5,
+    "headline_font_size_px": 112,
+    "deck_font_size_px": 44,
+    "headline_present_on_all_slides": true,
+    "deck_present_on_all_slides": true,
+    "no_top_banner": true,
+    "no_backing_panel": true,
+    "subjects_unobstructed": true,
+    "headroom_minimum_px": 120,
+    "logo_asset": "assets/rapwire247-logo.png",
+    "logo_position": "bottom-left",
+    "logo_backing_shape": "none",
+    "distinct_subject_led_art": true,
+    "notes": "Full-resolution inspection caught and corrected deck overflow on the first render. Final five slides keep text in illustrated negative space, clear of faces, hair, hands and key scene details."
+  },
+  "slides": [
+    {"slide": 1, "file": "slides/slide-1-rod-wave-indicted.png", "headline": "ROD WAVE / INDICTED", "deck": "A Fulton grand jury indicted the Florida rapper on drug, firearm and reckless-driving charges tied to his 2025 Atlanta traffic stop. He remains out on bail."},
+    {"slide": 2, "file": "slides/slide-2-badu-cypher.png", "headline": "BADU / BUILDS A CYPHER", "deck": "Erykah Badu will direct the Soul Train Awards showcase with Rapsody, CeeLo Green, Dave Hollister and Avery Wilson. BET/CBS broadcast is November 27."},
+    {"slide": 3, "file": "slides/slide-3-rihanna-dior.png", "headline": "RIHANNA + ROCKI / FRONT DIOR", "deck": "Rihanna and Rocki star in Lady Dior 2027. Rocki makes her first campaign with her mother."},
+    {"slide": 4, "file": "slides/slide-4-gta-cast.png", "headline": "GTA VI / CAST REVEALED", "deck": "Rockstar’s credits name Manni L. Perez as Lucia and Dylan Rourke as Jason."},
+    {"slide": 5, "file": "slides/slide-5-gta-miami-parties.png", "headline": "CARDI + TRAVIS / TAKE MIAMI", "deck": "Cardi B hosts launch night with Travis Scott at Miami’s Saturday GTA VI Music Festival and after-party."}
+  ]
+}

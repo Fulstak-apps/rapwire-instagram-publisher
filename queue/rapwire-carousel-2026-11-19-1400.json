@@ -10,7 +10,7 @@
   "category": "Hip-Hop, Culture & GTA VI News",
   "content_type": "carousel",
   "headline": "RapWire 24/7: Rod Wave, Badu, Rihanna and GTA VI",
-  "caption": "1) Rod Wave (@RodWave) was indicted by a Fulton County grand jury on one count each of reckless driving, possession of a Schedule II controlled substance and possession of a firearm during the commission of certain felonies, stemming from a November 2025 Atlanta traffic stop. He was not in custody on Nov. 18 and is scheduled to perform at State Farm Arena this week while the case moves forward.\n\n2) Erykah Badu will direct the 2026 Badu Cypher at the Soul Train Awards, bringing Rapsody, CeeLo Green, Dave Hollister and Avery Wilson together for the showcase. The ceremony is scheduled for Nov. 27 on BET and CBS, making the lineup a cross-generational spotlight for soul, R&B and hip-hop. @erykahbadu @Rapsody\n\n3) Rihanna and her one-year-old daughter Rocki star together in Dior’s Lady Dior 2027 campaign, with creative direction by Jonathan Anderson and images by Sam Rock. It is Rocki’s first campaign and extends Rihanna’s long-running fashion presence into a new mother-daughter chapter. @rihanna\n\n4) Rockstar’s official Grand Theft Auto VI credits identify Manni L. Perez as Lucia Caminos and Dylan Rourke as Jason Duval, finally confirming the actors behind the game’s central couple. The same credits also name performers including Bobby Moynihan, Stephen Root, Taryn Manning, Roselyn Sanchez and Denzel Curry, turning launch-day mystery into public record. @RockstarGames\n\n5) Cardi B is hosting a launch-night party in Miami, while she and Travis Scott are set to headline Saturday’s GTA VI Music Festival with Justice, Don Toliver and Metro Boomin. Travis will also host the official after-party, extending the game’s release into a real-world music weekend in Vice City country. @iamcardib @trvisXX\n\n@Rapwire247",
+  "caption": "1) Rod Wave (@RodWave) was indicted by a Fulton County grand jury on one count each of reckless driving, possession of a Schedule II controlled substance and possession of a firearm during the commission of certain felonies, stemming from a November 2025 Atlanta traffic stop. He was not in custody on Nov. 18 and is scheduled to perform at State Farm Arena this week while the case moves forward.\n2) Erykah Badu will direct the 2026 Badu Cypher at the Soul Train Awards, bringing Rapsody, CeeLo Green, Dave Hollister and Avery Wilson together for the showcase. The ceremony is scheduled for Nov. 27 on BET and CBS, making the lineup a cross-generational spotlight for soul, R&B and hip-hop. @erykahbadu @Rapsody\n3) Rihanna and her one-year-old daughter Rocki star together in Dior’s Lady Dior 2027 campaign, with creative direction by Jonathan Anderson and images by Sam Rock. It is Rocki’s first campaign and extends Rihanna’s long-running fashion presence into a new mother-daughter chapter. @rihanna\n4) Rockstar’s official Grand Theft Auto VI credits identify Manni L. Perez as Lucia Caminos and Dylan Rourke as Jason Duval, finally confirming the actors behind the game’s central couple. The same credits also name performers including Bobby Moynihan, Stephen Root, Taryn Manning, Roselyn Sanchez and Denzel Curry, turning launch-day mystery into public record. @RockstarGames\n5) Cardi B is hosting a launch-night party in Miami, while she and Travis Scott are set to headline Saturday’s GTA VI Music Festival with Justice, Don Toliver and Metro Boomin. Travis will also host the official after-party, extending the game’s release into a real-world music weekend in Vice City country. @iamcardib @trvisXX\n\n@Rapwire247",
   "body": "RapWire’s Nov. 19 afternoon carousel tracks Rod Wave’s Fulton County indictment, Erykah Badu’s 2026 Soul Train Awards Badu Cypher lineup, Rihanna and Rocki’s Lady Dior campaign, Rockstar’s newly public GTA VI cast credits, and Cardi B and Travis Scott’s Miami launch events. Each slide pairs current verified reporting with original late-1980s editorial-comic art, readable headline/deck layers, a visible actual subject, and the official transparent RapWire mark.",
   "rendered_body_text": "RapWire’s Nov. 19 afternoon carousel tracks Rod Wave’s Fulton County indictment, Erykah Badu’s 2026 Soul Train Awards Badu Cypher lineup, Rihanna and Rocki’s Lady Dior campaign, Rockstar’s newly public GTA VI cast credits, and Cardi B and Travis Scott’s Miami launch events. Each slide pairs current verified reporting with original late-1980s editorial-comic art, readable headline/deck layers, a visible actual subject, and the official transparent RapWire mark.",
   "caption_has_no_ai_word": true,
@@ -25,11 +25,51 @@
     "media/rapwire-carousel-2026-11-19-1400/slide-5.png"
   ],
   "slide_editorial_copy": [
-    {"slide": 1, "headline": "ROD WAVE INDICTED", "deck": "A Fulton grand jury indicted the Florida rapper on drug, firearm and reckless-driving charges tied to his 2025 Atlanta traffic stop. He remains out on bail.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 44},
-    {"slide": 2, "headline": "BADU BUILDS A CYPHER", "deck": "Erykah Badu will direct the Soul Train Awards showcase with Rapsody, CeeLo Green, Dave Hollister and Avery Wilson. BET/CBS broadcast is November 27.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 44},
-    {"slide": 3, "headline": "RIHANNA + ROCKI FRONT DIOR", "deck": "Rihanna and Rocki star in Lady Dior 2027. Rocki makes her first campaign with her mother.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 44},
-    {"slide": 4, "headline": "GTA VI CAST REVEALED", "deck": "Rockstar’s credits name Manni L. Perez as Lucia and Dylan Rourke as Jason.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 44},
-    {"slide": 5, "headline": "CARDI + TRAVIS TAKE MIAMI", "deck": "Cardi B hosts launch night with Travis Scott at Miami’s Saturday GTA VI Music Festival and after-party.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 112, "deck_font_size_px": 44}
+    {
+      "slide": 1,
+      "headline": "ROD WAVE INDICTED",
+      "deck": "A Fulton grand jury indicted the Florida rapper on drug, firearm and reckless-driving charges tied to his 2025 Atlanta traffic stop. He remains out on bail.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 44
+    },
+    {
+      "slide": 2,
+      "headline": "BADU BUILDS A CYPHER",
+      "deck": "Erykah Badu will direct the Soul Train Awards showcase with Rapsody, CeeLo Green, Dave Hollister and Avery Wilson. BET/CBS broadcast is November 27.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 44
+    },
+    {
+      "slide": 3,
+      "headline": "RIHANNA + ROCKI FRONT DIOR",
+      "deck": "Rihanna and Rocki star in Lady Dior 2027. Rocki makes her first campaign with her mother.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 44
+    },
+    {
+      "slide": 4,
+      "headline": "GTA VI CAST REVEALED",
+      "deck": "Rockstar’s credits name Manni L. Perez as Lucia and Dylan Rourke as Jason.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 44
+    },
+    {
+      "slide": 5,
+      "headline": "CARDI + TRAVIS TAKE MIAMI",
+      "deck": "Cardi B hosts launch night with Travis Scott at Miami’s Saturday GTA VI Music Festival and after-party.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 112,
+      "deck_font_size_px": 44
+    }
   ],
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
@@ -56,7 +96,12 @@
     "https://www.rockstargames.com/VI/credits",
     "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival"
   ],
-  "news_verification": {"status": "verified", "checked_at": "2026-11-19T22:45:00Z", "source_count": 10, "note": "Every story was cross-checked against at least two current reputable or primary sources and compared with the Nov. 19 morning batch."},
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-11-19T22:45:00Z",
+    "source_count": 10,
+    "note": "Every story was cross-checked against at least two current reputable or primary sources and compared with the Nov. 19 morning batch."
+  },
   "verification_source_count": 10,
   "facts_verified": true,
   "source_policy_checked": true,
@@ -81,7 +126,12 @@
   "photo_recency_checked": true,
   "photo_subject": "Rod Wave, Erykah Badu, Rihanna and Rocki, Lucia Caminos and Jason Duval, Cardi B and Travis Scott",
   "layout_template": "rapwire-unified-v3",
-  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "brand_logo": {
+    "asset": "assets/rapwire247-logo.png",
+    "position": "bottom-left",
+    "transparent_background": true,
+    "backing_shape": "none"
+  },
   "threads_text": "Rod Wave, Erykah Badu, Rihanna, GTA VI’s cast and Miami launch events.\n\n@Rapwire247",
   "threads_story_status": "not_requested",
   "threads_story_note": "Carousel delivery requested to Instagram feed and Threads; no Story upload requested.",

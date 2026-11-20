@@ -1,6 +1,6 @@
 {
   "id": "2189-let-s-ball-vice-city",
-  "status": "ready",
+  "status": "paused",
   "publish_priority": 50,
   "date": "2026-11-18",
   "timezone": "America/Detroit",
@@ -9,11 +9,11 @@
   "story_type": "throwback",
   "layout_template": "rapwire-video-grid-safe-v1",
   "editorial_lane": "rap_culture",
-  "headline": "Let’s ball, Vice City.",
-  "body": "Let’s ball, Vice City.",
-  "rendered_body_text": "Let’s ball, Vice City.",
-  "caption": "Let’s ball, Vice City.\n\n@Rapwire247",
-  "threads_text": "Let’s ball, Vice City.\n\n@Rapwire247",
+  "headline": "Let\u2019s ball, Vice City.",
+  "body": "Let\u2019s ball, Vice City.",
+  "rendered_body_text": "Let\u2019s ball, Vice City.",
+  "caption": "Let\u2019s ball, Vice City.\n\n@Rapwire247",
+  "threads_text": "Let\u2019s ball, Vice City.\n\n@Rapwire247",
   "video": "media/2189-let-s-ball-vice-city.mp4",
   "source_handle": "rockstargames",
   "source_url": "https://www.instagram.com/miamiheat/reel/Df4z7XiqxGN/",
@@ -39,8 +39,9 @@
   "artist_handles": [],
   "caption_policy": "exact-source-v1",
   "caption_source_shortcode": "Df4z7XiqxGN",
-  "source_caption_text": "Let’s ball, Vice City 😎",
+  "source_caption_text": "Let\u2019s ball, Vice City \ud83d\ude0e",
   "caption_checked_at": "2026-11-18T17:51:45.546Z",
   "media_capture_evidence": "unique-complete-stream-duration-dimensions-v1",
-  "source_video_duration": 60.06006006006006
+  "source_video_duration": 60.06006006006006,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

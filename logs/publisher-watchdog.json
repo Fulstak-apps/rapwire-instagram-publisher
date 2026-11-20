@@ -1,11 +1,11 @@
 {
-  "reserve_count": 4,
-  "reserve_hours": 2,
+  "reserve_count": 5,
+  "reserve_hours": 2.5,
   "reserve_low": true,
   "queue_empty": false,
   "overdue": true,
   "cap_held": false,
-  "health_stale": true,
+  "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
@@ -15,10 +15,11 @@
     "2189-let-s-ball-vice-city",
     "2190-tyler-the-creator-has-never-made-a-bad-album-but-what-s-his-best",
     "2191-don-toliver-is-having-a-historically-good-year-a-no-1-album-with",
-    "2192-how-well-do-you-know-tyler-the-creator-challenged-a-tyler-super-"
+    "2192-how-well-do-you-know-tyler-the-creator-challenged-a-tyler-super-",
+    "rapwire-carousel-2026-11-19-1400"
   ],
   "dispatch": true,
   "reason": "missed_feed_window",
-  "checked_at": "2026-11-19T20:49:44.177Z",
+  "checked_at": "2026-11-20T01:54:32.015Z",
   "deferred": []
 }

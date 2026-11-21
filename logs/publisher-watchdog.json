@@ -1,21 +1,19 @@
 {
-  "reserve_count": 1,
-  "reserve_hours": 0.5,
+  "reserve_count": 0,
+  "reserve_hours": 0,
   "reserve_low": true,
-  "queue_empty": false,
+  "queue_empty": true,
   "overdue": true,
   "cap_held": false,
-  "health_stale": false,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
   "threads_video_overdue": true,
   "threads_blocked": true,
-  "ready": [
-    "rapwire-carousel-2026-11-19-1400"
-  ],
-  "dispatch": true,
-  "reason": "missed_feed_window",
-  "checked_at": "2026-11-21T19:38:16.178Z",
+  "ready": [],
+  "dispatch": false,
+  "reason": "queue_empty",
+  "checked_at": "2026-11-21T23:54:33.124Z",
   "deferred": []
 }

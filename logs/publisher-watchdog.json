@@ -5,7 +5,7 @@
   "queue_empty": true,
   "overdue": true,
   "cap_held": false,
-  "health_stale": false,
+  "health_stale": true,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
@@ -14,6 +14,6 @@
   "ready": [],
   "dispatch": false,
   "reason": "queue_empty",
-  "checked_at": "2026-11-22T03:38:01.494Z",
+  "checked_at": "2026-11-22T11:56:52.306Z",
   "deferred": []
 }

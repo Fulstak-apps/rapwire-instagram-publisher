@@ -145,7 +145,26 @@
   "instagram_permalink": null,
   "threads_media_id": null,
   "threads_permalink": null,
-  "publish_blocked": null,
-  "publish_attempts": 0,
-  "retry_safe": true
+  "publish_blocked": "platform_credentials",
+  "publish_attempts": 1,
+  "retry_safe": true,
+  "last_publish_attempt": {
+    "workflow_run_id": "45076047063",
+    "workflow_url": "https://github.com/Fulstak-apps/rapwire-instagram-publisher/actions/runs/45076047063",
+    "attempted_at": "2026-11-22T22:09:22Z",
+    "status": "auth_failure",
+    "instagram": {
+      "status": "failed",
+      "error": "Instagram identity check failed: OAuthException code 190; the session has been invalidated because the user changed their password or Facebook changed the session for security reasons.",
+      "media_id": null,
+      "permalink": null
+    },
+    "threads": {
+      "status": "failed",
+      "error": "Threads authentication failed: session expired on 2026-10-24 17:25:53 PDT.",
+      "media_id": null,
+      "permalink": null
+    },
+    "confirmed_publications": 0
+  }
 }

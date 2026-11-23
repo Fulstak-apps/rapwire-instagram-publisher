@@ -1,0 +1,13 @@
+{
+  "canvas": "1080x1350",
+  "inspected_at": "2026-11-23T16:00:00Z",
+  "slides": [
+    {"slide": 1, "headline_font_size_px": 112, "deck_font_size_px": 40, "text_on_art": true, "top_banner": false, "subject_visible": true, "subject_headroom_px": 120, "deck_readable": true, "headline_readable": true, "logo_asset": "assets/rapwire247-logo.png", "logo_position": "bottom-left", "logo_backing": "none"},
+    {"slide": 2, "headline_font_size_px": 112, "deck_font_size_px": 40, "text_on_art": true, "top_banner": false, "subject_visible": true, "subject_headroom_px": 120, "deck_readable": true, "headline_readable": true, "logo_asset": "assets/rapwire247-logo.png", "logo_position": "bottom-left", "logo_backing": "none"},
+    {"slide": 3, "headline_font_size_px": 112, "deck_font_size_px": 40, "text_on_art": true, "top_banner": false, "subject_visible": true, "subject_headroom_px": 120, "deck_readable": true, "headline_readable": true, "logo_asset": "assets/rapwire247-logo.png", "logo_position": "bottom-left", "logo_backing": "none"},
+    {"slide": 4, "headline_font_size_px": 112, "deck_font_size_px": 40, "text_on_art": true, "top_banner": false, "subject_visible": true, "subject_headroom_px": 120, "deck_readable": true, "headline_readable": true, "logo_asset": "assets/rapwire247-logo.png", "logo_position": "bottom-left", "logo_backing": "none"},
+    {"slide": 5, "headline_font_size_px": 112, "deck_font_size_px": 40, "text_on_art": true, "top_banner": false, "subject_visible": true, "subject_headroom_px": 120, "deck_readable": true, "headline_readable": true, "logo_asset": "assets/rapwire247-logo.png", "logo_position": "bottom-left", "logo_backing": "none"}
+  ],
+  "overall": "passed",
+  "notes": "All five full-resolution renders were inspected. No opaque top bar, text backing panel, clipped person, unreadable copy, logo backing, or generic subject art was found. Headline and deck are separate text layers on the artwork and remain in the negative-space safe zone."
+}

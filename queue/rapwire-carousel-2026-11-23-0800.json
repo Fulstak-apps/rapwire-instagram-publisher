@@ -139,7 +139,24 @@
   "instagram_permalink": null,
   "threads_media_id": null,
   "threads_permalink": null,
-  "publish_blocked": null,
-  "publish_attempts": 0,
+  "publish_blocked": "platform_credentials",
+  "publish_attempts": 1,
+  "last_publish_attempt": {
+    "attempted_at": "2026-11-23T16:30:49.418Z",
+    "workflow_run_id": "45217220611",
+    "workflow_url": "https://github.com/Fulstak-apps/rapwire-instagram-publisher/actions/runs/45217220611",
+    "status": "blocked",
+    "confirmed_publications": 0,
+    "instagram": {
+      "status": "offline",
+      "error": "Instagram identity check failed: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.",
+      "error_type": "OAuthException",
+      "error_code": 190
+    },
+    "threads": {
+      "status": "offline",
+      "error": "Threads authentication failed: Error validating access token: Session has expired on Saturday, 24-Oct-26 17:25:53 PDT."
+    }
+  },
   "retry_safe": true
 }

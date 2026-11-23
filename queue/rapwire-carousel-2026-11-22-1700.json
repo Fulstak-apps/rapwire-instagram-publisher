@@ -10,7 +10,7 @@
   "category": "Hip-Hop, Culture & GTA VI News",
   "content_type": "carousel",
   "headline": "RapWire 24/7: Conway, Grammys, Slim Thug, Master P and Rockstar workers",
-  "caption": "1) Conway the Machine released OTIS on Nov. 20 through Drumwork and Roc Nation Distribution. The 11-song album brings Ghostface Killah, Raekwon and Method Man onto “Lupita!” and extends Conway’s independent run with veteran chemistry at the center. @whoisconway\n\n2) The 2027 Grammys give Best Rap Album nominations to Busta Rhymes & J Dilla, Cardi B, Rapsody, Don Toliver, Wale and Ye, while rap is absent from Record, Album and Song of the Year. The ceremony is scheduled for Feb. 7 in Los Angeles, putting the genre’s category strength beside a conspicuously thin general-field showing. @iamcardib @rapsody @dontoliver\n\n3) Slim Thug brought King of Cars back to Houston on Nov. 22 at Reliant Center after nearly a decade away. The one-day festival combines custom slabs, vendors and a hometown rap lineup featuring Lil’ Keke, Paul Wall, Z-Ro and more, making the event a local culture statement as much as a car show. @slimthug\n\n4) Master P surprised Usher during the Nov. 21 New Orleans stop of the R&B Tour at Caesars Superdome and presented him with a No Limit Soldier chain. The moment linked Usher and Chris Brown’s arena run to the city’s rap history and No Limit’s hometown legacy. @masterp @usher\n\n5) More than 1,600 UK Rockstar employees are voting on union recognition through Nov. 26. A win could create the largest games union in Britain, while the ballot unfolds during GTA VI’s launch window and amid a tribunal fight over alleged union-busting. @RockstarGames\n\n@Rapwire247\n",
+  "caption": "1) Conway the Machine released OTIS on Nov. 20 through Drumwork and Roc Nation Distribution. The 11-song album brings Ghostface Killah, Raekwon and Method Man onto “Lupita!” and extends Conway’s independent run with veteran chemistry at the center. @whoisconway\n2) The 2027 Grammys give Best Rap Album nominations to Busta Rhymes & J Dilla, Cardi B, Rapsody, Don Toliver, Wale and Ye, while rap is absent from Record, Album and Song of the Year. The ceremony is scheduled for Feb. 7 in Los Angeles, putting the genre’s category strength beside a conspicuously thin general-field showing. @iamcardib @rapsody @dontoliver\n3) Slim Thug brought King of Cars back to Houston on Nov. 22 at Reliant Center after nearly a decade away. The one-day festival combines custom slabs, vendors and a hometown rap lineup featuring Lil’ Keke, Paul Wall, Z-Ro and more, making the event a local culture statement as much as a car show. @slimthug\n4) Master P surprised Usher during the Nov. 21 New Orleans stop of the R&B Tour at Caesars Superdome and presented him with a No Limit Soldier chain. The moment linked Usher and Chris Brown’s arena run to the city’s rap history and No Limit’s hometown legacy. @masterp @usher\n5) More than 1,600 UK Rockstar employees are voting on union recognition through Nov. 26. A win could create the largest games union in Britain, while the ballot unfolds during GTA VI’s launch window and amid a tribunal fight over alleged union-busting. @RockstarGames\n\n@Rapwire247",
   "body": "RapWire’s Nov. 22 evening carousel covers Conway the Machine’s OTIS release, the 2027 Grammy rap field, Slim Thug’s King of Cars return, Master P’s New Orleans stage surprise with Usher, and Rockstar Games’ active UK union vote. Each slide pairs current verified reporting with original late-1980s editorial-comic art, readable headline/deck layers, a visible actual subject, and the official transparent RapWire mark.",
   "rendered_body_text": "RapWire’s Nov. 22 evening carousel covers Conway the Machine’s OTIS release, the 2027 Grammy rap field, Slim Thug’s King of Cars return, Master P’s New Orleans stage surprise with Usher, and Rockstar Games’ active UK union vote. Each slide pairs current verified reporting with original late-1980s editorial-comic art, readable headline/deck layers, a visible actual subject, and the official transparent RapWire mark.",
   "caption_has_no_ai_word": true,
@@ -25,11 +25,51 @@
     "media/rapwire-carousel-2026-11-22-1700/slide-5.png"
   ],
   "slide_editorial_copy": [
-    {"slide": 1, "headline": "CONWAY'S OTIS HITS THE WIRE", "deck": "Conway the Machine released the 11-song OTIS on Nov. 20 through Drumwork and Roc Nation Distribution. Ghostface Killah, Raekwon and Method Man join him on “Lupita!” as the Buffalo rapper extends his independent run.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 110, "deck_font_size_px": 42},
-    {"slide": 2, "headline": "RAP GETS A GRAMMY SPOTLIGHT", "deck": "The 2027 Grammys give Best Rap Album nods to Busta Rhymes & J Dilla, Cardi B, Rapsody, Don Toliver, Wale and Ye, while no rap release reaches Record, Album or Song of the Year. The ceremony is set for Feb. 7 in Los Angeles.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 108, "deck_font_size_px": 42},
-    {"slide": 3, "headline": "SLIM THUG BRINGS KING OF CARS HOME", "deck": "Slim Thug revived King of Cars at Houston’s Reliant Center on Nov. 22 after nearly a decade away. The one-day culture fest mixes custom slabs, local vendors and a hometown rap lineup.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 42},
-    {"slide": 4, "headline": "MASTER P CRASHES USHER'S NOLA SHOW", "deck": "Master P surprised Usher at the Nov. 21 New Orleans stop of the R&B Tour and presented him with a No Limit Soldier chain. The moment tied the arena run to hometown rap history.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 104, "deck_font_size_px": 42},
-    {"slide": 5, "headline": "ROCKSTAR WORKERS TAKE A STAND", "deck": "More than 1,600 UK Rockstar employees are voting on union recognition through Nov. 26. A win could create Britain’s largest games union during GTA VI’s launch window.", "text_on_art": true, "top_banner": false, "headline_font_size_px": 108, "deck_font_size_px": 42}
+    {
+      "slide": 1,
+      "headline": "CONWAY'S OTIS HITS THE WIRE",
+      "deck": "Conway the Machine released the 11-song OTIS on Nov. 20 through Drumwork and Roc Nation Distribution. Ghostface Killah, Raekwon and Method Man join him on “Lupita!” as the Buffalo rapper extends his independent run.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 110,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 2,
+      "headline": "RAP GETS A GRAMMY SPOTLIGHT",
+      "deck": "The 2027 Grammys give Best Rap Album nods to Busta Rhymes & J Dilla, Cardi B, Rapsody, Don Toliver, Wale and Ye, while no rap release reaches Record, Album or Song of the Year. The ceremony is set for Feb. 7 in Los Angeles.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 3,
+      "headline": "SLIM THUG BRINGS KING OF CARS HOME",
+      "deck": "Slim Thug revived King of Cars at Houston’s Reliant Center on Nov. 22 after nearly a decade away. The one-day culture fest mixes custom slabs, local vendors and a hometown rap lineup.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 4,
+      "headline": "MASTER P CRASHES USHER'S NOLA SHOW",
+      "deck": "Master P surprised Usher at the Nov. 21 New Orleans stop of the R&B Tour and presented him with a No Limit Soldier chain. The moment tied the arena run to hometown rap history.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42
+    },
+    {
+      "slide": 5,
+      "headline": "ROCKSTAR WORKERS TAKE A STAND",
+      "deck": "More than 1,600 UK Rockstar employees are voting on union recognition through Nov. 26. A win could create Britain’s largest games union during GTA VI’s launch window.",
+      "text_on_art": true,
+      "top_banner": false,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42
+    }
   ],
   "carousel_visual_contract": "rapwire-editorial-carousel-v1",
   "carousel_visual_qc": true,
@@ -38,15 +78,31 @@
   "checksums_file": "queue/rapwire-carousel-2026-11-22-1700-checksums.txt",
   "source_manifest": "queue/rapwire-carousel-2026-11-22-1700-source-manifest.json",
   "source_urls": [
-    "https://music.apple.com/us/album/otis/6826458152", "https://audibletreats.com/press-releases/",
-    "https://apnews.com/article/grammy-nominations-2027-list-a481a68c0754c0f8a0425c508c0304c5", "https://au.variety.com/2026/music/news/grammy-nominations-2027-revealed-42631",
-    "https://kazimagazine.com/news/slim-thug-king-of-cars-reliant-center", "https://www.thehouston.org/news/slim-thug-bringing-king-of-cars-custom-car-show-and-culture-fest-back-to-houston",
-    "https://www.complex.com/music/a/markelibert/usher-master-p-superdome-new-orleans-rb-tour", "https://www.caesarssuperdome.com/events/detail/chris-brown-usher",
-    "https://www.pcgamer.com/gaming-industry/we-need-to-come-together-on-the-eve-of-gta-6-1,600-rockstar-workers-are-voting-on-unionization/", "https://www.gamedeveloper.com/business/rockstar-workers-to-vote-on-unionization-ahead-of-grand-theft-auto-vi-release"
+    "https://music.apple.com/us/album/otis/6826458152",
+    "https://audibletreats.com/press-releases/",
+    "https://apnews.com/article/grammy-nominations-2027-list-a481a68c0754c0f8a0425c508c0304c5",
+    "https://au.variety.com/2026/music/news/grammy-nominations-2027-revealed-42631",
+    "https://kazimagazine.com/news/slim-thug-king-of-cars-reliant-center",
+    "https://www.thehouston.org/news/slim-thug-bringing-king-of-cars-custom-car-show-and-culture-fest-back-to-houston",
+    "https://www.complex.com/music/a/markelibert/usher-master-p-superdome-new-orleans-rb-tour",
+    "https://www.caesarssuperdome.com/events/detail/chris-brown-usher",
+    "https://www.pcgamer.com/gaming-industry/we-need-to-come-together-on-the-eve-of-gta-6-1,600-rockstar-workers-are-voting-on-unionization/",
+    "https://www.gamedeveloper.com/business/rockstar-workers-to-vote-on-unionization-ahead-of-grand-theft-auto-vi-release"
   ],
-  "visual_asset_source_urls": ["https://music.apple.com/us/album/otis/6826458152", "https://au.variety.com/2026/music/news/grammy-nominations-2027-revealed-42631", "https://kazimagazine.com/news/slim-thug-king-of-cars-reliant-center", "https://www.complex.com/music/a/markelibert/usher-master-p-superdome-new-orleans-rb-tour", "https://www.pcgamer.com/gaming-industry/we-need-to-come-together-on-the-eve-of-gta-6-1,600-rockstar-workers-are-voting-on-unionization/"],
+  "visual_asset_source_urls": [
+    "https://music.apple.com/us/album/otis/6826458152",
+    "https://au.variety.com/2026/music/news/grammy-nominations-2027-revealed-42631",
+    "https://kazimagazine.com/news/slim-thug-king-of-cars-reliant-center",
+    "https://www.complex.com/music/a/markelibert/usher-master-p-superdome-new-orleans-rb-tour",
+    "https://www.pcgamer.com/gaming-industry/we-need-to-come-together-on-the-eve-of-gta-6-1,600-rockstar-workers-are-voting-on-unionization/"
+  ],
   "verification_source_count": 10,
-  "news_verification": {"status": "verified", "checked_at": "2026-11-23T01:00:00Z", "source_count": 10, "note": "Every story was cross-checked against at least two current reputable or primary sources and compared against the same-day 8:00 AM batch and prior queue topics."},
+  "news_verification": {
+    "status": "verified",
+    "checked_at": "2026-11-23T01:00:00Z",
+    "source_count": 10,
+    "note": "Every story was cross-checked against at least two current reputable or primary sources and compared against the same-day 8:00 AM batch and prior queue topics."
+  },
   "facts_verified": true,
   "source_policy_checked": true,
   "editorial_substance_checked": true,
@@ -65,7 +121,12 @@
   "source_image_role": "Current reporting was used for factual grounding; final art is original editorial illustration.",
   "photo_recency_checked": true,
   "layout_template": "rapwire-unified-v3",
-  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "brand_logo": {
+    "asset": "assets/rapwire247-logo.png",
+    "position": "bottom-left",
+    "transparent_background": true,
+    "backing_shape": "none"
+  },
   "threads_text": "Conway, the Grammys, Slim Thug, Master P and Rockstar workers.\n\n@Rapwire247",
   "threads_story_status": "not_requested",
   "threads_story_note": "Carousel delivery requested to Instagram feed and Threads; no Story upload requested.",

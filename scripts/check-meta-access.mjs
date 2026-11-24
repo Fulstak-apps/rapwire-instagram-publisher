@@ -9,7 +9,7 @@ const checks = [
   ['threads token', 'https://graph.threads.net/debug_token', process.env.THREADS_ACCESS_TOKEN, true],
 ];
 if (process.env.FACEBOOK_PAGE_ACCESS_TOKEN && process.env.FACEBOOK_PAGE_ID) {
-  checks.push(['facebook page', `https://graph.facebook.com/v26.0/${encodeURIComponent(process.env.FACEBOOK_PAGE_ID)}?fields=id,name`, process.env.FACEBOOK_PAGE_ACCESS_TOKEN]);
+  checks.push(['facebook page', `https://graph.facebook.com/v26.0/${encodeURIComponent(process.env.FACEBOOK_PAGE_ID)}?fields=id,name,instagram_business_account{id,username}`, process.env.FACEBOOK_PAGE_ACCESS_TOKEN]);
 }
 for (const [label, endpoint, token, debug] of checks) {
   if (!token) {
@@ -24,7 +24,7 @@ for (const [label, endpoint, token, debug] of checks) {
     const body = await response.json();
     const data = body.data || body;
     const valid = response.ok && !body.error && data.is_valid !== false;
-    console.log(JSON.stringify({check:label,status:response.status,error_code:body.error?.code,error_subcode:body.error?.error_subcode,message:body.error?.message,is_valid:data.is_valid,app_id:data.app_id,expires_at:data.expires_at,scopes:data.scopes,username:data.username}));
+    console.log(JSON.stringify({check:label,status:response.status,error_code:body.error?.code,error_subcode:body.error?.error_subcode,message:body.error?.message,is_valid:data.is_valid,app_id:data.app_id,expires_at:data.expires_at,scopes:data.scopes,username:data.username,instagram_business_account:data.instagram_business_account}));
     if (requireValid && !valid) failures += 1;
   } catch {
     console.log(`${label}: request could not complete`);

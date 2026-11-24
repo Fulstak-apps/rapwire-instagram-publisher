@@ -1,0 +1,15 @@
+{
+  "batch_id": "rapwire-carousel-2026-11-24-0800",
+  "full_resolution_checked": true,
+  "canvas": "1080x1350",
+  "slides": [
+    {"slide": 1, "headline_font_size_px": 112, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "subject_visible": "Mike Jones", "headroom_px": 120, "top_banner": false, "logo_backing": false, "notes": "Upper-left negative space; subject, microphone, hands and car remain visible."},
+    {"slide": 2, "headline_font_size_px": 112, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "subject_visible": "Skepta", "headroom_px": 120, "top_banner": false, "logo_backing": false, "notes": "Upper-left negative space; subject and microphone remain unobstructed."},
+    {"slide": 3, "headline_font_size_px": 112, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "subject_visible": "GloRilla", "headroom_px": 120, "top_banner": false, "logo_backing": false, "notes": "Upper-left text zone; face, hair, hands and donation box remain visible."},
+    {"slide": 4, "headline_font_size_px": 112, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "subject_visible": "Mary J. Blige", "headroom_px": 120, "top_banner": false, "logo_backing": false, "notes": "Upper-left text zone; subject, vinyl, gavel and courthouse remain visible."},
+    {"slide": 5, "headline_font_size_px": 112, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "subject_visible": "Jason and Lucia / GTA VI", "headroom_px": 120, "top_banner": false, "logo_backing": false, "notes": "Upper-left text zone; both characters, console setup and Vice City environment remain visible."}
+  ],
+  "visual_contract_result": "pass",
+  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "qa_notes": "All five rendered slides were inspected at full resolution after text and logo compositing. No opaque or translucent top bar, no backing panel, no cropped heads or hands, and no generic typography-only art detected."
+}

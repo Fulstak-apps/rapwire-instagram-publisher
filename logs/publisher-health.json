@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T22:02:21.815Z",
+  "checked_at": "2026-11-25T22:03:48.859Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-11-25T22:02:07.512Z",
     "usage": 2,
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 1,
-    "platform_quota_usage": 1,
-    "instagram_remaining": 11,
+    "instagram_usage": 2,
+    "platform_quota_usage": 2,
+    "instagram_remaining": 10,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-25T23:32:19.672Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,16 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-25T21:31:02.398Z",
-  "publications": [
-    {
-      "file": "2193-two-worlds-collide-for-one-insightful-conversation-fivio-foreign.json",
-      "id": "2193-two-worlds-collide-for-one-insightful-conversation-fivio-foreign",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17912735595669302",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

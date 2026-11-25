@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { publicationPolicy, recoveryPolicy } from './publication-policy.mjs';
+import { publicationPolicy, recoveryPolicy, hasPublishableStoryAsset } from './publication-policy.mjs';
 const now = Date.parse('2026-09-02T15:00:00Z');
 const feed = {status:'published',content_type:'video',instagram_media_id:'feed',published_at:new Date(now-30*60000).toISOString(),instagram_story_status:'published',instagram_story_media_id:'story',instagram_story_published_at:new Date(now-5*60000).toISOString()};
 const publications=(count,at=now)=>Array.from({length:count},(_,index)=>({status:'published',instagram_media_id:`feed-${index}`,published_at:new Date(at-index*60000).toISOString()}));
@@ -17,6 +17,12 @@ test('reserve both the new Story and unfinished older Stories before starting an
   const due=now+60*60000+1;
   assert.equal(publicationPolicy([...publications(10,now-300*60000),pending],{now:due,quota:{usage:10,total:100}}).feed_allowed,false);
   assert.equal(publicationPolicy([...publications(8,now-300*60000),pending],{now:due,quota:{usage:8,total:100}}).feed_allowed,true);
+});
+test('JSON source manifests do not reserve or enter the Instagram Story lane', () => {
+  const manifest={status:'published',content_type:'original_editorial_carousel',instagram_media_id:'carousel',story:'queue/source-manifest.json'};
+  assert.equal(hasPublishableStoryAsset(manifest),false);
+  assert.equal(publicationPolicy([manifest],{now,quota:{usage:0,total:100}}).reserved_story_slots,0);
+  assert.equal(hasPublishableStoryAsset({...manifest,story:'media/story.png'}),true);
 });
 test('one remaining slot can finish a Story but cannot start another video/Story pair', () => {
   const p=publicationPolicy(publications(11),{now,quota:{usage:11,total:100}});

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { publicationPolicy, recoveryPolicy, hasPublishableStoryAsset } from './publication-policy.mjs';
+import { publicationPolicy, recoveryPolicy, hasPublishableStoryAsset, isCurrentStoryCandidate } from './publication-policy.mjs';
 const now = Date.parse('2026-09-02T15:00:00Z');
 const feed = {status:'published',content_type:'video',instagram_media_id:'feed',published_at:new Date(now-30*60000).toISOString(),instagram_story_status:'published',instagram_story_media_id:'story',instagram_story_published_at:new Date(now-5*60000).toISOString()};
 const publications=(count,at=now)=>Array.from({length:count},(_,index)=>({status:'published',instagram_media_id:`feed-${index}`,published_at:new Date(at-index*60000).toISOString()}));
@@ -25,10 +25,15 @@ test('JSON source manifests do not reserve or enter the Instagram Story lane', (
   assert.equal(hasPublishableStoryAsset({...manifest,story:'media/story.png'}),true);
 });
 test('downtime backlog reserves only the one older Story a cycle can process', () => {
-  const backlog=Array.from({length:20},(_,index)=>({status:'published',content_type:'video',video:`media/${index}.mp4`,instagram_media_id:`old-${index}`}));
-  const p=publicationPolicy(backlog,{now,quota:{usage:0,total:100}});
+  const backlog=Array.from({length:20},(_,index)=>({status:'published',content_type:'video',video:`media/${index}.mp4`,instagram_media_id:`old-${index}`,published_at:new Date(now-3*60*60_000).toISOString()}));
+  const p=publicationPolicy(backlog,{now,policyStartedAt:new Date(now-60*60_000).toISOString(),quota:{usage:0,total:100}});
   assert.equal(p.reserved_story_slots,1);
   assert.equal(p.feed_allowed,true);
+});
+test('expired historical videos cannot enter or reserve the Story lane', () => {
+  const old={status:'published',content_type:'video',video:'media/old.mp4',instagram_media_id:'old',published_at:new Date(now-25*60*60_000).toISOString()};
+  assert.equal(isCurrentStoryCandidate(old,now),false);
+  assert.equal(publicationPolicy([old],{now,quota:{usage:0,total:100}}).reserved_story_slots,0);
 });
 test('one remaining slot can finish a Story but cannot start another video/Story pair', () => {
   const p=publicationPolicy(publications(11),{now,quota:{usage:11,total:100}});

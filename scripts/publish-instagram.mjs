@@ -3,7 +3,7 @@ import os from "node:os";
 import path from "node:path";
 import { advanceContainer } from "./container-state.mjs";
 import { captionIsBound } from "./video-caption.mjs";
-import { publicationPolicy, recoveryPolicy, hasPublishableStoryAsset, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, THREADS_PUBLISH_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
+import { publicationPolicy, recoveryPolicy, hasPublishableStoryAsset, isCurrentStoryCandidate, FEED_INTERVAL_MS, THREADS_INTERVAL_MS, THREADS_PUBLISH_INTERVAL_MS, FACEBOOK_INTERVAL_MS } from "./publication-policy.mjs";
 import { fitInstagramCaption } from "./instagram-caption.mjs";
 import { carouselEditorialIssues } from "./carousel-editorial-contract.mjs";
 import { isRecentStoryDuplicate } from "./content-pacing.mjs";
@@ -861,7 +861,7 @@ const readyEditorialCarousel = queueRecords.some(({ item }) => item.status === "
   && !(Date.parse(item.instagram_retry_at || "") > Date.now())
   && (!item.publish_after || Date.parse(item.publish_after) <= Date.now()));
 const pendingStory = queueRecords.some(({ item }) => item.status === "published"
-  && hasPublishableStoryAsset(item) && !item.instagram_story_media_id
+  && hasPublishableStoryAsset(item) && isCurrentStoryCandidate(item) && !item.instagram_story_media_id
   && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
   && (!/^(124|125|126|127|128|129)-/.test(item.id || "") || item.logo_position === "bottom-left"));
 // Stories are intentionally disabled in this workflow. Do not let outstanding
@@ -1083,7 +1083,7 @@ for (const file of files) {
   if (isVideoItem && facebookSteps < 1 && await facebookPost(item, itemPath)) facebookSteps += 1;
 
   const storyPending = !item.instagram_story_media_id && item.instagram_story_status !== "published";
-  if (publishInstagramStories && instagramAvailable() && (deliveryPolicy.story_allowed || (recovery.story_allowed && item.id === recovery.item_id)) && instagramSteps < 1 && hasPublishableStoryAsset(item) && storyPending
+  if (publishInstagramStories && instagramAvailable() && (deliveryPolicy.story_allowed || (recovery.story_allowed && item.id === recovery.item_id)) && instagramSteps < 1 && hasPublishableStoryAsset(item) && isCurrentStoryCandidate(item) && storyPending
     && !item.instagram_story_reconcile_required && !(Date.parse(item.instagram_story_retry_at || "") > Date.now())
     && (wasReady || olderStoryAttemptsThisRun < 1)) {
     if (!wasReady) olderStoryAttemptsThisRun += 1;

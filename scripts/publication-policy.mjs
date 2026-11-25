@@ -13,6 +13,7 @@ export const FACEBOOK_INTERVAL_MS = 5 * 60_000;
 // safety buffer while avoiding the old 32-post ceiling that could leave an
 // otherwise healthy publisher idle for half a day.
 export const DAILY_INSTAGRAM_CAP = 12;
+export const STORY_MAX_AGE_MS = 24 * 60 * 60_000;
 
 // Some editorial carousel records use `story` for a JSON source manifest,
 // not an Instagram Story image. Only reserve capacity for an actual video or
@@ -21,6 +22,13 @@ export function hasPublishableStoryAsset(item = {}) {
   if (item.content_type === 'video') return Boolean(item.video || item.video_url);
   if (/^https?:\/\//i.test(String(item.story_media_url || ''))) return true;
   return /\.(?:jpe?g|png|gif|webp|heic|avif)$/i.test(String(item.story || ''));
+}
+
+export function isCurrentStoryCandidate(item = {}, now = Date.now()) {
+  const publishedAt = Date.parse(item.published_at || item.instagram_published_at || '');
+  // Undated records predate the timestamp field; retain their resumability.
+  if (!Number.isFinite(publishedAt)) return true;
+  return publishedAt <= now && now - publishedAt <= STORY_MAX_AGE_MS;
 }
 
 // A time-limited, explicitly requested recovery pair is not a general cap reset.
@@ -67,7 +75,7 @@ export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, po
         published.add(item.instagram_media_id);
         publicationTimes.set(item.instagram_media_id, time);
       }
-      if (includeStories && item.status === 'published' && hasPublishableStoryAsset(item)
+      if (includeStories && item.status === 'published' && hasPublishableStoryAsset(item) && isCurrentStoryCandidate(item, now)
         && !item.instagram_story_media_id && item.instagram_story_status !== 'published'
         && !item.instagram_story_reconcile_required
         && !(Date.parse(item.instagram_story_retry_at || '') > now)) pendingStories.add(item.instagram_media_id);

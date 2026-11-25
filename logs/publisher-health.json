@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T20:01:03.183Z",
+  "checked_at": "2026-11-25T20:05:58.108Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-25T21:31:02.398Z",
-  "publications": [
-    {
-      "file": "2193-two-worlds-collide-for-one-insightful-conversation-fivio-foreign.json",
-      "id": "2193-two-worlds-collide-for-one-insightful-conversation-fivio-foreign",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18100399385657820"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

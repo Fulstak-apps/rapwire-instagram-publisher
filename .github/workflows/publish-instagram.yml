@@ -121,7 +121,7 @@ jobs:
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           # Facebook is delivered through the user's Meta Instagram cross-posting.
           # Do not also attempt direct publication with the expired Page token.
-          PUBLISH_INSTAGRAM_STORIES: "false"
+          PUBLISH_INSTAGRAM_STORIES: "true"
           MAX_FEED_POSTS_PER_RUN: "1"
           RAPWIRE_SKIP_PACING_GUARD: "1"
         run: node scripts/publish-instagram.mjs

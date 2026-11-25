@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-11-25T19:56:33.337Z",
+  "checked_at": "2026-11-25T19:57:56.001Z",
   "instagram_auth": {
     "available": true,
     "error": null
   },
   "threads_auth": {
-    "available": false,
-    "error": "Threads credential or user ID is missing"
+    "available": true,
+    "error": null
   },
-  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
+  "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
     "checked_at": "2026-11-25T19:55:52.427Z",
     "usage": 1,
@@ -36,7 +36,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,13 +45,13 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-10-24T21:52:11.366Z",
-    "usage": 15,
+    "checked_at": "2026-11-25T19:57:55.175Z",
+    "usage": 0,
     "total": 250,
-    "blocked": true,
-    "next_check_at": "2026-11-25T20:01:33.129Z",
-    "reason": "Threads credential or user ID is missing",
-    "valid": false
+    "blocked": false,
+    "next_check_at": "2026-11-25T20:12:55.175Z",
+    "reason": "Capacity available",
+    "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-10-24T22:01:27.261Z",

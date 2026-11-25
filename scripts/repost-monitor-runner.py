@@ -132,7 +132,13 @@ try:
     fcntl.flock(supervisor_lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
 except BlockingIOError:
     raise SystemExit(0)
-subprocess.run([sys.executable, "scripts/cleanup-published-media.py", "--local-only"], timeout=60, check=False)
+# Cleanup is best-effort housekeeping.  It must never prevent the collector
+# from running when a slow filesystem or a stuck media process exceeds its
+# time budget.
+try:
+    subprocess.run([sys.executable, "scripts/cleanup-published-media.py", "--local-only"], timeout=60, check=False)
+except subprocess.TimeoutExpired:
+    print("RapWire cleanup timed out; continuing with collection.", file=sys.stderr)
 free_bytes = shutil.disk_usage(".").free
 Path("logs").mkdir(exist_ok=True)
 Path("logs/collector-storage.json").write_text(json.dumps({"checked_at": time.time(), "free_bytes": free_bytes, "low": free_bytes < 5 * 1024**3}))

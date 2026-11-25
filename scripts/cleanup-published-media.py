@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Remove repository media only after both feed publications are confirmed."""
 import json
+import datetime
 import pathlib
 import re
 import shutil
@@ -25,6 +26,23 @@ for queue_file in QUEUE.glob("*.json"):
     # legacy record to stop the entire publisher cleanup step.
     if not isinstance(item, dict):
         print(f"Cleanup skipped non-object queue record {queue_file.name}.")
+        continue
+    # A confirmed Reel can still need the same public MP4 for its paired
+    # Instagram Story. Keep current media addressable on the main branch until
+    # that Story is confirmed (or the 24-hour Story window has elapsed).
+    published_at = item.get("published_at") or item.get("instagram_published_at")
+    try:
+        published_epoch = datetime.datetime.fromisoformat(published_at.replace("Z", "+00:00")).timestamp()
+    except (AttributeError, TypeError, ValueError):
+        published_epoch = 0
+    story_asset = item.get("story_video") or item.get("video") or item.get("story")
+    story_pending = (item.get("status") == "published"
+                     and isinstance(story_asset, str)
+                     and story_asset.startswith("media/")
+                     and not item.get("instagram_story_media_id")
+                     and published_epoch > time.time() - 24 * 60 * 60)
+    if story_pending:
+        protected_paths.update(item.get(field) for field in ("video", "story_video", "story") if isinstance(item.get(field), str))
         continue
     if not (item.get("status") == "published"
             and item.get("instagram_media_id")

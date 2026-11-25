@@ -68,7 +68,9 @@ export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, po
         publicationTimes.set(item.instagram_media_id, time);
       }
       if (includeStories && item.status === 'published' && hasPublishableStoryAsset(item)
-        && !item.instagram_story_media_id && item.instagram_story_status !== 'published') pendingStories.add(item.instagram_media_id);
+        && !item.instagram_story_media_id && item.instagram_story_status !== 'published'
+        && !item.instagram_story_reconcile_required
+        && !(Date.parse(item.instagram_story_retry_at || '') > now)) pendingStories.add(item.instagram_media_id);
     }
     if (item.instagram_story_media_id) {
       const storyTime = Date.parse(item.instagram_story_published_at || '') || 0;
@@ -90,14 +92,17 @@ export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, po
   const oldestBudgetPublication = [...publicationTimes.values()].sort((a, b) => a - b)[0] || 0;
   const nextBudget = remaining > 0 || !oldestBudgetPublication ? 0 : oldestBudgetPublication + 86400000;
   const nextEligible = Math.max(nextFeed, nextBudget);
-  const neededForFeed = 1 + (includeStories ? 1 : 0) + pendingStories.size;
+  // The publisher can finish only one older Story per run. Reserving every
+  // historical candidate creates an impossible requirement after downtime.
+  const reservedStorySlots = Math.min(1, pendingStories.size);
+  const neededForFeed = 1 + (includeStories ? 1 : 0) + reservedStorySlots;
   return {
     feed_interval_minutes: FEED_INTERVAL_MS / 60000,
     instagram_daily_cap: cap,
     instagram_usage: usage,
     platform_quota_usage: Number(quota.usage) || 0,
     instagram_remaining: remaining,
-    reserved_story_slots: pendingStories.size,
+    reserved_story_slots: reservedStorySlots,
     next_feed_eligible_at: nextEligible ? new Date(nextEligible).toISOString() : null,
     next_budget_eligible_at: nextBudget ? new Date(nextBudget).toISOString() : null,
     feed_allowed: now >= nextEligible && remaining >= neededForFeed,

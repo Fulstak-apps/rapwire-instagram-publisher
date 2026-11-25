@@ -24,6 +24,12 @@ test('JSON source manifests do not reserve or enter the Instagram Story lane', (
   assert.equal(publicationPolicy([manifest],{now,quota:{usage:0,total:100}}).reserved_story_slots,0);
   assert.equal(hasPublishableStoryAsset({...manifest,story:'media/story.png'}),true);
 });
+test('downtime backlog reserves only the one older Story a cycle can process', () => {
+  const backlog=Array.from({length:20},(_,index)=>({status:'published',content_type:'video',video:`media/${index}.mp4`,instagram_media_id:`old-${index}`}));
+  const p=publicationPolicy(backlog,{now,quota:{usage:0,total:100}});
+  assert.equal(p.reserved_story_slots,1);
+  assert.equal(p.feed_allowed,true);
+});
 test('one remaining slot can finish a Story but cannot start another video/Story pair', () => {
   const p=publicationPolicy(publications(11),{now,quota:{usage:11,total:100}});
   assert.equal(p.story_allowed,true); assert.equal(p.feed_allowed,false);

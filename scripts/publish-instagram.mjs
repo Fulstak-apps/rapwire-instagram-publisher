@@ -164,6 +164,15 @@ let cooldown = await readStateJson(cooldownPath, {}, "instagram-cooldown");
 // real hold.
 const isDefinitiveInstagramQuotaBlock = reason => /2207042|publishing (?:capacity|quota).*exhausted|quota exhausted/i.test(String(reason || ""));
 const isDefinitiveThreadsQuotaBlock = reason => /publishing (?:capacity|quota).*exhausted|quota exhausted|threads limited until|rate or publishing limit/i.test(String(reason || ""));
+const isInstagramAuthFailure = reason => /error validating access token|invalid oauth access token|session has been invalidated|"code"\s*:\s*190/i.test(String(reason || ""));
+// A newly verified credential must immediately invalidate a saved auth-failure
+// snapshot. Otherwise its future retry timestamp keeps the upload lane closed
+// even though the replacement token has already proven its account identity.
+if (instagramAuthAvailable && quota.valid === false && isInstagramAuthFailure(quota.reason)) {
+  quota = { ...quota, valid: false, blocked: false, next_check_at: null,
+    reason: "Instagram authentication recovered; forcing a fresh publishing-capacity check",
+    auth_recovered_at: new Date().toISOString() };
+}
 if (typeof quota.blocked !== "boolean") quota.blocked = false;
 if (typeof threadsQuota.blocked !== "boolean") threadsQuota.blocked = false;
 if (quota.blocked === true && quota.reason && !isDefinitiveInstagramQuotaBlock(quota.reason)) {

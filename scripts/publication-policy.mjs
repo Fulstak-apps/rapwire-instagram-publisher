@@ -14,6 +14,15 @@ export const FACEBOOK_INTERVAL_MS = 5 * 60_000;
 // otherwise healthy publisher idle for half a day.
 export const DAILY_INSTAGRAM_CAP = 12;
 
+// Some editorial carousel records use `story` for a JSON source manifest,
+// not an Instagram Story image. Only reserve capacity for an actual video or
+// a supported image asset so stale manifests cannot monopolize the Story lane.
+export function hasPublishableStoryAsset(item = {}) {
+  if (item.content_type === 'video') return Boolean(item.video || item.video_url);
+  if (/^https?:\/\//i.test(String(item.story_media_url || ''))) return true;
+  return /\.(?:jpe?g|png|gif|webp|heic|avif)$/i.test(String(item.story || ''));
+}
+
 // A time-limited, explicitly requested recovery pair is not a general cap reset.
 // Keep two unused platform slots and require a fresh successful quota read.
 export function recoveryPolicy(records, { authorization = {}, quota = {}, lastFeedPublishedAt, now = Date.now() } = {}) {
@@ -58,7 +67,7 @@ export function publicationPolicy(records, { quota = {}, lastFeedPublishedAt, po
         published.add(item.instagram_media_id);
         publicationTimes.set(item.instagram_media_id, time);
       }
-      if (includeStories && item.status === 'published' && (item.content_type === 'video' || item.story)
+      if (includeStories && item.status === 'published' && hasPublishableStoryAsset(item)
         && !item.instagram_story_media_id && item.instagram_story_status !== 'published') pendingStories.add(item.instagram_media_id);
     }
     if (item.instagram_story_media_id) {

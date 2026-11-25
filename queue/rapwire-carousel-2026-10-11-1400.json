@@ -146,5 +146,8 @@
   "published_at": "2026-10-11T22:42:07.566Z",
   "instagram_verified_at": "2026-10-11T22:42:07.697Z",
   "threads_story_status": "not_supported",
-  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher."
+  "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
+  "instagram_story_status": "failed",
+  "instagram_story_error": "media failed: {\"error\":{\"message\":\"The image format is not supported.\",\"code\":36001,\"type\":\"OAuthException\",\"error_subcode\":2207083,\"is_transient\":false,\"error_user_msg\":\"The image could not be processed because its format could not be recognized. This usually means the file is corrupted, not a valid image, or the URL returned an error page instead of an image. Please verify that the image_url points to a valid image file in a supported format (JPEG, PNG, GIF, WebP, HEIC, or AVIF). For more information on supported formats and media specifications, see: https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media#creating\",\"error_user_title\":\"Unknown Image Format\",\"fbtrace_id\":\"ALeo1Q4Cii79kHhzupqo00d\"}}",
+  "instagram_story_retry_at": "2026-11-25T22:16:47.880Z"
 }

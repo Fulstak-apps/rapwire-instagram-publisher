@@ -4,7 +4,7 @@
 const requireValid = process.argv.includes('--require-valid');
 let failures = 0;
 const checks = [
-  ['instagram identity', 'https://graph.instagram.com/me?fields=user_id,username', process.env.INSTAGRAM_ACCESS_TOKEN],
+  ['instagram business identity', `https://graph.facebook.com/v26.0/${encodeURIComponent(process.env.INSTAGRAM_USER_ID || '')}?fields=id,username`, process.env.INSTAGRAM_ACCESS_TOKEN],
   ['threads identity', 'https://graph.threads.net/v1.0/me?fields=id,username', process.env.THREADS_ACCESS_TOKEN],
   ['threads token', 'https://graph.threads.net/debug_token', process.env.THREADS_ACCESS_TOKEN, true],
 ];

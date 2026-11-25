@@ -31,7 +31,8 @@ let threadsAuthAvailable = Boolean(threadsToken && threadsUserId);
 let instagramAuthError = instagramAuthAvailable ? "" : "Instagram credential or user ID is missing";
 let threadsAuthError = threadsAuthAvailable ? "" : "Threads credential or user ID is missing";
 
-const instagramBase = "https://graph.instagram.com";
+let instagramBase = "https://graph.instagram.com";
+const instagramBusinessBase = "https://graph.facebook.com/v26.0";
 const threadsBase = "https://graph.threads.net/v1.0";
 const facebookBase = "https://graph.facebook.com/v26.0";
 const root = path.resolve(".");
@@ -115,11 +116,19 @@ async function compactAttemptLogIfNeeded() {
 }
 
 async function verifyInstagramIdentity() {
-  const url = new URL(`${instagramBase}/me`);
-  url.searchParams.set("fields", "id,username");
-  url.searchParams.set("access_token", instagramToken);
-  const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
-  const payload = await response.json();
+  let response;
+  let payload;
+  for (const base of [instagramBase, instagramBusinessBase]) {
+    const url = new URL(`${base}/${base === instagramBusinessBase ? instagramUserId : "me"}`);
+    url.searchParams.set("fields", "id,username");
+    url.searchParams.set("access_token", instagramToken);
+    response = await fetch(url, { signal: AbortSignal.timeout(30000) });
+    payload = await response.json();
+    if (response.ok && !payload.error) {
+      instagramBase = base;
+      break;
+    }
+  }
   if (!response.ok || payload.error) throw new Error(`Instagram identity check failed: ${JSON.stringify(payload)}`);
   if (String(payload.username || "").toLowerCase() !== "rapwire247")
     throw new Error(`Instagram token targets @${payload.username || "unknown"}, not @rapwire247`);

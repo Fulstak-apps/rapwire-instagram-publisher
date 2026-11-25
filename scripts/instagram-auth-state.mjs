@@ -32,13 +32,18 @@ export function recoverQuotaAfterValidAuth(quota = {}, now = Date.now()) {
 export async function checkInstagramIdentity({token, userId, fetchImpl = fetch, timeoutMs = 20_000} = {}) {
   if (!token || !userId) return {valid: false, status: null, error_code: null, message: 'Instagram credential or user ID is missing'};
   try {
-    const url = new URL('https://graph.instagram.com/me');
-    url.searchParams.set('fields', 'user_id,username');
-    const response = await fetchImpl(url, {
-      headers: {Authorization: `Bearer ${token}`},
-      signal: AbortSignal.timeout(timeoutMs)
-    });
-    const body = await response.json();
+    let response;
+    let body;
+    for (const [endpoint, fields] of [
+      ['https://graph.instagram.com/me', 'user_id,username'],
+      [`https://graph.facebook.com/v26.0/${encodeURIComponent(userId)}`, 'id,username']
+    ]) {
+      const url = new URL(endpoint);
+      url.searchParams.set('fields', fields);
+      response = await fetchImpl(url, {headers: {Authorization: `Bearer ${token}`}, signal: AbortSignal.timeout(timeoutMs)});
+      body = await response.json();
+      if (response.ok && !body.error) break;
+    }
     const returnedId = String(body.user_id || body.id || '');
     const expectedId = String(userId);
     const valid = response.ok && !body.error && returnedId === expectedId;

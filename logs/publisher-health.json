@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T14:01:57.218Z",
+  "checked_at": "2026-11-26T14:07:13.372Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-26T13:51:48.421Z",
+    "checked_at": "2026-11-26T14:07:06.422Z",
     "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-26T14:06:48.421Z",
+    "next_check_at": "2026-11-26T14:22:06.422Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-26T13:51:48.724Z",
-    "usage": 11,
+    "checked_at": "2026-11-26T14:07:06.820Z",
+    "usage": 12,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-26T14:06:48.724Z",
+    "next_check_at": "2026-11-26T14:22:06.820Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-11-26T14:01:05.702Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-11-26T15:37:13.086Z",
+  "publications": [
+    {
+      "file": "2203-rick-ross-urges-grand-theft-auto-vi-players-to-find-his-miami-ma.json",
+      "id": "2203-rick-ross-urges-grand-theft-auto-vi-players-to-find-his-miami-ma",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18637523692013501"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

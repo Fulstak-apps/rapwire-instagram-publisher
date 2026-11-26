@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T06:07:11.248Z",
+  "checked_at": "2026-11-26T06:12:07.237Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,25 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-26T05:56:55.280Z",
+    "checked_at": "2026-11-26T06:12:06.122Z",
     "usage": 7,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-26T06:11:55.280Z",
+    "next_check_at": "2026-11-26T06:27:06.122Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T07:37:08.674Z",
-  "publications": [
-    {
-      "file": "2198-ateez-answered-our-rapid-fire-questions-about-googling-themselve.json",
-      "id": "2198-ateez-answered-our-rapid-fire-questions-about-googling-themselve",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17929228071440551"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

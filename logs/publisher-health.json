@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T10:49:58.074Z",
+  "checked_at": "2026-11-26T10:55:06.385Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-11-26T10:49:56.950Z",
-    "usage": 9,
+    "usage": 10,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-11-26T11:04:56.950Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-11-26T10:49:08.494Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-11-26T12:25:05.779Z",
+  "publications": [
+    {
+      "file": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.json",
+      "id": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18001082213830301"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

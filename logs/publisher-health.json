@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T08:13:17.427Z",
+  "checked_at": "2026-11-26T08:18:27.873Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -56,6 +56,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T09:13:06.815Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "2197-wack-100-speaks-on-chrisean-rock.json",
+      "id": "2197-wack-100-speaks-on-chrisean-rock",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; media refresh required after 3 failed containers"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T18:49:59.581Z",
+  "checked_at": "2026-11-26T18:55:07.841Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-11-26T18:44:59.321Z",
-    "usage": 14,
+    "usage": 15,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-11-26T18:59:59.321Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-11-26T18:49:12.487Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-11-26T20:25:07.364Z",
+  "publications": [
+    {
+      "file": "2206-rapper-sluggatee-speaks-on-lilpoppa-passing-and-the-impact-his-d.json",
+      "id": "2206-rapper-sluggatee-speaks-on-lilpoppa-passing-and-the-impact-his-d",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18106055381545503"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

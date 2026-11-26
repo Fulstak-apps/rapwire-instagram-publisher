@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T08:48:39.102Z",
+  "checked_at": "2026-11-26T08:53:40.716Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -29,13 +29,13 @@
     "instagram_usage": 11,
     "platform_quota_usage": 11,
     "instagram_remaining": 1,
-    "reserved_story_slots": 0,
+    "reserved_story_slots": 1,
     "next_feed_eligible_at": "2026-11-26T09:08:12.521Z",
     "next_budget_eligible_at": null,
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -56,6 +56,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T09:13:06.815Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "2198-ateez-answered-our-rapid-fire-questions-about-googling-themselve.json",
+      "id": "2198-ateez-answered-our-rapid-fire-questions-about-googling-themselve",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-11-26T09:53:40.234Z: Error: Media upload has failed with error code 2207032"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

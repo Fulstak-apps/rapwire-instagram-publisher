@@ -65,9 +65,12 @@
   "threads_story_status": "not_supported",
   "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
   "media_cleanup_status": "pending",
-  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m.mp4' -> '/home/runner/.Trash/RapWire-1795732641730-2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m.mp4'",
+  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m.mp4' -> '/home/runner/.Trash/RapWire-1795732949649-2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m.mp4'",
   "instagram_story_container_id": "18121309841078478",
   "instagram_story_container_created_at": "2026-11-26T22:37:18.327Z",
-  "instagram_story_container_checked_at": "2026-11-26T22:37:18.327Z",
-  "instagram_story_status": "pending"
+  "instagram_story_container_checked_at": "2026-11-26T22:42:22.322Z",
+  "instagram_story_status": "failed",
+  "instagram_story_container_status": "FINISHED",
+  "instagram_story_error": "media_publish failed: {\"error\":{\"message\":\"Fatal\",\"code\":-1,\"type\":\"OAuthException\",\"error_subcode\":2207032,\"is_transient\":false,\"error_user_msg\":\"Create media fail, please try to re-create media\",\"error_user_title\":\"Cannot Create Media\",\"fbtrace_id\":\"AhHHHiSTl1EB5lbShiDOKsW\"}}",
+  "instagram_story_retry_at": "2026-11-26T22:52:29.648Z"
 }

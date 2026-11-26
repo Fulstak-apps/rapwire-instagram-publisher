@@ -1,7 +1,7 @@
 {
   "id": "rapwire-carousel-2026-11-25-1700",
   "type": "original_editorial_carousel",
-  "status": "ready",
+  "status": "published",
   "date": "2026-11-25",
   "timezone": "America/Los_Angeles",
   "scheduled_local_time": "2026-11-25 17:00:00 America/Los_Angeles",
@@ -136,10 +136,10 @@
   "threads_story_status": "not_requested",
   "threads_story_note": "Carousel delivery requested to Instagram feed and Threads; no Story upload requested.",
   "audio_status": "not_applicable",
-  "instagram_media_id": null,
-  "instagram_permalink": null,
-  "threads_media_id": null,
-  "threads_permalink": null,
+  "instagram_media_id": "18152014576562852",
+  "instagram_permalink": "https://www.instagram.com/p/DgMEg1IIIjm/",
+  "threads_media_id": "18150493291587220",
+  "threads_permalink": "https://www.threads.com/@rapwire247/post/DgMFC45nPLe",
   "publish_blocked": "cadence_hold",
   "publish_attempts": 1,
   "last_publish_attempt": {
@@ -147,9 +147,24 @@
     "attempted_at": "2026-11-26T01:37:48Z",
     "status": "cadence_hold",
     "confirmed_publications": 0,
-    "instagram": {"status": "cadence_hold", "feed_allowed": false, "available_slots": 0, "next_feed_eligible_at": "2026-11-26T02:44:14.077Z"},
-    "threads": {"status": "cadence_hold", "quota_used": 4, "quota_limit": 250, "cadence_minutes": 90},
+    "instagram": {
+      "status": "cadence_hold",
+      "feed_allowed": false,
+      "available_slots": 0,
+      "next_feed_eligible_at": "2026-11-26T02:44:14.077Z"
+    },
+    "threads": {
+      "status": "cadence_hold",
+      "quota_used": 4,
+      "quota_limit": 250,
+      "cadence_minutes": 90
+    },
     "retry_safe": true
   },
-  "retry_safe": true
+  "retry_safe": true,
+  "published_at": "2026-11-26T02:50:49.510Z",
+  "instagram_verified_at": "2026-11-26T02:50:49.957Z",
+  "threads_status": "published",
+  "threads_published_at": "2026-11-26T02:55:25.107Z",
+  "threads_verified_at": "2026-11-26T02:55:25.440Z"
 }

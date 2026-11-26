@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T06:57:28.949Z",
+  "checked_at": "2026-11-26T07:02:34.428Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -56,6 +56,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T07:37:08.674Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind.json",
+      "id": "2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; media refresh required after 3 failed containers"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

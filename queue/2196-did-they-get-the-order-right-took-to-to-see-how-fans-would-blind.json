@@ -65,12 +65,14 @@
   "threads_story_status": "not_supported",
   "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
   "media_cleanup_status": "pending",
-  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind.mp4' -> '/home/runner/.Trash/RapWire-1795675043649-2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind.mp4'",
-  "instagram_story_container_created_at": "2026-11-26T05:21:32.841Z",
-  "instagram_story_status": "failed",
+  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind.mp4' -> '/home/runner/.Trash/RapWire-1795675343241-2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind.mp4'",
+  "instagram_story_container_created_at": "2026-11-26T06:42:20.906Z",
+  "instagram_story_status": "pending",
   "instagram_story_container_status": "ERROR",
   "instagram_story_error": "instagram_story: ERROR; retry after 2026-11-26T06:41:45.156Z: Error: Media upload has failed with error code 2207032",
   "instagram_story_retry_at": "2026-11-26T06:41:45.156Z",
   "instagram_story_container_failures": 2,
-  "instagram_story_previous_container_id": "18121250123078478"
+  "instagram_story_previous_container_id": "18121250123078478",
+  "instagram_story_container_id": "18121253033078478",
+  "instagram_story_container_checked_at": "2026-11-26T06:42:20.906Z"
 }

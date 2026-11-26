@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T23:42:59.955Z",
+  "checked_at": "2026-11-26T23:47:54.866Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-26T23:32:50.059Z",
-    "usage": 11,
+    "checked_at": "2026-11-26T23:47:53.996Z",
+    "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-26T23:47:50.059Z",
+    "next_check_at": "2026-11-27T00:02:53.996Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -27,7 +27,7 @@
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
     "instagram_usage": 10,
-    "platform_quota_usage": 11,
+    "platform_quota_usage": 10,
     "instagram_remaining": 2,
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-27T00:02:22.317Z",
@@ -35,8 +35,8 @@
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,33 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-26T23:32:48.594Z",
-    "usage": 16,
+    "checked_at": "2026-11-26T23:47:54.652Z",
+    "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-26T23:47:48.594Z",
+    "next_check_at": "2026-11-27T00:02:54.652Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T01:12:58.743Z",
-  "publications": [
-    {
-      "file": "2209-phil-lewis-best-known-for-bringing-the-unforgettable-mr-moseby-t.json",
-      "id": "2209-phil-lewis-best-known-for-bringing-the-unforgettable-mr-moseby-t",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17968356651239479"
-    }
-  ],
-  "failures": [
-    {
-      "file": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m.json",
-      "id": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-11-27T00:42:59.233Z: Error: Media upload has failed with error code 2207032"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

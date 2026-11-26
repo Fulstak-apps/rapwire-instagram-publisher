@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T06:12:07.237Z",
+  "checked_at": "2026-11-26T06:17:12.917Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -56,6 +56,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T07:37:08.674Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "2197-wack-100-speaks-on-chrisean-rock.json",
+      "id": "2197-wack-100-speaks-on-chrisean-rock",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-11-26T06:47:12.599Z: Error: Media upload has failed with error code 2207085"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

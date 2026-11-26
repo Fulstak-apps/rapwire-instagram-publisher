@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T07:48:09.068Z",
+  "checked_at": "2026-11-26T07:53:14.602Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -29,13 +29,13 @@
     "instagram_usage": 11,
     "platform_quota_usage": 11,
     "instagram_remaining": 1,
-    "reserved_story_slots": 1,
+    "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-26T09:08:12.521Z",
     "next_budget_eligible_at": null,
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -56,14 +56,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T09:13:06.815Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "2198-ateez-answered-our-rapid-fire-questions-about-googling-themselve.json",
-      "id": "2198-ateez-answered-our-rapid-fire-questions-about-googling-themselve",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "media_publish failed: {\"error\":{\"message\":\"Fatal\",\"code\":-1,\"type\":\"OAuthException\",\"error_subcode\":2207032,\"is_transient\":false,\"error_user_msg\":\"Create media fail, please try to re-create media\",\"error_user_title\":\"Cannot Create Media\",\"fbtrace_id\":\"A35H1HCAtI4DdiIWqd5UM3i\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

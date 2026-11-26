@@ -140,8 +140,16 @@
   "instagram_permalink": null,
   "threads_media_id": null,
   "threads_permalink": null,
-  "publish_blocked": null,
-  "publish_attempts": 0,
-  "last_publish_attempt": null,
+  "publish_blocked": "cadence_hold",
+  "publish_attempts": 1,
+  "last_publish_attempt": {
+    "workflow_run_id": "45736965710",
+    "attempted_at": "2026-11-26T01:37:48Z",
+    "status": "cadence_hold",
+    "confirmed_publications": 0,
+    "instagram": {"status": "cadence_hold", "feed_allowed": false, "available_slots": 0, "next_feed_eligible_at": "2026-11-26T02:44:14.077Z"},
+    "threads": {"status": "cadence_hold", "quota_used": 4, "quota_limit": 250, "cadence_minutes": 90},
+    "retry_safe": true
+  },
   "retry_safe": true
 }

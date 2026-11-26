@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T07:02:34.428Z",
+  "checked_at": "2026-11-26T07:07:41.487Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-26T06:52:29.599Z",
+    "checked_at": "2026-11-26T07:07:40.626Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-26T07:07:29.599Z",
+    "next_check_at": "2026-11-26T07:22:40.626Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -58,11 +58,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind.json",
-      "id": "2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind",
+      "file": "2197-wack-100-speaks-on-chrisean-rock.json",
+      "id": "2197-wack-100-speaks-on-chrisean-rock",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; media refresh required after 3 failed containers"
+      "error": "instagram_story: ERROR; retry after 2026-11-26T08:07:40.846Z: Error: Media upload has failed with error code 2207085"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

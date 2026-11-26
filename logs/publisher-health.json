@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T04:26:18.061Z",
+  "checked_at": "2026-11-26T04:31:09.622Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-26T04:26:06.123Z",
+    "checked_at": "2026-11-26T04:31:08.280Z",
     "usage": 9,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-26T04:41:06.123Z",
+    "next_check_at": "2026-11-26T04:46:08.280Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,13 +26,13 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 8,
-    "platform_quota_usage": 8,
-    "instagram_remaining": 4,
-    "reserved_story_slots": 0,
+    "instagram_usage": 9,
+    "platform_quota_usage": 9,
+    "instagram_remaining": 3,
+    "reserved_story_slots": 1,
     "next_feed_eligible_at": "2026-11-26T05:56:16.239Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-11-26T04:20:57.365Z",
-    "usage": 5,
+    "usage": 6,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-11-26T04:35:57.365Z",
@@ -54,15 +54,14 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-11-26T04:25:25.107Z",
+  "threads_next_eligible_at": "2026-11-26T06:01:06.997Z",
   "publications": [
     {
-      "file": "2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind.json",
-      "id": "2196-did-they-get-the-order-right-took-to-to-see-how-fans-would-blind",
-      "platform": "instagram",
+      "file": "2197-wack-100-speaks-on-chrisean-rock.json",
+      "id": "2197-wack-100-speaks-on-chrisean-rock",
+      "platform": "threads",
       "status": "published",
-      "media_id": "18081043022756128",
-      "content_type": "video"
+      "media_id": "18355866175284082"
     }
   ],
   "failures": [],

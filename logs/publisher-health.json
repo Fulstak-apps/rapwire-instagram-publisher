@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T17:14:01.072Z",
+  "checked_at": "2026-11-26T17:19:12.920Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-11-26T17:08:55.251Z",
-    "usage": 13,
+    "usage": 14,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-11-26T17:23:55.251Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-11-26T17:13:05.962Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-11-26T18:49:12.487Z",
+  "publications": [
+    {
+      "file": "2205-which-joe-are-you-picking-on-sound-check-put-and-to-the-test-wit.json",
+      "id": "2205-which-joe-are-you-picking-on-sound-check-put-and-to-the-test-wit",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18118971089026123"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

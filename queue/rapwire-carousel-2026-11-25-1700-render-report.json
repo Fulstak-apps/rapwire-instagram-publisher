@@ -1,0 +1,15 @@
+{
+  "batch_id": "rapwire-carousel-2026-11-25-1700",
+  "full_resolution_checked": true,
+  "canvas": "1080x1350",
+  "slides": [
+    {"slide": 1, "headline_font_size_px": 108, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "subject_visible": "SadBoi / Toronto signing stage", "headroom_px": 160, "top_banner": false, "logo_backing": false, "notes": "Upper-left text zone; face, hair, microphone, signing hand and Toronto skyline remain unobstructed."},
+    {"slide": 2, "headline_font_size_px": 108, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "subject_visible": "GloRilla / Memphis turkey drive", "headroom_px": 160, "top_banner": false, "logo_backing": false, "notes": "Upper-left text zone; face, hair, hands, turkey box and community scene remain unobstructed."},
+    {"slide": 3, "headline_font_size_px": 108, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "subject_visible": "Houston rap culture / DJ and skyline", "headroom_px": 160, "top_banner": false, "logo_backing": false, "notes": "Upper-left text zone; Houston skyline, DJ face, hands, turntable and car remain visible."},
+    {"slide": 4, "headline_font_size_px": 108, "deck_font_size_px": 42, "headline_present": true, "deck_present": true, "subject_visible": "GTA VI / Vice City QR-code scene", "headroom_px": 160, "top_banner": false, "logo_backing": false, "notes": "Upper-left text zone; character face, hands, QR poster and phone remain visible."},
+    {"slide": 5, "headline_font_size_px": 100, "deck_font_size_px": 40, "headline_present": true, "deck_present": true, "subject_visible": "Rockstar Games / GTA VI HUD-NPC design room", "headroom_px": 160, "top_banner": false, "logo_backing": false, "notes": "Upper-left text zone tightened to preserve the HUD monitor; designer face, hands, NPC boards and monitor remain visible."}
+  ],
+  "visual_contract_result": "pass",
+  "brand_logo": {"asset": "assets/rapwire247-logo.png", "position": "bottom-left", "transparent_background": true, "backing_shape": "none"},
+  "qa_notes": "All five 1080x1350 PNGs were inspected at full resolution after compositing. No opaque or translucent top bar, no backing panel, no clipped heads or hands, no generic typography-only art, and no logo backing detected. All explanatory decks are at least 40px and all headlines are at least 96px."
+}

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T22:07:07.911Z",
+  "checked_at": "2026-11-26T22:12:04.278Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T23:37:07.566Z",
-  "publications": [
-    {
-      "file": "2208-the-marathon-will-never-end-the-prolific-album-documentary-tells.json",
-      "id": "2208-the-marathon-will-never-end-the-prolific-album-documentary-tells",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18122548175067798"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

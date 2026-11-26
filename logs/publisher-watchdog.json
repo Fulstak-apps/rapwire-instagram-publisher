@@ -3,7 +3,7 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
+  "overdue": true,
   "cap_held": false,
   "health_stale": false,
   "processing": [],
@@ -12,8 +12,6 @@
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "2197-wack-100-speaks-on-chrisean-rock",
-    "2198-ateez-answered-our-rapid-fire-questions-about-googling-themselve",
     "2199-travis-scott-s-new-song-burn-this-sh-t-down-from-gta-vi-story-mo",
     "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m",
     "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch",
@@ -59,10 +57,12 @@
     "2241-what-they-found-in-yella-beezy-s-icloud-could-set-him-free-new-b",
     "2242-never-realised-how-crazy-the-bassline-was-on-this-when-gucci-man",
     "2243-blueface-is-making-headlines-once-again-but-this-time-it-s-his-l",
-    "2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-"
+    "2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-",
+    "2245-this-week-was-the-18th-year-anniversary-of-kanye-west-s-808s-hea",
+    "2246-this-is-a-top-10-jid-song-got-the-story-behind-one-of-s-best-ver"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-11-26T05:11:55.618Z",
+  "checked_at": "2026-11-26T15:08:00.057Z",
   "deferred": []
 }

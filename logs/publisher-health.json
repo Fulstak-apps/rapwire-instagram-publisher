@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T15:43:06.442Z",
+  "checked_at": "2026-11-26T15:48:05.076Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T17:13:05.962Z",
-  "publications": [
-    {
-      "file": "2204-lil-baby-says-this-is-exactly-how-this-viral-moment-with-james-h.json",
-      "id": "2204-lil-baby-says-this-is-exactly-how-this-viral-moment-with-james-h",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18128240939298829"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

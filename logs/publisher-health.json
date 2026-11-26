@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T01:24:20.809Z",
+  "checked_at": "2026-11-26T01:29:11.186Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 6,
-    "platform_quota_usage": 6,
-    "instagram_remaining": 6,
-    "reserved_story_slots": 1,
+    "instagram_usage": 7,
+    "platform_quota_usage": 7,
+    "instagram_remaining": 5,
+    "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-26T02:44:14.077Z",
     "next_budget_eligible_at": null,
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T02:49:17.244Z",
-  "publications": [
-    {
-      "file": "2195-tay-k-drops-a-music-video-for-chitchat-from-his-album-monstersun.json",
-      "id": "2195-tay-k-drops-a-music-video-for-chitchat-from-his-album-monstersun",
-      "platform": "instagram_story",
-      "status": "published",
-      "media_id": "17900324841412153"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

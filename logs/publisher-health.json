@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T23:32:55.037Z",
+  "checked_at": "2026-11-26T23:37:51.716Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -29,14 +29,14 @@
     "instagram_usage": 11,
     "platform_quota_usage": 11,
     "instagram_remaining": 1,
-    "reserved_story_slots": 1,
+    "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-27T00:02:22.317Z",
     "next_budget_eligible_at": null,
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 0,
+  "instagram_steps": 0,
+  "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -56,14 +56,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-26T23:37:07.566Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m.json",
-      "id": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "media_publish failed: {\"error\":{\"message\":\"Fatal\",\"code\":-1,\"type\":\"OAuthException\",\"error_subcode\":2207032,\"is_transient\":false,\"error_user_msg\":\"Create media fail, please try to re-create media\",\"error_user_title\":\"Cannot Create Media\",\"fbtrace_id\":\"AQUERoe6CVGnaOj0FyD2Kvr\"}}"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

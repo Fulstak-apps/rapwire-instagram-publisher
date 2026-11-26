@@ -3,17 +3,15 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": true,
+  "overdue": false,
   "cap_held": false,
   "health_stale": false,
   "processing": [],
   "blocked": false,
   "threads_pending": true,
-  "threads_video_overdue": true,
+  "threads_video_overdue": false,
   "threads_blocked": false,
   "ready": [
-    "2199-travis-scott-s-new-song-burn-this-sh-t-down-from-gta-vi-story-mo",
-    "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m",
     "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch",
     "2202-na-we-might-need-bu-to-help-us-save-hiphop-he-one-of-the-last-re",
     "2203-rick-ross-urges-grand-theft-auto-vi-players-to-find-his-miami-ma",
@@ -59,10 +57,12 @@
     "2243-blueface-is-making-headlines-once-again-but-this-time-it-s-his-l",
     "2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-",
     "2245-this-week-was-the-18th-year-anniversary-of-kanye-west-s-808s-hea",
-    "2246-this-is-a-top-10-jid-song-got-the-story-behind-one-of-s-best-ver"
+    "2246-this-is-a-top-10-jid-song-got-the-story-behind-one-of-s-best-ver",
+    "2247-eating-on-thanksgiving-and-the-instrumental-lists-some-of-his-fa",
+    "2248-ll-cool-j-says-he-knocked-jamie-foxx-out-cold-while-filming-any-"
   ],
-  "dispatch": true,
-  "reason": "missed_threads_video_window",
-  "checked_at": "2026-11-26T15:08:00.057Z",
+  "dispatch": false,
+  "reason": "within_pacing_window",
+  "checked_at": "2026-11-26T23:46:33.018Z",
   "deferred": []
 }

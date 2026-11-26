@@ -1,6 +1,6 @@
 {
   "batch_id": "rapwire-carousel-2026-11-25-1700",
-  "status": "ready",
+  "status": "paused",
   "scheduled_local_time": "2026-11-25 17:00:00 America/Los_Angeles",
   "publish_after": "2026-11-26T01:00:00Z",
   "publish_attempts": 1,
@@ -16,8 +16,19 @@
     "attempted_at": "2026-11-26T01:37:48Z",
     "status": "cadence_hold",
     "confirmed_publications": 0,
-    "instagram": {"status": "cadence_hold", "feed_allowed": false, "available_slots": 0, "next_feed_eligible_at": "2026-11-26T02:44:14.077Z"},
-    "threads": {"status": "cadence_hold", "quota_used": 4, "quota_limit": 250, "cadence_minutes": 90},
+    "instagram": {
+      "status": "cadence_hold",
+      "feed_allowed": false,
+      "available_slots": 0,
+      "next_feed_eligible_at": "2026-11-26T02:44:14.077Z"
+    },
+    "threads": {
+      "status": "cadence_hold",
+      "quota_used": 4,
+      "quota_limit": 250,
+      "cadence_minutes": 90
+    },
     "retry_safe": true
-  }
+  },
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

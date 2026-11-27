@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T09:07:00.985Z",
+  "checked_at": "2026-11-27T09:11:52.466Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,15 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T10:37:00.490Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "2213-the-tribute-we-didn-t-know-we-needed-teamed-up-with-to-pay-tribu.json",
-      "id": "2213-the-tribute-we-didn-t-know-we-needed-teamed-up-with-to-pay-tribu",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17913586557572216"
+      "file": "2202-na-we-might-need-bu-to-help-us-save-hiphop-he-one-of-the-last-re.json",
+      "id": "2202-na-we-might-need-bu-to-help-us-save-hiphop-he-one-of-the-last-re",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; media refresh required after 3 failed containers"
     }
   ],
-  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

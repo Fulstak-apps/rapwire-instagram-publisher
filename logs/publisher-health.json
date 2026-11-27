@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T05:12:13.146Z",
+  "checked_at": "2026-11-27T05:17:24.110Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-27T05:12:11.456Z",
+    "checked_at": "2026-11-27T05:17:16.638Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-27T05:27:11.456Z",
+    "next_check_at": "2026-11-27T05:32:16.638Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-27T05:02:05.607Z",
+    "checked_at": "2026-11-27T05:17:12.858Z",
     "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-27T05:17:05.607Z",
+    "next_check_at": "2026-11-27T05:32:12.858Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T05:58:22.066Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.json",
+      "id": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "media_publish failed: {\"error\":{\"message\":\"Fatal\",\"code\":-1,\"type\":\"OAuthException\",\"error_subcode\":2207032,\"is_transient\":false,\"error_user_msg\":\"Create media fail, please try to re-create media\",\"error_user_title\":\"Cannot Create Media\",\"fbtrace_id\":\"AciGUycNZZ38FzZCeVRfiYZ\"}}"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

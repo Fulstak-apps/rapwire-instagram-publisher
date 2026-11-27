@@ -147,9 +147,29 @@
   "threads_text": "GTA VI's record launch, Rockstar's first patch, Houston rap's streaming surge, Angie Martinez's Tupac tapes and Denzel Curry's DWNPLY role.\n\n@Rapwire247",
   "threads_story_note": "Carousel copy mirrors the public caption; retry-safe until both platform IDs and permalinks are recorded.",
   "threads_story_status": "pending",
-  "last_publish_attempt": null,
-  "publish_attempts": 0,
-  "publish_blocked": null,
+  "last_publish_attempt": {
+    "workflow_run_id": "46034135953",
+    "attempted_at": "2026-11-27T16:30:44Z",
+    "status": "cadence_hold",
+    "confirmed_publications": 0,
+    "instagram": {
+      "status": "cadence_hold",
+      "feed_allowed": false,
+      "available_slots": 0,
+      "next_feed_eligible_at": "2026-11-27T13:59:05.864Z",
+      "note": "Publisher log reported zero feed slots at start; rolling-day budget/capacity held the feed lane."
+    },
+    "threads": {
+      "status": "cadence_hold",
+      "quota_used": 13,
+      "quota_limit": 250,
+      "cadence_minutes": 90,
+      "note": "Threads capacity was available, but the separate 90-minute publishing cadence held this batch."
+    },
+    "retry_safe": true
+  },
+  "publish_attempts": 1,
+  "publish_blocked": "cadence_hold",
   "retry_safe": true,
   "layout_template": "rapwire-unified-v3",
   "rendered_body_text": "RapWire's Nov. 27 morning carousel covers GTA VI's day-one sales record, Rockstar's first launch patch, Houston rap's streaming surge, Angie Martinez's Tupac interview event and Denzel Curry's DWNPLY role. Each slide pairs current verification with original late-1980s editorial-comic art, readable headline/deck layers, a visible actual subject and the official transparent RapWire mark."

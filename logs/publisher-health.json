@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T13:54:42.163Z",
+  "checked_at": "2026-11-27T13:59:40.261Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T15:24:41.552Z",
-  "publications": [
-    {
-      "file": "2216-what-they-found-in-yella-beezy-s-icloud-could-set-him-free-new-b.json",
-      "id": "2216-what-they-found-in-yella-beezy-s-icloud-could-set-him-free-new-b",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18097252898677497"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

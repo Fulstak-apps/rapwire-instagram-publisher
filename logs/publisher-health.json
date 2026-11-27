@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T22:17:29.488Z",
+  "checked_at": "2026-11-27T22:22:38.910Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-27T22:07:18.014Z",
-    "usage": 12,
+    "checked_at": "2026-11-27T22:22:33.092Z",
+    "usage": 13,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-27T22:22:18.014Z",
+    "next_check_at": "2026-11-27T22:37:33.092Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-11-27T22:11:37.020Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-11-27T23:52:38.517Z",
+  "publications": [
+    {
+      "file": "2230-detroit-rapper-peezy-was-getting-active-recently.json",
+      "id": "2230-detroit-rapper-peezy-was-getting-active-recently",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "17913747924665451"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

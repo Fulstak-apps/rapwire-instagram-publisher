@@ -1,6 +1,6 @@
 {
   "id": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch",
-  "status": "published",
+  "status": "media_refresh_required",
   "publish_priority": 50,
   "date": "2026-11-25",
   "timezone": "America/Detroit",
@@ -68,11 +68,9 @@
   "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.mp4' -> '/home/runner/.Trash/RapWire-1795765557531-2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.mp4'",
   "instagram_story_container_created_at": "2026-11-27T07:30:56.791Z",
   "instagram_story_status": "failed",
-  "instagram_story_container_status": "FINISHED",
-  "instagram_story_error": "media_publish failed: {\"error\":{\"message\":\"Fatal\",\"code\":-1,\"type\":\"OAuthException\",\"error_subcode\":2207032,\"is_transient\":false,\"error_user_msg\":\"Create media fail, please try to re-create media\",\"error_user_title\":\"Cannot Create Media\",\"fbtrace_id\":\"ACPMBwLNWnqYwdlxQcabQee\"}}",
-  "instagram_story_retry_at": "2026-11-27T07:50:59.962Z",
-  "instagram_story_container_failures": 2,
-  "instagram_story_previous_container_id": "18121331558078478",
-  "instagram_story_container_id": "18121338812078478",
-  "instagram_story_container_checked_at": "2026-11-27T07:40:53.918Z"
+  "instagram_story_container_status": "ERROR",
+  "instagram_story_error": "instagram_story: ERROR; media refresh required after 3 failed containers",
+  "instagram_story_retry_at": "2026-11-27T13:51:13.661Z",
+  "instagram_story_container_failures": 3,
+  "instagram_story_previous_container_id": "18121338812078478"
 }

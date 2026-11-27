@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T07:45:57.954Z",
+  "checked_at": "2026-11-27T07:51:14.019Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -58,11 +58,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "2202-na-we-might-need-bu-to-help-us-save-hiphop-he-one-of-the-last-re.json",
-      "id": "2202-na-we-might-need-bu-to-help-us-save-hiphop-he-one-of-the-last-re",
+      "file": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.json",
+      "id": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-11-27T08:45:57.532Z: Error: Media upload has failed with error code 2207032"
+      "error": "instagram_story: ERROR; media refresh required after 3 failed containers"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

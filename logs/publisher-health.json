@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T04:28:22.531Z",
+  "checked_at": "2026-11-27T04:36:45.198Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,17 +26,17 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 6,
-    "platform_quota_usage": 6,
-    "instagram_remaining": 6,
+    "instagram_usage": 7,
+    "platform_quota_usage": 7,
+    "instagram_remaining": 5,
     "reserved_story_slots": 1,
     "next_feed_eligible_at": "2026-11-27T05:58:15.129Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
   "instagram_steps": 1,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,23 +55,15 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T05:58:22.066Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "2202-na-we-might-need-bu-to-help-us-save-hiphop-he-one-of-the-last-re.json",
-      "id": "2202-na-we-might-need-bu-to-help-us-save-hiphop-he-one-of-the-last-re",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "17923917957240572",
-      "content_type": "video"
-    },
-    {
-      "file": "2211-what-they-found-in-yella-beezy-s-icloud-could-set-him-free-new-b.json",
-      "id": "2211-what-they-found-in-yella-beezy-s-icloud-could-set-him-free-new-b",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17919602889507267"
+      "file": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m.json",
+      "id": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; media refresh required after 3 failed containers"
     }
   ],
-  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

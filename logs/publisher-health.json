@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T12:18:51.908Z",
+  "checked_at": "2026-11-27T12:23:48.731Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-27T12:18:45.756Z",
+    "checked_at": "2026-11-27T12:23:46.839Z",
     "usage": 10,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-27T12:33:45.756Z",
+    "next_check_at": "2026-11-27T12:38:46.839Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -32,11 +32,11 @@
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-27T12:23:13.904Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,25 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-27T12:08:32.773Z",
+    "checked_at": "2026-11-27T12:23:46.009Z",
     "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-27T12:23:32.773Z",
+    "next_check_at": "2026-11-27T12:38:46.009Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T13:48:51.626Z",
-  "publications": [
-    {
-      "file": "2215-black-friday-sale-is-live-70-off-sneakers-apparel-collectibles-a.json",
-      "id": "2215-black-friday-sale-is-live-70-off-sneakers-apparel-collectibles-a",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18012541319781378"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

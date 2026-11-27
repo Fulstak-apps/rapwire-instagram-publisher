@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T04:36:45.198Z",
+  "checked_at": "2026-11-27T04:41:44.835Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -58,11 +58,11 @@
   "publications": [],
   "failures": [
     {
-      "file": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m.json",
-      "id": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m",
+      "file": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.json",
+      "id": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch",
       "platform": "instagram_story",
       "status": "failed",
-      "error": "instagram_story: ERROR; media refresh required after 3 failed containers"
+      "error": "instagram_story: ERROR; retry after 2026-11-27T05:11:44.260Z: Error: Media upload has failed with error code 2207032"
     }
   ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."

@@ -65,12 +65,12 @@
   "threads_story_status": "not_supported",
   "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
   "media_cleanup_status": "pending",
-  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.mp4' -> '/home/runner/.Trash/RapWire-1795754205134-2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.mp4'",
-  "instagram_story_container_id": "18121313498078478",
+  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.mp4' -> '/home/runner/.Trash/RapWire-1795754504772-2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.mp4'",
   "instagram_story_container_created_at": "2026-11-27T00:13:16.605Z",
-  "instagram_story_container_checked_at": "2026-11-27T00:18:23.448Z",
   "instagram_story_status": "failed",
-  "instagram_story_container_status": "FINISHED",
-  "instagram_story_error": "media_publish failed: {\"error\":{\"message\":\"Fatal\",\"code\":-1,\"type\":\"OAuthException\",\"error_subcode\":2207032,\"is_transient\":false,\"error_user_msg\":\"Create media fail, please try to re-create media\",\"error_user_title\":\"Cannot Create Media\",\"fbtrace_id\":\"AdZDL37ff6z0QUCoULs9CkV\"}}",
-  "instagram_story_retry_at": "2026-11-27T00:28:32.283Z"
+  "instagram_story_container_status": "ERROR",
+  "instagram_story_error": "instagram_story: ERROR; retry after 2026-11-27T05:11:44.260Z: Error: Media upload has failed with error code 2207032",
+  "instagram_story_retry_at": "2026-11-27T05:11:44.260Z",
+  "instagram_story_container_failures": 1,
+  "instagram_story_previous_container_id": "18121313498078478"
 }

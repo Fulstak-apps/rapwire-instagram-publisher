@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T18:48:43.209Z",
+  "checked_at": "2026-11-27T18:53:37.326Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": false
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T20:18:42.438Z",
-  "publications": [
-    {
-      "file": "2221-nipsey-hussle-s-neighborhood-nip-foundation-and-think-watts-pull.json",
-      "id": "2221-nipsey-hussle-s-neighborhood-nip-foundation-and-think-watts-pull",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18183558241449677"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T08:01:26.443Z",
+  "checked_at": "2026-11-27T08:06:21.209Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 6,
-    "platform_quota_usage": 6,
-    "instagram_remaining": 6,
-    "reserved_story_slots": 1,
+    "instagram_usage": 7,
+    "platform_quota_usage": 7,
+    "instagram_remaining": 5,
+    "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-27T09:06:06.005Z",
     "next_budget_eligible_at": null,
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T09:00:56.477Z",
-  "publications": [
-    {
-      "file": "2203-rick-ross-urges-grand-theft-auto-vi-players-to-find-his-miami-ma.json",
-      "id": "2203-rick-ross-urges-grand-theft-auto-vi-players-to-find-his-miami-ma",
-      "platform": "instagram_story",
-      "status": "published",
-      "media_id": "18117079880165657"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T12:39:11.860Z",
+  "checked_at": "2026-11-27T12:43:51.789Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 11,
-    "platform_quota_usage": 11,
-    "instagram_remaining": 1,
-    "reserved_story_slots": 1,
+    "instagram_usage": 12,
+    "platform_quota_usage": 12,
+    "instagram_remaining": 0,
+    "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-27T13:59:05.864Z",
-    "next_budget_eligible_at": null,
+    "next_budget_eligible_at": "2026-11-27T19:45:46.262Z",
     "feed_allowed": false,
-    "story_allowed": true
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T13:48:51.626Z",
-  "publications": [
-    {
-      "file": "2207-king-von-sister-kayla-is-making-sure-her-brother-s-legacy-contin.json",
-      "id": "2207-king-von-sister-kayla-is-making-sure-her-brother-s-legacy-contin",
-      "platform": "instagram_story",
-      "status": "published",
-      "media_id": "17904039723388835"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

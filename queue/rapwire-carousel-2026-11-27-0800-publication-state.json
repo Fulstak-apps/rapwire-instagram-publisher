@@ -1,6 +1,6 @@
 {
   "batch_id": "rapwire-carousel-2026-11-27-0800",
-  "status": "ready",
+  "status": "paused",
   "scheduled_local_time": "2026-11-27 08:00:00 America/Los_Angeles",
   "publish_after": "2026-11-27T16:00:00Z",
   "publish_attempts": 1,
@@ -31,5 +31,6 @@
       "note": "Threads capacity was available, but the separate 90-minute publishing cadence held this batch."
     },
     "retry_safe": true
-  }
+  },
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

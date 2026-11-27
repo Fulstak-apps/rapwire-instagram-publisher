@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T10:37:44.013Z",
+  "checked_at": "2026-11-27T10:42:51.484Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -46,7 +46,7 @@
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
     "checked_at": "2026-11-27T10:32:46.824Z",
-    "usage": 13,
+    "usage": 14,
     "total": 250,
     "blocked": false,
     "next_check_at": "2026-11-27T10:47:46.824Z",
@@ -54,8 +54,16 @@
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-11-27T10:37:00.490Z",
-  "publications": [],
+  "threads_next_eligible_at": "2026-11-27T12:12:51.021Z",
+  "publications": [
+    {
+      "file": "2214-jaleec-got-into-it-w-adrien-broner-wife-over-her-giving-yaya-may.json",
+      "id": "2214-jaleec-got-into-it-w-adrien-broner-wife-over-her-giving-yaya-may",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18073799114504958"
+    }
+  ],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

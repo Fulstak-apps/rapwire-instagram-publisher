@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T05:27:20.692Z",
+  "checked_at": "2026-11-27T05:32:26.483Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-27T05:17:16.638Z",
+    "checked_at": "2026-11-27T05:32:25.021Z",
     "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-27T05:32:16.638Z",
+    "next_check_at": "2026-11-27T05:47:25.021Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,13 +29,13 @@
     "instagram_usage": 7,
     "platform_quota_usage": 7,
     "instagram_remaining": 5,
-    "reserved_story_slots": 0,
+    "reserved_story_slots": 1,
     "next_feed_eligible_at": "2026-11-27T05:58:15.129Z",
     "next_budget_eligible_at": null,
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,17 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-27T05:17:12.858Z",
+    "checked_at": "2026-11-27T05:32:25.530Z",
     "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-27T05:32:12.858Z",
+    "next_check_at": "2026-11-27T05:47:25.530Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T05:58:22.066Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.json",
+      "id": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-11-27T06:32:25.824Z: Error: Media upload has failed with error code 2207032"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

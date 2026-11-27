@@ -3,8 +3,8 @@
   "reserve_hours": 24,
   "reserve_low": false,
   "queue_empty": false,
-  "overdue": false,
-  "cap_held": false,
+  "overdue": true,
+  "cap_held": true,
   "health_stale": false,
   "processing": [],
   "blocked": false,
@@ -12,11 +12,6 @@
   "threads_video_overdue": true,
   "threads_blocked": false,
   "ready": [
-    "2203-rick-ross-urges-grand-theft-auto-vi-players-to-find-his-miami-ma",
-    "2204-lil-baby-says-this-is-exactly-how-this-viral-moment-with-james-h",
-    "2205-which-joe-are-you-picking-on-sound-check-put-and-to-the-test-wit",
-    "2206-rapper-sluggatee-speaks-on-lilpoppa-passing-and-the-impact-his-d",
-    "2207-king-von-sister-kayla-is-making-sure-her-brother-s-legacy-contin",
     "2208-the-marathon-will-never-end-the-prolific-album-documentary-tells",
     "2209-phil-lewis-best-known-for-bringing-the-unforgettable-mr-moseby-t",
     "2210-thee-shopkeep-isn-t-letting-anything-get-past-her-netflix-tapped",
@@ -59,10 +54,15 @@
     "2247-eating-on-thanksgiving-and-the-instrumental-lists-some-of-his-fa",
     "2248-ll-cool-j-says-he-knocked-jamie-foxx-out-cold-while-filming-any-",
     "2249-family-can-wait-gta6",
-    "2250-ari-apologizes-to-money-bagg-yo"
+    "2250-ari-apologizes-to-money-bagg-yo",
+    "2251-eminem-showed-anderson-cooper-how-to-rhyme-orange-on-60-minutes-",
+    "2252-ohgeesy-spreads-love-on-thanksgiving-by-giving-back-to-the-commu",
+    "2253-adrien-broner-is-going-viral-for-showing-off-the-dish-he-spent-a",
+    "2254-adrienbroner-is-going-viral-again-after-an-encounter-with-one-of",
+    "2255-kaicenat-was-spotted-celebrating-thanksgiving-alongside-his-girl"
   ],
   "dispatch": true,
   "reason": "missed_threads_video_window",
-  "checked_at": "2026-11-27T05:23:40.996Z",
+  "checked_at": "2026-11-27T15:20:49.581Z",
   "deferred": []
 }

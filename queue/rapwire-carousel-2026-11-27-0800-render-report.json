@@ -1,0 +1,75 @@
+{
+  "batch_id": "rapwire-carousel-2026-11-27-0800",
+  "full_resolution_checked": true,
+  "canvas": "1080x1350",
+  "slides": [
+    {
+      "slide": 1,
+      "headline_font_size_px": 108,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "subject_visible": "Jason and Lucia at GTA VI launch event",
+      "headroom_px": 180,
+      "top_banner": false,
+      "logo_backing": false,
+      "notes": "Upper-left title/deck zone; both faces, hair, hands and crowd remain unobstructed."
+    },
+    {
+      "slide": 2,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "subject_visible": "Jason and Lucia in rain-soaked Vice City checkpoint",
+      "headroom_px": 180,
+      "top_banner": false,
+      "logo_backing": false,
+      "notes": "Upper-left title/deck zone; both heads, phone, hands and mission marker remain unobstructed."
+    },
+    {
+      "slide": 3,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "subject_visible": "Mike Jones / Houston car-radio revival",
+      "headroom_px": 180,
+      "top_banner": false,
+      "logo_backing": false,
+      "notes": "Upper-left title/deck zone; artist face, hands, radio, car and vinyl remain visible."
+    },
+    {
+      "slide": 4,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "subject_visible": "Tupac Shakur and Angie Martinez radio interview",
+      "headroom_px": 180,
+      "top_banner": false,
+      "logo_backing": false,
+      "notes": "Upper-left title/deck zone; both faces, microphones, hands and tape machine remain unobstructed."
+    },
+    {
+      "slide": 5,
+      "headline_font_size_px": 104,
+      "deck_font_size_px": 42,
+      "headline_present": true,
+      "deck_present": true,
+      "subject_visible": "Denzel Curry / DWNPLY studio crossover",
+      "headroom_px": 180,
+      "top_banner": false,
+      "logo_backing": false,
+      "notes": "Upper-left title/deck zone; artist face, hair, hands, microphone and fictional avatar remain visible."
+    }
+  ],
+  "visual_contract_result": "pass",
+  "brand_logo": {
+    "asset": "assets/rapwire247-logo.png",
+    "position": "bottom-left",
+    "transparent_background": true,
+    "backing_shape": "none"
+  },
+  "qa_notes": "All five PNGs were inspected at full resolution after compositing. No opaque or translucent top bar, no backing panel, no clipped heads or hands, no generic typography-only art, and no logo backing detected. All explanatory decks are at least 40px and all headlines are at least 96px."
+}

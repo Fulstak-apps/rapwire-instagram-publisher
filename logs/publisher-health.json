@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T22:46:32.343Z",
+  "checked_at": "2026-11-27T22:47:46.643Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-11-27T22:46:22.635Z",
     "usage": 12,
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 11,
-    "platform_quota_usage": 11,
-    "instagram_remaining": 1,
-    "reserved_story_slots": 1,
+    "instagram_usage": 12,
+    "platform_quota_usage": 12,
+    "instagram_remaining": 0,
+    "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-28T00:07:56.306Z",
-    "next_budget_eligible_at": null,
+    "next_budget_eligible_at": "2026-11-28T00:08:30.786Z",
     "feed_allowed": false,
-    "story_allowed": true
+    "story_allowed": false
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T23:52:38.517Z",
-  "publications": [
-    {
-      "file": "2231-rozay-and-his-bm-on-stage.json",
-      "id": "2231-rozay-and-his-bm-on-stage",
-      "platform": "instagram_story",
-      "status": "published",
-      "media_id": "18513235753099887"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

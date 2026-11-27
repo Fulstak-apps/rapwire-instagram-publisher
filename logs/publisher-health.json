@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T10:42:51.484Z",
+  "checked_at": "2026-11-27T10:47:51.986Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-27T10:27:45.934Z",
+    "checked_at": "2026-11-27T10:47:50.354Z",
     "usage": 8,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-27T10:42:45.934Z",
+    "next_check_at": "2026-11-27T11:02:50.354Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -32,11 +32,11 @@
     "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-27T10:47:10.761Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": false,
+    "feed_allowed": true,
     "story_allowed": true
   },
-  "instagram_steps": 0,
-  "threads_steps": 1,
+  "instagram_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,25 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-27T10:32:46.824Z",
+    "checked_at": "2026-11-27T10:47:49.508Z",
     "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-27T10:47:46.824Z",
+    "next_check_at": "2026-11-27T11:02:49.508Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T12:12:51.021Z",
-  "publications": [
-    {
-      "file": "2214-jaleec-got-into-it-w-adrien-broner-wife-over-her-giving-yaya-may.json",
-      "id": "2214-jaleec-got-into-it-w-adrien-broner-wife-over-her-giving-yaya-may",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18073799114504958"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T10:17:30.903Z",
+  "checked_at": "2026-11-27T10:22:41.696Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -29,13 +29,13 @@
     "instagram_usage": 8,
     "platform_quota_usage": 8,
     "instagram_remaining": 4,
-    "reserved_story_slots": 0,
+    "reserved_story_slots": 1,
     "next_feed_eligible_at": "2026-11-27T10:47:10.761Z",
     "next_budget_eligible_at": null,
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 0,
+  "instagram_steps": 1,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -56,6 +56,14 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T10:37:00.490Z",
   "publications": [],
-  "failures": [],
+  "failures": [
+    {
+      "file": "2205-which-joe-are-you-picking-on-sound-check-put-and-to-the-test-wit.json",
+      "id": "2205-which-joe-are-you-picking-on-sound-check-put-and-to-the-test-wit",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "instagram_story: ERROR; retry after 2026-11-27T11:22:41.053Z: Error: Media upload has failed with error code 2207032"
+    }
+  ],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

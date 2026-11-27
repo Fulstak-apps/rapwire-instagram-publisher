@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T07:51:14.019Z",
+  "checked_at": "2026-11-27T07:56:10.344Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-27T07:40:56.056Z",
+    "checked_at": "2026-11-27T07:56:09.271Z",
     "usage": 6,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-27T07:55:56.056Z",
+    "next_check_at": "2026-11-27T08:11:09.271Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -56,14 +56,6 @@
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T09:00:56.477Z",
   "publications": [],
-  "failures": [
-    {
-      "file": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch.json",
-      "id": "2201-part-3-both-pleaded-guilty-her-max-5-years-the-identity-theft-ch",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; media refresh required after 3 failed containers"
-    }
-  ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

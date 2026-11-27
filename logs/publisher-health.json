@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T02:38:31.700Z",
+  "checked_at": "2026-11-27T04:10:13.258Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-27T02:38:20.199Z",
-    "usage": 8,
+    "checked_at": "2026-11-27T04:10:06.751Z",
+    "usage": 7,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-27T02:53:20.199Z",
+    "next_check_at": "2026-11-27T04:25:06.751Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -26,9 +26,9 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 8,
-    "platform_quota_usage": 8,
-    "instagram_remaining": 4,
+    "instagram_usage": 7,
+    "platform_quota_usage": 7,
+    "instagram_remaining": 5,
     "reserved_story_slots": 1,
     "next_feed_eligible_at": "2026-11-27T01:38:30.786Z",
     "next_budget_eligible_at": null,
@@ -45,25 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-27T02:38:17.696Z",
-    "usage": 15,
+    "checked_at": "2026-11-27T04:10:05.007Z",
+    "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-27T02:53:17.696Z",
+    "next_check_at": "2026-11-27T04:25:05.007Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-27T04:08:31.163Z",
-  "publications": [
+  "publications": [],
+  "failures": [
     {
-      "file": "2210-thee-shopkeep-isn-t-letting-anything-get-past-her-netflix-tapped.json",
-      "id": "2210-thee-shopkeep-isn-t-letting-anything-get-past-her-netflix-tapped",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "17951908410351426"
+      "file": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m.json",
+      "id": "2200-this-is-a-tough-choice-on-sound-check-had-and-pick-between-two-m",
+      "platform": "instagram_story",
+      "status": "failed",
+      "error": "media_publish failed: {\"error\":{\"message\":\"Fatal\",\"code\":-1,\"type\":\"OAuthException\",\"error_subcode\":2207032,\"is_transient\":false,\"error_user_msg\":\"Create media fail, please try to re-create media\",\"error_user_title\":\"Cannot Create Media\",\"fbtrace_id\":\"ATpqC_fLX2VXikCPRrkvreg\"}}"
     }
   ],
-  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

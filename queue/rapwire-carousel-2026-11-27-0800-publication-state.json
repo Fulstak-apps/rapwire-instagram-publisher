@@ -1,6 +1,6 @@
 {
   "batch_id": "rapwire-carousel-2026-11-27-0800",
-  "status": "ready",
+  "status": "paused",
   "scheduled_local_time": "2026-11-27 08:00:00 America/Los_Angeles",
   "publish_after": "2026-11-27T16:00:00Z",
   "publish_attempts": 0,
@@ -11,5 +11,6 @@
   "threads_media_id": null,
   "threads_permalink": null,
   "publish_blocked": null,
-  "last_publish_attempt": null
+  "last_publish_attempt": null,
+  "stale_reason": "Unparseable source publication date; held to prevent stale news from publishing."
 }

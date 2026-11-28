@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-28T04:38:00.398Z",
+  "checked_at": "2026-11-28T04:39:09.308Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -8,7 +8,7 @@
     "available": true,
     "error": null
   },
-  "instagram_cooldown_until": null,
+  "instagram_cooldown_until": "2026-09-02T05:15:00Z",
   "instagram_publishing_quota": {
     "checked_at": "2026-11-28T04:37:49.548Z",
     "usage": 11,
@@ -26,16 +26,16 @@
   "delivery_policy": {
     "feed_interval_minutes": 90,
     "instagram_daily_cap": 12,
-    "instagram_usage": 10,
-    "platform_quota_usage": 10,
-    "instagram_remaining": 2,
-    "reserved_story_slots": 0,
+    "instagram_usage": 11,
+    "platform_quota_usage": 11,
+    "instagram_remaining": 1,
+    "reserved_story_slots": 1,
     "next_feed_eligible_at": "2026-11-28T06:07:59.831Z",
     "next_budget_eligible_at": null,
-    "feed_allowed": true,
+    "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -55,16 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-28T05:12:20.057Z",
-  "publications": [
-    {
-      "file": "2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.json",
-      "id": "2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-",
-      "platform": "instagram",
-      "status": "published",
-      "media_id": "18033872456910287",
-      "content_type": "video"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

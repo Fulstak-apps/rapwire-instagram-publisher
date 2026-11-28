@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-28T03:42:20.542Z",
+  "checked_at": "2026-11-28T03:47:21.967Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-28T03:32:03.688Z",
+    "checked_at": "2026-11-28T03:47:21.314Z",
     "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-28T03:47:03.688Z",
+    "next_check_at": "2026-11-28T04:02:21.314Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -36,7 +36,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -45,25 +45,17 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-28T03:32:04.323Z",
+    "checked_at": "2026-11-28T03:47:21.748Z",
     "usage": 14,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-28T03:47:04.323Z",
+    "next_check_at": "2026-11-28T04:02:21.748Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-28T05:12:20.057Z",
-  "publications": [
-    {
-      "file": "2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.json",
-      "id": "2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18031298372698292"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

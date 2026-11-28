@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-28T06:50:43.397Z",
+  "checked_at": "2026-11-28T06:55:50.525Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -10,11 +10,11 @@
   },
   "instagram_cooldown_until": null,
   "instagram_publishing_quota": {
-    "checked_at": "2026-11-28T06:39:40.877Z",
+    "checked_at": "2026-11-28T06:55:42.984Z",
     "usage": 11,
     "total": 100,
     "blocked": false,
-    "next_check_at": "2026-11-28T06:54:40.877Z",
+    "next_check_at": "2026-11-28T07:10:42.984Z",
     "manual_capacity_check_requested_at": "2026-09-02T15:26:50.000Z",
     "reason": "Capacity available",
     "detected_at": "2026-09-07T20:38:47.979Z",
@@ -29,13 +29,13 @@
     "instagram_usage": 11,
     "platform_quota_usage": 11,
     "instagram_remaining": 1,
-    "reserved_story_slots": 1,
+    "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-28T06:07:59.831Z",
     "next_budget_eligible_at": null,
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
+  "instagram_steps": 0,
   "threads_steps": 1,
   "facebook_steps": 0,
   "instagram_recovery": {
@@ -45,25 +45,25 @@
   },
   "threads_interval_seconds": 5400,
   "threads_publishing_quota": {
-    "checked_at": "2026-11-28T06:39:39.193Z",
-    "usage": 14,
+    "checked_at": "2026-11-28T06:55:43.513Z",
+    "usage": 15,
     "total": 250,
     "blocked": false,
-    "next_check_at": "2026-11-28T06:54:39.193Z",
+    "next_check_at": "2026-11-28T07:10:43.513Z",
     "reason": "Capacity available",
     "valid": true
   },
   "instagram_processing_interval_seconds": 120,
-  "threads_next_eligible_at": "2026-11-28T06:48:18.304Z",
-  "publications": [],
-  "failures": [
+  "threads_next_eligible_at": "2026-11-28T08:25:49.919Z",
+  "publications": [
     {
-      "file": "2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.json",
-      "id": "2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "instagram_story: ERROR; retry after 2026-11-28T07:50:42.546Z: Error: Media upload has failed with error code 2207032"
+      "file": "2246-this-is-a-top-10-jid-song-got-the-story-behind-one-of-s-best-ver.json",
+      "id": "2246-this-is-a-top-10-jid-song-got-the-story-behind-one-of-s-best-ver",
+      "platform": "threads",
+      "status": "published",
+      "media_id": "18048107837834449"
     }
   ],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

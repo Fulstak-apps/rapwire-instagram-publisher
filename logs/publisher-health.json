@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-28T06:55:50.525Z",
+  "checked_at": "2026-11-28T07:00:49.574Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -36,7 +36,7 @@
     "story_allowed": true
   },
   "instagram_steps": 0,
-  "threads_steps": 1,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,15 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-28T08:25:49.919Z",
-  "publications": [
-    {
-      "file": "2246-this-is-a-top-10-jid-song-got-the-story-behind-one-of-s-best-ver.json",
-      "id": "2246-this-is-a-top-10-jid-song-got-the-story-behind-one-of-s-best-ver",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18048107837834449"
-    }
-  ],
+  "publications": [],
   "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

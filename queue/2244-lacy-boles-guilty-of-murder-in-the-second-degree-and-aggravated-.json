@@ -65,12 +65,12 @@
   "threads_story_status": "not_supported",
   "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
   "media_cleanup_status": "pending",
-  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.mp4' -> '/home/runner/.Trash/RapWire-1795841876779-2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.mp4'",
-  "instagram_story_container_id": "18121413896078478",
+  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.mp4' -> '/home/runner/.Trash/RapWire-1795842179844-2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.mp4'",
   "instagram_story_container_created_at": "2026-11-28T04:42:46.634Z",
-  "instagram_story_container_checked_at": "2026-11-28T04:47:54.499Z",
   "instagram_story_status": "failed",
-  "instagram_story_container_status": "FINISHED",
-  "instagram_story_error": "media_publish failed: {\"error\":{\"message\":\"Fatal\",\"code\":-1,\"type\":\"OAuthException\",\"error_subcode\":2207032,\"is_transient\":false,\"error_user_msg\":\"Create media fail, please try to re-create media\",\"error_user_title\":\"Cannot Create Media\",\"fbtrace_id\":\"A58vzWARW0iAkNp9Ui3F-s7\"}}",
-  "instagram_story_retry_at": "2026-11-28T04:58:00.894Z"
+  "instagram_story_container_status": "ERROR",
+  "instagram_story_error": "instagram_story: ERROR; retry after 2026-11-28T05:32:59.158Z: Error: Media upload has failed with error code 2207032",
+  "instagram_story_retry_at": "2026-11-28T05:32:59.158Z",
+  "instagram_story_container_failures": 1,
+  "instagram_story_previous_container_id": "18121413896078478"
 }

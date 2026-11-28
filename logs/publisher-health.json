@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-28T00:24:38.846Z",
+  "checked_at": "2026-11-28T00:30:09.548Z",
   "instagram_auth": {
     "available": true,
     "error": null
@@ -29,14 +29,14 @@
     "instagram_usage": 11,
     "platform_quota_usage": 11,
     "instagram_remaining": 1,
-    "reserved_story_slots": 1,
+    "reserved_story_slots": 0,
     "next_feed_eligible_at": "2026-11-28T00:07:56.306Z",
     "next_budget_eligible_at": null,
     "feed_allowed": false,
     "story_allowed": true
   },
-  "instagram_steps": 1,
-  "threads_steps": 1,
+  "instagram_steps": 0,
+  "threads_steps": 0,
   "facebook_steps": 0,
   "instagram_recovery": {
     "item_id": null,
@@ -55,23 +55,7 @@
   },
   "instagram_processing_interval_seconds": 120,
   "threads_next_eligible_at": "2026-11-28T01:54:18.949Z",
-  "publications": [
-    {
-      "file": "2236-rich-the-kid-and-wunna-dropped-a-movie-with-too-bad-yall-ready-f.json",
-      "id": "2236-rich-the-kid-and-wunna-dropped-a-movie-with-too-bad-yall-ready-f",
-      "platform": "threads",
-      "status": "published",
-      "media_id": "18123518293983560"
-    }
-  ],
-  "failures": [
-    {
-      "file": "2227-breaking-a-sacramento-cop-smiled-over-a-handcuffed-66-year-old-w.json",
-      "id": "2227-breaking-a-sacramento-cop-smiled-over-a-handcuffed-66-year-old-w",
-      "platform": "instagram_story",
-      "status": "failed",
-      "error": "media_publish failed: {\"error\":{\"message\":\"Fatal\",\"code\":-1,\"type\":\"OAuthException\",\"error_subcode\":2207032,\"is_transient\":false,\"error_user_msg\":\"Create media fail, please try to re-create media\",\"error_user_title\":\"Cannot Create Media\",\"fbtrace_id\":\"AUd0nrNadb9F4hdh1fP4NwW\"}}"
-    }
-  ],
+  "publications": [],
+  "failures": [],
   "note": "A completed workflow is not proof of publication. Only published media IDs confirm delivery."
 }

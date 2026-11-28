@@ -65,12 +65,14 @@
   "threads_story_status": "not_supported",
   "threads_story_note": "Threads API publishing supports posts, video posts, image posts, carousels, and replies; a separate Story format is not available through the current publisher.",
   "media_cleanup_status": "pending",
-  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.mp4' -> '/home/runner/.Trash/RapWire-1795843694630-2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.mp4'",
-  "instagram_story_container_created_at": "2026-11-28T04:42:46.634Z",
-  "instagram_story_status": "failed",
+  "media_cleanup_error": "ENOENT: no such file or directory, rename '/home/runner/work/rapwire-instagram-publisher/rapwire-instagram-publisher/media/2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.mp4' -> '/home/runner/.Trash/RapWire-1795844002449-2244-lacy-boles-guilty-of-murder-in-the-second-degree-and-aggravated-.mp4'",
+  "instagram_story_container_created_at": "2026-11-28T05:33:20.265Z",
+  "instagram_story_status": "pending",
   "instagram_story_container_status": "ERROR",
   "instagram_story_error": "instagram_story: ERROR; retry after 2026-11-28T05:32:59.158Z: Error: Media upload has failed with error code 2207032",
   "instagram_story_retry_at": "2026-11-28T05:32:59.158Z",
   "instagram_story_container_failures": 1,
-  "instagram_story_previous_container_id": "18121413896078478"
+  "instagram_story_previous_container_id": "18121413896078478",
+  "instagram_story_container_id": "18121416563078478",
+  "instagram_story_container_checked_at": "2026-11-28T05:33:20.265Z"
 }
